@@ -1,0 +1,89 @@
+---
+title: What quantum-safe encryption means, in plain language
+description: Quantum computers may one day break some of the encryption in use today. What quantum-safe encryption is, and why it matters now.
+keyphrase: quantum-safe encryption
+date: 2026-10-23
+draft: true
+lang: en
+---
+import Flow from "../../../components/blog/Flow.astro";
+import Compare from "../../../components/blog/Compare.astro";
+import FileLock from "@lucide/astro/icons/file-lock";
+import Hourglass from "@lucide/astro/icons/hourglass";
+import ShieldCheck from "@lucide/astro/icons/shield-check";
+import KeyRound from "@lucide/astro/icons/key-round";
+import LockKeyhole from "@lucide/astro/icons/lock-keyhole";
+
+**In short:** a large enough quantum computer could break most of the methods used today to pass encryption keys safely between people. Today's quantum computers are still limited. Quantum-safe encryption, also called post-quantum encryption, uses methods designed to resist one. In 2024, the US standards body NIST published the first official standards for it.
+
+## Two kinds of lock
+
+Everyday encryption usually uses two kinds of lock together.
+
+- **The lock on the data.** The file itself is scrambled with a secret key. This kind is fast and very strong.
+- **The lock on the key.** The secret key then has to reach the right person without anyone else seeing it. This is done with public-key encryption: anyone can lock something for you with your public key, but only your private key opens it.
+
+Think of a locked box (your file) and the key to that box. The box is solid. The weak point, if there is one, is the envelope the key travels in.
+
+<Compare
+  caption="Everyday encryption uses two locks. Quantum computers mainly threaten the second one: the way the key is passed on."
+  sides={[
+    {
+      icon: LockKeyhole,
+      title: "The lock on the data",
+      tone: "green",
+      points: ["Scrambles the file itself.", "Not significantly weakened by quantum computers."],
+    },
+    {
+      icon: KeyRound,
+      title: "The lock on the key",
+      tone: "orange",
+      points: ["Passes the file's key to the right person.", "Most methods in use today would be vulnerable."],
+    },
+  ]}
+/>
+
+## What a quantum computer could break, and what it could not
+
+A quantum computer works in a very different way from the computers in use today. In theory, it can do certain calculations that ordinary computers cannot do in any practical time, and some of those are exactly what today's public-key encryption relies on being hard. When such a machine will exist is, in the words of the UK National Cyber Security Centre (NCSC), "hard to predict", because "many engineering and physical challenges must be overcome first."
+
+The NCSC puts it plainly: "most traditional public key cryptography (PKC) algorithms in use today will be vulnerable to attack" by a large enough quantum computer. The lock on the data is a different story. The NCSC says "the security of symmetric cryptography is not significantly impacted by quantum computers", and that existing methods such as AES with keys of at least 128 bits can continue to be used ([NCSC: Next steps in preparing for post-quantum cryptography](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography)).
+
+So the box stays solid. It is the envelope that needs replacing.
+
+## Why it matters before such computers exist
+
+If no quantum computer can do this yet, why change anything now? Because encrypted data can be copied and kept. The NCSC describes the risk of "an attacker collecting and storing data today and decrypting it at some point in the future".
+
+<Flow
+  caption="The risk of collecting now and decrypting later: a file saved today needs a lock that will still hold years from now."
+  steps={[
+    { icon: FileLock, text: "A file is encrypted today", tone: "blue" },
+    { icon: Hourglass, text: "Someone copies and keeps it", tone: "orange" },
+    { icon: ShieldCheck, text: "With a post-quantum lock, it stays locked", tone: "green" },
+  ]}
+/>
+
+The NCSC also notes that such an attack is "only likely to be worthwhile for very high-value information". For most people, this is not a reason to worry. It is a reason to prefer encryption that will last, especially for files you expect to keep for years: legal papers, medical records, private letters.
+
+## What "quantum-safe" and "post-quantum" mean
+
+They mean the same thing: encryption methods designed to resist attack by quantum computers. "Post-quantum" is the term standards bodies use; "quantum-safe" is a common everyday name for it.
+
+On 13 August 2024, the US National Institute of Standards and Technology (NIST) published its first three finalised post-quantum standards: one for general encryption and two for digital signatures ([NIST: first 3 finalized post-quantum encryption standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards)). NIST encourages organisations to start moving to them now, "because full integration will take time".
+
+## Why many apps use a hybrid
+
+Post-quantum methods are newer than the ones they replace. A common approach is a hybrid: protect the key with a long-trusted method **and** a post-quantum one together. Someone would have to break both to get at the key.
+
+## What this means for you
+
+- **There is no need to panic.** No one can say when a quantum computer able to do this will exist, and the lock on your data itself is not the weak point.
+- **For files you keep for a long time,** post-quantum protection is worth having now rather than later.
+- **Look for plain claims.** An app should say clearly whether it uses post-quantum encryption. Be wary of words like "unbreakable": no honest app can promise that.
+
+## How Doughnut Forge uses it
+
+Doughnut Forge uses post-quantum encryption, so what you protect today stays protected as computers become more powerful. It uses a hybrid: when it protects the key to each file, folder or note, it pairs a long-trusted method with a post-quantum one, and both are needed to open it. That applies to every person a file is encrypted for, including you.
+
+Read more in [Why offline encryption keeps your files private](/blog/offline-encryption-privacy/), or see how to [share encrypted files with someone you trust](/blog/share-encrypted-files/). The [features page](/features/) lists everything the app does.
