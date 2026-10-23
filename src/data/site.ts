@@ -1,8 +1,6 @@
 // Site-wide constants.
 export const site = {
   name: "Doughnut Forge",
-  // The developer, as in the store listings (press fact sheet)
-  developer: "Darren Corbett",
   url: "https://doughnut-forge.app",
   // Support stays in GitHub issues on forge-privacy: the store listings link there.
   issuesUrl: "https://github.com/Darren-Corbett/forge-privacy/issues",
