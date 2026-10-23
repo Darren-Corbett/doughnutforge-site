@@ -38,7 +38,10 @@ Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the 
    - The Mac file menu opens from the ⋮ button or by right-clicking (owner, 23 October 2026). Post 1 names both.
 2. **Phase 4 review: done.** The owner asked for all four posts to be published at launch, on 23 October 2026. Keep `docs/BLOG-CLAIMS.md` in step with the posts: a later copy change must not add a claim without a row.
 3. **Stale-translation detection: built** (plan: `~/.claude/plans/stale-translation-detection.md`). See "Translations: keeping them in step with English" below.
-4. **Launch:** follow `docs/launch/LAUNCH-CHECKLIST.md` step by step (push, Pages switch, deploy, checks, deploy-on-push, root file removal, forge-privacy redirect, store URLs).
+4. **Launch (23 October 2026):** the site is live from GitHub Actions and deploys on every push to `main` (steps 1–5 of `docs/launch/LAUNCH-CHECKLIST.md`). The first deploy left out `.well-known/apple-app-site-association` for about 42 minutes (13:13–13:55 UTC), because the Pages upload drops files whose names start with a dot. The workflow now sets `include-hidden-files: true`, and its last step fails unless the live file lists both apps.
+   - **Reminder, on or after 6 November 2026 (step 6):** remove the old root copies of `.well-known/`, `CNAME`, `.nojekyll`, the icons, `site.webmanifest` and `index.html`, and make `scripts/check-production-files.mjs` check the built files alone. Until then they stay as the rollback: switching Pages back to "Deploy from a branch" and pushing any commit brings the old site back (a source switch alone does not rebuild).
+   - Steps 7–9 (forge-privacy redirect, store URLs, Search Console) follow the checklist.
+   - **Privacy policy source after step 7:** forge-privacy's `index.html` becomes a redirect, so the policy wording lives on this site. `check-privacy-wording.mjs` and `extract-privacy.mjs` keep comparing with the pinned original, forge-privacy@3e7911c, which stays in that repo's history. Any wording change from now on is made here, and only with the owner's approval.
 5. **No open items block launch.** Company details, the press contact and the first release date were removed instead of filled (owner, 23 October 2026), and the Mac App Store ID is 6812778888.
 6. **Next week: Phase 5.**
 
