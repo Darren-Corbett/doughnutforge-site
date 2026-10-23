@@ -1,6 +1,6 @@
 // English (US) (en-US): UK English (src/i18n/ui/en.ts) with US spelling and
 // usage, as the app's own en-US differs from en only in spelling.
-// DRAFT: not yet reviewed (src/i18n/review.json).
+// Review status and findings: src/i18n/review.json.
 import type { Translation } from "../index";
 import en from "./en.ts";
 

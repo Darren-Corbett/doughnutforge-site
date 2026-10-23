@@ -1,5 +1,5 @@
 // Korean (ko): site copy translated from src/i18n/ui/en.ts.
-// DRAFT: not yet reviewed (src/i18n/review.json). Terms follow the app
+// Review status and findings: src/i18n/review.json. Terms follow the app
 // (src/i18n/glossary/ko.json); form of address: formal polite 합니다체 statements with polite -세요 requests, as in the app and store listing.
 import type { Translation } from "../index";
 

@@ -1,5 +1,5 @@
 // Spanish, Mexico (es-MX): site copy translated from src/i18n/ui/en.ts.
-// DRAFT: not yet reviewed (src/i18n/review.json). Terms follow the app
+// Review status and findings: src/i18n/review.json. Terms follow the app
 // (src/i18n/glossary/es-MX.json); form of address: informal "tú".
 import type { Translation } from "../index";
 

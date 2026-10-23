@@ -1,5 +1,5 @@
 // Turkish (tr): site copy translated from src/i18n/ui/en.ts.
-// DRAFT: not yet reviewed (src/i18n/review.json). Terms follow the app
+// Review status and findings: src/i18n/review.json. Terms follow the app
 // (src/i18n/glossary/tr.json); form of address: formal "siz".
 import type { Translation } from "../index";
 

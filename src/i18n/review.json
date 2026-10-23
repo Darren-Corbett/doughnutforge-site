@@ -99,9 +99,11 @@
     ]
   },
   "it": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "nav.download",
@@ -148,9 +150,11 @@
     ]
   },
   "nl": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "footer.registeredOffice",
@@ -183,9 +187,11 @@
     ]
   },
   "sv": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "footer.companyLine",
@@ -197,9 +203,11 @@
     ]
   },
   "da": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "press.facts.website",
@@ -225,9 +233,11 @@
     ]
   },
   "fi": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "download.coming",
@@ -253,9 +263,11 @@
     ]
   },
   "no": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "nav.support",
@@ -274,9 +286,11 @@
     ]
   },
   "pl": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "footer.companyLine",
@@ -288,9 +302,11 @@
     ]
   },
   "cs": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "footer.companyLine",
@@ -302,9 +318,11 @@
     ]
   },
   "hu": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "faq.quantum.a",
@@ -323,9 +341,11 @@
     ]
   },
   "ro": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "press.download",
@@ -358,9 +378,11 @@
     ]
   },
   "ru": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "footer.companyLine",
@@ -372,9 +394,11 @@
     ]
   },
   "el": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "footer.companyLine",
@@ -400,9 +424,11 @@
     ]
   },
   "uk": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "footer.companyLine",
@@ -421,9 +447,11 @@
     ]
   },
   "en-US": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "footer.companyLine",
@@ -442,9 +470,11 @@
     ]
   },
   "es-MX": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "footer.registeredOffice",
@@ -478,9 +508,11 @@
     ]
   },
   "tr": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "support.ask.new",
@@ -528,9 +560,11 @@
     ]
   },
   "zh-CN": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "support.ask.new",
@@ -563,9 +597,11 @@
     ]
   },
   "zh-TW": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "meta.home.description",
@@ -605,9 +641,11 @@
     ]
   },
   "ko": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "press.shots.label",
@@ -633,9 +671,11 @@
     ]
   },
   "hi": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "footer.companyLine",
@@ -647,9 +687,11 @@
     ]
   },
   "id": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "support.ask.text",
@@ -682,9 +724,11 @@
     ]
   },
   "ms": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "nav.features",
@@ -717,9 +761,11 @@
     ]
   },
   "th": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "footer.companyLine",
@@ -731,9 +777,11 @@
     ]
   },
   "vi": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
+    "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
       {
         "key": "features.ios.altContacts",

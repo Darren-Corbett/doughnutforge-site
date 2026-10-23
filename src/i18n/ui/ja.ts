@@ -1,5 +1,5 @@
 // Japanese (ja): site copy translated from src/i18n/ui/en.ts.
-// DRAFT: not yet reviewed (src/i18n/review.json). Terms follow the app
+// Review status and findings: src/i18n/review.json. Terms follow the app
 // (src/i18n/glossary/ja.json); form of address: polite です/ます (teineigo), as in the app and store listing.
 import type { Translation } from "../index";
 
