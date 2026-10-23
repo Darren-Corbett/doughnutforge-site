@@ -5,9 +5,10 @@
     "findings": []
   },
   "fr": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
     "findings": [
       {
         "key": "press.download",
@@ -47,9 +48,10 @@
     ]
   },
   "de": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
     "findings": [
       {
         "key": "footer.registeredOffice",
@@ -82,9 +84,10 @@
     ]
   },
   "es": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
     "findings": [
       {
         "key": "meta.features.title",
@@ -453,9 +456,10 @@
     ]
   },
   "pt-BR": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
     "findings": [
       {
         "key": "support.ask.new",
@@ -495,9 +499,10 @@
     ]
   },
   "ja": {
-    "status": "draft",
+    "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
     "reviewedAt": "2026-10-23",
+    "approvedAt": "2026-10-23",
     "findings": [
       {
         "key": "faq.quantum.q",
