@@ -155,33 +155,13 @@
     "en": "f9cb675c4513",
     "text": "fc670b297d3f"
   },
-  "footer.companyLine": {
-    "en": "63bf95d3de90",
-    "text": "62f724ab701e"
-  },
-  "footer.companyNumber": {
-    "en": "8b121bb59819",
-    "text": "63fe2a99c1eb"
-  },
   "footer.help": {
     "en": "b79cac926e0b",
     "text": "e5d5f1c775ea"
   },
-  "footer.officeLine": {
-    "en": "58e0e7da9a57",
-    "text": "43c0a57e390e"
-  },
   "footer.product": {
     "en": "fb9ef894175c",
     "text": "48f85a5f891f"
-  },
-  "footer.registered": {
-    "en": "29edd319e67e",
-    "text": "4958f29b6703"
-  },
-  "footer.registeredOffice": {
-    "en": "bc395eb428a7",
-    "text": "a08adf8eaa6d"
   },
   "home.cta.primary": {
     "en": "48335741e14d",
@@ -247,26 +227,6 @@
     "en": "caa0861ead91",
     "text": "31ce3de5eb7a"
   },
-  "legal.company.contact": {
-    "en": "2b5c3d26721a",
-    "text": "30814846ae92"
-  },
-  "legal.company.name": {
-    "en": "6dfada13d2f4",
-    "text": "34c4868d3dde"
-  },
-  "legal.company.title": {
-    "en": "0a41f0a3901e",
-    "text": "549544f6adce"
-  },
-  "legal.privacy.text": {
-    "en": "cfdb88588c37",
-    "text": "a386ebc52fcd"
-  },
-  "legal.privacy.title": {
-    "en": "54a57c3147c4",
-    "text": "6ca4260e62ec"
-  },
   "legal.title": {
     "en": "8c14d709f277",
     "text": "baca777f922c"
@@ -312,8 +272,8 @@
     "text": "7ba2856e0a5f"
   },
   "meta.legal.description": {
-    "en": "1aa5da31b54b",
-    "text": "9e4168fe1c66"
+    "en": "94a0679c73c7",
+    "text": "695e785d24f3"
   },
   "meta.legal.title": {
     "en": "5130d085c78d",
@@ -414,10 +374,6 @@
   "press.facts.developer": {
     "en": "3fb7b39416f1",
     "text": "acd5b7d78a00"
-  },
-  "press.facts.firstRelease": {
-    "en": "9db3a65f2052",
-    "text": "3f43c3b46823"
   },
   "press.facts.languages": {
     "en": "318655cea4bd",

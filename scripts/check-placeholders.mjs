@@ -1,4 +1,6 @@
-// Finds unfilled values (company details, store IDs) in the built site.
+// Finds unfilled values (src/data/placeholder.ts) in the built site. None are
+// required at launch: the site shows no company details, press contact or first
+// release date, and every store ID is filled in.
 // Local builds: warns and lists them. Deploy builds (--strict): fails.
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";

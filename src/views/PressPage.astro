@@ -4,9 +4,7 @@
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import PageHero from "../components/PageHero.astro";
-import { company } from "../data/company";
 import pressFiles from "../data/press-files.json";
-import { press } from "../data/press";
 import { site } from "../data/site";
 import { platformName, platforms } from "../data/stores";
 import { fill, languages, listOf, useStrings, type Language } from "../i18n";
@@ -28,14 +26,14 @@ const names = (status: "available" | "coming") =>
   listOf(lang, platforms.filter((p) => p.status === status).map((p) => platformName(lang, p.id)));
 const facts = [
   [t("press.facts.name"), site.name],
-  [t("press.facts.developer"), company.name],
+  [t("press.facts.developer"), site.developer],
   [t("press.facts.available"), names("available")],
   [t("press.facts.coming"), names("coming")],
   [t("press.facts.price"), t("press.facts.priceValue")],
   [t("press.facts.languages"), String(languages.length)],
-  [t("press.facts.firstRelease"), press.firstRelease],
   [t("press.facts.website"), site.url.replace("https://", "")],
-  [t("press.facts.contact"), press.contact],
+  // Press questions go to the same public GitHub issues as support
+  [t("press.facts.contact"), site.issuesUrl.replace("https://", ""), site.issuesUrl],
 ];
 
 const previews = import.meta.glob<{ default: ImageMetadata }>("../assets/press/*.webp", { eager: true });
@@ -86,10 +84,17 @@ const shots = [
     <h2 id="press-facts" class="section-title">{t("press.facts.title")}</h2>
     <dl class="facts">
       {
-        facts.map(([term, value]) => (
+        facts.map(([term, value, href]) => (
           <div>
             <dt>{term}</dt>
-            <dd>{value}</dd>
+            <dd>
+              {href ? (
+                // A long address may wrap only after a slash, so no word is split
+                <a href={href}>{value.split("/").map((part, i) => [i ? ["/", <wbr />] : "", <span class="whole">{part}</span>])}</a>
+              ) : (
+                value
+              )}
+            </dd>
           </div>
         ))
       }
@@ -180,6 +185,16 @@ const shots = [
     font-size: 15px;
     font-weight: 800;
     color: #475569;
+  }
+  /* Each part of an address stays whole, so it wraps only after a slash */
+  .whole {
+    white-space: nowrap;
+  }
+  dd a {
+    font-weight: 700;
+    color: var(--ink-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
   dd {
     font-size: 17px;

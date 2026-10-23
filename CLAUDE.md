@@ -76,7 +76,7 @@ Every plan must say how it serves both goals.
 - Bring that content into this site as the privacy and support pages. Keep the wording exactly as it is; propose any changes separately for approval. Translate it into every site language.
 - Never break the old URL. When the new pages are live, plan a redirect page in forge-privacy (meta refresh plus a canonical link to the new page, with a visible link). Store listings are updated by me, not by Claude.
 - The policy must state plainly that the app and site collect no personal data, and must stay true as the site changes.
-- Company details in the footer and on an imprint/legal page as required for a UK Ltd.
+- No company details on the site. The footer carries only the copyright line "© {year} Doughnut Forge", and the legal page carries only the trademark notices.
 - The apps are not sold in the EU yet, but the site is visible there; store links must not promise availability that does not exist.
 
 ## Before saying a change is done

@@ -161,7 +161,6 @@ export default {
   "press.facts.price": "Price",
   "press.facts.priceValue": "One-time purchase for each platform, never a subscription",
   "press.facts.languages": "Languages",
-  "press.facts.firstRelease": "First released",
   "press.facts.website": "Website",
   "press.facts.contact": "Press contact",
   "press.icons.title": "App icon",
@@ -180,20 +179,14 @@ export default {
 
   // Legal page
   "meta.legal.title": "Legal information | Doughnut Forge",
-  "meta.legal.description": "Company details for Doughnut Forge, and trademark notices.",
+  "meta.legal.description": "Trademark notices for the store names and badges on the Doughnut Forge website.",
   "legal.title": "Legal information",
-  "legal.company.title": "Company details",
-  "legal.company.name": "Company name",
-  "legal.company.contact": "Contact",
   "legal.trademarks.title": "Trademarks",
   "legal.trademarks.apple":
     "Apple, the Apple logo, Mac, iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store and Mac App Store are service marks of Apple Inc.",
   "legal.trademarks.microsoft": "Microsoft, Windows and the Microsoft Store logo are trademarks of the Microsoft group of companies.",
   "legal.trademarks.other":
     "Android is a trademark of Google LLC. Linux is the registered trademark of Linus Torvalds in the U.S. and other countries.",
-  "legal.privacy.title": "Privacy",
-  // {link} is the privacy policy's title, as a link
-  "legal.privacy.text": "How Doughnut Forge handles data is set out in the {link}.",
 
   // Blog
   "meta.blog.title": "Blog: plain-language guides to private files | Doughnut Forge",
@@ -218,10 +211,4 @@ export default {
 
   "footer.product": "Product",
   "footer.help": "Help",
-  "footer.registered": "Registered in",
-  "footer.companyNumber": "Company number",
-  "footer.registeredOffice": "Registered office",
-  // The footer's company lines: {place} is England and Wales, {number} the company number
-  "footer.companyLine": "Registered in {place}. Company number {number}.",
-  "footer.officeLine": "Registered office: {address}",
 } as const;
