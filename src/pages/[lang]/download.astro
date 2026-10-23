@@ -1,0 +1,10 @@
+---
+// Download page in every language but English (English: src/pages/download.astro)
+import { otherLanguagePaths, type Language } from "../../i18n";
+import DownloadPage from "../../views/DownloadPage.astro";
+
+export const getStaticPaths = otherLanguagePaths;
+const { lang } = Astro.props as { lang: Language };
+---
+
+<DownloadPage lang={lang} />

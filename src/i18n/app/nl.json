@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/nl/*.json",
+  "app:navigation.tabs.vault": "Veilige map",
+  "app:navigation.tabs.mobile-vault": "Veilig bestand",
+  "app:navigation.tabs.text-vault": "Veilige tekst",
+  "app:navigation.tabs.identity": "Identiteit",
+  "app:navigation.tabs.contacts": "Contacten",
+  "app:navigation.language": "Taal",
+  "app:languageModal.regions.europe": "Europa",
+  "app:languageModal.regions.americas": "Amerika",
+  "app:languageModal.regions.middleEastAfrica": "Midden-Oosten en Afrika",
+  "app:languageModal.regions.asiaPacific": "Azië-Pacific",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Een bestand versleutelen",
+  "help:secureDirectoryGuide.step1.description": "Voeg lokale mappen toe aan uw werkruimte om door uw bestanden te bladeren en ze te beheren. Doughnut Forge werkt volledig lokaal, wat betekent dat uw originele bestanden uw apparaat nooit verlaten.",
+  "help:setupGuide.step2.description": "Uw digitale identiteit fungeert als uw persoonlijke set sleutels, die veilig binnen de applicatie worden opgeslagen. Doughnut Forge gebruikt deze sleutels om uw bestanden te beschermen en uw vertrouwde contacten te verifiëren.",
+  "help:setupGuide.step3.description": "Uw sleutels zijn volledig privé en kunnen niet worden hersteld als u ze verliest. U moet uw herstelzin op een veilige locatie bewaren, aangezien dit de enige manier is om uw toegang te herstellen.",
+  "help:identityContactsGuide.step1.description": "Exporteer uw identiteit als een veilige contactkaart (.vltc2). Deel dit bestand zodat anderen veilig kunnen verifiëren wie u bent en u aan hun vertrouwde netwerk kunnen toevoegen.",
+  "help:identityContactsGuide.step3.description": "Beheer uw vertrouwde netwerk. Hoewel iedereen met uw kaart u veilige bestanden kan sturen, kunt u door contacten hier te verifiëren ze snel selecteren om te delen en wordt hun ware identiteit bevestigd."
+}

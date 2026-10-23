@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/es/*.json",
+  "app:navigation.tabs.vault": "Carpeta segura",
+  "app:navigation.tabs.mobile-vault": "Archivo seguro",
+  "app:navigation.tabs.text-vault": "Texto seguro",
+  "app:navigation.tabs.identity": "Identidad",
+  "app:navigation.tabs.contacts": "Contactos",
+  "app:navigation.language": "Idioma",
+  "app:languageModal.regions.europe": "Europa",
+  "app:languageModal.regions.americas": "América",
+  "app:languageModal.regions.middleEastAfrica": "Oriente Medio y África",
+  "app:languageModal.regions.asiaPacific": "Asia-Pacífico",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Cifrar un archivo",
+  "help:secureDirectoryGuide.step1.description": "Añade carpetas locales a tu espacio de trabajo para navegar y gestionar tus archivos. Doughnut Forge opera íntegramente a nivel local, lo que significa que tus archivos originales nunca salen de tu dispositivo.",
+  "help:setupGuide.step2.description": "Tu identidad digital actúa como tu propio juego de llaves personales, que se guardan de forma segura en la aplicación. Doughnut Forge usa estas llaves para proteger tus archivos y verificar tus contactos de confianza.",
+  "help:setupGuide.step3.description": "Tus llaves son completamente privadas y no se pueden recuperar si las pierdes. Debes guardar tu frase de recuperación en un lugar seguro, ya que es la única forma de restaurar tu acceso.",
+  "help:identityContactsGuide.step1.description": "Exporta tu identidad como una tarjeta de contacto segura (.vltc2). Comparte este archivo para que otros puedan verificar tu identidad y añadirte a su red de confianza.",
+  "help:identityContactsGuide.step3.description": "Gestiona tu red de confianza. Aunque cualquiera que tenga tu tarjeta puede enviarte archivos seguros, verificar tus contactos aquí te permite seleccionarlos rápidamente para compartir y confirma su verdadera identidad."
+}

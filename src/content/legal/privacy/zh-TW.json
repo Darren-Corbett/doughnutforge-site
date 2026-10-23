@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "隱私權政策",
+    "effectiveDate": "生效日期：2026年10月",
+    "hero": "<strong>Doughnut Forge 採用零知識、本機優先的架構。</strong>這表示，除了您直接傳送給我們的資訊之外，我們不會收集、傳輸、儲存或存取您的資料（見第 3 節）。",
+    "sec1Title": "1. 資料儲存與刪除",
+    "sec1Desc": "Doughnut Forge 產生的所有加密金鑰、<code class=\"k1\">.vltc2</code> 身分檔和 <code class=\"k2\">.vlt2</code> 檔案僅儲存在您的本機裝置上。除非您自行匯出並分享檔案，否則任何資訊都不會離開您的裝置。解除安裝應用程式會移除軟體本身，但不會刪除您儲存在裝置其他位置的檔案，也不會刪除儲存在系統憑證管理員（如 macOS 鑰匙圈或 Windows 認證管理員）中的金鑰。您可以手動刪除這些內容。",
+    "sec2Title": "2. 分析與遙測",
+    "sec2Desc": "Doughnut Forge 不包含任何追蹤指令碼、分析引擎或當機報告工具。如果您從 Apple App Store 或 Microsoft Store 下載本應用程式，Apple 或 Microsoft 可能會提供我們彙總統計資料，例如下載次數和當機統計。這些報告不包含可識別個人身分的資訊。您可以在裝置設定中控制診斷資料的分享。",
+    "sec3Title": "3. 支援與聯絡",
+    "sec3Desc": "如有問題或需要回報技術故障，請在我們的[[gh]]GitHub Issues[[/gh]]開立工單。GitHub 是公開平台，受其自身隱私權政策約束；請勿在問題回報中包含敏感資訊或解密後的資料。如有隱私權相關問題，請使用我們的[[tally]]聯絡表單[[/tally]]。您透過該表單提交的資訊由 Tally（tally.so）代為處理，我們使用該服務接收您的訊息，僅用於回覆您的諮詢。",
+    "sec4Title": "4. 政策變更",
+    "sec4Desc": "我們可能會不定期更新本政策。任何變更都會發布在本頁面，並更新生效日期。",
+    "sec5Title": "5. 您的權利與法律聲明",
+    "sec5Desc": "對於透過聯絡表單提交的詢問，我們基於提供支援的正當利益處理您的資訊。我們僅在處理您的詢問合理所需的期間內保留訊息，之後會盡量定期刪除。如果您希望更早刪除您的訊息，只需透過同一表單告知我們。視您所在地區而定（例如適用英國資料保護法律時），您可能有權要求查閱、更正或刪除您與我們的往來通訊，並有權向英國資料保護主管機關[[ico]]資訊專員辦公室（ICO）[[/ico]]提出申訴。Doughnut Forge 並非以 13 歲以下兒童為對象。如果您認為有兒童透過我們的聯絡表單向我們傳送了個人資訊，請告知我們，我們會將其刪除。本頁面託管於 GitHub Pages。我們沒有在頁面中加入任何追蹤或分析工具，但 GitHub 可能會在您造訪時基於安全及服務營運目的記錄您的 IP 位址等技術資訊；詳見[[ghp]]GitHub 隱私權聲明[[/ghp]]。由於我們不會追蹤您，因此我們不回應「請勿追蹤」（DNT）訊號。",
+    "publisherInfo": "發布者：Darren Corbett"
+  }
+}

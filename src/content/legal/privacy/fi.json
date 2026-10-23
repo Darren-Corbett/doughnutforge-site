@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "Tietosuojakäytäntö",
+    "effectiveDate": "Voimassa alkaen: lokakuu 2026",
+    "hero": "<strong>Doughnut Forge perustuu paikalliseen nollatietoarkkitehtuuriin (zero-knowledge).</strong> Tämä tarkoittaa, että emme kerää, siirrä tai tallenna tietojasi emmekä pääse niihin käsiksi, lukuun ottamatta tietoja, jotka päätät itse lähettää meille (katso kohta 3).",
+    "sec1Title": "1. Tietojen tallennus ja poistaminen",
+    "sec1Desc": "Kaikki Doughnut Forgen luomat salausavaimet, <code class=\"k1\">.vltc2</code>-identiteetit ja <code class=\"k2\">.vlt2</code>-tiedostot tallennetaan ainoastaan laitteellesi. Mitään tietoja ei siirry laitteeltasi, ellet itse vie ja jaa tiedostoa. Sovelluksen poistaminen poistaa ohjelmiston, mutta ei laitteen muihin sijainteihin tallentamiasi tiedostoja eikä järjestelmän tunnistetietojen hallintaan tallennettuja avaimia (kuten macOS:n Avainnippu tai Windowsin Tunnistetietojen hallinta). Voit poistaa ne manuaalisesti.",
+    "sec2Title": "2. Analytiikka ja telemetria",
+    "sec2Desc": "Doughnut Forge ei sisällä seurantaskriptejä, analytiikkamoottoreita eikä kaatumisraportointia. Jos lataat sovelluksen Applen App Storesta tai Microsoft Storesta, Apple tai Microsoft voi toimittaa meille koostettuja tilastoja, kuten latausmääriä ja kaatumistilastoja. Nämä raportit eivät sisällä henkilöiden tunnistamiseen soveltuvia tietoja. Voit hallita diagnostiikkatietojen jakamista laitteesi asetuksissa.",
+    "sec3Title": "3. Tuki ja yhteystiedot",
+    "sec3Desc": "Jos sinulla on kysyttävää tai haluat ilmoittaa teknisestä ongelmasta, avaa tiketti [[gh]]GitHub Issues[[/gh]] -seurantajärjestelmässämme. GitHub on julkinen alusta, jota koskee sen oma tietosuojakäytäntö, joten älä koskaan sisällytä raportteihin arkaluonteisia tai salauksesta purettuja tietoja. Tietosuojaan liittyvissä kysymyksissä käytä [[tally]]yhteydenottolomakettamme[[/tally]]. Lomakkeella lähettämäsi tiedot käsittelee Tally (tally.so), jota käytämme viestiesi vastaanottamiseen, ja niitä käytetään vain kysymykseesi vastaamiseen.",
+    "sec4Title": "4. Muutokset tähän käytäntöön",
+    "sec4Desc": "Voimme päivittää tätä käytäntöä ajoittain. Muutokset julkaistaan tällä sivulla päivitetyn voimaantulopäivän kanssa.",
+    "sec5Title": "5. Oikeutesi ja oikeudelliset tiedot",
+    "sec5Desc": "Yhteydenottolomakkeella lähetettyjä kysymyksiä käsittelemme oikeutetun etumme perusteella, joka liittyy tuen tarjoamiseen. Säilytämme viestejä vain niin kauan kuin kysymykseesi vastaaminen kohtuudella edellyttää, ja pyrimme poistamaan ne säännöllisesti sen jälkeen. Jos haluat viestiesi poistettavan aiemmin, pyydä sitä samalla lomakkeella. Asuinpaikastasi riippuen (esimerkiksi Yhdistyneen kuningaskunnan tietosuojalainsäädännön nojalla) sinulla voi olla oikeus pyytää pääsyä kanssamme käymääsi viestintään, sen oikaisemista tai poistamista sekä oikeus tehdä valitus Yhdistyneen kuningaskunnan tietosuojaviranomaiselle, [[ico]]Information Commissioner's Officelle (ICO)[[/ico]]. Doughnut Forgea ei ole tarkoitettu alle 13-vuotiaille lapsille. Jos uskot, että lapsi on lähettänyt meille henkilötietoja yhteydenottolomakkeella, ilmoita siitä meille, niin poistamme tiedot. Tätä sivua ylläpidetään GitHub Pages -palvelussa. Emme lisää sivulle seurantaa tai analytiikkaa, mutta GitHub voi tallentaa vierailusi aikana teknisiä tietoja, kuten IP-osoitteesi, tietoturvan ja palvelun toiminnan vuoksi; katso [[ghp]]GitHubin tietosuojaseloste[[/ghp]]. Emme reagoi Do Not Track (DNT) -signaaleihin, koska emme seuraa sinua.",
+    "publisherInfo": "Julkaisija: Darren Corbett."
+  }
+}

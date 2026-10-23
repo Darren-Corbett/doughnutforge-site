@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "Política de privacidad",
+    "effectiveDate": "Fecha de entrada en vigor: octubre de 2026",
+    "hero": "<strong>Doughnut Forge se basa en una arquitectura local de conocimiento cero (zero-knowledge).</strong> Esto significa que no recopilamos, transmitimos, almacenamos ni accedemos a sus datos, salvo la información que nos envíe directamente (véase la sección 3).",
+    "sec1Title": "1. Almacenamiento y eliminación de datos",
+    "sec1Desc": "Todas las claves criptográficas, las identidades <code class=\"k1\">.vltc2</code> y los archivos <code class=\"k2\">.vlt2</code> generados por Doughnut Forge se almacenan exclusivamente en su dispositivo. Ninguna información sale de su dispositivo salvo que usted exporte y comparta un archivo por su cuenta. Desinstalar la aplicación elimina el software, pero no los archivos guardados en otra ubicación de su dispositivo ni las claves almacenadas en el gestor de credenciales del sistema (como el Llavero de macOS o el Administrador de credenciales de Windows). Puede eliminarlos manualmente.",
+    "sec2Title": "2. Analítica y telemetría",
+    "sec2Desc": "Doughnut Forge no contiene scripts de seguimiento, motores de analítica ni informes de fallos. Si descarga la aplicación desde la App Store de Apple o Microsoft Store, Apple o Microsoft pueden proporcionarnos estadísticas agregadas, como el número de descargas y las estadísticas de fallos. Estos informes no contienen información de identificación personal. Puede controlar el uso de los datos de diagnóstico en los ajustes de su dispositivo.",
+    "sec3Title": "3. Soporte y contacto",
+    "sec3Desc": "Para preguntas o para informar de un problema técnico, abra un ticket en nuestro [[gh]]GitHub Issues[[/gh]]. GitHub es una plataforma pública regida por su propia política de privacidad, así que nunca incluya datos sensibles o descifrados en los informes. Para consultas de privacidad, use nuestro [[tally]]formulario de contacto[[/tally]]. La información que envíe a través de ese formulario es tratada por Tally (tally.so), que usamos para recibir su mensaje, y solo se utiliza para responder a su consulta.",
+    "sec4Title": "4. Cambios en esta política",
+    "sec4Desc": "Podemos actualizar esta política ocasionalmente. Los cambios se publicarán en esta página con una fecha de entrada en vigor actualizada.",
+    "sec5Title": "5. Sus derechos y avisos legales",
+    "sec5Desc": "En el caso de las consultas enviadas mediante nuestro formulario de contacto, tratamos su información sobre la base de nuestro interés legítimo en prestar asistencia. Conservamos los mensajes solo durante el tiempo razonablemente necesario para atender su consulta y procuramos eliminarlos periódicamente después. Si desea que sus mensajes se eliminen antes, solo tiene que pedírnoslo a través del mismo formulario. Según su lugar de residencia (por ejemplo, en virtud de la legislación de protección de datos del Reino Unido), puede tener derecho a solicitar el acceso, la rectificación o la supresión de sus comunicaciones con nosotros, así como a presentar una reclamación ante la autoridad británica de protección de datos, la [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge no está dirigido a menores de 13 años. Si cree que un menor nos ha enviado información personal a través de nuestro formulario de contacto, avísenos y la eliminaremos. Esta página está alojada en GitHub Pages. No le añadimos ningún sistema de seguimiento ni de analítica, pero GitHub puede registrar información técnica, como su dirección IP, cuando la visita, por motivos de seguridad y para el funcionamiento del servicio; consulte la [[ghp]]declaración de privacidad de GitHub[[/ghp]]. No respondemos a las señales Do Not Track (DNT) porque no le rastreamos.",
+    "publisherInfo": "Publicado por Darren Corbett."
+  }
+}

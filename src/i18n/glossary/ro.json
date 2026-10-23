@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ro/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "Fișier securizat"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "Dosar securizat"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "Text securizat"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "Identitate"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "Contacte"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "Frază de Recuperare"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "Restaurează identitatea"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "Exportă PDF backup"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "Parolă"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "Criptare fișier"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "Decriptare fișier"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "Criptarea unui fișier"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "Distribuie Cartea de Contact"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "Importă Card de Contact"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "Partajează-ți cardul de contact, ca alte persoane să-ți poată trimite fișiere și note pe care doar tu le poți deschide."
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "Cardul tău de contact poate fi partajat în siguranță. Nu poate fi folosit pentru a deschide nimic din ce ți se trimite."
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Doughnut Forge funcționează în întregime pe dispozitivul tău. Parola și cheile tale nu sunt niciodată stocate pe un server și nu sunt trimise prin rețea."
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "Cheile tale sunt complet private și nu pot fi recuperate dacă le pierzi. Trebuie să păstrezi fraza de recuperare într-un loc sigur, deoarece este singura modalitate de a-ți restabili accesul."
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "Setează o parolă ușor de memorat pentru acest dispozitiv. Aceasta deblochează aplicația, permițându-ți să criptezi și să decriptezi datele local, în deplină siguranță."
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "Creează o nouă identitate cu o frază de recuperare din 24 de cuvinte generată în siguranță."
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "Restaurează o identitate existentă folosind fraza de recuperare din 24 de cuvinte."
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "Se deschide doar dacă ți-a fost trimis ție și arată de la cine provine."
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "Limbă"
+    }
+  }
+}

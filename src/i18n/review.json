@@ -1,0 +1,763 @@
+{
+  "en": {
+    "status": "reviewed",
+    "reviewedBy": "source language",
+    "findings": []
+  },
+  "fr": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "press.download",
+        "severity": "note",
+        "issue": "'Fichier' was added only to avoid a string identical to English. A French site would just as naturally write 'PNG, 1024 × 1024'; both are correct. If the owner prefers the English-identical form, list it in same-as-english.json.",
+        "backTranslation": "PNG file, {width} × {height}",
+        "suggestion": "PNG, {width} × {height}"
+      },
+      {
+        "key": "legal.company.contact",
+        "severity": "note",
+        "issue": "'Coordonnées' is natural and common on French 'Mentions légales' pages; 'Contact' (identical to English) would be equally native. No change needed.",
+        "backTranslation": "Contact details",
+        "suggestion": "No change."
+      },
+      {
+        "key": "nav.support",
+        "severity": "note",
+        "issue": "'Aide' is natural and short (nav totals 30 characters, fits). The footer column heading footer.help is also 'Aide', so the footer shows 'Aide' as heading over a link also called 'Aide'. Acceptable; 'Assistance' (10 chars, nav total 36) would distinguish them but risks the 360px row.",
+        "backTranslation": "Help",
+        "suggestion": "No change."
+      },
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "Kept as a note (the coordinator is handling it site-wide): {place} is filled in English from src/data/company.ts ('England and Wales'). With 'Immatriculée en' (footer.registered, the label on the legal page) a reader expects the local name, e.g. 'Angleterre et pays de Galles'. Needs per-language place names in the company data, not a change to this string.",
+        "backTranslation": "Company registered: {place}. Registration number: {number}.",
+        "suggestion": "No change to this string; localise {place} in the company data."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Resolved (now about 174 characters, all facts kept). The three edited strings (meta.home.description, meta.features.title, footer.companyLine) write the no-break space as the JavaScript escape \\u00a0 instead of the raw U+00A0 character used in the rest of the file (36 raw). It renders correctly (U+00A0, not literal '&nbsp;'), but any tool that reads fr.ts as plain text (review sheet, glossary report) will show '\\u00a0'. For consistency, replace the escape with the raw character.",
+        "backTranslation": "Encrypt files, folders and texts on your computer and share them with people you trust. Without account, server or subscription: a single purchase per platform.",
+        "suggestion": "Chiffrez fichiers, dossiers et textes sur votre ordinateur et partagez-les avec des personnes de confiance. Sans compte, serveur ni abonnement : un achat unique par plateforme."
+      }
+    ]
+  },
+  "de": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.registeredOffice",
+        "severity": "note",
+        "issue": "\"Eingetragener Sitz\" is correct and is the wording used for a UK registered office in EU German texts; footer.registered \"Eingetragen in\" also reads correctly.",
+        "backTranslation": "Registered seat",
+        "suggestion": "Eingetragener Sitz"
+      },
+      {
+        "key": "nav.download",
+        "severity": "note",
+        "issue": "Same-as-English keys checked: \"Download\", \"Support\", \"Name\", \"Website\", \"Screenshots\", and the slot-only press.shots.label and press.download are what German websites normally use. No change needed.",
+        "backTranslation": "Download",
+        "suggestion": "Download"
+      },
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} is filled from src/data/company.ts with the English \"England and Wales\", so the line reads in two languages. The owner is handling this as a site-wide data question; the label itself is correct. Local name would be \"England und Wales\".",
+        "backTranslation": "Registered in England and Wales. ...",
+        "suggestion": "(data change in src/data/company.ts, not in this file)"
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "63 characters, slightly over the ~60 guide; accepted by the owner to keep \"folders\".",
+        "backTranslation": "Doughnut Forge: encrypt files, folders and texts offline",
+        "suggestion": "Doughnut Forge: Dateien, Ordner und Texte offline verschlüsseln"
+      }
+    ]
+  },
+  "es": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "Drops \"carpetas\" (folders) to keep the length near 60 characters. The title stays true; no change needed.",
+        "backTranslation": "Functions: encrypt files and text offline | Doughnut Forge",
+        "suggestion": "Funciones: cifra archivos y texto sin conexión | Doughnut Forge"
+      }
+    ]
+  },
+  "it": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "nav.download",
+        "severity": "note",
+        "issue": "'Scarica' was chosen to avoid 'Download'. Both are native: many Italian sites put 'Download' in the menu, and 'Scarica' is equally natural and matches the button and page title. No change needed; 'Download' would also be fine (same-as-english.json).",
+        "backTranslation": "Download (imperative)",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.download",
+        "severity": "note",
+        "issue": "'File' was added only to avoid identity with English. 'PNG, {width} × {height}' is what an Italian site would write; either is correct.",
+        "backTranslation": "PNG file, {width} × {height}",
+        "suggestion": "PNG, {width} × {height}"
+      },
+      {
+        "key": "legal.company.contact",
+        "severity": "note",
+        "issue": "'Contatti' is the natural Italian label; no change.",
+        "backTranslation": "Contacts",
+        "suggestion": "No change."
+      },
+      {
+        "key": "button.getApp",
+        "severity": "note",
+        "issue": "'Get' is rendered as 'Scarica' (Download), also in home.cta.primary. Natural for Italian app sites and the store badges say 'Scarica', so fine; 'Ottieni Doughnut Forge' (Apple's word for Get) is the literal alternative.",
+        "backTranslation": "Download Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "support.ask.warning",
+        "severity": "note",
+        "issue": "'file del vault' follows app errors.json ('File del vault corrotto'), but the app itself also calls the vault 'cassaforte' (secure-directory: 'Seleziona la cassaforte'). The draft is consistent within itself; the app's inconsistency is worth knowing.",
+        "backTranslation": "Never attach vault files, identity files, your backup phrase (recovery words), passwords or passphrases, nor screenshots that show (subj.) them.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "Kept as a note (the coordinator is handling it site-wide): {place} is filled in English from src/data/company.ts ('England and Wales'). With 'Registrata in {place}' a reader expects the local name, e.g. 'Inghilterra e Galles'. Needs per-language place names in the company data, not a change to this string.",
+        "backTranslation": "Registered (fem.) in {place}. Registration number {number}.",
+        "suggestion": "No change to this string; localise {place} in the company data."
+      }
+    ]
+  },
+  "nl": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.registeredOffice",
+        "severity": "note",
+        "issue": "\"Statutaire zetel\" and \"Ingeschreven in\" are the correct Dutch legal terms. {place} is filled with the English \"England and Wales\" (\"Engeland en Wales\" in Dutch); the owner is handling this as a site-wide data question.",
+        "backTranslation": "Statutory seat",
+        "suggestion": "Statutaire zetel"
+      },
+      {
+        "key": "support.ask.new",
+        "severity": "note",
+        "issue": "\"issue\" takes either de or het in Dutch; \"Nieuwe issue\" is fine. Kept in English as GitHub's own term, which Dutch users know.",
+        "backTranslation": "Open new issue",
+        "suggestion": "Nieuwe issue openen"
+      },
+      {
+        "key": "footer.product",
+        "severity": "note",
+        "issue": "Same-as-English keys checked: \"Product\", \"Privacy\", \"Website\" are the normal Dutch words, and the slot-only press.shots.label and press.download need nothing. No change needed.",
+        "backTranslation": "Product",
+        "suggestion": "Product"
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "63 characters, slightly over the ~60 guide; accepted by the owner to keep \"folders\".",
+        "backTranslation": "Doughnut Forge: encrypt files, folders and text offline",
+        "suggestion": "Doughnut Forge: bestanden, mappen en tekst offline versleutelen"
+      }
+    ]
+  },
+  "sv": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} comes from src/data/company.ts as an English placeholder, so the line will read \"Registrerat i England and Wales\" unless the place is localised (\"England och Wales\"). Handled separately as a site-wide data question.",
+        "backTranslation": "Registered in {place}. Registration number {number}.",
+        "suggestion": "Registrerat i {place}. Registreringsnummer {number}."
+      }
+    ]
+  },
+  "da": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "press.facts.website",
+        "severity": "note",
+        "issue": "\"Websted\" (also in faq.data.*) is correct but formal/Microsoft style; \"hjemmeside\" is the everyday word. Either is acceptable.",
+        "backTranslation": "Website",
+        "suggestion": "Hjemmeside"
+      },
+      {
+        "key": "nav.download",
+        "severity": "note",
+        "issue": "Same-as-English keys checked: \"Download\" is the app's own word (filemanager:download) and standard on Danish sites; the slot-only press.shots.label and press.download need nothing. footer.registered \"Registreret i\" reads correctly.",
+        "backTranslation": "Download",
+        "suggestion": "Download"
+      },
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} is filled from src/data/company.ts with the English \"England and Wales\", so the line reads in two languages. The owner is handling this as a site-wide data question; the label itself is correct. Local name would be \"England og Wales\".",
+        "backTranslation": "Registered in England and Wales. ...",
+        "suggestion": "(data change in src/data/company.ts, not in this file)"
+      }
+    ]
+  },
+  "fi": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "Slot check after fixes: \"Tulossa pian: {platforms}.\", faq.which.a \"... seuraaville alustoille: {available}. Tulossa pian: {coming}.\", pricing.oneTime \"Kertaostos {store} -kaupasta\" and legal.privacy.text \"{link} kertoo, miten ...\" all read naturally with uninflected slot values. No change.",
+        "backTranslation": "Coming soon: {platforms}.",
+        "suggestion": "Tulossa pian: {platforms}."
+      },
+      {
+        "key": "faq.quantum.q",
+        "severity": "note",
+        "issue": "\"post-quantum\" is rendered as \"kvanttikestävä\" (quantum-resistant), the store listing's term. Meaning holds and both hedges are kept. Fine.",
+        "backTranslation": "What does quantum-resistant encryption mean?",
+        "suggestion": "Mitä kvanttikestävä salaus tarkoittaa?"
+      },
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "\"Rekisteröity: {place}.\" works with an uninflected place, which is right while {place} is an English placeholder from src/data/company.ts. If the place is later localised, \"Rekisteröity Englannissa ja Walesissa\" would need the inessive. Handled separately as a site-wide data question.",
+        "backTranslation": "Registered: {place}. Register number {number}.",
+        "suggestion": "Rekisteröity: {place}. Rekisterinumero {number}."
+      }
+    ]
+  },
+  "no": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "nav.support",
+        "severity": "note",
+        "issue": "Kept as \"Hjelp\" with footer.help \"Hjelp og info\": both natural, nav row 29 characters, and consistent with pricing.questionsLink \"hjelpesiden\" and meta.support.title \"Hjelp og vanlige spørsmål\". No change needed.",
+        "backTranslation": "Help",
+        "suggestion": "Hjelp"
+      },
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} comes from src/data/company.ts as an English placeholder, so the line will read \"Registrert i England and Wales\" unless the place is localised (\"England og Wales\"). Handled separately as a site-wide data question.",
+        "backTranslation": "Registered in {place}. Registration number {number}.",
+        "suggestion": "Registrert i {place}. Registreringsnummer {number}."
+      }
+    ]
+  },
+  "pl": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} comes from src/data/company.ts in English, so the line will show 'England and Wales' untranslated. Site-wide data question, handled separately (Anglia i Walia).",
+        "backTranslation": "Place of registration: {place}. Company number: {number}.",
+        "suggestion": "Miejsce rejestracji: {place}. Numer spółki: {number}."
+      }
+    ]
+  },
+  "cs": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} comes from src/data/company.ts in English, so the line will show 'England and Wales' untranslated. Site-wide data question, handled separately (Anglie a Wales).",
+        "backTranslation": "Place of registration: {place}. Company number: {number}.",
+        "suggestion": "Místo registrace: {place}. Číslo společnosti: {number}."
+      }
+    ]
+  },
+  "hu": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "faq.quantum.a",
+        "severity": "note",
+        "issue": "Uses 'posztkvantum' as the app does; the store listing writes 'Poszt-kvantum'. The app's form is the better spelling; the store listing could be aligned. No change needed.",
+        "backTranslation": "... Post-quantum encryption was designed to resist them. ...",
+        "suggestion": "A jövőben a nagy teljesítményű kvantumszámítógépek talán képesek lesznek feltörni a ma széles körben használt titkosítás egy részét. A posztkvantum titkosítást arra tervezték, hogy ellenálljon nekik. A Doughnut Forge ezt használja, így amit ma védesz, az akkor is védett marad, amikor a számítógépek erősebbek lesznek."
+      },
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} comes from src/data/company.ts in English, so the line will show 'England and Wales' untranslated. Site-wide data question, handled separately (Anglia és Wales).",
+        "backTranslation": "Place of registration: {place}. Company registration number: {number}.",
+        "suggestion": "Bejegyzés helye: {place}. Cégjegyzékszám: {number}."
+      }
+    ]
+  },
+  "ro": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "press.download",
+        "severity": "note",
+        "issue": "'Fișier' was added only to avoid identity with English. 'PNG, {width} × {height}' is what a Romanian site would write; both are correct.",
+        "backTranslation": "PNG file, {width} × {height}",
+        "suggestion": "PNG, {width} × {height}"
+      },
+      {
+        "key": "legal.company.contact",
+        "severity": "note",
+        "issue": "'Date de contact' is the natural Romanian label (better than bare 'Contact' here); no change.",
+        "backTranslation": "Contact details",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.share.a",
+        "severity": "note",
+        "issue": "The draft uses 'partajează' consistently. The app itself mixes 'Partajează' (mobile-views, share-identity) and 'Distribuie Cartea de Contact' (help:identityContactsGuide.step1.title), and 'Card' vs 'Cartea' de contact; the draft follows the more common app wording ('card de contact', mobile-views:identity.intro).",
+        "backTranslation": "Ask the other person for their contact card (a .vltc2 file) and add it to Contacts. ...",
+        "suggestion": "No change."
+      },
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "Kept as a note (the coordinator is handling it site-wide): {place} is filled in English from src/data/company.ts ('England and Wales'). With 'Înregistrată în {place}' a reader expects the local name, e.g. 'Anglia și Țara Galilor'. Needs per-language place names in the company data, not a change to this string.",
+        "backTranslation": "Registered (fem.) in {place}. Registration number {number}.",
+        "suggestion": "No change to this string; localise {place} in the company data."
+      }
+    ]
+  },
+  "ru": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "Wording is fine and now matches footer.companyNumber. {place} comes from src/data/company.ts and is English (\"England and Wales\"), so English shows on this page until a per-language value («Англия и Уэльс») exists; the coordinator is handling this site-wide.",
+        "backTranslation": "Place of registration: {place}. Registration number: {number}.",
+        "suggestion": "Место регистрации: {place}. Регистрационный номер: {number}."
+      }
+    ]
+  },
+  "el": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "Wording is fine and now matches footer.companyNumber. {place} comes from src/data/company.ts and is English (\"England and Wales\"), so English shows on this page until a per-language value («Αγγλία και Ουαλία») exists; the coordinator is handling this site-wide.",
+        "backTranslation": "Place of registration: {place}. Registry number: {number}.",
+        "suggestion": "Τόπος καταχώρισης: {place}. Αριθμός μητρώου: {number}."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "175 characters, over the ~155 target, kept long on purpose so \"on your computer\" and the per-platform purchase both stay. Acceptable; search results may cut \"ανά πλατφόρμα\".",
+        "backTranslation": "Encrypt files, folders and text on your computer and share them with those you trust. Without an account, servers or subscription: a one-time purchase per platform.",
+        "suggestion": "Κρυπτογραφήστε αρχεία, φακέλους και κείμενο στον υπολογιστή σας και μοιραστείτε τα με όσους εμπιστεύεστε. Χωρίς λογαριασμό, διακομιστές ή συνδρομή: εφάπαξ αγορά ανά πλατφόρμα."
+      },
+      {
+        "key": "meta.features.description",
+        "severity": "note",
+        "issue": "162 characters, slightly over the ~155 target; every fact is kept. Acceptable.",
+        "backTranslation": "Encrypt files, folders and text on the computer, share them with those you trust and protect them for years. Without an account and servers.",
+        "suggestion": "Κρυπτογραφήστε αρχεία, φακέλους και κείμενο στον υπολογιστή, μοιραστείτε τα με όσους εμπιστεύεστε και προστατέψτε τα για χρόνια. Χωρίς λογαριασμό και διακομιστές."
+      }
+    ]
+  },
+  "uk": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "Wording is fine and now matches footer.companyNumber. {place} comes from src/data/company.ts and is English (\"England and Wales\"), so English shows on this page until a per-language value («Англія та Уельс») exists; the coordinator is handling this site-wide.",
+        "backTranslation": "Place of registration: {place}. Registration number: {number}.",
+        "suggestion": "Місце реєстрації: {place}. Реєстраційний номер: {number}."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "167 characters, a little over the ~155 target, kept long on purpose so no fact is dropped. Acceptable; search results may cut the last few words (\"для кожної платформи\").",
+        "backTranslation": "Encrypt files, folders and text on the computer and share them with those you trust. Without a user account, servers and subscription: a one-time purchase for each platform.",
+        "suggestion": "Шифруйте файли, папки й текст на комп’ютері та діліться ними з тими, кому довіряєте. Без облікового запису, серверів і передплати: разова покупка для кожної платформи."
+      }
+    ]
+  },
+  "en-US": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "\"Registered in {place}. Company number {number}.\" and footer.registeredOffice / footer.officeLine use UK company-law terms. These are legally required for a UK Ltd and should stay as they are for US readers too.",
+        "backTranslation": "Registered in {place}. Company number {number}.",
+        "suggestion": "Registered in {place}. Company number {number}."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Lists throughout omit the serial (Oxford) comma (\"files, folders and text\", \"Mac, iPhone and iPad\"). Many US style guides use it, but AP style does not, and the site's own en-US store listing (src/i18n/store/en-US.json) also omits it, so this is consistent and needs no change. The Apple trademark line in legal.trademarks.apple matches the wording given; Apple's own US notice uses the serial comma, if the owner wants to match it exactly.",
+        "backTranslation": "Doughnut Forge: offline encryption for files, folders and text",
+        "suggestion": "Doughnut Forge: offline encryption for files, folders and text"
+      }
+    ]
+  },
+  "es-MX": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.registeredOffice",
+        "severity": "note",
+        "issue": "\"Domicilio social\" is the Spain term; it is understood in Mexico and is a valid legal label, so the drafter kept it. Owner's choice; \"Domicilio registrado\" is the alternative. Same in footer.officeLine.",
+        "backTranslation": "Registered office",
+        "suggestion": "Domicilio registrado"
+      }
+    ]
+  },
+  "pt-BR": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "support.ask.new",
+        "severity": "note",
+        "issue": "\"issue\" kept in English (feminine \"a issue\"). This is what Brazilian GitHub users say and matches the GitHub UI, which is in English; fine.",
+        "backTranslation": "Open a new issue",
+        "suggestion": "Abrir uma nova issue"
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "Drops \"pastas e textos\" (folders and text) to fit ~60 characters; still true.",
+        "backTranslation": "Features: offline encryption of files | Doughnut Forge",
+        "suggestion": "Recursos: criptografia offline de arquivos | Doughnut Forge"
+      }
+    ]
+  },
+  "tr": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "support.ask.new",
+        "severity": "note",
+        "issue": "GitHub issues are rendered as \"konu\" (topic). GitHub has no Turkish interface, so the button on GitHub will say \"New issue\"; support.ask.text glosses \"(issues)\" once, which bridges this. No change needed.",
+        "backTranslation": "Open a new topic",
+        "suggestion": "Yeni konu açın"
+      },
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} is filled from src/data/company.ts (registeredIn), which is English only, so the Turkish footer will read \"Kayıt yeri: England and Wales.\" Consider a per-language place name (\"İngiltere ve Galler\") in the data file. The Turkish string itself is fine.",
+        "backTranslation": "Place of registration: {place}. Company number: {number}.",
+        "suggestion": "Kayıt yeri: {place}. Şirket numarası: {number}."
+      }
+    ]
+  },
+  "ja": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "faq.quantum.q",
+        "severity": "note",
+        "issue": "English says post-quantum; the draft uses 耐量子暗号 (the store listing's word, feature 「長く使える安心」) and gives ポスト量子暗号 in brackets in faq.quantum.a. Consistent with the store and good for search; no change needed.",
+        "backTranslation": "What is quantum-resistant encryption?",
+        "suggestion": "耐量子暗号とは何ですか？"
+      },
+      {
+        "key": "faq.storage.q",
+        "severity": "note",
+        "issue": "The draft uses キー (from mobile-guides:setup.core, reused verbatim in faq.storage.a); the store listing and help:setupGuide.step3.description use 鍵. The app is inconsistent; the draft is consistent within itself (faq.storage.q/a, meta.privacy.description). No change needed.",
+        "backTranslation": "Where are files and keys kept?",
+        "suggestion": "ファイルとキーはどこに保管されますか？"
+      },
+      {
+        "key": "support.ask.warning",
+        "severity": "note",
+        "issue": "All five items present. 保管庫ファイル matches the app's word for encrypted files (errors: 「破損した保管庫ファイル」); リカバリーフレーズ matches the app's error strings for recovery words; パスフレーズ is not in the app but is the usual word. Correct.",
+        "backTranslation": "Never attach vault files, identity files, the backup phrase (recovery phrase), passwords or passphrases, or screenshots that show them.",
+        "suggestion": "保管庫ファイル、アイデンティティファイル、バックアップフレーズ（リカバリーフレーズ）、パスワードやパスフレーズ、またそれらが写ったスクリーンショットは、絶対に添付しないでください。"
+      }
+    ]
+  },
+  "zh-CN": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "support.ask.new",
+        "severity": "note",
+        "issue": "'issue' left in English here and in support.ask.text/support.ask.search. This is normal for mainland GitHub users and matches GitHub's UI, so it is acceptable.",
+        "backTranslation": "Create new issue",
+        "suggestion": "创建新 issue"
+      },
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} is filled from src/data/company.ts in English ('England and Wales'), so the Chinese line will show English. Consider a per-language value (英格兰和威尔士).",
+        "backTranslation": "Place of registration: {place}. Company number: {number}.",
+        "suggestion": "注册地：{place}。公司编号：{number}。"
+      },
+      {
+        "key": "faq.quantum.a",
+        "severity": "note",
+        "issue": "Hedges kept (可能会, 设计目标). 后量子加密 follows the app (secure-directory kemValue); the store listing says 抗量子加密. Both are correct; the owner may want one term across site and store.",
+        "backTranslation": "...may be able to break... designed to resist...",
+        "suggestion": "（无需修改）"
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Meta descriptions run about 47 to 56 characters, below the 60 to 80 CJK target, because the English is short. Nothing was added, which is correct.",
+        "backTranslation": "(see backTranslations)",
+        "suggestion": "（无需修改）"
+      }
+    ]
+  },
+  "zh-TW": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Mainland vocabulary check: none found. The draft uses Taiwan words throughout (檔案, 資料夾, 文字, 裝置, 帳號, 網路, 影片, 金鑰, 伺服器, 匯出, 支援, 部落格, 隨身碟, 指令碼, 服務標章, 保全密碼). No 信息/文件/网络/视频/默认/屏幕/界面/获取/U 盘-type leftovers. The sentence structure closely mirrors the zh-CN draft, but the wording has been localized, not mechanically converted.",
+        "backTranslation": "(see backTranslations)",
+        "suggestion": "（無需修改）"
+      },
+      {
+        "key": "faq.data.a",
+        "severity": "note",
+        "issue": "The draft says 'App' (like the zh-Hant store listing); the app UI says 應用程式 (24 uses). The draft is consistent, and App is normal on Taiwan websites.",
+        "backTranslation": "The App has no tracking...",
+        "suggestion": "（無需修改）"
+      },
+      {
+        "key": "support.ask.new",
+        "severity": "note",
+        "issue": "'issue' left in English here and in support.ask.text/support.ask.search, as GitHub shows it. This is acceptable.",
+        "backTranslation": "Create a new issue",
+        "suggestion": "建立新的 issue"
+      },
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} is filled from src/data/company.ts in English ('England and Wales'). Consider a per-language value (英格蘭和威爾斯).",
+        "backTranslation": "Place of registration: {place}. Company number: {number}.",
+        "suggestion": "登記地：{place}。公司編號：{number}。"
+      },
+      {
+        "key": "faq.quantum.a",
+        "severity": "note",
+        "issue": "Hedges kept (可能會, 設計目的). 後量子加密 follows the app; the store listing says 抗量子加密. Both are correct; the owner may want one term across site and store.",
+        "backTranslation": "...may be able to break... designed to resist...",
+        "suggestion": "（無需修改）"
+      }
+    ]
+  },
+  "ko": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "press.shots.label",
+        "severity": "note",
+        "issue": "Drafter reworded \"{device}: {screen}\" to avoid identical-to-English text. The reworded form is correct and natural with every filled value (iPhone의 보안 파일 화면, iPhone의 파일 암호화 화면, iPad의 연락처 화면), so keep it; the English form would also be fine but needs a same-as-english.json entry and gains nothing.",
+        "backTranslation": "The {screen} screen of {device}",
+        "suggestion": "{device}의 {screen} 화면"
+      },
+      {
+        "key": "faq.quantum.q",
+        "severity": "note",
+        "issue": "English says post-quantum; the draft uses 양자 내성 암호화 (the store listing's word) with 포스트 양자 암호화 in brackets in faq.quantum.a. Consistent with the store and good for search; hedges (…수 있을지도 모릅니다, 설계되었습니다) are kept.",
+        "backTranslation": "What is quantum-resistant encryption?",
+        "suggestion": "양자 내성 암호화란 무엇인가요?"
+      },
+      {
+        "key": "support.ask.warning",
+        "severity": "note",
+        "issue": "All five items present. 볼트 파일 matches the app's error strings (「손상된 볼트 파일」), 복구 문구 is the app's own word (identity entropyLabel), 암호 문구 is not in the app but is the usual word for passphrase. Correct.",
+        "backTranslation": "Never attach vault files, identity files, the backup phrase (recovery phrase), passwords or passphrases, or screenshots that show them.",
+        "suggestion": "볼트 파일, 신원 파일, 백업 문구(복구 문구), 비밀번호나 암호 문구, 또는 이를 보여 주는 스크린샷은 절대 첨부하지 마세요."
+      }
+    ]
+  },
+  "hi": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} comes from src/data/company.ts in English, so the Hindi footer will read \"England and Wales में पंजीकृत\". Consider a per-language place name (इंग्लैंड और वेल्स). The Hindi string is fine.",
+        "backTranslation": "Registered in {place}. Company number {number}.",
+        "suggestion": "{place} में पंजीकृत। कंपनी नंबर {number}।"
+      }
+    ]
+  },
+  "id": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "support.ask.text",
+        "severity": "note",
+        "issue": "'issue' is kept in English here and in support.ask.new and support.ask.search. This is acceptable because GitHub's interface shows 'Issues' and 'New issue' in English. No change is needed.",
+        "backTranslation": "Support takes place on GitHub publicly, so everyone can find the answers. Issues on GitHub are public in nature: anyone can read what you write. You need a free GitHub account to create an issue.",
+        "suggestion": "Buat issue baru"
+      },
+      {
+        "key": "faq.quantum.q",
+        "severity": "note",
+        "issue": "'pascakuantum' (one word) follows the store listing and standard KBBI spelling. One app label uses 'Pasca-Kuantum' (secure-directory:inspector.kemValue), but that is a technical label, so the store spelling is the better choice for the site. No change is needed.",
+        "backTranslation": "What does post-quantum encryption mean?",
+        "suggestion": "Apa arti enkripsi pascakuantum?"
+      },
+      {
+        "key": "press.shots.label",
+        "severity": "note",
+        "issue": "Adding 'layar' ('iPhone: layar Teks Aman') is natural Indonesian. The plain form '{device}: {screen}' would also be normal on an Indonesian site, so either can be used. The same applies to press.download: 'PNG, 1290 × 2796 piksel' is natural, and the plain form without 'piksel' is also common.",
+        "backTranslation": "{device}: {screen} screen",
+        "suggestion": "{device}: layar {screen}"
+      },
+      {
+        "key": "meta.features.description",
+        "severity": "note",
+        "issue": "Resolved on re-check. 'sendiri' (own) was dropped to stay near the length limit (161 characters), so 'on your own computer' became 'on your computer'. The meaning is unchanged and no change is needed.",
+        "backTranslation": "Encrypt files, folders and text on your computer, share them with trusted people, and keep them protected in the long term. No account, no server.",
+        "suggestion": "Enkripsi file, folder, dan teks di komputer Anda, bagikan kepada orang tepercaya, dan jaga agar tetap terlindungi dalam jangka panjang. Tanpa akun, tanpa server."
+      }
+    ]
+  },
+  "ms": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "nav.features",
+        "severity": "note",
+        "issue": "The drafter kept 'Ciri'. It is correct and short. 'Ciri-ciri' would also fit (hyphenated words do not break on this site), but no change is needed.",
+        "backTranslation": "Feature(s)",
+        "suggestion": "Ciri"
+      },
+      {
+        "key": "faq.quantum.q",
+        "severity": "note",
+        "issue": "'pasca-kuantum' matches the app (secure-directory:inspector.kemValue 'Hibrid Pasca-Kuantum') and the store listing. The DBP form 'pascakuantum' would differ from the app, so keep the hyphen.",
+        "backTranslation": "What does post-quantum encryption mean?",
+        "suggestion": "Apakah maksud penyulitan pasca-kuantum?"
+      },
+      {
+        "key": "press.shots.label",
+        "severity": "note",
+        "issue": "'iPhone: skrin Teks Selamat' is natural Malay. The plain form '{device}: {screen}' would also be normal on a Malaysian site, so either can be used. The same applies to press.download: 'piksel' is natural but optional.",
+        "backTranslation": "{device}: {screen} screen",
+        "suggestion": "{device}: skrin {screen}"
+      },
+      {
+        "key": "nav.label",
+        "severity": "note",
+        "issue": "Indonesian check: no Indonesian vocabulary found. The draft consistently uses Malaysian forms (fail, peranti, pelayan, muat turun, kata laluan, tangkapan skrin, laman web, percuma, baharu, tiada, kenalan, awam, pemacu USB).",
+        "backTranslation": "Main",
+        "suggestion": "Utama"
+      }
+    ]
+  },
+  "th": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "footer.companyLine",
+        "severity": "note",
+        "issue": "{place} comes from src/data/company.ts in English, so the Thai footer will show \"England and Wales\" in Latin script. Consider a per-language place name (อังกฤษและเวลส์). The Thai string itself is fine.",
+        "backTranslation": "Registered in {place} Company registration number {number}",
+        "suggestion": "จดทะเบียนใน {place} เลขทะเบียนบริษัท {number}"
+      }
+    ]
+  },
+  "vi": {
+    "status": "draft",
+    "reviewedBy": "subagent (independent of the drafter)",
+    "reviewedAt": "2026-10-23",
+    "findings": [
+      {
+        "key": "features.ios.altContacts",
+        "severity": "note",
+        "issue": "The app is inconsistent: the tab is 'Liên hệ' (app:navigation.tabs.contacts, the glossary term), but the iPhone Contacts screen title is 'Danh bạ' (mobile-views:contacts.title, contacts:titlePrefix), and the store listing says 'danh bạ'. The draft uses 'Liên hệ' consistently, which follows the glossary, but the iPhone screenshot this alt text describes may show 'Danh bạ'. Fix the app first, or use 'Danh bạ' here.",
+        "backTranslation": "Doughnut Forge on iPhone: the Contacts screen with three trusted contacts",
+        "suggestion": "Doughnut Forge trên iPhone: màn hình Danh bạ với ba người liên hệ tin cậy"
+      },
+      {
+        "key": "support.ask.text",
+        "severity": "note",
+        "issue": "'issue' is kept in English here and in support.ask.new and support.ask.search. This is acceptable because GitHub's interface is English and Vietnamese developers say 'issue'. No change is needed.",
+        "backTranslation": "Support happens publicly on GitHub, so everyone can find the answers. Issues on GitHub are public: anyone can read what you write. You need a free GitHub account to create an issue.",
+        "suggestion": "Tạo issue mới"
+      },
+      {
+        "key": "press.shots.label",
+        "severity": "note",
+        "issue": "'iPhone: màn hình Văn bản bảo mật' is natural Vietnamese. The plain form '{device}: {screen}' would also be normal on a Vietnamese site, so either can be used. The same applies to 'pixel' in press.download.",
+        "backTranslation": "{device}: {screen} screen",
+        "suggestion": "{device}: màn hình {screen}"
+      },
+      {
+        "key": "meta.press.title",
+        "severity": "note",
+        "issue": "It now uses 'thông tin', consistent with press.lead and press.facts.title. At 70 characters it is above the ~60 target and Google may truncate the end; acceptable as it is.",
+        "backTranslation": "Press materials: icons, screenshots, information | Doughnut Forge",
+        "suggestion": "Tài liệu báo chí: biểu tượng, ảnh màn hình, thông tin | Doughnut Forge"
+      }
+    ]
+  }
+}

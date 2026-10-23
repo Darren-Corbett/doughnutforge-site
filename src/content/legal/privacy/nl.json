@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "Privacybeleid",
+    "effectiveDate": "Ingangsdatum: oktober 2026",
+    "hero": "<strong>Doughnut Forge is gebouwd op een lokale zero-knowledge-architectuur.</strong> Dit betekent dat wij uw gegevens niet verzamelen, verzenden, opslaan of anderszins benaderen, behalve de informatie die u rechtstreeks aan ons verstrekt (zie sectie 3).",
+    "sec1Title": "1. Gegevensopslag en verwijdering",
+    "sec1Desc": "Alle cryptografische sleutels, <code class=\"k1\">.vltc2</code>-identiteiten en <code class=\"k2\">.vlt2</code>-bestanden die door Doughnut Forge worden gegenereerd, worden uitsluitend op uw apparaat opgeslagen. Er verlaat nooit informatie uw apparaat, tenzij u zelf een bestand exporteert en deelt. Het verwijderen van de app verwijdert de software, maar niet de bestanden die u elders op uw apparaat hebt opgeslagen, of de sleutels die in de referentiebeheerder van uw systeem staan (zoals de macOS-sleutelhanger of Referentiebeheer van Windows). U kunt deze handmatig verwijderen.",
+    "sec2Title": "2. Analyse en telemetrie",
+    "sec2Desc": "Doughnut Forge bevat geen trackingscripts, analysemodules of crashrapporteurs. Als u de app downloadt via de Apple App Store of de Microsoft Store, kunnen Apple of Microsoft ons geaggregeerde statistieken verstrekken, zoals aantallen downloads en crashstatistieken. Deze rapporten bevatten geen persoonlijk identificeerbare informatie. U kunt het delen van diagnostische gegevens regelen in de instellingen van uw apparaat.",
+    "sec3Title": "3. Ondersteuning en contact",
+    "sec3Desc": "Voor technische vragen of om een probleem te melden, opent u een ticket in onze [[gh]]GitHub Issues-tracker[[/gh]]. GitHub is een openbaar platform dat wordt beheerd door zijn eigen privacybeleid; voeg daar nooit gevoelige of ontsleutelde gegevens toe. Voor privacygerelateerde vragen gebruikt u ons [[tally]]contactformulier[[/tally]]. Gegevens die u daarin invult, worden door Tally (tally.so) verwerkt, die wij gebruiken om uw bericht te ontvangen, en worden alleen gebruikt om uw vraag te beantwoorden.",
+    "sec4Title": "4. Wijzigingen in dit beleid",
+    "sec4Desc": "Wij kunnen dit beleid van tijd tot tijd bijwerken. Wijzigingen worden op deze pagina gepubliceerd met een bijgewerkte ingangsdatum.",
+    "sec5Title": "5. Uw rechten en juridische informatie",
+    "sec5Desc": "Voor vragen die u via ons contactformulier verstuurt, verwerken wij uw gegevens op basis van ons gerechtvaardigd belang bij het bieden van ondersteuning. Wij bewaren berichten alleen zo lang als redelijkerwijs nodig is om uw vraag af te handelen en streven ernaar ze daarna periodiek te verwijderen. Wilt u dat uw berichten eerder worden verwijderd, laat het ons dan weten via hetzelfde formulier. Afhankelijk van waar u woont (bijvoorbeeld op grond van de Britse wetgeving inzake gegevensbescherming), hebt u mogelijk het recht om inzage in, correctie van of verwijdering van uw communicatie met ons te vragen, en om een klacht in te dienen bij de Britse toezichthouder, het [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge is niet gericht op kinderen jonger dan 13 jaar. Denkt u dat een kind ons via ons contactformulier persoonsgegevens heeft gestuurd, laat het ons dan weten, dan verwijderen wij die. Deze pagina wordt gehost op GitHub Pages. Wij voegen er geen tracking of analyse aan toe, maar GitHub kan bij uw bezoek technische informatie vastleggen, zoals uw IP-adres, voor de beveiliging en werking van de dienst; zie de [[ghp]]privacyverklaring van GitHub[[/ghp]]. Wij reageren niet op Do Not Track-signalen (DNT), omdat wij u niet volgen.",
+    "publisherInfo": "Gepubliceerd door Darren Corbett."
+  }
+}

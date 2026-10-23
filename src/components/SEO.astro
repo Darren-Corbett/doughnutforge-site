@@ -2,6 +2,7 @@
 // Everything a search engine or social preview reads from <head>.
 // Phase 3 passes `alternates` for hreflang; pages never change for it.
 import { site } from "../data/site";
+import { EXTRA_HREFLANG } from "../i18n/alternates";
 
 type Alternate = { hreflang: string; href: string };
 interface Props {
@@ -19,6 +20,11 @@ const { title, description, lang, image = "/og/default.png", alternates = [], js
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const imageUrl = new URL(image, Astro.site).href;
 const ogLocale = lang.replace("-", "_");
+// The other languages this page exists in, for social previews: one per language
+// (not x-default or the plain "en", "es", "pt" that only widen search matching)
+const ogAlternates = alternates
+  .filter((a) => a.hreflang !== lang && a.hreflang !== "x-default" && !Object.values(EXTRA_HREFLANG).includes(a.hreflang))
+  .map((a) => a.hreflang.replace("-", "_"));
 ---
 
 <title>{title}</title>
@@ -44,6 +50,7 @@ const ogLocale = lang.replace("-", "_");
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:locale" content={ogLocale} />
+{ogAlternates.map((l) => <meta property="og:locale:alternate" content={l} />)}
 <meta name="twitter:card" content="summary_large_image" />
 
 {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd).replace(/</g, "\\u003c")} />}

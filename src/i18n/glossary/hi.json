@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/hi/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "सुरक्षित फ़ाइल"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "सुरक्षित निर्देशिका"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "सुरक्षित टेक्स्ट"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "पहचान"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "संपर्क"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "बैकअप वाक्यांश"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "पहचान पुनर्स्थापित करें"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "बैकअप PDF निर्यात करें"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "पासवर्ड"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "फ़ाइल एन्क्रिप्ट करें"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "फ़ाइल डिक्रिप्ट करें"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "एक फ़ाइल को एन्क्रिप्ट करना"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "संपर्क कार्ड साझा करें"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "संपर्क कार्ड आयात करें"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "अपना संपर्क कार्ड साझा करें, ताकि लोग आपको ऐसी फ़ाइलें और नोट्स भेज सकें जिन्हें केवल आप खोल सकते हैं।"
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "आपका संपर्क कार्ड साझा करना सुरक्षित है। इससे आपको भेजी गई कोई भी चीज़ नहीं खोली जा सकती।"
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "डोनट फोर्ज पूरी तरह से आपके डिवाइस पर काम करता है। आपका पासवर्ड और कुंजियाँ कभी भी सर्वर पर संग्रहीत या नेटवर्क पर नहीं भेजी जाती हैं।"
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "आपकी कुंजियाँ पूरी तरह से निजी हैं और खो जाने पर पुनर्प्राप्त नहीं की जा सकतीं। आपको अपना बैकअप वाक्यांश सुरक्षित स्थान पर रखना चाहिए, क्योंकि आपकी पहुँच पुनर्स्थापित करने का यह एकमात्र तरीका है।"
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "इस डिवाइस के लिए एक यादगार पासवर्ड सेट करें। यह एप्लिकेशन को अनलॉक करता है, जिससे आप डेटा को स्थानीय रूप से सुरक्षित रूप से एन्क्रिप्ट और डिक्रिप्ट कर सकते हैं।"
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "सुरक्षित रूप से जनरेट किए गए 24-शब्दों के बैकअप वाक्यांश के साथ एक नई पहचान बनाएं।"
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "अपने 24-शब्दों के बैकअप वाक्यांश का उपयोग करके मौजूदा पहचान पुनर्स्थापित करें।"
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "यह तभी खुलता है जब यह आपको भेजा गया हो, और दिखाता है कि यह किसने भेजा है।"
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "भाषा"
+    }
+  }
+}

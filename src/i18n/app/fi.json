@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/fi/*.json",
+  "app:navigation.tabs.vault": "Turvallinen hakemisto",
+  "app:navigation.tabs.mobile-vault": "Turvallinen tiedosto",
+  "app:navigation.tabs.text-vault": "Turvallinen teksti",
+  "app:navigation.tabs.identity": "Henkilöllisyys",
+  "app:navigation.tabs.contacts": "Yhteystiedot",
+  "app:navigation.language": "Kieli",
+  "app:languageModal.regions.europe": "Eurooppa",
+  "app:languageModal.regions.americas": "Amerikka",
+  "app:languageModal.regions.middleEastAfrica": "Lähi-itä ja Afrikka",
+  "app:languageModal.regions.asiaPacific": "Aasia ja Tyynenmeren alue",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Tiedoston salaus",
+  "help:secureDirectoryGuide.step1.description": "Lisää paikallisia kansioita työtilaasi tiedostojen selaamista ja hallintaa varten. Doughnut Forge toimii täysin paikallisesti, mikä tarkoittaa, että alkuperäiset tiedostosi eivät koskaan poistu laitteeltasi.",
+  "help:setupGuide.step2.description": "Digitaalinen identiteettisi toimii henkilökohtaisina avaiminasi, jotka tallennetaan turvallisesti sovellukseen. Doughnut Forge käyttää näitä avaimia tiedostojesi suojaamiseen ja luotettujen yhteystietojesi vahvistamiseen.",
+  "help:setupGuide.step3.description": "Avaimet ovat täysin yksityisiä, eikä niitä voi palauttaa, jos ne katoavat. Sinun on säilytettävä palautuslause turvallisessa paikassa, sillä se on ainoa tapa palauttaa käyttöoikeutesi.",
+  "help:identityContactsGuide.step1.description": "Vie identiteettisi turvallisena yhteystietokorttina (.vltc2). Jaa tämä tiedosto, jotta muut voivat turvallisesti vahvistaa henkilöllisyytesi ja lisätä sinut luotettuun verkkoonsa.",
+  "help:identityContactsGuide.step3.description": "Hallinnoi luotettua verkkoasi. Vaikka kuka tahansa korttisi omaava voi lähettää sinulle turvallisia tiedostoja, yhteystietojen vahvistaminen täällä antaa sinun valita heidät nopeasti jakamista varten ja vahvistaa heidän todellisen identiteettinsä."
+}

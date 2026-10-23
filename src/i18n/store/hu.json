@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/hu",
+  "mac": {
+    "subtitle": "Titkosítás előfizetés nélkül",
+    "promotionalText": "Nincs előfizetés. Nincs fiók. Nincsenek szerverek. Titkosíts fájlokat, mappákat és szöveget a gépeden, és oszd meg őket biztonságosan. Egy ár, egyszeri fizetés.",
+    "opening": "A privát fájlok maradjanak privátok. A Doughnut Forge lezárja a fájljaidat, mappáidat és szövegeidet a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol. Bárhogyan küldöd is el őket, csak ők nyithatják meg.",
+    "noSubscription": "Nincs előfizetés, nincs fiók, nincsenek szerverek és nincs követés. A Doughnut Forge teljes egészében a számítógépeden működik, internetkapcsolat nélkül is. A kulcsaid és a névjegyeid nálad maradnak, a te irányításod alatt. Egyszer fizetsz, és az alkalmazás a tiéd.",
+    "closing": "A magánszféra ne legyen havi számla.",
+    "features": [
+      {
+        "title": "Fájlok és mappák titkosítása",
+        "text": "Zárj le egyetlen fájlt vagy egy teljes mappát néhány kattintással, biztonságos tárolásra vagy megosztásra készen."
+      },
+      {
+        "title": "Szöveg titkosítása",
+        "text": "Titkosíts egy privát üzenetet a névjegyeidnek, és oszd meg, ahogy szeretnéd."
+      },
+      {
+        "title": "A te identitásod, a te géped",
+        "text": "Hozd létre az identitásodat az alkalmazásban. A névjegykártyádat bárkivel biztonságosan megoszthatod. Ezzel mások privát fájlokat küldhetnek neked."
+      },
+      {
+        "title": "Megosztás megbízható emberekkel",
+        "text": "Titkosíts fájlokat bármelyik névjegyednek. Ők a saját identitásukkal nyitják meg őket. Más erre nem képes."
+      },
+      {
+        "title": "Hosszú távra tervezve",
+        "text": "Poszt-kvantum titkosítást használ, így amit ma védesz, az akkor is védett marad, amikor a számítógépek erősebbek lesznek."
+      },
+      {
+        "title": "A saját nyelveden",
+        "text": "Használd az alkalmazást magyarul, angolul, spanyolul, japánul és sok más nyelven."
+      }
+    ],
+    "parts": {
+      "headline": "A privát fájlok maradjanak privátok.",
+      "homeLead": "A Doughnut Forge lezárja a fájljaidat, mappáidat és szövegeidet a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol.",
+      "lead": "A Doughnut Forge lezárja a fájljaidat, mappáidat és szövegeidet a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol. Bárhogyan küldöd is el őket, csak ők nyithatják meg.",
+      "never": "Nincs előfizetés. Nincs fiók. Nincsenek szerverek.",
+      "short": "Nincs előfizetés. Nincs fiók. Nincsenek szerverek. Titkosíts fájlokat, mappákat és szöveget a gépeden, és oszd meg őket biztonságosan.",
+      "offline": "Nincs előfizetés, nincs fiók, nincsenek szerverek és nincs követés. A Doughnut Forge teljes egészében a számítógépeden működik, internetkapcsolat nélkül is. A kulcsaid és a névjegyeid nálad maradnak, a te irányításod alatt."
+    }
+  },
+  "ios": {
+    "subtitle": "Titkosítás előfizetés nélkül",
+    "promotionalText": "Nincs előfizetés. Nincs fiók. Nincsenek szerverek. Titkosíts fájlokat, fotókat, videókat és szöveget iPhone-on, iPaden, és oszd meg őket biztonságosan. Egyszeri fizetés.",
+    "opening": "A privát fájlok maradjanak privátok. A Doughnut Forge lezárja a fájljaidat, fotóidat, videóidat és szövegeidet az iPhone-odon és iPadeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol. Bárhogyan küldöd is el őket, csak ők nyithatják meg.",
+    "noSubscription": "Nincs előfizetés, nincs fiók, nincsenek szerverek és nincs követés. A Doughnut Forge teljes egészében az eszközödön működik, internetkapcsolat nélkül is. A kulcsaid és a névjegyeid nálad maradnak, a te irányításod alatt. Egyszer fizetsz, és az alkalmazás a tiéd.",
+    "closing": "A magánszféra ne legyen havi számla.",
+    "features": [
+      {
+        "title": "Fájlok, fotók és videók titkosítása",
+        "text": "Válassz egy fájlt a Fájlok appból, vagy egy fotót vagy videót a könyvtáradból, vagy küldd át egy másik appból. Titkosítsd néhány koppintással, biztonságos tárolásra vagy megosztásra készen."
+      },
+      {
+        "title": "Nyisd meg, amit küldtek neked",
+        "text": "Fejtsd vissza egy névjegyedtől kapott fájlt, és mentsd a Fájlok appba. A fotók és videók egyenesen visszakerülhetnek a fotókönyvtáradba."
+      },
+      {
+        "title": "Szöveg titkosítása",
+        "text": "Titkosíts egy privát üzenetet a névjegyeidnek, és oszd meg, ahogy szeretnéd."
+      },
+      {
+        "title": "Megosztás megbízható emberekkel",
+        "text": "Titkosíts fájlokat bármelyik névjegyednek. Ők a saját identitásukkal nyitják meg őket. Más erre nem képes."
+      },
+      {
+        "title": "A te identitásod, a te eszközöd",
+        "text": "Hozd létre az identitásodat az alkalmazásban. A névjegykártyádat bárkivel biztonságosan megoszthatod. Ezzel mások privát fájlokat küldhetnek neked."
+      },
+      {
+        "title": "Face ID és Touch ID",
+        "text": "Ha szeretnéd, oldd fel az alkalmazást egy pillantással vagy érintéssel. A jelszavad is mindig működik."
+      },
+      {
+        "title": "Hosszú távra tervezve",
+        "text": "Poszt-kvantum titkosítást használ, így amit ma védesz, az akkor is védett marad, amikor a számítógépek erősebbek lesznek."
+      },
+      {
+        "title": "A saját nyelveden",
+        "text": "Használd az alkalmazást magyarul, angolul, spanyolul, japánul és sok más nyelven."
+      }
+    ]
+  }
+}

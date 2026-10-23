@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/fi/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "Turvallinen tiedosto"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "Turvallinen hakemisto"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "Turvallinen teksti"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "Henkilöllisyys"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "Yhteystiedot"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "Varmuuskopiolauseke"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "Palauta henkilöllisyys"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "Vie varmuuskopio PDF"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "Salasana"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "Salaa tiedosto"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "Pura tiedoston salaus"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "Tiedoston salaus"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "Jaa yhteystietokortti"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "Tuo yhteystietokortti"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "Jaa yhteystietokorttisi, jotta muut voivat lähettää sinulle tiedostoja ja muistiinpanoja, jotka vain sinä voit avata."
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "Yhteystietokorttisi on turvallista jakaa. Sillä ei voi avata mitään sinulle lähetettyä."
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Doughnut Forge toimii täysin laitteellasi. Salasanaasi ja avaimiasi ei koskaan tallenneta palvelimelle tai lähetetä verkkoon."
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "Avaimet ovat täysin yksityisiä, eikä niitä voi palauttaa, jos ne katoavat. Sinun on säilytettävä palautuslause turvallisessa paikassa, sillä se on ainoa tapa palauttaa käyttöoikeutesi."
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "Aseta tälle laitteelle mieleenpainuva salasana. Se avaa sovelluksen ja antaa sinun salata ja purkaa tietoja turvallisesti paikallisesti."
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "Luo uusi henkilöllisyys turvallisesti luodulla 24 sanan varmuuskopiolausekkeella."
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "Palauta olemassa oleva henkilöllisyys 24 sanan varmuuskopiolausekkeellasi."
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "Se aukeaa vain, jos se lähetettiin sinulle, ja näyttää, kuka sen lähetti."
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "Kieli"
+    }
+  }
+}

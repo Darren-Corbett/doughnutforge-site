@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/nl-NL",
+  "mac": {
+    "subtitle": "Versleutel en deel. Eenmalig.",
+    "promotionalText": "Geen abonnement. Geen account. Geen servers. Versleutel bestanden, mappen en tekst op uw computer en deel ze veilig met mensen die u vertrouwt. Eén prijs, eenmalig.",
+    "opening": "Houd privébestanden privé. Doughnut Forge vergrendelt uw bestanden, mappen en tekst op uw computer en laat u ze delen met de mensen die u vertrouwt. Hoe u ze ook verstuurt, alleen zij kunnen ze openen.",
+    "noSubscription": "Geen abonnement, geen account, geen servers en geen tracking. Doughnut Forge werkt volledig op uw computer, ook zonder internetverbinding. Uw sleutels en contacten blijven bij u, onder uw controle. U betaalt één keer en de app is van u.",
+    "closing": "Privacy zou geen maandelijkse rekening moeten zijn.",
+    "features": [
+      {
+        "title": "Versleutel bestanden en mappen",
+        "text": "Vergrendel één bestand of een hele map met een paar klikken, klaar om veilig te bewaren of te delen."
+      },
+      {
+        "title": "Versleutel tekst",
+        "text": "Versleutel een privébericht voor uw contacten en deel het zoals u wilt."
+      },
+      {
+        "title": "Uw identiteit, uw computer",
+        "text": "Maak uw identiteit aan in de app. Uw contactkaart kunt u veilig met iedereen delen. Daarmee kunnen anderen u privébestanden sturen."
+      },
+      {
+        "title": "Deel met mensen die u vertrouwt",
+        "text": "Versleutel bestanden voor elk van uw contacten. Zij openen ze met hun eigen identiteit. Niemand anders kan dat."
+      },
+      {
+        "title": "Gebouwd voor de lange termijn",
+        "text": "Gebruikt post-kwantumversleuteling, zodat wat u vandaag beschermt beschermd blijft naarmate computers krachtiger worden."
+      },
+      {
+        "title": "In uw taal",
+        "text": "Gebruik de app in het Nederlands, Engels, Spaans, Japans en vele andere talen."
+      }
+    ],
+    "parts": {
+      "headline": "Houd privébestanden privé.",
+      "homeLead": "Doughnut Forge vergrendelt uw bestanden, mappen en tekst op uw computer en laat u ze delen met de mensen die u vertrouwt.",
+      "lead": "Doughnut Forge vergrendelt uw bestanden, mappen en tekst op uw computer en laat u ze delen met de mensen die u vertrouwt. Hoe u ze ook verstuurt, alleen zij kunnen ze openen.",
+      "never": "Geen abonnement. Geen account. Geen servers.",
+      "short": "Geen abonnement. Geen account. Geen servers. Versleutel bestanden, mappen en tekst op uw computer en deel ze veilig met mensen die u vertrouwt.",
+      "offline": "Geen abonnement, geen account, geen servers en geen tracking. Doughnut Forge werkt volledig op uw computer, ook zonder internetverbinding. Uw sleutels en contacten blijven bij u, onder uw controle."
+    }
+  },
+  "ios": {
+    "subtitle": "Versleutel en deel. Eenmalig.",
+    "promotionalText": "Geen abonnement. Geen account. Geen servers. Versleutel bestanden, foto's, video's en tekst op uw iPhone of iPad en deel ze veilig met mensen die u vertrouwt. Eenmalig.",
+    "opening": "Houd privébestanden privé. Doughnut Forge vergrendelt uw bestanden, foto's, video's en tekst op uw iPhone en iPad en laat u ze delen met de mensen die u vertrouwt. Hoe u ze ook verstuurt, alleen zij kunnen ze openen.",
+    "noSubscription": "Geen abonnement, geen account, geen servers en geen tracking. Doughnut Forge werkt volledig op uw apparaat, ook zonder internetverbinding. Uw sleutels en contacten blijven bij u, onder uw controle. U betaalt één keer en de app is van u.",
+    "closing": "Privacy zou geen maandelijkse rekening moeten zijn.",
+    "features": [
+      {
+        "title": "Versleutel bestanden, foto's en video's",
+        "text": "Kies een bestand in Bestanden of een foto of video uit uw bibliotheek, of stuur het vanuit een andere app. Versleutel het met een paar tikken, klaar om veilig te bewaren of te delen."
+      },
+      {
+        "title": "Open wat u wordt gestuurd",
+        "text": "Ontsleutel een bestand van een contact en bewaar het in Bestanden. Foto's en video's kunnen direct terug naar uw fotobibliotheek."
+      },
+      {
+        "title": "Versleutel tekst",
+        "text": "Versleutel een privébericht voor uw contacten en deel het zoals u wilt."
+      },
+      {
+        "title": "Deel met mensen die u vertrouwt",
+        "text": "Versleutel bestanden voor elk van uw contacten. Zij openen ze met hun eigen identiteit. Niemand anders kan dat."
+      },
+      {
+        "title": "Uw identiteit, uw apparaat",
+        "text": "Maak uw identiteit aan in de app. Uw contactkaart kunt u veilig met iedereen delen. Daarmee kunnen anderen u privébestanden sturen."
+      },
+      {
+        "title": "Face ID en Touch ID",
+        "text": "Ontgrendel de app met een blik of een aanraking als u dat wilt. Uw wachtwoord blijft werken."
+      },
+      {
+        "title": "Gebouwd voor de lange termijn",
+        "text": "Gebruikt post-kwantumversleuteling, zodat wat u vandaag beschermt beschermd blijft naarmate computers krachtiger worden."
+      },
+      {
+        "title": "In uw taal",
+        "text": "Gebruik de app in het Nederlands, Engels, Spaans, Japans en vele andere talen."
+      }
+    ]
+  }
+}

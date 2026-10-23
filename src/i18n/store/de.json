@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/de-DE",
+  "mac": {
+    "subtitle": "Verschlüsselung ohne Abo",
+    "promotionalText": "Kein Abo. Kein Konto. Keine Server. Verschlüsseln Sie Dateien, Ordner und Texte auf Ihrem Computer und teilen Sie sie sicher mit Vertrauten. Einmal zahlen.",
+    "opening": "Private Dateien bleiben privat. Doughnut Forge verschlüsselt Ihre Dateien, Ordner und Texte auf Ihrem Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen. Egal, wie Sie sie versenden: Nur diese Menschen können sie öffnen.",
+    "noSubscription": "Kein Abo, kein Konto, keine Server und kein Tracking. Doughnut Forge läuft komplett auf Ihrem Computer, auch ohne Internetverbindung. Ihre Schlüssel und Kontakte bleiben bei Ihnen, unter Ihrer Kontrolle. Sie zahlen einmal, und die App gehört Ihnen.",
+    "closing": "Privatsphäre sollte keine Monatsrechnung sein.",
+    "features": [
+      {
+        "title": "Dateien und Ordner verschlüsseln",
+        "text": "Sperren Sie eine einzelne Datei oder einen ganzen Ordner mit wenigen Klicks, sicher aufbewahrt oder bereit zum Teilen."
+      },
+      {
+        "title": "Text verschlüsseln",
+        "text": "Verschlüsseln Sie eine private Nachricht für Ihre Kontakte und teilen Sie sie, wie Sie möchten."
+      },
+      {
+        "title": "Ihre Identität, Ihr Computer",
+        "text": "Erstellen Sie Ihre Identität in der App. Ihre Kontaktkarte können Sie bedenkenlos mit allen teilen. Damit können andere Ihnen private Dateien senden."
+      },
+      {
+        "title": "Mit Menschen Ihres Vertrauens teilen",
+        "text": "Verschlüsseln Sie Dateien für jeden Ihrer Kontakte. Diese öffnen sie mit ihrer eigenen Identität. Niemand sonst kann das."
+      },
+      {
+        "title": "Für die Zukunft gebaut",
+        "text": "Nutzt Post-Quanten-Verschlüsselung, damit geschützt bleibt, was Sie heute schützen, auch wenn Computer leistungsfähiger werden."
+      },
+      {
+        "title": "In Ihrer Sprache",
+        "text": "Nutzen Sie die App auf Deutsch, Englisch, Spanisch, Japanisch und in vielen weiteren Sprachen."
+      }
+    ],
+    "parts": {
+      "headline": "Private Dateien bleiben privat.",
+      "homeLead": "Doughnut Forge verschlüsselt Ihre Dateien, Ordner und Texte auf Ihrem Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen.",
+      "lead": "Doughnut Forge verschlüsselt Ihre Dateien, Ordner und Texte auf Ihrem Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen. Egal, wie Sie sie versenden: Nur diese Menschen können sie öffnen.",
+      "never": "Kein Abo. Kein Konto. Keine Server.",
+      "short": "Kein Abo. Kein Konto. Keine Server. Verschlüsseln Sie Dateien, Ordner und Texte auf Ihrem Computer und teilen Sie sie sicher mit Vertrauten.",
+      "offline": "Kein Abo, kein Konto, keine Server und kein Tracking. Doughnut Forge läuft komplett auf Ihrem Computer, auch ohne Internetverbindung. Ihre Schlüssel und Kontakte bleiben bei Ihnen, unter Ihrer Kontrolle."
+    }
+  },
+  "ios": {
+    "subtitle": "Verschlüsselung ohne Abo",
+    "promotionalText": "Kein Abo. Kein Konto. Keine Server. Verschlüsseln Sie Dateien, Fotos, Videos und Texte auf iPhone oder iPad und teilen Sie sie sicher mit Vertrauten. Einmal zahlen.",
+    "opening": "Private Dateien bleiben privat. Doughnut Forge verschlüsselt Ihre Dateien, Fotos, Videos und Texte auf Ihrem iPhone und iPad und lässt Sie diese mit Menschen teilen, denen Sie vertrauen. Egal, wie Sie sie versenden: Nur diese Menschen können sie öffnen.",
+    "noSubscription": "Kein Abo, kein Konto, keine Server und kein Tracking. Doughnut Forge läuft komplett auf Ihrem Gerät, auch ohne Internetverbindung. Ihre Schlüssel und Kontakte bleiben bei Ihnen, unter Ihrer Kontrolle. Sie zahlen einmal, und die App gehört Ihnen.",
+    "closing": "Privatsphäre sollte keine Monatsrechnung sein.",
+    "features": [
+      {
+        "title": "Dateien, Fotos und Videos verschlüsseln",
+        "text": "Wählen Sie eine Datei in der App „Dateien“ oder ein Foto oder Video aus Ihrer Mediathek, oder senden Sie eine Datei aus einer anderen App. Mit wenigen Tippern verschlüsselt, sicher aufbewahrt oder bereit zum Teilen."
+      },
+      {
+        "title": "Öffnen, was Sie erhalten",
+        "text": "Entschlüsseln Sie eine Datei von einem Kontakt und sichern Sie sie in der App „Dateien“. Fotos und Videos können direkt zurück in Ihre Fotomediathek."
+      },
+      {
+        "title": "Text verschlüsseln",
+        "text": "Verschlüsseln Sie eine private Nachricht für Ihre Kontakte und teilen Sie sie, wie Sie möchten."
+      },
+      {
+        "title": "Mit Menschen Ihres Vertrauens teilen",
+        "text": "Verschlüsseln Sie Dateien für jeden Ihrer Kontakte. Diese öffnen sie mit ihrer eigenen Identität. Niemand sonst kann das."
+      },
+      {
+        "title": "Ihre Identität, Ihr Gerät",
+        "text": "Erstellen Sie Ihre Identität in der App. Ihre Kontaktkarte können Sie bedenkenlos mit allen teilen. Damit können andere Ihnen private Dateien senden."
+      },
+      {
+        "title": "Face ID und Touch ID",
+        "text": "Entsperren Sie die App auf Wunsch mit einem Blick oder einer Berührung. Ihr Passwort funktioniert weiterhin."
+      },
+      {
+        "title": "Für die Zukunft gebaut",
+        "text": "Nutzt Post-Quanten-Verschlüsselung, damit geschützt bleibt, was Sie heute schützen, auch wenn Computer leistungsfähiger werden."
+      },
+      {
+        "title": "In Ihrer Sprache",
+        "text": "Nutzen Sie die App auf Deutsch, Englisch, Spanisch, Japanisch und in vielen weiteren Sprachen."
+      }
+    ]
+  }
+}

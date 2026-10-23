@@ -35,8 +35,9 @@ const words = (html) =>
     .replace(/\s+/g, " ")
     .trim();
 // The site wraps words with a hyphen in <span class="keep-word"> so they never split
-// across lines (src/middleware.ts). That is layout, not wording, so it is removed first.
-const unwrap = (html) => html.replace(/<span class="keep-word">([^<]*)<\/span>/g, "$1");
+// across lines, and puts <wbr> between Japanese and Chinese words (src/middleware.ts).
+// That is layout, not wording, so it is removed first.
+const unwrap = (html) => html.replace(/<span class="keep-word">([^<]*)<\/span>/g, "$1").replace(/<wbr>/g, "");
 // The markup that matters: which tags, in order, with link addresses and code colours
 const markup = (html) =>
   [...html.matchAll(/<\/?(\w+)([^>]*)>/g)]
@@ -58,6 +59,10 @@ const policies = Object.fromEntries(
     .map((f) => [f.replace(/\.json$/, "").toLowerCase(), JSON.parse(readFileSync(join(policyDir, f), "utf8"))]),
 );
 
+const languageFolders = new Set(
+  JSON.parse(readFileSync(join(SITE, "src/i18n/languages.json"), "utf8")).languages.map((l) => l.path),
+);
+
 const pages = readdirSync(dist, { recursive: true })
   .map(String)
   .filter((f) => f.endsWith(".html"));
@@ -69,8 +74,13 @@ const seenOnPrivacy = new Map();
 for (const page of pages) {
   const html = readFileSync(join(dist, page), "utf8");
   if (!html.includes("data-policy=")) continue;
+  // English pages sit at the root; every other language has its own folder and policy
   const first = page.split("/")[0];
-  const policy = policies[first] ?? policies.en;
+  const policy = first in policies ? policies[first] : languageFolders.has(first) ? undefined : policies.en;
+  if (!policy) {
+    problems.push(`${page}: no privacy policy file for the language "${first}"`);
+    continue;
+  }
   const isPrivacy = /(^|\/)privacy\/index\.html$/.test(page);
 
   for (let [, , key, inner] of html.matchAll(/<(\w+)\b[^>]*?\sdata-policy="(\w+)"[^>]*>([\s\S]*?)<\/\1>/g)) {
@@ -94,6 +104,11 @@ for (const page of pages) {
 // The privacy page must show every part of the policy
 const privacyPages = pages.filter((p) => /(^|\/)privacy\/index\.html$/.test(p));
 if (privacyPages.length === 0) problems.push("No privacy page was built");
+// Every policy file has its page: privacy/ for English, <folder>/privacy/ for the rest
+for (const lang of Object.keys(policies)) {
+  const page = lang === "en" ? "privacy/index.html" : `${lang}/privacy/index.html`;
+  if (!privacyPages.includes(page)) problems.push(`The ${lang} policy has no page at ${page}`);
+}
 for (const page of privacyPages) {
   const seen = seenOnPrivacy.get(page) ?? new Set();
   const missing = Object.keys(policies.en.strings).filter((k) => !seen.has(k));
@@ -104,4 +119,6 @@ if (problems.length) {
   console.error(`check-privacy-wording: ${problems.length} problem(s)\n  ${problems.join("\n  ")}`);
   process.exit(1);
 }
-console.log(`check-privacy-wording: ${checked} passages match ${policies.en._source} word for word`);
+console.log(
+  `check-privacy-wording: ${privacyPages.length} language(s), ${checked} passages, 0 differences from ${policies.en._source}`,
+);

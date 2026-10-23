@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/de/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "Sichere Datei"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "Sicheres Verzeichnis"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "Sicherer Text"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "Identität"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "Kontakte"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "Backup-Phrase"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "Identität wiederherstellen"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "Backup als PDF exportieren"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "Passwort"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "Datei verschlüsseln"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "Datei entschlüsseln"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "Datei verschlüsseln"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "Kontaktkarte teilen"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "Kontaktkarte Importieren"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "Teilen Sie Ihre Kontaktkarte, damit Ihnen andere Dateien und Notizen senden können, die nur Sie öffnen können."
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "Ihre Kontaktkarte kann sicher geteilt werden. Mit ihr lässt sich nichts öffnen, was an Sie gesendet wurde."
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Doughnut Forge arbeitet vollständig auf Ihrem Gerät. Ihr Passwort und Ihre Schlüssel werden niemals auf einem Server gespeichert oder über das Netzwerk gesendet."
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "Ihre Schlüssel sind vollkommen privat und können bei Verlust nicht wiederhergestellt werden. Sie müssen Ihre Wiederherstellungsphrase an einem sicheren Ort aufbewahren, da dies die einzige Möglichkeit ist, Ihren Zugang wiederherzustellen."
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "Legen Sie ein einprägsames Passwort für dieses Gerät fest. Dies entsperrt die Anwendung, sodass Sie Daten lokal sicher verschlüsseln und entschlüsseln können."
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "Erstellen Sie eine neue Identität mit einer sicheren 24-Wörter-Backup-Phrase."
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "Stellen Sie eine vorhandene Identität mit Ihrer 24-Wörter-Backup-Phrase wieder her."
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "Sie lässt sich nur öffnen, wenn sie an Sie gesendet wurde, und zeigt an, von wem sie stammt."
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "Sprache"
+    }
+  }
+}

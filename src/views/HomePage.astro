@@ -25,8 +25,9 @@ const [encFiles, encText, identity, share, longTerm, language] = store.mac.featu
 if (!encFiles || !encText || !identity || !share || !longTerm || !language) {
   throw new Error(`The store listing has ${store.mac.features.length} features; the home page expects 6.`);
 }
-// The headline is the store description's first sentence; the next one is the lead.
-const [headline, lead] = store.mac.opening.split(/(?<=\.)\s+/);
+// The headline is the store description's first sentence and the lead its second
+// (split per language by scripts/sync-from-app.mjs).
+const { headline, homeLead: lead } = store.mac.parts;
 
 const rows: ToneRow[] = [
   { name: app("app:navigation.tabs.vault"), tone: "blue", ...encFiles },
@@ -121,7 +122,7 @@ const jsonLd = softwareApplication(lang, "/", t("meta.home.description"));
     gap: 36px;
   }
   h1 {
-    font-size: clamp(38px, 10.5vw, 76px);
+    --fs: clamp(38px, 10.5vw, 76px);
     line-height: 1;
     font-weight: 900;
     letter-spacing: -0.03em;
@@ -131,7 +132,7 @@ const jsonLd = softwareApplication(lang, "/", t("meta.home.description"));
   .tagline {
     margin-top: 16px;
     max-width: 20ch;
-    font-size: clamp(22px, 6vw, 30px);
+    --fs: clamp(22px, 6vw, 30px);
     line-height: 1.2;
     font-weight: 800;
     letter-spacing: -0.01em;
@@ -149,6 +150,10 @@ const jsonLd = softwareApplication(lang, "/", t("meta.home.description"));
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+  }
+  /* Long headline words are sized to fit this column (global.css) */
+  .hero-copy {
+    container-type: inline-size;
   }
   .specimen {
     position: relative;
@@ -267,12 +272,13 @@ const jsonLd = softwareApplication(lang, "/", t("meta.home.description"));
     border-top: 2px solid #38444d;
   }
   .phones-inner {
+    container-type: inline-size;
     max-width: 72rem;
     margin-inline: auto;
     padding: 44px 16px 56px;
   }
   .phones h2 {
-    font-size: clamp(26px, 7vw, 40px);
+    --fs: clamp(26px, 7vw, 40px);
     line-height: 1.1;
     font-weight: 900;
     letter-spacing: -0.02em;

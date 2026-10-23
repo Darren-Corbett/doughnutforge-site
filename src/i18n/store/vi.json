@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/vi",
+  "mac": {
+    "subtitle": "Mã hóa, chia sẻ. Trả một lần.",
+    "promotionalText": "Không thuê bao. Không tài khoản. Không máy chủ. Mã hóa tệp, thư mục và văn bản trên máy tính, rồi chia sẻ an toàn với người bạn tin tưởng. Một giá, trả một lần.",
+    "opening": "Giữ tệp riêng tư luôn riêng tư. Doughnut Forge khóa tệp, thư mục và văn bản trên máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng. Dù bạn gửi bằng cách nào, chỉ họ mới mở được.",
+    "noSubscription": "Không thuê bao, không tài khoản, không máy chủ và không theo dõi. Doughnut Forge hoạt động hoàn toàn trên máy tính của bạn, kể cả khi không có kết nối internet. Khóa và danh bạ của bạn luôn ở bên bạn, trong tầm kiểm soát của bạn. Bạn trả tiền một lần và ứng dụng là của bạn.",
+    "closing": "Quyền riêng tư không nên là hóa đơn hằng tháng.",
+    "features": [
+      {
+        "title": "Mã hóa tệp và thư mục",
+        "text": "Khóa một tệp hoặc cả thư mục chỉ với vài cú nhấp, sẵn sàng để cất giữ an toàn hoặc chia sẻ."
+      },
+      {
+        "title": "Mã hóa văn bản",
+        "text": "Mã hóa tin nhắn riêng tư cho người liên hệ của bạn và chia sẻ theo cách bạn muốn."
+      },
+      {
+        "title": "Danh tính của bạn, máy tính của bạn",
+        "text": "Tạo danh tính của bạn trong ứng dụng. Thẻ liên hệ của bạn có thể chia sẻ an toàn với bất kỳ ai. Nhờ đó người khác có thể gửi tệp riêng tư cho bạn."
+      },
+      {
+        "title": "Chia sẻ với người bạn tin tưởng",
+        "text": "Mã hóa tệp cho bất kỳ người liên hệ nào. Họ mở tệp bằng danh tính của chính họ. Không ai khác mở được."
+      },
+      {
+        "title": "Bền vững lâu dài",
+        "text": "Sử dụng mã hóa hậu lượng tử, để những gì bạn bảo vệ hôm nay vẫn được bảo vệ khi máy tính ngày càng mạnh hơn."
+      },
+      {
+        "title": "Bằng ngôn ngữ của bạn",
+        "text": "Dùng ứng dụng bằng tiếng Việt, tiếng Anh, tiếng Tây Ban Nha, tiếng Nhật và nhiều ngôn ngữ khác."
+      }
+    ],
+    "parts": {
+      "headline": "Giữ tệp riêng tư luôn riêng tư.",
+      "homeLead": "Doughnut Forge khóa tệp, thư mục và văn bản trên máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng.",
+      "lead": "Doughnut Forge khóa tệp, thư mục và văn bản trên máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng. Dù bạn gửi bằng cách nào, chỉ họ mới mở được.",
+      "never": "Không thuê bao. Không tài khoản. Không máy chủ.",
+      "short": "Không thuê bao. Không tài khoản. Không máy chủ. Mã hóa tệp, thư mục và văn bản trên máy tính, rồi chia sẻ an toàn với người bạn tin tưởng.",
+      "offline": "Không thuê bao, không tài khoản, không máy chủ và không theo dõi. Doughnut Forge hoạt động hoàn toàn trên máy tính của bạn, kể cả khi không có kết nối internet. Khóa và danh bạ của bạn luôn ở bên bạn, trong tầm kiểm soát của bạn."
+    }
+  },
+  "ios": {
+    "subtitle": "Mã hóa, chia sẻ. Trả một lần.",
+    "promotionalText": "Không thuê bao. Không tài khoản. Không máy chủ. Mã hóa tệp, ảnh, video và văn bản trên iPhone hoặc iPad, rồi chia sẻ an toàn với người bạn tin tưởng. Trả một lần.",
+    "opening": "Giữ tệp riêng tư luôn riêng tư. Doughnut Forge khóa tệp, ảnh, video và văn bản trên iPhone và iPad của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng. Dù bạn gửi bằng cách nào, chỉ họ mới mở được.",
+    "noSubscription": "Không thuê bao, không tài khoản, không máy chủ và không theo dõi. Doughnut Forge hoạt động hoàn toàn trên thiết bị của bạn, kể cả khi không có kết nối internet. Khóa và danh bạ của bạn luôn ở bên bạn, trong tầm kiểm soát của bạn. Bạn trả tiền một lần và ứng dụng là của bạn.",
+    "closing": "Quyền riêng tư không nên là hóa đơn hằng tháng.",
+    "features": [
+      {
+        "title": "Mã hóa tệp, ảnh và video",
+        "text": "Chọn một tệp từ ứng dụng Tệp hoặc ảnh hay video từ thư viện của bạn, hoặc gửi từ ứng dụng khác. Mã hóa chỉ với vài lần chạm, sẵn sàng để cất giữ an toàn hoặc chia sẻ."
+      },
+      {
+        "title": "Mở những gì được gửi cho bạn",
+        "text": "Giải mã tệp từ một liên hệ và lưu vào ứng dụng Tệp. Ảnh và video có thể quay lại thẳng thư viện ảnh của bạn."
+      },
+      {
+        "title": "Mã hóa văn bản",
+        "text": "Mã hóa tin nhắn riêng tư cho người liên hệ của bạn và chia sẻ theo cách bạn muốn."
+      },
+      {
+        "title": "Chia sẻ với người bạn tin tưởng",
+        "text": "Mã hóa tệp cho bất kỳ người liên hệ nào. Họ mở tệp bằng danh tính của chính họ. Không ai khác mở được."
+      },
+      {
+        "title": "Danh tính của bạn, thiết bị của bạn",
+        "text": "Tạo danh tính của bạn trong ứng dụng. Thẻ liên hệ của bạn có thể chia sẻ an toàn với bất kỳ ai. Nhờ đó người khác có thể gửi tệp riêng tư cho bạn."
+      },
+      {
+        "title": "Face ID và Touch ID",
+        "text": "Mở khóa ứng dụng chỉ bằng một cái nhìn hoặc một lần chạm nếu bạn muốn. Mật khẩu của bạn vẫn luôn dùng được."
+      },
+      {
+        "title": "Bền vững lâu dài",
+        "text": "Sử dụng mã hóa hậu lượng tử, để những gì bạn bảo vệ hôm nay vẫn được bảo vệ khi máy tính ngày càng mạnh hơn."
+      },
+      {
+        "title": "Bằng ngôn ngữ của bạn",
+        "text": "Dùng ứng dụng bằng tiếng Việt, tiếng Anh, tiếng Tây Ban Nha, tiếng Nhật và nhiều ngôn ngữ khác."
+      }
+    ]
+  }
+}

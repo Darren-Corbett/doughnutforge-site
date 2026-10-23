@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ms/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "Fail Selamat"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "Direktori Selamat"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "Teks Selamat"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "Identiti"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "Kenalan"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "Frasa Sandaran"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "Pulihkan Identiti"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "Eksport PDF Sandaran"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "Kata Laluan"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "Sulitkan Fail"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "Nyahsulit Fail"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "Menyulitkan fail"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "Kongsi Kad Kenalan"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "Import Kad Kenalan"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "Kongsi kad kenalan anda supaya orang lain boleh menghantar fail dan nota yang hanya anda boleh buka."
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "Kad kenalan anda selamat untuk dikongsi. Ia tidak boleh digunakan untuk membuka apa-apa yang dihantar kepada anda."
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Doughnut Forge beroperasi sepenuhnya pada peranti anda. Kata laluan dan kunci anda tidak pernah disimpan pada pelayan atau dihantar melalui rangkaian."
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "Kunci anda sepenuhnya peribadi dan tidak boleh dipulihkan jika hilang. Anda mesti menyimpan frasa sandaran anda di lokasi yang selamat, kerana ia satu-satunya cara untuk memulihkan akses anda."
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "Tetapkan kata laluan yang mudah diingati untuk peranti ini. Ia membuka kunci aplikasi, membolehkan anda menyulitkan dan menyahsulit data secara setempat dengan selamat."
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "Cipta identiti baharu dengan frasa sandaran 24 perkataan yang dijana secara selamat."
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "Pulihkan identiti sedia ada menggunakan frasa sandaran 24 perkataan anda."
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "Ia hanya dibuka jika ia dihantar kepada anda, dan menunjukkan dari siapa ia datang."
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "Bahasa"
+    }
+  }
+}

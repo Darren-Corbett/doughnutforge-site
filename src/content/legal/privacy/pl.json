@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "Polityka prywatności",
+    "effectiveDate": "Data wejścia w życie: październik 2026",
+    "hero": "<strong>Doughnut Forge opiera się na lokalnej architekturze o zerowej wiedzy (zero-knowledge).</strong> Oznacza to, że nie zbieramy, nie przesyłamy ani nie przechowujemy Twoich danych i nie mamy do nich dostępu, z wyjątkiem informacji, które sam zdecydujesz się nam przesłać (zob. sekcja 3).",
+    "sec1Title": "1. Przechowywanie i usuwanie danych",
+    "sec1Desc": "Wszystkie klucze kryptograficzne, tożsamości <code class=\"k1\">.vltc2</code> i pliki <code class=\"k2\">.vlt2</code> generowane przez Doughnut Forge są przechowywane wyłącznie na Twoim urządzeniu. Żadne informacje nie opuszczają urządzenia, chyba że sam wyeksportujesz i udostępnisz plik. Odinstalowanie aplikacji usuwa oprogramowanie, ale nie usuwa plików zapisanych w innych miejscach na urządzeniu ani kluczy przechowywanych w systemowym menedżerze poświadczeń (np. w Pęku kluczy w macOS lub w Menedżerze poświadczeń w Windows). Możesz usunąć je ręcznie.",
+    "sec2Title": "2. Analityka i telemetria",
+    "sec2Desc": "Doughnut Forge nie zawiera skryptów śledzących, narzędzi analitycznych ani mechanizmów raportowania awarii. Jeśli pobierzesz aplikację z Apple App Store lub Microsoft Store, Apple lub Microsoft mogą udostępniać nam zbiorcze statystyki, takie jak liczba pobrań i statystyki awarii. Raporty te nie zawierają informacji umożliwiających identyfikację osób. Udostępnianie danych diagnostycznych możesz kontrolować w ustawieniach urządzenia.",
+    "sec3Title": "3. Wsparcie i kontakt",
+    "sec3Desc": "W razie pytań lub aby zgłosić problem techniczny, utwórz zgłoszenie w naszym systemie [[gh]]GitHub Issues[[/gh]]. GitHub jest platformą publiczną podlegającą własnej polityce prywatności, dlatego nigdy nie umieszczaj w zgłoszeniach danych wrażliwych ani odszyfrowanych. W sprawach dotyczących prywatności skorzystaj z naszego [[tally]]formularza kontaktowego[[/tally]]. Informacje przesłane za jego pośrednictwem są przetwarzane przez Tally (tally.so), z którego korzystamy, aby odbierać wiadomości, i są wykorzystywane wyłącznie do udzielenia odpowiedzi na Twoje zapytanie.",
+    "sec4Title": "4. Zmiany niniejszej polityki",
+    "sec4Desc": "Możemy od czasu do czasu aktualizować niniejszą politykę. Wszelkie zmiany zostaną opublikowane na tej stronie wraz ze zaktualizowaną datą wejścia w życie.",
+    "sec5Title": "5. Twoje prawa i informacje prawne",
+    "sec5Desc": "Zapytania przesłane za pośrednictwem formularza kontaktowego przetwarzamy na podstawie naszego prawnie uzasadnionego interesu polegającego na zapewnianiu wsparcia. Przechowujemy wiadomości tylko tak długo, jak jest to rozsądnie konieczne do obsługi Twojego zapytania, a następnie staramy się je regularnie usuwać. Jeśli chcesz, aby Twoje wiadomości zostały usunięte wcześniej, poproś nas o to za pomocą tego samego formularza. W zależności od miejsca zamieszkania (na przykład na podstawie brytyjskich przepisów o ochronie danych) możesz mieć prawo do żądania dostępu do Twojej korespondencji z nami, jej sprostowania lub usunięcia, a także do wniesienia skargi do brytyjskiego organu nadzorczego – [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge nie jest przeznaczony dla dzieci poniżej 13. roku życia. Jeśli uważasz, że dziecko przesłało nam dane osobowe za pośrednictwem formularza kontaktowego, daj nam znać, a je usuniemy. Ta strona jest hostowana w serwisie GitHub Pages. Nie dodajemy do niej żadnych narzędzi śledzących ani analitycznych, ale GitHub może podczas Twojej wizyty rejestrować informacje techniczne, takie jak adres IP, ze względów bezpieczeństwa i w celu działania usługi; zob. [[ghp]]oświadczenie GitHub o ochronie prywatności[[/ghp]]. Nie reagujemy na sygnały Do Not Track (DNT), ponieważ Cię nie śledzimy.",
+    "publisherInfo": "Opublikowane przez Darrena Corbetta."
+  }
+}

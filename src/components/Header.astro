@@ -1,8 +1,10 @@
 ---
 // Site header, the same on every page: the app's night colour, with every link
 // visible on phones in a row under the logo, so nothing hides behind a menu button.
+// The language menu sits beside the logo on phones and after the links from 768px.
 import { site } from "../data/site";
 import { localePath, useStrings, type Language } from "../i18n";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
 import Logo from "./Logo.astro";
 
 interface Props {
@@ -24,12 +26,12 @@ const linkClass =
 ---
 
 <header class="bg-[#15202b] text-white">
-  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-3 gap-y-1 px-4 pt-2.5 pb-1.5 sm:px-6 md:pb-2.5">
+  <div class="relative mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-3 gap-y-1 px-4 pt-2.5 pb-1.5 sm:px-6 md:pb-2.5">
     <a href={localePath(lang.code)} class="flex min-h-11 items-center gap-2.5" aria-label={t("nav.home")}>
       <Logo />
       <span class="text-[18px] font-extrabold tracking-tight">{site.name}</span>
     </a>
-    <nav aria-label={t("nav.label")} class="basis-full md:basis-auto">
+    <nav aria-label={t("nav.label")} class="order-last basis-full md:order-none md:ms-auto md:basis-auto">
       <ul class="flex flex-wrap items-center justify-between md:justify-end md:gap-1" role="list">
         {
           links.map((l) => (
@@ -42,5 +44,6 @@ const linkClass =
         }
       </ul>
     </nav>
+    <LanguageSwitcher lang={lang} />
   </div>
 </header>

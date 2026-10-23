@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "Kebijakan Privasi",
+    "effectiveDate": "Tanggal Berlaku: Oktober 2026",
+    "hero": "<strong>Doughnut Forge dibangun di atas arsitektur lokal tanpa pengetahuan (zero-knowledge).</strong> Artinya, kami tidak mengumpulkan, mengirimkan, menyimpan, atau memiliki akses ke data Anda, kecuali informasi yang Anda pilih untuk dikirimkan langsung kepada kami (lihat Bagian 3).",
+    "sec1Title": "1. Penyimpanan &amp; Penghapusan Data",
+    "sec1Desc": "Semua kunci kriptografi, identitas <code class=\"k1\">.vltc2</code>, dan file <code class=\"k2\">.vlt2</code> yang dibuat oleh Doughnut Forge hanya disimpan di perangkat Anda. Tidak ada informasi yang keluar dari perangkat Anda kecuali Anda sendiri mengekspor dan membagikan file. Mencopot pemasangan aplikasi akan menghapus perangkat lunaknya, tetapi tidak menghapus file yang Anda simpan di lokasi lain pada perangkat atau kunci yang disimpan di pengelola kredensial sistem (seperti Keychain di macOS atau Credential Manager di Windows). Anda dapat menghapusnya secara manual.",
+    "sec2Title": "2. Analitik dan Telemetri",
+    "sec2Desc": "Doughnut Forge tidak berisi skrip pelacakan, mesin analitik, atau pelapor kerusakan. Jika Anda mengunduh aplikasi dari Apple App Store atau Microsoft Store, Apple atau Microsoft dapat memberikan statistik gabungan kepada kami, seperti jumlah unduhan dan statistik kerusakan. Laporan ini tidak berisi informasi yang dapat mengidentifikasi Anda secara pribadi. Anda dapat mengatur pembagian data diagnostik di pengaturan perangkat Anda.",
+    "sec3Title": "3. Dukungan &amp; Kontak",
+    "sec3Desc": "Untuk pertanyaan atau melaporkan masalah teknis, silakan buka tiket di pelacak [[gh]]GitHub Issues[[/gh]] kami. GitHub adalah platform publik yang diatur oleh kebijakan privasinya sendiri, jadi jangan pernah menyertakan data sensitif atau data yang telah didekripsi dalam laporan Anda. Untuk pertanyaan terkait privasi, silakan gunakan [[tally]]Formulir Kontak[[/tally]] kami. Informasi yang Anda kirimkan melalui formulir tersebut diproses oleh Tally (tally.so), yang kami gunakan untuk menerima pesan Anda, dan hanya digunakan untuk menanggapi pertanyaan Anda.",
+    "sec4Title": "4. Perubahan pada Kebijakan Ini",
+    "sec4Desc": "Kami dapat memperbarui kebijakan ini dari waktu ke waktu. Setiap perubahan akan dipublikasikan di halaman ini dengan Tanggal Berlaku yang diperbarui.",
+    "sec5Title": "5. Hak Anda dan Pemberitahuan Hukum",
+    "sec5Desc": "Untuk pertanyaan yang dikirim melalui formulir kontak kami, kami memproses informasi Anda berdasarkan kepentingan sah kami dalam memberikan dukungan. Kami menyimpan pesan hanya selama wajar diperlukan untuk menanggapi pertanyaan Anda, lalu berupaya menghapusnya secara berkala setelahnya. Jika Anda ingin pesan Anda dihapus lebih cepat, cukup minta melalui formulir yang sama. Bergantung pada tempat tinggal Anda (misalnya berdasarkan undang-undang perlindungan data Inggris), Anda mungkin berhak meminta akses ke, perbaikan, atau penghapusan komunikasi Anda dengan kami, serta mengajukan keluhan kepada otoritas perlindungan data Inggris, [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge tidak ditujukan untuk anak-anak di bawah 13 tahun. Jika Anda yakin seorang anak telah mengirimkan informasi pribadi kepada kami melalui formulir kontak, beri tahu kami dan kami akan menghapusnya. Halaman ini dihosting di GitHub Pages. Kami tidak menambahkan pelacakan atau analitik apa pun, tetapi GitHub dapat mencatat informasi teknis, seperti alamat IP Anda, saat Anda berkunjung, untuk keamanan dan pengoperasian layanan; lihat [[ghp]]Pernyataan Privasi GitHub[[/ghp]]. Kami tidak merespons sinyal Do Not Track (DNT) karena kami tidak melacak Anda.",
+    "publisherInfo": "Diterbitkan oleh Darren Corbett."
+  }
+}

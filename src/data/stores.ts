@@ -1,3 +1,4 @@
+import { listOf, type Language } from "../i18n";
 import { placeholder } from "./placeholder";
 
 // Where each platform is sold. Adding a store later is a data change here only:
@@ -21,6 +22,18 @@ export const platforms: Platform[] = [
   { id: "linux", status: "coming" },
   { id: "android", status: "coming" },
 ];
+
+// Store and platform names are names: the same in every language.
+export const storeNames: Record<StoreId, string> = {
+  "mac-app-store": "Mac App Store",
+  "app-store": "App Store",
+  "microsoft-store": "Microsoft Store",
+  "google-play": "Google Play",
+};
+
+/** A platform's name in a language: only "iPhone and iPad" needs the language's own "and" */
+export const platformName = (lang: Language, id: PlatformId) =>
+  id === "ios" ? listOf(lang, ["iPhone", "iPad"]) : { mac: "Mac", windows: "Windows", linux: "Linux", android: "Android" }[id];
 
 /**
  * The store page for an app, in the visitor's language where the store allows it.

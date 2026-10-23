@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ko/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "보안 파일"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "보안 폴더"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "보안 텍스트"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "신원"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "연락처"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "백업 문구"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "신원 복원"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "백업 PDF 내보내기"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "비밀번호"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "파일 암호화"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "파일 복호화"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "파일 암호화"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "연락처 카드 공유"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "연락처 카드 가져오기"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "연락처 카드를 공유하면 다른 사람이 본인만 열 수 있는 파일과 메모를 보낼 수 있습니다."
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "연락처 카드는 안전하게 공유할 수 있습니다. 이 카드로는 본인에게 보낸 어떤 것도 열 수 없습니다."
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Doughnut Forge는 전적으로 기기에서만 작동합니다. 비밀번호와 키는 서버에 저장되거나 네트워크를 통해 전송되지 않습니다."
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "키는 완전히 비공개이며 분실 시 복구할 수 없습니다. 액세스를 복구할 수 있는 유일한 방법이므로 복구 문구를 안전한 장소에 보관해야 합니다."
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "이 기기에 대해 기억하기 쉬운 비밀번호를 설정하세요. 앱을 잠금 해제하여 로컬에서 데이터를 안전하게 암호화하고 복호화할 수 있습니다."
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "안전하게 생성된 24단어 백업 문구를 사용하여 새 신원을 만드십시오."
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "24단어 백업 문구를 사용하여 기존 신원을 복원하십시오."
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "나에게 전송된 경우에만 열리며 누구에게서 왔는지 표시됩니다."
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "언어"
+    }
+  }
+}

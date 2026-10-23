@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/hu/*.json",
+  "app:navigation.tabs.vault": "Biztonságos mappa",
+  "app:navigation.tabs.mobile-vault": "Biztonságos fájl",
+  "app:navigation.tabs.text-vault": "Biztonságos szöveg",
+  "app:navigation.tabs.identity": "Identitás",
+  "app:navigation.tabs.contacts": "Kapcsolatok",
+  "app:navigation.language": "Nyelv",
+  "app:languageModal.regions.europe": "Európa",
+  "app:languageModal.regions.americas": "Amerika",
+  "app:languageModal.regions.middleEastAfrica": "Közel-Kelet és Afrika",
+  "app:languageModal.regions.asiaPacific": "Ázsia és a csendes-óceáni térség",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Fájl titkosítása",
+  "help:secureDirectoryGuide.step1.description": "Adjon hozzá helyi mappákat a munkaterületéhez a fájlok böngészéséhez és kezeléséhez. A Doughnut Forge teljes egészében helyileg működik, ami azt jelenti, hogy az eredeti fájlok soha nem hagyják el az eszközt.",
+  "help:setupGuide.step2.description": "A digitális identitása úgy működik, mint a személyes kulcskészlete, amelyet biztonságosan tárolunk az alkalmazásban. A Doughnut Forge ezeket a kulcsokat használja a fájlok védelmére és a megbízható partnerek ellenőrzésére.",
+  "help:setupGuide.step3.description": "A kulcsok teljesen privátok, és elvesztésük esetén nem állíthatók helyre. A helyreállítási kifejezést biztonságos helyen kell tartania, mivel ez az egyetlen módja a hozzáférés visszaállításának.",
+  "help:identityContactsGuide.step1.description": "Exportálja identitását biztonságos névjegykártyaként (.vltc2). Ossza meg ezt a fájlt, hogy mások biztonságosan igazolhassák, ki Ön, és hozzáadhassák a megbízható hálózatukhoz.",
+  "help:identityContactsGuide.step3.description": "Kezelje megbízható hálózatát. Bár bárki, akinek megvan a kártyája, küldhet biztonságos fájlokat, az itt lévő partnerek ellenőrzése lehetővé teszi, hogy gyorsan kiválassza őket a megosztáshoz, és megerősíti a valódi identitásukat."
+}

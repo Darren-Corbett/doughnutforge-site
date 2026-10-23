@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "Zásady ochrany osobních údajů",
+    "effectiveDate": "Platnost od: říjen 2026",
+    "hero": "<strong>Doughnut Forge je postaven na lokální architektuře s nulovou znalostí (zero-knowledge).</strong> To znamená, že vaše data neshromažďujeme, nepřenášíme, neukládáme ani k nim nemáme přístup, s výjimkou informací, které se nám sami rozhodnete zaslat (viz oddíl 3).",
+    "sec1Title": "1. Ukládání a mazání dat",
+    "sec1Desc": "Všechny kryptografické klíče, identity <code class=\"k1\">.vltc2</code> a soubory <code class=\"k2\">.vlt2</code> vytvořené aplikací Doughnut Forge se ukládají výhradně ve vašem zařízení. Žádné informace vaše zařízení neopustí, pokud soubor sami neexportujete a nesdílíte. Odinstalováním aplikace se odstraní software, nikoli však soubory, které jste uložili jinde v zařízení, ani klíče uložené ve správci přihlašovacích údajů systému (např. Klíčenka v macOS nebo Správce pověření ve Windows). Ty můžete smazat ručně.",
+    "sec2Title": "2. Analytika a telemetrie",
+    "sec2Desc": "Doughnut Forge neobsahuje žádné sledovací skripty, analytické nástroje ani nástroje pro hlášení pádů. Pokud si aplikaci stáhnete z Apple App Store nebo Microsoft Store, mohou nám Apple nebo Microsoft poskytovat souhrnné statistiky, například počty stažení a statistiky pádů. Tyto zprávy neobsahují osobní identifikační údaje. Sdílení diagnostických dat můžete ovládat v nastavení zařízení.",
+    "sec3Title": "3. Podpora a kontakt",
+    "sec3Desc": "S dotazy nebo pro nahlášení technického problému založte požadavek v našem systému [[gh]]GitHub Issues[[/gh]]. GitHub je veřejná platforma, která se řídí vlastními zásadami ochrany osobních údajů, proto do hlášení nikdy neuvádějte citlivá ani dešifrovaná data. S dotazy týkajícími se ochrany soukromí použijte náš [[tally]]kontaktní formulář[[/tally]]. Informace odeslané prostřednictvím formuláře zpracovává služba Tally (tally.so), kterou používáme k přijímání zpráv, a slouží pouze k zodpovězení vašeho dotazu.",
+    "sec4Title": "4. Změny těchto zásad",
+    "sec4Desc": "Tyto zásady můžeme čas od času aktualizovat. Veškeré změny budou zveřejněny na této stránce spolu s aktualizovaným datem platnosti.",
+    "sec5Title": "5. Vaše práva a právní informace",
+    "sec5Desc": "Dotazy zaslané prostřednictvím našeho kontaktního formuláře zpracováváme na základě našeho oprávněného zájmu na poskytování podpory. Zprávy uchováváme pouze po dobu přiměřeně nezbytnou k vyřízení vašeho dotazu a poté se je snažíme pravidelně mazat. Pokud chcete, aby byly vaše zprávy smazány dříve, stačí nás o to požádat prostřednictvím stejného formuláře. V závislosti na místě vašeho pobytu (například podle britských právních předpisů o ochraně osobních údajů) můžete mít právo požadovat přístup ke své komunikaci s námi, její opravu nebo výmaz a podat stížnost u britského dozorového úřadu [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge není určen dětem mladším 13 let. Pokud se domníváte, že nám dítě prostřednictvím kontaktního formuláře zaslalo osobní údaje, dejte nám prosím vědět a my je smažeme. Tato stránka je hostována na GitHub Pages. Nepřidáváme na ni žádné sledování ani analytiku, GitHub však může při vaší návštěvě zaznamenávat technické informace, například vaši IP adresu, z bezpečnostních důvodů a pro provoz služby; viz [[ghp]]prohlášení GitHubu o ochraně osobních údajů[[/ghp]]. Na signály Do Not Track (DNT) nereagujeme, protože vás nesledujeme.",
+    "publisherInfo": "Vydal Darren Corbett."
+  }
+}

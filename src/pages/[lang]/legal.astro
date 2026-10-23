@@ -1,0 +1,10 @@
+---
+// Legal page in every language but English (English: src/pages/legal.astro)
+import { otherLanguagePaths, type Language } from "../../i18n";
+import LegalPage from "../../views/LegalPage.astro";
+
+export const getStaticPaths = otherLanguagePaths;
+const { lang } = Astro.props as { lang: Language };
+---
+
+<LegalPage lang={lang} />

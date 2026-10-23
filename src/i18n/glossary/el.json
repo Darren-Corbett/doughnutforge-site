@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/el/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "Ασφαλές αρχείο"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "Ασφαλής φάκελος"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "Ασφαλές κείμενο"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "Ταυτότητα"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "Επαφές"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "Φράση ανάκτησης"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "Επαναφορά ταυτότητας"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "Εξαγωγή PDF αντιγράφου"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "Κωδικός"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "Κρυπτογράφηση αρχείου"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "Αποκρυπτογράφηση αρχείου"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "Κρυπτογράφηση αρχείου"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "Κοινοποίηση κάρτας επαφής"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "Εισαγωγή κάρτας επαφής"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "Μοιραστείτε την κάρτα επαφής σας, ώστε άλλοι να μπορούν να σας στέλνουν αρχεία και σημειώσεις που μόνο εσείς μπορείτε να ανοίξετε."
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "Η κάρτα επαφής σας μπορεί να κοινοποιηθεί με ασφάλεια. Δεν μπορεί να χρησιμοποιηθεί για να ανοίξει οτιδήποτε σας αποστέλλεται."
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Το Doughnut Forge λειτουργεί εξ ολοκλήρου στη συσκευή σας. Ο κωδικός πρόσβασης και τα κλειδιά σας δεν αποθηκεύονται ποτέ σε διακομιστή ούτε αποστέλλονται μέσω του δικτύου."
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "Τα κλειδιά σας είναι εντελώς ιδιωτικά και δεν μπορούν να ανακτηθούν εάν χαθούν. Πρέπει να φυλάξετε τη φράση ανάκτησης σε ασφαλές μέρος, καθώς είναι ο μόνος τρόπος για να επαναφέρετε την πρόσβασή σας."
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "Ορίστε έναν ευκολομνημόνευτο κωδικό πρόσβασης για αυτήν τη συσκευή. Αυτό ξεκλειδώνει την εφαρμογή, επιτρέποντάς σας να κρυπτογραφείτε και να αποκρυπτογραφείτε δεδομένα με ασφάλεια τοπικά."
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "Δημιουργήστε μια νέα ταυτότητα χρησιμοποιώντας μια ασφαλή φράση ανάκτησης 24 λέξεων."
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "Επαναφέρετε μια υπάρχουσα ταυτότητα χρησιμοποιώντας τη φράση ανάκτησης 24 λέξεων."
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "Ανοίγει μόνο εάν έχει σταλεί σε εσάς και δείχνει από ποιον προήλθε."
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "Γλώσσα"
+    }
+  }
+}

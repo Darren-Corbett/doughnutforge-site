@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/zh-TW/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "安全檔案"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "安全目錄"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "安全文字"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "身分"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "聯絡人"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "備份短語"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "復原身分"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "匯出為 PDF"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "密碼"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "加密檔案"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "解密檔案"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "加密檔案"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "分享名片"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "匯入聯絡人名片"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "分享您的聯絡人卡片，其他人就能傳送只有您能開啟的檔案和筆記給您。"
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "您的聯絡人卡片可以放心分享。它無法用來開啟傳送給您的任何內容。"
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Doughnut Forge 完全在您的裝置上執行。您的密碼和金鑰絕不會儲存在伺服器上或透過網路傳送。"
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "您的金鑰完全是私人的，一旦遺失將無法復原。您必須將復原短語儲存在安全的地方，因為這是恢復存取權限的唯一方法。"
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "為此裝置設定一個容易記住的密碼。此密碼可解鎖應用程式，讓您在本機安全地加密和解密資料。"
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "使用安全產生的 24 個單字備份短語建立新身分。"
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "使用您的 24 個單字備份短語復原現有身分。"
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "只有傳送給您時它才會開啟，並顯示發件人。"
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "語言"
+    }
+  }
+}

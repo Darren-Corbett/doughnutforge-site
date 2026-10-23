@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/vi/*.json",
+  "app:navigation.tabs.vault": "Thư mục bảo mật",
+  "app:navigation.tabs.mobile-vault": "Tệp bảo mật",
+  "app:navigation.tabs.text-vault": "Văn bản bảo mật",
+  "app:navigation.tabs.identity": "Danh tính",
+  "app:navigation.tabs.contacts": "Liên hệ",
+  "app:navigation.language": "Ngôn ngữ",
+  "app:languageModal.regions.europe": "Châu Âu",
+  "app:languageModal.regions.americas": "Châu Mỹ",
+  "app:languageModal.regions.middleEastAfrica": "Trung Đông và Châu Phi",
+  "app:languageModal.regions.asiaPacific": "Châu Á - Thái Bình Dương",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Mã hóa tệp",
+  "help:secureDirectoryGuide.step1.description": "Thêm các thư mục cục bộ vào không gian làm việc của bạn để duyệt và quản lý các tệp. Doughnut Forge hoạt động hoàn toàn cục bộ, có nghĩa là các tệp gốc của bạn không bao giờ rời khỏi thiết bị.",
+  "help:setupGuide.step2.description": "Danh tính kỹ thuật số của bạn đóng vai trò là bộ khóa cá nhân của bạn, được lưu trữ an toàn trong ứng dụng. Doughnut Forge sử dụng các khóa này để bảo vệ tệp của bạn và xác minh các liên hệ đáng tin cậy của bạn.",
+  "help:setupGuide.step3.description": "Các khóa của bạn hoàn toàn riêng tư và không thể khôi phục nếu bị mất. Bạn phải giữ cụm từ sao lưu của mình ở một vị trí an toàn, vì đây là cách duy nhất để khôi phục quyền truy cập của bạn.",
+  "help:identityContactsGuide.step1.description": "Xuất danh tính của bạn dưới dạng thẻ liên hệ an toàn (.vltc2). Chia sẻ tệp này để người khác có thể xác minh an toàn bạn là ai và thêm bạn vào mạng đáng tin cậy của họ.",
+  "help:identityContactsGuide.step3.description": "Quản lý mạng đáng tin cậy của bạn. Mặc dù bất kỳ ai có thẻ của bạn đều có thể gửi cho bạn tệp an toàn, nhưng việc xác minh liên hệ tại đây cho phép bạn nhanh chóng chọn họ để chia sẻ và xác nhận danh tính thực của họ."
+}

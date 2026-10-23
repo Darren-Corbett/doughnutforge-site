@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "Dasar Privasi",
+    "effectiveDate": "Tarikh Berkuat Kuasa: Oktober 2026",
+    "hero": "<strong>Doughnut Forge dibina berasaskan seni bina setempat tanpa pengetahuan (zero-knowledge).</strong> Ini bermakna kami tidak mengumpul, menghantar, menyimpan atau mempunyai sebarang akses kepada data anda, kecuali maklumat yang anda pilih untuk dihantar terus kepada kami (lihat Bahagian 3).",
+    "sec1Title": "1. Penyimpanan &amp; Pemadaman Data",
+    "sec1Desc": "Semua kunci kriptografi, identiti <code class=\"k1\">.vltc2</code> dan fail <code class=\"k2\">.vlt2</code> yang dijana oleh Doughnut Forge disimpan secara eksklusif pada peranti anda. Tiada maklumat yang meninggalkan peranti anda melainkan anda sendiri mengeksport dan berkongsi fail. Menyahpasang aplikasi akan membuang perisian tersebut, tetapi tidak membuang fail yang telah anda simpan di lokasi lain pada peranti atau kunci yang disimpan dalam pengurus kelayakan sistem (seperti Keychain macOS atau Credential Manager Windows). Anda boleh memadamnya secara manual.",
+    "sec2Title": "2. Analitik dan Telemetri",
+    "sec2Desc": "Doughnut Forge tidak mengandungi skrip penjejakan, enjin analitik atau pelapor ranap. Jika anda memuat turun aplikasi daripada Apple App Store atau Microsoft Store, Apple atau Microsoft mungkin memberikan kami statistik agregat, seperti bilangan muat turun dan statistik ranap. Laporan ini tidak mengandungi maklumat yang boleh mengenal pasti diri anda. Anda boleh mengawal perkongsian data diagnostik dalam tetapan peranti anda.",
+    "sec3Title": "3. Sokongan &amp; Hubungan",
+    "sec3Desc": "Untuk pertanyaan atau untuk melaporkan isu teknikal, sila buka tiket di penjejak [[gh]]GitHub Issues[[/gh]] kami. GitHub ialah platform awam yang tertakluk kepada dasar privasinya sendiri, jadi jangan sekali-kali sertakan data sensitif atau data yang telah dinyahsulit dalam laporan anda. Untuk pertanyaan berkaitan privasi, sila gunakan [[tally]]Borang Hubungan[[/tally]] kami. Maklumat yang anda hantar melalui borang tersebut diproses oleh Tally (tally.so), yang kami gunakan untuk menerima mesej anda, dan hanya digunakan untuk menjawab pertanyaan anda.",
+    "sec4Title": "4. Perubahan pada Dasar Ini",
+    "sec4Desc": "Kami mungkin mengemas kini dasar ini dari semasa ke semasa. Sebarang perubahan akan diterbitkan di halaman ini dengan Tarikh Berkuat Kuasa yang dikemas kini.",
+    "sec5Title": "5. Hak Anda dan Pendedahan Undang-undang",
+    "sec5Desc": "Bagi pertanyaan yang dihantar melalui borang hubungan kami, kami memproses maklumat anda berdasarkan kepentingan sah kami untuk menyediakan sokongan. Kami menyimpan mesej hanya selama yang munasabah diperlukan untuk menjawab pertanyaan anda, dan selepas itu kami berusaha memadamnya secara berkala. Jika anda mahu mesej anda dipadamkan lebih awal, mohon sahaja melalui borang yang sama. Bergantung pada tempat tinggal anda (contohnya di bawah undang-undang perlindungan data UK), anda mungkin berhak meminta akses kepada, pembetulan atau pemadaman komunikasi anda dengan kami, serta membuat aduan kepada pihak berkuasa perlindungan data UK, iaitu [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge tidak ditujukan kepada kanak-kanak di bawah umur 13 tahun. Jika anda percaya seorang kanak-kanak telah menghantar maklumat peribadi kepada kami melalui borang hubungan kami, sila maklumkan kepada kami dan kami akan memadamkannya. Halaman ini dihoskan di GitHub Pages. Kami tidak menambah sebarang penjejakan atau analitik, tetapi GitHub mungkin merekodkan maklumat teknikal, seperti alamat IP anda, semasa anda melawat, bagi tujuan keselamatan dan pengendalian perkhidmatan; lihat [[ghp]]Kenyataan Privasi GitHub[[/ghp]]. Kami tidak bertindak balas kepada isyarat Do Not Track (DNT) kerana kami tidak menjejaki anda.",
+    "publisherInfo": "Diterbitkan oleh Darren Corbett."
+  }
+}

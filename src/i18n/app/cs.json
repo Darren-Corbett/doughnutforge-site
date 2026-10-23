@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/cs/*.json",
+  "app:navigation.tabs.vault": "Zabezpečená složka",
+  "app:navigation.tabs.mobile-vault": "Bezpečný soubor",
+  "app:navigation.tabs.text-vault": "Zabezpečený text",
+  "app:navigation.tabs.identity": "Identita",
+  "app:navigation.tabs.contacts": "Kontakty",
+  "app:navigation.language": "Jazyk",
+  "app:languageModal.regions.europe": "Evropa",
+  "app:languageModal.regions.americas": "Amerika",
+  "app:languageModal.regions.middleEastAfrica": "Blízký východ a Afrika",
+  "app:languageModal.regions.asiaPacific": "Asie a Tichomoří",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Šifrování souboru",
+  "help:secureDirectoryGuide.step1.description": "Přidejte místní složky do pracovního prostoru pro procházení a správu souborů. Doughnut Forge funguje zcela lokálně, což znamená, že vaše původní soubory nikdy neopustí vaše zařízení.",
+  "help:setupGuide.step2.description": "Vaše digitální identita funguje jako vaše osobní sada klíčů, které jsou bezpečně uloženy v aplikaci. Doughnut Forge používá tyto klíče k ochraně vašich souborů a ověřování důvěryhodných kontaktů.",
+  "help:setupGuide.step3.description": "Vaše klíče jsou zcela soukromé a v případě ztráty je nelze obnovit. Záložní frázi musíte uchovávat na bezpečném místě, protože je to jediný způsob, jak obnovit přístup.",
+  "help:identityContactsGuide.step1.description": "Exportujte svou identitu jako bezpečnou vizitku (.vltc2). Sdílejte tento soubor, aby ostatní mohli bezpečně ověřit, kdo jste, a přidat si vás do své důvěryhodné sítě.",
+  "help:identityContactsGuide.step3.description": "Spravujte svou důvěryhodnou síť. I když vám bezpečné soubory může poslat kdokoli s vaší vizitkou, ověření kontaktů zde vám umožní rychle je vybrat pro sdílení a potvrzuje jejich skutečnou identitu."
+}

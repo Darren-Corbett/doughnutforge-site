@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ms/*.json",
+  "app:navigation.tabs.vault": "Direktori Selamat",
+  "app:navigation.tabs.mobile-vault": "Fail Selamat",
+  "app:navigation.tabs.text-vault": "Teks Selamat",
+  "app:navigation.tabs.identity": "Identiti",
+  "app:navigation.tabs.contacts": "Kenalan",
+  "app:navigation.language": "Bahasa",
+  "app:languageModal.regions.europe": "Eropah",
+  "app:languageModal.regions.americas": "Amerika",
+  "app:languageModal.regions.middleEastAfrica": "Timur Tengah dan Afrika",
+  "app:languageModal.regions.asiaPacific": "Asia Pasifik",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Menyulitkan fail",
+  "help:secureDirectoryGuide.step1.description": "Tambah folder setempat ke ruang kerja anda untuk menyemak imbas dan mengurus fail anda. Doughnut Forge beroperasi sepenuhnya secara setempat, bermakna fail asal anda tidak pernah meninggalkan peranti anda.",
+  "help:setupGuide.step2.description": "Identiti digital anda bertindak sebagai set kunci peribadi anda, yang disimpan dengan selamat dalam aplikasi. Doughnut Forge menggunakan kunci ini untuk melindungi fail anda dan mengesahkan kenalan anda yang dipercayai.",
+  "help:setupGuide.step3.description": "Kunci anda sepenuhnya peribadi dan tidak boleh dipulihkan jika hilang. Anda mesti menyimpan frasa sandaran anda di lokasi yang selamat, kerana ia satu-satunya cara untuk memulihkan akses anda.",
+  "help:identityContactsGuide.step1.description": "Eksport identiti anda sebagai kad kenalan yang selamat (.vltc2). Kongsi fail ini supaya orang lain dapat mengesahkan dengan selamat siapa anda dan menambah anda ke rangkaian mereka yang dipercayai.",
+  "help:identityContactsGuide.step3.description": "Urus rangkaian anda yang dipercayai. Walaupun sesiapa yang mempunyai kad anda boleh menghantar fail selamat, mengesahkan kenalan di sini membolehkan anda memilihnya dengan pantas untuk perkongsian dan mengesahkan identiti sebenar mereka."
+}

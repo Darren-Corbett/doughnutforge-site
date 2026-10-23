@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/vi/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "Tệp bảo mật"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "Thư mục bảo mật"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "Văn bản bảo mật"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "Danh tính"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "Liên hệ"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "Cụm từ sao lưu"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "Khôi phục danh tính"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "Xuất PDF sao lưu"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "Mật khẩu"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "Mã hóa tệp"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "Giải mã tệp"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "Mã hóa tệp"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "Chia sẻ Thẻ Liên hệ"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "Nhập thẻ liên hệ"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "Chia sẻ thẻ liên hệ của bạn để mọi người có thể gửi cho bạn các tệp và ghi chú mà chỉ bạn mới mở được."
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "Thẻ liên hệ của bạn có thể chia sẻ an toàn. Không thể dùng thẻ này để mở bất cứ thứ gì được gửi cho bạn."
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Doughnut Forge hoạt động hoàn toàn trên thiết bị của bạn. Mật khẩu và khóa của bạn không bao giờ được lưu trữ trên máy chủ hoặc gửi qua mạng."
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "Các khóa của bạn hoàn toàn riêng tư và không thể khôi phục nếu bị mất. Bạn phải giữ cụm từ sao lưu của mình ở một vị trí an toàn, vì đây là cách duy nhất để khôi phục quyền truy cập của bạn."
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "Đặt một mật khẩu dễ nhớ cho thiết bị này. Nó mở khóa ứng dụng, cho phép bạn mã hóa và giải mã dữ liệu cục bộ một cách an toàn."
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "Tạo danh tính mới bằng cụm từ sao lưu 24 từ được tạo an toàn."
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "Khôi phục danh tính hiện có bằng cụm từ sao lưu 24 từ của bạn."
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "Tệp chỉ mở nếu được gửi cho bạn và hiển thị người gửi."
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "Ngôn ngữ"
+    }
+  }
+}

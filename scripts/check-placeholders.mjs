@@ -13,7 +13,9 @@ const files = readdirSync(dist, { recursive: true })
 
 const found = new Map();
 for (const file of files) {
-  for (const [, what] of readFileSync(join(dist, file), "utf8").matchAll(MARKER)) {
+  // Line-break markup (src/middleware.ts) may sit inside a placeholder's words; it is removed first
+  const html = readFileSync(join(dist, file), "utf8").replace(/<span class="keep-word">([^<]*)<\/span>/g, "$1").replace(/<wbr>/g, "");
+  for (const [, what] of html.matchAll(MARKER)) {
     found.set(what, (found.get(what) ?? new Set()).add(file));
   }
 }

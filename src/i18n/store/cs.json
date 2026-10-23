@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/cs",
+  "mac": {
+    "subtitle": "Šifrování bez předplatného",
+    "promotionalText": "Bez předplatného. Bez účtu. Bez serverů. Šifrujte soubory, složky a text ve svém počítači a bezpečně je sdílejte s lidmi, kterým důvěřujete. Jedna cena, platba jednou.",
+    "opening": "Soukromé soubory ať zůstanou soukromé. Doughnut Forge zamyká vaše soubory, složky a text ve vašem počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete. Ať je pošlete jakkoli, otevřít je mohou jen oni.",
+    "noSubscription": "Bez předplatného, bez účtu, bez serverů a bez sledování. Doughnut Forge funguje celý ve vašem počítači, i bez připojení k internetu. Vaše klíče a kontakty zůstávají u vás, pod vaší kontrolou. Zaplatíte jednou a aplikace je vaše.",
+    "closing": "Soukromí by nemělo být měsíčním poplatkem.",
+    "features": [
+      {
+        "title": "Šifrování souborů a složek",
+        "text": "Zamkněte jeden soubor nebo celou složku několika kliknutími a uložte ho v bezpečí nebo ho sdílejte."
+      },
+      {
+        "title": "Šifrování textu",
+        "text": "Zašifrujte soukromou zprávu pro své kontakty a sdílejte ji, jak chcete."
+      },
+      {
+        "title": "Vaše identita, váš počítač",
+        "text": "Vytvořte si identitu v aplikaci. Kontaktní kartu můžete bezpečně sdílet s kýmkoli. Díky ní vám ostatní mohou posílat soukromé soubory."
+      },
+      {
+        "title": "Sdílení s lidmi, kterým důvěřujete",
+        "text": "Šifrujte soubory pro kterýkoli ze svých kontaktů. Otevřou je svou vlastní identitou. Nikdo jiný to nedokáže."
+      },
+      {
+        "title": "Navrženo na dlouhou dobu",
+        "text": "Používá postkvantové šifrování, takže to, co dnes chráníte, zůstane chráněné, i když budou počítače výkonnější."
+      },
+      {
+        "title": "Ve vašem jazyce",
+        "text": "Používejte aplikaci v češtině, angličtině, španělštině, japonštině a mnoha dalších jazycích."
+      }
+    ],
+    "parts": {
+      "headline": "Soukromé soubory ať zůstanou soukromé.",
+      "homeLead": "Doughnut Forge zamyká vaše soubory, složky a text ve vašem počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete.",
+      "lead": "Doughnut Forge zamyká vaše soubory, složky a text ve vašem počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete. Ať je pošlete jakkoli, otevřít je mohou jen oni.",
+      "never": "Bez předplatného. Bez účtu. Bez serverů.",
+      "short": "Bez předplatného. Bez účtu. Bez serverů. Šifrujte soubory, složky a text ve svém počítači a bezpečně je sdílejte s lidmi, kterým důvěřujete.",
+      "offline": "Bez předplatného, bez účtu, bez serverů a bez sledování. Doughnut Forge funguje celý ve vašem počítači, i bez připojení k internetu. Vaše klíče a kontakty zůstávají u vás, pod vaší kontrolou."
+    }
+  },
+  "ios": {
+    "subtitle": "Šifrování bez předplatného",
+    "promotionalText": "Bez předplatného. Bez účtu. Bez serverů. Šifrujte soubory, fotky, videa a text v iPhonu nebo iPadu a bezpečně je sdílejte s lidmi, kterým důvěřujete. Platba jednou.",
+    "opening": "Soukromé soubory ať zůstanou soukromé. Doughnut Forge zamyká vaše soubory, fotky, videa a text ve vašem iPhonu a iPadu a umožňuje vám je sdílet s lidmi, kterým důvěřujete. Ať je pošlete jakkoli, otevřít je mohou jen oni.",
+    "noSubscription": "Bez předplatného, bez účtu, bez serverů a bez sledování. Doughnut Forge funguje celý ve vašem zařízení, i bez připojení k internetu. Vaše klíče a kontakty zůstávají u vás, pod vaší kontrolou. Zaplatíte jednou a aplikace je vaše.",
+    "closing": "Soukromí by nemělo být měsíčním poplatkem.",
+    "features": [
+      {
+        "title": "Šifrování souborů, fotek a videí",
+        "text": "Vyberte soubor z aplikace Soubory nebo fotku či video z knihovny, případně ho pošlete z jiné aplikace. Zašifrujte ho několika klepnutími a uložte v bezpečí nebo sdílejte."
+      },
+      {
+        "title": "Otevřete, co vám přijde",
+        "text": "Dešifrujte soubor od kontaktu a uložte ho do aplikace Soubory. Fotky a videa můžete uložit rovnou zpět do knihovny fotek."
+      },
+      {
+        "title": "Šifrování textu",
+        "text": "Zašifrujte soukromou zprávu pro své kontakty a sdílejte ji, jak chcete."
+      },
+      {
+        "title": "Sdílení s lidmi, kterým důvěřujete",
+        "text": "Šifrujte soubory pro kterýkoli ze svých kontaktů. Otevřou je svou vlastní identitou. Nikdo jiný to nedokáže."
+      },
+      {
+        "title": "Vaše identita, vaše zařízení",
+        "text": "Vytvořte si identitu v aplikaci. Kontaktní kartu můžete bezpečně sdílet s kýmkoli. Díky ní vám ostatní mohou posílat soukromé soubory."
+      },
+      {
+        "title": "Face ID a Touch ID",
+        "text": "Pokud chcete, odemykejte aplikaci pohledem nebo dotykem. Vaše heslo funguje i nadále."
+      },
+      {
+        "title": "Navrženo na dlouhou dobu",
+        "text": "Používá postkvantové šifrování, takže to, co dnes chráníte, zůstane chráněné, i když budou počítače výkonnější."
+      },
+      {
+        "title": "Ve vašem jazyce",
+        "text": "Používejte aplikaci v češtině, angličtině, španělštině, japonštině a mnoha dalších jazycích."
+      }
+    ]
+  }
+}

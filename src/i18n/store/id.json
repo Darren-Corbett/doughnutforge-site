@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/id",
+  "mac": {
+    "subtitle": "Enkripsi tanpa langganan",
+    "promotionalText": "Tanpa langganan. Tanpa akun. Tanpa server. Enkripsi file, folder, dan teks di komputer Anda, lalu bagikan dengan aman kepada orang yang Anda percaya. Sekali bayar.",
+    "opening": "Jaga file pribadi tetap pribadi. Doughnut Forge mengunci file, folder, dan teks di komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya. Apa pun cara Anda mengirimnya, hanya mereka yang dapat membukanya.",
+    "noSubscription": "Tanpa langganan, tanpa akun, tanpa server, dan tanpa pelacakan. Doughnut Forge bekerja sepenuhnya di komputer Anda, bahkan tanpa koneksi internet. Kunci dan kontak Anda tetap bersama Anda, di bawah kendali Anda. Anda membayar sekali, dan aplikasinya menjadi milik Anda.",
+    "closing": "Privasi seharusnya bukan tagihan bulanan.",
+    "features": [
+      {
+        "title": "Enkripsi file dan folder",
+        "text": "Kunci satu file atau seluruh folder hanya dengan beberapa klik, siap disimpan dengan aman atau dibagikan."
+      },
+      {
+        "title": "Enkripsi teks",
+        "text": "Enkripsi pesan pribadi untuk kontak Anda dan bagikan sesuka Anda."
+      },
+      {
+        "title": "Identitas Anda, komputer Anda",
+        "text": "Buat identitas Anda di aplikasi. Kartu Kontak Anda aman dibagikan kepada siapa pun. Dengan kartu itu, orang lain dapat mengirimi Anda file pribadi."
+      },
+      {
+        "title": "Berbagi dengan orang tepercaya",
+        "text": "Enkripsi file untuk kontak mana pun. Mereka membukanya dengan identitas mereka sendiri. Tidak ada orang lain yang bisa."
+      },
+      {
+        "title": "Dibuat untuk jangka panjang",
+        "text": "Menggunakan enkripsi pascakuantum, sehingga apa yang Anda lindungi hari ini tetap terlindungi saat komputer makin canggih."
+      },
+      {
+        "title": "Dalam bahasa Anda",
+        "text": "Gunakan aplikasi dalam bahasa Indonesia, Inggris, Spanyol, Jepang, dan banyak bahasa lainnya."
+      }
+    ],
+    "parts": {
+      "headline": "Jaga file pribadi tetap pribadi.",
+      "homeLead": "Doughnut Forge mengunci file, folder, dan teks di komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya.",
+      "lead": "Doughnut Forge mengunci file, folder, dan teks di komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya. Apa pun cara Anda mengirimnya, hanya mereka yang dapat membukanya.",
+      "never": "Tanpa langganan. Tanpa akun. Tanpa server.",
+      "short": "Tanpa langganan. Tanpa akun. Tanpa server. Enkripsi file, folder, dan teks di komputer Anda, lalu bagikan dengan aman kepada orang yang Anda percaya.",
+      "offline": "Tanpa langganan, tanpa akun, tanpa server, dan tanpa pelacakan. Doughnut Forge bekerja sepenuhnya di komputer Anda, bahkan tanpa koneksi internet. Kunci dan kontak Anda tetap bersama Anda, di bawah kendali Anda."
+    }
+  },
+  "ios": {
+    "subtitle": "Enkripsi tanpa langganan",
+    "promotionalText": "Tanpa langganan. Tanpa akun. Tanpa server. Enkripsi file, foto, video, dan teks di iPhone atau iPad Anda, lalu bagikan dengan aman kepada orang yang Anda percaya.",
+    "opening": "Jaga file pribadi tetap pribadi. Doughnut Forge mengunci file, foto, video, dan teks di iPhone dan iPad Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya. Apa pun cara Anda mengirimnya, hanya mereka yang dapat membukanya.",
+    "noSubscription": "Tanpa langganan, tanpa akun, tanpa server, dan tanpa pelacakan. Doughnut Forge bekerja sepenuhnya di perangkat Anda, bahkan tanpa koneksi internet. Kunci dan kontak Anda tetap bersama Anda, di bawah kendali Anda. Anda membayar sekali, dan aplikasinya menjadi milik Anda.",
+    "closing": "Privasi seharusnya bukan tagihan bulanan.",
+    "features": [
+      {
+        "title": "Enkripsi file, foto, dan video",
+        "text": "Pilih file dari app File atau foto atau video dari perpustakaan Anda, atau kirim dari app lain. Enkripsi dengan beberapa ketukan, siap disimpan dengan aman atau dibagikan."
+      },
+      {
+        "title": "Buka yang dikirimkan kepada Anda",
+        "text": "Dekripsi file dari kontak dan simpan ke app File. Foto dan video dapat langsung kembali ke perpustakaan foto Anda."
+      },
+      {
+        "title": "Enkripsi teks",
+        "text": "Enkripsi pesan pribadi untuk kontak Anda dan bagikan sesuka Anda."
+      },
+      {
+        "title": "Berbagi dengan orang tepercaya",
+        "text": "Enkripsi file untuk kontak mana pun. Mereka membukanya dengan identitas mereka sendiri. Tidak ada orang lain yang bisa."
+      },
+      {
+        "title": "Identitas Anda, perangkat Anda",
+        "text": "Buat identitas Anda di aplikasi. Kartu Kontak Anda aman dibagikan kepada siapa pun. Dengan kartu itu, orang lain dapat mengirimi Anda file pribadi."
+      },
+      {
+        "title": "Face ID dan Touch ID",
+        "text": "Buka kunci aplikasi dengan sekali lihat atau sentuhan jika Anda mau. Kata sandi Anda tetap berfungsi."
+      },
+      {
+        "title": "Dibuat untuk jangka panjang",
+        "text": "Menggunakan enkripsi pascakuantum, sehingga apa yang Anda lindungi hari ini tetap terlindungi saat komputer makin canggih."
+      },
+      {
+        "title": "Dalam bahasa Anda",
+        "text": "Gunakan aplikasi dalam bahasa Indonesia, Inggris, Spanyol, Jepang, dan banyak bahasa lainnya."
+      }
+    ]
+  }
+}

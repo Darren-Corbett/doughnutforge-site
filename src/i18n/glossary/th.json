@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/th/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "ไฟล์ที่ปลอดภัย"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "ไดเรกทอรีที่ปลอดภัย"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "ข้อความที่ปลอดภัย"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "ข้อมูลประจำตัว"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "ผู้ติดต่อ"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "วลีสำรองข้อมูล"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "กู้คืนข้อมูลประจำตัว"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "ส่งออก PDF สำหรับสำรองข้อมูล"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "รหัสผ่าน"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "เข้ารหัสไฟล์"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "ถอดรหัสไฟล์"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "การเข้ารหัสไฟล์"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "แชร์นามบัตร"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "นำเข้านามบัตร"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "แชร์นามบัตรของคุณ เพื่อให้ผู้อื่นส่งไฟล์และบันทึกที่มีเพียงคุณเท่านั้นที่เปิดได้มาให้คุณ"
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "นามบัตรของคุณแชร์ได้อย่างปลอดภัย ไม่สามารถใช้เปิดสิ่งใดก็ตามที่ส่งถึงคุณได้"
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Doughnut Forge ทำงานบนอุปกรณ์ของคุณทั้งหมด รหัสผ่านและกุญแจของคุณจะไม่ถูกเก็บไว้บนเซิร์ฟเวอร์หรือส่งผ่านเครือข่าย"
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "คีย์ของคุณมีความเป็นส่วนตัวโดยสมบูรณ์และไม่สามารถกู้คืนได้หากสูญหาย คุณต้องเก็บวลีสำรองข้อมูลไว้ในที่ปลอดภัย เนื่องจากเป็นวิธีเดียวในการกู้คืนการเข้าถึงของคุณ"
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "ตั้งรหัสผ่านที่จำง่ายสำหรับอุปกรณ์นี้ เพื่อปลดล็อคแอปพลิเคชันและช่วยให้คุณสามารถเข้ารหัสและถอดรหัสข้อมูลในเครื่องได้อย่างปลอดภัย"
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "สร้างข้อมูลประจำตัวใหม่ด้วยวลีสำรองข้อมูล 24 คำที่สร้างขึ้นอย่างปลอดภัย"
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "กู้คืนข้อมูลประจำตัวที่มีอยู่โดยใช้วลีสำรองข้อมูล 24 คำของคุณ"
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "จะเปิดได้ก็ต่อเมื่อส่งถึงคุณ และแสดงว่ามาจากใคร"
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "ภาษา"
+    }
+  }
+}

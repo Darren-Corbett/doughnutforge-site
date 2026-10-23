@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/cs/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "Bezpečný soubor"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "Zabezpečená složka"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "Zabezpečený text"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "Identita"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "Kontakty"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "Záložní fráze"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "Obnovit identitu"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "Exportovat záložní PDF"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "Heslo"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "Zašifrovat soubor"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "Dešifrovat soubor"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "Šifrování souboru"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "Sdílet vizitku"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "Importovat kontaktní kartu"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "Sdílejte svou kontaktní kartu, aby vám lidé mohli posílat soubory a poznámky, které otevřete jen vy."
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "Vaši kontaktní kartu můžete bezpečně sdílet. Nelze ji použít k otevření ničeho, co vám bylo posláno."
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Doughnut Forge funguje výhradně ve vašem zařízení. Vaše heslo a klíče se nikdy neukládají na server ani se neposílají po síti."
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "Vaše klíče jsou zcela soukromé a v případě ztráty je nelze obnovit. Záložní frázi musíte uchovávat na bezpečném místě, protože je to jediný způsob, jak obnovit přístup."
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "Nastavte si zapamatovatelné heslo pro toto zařízení. To odemkne aplikaci a umožní vám bezpečně šifrovat a dešifrovat data lokálně."
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "Vytvořit novou identitu pomocí bezpečně vygenerované 24slovné záložní fráze."
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "Obnovte stávající identitu pomocí vaší 24slovné záložní fráze."
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "Otevře se pouze v případě, že byl zaslán vám, a ukáže, od koho pochází."
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "Jazyk"
+    }
+  }
+}

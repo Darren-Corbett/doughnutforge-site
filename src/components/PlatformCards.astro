@@ -2,7 +2,7 @@
 // One card per platform, in the order of src/data/stores.ts: the store badge
 // where the app is on sale, "Coming soon" with no link where it is not.
 import StoreBadge from "./StoreBadge.astro";
-import { platforms, type PlatformId } from "../data/stores";
+import { platformName, platforms, storeNames, type PlatformId } from "../data/stores";
 import { fill, useStrings, type Language, type UiKey } from "../i18n";
 
 interface Props {
@@ -25,12 +25,12 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
   {
     platforms.map((p) => (
       <li class:list={["card", p.status === "available" ? "on-sale" : "coming"]}>
-        <Heading class="name">{t(`platform.${p.id}`)}</Heading>
+        <Heading class="name">{platformName(lang, p.id)}</Heading>
         {p.status === "available" ? (
           <>
             <p class="status">
               {mode === "pricing"
-                ? fill(t("pricing.oneTime"), { store: t(`store.${p.store}`) })
+                ? fill(t("pricing.oneTime"), { store: storeNames[p.store] })
                 : REQUIRES[p.id] && t(REQUIRES[p.id]!)}
             </p>
             <div class="badge">

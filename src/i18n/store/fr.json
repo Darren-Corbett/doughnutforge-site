@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/fr-FR",
+  "mac": {
+    "subtitle": "Chiffrement sans abonnement",
+    "promotionalText": "Sans abonnement. Sans compte. Sans serveur. Chiffrez fichiers, dossiers et textes sur votre ordinateur et partagez-les en toute sécurité. Un prix, payé une seule fois.",
+    "opening": "Vos fichiers privés restent privés. Doughnut Forge verrouille vos fichiers, dossiers et textes sur votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance. Quelle que soit la façon dont vous les envoyez, elles seules peuvent les ouvrir.",
+    "noSubscription": "Sans abonnement, sans compte, sans serveur et sans pistage. Doughnut Forge fonctionne entièrement sur votre ordinateur, même sans connexion Internet. Vos clés et vos contacts restent avec vous, sous votre contrôle. Vous payez une fois, et l'app est à vous.",
+    "closing": "La vie privée ne devrait pas être une facture mensuelle.",
+    "features": [
+      {
+        "title": "Chiffrez fichiers et dossiers",
+        "text": "Verrouillez un fichier ou un dossier entier en quelques clics, prêt à être conservé en sécurité ou partagé."
+      },
+      {
+        "title": "Chiffrez du texte",
+        "text": "Chiffrez un message privé pour vos contacts et partagez-le comme vous le souhaitez."
+      },
+      {
+        "title": "Votre identité, votre ordinateur",
+        "text": "Créez votre identité dans l'app. Votre carte de contact se partage sans risque avec n'importe qui. Elle permet aux autres de vous envoyer des fichiers privés."
+      },
+      {
+        "title": "Partagez en toute confiance",
+        "text": "Chiffrez des fichiers pour n'importe lequel de vos contacts. Ils les ouvrent avec leur propre identité. Personne d'autre ne le peut."
+      },
+      {
+        "title": "Conçu pour durer",
+        "text": "Utilise un chiffrement post-quantique, pour que ce que vous protégez aujourd'hui le reste à mesure que les ordinateurs gagnent en puissance."
+      },
+      {
+        "title": "Dans votre langue",
+        "text": "Utilisez l'app en français, anglais, espagnol, japonais et dans bien d'autres langues."
+      }
+    ],
+    "parts": {
+      "headline": "Vos fichiers privés restent privés.",
+      "homeLead": "Doughnut Forge verrouille vos fichiers, dossiers et textes sur votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance.",
+      "lead": "Doughnut Forge verrouille vos fichiers, dossiers et textes sur votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance. Quelle que soit la façon dont vous les envoyez, elles seules peuvent les ouvrir.",
+      "never": "Sans abonnement. Sans compte. Sans serveur.",
+      "short": "Sans abonnement. Sans compte. Sans serveur. Chiffrez fichiers, dossiers et textes sur votre ordinateur et partagez-les en toute sécurité.",
+      "offline": "Sans abonnement, sans compte, sans serveur et sans pistage. Doughnut Forge fonctionne entièrement sur votre ordinateur, même sans connexion Internet. Vos clés et vos contacts restent avec vous, sous votre contrôle."
+    }
+  },
+  "ios": {
+    "subtitle": "Chiffrement sans abonnement",
+    "promotionalText": "Sans abonnement. Sans compte. Sans serveur. Chiffrez fichiers, photos, vidéos et textes sur votre iPhone ou iPad et partagez-les en toute sécurité. Un seul paiement.",
+    "opening": "Vos fichiers privés restent privés. Doughnut Forge verrouille vos fichiers, photos, vidéos et textes sur votre iPhone et votre iPad et vous permet de les partager avec les personnes en qui vous avez confiance. Quelle que soit la façon dont vous les envoyez, elles seules peuvent les ouvrir.",
+    "noSubscription": "Sans abonnement, sans compte, sans serveur et sans pistage. Doughnut Forge fonctionne entièrement sur votre appareil, même sans connexion Internet. Vos clés et vos contacts restent avec vous, sous votre contrôle. Vous payez une fois, et l'app est à vous.",
+    "closing": "La vie privée ne devrait pas être une facture mensuelle.",
+    "features": [
+      {
+        "title": "Chiffrez fichiers, photos et vidéos",
+        "text": "Choisissez un fichier dans Fichiers ou une photo ou une vidéo de votre photothèque, ou envoyez-le depuis une autre app. Chiffrez-le en quelques touches, prêt à être conservé en sécurité ou partagé."
+      },
+      {
+        "title": "Ouvrez ce que l'on vous envoie",
+        "text": "Déchiffrez un fichier reçu d'un contact et enregistrez-le dans Fichiers. Les photos et vidéos peuvent retourner directement dans votre photothèque."
+      },
+      {
+        "title": "Chiffrez du texte",
+        "text": "Chiffrez un message privé pour vos contacts et partagez-le comme vous le souhaitez."
+      },
+      {
+        "title": "Partagez en toute confiance",
+        "text": "Chiffrez des fichiers pour n'importe lequel de vos contacts. Ils les ouvrent avec leur propre identité. Personne d'autre ne le peut."
+      },
+      {
+        "title": "Votre identité, votre appareil",
+        "text": "Créez votre identité dans l'app. Votre carte de contact se partage sans risque avec n'importe qui. Elle permet aux autres de vous envoyer des fichiers privés."
+      },
+      {
+        "title": "Face ID et Touch ID",
+        "text": "Déverrouillez l'app d'un regard ou d'une touche, si vous le souhaitez. Votre mot de passe fonctionne toujours."
+      },
+      {
+        "title": "Conçu pour durer",
+        "text": "Utilise un chiffrement post-quantique, pour que ce que vous protégez aujourd'hui le reste à mesure que les ordinateurs gagnent en puissance."
+      },
+      {
+        "title": "Dans votre langue",
+        "text": "Utilisez l'app en français, anglais, espagnol, japonais et dans bien d'autres langues."
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/tr/*.json",
+  "app:navigation.tabs.vault": "Güvenli Dizin",
+  "app:navigation.tabs.mobile-vault": "Güvenli Dosya",
+  "app:navigation.tabs.text-vault": "Güvenli Metin",
+  "app:navigation.tabs.identity": "Kimlik",
+  "app:navigation.tabs.contacts": "Kişiler",
+  "app:navigation.language": "Dil",
+  "app:languageModal.regions.europe": "Avrupa",
+  "app:languageModal.regions.americas": "Amerika",
+  "app:languageModal.regions.middleEastAfrica": "Orta Doğu ve Afrika",
+  "app:languageModal.regions.asiaPacific": "Asya-Pasifik",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Dosya şifreleme",
+  "help:secureDirectoryGuide.step1.description": "Dosyalarınıza göz atmak ve yönetmek için çalışma alanınıza yerel klasörler ekleyin. Doughnut Forge tamamen yerel olarak çalışır, yani orijinal dosyalarınız asla cihazınızdan ayrılmaz.",
+  "help:setupGuide.step2.description": "Dijital kimliğiniz, uygulama içinde güvenli bir şekilde saklanan kişisel anahtar setiniz olarak işlev görür. Doughnut Forge, dosyalarınızı korumak ve güvenilir kişilerinizi doğrulamak için bu anahtarları kullanır.",
+  "help:setupGuide.step3.description": "Anahtarlarınız tamamen size özeldir ve kaybolmaları durumunda kurtarılamazlar. Erişiminizi geri yüklemenin tek yolu bu olduğundan, kurtarma ifadenizi güvenli bir yerde saklamanız gerekir.",
+  "help:identityContactsGuide.step1.description": "Kimliğinizi güvenli bir kişi kartı (.vltc2) olarak dışa aktarın. Başkalarının kim olduğunuzu güvenli bir şekilde doğrulayabilmesi ve sizi güvenilir ağlarına ekleyebilmesi için bu dosyayı paylaşın.",
+  "help:identityContactsGuide.step3.description": "Güvenilir ağınızı yönetin. Kartınıza sahip olan herkes size güvenli dosyalar gönderebilse de, kişileri burada doğrulamak, onları paylaşım için hızlıca seçmenize olanak tanır ve gerçek kimliklerini onaylar."
+}

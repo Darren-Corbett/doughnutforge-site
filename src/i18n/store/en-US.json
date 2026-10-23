@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/en-US",
+  "mac": {
+    "subtitle": "Encrypt and share. Pay once.",
+    "promotionalText": "No subscription. No account. No servers. Encrypt files, folders and text on your computer and share them safely with the people you trust. One price, paid once.",
+    "opening": "Keep private files private. Doughnut Forge locks your files, folders and text on your computer and lets you share them with the people you trust. However you send them, only they can open them.",
+    "noSubscription": "No subscription, no account, no servers and no tracking. Doughnut Forge works entirely on your computer, even without an internet connection. Your keys and contacts stay with you, under your control. You pay once, and the app is yours.",
+    "closing": "Privacy should not be a monthly bill.",
+    "features": [
+      {
+        "title": "Encrypt files and folders",
+        "text": "Lock a single file or a whole folder in a few clicks, ready to keep safe or to share."
+      },
+      {
+        "title": "Encrypt text",
+        "text": "Encrypt a private message for your contacts and share it however you like."
+      },
+      {
+        "title": "Your identity, your computer",
+        "text": "Create your identity in the app. Your contact card is safe to share with anyone. It lets people send you private files."
+      },
+      {
+        "title": "Share with people you trust",
+        "text": "Encrypt files for any of your contacts. They open them with their own identity. No one else can."
+      },
+      {
+        "title": "Built for the long term",
+        "text": "Uses post-quantum encryption, so what you protect today stays protected as computers become more powerful."
+      },
+      {
+        "title": "In your language",
+        "text": "Use the app in English, Spanish, Japanese, Ukrainian and many other languages."
+      }
+    ],
+    "parts": {
+      "headline": "Keep private files private.",
+      "homeLead": "Doughnut Forge locks your files, folders and text on your computer and lets you share them with the people you trust.",
+      "lead": "Doughnut Forge locks your files, folders and text on your computer and lets you share them with the people you trust. However you send them, only they can open them.",
+      "never": "No subscription. No account. No servers.",
+      "short": "No subscription. No account. No servers. Encrypt files, folders and text on your computer and share them safely with the people you trust.",
+      "offline": "No subscription, no account, no servers and no tracking. Doughnut Forge works entirely on your computer, even without an internet connection. Your keys and contacts stay with you, under your control."
+    }
+  },
+  "ios": {
+    "subtitle": "Encrypt and share. Pay once.",
+    "promotionalText": "No subscription. No account. No servers. Encrypt files, photos, videos and text on your iPhone or iPad and share them safely with the people you trust. Pay once.",
+    "opening": "Keep private files private. Doughnut Forge locks your files, photos, videos and text on your iPhone and iPad and lets you share them with the people you trust. However you send them, only they can open them.",
+    "noSubscription": "No subscription, no account, no servers and no tracking. Doughnut Forge works entirely on your device, even without an internet connection. Your keys and contacts stay with you, under your control. You pay once, and the app is yours.",
+    "closing": "Privacy should not be a monthly bill.",
+    "features": [
+      {
+        "title": "Encrypt files, photos and videos",
+        "text": "Choose a file from Files or a photo or video from your library, or send one from another app. Encrypt it in a few taps, ready to keep or share."
+      },
+      {
+        "title": "Open what is sent to you",
+        "text": "Decrypt a file from a contact and save it to Files. Photos and videos can go straight back to your photo library."
+      },
+      {
+        "title": "Encrypt text",
+        "text": "Encrypt a private message for your contacts and share it however you like."
+      },
+      {
+        "title": "Share with people you trust",
+        "text": "Encrypt files for any of your contacts. They open them with their own identity. No one else can."
+      },
+      {
+        "title": "Your identity, your device",
+        "text": "Create your identity in the app. Your contact card is safe to share with anyone. It lets people send you private files."
+      },
+      {
+        "title": "Face ID and Touch ID",
+        "text": "Unlock the app with a glance or a touch if you like. Your password always works too."
+      },
+      {
+        "title": "Built for the long term",
+        "text": "Uses post-quantum encryption, so what you protect today stays protected as computers become more powerful."
+      },
+      {
+        "title": "In your language",
+        "text": "Use the app in English, Spanish, Japanese, Ukrainian and many other languages."
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/hi/*.json",
+  "app:navigation.tabs.vault": "सुरक्षित निर्देशिका",
+  "app:navigation.tabs.mobile-vault": "सुरक्षित फ़ाइल",
+  "app:navigation.tabs.text-vault": "सुरक्षित टेक्स्ट",
+  "app:navigation.tabs.identity": "पहचान",
+  "app:navigation.tabs.contacts": "संपर्क",
+  "app:navigation.language": "भाषा",
+  "app:languageModal.regions.europe": "यूरोप",
+  "app:languageModal.regions.americas": "अमेरिका",
+  "app:languageModal.regions.middleEastAfrica": "मध्य पूर्व और अफ़्रीका",
+  "app:languageModal.regions.asiaPacific": "एशिया-प्रशांत",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "एक फ़ाइल को एन्क्रिप्ट करना",
+  "help:secureDirectoryGuide.step1.description": "अपनी फ़ाइलों को ब्राउज़ करने और प्रबंधित करने के लिए अपने कार्यक्षेत्र में स्थानीय फ़ोल्डर जोड़ें। Doughnut Forge पूरी तरह से स्थानीय रूप से संचालित होता है, जिसका अर्थ है कि आपकी मूल फ़ाइलें कभी भी आपके डिवाइस को नहीं छोड़ती हैं।",
+  "help:setupGuide.step2.description": "आपकी डिजिटल पहचान आपकी कुंजियों (keys) के व्यक्तिगत सेट के रूप में कार्य करती है, जो एप्लिकेशन के भीतर सुरक्षित रूप से सहेजी जाती हैं। Doughnut Forge इन कुंजियों का उपयोग आपकी फ़ाइलों की सुरक्षा करने और आपके विश्वसनीय संपर्कों को सत्यापित करने के लिए करता है।",
+  "help:setupGuide.step3.description": "आपकी कुंजियाँ पूरी तरह से निजी हैं और खो जाने पर पुनर्प्राप्त नहीं की जा सकतीं। आपको अपना बैकअप वाक्यांश सुरक्षित स्थान पर रखना चाहिए, क्योंकि आपकी पहुँच पुनर्स्थापित करने का यह एकमात्र तरीका है।",
+  "help:identityContactsGuide.step1.description": "एक सुरक्षित संपर्क कार्ड (.vltc2) के रूप में अपनी पहचान निर्यात करें। इस फ़ाइल को साझा करें ताकि अन्य लोग सुरक्षित रूप से सत्यापित कर सकें कि आप कौन हैं और आपको अपने विश्वसनीय नेटवर्क में जोड़ सकें।",
+  "help:identityContactsGuide.step3.description": "अपना विश्वसनीय नेटवर्क प्रबंधित करें। हालाँकि जिसके पास भी आपका कार्ड है वह आपको सुरक्षित फ़ाइलें भेज सकता है, लेकिन यहाँ संपर्कों को सत्यापित करने से आप साझा करने के लिए उन्हें तुरंत चुन सकते हैं और उनकी वास्तविक पहचान की पुष्टि कर सकते हैं।"
+}

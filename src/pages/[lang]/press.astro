@@ -1,0 +1,10 @@
+---
+// Press page in every language but English (English: src/pages/press.astro)
+import { otherLanguagePaths, type Language } from "../../i18n";
+import PressPage from "../../views/PressPage.astro";
+
+export const getStaticPaths = otherLanguagePaths;
+const { lang } = Astro.props as { lang: Language };
+---
+
+<PressPage lang={lang} />

@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "Politica de confidențialitate",
+    "effectiveDate": "Data intrării în vigoare: octombrie 2026",
+    "hero": "<strong>Doughnut Forge are la bază o arhitectură locală de tip zero-knowledge.</strong> Aceasta înseamnă că nu colectăm, nu transmitem și nu stocăm datele dvs. și nu avem acces la ele, cu excepția informațiilor pe care alegeți să ni le trimiteți direct (consultați secțiunea 3).",
+    "sec1Title": "1. Stocarea și ștergerea datelor",
+    "sec1Desc": "Toate cheile criptografice, identitățile <code class=\"k1\">.vltc2</code> și fișierele <code class=\"k2\">.vlt2</code> generate de Doughnut Forge sunt stocate exclusiv pe dispozitivul dvs. Nicio informație nu părăsește dispozitivul decât dacă exportați și partajați chiar dvs. un fișier. Dezinstalarea aplicației elimină software-ul, dar nu și fișierele salvate în alte locații de pe dispozitiv sau cheile păstrate în managerul de acreditări al sistemului (de exemplu, Keychain pe macOS sau Credential Manager pe Windows). Le puteți șterge manual.",
+    "sec2Title": "2. Analiză și telemetrie",
+    "sec2Desc": "Doughnut Forge nu conține scripturi de urmărire, motoare de analiză sau instrumente de raportare a blocărilor. Dacă descărcați aplicația din Apple App Store sau Microsoft Store, Apple sau Microsoft ne pot furniza statistici agregate, cum ar fi numărul de descărcări și statistici privind blocările. Aceste rapoarte nu conțin informații de identificare personală. Puteți controla partajarea datelor de diagnosticare din setările dispozitivului.",
+    "sec3Title": "3. Asistență și contact",
+    "sec3Desc": "Pentru întrebări sau pentru a raporta o problemă tehnică, deschideți un tichet în sistemul nostru [[gh]]GitHub Issues[[/gh]]. GitHub este o platformă publică guvernată de propria politică de confidențialitate, așa că nu includeți niciodată date sensibile sau decriptate în rapoarte. Pentru solicitări legate de confidențialitate, folosiți [[tally]]formularul nostru de contact[[/tally]]. Informațiile trimise prin acest formular sunt prelucrate de Tally (tally.so), pe care îl folosim pentru a primi mesajele, și sunt utilizate doar pentru a vă răspunde la solicitare.",
+    "sec4Title": "4. Modificări ale acestei politici",
+    "sec4Desc": "Putem actualiza periodic această politică. Orice modificare va fi publicată pe această pagină, împreună cu o dată actualizată a intrării în vigoare.",
+    "sec5Title": "5. Drepturile dvs. și informații juridice",
+    "sec5Desc": "Pentru solicitările trimise prin formularul nostru de contact, prelucrăm informațiile dvs. în temeiul interesului nostru legitim de a oferi asistență. Păstrăm mesajele doar atât cât este în mod rezonabil necesar pentru a răspunde solicitării dvs. și ne străduim să le ștergem periodic după aceea. Dacă doriți ca mesajele dvs. să fie șterse mai devreme, ne puteți cere acest lucru prin același formular. În funcție de locul în care locuiți (de exemplu, în temeiul legislației privind protecția datelor din Regatul Unit), este posibil să aveți dreptul de a solicita accesul la comunicările dvs. cu noi, rectificarea sau ștergerea acestora, precum și dreptul de a depune o plângere la autoritatea britanică de supraveghere, [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge nu se adresează copiilor sub 13 ani. Dacă credeți că un copil ne-a trimis informații personale prin formularul nostru de contact, vă rugăm să ne anunțați și le vom șterge. Această pagină este găzduită pe GitHub Pages. Nu adăugăm niciun instrument de urmărire sau de analiză, dar GitHub poate înregistra informații tehnice, cum ar fi adresa dvs. IP, atunci când vizitați pagina, din motive de securitate și pentru funcționarea serviciului; consultați [[ghp]]declarația de confidențialitate GitHub[[/ghp]]. Nu răspundem la semnalele Do Not Track (DNT), deoarece nu vă urmărim.",
+    "publisherInfo": "Publicat de Darren Corbett."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ru/*.json",
+  "app:navigation.tabs.vault": "Защищенный каталог",
+  "app:navigation.tabs.mobile-vault": "Безопасный файл",
+  "app:navigation.tabs.text-vault": "Защищенный текст",
+  "app:navigation.tabs.identity": "Личность",
+  "app:navigation.tabs.contacts": "Контакты",
+  "app:navigation.language": "Язык",
+  "app:languageModal.regions.europe": "Европа",
+  "app:languageModal.regions.americas": "Америка",
+  "app:languageModal.regions.middleEastAfrica": "Ближний Восток и Африка",
+  "app:languageModal.regions.asiaPacific": "Азиатско-Тихоокеанский регион",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Шифрование файла",
+  "help:secureDirectoryGuide.step1.description": "Добавьте локальные папки в вашу рабочую область для просмотра и управления файлами. Doughnut Forge работает полностью локально, что означает, что ваши оригинальные файлы никогда не покидают устройство.",
+  "help:setupGuide.step2.description": "Ваша цифровая личность действует как ваш личный набор ключей, которые надежно хранятся в приложении. Doughnut Forge использует эти ключи для защиты ваших файлов и проверки доверенных контактов.",
+  "help:setupGuide.step3.description": "Ваши ключи полностью конфиденциальны и не могут быть восстановлены в случае утери. Вы должны хранить резервную фразу в безопасном месте, так как это единственный способ восстановить ваш доступ.",
+  "help:identityContactsGuide.step1.description": "Экспортируйте свою личность в виде безопасной контактной карты (.vltc2). Поделитесь этим файлом, чтобы другие могли безопасно подтвердить, кто вы, и добавить вас в свою доверенную сеть.",
+  "help:identityContactsGuide.step3.description": "Управляйте своей доверенной сетью. Хотя любой, у кого есть ваша карта, может отправить вам безопасные файлы, подтверждение контактов здесь позволяет быстро выбирать их для обмена и подтверждает их истинную личность."
+}

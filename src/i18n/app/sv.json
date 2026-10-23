@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/sv/*.json",
+  "app:navigation.tabs.vault": "Säker mapp",
+  "app:navigation.tabs.mobile-vault": "Säker fil",
+  "app:navigation.tabs.text-vault": "Säker text",
+  "app:navigation.tabs.identity": "Identitet",
+  "app:navigation.tabs.contacts": "Kontakter",
+  "app:navigation.language": "Språk",
+  "app:languageModal.regions.europe": "Europa",
+  "app:languageModal.regions.americas": "Amerika",
+  "app:languageModal.regions.middleEastAfrica": "Mellanöstern och Afrika",
+  "app:languageModal.regions.asiaPacific": "Asien och Stillahavsområdet",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Kryptera en fil",
+  "help:secureDirectoryGuide.step1.description": "Lägg till lokala mappar på din arbetsyta för att bläddra i och hantera dina filer. Doughnut Forge fungerar helt lokalt, vilket innebär att dina originalfiler aldrig lämnar din enhet.",
+  "help:setupGuide.step2.description": "Din digitala identitet fungerar som din personliga nyckelknippa, som förvaras säkert i applikationen. Doughnut Forge använder dessa nycklar för att skydda dina filer och verifiera dina betrodda kontakter.",
+  "help:setupGuide.step3.description": "Dina nycklar är helt privata och kan inte återställas om de går förlorade. Du måste förvara din återställningsfras på en säker plats, eftersom det är det enda sättet att återställa din åtkomst.",
+  "help:identityContactsGuide.step1.description": "Exportera din identitet som ett säkert kontaktkort (.vltc2). Dela den här filen så att andra säkert kan bekräfta vem du är och lägga till dig i sitt betrodda nätverk.",
+  "help:identityContactsGuide.step3.description": "Hantera ditt betrodda nätverk. Även om vem som helst med ditt kort kan skicka säkra filer till dig, låter verifiering av kontakter här dig snabbt välja dem för deling och bekräftar deras sanna identitet."
+}

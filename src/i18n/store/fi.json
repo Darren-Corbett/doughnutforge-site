@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/fi",
+  "mac": {
+    "subtitle": "Salaa ja jaa. Maksa kerran.",
+    "promotionalText": "Ei tilausta. Ei tiliä. Ei palvelimia. Salaa tiedostot, kansiot ja tekstit tietokoneellasi ja jaa ne turvallisesti luotettujen ihmisten kanssa. Yksi hinta, maksu kerran.",
+    "opening": "Pidä yksityiset tiedostot yksityisinä. Doughnut Forge lukitsee tiedostosi, kansiosi ja tekstisi tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa. Lähetitpä ne miten tahansa, vain he voivat avata ne.",
+    "noSubscription": "Ei tilausta, ei tiliä, ei palvelimia eikä seurantaa. Doughnut Forge toimii kokonaan tietokoneellasi, myös ilman internetyhteyttä. Avaimesi ja yhteystietosi pysyvät sinulla, sinun hallinnassasi. Maksat kerran, ja sovellus on sinun.",
+    "closing": "Yksityisyyden ei pitäisi olla kuukausilasku.",
+    "features": [
+      {
+        "title": "Salaa tiedostot ja kansiot",
+        "text": "Lukitse yksittäinen tiedosto tai kokonainen kansio muutamalla napsautuksella, valmiina säilytettäväksi tai jaettavaksi."
+      },
+      {
+        "title": "Salaa tekstiä",
+        "text": "Salaa yksityinen viesti yhteystiedoillesi ja jaa se haluamallasi tavalla."
+      },
+      {
+        "title": "Henkilöllisyytesi, tietokoneesi",
+        "text": "Luo henkilöllisyytesi sovelluksessa. Yhteystietokorttisi on turvallista jakaa kenelle tahansa. Sen avulla muut voivat lähettää sinulle yksityisiä tiedostoja."
+      },
+      {
+        "title": "Jaa luotetuille ihmisille",
+        "text": "Salaa tiedostoja kenelle tahansa yhteystiedoistasi. He avaavat ne omalla henkilöllisyydellään. Kukaan muu ei pysty siihen."
+      },
+      {
+        "title": "Tehty kestämään",
+        "text": "Käyttää kvanttikestävää salausta, joten se, minkä suojaat tänään, pysyy suojattuna tietokoneiden tehon kasvaessa."
+      },
+      {
+        "title": "Omalla kielelläsi",
+        "text": "Käytä sovellusta suomeksi, englanniksi, espanjaksi, japaniksi ja monella muulla kielellä."
+      }
+    ],
+    "parts": {
+      "headline": "Pidä yksityiset tiedostot yksityisinä.",
+      "homeLead": "Doughnut Forge lukitsee tiedostosi, kansiosi ja tekstisi tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa.",
+      "lead": "Doughnut Forge lukitsee tiedostosi, kansiosi ja tekstisi tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa. Lähetitpä ne miten tahansa, vain he voivat avata ne.",
+      "never": "Ei tilausta. Ei tiliä. Ei palvelimia.",
+      "short": "Ei tilausta. Ei tiliä. Ei palvelimia. Salaa tiedostot, kansiot ja tekstit tietokoneellasi ja jaa ne turvallisesti luotettujen ihmisten kanssa.",
+      "offline": "Ei tilausta, ei tiliä, ei palvelimia eikä seurantaa. Doughnut Forge toimii kokonaan tietokoneellasi, myös ilman internetyhteyttä. Avaimesi ja yhteystietosi pysyvät sinulla, sinun hallinnassasi."
+    }
+  },
+  "ios": {
+    "subtitle": "Salaa ja jaa. Maksa kerran.",
+    "promotionalText": "Ei tilausta. Ei tiliä. Ei palvelimia. Salaa tiedostot, kuvat, videot ja tekstit iPhonella tai iPadilla ja jaa ne turvallisesti luotettujen ihmisten kanssa. Maksu kerran.",
+    "opening": "Pidä yksityiset tiedostot yksityisinä. Doughnut Forge lukitsee tiedostosi, kuvasi, videosi ja tekstisi iPhonellasi ja iPadillasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa. Lähetitpä ne miten tahansa, vain he voivat avata ne.",
+    "noSubscription": "Ei tilausta, ei tiliä, ei palvelimia eikä seurantaa. Doughnut Forge toimii kokonaan laitteellasi, myös ilman internetyhteyttä. Avaimesi ja yhteystietosi pysyvät sinulla, sinun hallinnassasi. Maksat kerran, ja sovellus on sinun.",
+    "closing": "Yksityisyyden ei pitäisi olla kuukausilasku.",
+    "features": [
+      {
+        "title": "Salaa tiedostot, kuvat ja videot",
+        "text": "Valitse tiedosto Tiedostot-apista tai kuva tai video kirjastostasi, tai lähetä se toisesta apista. Salaa se muutamalla napautuksella, valmiina säilytettäväksi tai jaettavaksi."
+      },
+      {
+        "title": "Avaa sinulle lähetetyt",
+        "text": "Pura yhteyshenkilöltä saamasi tiedoston salaus ja tallenna se Tiedostot-appiin. Kuvat ja videot voi tallentaa suoraan takaisin kuvakirjastoon."
+      },
+      {
+        "title": "Salaa tekstiä",
+        "text": "Salaa yksityinen viesti yhteystiedoillesi ja jaa se haluamallasi tavalla."
+      },
+      {
+        "title": "Jaa luotetuille ihmisille",
+        "text": "Salaa tiedostoja kenelle tahansa yhteystiedoistasi. He avaavat ne omalla henkilöllisyydellään. Kukaan muu ei pysty siihen."
+      },
+      {
+        "title": "Henkilöllisyytesi, laitteesi",
+        "text": "Luo henkilöllisyytesi sovelluksessa. Yhteystietokorttisi on turvallista jakaa kenelle tahansa. Sen avulla muut voivat lähettää sinulle yksityisiä tiedostoja."
+      },
+      {
+        "title": "Face ID ja Touch ID",
+        "text": "Avaa sovelluksen lukitus katseella tai kosketuksella, jos haluat. Salasanasi toimii edelleen."
+      },
+      {
+        "title": "Tehty kestämään",
+        "text": "Käyttää kvanttikestävää salausta, joten se, minkä suojaat tänään, pysyy suojattuna tietokoneiden tehon kasvaessa."
+      },
+      {
+        "title": "Omalla kielelläsi",
+        "text": "Käytä sovellusta suomeksi, englanniksi, espanjaksi, japaniksi ja monella muulla kielellä."
+      }
+    ]
+  }
+}

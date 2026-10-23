@@ -4,9 +4,9 @@
 // Visitors' browsers never call GitHub: these are plain links.
 import Faq, { type FaqItem } from "../components/Faq.astro";
 import PageHero from "../components/PageHero.astro";
-import { getPolicy } from "../data/privacy";
+import { getPolicy, policyTitle } from "../data/privacy";
 import { site } from "../data/site";
-import { platforms } from "../data/stores";
+import { platformName, platforms } from "../data/stores";
 import { fill, listOf, localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -20,7 +20,7 @@ const { html: policy } = getPolicy(lang.code);
 const names = (status: "available" | "coming") =>
   listOf(
     lang,
-    platforms.filter((p) => p.status === status).map((p) => t(`platform.${p.id}`)),
+    platforms.filter((p) => p.status === status).map((p) => platformName(lang, p.id)),
   );
 const ids = ["subscription", "platforms", "offline", "storage", "backup", "restore", "share", "recipient", "which", "data", "quantum"] as const;
 const items: FaqItem[] = ids.map((id) => ({
@@ -63,7 +63,7 @@ const jsonLd = {
     <h2 id="support-privacy" class="section-title">{t("support.privacy.title")}</h2>
     <p class="section-text policy-text" data-policy="sec3Desc" set:html={policy("sec3Desc")} />
     <p class="section-text">
-      <a class="text-link" href={localePath(lang.code, "privacy/")}>{t("nav.privacy")}</a>
+      <a class="text-link" href={localePath(lang.code, "privacy/")}>{policyTitle(lang.code)}</a>
     </p>
   </section>
 </Base>

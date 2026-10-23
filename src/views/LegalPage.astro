@@ -4,6 +4,7 @@
 import PageHero from "../components/PageHero.astro";
 import Prose from "../components/Prose.astro";
 import { company } from "../data/company";
+import { policyTitle } from "../data/privacy";
 import { localePath, useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -20,6 +21,8 @@ const details = [
   [t("footer.registeredOffice"), company.registeredOffice],
   [t("legal.company.contact"), company.contact],
 ];
+// "... set out in the {link}.": the link goes wherever the language puts it
+const [beforeLink = "", afterLink = ""] = t("legal.privacy.text").split("{link}");
 ---
 
 <Base lang={lang} title={t("meta.legal.title")} description={t("meta.legal.description")} image="/og/legal.png">
@@ -45,7 +48,7 @@ const details = [
 
       <h2>{t("legal.privacy.title")}</h2>
       <p>
-        {t("legal.privacy.text")} <a href={localePath(lang.code, "privacy/")}>{t("nav.privacy")}</a>.
+        {beforeLink}<a href={localePath(lang.code, "privacy/")}>{policyTitle(lang.code)}</a>{afterLink}
       </p>
     </Prose>
   </div>

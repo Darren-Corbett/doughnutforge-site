@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/de/*.json",
+  "app:navigation.tabs.vault": "Sicheres Verzeichnis",
+  "app:navigation.tabs.mobile-vault": "Sichere Datei",
+  "app:navigation.tabs.text-vault": "Sicherer Text",
+  "app:navigation.tabs.identity": "Identität",
+  "app:navigation.tabs.contacts": "Kontakte",
+  "app:navigation.language": "Sprache",
+  "app:languageModal.regions.europe": "Europa",
+  "app:languageModal.regions.americas": "Amerika",
+  "app:languageModal.regions.middleEastAfrica": "Naher Osten und Afrika",
+  "app:languageModal.regions.asiaPacific": "Asien-Pazifik",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Datei verschlüsseln",
+  "help:secureDirectoryGuide.step1.description": "Fügen Sie Ihrem Arbeitsbereich lokale Ordner hinzu, um Ihre Dateien zu durchsuchen und zu verwalten. Doughnut Forge arbeitet vollständig lokal, was bedeutet, dass Ihre Originaldateien Ihr Gerät niemals verlassen.",
+  "help:setupGuide.step2.description": "Ihre digitale Identität fungiert als Ihr persönlicher Schlüsselsatz, der sicher in der Anwendung gespeichert wird. Doughnut Forge verwendet diese Schlüssel, um Ihre Dateien zu schützen und Ihre vertrauenswürdigen Kontakte zu überprüfen.",
+  "help:setupGuide.step3.description": "Ihre Schlüssel sind vollkommen privat und können bei Verlust nicht wiederhergestellt werden. Sie müssen Ihre Wiederherstellungsphrase an einem sicheren Ort aufbewahren, da dies die einzige Möglichkeit ist, Ihren Zugang wiederherzustellen.",
+  "help:identityContactsGuide.step1.description": "Exportieren Sie Ihre Identität als sichere Kontaktkarte (.vltc2). Teilen Sie diese Datei, damit andere sicher überprüfen können, wer Sie sind, und Sie ihrem vertrauenswürdigen Netzwerk hinzufügen können.",
+  "help:identityContactsGuide.step3.description": "Verwalten Sie Ihr vertrauenswürdiges Netzwerk. Während jeder mit Ihrer Karte Ihnen sichere Dateien senden kann, können Sie durch die Überprüfung von Kontakten hier diese schnell zum Teilen auswählen und ihre wahre Identität bestätigen."
+}

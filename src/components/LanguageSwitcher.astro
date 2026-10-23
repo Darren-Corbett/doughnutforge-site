@@ -1,0 +1,162 @@
+---
+// The language menu in the header: every app language by its own name, grouped
+// by region as in the app, each linking to the same page in that language (or to
+// that language's home page where a page exists only in English, such as the blog).
+// A <details> disclosure, so it opens and closes with no script; the small script
+// only adds Escape and clicking outside to close it. No automatic redirect.
+import Languages from "@lucide/astro/icons/languages";
+import { builtLanguages, localePath, splitPath, translatedPages, useStrings, type AppKey, type Language } from "../i18n";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { app } = useStrings(lang.code);
+const { page } = splitPath(Astro.url.pathname);
+const samePage = translatedPages.includes(page);
+
+// The app's region groups, in the app's order, with its translated names
+const REGIONS: [string, AppKey][] = [
+  ["Europe", "app:languageModal.regions.europe"],
+  ["Americas", "app:languageModal.regions.americas"],
+  ["Middle East & Africa", "app:languageModal.regions.middleEastAfrica"],
+  ["Asia-Pacific", "app:languageModal.regions.asiaPacific"],
+];
+const groups = REGIONS.map(([region, key]) => ({
+  id: `lang-${key.split(".").at(-1)}`,
+  label: app(key),
+  items: builtLanguages.filter((l) => l.region === region),
+})).filter((g) => g.items.length);
+---
+
+<details class="lang-switch">
+  <summary
+    class="flex min-h-11 cursor-pointer list-none items-center gap-1.5 rounded-full px-2.5 text-[15px] font-bold text-slate-200 hover:bg-white/10 hover:text-white [&::-webkit-details-marker]:hidden"
+  >
+    <Languages size={20} aria-hidden="true" />
+    <span class="sr-only">{app("app:navigation.language")}:</span>
+    <span class="sm:hidden" aria-hidden="true">{lang.code.toUpperCase()}</span>
+    <span class="max-sm:sr-only">{lang.name}</span>
+  </summary>
+  <div class="panel">
+    {
+      groups.map((g) => (
+        <div>
+          <p id={g.id} class="group-label">
+            {g.label}
+          </p>
+          <ul aria-labelledby={g.id} role="list">
+            {g.items.map((l) => (
+              <li>
+                <a
+                  href={localePath(l.code, samePage ? page : "/")}
+                  lang={l.hreflang}
+                  hreflang={l.hreflang}
+                  aria-current={l.code === lang.code ? "true" : undefined}
+                >
+                  {l.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+</details>
+
+<script is:inline>
+  // Escape or a click outside closes the menu; focus goes back to its button
+  addEventListener("keydown", (e) => {
+    const open = document.querySelector("details.lang-switch[open]");
+    if (e.key === "Escape" && open) {
+      open.open = false;
+      open.querySelector("summary").focus();
+    }
+  });
+  addEventListener("click", (e) => {
+    const open = document.querySelector("details.lang-switch[open]");
+    if (open && !open.contains(e.target)) open.open = false;
+  });
+</script>
+
+<style>
+  /* The panel hangs below the header, across it on phones */
+  .panel {
+    position: absolute;
+    inset-inline: 16px;
+    top: calc(100% + 4px);
+    z-index: 50;
+    max-height: calc(100dvh - 120px);
+    overflow-y: auto;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #cbd5e1;
+    background: #fff;
+    color: #14171a;
+    box-shadow: 0 18px 40px rgb(0 0 0 / 0.25);
+  }
+  .group-label {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #475569;
+  }
+  ul {
+    margin-top: 6px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2px 12px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding-inline: 8px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  a:hover {
+    background: #f1f5f9;
+  }
+  /* The current language, in the app's blue ink with a dot */
+  a[aria-current] {
+    color: var(--ink-blue);
+    font-weight: 800;
+  }
+  a[aria-current]::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin-inline-end: 8px;
+    border-radius: 9999px;
+    background: #1da1f2;
+    flex: none;
+  }
+  @media (prefers-color-scheme: dark) {
+    .panel {
+      border-color: #38444d;
+      background: #1e2732;
+      color: #fff;
+    }
+    .group-label {
+      color: #cbd5e1;
+    }
+    a:hover {
+      background: #15202b;
+    }
+  }
+  @media (min-width: 768px) {
+    .panel {
+      inset-inline: auto 24px;
+      width: 36rem;
+    }
+    ul {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

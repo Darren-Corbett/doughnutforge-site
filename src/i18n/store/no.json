@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/no",
+  "mac": {
+    "subtitle": "Krypter og del. Betal én gang.",
+    "promotionalText": "Ingen abonnement. Ingen konto. Ingen servere. Krypter filer, mapper og tekst på datamaskinen din, og del dem trygt med folk du stoler på. Én pris, betalt én gang.",
+    "opening": "Hold private filer private. Doughnut Forge låser filene, mappene og teksten din på datamaskinen og lar deg dele dem med folk du stoler på. Uansett hvordan du sender dem, er det bare de som kan åpne dem.",
+    "noSubscription": "Ingen abonnement, ingen konto, ingen servere og ingen sporing. Doughnut Forge kjører helt på datamaskinen din, også uten internettilkobling. Nøklene og kontaktene dine blir hos deg, under din kontroll. Du betaler én gang, og appen er din.",
+    "closing": "Personvern bør ikke være en månedlig regning.",
+    "features": [
+      {
+        "title": "Krypter filer og mapper",
+        "text": "Lås en enkelt fil eller en hel mappe med noen få klikk, klar til å oppbevares trygt eller deles."
+      },
+      {
+        "title": "Krypter tekst",
+        "text": "Krypter en privat melding til kontaktene dine, og del den slik du vil."
+      },
+      {
+        "title": "Din identitet, din datamaskin",
+        "text": "Opprett identiteten din i appen. Kontaktkortet ditt er trygt å dele med hvem som helst. Det lar folk sende deg private filer."
+      },
+      {
+        "title": "Del med folk du stoler på",
+        "text": "Krypter filer for hvilken som helst av kontaktene dine. De åpner dem med sin egen identitet. Ingen andre kan det."
+      },
+      {
+        "title": "Laget for fremtiden",
+        "text": "Bruker postkvantekryptering, slik at det du beskytter i dag, forblir beskyttet etter hvert som datamaskiner blir kraftigere."
+      },
+      {
+        "title": "På ditt språk",
+        "text": "Bruk appen på norsk, engelsk, spansk, japansk og mange andre språk."
+      }
+    ],
+    "parts": {
+      "headline": "Hold private filer private.",
+      "homeLead": "Doughnut Forge låser filene, mappene og teksten din på datamaskinen og lar deg dele dem med folk du stoler på.",
+      "lead": "Doughnut Forge låser filene, mappene og teksten din på datamaskinen og lar deg dele dem med folk du stoler på. Uansett hvordan du sender dem, er det bare de som kan åpne dem.",
+      "never": "Ingen abonnement. Ingen konto. Ingen servere.",
+      "short": "Ingen abonnement. Ingen konto. Ingen servere. Krypter filer, mapper og tekst på datamaskinen din, og del dem trygt med folk du stoler på.",
+      "offline": "Ingen abonnement, ingen konto, ingen servere og ingen sporing. Doughnut Forge kjører helt på datamaskinen din, også uten internettilkobling. Nøklene og kontaktene dine blir hos deg, under din kontroll."
+    }
+  },
+  "ios": {
+    "subtitle": "Krypter og del. Betal én gang.",
+    "promotionalText": "Ingen abonnement. Ingen konto. Ingen servere. Krypter filer, bilder, videoer og tekst på iPhone eller iPad, og del dem trygt med folk du stoler på. Betal én gang.",
+    "opening": "Hold private filer private. Doughnut Forge låser filene, bildene, videoene og teksten din på iPhone og iPad og lar deg dele dem med folk du stoler på. Uansett hvordan du sender dem, er det bare de som kan åpne dem.",
+    "noSubscription": "Ingen abonnement, ingen konto, ingen servere og ingen sporing. Doughnut Forge kjører helt på enheten din, også uten internettilkobling. Nøklene og kontaktene dine blir hos deg, under din kontroll. Du betaler én gang, og appen er din.",
+    "closing": "Personvern bør ikke være en månedlig regning.",
+    "features": [
+      {
+        "title": "Krypter filer, bilder og videoer",
+        "text": "Velg en fil fra Filer eller et bilde eller en video fra biblioteket ditt, eller send den fra en annen app. Krypter den med noen få trykk, klar til å oppbevares trygt eller deles."
+      },
+      {
+        "title": "Åpne det du får tilsendt",
+        "text": "Dekrypter en fil fra en kontakt og lagre den i Filer. Bilder og videoer kan gå rett tilbake til bildebiblioteket ditt."
+      },
+      {
+        "title": "Krypter tekst",
+        "text": "Krypter en privat melding til kontaktene dine, og del den slik du vil."
+      },
+      {
+        "title": "Del med folk du stoler på",
+        "text": "Krypter filer for hvilken som helst av kontaktene dine. De åpner dem med sin egen identitet. Ingen andre kan det."
+      },
+      {
+        "title": "Din identitet, din enhet",
+        "text": "Opprett identiteten din i appen. Kontaktkortet ditt er trygt å dele med hvem som helst. Det lar folk sende deg private filer."
+      },
+      {
+        "title": "Face ID og Touch ID",
+        "text": "Lås opp appen med et blikk eller en berøring hvis du vil. Passordet ditt fungerer fortsatt."
+      },
+      {
+        "title": "Laget for fremtiden",
+        "text": "Bruker postkvantekryptering, slik at det du beskytter i dag, forblir beskyttet etter hvert som datamaskiner blir kraftigere."
+      },
+      {
+        "title": "På ditt språk",
+        "text": "Bruk appen på norsk, engelsk, spansk, japansk og mange andre språk."
+      }
+    ]
+  }
+}

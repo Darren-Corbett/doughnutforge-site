@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/pt-BR",
+  "mac": {
+    "subtitle": "Criptografia sem assinatura",
+    "promotionalText": "Sem assinatura. Sem conta. Sem servidores. Criptografe arquivos, pastas e textos no seu computador e compartilhe com segurança com quem você confia. Pagamento único.",
+    "opening": "Arquivos privados continuam privados. Doughnut Forge protege seus arquivos, pastas e textos no seu computador e permite compartilhá-los com as pessoas em quem você confia. Não importa como você os envie, só elas podem abri-los.",
+    "noSubscription": "Sem assinatura, sem conta, sem servidores e sem rastreamento. Doughnut Forge funciona totalmente no seu computador, mesmo sem conexão com a internet. Suas chaves e contatos ficam com você, sob seu controle. Você paga uma vez e o app é seu.",
+    "closing": "Privacidade não deveria ser uma mensalidade.",
+    "features": [
+      {
+        "title": "Criptografe arquivos e pastas",
+        "text": "Bloqueie um único arquivo ou uma pasta inteira em poucos cliques, pronto para guardar com segurança ou compartilhar."
+      },
+      {
+        "title": "Criptografe textos",
+        "text": "Criptografe uma mensagem privada para seus contatos e compartilhe como quiser."
+      },
+      {
+        "title": "Sua identidade, seu computador",
+        "text": "Crie sua identidade no app. Seu cartão de contato pode ser compartilhado com qualquer pessoa sem risco. Com ele, outros podem enviar arquivos privados para você."
+      },
+      {
+        "title": "Compartilhe com quem você confia",
+        "text": "Criptografe arquivos para qualquer um dos seus contatos. Eles os abrem com a própria identidade. Ninguém mais consegue."
+      },
+      {
+        "title": "Feito para durar",
+        "text": "Usa criptografia pós-quântica, para que o que você protege hoje continue protegido à medida que os computadores ficam mais potentes."
+      },
+      {
+        "title": "No seu idioma",
+        "text": "Use o app em português, inglês, espanhol, japonês e muitos outros idiomas."
+      }
+    ],
+    "parts": {
+      "headline": "Arquivos privados continuam privados.",
+      "homeLead": "Doughnut Forge protege seus arquivos, pastas e textos no seu computador e permite compartilhá-los com as pessoas em quem você confia.",
+      "lead": "Doughnut Forge protege seus arquivos, pastas e textos no seu computador e permite compartilhá-los com as pessoas em quem você confia. Não importa como você os envie, só elas podem abri-los.",
+      "never": "Sem assinatura. Sem conta. Sem servidores.",
+      "short": "Sem assinatura. Sem conta. Sem servidores. Criptografe arquivos, pastas e textos no seu computador e compartilhe com segurança com quem você confia.",
+      "offline": "Sem assinatura, sem conta, sem servidores e sem rastreamento. Doughnut Forge funciona totalmente no seu computador, mesmo sem conexão com a internet. Suas chaves e contatos ficam com você, sob seu controle."
+    }
+  },
+  "ios": {
+    "subtitle": "Criptografia sem assinatura",
+    "promotionalText": "Sem assinatura. Sem conta. Sem servidores. Criptografe arquivos, fotos, vídeos e textos no seu iPhone ou iPad e compartilhe só com quem você confia. Pague uma vez.",
+    "opening": "Arquivos privados continuam privados. Doughnut Forge protege seus arquivos, fotos, vídeos e textos no seu iPhone e iPad e permite compartilhá-los com as pessoas em quem você confia. Não importa como você os envie, só elas podem abri-los.",
+    "noSubscription": "Sem assinatura, sem conta, sem servidores e sem rastreamento. Doughnut Forge funciona totalmente no seu dispositivo, mesmo sem conexão com a internet. Suas chaves e contatos ficam com você, sob seu controle. Você paga uma vez e o app é seu.",
+    "closing": "Privacidade não deveria ser uma mensalidade.",
+    "features": [
+      {
+        "title": "Criptografe arquivos, fotos e vídeos",
+        "text": "Escolha um arquivo no app Arquivos ou uma foto ou um vídeo da sua fototeca, ou envie de outro app. Criptografe com poucos toques, pronto para guardar com segurança ou compartilhar."
+      },
+      {
+        "title": "Abra o que enviam para você",
+        "text": "Descriptografe um arquivo de um contato e salve no app Arquivos. Fotos e vídeos podem voltar direto para a sua fototeca."
+      },
+      {
+        "title": "Criptografe textos",
+        "text": "Criptografe uma mensagem privada para seus contatos e compartilhe como quiser."
+      },
+      {
+        "title": "Compartilhe com quem você confia",
+        "text": "Criptografe arquivos para qualquer um dos seus contatos. Eles os abrem com a própria identidade. Ninguém mais consegue."
+      },
+      {
+        "title": "Sua identidade, seu dispositivo",
+        "text": "Crie sua identidade no app. Seu cartão de contato pode ser compartilhado com qualquer pessoa sem risco. Com ele, outros podem enviar arquivos privados para você."
+      },
+      {
+        "title": "Face ID e Touch ID",
+        "text": "Desbloqueie o app com um olhar ou um toque, se quiser. Sua senha continua funcionando."
+      },
+      {
+        "title": "Feito para durar",
+        "text": "Usa criptografia pós-quântica, para que o que você protege hoje continue protegido à medida que os computadores ficam mais potentes."
+      },
+      {
+        "title": "No seu idioma",
+        "text": "Use o app em português, inglês, espanhol, japonês e muitos outros idiomas."
+      }
+    ]
+  }
+}

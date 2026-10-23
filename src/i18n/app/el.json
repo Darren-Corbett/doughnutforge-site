@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/el/*.json",
+  "app:navigation.tabs.vault": "Ασφαλής φάκελος",
+  "app:navigation.tabs.mobile-vault": "Ασφαλές αρχείο",
+  "app:navigation.tabs.text-vault": "Ασφαλές κείμενο",
+  "app:navigation.tabs.identity": "Ταυτότητα",
+  "app:navigation.tabs.contacts": "Επαφές",
+  "app:navigation.language": "Γλώσσα",
+  "app:languageModal.regions.europe": "Ευρώπη",
+  "app:languageModal.regions.americas": "Αμερική",
+  "app:languageModal.regions.middleEastAfrica": "Μέση Ανατολή και Αφρική",
+  "app:languageModal.regions.asiaPacific": "Ασία-Ειρηνικός",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Κρυπτογράφηση αρχείου",
+  "help:secureDirectoryGuide.step1.description": "Προσθέστε τοπικούς φακέλους στον χώρο εργασίας σας για περιήγηση και διαχείριση των αρχείων σας. Το Doughnut Forge λειτουργεί αποκλειστικά τοπικά, πράγμα που σημαίνει ότι τα αρχικά σας αρχεία δεν εγκαταλείπουν ποτέ τη συσκευή σας.",
+  "help:setupGuide.step2.description": "Η ψηφιακή σας ταυτότητα λειτουργεί ως το προσωπικό σας σύνολο κλειδιών, τα οποία αποθηκεύονται με ασφάλεια μέσα στην εφαρμογή. Το Doughnut Forge χρησιμοποιεί αυτά τα κλειδιά για να προστατεύσει τα αρχεία σας και να επαληθεύσει τις αξιόπιστες επαφές σας.",
+  "help:setupGuide.step3.description": "Τα κλειδιά σας είναι εντελώς ιδιωτικά και δεν μπορούν να ανακτηθούν εάν χαθούν. Πρέπει να φυλάξετε τη φράση ανάκτησης σε ασφαλές μέρος, καθώς είναι ο μόνος τρόπος για να επαναφέρετε την πρόσβασή σας.",
+  "help:identityContactsGuide.step1.description": "Εξαγάγετε την ταυτότητά σας ως ασφαλή κάρτα επαφής (.vltc2). Μοιραστείτε αυτό το αρχείο, ώστε άλλοι να μπορούν να επαληθεύσουν με ασφάλεια ποιοι είστε και να σας προσθέσουν στο αξιόπιστο δίκτυό τους.",
+  "help:identityContactsGuide.step3.description": "Διαχειριστείτε το αξιόπιστο δίκτυό σας. Παρόλο που οποιοσδήποτε έχει την κάρτα σας μπορεί να σας στείλει ασφαλή αρχεία, η επαλήθευση επαφών εδώ σας επιτρέπει να τις επιλέξετε γρήγορα για κοινή χρήση και επιβεβαιώνει την πραγματική τους ταυτότητα."
+}

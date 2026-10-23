@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/it",
+  "mac": {
+    "subtitle": "Cifra e condividi. Una tantum.",
+    "promotionalText": "Nessun abbonamento. Nessun account. Nessun server. Cifra file, cartelle e testo sul tuo computer e condividili in sicurezza con chi vuoi. Un prezzo, pagato una volta.",
+    "opening": "I file privati restano privati. Doughnut Forge blocca file, cartelle e testo sul tuo computer e ti permette di condividerli con le persone di cui ti fidi. Comunque tu li invii, solo loro possono aprirli.",
+    "noSubscription": "Nessun abbonamento, nessun account, nessun server e nessun tracciamento. Doughnut Forge funziona interamente sul tuo computer, anche senza connessione a Internet. Le tue chiavi e i tuoi contatti restano con te, sotto il tuo controllo. Paghi una volta e l'app è tua.",
+    "closing": "La privacy non dovrebbe essere una bolletta mensile.",
+    "features": [
+      {
+        "title": "Cifra file e cartelle",
+        "text": "Blocca un singolo file o un'intera cartella in pochi clic, pronto da custodire al sicuro o da condividere."
+      },
+      {
+        "title": "Cifra il testo",
+        "text": "Cifra un messaggio privato per i tuoi contatti e condividilo come preferisci."
+      },
+      {
+        "title": "La tua identità, il tuo computer",
+        "text": "Crea la tua identità nell'app. Puoi condividere la tua scheda contatto con chiunque in tutta sicurezza. Permette agli altri di inviarti file privati."
+      },
+      {
+        "title": "Condividi con persone fidate",
+        "text": "Cifra file per uno qualsiasi dei tuoi contatti. Li aprono con la propria identità. Nessun altro può farlo."
+      },
+      {
+        "title": "Pensato per durare",
+        "text": "Usa la crittografia post-quantistica, così ciò che proteggi oggi resta protetto anche quando i computer diventeranno più potenti."
+      },
+      {
+        "title": "Nella tua lingua",
+        "text": "Usa l'app in italiano, inglese, spagnolo, giapponese e molte altre lingue."
+      }
+    ],
+    "parts": {
+      "headline": "I file privati restano privati.",
+      "homeLead": "Doughnut Forge blocca file, cartelle e testo sul tuo computer e ti permette di condividerli con le persone di cui ti fidi.",
+      "lead": "Doughnut Forge blocca file, cartelle e testo sul tuo computer e ti permette di condividerli con le persone di cui ti fidi. Comunque tu li invii, solo loro possono aprirli.",
+      "never": "Nessun abbonamento. Nessun account. Nessun server.",
+      "short": "Nessun abbonamento. Nessun account. Nessun server. Cifra file, cartelle e testo sul tuo computer e condividili in sicurezza con chi vuoi.",
+      "offline": "Nessun abbonamento, nessun account, nessun server e nessun tracciamento. Doughnut Forge funziona interamente sul tuo computer, anche senza connessione a Internet. Le tue chiavi e i tuoi contatti restano con te, sotto il tuo controllo."
+    }
+  },
+  "ios": {
+    "subtitle": "Cifra e condividi. Una tantum.",
+    "promotionalText": "Nessun abbonamento. Nessun account. Nessun server. Cifra file, foto, video e testo su iPhone o iPad e condividili in sicurezza con chi vuoi. Un prezzo, pagato una volta.",
+    "opening": "I file privati restano privati. Doughnut Forge blocca file, foto, video e testo sul tuo iPhone e iPad e ti permette di condividerli con le persone di cui ti fidi. Comunque tu li invii, solo loro possono aprirli.",
+    "noSubscription": "Nessun abbonamento, nessun account, nessun server e nessun tracciamento. Doughnut Forge funziona interamente sul tuo dispositivo, anche senza connessione a Internet. Le tue chiavi e i tuoi contatti restano con te, sotto il tuo controllo. Paghi una volta e l'app è tua.",
+    "closing": "La privacy non dovrebbe essere una bolletta mensile.",
+    "features": [
+      {
+        "title": "Cifra file, foto e video",
+        "text": "Scegli un file da File o una foto o un video dalla tua libreria, oppure invialo da un'altra app. Cifralo con pochi tocchi, pronto da custodire al sicuro o da condividere."
+      },
+      {
+        "title": "Apri ciò che ti inviano",
+        "text": "Decifra un file ricevuto da un contatto e salvalo in File. Foto e video possono tornare direttamente nella tua libreria foto."
+      },
+      {
+        "title": "Cifra il testo",
+        "text": "Cifra un messaggio privato per i tuoi contatti e condividilo come preferisci."
+      },
+      {
+        "title": "Condividi con persone fidate",
+        "text": "Cifra file per uno qualsiasi dei tuoi contatti. Li aprono con la propria identità. Nessun altro può farlo."
+      },
+      {
+        "title": "La tua identità, il tuo dispositivo",
+        "text": "Crea la tua identità nell'app. Puoi condividere la tua scheda contatto con chiunque in tutta sicurezza. Permette agli altri di inviarti file privati."
+      },
+      {
+        "title": "Face ID e Touch ID",
+        "text": "Sblocca l'app con uno sguardo o un tocco, se vuoi. La tua password funziona sempre."
+      },
+      {
+        "title": "Pensato per durare",
+        "text": "Usa la crittografia post-quantistica, così ciò che proteggi oggi resta protetto anche quando i computer diventeranno più potenti."
+      },
+      {
+        "title": "Nella tua lingua",
+        "text": "Usa l'app in italiano, inglese, spagnolo, giapponese e molte altre lingue."
+      }
+    ]
+  }
+}

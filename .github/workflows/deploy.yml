@@ -2,6 +2,8 @@
 # Manual only for now: add `push: branches: [main]` once Pages is set to
 # "GitHub Actions" and launch is approved. The deploy build fails while any
 # placeholder (company details, store IDs) is still in the site.
+# The build reads only this repository: store badges, app strings and the privacy
+# policy are committed copies, and no step calls a store or another site.
 name: Deploy site
 
 on:
@@ -26,6 +28,16 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
+      # Fonts for the social preview images in every language (scripts/make-og.mjs).
+      # Build tools only: the site itself never serves a font.
+      - name: Install Noto fonts
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends fonts-noto-core fonts-noto-cjk fontconfig
+      - name: Check the fonts are found
+        run: |
+          for font in "Noto Sans" "Noto Sans CJK JP" "Noto Sans CJK SC" "Noto Sans CJK TC" "Noto Sans CJK KR" "Noto Sans Thai" "Noto Sans Devanagari"; do
+            found=$(fc-match -f '%{family}' "$font")
+            case "$found" in *"$font"*) echo "ok: $font" ;; *) echo "missing: $font (got $found)"; exit 1 ;; esac
+          done
       - run: npm run build:deploy
       - uses: actions/upload-pages-artifact@v5
         with:

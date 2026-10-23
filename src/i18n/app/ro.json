@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ro/*.json",
+  "app:navigation.tabs.vault": "Dosar securizat",
+  "app:navigation.tabs.mobile-vault": "Fișier securizat",
+  "app:navigation.tabs.text-vault": "Text securizat",
+  "app:navigation.tabs.identity": "Identitate",
+  "app:navigation.tabs.contacts": "Contacte",
+  "app:navigation.language": "Limbă",
+  "app:languageModal.regions.europe": "Europa",
+  "app:languageModal.regions.americas": "America",
+  "app:languageModal.regions.middleEastAfrica": "Orientul Mijlociu și Africa",
+  "app:languageModal.regions.asiaPacific": "Asia-Pacific",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Criptarea unui fișier",
+  "help:secureDirectoryGuide.step1.description": "Adaugă foldere locale în spațiul tău de lucru pentru a naviga și gestiona fișierele. Doughnut Forge funcționează complet local, ceea ce înseamnă că fișierele originale nu părăsesc niciodată dispozitivul tău.",
+  "help:setupGuide.step2.description": "Identitatea ta digitală acționează ca setul tău personal de chei, care sunt stocate în siguranță în aplicație. Doughnut Forge folosește aceste chei pentru a-ți proteja fișierele și pentru a verifica contactele de încredere.",
+  "help:setupGuide.step3.description": "Cheile tale sunt complet private și nu pot fi recuperate dacă le pierzi. Trebuie să păstrezi fraza de recuperare într-un loc sigur, deoarece este singura modalitate de a-ți restabili accesul.",
+  "help:identityContactsGuide.step1.description": "Exportă identitatea sub forma unei cărți de contact securizate (.vltc2). Trimite acest fișier pentru ca alții să te poată verifica în siguranță și să te adauge în rețeaua lor de încredere.",
+  "help:identityContactsGuide.step3.description": "Gestionează-ți rețeaua de încredere. Deși oricine deține cartea ta îți poate trimite fișiere sigure, verificarea contactelor aici îți permite să le selectezi rapid pentru distribuire și le confirmă adevărata identitate."
+}

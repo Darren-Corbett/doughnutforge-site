@@ -1,0 +1,10 @@
+---
+// Support page in every language but English (English: src/pages/support.astro)
+import { otherLanguagePaths, type Language } from "../../i18n";
+import SupportPage from "../../views/SupportPage.astro";
+
+export const getStaticPaths = otherLanguagePaths;
+const { lang } = Astro.props as { lang: Language };
+---
+
+<SupportPage lang={lang} />

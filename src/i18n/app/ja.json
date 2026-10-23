@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ja/*.json",
+  "app:navigation.tabs.vault": "セキュアフォルダ",
+  "app:navigation.tabs.mobile-vault": "セキュアファイル",
+  "app:navigation.tabs.text-vault": "セキュアテキスト",
+  "app:navigation.tabs.identity": "アイデンティティ",
+  "app:navigation.tabs.contacts": "連絡先",
+  "app:navigation.language": "言語",
+  "app:languageModal.regions.europe": "ヨーロッパ",
+  "app:languageModal.regions.americas": "南北アメリカ",
+  "app:languageModal.regions.middleEastAfrica": "中東・アフリカ",
+  "app:languageModal.regions.asiaPacific": "アジア太平洋",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "ファイルの暗号化",
+  "help:secureDirectoryGuide.step1.description": "ローカルフォルダをワークスペースに追加して、ファイルを参照および管理します。Doughnut Forgeは完全にローカルで動作するため、元のファイルがデバイスから離れることはありません。",
+  "help:setupGuide.step2.description": "デジタルアイデンティティは個人の鍵として機能し、アプリ内に安全に保存されます。Doughnut Forgeはこれらの鍵を使用してファイルを保護し、信頼できる連絡先を検証します。",
+  "help:setupGuide.step3.description": "鍵は完全にプライベートであり、紛失した場合は復元できません。アクセスを回復する唯一の方法であるため、復元フレーズは安全な場所に保管してください。",
+  "help:identityContactsGuide.step1.description": "アイデンティティを安全な連絡先カード（.vltc2）としてエクスポートします。このファイルを共有して、他の人があなたの身元を検証し、信頼できるネットワークに追加できるようにします。",
+  "help:identityContactsGuide.step3.description": "信頼できるネットワークを管理します。カードを持っている人なら誰でも安全なファイルを送信できますが、ここで連絡先を検証すると、ファイル共有時にすばやく選択でき、本当のアイデンティティを確認できます。"
+}

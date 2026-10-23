@@ -3,7 +3,8 @@ import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import SEO from "../components/SEO.astro";
-import { useStrings, type Language } from "../i18n";
+import { alternatesFor } from "../i18n/alternates";
+import { isReviewed, splitPath, translatedPages, useStrings, type Language } from "../i18n";
 
 interface Props {
   lang: Language;
@@ -18,10 +19,25 @@ interface Props {
 }
 const { lang, title, description, jsonLd, noindex, image, article } = Astro.props;
 const { t } = useStrings(lang.code);
+
+// A draft translation is built and reachable from the language switcher, but not
+// indexed until src/i18n/review.json marks the language reviewed.
+const { page } = splitPath(Astro.url.pathname);
+const indexable = !noindex && isReviewed(lang.code);
+const alternates = indexable && translatedPages.includes(page) ? alternatesFor(lang.code, page) : [];
+
+// Social preview images: English ones are committed in public/og/. Other languages
+// get their own (public/og/<language>/<page>.png) only in a build with
+// OG_IMAGES=all, which also makes them (scripts/make-og.mjs); otherwise English.
+const englishImage = image ?? "/og/default.png";
+const ogImage =
+  lang.code !== "en" && process.env.OG_IMAGES === "all" && /^\/og\/[^/]+\.png$/.test(englishImage)
+    ? englishImage.replace(/^\/og\//, `/og/${lang.path}/`)
+    : englishImage;
 ---
 
 <!doctype html>
-<html lang={lang.code} dir={lang.dir}>
+<html lang={lang.hreflang} dir={lang.dir}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -37,8 +53,9 @@ const { t } = useStrings(lang.code);
       description={description}
       lang={lang.hreflang}
       jsonLd={jsonLd}
-      noindex={noindex}
-      image={image}
+      noindex={!indexable}
+      alternates={alternates}
+      image={ogImage}
       article={article}
     />
   </head>

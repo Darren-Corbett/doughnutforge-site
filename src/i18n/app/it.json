@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/it/*.json",
+  "app:navigation.tabs.vault": "Directory sicura",
+  "app:navigation.tabs.mobile-vault": "File sicuro",
+  "app:navigation.tabs.text-vault": "Testo sicuro",
+  "app:navigation.tabs.identity": "Identità",
+  "app:navigation.tabs.contacts": "Contatti",
+  "app:navigation.language": "Lingua",
+  "app:languageModal.regions.europe": "Europa",
+  "app:languageModal.regions.americas": "Americhe",
+  "app:languageModal.regions.middleEastAfrica": "Medio Oriente e Africa",
+  "app:languageModal.regions.asiaPacific": "Asia-Pacifico",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Crittografia di un file",
+  "help:secureDirectoryGuide.step1.description": "Aggiungi cartelle locali alla tua area di lavoro per sfogliare e gestire i tuoi file. Doughnut Forge opera interamente in locale, il che significa che i tuoi file originali non lasciano mai il tuo dispositivo.",
+  "help:setupGuide.step2.description": "La tua identità digitale funge da set personale di chiavi, archiviate in modo sicuro all'interno dell'applicazione. Doughnut Forge utilizza queste chiavi per proteggere i tuoi file e verificare i tuoi contatti attendibili.",
+  "help:setupGuide.step3.description": "Le tue chiavi sono completamente private e non possono essere recuperate se perse. Devi conservare la tua frase di recupero in un luogo sicuro, poiché è l'unico modo per ripristinare l'accesso.",
+  "help:identityContactsGuide.step1.description": "Esporta la tua identità come scheda di contatto sicura (.vltc2). Condividi questo file in modo che altri possano verificare in modo sicuro chi sei e aggiungerti alla loro rete attendibile.",
+  "help:identityContactsGuide.step3.description": "Gestisci la tua rete di fiducia. Anche se chiunque abbia la tua scheda può inviarti file sicuri, verificare i contatti qui ti consente di selezionarli rapidamente per la condivisione e ne conferma la vera identità."
+}

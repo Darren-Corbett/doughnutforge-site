@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/id/*.json",
+  "app:navigation.tabs.vault": "Direktori Aman",
+  "app:navigation.tabs.mobile-vault": "File Aman",
+  "app:navigation.tabs.text-vault": "Teks Aman",
+  "app:navigation.tabs.identity": "Identitas",
+  "app:navigation.tabs.contacts": "Kontak",
+  "app:navigation.language": "Bahasa",
+  "app:languageModal.regions.europe": "Eropa",
+  "app:languageModal.regions.americas": "Amerika",
+  "app:languageModal.regions.middleEastAfrica": "Timur Tengah dan Afrika",
+  "app:languageModal.regions.asiaPacific": "Asia Pasifik",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Mengenknripsi file",
+  "help:secureDirectoryGuide.step1.description": "Tambahkan folder lokal ke ruang kerja Anda untuk menelusuri dan mengelola file Anda. Doughnut Forge beroperasi sepenuhnya secara lokal, yang berarti file asli Anda tidak pernah meninggalkan perangkat Anda.",
+  "help:setupGuide.step2.description": "Identitas digital Anda bertindak sebagai set kunci pribadi Anda, yang disimpan dengan aman di dalam aplikasi. Doughnut Forge menggunakan kunci-kunci ini untuk melindungi file Anda dan memverifikasi kontak tepercaya Anda.",
+  "help:setupGuide.step3.description": "Kunci Anda sepenuhnya pribadi dan tidak dapat dipulihkan jika hilang. Anda harus menyimpan frasa cadangan Anda di lokasi yang aman, karena ini adalah satu-satunya cara untuk memulihkan akses Anda.",
+  "help:identityContactsGuide.step1.description": "Ekspor identitas Anda sebagai kartu kontak yang aman (.vltc2). Bagikan file ini agar orang lain dapat memverifikasi dengan aman siapa Anda dan menambahkan Anda ke jaringan tepercaya mereka.",
+  "help:identityContactsGuide.step3.description": "Kelola jaringan tepercaya Anda. Meskipun siapa pun yang memiliki kartu Anda dapat mengirimi Anda file yang aman, memverifikasi kontak di sini memungkinkan Anda memilihnya dengan cepat untuk berbagi dan mengonfirmasi identitas asli mereka."
+}

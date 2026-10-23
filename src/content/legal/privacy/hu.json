@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "Adatvédelmi irányelvek",
+    "effectiveDate": "Hatályos: 2026. október",
+    "hero": "<strong>A Doughnut Forge helyi, nulla tudású (zero-knowledge) architektúrára épül.</strong> Ez azt jelenti, hogy nem gyűjtjük, nem továbbítjuk és nem tároljuk az adatait, és nem is férünk hozzájuk, kivéve azokat az információkat, amelyeket Ön maga küld el nekünk (lásd a 3. pontot).",
+    "sec1Title": "1. Adattárolás és -törlés",
+    "sec1Desc": "A Doughnut Forge által létrehozott összes titkosítási kulcs, <code class=\"k1\">.vltc2</code> identitás és <code class=\"k2\">.vlt2</code> fájl kizárólag az Ön eszközén tárolódik. Semmilyen információ nem hagyja el az eszközt, hacsak Ön maga nem exportál és oszt meg egy fájlt. Az alkalmazás eltávolítása törli a szoftvert, de nem törli az eszköz más helyein mentett fájlokat, sem a rendszer hitelesítőadat-kezelőjében tárolt kulcsokat (például a macOS Kulcskarikáját vagy a Windows Hitelesítőadat-kezelőjét). Ezeket kézzel törölheti.",
+    "sec2Title": "2. Analitika és telemetria",
+    "sec2Desc": "A Doughnut Forge nem tartalmaz követőszkripteket, analitikai motorokat vagy összeomlás-jelentő eszközöket. Ha az alkalmazást az Apple App Store-ból vagy a Microsoft Store-ból tölti le, az Apple vagy a Microsoft összesített statisztikákat biztosíthat számunkra, például a letöltések számát és az összeomlási statisztikákat. Ezek a jelentések nem tartalmaznak személyazonosításra alkalmas adatokat. A diagnosztikai adatok megosztását az eszköz beállításaiban szabályozhatja.",
+    "sec3Title": "3. Támogatás és kapcsolat",
+    "sec3Desc": "Kérdés esetén vagy technikai probléma bejelentéséhez nyisson jegyet a [[gh]]GitHub Issues[[/gh]] hibakövetőnkben. A GitHub nyilvános platform, amelyre saját adatvédelmi irányelvei vonatkoznak, ezért soha ne adjon meg érzékeny vagy visszafejtett adatokat a bejelentésekben. Adatvédelmi kérdésekkel kérjük, használja [[tally]]kapcsolatfelvételi űrlapunkat[[/tally]]. Az űrlapon keresztül beküldött adatokat a Tally (tally.so) kezeli, amelyet üzenetei fogadására használunk, és kizárólag megkeresése megválaszolására használjuk fel.",
+    "sec4Title": "4. Az irányelvek módosítása",
+    "sec4Desc": "Ezeket az irányelveket időről időre frissíthetjük. A változásokat ezen az oldalon tesszük közzé, frissített hatálybalépési dátummal.",
+    "sec5Title": "5. Az Ön jogai és jogi tájékoztatás",
+    "sec5Desc": "A kapcsolatfelvételi űrlapon keresztül beküldött megkereséseket a támogatás nyújtásához fűződő jogos érdekünk alapján kezeljük. Az üzeneteket csak a megkeresés megválaszolásához észszerűen szükséges ideig őrizzük meg, utána pedig igyekszünk rendszeresen törölni őket. Ha szeretné, hogy üzeneteit korábban töröljük, kérje ezt ugyanazon az űrlapon keresztül. Lakóhelyétől függően (például az Egyesült Királyság adatvédelmi jogszabályai alapján) joga lehet ahhoz, hogy hozzáférést kérjen a velünk folytatott kommunikációjához, illetve kérje annak helyesbítését vagy törlését, valamint hogy panaszt nyújtson be a brit adatvédelmi hatósághoz, az [[ico]]Information Commissioner's Office-hoz (ICO)[[/ico]]. A Doughnut Forge nem 13 év alatti gyermekeknek készült. Ha úgy gondolja, hogy egy gyermek személyes adatokat küldött nekünk a kapcsolatfelvételi űrlapon keresztül, kérjük, jelezze nekünk, és töröljük azokat. Ez az oldal a GitHub Pages szolgáltatáson fut. Nem adunk hozzá semmilyen követő- vagy analitikai eszközt, a GitHub azonban látogatásakor biztonsági és üzemeltetési célból technikai adatokat, például az Ön IP-címét naplózhatja; lásd a [[ghp]]GitHub adatvédelmi nyilatkozatát[[/ghp]]. A Do Not Track (DNT) jelzésekre nem reagálunk, mivel nem követjük Önt.",
+    "publisherInfo": "Kiadó: Darren Corbett."
+  }
+}

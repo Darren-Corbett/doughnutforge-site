@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/zh-CN/*.json",
+  "app:navigation.tabs.vault": "安全目录",
+  "app:navigation.tabs.mobile-vault": "安全文件",
+  "app:navigation.tabs.text-vault": "安全文本",
+  "app:navigation.tabs.identity": "身份",
+  "app:navigation.tabs.contacts": "联系人",
+  "app:navigation.language": "语言",
+  "app:languageModal.regions.europe": "欧洲",
+  "app:languageModal.regions.americas": "美洲",
+  "app:languageModal.regions.middleEastAfrica": "中东和非洲",
+  "app:languageModal.regions.asiaPacific": "亚太地区",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "加密文件",
+  "help:secureDirectoryGuide.step1.description": "将本地文件夹添加到您的工作区以浏览和管理您的文件。Doughnut Forge 完全在本地运行，这意味着您的原始文件永远不会离开您的设备。",
+  "help:setupGuide.step2.description": "您的数字身份作为您的个人密钥集，安全地存储在应用程序中。Doughnut Forge 使用这些密钥来保护您的文件并验证您受信任的联系人。",
+  "help:setupGuide.step3.description": "您的密钥完全是私人的，一旦丢失将无法恢复。您必须将恢复短语保存在安全的地方，因为这是恢复访问权限的唯一方法。",
+  "help:identityContactsGuide.step1.description": "将您的身份导出为安全的联系人卡片 (.vltc2)。共享此文件，以便其他人可以安全地验证您的身份并将您添加到他们受信任的网络中。",
+  "help:identityContactsGuide.step3.description": "管理您受信任的网络。虽然拥有您的卡片的任何人都可以向您发送安全文件，但在此处验证联系人可以快速选择他们进行共享，并确认他们的真实身份。"
+}

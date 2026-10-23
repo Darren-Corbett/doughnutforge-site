@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/uk/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "Безпечний файл"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "Безпечна папка"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "Безпечний текст"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "Особистість"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "Контакти"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "Фраза відновлення"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "Відновити особистість"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "Експорт резервної копії PDF"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "Пароль"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "Зашифрувати файл"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "Розшифрувати файл"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "Шифрування файлу"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "Поділитися карткою"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "Імпортувати картку контакту"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "Поділіться своєю карткою контакту, щоб вам могли надсилати файли та замітки, які зможете відкрити лише ви."
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "Вашою карткою контакту можна безпечно ділитися. З її допомогою не можна відкрити нічого з того, що надіслано вам."
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Doughnut Forge працює виключно на вашому пристрої. Ваш пароль та ключі ніколи не зберігаються на сервері та не передаються через мережу."
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "Ваші ключі є повністю приватними і не можуть бути відновлені в разі втрати. Ви повинні зберігати фразу для відновлення в безпечному місці, оскільки це єдиний спосіб відновити ваш доступ."
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "Встановіть пароль, що легко запам'ятати, для цього пристрою. Він розблоковує програму, дозволяючи вам безпечно шифрувати та розшифровувати дані локально."
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "Створіть нову особистість за допомогою безпечно згенерованої фрази з 24 слів."
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "Відновіть існуючу особистість за допомогою фрази відновлення з 24 слів."
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "Він відкриється, тільки якщо був надісланий вам, і покаже від кого."
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "Мова"
+    }
+  }
+}

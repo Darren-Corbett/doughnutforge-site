@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/tr",
+  "mac": {
+    "subtitle": "Şifrele ve paylaş. Tek ödeme.",
+    "promotionalText": "Abonelik yok. Hesap yok. Sunucu yok. Bilgisayarınızda dosya, klasör ve metinleri şifreleyin, güvendiğiniz kişilerle güvenle paylaşın. Tek fiyat, tek ödeme.",
+    "opening": "Özel dosyalarınız özel kalsın. Doughnut Forge, bilgisayarınızdaki dosyaları, klasörleri ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar. Nasıl gönderirseniz gönderin, onları yalnızca o kişiler açabilir.",
+    "noSubscription": "Abonelik yok, hesap yok, sunucu yok, takip yok. Doughnut Forge tamamen bilgisayarınızda, internet bağlantısı olmadan bile çalışır. Anahtarlarınız ve kişileriniz sizde, sizin kontrolünüzde kalır. Bir kez ödersiniz ve uygulama sizindir.",
+    "closing": "Gizlilik aylık bir fatura olmamalı.",
+    "features": [
+      {
+        "title": "Dosya ve klasörleri şifreleyin",
+        "text": "Tek bir dosyayı ya da koca bir klasörü birkaç tıklamayla kilitleyin; güvenle saklamaya ya da paylaşmaya hazır olsun."
+      },
+      {
+        "title": "Metin şifreleyin",
+        "text": "Kişileriniz için özel bir mesajı şifreleyin ve istediğiniz gibi paylaşın."
+      },
+      {
+        "title": "Kimliğiniz, bilgisayarınız",
+        "text": "Kimliğinizi uygulamada oluşturun. Kişi kartınızı herkesle güvenle paylaşabilirsiniz. Başkaları bu kartla size özel dosyalar gönderebilir."
+      },
+      {
+        "title": "Güvendiğiniz kişilerle paylaşın",
+        "text": "Herhangi bir kişiniz için dosyaları şifreleyin. Onlar dosyaları kendi kimlikleriyle açar. Başka hiç kimse açamaz."
+      },
+      {
+        "title": "Uzun vadeye göre tasarlandı",
+        "text": "Kuantum sonrası şifreleme kullanır; böylece bugün koruduklarınız, bilgisayarlar güçlendikçe de korunmaya devam eder."
+      },
+      {
+        "title": "Kendi dilinizde",
+        "text": "Uygulamayı Türkçe, İngilizce, İspanyolca, Japonca ve daha birçok dilde kullanın."
+      }
+    ],
+    "parts": {
+      "headline": "Özel dosyalarınız özel kalsın.",
+      "homeLead": "Doughnut Forge, bilgisayarınızdaki dosyaları, klasörleri ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar.",
+      "lead": "Doughnut Forge, bilgisayarınızdaki dosyaları, klasörleri ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar. Nasıl gönderirseniz gönderin, onları yalnızca o kişiler açabilir.",
+      "never": "Abonelik yok. Hesap yok. Sunucu yok.",
+      "short": "Abonelik yok. Hesap yok. Sunucu yok. Bilgisayarınızda dosya, klasör ve metinleri şifreleyin, güvendiğiniz kişilerle güvenle paylaşın.",
+      "offline": "Abonelik yok, hesap yok, sunucu yok, takip yok. Doughnut Forge tamamen bilgisayarınızda, internet bağlantısı olmadan bile çalışır. Anahtarlarınız ve kişileriniz sizde, sizin kontrolünüzde kalır."
+    }
+  },
+  "ios": {
+    "subtitle": "Şifrele ve paylaş. Tek ödeme.",
+    "promotionalText": "Abonelik yok. Hesap yok. Sunucu yok. iPhone veya iPad'inizde dosya, fotoğraf, video ve metinleri şifreleyin, güvendiğiniz kişilerle güvenle paylaşın. Tek ödeme.",
+    "opening": "Özel dosyalarınız özel kalsın. Doughnut Forge, iPhone ve iPad'inizdeki dosyaları, fotoğrafları, videoları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar. Nasıl gönderirseniz gönderin, onları yalnızca o kişiler açabilir.",
+    "noSubscription": "Abonelik yok, hesap yok, sunucu yok, takip yok. Doughnut Forge tamamen cihazınızda, internet bağlantısı olmadan bile çalışır. Anahtarlarınız ve kişileriniz sizde, sizin kontrolünüzde kalır. Bir kez ödersiniz ve uygulama sizindir.",
+    "closing": "Gizlilik aylık bir fatura olmamalı.",
+    "features": [
+      {
+        "title": "Dosya, fotoğraf ve videoları şifreleyin",
+        "text": "Dosyalar'dan bir dosya ya da arşivinizden bir fotoğraf veya video seçin ya da başka bir uygulamadan gönderin. Birkaç dokunuşla şifreleyin; güvenle saklamaya ya da paylaşmaya hazır olsun."
+      },
+      {
+        "title": "Size gönderilenleri açın",
+        "text": "Bir kişiden gelen dosyanın şifresini çözün ve Dosyalar'a kaydedin. Fotoğraflar ve videolar doğrudan fotoğraf arşivinize dönebilir."
+      },
+      {
+        "title": "Metin şifreleyin",
+        "text": "Kişileriniz için özel bir mesajı şifreleyin ve istediğiniz gibi paylaşın."
+      },
+      {
+        "title": "Güvendiğiniz kişilerle paylaşın",
+        "text": "Herhangi bir kişiniz için dosyaları şifreleyin. Onlar dosyaları kendi kimlikleriyle açar. Başka hiç kimse açamaz."
+      },
+      {
+        "title": "Kimliğiniz, cihazınız",
+        "text": "Kimliğinizi uygulamada oluşturun. Kişi kartınızı herkesle güvenle paylaşabilirsiniz. Başkaları bu kartla size özel dosyalar gönderebilir."
+      },
+      {
+        "title": "Face ID ve Touch ID",
+        "text": "İsterseniz uygulamanın kilidini bir bakışla ya da dokunuşla açın. Parolanız da her zaman çalışır."
+      },
+      {
+        "title": "Uzun vadeye göre tasarlandı",
+        "text": "Kuantum sonrası şifreleme kullanır; böylece bugün koruduklarınız, bilgisayarlar güçlendikçe de korunmaya devam eder."
+      },
+      {
+        "title": "Kendi dilinizde",
+        "text": "Uygulamayı Türkçe, İngilizce, İspanyolca, Japonca ve daha birçok dilde kullanın."
+      }
+    ]
+  }
+}

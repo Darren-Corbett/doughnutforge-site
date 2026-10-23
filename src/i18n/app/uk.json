@@ -1,0 +1,19 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/uk/*.json",
+  "app:navigation.tabs.vault": "Безпечна папка",
+  "app:navigation.tabs.mobile-vault": "Безпечний файл",
+  "app:navigation.tabs.text-vault": "Безпечний текст",
+  "app:navigation.tabs.identity": "Особистість",
+  "app:navigation.tabs.contacts": "Контакти",
+  "app:navigation.language": "Мова",
+  "app:languageModal.regions.europe": "Європа",
+  "app:languageModal.regions.americas": "Америка",
+  "app:languageModal.regions.middleEastAfrica": "Близький Схід і Африка",
+  "app:languageModal.regions.asiaPacific": "Азійсько-Тихоокеанський регіон",
+  "mobile-views:secureFile.howItWorks.encrypt.title": "Шифрування файлу",
+  "help:secureDirectoryGuide.step1.description": "Додайте локальні папки до робочої області, щоб переглядати файли та керувати ними. Doughnut Forge працює повністю локально, що означає, що ваші оригінальні файли ніколи не залишають ваш пристрій.",
+  "help:setupGuide.step2.description": "Ваша цифрова особистість діє як ваш особистий набір ключів, що надійно зберігаються в програмі. Doughnut Forge використовує ці ключі для захисту ваших файлів та перевірки ваших надійних контактів.",
+  "help:setupGuide.step3.description": "Ваші ключі є повністю приватними і не можуть бути відновлені в разі втрати. Ви повинні зберігати фразу для відновлення в безпечному місці, оскільки це єдиний спосіб відновити ваш доступ.",
+  "help:identityContactsGuide.step1.description": "Експортуйте свою особистість як безпечну контактну картку (.vltc2). Поділіться цим файлом, щоб інші могли безпечно перевірити, хто ви, і додати вас до своєї надійної мережі.",
+  "help:identityContactsGuide.step3.description": "Керуйте своєю надійною мережею. Хоча будь-хто, хто має вашу картку, може надсилати вам безпечні файли, перевірка контактів тут дозволяє швидко вибирати їх для обміну та підтверджує їхню справжню особистість."
+}

@@ -12,10 +12,9 @@ interface Props {
 const { lang } = Astro.props;
 const { t, store } = useStrings(lang.code);
 
-// "No subscription. No account. No servers." from the store's promotional text
-const never = store.mac.promotionalText.split(/(?<=\.)\s+/).slice(0, 3).join(" ");
-// The store's no-subscription paragraph without "You pay once, and the app is yours."
-const offline = store.mac.noSubscription.split(/(?<=\.)\s+/).slice(0, -1).join(" ");
+// "No subscription. No account. No servers." from the store's promotional text, and
+// the no-subscription paragraph without "You pay once, and the app is yours."
+const { never, offline } = store.mac.parts;
 ---
 
 <Base lang={lang} title={t("meta.pricing.title")} description={t("meta.pricing.description")} image="/og/pricing.png">

@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/es-MX",
+  "mac": {
+    "subtitle": "Cifra y comparte. Pago único.",
+    "promotionalText": "Sin suscripción. Sin cuenta. Sin servidores. Cifra archivos, carpetas y texto en tu computadora y compártelos de forma segura con quien confíes. Un precio, un solo pago.",
+    "opening": "Mantén privados tus archivos privados. Doughnut Forge protege tus archivos, carpetas y texto en tu computadora y te permite compartirlos con las personas en las que confías. Sin importar cómo los envíes, solo ellas podrán abrirlos.",
+    "noSubscription": "Sin suscripción, sin cuenta, sin servidores y sin rastreo. Doughnut Forge funciona por completo en tu computadora, incluso sin conexión a internet. Tus claves y contactos se quedan contigo, bajo tu control. Pagas una vez y la app es tuya.",
+    "closing": "La privacidad no debería ser una factura mensual.",
+    "features": [
+      {
+        "title": "Cifra archivos y carpetas",
+        "text": "Bloquea un solo archivo o una carpeta completa en unos cuantos clics, listo para guardarlo seguro o compartirlo."
+      },
+      {
+        "title": "Cifra texto",
+        "text": "Cifra un mensaje privado para tus contactos y compártelo como quieras."
+      },
+      {
+        "title": "Tu identidad, tu computadora",
+        "text": "Crea tu identidad en la app. Puedes compartir tu tarjeta de contacto con cualquiera sin riesgo. Permite que otros te envíen archivos privados."
+      },
+      {
+        "title": "Comparte con quien confías",
+        "text": "Cifra archivos para cualquiera de tus contactos. Los abren con su propia identidad. Nadie más puede."
+      },
+      {
+        "title": "Pensada para durar",
+        "text": "Usa cifrado poscuántico, para que lo que proteges hoy siga protegido a medida que las computadoras sean más potentes."
+      },
+      {
+        "title": "En tu idioma",
+        "text": "Usa la app en español, inglés, japonés, ucraniano y muchos otros idiomas."
+      }
+    ],
+    "parts": {
+      "headline": "Mantén privados tus archivos privados.",
+      "homeLead": "Doughnut Forge protege tus archivos, carpetas y texto en tu computadora y te permite compartirlos con las personas en las que confías.",
+      "lead": "Doughnut Forge protege tus archivos, carpetas y texto en tu computadora y te permite compartirlos con las personas en las que confías. Sin importar cómo los envíes, solo ellas podrán abrirlos.",
+      "never": "Sin suscripción. Sin cuenta. Sin servidores.",
+      "short": "Sin suscripción. Sin cuenta. Sin servidores. Cifra archivos, carpetas y texto en tu computadora y compártelos de forma segura con quien confíes.",
+      "offline": "Sin suscripción, sin cuenta, sin servidores y sin rastreo. Doughnut Forge funciona por completo en tu computadora, incluso sin conexión a internet. Tus claves y contactos se quedan contigo, bajo tu control."
+    }
+  },
+  "ios": {
+    "subtitle": "Cifra y comparte. Pago único.",
+    "promotionalText": "Sin suscripción. Sin cuenta. Sin servidores. Cifra archivos, fotos, videos y texto en tu iPhone o iPad y compártelos de forma segura con quien confíes. Un solo pago.",
+    "opening": "Mantén privados tus archivos privados. Doughnut Forge protege tus archivos, fotos, videos y texto en tu iPhone y iPad y te permite compartirlos con las personas en las que confías. Sin importar cómo los envíes, solo ellas podrán abrirlos.",
+    "noSubscription": "Sin suscripción, sin cuenta, sin servidores y sin rastreo. Doughnut Forge funciona por completo en tu dispositivo, incluso sin conexión a internet. Tus claves y contactos se quedan contigo, bajo tu control. Pagas una vez y la app es tuya.",
+    "closing": "La privacidad no debería ser una factura mensual.",
+    "features": [
+      {
+        "title": "Cifra archivos, fotos y videos",
+        "text": "Elige un archivo de Archivos o una foto o un video de tu fototeca, o envíalo desde otra app. Cífralo en unos cuantos toques, listo para guardarlo seguro o compartirlo."
+      },
+      {
+        "title": "Abre lo que te envían",
+        "text": "Descifra un archivo de un contacto y guárdalo en Archivos. Las fotos y los videos pueden volver directamente a tu fototeca."
+      },
+      {
+        "title": "Cifra texto",
+        "text": "Cifra un mensaje privado para tus contactos y compártelo como quieras."
+      },
+      {
+        "title": "Comparte con quien confías",
+        "text": "Cifra archivos para cualquiera de tus contactos. Los abren con su propia identidad. Nadie más puede."
+      },
+      {
+        "title": "Tu identidad, tu dispositivo",
+        "text": "Crea tu identidad en la app. Puedes compartir tu tarjeta de contacto con cualquiera sin riesgo. Permite que otros te envíen archivos privados."
+      },
+      {
+        "title": "Face ID y Touch ID",
+        "text": "Desbloquea la app con una mirada o un toque, si quieres. Tu contraseña sigue funcionando."
+      },
+      {
+        "title": "Pensada para durar",
+        "text": "Usa cifrado poscuántico, para que lo que proteges hoy siga protegido a medida que las computadoras sean más potentes."
+      },
+      {
+        "title": "En tu idioma",
+        "text": "Usa la app en español, inglés, japonés, ucraniano y muchos otros idiomas."
+      }
+    ]
+  }
+}

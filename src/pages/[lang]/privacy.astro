@@ -1,0 +1,10 @@
+---
+// Privacy page in every language but English (English: src/pages/privacy.astro)
+import { otherLanguagePaths, type Language } from "../../i18n";
+import PrivacyPage from "../../views/PrivacyPage.astro";
+
+export const getStaticPaths = otherLanguagePaths;
+const { lang } = Astro.props as { lang: Language };
+---
+
+<PrivacyPage lang={lang} />

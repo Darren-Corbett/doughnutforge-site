@@ -110,17 +110,28 @@
   .keep-word {
     white-space: nowrap;
   }
-  :lang(ko) {
-    word-break: keep-all;
-  }
+  /* Korean breaks at its spaces. Japanese and Chinese break only at the <wbr>s that
+     src/middleware.ts puts between words. Thai keeps the browser's own word
+     dictionary (word-break: normal), which never splits a word. */
+  :lang(ko),
   :lang(ja),
   :lang(zh) {
-    word-break: auto-phrase;
+    word-break: keep-all;
   }
   h1,
   h2,
   h3 {
     text-wrap: balance;
+  }
+
+  /* Big headings set their size in --fs. If a heading's longest word (measured by
+     src/middleware.ts into --longest, in average letter widths) would not fit the
+     column, the heading gets just small enough for it to fit. Short words keep --fs.
+     0.64em is a wide average letter at weight 900; Japanese and Chinese letters
+     count as 1.6 each. min-content stops a max-width in ch cutting a long word. */
+  :is(h1, h2, h3, .tagline, .statement, .row-name) {
+    font-size: min(var(--fs, 1em), 100cqi / (var(--longest, 0.01) * 0.64));
+    min-width: min-content;
   }
 
   /* Visible focus in the brand blue for keyboard users */
@@ -156,6 +167,9 @@
     min-height: 48px;
     display: inline-flex;
     align-items: center;
+    /* Long labels in some languages wrap between words, centred */
+    justify-content: center;
+    text-align: center;
     padding: 10px 24px;
     border-radius: 9999px;
     font-size: 17px;
@@ -177,6 +191,9 @@
     min-height: 48px;
     display: inline-flex;
     align-items: center;
+    /* Long labels in some languages wrap between words, centred */
+    justify-content: center;
+    text-align: center;
     padding: 10px 24px;
     border-radius: 9999px;
     font-size: 17px;
@@ -185,12 +202,13 @@
   }
 
   .section {
+    container-type: inline-size;
     max-width: 72rem;
     margin-inline: auto;
     padding: 56px 16px;
   }
   .section-title {
-    font-size: clamp(28px, 7vw, 44px);
+    --fs: clamp(28px, 7vw, 44px);
     line-height: 1.1;
     font-weight: 900;
     letter-spacing: -0.02em;
@@ -208,7 +226,7 @@
      "Privacy should not be a monthly bill." */
   .statement {
     max-width: 18ch;
-    font-size: clamp(26px, 7vw, 38px);
+    --fs: clamp(26px, 7vw, 38px);
     line-height: 1.1;
     font-weight: 900;
     letter-spacing: -0.02em;
@@ -250,4 +268,19 @@
       padding: 80px 24px;
     }
   }
+}
+
+/* Writing systems that letter-spacing harms. Japanese, Chinese and Korean
+   headings look cramped when tightened, and spacing breaks up the combining marks
+   of Thai and Devanagari (Hindi). Tall marks need more room between lines in Thai
+   and Hindi, and a little more in Japanese, Chinese and Korean. These win over
+   each component's own spacing, which is written for Latin, Greek and Cyrillic. */
+html:is(:lang(ja), :lang(zh), :lang(ko), :lang(th), :lang(hi)) * {
+  letter-spacing: normal !important;
+}
+html:is(:lang(th), :lang(hi)) :is(h1, h2, h3, .tagline, .statement, .row-name) {
+  line-height: 1.35 !important;
+}
+html:is(:lang(ja), :lang(zh), :lang(ko)) :is(h1, h2, h3, .tagline, .statement, .row-name) {
+  line-height: 1.25 !important;
 }

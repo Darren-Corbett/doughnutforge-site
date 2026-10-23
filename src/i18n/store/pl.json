@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/pl",
+  "mac": {
+    "subtitle": "Szyfrowanie bez subskrypcji",
+    "promotionalText": "Bez subskrypcji. Bez konta. Bez serwerów. Szyfruj pliki, foldery i tekst na komputerze i bezpiecznie udostępniaj je zaufanym osobom. Jedna cena, płacisz raz.",
+    "opening": "Prywatne pliki pozostają prywatne. Doughnut Forge blokuje Twoje pliki, foldery i tekst na komputerze i pozwala udostępniać je osobom, którym ufasz. Niezależnie od tego, jak je wyślesz, tylko one mogą je otworzyć.",
+    "noSubscription": "Bez subskrypcji, bez konta, bez serwerów i bez śledzenia. Doughnut Forge działa w całości na Twoim komputerze, nawet bez połączenia z internetem. Twoje klucze i kontakty zostają przy Tobie, pod Twoją kontrolą. Płacisz raz, a aplikacja należy do Ciebie.",
+    "closing": "Prywatność nie powinna być comiesięcznym rachunkiem.",
+    "features": [
+      {
+        "title": "Szyfruj pliki i foldery",
+        "text": "Zablokuj pojedynczy plik lub cały folder kilkoma kliknięciami, gotowy do bezpiecznego przechowania lub udostępnienia."
+      },
+      {
+        "title": "Szyfruj tekst",
+        "text": "Zaszyfruj prywatną wiadomość dla swoich kontaktów i udostępnij ją w dowolny sposób."
+      },
+      {
+        "title": "Twoja tożsamość, Twój komputer",
+        "text": "Utwórz swoją tożsamość w aplikacji. Kartę kontaktu możesz bezpiecznie udostępnić każdemu. Dzięki niej inni mogą wysyłać Ci prywatne pliki."
+      },
+      {
+        "title": "Udostępniaj zaufanym osobom",
+        "text": "Szyfruj pliki dla dowolnego ze swoich kontaktów. Otwierają je własną tożsamością. Nikt inny tego nie zrobi."
+      },
+      {
+        "title": "Zbudowane na lata",
+        "text": "Korzysta z szyfrowania postkwantowego, więc to, co chronisz dziś, pozostanie chronione, gdy komputery staną się potężniejsze."
+      },
+      {
+        "title": "W Twoim języku",
+        "text": "Używaj aplikacji po polsku, angielsku, hiszpańsku, japońsku i w wielu innych językach."
+      }
+    ],
+    "parts": {
+      "headline": "Prywatne pliki pozostają prywatne.",
+      "homeLead": "Doughnut Forge blokuje Twoje pliki, foldery i tekst na komputerze i pozwala udostępniać je osobom, którym ufasz.",
+      "lead": "Doughnut Forge blokuje Twoje pliki, foldery i tekst na komputerze i pozwala udostępniać je osobom, którym ufasz. Niezależnie od tego, jak je wyślesz, tylko one mogą je otworzyć.",
+      "never": "Bez subskrypcji. Bez konta. Bez serwerów.",
+      "short": "Bez subskrypcji. Bez konta. Bez serwerów. Szyfruj pliki, foldery i tekst na komputerze i bezpiecznie udostępniaj je zaufanym osobom.",
+      "offline": "Bez subskrypcji, bez konta, bez serwerów i bez śledzenia. Doughnut Forge działa w całości na Twoim komputerze, nawet bez połączenia z internetem. Twoje klucze i kontakty zostają przy Tobie, pod Twoją kontrolą."
+    }
+  },
+  "ios": {
+    "subtitle": "Szyfrowanie bez subskrypcji",
+    "promotionalText": "Bez subskrypcji. Bez konta. Bez serwerów. Szyfruj pliki, zdjęcia, filmy i tekst na iPhonie lub iPadzie i bezpiecznie udostępniaj je zaufanym osobom. Płacisz raz.",
+    "opening": "Prywatne pliki pozostają prywatne. Doughnut Forge blokuje Twoje pliki, zdjęcia, filmy i tekst na iPhonie i iPadzie i pozwala udostępniać je osobom, którym ufasz. Niezależnie od tego, jak je wyślesz, tylko one mogą je otworzyć.",
+    "noSubscription": "Bez subskrypcji, bez konta, bez serwerów i bez śledzenia. Doughnut Forge działa w całości na Twoim urządzeniu, nawet bez połączenia z internetem. Twoje klucze i kontakty zostają przy Tobie, pod Twoją kontrolą. Płacisz raz, a aplikacja należy do Ciebie.",
+    "closing": "Prywatność nie powinna być comiesięcznym rachunkiem.",
+    "features": [
+      {
+        "title": "Szyfruj pliki, zdjęcia i filmy",
+        "text": "Wybierz plik z aplikacji Pliki albo zdjęcie lub film z biblioteki, albo wyślij go z innej aplikacji. Zaszyfruj go kilkoma stuknięciami, gotowy do bezpiecznego przechowania lub udostępnienia."
+      },
+      {
+        "title": "Otwieraj to, co do Ciebie trafia",
+        "text": "Odszyfruj plik od kontaktu i zapisz go w aplikacji Pliki. Zdjęcia i filmy mogą wrócić prosto do biblioteki zdjęć."
+      },
+      {
+        "title": "Szyfruj tekst",
+        "text": "Zaszyfruj prywatną wiadomość dla swoich kontaktów i udostępnij ją w dowolny sposób."
+      },
+      {
+        "title": "Udostępniaj zaufanym osobom",
+        "text": "Szyfruj pliki dla dowolnego ze swoich kontaktów. Otwierają je własną tożsamością. Nikt inny tego nie zrobi."
+      },
+      {
+        "title": "Twoja tożsamość, Twoje urządzenie",
+        "text": "Utwórz swoją tożsamość w aplikacji. Kartę kontaktu możesz bezpiecznie udostępnić każdemu. Dzięki niej inni mogą wysyłać Ci prywatne pliki."
+      },
+      {
+        "title": "Face ID i Touch ID",
+        "text": "Odblokowuj aplikację spojrzeniem lub dotykiem, jeśli chcesz. Twoje hasło też zawsze działa."
+      },
+      {
+        "title": "Zbudowane na lata",
+        "text": "Korzysta z szyfrowania postkwantowego, więc to, co chronisz dziś, pozostanie chronione, gdy komputery staną się potężniejsze."
+      },
+      {
+        "title": "W Twoim języku",
+        "text": "Używaj aplikacji po polsku, angielsku, hiszpańsku, japońsku i w wielu innych językach."
+      }
+    ]
+  }
+}

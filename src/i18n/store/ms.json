@@ -1,0 +1,85 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/ms",
+  "mac": {
+    "subtitle": "Penyulitan tanpa langganan",
+    "promotionalText": "Tiada langganan. Tiada akaun. Tiada pelayan. Sulitkan fail, folder dan teks pada komputer anda dan kongsikannya dengan selamat. Satu harga, bayar sekali sahaja.",
+    "opening": "Pastikan fail peribadi kekal peribadi. Doughnut Forge mengunci fail, folder dan teks pada komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai. Walau bagaimana anda menghantarnya, hanya mereka yang boleh membukanya.",
+    "noSubscription": "Tiada langganan, tiada akaun, tiada pelayan dan tiada penjejakan. Doughnut Forge berfungsi sepenuhnya pada komputer anda, walaupun tanpa sambungan internet. Kunci dan kenalan anda kekal bersama anda, di bawah kawalan anda. Anda bayar sekali, dan aplikasi itu milik anda.",
+    "closing": "Privasi tidak sepatutnya menjadi bil bulanan.",
+    "features": [
+      {
+        "title": "Sulitkan fail dan folder",
+        "text": "Kunci satu fail atau seluruh folder dengan beberapa klik, sedia untuk disimpan dengan selamat atau dikongsi."
+      },
+      {
+        "title": "Sulitkan teks",
+        "text": "Sulitkan mesej peribadi untuk kenalan anda dan kongsikannya mengikut cara anda."
+      },
+      {
+        "title": "Identiti anda, komputer anda",
+        "text": "Cipta identiti anda dalam aplikasi. Kad Kenalan anda selamat dikongsi dengan sesiapa sahaja. Ia membolehkan orang lain menghantar fail peribadi kepada anda."
+      },
+      {
+        "title": "Kongsi dengan orang dipercayai",
+        "text": "Sulitkan fail untuk mana-mana kenalan anda. Mereka membukanya dengan identiti mereka sendiri. Tiada orang lain yang boleh."
+      },
+      {
+        "title": "Dibina untuk jangka panjang",
+        "text": "Menggunakan penyulitan pasca-kuantum, supaya apa yang anda lindungi hari ini kekal dilindungi apabila komputer menjadi lebih berkuasa."
+      },
+      {
+        "title": "Dalam bahasa anda",
+        "text": "Gunakan aplikasi dalam bahasa Melayu, Inggeris, Sepanyol, Jepun dan banyak bahasa lain."
+      }
+    ],
+    "parts": {
+      "headline": "Pastikan fail peribadi kekal peribadi.",
+      "homeLead": "Doughnut Forge mengunci fail, folder dan teks pada komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai.",
+      "lead": "Doughnut Forge mengunci fail, folder dan teks pada komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai. Walau bagaimana anda menghantarnya, hanya mereka yang boleh membukanya.",
+      "never": "Tiada langganan. Tiada akaun. Tiada pelayan.",
+      "short": "Tiada langganan. Tiada akaun. Tiada pelayan. Sulitkan fail, folder dan teks pada komputer anda dan kongsikannya dengan selamat.",
+      "offline": "Tiada langganan, tiada akaun, tiada pelayan dan tiada penjejakan. Doughnut Forge berfungsi sepenuhnya pada komputer anda, walaupun tanpa sambungan internet. Kunci dan kenalan anda kekal bersama anda, di bawah kawalan anda."
+    }
+  },
+  "ios": {
+    "subtitle": "Penyulitan tanpa langganan",
+    "promotionalText": "Tiada langganan. Tiada akaun. Tiada pelayan. Sulitkan fail, foto, video dan teks pada iPhone atau iPad anda dan kongsikannya dengan selamat. Bayar sekali sahaja.",
+    "opening": "Pastikan fail peribadi kekal peribadi. Doughnut Forge mengunci fail, foto, video dan teks pada iPhone dan iPad anda dan membolehkan anda berkongsinya dengan orang yang anda percayai. Walau bagaimana anda menghantarnya, hanya mereka yang boleh membukanya.",
+    "noSubscription": "Tiada langganan, tiada akaun, tiada pelayan dan tiada penjejakan. Doughnut Forge berfungsi sepenuhnya pada peranti anda, walaupun tanpa sambungan internet. Kunci dan kenalan anda kekal bersama anda, di bawah kawalan anda. Anda bayar sekali, dan aplikasi itu milik anda.",
+    "closing": "Privasi tidak sepatutnya menjadi bil bulanan.",
+    "features": [
+      {
+        "title": "Sulitkan fail, foto dan video",
+        "text": "Pilih fail daripada app Fail atau foto atau video daripada pustaka anda, atau hantarnya dari app lain. Sulitkan dengan beberapa ketikan, sedia untuk disimpan dengan selamat atau dikongsi."
+      },
+      {
+        "title": "Buka apa yang dihantar kepada anda",
+        "text": "Nyahsulit fail daripada kenalan dan simpan ke app Fail. Foto dan video boleh terus kembali ke pustaka foto anda."
+      },
+      {
+        "title": "Sulitkan teks",
+        "text": "Sulitkan mesej peribadi untuk kenalan anda dan kongsikannya mengikut cara anda."
+      },
+      {
+        "title": "Kongsi dengan orang dipercayai",
+        "text": "Sulitkan fail untuk mana-mana kenalan anda. Mereka membukanya dengan identiti mereka sendiri. Tiada orang lain yang boleh."
+      },
+      {
+        "title": "Identiti anda, peranti anda",
+        "text": "Cipta identiti anda dalam aplikasi. Kad Kenalan anda selamat dikongsi dengan sesiapa sahaja. Ia membolehkan orang lain menghantar fail peribadi kepada anda."
+      },
+      {
+        "title": "Face ID dan Touch ID",
+        "text": "Buka kunci aplikasi dengan sekali pandang atau sentuhan jika anda mahu. Kata laluan anda masih berfungsi."
+      },
+      {
+        "title": "Dibina untuk jangka panjang",
+        "text": "Menggunakan penyulitan pasca-kuantum, supaya apa yang anda lindungi hari ini kekal dilindungi apabila komputer menjadi lebih berkuasa."
+      },
+      {
+        "title": "Dalam bahasa anda",
+        "text": "Gunakan aplikasi dalam bahasa Melayu, Inggeris, Sepanyol, Jepun dan banyak bahasa lain."
+      }
+    ]
+  }
+}

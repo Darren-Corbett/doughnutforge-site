@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "Personvernerklæring",
+    "effectiveDate": "Gjelder fra: oktober 2026",
+    "hero": "<strong>Doughnut Forge er bygget på en lokal arkitektur med nullkunnskap (zero-knowledge).</strong> Det betyr at vi ikke samler inn, overfører, lagrer eller har tilgang til dataene dine, bortsett fra informasjon du selv velger å sende oss (se punkt 3).",
+    "sec1Title": "1. Datalagring og sletting",
+    "sec1Desc": "Alle kryptografiske nøkler, <code class=\"k1\">.vltc2</code>-identiteter og <code class=\"k2\">.vlt2</code>-filer som Doughnut Forge genererer, lagres utelukkende på enheten din. Ingen informasjon forlater enheten din med mindre du selv eksporterer og deler en fil. Når du avinstallerer appen, fjernes programvaren, men ikke filer du har lagret andre steder på enheten, eller nøkler i systemets påloggingsbehandler (for eksempel Nøkkelring i macOS eller Legitimasjonsbehandling i Windows). Du kan slette disse manuelt.",
+    "sec2Title": "2. Analyse og telemetri",
+    "sec2Desc": "Doughnut Forge inneholder ingen sporingsskript, analysemotorer eller krasjrapportering. Hvis du laster ned appen fra Apple App Store eller Microsoft Store, kan Apple eller Microsoft gi oss samlet statistikk, for eksempel antall nedlastinger og krasjstatistikk. Disse rapportene inneholder ingen personidentifiserbare opplysninger. Du kan styre deling av diagnosedata i enhetens innstillinger.",
+    "sec3Title": "3. Støtte og kontakt",
+    "sec3Desc": "Har du spørsmål eller vil rapportere et teknisk problem, kan du opprette en sak i vår [[gh]]GitHub Issues[[/gh]]-tracker. GitHub er en offentlig plattform med sin egen personvernerklæring, så ta aldri med sensitive eller dekrypterte data i rapportene dine. For spørsmål om personvern kan du bruke vårt [[tally]]kontaktskjema[[/tally]]. Opplysninger du sender inn via skjemaet, behandles av Tally (tally.so), som vi bruker for å motta meldingen din, og brukes kun til å besvare henvendelsen din.",
+    "sec4Title": "4. Endringer i denne erklæringen",
+    "sec4Desc": "Vi kan oppdatere denne erklæringen fra tid til annen. Eventuelle endringer publiseres på denne siden med en oppdatert ikrafttredelsesdato.",
+    "sec5Title": "5. Dine rettigheter og juridisk informasjon",
+    "sec5Desc": "For henvendelser som sendes via kontaktskjemaet vårt, behandler vi opplysningene dine på grunnlag av vår berettigede interesse i å yte støtte. Vi oppbevarer meldinger bare så lenge det er rimelig nødvendig for å besvare henvendelsen din, og vi forsøker å slette dem jevnlig deretter. Hvis du ønsker at meldingene dine slettes tidligere, kan du be om det via det samme skjemaet. Avhengig av hvor du bor (for eksempel etter britisk personvernlovgivning), kan du ha rett til å be om innsyn i, retting av eller sletting av kommunikasjonen din med oss, og til å klage til den britiske tilsynsmyndigheten, [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge er ikke rettet mot barn under 13 år. Hvis du tror at et barn har sendt oss personopplysninger via kontaktskjemaet vårt, gi oss beskjed, så sletter vi dem. Denne siden driftes på GitHub Pages. Vi legger ikke til sporing eller analyse, men GitHub kan logge teknisk informasjon, for eksempel IP-adressen din, når du besøker siden, av sikkerhetshensyn og for å drifte tjenesten; se [[ghp]]GitHubs personvernerklæring[[/ghp]]. Vi reagerer ikke på Do Not Track-signaler (DNT), fordi vi ikke sporer deg.",
+    "publisherInfo": "Publisert av Darren Corbett."
+  }
+}

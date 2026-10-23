@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "Política de Privacidade",
+    "effectiveDate": "Data de vigência: outubro de 2026",
+    "hero": "<strong>O Doughnut Forge é construído sobre uma arquitetura local de conhecimento zero (zero-knowledge).</strong> Isso significa que não coletamos, transmitimos, armazenamos nem acessamos seus dados, exceto as informações que você nos enviar diretamente (veja a seção 3).",
+    "sec1Title": "1. Armazenamento e exclusão de dados",
+    "sec1Desc": "Todas as chaves criptográficas, identidades <code class=\"k1\">.vltc2</code> e arquivos <code class=\"k2\">.vlt2</code> gerados pelo Doughnut Forge são armazenados exclusivamente no seu dispositivo. Nenhuma informação sai do seu dispositivo, a menos que você mesmo exporte e compartilhe um arquivo. Desinstalar o aplicativo remove o software, mas não remove os arquivos salvos em outros locais do dispositivo nem as chaves guardadas no gerenciador de credenciais do sistema (como o Keychain do macOS ou o Gerenciador de Credenciais do Windows). Você pode excluí-los manualmente.",
+    "sec2Title": "2. Análises e telemetria",
+    "sec2Desc": "O Doughnut Forge não contém scripts de rastreamento, mecanismos de análise nem coletores de relatórios de falhas. Se você baixar o aplicativo pela App Store da Apple ou pela Microsoft Store, a Apple ou a Microsoft podem nos fornecer estatísticas agregadas, como contagens de downloads e estatísticas de falhas. Esses relatórios não incluem informações de identificação pessoal. Você pode controlar o compartilhamento de dados de diagnóstico nas configurações do seu dispositivo.",
+    "sec3Title": "3. Suporte e contato",
+    "sec3Desc": "Para dúvidas ou problemas técnicos, abra um ticket no nosso [[gh]]GitHub Issues[[/gh]]. O GitHub é uma plataforma pública regida pela própria política de privacidade, então nunca inclua dados sensíveis ou descriptografados. Para questões de privacidade, use nosso [[tally]]formulário de contato[[/tally]]. Os dados enviados por ele são processados pela Tally (tally.so), que usamos para receber sua mensagem, e são usados apenas para responder à sua solicitação.",
+    "sec4Title": "4. Alterações nesta política",
+    "sec4Desc": "Podemos atualizar esta política de tempos em tempos. As alterações serão publicadas nesta página com uma data de vigência atualizada.",
+    "sec5Title": "5. Seus direitos e avisos legais",
+    "sec5Desc": "Para as solicitações enviadas pelo nosso formulário de contato, tratamos suas informações com base em nosso legítimo interesse em prestar suporte. Mantemos as mensagens apenas pelo tempo razoavelmente necessário para atender à sua solicitação e procuramos excluí-las periodicamente depois disso. Se quiser que suas mensagens sejam excluídas antes, basta pedir pelo mesmo formulário. Dependendo de onde você mora (por exemplo, segundo a legislação de proteção de dados do Reino Unido), você pode ter o direito de solicitar acesso, correção ou exclusão das suas comunicações conosco, além de apresentar uma reclamação à autoridade britânica de proteção de dados, o [[ico]]Information Commissioner's Office (ICO)[[/ico]]. O Doughnut Forge não é direcionado a crianças menores de 13 anos. Se você acredita que uma criança nos enviou informações pessoais pelo nosso formulário de contato, avise-nos e nós as excluiremos. Esta página está hospedada no GitHub Pages. Não adicionamos nenhum recurso de rastreamento ou análise, mas o GitHub pode registrar informações técnicas, como seu endereço IP, quando você a visita, por motivos de segurança e para o funcionamento do serviço; consulte a [[ghp]]declaração de privacidade do GitHub[[/ghp]]. Não respondemos a sinais Do Not Track (DNT), pois não rastreamos você.",
+    "publisherInfo": "Publicado por Darren Corbett."
+  }
+}

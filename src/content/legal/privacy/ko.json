@@ -1,0 +1,25 @@
+{
+  "_source": "forge-privacy@3e7911c index.html",
+  "links": {
+    "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
+    "tally": "https://tally.so/r/yPWQO4",
+    "ico": "https://ico.org.uk/make-a-complaint/",
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+  },
+  "strings": {
+    "title": "개인정보 처리방침",
+    "effectiveDate": "시행일: 2026년 10월",
+    "hero": "<strong>Doughnut Forge는 영지식(zero-knowledge), 로컬 우선 아키텍처를 기반으로 합니다.</strong> 즉, 사용자가 직접 보내기로 선택한 정보를 제외하고는 사용자의 데이터를 수집, 전송, 저장하거나 이에 접근하지 않습니다(3항 참조).",
+    "sec1Title": "1. 데이터 저장 및 삭제",
+    "sec1Desc": "Doughnut Forge가 생성하는 모든 암호화 키, <code class=\"k1\">.vltc2</code> ID, <code class=\"k2\">.vlt2</code> 파일은 사용자의 기기에만 저장됩니다. 사용자가 직접 파일을 내보내 공유하지 않는 한 어떤 정보도 기기 밖으로 전송되지 않습니다. 앱을 제거하면 소프트웨어는 삭제되지만, 기기의 다른 위치에 저장한 파일이나 시스템 자격 증명 관리자(예: macOS 키체인 또는 Windows 자격 증명 관리자)에 보관된 키는 삭제되지 않습니다. 이러한 항목은 직접 삭제할 수 있습니다.",
+    "sec2Title": "2. 분석 및 원격 측정",
+    "sec2Desc": "Doughnut Forge에는 추적 스크립트, 분석 엔진, 충돌 보고 도구가 포함되어 있지 않습니다. Apple App Store 또는 Microsoft Store에서 앱을 다운로드한 경우, Apple 또는 Microsoft가 다운로드 수 및 충돌 통계와 같은 집계 통계를 당사에 제공할 수 있습니다. 이러한 보고서에는 개인을 식별할 수 있는 정보가 포함되지 않습니다. 진단 데이터 공유는 기기 설정에서 관리할 수 있습니다.",
+    "sec3Title": "3. 지원 및 문의",
+    "sec3Desc": "질문이 있거나 기술적 문제를 신고하려면 [[gh]]GitHub Issues[[/gh]]에 티켓을 등록해 주세요. GitHub는 자체 개인정보 처리방침이 적용되는 공개 플랫폼이므로, 신고 내용에 민감한 정보나 복호화된 데이터를 절대 포함하지 마세요. 개인정보 관련 문의는 [[tally]]문의 양식[[/tally]]을 이용해 주세요. 이 양식으로 제출한 정보는 메시지 수신을 위해 당사가 사용하는 Tally(tally.so)에서 처리되며, 문의에 답변하는 용도로만 사용됩니다.",
+    "sec4Title": "4. 방침 변경",
+    "sec4Desc": "당사는 이 방침을 수시로 업데이트할 수 있습니다. 변경 사항은 업데이트된 시행일과 함께 이 페이지에 게시됩니다.",
+    "sec5Title": "5. 귀하의 권리 및 법적 고지",
+    "sec5Desc": "문의 양식을 통해 제출된 문의에 대해서는 지원 제공이라는 당사의 정당한 이익에 근거하여 귀하의 정보를 처리합니다. 메시지는 문의 처리에 합리적으로 필요한 기간 동안만 보관하며, 그 이후에는 주기적으로 삭제하도록 노력합니다. 메시지를 더 일찍 삭제하길 원하시면 같은 양식으로 요청해 주세요. 거주 지역에 따라(예: 영국 데이터 보호법이 적용되는 경우) 귀하는 당사와 주고받은 연락 내용에 대한 열람, 정정 또는 삭제를 요청할 권리와 영국 개인정보 감독기관인 [[ico]]정보위원회 사무국(ICO)[[/ico]]에 민원을 제기할 권리가 있을 수 있습니다. Doughnut Forge는 13세 미만 아동을 대상으로 하지 않습니다. 아동이 문의 양식을 통해 개인정보를 보냈다고 생각되시면 알려 주세요. 해당 정보를 삭제하겠습니다. 이 페이지는 GitHub Pages에서 호스팅됩니다. 당사는 추적이나 분석 도구를 추가하지 않지만, GitHub는 보안 및 서비스 운영을 위해 방문 시 IP 주소와 같은 기술 정보를 기록할 수 있습니다. 자세한 내용은 [[ghp]]GitHub 개인정보 보호정책[[/ghp]]을 참조하세요. 당사는 귀하를 추적하지 않으므로 DNT(Do Not Track) 신호에 응답하지 않습니다.",
+    "publisherInfo": "발행인: Darren Corbett"
+  }
+}

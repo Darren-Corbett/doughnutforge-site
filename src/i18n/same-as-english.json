@@ -1,0 +1,82 @@
+{
+  "de": [
+    "nav.download",
+    "nav.support",
+    "press.facts.name",
+    "press.facts.website",
+    "press.shots.title",
+    "press.shots.label",
+    "press.download"
+  ],
+  "nl": [
+    "press.facts.website",
+    "press.shots.label",
+    "press.download",
+    "legal.privacy.title",
+    "footer.product"
+  ],
+  "da": [
+    "nav.download",
+    "press.shots.label",
+    "press.download"
+  ],
+  "tr": [
+    "press.shots.label",
+    "press.download"
+  ],
+  "hi": [
+    "press.shots.label",
+    "press.download"
+  ],
+  "th": [
+    "press.shots.label",
+    "press.download"
+  ],
+  "ko": [
+    "press.download"
+  ],
+  "it": [
+    "legal.privacy.title",
+    "press.shots.label"
+  ],
+  "ro": [
+    "press.shots.label"
+  ],
+  "pl": [
+    "press.shots.label",
+    "press.download"
+  ],
+  "cs": [
+    "press.shots.label",
+    "press.download"
+  ],
+  "hu": [
+    "press.shots.label",
+    "press.download"
+  ],
+  "sv": [
+    "nav.support",
+    "press.shots.label",
+    "press.download"
+  ],
+  "no": [
+    "press.shots.label",
+    "press.download"
+  ],
+  "fi": [
+    "press.shots.label",
+    "press.download"
+  ],
+  "ru": [
+    "press.shots.label",
+    "press.download"
+  ],
+  "uk": [
+    "press.shots.label",
+    "press.download"
+  ],
+  "el": [
+    "press.shots.label",
+    "press.download"
+  ]
+}

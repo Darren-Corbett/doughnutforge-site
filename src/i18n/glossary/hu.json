@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/hu/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "Biztonságos fájl"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "Biztonságos mappa"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "Biztonságos szöveg"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "Identitás"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "Kapcsolatok"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "Biztonsági kifejezés"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "Identitás helyreállítása"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "Biztonsági másolat exportálása (PDF)"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "Jelszó"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "Fájl titkosítása"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "Fájl visszafejtése"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "Fájl titkosítása"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "Névjegykártya megosztása"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "Névjegykártya importálása"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "Oszd meg a névjegykártyádat, hogy mások olyan fájlokat és jegyzeteket küldhessenek neked, amelyeket csak te nyithatsz meg."
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "A névjegykártyádat nyugodtan megoszthatod. Semmit sem lehet vele megnyitni, amit neked küldenek."
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "A Doughnut Forge teljes egészében a te eszközödön működik. A jelszavadat és a kulcsaidat soha nem tároljuk szerveren, és nem küldjük át a hálózaton."
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "A kulcsok teljesen privátok, és elvesztésük esetén nem állíthatók helyre. A helyreállítási kifejezést biztonságos helyen kell tartania, mivel ez az egyetlen módja a hozzáférés visszaállításának."
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "Állítson be egy könnyen megjegyezhető jelszót ehhez az eszközhöz. Ez feloldja az alkalmazást, lehetővé téve az adatok helyi, biztonságos titkosítását és visszafejtését."
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "Hozzon létre egy új identitást egy biztonságosan generált 24 szavas biztonsági kifejezés használatával."
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "Állítson helyre egy meglévő identitást a 24 szavas biztonsági kifejezés használatával."
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "Csak akkor nyílik meg, ha neked küldték, és megmutatja, kitől származik."
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "Nyelv"
+    }
+  }
+}

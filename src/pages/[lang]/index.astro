@@ -1,0 +1,10 @@
+---
+// Home page in every language but English (English: src/pages/index.astro)
+import { otherLanguagePaths, type Language } from "../../i18n";
+import HomePage from "../../views/HomePage.astro";
+
+export const getStaticPaths = otherLanguagePaths;
+const { lang } = Astro.props as { lang: Language };
+---
+
+<HomePage lang={lang} />

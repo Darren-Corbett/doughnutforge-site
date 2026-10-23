@@ -1,5 +1,5 @@
 {
-  "_source": "doughnut-forge 0.4.42 (5552323) fastlane/metadata/{mac,ios}/en-GB",
+  "_source": "doughnut-forge 0.4.42 (1229e88) fastlane/metadata/{mac,ios}/en-GB",
   "mac": {
     "subtitle": "Encrypt and share. Pay once.",
     "promotionalText": "No subscription. No account. No servers. Encrypt files, folders and text on your computer and share them safely with the people you trust. One price, paid once.",
@@ -31,7 +31,15 @@
         "title": "In your language",
         "text": "Use the app in English, Spanish, Japanese, Ukrainian and many other languages."
       }
-    ]
+    ],
+    "parts": {
+      "headline": "Keep private files private.",
+      "homeLead": "Doughnut Forge locks your files, folders and text on your computer and lets you share them with the people you trust.",
+      "lead": "Doughnut Forge locks your files, folders and text on your computer and lets you share them with the people you trust. However you send them, only they can open them.",
+      "never": "No subscription. No account. No servers.",
+      "short": "No subscription. No account. No servers. Encrypt files, folders and text on your computer and share them safely with the people you trust.",
+      "offline": "No subscription, no account, no servers and no tracking. Doughnut Forge works entirely on your computer, even without an internet connection. Your keys and contacts stay with you, under your control."
+    }
   },
   "ios": {
     "subtitle": "Encrypt and share. Pay once.",

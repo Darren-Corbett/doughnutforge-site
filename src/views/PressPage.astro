@@ -8,7 +8,7 @@ import { company } from "../data/company";
 import pressFiles from "../data/press-files.json";
 import { press } from "../data/press";
 import { site } from "../data/site";
-import { platforms } from "../data/stores";
+import { platformName, platforms } from "../data/stores";
 import { fill, languages, listOf, useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -18,15 +18,14 @@ interface Props {
 const { lang } = Astro.props;
 const { t, app, store } = useStrings(lang.code);
 
-const sentences = (text: string) => text.split(/(?<=\.)\s+/);
 // The store's promotional text without its last sentence, "One price, paid once."
-const short = sentences(store.mac.promotionalText).slice(0, -1).join(" ");
+const { short, offline } = store.mac.parts;
 // The store description's opening, then the no-subscription paragraph without
 // "You pay once, and the app is yours.", then the closing line
-const long = [store.mac.opening, sentences(store.mac.noSubscription).slice(0, -1).join(" "), store.mac.closing];
+const long = [store.mac.opening, offline, store.mac.closing];
 
 const names = (status: "available" | "coming") =>
-  listOf(lang, platforms.filter((p) => p.status === status).map((p) => t(`platform.${p.id}`)));
+  listOf(lang, platforms.filter((p) => p.status === status).map((p) => platformName(lang, p.id)));
 const facts = [
   [t("press.facts.name"), site.name],
   [t("press.facts.developer"), company.name],
@@ -52,15 +51,17 @@ const icons = [
   file("doughnut-forge-icon-square-dark.png", t("press.icons.dark")),
   file("doughnut-forge-icon-mono.png", t("press.icons.mono")),
 ];
+// "iPhone: Secure File", in the order and punctuation of the page language
+const shot = (device: string, screen: string) => fill(t("press.shots.label"), { device, screen });
 const shots = [
-  file("iphone-secure-file.png", `iPhone: ${app("app:navigation.tabs.mobile-vault")}`),
-  file("iphone-encrypting.png", `iPhone: ${t("press.shots.encrypting")}`),
-  file("iphone-secure-text.png", `iPhone: ${app("app:navigation.tabs.text-vault")}`),
-  file("iphone-contacts.png", `iPhone: ${app("app:navigation.tabs.contacts")}`),
-  file("iphone-identity.png", `iPhone: ${app("app:navigation.tabs.identity")}`),
-  file("ipad-secure-file.png", `iPad: ${app("app:navigation.tabs.mobile-vault")}`),
-  file("ipad-secure-text.png", `iPad: ${app("app:navigation.tabs.text-vault")}`),
-  file("ipad-contacts.png", `iPad: ${app("app:navigation.tabs.contacts")}`),
+  file("iphone-secure-file.png", shot("iPhone", app("app:navigation.tabs.mobile-vault"))),
+  file("iphone-encrypting.png", shot("iPhone", app("mobile-views:secureFile.howItWorks.encrypt.title"))),
+  file("iphone-secure-text.png", shot("iPhone", app("app:navigation.tabs.text-vault"))),
+  file("iphone-contacts.png", shot("iPhone", app("app:navigation.tabs.contacts"))),
+  file("iphone-identity.png", shot("iPhone", app("app:navigation.tabs.identity"))),
+  file("ipad-secure-file.png", shot("iPad", app("app:navigation.tabs.mobile-vault"))),
+  file("ipad-secure-text.png", shot("iPad", app("app:navigation.tabs.text-vault"))),
+  file("ipad-contacts.png", shot("iPad", app("app:navigation.tabs.contacts"))),
 ];
 ---
 
@@ -187,7 +188,9 @@ const shots = [
   .files {
     margin-top: 28px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* Two columns where the labels fit; one on the narrowest phones, where a long
+       word such as the Polish "monochromatyczna" would not */
+    grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
     gap: 24px 16px;
   }
   .files a {
@@ -197,6 +200,7 @@ const shots = [
   }
   .files img {
     width: 100%;
+    max-width: 16rem;
     height: auto;
     margin-bottom: 8px;
   }

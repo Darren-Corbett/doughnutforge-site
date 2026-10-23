@@ -3,7 +3,8 @@
 // data-policy="<key>" so scripts/check-privacy-wording.mjs can compare it with the source.
 import PageHero from "../components/PageHero.astro";
 import Prose from "../components/Prose.astro";
-import { getPolicy, type PolicyKey } from "../data/privacy";
+import { getPolicy, policyTitle, type PolicyKey } from "../data/privacy";
+import { site } from "../data/site";
 import { useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -16,7 +17,7 @@ const { html } = getPolicy(lang.code);
 const sections = [1, 2, 3, 4, 5].map((n) => ({ title: `sec${n}Title` as PolicyKey, text: `sec${n}Desc` as PolicyKey }));
 ---
 
-<Base lang={lang} title={t("meta.privacy.title")} description={t("meta.privacy.description")} image="/og/privacy.png">
+<Base lang={lang} title={`${policyTitle(lang.code)} | ${site.name}`} description={t("meta.privacy.description")} image="/og/privacy.png">
   <PageHero title={html("title")} lead={html("effectiveDate")} policyKeys={{ title: "title", lead: "effectiveDate" }} html />
   <div class="section">
     <Prose>

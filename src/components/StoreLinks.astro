@@ -2,7 +2,7 @@
 // Store badges for the platforms on sale, and one plain sentence for those still
 // coming: never a badge or a link for a platform that is not available.
 import StoreBadge from "./StoreBadge.astro";
-import { platforms } from "../data/stores";
+import { platformName, platforms } from "../data/stores";
 import { fill, listOf, useStrings, type Language } from "../i18n";
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
 const available = platforms.filter((p) => p.status === "available");
-const coming = platforms.filter((p) => p.status === "coming").map((p) => t(`platform.${p.id}`));
+const coming = platforms.filter((p) => p.status === "coming").map((p) => platformName(lang, p.id));
 // "iPhone and iPad, Linux and Android", joined by each language's own rules
 const note = [coming.length ? fill(t("download.coming"), { platforms: listOf(lang, coming) }) : "", t("download.availability")]
   .join(" ")

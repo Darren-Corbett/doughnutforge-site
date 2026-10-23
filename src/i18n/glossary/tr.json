@@ -1,0 +1,97 @@
+{
+  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/tr/*.json",
+  "terms": {
+    "Secure File": {
+      "app": "app:navigation.tabs.mobile-vault",
+      "text": "Güvenli Dosya"
+    },
+    "Secure Directory": {
+      "app": "app:navigation.tabs.vault",
+      "text": "Güvenli Dizin"
+    },
+    "Secure Text": {
+      "app": "app:navigation.tabs.text-vault",
+      "text": "Güvenli Metin"
+    },
+    "Identity": {
+      "app": "app:navigation.tabs.identity",
+      "text": "Kimlik"
+    },
+    "Contacts": {
+      "app": "app:navigation.tabs.contacts",
+      "text": "Kişiler"
+    },
+    "Backup Phrase": {
+      "app": "identity:generate.form.mnemonicLabel",
+      "text": "Yedekleme Cümlesi"
+    },
+    "Restore Identity": {
+      "app": "identity:provision.cards.restore.title",
+      "text": "Kimliği Kurtar"
+    },
+    "Export Backup PDF": {
+      "app": "identity:generate.actions.exportPdf",
+      "text": "Yedekleme PDF'ini Dışa Aktar"
+    },
+    "Password": {
+      "app": "common:shell.unlock.passphrasePlaceholder",
+      "text": "Parola"
+    },
+    "Encrypt File": {
+      "app": "secure-file:view.encrypt.title",
+      "text": "Dosyayı Şifrele"
+    },
+    "Decrypt File": {
+      "app": "secure-file:view.decrypt.title",
+      "text": "Dosyanın Şifresini Çöz"
+    },
+    "Encrypting a file": {
+      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
+      "text": "Dosya şifreleme"
+    },
+    "Share Contact Card": {
+      "app": "help:identityContactsGuide.step1.title",
+      "text": "Kişi Kartını Paylaş"
+    },
+    "Import Contact Card": {
+      "app": "share-identity:addModal.dialogTitle",
+      "text": "Kişi Kartını İçe Aktar"
+    },
+    "contact card (sentence)": {
+      "app": "mobile-views:identity.intro",
+      "text": "Kişi kartınızı paylaşın; böylece başkaları size yalnızca sizin açabileceğiniz dosyalar ve notlar gönderebilir."
+    },
+    "Your contact card is safe to share (sentence)": {
+      "app": "share-identity:exportModal.mobileDescription",
+      "text": "Kişi kartınızı güvenle paylaşabilirsiniz. Size gönderilen hiçbir şeyi açmak için kullanılamaz."
+    },
+    "password and keys never on a server (sentence)": {
+      "app": "mobile-guides:setup.core",
+      "text": "Doughnut Forge tamamen cihazınızda çalışır. Şifreniz ve anahtarlarınız asla bir sunucuda saklanmaz veya ağ üzerinden gönderilmez."
+    },
+    "backup phrase, only way to restore (sentence)": {
+      "app": "help:setupGuide.step3.description",
+      "text": "Anahtarlarınız tamamen size özeldir ve kaybolmaları durumunda kurtarılamazlar. Erişiminizi geri yüklemenin tek yolu bu olduğundan, kurtarma ifadenizi güvenli bir yerde saklamanız gerekir."
+    },
+    "set a password (sentence)": {
+      "app": "help:setupGuide.step1.description",
+      "text": "Bu cihaz için akılda kalıcı bir parola belirleyin. Bu, uygulamanın kilidini açarak verileri yerel olarak güvenli bir şekilde şifrelemenize ve şifresini çözmenize olanak tanır."
+    },
+    "24-word backup phrase, create (sentence)": {
+      "app": "identity:provision.cards.generate.description",
+      "text": "Güvenli bir şekilde oluşturulmuş 24 kelimelik yedekleme cümlesi ile yeni bir kimlik oluşturun."
+    },
+    "24-word backup phrase, restore (sentence)": {
+      "app": "identity:provision.cards.restore.description",
+      "text": "24 kelimelik yedekleme cümlenizi kullanarak mevcut bir kimliği kurtarın."
+    },
+    "only opens if sent to you (sentence)": {
+      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
+      "text": "Sadece size gönderildiyse açılır ve kimden geldiğini gösterir."
+    },
+    "Language": {
+      "app": "app:navigation.language",
+      "text": "Dil"
+    }
+  }
+}

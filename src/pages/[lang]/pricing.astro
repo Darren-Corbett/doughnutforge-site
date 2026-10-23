@@ -1,0 +1,10 @@
+---
+// Pricing page in every language but English (English: src/pages/pricing.astro)
+import { otherLanguagePaths, type Language } from "../../i18n";
+import PricingPage from "../../views/PricingPage.astro";
+
+export const getStaticPaths = otherLanguagePaths;
+const { lang } = Astro.props as { lang: Language };
+---
+
+<PricingPage lang={lang} />

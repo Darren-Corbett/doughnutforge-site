@@ -23,11 +23,11 @@ const [encFiles, encText, identity, share, longTerm, inLanguage] = store.mac.fea
 if (!encFiles || !encText || !identity || !share || !longTerm || !inLanguage) {
   throw new Error(`The Mac store listing has ${store.mac.features.length} features; the features page expects 6.`);
 }
-// The store opening without its first sentence, which is the home page headline
-const lead = store.mac.opening.split(/(?<=\.)\s+/).slice(1).join(" ");
-// "No subscription, no account, no servers and no tracking. ..." without the
-// last sentence, "You pay once, and the app is yours.": each platform is bought separately
-const offline = store.mac.noSubscription.split(/(?<=\.)\s+/).slice(0, -1).join(" ");
+// The store opening without its first sentence, which is the home page headline, and
+// "No subscription, no account, no servers and no tracking. ..." without the last
+// sentence, "You pay once, and the app is yours.": each platform is bought separately.
+// Both are split per language by scripts/sync-from-app.mjs.
+const { lead, offline } = store.mac.parts;
 
 const rows: ToneRow[] = [
   { name: app("app:navigation.tabs.vault"), tone: "blue", ...encFiles, more: [app("help:secureDirectoryGuide.step1.description")] },
@@ -187,7 +187,7 @@ const iosFeatures = [0, 1, 5].map((i) => store.ios.features[i]!);
     padding: 48px 16px 56px;
   }
   .phones h2 {
-    font-size: clamp(26px, 7vw, 40px);
+    --fs: clamp(26px, 7vw, 40px);
     line-height: 1.1;
     font-weight: 900;
     letter-spacing: -0.02em;
@@ -236,16 +236,8 @@ const iosFeatures = [0, 1, 5].map((i) => store.ios.features[i]!);
     }
   }
   @media (min-width: 768px) {
-    .blocks {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 32px;
-    }
     .phones-inner {
       padding: 64px 24px 80px;
-    }
-    .ios-list {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 32px;
     }
     .shots {
       grid-template-columns: 220px 220px minmax(0, 420px);
@@ -254,6 +246,15 @@ const iosFeatures = [0, 1, 5].map((i) => store.ios.features[i]!);
     }
     .shot-tablet {
       grid-column: auto;
+    }
+  }
+  /* Three columns only once each is wide enough for long words, such as the
+     German "Post-Quanten-Verschlüsselung", which never break */
+  @media (min-width: 1024px) {
+    .blocks,
+    .ios-list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 32px;
     }
   }
 </style>

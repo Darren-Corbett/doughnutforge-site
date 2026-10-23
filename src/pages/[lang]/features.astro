@@ -1,0 +1,10 @@
+---
+// Features page in every language but English (English: src/pages/features.astro)
+import { otherLanguagePaths, type Language } from "../../i18n";
+import FeaturesPage from "../../views/FeaturesPage.astro";
+
+export const getStaticPaths = otherLanguagePaths;
+const { lang } = Astro.props as { lang: Language };
+---
+
+<FeaturesPage lang={lang} />

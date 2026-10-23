@@ -1,6 +1,7 @@
 // Site copy written for the website (not in the app or the store listings).
 // Plain language, no "we", no contractions, only claims that are true today.
-// Each language gets a file with the same keys in Phase 3.
+// Every other language has a file in this folder with the same keys, less the
+// English-only blog and 404 strings (see TranslatedKey in ../index.ts).
 export default {
   "meta.home.title": "Doughnut Forge: offline encryption for files, folders and text",
   "meta.home.description":
@@ -11,8 +12,9 @@ export default {
   "nav.pricing": "Pricing",
   "nav.download": "Download",
   "nav.support": "Support",
-  "nav.privacy": "Privacy policy",
   "nav.blog": "Blog",
+  // The footer's blog link on pages in other languages: the posts are in English
+  "nav.blogEnglish": "Blog (in English)",
   "nav.press": "Press kit",
   "nav.legal": "Legal",
   "nav.home": "Doughnut Forge home",
@@ -43,15 +45,6 @@ export default {
   // {platforms} is a list such as "iPhone and iPad, Linux and Android"
   "download.coming": "{platforms} are coming soon.",
   "download.availability": "Availability depends on your country or region.",
-  "platform.mac": "Mac",
-  "platform.ios": "iPhone and iPad",
-  "platform.windows": "Windows",
-  "platform.linux": "Linux",
-  "platform.android": "Android",
-  "badge.mac-app-store": "Download on the Mac App Store",
-  "badge.app-store": "Download on the App Store",
-  "badge.microsoft-store": "Download from the Microsoft Store",
-  "badge.google-play": "Get it on Google Play",
 
   // ===================================================================
   // NEW COPY: for approval. Everything from here to the footer strings was
@@ -59,10 +52,6 @@ export default {
   // ===================================================================
 
   "button.getApp": "Get Doughnut Forge",
-  "store.mac-app-store": "Mac App Store",
-  "store.app-store": "App Store",
-  "store.microsoft-store": "Microsoft Store",
-  "store.google-play": "Google Play",
   "status.comingSoon": "Coming soon",
 
   // Features page
@@ -152,7 +141,6 @@ export default {
     "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Post-quantum encryption is designed to resist them. Doughnut Forge uses it, so what you protect today stays protected as computers become more powerful.",
 
   // Privacy page (the policy text itself is word for word from forge-privacy, in src/content/legal/privacy/)
-  "meta.privacy.title": "Privacy Policy | Doughnut Forge",
   "meta.privacy.description":
     "How Doughnut Forge handles your data. The app keeps your files and keys on your device, and neither the app nor this website tracks you.",
 
@@ -183,7 +171,8 @@ export default {
   "press.icons.mono": "App icon, mono",
   "press.shots.title": "Screenshots",
   "press.shots.text": "These show the iPhone and iPad app, which is coming soon.",
-  "press.shots.encrypting": "Encrypting a file",
+  // {device} is iPhone or iPad, {screen} the app's name for the screen
+  "press.shots.label": "{device}: {screen}",
   "press.download": "PNG, {width} × {height}",
   "press.usage.title": "Using these files",
   "press.usage.text":
@@ -203,7 +192,8 @@ export default {
   "legal.trademarks.other":
     "Android is a trademark of Google LLC. Linux is the registered trademark of Linus Torvalds in the U.S. and other countries.",
   "legal.privacy.title": "Privacy",
-  "legal.privacy.text": "How Doughnut Forge handles data is set out in the",
+  // {link} is the privacy policy's title, as a link
+  "legal.privacy.text": "How Doughnut Forge handles data is set out in the {link}.",
 
   // Blog
   "meta.blog.title": "Blog: plain-language guides to private files | Doughnut Forge",
@@ -232,4 +222,7 @@ export default {
   "footer.registered": "Registered in",
   "footer.companyNumber": "Company number",
   "footer.registeredOffice": "Registered office",
+  // The footer's company lines: {place} is England and Wales, {number} the company number
+  "footer.companyLine": "Registered in {place}. Company number {number}.",
+  "footer.officeLine": "Registered office: {address}",
 } as const;
