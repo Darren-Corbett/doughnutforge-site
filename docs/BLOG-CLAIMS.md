@@ -15,11 +15,12 @@ App sources are paths in `~/git/doughnut-forge` (app 0.4.42, `a036397`). "Store"
 | 1.6 | The password cannot be reset | `mobile-views.json:118` |
 | 1.7 | Losing both password and backup phrase means the identity and encrypted files cannot be recovered | `mobile-guides.json:25` |
 | 1.8 | Your password and keys are never stored on a server | `mobile-guides.json:10` |
-| 1.9 | Steps: Secure Directory, Add Folder, open the item's menu, Encrypt File, "Who can open this?" with Just Me preselected, Encrypt Selection | `app.json:7`; `secure-directory.json:8, 13, 35, 37, 42`; `use-seal-enclave.ts:40-41`; `inner-directory.tsx:282, 437` |
+| 1.9 | Steps: Secure Directory, Add Folder, the item's ⋮ button or right-click, Encrypt File, "Who can open this?" with Just Me preselected, Encrypt Selection | `app.json:7`; `secure-directory.json:8, 13, 35, 37, 42`; `use-seal-enclave.ts:40-41`; `inner-directory.tsx:282, 437` |
 | 1.10 | You can select contacts instead, to share | `secure-directory.json:36` ("Select Contacts") |
 | 1.11 | A new `.vlt2` file appears in the same folder | `src-tauri/src/crypto/v2/writer.rs:286-290` |
 | 1.12 | The original file is kept | `use-seal-enclave.ts:33` (`shredOriginal` defaults to false); the delete toggle is hidden behind `enableDayTwoFunctionality`, which is off (`seal-enclave-modal/index.tsx:237`, `theme-slice.ts:14`) |
-| 1.13 | To open: the file's menu, Decrypt & Extract, Save Location, Decrypt File | `secure-directory.json:11, 51, 59` |
+| 1.13 | To open: the file's ⋮ button or right-click, Decrypt & Extract, Save Location, Decrypt File | `secure-directory.json:11, 51, 59` |
+| 1.17 | The file menu opens from the ⋮ button or by right-clicking | confirmed by the owner in the current Mac build, 23 October 2026; the menu items are in `inner-directory.tsx:250-302` |
 | 1.14 | Each file is locked on its own, so no password travels with it | files are encrypted for identities only: `src-tauri/src/commands/vault.rs:340`, `writer.rs:161-181` |
 | 1.15 | You can choose exactly who can open each file | `secure-directory.json:35-37` |
 | 1.16 | One-time purchase on each platform, never a subscription | site `home.pricing.*` |
@@ -31,7 +32,7 @@ App sources are paths in `~/git/doughnut-forge` (app 0.4.42, `a036397`). "Store"
 | R1.1 | *Reasoning:* a copy on a USB stick or in an email is outside FileVault's protection | follows from E1.4 (FileVault covers the startup disk) |
 | R1.2 | *Reasoning:* sharing a disk image means passing its password on | follows from E1.1 |
 
-Not claimed: the "Delete Original File" toggle (hidden behind a feature flag that is off); drag and drop (the app has none); right-click or the ⋮ button (not yet confirmed; the post says "open its menu").
+Not claimed: the "Delete Original File" toggle (hidden behind a feature flag that is off); drag and drop (the app has none).
 
 ## Post 2: Why offline encryption keeps your files private
 `src/content/blog/en/offline-encryption-privacy.mdx`, phrase "offline encryption"
