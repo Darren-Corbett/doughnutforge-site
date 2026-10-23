@@ -23,6 +23,18 @@ Launch scope: Phases 1–4 and 6. Phase 5 (issue forms and answered issues) is s
 
 ## Steps, one at a time
 
+| Step | Status (23 October 2026) |
+|---|---|
+| 1. Push `main` | done |
+| 2. Pages source to GitHub Actions | done |
+| 3. Run the deploy | done: the first run left out `.well-known/` (hidden files), rolled back; fixed in `42fb02c`, rerun green |
+| 4. Check the live site | done: every page, feed, sitemap, robots.txt; apple-app-site-association byte for byte |
+| 5. Deploy on every push | done (`d9d61e7`) |
+| 6. Remove the old root files | deferred: kept as the rollback until on or after 6 November 2026 |
+| 7. Redirect the old privacy page | done (forge-privacy `a9ed0d8`) |
+| 8. Store listing URLs | in progress (owner) |
+| 9. Google Search Console | deferred (owner); steps in `docs/HANDOVER.md` |
+
 ### 1. Push `main`
 `git push origin main`
 
