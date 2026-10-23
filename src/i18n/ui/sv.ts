@@ -81,7 +81,7 @@ export default {
   "faq.storage.q": "Var sparas mina filer och nycklar?",
   "faq.storage.a": "På din enhet. Ditt lösenord och dina nycklar sparas aldrig på en server eller skickas över nätverket. Krypterade filer hamnar där du väljer att spara eller skicka dem.",
   "faq.backup.q": "Hur säkerhetskopierar jag min identitet?",
-  "faq.backup.a": "När du skapar din identitet visar appen en återställningsfras på 24 ord. Skriv ner den och förvara den på en säker plats: det är allt du behöver för att återställa din identitet. Appen erbjuder också att spara frasen som PDF. Den PDF-filen innehåller samma 24 ord och skyddas inte av något lösenord, så förvara den lika säkert som själva frasen. Dina kontakter ingår inte i återställningsfrasen, så exportera dem från Kontakter om du vill ha en kopia.",
+  "faq.backup.a": "När du skapar din identitet visar appen en återställningsfras på 24 ord. Skriv ner den och förvara den på en säker plats: det är allt du behöver för att återställa din identitet. Appen erbjuder också att spara frasen som PDF. Den PDF-filen innehåller samma 24 ord och skyddas inte av något lösenord, så förvara den lika säkert som själva frasen. Dina kontakter ingår inte i återställningsfrasen.",
   "faq.restore.q": "Hur återställer jag min identitet?",
   "faq.restore.a": "Installera Doughnut Forge på den nya enheten, ställ in ett lösenord, välj sedan Återställ identitet och ange din återställningsfras på 24 ord. Inget mer behövs, och det fungerar mellan plattformar, till exempel från en Mac till en Windows-dator. När du återställer får du tillbaka din identitet, så filer som krypterats för den går att öppna igen. Dina kontakter följer inte med.",
   "faq.share.q": "Hur delar jag en krypterad fil med någon?",

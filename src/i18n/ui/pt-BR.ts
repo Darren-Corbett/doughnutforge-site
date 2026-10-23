@@ -81,7 +81,7 @@ export default {
   "faq.storage.q": "Onde meus arquivos e chaves ficam guardados?",
   "faq.storage.a": "No seu dispositivo. Sua senha e chaves nunca são armazenadas em um servidor ou enviadas pela rede. Os arquivos criptografados vão para onde você decidir salvá-los ou enviá-los.",
   "faq.backup.q": "Como faço backup da minha identidade?",
-  "faq.backup.a": "Quando você cria sua identidade, o app mostra uma frase de backup de 24 palavras. Anote e guarde em um local seguro: é só disso que você precisa para restaurar sua identidade. O app também oferece salvar a frase em PDF. Esse PDF contém as mesmas 24 palavras e não é protegido por senha, então guarde-o com o mesmo cuidado que a própria frase. Seus contatos não fazem parte da frase de backup, então exporte-os em Contatos se quiser uma cópia.",
+  "faq.backup.a": "Quando você cria sua identidade, o app mostra uma frase de backup de 24 palavras. Anote e guarde em um local seguro: é só disso que você precisa para restaurar sua identidade. O app também oferece salvar a frase em PDF. Esse PDF contém as mesmas 24 palavras e não é protegido por senha, então guarde-o com o mesmo cuidado que a própria frase. Seus contatos não fazem parte da frase de backup.",
   "faq.restore.q": "Como restauro minha identidade?",
   "faq.restore.a": "Instale o Doughnut Forge no novo dispositivo, defina uma senha, escolha Restaurar identidade e digite sua frase de backup de 24 palavras. Não é preciso mais nada, e funciona entre plataformas, por exemplo de um Mac para um PC com Windows. A restauração traz sua identidade de volta, então os arquivos criptografados para ela voltam a abrir. Seus contatos não voltam junto.",
   "faq.share.q": "Como compartilho um arquivo criptografado com alguém?",

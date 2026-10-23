@@ -81,7 +81,7 @@ export default {
   "faq.storage.q": "Tệp và khóa của tôi được lưu ở đâu?",
   "faq.storage.a": "Trên thiết bị của bạn. Mật khẩu và khóa của bạn không bao giờ được lưu trữ trên máy chủ hoặc gửi qua mạng. Tệp đã mã hóa sẽ ở bất cứ nơi nào bạn chọn lưu hoặc gửi đến.",
   "faq.backup.q": "Làm thế nào để sao lưu danh tính của tôi?",
-  "faq.backup.a": "Khi bạn tạo danh tính, ứng dụng hiển thị cho bạn cụm từ sao lưu 24 từ. Hãy ghi lại và giữ ở một vị trí an toàn: đó là tất cả những gì bạn cần để khôi phục danh tính. Ứng dụng cũng đề nghị lưu cụm từ này dưới dạng PDF. Tệp PDF đó chứa cùng 24 từ và không được bảo vệ bằng mật khẩu, vì vậy hãy giữ nó an toàn như chính cụm từ. Các liên hệ của bạn không nằm trong cụm từ sao lưu, vì vậy hãy xuất chúng từ Liên hệ nếu bạn muốn có bản sao.",
+  "faq.backup.a": "Khi bạn tạo danh tính, ứng dụng hiển thị cho bạn cụm từ sao lưu 24 từ. Hãy ghi lại và giữ ở một vị trí an toàn: đó là tất cả những gì bạn cần để khôi phục danh tính. Ứng dụng cũng đề nghị lưu cụm từ này dưới dạng PDF. Tệp PDF đó chứa cùng 24 từ và không được bảo vệ bằng mật khẩu, vì vậy hãy giữ nó an toàn như chính cụm từ. Các liên hệ của bạn không nằm trong cụm từ sao lưu.",
   "faq.restore.q": "Làm thế nào để khôi phục danh tính của tôi?",
   "faq.restore.a": "Cài đặt Doughnut Forge trên thiết bị mới, đặt mật khẩu, rồi chọn Khôi phục danh tính và nhập cụm từ sao lưu 24 từ của bạn. Không cần gì khác, và cách này hoạt động giữa các nền tảng, ví dụ từ Mac sang PC Windows. Việc khôi phục mang danh tính của bạn trở lại, nên các tệp được mã hóa cho danh tính đó lại mở được. Các liên hệ của bạn không được khôi phục cùng.",
   "faq.share.q": "Làm thế nào để chia sẻ tệp đã mã hóa với ai đó?",

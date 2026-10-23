@@ -81,7 +81,7 @@ export default {
   "faq.storage.q": "Dosyalarım ve anahtarlarım nerede tutulur?",
   "faq.storage.a": "Cihazınızda. Parolanız ve anahtarlarınız asla bir sunucuda saklanmaz veya ağ üzerinden gönderilmez. Şifreli dosyalar, kaydetmeyi ya da göndermeyi seçtiğiniz yere gider.",
   "faq.backup.q": "Kimliğimi nasıl yedeklerim?",
-  "faq.backup.a": "Kimliğinizi oluşturduğunuzda uygulama size 24 kelimelik bir yedekleme cümlesi gösterir. Bunu bir yere yazın ve güvenli bir yerde saklayın: kimliğinizi kurtarmak için ihtiyacınız olan tek şey budur. Uygulama ayrıca cümleyi PDF olarak kaydetmeyi önerir. Bu PDF aynı 24 kelimeyi içerir ve parolayla korunmaz; bu yüzden onu cümlenin kendisi kadar güvenli tutun. Kişileriniz yedekleme cümlesine dahil değildir; bir kopyasını istiyorsanız onları Kişiler ekranından dışa aktarın.",
+  "faq.backup.a": "Kimliğinizi oluşturduğunuzda uygulama size 24 kelimelik bir yedekleme cümlesi gösterir. Bunu bir yere yazın ve güvenli bir yerde saklayın: kimliğinizi kurtarmak için ihtiyacınız olan tek şey budur. Uygulama ayrıca cümleyi PDF olarak kaydetmeyi önerir. Bu PDF aynı 24 kelimeyi içerir ve parolayla korunmaz; bu yüzden onu cümlenin kendisi kadar güvenli tutun. Kişileriniz yedekleme cümlesine dahil değildir.",
   "faq.restore.q": "Kimliğimi nasıl kurtarırım?",
   "faq.restore.a": "Doughnut Forge'u yeni cihaza yükleyin, bir parola belirleyin, ardından Kimliği Kurtar'ı seçin ve 24 kelimelik yedekleme cümlenizi girin. Başka hiçbir şey gerekmez ve platformlar arasında çalışır, örneğin bir Mac'ten bir Windows bilgisayara. Kurtarma işlemi kimliğinizi geri getirir; böylece onun için şifrelenmiş dosyalar yeniden açılır. Kişileriniz onunla birlikte geri gelmez.",
   "faq.share.q": "Şifreli bir dosyayı biriyle nasıl paylaşırım?",

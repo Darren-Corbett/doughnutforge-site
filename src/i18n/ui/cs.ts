@@ -81,7 +81,7 @@ export default {
   "faq.storage.q": "Kde jsou uložené moje soubory a klíče?",
   "faq.storage.a": "Ve vašem zařízení. Vaše heslo a klíče se nikdy neukládají na server ani se neposílají po síti. Zašifrované soubory jsou tam, kam se je rozhodnete uložit nebo poslat.",
   "faq.backup.q": "Jak zálohovat svou identitu?",
-  "faq.backup.a": "Když vytváříte identitu, aplikace vám ukáže 24slovnou záložní frázi. Zapište si ji a uchovávejte ji na bezpečném místě: nic jiného k obnovení identity nepotřebujete. Aplikace také nabízí uložení fráze jako PDF. Toto PDF obsahuje stejných 24 slov a není chráněné heslem, takže ho chraňte stejně pečlivě jako samotnou frázi. Vaše kontakty nejsou součástí záložní fráze, takže pokud chcete jejich kopii, exportujte je z obrazovky Kontakty.",
+  "faq.backup.a": "Když vytváříte identitu, aplikace vám ukáže 24slovnou záložní frázi. Zapište si ji a uchovávejte ji na bezpečném místě: nic jiného k obnovení identity nepotřebujete. Aplikace také nabízí uložení fráze jako PDF. Toto PDF obsahuje stejných 24 slov a není chráněné heslem, takže ho chraňte stejně pečlivě jako samotnou frázi. Vaše kontakty nejsou součástí záložní fráze.",
   "faq.restore.q": "Jak obnovit svou identitu?",
   "faq.restore.a": "Nainstalujte Doughnut Forge do nového zařízení, nastavte heslo, pak zvolte Obnovit identitu a zadejte svou 24slovnou záložní frázi. Nic dalšího není potřeba a funguje to napříč platformami, například z Macu na počítač s Windows. Obnovením získáte zpět svou identitu, takže se soubory pro ni zašifrované znovu otevřou. Vaše kontakty se spolu s ní neobnoví.",
   "faq.share.q": "Jak s někým sdílet zašifrovaný soubor?",

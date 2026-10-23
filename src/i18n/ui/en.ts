@@ -120,7 +120,7 @@ export default {
     "On your device. Your password and keys are never stored on a server or sent across the network. Encrypted files go wherever you choose to save or send them.",
   "faq.backup.q": "How do I back up my identity?",
   "faq.backup.a":
-    "When you create your identity, the app shows you a 24-word backup phrase. Write it down and keep it somewhere safe: it is all you need to restore your identity. The app also offers to save the phrase as a PDF. That PDF holds the same 24 words and is not protected by a password, so keep it as safe as the phrase itself. Your contacts are not part of the backup phrase, so export them from Contacts if you want a copy.",
+    "When you create your identity, the app shows you a 24-word backup phrase. Write it down and keep it somewhere safe: it is all you need to restore your identity. The app also offers to save the phrase as a PDF. That PDF holds the same 24 words and is not protected by a password, so keep it as safe as the phrase itself. Your contacts are not part of the backup phrase.",
   "faq.restore.q": "How do I restore my identity?",
   "faq.restore.a":
     "Install Doughnut Forge on the new device, set a password, then choose Restore Identity and enter your 24-word backup phrase. Nothing else is needed, and it works across platforms, for example from a Mac to a Windows PC. Restoring brings back your identity, so files encrypted for it open again. Your contacts do not come back with it.",
