@@ -1,0 +1,245 @@
+{
+  "_source": "doughnut-forge 0.4.42 (d0a7694) src/constants/languages.ts",
+  "languages": [
+    {
+      "code": "en",
+      "path": "en",
+      "hreflang": "en-GB",
+      "name": "English (UK)",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "fr",
+      "path": "fr",
+      "hreflang": "fr",
+      "name": "Français",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "de",
+      "path": "de",
+      "hreflang": "de",
+      "name": "Deutsch",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "es",
+      "path": "es",
+      "hreflang": "es-ES",
+      "name": "Español (ES)",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "it",
+      "path": "it",
+      "hreflang": "it",
+      "name": "Italiano",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "nl",
+      "path": "nl",
+      "hreflang": "nl",
+      "name": "Nederlands",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "sv",
+      "path": "sv",
+      "hreflang": "sv",
+      "name": "Svenska",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "da",
+      "path": "da",
+      "hreflang": "da",
+      "name": "Dansk",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "fi",
+      "path": "fi",
+      "hreflang": "fi",
+      "name": "Suomi",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "no",
+      "path": "no",
+      "hreflang": "no",
+      "name": "Norsk",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "pl",
+      "path": "pl",
+      "hreflang": "pl",
+      "name": "Polski",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "cs",
+      "path": "cs",
+      "hreflang": "cs",
+      "name": "Čeština",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "hu",
+      "path": "hu",
+      "hreflang": "hu",
+      "name": "Magyar",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "ro",
+      "path": "ro",
+      "hreflang": "ro",
+      "name": "Română",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "ru",
+      "path": "ru",
+      "hreflang": "ru",
+      "name": "Русский",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "el",
+      "path": "el",
+      "hreflang": "el",
+      "name": "Ελληνικά",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "uk",
+      "path": "uk",
+      "hreflang": "uk",
+      "name": "Українська",
+      "region": "Europe",
+      "dir": "ltr"
+    },
+    {
+      "code": "en-US",
+      "path": "en-us",
+      "hreflang": "en-US",
+      "name": "English (US)",
+      "region": "Americas",
+      "dir": "ltr"
+    },
+    {
+      "code": "es-MX",
+      "path": "es-mx",
+      "hreflang": "es-MX",
+      "name": "Español (MX)",
+      "region": "Americas",
+      "dir": "ltr"
+    },
+    {
+      "code": "pt-BR",
+      "path": "pt-br",
+      "hreflang": "pt-BR",
+      "name": "Português (BR)",
+      "region": "Americas",
+      "dir": "ltr"
+    },
+    {
+      "code": "tr",
+      "path": "tr",
+      "hreflang": "tr",
+      "name": "Türkçe",
+      "region": "Middle East & Africa",
+      "dir": "ltr"
+    },
+    {
+      "code": "ja",
+      "path": "ja",
+      "hreflang": "ja",
+      "name": "日本語",
+      "region": "Asia-Pacific",
+      "dir": "ltr"
+    },
+    {
+      "code": "zh-CN",
+      "path": "zh-cn",
+      "hreflang": "zh-CN",
+      "name": "简体中文",
+      "region": "Asia-Pacific",
+      "dir": "ltr"
+    },
+    {
+      "code": "zh-TW",
+      "path": "zh-tw",
+      "hreflang": "zh-TW",
+      "name": "繁體中文",
+      "region": "Asia-Pacific",
+      "dir": "ltr"
+    },
+    {
+      "code": "ko",
+      "path": "ko",
+      "hreflang": "ko",
+      "name": "한국어",
+      "region": "Asia-Pacific",
+      "dir": "ltr"
+    },
+    {
+      "code": "hi",
+      "path": "hi",
+      "hreflang": "hi",
+      "name": "हिन्दी",
+      "region": "Asia-Pacific",
+      "dir": "ltr"
+    },
+    {
+      "code": "id",
+      "path": "id",
+      "hreflang": "id",
+      "name": "Bahasa Indonesia",
+      "region": "Asia-Pacific",
+      "dir": "ltr"
+    },
+    {
+      "code": "ms",
+      "path": "ms",
+      "hreflang": "ms",
+      "name": "Bahasa Melayu",
+      "region": "Asia-Pacific",
+      "dir": "ltr"
+    },
+    {
+      "code": "th",
+      "path": "th",
+      "hreflang": "th",
+      "name": "ไทย",
+      "region": "Asia-Pacific",
+      "dir": "ltr"
+    },
+    {
+      "code": "vi",
+      "path": "vi",
+      "hreflang": "vi",
+      "name": "Tiếng Việt",
+      "region": "Asia-Pacific",
+      "dir": "ltr"
+    }
+  ]
+}

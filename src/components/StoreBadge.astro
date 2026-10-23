@@ -1,0 +1,28 @@
+---
+// One official store badge, linked to the store. Uses the page language's
+// badge where an official one exists (src/assets/badges/<store>/<lang>.svg),
+// otherwise English. Badges are shown unaltered, all at the same height.
+import type { ImageMetadata } from "astro";
+import { storeUrl, type StoreId } from "../data/stores";
+import { useStrings, type Language } from "../i18n";
+
+interface Props {
+  store: StoreId;
+  storeId: string;
+  lang: Language;
+}
+const { store, storeId, lang } = Astro.props;
+const { t } = useStrings(lang.code);
+
+const badges = import.meta.glob<{ default: ImageMetadata }>("../assets/badges/*/*.svg", { eager: true });
+const badge = (badges[`../assets/badges/${store}/${lang.code}.svg`] ?? badges[`../assets/badges/${store}/en.svg`])?.default;
+if (!badge) throw new Error(`No badge for ${store}: add src/assets/badges/${store}/en.svg`);
+
+// 48px tall: above Apple's 40px minimum; a quarter of the height is kept clear around it.
+const HEIGHT = 48;
+const width = Math.round((badge.width / badge.height) * HEIGHT);
+---
+
+<a href={storeUrl(store, storeId, lang.hreflang)} class="inline-block shrink-0 p-3" rel="noopener">
+  <img src={badge.src} width={width} height={HEIGHT} alt={t(`badge.${store}`)} loading="lazy" decoding="async" />
+</a>

@@ -1,0 +1,156 @@
+// Copies what the site reuses from the app repo into this repo.
+// Runs on a developer machine only; CI never needs the app repo.
+// Never writes to the app repo.
+//
+//   node scripts/sync-from-app.mjs [--app ../doughnut-forge] [--langs en,de | all]
+
+import { execFileSync } from "node:child_process";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { homedir } from "node:os";
+import { join } from "node:path";
+import sharp from "sharp";
+
+const args = process.argv.slice(2);
+const arg = (name, fallback) => {
+  const i = args.indexOf(name);
+  return i === -1 ? fallback : args[i + 1];
+};
+
+const APP = arg("--app", join(homedir(), "git/doughnut-forge"));
+const SITE = new URL("..", import.meta.url).pathname;
+
+if (!existsSync(join(APP, "src/locales"))) {
+  console.error(`App repo not found at ${APP}. Pass --app <path>.`);
+  process.exit(1);
+}
+
+const appVersion = JSON.parse(readFileSync(join(APP, "package.json"), "utf8")).version;
+const appCommit = execFileSync("git", ["-C", APP, "rev-parse", "--short", "HEAD"]).toString().trim();
+const source = (file) => `doughnut-forge ${appVersion} (${appCommit}) ${file}`;
+
+const writeJson = (path, data) => {
+  writeFileSync(join(SITE, path), JSON.stringify(data, null, 2) + "\n");
+  console.log(`wrote ${path}`);
+};
+
+// --- Languages: the enabled entries in src/constants/languages.ts ---------
+// hreflang needs a region for the two English and two Spanish variants.
+const HREFLANG = { en: "en-GB", es: "es-ES" };
+
+const languagesTs = readFileSync(join(APP, "src/constants/languages.ts"), "utf8");
+const entry =
+  /code: "([^"]+)",\s*name: "([^"]+)",\s*flag: "[^"]+",\s*isoCountryCode: "[^"]+",\s*region: "([^"]+)",\s*enabled: (true|false)/g;
+const languages = [...languagesTs.matchAll(entry)]
+  .filter((m) => m[4] === "true")
+  .map(([, code, name, region]) => ({
+    code,
+    path: code.toLowerCase(),
+    hreflang: HREFLANG[code] ?? code,
+    name,
+    region,
+    // No RTL language is enabled in the app today; set here when one is.
+    dir: ["ar", "fa", "he"].includes(code.split("-")[0]) ? "rtl" : "ltr",
+  }));
+
+writeJson("src/i18n/languages.json", {
+  _source: source("src/constants/languages.ts"),
+  languages,
+});
+
+const allCodes = languages.map((l) => l.code);
+const langsArg = arg("--langs", "en");
+const langs = langsArg === "all" ? allCodes : langsArg.split(",");
+
+// --- App strings: only the keys the site uses -----------------------------
+const APP_KEYS = {
+  app: ["navigation.tabs.vault", "navigation.tabs.mobile-vault", "navigation.tabs.text-vault", "navigation.tabs.identity", "navigation.tabs.contacts"],
+  "mobile-views": ["secureFile.privacy.title"],
+};
+
+const pick = (obj, path) => path.split(".").reduce((o, k) => o?.[k], obj);
+
+for (const lang of langs) {
+  const strings = { _source: source(`src/locales/${lang}/*.json`) };
+  for (const [ns, keys] of Object.entries(APP_KEYS)) {
+    const json = JSON.parse(readFileSync(join(APP, "src/locales", lang, `${ns}.json`), "utf8"));
+    for (const key of keys) {
+      const value = pick(json, key);
+      if (typeof value !== "string") throw new Error(`Missing ${lang}/${ns}.json ${key}`);
+      strings[`${ns}:${key}`] = value;
+    }
+  }
+  writeJson(`src/i18n/app/${lang}.json`, strings);
+}
+
+// --- Store copy: fastlane metadata ----------------------------------------
+// Store locales differ from app locales; map each site language to one.
+const STORE_LOCALE = {
+  en: "en-GB", de: "de-DE", es: "es-ES", fr: "fr-FR", nl: "nl-NL",
+  "zh-CN": "zh-Hans", "zh-TW": "zh-Hant",
+};
+
+const readStore = (platform, loc) => {
+  const dir = join(APP, "fastlane/metadata", platform, loc);
+  const read = (f) => readFileSync(join(dir, `${f}.txt`), "utf8").trim();
+  const description = read("description");
+  // "• Title: Text" lines are the feature list.
+  const features = [...description.matchAll(/^• ([^:]+): (.+)$/gm)].map(([, title, text]) => ({ title, text }));
+  const paragraphs = description.split(/\n\s*\n/).map((p) => p.trim());
+  return {
+    subtitle: read("subtitle"),
+    promotionalText: read("promotional_text"),
+    opening: paragraphs[0],
+    noSubscription: paragraphs[1],
+    closing: paragraphs.at(-1),
+    features,
+  };
+};
+
+for (const lang of langs) {
+  const loc = STORE_LOCALE[lang] ?? lang;
+  writeJson(`src/i18n/store/${lang}.json`, {
+    _source: source(`fastlane/metadata/{mac,ios}/${loc}`),
+    mac: readStore("mac", loc),
+    ios: readStore("ios", loc),
+  });
+}
+
+// --- Screenshots: resized and stored as high-quality WebP to keep the repo small;
+// Astro sizes them again per device at build time.
+// The Mac shots are cropped close to the app window so the app stays legible on a phone.
+const MAC_WINDOW = { left: 436, top: 233, width: 2000, height: 1286 };
+const SCREENSHOTS = [
+  [".app_store/light/light-1.png", "mac-secure-directory-light.webp", 2000, MAC_WINDOW],
+  [".app_store/dark/dark-1.png", "mac-secure-directory-dark.webp", 2000, MAC_WINDOW],
+];
+
+mkdirSync(join(SITE, "src/assets/app"), { recursive: true });
+for (const [from, to, width, crop] of SCREENSHOTS) {
+  const image = sharp(join(APP, from));
+  if (crop) image.extract(crop);
+  await image.resize({ width, withoutEnlargement: true }).webp({ quality: 92 }).toFile(join(SITE, "src/assets/app", to));
+  console.log(`wrote src/assets/app/${to}`);
+}
+
+// --- Brand: app icon, and the default social preview image ------------------
+mkdirSync(join(SITE, "src/assets/brand"), { recursive: true });
+mkdirSync(join(SITE, "public/og"), { recursive: true });
+const ICON = join(APP, "src-tauri/app-icon.png");
+await sharp(ICON).resize(256).png().toFile(join(SITE, "src/assets/brand/app-icon.png"));
+console.log("wrote src/assets/brand/app-icon.png");
+
+const store = JSON.parse(readFileSync(join(SITE, "src/i18n/store/en.json"), "utf8"));
+const escapeXml = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const ogText = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f5f8fa"/>
+  <rect x="0" y="606" width="1200" height="24" fill="#1da1f2"/>
+  <text x="440" y="270" font-family="Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="800" fill="#14171a">Doughnut Forge</text>
+  <text x="440" y="350" font-family="Helvetica Neue, Arial, sans-serif" font-size="40" font-weight="700" fill="#09649c">${escapeXml(store.mac.subtitle)}</text>
+  <text x="440" y="420" font-family="Helvetica Neue, Arial, sans-serif" font-size="30" font-weight="600" fill="#536471">No subscription. No account. No servers.</text>
+</svg>`);
+const ogIcon = await sharp(ICON).resize(300).png().toBuffer();
+await sharp(ogText)
+  .composite([{ input: ogIcon, left: 90, top: 150 }])
+  .png()
+  .toFile(join(SITE, "public/og/default.png"));
+console.log("wrote public/og/default.png");

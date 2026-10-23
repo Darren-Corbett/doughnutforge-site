@@ -1,0 +1,55 @@
+---
+// Site header. On phones the links sit in a <details> menu, so it works without JavaScript.
+import { Menu } from "@lucide/astro";
+import { site } from "../data/site";
+import { localePath, useStrings, type Language } from "../i18n";
+import Logo from "./Logo.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t } = useStrings(lang.code);
+
+// Phase 1: only the home page exists, so links go to its sections. Phase 2 points them at pages.
+const links = [
+  { href: localePath(lang.code, "#features"), label: t("nav.features") },
+  { href: localePath(lang.code, "#pricing"), label: t("nav.pricing") },
+  { href: localePath(lang.code, "#download"), label: t("nav.download") },
+  { href: site.supportUrl, label: t("nav.support") },
+];
+const linkClass =
+  "flex min-h-11 items-center rounded-full px-4 text-[15px] font-bold text-slate-700 hover:bg-[#1DA1F2]/10 hover:text-ink-blue dark:text-slate-200";
+---
+
+<header class="border-b-2 border-slate-200 bg-white/90 dark:border-forge-border-dark dark:bg-forge-surface-dark/90">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6">
+    <a href={localePath(lang.code)} class="flex min-h-11 items-center gap-2.5" aria-label={t("nav.home")}>
+      <Logo />
+      <span class="text-[18px] font-extrabold tracking-tight">{site.name}</span>
+    </a>
+
+    <nav aria-label={t("nav.label")} class="hidden md:block">
+      <ul class="flex items-center gap-1" role="list">
+        {links.map((l) => <li><a class={linkClass} href={l.href}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+
+    <details class="group relative md:hidden">
+      <summary
+        class="flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-full border-2 border-slate-200 px-4 text-[15px] font-bold dark:border-forge-border-dark [&::-webkit-details-marker]:hidden"
+      >
+        <Menu size={20} aria-hidden="true" />
+        {t("nav.menu")}
+      </summary>
+      <nav
+        aria-label={t("nav.label")}
+        class="absolute end-0 z-10 mt-2 w-64 max-w-[calc(100vw-2rem)] rounded-[20px] border-2 border-slate-200 bg-white p-2 shadow-xl shadow-slate-300/50 dark:border-forge-border-dark dark:bg-forge-surface-dark dark:shadow-black/40"
+      >
+        <ul role="list">
+          {links.map((l) => <li><a class={linkClass} href={l.href}>{l.label}</a></li>)}
+        </ul>
+      </nav>
+    </details>
+  </div>
+</header>

@@ -1,0 +1,9 @@
+{
+  "_source": "doughnut-forge 0.4.42 (d0a7694) src/locales/en/*.json",
+  "app:navigation.tabs.vault": "Secure Directory",
+  "app:navigation.tabs.mobile-vault": "Secure File",
+  "app:navigation.tabs.text-vault": "Secure Text",
+  "app:navigation.tabs.identity": "Identity",
+  "app:navigation.tabs.contacts": "Contacts",
+  "mobile-views:secureFile.privacy.title": "Private by design"
+}

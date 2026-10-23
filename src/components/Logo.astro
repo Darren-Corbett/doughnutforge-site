@@ -1,0 +1,10 @@
+---
+import { Image } from "astro:assets";
+import icon from "../assets/brand/app-icon.png";
+interface Props {
+  size?: number;
+}
+const { size = 36 } = Astro.props;
+---
+
+<Image src={icon} width={size} height={size} densities={[1, 2]} alt="" class="rounded-[22%]" loading="eager" />

@@ -1,0 +1,131 @@
+---
+import { Ban, CloudOff, FileKey, FingerprintPattern, FolderLock, Languages, ServerOff, ShieldCheck, UserX, Users, WifiOff } from "@lucide/astro";
+import macDark from "../assets/app/mac-secure-directory-dark.webp";
+import macLight from "../assets/app/mac-secure-directory-light.webp";
+import Button from "../components/Button.astro";
+import FeatureItem from "../components/FeatureItem.astro";
+import IconTile from "../components/IconTile.astro";
+import PlatformList from "../components/PlatformList.astro";
+import Screenshot from "../components/Screenshot.astro";
+import Section from "../components/Section.astro";
+import { site } from "../data/site";
+import { getLanguage, localePath, useStrings } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+const lang = getLanguage("en");
+const { t, app, store } = useStrings(lang.code);
+
+// Feature titles and text come from the Mac store listing, so they match the
+// store wording and are already translated. Labels are the app's own tab names.
+// Only the Mac listing is used while iPhone and iPad are "coming".
+const featureStyle = [
+  { icon: FolderLock, color: "blue", label: app("app:navigation.tabs.vault") },
+  { icon: FileKey, color: "orange", label: app("app:navigation.tabs.text-vault") },
+  { icon: FingerprintPattern, color: "violet", label: app("app:navigation.tabs.identity") },
+  { icon: Users, color: "pink", label: app("app:navigation.tabs.contacts") },
+  { icon: ShieldCheck, color: "green", label: undefined },
+  { icon: Languages, color: "blue", label: undefined },
+] as const;
+if (store.mac.features.length !== featureStyle.length) {
+  throw new Error(`The store listing has ${store.mac.features.length} features; index.astro styles ${featureStyle.length}.`);
+}
+const features = store.mac.features.map((f, i) => ({ ...f, ...featureStyle[i]! }));
+
+const promises = [
+  { icon: Ban, text: t("home.promise.subscription") },
+  { icon: UserX, text: t("home.promise.account") },
+  { icon: ServerOff, text: t("home.promise.servers") },
+  { icon: CloudOff, text: t("home.promise.tracking") },
+  { icon: WifiOff, text: t("home.promise.offline") },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: site.name,
+  description: t("meta.home.description"),
+  url: new URL(localePath(lang.code), site.url).href,
+  image: new URL("/og/default.png", site.url).href,
+  applicationCategory: "UtilitiesApplication",
+  operatingSystem: "macOS, Windows",
+  inLanguage: lang.hreflang,
+};
+---
+
+<Base lang={lang} title={t("meta.home.title")} description={t("meta.home.description")} jsonLd={jsonLd}>
+  <!-- Hero -->
+  <div class="mx-auto w-full max-w-6xl px-4 pt-10 pb-4 sm:px-6 md:pt-16">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-ink-blue text-[13px] font-extrabold tracking-widest uppercase">{t("home.eyebrow")}</p>
+      <h1 class="mt-3 text-[36px] leading-[1.1] font-extrabold tracking-tight sm:text-[48px] md:text-[60px]">
+        {store.mac.opening.split(". ")[0]}.
+      </h1>
+      <p class="text-ink-blue mt-4 text-[20px] font-extrabold md:text-[24px]">{store.mac.subtitle}</p>
+      <p class="mt-4 text-[17px] leading-relaxed text-slate-600 md:text-[19px] dark:text-slate-300">
+        {store.mac.opening.split(". ").slice(1).join(". ")}
+      </p>
+      <div class="mt-7 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+        <Button href="#download">{t("home.cta.primary")}</Button>
+        <Button href="#features" variant="secondary">{t("home.cta.secondary")}</Button>
+      </div>
+    </div>
+
+    <h2 class="sr-only">{t("home.promise.label")}</h2>
+    <ul class="mx-auto mt-8 flex max-w-4xl flex-wrap justify-center gap-2" role="list">
+      {
+        promises.map(({ icon: Icon, text }) => (
+          <li class="inline-flex min-h-10 items-center gap-2 rounded-full border-2 border-[#00BA7C]/40 bg-[#00BA7C]/10 px-4 py-1.5 text-[14px] font-extrabold dark:bg-[#00BA7C]/15">
+            <Icon size={18} stroke-width={2.6} class="text-ink-green shrink-0" aria-hidden="true" />
+            {text}
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="mx-auto mt-10 max-w-5xl overflow-hidden rounded-[16px] border-2 border-slate-200 shadow-2xl shadow-slate-400/40 md:rounded-[24px] dark:border-forge-border-dark dark:shadow-black/50">
+      <Screenshot
+        light={macLight}
+        dark={macDark}
+        alt={t("home.screenshot.mac")}
+        sizes="(min-width: 1088px) 1024px, calc(100vw - 2rem)"
+        eager
+      />
+    </div>
+  </div>
+
+  <Section id="features" title={t("home.features.title")}>
+    <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" role="list">
+      {
+        features.map(({ icon: Icon, color, label, title, text }) => (
+          <FeatureItem color={color} label={label} title={title}>
+            <Icon slot="icon" size={22} stroke-width={2.4} aria-hidden="true" />
+            {text}
+          </FeatureItem>
+        ))
+      }
+    </ul>
+
+    <div
+      class="mt-6 flex flex-col gap-1.5 rounded-[20px] border-2 border-[#00BA7C]/40 bg-[#00BA7C]/10 px-5 py-4 md:px-6 dark:bg-[#00BA7C]/15"
+    >
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+        <IconTile color="green"><ShieldCheck size={22} stroke-width={2.6} aria-hidden="true" /></IconTile>
+        <p class="text-[17px] leading-snug font-extrabold">{app("mobile-views:secureFile.privacy.title")}</p>
+      </div>
+      <p class="text-[15px] leading-relaxed font-semibold text-slate-600 dark:text-slate-300">{t("home.private.detail")}</p>
+    </div>
+  </Section>
+
+  <Section id="pricing" title={t("home.pricing.title")}>
+    <div class="max-w-3xl">
+      <p class="text-[17px] leading-relaxed text-slate-600 md:text-[19px] dark:text-slate-300">{store.mac.noSubscription}</p>
+      <p class="mt-4 text-[17px] leading-relaxed font-bold md:text-[19px]">{t("home.pricing.text")}</p>
+      <p class="text-ink-violet mt-6 text-[22px] leading-snug font-extrabold md:text-[26px]">{store.mac.closing}</p>
+    </div>
+  </Section>
+
+  <Section id="download" title={t("home.download.title")}>
+    <PlatformList lang={lang} />
+    <p class="mt-5 text-[15px] text-slate-600 dark:text-slate-300">{t("home.download.availability")}</p>
+  </Section>
+</Base>

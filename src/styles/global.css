@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+/* Design tokens copied from the app: doughnut-forge src/index.css (@theme, ink
+   colours, shadow-glow). Keep the values in step with the app; never invent new
+   brand colours here. The site follows the system light/dark setting through
+   prefers-color-scheme (Tailwind's default `dark:` variant), so it needs no
+   script. The app does the same with a .dark class. */
+@theme {
+  /* Brand */
+  --color-forge-blue: #1da1f2;
+  --color-forge-blue-dark: #1a8cd8;
+  --color-forge-silver: #aab8c2;
+  --color-forge-silver-dark: #8899a6;
+
+  /* The app's accent colours (inline hex in the app, named here) */
+  --color-forge-green: #00ba7c;
+  --color-forge-pink: #f91880;
+  --color-forge-violet: #794bc4;
+  --color-forge-orange: #ff7a00;
+
+  /* Backgrounds and surfaces */
+  --color-forge-bg: #f5f8fa;
+  --color-forge-bg-dark: #15202b;
+  --color-forge-surface: #ffffff;
+  --color-forge-surface-dark: #1e2732;
+
+  /* Borders: the app overrides #e1e8ed with slate-300 for contrast */
+  --color-forge-border: #cbd5e1;
+  --color-forge-border-dark: #38444d;
+
+  /* Text */
+  --color-forge-text: #14171a;
+  --color-forge-text-dark: #ffffff;
+  --color-forge-text-secondary: #657786;
+  --color-forge-text-secondary-dark: #8899a6;
+
+  /* System fonts only, as in the app: nothing to download, every script covered */
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", sans-serif;
+
+  --radius-forge-pill: 9999px;
+  --radius-forge-xl: 16px;
+  --radius-forge-lg: 12px;
+  --radius-forge-md: 8px;
+
+  --spacing: 4px;
+}
+
+/* Readable text colours ("ink"): the brand hue at 4.5:1 or better on every
+   background, darker in light mode and lighter in dark mode. Use for coloured
+   text and icons only; borders, tints and rings keep the brand colours.
+   See readable-colours.md in the app repo. */
+:root {
+  --ink-green: #00704a;
+  --ink-violet: #6e3ebc;
+  --ink-blue: #09649c;
+  --ink-orange: #9c4a00;
+  --ink-pink: #b00554;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink-green: #00c785;
+    --ink-violet: #ad91db;
+    --ink-blue: #4cb5f5;
+    --ink-orange: #ff8e26;
+    --ink-pink: #fb6bae;
+  }
+}
+
+@theme inline {
+  --color-ink-green: var(--ink-green);
+  --color-ink-violet: var(--ink-violet);
+  --color-ink-blue: var(--ink-blue);
+  --color-ink-orange: var(--ink-orange);
+  --color-ink-pink: var(--ink-pink);
+}
+
+@utility shadow-glow {
+  box-shadow: 0 4px 14px rgba(29, 161, 242, 0.3);
+}
+
+@layer base {
+  html {
+    color-scheme: light dark;
+    background-color: var(--color-forge-bg);
+    color: var(--color-forge-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      background-color: var(--color-forge-bg-dark);
+      color: var(--color-forge-text-dark);
+    }
+  }
+
+  /* Words are never split or hyphenated across lines, in any language.
+     When text does not fit, fix the layout instead. */
+  html {
+    hyphens: manual;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+  :lang(ko) {
+    word-break: keep-all;
+  }
+  :lang(ja),
+  :lang(zh) {
+    word-break: auto-phrase;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  /* Visible focus in the brand blue for keyboard users */
+  :focus-visible {
+    outline: 3px solid var(--color-forge-blue);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+---
+// A screenshot that follows the system theme: the dark screenshot in dark mode,
+// the light one otherwise. AVIF and WebP at several widths, built at build time.
+import type { ImageMetadata } from "astro";
+import { getImage } from "astro:assets";
+
+interface Props {
+  light: ImageMetadata;
+  dark: ImageMetadata;
+  alt: string;
+  sizes: string;
+  eager?: boolean;
+  class?: string;
+}
+const { light, dark, alt, sizes, eager = false, class: className = "" } = Astro.props;
+const widths = [480, 720, 960, 1280, 1600, 2000].filter((w) => w <= light.width);
+
+const srcset = async (src: ImageMetadata, format: "avif" | "webp") =>
+  (await getImage({ src, widths, format })).srcSet.attribute;
+const fallback = await getImage({ src: light, width: 960, format: "webp" });
+---
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" type="image/avif" srcset={await srcset(dark, "avif")} sizes={sizes} />
+  <source media="(prefers-color-scheme: dark)" type="image/webp" srcset={await srcset(dark, "webp")} sizes={sizes} />
+  <source type="image/avif" srcset={await srcset(light, "avif")} sizes={sizes} />
+  <source type="image/webp" srcset={await srcset(light, "webp")} sizes={sizes} />
+  <img
+    src={fallback.src}
+    width={light.width}
+    height={light.height}
+    alt={alt}
+    class:list={["h-auto w-full", className]}
+    loading={eager ? "eager" : "lazy"}
+    fetchpriority={eager ? "high" : "auto"}
+    decoding="async"
+  />
+</picture>

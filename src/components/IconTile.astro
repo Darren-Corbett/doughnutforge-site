@@ -1,0 +1,19 @@
+---
+// The app's coloured icon tile (side bar and action cards).
+export type TileColor = "blue" | "green" | "violet" | "orange" | "pink";
+interface Props {
+  color: TileColor;
+}
+const { color } = Astro.props;
+const styles: Record<TileColor, string> = {
+  blue: "bg-[#1DA1F2]/10 border-[#1DA1F2]/30 text-ink-blue",
+  green: "bg-[#00BA7C]/10 border-[#00BA7C]/30 text-ink-green",
+  violet: "bg-[#794BC4]/10 border-[#794BC4]/30 text-ink-violet",
+  orange: "bg-[#FF7A00]/10 border-[#FF7A00]/30 text-ink-orange",
+  pink: "bg-[#F91880]/10 border-[#F91880]/30 text-ink-pink",
+};
+---
+
+<span class:list={["flex h-11 w-11 shrink-0 items-center justify-center rounded-[12px] border", styles[color]]}>
+  <slot />
+</span>
