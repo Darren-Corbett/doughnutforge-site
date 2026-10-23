@@ -1,5 +1,4 @@
 import { listOf, type Language } from "../i18n";
-import { placeholder } from "./placeholder";
 
 // Where each platform is sold. Adding a store later is a data change here only:
 // set the platform to "available" and give it a store and an ID.
@@ -15,7 +14,7 @@ export type Platform =
   | { id: PlatformId; status: "coming" };
 
 export const platforms: Platform[] = [
-  { id: "mac", status: "available", store: "mac-app-store", storeId: placeholder("Mac App Store ID") },
+  { id: "mac", status: "available", store: "mac-app-store", storeId: "6812778888" },
   { id: "windows", status: "available", store: "microsoft-store", storeId: "9P25BS9L8LNB" },
   { id: "ios", status: "coming" },
   // Linux is planned for November 2026 and will be free; pages say "coming soon" until then.
