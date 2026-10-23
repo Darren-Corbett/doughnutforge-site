@@ -6,6 +6,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
+- **Pre-launch review scope (owner, 23 October 2026):** before launch the owner reviews facts and automated checks only. Copy style is reviewed after launch by an external copywriter (see "Post-launch copy review"). For blog posts, show the owner only each post's claims table for approval, not the full text. The CLAUDE.md copy rules still apply when writing.
 
 ---
 
@@ -16,7 +17,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 | 1 | Astro setup, design system, layout, English home page | Done | `f512825` set up and home page, `b62a608` home page redesign, `4809639` dark header on every page |
 | 2 | The other English pages: features, pricing, download, privacy, support/FAQ, press, legal, blog layout, 404, sitemap, robots.txt, social images | Done | `c0d0d83` |
 | 3 | All 30 languages, hreflang, language switcher | Done | `71b71f0` translations, `121d53c` first batch marked reviewed |
-| 4 | The four launch blog posts in English, as drafts | **Next**: plan being written, not yet approved | none |
+| 4 | The four launch blog posts in English, as drafts | **Drafts written**, awaiting the owner's approval of each post's claims table. Plan: `~/.claude/plans/phase-4-launch-blog-posts.md` | see `git log` (setup, then one commit per post) |
 | 5 | Support issue forms and the "answered issues" Action | **Deferred to next week**, not part of launch | none |
 | 6 | SEO, Lighthouse and accessibility checks, launch checklist | After Phase 4 | none |
 
@@ -29,9 +30,14 @@ Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the 
 
 ## What is next, step by step
 
-1. **Phase 4 plan, for approval.** For each of the four posts: the main search phrase, title, meta description, outline, and the screenshots or illustrations it uses. Every factual claim gets its source in the app repo or the store listings. Research is done (see "Facts found for Phase 4" below). No post is written until the plan is approved.
-2. **Phase 4 build.** Each post goes into `src/content/blog/en/<slug>.md` with `draft: true`. RSS (`@astrojs/rss`) is added. Drafts show only in `npm run dev` or a `DRAFTS=1` build. Separate commits, each shown first.
-3. **Phase 4 review.** The owner reads the four drafts in a preview, with a facts checklist for each post. Posts are published (`draft: false`) only on the owner's say-so.
+1. **Phase 4: drafts built.** The four posts are in `src/content/blog/en/*.mdx` with `draft: true`, on the MDX, RSS, figure-component and organisation-author setup. Decisions from the owner (23 October 2026):
+   - External facts are allowed, each sourced to an official page and checked against the live page before writing.
+   - No algorithm names. NIST's 2024 post-quantum standards may be mentioned in general.
+   - No personal byline. The page shows no author name or bio, and the `Article` structured data names Doughnut Forge as an `Organization`.
+   - MDX is fine.
+   - **Still open:** how to open a file's menu in the current Mac build (the ⋮ button, right-click, or both). Until answered, the Mac post says "open the file's menu".
+2. **Phase 4 review.** The owner approves each post's claims table in [`docs/BLOG-CLAIMS.md`](BLOG-CLAIMS.md), not its text. An independent fact-checker found one blocking problem (a "Delete Original File" toggle that users cannot see), which is now fixed and gone from post 1; its other notes were applied. Keep the claims tables in step with the posts: any later copy change must not add a claim without a row. Posts are published (`draft: false`) only on the owner's say-so.
+3. **Stale-translation detection: plan awaiting approval** (`~/.claude/plans/stale-translation-detection.md`). Not built yet.
 4. **Phase 6.** Run the checks and prepare the launch items. These include the forge-privacy redirect page, the Pages source switch, and removing the root production files only after the switch.
 5. **Fill the open items below.** The deploy build fails until they are filled.
 6. **Next week: Phase 5.**
@@ -44,7 +50,7 @@ These change what the posts can say:
 - **The desktop app has no share button for encrypted files.** On the Mac, the `.vlt2` file is saved next to the original. Only iOS opens the share sheet after encrypting. Folder vaults made on desktop cannot be opened on iPhone or iPad.
 - **No drag and drop** for files in the app.
 - **No network code found** in the app. But the macOS entitlements turn on `network.client` "for APIs or updates", so a post must not say the app cannot reach the internet. It can say the app works entirely on the device, needs no account, and uploads nothing. Those claims are already in the store listings.
-- **Post-quantum:** the store listings say "Uses post-quantum encryption". The app's encryption-type label reads "Hybrid Post-Quantum". No user-facing app text says "quantum-safe".
+- **Post-quantum:** the store listings say "Uses post-quantum encryption". The app has an encryption-type label "Hybrid Post-Quantum", but users cannot reach it (backlog item 9). No user-facing app text says "quantum-safe".
 - **Not open source.** `Cargo.toml` says `license = "Proprietary"`. The app is not audited.
 
 ---
@@ -64,18 +70,20 @@ Each one is a placeholder in `src/data/`. Local builds warn about them, and `npm
 | Press contact (email address or form link) | `src/data/press.ts` `contact` |
 | First release date | `src/data/press.ts` `firstRelease` |
 
-Also needed before Phase 4 is published: the blog author's name and bio.
-
 **Site copy to fix (found 23 October 2026, not yet changed):** the FAQ answer `faq.backup.a` in `src/i18n/ui/en.ts` says "export them from Contacts if you want a copy". In the app, the Contacts export button sits behind a feature flag that is off by default (`enableDayTwoFunctionality`), and the export does not work yet. The sentence should come out until export ships. That change needs the owner's approval, and every language then needs the same change.
 
 ---
 
 ## Language review status
 
-From `src/i18n/review.json`. Only the owner marks a language `reviewed`. Reviews are done by a subagent independent of the drafter, and their findings are recorded in the same file. A draft language is built, but it is `noindex` and left out of hreflang and the sitemap.
+From `src/i18n/review.json`. A subagent independent of the drafter reviews every translation and records its findings, each with a severity, in the same file. A `draft` language is built, but it is `noindex` and left out of hreflang and the sitemap.
 
-- **Reviewed (6):** English (source), French, German, Spanish, Japanese, Portuguese (Brazil). All five translations were approved on 23 October 2026.
-- **Drafts (24):** Italian, Dutch, Swedish, Danish, Finnish, Norwegian, Polish, Czech, Hungarian, Romanian, Russian, Greek, Ukrainian, English (US), Spanish (Mexico), Turkish, Chinese (Simplified), Chinese (Traditional), Korean, Hindi, Indonesian, Malay, Thai, Vietnamese.
+**Rule (owner, 23 October 2026):** a language is marked `reviewed` once the independent reviewer has no blocking findings, meaning every finding is a `note`. Claude may set the status under this rule, recording `approvedAt` and `approvedUnder`. The change still goes in a commit shown for approval. Before this rule, only the owner set the status.
+
+- **Reviewed by the owner (6):** English (source), French, German, Spanish, Japanese, Portuguese (Brazil), on 23 October 2026.
+- **Reviewed under the no-blocking-findings rule (24):** Italian, Dutch, Swedish, Danish, Finnish, Norwegian, Polish, Czech, Hungarian, Romanian, Russian, Greek, Ukrainian, English (US), Spanish (Mexico), Turkish, Chinese (Simplified), Chinese (Traditional), Korean, Hindi, Indonesian, Malay, Thai, Vietnamese. All 79 of their findings are notes.
+- **Drafts:** none.
+- The notes stay in `review.json` for the post-launch copy review.
 
 Review sheets for the owner: `node scripts/review-sheet.mjs <out dir> --langs it,nl` (or `--langs all`).
 
@@ -120,3 +128,20 @@ These belong in `~/git/doughnut-forge`. This repo never edits it.
 4. **Clean Mac and Windows screenshots** without ".DS_Store", "MILITARY-GRADE" or the old interface. The site and the blog need them; until then they use the iPhone and iPad screenshots only.
 5. **Store subtitle mismatch.** 14 store locales use "Encryption without subscription" as the subtitle and the rest use "Pay once". Separately, `tauri.conf.json` `shortDescription` is "Offline Document Reader and Privacy Vault", which matches neither.
 6. **Update the restore FAQ once contacts import ships.** `faq.restore.a` (and `faq.backup.a`) say contacts do not come back with a restore. When contacts export and import work in the app, the site FAQ must change in every language.
+7. **Remove the unused network permission from the Mac app.** `src-tauri/Entitlements.macOS.plist` turns on `com.apple.security.network.client` ("for APIs or updates"), but the app has no network code. Removing it makes "works entirely on your computer" provable from the app's own settings. The site and blog never claim the app cannot connect until it is removed.
+8. **Fix the help text that claims a "shows who sent it" feature.** `src/locales/en/mobile-views.json:30` ("…and shows who it came from.") and `:166` ("When you unlock something, the app shows which contact it came from.") describe something the app does not do. Decrypting returns no sender (`src-tauri/src/types.rs:141-144`); the only sender signal is the "Unknown Sender Detected" warning. The blog does not claim this feature.
+9. **The "Hybrid Post-Quantum" label cannot be reached.** `src/components/header-inspector/index.tsx:144-148` shows the encryption type in a file-details panel, but nothing calls `openInspector` (`src/hooks/use-header-inspector.ts`), so users never see it. Either wire it up or remove it. The blog does not mention it.
+
+---
+
+## Post-launch copy review
+
+- **After launch, an external copywriter reviews all site copy and the blog posts.** Their notes will be supplied later.
+- **When the notes arrive:**
+  1. The owner pastes them in.
+  2. Claude plans the changes in plan mode, for the owner's approval.
+  3. Claude applies them to the English strings (`src/i18n/ui/en.ts`) and the posts (`src/content/blog/en/`).
+  4. Claude retranslates only the changed strings, runs the independent reviewer on them, and fixes any findings.
+  5. Claude republishes: the usual commits, each shown first, then a deploy.
+- **The privacy policy is excluded** unless the owner approves a specific wording change, because it stays word for word with forge-privacy (`scripts/check-privacy-wording.mjs`).
+- Once stale-translation detection is built, the translation check lists every language whose English source changed. That makes step 4 checkable.

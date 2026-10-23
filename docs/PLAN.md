@@ -367,6 +367,14 @@ Phase 5 is planned in full below and keeps its number. It ships after launch. It
 
 ---
 
+## Post-launch copy review
+- After launch, all site copy and the blog posts are reviewed by an external copywriter. Their notes will be supplied later.
+- Process when notes arrive: the owner pastes them in; Claude plans the changes in plan mode for the owner's approval; applies them to the English strings and posts; then retranslates only the changed strings, runs the independent reviewer on them, and republishes.
+- The privacy policy is excluded unless the owner approves a specific wording change, since it stays word for word with forge-privacy.
+- Pre-launch review is limited to facts and automated checks. For blog posts the owner approves each post's claims table, not the full text.
+
+---
+
 ## 5. Decisions — answered (Phase 1 approved only)
 
 | # | Decision | How Phase 1 applies it |
