@@ -17,9 +17,9 @@ Where the site work stands, and what comes next. Read this at the start of every
 | 1 | Astro setup, design system, layout, English home page | Done | `f512825` set up and home page, `b62a608` home page redesign, `4809639` dark header on every page |
 | 2 | The other English pages: features, pricing, download, privacy, support/FAQ, press, legal, blog layout, 404, sitemap, robots.txt, social images | Done | `c0d0d83` |
 | 3 | All 30 languages, hreflang, language switcher | Done | `71b71f0` translations, `121d53c` first batch marked reviewed |
-| 4 | The four launch blog posts in English, as drafts | **Drafts written**, awaiting the owner's approval of each post's claims table. Plan: `~/.claude/plans/phase-4-launch-blog-posts.md` | see `git log` (setup, then one commit per post) |
+| 4 | The four launch blog posts in English | **Done**: published 23 October 2026 (the owner asked to publish them; claims in `docs/BLOG-CLAIMS.md`) | `ee042f8` setup, `70f46f9`, `c78eb76`, `89ffe96`, `8b7a3c4`, `d0aca89` posts, then the publish commit |
 | 5 | Support issue forms and the "answered issues" Action | **Deferred to next week**, not part of launch | none |
-| 6 | SEO, Lighthouse and accessibility checks, launch checklist | After Phase 4 | none |
+| 6 | SEO, Lighthouse and accessibility checks, launch checklist | **Checks done**; launch steps in `docs/launch/LAUNCH-CHECKLIST.md` | see `git log` |
 
 ### Why Phase 5 is deferred
 The owner moved it out of launch on 23 October 2026, to cut what launch depends on. Support at launch is what the site already has: `/support/` links to GitHub issues on forge-privacy and shows the bold never-attach warning in every language. No page links to "Answered questions" or "Known issues", and none may until Phase 5 ships. Phase 6 must not depend on anything from Phase 5. The full Phase 5 plan is under "Next week" in `docs/PLAN.md`, unchanged and ready to pick up.
@@ -36,10 +36,10 @@ Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the 
    - No personal byline. The page shows no author name or bio, and the `Article` structured data names Doughnut Forge as an `Organization`.
    - MDX is fine.
    - The Mac file menu opens from the ⋮ button or by right-clicking (owner, 23 October 2026). Post 1 names both.
-2. **Phase 4 review.** The owner approves each post's claims table in [`docs/BLOG-CLAIMS.md`](BLOG-CLAIMS.md), not its text. An independent fact-checker found one blocking problem (a "Delete Original File" toggle that users cannot see), which is now fixed and gone from post 1; its other notes were applied. Keep the claims tables in step with the posts: any later copy change must not add a claim without a row. Posts are published (`draft: false`) only on the owner's say-so.
+2. **Phase 4 review: done.** The owner asked for all four posts to be published at launch, on 23 October 2026. Keep `docs/BLOG-CLAIMS.md` in step with the posts: a later copy change must not add a claim without a row.
 3. **Stale-translation detection: built** (plan: `~/.claude/plans/stale-translation-detection.md`). See "Translations: keeping them in step with English" below.
-4. **Phase 6.** Run the checks and prepare the launch items. These include the forge-privacy redirect page, the Pages source switch, and removing the root production files only after the switch.
-5. **Fill the open items below.** The deploy build fails until they are filled.
+4. **Launch:** follow `docs/launch/LAUNCH-CHECKLIST.md` step by step (push, Pages switch, deploy, checks, deploy-on-push, root file removal, forge-privacy redirect, store URLs).
+5. **No open items block launch.** Company details, the press contact and the first release date were removed instead of filled (owner, 23 October 2026), and the Mac App Store ID is 6812778888.
 6. **Next week: Phase 5.**
 
 ### Facts found for Phase 4 (23 October 2026, app version 0.4.42)
@@ -55,20 +55,12 @@ These change what the posts can say:
 
 ---
 
-## Open items blocking launch
+## Launch decisions (23 October 2026)
 
-Each one is a placeholder in `src/data/`. Local builds warn about them, and `npm run build:deploy` fails while any remain (`scripts/check-placeholders.mjs --strict`).
-
-| Item | Where |
-|---|---|
-| Registered company name | `src/data/company.ts` `name` |
-| Company number | `src/data/company.ts` `number` |
-| Registered jurisdiction: England and Wales, Scotland or Northern Ireland | `src/data/company.ts` `registeredIn` |
-| Registered office address | `src/data/company.ts` `registeredOffice` |
-| Company contact method | `src/data/company.ts` `contact` |
-| Mac App Store ID | `src/data/stores.ts`, the `mac` entry's `storeId` |
-| Press contact (email address or form link) | `src/data/press.ts` `contact` |
-| First release date | `src/data/press.ts` `firstRelease` |
+- **No company details.** The footer shows only "© {year} Doughnut Forge", and the legal page holds only the trademark notices. CLAUDE.md says so.
+- **Press contact** is the public GitHub issues page (`site.issuesUrl`). No first release date is shown.
+- **Mac App Store ID:** 6812778888 (`src/data/stores.ts`). Store links carry no country code.
+- `src/data/placeholder.ts` and `scripts/check-placeholders.mjs` stay for any future unknown value; none is in use.
 
 **Site copy fixed (23 October 2026):** the backup FAQ (`faq.backup.a`) no longer tells people to export their contacts, in all 30 languages, because the app cannot export contacts yet. The independent reviewer found no blocking findings in the 28 changed translations (en-US inherits the English). No blog post mentioned it.
 

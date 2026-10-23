@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Doughnut Forge Privacy Policy has moved</title>
+<link rel="canonical" href="https://doughnut-forge.app/privacy/">
+<script>
+  // The old page took ?lang=de, ?lang=pt-BR and so on. Send each to the same
+  // language on the new site; anything else goes to the English policy.
+  (function () {
+    var paths = {"en":"","fr":"fr/","de":"de/","es":"es/","it":"it/","nl":"nl/","sv":"sv/","da":"da/","fi":"fi/","no":"no/","pl":"pl/","cs":"cs/","hu":"hu/","ro":"ro/","ru":"ru/","el":"el/","uk":"uk/","en-us":"en-us/","es-mx":"es-mx/","pt-br":"pt-br/","tr":"tr/","ja":"ja/","zh-cn":"zh-cn/","zh-tw":"zh-tw/","ko":"ko/","hi":"hi/","id":"id/","ms":"ms/","th":"th/","vi":"vi/"};
+    var lang = (new URLSearchParams(location.search).get("lang") || "").toLowerCase();
+    var path = Object.prototype.hasOwnProperty.call(paths, lang) ? paths[lang] : "";
+    location.replace("https://doughnut-forge.app/" + path + "privacy/");
+  })();
+</script>
+<meta http-equiv="refresh" content="0; url=https://doughnut-forge.app/privacy/">
+<style>
+  body { margin: 0; padding: 40px 16px; background: #f5f8fa; color: #14171a; font: 17px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 24px 20px; background: #fff; border: 2px solid #e2e8f0; border-radius: 24px; }
+  h1 { margin: 0 0 8px; font-size: 24px; font-weight: 800; }
+  a { color: #09649c; font-weight: 700; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #15202b; color: #fff; }
+    main { background: #1e2732; border-color: #38444d; }
+    a { color: #4cb5f5; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>The privacy policy has moved</h1>
+  <p>The Doughnut Forge Privacy Policy is now at <a href="https://doughnut-forge.app/privacy/">doughnut-forge.app/privacy</a>.</p>
+  <p>For help, ask on <a href="https://github.com/Darren-Corbett/forge-privacy/issues">GitHub issues</a>, as before.</p>
+</main>
+</body>
+</html>
