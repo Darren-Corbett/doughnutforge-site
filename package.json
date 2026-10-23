@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "build": "astro check && astro build && node scripts/check-production-files.mjs && node scripts/check-privacy-wording.mjs && node scripts/check-translations.mjs && node scripts/check-hreflang.mjs && node scripts/check-og.mjs && node scripts/check-placeholders.mjs",
     "build:preview": "astro check && OG_IMAGES=all astro build && node scripts/make-og.mjs --langs translations --out dist/og && node scripts/check-production-files.mjs && node scripts/check-privacy-wording.mjs && node scripts/check-translations.mjs && node scripts/check-hreflang.mjs && node scripts/check-og.mjs && node scripts/check-placeholders.mjs",
-    "build:deploy": "astro check && OG_IMAGES=all astro build && node scripts/make-og.mjs --langs translations --out dist/og && node scripts/check-production-files.mjs && node scripts/check-privacy-wording.mjs && node scripts/check-translations.mjs && node scripts/check-hreflang.mjs && node scripts/check-og.mjs && node scripts/check-placeholders.mjs --strict",
+    "build:deploy": "astro check && OG_IMAGES=all astro build && node scripts/make-og.mjs --langs translations --out dist/og && node scripts/check-production-files.mjs && node scripts/check-privacy-wording.mjs && node scripts/check-translations.mjs --strict && node scripts/check-hreflang.mjs && node scripts/check-og.mjs && node scripts/check-placeholders.mjs --strict",
     "preview": "astro preview",
     "sync:app": "node scripts/sync-from-app.mjs",
     "badges": "node scripts/badge-coverage.mjs"

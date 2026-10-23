@@ -7,6 +7,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
+import { sourceState } from "./translation-sources.mjs";
 
 const SITE = new URL("..", import.meta.url).pathname;
 const args = process.argv.slice(2);
@@ -43,11 +44,15 @@ for (const lang of langs) {
   const findings = new Map();
   for (const f of status.findings ?? []) findings.set(f.key, [...(findings.get(f.key) ?? []), f]);
 
+  // Strings out of step with English (src/i18n/sources/, see translation-sources.mjs)
+  const outOfStep = sourceState(lang.code, ui, en);
+  const flag = (key) =>
+    outOfStep.stale.includes(key) ? ' <b class="blocking">STALE: English changed</b>' : outOfStep.edited.includes(key) ? ' <b class="minor">changed, not stamped</b>' : "";
   const newRows = Object.keys(ui)
     .map((key) => {
       const fs = findings.get(key) ?? [];
       const notes = fs.map((f) => `<p class="${f.severity}"><b>${f.severity}</b>: ${esc(f.issue)}${f.suggestion ? `<br>Suggested: <span lang="${lang.hreflang}">${esc(f.suggestion)}</span>` : ""}</p>`).join("");
-      return row([`<code>${key}</code>`, "NEW", esc(en[key]), `<span lang="${lang.hreflang}">${esc(ui[key])}</span>`, esc(full?.backTranslations?.[key] ?? ""), notes]);
+      return row([`<code>${key}</code>`, `NEW${flag(key)}`, esc(en[key]), `<span lang="${lang.hreflang}">${esc(ui[key])}</span>`, esc(full?.backTranslations?.[key] ?? ""), notes]);
     })
     .join("\n");
   const reused = [

@@ -1,0 +1,558 @@
+{
+  "button.getApp": {
+    "en": "48335741e14d",
+    "text": "a93e85cfa34a"
+  },
+  "download.availability": {
+    "en": "96609870ae5d",
+    "text": "8f20efb4f762"
+  },
+  "download.coming": {
+    "en": "7e9f19df8f12",
+    "text": "febbf0da19d7"
+  },
+  "download.requires.mac": {
+    "en": "1b9c04bcfb6a",
+    "text": "1ebeb2b2eb4b"
+  },
+  "download.requires.windows": {
+    "en": "ecbd38c754a4",
+    "text": "166b007472e5"
+  },
+  "download.start.text": {
+    "en": "fa78baa55a6c",
+    "text": "84f91a953e8b"
+  },
+  "download.start.title": {
+    "en": "bbe4e7b2b238",
+    "text": "09d194c51bca"
+  },
+  "download.title": {
+    "en": "1280473d529e",
+    "text": "d72577fa11e1"
+  },
+  "faq.backup.a": {
+    "en": "0fe7cfa15460",
+    "text": "edb9bc7e5217"
+  },
+  "faq.backup.q": {
+    "en": "12fa8f0175a0",
+    "text": "45f7deb17543"
+  },
+  "faq.data.a": {
+    "en": "43d06807eb83",
+    "text": "4c1d26562c4c"
+  },
+  "faq.data.q": {
+    "en": "2207b89043c1",
+    "text": "4f2459908aaf"
+  },
+  "faq.offline.a": {
+    "en": "2414ba67c954",
+    "text": "4e5a7a85799d"
+  },
+  "faq.offline.q": {
+    "en": "d667044022db",
+    "text": "f7ae7d1aadc3"
+  },
+  "faq.platforms.a": {
+    "en": "443811018f78",
+    "text": "7a125d21a835"
+  },
+  "faq.platforms.q": {
+    "en": "825e4800f055",
+    "text": "665f7409a3bc"
+  },
+  "faq.quantum.a": {
+    "en": "30dd4e79e897",
+    "text": "fc1b103a7cd1"
+  },
+  "faq.quantum.q": {
+    "en": "b430b5338c1b",
+    "text": "2f1b2ead8488"
+  },
+  "faq.recipient.a": {
+    "en": "ed246da2765d",
+    "text": "d0b316d5ec2e"
+  },
+  "faq.recipient.q": {
+    "en": "6caa7273994b",
+    "text": "5d8d1cdcb982"
+  },
+  "faq.restore.a": {
+    "en": "dbc49a878999",
+    "text": "369182cd9e85"
+  },
+  "faq.restore.q": {
+    "en": "8d7d4c82503a",
+    "text": "85295dbaecb1"
+  },
+  "faq.share.a": {
+    "en": "2c35d0460d14",
+    "text": "17f42b392535"
+  },
+  "faq.share.q": {
+    "en": "03bf053f8e48",
+    "text": "61c858c04760"
+  },
+  "faq.storage.a": {
+    "en": "13632f1f4136",
+    "text": "8ac4c2be1f49"
+  },
+  "faq.storage.q": {
+    "en": "b3023c868c37",
+    "text": "a60bcff94dfd"
+  },
+  "faq.subscription.a": {
+    "en": "3f3cab79da06",
+    "text": "8774bd676541"
+  },
+  "faq.subscription.q": {
+    "en": "e755b5900d91",
+    "text": "e6073a4b4cfb"
+  },
+  "faq.which.a": {
+    "en": "3a96c327e1da",
+    "text": "f0b1a5c46b5b"
+  },
+  "faq.which.q": {
+    "en": "be4932a64133",
+    "text": "6ab473cf8e19"
+  },
+  "features.cta.title": {
+    "en": "8a5b1de8eedf",
+    "text": "aaeeb91fff85"
+  },
+  "features.ios.altContacts": {
+    "en": "19477017c9fa",
+    "text": "f4ad15331964"
+  },
+  "features.ios.altEncrypting": {
+    "en": "9a925dc70b6e",
+    "text": "9059774fce7c"
+  },
+  "features.ios.altIpad": {
+    "en": "42087526af01",
+    "text": "1536f3ee93ab"
+  },
+  "features.ios.text": {
+    "en": "ea8adfe90a7d",
+    "text": "ec98c0e8dc4c"
+  },
+  "features.languages.label": {
+    "en": "318655cea4bd",
+    "text": "9682ba3b92f7"
+  },
+  "features.offline.title": {
+    "en": "46ad7ef790d7",
+    "text": "e6bed9350349"
+  },
+  "features.private.title": {
+    "en": "d04dae22dd0d",
+    "text": "a19bc7eff233"
+  },
+  "features.title": {
+    "en": "f9cb675c4513",
+    "text": "4bba62656baf"
+  },
+  "footer.companyLine": {
+    "en": "63bf95d3de90",
+    "text": "5b8b1d826587"
+  },
+  "footer.companyNumber": {
+    "en": "8b121bb59819",
+    "text": "f26c9dea12de"
+  },
+  "footer.help": {
+    "en": "b79cac926e0b",
+    "text": "30672835496b"
+  },
+  "footer.officeLine": {
+    "en": "58e0e7da9a57",
+    "text": "c933f4cd1ba5"
+  },
+  "footer.product": {
+    "en": "fb9ef894175c",
+    "text": "b7006e80687e"
+  },
+  "footer.registered": {
+    "en": "29edd319e67e",
+    "text": "0c376ba168f5"
+  },
+  "footer.registeredOffice": {
+    "en": "bc395eb428a7",
+    "text": "82b6d5c83897"
+  },
+  "home.cta.primary": {
+    "en": "48335741e14d",
+    "text": "a93e85cfa34a"
+  },
+  "home.cta.secondary": {
+    "en": "f2c623fb55d4",
+    "text": "4a643d79b00f"
+  },
+  "home.features.title": {
+    "en": "1fc40bef85da",
+    "text": "918e012fe910"
+  },
+  "home.phones.altFile": {
+    "en": "425723c2bfb0",
+    "text": "3ea8cc145c66"
+  },
+  "home.phones.altIdentity": {
+    "en": "12ce4d41ab15",
+    "text": "403406104543"
+  },
+  "home.phones.altText": {
+    "en": "8ff6c777a08a",
+    "text": "5c5130765a87"
+  },
+  "home.phones.text": {
+    "en": "abcd317a0c23",
+    "text": "60017a3b0178"
+  },
+  "home.phones.title": {
+    "en": "e8ffdfdfc35f",
+    "text": "6a930f292c5e"
+  },
+  "home.pricing.text": {
+    "en": "f640ff4b8fab",
+    "text": "2cc7164c79e5"
+  },
+  "home.pricing.title": {
+    "en": "4d20b15bd090",
+    "text": "cb1c4c2c7f98"
+  },
+  "home.specimen.caption": {
+    "en": "0a006b8705a3",
+    "text": "83a90a5c05a5"
+  },
+  "home.specimen.cipherLabel": {
+    "en": "7c711de8bd3c",
+    "text": "f729dfb002e6"
+  },
+  "home.specimen.contact": {
+    "en": "a9c08ef0cf01",
+    "text": "1ff031296bfb"
+  },
+  "home.specimen.note": {
+    "en": "30dcbb6fa19e",
+    "text": "abe0ac9c9a45"
+  },
+  "home.specimen.stranger": {
+    "en": "9245dd56523d",
+    "text": "0042583f082f"
+  },
+  "home.tagline": {
+    "en": "caa0861ead91",
+    "text": "ec939398b861"
+  },
+  "legal.company.contact": {
+    "en": "2b5c3d26721a",
+    "text": "a6c63435d0be"
+  },
+  "legal.company.name": {
+    "en": "6dfada13d2f4",
+    "text": "81965fc07c1c"
+  },
+  "legal.company.title": {
+    "en": "0a41f0a3901e",
+    "text": "41526c5e337f"
+  },
+  "legal.privacy.text": {
+    "en": "cfdb88588c37",
+    "text": "b33ba4b57c0e"
+  },
+  "legal.privacy.title": {
+    "en": "54a57c3147c4",
+    "text": "fd55785d8031"
+  },
+  "legal.title": {
+    "en": "8c14d709f277",
+    "text": "29bc72cac40e"
+  },
+  "legal.trademarks.apple": {
+    "en": "2f0d96349331",
+    "text": "b04c09489262"
+  },
+  "legal.trademarks.microsoft": {
+    "en": "d7f2a8eda743",
+    "text": "57c4ff648e46"
+  },
+  "legal.trademarks.other": {
+    "en": "f2da63942724",
+    "text": "299cd3196e6e"
+  },
+  "legal.trademarks.title": {
+    "en": "722a2858f406",
+    "text": "f8d8d32b166e"
+  },
+  "meta.download.description": {
+    "en": "db2909b9894d",
+    "text": "3d360cc78751"
+  },
+  "meta.download.title": {
+    "en": "05f82d3a1ae6",
+    "text": "b2a4dd78cb8f"
+  },
+  "meta.features.description": {
+    "en": "5f0f52728c20",
+    "text": "c34e95d69198"
+  },
+  "meta.features.title": {
+    "en": "a3c61fdbe6dc",
+    "text": "d0fc0e3ddcdc"
+  },
+  "meta.home.description": {
+    "en": "11ed037f4b63",
+    "text": "ea1a0ae2ee06"
+  },
+  "meta.home.title": {
+    "en": "c249448d7ebf",
+    "text": "e57b687cb254"
+  },
+  "meta.legal.description": {
+    "en": "1aa5da31b54b",
+    "text": "213c7ca3b779"
+  },
+  "meta.legal.title": {
+    "en": "5130d085c78d",
+    "text": "e8d55639ab50"
+  },
+  "meta.press.description": {
+    "en": "c270c9e5b63e",
+    "text": "2c7572dc2be4"
+  },
+  "meta.press.title": {
+    "en": "a51e3fea3761",
+    "text": "13d470708ce8"
+  },
+  "meta.pricing.description": {
+    "en": "41f6484a616f",
+    "text": "73e834e68d21"
+  },
+  "meta.pricing.title": {
+    "en": "0baa34c080e5",
+    "text": "5980bf5ce601"
+  },
+  "meta.privacy.description": {
+    "en": "376dc8aba614",
+    "text": "5a056781195b"
+  },
+  "meta.support.description": {
+    "en": "cfbb36f46f12",
+    "text": "8af8b260953d"
+  },
+  "meta.support.title": {
+    "en": "2815e0d9858c",
+    "text": "565c606a4310"
+  },
+  "nav.blogEnglish": {
+    "en": "a0cd90c54581",
+    "text": "5da24548b5e5"
+  },
+  "nav.download": {
+    "en": "d6eafe823591",
+    "text": "b85d7a94ae57"
+  },
+  "nav.features": {
+    "en": "5697d03daef4",
+    "text": "b0e21b8e8a05"
+  },
+  "nav.home": {
+    "en": "e3d149abf255",
+    "text": "08cbea794f84"
+  },
+  "nav.label": {
+    "en": "eb814be3ca3b",
+    "text": "b6f2c59e839f"
+  },
+  "nav.legal": {
+    "en": "4787eaf7c938",
+    "text": "29bc72cac40e"
+  },
+  "nav.press": {
+    "en": "32640cd858d6",
+    "text": "495d5d520f81"
+  },
+  "nav.pricing": {
+    "en": "dfe95783edfe",
+    "text": "855e4ca05bf2"
+  },
+  "nav.support": {
+    "en": "be91940b79f4",
+    "text": "bdbdb22b4f96"
+  },
+  "press.about.long": {
+    "en": "3bae97ded740",
+    "text": "20ec78667ac0"
+  },
+  "press.about.short": {
+    "en": "796aecd3d1a2",
+    "text": "3b99248b1d59"
+  },
+  "press.about.title": {
+    "en": "444b1330c3dd",
+    "text": "2a32aa2d10ab"
+  },
+  "press.download": {
+    "en": "fae92c49c088",
+    "text": "7bc960fa3ab0"
+  },
+  "press.facts.available": {
+    "en": "a09d6f8730fe",
+    "text": "0194f06ca4fe"
+  },
+  "press.facts.coming": {
+    "en": "4f7d64017689",
+    "text": "81565f79de95"
+  },
+  "press.facts.contact": {
+    "en": "7131fea1917d",
+    "text": "8bcde3350c50"
+  },
+  "press.facts.developer": {
+    "en": "3fb7b39416f1",
+    "text": "1cc2c857f13d"
+  },
+  "press.facts.firstRelease": {
+    "en": "9db3a65f2052",
+    "text": "68b5292c2cd2"
+  },
+  "press.facts.languages": {
+    "en": "318655cea4bd",
+    "text": "9682ba3b92f7"
+  },
+  "press.facts.name": {
+    "en": "dcd1d5223f73",
+    "text": "d44e9b3d3b31"
+  },
+  "press.facts.price": {
+    "en": "93c91c851e7a",
+    "text": "855e4ca05bf2"
+  },
+  "press.facts.priceValue": {
+    "en": "835917ca0915",
+    "text": "2769dc010bd7"
+  },
+  "press.facts.title": {
+    "en": "235407ec6905",
+    "text": "f7079f5f5491"
+  },
+  "press.facts.website": {
+    "en": "b5a229ac8bec",
+    "text": "1c5661077450"
+  },
+  "press.icons.dark": {
+    "en": "6cd871b825ed",
+    "text": "bd4b1c8111a6"
+  },
+  "press.icons.light": {
+    "en": "a673b287ae8c",
+    "text": "b35ae405b802"
+  },
+  "press.icons.mono": {
+    "en": "b8735168d394",
+    "text": "3956d4ada0d3"
+  },
+  "press.icons.rounded": {
+    "en": "287e39c14dff",
+    "text": "c62594cad91f"
+  },
+  "press.icons.title": {
+    "en": "56244b12a992",
+    "text": "3bf0ff2ec9e8"
+  },
+  "press.lead": {
+    "en": "60527d67ccfc",
+    "text": "6e0e3160b9ce"
+  },
+  "press.shots.label": {
+    "en": "8cea17a1f97c",
+    "text": "0f213f774659"
+  },
+  "press.shots.text": {
+    "en": "febd7418911f",
+    "text": "1dbecab4ee52"
+  },
+  "press.shots.title": {
+    "en": "067348ce6894",
+    "text": "25bff5692c44"
+  },
+  "press.title": {
+    "en": "32640cd858d6",
+    "text": "495d5d520f81"
+  },
+  "press.usage.text": {
+    "en": "b2ec36c8952f",
+    "text": "43627aed9d3e"
+  },
+  "press.usage.title": {
+    "en": "66310250e650",
+    "text": "776c2051a7eb"
+  },
+  "pricing.oneTime": {
+    "en": "4ae6486e7206",
+    "text": "b7a827850faa"
+  },
+  "pricing.questions": {
+    "en": "ad227025ac3b",
+    "text": "ab759da86a5c"
+  },
+  "pricing.questionsLink": {
+    "en": "3fc49acf79f7",
+    "text": "69ac8a545af4"
+  },
+  "pricing.where.text": {
+    "en": "41df0b0c5670",
+    "text": "064854189965"
+  },
+  "pricing.where.title": {
+    "en": "f2ff3ffc2c74",
+    "text": "a3acd6ea4df2"
+  },
+  "skip": {
+    "en": "ac576a66d456",
+    "text": "a28547de5359"
+  },
+  "status.comingSoon": {
+    "en": "4f7d64017689",
+    "text": "724af2166484"
+  },
+  "support.ask.new": {
+    "en": "1aae311e4ce7",
+    "text": "9067f5ae56e9"
+  },
+  "support.ask.search": {
+    "en": "852c0cd49515",
+    "text": "ae1529d04208"
+  },
+  "support.ask.text": {
+    "en": "8e19b49cfb24",
+    "text": "1b0c8b9837ab"
+  },
+  "support.ask.title": {
+    "en": "e9c481e0c087",
+    "text": "36cd1364ded4"
+  },
+  "support.ask.warning": {
+    "en": "e77daa7c412d",
+    "text": "0f3342c72683"
+  },
+  "support.faq.title": {
+    "en": "e956a9404b46",
+    "text": "aac36ecc7cb2"
+  },
+  "support.lead": {
+    "en": "77141b7988e7",
+    "text": "a0ef7fbb1be3"
+  },
+  "support.privacy.title": {
+    "en": "7a4907a8a388",
+    "text": "22fb8db9c6c4"
+  },
+  "support.title": {
+    "en": "e3b8fa0ffe20",
+    "text": "01a163914d88"
+  }
+}
