@@ -11,16 +11,16 @@ interface Props {
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
 
-// Phase 1: only the home page exists, so links go to its sections. Phase 2 points them at pages.
 const links = [
-  { href: localePath(lang.code, "#features"), label: t("nav.features") },
-  { href: localePath(lang.code, "#pricing"), label: t("nav.pricing") },
-  { href: localePath(lang.code, "#download"), label: t("nav.download") },
-  { href: site.supportUrl, label: t("nav.support") },
+  { href: localePath(lang.code, "features/"), label: t("nav.features") },
+  { href: localePath(lang.code, "pricing/"), label: t("nav.pricing") },
+  { href: localePath(lang.code, "download/"), label: t("nav.download") },
+  { href: localePath(lang.code, "support/"), label: t("nav.support") },
 ];
+const current = Astro.url.pathname;
 // Narrow side padding on phones so all four links fit one row at 360px; 44px tall to tap.
 const linkClass =
-  "flex min-h-11 items-center rounded-full px-1.5 text-[15px] font-bold text-slate-200 hover:bg-white/10 hover:text-white sm:px-4";
+  "flex min-h-11 items-center rounded-full px-1.5 text-[15px] font-bold text-slate-200 hover:bg-white/10 hover:text-white aria-[current=page]:text-white aria-[current=page]:underline aria-[current=page]:decoration-[#4cb5f5] aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-8 sm:px-4";
 ---
 
 <header class="bg-[#15202b] text-white">
@@ -34,7 +34,7 @@ const linkClass =
         {
           links.map((l) => (
             <li>
-              <a class={linkClass} href={l.href}>
+              <a class={linkClass} href={l.href} aria-current={current === l.href ? "page" : undefined}>
                 {l.label}
               </a>
             </li>

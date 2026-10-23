@@ -1,0 +1,76 @@
+---
+// The app's tabs as coloured rows: the tab name in its tab colour, then what it
+// does. Used on the home page and, with more detail, on the features page.
+export type ToneRow = {
+  /** The app's own tab name, such as "Secure Text" */
+  name: string;
+  tone: "blue" | "orange" | "violet" | "pink" | "green";
+  title: string;
+  text: string;
+  /** Further paragraphs, shown under the text */
+  more?: string[];
+};
+interface Props {
+  rows: ToneRow[];
+}
+const { rows } = Astro.props;
+---
+
+<ul class="rows" role="list">
+  {
+    rows.map((r) => (
+      <li class:list={["row", `tone-${r.tone}`]}>
+        <p class="row-name">{r.name}</p>
+        <div>
+          <h3>{r.title}</h3>
+          <p>{r.text}</p>
+          {r.more?.map((m) => <p>{m}</p>)}
+        </div>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .rows {
+    margin-top: 32px;
+  }
+  .row {
+    display: grid;
+    gap: 6px 32px;
+    padding: 22px 0 26px;
+    border-top: 3px solid var(--tone);
+  }
+  .row-name {
+    font-size: clamp(26px, 7vw, 36px);
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  h3 {
+    font-size: 19px;
+    font-weight: 800;
+  }
+  .row p:not(.row-name) {
+    margin-top: 4px;
+    font-size: 17px;
+    line-height: 1.55;
+    max-width: 38rem;
+    color: #475569;
+  }
+  .row p:not(.row-name) + p {
+    margin-top: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .row p:not(.row-name) {
+      color: #cbd5e1;
+    }
+  }
+  @media (min-width: 768px) {
+    .row {
+      grid-template-columns: 5fr 7fr;
+      align-items: baseline;
+    }
+  }
+</style>

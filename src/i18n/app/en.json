@@ -1,7 +1,13 @@
 {
-  "_source": "doughnut-forge 0.4.42 (d0a7694) src/locales/en/*.json",
+  "_source": "doughnut-forge 0.4.42 (5552323) src/locales/en/*.json",
   "app:navigation.tabs.vault": "Secure Directory",
+  "app:navigation.tabs.mobile-vault": "Secure File",
   "app:navigation.tabs.text-vault": "Secure Text",
   "app:navigation.tabs.identity": "Identity",
-  "app:navigation.tabs.contacts": "Contacts"
+  "app:navigation.tabs.contacts": "Contacts",
+  "help:secureDirectoryGuide.step1.description": "Add local folders to your workspace to browse and manage your files. Doughnut Forge operates entirely locally, meaning your original files never leave your device.",
+  "help:setupGuide.step2.description": "Your digital identity acts as your personal set of keys, which are stored safely within the application. Doughnut Forge uses these keys to protect your files and verify your trusted contacts.",
+  "help:setupGuide.step3.description": "Your keys are entirely private and cannot be recovered if lost. You must keep your backup phrase in a safe location, as it is the only way to restore your access.",
+  "help:identityContactsGuide.step1.description": "Export your identity as a secure contact card (.vltc2). Share this file so others can safely verify who you are and add you to their trusted network.",
+  "help:identityContactsGuide.step3.description": "Manage your trusted network. While anyone with your card can send you secure files, verifying contacts here lets you quickly select them for sharing and confirms their true identity."
 }

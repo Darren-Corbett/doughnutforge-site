@@ -63,7 +63,21 @@ const langs = langsArg === "all" ? allCodes : langsArg.split(",");
 
 // --- App strings: only the keys the site uses -----------------------------
 const APP_KEYS = {
-  app: ["navigation.tabs.vault", "navigation.tabs.text-vault", "navigation.tabs.identity", "navigation.tabs.contacts"],
+  app: [
+    "navigation.tabs.vault",
+    "navigation.tabs.mobile-vault",
+    "navigation.tabs.text-vault",
+    "navigation.tabs.identity",
+    "navigation.tabs.contacts",
+  ],
+  // Plain sentences from the app's built-in guides, used on the features page
+  help: [
+    "secureDirectoryGuide.step1.description",
+    "setupGuide.step2.description",
+    "setupGuide.step3.description",
+    "identityContactsGuide.step1.description",
+    "identityContactsGuide.step3.description",
+  ],
 };
 
 const pick = (obj, path) => path.split(".").reduce((o, k) => o?.[k], obj);
@@ -122,6 +136,9 @@ const SCREENSHOTS = [
   ["fastlane/screenshots/ios/en-GB/iphone_01_secure_file.png", "iphone-secure-file.webp", 900],
   ["fastlane/screenshots/ios/en-GB/iphone_04_secure_text.png", "iphone-secure-text.webp", 900],
   ["fastlane/screenshots/ios/en-GB/iphone_05_identity.png", "iphone-identity.webp", 900],
+  ["fastlane/screenshots/ios/en-GB/iphone_02_encrypting.png", "iphone-encrypting.webp", 900],
+  ["fastlane/screenshots/ios/en-GB/iphone_03_contacts.png", "iphone-contacts.webp", 900],
+  ["fastlane/screenshots/ios/en-GB/ipad_01_secure_file_ipad.png", "ipad-secure-file.webp", 1400],
 ];
 
 mkdirSync(join(SITE, "src/assets/app"), { recursive: true });
@@ -131,6 +148,42 @@ for (const [from, to, width, crop] of SCREENSHOTS) {
   await image.resize({ width, withoutEnlargement: true }).webp({ quality: 92 }).toFile(join(SITE, "src/assets/app", to));
   console.log(`wrote src/assets/app/${to}`);
 }
+
+// --- Press kit: full-size files for download from /press/ -------------------
+// Only screens that are clean and true today. Mac and Windows screenshots join
+// once there are new ones (the store sets show .DS_Store and "military-grade").
+const PRESS_KIT = [
+  ["src-tauri/app-icon.png", "doughnut-forge-icon.png", 1024],
+  ["src-tauri/icons/AppIcon.icon/Assets/app-icon-ios.png", "doughnut-forge-icon-square-light.png", 1024],
+  ["src-tauri/icons/AppIcon.icon/Assets/app-icon-ios-dark.png", "doughnut-forge-icon-square-dark.png", 1024],
+  ["src-tauri/icons/AppIcon.icon/Assets/app-icon-ios-mono.png", "doughnut-forge-icon-mono.png", 1024],
+  ["fastlane/screenshots/ios/en-GB/iphone_01_secure_file.png", "iphone-secure-file.png"],
+  ["fastlane/screenshots/ios/en-GB/iphone_02_encrypting.png", "iphone-encrypting.png"],
+  ["fastlane/screenshots/ios/en-GB/iphone_03_contacts.png", "iphone-contacts.png"],
+  ["fastlane/screenshots/ios/en-GB/iphone_04_secure_text.png", "iphone-secure-text.png"],
+  ["fastlane/screenshots/ios/en-GB/iphone_05_identity.png", "iphone-identity.png"],
+  ["fastlane/screenshots/ios/en-GB/ipad_01_secure_file_ipad.png", "ipad-secure-file.png"],
+  ["fastlane/screenshots/ios/en-GB/ipad_03_contacts_ipad.png", "ipad-contacts.png"],
+  ["fastlane/screenshots/ios/en-GB/ipad_04_secure_text_ipad.png", "ipad-secure-text.png"],
+];
+
+// The full files go to public/press/ under stable names; small WebP previews go
+// to src/assets/press/ for the page, and their sizes to src/data/press-files.json.
+mkdirSync(join(SITE, "public/press"), { recursive: true });
+mkdirSync(join(SITE, "src/assets/press"), { recursive: true });
+const pressFiles = [];
+for (const [from, to, size] of PRESS_KIT) {
+  const image = sharp(join(APP, from));
+  if (size) image.resize(size);
+  const { width, height } = await image.png({ compressionLevel: 9, effort: 10 }).toFile(join(SITE, "public/press", to));
+  await sharp(join(SITE, "public/press", to))
+    .resize({ width: 480, withoutEnlargement: true })
+    .webp({ quality: 88 })
+    .toFile(join(SITE, "src/assets/press", to.replace(/\.png$/, ".webp")));
+  pressFiles.push({ file: to, width, height });
+  console.log(`wrote public/press/${to}`);
+}
+writeJson("src/data/press-files.json", { _source: source("fastlane/screenshots, src-tauri icons"), files: pressFiles });
 
 // --- Brand: app icon, and the default social preview image ------------------
 mkdirSync(join(SITE, "src/assets/brand"), { recursive: true });

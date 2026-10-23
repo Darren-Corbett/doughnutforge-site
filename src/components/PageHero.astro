@@ -1,0 +1,81 @@
+---
+// The night band at the top of every page after home: it continues the dark
+// header, as the home page hero does. Holds the page's one h1.
+interface Props {
+  title: string;
+  /** A short second line in the blue ink, like the home page tagline */
+  tagline?: string;
+  lead?: string;
+  /** Marks the title and lead for the privacy wording check (data-policy) */
+  policyKeys?: { title: string; lead: string };
+  /** Title and lead hold trusted HTML (the privacy policy's entities) */
+  html?: boolean;
+}
+const { title, tagline, lead, policyKeys, html = false } = Astro.props;
+---
+
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="inner">
+    {
+      html ? (
+        <h1 id="page-title" data-policy={policyKeys?.title} set:html={title} />
+      ) : (
+        <h1 id="page-title" data-policy={policyKeys?.title}>
+          {title}
+        </h1>
+      )
+    }
+    {tagline && <p class="tagline">{tagline}</p>}
+    {lead && (html ? <p class="lead" data-policy={policyKeys?.lead} set:html={lead} /> : <p class="lead">{lead}</p>)}
+    {Astro.slots.has("default") && <div class="extra"><slot /></div>}
+  </div>
+</section>
+
+<style>
+  .page-hero {
+    background: #15202b;
+    color: #fff;
+  }
+  .inner {
+    max-width: 72rem;
+    margin-inline: auto;
+    padding: 36px 16px 44px;
+  }
+  h1 {
+    font-size: clamp(34px, 9vw, 60px);
+    line-height: 1.05;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    max-width: 18ch;
+  }
+  /* Ink blue for dark backgrounds: 6.9:1 on the night colour */
+  .tagline {
+    margin-top: 14px;
+    max-width: 24ch;
+    font-size: clamp(20px, 5.5vw, 26px);
+    line-height: 1.25;
+    font-weight: 800;
+    color: #4cb5f5;
+  }
+  .lead {
+    margin-top: 14px;
+    max-width: 36rem;
+    font-size: 18px;
+    line-height: 1.55;
+    color: #cbd5e1;
+  }
+  .extra {
+    margin-top: 24px;
+  }
+  /* In dark mode the page is the same night colour, so the band gets an edge */
+  @media (prefers-color-scheme: dark) {
+    .page-hero {
+      border-bottom: 2px solid #38444d;
+    }
+  }
+  @media (min-width: 768px) {
+    .inner {
+      padding: 56px 24px 64px;
+    }
+  }
+</style>

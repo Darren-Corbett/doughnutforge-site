@@ -1,0 +1,65 @@
+{
+  "_source": "doughnut-forge 0.4.42 (5552323) fastlane/screenshots, src-tauri icons",
+  "files": [
+    {
+      "file": "doughnut-forge-icon.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "file": "doughnut-forge-icon-square-light.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "file": "doughnut-forge-icon-square-dark.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "file": "doughnut-forge-icon-mono.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "file": "iphone-secure-file.png",
+      "width": 1320,
+      "height": 2868
+    },
+    {
+      "file": "iphone-encrypting.png",
+      "width": 1320,
+      "height": 2868
+    },
+    {
+      "file": "iphone-contacts.png",
+      "width": 1320,
+      "height": 2868
+    },
+    {
+      "file": "iphone-secure-text.png",
+      "width": 1320,
+      "height": 2868
+    },
+    {
+      "file": "iphone-identity.png",
+      "width": 1320,
+      "height": 2868
+    },
+    {
+      "file": "ipad-secure-file.png",
+      "width": 2064,
+      "height": 2752
+    },
+    {
+      "file": "ipad-contacts.png",
+      "width": 2064,
+      "height": 2752
+    },
+    {
+      "file": "ipad-secure-text.png",
+      "width": 2064,
+      "height": 2752
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+---
+// The privacy policy, word for word from forge-privacy. Every element carries
+// data-policy="<key>" so scripts/check-privacy-wording.mjs can compare it with the source.
+import PageHero from "../components/PageHero.astro";
+import Prose from "../components/Prose.astro";
+import { getPolicy, type PolicyKey } from "../data/privacy";
+import { useStrings, type Language } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t } = useStrings(lang.code);
+const { html } = getPolicy(lang.code);
+const sections = [1, 2, 3, 4, 5].map((n) => ({ title: `sec${n}Title` as PolicyKey, text: `sec${n}Desc` as PolicyKey }));
+---
+
+<Base lang={lang} title={t("meta.privacy.title")} description={t("meta.privacy.description")} image="/og/privacy.png">
+  <PageHero title={html("title")} lead={html("effectiveDate")} policyKeys={{ title: "title", lead: "effectiveDate" }} html />
+  <div class="section">
+    <Prose>
+      <p data-policy="hero" set:html={html("hero")} />
+      {
+        sections.map((s) => (
+          <>
+            <h2 data-policy={s.title} set:html={html(s.title)} />
+            <p data-policy={s.text} set:html={html(s.text)} />
+          </>
+        ))
+      }
+      <p class="publisher" data-policy="publisherInfo" set:html={html("publisherInfo")} />
+    </Prose>
+  </div>
+</Base>
+
+<style>
+  .publisher {
+    margin-top: 32px;
+    font-size: 14px;
+    color: #64748b;
+  }
+  @media (prefers-color-scheme: dark) {
+    .publisher {
+      color: #94a3b8;
+    }
+  }
+</style>

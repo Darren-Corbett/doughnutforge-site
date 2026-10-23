@@ -1,0 +1,5 @@
+# Every page may be indexed. No tracking, no hidden areas.
+User-agent: *
+Allow: /
+
+Sitemap: https://doughnut-forge.app/sitemap-index.xml

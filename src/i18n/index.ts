@@ -30,3 +30,11 @@ export const localePath = (code: string, path = "/") => {
   const clean = path.replace(/^\/+/, "");
   return lang.code === defaultLanguage.code ? `/${clean}` : `/${lang.path}/${clean}`;
 };
+
+/** Joins items the way the language does: "Mac and Windows", "Mac und Windows" */
+export const listOf = (lang: Language, items: string[]) =>
+  new Intl.ListFormat(lang.hreflang, { type: "conjunction" }).format(items);
+
+/** Fills the {name} slots in a string */
+export const fill = (text: string, values: Record<string, string | number>) =>
+  text.replace(/\{(\w+)\}/g, (slot, key: string) => (key in values ? String(values[key]) : slot));

@@ -1,0 +1,251 @@
+---
+// Press kit: ready-to-use descriptions (store wording, without "Pay once"), a
+// fact sheet from the site's data, and full-size files from public/press/.
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import PageHero from "../components/PageHero.astro";
+import { company } from "../data/company";
+import pressFiles from "../data/press-files.json";
+import { press } from "../data/press";
+import { site } from "../data/site";
+import { platforms } from "../data/stores";
+import { fill, languages, listOf, useStrings, type Language } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t, app, store } = useStrings(lang.code);
+
+const sentences = (text: string) => text.split(/(?<=\.)\s+/);
+// The store's promotional text without its last sentence, "One price, paid once."
+const short = sentences(store.mac.promotionalText).slice(0, -1).join(" ");
+// The store description's opening, then the no-subscription paragraph without
+// "You pay once, and the app is yours.", then the closing line
+const long = [store.mac.opening, sentences(store.mac.noSubscription).slice(0, -1).join(" "), store.mac.closing];
+
+const names = (status: "available" | "coming") =>
+  listOf(lang, platforms.filter((p) => p.status === status).map((p) => t(`platform.${p.id}`)));
+const facts = [
+  [t("press.facts.name"), site.name],
+  [t("press.facts.developer"), company.name],
+  [t("press.facts.available"), names("available")],
+  [t("press.facts.coming"), names("coming")],
+  [t("press.facts.price"), t("press.facts.priceValue")],
+  [t("press.facts.languages"), String(languages.length)],
+  [t("press.facts.firstRelease"), press.firstRelease],
+  [t("press.facts.website"), site.url.replace("https://", "")],
+  [t("press.facts.contact"), press.contact],
+];
+
+const previews = import.meta.glob<{ default: ImageMetadata }>("../assets/press/*.webp", { eager: true });
+const file = (name: string, label: string) => {
+  const meta = pressFiles.files.find((f) => f.file === name);
+  const preview = previews[`../assets/press/${name.replace(/\.png$/, ".webp")}`]?.default;
+  if (!meta || !preview) throw new Error(`Press file ${name} is missing: run npm run sync:app`);
+  return { href: `/press/${name}`, label, preview, size: fill(t("press.download"), { width: meta.width, height: meta.height }) };
+};
+const icons = [
+  file("doughnut-forge-icon.png", t("press.icons.rounded")),
+  file("doughnut-forge-icon-square-light.png", t("press.icons.light")),
+  file("doughnut-forge-icon-square-dark.png", t("press.icons.dark")),
+  file("doughnut-forge-icon-mono.png", t("press.icons.mono")),
+];
+const shots = [
+  file("iphone-secure-file.png", `iPhone: ${app("app:navigation.tabs.mobile-vault")}`),
+  file("iphone-encrypting.png", `iPhone: ${t("press.shots.encrypting")}`),
+  file("iphone-secure-text.png", `iPhone: ${app("app:navigation.tabs.text-vault")}`),
+  file("iphone-contacts.png", `iPhone: ${app("app:navigation.tabs.contacts")}`),
+  file("iphone-identity.png", `iPhone: ${app("app:navigation.tabs.identity")}`),
+  file("ipad-secure-file.png", `iPad: ${app("app:navigation.tabs.mobile-vault")}`),
+  file("ipad-secure-text.png", `iPad: ${app("app:navigation.tabs.text-vault")}`),
+  file("ipad-contacts.png", `iPad: ${app("app:navigation.tabs.contacts")}`),
+];
+---
+
+<Base lang={lang} title={t("meta.press.title")} description={t("meta.press.description")} image="/og/press.png">
+  <PageHero title={t("press.title")} lead={t("press.lead")} />
+
+  <section class="section" aria-labelledby="press-about">
+    <h2 id="press-about" class="section-title">{t("press.about.title")}</h2>
+    <div class="copy-blocks">
+      <div class="copy-block">
+        <h3>{t("press.about.short")}</h3>
+        <p>{short}</p>
+      </div>
+      <div class="copy-block">
+        <h3>{t("press.about.long")}</h3>
+        {long.map((p) => <p>{p}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section next" aria-labelledby="press-facts">
+    <h2 id="press-facts" class="section-title">{t("press.facts.title")}</h2>
+    <dl class="facts">
+      {
+        facts.map(([term, value]) => (
+          <div>
+            <dt>{term}</dt>
+            <dd>{value}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </section>
+
+  <section class="section next" aria-labelledby="press-icons">
+    <h2 id="press-icons" class="section-title">{t("press.icons.title")}</h2>
+    <ul class="files icons" role="list">
+      {
+        icons.map((f) => (
+          <li>
+            <a href={f.href} download>
+              <Image src={f.preview} width={240} densities={[1, 2]} alt="" loading="lazy" />
+              <span class="file-label">{f.label}</span>
+              <span class="file-size">{f.size}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section next" aria-labelledby="press-shots">
+    <h2 id="press-shots" class="section-title">{t("press.shots.title")}</h2>
+    <p class="section-text">{t("press.shots.text")}</p>
+    <ul class="files shots" role="list">
+      {
+        shots.map((f) => (
+          <li>
+            <a href={f.href} download>
+              <Image src={f.preview} width={240} densities={[1, 2]} alt="" loading="lazy" />
+              <span class="file-label">{f.label}</span>
+              <span class="file-size">{f.size}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section next" aria-labelledby="press-usage">
+    <h2 id="press-usage" class="section-title">{t("press.usage.title")}</h2>
+    <p class="section-text">{t("press.usage.text")}</p>
+  </section>
+</Base>
+
+<style>
+  .next {
+    padding-top: 0;
+  }
+  .copy-blocks {
+    display: grid;
+    gap: 16px;
+    margin-top: 28px;
+  }
+  .copy-block {
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+    border: 2px solid #e2e8f0;
+  }
+  .copy-block h3 {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #475569;
+  }
+  .copy-block p {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 40rem;
+  }
+  .facts {
+    margin-top: 28px;
+    max-width: 46rem;
+    border-top: 2px solid #e2e8f0;
+  }
+  .facts div {
+    display: grid;
+    gap: 2px 24px;
+    padding: 12px 0;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  dt {
+    font-size: 15px;
+    font-weight: 800;
+    color: #475569;
+  }
+  dd {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .files {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 16px;
+  }
+  .files a {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .files img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+  }
+  .shots img {
+    border-radius: 12px;
+    border: 2px solid #38444d;
+    background: #000;
+  }
+  .file-label {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--ink-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .file-size {
+    font-size: 14px;
+    color: #475569;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .copy-block {
+      background: #1e2732;
+      border-color: #38444d;
+    }
+    .copy-block h3,
+    dt,
+    .file-size {
+      color: #cbd5e1;
+    }
+    .facts,
+    .facts div {
+      border-color: #38444d;
+    }
+  }
+  @media (min-width: 768px) {
+    .copy-blocks {
+      grid-template-columns: 2fr 3fr;
+      align-items: start;
+    }
+    .facts div {
+      grid-template-columns: 12rem 1fr;
+    }
+    .icons {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .shots {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      align-items: end;
+    }
+  }
+</style>

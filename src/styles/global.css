@@ -106,6 +106,10 @@
     overflow-wrap: normal;
     word-break: normal;
   }
+  /* Words with a hyphen, wrapped by src/middleware.ts so they never split at it */
+  .keep-word {
+    white-space: nowrap;
+  }
   :lang(ko) {
     word-break: keep-all;
   }
@@ -140,6 +144,110 @@
   @media (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;
+    }
+  }
+}
+
+/* Shared page pieces, first drawn on the home page. Pages use these classes so
+   every page has the same buttons, section widths, headings and tone colours. */
+@layer components {
+  .btn-primary,
+  .btn-quiet {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    font-size: 17px;
+    font-weight: 800;
+  }
+  /* Near-black text on the brand blue: 6.4:1. White on it would fail. */
+  .btn-primary {
+    background: #1da1f2;
+    color: #14171a;
+  }
+  /* For night backgrounds (heroes) */
+  .btn-quiet {
+    border: 2px solid #38444d;
+    color: #fff;
+  }
+
+  /* The quiet button for light backgrounds */
+  .btn-outline {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    font-size: 17px;
+    font-weight: 800;
+    border: 2px solid #cbd5e1;
+  }
+
+  .section {
+    max-width: 72rem;
+    margin-inline: auto;
+    padding: 56px 16px;
+  }
+  .section-title {
+    font-size: clamp(28px, 7vw, 44px);
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    max-width: 20ch;
+  }
+  /* Body text under section titles */
+  .section-text {
+    margin-top: 12px;
+    max-width: 38rem;
+    font-size: 18px;
+    line-height: 1.55;
+    color: #475569;
+  }
+  /* A large closing line in the app's violet ink, such as the store listing's
+     "Privacy should not be a monthly bill." */
+  .statement {
+    max-width: 18ch;
+    font-size: clamp(26px, 7vw, 38px);
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    color: var(--ink-violet);
+  }
+
+  /* The app's tab colours: --tone for borders and dots, --ink for text */
+  .tone-blue {
+    --tone: #1da1f2;
+    --ink: var(--ink-blue);
+  }
+  .tone-orange {
+    --tone: #ff7a00;
+    --ink: var(--ink-orange);
+  }
+  .tone-violet {
+    --tone: #794bc4;
+    --ink: var(--ink-violet);
+  }
+  .tone-pink {
+    --tone: #f91880;
+    --ink: var(--ink-pink);
+  }
+  .tone-green {
+    --tone: #00ba7c;
+    --ink: var(--ink-green);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .section-text {
+      color: #cbd5e1;
+    }
+    .btn-outline {
+      border-color: #38444d;
+    }
+  }
+  @media (min-width: 768px) {
+    .section {
+      padding: 80px 24px;
     }
   }
 }

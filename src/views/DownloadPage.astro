@@ -1,0 +1,48 @@
+---
+// Download: one card per platform. Store links never name a country; each store
+// shows the visitor what is available where they live.
+import PageHero from "../components/PageHero.astro";
+import PlatformCards from "../components/PlatformCards.astro";
+import { softwareApplication } from "../data/jsonld";
+import { localePath, useStrings, type Language } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t } = useStrings(lang.code);
+const jsonLd = softwareApplication(lang, "download/", t("meta.download.description"));
+---
+
+<Base lang={lang} title={t("meta.download.title")} description={t("meta.download.description")} image="/og/download.png" jsonLd={jsonLd}>
+  <PageHero title={t("download.title")} tagline={t("home.phones.text")} lead={t("home.pricing.text")} />
+
+  <section class="section" aria-label={t("download.title")}>
+    <PlatformCards lang={lang} mode="download" heading="h2" />
+    <p class="section-text">{t("download.availability")}</p>
+  </section>
+
+  <section class="section start" aria-labelledby="download-start">
+    <h2 id="download-start" class="section-title">{t("download.start.title")}</h2>
+    <p class="section-text">{t("download.start.text")}</p>
+    <p class="section-text">
+      <a href={`${localePath(lang.code, "support/")}#faq`}>{t("pricing.questionsLink")}</a>
+    </p>
+  </section>
+</Base>
+
+<style>
+  .section:first-of-type :global(.cards) {
+    margin-top: 0;
+  }
+  .start {
+    padding-top: 0;
+  }
+  .start a {
+    font-weight: 700;
+    color: var(--ink-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

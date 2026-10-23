@@ -1,0 +1,112 @@
+---
+// Long text (privacy policy, legal page, blog posts) on a white card with the
+// app's 24px radius and 2px border, as the old privacy page had.
+interface Props {
+  class?: string;
+}
+const { class: className = "" } = Astro.props;
+---
+
+<div class:list={["prose", className]}>
+  <slot />
+</div>
+
+<style>
+  .prose {
+    max-width: 42rem;
+    background: #fff;
+    border: 2px solid #e2e8f0;
+    border-radius: 24px;
+    padding: 24px 20px;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #334155;
+  }
+  .prose :global(h2) {
+    margin: 32px 0 10px;
+    font-size: 21px;
+    line-height: 1.25;
+    font-weight: 800;
+    color: #0f172a;
+  }
+  .prose :global(h3) {
+    margin: 24px 0 8px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #0f172a;
+  }
+  .prose :global(:is(h2, h3):first-child) {
+    margin-top: 0;
+  }
+  .prose :global(p + p),
+  .prose :global(:is(ul, ol, figure, blockquote)) {
+    margin-top: 14px;
+  }
+  .prose :global(ul) {
+    list-style: disc;
+    padding-inline-start: 22px;
+  }
+  .prose :global(ol) {
+    list-style: decimal;
+    padding-inline-start: 22px;
+  }
+  .prose :global(li + li) {
+    margin-top: 6px;
+  }
+  .prose :global(strong) {
+    color: #1e293b;
+  }
+  .prose :global(a) {
+    font-weight: 700;
+    color: var(--ink-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .prose :global(code) {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 15px;
+    font-weight: 700;
+    background: #f1f5f9;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  /* The app's identity (pink) and vault (blue) file colours, as ink for contrast */
+  .prose :global(code.k1) {
+    color: var(--ink-pink);
+  }
+  .prose :global(code.k2) {
+    color: var(--ink-blue);
+  }
+  .prose :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  .prose :global(figcaption) {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #64748b;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .prose {
+      background: #1e2732;
+      border-color: #38444d;
+      color: #cbd5e1;
+    }
+    .prose :global(:is(h2, h3, strong)) {
+      color: #fff;
+    }
+    .prose :global(code) {
+      background: #15202b;
+    }
+    .prose :global(figcaption) {
+      color: #94a3b8;
+    }
+  }
+  @media (min-width: 768px) {
+    .prose {
+      padding: 40px;
+    }
+  }
+</style>

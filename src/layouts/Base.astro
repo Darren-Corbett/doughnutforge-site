@@ -9,10 +9,14 @@ interface Props {
   lang: Language;
   title: string;
   description: string;
-  jsonLd?: Record<string, unknown>;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   noindex?: boolean;
+  /** Social preview image, from public/og/ */
+  image?: string;
+  /** Set on blog posts */
+  article?: { published: Date; modified?: Date; author: string };
 }
-const { lang, title, description, jsonLd, noindex } = Astro.props;
+const { lang, title, description, jsonLd, noindex, image, article } = Astro.props;
 const { t } = useStrings(lang.code);
 ---
 
@@ -28,7 +32,15 @@ const { t } = useStrings(lang.code);
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <SEO title={title} description={description} lang={lang.hreflang} jsonLd={jsonLd} noindex={noindex} />
+    <SEO
+      title={title}
+      description={description}
+      lang={lang.hreflang}
+      jsonLd={jsonLd}
+      noindex={noindex}
+      image={image}
+      article={article}
+    />
   </head>
   <body class="flex min-h-dvh flex-col">
     <a

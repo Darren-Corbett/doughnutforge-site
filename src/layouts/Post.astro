@@ -1,0 +1,102 @@
+---
+// One blog post: the night hero with title, author and date, the text on a
+// Prose card, Article structured data, and a short call to action at the end.
+import PageHero from "../components/PageHero.astro";
+import Prose from "../components/Prose.astro";
+import type { Post } from "../data/blog";
+import { site } from "../data/site";
+import { fill, localePath, useStrings, type Language } from "../i18n";
+import Base from "./Base.astro";
+
+interface Props {
+  lang: Language;
+  post: Post;
+  url: string;
+}
+const { lang, post, url } = Astro.props;
+const { t } = useStrings(lang.code);
+const { title, description, author, date, updated, image, draft } = post.data;
+const dateText = new Intl.DateTimeFormat(lang.hreflang, { dateStyle: "long" }).format(date);
+// "By {author}, {date}": the date goes in a <time> element, wherever the language puts it
+const [beforeDate = "", afterDate = ""] = fill(t("blog.byline"), { author }).split("{date}");
+const ogImage = `/og/blog/${url.split("/").filter(Boolean).at(-1)}.png`;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description,
+  inLanguage: lang.hreflang,
+  datePublished: date.toISOString(),
+  ...(updated && { dateModified: updated.toISOString() }),
+  author: { "@type": "Person", name: author },
+  publisher: { "@type": "Organization", name: site.name, url: site.url },
+  mainEntityOfPage: new URL(url, site.url).href,
+  image: new URL(image ? image.src : ogImage, site.url).href,
+};
+---
+
+<Base
+  lang={lang}
+  title={`${title} | ${site.name}`}
+  description={description}
+  image={ogImage}
+  jsonLd={jsonLd}
+  noindex={draft}
+  article={{ published: date, modified: updated, author }}
+>
+  <PageHero title={title}>
+    <p class="byline">
+      {beforeDate}<time datetime={date.toISOString().slice(0, 10)}>{dateText}</time>{afterDate}
+      {draft && <span class="draft">{t("blog.draft")}</span>}
+    </p>
+  </PageHero>
+  <div class="section">
+    <Prose>
+      <slot />
+    </Prose>
+    <aside class="cta" aria-labelledby="post-cta">
+      <h2 id="post-cta">{t("blog.cta.title")}</h2>
+      <p>{t("blog.cta.text")}</p>
+      <a class="btn-primary" href={localePath(lang.code, "download/")}>{t("button.getApp")}</a>
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .byline {
+    font-size: 16px;
+    font-weight: 700;
+    color: #cbd5e1;
+  }
+  .draft {
+    margin-inline-start: 10px;
+    padding: 2px 10px;
+    border-radius: 9999px;
+    background: rgb(255 122 0 / 0.2);
+    color: #ff8e26;
+  }
+  .cta {
+    margin-top: 32px;
+    max-width: 42rem;
+    padding: 24px 20px;
+    border-radius: 24px;
+    background: #15202b;
+    color: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    .cta {
+      border: 2px solid #38444d;
+    }
+  }
+  .cta h2 {
+    font-size: 24px;
+    font-weight: 900;
+  }
+  .cta p {
+    margin: 8px 0 20px;
+    font-size: 17px;
+    line-height: 1.55;
+    color: #cbd5e1;
+  }
+</style>

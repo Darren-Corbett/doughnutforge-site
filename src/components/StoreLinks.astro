@@ -3,7 +3,7 @@
 // coming: never a badge or a link for a platform that is not available.
 import StoreBadge from "./StoreBadge.astro";
 import { platforms } from "../data/stores";
-import { useStrings, type Language } from "../i18n";
+import { fill, listOf, useStrings, type Language } from "../i18n";
 
 interface Props {
   lang: Language;
@@ -13,8 +13,9 @@ const { t } = useStrings(lang.code);
 const available = platforms.filter((p) => p.status === "available");
 const coming = platforms.filter((p) => p.status === "coming").map((p) => t(`platform.${p.id}`));
 // "iPhone and iPad, Linux and Android", joined by each language's own rules
-const comingList = new Intl.ListFormat(lang.hreflang, { type: "conjunction" }).format(coming);
-const note = [coming.length ? t("download.coming").replace("{platforms}", comingList) : "", t("download.availability")].join(" ").trim();
+const note = [coming.length ? fill(t("download.coming"), { platforms: listOf(lang, coming) }) : "", t("download.availability")]
+  .join(" ")
+  .trim();
 ---
 
 <div class="-m-3 flex flex-wrap">

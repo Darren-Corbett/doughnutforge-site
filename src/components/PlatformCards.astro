@@ -1,0 +1,106 @@
+---
+// One card per platform, in the order of src/data/stores.ts: the store badge
+// where the app is on sale, "Coming soon" with no link where it is not.
+import StoreBadge from "./StoreBadge.astro";
+import { platforms, type PlatformId } from "../data/stores";
+import { fill, useStrings, type Language, type UiKey } from "../i18n";
+
+interface Props {
+  lang: Language;
+  /** Download shows system requirements; pricing shows how each is bought */
+  mode: "download" | "pricing";
+  heading: "h2" | "h3";
+}
+const { lang, mode, heading: Heading } = Astro.props;
+const { t } = useStrings(lang.code);
+
+// Only platforms on sale have requirements, taken from the app repo's build settings
+const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
+  mac: "download.requires.mac",
+  windows: "download.requires.windows",
+};
+---
+
+<ul class="cards" role="list">
+  {
+    platforms.map((p) => (
+      <li class:list={["card", p.status === "available" ? "on-sale" : "coming"]}>
+        <Heading class="name">{t(`platform.${p.id}`)}</Heading>
+        {p.status === "available" ? (
+          <>
+            <p class="status">
+              {mode === "pricing"
+                ? fill(t("pricing.oneTime"), { store: t(`store.${p.store}`) })
+                : REQUIRES[p.id] && t(REQUIRES[p.id]!)}
+            </p>
+            <div class="badge">
+              <StoreBadge store={p.store} storeId={p.storeId} lang={lang} />
+            </div>
+          </>
+        ) : (
+          <p class="status">{t("status.comingSoon")}</p>
+        )}
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .cards {
+    display: grid;
+    gap: 16px;
+    margin-top: 28px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 22px;
+    border-radius: 20px;
+    background: #fff;
+    border: 2px solid #e2e8f0;
+  }
+  .on-sale {
+    border-color: #00ba7c;
+  }
+  .name {
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+  }
+  .status {
+    margin-top: 6px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #475569;
+  }
+  .coming .status {
+    font-weight: 800;
+    color: var(--ink-blue);
+  }
+  .badge {
+    margin: 10px -12px -12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .card {
+      background: #1e2732;
+      border-color: #38444d;
+    }
+    .on-sale {
+      border-color: #00ba7c;
+    }
+    .status {
+      color: #cbd5e1;
+    }
+  }
+  @media (min-width: 640px) {
+    .cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1024px) {
+    .cards {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

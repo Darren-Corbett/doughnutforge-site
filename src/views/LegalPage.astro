@@ -1,0 +1,68 @@
+---
+// Legal information: the company details a UK limited company must show on its
+// website, and the trademark notices for the store names and badges on the site.
+import PageHero from "../components/PageHero.astro";
+import Prose from "../components/Prose.astro";
+import { company } from "../data/company";
+import { localePath, useStrings, type Language } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t } = useStrings(lang.code);
+
+const details = [
+  [t("legal.company.name"), company.name],
+  [t("footer.registered"), company.registeredIn],
+  [t("footer.companyNumber"), company.number],
+  [t("footer.registeredOffice"), company.registeredOffice],
+  [t("legal.company.contact"), company.contact],
+];
+---
+
+<Base lang={lang} title={t("meta.legal.title")} description={t("meta.legal.description")} image="/og/legal.png">
+  <PageHero title={t("legal.title")} />
+  <div class="section">
+    <Prose>
+      <h2>{t("legal.company.title")}</h2>
+      <dl>
+        {
+          details.map(([term, value]) => (
+            <div>
+              <dt>{term}</dt>
+              <dd>{value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+
+      <h2>{t("legal.trademarks.title")}</h2>
+      <p>{t("legal.trademarks.apple")}</p>
+      <p>{t("legal.trademarks.microsoft")}</p>
+      <p>{t("legal.trademarks.other")}</p>
+
+      <h2>{t("legal.privacy.title")}</h2>
+      <p>
+        {t("legal.privacy.text")} <a href={localePath(lang.code, "privacy/")}>{t("nav.privacy")}</a>.
+      </p>
+    </Prose>
+  </div>
+</Base>
+
+<style>
+  dl div {
+    padding: 8px 0;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  dt {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  @media (prefers-color-scheme: dark) {
+    dl div {
+      border-color: #38444d;
+    }
+  }
+</style>

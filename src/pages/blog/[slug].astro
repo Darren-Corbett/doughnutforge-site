@@ -1,0 +1,19 @@
+---
+// English blog posts. Drafts are built only in dev or with DRAFTS=1 (see src/data/blog.ts).
+import type { GetStaticPaths } from "astro";
+import { render } from "astro:content";
+import { getPosts, postSlug, type Post as PostEntry } from "../../data/blog";
+import { getLanguage, localePath } from "../../i18n";
+import Post from "../../layouts/Post.astro";
+
+export const getStaticPaths = (async () =>
+  (await getPosts("en")).map((post) => ({ params: { slug: postSlug(post) }, props: { post } }))) satisfies GetStaticPaths;
+
+const { post } = Astro.props as { post: PostEntry };
+const lang = getLanguage("en");
+const { Content } = await render(post);
+---
+
+<Post lang={lang} post={post} url={localePath(lang.code, `blog/${postSlug(post)}/`)}>
+  <Content />
+</Post>

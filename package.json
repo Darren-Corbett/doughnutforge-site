@@ -4,13 +4,14 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build && node scripts/check-production-files.mjs && node scripts/check-placeholders.mjs",
-    "build:deploy": "astro check && astro build && node scripts/check-production-files.mjs && node scripts/check-placeholders.mjs --strict",
+    "build": "astro check && astro build && node scripts/check-production-files.mjs && node scripts/check-privacy-wording.mjs && node scripts/check-placeholders.mjs",
+    "build:deploy": "astro check && astro build && node scripts/check-production-files.mjs && node scripts/check-privacy-wording.mjs && node scripts/check-placeholders.mjs --strict",
     "preview": "astro preview",
     "sync:app": "node scripts/sync-from-app.mjs",
     "badges": "node scripts/badge-coverage.mjs"
   },
   "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
     "@lucide/astro": "1.61.0",
     "@tailwindcss/vite": "4.3.3",
     "astro": "7.4.2",

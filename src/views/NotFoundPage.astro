@@ -1,0 +1,58 @@
+---
+// 404: GitHub Pages serves dist/404.html for any address that does not exist.
+import PageHero from "../components/PageHero.astro";
+import { localePath, useStrings, type Language } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t } = useStrings(lang.code);
+const links = [
+  { href: localePath(lang.code), label: t("nav.home") },
+  { href: localePath(lang.code, "features/"), label: t("nav.features") },
+  { href: localePath(lang.code, "download/"), label: t("nav.download") },
+  { href: localePath(lang.code, "support/"), label: t("nav.support") },
+];
+---
+
+<Base lang={lang} title={t("meta.notFound.title")} description={t("notFound.lead")} noindex>
+  <PageHero title={t("notFound.title")} lead={t("notFound.lead")} />
+  <section class="section" aria-label={t("notFound.try")}>
+    <p class="section-text">{t("notFound.try")}</p>
+    <ul class="links" role="list">
+      {
+        links.map((l) => (
+          <li>
+            <a href={l.href}>{l.label}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .links {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .links a {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    border-radius: 9999px;
+    border: 2px solid #cbd5e1;
+    font-size: 17px;
+    font-weight: 800;
+  }
+  @media (prefers-color-scheme: dark) {
+    .links a {
+      border-color: #38444d;
+    }
+  }
+</style>

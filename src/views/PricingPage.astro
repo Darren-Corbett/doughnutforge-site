@@ -1,0 +1,59 @@
+---
+// Pricing: no amounts, because each store shows the local price (amounts are kept
+// for reference in src/data/prices.ts). Each platform is its own one-time purchase.
+import PageHero from "../components/PageHero.astro";
+import PlatformCards from "../components/PlatformCards.astro";
+import { localePath, useStrings, type Language } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t, store } = useStrings(lang.code);
+
+// "No subscription. No account. No servers." from the store's promotional text
+const never = store.mac.promotionalText.split(/(?<=\.)\s+/).slice(0, 3).join(" ");
+// The store's no-subscription paragraph without "You pay once, and the app is yours."
+const offline = store.mac.noSubscription.split(/(?<=\.)\s+/).slice(0, -1).join(" ");
+---
+
+<Base lang={lang} title={t("meta.pricing.title")} description={t("meta.pricing.description")} image="/og/pricing.png">
+  <PageHero title={t("home.pricing.title")} lead={t("home.pricing.text")} />
+
+  <section class="section" aria-labelledby="pricing-where">
+    <h2 id="pricing-where" class="section-title">{t("pricing.where.title")}</h2>
+    <p class="section-text">{t("pricing.where.text")}</p>
+    <PlatformCards lang={lang} mode="pricing" heading="h3" />
+    <p class="section-text">{t("download.availability")}</p>
+  </section>
+
+  <section class="section never" aria-labelledby="pricing-never">
+    <h2 id="pricing-never" class="section-title">{never}</h2>
+    <p class="section-text">{offline}</p>
+    <p class="statement bill">{store.mac.closing}</p>
+    <p class="questions">
+      {t("pricing.questions")}{" "}
+      <a href={`${localePath(lang.code, "support/")}#faq`}>{t("pricing.questionsLink")}</a>.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .never {
+    padding-top: 0;
+  }
+  .bill {
+    margin-top: 28px;
+  }
+  .questions {
+    margin-top: 28px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .questions a {
+    color: var(--ink-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

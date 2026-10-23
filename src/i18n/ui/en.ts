@@ -12,6 +12,9 @@ export default {
   "nav.download": "Download",
   "nav.support": "Support",
   "nav.privacy": "Privacy policy",
+  "nav.blog": "Blog",
+  "nav.press": "Press kit",
+  "nav.legal": "Legal",
   "nav.home": "Doughnut Forge home",
   "skip": "Skip to content",
 
@@ -49,6 +52,180 @@ export default {
   "badge.app-store": "Download on the App Store",
   "badge.microsoft-store": "Download from the Microsoft Store",
   "badge.google-play": "Get it on Google Play",
+
+  // ===================================================================
+  // NEW COPY: for approval. Everything from here to the footer strings was
+  // written for Phase 2 and is not in the app or the store listings.
+  // ===================================================================
+
+  "button.getApp": "Get Doughnut Forge",
+  "store.mac-app-store": "Mac App Store",
+  "store.app-store": "App Store",
+  "store.microsoft-store": "Microsoft Store",
+  "store.google-play": "Google Play",
+  "status.comingSoon": "Coming soon",
+
+  // Features page
+  "meta.features.title": "Features: offline encryption for files, folders and text | Doughnut Forge",
+  "meta.features.description":
+    "Encrypt files, folders and text on your own computer, share them with people you trust, and keep them protected for the long term. No account and no servers.",
+  "features.title": "Everything Doughnut Forge does",
+  "features.private.title": "Private from the start",
+  "features.offline.title": "Works without the internet",
+  "features.languages.label": "Languages",
+  "features.ios.text": "The iPhone and iPad app adds a few things of its own.",
+  "features.ios.altEncrypting": "Doughnut Forge on iPhone: a video being encrypted, 75% done",
+  "features.ios.altContacts": "Doughnut Forge on iPhone: the Contacts screen with three trusted contacts",
+  "features.ios.altIpad": "Doughnut Forge on iPad: the Secure File screen with Encrypt File and Decrypt File",
+  "features.cta.title": "Ready to keep your files private?",
+
+  // Pricing page
+  "meta.pricing.title": "Pricing: a one-time purchase, never a subscription | Doughnut Forge",
+  "meta.pricing.description":
+    "Buy Doughnut Forge once for each platform you use, from that platform's store. No subscription, no account and nothing to renew.",
+  "pricing.where.title": "Where to buy",
+  "pricing.where.text":
+    "Each platform is a separate purchase from its own store. Buying on Mac does not include Windows, and buying on Windows does not include Mac.",
+  "pricing.oneTime": "One-time purchase from the {store}",
+  "pricing.questions": "Questions about buying?",
+  "pricing.questionsLink": "See the answers on the support page",
+
+  // Download page
+  "meta.download.title": "Download Doughnut Forge for Mac and Windows",
+  "meta.download.description":
+    "Get Doughnut Forge from the Mac App Store or the Microsoft Store. Versions for iPhone and iPad, Linux and Android are coming soon.",
+  "download.title": "Download Doughnut Forge",
+  "download.requires.mac": "Needs macOS 12 Monterey or later.",
+  "download.requires.windows": "Needs Windows 11.",
+  "download.start.title": "When you first open it",
+  "download.start.text":
+    "Doughnut Forge asks you to set a password for this device and then creates your identity. It gives you a 24-word backup phrase: write it down and keep it somewhere safe, because it is the only way to restore your access.",
+
+  // Support page
+  "meta.support.title": "Support and frequently asked questions | Doughnut Forge",
+  "meta.support.description":
+    "Get help with Doughnut Forge: answers to common questions, and how to ask a question or report a problem on GitHub.",
+  "support.title": "Get help with Doughnut Forge",
+  "support.lead": "Most questions are answered below. For anything else, ask on GitHub.",
+  "support.ask.title": "Ask a question or report a problem",
+  "support.ask.text":
+    "Support happens on GitHub, in public, so everyone can find the answers. Issues on GitHub are public: anyone can read what you write. You need a free GitHub account to open one.",
+  "support.ask.warning":
+    "Never attach vault files, identity files, your backup phrase (recovery words), passwords or passphrases, or screenshots that show them.",
+  "support.ask.new": "Open a new issue",
+  "support.ask.search": "Search existing issues",
+  "support.privacy.title": "Privacy questions",
+  "support.faq.title": "Frequently asked questions",
+
+  "faq.subscription.q": "Is Doughnut Forge a subscription?",
+  "faq.subscription.a":
+    "No. Doughnut Forge is a one-time purchase, never a subscription. You buy it once from the store for your platform, and there is nothing to renew.",
+  "faq.platforms.q": "If I buy it on Mac, do I also get it on Windows?",
+  "faq.platforms.a":
+    "No. Each platform is a separate purchase from its own store: the Mac App Store for Mac and the Microsoft Store for Windows. Buy it once for each platform you use.",
+  "faq.offline.q": "Do I need an account or an internet connection?",
+  "faq.offline.a":
+    "No. There is no account to create, and Doughnut Forge works entirely on your device, even without an internet connection. You only need a connection to download the app, or if you choose to send encrypted files over the internet.",
+  "faq.storage.q": "Where are my files and keys kept?",
+  "faq.storage.a":
+    "On your device. Your password and keys are never stored on a server or sent across the network. Encrypted files go wherever you choose to save or send them.",
+  "faq.backup.q": "How do I back up my identity?",
+  "faq.backup.a":
+    "When you create your identity, the app shows you a 24-word backup phrase. Write it down and keep it somewhere safe: it is all you need to restore your identity. The app also offers to save the phrase as a PDF. That PDF holds the same 24 words and is not protected by a password, so keep it as safe as the phrase itself. Your contacts are not part of the backup phrase, so export them from Contacts if you want a copy.",
+  "faq.restore.q": "How do I restore my identity?",
+  "faq.restore.a":
+    "Install Doughnut Forge on the new device, set a password, then choose Restore Identity and enter your 24-word backup phrase. Nothing else is needed, and it works across platforms, for example from a Mac to a Windows PC. Restoring brings back your identity, so files encrypted for it open again. Your contacts do not come back with it.",
+  "faq.share.q": "How do I share an encrypted file with someone?",
+  "faq.share.a":
+    "Ask the other person for their contact card (a .vltc2 file) and add it to your Contacts. Then encrypt the file and choose them as someone who can open it. Send the encrypted file any way you like, such as by email, in a messaging app or on a USB stick. Only the people you chose can open it.",
+  "faq.recipient.q": "Does the other person need Doughnut Forge to open it?",
+  "faq.recipient.a":
+    "Yes. They open it in Doughnut Forge with their own identity. That is what keeps it private: no one without one of the chosen identities can open it.",
+  "faq.which.q": "Which platforms can I use it on?",
+  // {available} and {coming} are lists such as "Mac and Windows"
+  "faq.which.a": "Doughnut Forge is available for {available}. {coming} are coming soon.",
+  "faq.data.q": "Does Doughnut Forge or this website collect any data?",
+  "faq.data.a":
+    "No. The app has no tracking, analytics or crash reporting, and this website has no analytics, cookies or tracking scripts. Apple and Microsoft may share aggregated statistics, such as download counts, that contain no personal details. GitHub, which hosts this website, may log technical information such as your IP address. The privacy policy has the details.",
+  "faq.quantum.q": "What does post-quantum encryption mean?",
+  "faq.quantum.a":
+    "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Post-quantum encryption is designed to resist them. Doughnut Forge uses it, so what you protect today stays protected as computers become more powerful.",
+
+  // Privacy page (the policy text itself is word for word from forge-privacy, in src/content/legal/privacy/)
+  "meta.privacy.title": "Privacy Policy | Doughnut Forge",
+  "meta.privacy.description":
+    "How Doughnut Forge handles your data. The app keeps your files and keys on your device, and neither the app nor this website tracks you.",
+
+  // Press page
+  "meta.press.title": "Press kit: icons, screenshots and facts | Doughnut Forge",
+  "meta.press.description":
+    "App icons, screenshots, a fact sheet and ready-to-use descriptions of Doughnut Forge for articles, reviews and videos.",
+  "press.title": "Press kit",
+  "press.lead": "Everything you need to write about Doughnut Forge: descriptions, facts, icons and screenshots.",
+  "press.about.title": "About Doughnut Forge",
+  "press.about.short": "Short description",
+  "press.about.long": "Long description",
+  "press.facts.title": "Fact sheet",
+  "press.facts.name": "Name",
+  "press.facts.developer": "Developer",
+  "press.facts.available": "Available for",
+  "press.facts.coming": "Coming soon",
+  "press.facts.price": "Price",
+  "press.facts.priceValue": "One-time purchase for each platform, never a subscription",
+  "press.facts.languages": "Languages",
+  "press.facts.firstRelease": "First released",
+  "press.facts.website": "Website",
+  "press.facts.contact": "Press contact",
+  "press.icons.title": "App icon",
+  "press.icons.rounded": "App icon, rounded",
+  "press.icons.light": "App icon, square, light",
+  "press.icons.dark": "App icon, square, dark",
+  "press.icons.mono": "App icon, mono",
+  "press.shots.title": "Screenshots",
+  "press.shots.text": "These show the iPhone and iPad app, which is coming soon.",
+  "press.shots.encrypting": "Encrypting a file",
+  "press.download": "PNG, {width} × {height}",
+  "press.usage.title": "Using these files",
+  "press.usage.text":
+    "You may use these descriptions, icons and screenshots in articles, reviews and videos about Doughnut Forge. Please do not change the shape or colours of the icon.",
+
+  // Legal page
+  "meta.legal.title": "Legal information | Doughnut Forge",
+  "meta.legal.description": "Company details for Doughnut Forge, and trademark notices.",
+  "legal.title": "Legal information",
+  "legal.company.title": "Company details",
+  "legal.company.name": "Company name",
+  "legal.company.contact": "Contact",
+  "legal.trademarks.title": "Trademarks",
+  "legal.trademarks.apple":
+    "Apple, the Apple logo, Mac, iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store and Mac App Store are service marks of Apple Inc.",
+  "legal.trademarks.microsoft": "Microsoft, Windows and the Microsoft Store logo are trademarks of the Microsoft group of companies.",
+  "legal.trademarks.other":
+    "Android is a trademark of Google LLC. Linux is the registered trademark of Linus Torvalds in the U.S. and other countries.",
+  "legal.privacy.title": "Privacy",
+  "legal.privacy.text": "How Doughnut Forge handles data is set out in the",
+
+  // Blog
+  "meta.blog.title": "Blog: plain-language guides to private files | Doughnut Forge",
+  "meta.blog.description": "Plain-language guides to encrypting files, sharing them safely and keeping your data private.",
+  "blog.title": "Blog",
+  "blog.lead": "Plain-language guides to keeping your files private.",
+  "blog.empty": "No posts yet.",
+  "blog.draft": "Draft",
+  // {author} and {date}
+  "blog.byline": "By {author}, {date}",
+  "blog.cta.title": "Try Doughnut Forge",
+  "blog.cta.text": "Encrypt files on your own computer and share them with the people you trust.",
+
+  // 404
+  "meta.notFound.title": "Page not found | Doughnut Forge",
+  "notFound.title": "Page not found",
+  "notFound.lead": "There is nothing at this address. The page may have moved, or the address may have a typing mistake.",
+  "notFound.try": "Try one of these instead:",
+
+  // ===================================================================
+  // End of new copy
+  // ===================================================================
 
   "footer.product": "Product",
   "footer.help": "Help",

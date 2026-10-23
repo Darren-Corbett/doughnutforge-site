@@ -1,0 +1,86 @@
+---
+// The blog's list of posts, newest first. Until a post is published it says so,
+// and is kept out of search results and the sitemap.
+import PageHero from "../components/PageHero.astro";
+import { getPosts, postSlug } from "../data/blog";
+import { localePath, useStrings, type Language } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t } = useStrings(lang.code);
+const posts = await getPosts(lang.code);
+const date = new Intl.DateTimeFormat(lang.hreflang, { dateStyle: "long" });
+---
+
+<Base lang={lang} title={t("meta.blog.title")} description={t("meta.blog.description")} image="/og/blog.png" noindex={posts.length === 0}>
+  <PageHero title={t("blog.title")} lead={t("blog.lead")} />
+  <section class="section" aria-label={t("blog.title")}>
+    {
+      posts.length === 0 ? (
+        <p class="section-text">{t("blog.empty")}</p>
+      ) : (
+        <ul class="posts" role="list">
+          {posts.map((post) => (
+            <li>
+              <h2>
+                <a href={localePath(lang.code, `blog/${postSlug(post)}/`)}>{post.data.title}</a>
+              </h2>
+              <p class="meta">
+                <time datetime={post.data.date.toISOString().slice(0, 10)}>{date.format(post.data.date)}</time>
+                {post.data.draft && <span class="draft">{t("blog.draft")}</span>}
+              </p>
+              <p class="description">{post.data.description}</p>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </section>
+</Base>
+
+<style>
+  .posts {
+    max-width: 46rem;
+  }
+  .posts li {
+    padding: 24px 0;
+    border-top: 3px solid #1da1f2;
+  }
+  h2 {
+    font-size: clamp(22px, 6vw, 28px);
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+  }
+  h2 a:hover {
+    color: var(--ink-blue);
+  }
+  .meta {
+    margin-top: 6px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #475569;
+  }
+  .draft {
+    padding: 2px 10px;
+    border-radius: 9999px;
+    background: rgb(255 122 0 / 0.15);
+    color: var(--ink-orange);
+  }
+  .description {
+    margin-top: 8px;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  @media (prefers-color-scheme: dark) {
+    .meta {
+      color: #cbd5e1;
+    }
+  }
+</style>
