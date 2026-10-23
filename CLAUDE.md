@@ -4,6 +4,8 @@ Marketing and support site for Doughnut Forge, an offline-first encryption app f
 
 The app repo is at ~/git/doughnut-forge. Read it for style, copy and languages. Never edit it from this repo.
 
+At the start of each session, read docs/HANDOVER.md; at the end of each phase, update it.
+
 ## Goals
 
 Every plan must say how it serves both goals.
