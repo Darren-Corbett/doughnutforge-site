@@ -13,10 +13,13 @@ interface Props {
   alternates?: Alternate[];
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   noindex?: boolean;
-  article?: { published: Date; modified?: Date; author: string };
+  /** Blog posts. The author is the organisation, named by og:site_name, so there is no article:author */
+  article?: { published: Date; modified?: Date };
+  /** Link the blog's RSS feed (only once a post is published) */
+  feed?: boolean;
 }
 
-const { title, description, lang, image = "/og/default.png", alternates = [], jsonLd, noindex = false, article } = Astro.props;
+const { title, description, lang, image = "/og/default.png", alternates = [], jsonLd, noindex = false, article, feed = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const imageUrl = new URL(image, Astro.site).href;
 const ogLocale = lang.replace("-", "_");
@@ -31,6 +34,7 @@ const ogAlternates = alternates
 <meta name="description" content={description} />
 {noindex ? <meta name="robots" content="noindex, nofollow" /> : <link rel="canonical" href={canonical} />}
 {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+{feed && <link rel="alternate" type="application/rss+xml" title={`${site.name} blog`} href="/rss.xml" />}
 
 <meta property="og:type" content={article ? "article" : "website"} />
 {
@@ -38,7 +42,6 @@ const ogAlternates = alternates
     <>
       <meta property="article:published_time" content={article.published.toISOString()} />
       {article.modified && <meta property="article:modified_time" content={article.modified.toISOString()} />}
-      <meta property="article:author" content={article.author} />
     </>
   )
 }

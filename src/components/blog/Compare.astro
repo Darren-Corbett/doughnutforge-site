@@ -1,0 +1,86 @@
+---
+// A two-sided illustration for blog posts: the same thing done two ways, side by
+// side from 560px and stacked on phones. All words are HTML.
+import type { AstroComponent } from "@lucide/astro";
+
+type Tone = "blue" | "green" | "orange" | "violet" | "pink";
+interface Side {
+  icon: AstroComponent;
+  title: string;
+  tone: Tone;
+  points: string[];
+}
+interface Props {
+  caption: string;
+  sides: [Side, Side];
+}
+const { caption, sides } = Astro.props;
+---
+
+<figure class="compare">
+  <div class="sides">
+    {
+      sides.map(({ icon: Icon, title, tone, points }) => (
+        <div class={`side tone-${tone}`}>
+          <p class="title">
+            <span class="icon" aria-hidden="true">
+              <Icon size={24} stroke-width={2.4} />
+            </span>
+            {title}
+          </p>
+          <ul role="list">
+            {points.map((point) => (
+              <li>{point}</li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+  <figcaption>{caption}</figcaption>
+</figure>
+
+<style>
+  .sides {
+    display: grid;
+    gap: 14px;
+  }
+  .side {
+    padding: 18px 16px;
+    border-radius: 16px;
+    border: 2px solid var(--tone);
+    background: color-mix(in srgb, var(--tone) 8%, transparent);
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.25;
+    color: var(--ink);
+  }
+  .icon {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--tone) 20%, transparent);
+  }
+  .side ul {
+    margin-top: 12px;
+    padding-inline-start: 0;
+    list-style: none;
+  }
+  .side li {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+  @media (min-width: 560px) {
+    .sides {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

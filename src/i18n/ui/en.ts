@@ -202,8 +202,7 @@ export default {
   "blog.lead": "Plain-language guides to keeping your files private.",
   "blog.empty": "No posts yet.",
   "blog.draft": "Draft",
-  // {author} and {date}
-  "blog.byline": "By {author}, {date}",
+  "blog.feed": "RSS feed",
   "blog.cta.title": "Try Doughnut Forge",
   "blog.cta.text": "Encrypt files on your own computer and share them with the people you trust.",
 

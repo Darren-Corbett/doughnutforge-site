@@ -55,9 +55,9 @@ const titles = async (code) => {
 const posts = {};
 const blogDir = join(SITE, "src/content/blog/en");
 if (existsSync(blogDir)) {
-  for (const file of readdirSync(blogDir).filter((f) => /^[^_].*\.md$/.test(f))) {
+  for (const file of readdirSync(blogDir).filter((f) => /^[^_].*\.mdx?$/.test(f))) {
     const title = /^title:\s*["']?(.+?)["']?\s*$/m.exec(readFileSync(join(blogDir, file), "utf8"))?.[1];
-    if (title) posts[file.replace(/\.md$/, "")] = title;
+    if (title) posts[file.replace(/\.mdx?$/, "")] = title;
   }
 }
 

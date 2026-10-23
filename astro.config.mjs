@@ -1,6 +1,7 @@
 // @ts-check
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { defineConfig } from "astro/config";
+import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import languageData from "./src/i18n/languages.json" with { type: "json" };
@@ -25,11 +26,11 @@ const blogDir = "./src/content/blog";
 const published = existsSync(blogDir)
   ? readdirSync(blogDir, { recursive: true })
       .map(String)
-      .filter((f) => /(^|\/)[^_/][^/]*\.md$/.test(f) && /^draft:\s*false\s*$/m.test(readFileSync(`${blogDir}/${f}`, "utf8")))
+      .filter((f) => /(^|\/)[^_/][^/]*\.mdx?$/.test(f) && /^draft:\s*false\s*$/m.test(readFileSync(`${blogDir}/${f}`, "utf8")))
       .map((f) => {
         const [lang, file] = f.split("/");
         const path = languageData.languages.find((l) => l.code === lang)?.path ?? lang;
-        return `${lang === "en" ? "" : `/${path}`}/blog/${file.replace(/\.md$/, "")}/`;
+        return `${lang === "en" ? "" : `/${path}`}/blog/${file.replace(/\.mdx?$/, "")}/`;
       })
   : [];
 
@@ -61,6 +62,7 @@ export default defineConfig({
   build: { format: "directory" },
   i18n,
   integrations: [
+    mdx(),
     sitemap({
       filter: inSitemap,
       // Alternate-language links: exactly the hreflang list in each page's <head>

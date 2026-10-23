@@ -1,8 +1,8 @@
 ---
-// The blog's list of posts, newest first. Until a post is published it says so,
-// and is kept out of search results and the sitemap.
+// The blog's list of posts, newest first. Until a post is published it is kept
+// out of search results and the sitemap; with no posts at all it says so.
 import PageHero from "../components/PageHero.astro";
-import { getPosts, postSlug } from "../data/blog";
+import { getPosts, getPublishedPosts, postSlug } from "../data/blog";
 import { localePath, useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -12,10 +12,13 @@ interface Props {
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
 const posts = await getPosts(lang.code);
+// Indexed, and linked to the feed, only once a post is published: a DRAFTS=1
+// preview lists drafts but stays out of search results
+const hasPublished = (await getPublishedPosts(lang.code)).length > 0;
 const date = new Intl.DateTimeFormat(lang.hreflang, { dateStyle: "long" });
 ---
 
-<Base lang={lang} title={t("meta.blog.title")} description={t("meta.blog.description")} image="/og/blog.png" noindex={posts.length === 0}>
+<Base lang={lang} title={t("meta.blog.title")} description={t("meta.blog.description")} image="/og/blog.png" noindex={!hasPublished} feed={hasPublished}>
   <PageHero title={t("blog.title")} lead={t("blog.lead")} />
   <section class="section" aria-label={t("blog.title")}>
     {
@@ -36,6 +39,13 @@ const date = new Intl.DateTimeFormat(lang.hreflang, { dateStyle: "long" });
             </li>
           ))}
         </ul>
+      )
+    }
+    {
+      hasPublished && (
+        <p class="feed">
+          <a href="/rss.xml">{t("blog.feed")}</a>
+        </p>
       )
     }
   </section>
@@ -72,6 +82,15 @@ const date = new Intl.DateTimeFormat(lang.hreflang, { dateStyle: "long" });
     border-radius: 9999px;
     background: rgb(255 122 0 / 0.15);
     color: var(--ink-orange);
+  }
+  .feed {
+    margin-top: 24px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .feed a {
+    color: var(--ink-blue);
+    text-decoration: underline;
   }
   .description {
     margin-top: 8px;

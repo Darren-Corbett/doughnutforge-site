@@ -1,11 +1,13 @@
 ---
-// One blog post: the night hero with title, author and date, the text on a
-// Prose card, Article structured data, and a short call to action at the end.
+// One blog post: the night hero with title and date, the text on a Prose card,
+// Article structured data, and a short call to action at the end. Posts are by
+// the organisation, so the page shows no author name; the structured data names
+// Doughnut Forge as an Organization.
 import PageHero from "../components/PageHero.astro";
 import Prose from "../components/Prose.astro";
 import type { Post } from "../data/blog";
 import { site } from "../data/site";
-import { fill, localePath, useStrings, type Language } from "../i18n";
+import { localePath, useStrings, type Language } from "../i18n";
 import Base from "./Base.astro";
 
 interface Props {
@@ -15,12 +17,11 @@ interface Props {
 }
 const { lang, post, url } = Astro.props;
 const { t } = useStrings(lang.code);
-const { title, description, author, date, updated, image, draft } = post.data;
+const { title, description, date, updated, image, draft } = post.data;
 const dateText = new Intl.DateTimeFormat(lang.hreflang, { dateStyle: "long" }).format(date);
-// "By {author}, {date}": the date goes in a <time> element, wherever the language puts it
-const [beforeDate = "", afterDate = ""] = fill(t("blog.byline"), { author }).split("{date}");
 const ogImage = `/og/blog/${url.split("/").filter(Boolean).at(-1)}.png`;
 
+const organisation = { "@type": "Organization", name: site.name, url: site.url };
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -29,8 +30,8 @@ const jsonLd = {
   inLanguage: lang.hreflang,
   datePublished: date.toISOString(),
   ...(updated && { dateModified: updated.toISOString() }),
-  author: { "@type": "Person", name: author },
-  publisher: { "@type": "Organization", name: site.name, url: site.url },
+  author: organisation,
+  publisher: organisation,
   mainEntityOfPage: new URL(url, site.url).href,
   image: new URL(image ? image.src : ogImage, site.url).href,
 };
@@ -43,11 +44,12 @@ const jsonLd = {
   image={ogImage}
   jsonLd={jsonLd}
   noindex={draft}
-  article={{ published: date, modified: updated, author }}
+  article={{ published: date, modified: updated }}
+  feed={!draft}
 >
   <PageHero title={title}>
     <p class="byline">
-      {beforeDate}<time datetime={date.toISOString().slice(0, 10)}>{dateText}</time>{afterDate}
+      <time datetime={date.toISOString().slice(0, 10)}>{dateText}</time>
       {draft && <span class="draft">{t("blog.draft")}</span>}
     </p>
   </PageHero>

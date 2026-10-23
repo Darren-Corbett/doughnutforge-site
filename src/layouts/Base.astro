@@ -15,9 +15,11 @@ interface Props {
   /** Social preview image, from public/og/ */
   image?: string;
   /** Set on blog posts */
-  article?: { published: Date; modified?: Date; author: string };
+  article?: { published: Date; modified?: Date };
+  /** Link the blog's RSS feed in <head> */
+  feed?: boolean;
 }
-const { lang, title, description, jsonLd, noindex, image, article } = Astro.props;
+const { lang, title, description, jsonLd, noindex, image, article, feed } = Astro.props;
 const { t } = useStrings(lang.code);
 
 // A draft translation is built and reachable from the language switcher, but not
@@ -57,6 +59,7 @@ const ogImage =
       alternates={alternates}
       image={ogImage}
       article={article}
+      feed={feed}
     />
   </head>
   <body class="flex min-h-dvh flex-col">
