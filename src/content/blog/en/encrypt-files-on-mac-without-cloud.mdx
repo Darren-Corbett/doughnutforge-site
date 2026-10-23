@@ -1,0 +1,82 @@
+---
+title: How to encrypt files on a Mac without using the cloud
+description: Simple ways to encrypt a file or folder on your Mac so it stays on your computer, using tools built into macOS or Doughnut Forge.
+keyphrase: encrypt files on Mac without cloud
+date: 2026-10-23
+draft: true
+lang: en
+---
+import Flow from "../../../components/blog/Flow.astro";
+import FolderPlus from "@lucide/astro/icons/folder-plus";
+import FileLock from "@lucide/astro/icons/file-lock";
+import UserRound from "@lucide/astro/icons/user-round";
+import LockKeyhole from "@lucide/astro/icons/lock-keyhole";
+
+**In short:** you can encrypt files on a Mac without uploading them anywhere. macOS can make an encrypted disk image that opens with a password. Doughnut Forge encrypts single files or whole folders on your Mac, and can also lock them for other people you choose. Both work without an internet connection.
+
+## Why "without the cloud" matters
+
+Many ways of protecting files involve sending them somewhere first: a storage service, an online converter, an account you sign in to. Each of those is one more place your file exists, and one more company that holds a copy.
+
+If the file is encrypted on your own Mac, the only thing that ever leaves it is the locked version. You decide where that goes, or whether it goes anywhere at all.
+
+## Option 1: an encrypted disk image, built into macOS
+
+Disk Utility, in the Utilities folder of your Mac, can make a disk image: a single file that opens like a drive. You can protect it with a password and keep private documents inside it. Apple's guide, [Create a disk image using Disk Utility](https://support.apple.com/guide/disk-utility/create-a-disk-image-dskutl11888/mac), gives the full steps. In outline:
+
+1. Open Disk Utility and choose **File > New Image > Blank Image**.
+2. Give the image a name and a size large enough for your files, and choose **APFS** as the format.
+3. Open the **Encryption** menu and choose an encryption option.
+4. Enter and re-enter a password, then click **Choose**. Keep the other settings as they are, then click **Save**.
+5. Open the image, copy your files into it, and eject it when you are done.
+
+Apple warns that if you forget the password, you will not be able to open the disk image or see any of the files in it. Write the password down somewhere safe.
+
+A disk image suits files you want to keep to yourself on one Mac. Anyone you give it to needs the same password, so sharing it means finding a safe way to pass that password on.
+
+**What about FileVault?** FileVault protects the startup disk of your Mac, so your data needs your login password to be read ([Apple: Protect data on your Mac with FileVault](https://support.apple.com/guide/mac-help/protect-data-on-your-mac-with-filevault-mh11785/mac)). It is worth turning on. But it protects what is on that disk. A copy you put on a USB stick or attach to an email is outside it, so FileVault alone does not protect files you move or send.
+
+## Option 2: Doughnut Forge
+
+Doughnut Forge encrypts files, folders and text on your Mac. It needs no account and works entirely on your computer, even without an internet connection. It runs on macOS 12 Monterey or later.
+
+### Set it up once
+
+When you first open the app, you choose a password, which must be rated **Strong** before you can save it. Then you create your identity. The app shows you a **24-word backup phrase**. Write it down and keep it somewhere safe: it is the way back to your identity if you ever need it.
+
+The password cannot be reset. If you lose both the password and the backup phrase, your identity and your encrypted files cannot be recovered. No one can unlock them for you, because your password and keys are never stored on a server.
+
+### Encrypt a file or folder
+
+<Flow
+  caption="Encrypting a file in Doughnut Forge: add a folder, choose Encrypt File, pick who can open it, and the locked copy appears beside the original."
+  steps={[
+    { icon: FolderPlus, text: "Add a folder in Secure Directory", tone: "blue" },
+    { icon: FileLock, text: "Choose Encrypt File", tone: "blue" },
+    { icon: UserRound, text: "Who can open this? Just Me", tone: "violet" },
+    { icon: LockKeyhole, text: "A locked .vlt2 copy appears", tone: "green" },
+  ]}
+/>
+
+1. Open **Secure Directory** and click **Add Folder** to choose the folder that holds your files.
+2. Find the file or folder you want to protect, open its menu and choose **Encrypt File**.
+3. Under **Who can open this?**, **Just Me** is already selected. Leave it as it is to keep the file for yourself, or select contacts to share it (see [How to share encrypted files with someone you trust](/blog/share-encrypted-files/)).
+4. Click **Encrypt Selection**.
+
+A new file ending in `.vlt2` appears in the same folder. That is the locked copy. Your original file is kept. Check that the locked copy opens before you delete the original yourself.
+
+### Open it again
+
+Open the `.vlt2` file's menu and choose **Decrypt & Extract**. Choose a **Save Location**, then click **Decrypt File**. The original file is saved where you chose.
+
+## Keep your backup phrase safe
+
+Whichever option you use, the weak point is the secret that opens the files. For a disk image, that is the password. For Doughnut Forge, it is your password and your backup phrase. Keep the backup phrase on paper, somewhere private, and never type it into a website or send it to anyone.
+
+## Which option to choose
+
+- **Only for yourself, on one Mac:** an encrypted disk image does the job, at no cost.
+- **Single files or folders, kept or sent:** Doughnut Forge locks each file on its own, so you can move or send it without a password travelling with it.
+- **Sharing with other people:** Doughnut Forge lets you choose exactly who can open each file. [Why offline encryption keeps your files private](/blog/offline-encryption-privacy/) explains why that matters.
+
+Doughnut Forge is a one-time purchase on each platform, never a subscription. See the [features](/features/), or [download it for your Mac](/download/).
