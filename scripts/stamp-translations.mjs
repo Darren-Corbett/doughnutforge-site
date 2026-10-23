@@ -38,7 +38,10 @@ const refused = [];
 for (const code of codes) {
   const ui = await load(code);
   const keys = translatedKeys(code, ui, en);
-  const wanted = allKeys ? keys : keysArg.split(",");
+  // With --lang all, a key a language does not translate (en-US inherits most of
+  // UK English) is skipped; for a single language it is a mistake
+  const asked = allKeys ? keys : keysArg.split(",");
+  const wanted = langArg === "all" ? asked.filter((k) => keys.includes(k)) : asked;
   const unknown = wanted.filter((k) => !keys.includes(k));
   if (unknown.length) {
     console.error(`${code}: not translated keys: ${unknown.join(", ")}`);
