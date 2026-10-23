@@ -11,9 +11,10 @@ interface Props {
   image?: string;
   alternates?: Alternate[];
   jsonLd?: Record<string, unknown>;
+  noindex?: boolean;
 }
 
-const { title, description, lang, image = "/og/default.png", alternates = [], jsonLd } = Astro.props;
+const { title, description, lang, image = "/og/default.png", alternates = [], jsonLd, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const imageUrl = new URL(image, Astro.site).href;
 const ogLocale = lang.replace("-", "_");
@@ -21,7 +22,7 @@ const ogLocale = lang.replace("-", "_");
 
 <title>{title}</title>
 <meta name="description" content={description} />
-<link rel="canonical" href={canonical} />
+{noindex ? <meta name="robots" content="noindex, nofollow" /> : <link rel="canonical" href={canonical} />}
 {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
 
 <meta property="og:type" content="website" />

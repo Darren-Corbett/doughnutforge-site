@@ -63,8 +63,7 @@ const langs = langsArg === "all" ? allCodes : langsArg.split(",");
 
 // --- App strings: only the keys the site uses -----------------------------
 const APP_KEYS = {
-  app: ["navigation.tabs.vault", "navigation.tabs.mobile-vault", "navigation.tabs.text-vault", "navigation.tabs.identity", "navigation.tabs.contacts"],
-  "mobile-views": ["secureFile.privacy.title"],
+  app: ["navigation.tabs.vault", "navigation.tabs.text-vault", "navigation.tabs.identity", "navigation.tabs.contacts"],
 };
 
 const pick = (obj, path) => path.split(".").reduce((o, k) => o?.[k], obj);
@@ -117,11 +116,12 @@ for (const lang of langs) {
 
 // --- Screenshots: resized and stored as high-quality WebP to keep the repo small;
 // Astro sizes them again per device at build time.
-// The Mac shots are cropped close to the app window so the app stays legible on a phone.
-const MAC_WINDOW = { left: 436, top: 233, width: 2000, height: 1286 };
+// iPhone screenshots only: the phone app leads on the site. Add a Mac screenshot
+// here once there is one of a clean demo folder (the current ones show .DS_Store).
 const SCREENSHOTS = [
-  [".app_store/light/light-1.png", "mac-secure-directory-light.webp", 2000, MAC_WINDOW],
-  [".app_store/dark/dark-1.png", "mac-secure-directory-dark.webp", 2000, MAC_WINDOW],
+  ["fastlane/screenshots/ios/en-GB/iphone_01_secure_file.png", "iphone-secure-file.webp", 900],
+  ["fastlane/screenshots/ios/en-GB/iphone_04_secure_text.png", "iphone-secure-text.webp", 900],
+  ["fastlane/screenshots/ios/en-GB/iphone_05_identity.png", "iphone-identity.webp", 900],
 ];
 
 mkdirSync(join(SITE, "src/assets/app"), { recursive: true });
@@ -139,14 +139,12 @@ const ICON = join(APP, "src-tauri/app-icon.png");
 await sharp(ICON).resize(256).png().toFile(join(SITE, "src/assets/brand/app-icon.png"));
 console.log("wrote src/assets/brand/app-icon.png");
 
-const store = JSON.parse(readFileSync(join(SITE, "src/i18n/store/en.json"), "utf8"));
-const escapeXml = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 const ogText = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <rect width="1200" height="630" fill="#f5f8fa"/>
   <rect x="0" y="606" width="1200" height="24" fill="#1da1f2"/>
   <text x="440" y="270" font-family="Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="800" fill="#14171a">Doughnut Forge</text>
-  <text x="440" y="350" font-family="Helvetica Neue, Arial, sans-serif" font-size="40" font-weight="700" fill="#09649c">${escapeXml(store.mac.subtitle)}</text>
-  <text x="440" y="420" font-family="Helvetica Neue, Arial, sans-serif" font-size="30" font-weight="600" fill="#536471">No subscription. No account. No servers.</text>
+  <text x="440" y="345" font-family="Helvetica Neue, Arial, sans-serif" font-size="40" font-weight="800" fill="#09649c">Keep private files private.</text>
+  <text x="440" y="410" font-family="Helvetica Neue, Arial, sans-serif" font-size="30" font-weight="600" fill="#536471">Only the people you choose can open them.</text>
 </svg>`);
 const ogIcon = await sharp(ICON).resize(300).png().toBuffer();
 await sharp(ogText)

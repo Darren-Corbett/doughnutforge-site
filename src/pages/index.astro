@@ -1,13 +1,13 @@
 ---
-import { Ban, CloudOff, FileKey, FingerprintPattern, FolderLock, Languages, ServerOff, ShieldCheck, UserX, Users, WifiOff } from "@lucide/astro";
-import macDark from "../assets/app/mac-secure-directory-dark.webp";
-import macLight from "../assets/app/mac-secure-directory-light.webp";
-import Button from "../components/Button.astro";
-import FeatureItem from "../components/FeatureItem.astro";
-import IconTile from "../components/IconTile.astro";
-import PlatformList from "../components/PlatformList.astro";
-import Screenshot from "../components/Screenshot.astro";
-import Section from "../components/Section.astro";
+// Home page. Shows encryption instead of describing it: the same note as a
+// stranger sees it and as your contact sees it. Phones lead because the iPhone
+// app is the face of the product; Mac and Windows are on sale today.
+import iphoneIdentity from "../assets/app/iphone-identity.webp";
+import iphoneFile from "../assets/app/iphone-secure-file.webp";
+import iphoneText from "../assets/app/iphone-secure-text.webp";
+import Ciphertext from "../components/Ciphertext.astro";
+import Phone from "../components/Phone.astro";
+import StoreLinks from "../components/StoreLinks.astro";
 import { site } from "../data/site";
 import { getLanguage, localePath, useStrings } from "../i18n";
 import Base from "../layouts/Base.astro";
@@ -16,27 +16,19 @@ const lang = getLanguage("en");
 const { t, app, store } = useStrings(lang.code);
 
 // Feature titles and text come from the Mac store listing, so they match the
-// store wording and are already translated. Labels are the app's own tab names.
-// Only the Mac listing is used while iPhone and iPad are "coming".
-const featureStyle = [
-  { icon: FolderLock, color: "blue", label: app("app:navigation.tabs.vault") },
-  { icon: FileKey, color: "orange", label: app("app:navigation.tabs.text-vault") },
-  { icon: FingerprintPattern, color: "violet", label: app("app:navigation.tabs.identity") },
-  { icon: Users, color: "pink", label: app("app:navigation.tabs.contacts") },
-  { icon: ShieldCheck, color: "green", label: undefined },
-  { icon: Languages, color: "blue", label: undefined },
-] as const;
-if (store.mac.features.length !== featureStyle.length) {
-  throw new Error(`The store listing has ${store.mac.features.length} features; index.astro styles ${featureStyle.length}.`);
+// store wording and are already translated. Row names are the app's own tab names.
+const [encFiles, encText, identity, share, longTerm, language] = store.mac.features;
+if (!encFiles || !encText || !identity || !share || !longTerm || !language) {
+  throw new Error(`The store listing has ${store.mac.features.length} features; the home page expects 6.`);
 }
-const features = store.mac.features.map((f, i) => ({ ...f, ...featureStyle[i]! }));
+// The headline is the store description's first sentence; the next one is the lead.
+const [headline, lead] = store.mac.opening.split(/(?<=\.)\s+/);
 
-const promises = [
-  { icon: Ban, text: t("home.promise.subscription") },
-  { icon: UserX, text: t("home.promise.account") },
-  { icon: ServerOff, text: t("home.promise.servers") },
-  { icon: CloudOff, text: t("home.promise.tracking") },
-  { icon: WifiOff, text: t("home.promise.offline") },
+const rows = [
+  { name: app("app:navigation.tabs.vault"), tone: "blue", ...encFiles },
+  { name: app("app:navigation.tabs.text-vault"), tone: "orange", ...encText },
+  { name: app("app:navigation.tabs.identity"), tone: "violet", ...identity },
+  { name: app("app:navigation.tabs.contacts"), tone: "pink", ...share },
 ];
 
 const jsonLd = {
@@ -52,80 +44,409 @@ const jsonLd = {
 };
 ---
 
-<Base lang={lang} title={t("meta.home.title")} description={t("meta.home.description")} jsonLd={jsonLd}>
-  <!-- Hero -->
-  <div class="mx-auto w-full max-w-6xl px-4 pt-10 pb-4 sm:px-6 md:pt-16">
-    <div class="mx-auto max-w-3xl text-center">
-      <p class="text-ink-blue text-[13px] font-extrabold tracking-widest uppercase">{t("home.eyebrow")}</p>
-      <h1 class="mt-3 text-[36px] leading-[1.1] font-extrabold tracking-tight sm:text-[48px] md:text-[60px]">
-        {store.mac.opening.split(". ")[0]}.
-      </h1>
-      <p class="text-ink-blue mt-4 text-[20px] font-extrabold md:text-[24px]">{store.mac.subtitle}</p>
-      <p class="mt-4 text-[17px] leading-relaxed text-slate-600 md:text-[19px] dark:text-slate-300">
-        {store.mac.opening.split(". ").slice(1).join(". ")}
-      </p>
-      <div class="mt-7 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-        <Button href="#download">{t("home.cta.primary")}</Button>
-        <Button href="#features" variant="secondary">{t("home.cta.secondary")}</Button>
+<Base lang={lang} title={t("meta.home.title")} description={t("meta.home.description")} jsonLd={jsonLd} headerTone="night">
+  <section class="hero" aria-labelledby="home-title">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1 id="home-title">{headline}</h1>
+        <p class="tagline">{t("home.tagline")}</p>
+        <p class="lead">{lead}</p>
+        <div class="actions">
+          <a class="btn-primary" href="#download">{t("home.cta.primary")}</a>
+          <a class="btn-quiet" href="#features">{t("home.cta.secondary")}</a>
+        </div>
+      </div>
+
+      <div class="specimen">
+        <figure class="pane pane-stranger">
+          <figcaption><span class="dot dot-blue" aria-hidden="true"></span>{t("home.specimen.stranger")}</figcaption>
+          <div class="stack">
+            <p class="layer layer-plain" aria-hidden="true">{t("home.specimen.note")}</p>
+            <Ciphertext class="layer layer-cipher" length={150} label={t("home.specimen.cipherLabel")} />
+            <span class="scan" aria-hidden="true"></span>
+          </div>
+        </figure>
+        <figure class="pane pane-contact">
+          <figcaption><span class="dot dot-green" aria-hidden="true"></span>{t("home.specimen.contact")}</figcaption>
+          <p class="note">{t("home.specimen.note")}</p>
+        </figure>
+        <p class="caption">{t("home.specimen.caption")}</p>
       </div>
     </div>
+  </section>
 
-    <h2 class="sr-only">{t("home.promise.label")}</h2>
-    <ul class="mx-auto mt-8 flex max-w-4xl flex-wrap justify-center gap-2" role="list">
+  <section class="phones" aria-labelledby="home-phones">
+    <div class="phones-inner">
+      <h2 id="home-phones">{t("home.phones.title")}</h2>
+      <p>{t("home.phones.text")}</p>
+      <ul class="phone-row" role="list">
+        <li><Phone src={iphoneText} sizes="(min-width: 768px) 240px, 46vw" alt={t("home.phones.altText")} /></li>
+        <li><Phone src={iphoneFile} sizes="(min-width: 768px) 240px, 46vw" alt={t("home.phones.altFile")} /></li>
+        <li class="third"><Phone src={iphoneIdentity} sizes="240px" alt={t("home.phones.altIdentity")} /></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="features" class="features" aria-labelledby="home-features">
+    <h2 id="home-features">{t("home.features.title")}</h2>
+    <ul class="rows" role="list">
       {
-        promises.map(({ icon: Icon, text }) => (
-          <li class="inline-flex min-h-10 items-center gap-2 rounded-full border-2 border-[#00BA7C]/40 bg-[#00BA7C]/10 px-4 py-1.5 text-[14px] font-extrabold dark:bg-[#00BA7C]/15">
-            <Icon size={18} stroke-width={2.6} class="text-ink-green shrink-0" aria-hidden="true" />
-            {text}
+        rows.map((r) => (
+          <li class:list={["row", `tone-${r.tone}`]}>
+            <p class="row-name">{r.name}</p>
+            <div>
+              <h3>{r.title}</h3>
+              <p>{r.text}</p>
+            </div>
           </li>
         ))
       }
     </ul>
-
-    <div class="mx-auto mt-10 max-w-5xl overflow-hidden rounded-[16px] border-2 border-slate-200 shadow-2xl shadow-slate-400/40 md:rounded-[24px] dark:border-forge-border-dark dark:shadow-black/50">
-      <Screenshot
-        light={macLight}
-        dark={macDark}
-        alt={t("home.screenshot.mac")}
-        sizes="(min-width: 1088px) 1024px, calc(100vw - 2rem)"
-        eager
-      />
-    </div>
-  </div>
-
-  <Section id="features" title={t("home.features.title")}>
-    <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" role="list">
-      {
-        features.map(({ icon: Icon, color, label, title, text }) => (
-          <FeatureItem color={color} label={label} title={title}>
-            <Icon slot="icon" size={22} stroke-width={2.4} aria-hidden="true" />
-            {text}
-          </FeatureItem>
-        ))
-      }
-    </ul>
-
-    <div
-      class="mt-6 flex flex-col gap-1.5 rounded-[20px] border-2 border-[#00BA7C]/40 bg-[#00BA7C]/10 px-5 py-4 md:px-6 dark:bg-[#00BA7C]/15"
-    >
-      <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
-        <IconTile color="green"><ShieldCheck size={22} stroke-width={2.6} aria-hidden="true" /></IconTile>
-        <p class="text-[17px] leading-snug font-extrabold">{app("mobile-views:secureFile.privacy.title")}</p>
+    <div class="extras">
+      <div>
+        <h3>{longTerm.title}</h3>
+        <p>{longTerm.text}</p>
       </div>
-      <p class="text-[15px] leading-relaxed font-semibold text-slate-600 dark:text-slate-300">{t("home.private.detail")}</p>
+      <div>
+        <h3>{language.title}</h3>
+        <p>{language.text}</p>
+      </div>
     </div>
-  </Section>
+  </section>
 
-  <Section id="pricing" title={t("home.pricing.title")}>
-    <div class="max-w-3xl">
-      <p class="text-[17px] leading-relaxed text-slate-600 md:text-[19px] dark:text-slate-300">{store.mac.noSubscription}</p>
-      <p class="mt-4 text-[17px] leading-relaxed font-bold md:text-[19px]">{t("home.pricing.text")}</p>
-      <p class="text-ink-violet mt-6 text-[22px] leading-snug font-extrabold md:text-[26px]">{store.mac.closing}</p>
-    </div>
-  </Section>
-
-  <Section id="download" title={t("home.download.title")}>
-    <PlatformList lang={lang} />
-    <p class="mt-5 text-[15px] text-slate-600 dark:text-slate-300">{t("home.download.availability")}</p>
-  </Section>
+  <section id="download" class="download" aria-labelledby="pricing">
+    <h2 id="pricing">{t("home.pricing.title")}</h2>
+    <p class="download-lead">{t("home.pricing.text")}</p>
+    <StoreLinks lang={lang} />
+  </section>
 </Base>
+
+<style>
+  /* Night hero in both themes: the app's dark surfaces, its blue and green inks. */
+  .hero {
+    --night: #15202b;
+    --panel: #1e2732;
+    --line: #38444d;
+    background: var(--night);
+    color: #fff;
+  }
+  .hero-inner {
+    max-width: 72rem;
+    margin-inline: auto;
+    padding: 40px 16px 48px;
+    display: grid;
+    gap: 36px;
+  }
+  h1 {
+    font-size: clamp(38px, 10.5vw, 76px);
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    max-width: 12ch;
+  }
+  /* Ink blue for dark backgrounds: 6.9:1 on the night colour */
+  .tagline {
+    margin-top: 16px;
+    max-width: 20ch;
+    font-size: clamp(22px, 6vw, 30px);
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: #4cb5f5;
+  }
+  .lead {
+    margin-top: 16px;
+    max-width: 34rem;
+    font-size: 18px;
+    line-height: 1.55;
+    color: #cbd5e1;
+  }
+  .actions {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .btn-primary,
+  .btn-quiet {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    font-size: 17px;
+    font-weight: 800;
+  }
+  /* Near-black text on the brand blue: 6.4:1. White on it would fail. */
+  .btn-primary {
+    background: #1da1f2;
+    color: #14171a;
+  }
+  .btn-quiet {
+    border: 2px solid var(--line);
+    color: #fff;
+  }
+
+  .specimen {
+    position: relative;
+  }
+  .pane {
+    border-radius: 20px;
+    padding: 18px 20px 22px;
+  }
+  .pane figcaption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    flex: none;
+  }
+  .dot-blue {
+    background: #1da1f2;
+  }
+  .dot-green {
+    background: #00ba7c;
+  }
+  .pane-stranger {
+    background: var(--panel);
+    border: 2px solid var(--line);
+    color: #4cb5f5;
+  }
+  .pane-contact {
+    position: relative;
+    margin-top: -14px;
+    margin-inline-start: 8%;
+    background: #fff;
+    color: #14171a;
+    border: 2px solid #00ba7c;
+    box-shadow: 0 18px 40px rgb(0 0 0 / 0.45);
+  }
+  .note,
+  .layer-plain {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  .stack {
+    position: relative;
+    display: grid;
+  }
+  .layer {
+    grid-area: 1 / 1;
+  }
+  .layer-plain {
+    color: #fff;
+    animation: hide-plain 1.8s cubic-bezier(0.65, 0, 0.35, 1) 0.6s both;
+  }
+  /* The ciphertext element belongs to the Ciphertext component, so it is reached with :global */
+  :global(.layer-cipher) {
+    grid-area: 1 / 1;
+    font-size: 15px;
+    line-height: 1.5;
+    animation: show-cipher 1.8s cubic-bezier(0.65, 0, 0.35, 1) 0.6s both;
+  }
+  .scan {
+    position: absolute;
+    top: -6px;
+    bottom: -6px;
+    width: 3px;
+    border-radius: 3px;
+    background: #1da1f2;
+    box-shadow: 0 0 18px #1da1f2;
+    animation: scan 1.8s cubic-bezier(0.65, 0, 0.35, 1) 0.6s both;
+  }
+  @keyframes show-cipher {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  @keyframes hide-plain {
+    from {
+      clip-path: inset(0 0 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 100%);
+    }
+  }
+  @keyframes scan {
+    from {
+      left: 0;
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    to {
+      left: 100%;
+      opacity: 0;
+    }
+  }
+  .caption {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #94a3b8;
+  }
+
+  /* Phones continue the night band: the iPhone app is dark, so it sits naturally here */
+  .phones {
+    background: #15202b;
+    color: #fff;
+    border-top: 2px solid #38444d;
+  }
+  .phones-inner {
+    max-width: 72rem;
+    margin-inline: auto;
+    padding: 44px 16px 56px;
+  }
+  .phones h2 {
+    font-size: clamp(26px, 7vw, 40px);
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+  }
+  .phones-inner > p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #cbd5e1;
+  }
+  .phone-row {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+  /* The middle phone sits lower, so the row reads as a set rather than a grid */
+  .phone-row li:nth-child(2) {
+    margin-top: 40px;
+  }
+  .phone-row .third {
+    display: none;
+  }
+
+  /* Features: the app's own tab names, each in its tab colour */
+  .features,
+  .download {
+    max-width: 72rem;
+    margin-inline: auto;
+    padding: 56px 16px;
+  }
+  .features h2,
+  .download h2 {
+    font-size: clamp(28px, 7vw, 44px);
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    max-width: 20ch;
+  }
+  .rows {
+    margin-top: 32px;
+  }
+  .row {
+    display: grid;
+    gap: 6px 32px;
+    padding: 22px 0 26px;
+    border-top: 3px solid var(--tone);
+  }
+  .row-name {
+    font-size: clamp(26px, 7vw, 36px);
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .row h3,
+  .extras h3 {
+    font-size: 19px;
+    font-weight: 800;
+  }
+  .row p:not(.row-name),
+  .extras p {
+    margin-top: 4px;
+    font-size: 17px;
+    line-height: 1.55;
+    max-width: 38rem;
+    color: #475569;
+  }
+  .tone-blue {
+    --tone: #1da1f2;
+    --ink: var(--ink-blue);
+  }
+  .tone-orange {
+    --tone: #ff7a00;
+    --ink: var(--ink-orange);
+  }
+  .tone-violet {
+    --tone: #794bc4;
+    --ink: var(--ink-violet);
+  }
+  .tone-pink {
+    --tone: #f91880;
+    --ink: var(--ink-pink);
+  }
+  .extras {
+    display: grid;
+    gap: 24px;
+    margin-top: 12px;
+    padding-top: 26px;
+    border-top: 3px solid #00ba7c;
+  }
+  .download-lead {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 34rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .row p:not(.row-name),
+    .extras p {
+      color: #cbd5e1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-inner {
+      padding: 72px 24px 80px;
+    }
+    .phones-inner {
+      padding: 64px 24px 80px;
+    }
+    .phone-row {
+      grid-template-columns: repeat(3, minmax(0, 240px));
+      gap: 32px;
+    }
+    .phone-row .third {
+      display: block;
+    }
+    .row {
+      grid-template-columns: 5fr 7fr;
+      align-items: baseline;
+    }
+    .extras {
+      grid-template-columns: 1fr 1fr;
+    }
+    .features,
+    .download {
+      padding: 80px 24px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .hero-inner {
+      grid-template-columns: 6fr 6fr;
+      align-items: center;
+      gap: 56px;
+    }
+  }
+</style>

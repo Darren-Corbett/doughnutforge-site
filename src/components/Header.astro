@@ -1,5 +1,8 @@
 ---
-// Site header. On phones the links sit in a <details> menu, so it works without JavaScript.
+// Site header. Two looks:
+// - "default": on phones the links sit in a <details> menu (works without JavaScript).
+// - "night": joins a dark hero; all links stay visible on phones in a row under the
+//   logo, so nothing is hidden behind a menu button.
 import { Menu } from "@lucide/astro";
 import { site } from "../data/site";
 import { localePath, useStrings, type Language } from "../i18n";
@@ -7,8 +10,9 @@ import Logo from "./Logo.astro";
 
 interface Props {
   lang: Language;
+  tone?: "default" | "night";
 }
-const { lang } = Astro.props;
+const { lang, tone = "default" } = Astro.props;
 const { t } = useStrings(lang.code);
 
 // Phase 1: only the home page exists, so links go to its sections. Phase 2 points them at pages.
@@ -20,8 +24,32 @@ const links = [
 ];
 const linkClass =
   "flex min-h-11 items-center rounded-full px-4 text-[15px] font-bold text-slate-700 hover:bg-[#1DA1F2]/10 hover:text-ink-blue dark:text-slate-200";
+const nightLinkClass =
+  "flex min-h-11 items-center rounded-full px-1.5 text-[15px] font-bold text-slate-200 hover:bg-white/10 hover:text-white sm:px-4";
 ---
 
+{
+  tone === "night" ? (
+    <header class="bg-[#15202b] text-white">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-3 gap-y-1 px-4 pt-2.5 pb-1.5 sm:px-6 md:pb-2.5">
+        <a href={localePath(lang.code)} class="flex min-h-11 items-center gap-2.5" aria-label={t("nav.home")}>
+          <Logo />
+          <span class="text-[18px] font-extrabold tracking-tight">{site.name}</span>
+        </a>
+        <nav aria-label={t("nav.label")} class="basis-full md:basis-auto">
+          <ul class="flex flex-wrap items-center justify-between md:justify-end md:gap-1" role="list">
+            {links.map((l) => (
+              <li>
+                <a class={nightLinkClass} href={l.href}>
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
+  ) : (
 <header class="border-b-2 border-slate-200 bg-white/90 dark:border-forge-border-dark dark:bg-forge-surface-dark/90">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6">
     <a href={localePath(lang.code)} class="flex min-h-11 items-center gap-2.5" aria-label={t("nav.home")}>
@@ -53,3 +81,5 @@ const linkClass =
     </details>
   </div>
 </header>
+  )
+}

@@ -1,0 +1,24 @@
+---
+// An illustration of encrypted text: random characters, not real Doughnut Forge
+// output. Ciphertext is not language, so it is the one place lines may break
+// anywhere.
+const CIPHER =
+  "vqV0LIui+80jelcucVDioeKSuffL7H7tzlfVS7D6eaU9R2X0kpMFB1rB25J9m1DNM2WJC3uHAiC/7tGWpscMYtodSk6GzBCJ70zomkyBcGd4G+rgVxaLGh12YE7S3UmOe9pzv6v/1RqxbzkS2WJYkEOr/c1KT9CbdsZhbdvYJ+xsysVzlwvsjxnbOTUcjlRMQDTU+Ctsm54zoEbPVu+7+asU1AAvnkXFX6Lv252PuDVBEll+UY/X53xeRfJbAE+bnwkJXiqutnnDkKHJQJ5+DDtfFkwljjOIEbQkSZgNOXAgS4jCp/MpqLOXQu9DeVXUzgdm4rfs0n8+ofwEzMpMBJi";
+interface Props {
+  /** What a screen reader announces instead of the characters */
+  label: string;
+  length?: number;
+  class?: string;
+}
+const { label, length = 220, class: className = "" } = Astro.props;
+---
+
+<p class:list={["cipher", className]} translate="no"><span class="sr-only">{label}</span><span aria-hidden="true">{CIPHER.slice(0, length)}</span></p>
+
+<style>
+  .cipher {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+</style>
