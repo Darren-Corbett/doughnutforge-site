@@ -7,7 +7,6 @@ export default {
     "Encrypt files, folders and text on your computer and share them with the people you trust. No account, no servers, no subscription: a one-time purchase for each platform.",
 
   "nav.label": "Main",
-  "nav.menu": "Menu",
   "nav.features": "Features",
   "nav.pricing": "Pricing",
   "nav.download": "Download",
