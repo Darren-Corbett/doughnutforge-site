@@ -42,6 +42,10 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
+          # Without this the upload drops every file or folder whose name starts
+          # with a dot, including .well-known/apple-app-site-association, which
+          # the Mac and iOS apps need for password-manager linking, and .nojekyll
+          include-hidden-files: true
 
   deploy:
     needs: build
@@ -52,3 +56,13 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+      # The live site must serve the apps' association file: fail the run if not
+      - name: Check apple-app-site-association is live
+        run: |
+          for i in 1 2 3 4 5 6; do
+            if curl -fsS https://doughnut-forge.app/.well-known/apple-app-site-association -o aasa.json; then break; fi
+            sleep 20
+          done
+          grep -q "J74UEFCGU7.com.darrencorbett.doughnutforge\"" aasa.json
+          grep -q "J74UEFCGU7.com.darrencorbett.doughnutforge.mobile" aasa.json
+          echo "apple-app-site-association is live"
