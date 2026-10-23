@@ -5,6 +5,9 @@ import review from "./review.json";
 
 export type Alternate = { hreflang: string; href: string };
 
+/** The pages that exist in every language, as paths without the language folder */
+export const translatedPages = ["", "features/", "pricing/", "download/", "privacy/", "support/", "press/", "legal/"];
+
 const SITE = "https://doughnut-forge.app";
 const reviewed = (code: string) => (review as Record<string, { status: string }>)[code]?.status === "reviewed";
 
@@ -15,10 +18,11 @@ export const EXTRA_HREFLANG: Record<string, string> = { en: "en", es: "es", "pt-
 
 /**
  * Every indexable version of a page, `page` being its path without the language
- * folder ("", "features/"). Empty for a page in a draft language: drafts are not indexed.
+ * folder ("", "features/"). Empty for a page in a draft language (drafts are not
+ * indexed) and for a page that exists in one language only, such as the blog.
  */
 export const alternatesFor = (code: string, page: string): Alternate[] => {
-  if (!reviewed(code)) return [];
+  if (!reviewed(code) || !translatedPages.includes(page)) return [];
   const href = (path: string) => `${SITE}/${path ? `${path}/` : ""}${page}`;
   const list: Alternate[] = [];
   for (const l of languageData.languages.filter((l) => reviewed(l.code))) {

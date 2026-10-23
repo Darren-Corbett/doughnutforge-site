@@ -58,8 +58,8 @@ export const localePath = (code: string, path = "/") => {
   return lang.code === defaultLanguage.code ? `/${clean}` : `/${lang.path}/${clean}`;
 };
 
-/** The pages that exist in every language, as paths without the language folder */
-export const translatedPages = ["", "features/", "pricing/", "download/", "privacy/", "support/", "press/", "legal/"];
+/** The pages that exist in every language (defined beside the hreflang rules) */
+export { translatedPages } from "./alternates";
 
 /** Splits a URL path into its language and the page path: "/de/features/" -> de, "features/" */
 export const splitPath = (pathname: string) => {
