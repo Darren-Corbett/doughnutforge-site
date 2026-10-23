@@ -14,7 +14,7 @@ export default {
   "nav.blogEnglish": "Blog (på engelsk)",
   "nav.press": "Pressekit",
   "nav.legal": "Juridisk",
-  "nav.home": "Doughnut Forges forside",
+  "nav.home": "Doughnut Forge, forside",
   "skip": "Gå til indholdet",
   "home.tagline": "Kun de personer, du vælger, kan åbne dem.",
   "home.cta.primary": "Hent Doughnut Forge",
