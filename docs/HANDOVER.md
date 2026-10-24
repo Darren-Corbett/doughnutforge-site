@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 24 October 2026, after Search Console was set up (deployed: `c042c5e`, the audit fixes, Stage 2)
+- **Last updated:** 24 October 2026, end of day, after the roadmap and security pages (`f3a577d`; pushed with this docs commit)
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
@@ -20,6 +20,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 | 4 | The four launch blog posts in English | **Done**: published 23 October 2026 (claims in `docs/BLOG-CLAIMS.md`) | `ee042f8` setup, `70f46f9` `c78eb76` `89ffe96` `8b7a3c4` `d0aca89` posts, `206e3dd` published |
 | 5 | Support issue forms and the "answered issues" Action | **Deferred to next week**, not part of launch | none |
 | 6 | SEO, Lighthouse and accessibility checks, launch | **Done: the site is live** (23 October 2026). Step 9 (Search Console) is done; steps 6 and 8 of `docs/launch/LAUNCH-CHECKLIST.md` are still open | `a2b003c` to `99d31ff`; forge-privacy `a9ed0d8` |
+| – | `/roadmap/`, `/security/` and `/.well-known/security.txt`, in all 30 languages | **Done** (24 October 2026); see "Roadmap and security pages" below | `a6d1d26` tests, `f3a577d` pages and translations |
 
 ### Why Phase 5 is deferred
 The owner moved it out of launch on 23 October 2026, to cut what launch depends on. Support at launch is what the site already has: `/support/` links to GitHub issues on forge-privacy and shows the bold never-attach warning in every language. No page links to "Answered questions" or "Known issues", and none may until Phase 5 ships. Phase 6 must not depend on anything from Phase 5. The full Phase 5 plan is under "Next week" in `docs/PLAN.md`, unchanged and ready to pick up.
@@ -32,13 +33,15 @@ Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the 
 
 - **The site is live** at https://doughnut-forge.app in all 30 languages (every language reviewed and indexed), with the four blog posts, served by GitHub Pages from GitHub Actions. **Every push to `main` deploys** within about two minutes. The deploy fails, and the live site stays as it was, if any check in `npm run build:deploy` fails or the live `apple-app-site-association` is missing.
 - **The old privacy page redirects:** forge-privacy `a9ed0d8` sends `darren-corbett.github.io/forge-privacy` (with or without the trailing slash, and every `?lang=`) to the matching `/privacy/` page. The store Support URL (forge-privacy issues) is unchanged.
-- **Working tree:** clean. The audit and every Stage 2 commit, up to `c042c5e`, were pushed and deployed on 24 October 2026.
+- **Working tree:** clean. Everything up to `f3a577d`, plus this docs commit, is committed; the owner asked for it to be pushed at the end of 24 October 2026. Read that deploy's log (see "What is next", item 0).
 - **Post-launch audit (24 October 2026):** [`docs/audit/2026-10-24.md`](audit/2026-10-24.md). It covers the owner's eight live-site issues and the full audit (246 pages × 30 languages × Chromium, WebKit and WebKit iPhone × five widths × two themes, axe, links, and real Mobile Safari in the iOS Simulator). There are no critical findings. The high ones are the deploy's missing live-page check (issue 1), store links not opening in a new tab (issue 5), the header wrapping at 320px with Display Zoom (issue 8), and a German FAQ heading that pans at 320px (issue 7). Issues 2 and 7 (English) did not reproduce, and the owner's device details are needed. **Stage 2 (24 October 2026) fixed H1, H2, H3, H4, M4 and L1**; see "Audit fixes" below.
 - **Launch incident:** the first deploy left out `.well-known/apple-app-site-association` for about 42 minutes (13:13 to 13:55 UTC), because the Pages upload drops files whose names start with a dot. Fixed in `42fb02c` (`include-hidden-files: true`, plus a live check at the end of the deploy job). Whether Apple fetched the file during the gap is unknown.
 
 ## What is next, in order
 
-0. **Audit follow-ups (waiting on the owner):**
+0. **Read the log of the 24 October end-of-day deploy** (the push of `856f15e` to this docs commit). Two steps run there for the first time: "Check private vulnerability reporting is on" (before the deploy) and "Check the live pages are this build", which now also compares the live `/.well-known/security.txt`. Then confirm `curl -sI https://doughnut-forge.app/.well-known/security.txt` returns 200 and `text/plain`, and that `/roadmap/` and `/security/` are live in a few languages.
+1. **Next job, next week: Phase 5**, the support issue forms and the answered-issues pages. The plan is under "Next week" in `docs/PLAN.md`. Plan it in plan mode first. When it ships, add the links to `/support/` and rerun the Phase 6 checks on the changed and new pages.
+2. **Audit follow-ups (waiting on the owner):**
    - **Stage 2 is live:** deploy run 40087614665 passed, including "Check Pages deploys from GitHub Actions" and "Check the live pages are this build", which ran there for the first time.
    - **M1, desktop widths:** waits for the owner's desktop screenshots. The current widths are tabled in the audit.
    - **Issues 2 and 7 (English):** wait for the owner's iPhone details (model, iOS version, Display Zoom, Safari aA zoom, content blockers) and the screen recording; plan them in plan mode when they arrive.
@@ -46,16 +49,49 @@ Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the 
    - **The iOS App Store ID** (issue 4): it does not exist yet, so iOS stays "Coming soon".
 
    **A branch rollback serves the old "Coming soon" placeholder at `/`** (the repo-root `index.html`), with no other pages, until the root files are removed on or after 6 November. Since H1, the deploy also stops unless Pages deploys from GitHub Actions, and fails if the live `/` and `/download/` are not the pages it built.
-1. **Step 8, store listing URLs (owner, in progress).**
+3. **Step 8, store listing URLs (owner, in progress).**
    - The app repo session is updating `fastlane/metadata/{mac,ios}/en-GB/privacy_url.txt` and `marketing_url.txt`.
    - Partner Center: the owner updates it by hand.
    - App Store Connect: set the same values by hand if the next fastlane upload does not send them. Privacy `https://doughnut-forge.app/privacy/`, Marketing `https://doughnut-forge.app/`, Support unchanged (`https://github.com/Darren-Corbett/forge-privacy/issues`).
-2. **Next week: Phase 5**, the support issue forms and the answered-issues pages. The plan is under "Next week" in `docs/PLAN.md`. When it ships, add the links to `/support/` and rerun the Phase 6 checks on the changed and new pages.
-3. **On or after 6 November 2026: step 6, remove the old root files.** Remove the root copies of `.well-known/`, `CNAME`, `.nojekyll`, the icons, `site.webmanifest` and `index.html`, and make `scripts/check-production-files.mjs` check the built files alone. Until then they are the rollback: switch Pages back to "Deploy from a branch" (`main`, root) **and push any commit**, because a source switch alone does not rebuild. That rollback restores only the apps' `apple-app-site-association`: the site itself becomes the old "Coming soon" placeholder at `/`, with no other pages. While Pages deploys from a branch, every push still starts the Actions deploy, which stops at "Check Pages deploys from GitHub Actions". That failure is expected during a rollback.
-4. **Step 9, Google Search Console: done (owner, 24 October 2026).** A Domain property for `doughnut-forge.app`, verified by a DNS TXT record, and `https://doughnut-forge.app/sitemap-index.xml` submitted. Nothing changed on the site: no tag, file or script, and no visitor tracking.
-5. **11 December 2026:** iOS launch pricing ends. Pages show no prices; update `src/data/prices.ts` so the record stays true.
-6. **When the copywriter's notes arrive:** follow "Post-launch copy review" below.
-7. **New blog posts:** no more than one or two a week, each starting as `draft: true` with a claims table in `docs/BLOG-CLAIMS.md`, published only on the owner's say-so.
+4. **When 0.4.44 is live in every store** (Mac App Store, Microsoft Store, App Store for iPhone and iPad): in `src/data/roadmap.ts`, set the identity item's status to `"shipped"`. Its wording stays the same, so nothing needs retranslating; the "Shipped" section then appears and the item loses its "Planned" label. On 24 October 2026 the owner said 0.4.44 was not yet live everywhere.
+5. **On or after 6 November 2026: step 6, remove the old root files.** Remove the root copies of `.well-known/`, `CNAME`, `.nojekyll`, the icons, `site.webmanifest` and `index.html`, and make `scripts/check-production-files.mjs` check the built files alone. Until then they are the rollback: switch Pages back to "Deploy from a branch" (`main`, root) **and push any commit**, because a source switch alone does not rebuild. That rollback restores only the apps' `apple-app-site-association`: the site itself becomes the old "Coming soon" placeholder at `/`, with no other pages. While Pages deploys from a branch, every push still starts the Actions deploy, which stops at "Check Pages deploys from GitHub Actions". That failure is expected during a rollback.
+6. **Step 9, Google Search Console: done (owner, 24 October 2026).** A Domain property for `doughnut-forge.app`, verified by a DNS TXT record, and `https://doughnut-forge.app/sitemap-index.xml` submitted. Nothing changed on the site: no tag, file or script, and no visitor tracking.
+7. **11 December 2026:** iOS launch pricing ends. Pages show no prices; update `src/data/prices.ts` so the record stays true.
+8. **When the copywriter's notes arrive:** follow "Post-launch copy review" below.
+9. **New blog posts:** no more than one or two a week, each starting as `draft: true` with a claims table in `docs/BLOG-CLAIMS.md`, published only on the owner's say-so.
+10. **By 24 September 2027: renew `security.txt`.** Set `Expires` in `public/.well-known/security.txt` to one year from that day, and move this reminder a year on. The build fails from 24 September 2027 (30 days before the 24 October 2027 expiry) until it is renewed.
+
+## Roadmap and security pages (24 October 2026)
+
+- **`/roadmap/`** (`src/views/RoadmapPage.astro`, items in `src/data/roadmap.ts`): shipped, next and later only. Every item not yet shipped carries a "Planned" label. Never add dates, version numbers, audit finding codes, open weaknesses, severity counts or branch names (`tests/layout/pages.spec.ts` checks for dates, codes and versions in every language). A section with no items is not shown, so "Shipped" is hidden for now.
+  - Next: identity protection (the 0.4.44 work: `1229e88`, `d0a7694`, `a036397` in the app repo), stricter protection, Doughnut Forge for Android.
+  - Later: an independent security audit.
+- **`/security/`** (`src/views/SecurityPage.astro`): on-device only, no servers and no account, post-quantum encryption, keys stay on the device, not audited yet (with a link to the roadmap), and "Report a vulnerability". Reports go to `site.reportUrl`, GitHub's private vulnerability reporting on forge-privacy (opens in a new tab), never to public issues. The page promises a reply and no legal action against good-faith research. It never says the sender of a file is verified or that an audit has happened.
+- **Private vulnerability reporting** on forge-privacy: turned on by the owner and confirmed on 24 October 2026 (the API returned `"enabled": true`, and the Security tab shows "Report a vulnerability"). The deploy now stops before deploying if it is ever off.
+- **`/.well-known/security.txt`** (RFC 9116): Contact (the same reporting page), Expires 2027-10-24, Policy (`/security/`), Canonical, Preferred-Languages en. Not signed, and not copied to the repo root (the root files are only the rollback for the apps' association file). `check-production-files.mjs` checks it in every build. The deploy's live check compares the live copy with the build.
+- **Claims and sources:**
+  - on the device, never uploaded: the store listings;
+  - no servers, no account: the live home copy;
+  - post-quantum: the store listings and `faq.quantum.a`;
+  - keys never on a server or sent: `faq.storage.a`;
+  - not audited: the Phase 4 facts below;
+  - reports are private to the maintainer: GitHub private vulnerability reporting.
+- **Translations:** drafted by four subagents, then reviewed by four independent reviewers.
+  - **Blocking findings (5), all fixed:**
+    - fr "never uploaded" said "never sent online";
+    - it "Next" read the same as "Later";
+    - uk "good faith" said "diligently";
+    - hu "uses no servers";
+    - ru "will not sue" instead of "will not take legal action".
+  - **Notes:** 18 more that changed meaning were taken.
+  - **Re-check:** a separate reviewer checked all 23 changed strings and found none blocking.
+  - Every finding is now a note in `review.json`, so every language stays `reviewed`, and each one's 37 keys are stamped. de and nl keep "Roadmap", and nl "Later", in `same-as-english.json`.
+- **Checks:**
+  - `npm run build:deploy` passes with 0 warnings;
+  - layout tests 1856/1856 (then 626 and 476 more after the last fixes);
+  - the new page spec 182/182, and deploy 6/6;
+  - checked by hand at 360, 768 and 1280px in English and German;
+  - Lighthouse on the home page: 100/100/100/100 on mobile and desktop.
 
 ## Audit fixes (Stage 2, 24 October 2026)
 
@@ -158,14 +194,14 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 | Record which English a translation came from (after review only) | `node scripts/stamp-translations.mjs --lang de --keys a,b` |
 
 **The checks** (all run by `npm run build`, in this order):
-- `check-production-files.mjs`: the built `apple-app-site-association` and `CNAME` match the live root copies, and `.nojekyll` exists.
+- `check-production-files.mjs`: the built `apple-app-site-association` and `CNAME` match the live root copies, `.nojekyll` exists, and `security.txt` has its Contact, Policy and Canonical lines and an Expires date between 30 days and a year ahead.
 - `check-privacy-wording.mjs`: the privacy policy wording is unchanged from forge-privacy.
 - `check-translations.mjs`: every language has every key, and no translation is stale. Stale or unstamped strings are a warning locally and fail `build:deploy` (`--strict`).
 - `check-hreflang.mjs`: hreflang and canonical links agree.
 - `check-og.mjs`: every `og:image` has a file.
 - `check-placeholders.mjs`: lists unfilled values (fails with `--strict`).
 
-**Deploy:** `.github/workflows/` holds the deploy workflow. It runs only by hand (`workflow_dispatch`) until the owner switches GitHub Pages to "GitHub Actions". Until then the live site is served from the repo root, so the root `.well-known/`, `CNAME`, `.nojekyll`, icons, `site.webmanifest` and `index.html` must stay. The shipped apps rely on the root `apple-app-site-association` for password-manager linking.
+**Deploy:** `.github/workflows/deploy.yml` runs on every push to `main` (and by hand). Pages deploys from GitHub Actions. Before deploying, it checks that Pages still deploys from Actions and that private vulnerability reporting is on in forge-privacy. After deploying, it checks that the live `/`, `/download/` and `/.well-known/security.txt` are this build, and that the live `apple-app-site-association` lists both apps. The root `.well-known/`, `CNAME`, `.nojekyll`, icons, `site.webmanifest` and `index.html` stay as the rollback until step 6 (on or after 6 November 2026).
 
 Before saying a change is done (CLAUDE.md): build with no warnings; run `npm run test:layout` (it also covers WebKit on a phone and 320px, which CLAUDE.md does not name); check each changed page at 360, 768 and 1280px; check one left-to-right language (no right-to-left language is supported yet); run Lighthouse on the home page and report the scores.
 
