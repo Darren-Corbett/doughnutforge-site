@@ -105,8 +105,24 @@ export default {
     "Support happens on GitHub, in public, so everyone can find the answers. Issues on GitHub are public: anyone can read what you write. You need a free GitHub account to open one.",
   "support.ask.warning":
     "Never attach vault files, identity files, your backup phrase (recovery words), passwords or passphrases, or screenshots that show them.",
-  "support.ask.new": "Open a new issue",
+  // The three GitHub issue forms (forge-privacy .github/ISSUE_TEMPLATE/)
+  "support.ask.bug": "Report a bug",
+  "support.ask.question": "Ask a question",
+  "support.ask.idea": "Suggest a feature",
   "support.ask.search": "Search existing issues",
+  "support.ask.security": "Found a security problem?",
+  "support.ask.securityLink": "Report it privately",
+
+  // Answered questions and Known issues: built from the GitHub issues the
+  // developer labels for the site. Each issue stays in the language it was written in.
+  "meta.answered.title": "Answered questions | Doughnut Forge",
+  "meta.answered.description": "Questions about Doughnut Forge asked on GitHub, with the developer's answers.",
+  "answered.title": "Answered questions",
+  "answered.lead": "Questions people asked on GitHub, with the developer's answers. Each one is shown in the language it was asked in.",
+  "meta.known.title": "Known issues | Doughnut Forge",
+  "meta.known.description": "Problems in Doughnut Forge that the developer knows about, reported on GitHub, with the developer's answers.",
+  "known.title": "Known issues",
+  "known.lead": "Problems the developer knows about, with the developer's answers. Each one is shown in the language it was reported in.",
   "support.privacy.title": "Privacy questions",
   "support.faq.title": "Frequently asked questions",
 
@@ -248,6 +264,11 @@ export default {
   "blog.feed": "RSS feed",
   "blog.cta.title": "Try Doughnut Forge",
   "blog.cta.text": "Encrypt files on your own computer and share them with the people you trust.",
+
+  // One answered question or known issue: English only, like the blog
+  "issue.question": "Question",
+  "issue.answer": "Answer",
+  "issue.github": "See it on GitHub",
 
   // 404
   "meta.notFound.title": "Page not found | Doughnut Forge",

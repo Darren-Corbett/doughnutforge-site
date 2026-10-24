@@ -1,0 +1,52 @@
+---
+// One answered question or known issue, in English like the blog posts: the
+// issue's title, the question and the owner's answer, as plain paragraphs in
+// the language they were written in. Nothing else from GitHub: no usernames,
+// avatars or other comments.
+import PageHero from "../components/PageHero.astro";
+import Prose from "../components/Prose.astro";
+import { issueLists, paragraphs, type Issue, type IssueList } from "../data/issues";
+import { getLanguage, localePath, useStrings, type UiKey } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  list: IssueList;
+  item: Issue;
+}
+const { list, item } = Astro.props;
+const lang = getLanguage("en");
+const { t } = useStrings(lang.code);
+const description = paragraphs(item.answer)[0]!.slice(0, 155);
+---
+
+<Base lang={lang} title={`${item.title} | Doughnut Forge`} description={description} image="/og/support.png">
+  <PageHero title={item.title} />
+  <div class="section">
+    <Prose>
+      <h2>{t("issue.question")}</h2>
+      <div data-issue="question">{paragraphs(item.question).map((p) => <p>{p}</p>)}</div>
+      <h2>{t("issue.answer")}</h2>
+      <div data-issue="answer">{paragraphs(item.answer).map((p) => <p>{p}</p>)}</div>
+      <p class="links">
+        <a href={item.url} target="_blank" rel="noopener noreferrer">
+          {t("issue.github")}
+          <span class="sr-only">{t("a11y.newTab")}</span>
+        </a>
+        <a href={localePath(lang.code, issueLists[list].path)}>{t(`${list}.title` as UiKey)}</a>
+      </p>
+    </Prose>
+  </div>
+</Base>
+
+<style>
+  .links {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+  }
+  /* Long words and addresses in someone's question wrap instead of panning */
+  [data-issue] {
+    overflow-wrap: anywhere;
+  }
+</style>

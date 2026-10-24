@@ -72,6 +72,13 @@
         "issue": "Re-check after the fix: Correct. 'téléversés' means uploaded exactly, not the broader 'envoyés en ligne'. It is the official French term, though it sounds more Canadian than French to people in France. Uses vous, which matches the file.",
         "backTranslation": "Doughnut Forge encrypts and opens your files on your own device. Your files are never uploaded.",
         "suggestion": "No change."
+      },
+      {
+        "key": "answered.title",
+        "severity": "note",
+        "issue": "Drafter's choice checked: 'Questions avec réponse' is grammatical and plain; it avoids the incorrect 'Questions répondues'. Same wording in meta.answered.title. Known issues uses 'Problèmes connus', which fits support.ask.title ('signaler un problème') and keeps 'tickets' for the GitHub issue itself. No-break space (U+00A0) present before '?' in support.ask.security. 'Signalez-le en privé' matches security.report.text.",
+        "backTranslation": "Questions with an answer",
+        "suggestion": "No change."
       }
     ]
   },
@@ -136,6 +143,20 @@
         "issue": "\"mit genügend Zeit\" (\"with enough time\") adds \"enough\". It is harmless and does not strengthen the promise. \"geht rechtlich nicht gegen ... vor\" equals \"will not take legal action\".",
         "backTranslation": "Every report gets a reply. Doughnut Forge does not take legal action against people who look for and report a problem in good faith: without harming anyone or reading other people's data, and with enough time for a fix before details are shared.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.answered.description",
+        "severity": "note",
+        "issue": "Post-positioned participle 'gestellt auf GitHub' is understandable but slightly stiff; an attributive construction reads more naturally. Meaning is correct.",
+        "backTranslation": "Questions about Doughnut Forge, asked on GitHub, with the developer's answers.",
+        "suggestion": "Auf GitHub gestellte Fragen zu Doughnut Forge, mit den Antworten des Entwicklers."
+      },
+      {
+        "key": "meta.known.description",
+        "severity": "note",
+        "issue": "Same stiffness: 'gemeldet auf GitHub' after the relative clause. Meaning is correct.",
+        "backTranslation": "Problems in Doughnut Forge that are known to the developer, reported on GitHub, with the developer's answers.",
+        "suggestion": "Auf GitHub gemeldete Probleme in Doughnut Forge, die dem Entwickler bekannt sind, mit den Antworten des Entwicklers."
       }
     ]
   },
@@ -172,6 +193,13 @@
         "issue": "\"Nada cambia para tus datos\" is understandable but sounds translated. The natural word order is \"Para tus datos no cambia nada\".",
         "backTranslation": "More protection updates that make the app stricter about what it accepts. Nothing changes for your data.",
         "suggestion": "Más actualizaciones de protección que hacen que la app sea más estricta con lo que acepta. Para tus datos no cambia nada."
+      },
+      {
+        "key": "meta.known.description",
+        "severity": "note",
+        "issue": "Drafter's choice checked: 'comunicados' (and 'se comunicó' in known.lead) is correct and natural; the file's verb 'informar de' has no usable passive participle, so this is a sound choice. 'Problemas conocidos' fits support.ask.title and keeps 'incidencias' for GitHub issues. 'Infórmalo de forma privada' matches security.report.text; '¿...?' punctuation correct.",
+        "backTranslation": "Problems in Doughnut Forge that the developer knows about, reported on GitHub, with the developer's answers.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -251,6 +279,13 @@
         "issue": "Re-check after the fix: Correct. 'Prossimi passi' is clearly different from 'Più avanti' (Later) and reads naturally as a section heading.",
         "backTranslation": "Next steps",
         "suggestion": "No change."
+      },
+      {
+        "key": "answered.title",
+        "severity": "note",
+        "issue": "Drafter's choice checked: 'Domande con risposta' is natural and adds nothing (unlike 'Domande risolte'). 'Problemi noti' is the standard term and fits support.ask.title; 'segnalazioni' stays for GitHub issues. 'Segnalalo in privato' matches security.report.text.",
+        "backTranslation": "Questions with an answer",
+        "suggestion": "No change."
       }
     ]
   },
@@ -316,6 +351,13 @@
         "issue": "\"zonder iemand schade te doen\" is understandable but old-fashioned. \"zonder iemand te schaden\" is the plain modern phrasing. The legal wording \"onderneemt geen juridische stappen\" is exact.",
         "backTranslation": "Every report gets an answer. Doughnut Forge takes no legal steps against anyone who looks for and reports a problem in good faith: without doing anyone harm or reading other people's data, and with time for a fix before details are shared.",
         "suggestion": "Elke melding krijgt een antwoord. Doughnut Forge onderneemt geen juridische stappen tegen wie te goeder trouw naar een probleem zoekt en het meldt: zonder iemand te schaden of gegevens van anderen te lezen, en met tijd voor een oplossing voordat details worden gedeeld."
+      },
+      {
+        "key": "support.ask.securityLink",
+        "severity": "note",
+        "issue": "Checked: 'vertrouwelijk' (confidentially) keeps the meaning of 'privately' and matches the file's security.report.text ('meld het dan vertrouwelijk'). 'Bekende problemen' fits support.ask.title; 'issues' stays for GitHub issues.",
+        "backTranslation": "Report it confidentially",
+        "suggestion": "No change."
       }
     ]
   },
@@ -353,6 +395,13 @@
         "issue": "\"med tid för en åtgärd\" is understandable but stiff. \"med tid att åtgärda problemet\" is more natural. The meaning and the legal wording (\"vidtar inga rättsliga åtgärder\") are correct.",
         "backTranslation": "Every report gets a reply. Doughnut Forge takes no legal action against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and with time for a remedy before details are shared.",
         "suggestion": "Varje rapport får ett svar. Doughnut Forge vidtar inga rättsliga åtgärder mot någon som letar efter och rapporterar ett problem i god tro: utan att skada någon eller läsa andras data, och med tid att åtgärda problemet innan detaljer delas."
+      },
+      {
+        "key": "known.title",
+        "severity": "note",
+        "issue": "Checked: 'Kända problem' is the standard term and fits support.ask.title ('rapportera ett problem'); 'ärenden' stays for GitHub issues. 'Rapportera det privat' matches security.report.text.",
+        "backTranslation": "Known problems",
+        "suggestion": "No change."
       }
     ]
   },
@@ -403,6 +452,13 @@
         "severity": "note",
         "issue": "\"Køreplan\" is the usual Danish word for a plan of steps, so it is acceptable. Its literal sense is \"timetable\", which hints at dates, but roadmap.lead says plainly that nothing has a date, so no change is needed.",
         "backTranslation": "Roadmap (literally: timetable)",
+        "suggestion": "No change."
+      },
+      {
+        "key": "known.title",
+        "severity": "note",
+        "issue": "Checked: 'Kendte problemer' is the standard term and fits support.ask.title ('rapportér et problem'); 'issues' stays for GitHub issues. 'Rapportér det privat' matches security.report.text.",
+        "backTranslation": "Known problems",
         "suggestion": "No change."
       }
     ]
@@ -469,6 +525,20 @@
         "issue": "Re-check after the fix: Correct. 'Suunnitteilla' means planned or being planned. It does not suggest done or scheduled, and it matches security.audit.text.",
         "backTranslation": "Planned (under planning)",
         "suggestion": "No change."
+      },
+      {
+        "key": "answered.title",
+        "severity": "note",
+        "issue": "'Vastatut kysymykset' uses a passive participle of 'vastata', which strictly takes the illative case (vastata kysymykseen), so a careful reader may notice it. It is very widely used in UI text (compare 'vastatut puhelut') and reads naturally, so no change is needed. The same applies to meta.answered.title.",
+        "backTranslation": "Answered questions",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.known.title",
+        "severity": "note",
+        "issue": "'ongelma' (problem) is used for Known issues, not the file's 'tiketti' (ticket), as the drafter intended. 'Tunnetut ongelmat' is the standard Finnish term. The leads keep 'kehittäjä', which matches security.report.private.",
+        "backTranslation": "Known problems | Doughnut Forge",
+        "suggestion": "No change."
       }
     ]
   },
@@ -520,6 +590,13 @@
         "issue": "Re-check after the fix: Meaning is correct. 'gå rettslig til verks' means take legal action, not only sue. The last condition switches from 'uten å ...' to a relative clause ('og som gir tid'), which is a little clumsy. Optional smoothing below.",
         "backTranslation": "All reports get a reply. Doughnut Forge will not take legal action against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and who allows time for a fix before details are shared.",
         "suggestion": "Alle rapporter får svar. Doughnut Forge vil ikke gå rettslig til verks mot noen som leter etter og melder fra om et problem i god tro: uten å skade noen eller lese andres data, og ved å gi tid til en rettelse før detaljer deles."
+      },
+      {
+        "key": "known.title",
+        "severity": "note",
+        "issue": "'Kjente problemer' is the standard term and uses 'problem', not the file's 'sak'. 'utvikleren' matches security.report.private, and all three buttons are imperatives like support.ask.title. The strings are accurate and natural.",
+        "backTranslation": "Known problems",
+        "suggestion": "No change."
       }
     ]
   },
@@ -556,6 +633,27 @@
         "severity": "note",
         "issue": "Re-check after the fix: Correct. A neutral noun phrase with no tense, no claim that the audit is done and no commitment.",
         "backTranslation": "A security audit of Doughnut Forge carried out by an independent outside expert.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "support.ask.security",
+        "severity": "note",
+        "issue": "The impersonal 'Znaleziono ...?' is grammatical and avoids gender, but as a question to the reader it sounds a little stiff and official, like 'Has a problem been found?'. A shorter heading avoids both gender and the impersonal form. The current text is acceptable.",
+        "backTranslation": "Was a security problem found?",
+        "suggestion": "Problem z bezpieczeństwem?"
+      },
+      {
+        "key": "answered.title",
+        "severity": "note",
+        "issue": "'Pytania z odpowiedziami' is natural and clearly means questions that have answers. It avoids confusion with the generic 'Pytania i odpowiedzi' (Q&A). It is a good choice. The 'każde z nich ... zadane' agreement (neuter, from 'pytanie') in answered.lead is correct.",
+        "backTranslation": "Questions with answers",
+        "suggestion": "No change."
+      },
+      {
+        "key": "known.lead",
+        "severity": "note",
+        "issue": "Uses 'Problemy', not the file's 'zgłoszenia', as intended. The masculine agreement 'Każdy z nich ... został zgłoszony' is correct, and 'deweloper' matches security.report.private. 'Zgłoś go prywatnie' keeps 'privately', with 'go' agreeing with 'problem'.",
+        "backTranslation": "Problems the developer knows about, with the developer's answers. Each of them is displayed in the language in which it was reported.",
         "suggestion": "No change."
       }
     ]
@@ -621,6 +719,13 @@
         "severity": "note",
         "issue": "Re-check after the fix: Correct. 'nepodnikne právní kroky' means will not take legal steps, which is broader than only suing. The conditions are kept. Ending with 'a pokud ... ponechá' after 'aniž by' is grammatical, just not parallel, and it reads acceptably.",
         "backTranslation": "Every report gets a reply. Doughnut Forge will not take legal steps against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and provided they leave time for a fix before publishing details.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "support.ask.securityLink",
+        "severity": "note",
+        "issue": "The buttons use the infinitive ('Nahlásit chybu', 'Položit otázku', 'Navrhnout funkci'), which is the normal Czech button form and matches support.ask.search. The link uses the formal imperative 'Nahlaste ho soukromě', which reads naturally after the question 'Našli jste ...?'. The mix is acceptable, and 'soukromě' keeps 'privately'.",
+        "backTranslation": "Report it privately",
         "suggestion": "No change."
       }
     ]
@@ -700,6 +805,20 @@
         "severity": "note",
         "issue": "Re-check after the fix: Correct. 'nem tesz jogi lépéseket' means will not take legal steps. The good-faith conditions are kept, the wording is natural and it uses te.",
         "backTranslation": "Every report gets a reply. Doughnut Forge does not take legal steps against anyone who looks for and reports a problem in good faith: without harming anyone or reading others' data, and leaving time for a fix before sharing details.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "support.ask.securityLink",
+        "severity": "note",
+        "issue": "'privát módon' keeps 'privately' and is understandable. 'bizalmasan' (confidentially) would sound slightly more natural in Hungarian, but this is optional.",
+        "backTranslation": "Report it in a private way",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.known.description",
+        "severity": "note",
+        "issue": "It reorders the English ('The problems of Doughnut Forge reported on GitHub that the developer knows about, with the developer's answers'), but the meaning is the same and the word order is natural. Using 'problémák' instead of 'bejelentések' for Known issues is right.",
+        "backTranslation": "Doughnut Forge's problems reported on GitHub that the developer knows about, with the developer's answers.",
         "suggestion": "No change."
       }
     ]
@@ -794,6 +913,13 @@
         "issue": "Re-check after the fix: Correct and natural. It matches the English exactly and uses tu.",
         "backTranslation": "Further protection updates, which make the app stricter about what it accepts. Nothing changes for your data.",
         "suggestion": "No change."
+      },
+      {
+        "key": "known.lead",
+        "severity": "note",
+        "issue": "The feminine agreement with 'problemă' ('afișată', 'raportată') is correct, and so is the agreement with 'întrebare' in answered.lead. 'Raporteaz-o în privat' keeps 'privately', and 'o' agrees with 'problemă'. 'dezvoltatorul' matches security.report.private.",
+        "backTranslation": "Problems that the developer knows about, with the developer's answers. Each is displayed in the language in which it was reported.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -866,6 +992,13 @@
         "issue": "Re-check after the fix: Correct. 'У Doughnut Forge нет серверов' means Doughnut Forge has no servers, not 'uses no servers'. Natural, and it uses вы.",
         "backTranslation": "Doughnut Forge has no servers, and there is no need to create an account, so neither your files nor your details are stored anywhere else.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.known.description",
+        "severity": "note",
+        "issue": "The two stacked relative clauses ('о которых знает разработчик и о которых сообщили на GitHub') are grammatical and faithful, but slightly heavy. A participle would be lighter, but this is optional.",
+        "backTranslation": "Problems in Doughnut Forge that the developer knows about and that were reported on GitHub, with the developer's answers.",
+        "suggestion": "Известные разработчику проблемы в Doughnut Forge, о которых сообщили на GitHub, с ответами разработчика."
       }
     ]
   },
@@ -924,6 +1057,20 @@
         "issue": "Confirmation: 'Διαθέσιμα' (Available) reads clearly as already out, not as planned. 'Σχεδιάζεται' for Planned reads as 'being planned', not done or promised.",
         "backTranslation": "Available",
         "suggestion": "No change."
+      },
+      {
+        "key": "answered.lead",
+        "severity": "note",
+        "issue": "\"που έθεσαν άνθρωποι\" (bare 'people' with no article) reads slightly translated; \"χρήστες\" is the more natural subject. Meaning and the language sentence are correct.",
+        "backTranslation": "Questions that people asked on GitHub, with the developer's answers. Each one is shown in the language in which it was phrased.",
+        "suggestion": "Ερωτήσεις που έθεσαν χρήστες στο GitHub, με τις απαντήσεις του προγραμματιστή. Η καθεμία εμφανίζεται στη γλώσσα στην οποία διατυπώθηκε."
+      },
+      {
+        "key": "known.lead",
+        "severity": "note",
+        "issue": "Repeated \"του προγραμματιστή\" mirrors the English and is grammatical; Greek would more often say \"με τις απαντήσεις του\". Acceptable as is.",
+        "backTranslation": "Problems the developer knows about, with the developer's answers. Each one is shown in the language in which it was reported.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -981,6 +1128,13 @@
         "severity": "note",
         "issue": "Re-check after the fix: Correct. 'не вживатиме юридичних заходів' means will not take legal measures, which is broader than only suing. All three conditions are kept. 'проти будь-кого' after a negative is common usage. The standard form 'проти тих, хто' would sound slightly more polished, but this is optional.",
         "backTranslation": "Every report will get a reply. Doughnut Forge will not take legal measures against anyone who looks for and reports a problem in good faith: harming no one, not reading other people's data, and giving time for a fix before sharing details.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "support.ask.securityLink",
+        "severity": "note",
+        "issue": "Imperative \"Повідомте\" while the three buttons use infinitives (\"Повідомити про помилку\"). Fine for an inline link after a question; \"privately\" kept.",
+        "backTranslation": "Report it privately",
         "suggestion": "No change."
       }
     ]
@@ -1092,6 +1246,20 @@
         "issue": "The heading contains a hard hyphen ('pós-quântica'), so a narrow screen could break the line at the hyphen. The spelling is correct and matches faq.quantum.q. Check at 320px that the layout does not split it, or keep the word together in CSS.",
         "backTranslation": "Post-quantum encryption",
         "suggestion": "No change."
+      },
+      {
+        "key": "support.ask.idea",
+        "severity": "note",
+        "issue": "Checked as asked: \"recurso\" is the standard Brazilian term for a software feature and matches the file's features.ios.text. Correct.",
+        "backTranslation": "Suggest a feature",
+        "suggestion": "No change."
+      },
+      {
+        "key": "known.lead",
+        "severity": "note",
+        "issue": "\"que o desenvolvedor conhece\" is correct; \"de que o desenvolvedor já sabe\" would add timing, so keep. Repeated \"desenvolvedor\" is acceptable.",
+        "backTranslation": "Problems the developer knows, with the developer's answers. Each one appears in the language in which it was reported.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1143,6 +1311,13 @@
         "issue": "Meaning and strength match: 'yasal işlem başlatmaz' means 'does not start legal action', with 'iyi niyetle' for good faith. Putting the adverbial clauses after the colon, behind the main verb, is a little unusual in Turkish but reads clearly.",
         "backTranslation": "Every report is answered. Doughnut Forge does not start legal action against anyone who looks for and reports a problem in good faith: without harming anyone, without reading others' data, and allowing time for a fix before sharing details.",
         "suggestion": "No change."
+      },
+      {
+        "key": "answered.lead",
+        "severity": "note",
+        "issue": "\"Kişilerin\" is understandable but slightly stiff; \"İnsanların\" is the more natural word for 'people' here.",
+        "backTranslation": "Questions that persons asked on GitHub, and the developer's answers. Each one is shown in the language it was asked in.",
+        "suggestion": "İnsanların GitHub'da sorduğu sorular ve geliştiricinin yanıtları. Her biri, sorulduğu dilde gösterilir."
       }
     ]
   },
@@ -1251,6 +1426,27 @@
         "issue": "Script check: all 37 new zh-CN strings use Simplified characters only. No Traditional characters found. The terms '身份' (glossary) and '后量子加密' (as in faq.quantum.*) are used correctly.",
         "backTranslation": "An update that keeps every identity safe, so that it will never be lost, replaced or left in a readable state. For Mac, Windows, iPhone and iPad.",
         "suggestion": "No change."
+      },
+      {
+        "key": "support.ask.idea",
+        "severity": "note",
+        "issue": "Checked as asked: 提出功能建议 is natural and matches the file's 功能. Correct.",
+        "backTranslation": "Put forward a feature suggestion",
+        "suggestion": "No change."
+      },
+      {
+        "key": "answered.title",
+        "severity": "note",
+        "issue": "Checked as asked: 已解答的问题 is natural; 问题 is unavoidably shared with 已知问题, but the two titles stay distinct (answered vs known).",
+        "backTranslation": "Questions that have been answered",
+        "suggestion": "No change."
+      },
+      {
+        "key": "support.ask.securityLink",
+        "severity": "note",
+        "issue": "私下报告 keeps 'privately' and matches GitHub's own Chinese wording for private vulnerability reports. Simplified characters only throughout.",
+        "backTranslation": "Report privately",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1337,6 +1533,20 @@
         "issue": "Re-check after the fix: Correct, natural, and uses 您, which matches the file.",
         "backTranslation": "Keys stay with you",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.known.description",
+        "severity": "note",
+        "issue": "Resolved (was blocking): In 開發者已知、並在 GitHub 上回報的, 開發者 is the subject of both verbs joined by 並, so a native reader takes it that the developer reported the problems on GitHub. The English says the problems were reported on GitHub (by anyone) and the developer knows about them.",
+        "backTranslation": "Doughnut Forge problems that the developer knows about and has reported on GitHub, with the developer's answers.",
+        "suggestion": "已在 GitHub 上回報、且開發者已知的 Doughnut Forge 問題，以及開發者的解答。"
+      },
+      {
+        "key": "meta.known.description",
+        "severity": "note",
+        "issue": "Re-check after the fix: No blocking findings. Meaning matches the English: the 已 markers are ordinary perfective aspect matching 'reported' and 'knows about', not an added promise or timing. The passive 已在 GitHub 上回報 names no reporter, so it no longer suggests the developer reported the problems, and 開發者已知 puts the developer only as the one who knows. Natural Taiwan usage (回報, 開發者, 解答), Traditional characters only, no Simplified forms. 開發者 matches security.report.private (只有開發者能看到您的回報) and the sibling strings known.lead and meta.answered.description. Minor: 已 appears twice, which is acceptable in Taiwan usage and needs no fix.",
+        "backTranslation": "Problems in Doughnut Forge that have been reported on GitHub and that the developer already knows about, together with the developer's answers.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1394,6 +1604,20 @@
         "severity": "note",
         "issue": "Re-check after the fix: Correct. It says no audit has happened yet and matches security.audit.text. The noun-ending heading style suits the other titles.",
         "backTranslation": "Not yet security audited",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.answered.description",
+        "severity": "note",
+        "issue": "나온 ('came up') is understandable but a little loose for a meta description. 올라온 is the usual verb for questions posted on a site.",
+        "backTranslation": "Questions about Doughnut Forge that came up on GitHub, and the developer's answers.",
+        "suggestion": "GitHub에 올라온 Doughnut Forge 관련 질문과 개발자의 답변입니다."
+      },
+      {
+        "key": "support.ask.question",
+        "severity": "note",
+        "issue": "I checked the labels as asked. 버그 신고 and 기능 제안 are nouns, and 질문하기 is a -기 form. That mix is normal in Korean UI: a bare 질문 would read as a heading, not an action. 질문하기 also matches support.ask.title, so the labels are short and natural.",
+        "backTranslation": "Asking a question",
         "suggestion": "No change."
       }
     ]

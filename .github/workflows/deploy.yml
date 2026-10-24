@@ -1,18 +1,24 @@
-# Builds the site and publishes it to GitHub Pages on every push to main (and on
-# demand). The deploy fails, and the live site stays as it was, if any check in
+# Builds the site and publishes it to GitHub Pages on every push to main, once a
+# day (so newly answered issues appear), and on demand. The deploy fails, and the live site stays as it was, if any check in
 # `npm run build:deploy` fails or Pages no longer deploys from Actions. The run
 # also fails, after the deploy, if the live / and /download/ are not the pages it
 # built, the live security.txt is not the one it built, or the live
 # apple-app-site-association is missing. It also stops, before deploying, unless
 # private vulnerability reporting is on in forge-privacy, where /security/ and
 # security.txt send reports.
-# The build reads only this repository: store badges, app strings and the privacy
-# policy are committed copies, and no build step calls a store or another site.
+# The build reads this repository, plus one step: "Fetch answered issues" reads
+# forge-privacy's public issues with no token (scripts/fetch-issues.mjs), and if
+# that fails the build uses the committed src/data/issues.json. Store badges, app
+# strings and the privacy policy are committed copies, and no step calls a store.
 name: Deploy site
 
 on:
   push:
     branches: [main]
+  # Daily, for the answered issues (GitHub turns this off after 60 days with no
+  # activity in the repo; turn it back on under Actions)
+  schedule:
+    - cron: "17 6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -48,6 +54,10 @@ jobs:
             found=$(fc-match -f '%{family}' "$font")
             case "$found" in *"$font"*) echo "ok: $font" ;; *) echo "missing: $font (got $found)"; exit 1 ;; esac
           done
+      # The issues the owner has labelled for the site. Public, so no token; on any
+      # failure it keeps the committed data and the build goes on.
+      - name: Fetch answered issues
+        run: node scripts/fetch-issues.mjs
       - run: npm run build:deploy
       # What the live pages must match after the deploy (scripts/check-live-deploy.mjs)
       - id: hashes

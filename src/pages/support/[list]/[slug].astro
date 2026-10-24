@@ -1,0 +1,13 @@
+---
+// One page per labelled issue, in English only, like the blog posts
+import { issueLists, issues, shownLists, type Issue, type IssueList } from "../../../data/issues";
+import IssuePage from "../../../views/IssuePage.astro";
+
+export const getStaticPaths = () =>
+  shownLists.flatMap((list) =>
+    issues[list].map((item) => ({ params: { list: issueLists[list].path.split("/")[1], slug: item.slug }, props: { list, item } })),
+  );
+const { list, item } = Astro.props as { list: IssueList; item: Issue };
+---
+
+<IssuePage list={list} item={item} />

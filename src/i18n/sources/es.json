@@ -3,6 +3,14 @@
     "en": "1d1833565142",
     "text": "0ff0bedb0601"
   },
+  "answered.lead": {
+    "en": "970d30dada87",
+    "text": "9235e10409ac"
+  },
+  "answered.title": {
+    "en": "bfd9df56f216",
+    "text": "70fae7ece4f9"
+  },
   "button.getApp": {
     "en": "48335741e14d",
     "text": "5994a9666208"
@@ -231,6 +239,14 @@
     "en": "caa0861ead91",
     "text": "4b4e28ed8ff9"
   },
+  "known.lead": {
+    "en": "f701779915c3",
+    "text": "8b8b38d315f2"
+  },
+  "known.title": {
+    "en": "9e06846ba2df",
+    "text": "74671c0b6df3"
+  },
   "legal.title": {
     "en": "8c14d709f277",
     "text": "7bf153fbb17c"
@@ -250,6 +266,14 @@
   "legal.trademarks.title": {
     "en": "722a2858f406",
     "text": "9475cd354124"
+  },
+  "meta.answered.description": {
+    "en": "da4e436bec78",
+    "text": "cf68151453df"
+  },
+  "meta.answered.title": {
+    "en": "8c4fc5efe695",
+    "text": "a92fdd193bcb"
   },
   "meta.download.description": {
     "en": "db2909b9894d",
@@ -274,6 +298,14 @@
   "meta.home.title": {
     "en": "c249448d7ebf",
     "text": "7fe3e424c03d"
+  },
+  "meta.known.description": {
+    "en": "3d73dde0e8b9",
+    "text": "4b8b987533da"
+  },
+  "meta.known.title": {
+    "en": "837d88fce612",
+    "text": "8641620a6c2f"
   },
   "meta.legal.description": {
     "en": "94a0679c73c7",
@@ -627,13 +659,29 @@
     "en": "4f7d64017689",
     "text": "f44cddb1bb03"
   },
-  "support.ask.new": {
-    "en": "1aae311e4ce7",
-    "text": "02b0ecc1b908"
+  "support.ask.bug": {
+    "en": "f75e0bd8ff23",
+    "text": "2651c73e493f"
+  },
+  "support.ask.idea": {
+    "en": "380f5f8eba93",
+    "text": "f44b04448d97"
+  },
+  "support.ask.question": {
+    "en": "3a533d7ef80f",
+    "text": "99cc9228462e"
   },
   "support.ask.search": {
     "en": "852c0cd49515",
     "text": "0bd9305bba0a"
+  },
+  "support.ask.security": {
+    "en": "1f5deea87375",
+    "text": "7f0d99657f33"
+  },
+  "support.ask.securityLink": {
+    "en": "74107d1de520",
+    "text": "a08a7c662bb6"
   },
   "support.ask.text": {
     "en": "8e19b49cfb24",

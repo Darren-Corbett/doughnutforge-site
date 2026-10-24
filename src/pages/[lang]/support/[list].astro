@@ -1,0 +1,15 @@
+---
+// Answered questions and Known issues in every language but English, built only
+// when the list has an issue in it (English: src/pages/support/[list].astro)
+import { issueLists, shownLists, type IssueList } from "../../../data/issues";
+import { otherLanguagePaths, type Language } from "../../../i18n";
+import IssueListPage from "../../../views/IssueListPage.astro";
+
+export const getStaticPaths = () =>
+  otherLanguagePaths().flatMap(({ params, props }) =>
+    shownLists.map((list) => ({ params: { ...params, list: issueLists[list].path.split("/")[1] }, props: { ...props, list } })),
+  );
+const { lang, list } = Astro.props as { lang: Language; list: IssueList };
+---
+
+<IssueListPage lang={lang} list={list} />

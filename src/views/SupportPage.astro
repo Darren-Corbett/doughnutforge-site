@@ -4,6 +4,7 @@
 // Visitors' browsers never call GitHub: these are plain links.
 import Faq, { type FaqItem } from "../components/Faq.astro";
 import PageHero from "../components/PageHero.astro";
+import { issueLists, shownLists } from "../data/issues";
 import { getPolicy, policyTitle } from "../data/privacy";
 import { site } from "../data/site";
 import { platformName, platforms } from "../data/stores";
@@ -49,9 +50,27 @@ const jsonLd = {
     <p class="section-text">{t("support.ask.text")}</p>
     <p class="warning"><strong>{t("support.ask.warning")}</strong></p>
     <div class="actions">
-      <a class="btn-primary" href={site.newIssueUrl}>{t("support.ask.new")}</a>
+      <a class="btn-primary" href={site.issueFormUrl("bug_report")}>{t("support.ask.bug")}</a>
+      <a class="btn-primary" href={site.issueFormUrl("question")}>{t("support.ask.question")}</a>
+      <a class="btn-primary" href={site.issueFormUrl("feature_idea")}>{t("support.ask.idea")}</a>
       <a class="btn-outline" href={site.issuesUrl}>{t("support.ask.search")}</a>
     </div>
+    <p class="section-text">
+      {t("support.ask.security")} <a class="text-link" href={localePath(lang.code, "security/#report")}>{t("support.ask.securityLink")}</a>
+    </p>
+    {
+      shownLists.length > 0 && (
+        <ul class="answers" role="list">
+          {shownLists.map((list) => (
+            <li>
+              <a class="text-link" href={localePath(lang.code, issueLists[list].path)}>
+                {t(`${list}.title` as UiKey)}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
   </section>
 
   <section id="faq" class="section faq-section" aria-labelledby="support-faq">
@@ -85,6 +104,15 @@ const jsonLd = {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+  }
+  /* Answered questions and Known issues, once there are some */
+  .answers {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  .answers li + li {
+    margin-top: 8px;
   }
   .faq-section,
   .privacy {

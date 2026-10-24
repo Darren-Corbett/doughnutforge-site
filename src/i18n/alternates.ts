@@ -2,11 +2,25 @@
 // <head> (SEO.astro) and the sitemap (astro.config.mjs), so the two always agree.
 import languageData from "./languages.json";
 import review from "./review.json";
+import { issueLists, shownLists } from "../data/issues";
 
 export type Alternate = { hreflang: string; href: string };
 
 /** The pages that exist in every language, as paths without the language folder */
-export const translatedPages = ["", "features/", "pricing/", "download/", "privacy/", "support/", "press/", "legal/", "roadmap/", "security/"];
+export const translatedPages = [
+  "",
+  "features/",
+  "pricing/",
+  "download/",
+  "privacy/",
+  "support/",
+  "press/",
+  "legal/",
+  "roadmap/",
+  "security/",
+  // Answered questions and Known issues, once each has an issue in it
+  ...shownLists.map((l) => issueLists[l].path),
+];
 
 const SITE = "https://doughnut-forge.app";
 const reviewed = (code: string) => (review as Record<string, { status: string }>)[code]?.status === "reviewed";

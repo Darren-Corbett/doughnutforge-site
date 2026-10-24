@@ -1,0 +1,64 @@
+---
+// Answered questions or Known issues: the labelled forge-privacy issues
+// (src/data/issues.ts), each linking to its one page. The headings are
+// translated; each issue's title stays in the language it was written in.
+import PageHero from "../components/PageHero.astro";
+import Prose from "../components/Prose.astro";
+import { issueLists, issues, type IssueList } from "../data/issues";
+import { localePath, useStrings, type Language, type UiKey } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+  list: IssueList;
+}
+const { lang, list } = Astro.props;
+const { t } = useStrings(lang.code);
+const key = (part: string) => `${list}.${part}` as UiKey;
+const ogImage = { answered: "/og/answered.png", known: "/og/known-issues.png" }[list];
+---
+
+<Base lang={lang} title={t(`meta.${list}.title` as UiKey)} description={t(`meta.${list}.description` as UiKey)} image={ogImage}>
+  <PageHero title={t(key("title"))} lead={t(key("lead"))} />
+  <div class="section">
+    <Prose>
+      <ul class="issues" role="list">
+        {
+          issues[list].map((item) => (
+            <li>
+              <a href={`/${issueLists[list].path}${item.slug}/`} hreflang={lang.code === "en" ? undefined : "en"}>
+                {item.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="back">
+        <a href={localePath(lang.code, "support/")}>{t("nav.support")}</a>
+      </p>
+    </Prose>
+  </div>
+</Base>
+
+<style>
+  :global(.prose) .issues {
+    list-style: none;
+    padding: 0;
+  }
+  :global(.prose) .issues li + li {
+    margin-top: 0;
+    border-top: 2px solid #e2e8f0;
+  }
+  .issues a {
+    display: block;
+    padding: 12px 0;
+  }
+  .back {
+    margin-top: 24px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :global(.prose) .issues li + li {
+      border-color: #38444d;
+    }
+  }
+</style>

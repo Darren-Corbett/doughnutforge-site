@@ -48,6 +48,8 @@ const titles = async (code) => {
     legal: ui["legal.title"],
     roadmap: ui["roadmap.title"],
     security: ui["security.title"],
+    answered: ui["answered.title"],
+    "known-issues": ui["known.title"],
     // English uses the separate default.png design for home, and alone has a blog
     ...(code === "en" ? { blog: ui["blog.title"] } : { default: readJson(`src/i18n/store/${code}.json`).mac.parts.headline }),
   };
