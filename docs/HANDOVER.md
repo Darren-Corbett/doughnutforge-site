@@ -202,5 +202,8 @@ These belong in `~/git/doughnut-forge`. This repo never edits it.
   3. Claude applies them to the English strings (`src/i18n/ui/en.ts`) and the posts (`src/content/blog/en/`).
   4. Claude retranslates only the changed strings, runs the independent reviewer on them, and fixes any findings.
   5. Claude republishes: the usual commits, each shown first, then a deploy.
+- **Already on the list (owner, 24 October 2026)**, found while fixing the audit. Both are copy questions, not layout bugs: no word breaks and nothing overflows.
+  - **Thai home tagline** (`home.tagline`, `/th/`): since headings went back to their design size (`893be3b`), "มีเพียงคนที่คุณเลือกเท่านั้นที่เปิดได้" wraps with "ได้" alone on the second line at 390px. A shorter tagline, or one that breaks better, would fix it.
+  - **The long German FAQ question** (`faq.quantum.q`, `/de/support/`): "Was bedeutet Post-Quanten-Verschlüsselung?" is shrunk to fit its one long word. At 320px it is about 14px, against 19px for the other questions, and it is slightly smaller at 360px (16px) and 390px (18px) too. A wording with a shorter longest word would keep it at 19px.
 - **The privacy policy is excluded** unless the owner approves a specific wording change, because it stays word for word with forge-privacy (`scripts/check-privacy-wording.mjs`).
 - The translation check lists every language and key whose English changed (see "Translations: keeping them in step with English"), so step 4 is checkable, and the deploy build fails until every changed string is retranslated, reviewed and stamped.
