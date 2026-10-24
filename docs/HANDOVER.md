@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 24 October 2026, after the post-launch audit, Stage 1 (last commit `99d31ff`, deployed; the audit files are not committed yet)
+- **Last updated:** 24 October 2026, after the audit fixes, Stage 2 (deployed: `99d31ff`; committed, not yet pushed: `33cbb25` to `8ef1401`, plus this docs commit)
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
@@ -32,17 +32,18 @@ Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the 
 
 - **The site is live** at https://doughnut-forge.app in all 30 languages (every language reviewed and indexed), with the four blog posts, served by GitHub Pages from GitHub Actions. **Every push to `main` deploys** within about two minutes. The deploy fails, and the live site stays as it was, if any check in `npm run build:deploy` fails or the live `apple-app-site-association` is missing.
 - **The old privacy page redirects:** forge-privacy `a9ed0d8` sends `darren-corbett.github.io/forge-privacy` (with or without the trailing slash, and every `?lang=`) to the matching `/privacy/` page. The store Support URL (forge-privacy issues) is unchanged.
-- **Working tree:** waiting for the owner's yes on the Stage 1 commit: the Playwright tooling (`playwright.config.ts`, `tests/`, the `test:layout` and `test:links` scripts, two devDependencies), `docs/audit/2026-10-24.md` with its screenshots, and this file.
-- **Post-launch audit (24 October 2026):** [`docs/audit/2026-10-24.md`](audit/2026-10-24.md). It covers the owner's eight live-site issues and the full audit (246 pages × 30 languages × Chromium, WebKit and WebKit iPhone × five widths × two themes, axe, links, and real Mobile Safari in the iOS Simulator). There are no critical findings. The high ones are the deploy's missing live-page check (issue 1), store links not opening in a new tab (issue 5), the header wrapping at 320px with Display Zoom (issue 8), and a German FAQ heading that pans at 320px (issue 7). Issues 2 and 7 (English) did not reproduce, and the owner's device details are needed. Stage 2 is the fix plan, written from the audit, for approval in plan mode.
+- **Working tree:** clean. Twelve commits since `99d31ff` are on local `main`, not pushed: the audit and its tests, then each Stage 2 fix as a test commit and a fix commit. A push deploys them, and the deploy's new live-page check runs for the first time; push only when the owner asks.
+- **Post-launch audit (24 October 2026):** [`docs/audit/2026-10-24.md`](audit/2026-10-24.md). It covers the owner's eight live-site issues and the full audit (246 pages × 30 languages × Chromium, WebKit and WebKit iPhone × five widths × two themes, axe, links, and real Mobile Safari in the iOS Simulator). There are no critical findings. The high ones are the deploy's missing live-page check (issue 1), store links not opening in a new tab (issue 5), the header wrapping at 320px with Display Zoom (issue 8), and a German FAQ heading that pans at 320px (issue 7). Issues 2 and 7 (English) did not reproduce, and the owner's device details are needed. **Stage 2 (24 October 2026) fixed H1, H2, H3, H4, M4 and L1**; see "Audit fixes" below.
 - **Launch incident:** the first deploy left out `.well-known/apple-app-site-association` for about 42 minutes (13:13 to 13:55 UTC), because the Pages upload drops files whose names start with a dot. Fixed in `42fb02c` (`include-hidden-files: true`, plus a live check at the end of the deploy job). Whether Apple fetched the file during the gap is unknown.
 
 ## What is next, in order
 
-0. **Audit Stage 2 (next):** get the owner's yes on the Stage 1 commit, then plan the fixes in plan mode from `docs/audit/2026-10-24.md`. Waiting on the owner for:
-   - the issue 6 screenshots;
-   - for issues 2, 7 and 8: the iPhone model, iOS version, Display Zoom, Safari aA zoom and content blockers;
-   - the issue 7 screen recording;
-   - the iOS App Store ID (issue 4: it does not exist yet, so iOS stays "Coming soon").
+0. **Audit follow-ups (waiting on the owner):**
+   - **Push** the Stage 2 commits when the owner asks, then read the deploy log: "Check Pages deploys from GitHub Actions" and "Check the live pages are this build" run for the first time.
+   - **M1, desktop widths:** waits for the owner's desktop screenshots. The current widths are tabled in the audit.
+   - **Issues 2 and 7 (English):** wait for the owner's iPhone details (model, iOS version, Display Zoom, Safari aA zoom, content blockers) and the screen recording; plan them in plan mode when they arrive.
+   - **L2:** left as it is (owner, 24 October 2026).
+   - **The iOS App Store ID** (issue 4): it does not exist yet, so iOS stays "Coming soon".
 
    **A branch rollback serves the old "Coming soon" placeholder at `/`** (the repo-root `index.html`), with no other pages, until the root files are removed on or after 6 November. Since H1, the deploy also stops unless Pages deploys from GitHub Actions, and fails if the live `/` and `/download/` are not the pages it built.
 1. **Step 8, store listing URLs (owner, in progress).**
@@ -60,6 +61,30 @@ Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the 
 5. **11 December 2026:** iOS launch pricing ends. Pages show no prices; update `src/data/prices.ts` so the record stays true.
 6. **When the copywriter's notes arrive:** follow "Post-launch copy review" below.
 7. **New blog posts:** no more than one or two a week, each starting as `draft: true` with a claims table in `docs/BLOG-CLAIMS.md`, published only on the owner's say-so.
+
+## Audit fixes (Stage 2, 24 October 2026)
+
+Each fix is a test commit that failed, then a fix commit that made it pass. Tests and site code are never in the same commit.
+
+| Finding | Test commit | Fix commit | What changed |
+|---|---|---|---|
+| H1, deploy check (issue 1) | `1aaedea` | `cb0f8fa` | The deploy stops unless Pages deploys from GitHub Actions, and fails unless the live `/` and `/download/` match the build (`scripts/check-live-deploy.mjs`) |
+| H2, new tab (issue 5) | `5bd309f` | `60c10db` | Store links open in a new tab and say "(opens in a new tab)" to screen readers, in 30 languages (reviewed, stamped) |
+| L1, 404 `og:url` | `97f931c` | `cfabec3` | No `og:url` on `noindex` pages |
+| 320px required | `c146d59` | | Every layout test runs at 320px (iPhone Display Zoom) |
+| H3, header (issue 8) | (`c146d59`) | `b40a68c` | Below 360px the nav links are 14px with 2px padding: one row in every language |
+| H4, German FAQ pan (issue 7) | (`c146d59`) | `893be3b` | Components set heading sizes in `--fs`, so the shared fit-to-longest-word rule always applies (`--fit-reserve` keeps room for icons). The middleware measures Thai by dictionary words, so Thai headings are no longer shrunk |
+| M4, prose words at 320px | (`c146d59`) | `8ef1401` | Prose cards have 12px side padding below 360px |
+
+**Rule from now on:** components set a heading's size in `--fs`, never in `font-size` (global.css), or long words in some languages will overflow at 320px.
+
+Results after the fixes:
+- layout: 738/738;
+- accessibility and interactions: 636/636;
+- deploy: 5/5;
+- links: 41/41;
+- real Mobile Safari (iPhone 16e, iOS 26.2): 46 pages × light and dark, 0 problems;
+- Lighthouse on the home page: 100 on mobile and desktop.
 
 ## Decisions on record (23 October 2026)
 
@@ -133,6 +158,7 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 | Store badge coverage | `npm run badges` |
 | Layout, accessibility and interaction tests (build first; no network) | `npm run test:layout`, narrowed with `PAGES=` and `LANGS=`; see `tests/README.md` |
 | Link tests (live site and stores) | `npm run test:links` |
+| The deploy's live-page check, against a local server | `npm run test:deploy` |
 | The layout checks in real Mobile Safari (iOS Simulator) | `node tests/ios/real-safari.ts <udid>` (setup in the file) |
 | Record which English a translation came from (after review only) | `node scripts/stamp-translations.mjs --lang de --keys a,b` |
 
@@ -146,7 +172,7 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 
 **Deploy:** `.github/workflows/` holds the deploy workflow. It runs only by hand (`workflow_dispatch`) until the owner switches GitHub Pages to "GitHub Actions". Until then the live site is served from the repo root, so the root `.well-known/`, `CNAME`, `.nojekyll`, icons, `site.webmanifest` and `index.html` must stay. The shipped apps rely on the root `apple-app-site-association` for password-manager linking.
 
-Before saying a change is done (CLAUDE.md): build with no warnings; run `npm run test:layout` (it also covers WebKit on a phone, which CLAUDE.md does not name); check each changed page at 360, 768 and 1280px; check one left-to-right language (no right-to-left language is supported yet); run Lighthouse on the home page and report the scores.
+Before saying a change is done (CLAUDE.md): build with no warnings; run `npm run test:layout` (it also covers WebKit on a phone and 320px, which CLAUDE.md does not name); check each changed page at 360, 768 and 1280px; check one left-to-right language (no right-to-left language is supported yet); run Lighthouse on the home page and report the scores.
 
 ---
 
