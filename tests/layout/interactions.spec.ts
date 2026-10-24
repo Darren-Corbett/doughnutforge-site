@@ -131,4 +131,6 @@ test("404 page", async ({ page }) => {
   expect(res!.status()).toBe(404);
   await expect(page.locator("h1")).toHaveCount(1);
   await expect(page.locator('a[href="/"]').first()).toBeVisible();
+  // One 404.html answers every unknown address, so it has no address of its own to share
+  await expect(page.locator('meta[property="og:url"]')).toHaveCount(0);
 });
