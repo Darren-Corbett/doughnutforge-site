@@ -1,6 +1,8 @@
 # Builds the site and publishes it to GitHub Pages on every push to main (and on
 # demand). The deploy fails, and the live site stays as it was, if any check in
-# `npm run build:deploy` fails or the live apple-app-site-association is missing.
+# `npm run build:deploy` fails or Pages no longer deploys from Actions. The run
+# also fails, after the deploy, if the live / and /download/ are not the pages it
+# built or the live apple-app-site-association is missing.
 # The build reads only this repository: store badges, app strings and the privacy
 # policy are committed copies, and no step calls a store or another site.
 name: Deploy site
@@ -22,6 +24,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      home: ${{ steps.hashes.outputs.home }}
+      download: ${{ steps.hashes.outputs.download }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -40,6 +45,12 @@ jobs:
             case "$found" in *"$font"*) echo "ok: $font" ;; *) echo "missing: $font (got $found)"; exit 1 ;; esac
           done
       - run: npm run build:deploy
+      # What the live pages must match after the deploy (scripts/check-live-deploy.mjs)
+      - id: hashes
+        name: Record the built pages
+        run: |
+          echo "home=$(sha256sum dist/index.html | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          echo "download=$(sha256sum dist/download/index.html | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
@@ -55,8 +66,25 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # A branch deploy would serve the repo root, where index.html is still the
+      # old "Coming soon" placeholder: stop unless Pages deploys from Actions.
+      # Uses the workflow token's pages permission (top of this file).
+      - name: Check Pages deploys from GitHub Actions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          source=$(gh api repos/${{ github.repository }}/pages --jq .build_type)
+          echo "Pages build_type: $source"
+          test "$source" = "workflow"
       - id: deployment
         uses: actions/deploy-pages@v5
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: scripts/check-live-deploy.mjs
+          sparse-checkout-cone-mode: false
+      # The live / and /download/ must be the pages this run built
+      - name: Check the live pages are this build
+        run: node scripts/check-live-deploy.mjs --base https://doughnut-forge.app --expect "/=${{ needs.build.outputs.home }},/download/=${{ needs.build.outputs.download }}"
       # The live site must serve the apps' association file: fail the run if not
       - name: Check apple-app-site-association is live
         run: |

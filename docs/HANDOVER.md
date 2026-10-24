@@ -44,13 +44,13 @@ Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the 
    - the issue 7 screen recording;
    - the iOS App Store ID (issue 4: it does not exist yet, so iOS stays "Coming soon").
 
-   Until H1 is fixed, a branch rollback serves the old "Coming soon" placeholder at `/`.
+   **A branch rollback serves the old "Coming soon" placeholder at `/`** (the repo-root `index.html`), with no other pages, until the root files are removed on or after 6 November. Since H1, the deploy also stops unless Pages deploys from GitHub Actions, and fails if the live `/` and `/download/` are not the pages it built.
 1. **Step 8, store listing URLs (owner, in progress).**
    - The app repo session is updating `fastlane/metadata/{mac,ios}/en-GB/privacy_url.txt` and `marketing_url.txt`.
    - Partner Center: the owner updates it by hand.
    - App Store Connect: set the same values by hand if the next fastlane upload does not send them. Privacy `https://doughnut-forge.app/privacy/`, Marketing `https://doughnut-forge.app/`, Support unchanged (`https://github.com/Darren-Corbett/forge-privacy/issues`).
 2. **Next week: Phase 5**, the support issue forms and the answered-issues pages. The plan is under "Next week" in `docs/PLAN.md`. When it ships, add the links to `/support/` and rerun the Phase 6 checks on the changed and new pages.
-3. **On or after 6 November 2026: step 6, remove the old root files.** Remove the root copies of `.well-known/`, `CNAME`, `.nojekyll`, the icons, `site.webmanifest` and `index.html`, and make `scripts/check-production-files.mjs` check the built files alone. Until then they are the rollback: switch Pages back to "Deploy from a branch" (`main`, root) **and push any commit**, because a source switch alone does not rebuild.
+3. **On or after 6 November 2026: step 6, remove the old root files.** Remove the root copies of `.well-known/`, `CNAME`, `.nojekyll`, the icons, `site.webmanifest` and `index.html`, and make `scripts/check-production-files.mjs` check the built files alone. Until then they are the rollback: switch Pages back to "Deploy from a branch" (`main`, root) **and push any commit**, because a source switch alone does not rebuild. That rollback restores only the apps' `apple-app-site-association`: the site itself becomes the old "Coming soon" placeholder at `/`, with no other pages. While Pages deploys from a branch, every push still starts the Actions deploy, which stops at "Check Pages deploys from GitHub Actions". That failure is expected during a rollback.
 4. **Step 9, Google Search Console (deferred by the owner).** When picked up, go one step at a time:
    1. search.google.com/search-console → Add property → **Domain** → `doughnut-forge.app` → copy the `google-site-verification=` TXT value (do not click Verify yet).
    2. Porkbun (the domain's DNS host) → DNS for doughnut-forge.app → add a TXT record on the root host with that value. Check it with `dig +short TXT doughnut-forge.app` before verifying.
