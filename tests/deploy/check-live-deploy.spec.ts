@@ -130,5 +130,6 @@ test("the deploy runs daily and by hand, fetching the answered issues first, wit
   const fetchStep = workflow.match(/- name: Fetch answered issues\n((?: {8,}.*\n)+)/)?.[0] ?? "";
   expect(fetchStep, "a Fetch answered issues step").toContain("node scripts/fetch-issues.mjs");
   expect(fetchStep).not.toMatch(/token|secrets\./i);
-  expect(workflow.indexOf("node scripts/fetch-issues.mjs")).toBeLessThan(workflow.indexOf("npm run build:deploy"));
+  // The steps themselves, not the header comment, which names the build too
+  expect(workflow.indexOf("run: node scripts/fetch-issues.mjs")).toBeLessThan(workflow.indexOf("run: npm run build:deploy"));
 });
