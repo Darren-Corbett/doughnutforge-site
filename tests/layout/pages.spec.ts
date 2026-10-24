@@ -53,6 +53,22 @@ for (const lang of languages) {
       if (lang.code === "en") expect(text).not.toMatch(/severity|branch|weakness|finding|audited|verified|military/i);
     });
 
+    // Both pages exist in every language: hreflang lists them all, and the
+    // language menu goes to the same page, not each language's home page
+    test(`roadmap and security hreflang and language menu ${lang.code}`, async ({ page }) => {
+      for (const path of ["/roadmap/", "/security/"]) {
+        await page.goto(`${prefix(lang)}${path}`);
+        await expect(page.locator('link[rel="alternate"][hreflang="x-default"]'), `${path} x-default`).toHaveAttribute("href", `https://doughnut-forge.app${path}`);
+        for (const l of languageData.languages) {
+          await expect(page.locator(`link[rel="alternate"][hreflang="${l.hreflang}"]`), `${path} hreflang ${l.hreflang}`).toHaveAttribute(
+            "href",
+            `https://doughnut-forge.app${prefix(l)}${path}`,
+          );
+          await expect(page.locator(`details.lang-switch .panel a[hreflang="${l.hreflang}"]`), `${path} menu ${l.hreflang}`).toHaveAttribute("href", `${prefix(l)}${path}`);
+        }
+      }
+    });
+
     test(`security ${lang.code}`, async ({ page }) => {
       const res = await page.goto(`${prefix(lang)}/security/`);
       expect(res?.status()).toBe(200);
