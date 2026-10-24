@@ -1,0 +1,100 @@
+// The deploy's live check (scripts/check-live-deploy.mjs), run against a local
+// server: it must pass only when the live pages are the build just deployed, and
+// fail on the old "Coming soon" placeholder or any other page. Also checks that
+// the deploy job's token can read the Pages settings, which the workflow needs
+// to confirm Pages still deploys from GitHub Actions.
+import { expect, test } from "@playwright/test";
+import { execFile } from "node:child_process";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+import { createServer, type Server } from "node:http";
+import type { AddressInfo } from "node:net";
+import { promisify } from "node:util";
+
+const root = new URL("../../", import.meta.url).pathname;
+const run = promisify(execFile);
+const sha = (file: string) => createHash("sha256").update(readFileSync(file)).digest("hex");
+
+const BUILT = { "/": `${root}dist/index.html`, "/download/": `${root}dist/download/index.html` };
+const PLACEHOLDER = `${root}index.html`;
+
+/** Serves each path from a file, ignoring the query, as GitHub Pages does */
+const serve = async (files: Record<string, string>) => {
+  const server: Server = createServer((req, res) => {
+    const file = files[new URL(req.url!, "http://x").pathname];
+    if (!file) return res.writeHead(404).end();
+    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" }).end(readFileSync(file));
+  });
+  await new Promise<void>((r) => server.listen(0, "127.0.0.1", r));
+  return { base: `http://127.0.0.1:${(server.address() as AddressInfo).port}`, close: () => new Promise((r) => server.close(r)) };
+};
+
+/** Runs the check with short waits; resolves with its exit code and output */
+const check = async (base: string, expect: Record<string, string>) => {
+  const args = [`${root}scripts/check-live-deploy.mjs`, "--base", base, "--expect", Object.entries(expect).map(([p, h]) => `${p}=${h}`).join(","), "--timeout", "2", "--interval", "0.5"];
+  try {
+    const { stdout, stderr } = await run(process.execPath, args);
+    return { code: 0, output: stdout + stderr };
+  } catch (e) {
+    const err = e as { code?: number; stdout?: string; stderr?: string };
+    return { code: err.code ?? 1, output: `${err.stdout ?? ""}${err.stderr ?? ""}` };
+  }
+};
+
+const expected = { "/": sha(BUILT["/"]), "/download/": sha(BUILT["/download/"]) };
+
+test("passes when the live pages are the build just deployed", async () => {
+  const server = await serve(BUILT);
+  try {
+    const result = await check(server.base, expected);
+    expect(result.output).toContain("match");
+    expect(result.code).toBe(0);
+  } finally {
+    await server.close();
+  }
+});
+
+test('fails when "/" is the old "Coming soon" placeholder', async () => {
+  const server = await serve({ "/": PLACEHOLDER, "/download/": BUILT["/download/"] });
+  try {
+    const result = await check(server.base, expected);
+    expect(result.code).not.toBe(0);
+    expect(result.output).toMatch(/placeholder|Coming soon/i);
+  } finally {
+    await server.close();
+  }
+});
+
+test("fails when a live page is not the build just deployed", async () => {
+  const server = await serve(BUILT);
+  try {
+    const result = await check(server.base, { ...expected, "/download/": "0".repeat(64) });
+    expect(result.code).not.toBe(0);
+    expect(result.output).toContain("/download/");
+  } finally {
+    await server.close();
+  }
+});
+
+test("fails when a page is missing", async () => {
+  const server = await serve({ "/": BUILT["/"] });
+  try {
+    expect((await check(server.base, expected)).code).not.toBe(0);
+  } finally {
+    await server.close();
+  }
+});
+
+test("the deploy job's token may read the Pages settings", () => {
+  // `gh api repos/<repo>/pages` needs pages: read or write, granted at the top
+  // level of the workflow or on the deploy job itself
+  const workflow = readFileSync(`${root}.github/workflows/deploy.yml`, "utf8");
+  const grants = (block: string) => /^\s+pages:\s*(read|write)\s*$/m.test(block);
+  const topLevel = workflow.match(/^permissions:\n((?:[ \t]+.*\n)+)/m)?.[1] ?? "";
+  const deployJob = workflow.match(/^ {2}deploy:\n((?:(?: {4,}.*)?\n)+)/m)?.[1] ?? "";
+  const jobPermissions = deployJob.match(/^ {4}permissions:\n((?: {6,}.*\n)+)/m)?.[1];
+  // A job's own permissions replace the top-level ones entirely
+  expect(jobPermissions !== undefined ? grants(jobPermissions) : grants(topLevel), "pages: read or write for the deploy job").toBe(true);
+  expect(workflow, "the workflow checks that Pages deploys from GitHub Actions").toMatch(/gh api repos\/\$\{\{ github\.repository \}\}\/pages --jq \.build_type/);
+  expect(workflow, "the workflow runs the live-page check").toContain("scripts/check-live-deploy.mjs");
+});

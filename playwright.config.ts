@@ -29,5 +29,7 @@ export default defineConfig({
     // pan checks only: accessibility and interactions repeat desktop WebKit.
     { name: "webkit-iphone", testMatch: /layout\/layout\.spec\.ts/, use: { ...devices["iPhone 13"] } },
     { name: "links", testMatch: /links\/.*\.spec\.ts/ },
+    // The deploy's live-page check, against a local server (no browser, no network)
+    { name: "deploy", testMatch: /deploy\/.*\.spec\.ts/ },
   ],
 });
