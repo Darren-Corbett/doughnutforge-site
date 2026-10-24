@@ -9,11 +9,15 @@
 //   - only the title, the question and the answer are kept, as plain text
 //     (GitHub's own plain-text rendering), with every @handle replaced: no
 //     usernames, avatars or anyone else's comments
+//   - a question filed through an issue form (docs/forge-privacy/) reads as
+//     written: short fields on one line ("Platform: Mac"), empty fields and the
+//     "Your question" heading left out, longer fields under their headings
 //   - no token of any kind is sent: the repo is public
 //   - on any failure the file is not written, so the last committed data stays
 //
 // FORGE_API and ISSUES_OUT point it elsewhere, for the tests.
-import { writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { parse } from "yaml";
 
 const SITE = new URL("..", import.meta.url).pathname;
 const API = process.env.FORGE_API ?? "https://api.github.com";
@@ -40,15 +44,47 @@ const getAll = async (path) => {
   return items;
 };
 
+// The issue forms' field labels: short fields (dropdowns and one-line inputs)
+// fold onto one line with their answer; these headings are left out altogether
+const FORMS = `${SITE}docs/forge-privacy/.github/ISSUE_TEMPLATE/`;
+const fields = readdirSync(FORMS)
+  .filter((f) => f !== "config.yml")
+  .flatMap((f) => parse(readFileSync(`${FORMS}${f}`, "utf8")).body.filter((b) => b.type !== "markdown"));
+const SHORT = new Set(fields.filter((b) => ["dropdown", "input"].includes(b.type)).map((b) => b.attributes.label));
+const DROP = new Set(["Your question"]);
+const FIELD_LABELS = new Set(fields.map((b) => b.attributes.label));
+const EMPTY = /^_?No response_?$/;
+
 /** Plain text with no usernames, empty form answers or runs of blank lines */
-const clean = (text) =>
-  (text ?? "")
+const clean = (text) => {
+  const paras = (text ?? "")
     .replace(/\r\n/g, "\n")
     .replace(/(^|[^\w/.])@[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})/g, "$1a GitHub user")
     .split(/\n{2,}/)
     .map((p) => p.trim())
-    .filter((p) => p && !/^_?No response_?$/.test(p))
-    .join("\n\n");
+    .filter(Boolean);
+  const out = [];
+  for (let i = 0; i < paras.length; i++) {
+    const p = paras[i];
+    const next = paras[i + 1];
+    const answered = next !== undefined && !EMPTY.test(next) && !FIELD_LABELS.has(next);
+    // A form field: fold, drop or keep its heading; an empty one goes with its label
+    if (FIELD_LABELS.has(p)) {
+      if (!answered) {
+        if (next !== undefined && EMPTY.test(next)) i++;
+        continue;
+      }
+      if (SHORT.has(p)) {
+        out.push(`${p}: ${next}`);
+        i++;
+        continue;
+      }
+      if (DROP.has(p)) continue;
+    }
+    if (!EMPTY.test(p)) out.push(p);
+  }
+  return out.join("\n\n");
+};
 
 const slug = (number, title) => {
   const words = title
