@@ -30,7 +30,8 @@ export const pages = all.filter(
   (p) => (!pagesFilter || pagesFilter.test(p)) && (!langsFilter || langsFilter.includes(langOf(p))),
 );
 
-export const WIDTHS = [360, 390, 768, 1280, 1440] as const;
-/** Phone widths where the header links must sit on one row. PHONE_WIDTHS=320,375 tries others, such as iPhone Display Zoom (320). */
-export const PHONE_WIDTHS: number[] = process.env.PHONE_WIDTHS?.split(",").map(Number) ?? [360, 390, 430];
+// 320px is iPhone Display Zoom ("Larger Text"), a real setting: required like the rest
+export const WIDTHS = [320, 360, 390, 768, 1280, 1440] as const;
+/** Phone widths, where the header links must sit on one row. PHONE_WIDTHS=375,414 tries others. */
+export const PHONE_WIDTHS: number[] = process.env.PHONE_WIDTHS?.split(",").map(Number) ?? [320, 360, 390, 430];
 export const THEMES = ["light", "dark"] as const;
