@@ -36,6 +36,7 @@ export default {
   "download.availability": "Ketersediaan bergantung pada negara atau wilayah anda.",
   "button.getApp": "Dapatkan Doughnut Forge",
   "status.comingSoon": "Akan datang",
+  "a11y.newTab": "(dibuka dalam tab baharu)",
   "meta.features.title": "Ciri: penyulitan luar talian fail, folder dan teks | Doughnut Forge",
   "meta.features.description": "Sulitkan fail, folder dan teks pada komputer anda sendiri, kongsi dengan orang yang dipercayai dan lindunginya untuk jangka panjang. Tiada akaun, tiada pelayan.",
   "features.title": "Semua yang dilakukan oleh Doughnut Forge",

@@ -36,6 +36,7 @@ export default {
   "download.availability": "La disponibilidad depende de tu país o región.",
   "button.getApp": "Consigue Doughnut Forge",
   "status.comingSoon": "Próximamente",
+  "a11y.newTab": "(se abre en una pestaña nueva)",
   "meta.features.title": "Funciones: cifra archivos y texto sin conexión | Doughnut Forge",
   "meta.features.description": "Cifra archivos, carpetas y texto en tu propia computadora, compártelos con gente de confianza y mantenlos protegidos a largo plazo. Sin cuenta y sin servidores.",
   "features.title": "Todo lo que hace Doughnut Forge",

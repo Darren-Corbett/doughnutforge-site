@@ -36,6 +36,7 @@ export default {
   "download.availability": "De beschikbaarheid hangt af van uw land of regio.",
   "button.getApp": "Doughnut Forge downloaden",
   "status.comingSoon": "Binnenkort",
+  "a11y.newTab": "(opent in een nieuw tabblad)",
   "meta.features.title": "Functies: offline versleuteling | Doughnut Forge",
   "meta.features.description": "Versleutel bestanden, mappen en tekst op uw eigen computer, deel ze met wie u vertrouwt en houd ze lang beschermd. Geen account en geen servers.",
   "features.title": "Alles wat Doughnut Forge doet",

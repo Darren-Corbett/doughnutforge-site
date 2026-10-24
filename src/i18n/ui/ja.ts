@@ -36,6 +36,7 @@ export default {
   "download.availability": "提供状況は国や地域によって異なります。",
   "button.getApp": "Doughnut Forgeを入手",
   "status.comingSoon": "近日登場",
+  "a11y.newTab": "（新しいタブで開きます）",
   "meta.features.title": "機能：ファイル、フォルダ、テキストをオフラインで暗号化 | Doughnut Forge",
   "meta.features.description": "自分のコンピュータ上でファイル、フォルダ、テキストを暗号化し、信頼できる相手と共有して、長く保護できます。アカウントもサーバーも不要です。",
   "features.title": "Doughnut Forgeでできること",

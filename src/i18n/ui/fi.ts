@@ -36,6 +36,7 @@ export default {
   "download.availability": "Saatavuus riippuu maastasi tai alueestasi.",
   "button.getApp": "Hanki Doughnut Forge",
   "status.comingSoon": "Tulossa pian",
+  "a11y.newTab": "(avautuu uuteen välilehteen)",
   "meta.features.title": "Ominaisuudet: offline-salaus tiedostoille | Doughnut Forge",
   "meta.features.description": "Salaa tiedostot, kansiot ja tekstit omalla tietokoneellasi, jaa ne luotettujen ihmisten kanssa ja pidä ne suojattuina pitkään. Ei tiliä eikä palvelimia.",
   "features.title": "Kaikki, mitä Doughnut Forge tekee",

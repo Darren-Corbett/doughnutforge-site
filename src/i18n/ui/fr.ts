@@ -36,6 +36,7 @@ export default {
   "download.availability": "La disponibilité dépend de votre pays ou de votre région.",
   "button.getApp": "Obtenir Doughnut Forge",
   "status.comingSoon": "Bientôt disponible",
+  "a11y.newTab": "(s'ouvre dans un nouvel onglet)",
   "meta.features.title": "Fonctions : chiffrement hors ligne de fichiers, dossiers et textes | Doughnut Forge",
   "meta.features.description": "Chiffrez fichiers, dossiers et textes sur votre propre ordinateur, partagez-les avec des personnes de confiance et gardez-les protégés sur le long terme. Sans compte ni serveur.",
   "features.title": "Tout ce que fait Doughnut Forge",

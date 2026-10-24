@@ -36,6 +36,7 @@ export default {
   "download.availability": "Доступність залежить від вашої країни або регіону.",
   "button.getApp": "Отримати Doughnut Forge",
   "status.comingSoon": "Незабаром",
+  "a11y.newTab": "(відкриється в новій вкладці)",
   "meta.features.title": "Функції: офлайн-шифрування файлів і тексту | Doughnut Forge",
   "meta.features.description": "Шифруйте файли, папки й текст на своєму комп’ютері, діліться ними з тими, кому довіряєте, і захищайте їх надовго. Без облікового запису й без серверів.",
   "features.title": "Усе, що вміє Doughnut Forge",

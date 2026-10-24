@@ -36,6 +36,7 @@ export default {
   "download.availability": "A disponibilidade depende do seu país ou região.",
   "button.getApp": "Obtenha o Doughnut Forge",
   "status.comingSoon": "Em breve",
+  "a11y.newTab": "(abre em uma nova aba)",
   "meta.features.title": "Recursos: criptografia offline de arquivos | Doughnut Forge",
   "meta.features.description": "Criptografe arquivos, pastas e textos no seu computador, compartilhe com quem você confia e mantenha tudo protegido a longo prazo. Sem conta e sem servidores.",
   "features.title": "Tudo o que o Doughnut Forge faz",

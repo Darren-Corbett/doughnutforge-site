@@ -53,6 +53,8 @@ export default {
 
   "button.getApp": "Get Doughnut Forge",
   "status.comingSoon": "Coming soon",
+  // Screen-reader text after each store badge, whose link opens in a new tab
+  "a11y.newTab": "(opens in a new tab)",
 
   // Features page
   "meta.features.title": "Features: offline encryption for files, folders and text | Doughnut Forge",

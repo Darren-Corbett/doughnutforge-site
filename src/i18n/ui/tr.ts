@@ -36,6 +36,7 @@ export default {
   "download.availability": "Kullanılabilirlik ülkenize veya bölgenize göre değişir.",
   "button.getApp": "Doughnut Forge'u edinin",
   "status.comingSoon": "Yakında",
+  "a11y.newTab": "(yeni sekmede açılır)",
   "meta.features.title": "Özellikler: çevrimdışı dosya, klasör ve metin şifreleme | Doughnut Forge",
   "meta.features.description": "Kendi bilgisayarınızda dosya, klasör ve metinleri şifreleyin, güvendiğiniz kişilerle paylaşın ve uzun vadede korunmalarını sağlayın. Hesap yok, sunucu yok.",
   "features.title": "Doughnut Forge'un yaptığı her şey",

@@ -36,6 +36,7 @@ export default {
   "download.availability": "Die Verfügbarkeit hängt von Ihrem Land oder Ihrer Region ab.",
   "button.getApp": "Doughnut Forge holen",
   "status.comingSoon": "Demnächst",
+  "a11y.newTab": "(öffnet sich in einem neuen Tab)",
   "meta.features.title": "Funktionen: Offline-Verschlüsselung | Doughnut Forge",
   "meta.features.description": "Verschlüsseln Sie Dateien, Ordner und Texte auf Ihrem Computer, teilen Sie sie mit Vertrauten und schützen Sie sie langfristig. Kein Konto, keine Server.",
   "features.title": "Alles, was Doughnut Forge kann",

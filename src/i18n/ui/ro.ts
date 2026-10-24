@@ -36,6 +36,7 @@ export default {
   "download.availability": "Disponibilitatea depinde de țara sau regiunea ta.",
   "button.getApp": "Obține Doughnut Forge",
   "status.comingSoon": "În curând",
+  "a11y.newTab": "(se deschide într-o filă nouă)",
   "meta.features.title": "Funcții: criptare offline pentru fișiere, dosare și text | Doughnut Forge",
   "meta.features.description": "Criptează fișiere, dosare și text pe propriul computer, partajează-le cu oameni de încredere și păstrează-le protejate pe termen lung. Fără cont și fără servere.",
   "features.title": "Tot ce face Doughnut Forge",

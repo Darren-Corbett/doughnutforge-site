@@ -36,6 +36,7 @@ export default {
   "download.availability": "Tính khả dụng tùy thuộc vào quốc gia hoặc khu vực của bạn.",
   "button.getApp": "Tải Doughnut Forge",
   "status.comingSoon": "Sắp ra mắt",
+  "a11y.newTab": "(mở trong thẻ mới)",
   "meta.features.title": "Tính năng: mã hóa ngoại tuyến tệp, thư mục, văn bản | Doughnut Forge",
   "meta.features.description": "Mã hóa tệp, thư mục và văn bản ngay trên máy tính của bạn, chia sẻ với người bạn tin tưởng và giữ chúng được bảo vệ lâu dài. Không tài khoản, không máy chủ.",
   "features.title": "Mọi điều Doughnut Forge làm được",

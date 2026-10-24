@@ -36,6 +36,7 @@ export default {
   "download.availability": "能否获取取决于您所在的国家或地区。",
   "button.getApp": "获取 Doughnut Forge",
   "status.comingSoon": "即将推出",
+  "a11y.newTab": "（在新标签页中打开）",
   "meta.features.title": "功能：离线加密文件、文件夹和文本 | Doughnut Forge",
   "meta.features.description": "在自己的电脑上加密文件、文件夹和文本，与您信任的人分享，并长期保护它们。无需账户，没有服务器。",
   "features.title": "Doughnut Forge 的全部功能",

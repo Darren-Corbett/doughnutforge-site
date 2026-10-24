@@ -36,6 +36,7 @@ export default {
   "download.availability": "Dostępność zależy od kraju lub regionu.",
   "button.getApp": "Pobierz Doughnut Forge",
   "status.comingSoon": "Wkrótce",
+  "a11y.newTab": "(otwiera się w nowej karcie)",
   "meta.features.title": "Funkcje: szyfruj pliki, foldery i tekst offline | Doughnut Forge",
   "meta.features.description": "Szyfruj pliki, foldery i tekst na własnym komputerze, udostępniaj je zaufanym osobom i chroń je na długie lata. Bez konta i bez serwerów.",
   "features.title": "Wszystko, co potrafi Doughnut Forge",

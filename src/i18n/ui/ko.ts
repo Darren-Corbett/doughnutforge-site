@@ -36,6 +36,7 @@ export default {
   "download.availability": "이용 가능 여부는 국가나 지역에 따라 다릅니다.",
   "button.getApp": "Doughnut Forge 받기",
   "status.comingSoon": "출시 예정",
+  "a11y.newTab": "(새 탭에서 열림)",
   "meta.features.title": "기능: 파일, 폴더, 텍스트 오프라인 암호화 | Doughnut Forge",
   "meta.features.description": "내 컴퓨터에서 파일, 폴더, 텍스트를 암호화하고, 신뢰하는 사람과 공유하고, 오랫동안 보호하세요. 계정도 서버도 없습니다.",
   "features.title": "Doughnut Forge의 모든 기능",

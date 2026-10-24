@@ -36,6 +36,7 @@ export default {
   "download.availability": "Az elérhetőség az országodtól vagy régiódtól függ.",
   "button.getApp": "Doughnut Forge letöltése",
   "status.comingSoon": "Hamarosan",
+  "a11y.newTab": "(új lapon nyílik meg)",
   "meta.features.title": "Funkciók: fájlok, mappák, szöveg offline titkosítása | Doughnut Forge",
   "meta.features.description": "Titkosíts fájlokat, mappákat és szöveget a saját gépeden, oszd meg őket azokkal, akikben megbízol, és védd őket hosszú távon. Fiók és szerverek nélkül.",
   "features.title": "Minden, amit a Doughnut Forge tud",

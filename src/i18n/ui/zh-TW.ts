@@ -36,6 +36,7 @@ export default {
   "download.availability": "能否取得取決於您所在的國家或地區。",
   "button.getApp": "取得 Doughnut Forge",
   "status.comingSoon": "即將推出",
+  "a11y.newTab": "（在新分頁中開啟）",
   "meta.features.title": "功能：離線加密檔案、資料夾和文字 | Doughnut Forge",
   "meta.features.description": "在自己的電腦上加密檔案、資料夾和文字，與您信任的人分享，並長期保護它們。不需帳號，沒有伺服器。",
   "features.title": "Doughnut Forge 的所有功能",

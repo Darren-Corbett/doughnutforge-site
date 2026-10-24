@@ -36,6 +36,7 @@ export default {
   "download.availability": "Tilgængeligheden afhænger af dit land eller område.",
   "button.getApp": "Hent Doughnut Forge",
   "status.comingSoon": "Kommer snart",
+  "a11y.newTab": "(åbnes i en ny fane)",
   "meta.features.title": "Funktioner: offline kryptering af filer | Doughnut Forge",
   "meta.features.description": "Krypter filer, mapper og tekst på din egen computer, del dem med dem, du stoler på, og hold dem beskyttet på lang sigt. Ingen konto og ingen servere.",
   "features.title": "Alt, hvad Doughnut Forge kan",

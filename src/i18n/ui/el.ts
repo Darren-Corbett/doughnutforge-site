@@ -36,6 +36,7 @@ export default {
   "download.availability": "Η διαθεσιμότητα εξαρτάται από τη χώρα ή την περιοχή σας.",
   "button.getApp": "Αποκτήστε το Doughnut Forge",
   "status.comingSoon": "Σύντομα",
+  "a11y.newTab": "(ανοίγει σε νέα καρτέλα)",
   "meta.features.title": "Λειτουργίες: offline κρυπτογράφηση αρχείων | Doughnut Forge",
   "meta.features.description": "Κρυπτογραφήστε αρχεία, φακέλους και κείμενο στον υπολογιστή, μοιραστείτε τα με όσους εμπιστεύεστε και προστατέψτε τα για χρόνια. Χωρίς λογαριασμό και διακομιστές.",
   "features.title": "Όλα όσα κάνει το Doughnut Forge",

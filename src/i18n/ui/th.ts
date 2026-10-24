@@ -36,6 +36,7 @@ export default {
   "download.availability": "การให้บริการขึ้นอยู่กับประเทศหรือภูมิภาคของคุณ",
   "button.getApp": "รับ Doughnut Forge",
   "status.comingSoon": "เร็วๆ นี้",
+  "a11y.newTab": "(เปิดในแท็บใหม่)",
   "meta.features.title": "ฟีเจอร์: เข้ารหัสไฟล์ โฟลเดอร์ และข้อความแบบออฟไลน์ | Doughnut Forge",
   "meta.features.description": "เข้ารหัสไฟล์ โฟลเดอร์ และข้อความบนคอมพิวเตอร์ของคุณเอง แชร์กับคนที่คุณไว้ใจ และปกป้องไว้ได้ในระยะยาว ไม่มีบัญชีและไม่มีเซิร์ฟเวอร์",
   "features.title": "ทุกสิ่งที่ Doughnut Forge ทำได้",

@@ -36,6 +36,7 @@ export default {
   "download.availability": "Ketersediaan bergantung pada negara atau wilayah Anda.",
   "button.getApp": "Dapatkan Doughnut Forge",
   "status.comingSoon": "Segera hadir",
+  "a11y.newTab": "(terbuka di tab baru)",
   "meta.features.title": "Fitur: enkripsi offline file, folder, dan teks | Doughnut Forge",
   "meta.features.description": "Enkripsi file, folder, dan teks di komputer Anda, bagikan kepada orang tepercaya, dan jaga agar tetap terlindungi dalam jangka panjang. Tanpa akun, tanpa server.",
   "features.title": "Semua yang dilakukan Doughnut Forge",
