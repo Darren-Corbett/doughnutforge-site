@@ -2,20 +2,26 @@
 // server: it must pass only when the live pages are the build just deployed, and
 // fail on the old "Coming soon" placeholder or any other page. Also checks that
 // the deploy job's token can read the Pages settings, which the workflow needs
-// to confirm Pages still deploys from GitHub Actions.
+// to confirm Pages still deploys from GitHub Actions, and that the deploy checks
+// security.txt and private vulnerability reporting.
 import { expect, test } from "@playwright/test";
 import { execFile } from "node:child_process";
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { createServer, type Server } from "node:http";
 import type { AddressInfo } from "node:net";
 import { promisify } from "node:util";
 
 const root = new URL("../../", import.meta.url).pathname;
 const run = promisify(execFile);
-const sha = (file: string) => createHash("sha256").update(readFileSync(file)).digest("hex");
+// A file the build did not make gets no hash, so the tests that need it fail
+const sha = (file: string) => (existsSync(file) ? createHash("sha256").update(readFileSync(file)).digest("hex") : "missing");
 
-const BUILT = { "/": `${root}dist/index.html`, "/download/": `${root}dist/download/index.html` };
+const BUILT = {
+  "/": `${root}dist/index.html`,
+  "/download/": `${root}dist/download/index.html`,
+  "/.well-known/security.txt": `${root}dist/.well-known/security.txt`,
+};
 const PLACEHOLDER = `${root}index.html`;
 
 /** Serves each path from a file, ignoring the query, as GitHub Pages does */
@@ -41,7 +47,7 @@ const check = async (base: string, expect: Record<string, string>) => {
   }
 };
 
-const expected = { "/": sha(BUILT["/"]), "/download/": sha(BUILT["/download/"]) };
+const expected = Object.fromEntries(Object.entries(BUILT).map(([path, file]) => [path, sha(file)]));
 
 test("passes when the live pages are the build just deployed", async () => {
   const server = await serve(BUILT);
@@ -76,6 +82,17 @@ test("fails when a live page is not the build just deployed", async () => {
   }
 });
 
+test("fails when security.txt is missing", async () => {
+  const server = await serve({ "/": BUILT["/"], "/download/": BUILT["/download/"] });
+  try {
+    const result = await check(server.base, expected);
+    expect(result.code).not.toBe(0);
+    expect(result.output).toContain("/.well-known/security.txt");
+  } finally {
+    await server.close();
+  }
+});
+
 test("fails when a page is missing", async () => {
   const server = await serve({ "/": BUILT["/"] });
   try {
@@ -97,4 +114,9 @@ test("the deploy job's token may read the Pages settings", () => {
   expect(jobPermissions !== undefined ? grants(jobPermissions) : grants(topLevel), "pages: read or write for the deploy job").toBe(true);
   expect(workflow, "the workflow checks that Pages deploys from GitHub Actions").toMatch(/gh api repos\/\$\{\{ github\.repository \}\}\/pages --jq \.build_type/);
   expect(workflow, "the workflow runs the live-page check").toContain("scripts/check-live-deploy.mjs");
+  expect(workflow, "the live-page check includes security.txt").toMatch(/--expect "[^"]*\/\.well-known\/security\.txt=\$\{\{ needs\.build\.outputs\.security \}\}/);
+  // The security page must never be live while its report link leads nowhere
+  expect(workflow, "the workflow checks private vulnerability reporting is on").toContain(
+    "gh api repos/Darren-Corbett/forge-privacy/private-vulnerability-reporting --jq .enabled",
+  );
 });
