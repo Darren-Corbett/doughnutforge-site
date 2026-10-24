@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 23 October 2026
+- **Last updated:** 24 October 2026, after the post-launch audit, Stage 1 (last commit `99d31ff`, deployed; the audit files are not committed yet)
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
@@ -17,9 +17,9 @@ Where the site work stands, and what comes next. Read this at the start of every
 | 1 | Astro setup, design system, layout, English home page | Done | `f512825` set up and home page, `b62a608` home page redesign, `4809639` dark header on every page |
 | 2 | The other English pages: features, pricing, download, privacy, support/FAQ, press, legal, blog layout, 404, sitemap, robots.txt, social images | Done | `c0d0d83` |
 | 3 | All 30 languages, hreflang, language switcher | Done | `71b71f0` translations, `121d53c` first batch marked reviewed |
-| 4 | The four launch blog posts in English | **Done**: published 23 October 2026 (the owner asked to publish them; claims in `docs/BLOG-CLAIMS.md`) | `ee042f8` setup, `70f46f9`, `c78eb76`, `89ffe96`, `8b7a3c4`, `d0aca89` posts, then the publish commit |
+| 4 | The four launch blog posts in English | **Done**: published 23 October 2026 (claims in `docs/BLOG-CLAIMS.md`) | `ee042f8` setup, `70f46f9` `c78eb76` `89ffe96` `8b7a3c4` `d0aca89` posts, `206e3dd` published |
 | 5 | Support issue forms and the "answered issues" Action | **Deferred to next week**, not part of launch | none |
-| 6 | SEO, Lighthouse and accessibility checks, launch checklist | **Checks done**; launch steps in `docs/launch/LAUNCH-CHECKLIST.md` | see `git log` |
+| 6 | SEO, Lighthouse and accessibility checks, launch | **Done: the site is live** (23 October 2026). Steps 6, 8 and 9 of `docs/launch/LAUNCH-CHECKLIST.md` are still open | `a2b003c` to `99d31ff`; forge-privacy `a9ed0d8` |
 
 ### Why Phase 5 is deferred
 The owner moved it out of launch on 23 October 2026, to cut what launch depends on. Support at launch is what the site already has: `/support/` links to GitHub issues on forge-privacy and shows the bold never-attach warning in every language. No page links to "Answered questions" or "Known issues", and none may until Phase 5 ships. Phase 6 must not depend on anything from Phase 5. The full Phase 5 plan is under "Next week" in `docs/PLAN.md`, unchanged and ready to pick up.
@@ -28,28 +28,46 @@ Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the 
 
 ---
 
-## What is next, step by step
+## Where we are now
 
-1. **Phase 4: drafts built.** The four posts are in `src/content/blog/en/*.mdx` with `draft: true`, on the MDX, RSS, figure-component and organisation-author setup. Decisions from the owner (23 October 2026):
-   - External facts are allowed, each sourced to an official page and checked against the live page before writing.
-   - No algorithm names. NIST's 2024 post-quantum standards may be mentioned in general.
-   - No personal byline. The page shows no author name or bio, and the `Article` structured data names Doughnut Forge as an `Organization`.
-   - MDX is fine.
-   - The Mac file menu opens from the ⋮ button or by right-clicking (owner, 23 October 2026). Post 1 names both.
-2. **Phase 4 review: done.** The owner asked for all four posts to be published at launch, on 23 October 2026. Keep `docs/BLOG-CLAIMS.md` in step with the posts: a later copy change must not add a claim without a row.
-3. **Stale-translation detection: built** (plan: `~/.claude/plans/stale-translation-detection.md`). See "Translations: keeping them in step with English" below.
-4. **Launch (23 October 2026):** the site is live from GitHub Actions and deploys on every push to `main` (steps 1–5 of `docs/launch/LAUNCH-CHECKLIST.md`). The first deploy left out `.well-known/apple-app-site-association` for about 42 minutes (13:13–13:55 UTC), because the Pages upload drops files whose names start with a dot. The workflow now sets `include-hidden-files: true`, and its last step fails unless the live file lists both apps.
-   - **Reminder, on or after 6 November 2026 (step 6):** remove the old root copies of `.well-known/`, `CNAME`, `.nojekyll`, the icons, `site.webmanifest` and `index.html`, and make `scripts/check-production-files.mjs` check the built files alone. Until then they stay as the rollback: switching Pages back to "Deploy from a branch" and pushing any commit brings the old site back (a source switch alone does not rebuild).
-   - **Step 7, done:** forge-privacy `a9ed0d8` replaces its page with the redirect. Both store Privacy URLs (with and without the trailing slash) and every `?lang=` land on the matching `/privacy/` page; the issues page is unchanged.
-   - **Step 8, in progress (owner):** the app repo session is updating `fastlane/metadata/{mac,ios}/en-GB/privacy_url.txt` and `marketing_url.txt`. Partner Center is being updated by hand. App Store Connect needs the same values if the next fastlane upload does not send them: Privacy `https://doughnut-forge.app/privacy/`, Marketing `https://doughnut-forge.app/`, Support unchanged.
-   - **Step 9, deferred (owner, 23 October 2026): Google Search Console.** When picked up, go one step at a time:
-     1. search.google.com/search-console → Add property → **Domain** → `doughnut-forge.app` → copy the `google-site-verification=` TXT value (do not click Verify yet).
-     2. Porkbun (the domain's DNS host) → DNS for doughnut-forge.app → add a TXT record on the root host with that value. Check it with `dig +short TXT doughnut-forge.app` before verifying.
-     3. Click Verify, then Sitemaps → submit `https://doughnut-forge.app/sitemap-index.xml`.
-     Nothing changes on the site: no tag, file or script, and no visitor tracking.
-   - **Privacy policy source after step 7:** forge-privacy's `index.html` becomes a redirect, so the policy wording lives on this site. `check-privacy-wording.mjs` and `extract-privacy.mjs` keep comparing with the pinned original, forge-privacy@3e7911c, which stays in that repo's history. Any wording change from now on is made here, and only with the owner's approval.
-5. **No open items block launch.** Company details, the press contact and the first release date were removed instead of filled (owner, 23 October 2026), and the Mac App Store ID is 6812778888.
-6. **Next week: Phase 5.**
+- **The site is live** at https://doughnut-forge.app in all 30 languages (every language reviewed and indexed), with the four blog posts, served by GitHub Pages from GitHub Actions. **Every push to `main` deploys** within about two minutes. The deploy fails, and the live site stays as it was, if any check in `npm run build:deploy` fails or the live `apple-app-site-association` is missing.
+- **The old privacy page redirects:** forge-privacy `a9ed0d8` sends `darren-corbett.github.io/forge-privacy` (with or without the trailing slash, and every `?lang=`) to the matching `/privacy/` page. The store Support URL (forge-privacy issues) is unchanged.
+- **Working tree:** waiting for the owner's yes on the Stage 1 commit: the Playwright tooling (`playwright.config.ts`, `tests/`, the `test:layout` and `test:links` scripts, two devDependencies), `docs/audit/2026-10-24.md` with its screenshots, and this file.
+- **Post-launch audit (24 October 2026):** [`docs/audit/2026-10-24.md`](audit/2026-10-24.md). It covers the owner's eight live-site issues and the full audit (246 pages × 30 languages × Chromium, WebKit and WebKit iPhone × five widths × two themes, axe, links, and real Mobile Safari in the iOS Simulator). There are no critical findings. The high ones are the deploy's missing live-page check (issue 1), store links not opening in a new tab (issue 5), the header wrapping at 320px with Display Zoom (issue 8), and a German FAQ heading that pans at 320px (issue 7). Issues 2 and 7 (English) did not reproduce, and the owner's device details are needed. Stage 2 is the fix plan, written from the audit, for approval in plan mode.
+- **Launch incident:** the first deploy left out `.well-known/apple-app-site-association` for about 42 minutes (13:13 to 13:55 UTC), because the Pages upload drops files whose names start with a dot. Fixed in `42fb02c` (`include-hidden-files: true`, plus a live check at the end of the deploy job). Whether Apple fetched the file during the gap is unknown.
+
+## What is next, in order
+
+0. **Audit Stage 2 (next):** get the owner's yes on the Stage 1 commit, then plan the fixes in plan mode from `docs/audit/2026-10-24.md`. Waiting on the owner for:
+   - the issue 6 screenshots;
+   - for issues 2, 7 and 8: the iPhone model, iOS version, Display Zoom, Safari aA zoom and content blockers;
+   - the issue 7 screen recording;
+   - the iOS App Store ID (issue 4: it does not exist yet, so iOS stays "Coming soon").
+
+   Until H1 is fixed, a branch rollback serves the old "Coming soon" placeholder at `/`.
+1. **Step 8, store listing URLs (owner, in progress).**
+   - The app repo session is updating `fastlane/metadata/{mac,ios}/en-GB/privacy_url.txt` and `marketing_url.txt`.
+   - Partner Center: the owner updates it by hand.
+   - App Store Connect: set the same values by hand if the next fastlane upload does not send them. Privacy `https://doughnut-forge.app/privacy/`, Marketing `https://doughnut-forge.app/`, Support unchanged (`https://github.com/Darren-Corbett/forge-privacy/issues`).
+2. **Next week: Phase 5**, the support issue forms and the answered-issues pages. The plan is under "Next week" in `docs/PLAN.md`. When it ships, add the links to `/support/` and rerun the Phase 6 checks on the changed and new pages.
+3. **On or after 6 November 2026: step 6, remove the old root files.** Remove the root copies of `.well-known/`, `CNAME`, `.nojekyll`, the icons, `site.webmanifest` and `index.html`, and make `scripts/check-production-files.mjs` check the built files alone. Until then they are the rollback: switch Pages back to "Deploy from a branch" (`main`, root) **and push any commit**, because a source switch alone does not rebuild.
+4. **Step 9, Google Search Console (deferred by the owner).** When picked up, go one step at a time:
+   1. search.google.com/search-console → Add property → **Domain** → `doughnut-forge.app` → copy the `google-site-verification=` TXT value (do not click Verify yet).
+   2. Porkbun (the domain's DNS host) → DNS for doughnut-forge.app → add a TXT record on the root host with that value. Check it with `dig +short TXT doughnut-forge.app` before verifying.
+   3. Click Verify, then Sitemaps → submit `https://doughnut-forge.app/sitemap-index.xml`.
+
+   Nothing changes on the site: no tag, file or script, and no visitor tracking.
+5. **11 December 2026:** iOS launch pricing ends. Pages show no prices; update `src/data/prices.ts` so the record stays true.
+6. **When the copywriter's notes arrive:** follow "Post-launch copy review" below.
+7. **New blog posts:** no more than one or two a week, each starting as `draft: true` with a claims table in `docs/BLOG-CLAIMS.md`, published only on the owner's say-so.
+
+## Decisions on record (23 October 2026)
+
+- **Blog:** external facts are allowed, each sourced to an official page and checked live before writing. No algorithm names; NIST's 2024 post-quantum standards may be mentioned in general. No personal byline: the page shows no author, and the `Article` structured data names Doughnut Forge as an `Organization`. MDX is fine. The Mac file menu opens from the ⋮ button or by right-clicking.
+- **Claims:** keep `docs/BLOG-CLAIMS.md` in step with the posts. A later copy change must not add a claim without a row.
+- **Translations:** stale-translation detection is built (see "Translations: keeping them in step with English" below).
+- **Privacy policy source:** the wording lives on this site now. `check-privacy-wording.mjs` and `extract-privacy.mjs` keep comparing with the pinned original, forge-privacy@3e7911c. Any wording change is made here, and only with the owner's approval.
+- **Nothing blocks launch:** company details, the press contact and the first release date were removed instead of filled, and the Mac App Store ID is 6812778888.
 
 ### Facts found for Phase 4 (23 October 2026, app version 0.4.42)
 These change what the posts can say:
@@ -113,6 +131,9 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 | Serve the last build | `npm run preview`, then http://localhost:4321/ |
 | Copy strings, store copy and screenshots from the app repo | `npm run sync:app` (local only; reads `~/git/doughnut-forge`, never writes to it) |
 | Store badge coverage | `npm run badges` |
+| Layout, accessibility and interaction tests (build first; no network) | `npm run test:layout`, narrowed with `PAGES=` and `LANGS=`; see `tests/README.md` |
+| Link tests (live site and stores) | `npm run test:links` |
+| The layout checks in real Mobile Safari (iOS Simulator) | `node tests/ios/real-safari.ts <udid>` (setup in the file) |
 | Record which English a translation came from (after review only) | `node scripts/stamp-translations.mjs --lang de --keys a,b` |
 
 **The checks** (all run by `npm run build`, in this order):
@@ -125,7 +146,7 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 
 **Deploy:** `.github/workflows/` holds the deploy workflow. It runs only by hand (`workflow_dispatch`) until the owner switches GitHub Pages to "GitHub Actions". Until then the live site is served from the repo root, so the root `.well-known/`, `CNAME`, `.nojekyll`, icons, `site.webmanifest` and `index.html` must stay. The shipped apps rely on the root `apple-app-site-association` for password-manager linking.
 
-Before saying a change is done (CLAUDE.md): build with no warnings; check each changed page at 360, 768 and 1280px; check one left-to-right language (no right-to-left language is supported yet); run Lighthouse on the home page and report the scores.
+Before saying a change is done (CLAUDE.md): build with no warnings; run `npm run test:layout` (it also covers WebKit on a phone, which CLAUDE.md does not name); check each changed page at 360, 768 and 1280px; check one left-to-right language (no right-to-left language is supported yet); run Lighthouse on the home page and report the scores.
 
 ---
 
