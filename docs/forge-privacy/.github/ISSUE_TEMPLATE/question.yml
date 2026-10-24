@@ -1,0 +1,32 @@
+name: Ask a question
+description: Ask how to do something in Doughnut Forge.
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never attach vault files, identity files, your backup phrase (recovery words), passwords or passphrases, or screenshots that show them.**
+
+        Issues are public: anyone can read what you write.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platforms is your question about? Leave it empty if it is about all of them.
+      multiple: true
+      options:
+        - Mac
+        - Windows
+        - iPhone
+        - iPad
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: For example 0.4.44. Leave it blank if you are not sure.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true

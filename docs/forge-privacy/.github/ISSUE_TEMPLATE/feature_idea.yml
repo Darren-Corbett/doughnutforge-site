@@ -1,0 +1,31 @@
+name: Suggest a feature
+description: An idea that would make Doughnut Forge more useful.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never attach vault files, identity files, your backup phrase (recovery words), passwords or passphrases, or screenshots that show them.**
+
+        Issues are public: anyone can read what you write.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platforms is your idea for? Leave it empty if it is for all of them.
+      multiple: true
+      options:
+        - Mac
+        - Windows
+        - iPhone
+        - iPad
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it help you do?

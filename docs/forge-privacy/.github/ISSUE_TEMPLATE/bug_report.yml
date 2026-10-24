@@ -1,0 +1,45 @@
+name: Report a bug
+description: Something in Doughnut Forge does not work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never attach vault files, identity files, your backup phrase (recovery words), passwords or passphrases, or screenshots that show them.**
+
+        Issues are public: anyone can read what you write.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Where does it happen?
+      options:
+        - Mac
+        - Windows
+        - iPhone
+        - iPad
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: For example 0.4.44. Leave it blank if you are not sure.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: |
+        1.
+        2.
+        3.
