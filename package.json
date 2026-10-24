@@ -13,7 +13,8 @@
     "test:layout": "playwright test tests/layout --project=chromium --project=webkit --project=webkit-iphone",
     "test:links": "playwright test tests/links --project=links",
     "test:deploy": "playwright test tests/deploy --project=deploy",
-    "test:forms": "playwright test tests/forms --project=forms"
+    "test:forms": "playwright test tests/forms --project=forms",
+    "test:checks": "playwright test tests/checks --project=checks"
   },
   "dependencies": {
     "@astrojs/mdx": "8.0.3",
