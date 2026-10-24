@@ -3,9 +3,13 @@
 import { expect, test } from "@playwright/test";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import alts from "../../src/assets/badges/alt.json" with { type: "json" };
+import sameAsEnglish from "../../src/i18n/same-as-english.json" with { type: "json" };
 
 const languages = languageData.languages;
 const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.path}`);
+// What screen readers hear after a store badge's name (the owner's wording)
+const NEW_TAB_EN = "(opens in a new tab)";
+const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const STORE_HOSTS: Record<string, keyof typeof alts> = { "apps.apple.com": "mac-app-store", "apps.microsoft.com": "microsoft-store" };
 // The link each store should get (as src/data/stores.ts storeUrl builds it):
 // Apple with no country code, Microsoft in the page language
@@ -59,9 +63,19 @@ for (const lang of languages) {
             expect.soft(await img.getAttribute("lang"), `${path} ${store}: English badge marked lang=en`).toBe("en");
           }
           expect.soft(href, `${path} ${store}: link`).toMatch(LINK[store]!(lang.hreflang));
-          // Known issue 5 (to fix): store links open in a new tab and say so
+          // Store links open in a new tab, and say so to screen readers in the page language
           expect.soft(await a.getAttribute("target"), `${path} ${store}: opens in a new tab`).toBe("_blank");
           expect.soft(await a.getAttribute("rel"), `${path} ${store}: rel`).toBe("noopener noreferrer");
+          const hint = a.locator(".sr-only");
+          await expect.soft(hint, `${path} ${store}: says it opens in a new tab`).toHaveCount(1);
+          if ((await hint.count()) === 1) {
+            const text = (await hint.textContent())!.trim();
+            expect.soft(text, `${path} ${store}: new-tab text`).not.toBe("");
+            if (lang.code === "en" || lang.code === "en-US") expect.soft(text, `${path} ${store}: English new-tab text`).toBe(NEW_TAB_EN);
+            else if (!(sameAsEnglish as Record<string, string[]>)[lang.code]?.includes("a11y.newTab"))
+              expect.soft(text, `${path} ${store}: new-tab text is translated`).not.toBe(NEW_TAB_EN);
+            await expect.soft(a, `${path} ${store}: link name is the badge, then the new-tab text`).toHaveAccessibleName(new RegExp(`^${escape(alt)}\\s*${escape(text)}$`));
+          }
           await img.scrollIntoViewIfNeeded();
           await expect.soft(img, `${path} ${store}: badge image loads`).toHaveJSProperty("complete", true);
           expect.soft(await img.evaluate((i: HTMLImageElement) => i.naturalWidth), `${path} ${store}: badge has pixels`).toBeGreaterThan(0);
