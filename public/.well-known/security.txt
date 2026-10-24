@@ -1,0 +1,6 @@
+# Doughnut Forge: report security problems privately, never in public issues.
+Contact: https://github.com/Darren-Corbett/forge-privacy/security/advisories/new
+Expires: 2027-10-24T00:00:00.000Z
+Policy: https://doughnut-forge.app/security/
+Canonical: https://doughnut-forge.app/.well-known/security.txt
+Preferred-Languages: en

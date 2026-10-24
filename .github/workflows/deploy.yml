@@ -2,9 +2,12 @@
 # demand). The deploy fails, and the live site stays as it was, if any check in
 # `npm run build:deploy` fails or Pages no longer deploys from Actions. The run
 # also fails, after the deploy, if the live / and /download/ are not the pages it
-# built or the live apple-app-site-association is missing.
+# built, the live security.txt is not the one it built, or the live
+# apple-app-site-association is missing. It also stops, before deploying, unless
+# private vulnerability reporting is on in forge-privacy, where /security/ and
+# security.txt send reports.
 # The build reads only this repository: store badges, app strings and the privacy
-# policy are committed copies, and no step calls a store or another site.
+# policy are committed copies, and no build step calls a store or another site.
 name: Deploy site
 
 on:
@@ -27,6 +30,7 @@ jobs:
     outputs:
       home: ${{ steps.hashes.outputs.home }}
       download: ${{ steps.hashes.outputs.download }}
+      security: ${{ steps.hashes.outputs.security }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -51,6 +55,7 @@ jobs:
         run: |
           echo "home=$(sha256sum dist/index.html | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
           echo "download=$(sha256sum dist/download/index.html | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          echo "security=$(sha256sum dist/.well-known/security.txt | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
@@ -76,15 +81,24 @@ jobs:
           source=$(gh api repos/${{ github.repository }}/pages --jq .build_type)
           echo "Pages build_type: $source"
           test "$source" = "workflow"
+      # /security/ and security.txt send reports to forge-privacy's private
+      # vulnerability reporting: never deploy while it is off and the link leads nowhere
+      - name: Check private vulnerability reporting is on
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          enabled=$(gh api repos/Darren-Corbett/forge-privacy/private-vulnerability-reporting --jq .enabled)
+          echo "Private vulnerability reporting: $enabled"
+          test "$enabled" = "true"
       - id: deployment
         uses: actions/deploy-pages@v5
       - uses: actions/checkout@v7
         with:
           sparse-checkout: scripts/check-live-deploy.mjs
           sparse-checkout-cone-mode: false
-      # The live / and /download/ must be the pages this run built
+      # The live /, /download/ and security.txt must be the files this run built
       - name: Check the live pages are this build
-        run: node scripts/check-live-deploy.mjs --base https://doughnut-forge.app --expect "/=${{ needs.build.outputs.home }},/download/=${{ needs.build.outputs.download }}"
+        run: node scripts/check-live-deploy.mjs --base https://doughnut-forge.app --expect "/=${{ needs.build.outputs.home }},/download/=${{ needs.build.outputs.download }},/.well-known/security.txt=${{ needs.build.outputs.security }}"
       # The live site must serve the apps' association file: fail the run if not
       - name: Check apple-app-site-association is live
         run: |

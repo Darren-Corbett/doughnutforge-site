@@ -1,0 +1,10 @@
+---
+// Roadmap page in every language but English (English: src/pages/roadmap.astro)
+import { otherLanguagePaths, type Language } from "../../i18n";
+import RoadmapPage from "../../views/RoadmapPage.astro";
+
+export const getStaticPaths = otherLanguagePaths;
+const { lang } = Astro.props as { lang: Language };
+---
+
+<RoadmapPage lang={lang} />

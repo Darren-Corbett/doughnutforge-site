@@ -6,13 +6,20 @@
     "press.facts.website",
     "press.shots.title",
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "nav.roadmap",
+    "meta.roadmap.title",
+    "roadmap.title"
   ],
   "nl": [
     "press.facts.website",
     "press.shots.label",
     "press.download",
-    "footer.product"
+    "footer.product",
+    "nav.roadmap",
+    "meta.roadmap.title",
+    "roadmap.title",
+    "roadmap.later"
   ],
   "da": [
     "nav.download",

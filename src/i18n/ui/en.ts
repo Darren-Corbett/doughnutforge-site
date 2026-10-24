@@ -17,6 +17,8 @@ export default {
   "nav.blogEnglish": "Blog (in English)",
   "nav.press": "Press kit",
   "nav.legal": "Legal",
+  "nav.roadmap": "Roadmap",
+  "nav.security": "Security",
   "nav.home": "Doughnut Forge home",
   "skip": "Skip to content",
 
@@ -189,6 +191,52 @@ export default {
   "legal.trademarks.microsoft": "Microsoft, Windows and the Microsoft Store logo are trademarks of the Microsoft group of companies.",
   "legal.trademarks.other":
     "Android is a trademark of Google LLC. Linux is the registered trademark of Linus Torvalds in the U.S. and other countries.",
+
+  // Roadmap: shipped, next and later only. Never a date, version or finding code.
+  "meta.roadmap.title": "Roadmap | Doughnut Forge",
+  "meta.roadmap.description": "What is planned next for Doughnut Forge, including Android and an independent security audit.",
+  "roadmap.title": "Roadmap",
+  "roadmap.lead": "What has shipped, and what is planned next. Plans can change, so nothing here has a date.",
+  "roadmap.shipped": "Shipped",
+  "roadmap.next": "Next",
+  "roadmap.later": "Later",
+  "roadmap.planned": "Planned",
+  "roadmap.identity.title": "Identity protection",
+  "roadmap.identity.text":
+    "An update that keeps every identity safe, so it can never be lost, replaced or left readable. On Mac, Windows, iPhone and iPad.",
+  "roadmap.stricter.title": "Stricter protection",
+  "roadmap.stricter.text": "Further protection updates that make the app stricter about what it accepts. Nothing changes for your data.",
+  "roadmap.android.title": "Doughnut Forge for Android",
+  "roadmap.audit.title": "Independent security audit",
+  "roadmap.audit.text": "A security audit of Doughnut Forge by an independent outside expert.",
+
+  // Security: what a user needs to know, no internal design. Never say an audit
+  // has happened, or that the sender of a shared file is verified.
+  "meta.security.title": "Security: how your files stay private | Doughnut Forge",
+  "meta.security.description":
+    "How Doughnut Forge protects your files on your own device, with no servers and no account, and how to report a security problem privately.",
+  "security.title": "Security",
+  "security.lead": "How Doughnut Forge keeps your files private, and how to report a security problem.",
+  "security.device.title": "On your device only",
+  "security.device.text": "Doughnut Forge encrypts and opens your files on your own device. Your files are never uploaded.",
+  "security.servers.title": "No servers, no account",
+  "security.servers.text":
+    "There are no Doughnut Forge servers and no account to create, so none of your files or details are stored anywhere else.",
+  "security.quantum.title": "Post-quantum encryption",
+  "security.quantum.text":
+    "Doughnut Forge uses post-quantum encryption, which is designed to resist the powerful quantum computers of the future, so what you protect today stays protected.",
+  "security.keys.title": "Your keys stay with you",
+  "security.keys.text": "Your password and keys stay on your device. They are never stored on a server or sent across the network.",
+  "security.audit.title": "Not audited yet",
+  "security.audit.text": "Doughnut Forge has not had an independent security audit yet. One is planned.",
+  "security.audit.link": "See the roadmap",
+  "security.report.title": "Report a vulnerability",
+  "security.report.text":
+    "If you find a security problem in Doughnut Forge or this website, report it privately on GitHub. Please do not open a public issue.",
+  "security.report.private": "Only the developer can see your report. You need a free GitHub account.",
+  "security.report.promise":
+    "Every report gets a reply. Doughnut Forge will not take legal action against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and allowing time for a fix before sharing details.",
+  "security.report.button": "Report a vulnerability",
 
   // Blog
   "meta.blog.title": "Blog: plain-language guides to private files | Doughnut Forge",

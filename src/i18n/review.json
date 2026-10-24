@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -51,13 +51,34 @@
         "issue": "Correct. 'onglet' is the browser-tab term, and the straight apostrophe matches the rest of fr.ts.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(s'ouvre dans un nouvel onglet)"
+      },
+      {
+        "key": "security.device.text",
+        "severity": "note",
+        "issue": "Resolved (was blocking): \"ne sont jamais envoyés en ligne\" means \"are never sent online\", which is wider than \"never uploaded\". It contradicts faq.offline.a in the same file (\"si vous choisissez d'envoyer des fichiers chiffrés par Internet\"), which uses the same verb for something the user can do.",
+        "backTranslation": "Doughnut Forge encrypts and opens your files on your own device. Your files are never sent online.",
+        "suggestion": "Doughnut Forge chiffre et ouvre vos fichiers sur votre propre appareil. Vos fichiers ne sont jamais téléversés."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "\"n'engagera aucune poursuite\" is correct, and it is no stronger than \"will not take legal action\". The usual idiom is plural, and adding \"judiciaire\" makes it clearer.",
+        "backTranslation": "Every report gets a reply. Doughnut Forge will not bring any proceedings against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and allowing time to fix the problem before sharing its details.",
+        "suggestion": "Chaque signalement reçoit une réponse. Doughnut Forge n'engagera aucune poursuite judiciaire contre quiconque recherche et signale un problème de bonne foi : sans nuire à personne ni lire les données d'autrui, et en laissant le temps de corriger le problème avant d'en partager les détails."
+      },
+      {
+        "key": "security.device.text",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. 'téléversés' means uploaded exactly, not the broader 'envoyés en ligne'. It is the official French term, though it sounds more Canadian than French to people in France. Uses vous, which matches the file.",
+        "backTranslation": "Doughnut Forge encrypts and opens your files on your own device. Your files are never uploaded.",
+        "suggestion": "No change."
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -94,13 +115,34 @@
         "issue": "'Tab' is the German browser-tab term. Changed to the reviewer's reflexive 'öffnet sich in einem neuen Tab', which is grammatically cleaner than intransitive 'öffnet'.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(öffnet sich in einem neuen Tab)"
+      },
+      {
+        "key": "nav.roadmap / meta.roadmap.title / roadmap.title",
+        "severity": "note",
+        "issue": "Allow-listed as identical to English. \"Roadmap\" is a normal word in German, especially for software, so it reads naturally.",
+        "backTranslation": "Roadmap",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.quantum.title",
+        "severity": "note",
+        "issue": "\"Post-Quanten-Verschlüsselung\" matches faq.quantum.*. Browsers can wrap at its hard hyphens, so at 320px it may show as \"Post-Quanten-\" / \"Verschlüsselung\". No part is longer than 15 letters, so it will not shrink badly. Worth checking on screen because of the rule against breaking words.",
+        "backTranslation": "Post-quantum encryption",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "\"mit genügend Zeit\" (\"with enough time\") adds \"enough\". It is harmless and does not strengthen the promise. \"geht rechtlich nicht gegen ... vor\" equals \"will not take legal action\".",
+        "backTranslation": "Every report gets a reply. Doughnut Forge does not take legal action against people who look for and report a problem in good faith: without harming anyone or reading other people's data, and with enough time for a fix before details are shared.",
+        "suggestion": "No change."
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -116,13 +158,27 @@
         "issue": "Correct and idiomatic. 'pestaña' is the browser-tab term in Spain.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(se abre en una pestaña nueva)"
+      },
+      {
+        "key": "security.report.text",
+        "severity": "note",
+        "issue": "\"infórmalo\" (informar used with a direct object) is common, but careful usage prefers \"informar de\". \"comunícalo\" avoids the issue.",
+        "backTranslation": "If you find a security problem in Doughnut Forge or on this website, report it privately on GitHub. Please do not open a public issue.",
+        "suggestion": "Si encuentras un problema de seguridad en Doughnut Forge o en este sitio web, comunícalo de forma privada en GitHub. Por favor, no abras una incidencia pública."
+      },
+      {
+        "key": "roadmap.stricter.text",
+        "severity": "note",
+        "issue": "\"Nada cambia para tus datos\" is understandable but sounds translated. The natural word order is \"Para tus datos no cambia nada\".",
+        "backTranslation": "More protection updates that make the app stricter about what it accepts. Nothing changes for your data.",
+        "suggestion": "Más actualizaciones de protección que hacen que la app sea más estricta con lo que acepta. Para tus datos no cambia nada."
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -174,13 +230,34 @@
         "issue": "Correct. 'scheda' is the browser-tab term in Italian, and 'si apre in una nuova scheda' is standard.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(si apre in una nuova scheda)"
+      },
+      {
+        "key": "roadmap.next",
+        "severity": "note",
+        "issue": "Resolved (was blocking): \"In seguito\" (\"afterwards / later on\") means nearly the same as roadmap.later \"Più avanti\" (\"further ahead\"). An Italian reader cannot tell the Next section from the Later section, so the meaning of \"Next\" is lost. The replacement adds no timing; \"Prossimamente\" and \"In arrivo\" are avoided because they suggest \"soon\".",
+        "backTranslation": "Later on",
+        "suggestion": "Prossimi passi"
+      },
+      {
+        "key": "nav.roadmap / roadmap.title",
+        "severity": "note",
+        "issue": "\"Tabella di marcia\" is correct Italian, but Italian software sites usually say \"Roadmap\". It is fine as it is; switching would need the same-as-English allow-list.",
+        "backTranslation": "Roadmap (schedule of the way forward)",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.next",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. 'Prossimi passi' is clearly different from 'Più avanti' (Later) and reads naturally as a section heading.",
+        "backTranslation": "Next steps",
+        "suggestion": "No change."
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -218,13 +295,34 @@
         "issue": "Correct. 'tabblad' is the Dutch browser-tab term, and the phrasing works with 'u'.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(opent in een nieuw tabblad)"
+      },
+      {
+        "key": "nav.roadmap / meta.roadmap.title / roadmap.title / roadmap.later",
+        "severity": "note",
+        "issue": "Allow-listed as identical to English. \"Roadmap\" is standard in Dutch, and \"Later\" is the normal Dutch word, so both read naturally.",
+        "backTranslation": "Roadmap / Later",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.quantum.title",
+        "severity": "note",
+        "issue": "\"Post-kwantumversleuteling\" matches faq.quantum.*. The part after the hyphen, \"kwantumversleuteling\", is 20 letters, so it may shrink or be tight on a 320px phone. Check on screen. The term matches the FAQ, so no change is proposed here.",
+        "backTranslation": "Post-quantum encryption",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "\"zonder iemand schade te doen\" is understandable but old-fashioned. \"zonder iemand te schaden\" is the plain modern phrasing. The legal wording \"onderneemt geen juridische stappen\" is exact.",
+        "backTranslation": "Every report gets an answer. Doughnut Forge takes no legal steps against anyone who looks for and reports a problem in good faith: without doing anyone harm or reading other people's data, and with time for a fix before details are shared.",
+        "suggestion": "Elke melding krijgt een antwoord. Doughnut Forge onderneemt geen juridische stappen tegen wie te goeder trouw naar een probleem zoekt en het meldt: zonder iemand te schaden of gegevens van anderen te lezen, en met tijd voor een oplossing voordat details worden gedeeld."
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -241,13 +339,27 @@
         "issue": "Correct. 'flik' is the Swedish browser-tab term.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(öppnas i en ny flik)"
+      },
+      {
+        "key": "security.quantum.title",
+        "severity": "note",
+        "issue": "\"Postkvantkryptering\" (19 letters, one word) matches faq.quantum.*, but it is one unbreakable word in a heading and may shrink at 320px. Check on screen. The term matches the FAQ, so no change is proposed.",
+        "backTranslation": "Post-quantum encryption",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "\"med tid för en åtgärd\" is understandable but stiff. \"med tid att åtgärda problemet\" is more natural. The meaning and the legal wording (\"vidtar inga rättsliga åtgärder\") are correct.",
+        "backTranslation": "Every report gets a reply. Doughnut Forge takes no legal action against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and with time for a remedy before details are shared.",
+        "suggestion": "Varje rapport får ett svar. Doughnut Forge vidtar inga rättsliga åtgärder mot någon som letar efter och rapporterar ett problem i god tro: utan att skada någon eller läsa andras data, och med tid att åtgärda problemet innan detaljer delas."
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -278,13 +390,27 @@
         "issue": "'fane' is the correct browser-tab term. Changed to the reviewer's passive 'åbnes i en ny fane', which matches the no and sv strings.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(åbnes i en ny fane)"
+      },
+      {
+        "key": "security.audit.title",
+        "severity": "note",
+        "issue": "\"auditeret\" is business jargon and sounds odd to many Danish readers. \"Ingen audit endnu\" is plainer and keeps the meaning \"not audited yet\".",
+        "backTranslation": "Not yet audited",
+        "suggestion": "Ingen audit endnu"
+      },
+      {
+        "key": "nav.roadmap / roadmap.title",
+        "severity": "note",
+        "issue": "\"Køreplan\" is the usual Danish word for a plan of steps, so it is acceptable. Its literal sense is \"timetable\", which hints at dates, but roadmap.lead says plainly that nothing has a date, so no change is needed.",
+        "backTranslation": "Roadmap (literally: timetable)",
+        "suggestion": "No change."
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -315,13 +441,41 @@
         "issue": "Correct. 'välilehti' is the standard browser-tab term, and the illative 'uuteen välilehteen' is the right case.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(avautuu uuteen välilehteen)"
+      },
+      {
+        "key": "roadmap.audit.text",
+        "severity": "note",
+        "issue": "Relative clause with present-tense verb (Finnish present also covers the future). It describes who would do the audit, not a commitment or timing, and sits under 'Later' with the 'Planned' label. Not a firm promise. Confirmation.",
+        "backTranslation": "A Doughnut Forge security audit, which an outside independent expert does.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.planned",
+        "severity": "note",
+        "issue": "Taken: 'Suunniteltu' is correct for 'Planned', but the past participle of 'suunnitella' can also read as 'designed', which faintly suggests finished work. 'Suunnitteilla' (in planning) cannot be misread and matches security.audit.text. Optional.",
+        "backTranslation": "Planned / designed",
+        "suggestion": "Suunnitteilla"
+      },
+      {
+        "key": "security.quantum.title",
+        "severity": "note",
+        "issue": "'Kvanttikestävä salaus' matches faq.quantum.q/a. Confirmed. roadmap.audit.title word order ('Tietoturvan riippumaton tarkastus') avoids the 19-letter compound in a heading and reads naturally.",
+        "backTranslation": "Quantum-resistant encryption",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.planned",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. 'Suunnitteilla' means planned or being planned. It does not suggest done or scheduled, and it matches security.audit.text.",
+        "backTranslation": "Planned (under planning)",
+        "suggestion": "No change."
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -345,13 +499,34 @@
         "issue": "Correct Bokmål. 'fane' is the browser-tab term.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(åpnes i en ny fane)"
+      },
+      {
+        "key": "security.quantum.title",
+        "severity": "note",
+        "issue": "'Postkvantekryptering' is 20 letters in an h2. The global fit rule (font-size limited by --longest * 0.64em) brings it to about 22px in a ~288px column at 320px, only slightly smaller than other headings. It matches faq.quantum.q/a, and a hyphenated or reworded form would either break the no-split rule or lose the term. Acceptable. Check it visually at 320px.",
+        "backTranslation": "Post-quantum encryption",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Taken: 'og med tid til en rettelse før detaljer deles' (and with time for a fix before details are shared) loses the reporter as the one allowing the time. The meaning survives, but a verb makes the condition clearer.",
+        "backTranslation": "Every report gets an answer. Doughnut Forge will not take legal action against anyone who looks for and reports a problem in good faith: without harming anyone or reading others' data, and with time for a fix before details are shared.",
+        "suggestion": "Alle rapporter får svar. Doughnut Forge vil ikke gå rettslig til verks mot noen som leter etter og melder fra om et problem i god tro: uten å skade noen eller lese andres data, og som gir tid til en rettelse før detaljer deles."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Re-check after the fix: Meaning is correct. 'gå rettslig til verks' means take legal action, not only sue. The last condition switches from 'uten å ...' to a relative clause ('og som gir tid'), which is a little clumsy. Optional smoothing below.",
+        "backTranslation": "All reports get a reply. Doughnut Forge will not take legal action against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and who allows time for a fix before details are shared.",
+        "suggestion": "Alle rapporter får svar. Doughnut Forge vil ikke gå rettslig til verks mot noen som leter etter og melder fra om et problem i god tro: uten å skade noen eller lese andres data, og ved å gi tid til en rettelse før detaljer deles."
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -368,13 +543,27 @@
         "issue": "Correct. 'karta' is the Polish browser-tab term, and the phrasing is impersonal.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(otwiera się w nowej karcie)"
+      },
+      {
+        "key": "roadmap.audit.text",
+        "severity": "note",
+        "issue": "Taken: 'który przeprowadzi' (which [an expert] will carry out) is a definite perfective future. Under 'Later' with the 'Planned' label and the lead's 'plans can change', it does not read as a dated or firm promise, so it is not blocking. Still, it says more than the English noun phrase does. A neutral phrase is suggested. Avoid 'przeprowadzony', which would read as already done.",
+        "backTranslation": "A security audit of Doughnut Forge, which an independent outside expert will carry out.",
+        "suggestion": "Audyt bezpieczeństwa Doughnut Forge w wykonaniu niezależnego zewnętrznego eksperta."
+      },
+      {
+        "key": "roadmap.audit.text",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. A neutral noun phrase with no tense, no claim that the audit is done and no commitment.",
+        "backTranslation": "A security audit of Doughnut Forge carried out by an independent outside expert.",
+        "suggestion": "No change."
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -391,13 +580,55 @@
         "issue": "Natural. 'karta' is the browser-tab term Chrome and Edge use in Czech. The reflexive 'otevře se' is impersonal, so it does not clash with the formal 'vy'.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(otevře se na nové kartě)"
+      },
+      {
+        "key": "roadmap.audit.text",
+        "severity": "note",
+        "issue": "Taken: 'který provede' (which [an expert] will carry out) is a perfective future. It is not blocking in the 'Planned' context, but it is firmer than the English noun phrase. A neutral phrase is suggested. Avoid 'provedený', which would read as done.",
+        "backTranslation": "A security audit of Doughnut Forge, which an independent external expert will carry out.",
+        "suggestion": "Bezpečnostní audit Doughnut Forge od nezávislého externího odborníka."
+      },
+      {
+        "key": "security.audit.text",
+        "severity": "note",
+        "issue": "Taken: 'Je naplánovaný' can lean towards 'is scheduled' (on a calendar), which is slightly firmer than 'One is planned'. 'Plánuje se' is closer.",
+        "backTranslation": "An independent security audit of Doughnut Forge has not taken place yet. It is planned/scheduled.",
+        "suggestion": "Nezávislý bezpečnostní audit Doughnut Forge zatím neproběhl. Plánuje se."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Taken: 'a s tím, že před zveřejněním podrobností ponechá čas na opravu' leaves the subject unclear. It could be read as Doughnut Forge leaving the time. A condition on the reporter is clearer.",
+        "backTranslation": "Every report gets a reply. Doughnut Forge will not take legal steps against anyone who in good faith looks for and reports a problem: without harming anyone or reading other people's data, and with [it/them] leaving time for a fix before publishing details.",
+        "suggestion": "Na každé hlášení přijde odpověď. Doughnut Forge nepodnikne právní kroky proti nikomu, kdo v dobré víře hledá a nahlásí problém: aniž by komukoli ublížil nebo četl data jiných lidí, a pokud před zveřejněním podrobností ponechá čas na opravu."
+      },
+      {
+        "key": "roadmap.audit.text",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. A neutral noun phrase with no tense or commitment.",
+        "backTranslation": "A security audit of Doughnut Forge by an independent outside expert.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.audit.text",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. 'zatím neproběhl' means has not happened yet, and 'Plánuje se' means it is planned, with no date or firm commitment.",
+        "backTranslation": "An independent security audit of Doughnut Forge has not taken place yet. It is being planned.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. 'nepodnikne právní kroky' means will not take legal steps, which is broader than only suing. The conditions are kept. Ending with 'a pokud ... ponechá' after 'aniž by' is grammatical, just not parallel, and it reads acceptably.",
+        "backTranslation": "Every report gets a reply. Doughnut Forge will not take legal steps against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and provided they leave time for a fix before publishing details.",
+        "suggestion": "No change."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -421,13 +652,62 @@
         "issue": "Correct. 'lap' is the browser-tab term in Hungarian Chrome, and 'új lapon nyílik meg' is natural.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(új lapon nyílik meg)"
+      },
+      {
+        "key": "security.servers.text",
+        "severity": "note",
+        "issue": "Resolved (was blocking): Meaning change. 'A Doughnut Forge nem használ szervereket' means 'Doughnut Forge does not use servers', which is broader than 'There are no Doughnut Forge servers'. It can be read as the app never contacting any server, including store or update servers, which is not checkable. Keep the English sense: Doughnut Forge has no servers of its own.",
+        "backTranslation": "Doughnut Forge does not use servers, and you do not have to create an account either, so your files and data are not stored anywhere else.",
+        "suggestion": "A Doughnut Forge-nak nincsenek szerverei, és fiókot sem kell létrehoznod, így a fájljaid és az adataid sehol máshol nincsenek tárolva."
+      },
+      {
+        "key": "roadmap.audit.text",
+        "severity": "note",
+        "issue": "'amelyet ... végez' is a present-tense relative clause that describes who does the audit. Not a firm promise. Confirmation.",
+        "backTranslation": "The security audit of Doughnut Forge, which an independent outside expert carries out.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Taken: 'nem indít jogi eljárást' (will not start legal proceedings) is acceptable, but slightly narrower than 'take legal action', which also covers threats and other legal steps. 'nem tesz jogi lépéseket' matches exactly.",
+        "backTranslation": "Every report gets a reply. Doughnut Forge will not start legal proceedings against anyone who in good faith looks for and reports a problem: without harming anyone or reading others' data, and leaving time for the fix before sharing details.",
+        "suggestion": "Minden bejelentésre érkezik válasz. A Doughnut Forge nem tesz jogi lépéseket senki ellen, aki jóhiszeműen keres és jelent be egy problémát: anélkül, hogy bárkinek kárt okozna vagy mások adatait elolvasná, és időt hagyva a javításra, mielőtt részleteket osztana meg."
+      },
+      {
+        "key": "security.report.text",
+        "severity": "note",
+        "issue": "Dropping 'Kérjük' (we ask) correctly avoids 'we'. 'Ne nyiss nyilvános bejelentést.' is a plain, normal informal imperative and does not read as rude. 'bejelentés' matches support.ask.* for GitHub issues. Confirmation.",
+        "backTranslation": "If you find a security problem in Doughnut Forge or on this website, report it privately on GitHub. Do not open a public report.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "nav.roadmap",
+        "severity": "note",
+        "issue": "'Fejlesztési terv' (development plan) is a good choice. 'Ütemterv' would imply a schedule and dates, which the page explicitly avoids. Used consistently in meta.roadmap.title, roadmap.title and security.audit.link. Confirmation.",
+        "backTranslation": "Development plan",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.servers.text",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. 'nincsenek szerverei' means Doughnut Forge has no servers, not 'uses no servers'. Uses te, which matches the file. 'nincsenek tárolva' is acceptable, and 'nem tárolódnak' would be slightly more idiomatic, but this is optional.",
+        "backTranslation": "Doughnut Forge has no servers, and you do not need to create an account either, so your files and details are not stored anywhere else.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. 'nem tesz jogi lépéseket' means will not take legal steps. The good-faith conditions are kept, the wording is natural and it uses te.",
+        "backTranslation": "Every report gets a reply. Doughnut Forge does not take legal steps against anyone who looks for and reports a problem in good faith: without harming anyone or reading others' data, and leaving time for a fix before sharing details.",
+        "suggestion": "No change."
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -465,13 +745,62 @@
         "issue": "Correct. 'filă' is the term Romanian Chrome and Edge use, and the diacritics are correct.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(se deschide într-o filă nouă)"
+      },
+      {
+        "key": "roadmap.audit.text",
+        "severity": "note",
+        "issue": "Taken: 'pe care îl va face' (which [an expert] will do) is a definite future. It is not blocking under 'Planned', but it is firmer than the English noun phrase. 'a face un audit' is also a little colloquial. A neutral phrase is suggested. Avoid 'realizat/efectuat de', which can read as done.",
+        "backTranslation": "A security audit of Doughnut Forge, which an independent outside expert will do.",
+        "suggestion": "Un audit de securitate al Doughnut Forge, din partea unui expert extern independent."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Taken: After 'fără să', standard Romanian uses negative concord: 'fără să facă rău nimănui'. 'cuiva' is understood but sounds slightly off to a careful native reader.",
+        "backTranslation": "Every report gets a reply. Doughnut Forge will not initiate legal action against anyone who looks for and reports a problem in good faith: without harming someone or reading other people's data, and leaving time for a fix before making the details public.",
+        "suggestion": "Fiecare raport primește un răspuns. Doughnut Forge nu va iniția acțiuni legale împotriva nimănui care caută și raportează o problemă cu bună-credință: fără să facă rău nimănui sau să citească datele altor persoane și lăsând timp pentru o remediere înainte de a face publice detaliile."
+      },
+      {
+        "key": "roadmap.stricter.text",
+        "severity": "note",
+        "issue": "Taken: 'mai strictă cu ce acceptă' is colloquial. 'în privința a ceea ce acceptă' reads more naturally in written copy.",
+        "backTranslation": "Other protection updates, which make the app stricter with what it accepts. Nothing changes for your data.",
+        "suggestion": "Alte actualizări de protecție, care fac aplicația mai strictă în privința a ceea ce acceptă. Pentru datele tale nu se schimbă nimic."
+      },
+      {
+        "key": "security.report.text",
+        "severity": "note",
+        "issue": "Dropping 'Te rugăm' (we ask you) correctly avoids 'we'. The bare imperative 'Nu deschide un tichet public.' is natural, and 'tichet' matches support.ask.*. Confirmation.",
+        "backTranslation": "If you find a security problem in Doughnut Forge or on this site, report it privately on GitHub. Do not open a public ticket.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.audit.text",
+        "severity": "note",
+        "issue": "Re-check after the fix: Meaning is correct, with no tense or commitment. 'din partea unui expert' (on the part of an expert) is a little unnatural for who carries out an audit, and 'realizat de' reads better. Optional.",
+        "backTranslation": "A security audit of Doughnut Forge, on the part of an independent outside expert.",
+        "suggestion": "Un audit de securitate al Doughnut Forge, realizat de un expert extern independent."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. 'nu va iniția acțiuni legale' means will not start legal action, which is broader than suing. The conditions are kept and it uses tu. 'nimănui' appears twice, which is acceptable.",
+        "backTranslation": "Every report receives a reply. Doughnut Forge will not start legal action against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and allowing time for a fix before making the details public.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.stricter.text",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct and natural. It matches the English exactly and uses tu.",
+        "backTranslation": "Further protection updates, which make the app stricter about what it accepts. Nothing changes for your data.",
+        "suggestion": "No change."
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -488,13 +817,62 @@
         "issue": "Correct. 'вкладка' is the standard term, and this is the usual phrasing on Russian sites.",
         "backTranslation": "(will open in a new tab)",
         "suggestion": "(откроется в новой вкладке)"
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Resolved (was blocking): Weaker promise. 'не будет преследовать в судебном порядке' means 'will not prosecute or sue in court', which is narrower than 'will not take legal action'. It leaves out legal steps outside court, such as complaints to the police or legal threats.",
+        "backTranslation": "Every report gets a reply. Doughnut Forge will not pursue in court anyone who looks for a problem in good faith and reports it: without harming anyone, without reading other people's data, and giving time for a fix before sharing details.",
+        "suggestion": "На каждое сообщение приходит ответ. Doughnut Forge не будет предпринимать юридических действий против тех, кто добросовестно ищет проблему и сообщает о ней: никому не причиняя вреда, не читая чужие данные и давая время на исправление, прежде чем делиться подробностями."
+      },
+      {
+        "key": "roadmap.audit.text",
+        "severity": "note",
+        "issue": "Taken: 'который проведёт' (which [an expert] will carry out) is a perfective future. It is not blocking under 'Запланировано', but it is firmer than the English noun phrase. A neutral phrase is suggested.",
+        "backTranslation": "A security audit of Doughnut Forge, which an independent outside expert will carry out.",
+        "suggestion": "Аудит безопасности Doughnut Forge силами независимого внешнего эксперта."
+      },
+      {
+        "key": "security.servers.text",
+        "severity": "note",
+        "issue": "Taken: 'больше нигде не хранятся' can also be read as 'are no longer stored anywhere', as if something changed. 'где-либо ещё' cannot be misread.",
+        "backTranslation": "Doughnut Forge has no servers and there is no need to create an account, so neither your files nor your data are stored anywhere else / any longer anywhere.",
+        "suggestion": "У Doughnut Forge нет серверов, и создавать аккаунт не нужно, поэтому ни ваши файлы, ни ваши данные не хранятся где-либо ещё."
+      },
+      {
+        "key": "roadmap.identity.title",
+        "severity": "note",
+        "issue": "'Защита личности' follows the glossary ('Личность'). Out of context it can suggest personal safety, but on a page that uses the app's term it is correct. Confirmation.",
+        "backTranslation": "Identity protection",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. 'не будет предпринимать юридических действий' means will not take legal action. The conditions are kept, the wording is natural and it uses вы.",
+        "backTranslation": "Every report gets a reply. Doughnut Forge will not take legal action against those who look for and report a problem in good faith: without harming anyone, not reading other people's data, and giving time for a fix before sharing details.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.audit.text",
+        "severity": "note",
+        "issue": "Re-check after the fix: Meaning is correct, with no tense or commitment. 'силами' usually refers to a team or organisation, so it is slightly odd for a single expert, and 'проведённый' is more natural. Optional.",
+        "backTranslation": "A security audit of Doughnut Forge by the efforts of an independent outside expert.",
+        "suggestion": "Аудит безопасности Doughnut Forge, проведённый независимым внешним экспертом."
+      },
+      {
+        "key": "security.servers.text",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. 'У Doughnut Forge нет серверов' means Doughnut Forge has no servers, not 'uses no servers'. Natural, and it uses вы.",
+        "backTranslation": "Doughnut Forge has no servers, and there is no need to create an account, so neither your files nor your details are stored anywhere else.",
+        "suggestion": "No change."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -525,13 +903,34 @@
         "issue": "Correct. 'καρτέλα' is the standard browser-tab term in Greek, and the impersonal phrasing fits the εσείς register.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(ανοίγει σε νέα καρτέλα)"
+      },
+      {
+        "key": "security.report.text",
+        "severity": "note",
+        "issue": "Drafter's choice confirmed: dropping 'please' avoids first-person 'Παρακαλούμε' (a 'we' form). A formal-plural negative imperative reads polite enough in Greek. Meaning kept.",
+        "backTranslation": "If you find a security problem in Doughnut Forge or in this website, report it privately on GitHub. Do not open a public issue.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.servers.text",
+        "severity": "note",
+        "issue": "'λογαριασμός για να δημιουργήσετε' is a calque of 'an account to create' and reads a little stiff. 'που πρέπει να δημιουργήσετε' is more natural. Meaning is correct.",
+        "backTranslation": "There are no Doughnut Forge servers nor an account for you to create, so none of your files or details is stored anywhere else.",
+        "suggestion": "Δεν υπάρχουν διακομιστές του Doughnut Forge ούτε λογαριασμός που πρέπει να δημιουργήσετε, οπότε κανένα από τα αρχεία ή τα στοιχεία σας δεν αποθηκεύεται πουθενά αλλού."
+      },
+      {
+        "key": "roadmap.shipped",
+        "severity": "note",
+        "issue": "Confirmation: 'Διαθέσιμα' (Available) reads clearly as already out, not as planned. 'Σχεδιάζεται' for Planned reads as 'being planned', not done or promised.",
+        "backTranslation": "Available",
+        "suggestion": "No change."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -555,6 +954,34 @@
         "issue": "Correct. 'вкладка' is the standard Ukrainian term.",
         "backTranslation": "(will open in a new tab)",
         "suggestion": "(відкриється в новій вкладці)"
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Resolved (was blocking): 'сумлінно' mainly means 'conscientiously, diligently', not 'in good faith'. A native reader takes it as 'anyone who diligently looks for a problem', which changes the condition of the legal promise. The standard term for good faith (bona fide) is 'добросовісно'.",
+        "backTranslation": "Every report will get a reply. Doughnut Forge will not take legal measures against anyone who conscientiously looks for a problem and reports it: harming no one, not reading other people's data, and giving time for a fix before sharing details.",
+        "suggestion": "На кожне повідомлення буде відповідь. Doughnut Forge не вживатиме юридичних заходів проти будь-кого, хто добросовісно шукає проблему й повідомляє про неї: нікому не шкодячи, не читаючи чужих даних і даючи час на виправлення, перш ніж ділитися подробицями."
+      },
+      {
+        "key": "roadmap.audit.text",
+        "severity": "note",
+        "issue": "Drafter's choice confirmed: a verbless phrase is fine, because the English has no verb either, and it avoids both a past participle (which would read as done) and a future verb (which would read as promised). 'аудит від експерта' is a slightly colloquial calque. 'силами' is more idiomatic and keeps the phrase tense-free.",
+        "backTranslation": "A security audit of Doughnut Forge from an independent outside expert.",
+        "suggestion": "Аудит безпеки Doughnut Forge силами незалежного зовнішнього експерта."
+      },
+      {
+        "key": "roadmap.identity.title",
+        "severity": "note",
+        "issue": "Uses the glossary term 'Особистість', as it should. Out of context 'Захист особистості' can read as 'personal protection'. The text below makes it clear, and the app term must stay.",
+        "backTranslation": "Identity protection",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. 'не вживатиме юридичних заходів' means will not take legal measures, which is broader than only suing. All three conditions are kept. 'проти будь-кого' after a negative is common usage. The standard form 'проти тих, хто' would sound slightly more polished, but this is optional.",
+        "backTranslation": "Every report will get a reply. Doughnut Forge will not take legal measures against anyone who looks for and reports a problem in good faith: harming no one, not reading other people's data, and giving time for a fix before sharing details.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -584,7 +1011,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -601,13 +1028,27 @@
         "issue": "Correct and idiomatic. 'pestaña' is the standard browser-tab term in Latin American Spanish too.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(se abre en una pestaña nueva)"
+      },
+      {
+        "key": "meta.security.title",
+        "severity": "note",
+        "issue": "Word order 'cómo tus archivos se mantienen privados' is understandable but less natural than putting the verb before the subject in an indirect question.",
+        "backTranslation": "Security: how your files stay private | Doughnut Forge",
+        "suggestion": "Seguridad: cómo se mantienen privados tus archivos | Doughnut Forge"
+      },
+      {
+        "key": "security.report.text",
+        "severity": "note",
+        "issue": "Confirmation: 'reportar' and 'reporte' follow Mexican usage and match 'reportes' in support.ask.text. 'Disponible' for Shipped and 'Planeado' for Planned are natural in Mexico and carry no timing or promise.",
+        "backTranslation": "If you find a security problem in Doughnut Forge or on this website, report it privately on GitHub. Please do not open a public report.",
+        "suggestion": "No change."
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -630,13 +1071,34 @@
         "issue": "Correct. 'aba' is the Brazilian browser-tab term (European Portuguese would use 'separador').",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(abre em uma nova aba)"
+      },
+      {
+        "key": "security.audit.text",
+        "severity": "note",
+        "issue": "'Uma está planejada.' is grammatical but a little abrupt as a stand-alone sentence. 'Há uma planejada.' reads more naturally and keeps the same meaning, with no timing.",
+        "backTranslation": "Doughnut Forge has not yet gone through an independent security audit. One is planned.",
+        "suggestion": "O Doughnut Forge ainda não passou por uma auditoria de segurança independente. Há uma planejada."
+      },
+      {
+        "key": "nav.roadmap",
+        "severity": "note",
+        "issue": "'Roteiro' is a correct Brazilian rendering, although many Brazilian software sites keep 'Roadmap'. Either is acceptable. 'Roteiro' is plainer for non-technical readers.",
+        "backTranslation": "Roadmap (itinerary)",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.quantum.title",
+        "severity": "note",
+        "issue": "The heading contains a hard hyphen ('pós-quântica'), so a narrow screen could break the line at the hyphen. The spelling is correct and matches faq.quantum.q. Check at 320px that the layout does not split it, or keep the word together in CSS.",
+        "backTranslation": "Post-quantum encryption",
+        "suggestion": "No change."
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -660,13 +1122,34 @@
         "issue": "Correct. 'sekme' is the Turkish browser-tab term, and the phrasing is impersonal, so it fits 'siz'.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(yeni sekmede açılır)"
+      },
+      {
+        "key": "roadmap.planned",
+        "severity": "note",
+        "issue": "Drafter's choice confirmed: 'Planlanıyor' (is being planned) does not read as done or as a firm promise. 'Planlandı' would wrongly suggest something completed. 'Bir denetim planlanıyor' in security.audit.text matches it.",
+        "backTranslation": "Being planned",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.identity.text",
+        "severity": "note",
+        "issue": "Drafter's choice confirmed: 'başkasıyla değiştirilemez' (cannot be swapped for another) gives the intended sense of 'replaced'. A plain 'değiştirilemez' would mean 'cannot be changed or edited', which is broader and wrong.",
+        "backTranslation": "An update that keeps every identity safe, so the identity can never be lost, swapped for another, or left in a readable state. On Mac, Windows, iPhone and iPad.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Meaning and strength match: 'yasal işlem başlatmaz' means 'does not start legal action', with 'iyi niyetle' for good faith. Putting the adverbial clauses after the colon, behind the main verb, is a little unusual in Turkish but reads clearly.",
+        "backTranslation": "Every report is answered. Doughnut Forge does not start legal action against anyone who looks for and reports a problem in good faith: without harming anyone, without reading others' data, and allowing time for a fix before sharing details.",
+        "suggestion": "No change."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -696,13 +1179,27 @@
         "issue": "Correct. 'タブ' is the standard term, the phrasing is polite です/ます, and the full-width brackets match ja.ts.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "（新しいタブで開きます）"
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Drafter's choice confirmed: splitting it into two sentences ('善意 here means ...') keeps the same three conditions and the same strength. '法的措置をとりません' is non-past, so it covers 'will not'. It is not stronger or weaker than the English.",
+        "backTranslation": "Every report gets a reply. Doughnut Forge does not take legal action against people who look for and report problems in good faith. Good faith here means not harming anyone, not reading other people's data, and allowing time for a fix before sharing details.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.device.title",
+        "severity": "note",
+        "issue": "Ending a heading on the particle 'で' ('デバイス上だけで') feels unfinished. A noun ending matches faq.storage.a ('お使いのデバイス上') and keeps the sense of 'your'.",
+        "backTranslation": "Only on the device (with)",
+        "suggestion": "お使いのデバイス上だけ"
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -740,13 +1237,27 @@
         "issue": "Correct. '标签页' is the standard Simplified Chinese browser-tab term, and the full-width brackets match the file.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "（在新标签页中打开）"
+      },
+      {
+        "key": "security.report.promise",
+        "severity": "note",
+        "issue": "Confirmation: '前提是' (provided that) frames the good-faith conditions as conditions, which is what the English colon means. '不会采取法律行动' matches 'will not take legal action' and is neither stronger nor weaker.",
+        "backTranslation": "Every report will get a reply. For people who look for and report problems in good faith, Doughnut Forge will not take legal action, provided that they harm no one, do not read others' data, and leave time for a fix before sharing details.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.identity.text",
+        "severity": "note",
+        "issue": "Script check: all 37 new zh-CN strings use Simplified characters only. No Traditional characters found. The terms '身份' (glossary) and '后量子加密' (as in faq.quantum.*) are used correctly.",
+        "backTranslation": "An update that keeps every identity safe, so that it will never be lost, replaced or left in a readable state. For Mac, Windows, iPhone and iPad.",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -791,13 +1302,48 @@
         "issue": "Correct. '分頁' and '開啟' are the Taiwan-standard terms, and the full-width brackets are consistent.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "（在新分頁中開啟）"
+      },
+      {
+        "key": "nav.roadmap",
+        "severity": "note",
+        "issue": "Confirmation: 開發藍圖 is natural Taiwan usage for a product roadmap and is used consistently in nav, meta, title and link. All 37 strings checked for Simplified characters and mainland-only terms (計畫, 身分, 資料, 網路, 帳號, 檔案, 伺服器 are all Taiwan forms); none found.",
+        "backTranslation": "Development blueprint (roadmap)",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.lead",
+        "severity": "note",
+        "issue": "Taken: Adds 功能 (features): English says 'what has shipped', not 'the features that have shipped'. Harmless, but slightly narrower than the source.",
+        "backTranslation": "The features that have shipped, and the plans that come next. Plans may change, so none of the items here have a date.",
+        "suggestion": "已推出的項目，以及接下來的計畫。計畫可能會改變，因此這裡的項目都沒有日期。"
+      },
+      {
+        "key": "security.keys.title",
+        "severity": "note",
+        "issue": "Taken: Adds 只 (only). Consistent with security.keys.text and faq.storage.a, so not an overclaim, but slightly stronger than 'stay with you'.",
+        "backTranslation": "Your keys stay only by your side",
+        "suggestion": "金鑰留在您身邊"
+      },
+      {
+        "key": "roadmap.lead",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct and natural. It says plans can change and nothing has a date.",
+        "backTranslation": "Items that have shipped, and what is planned next. Plans may change, so none of the items here have dates.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.keys.title",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct, natural, and uses 您, which matches the file.",
+        "backTranslation": "Keys stay with you",
+        "suggestion": "No change."
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -828,13 +1374,34 @@
         "issue": "Correct. The noun-style ending '열림' is what Korean labels and accessibility text normally use. Half-width brackets match the file.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(새 탭에서 열림)"
+      },
+      {
+        "key": "security.audit.title",
+        "severity": "note",
+        "issue": "Taken: 감사 is a homonym (監査 audit / 感謝 thanks). As a standalone heading, 아직 감사받지 않음 can momentarily read as 'not yet thanked'. Page context resolves it, but adding 보안 removes the ambiguity. 18+ letter concern does not apply.",
+        "backTranslation": "Not yet audited",
+        "suggestion": "아직 보안 감사를 받지 않음"
+      },
+      {
+        "key": "security.keys.title",
+        "severity": "note",
+        "issue": "Confirmation: 키는 내 손에 ('keys in my hand') is a natural Korean heading idiom for keeping control; it matches security.keys.text and faq.storage.a and does not overclaim.",
+        "backTranslation": "Keys in your hand",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.audit.title",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. It says no audit has happened yet and matches security.audit.text. The noun-ending heading style suits the other titles.",
+        "backTranslation": "Not yet security audited",
+        "suggestion": "No change."
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -851,13 +1418,34 @@
         "issue": "Natural. 'टैब' is the loanword Hindi Chrome uses, and the phrasing is impersonal.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(नए टैब में खुलता है)"
+      },
+      {
+        "key": "roadmap.identity.text",
+        "severity": "note",
+        "issue": "Taken: 'वह कभी न खोए' uses खोना without जाए; the natural intransitive form is 'न खो जाए'. 'न बदली जा सके' can also read as 'cannot be changed' rather than 'replaced'. Understandable, but a native reader would smooth it.",
+        "backTranslation": "An update that keeps every identity safe, so that it never loses, cannot be changed, and is not left in a readable state. On Mac, Windows, iPhone and iPad.",
+        "suggestion": "एक अपडेट जो हर पहचान को सुरक्षित रखता है, ताकि वह कभी न खो जाए, न उसकी जगह कोई दूसरी पहचान ले सके और न ही वह पढ़ने योग्य हालत में छूटे। Mac, Windows, iPhone और iPad पर।"
+      },
+      {
+        "key": "security.report.title",
+        "severity": "note",
+        "issue": "Confirmation: सुरक्षा खामी ('security flaw') is plain, widely understood Hindi and fits the site's non-technical register better than भेद्यता. Used consistently in title and button.",
+        "backTranslation": "Report a security flaw",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.identity.text",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. It uses the glossary term पहचान. 'replaced' is given as 'another identity cannot take its place', which is the intended meaning. Natural wording.",
+        "backTranslation": "An update that keeps every identity safe, so that it is never lost, no other identity can take its place, and it is never left in a readable state. On Mac, Windows, iPhone and iPad.",
+        "suggestion": "No change."
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -895,13 +1483,20 @@
         "issue": "Natural. 'tab baru' is the standard Indonesian browser-tab term.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(terbuka di tab baru)"
+      },
+      {
+        "key": "security.keys.title",
+        "severity": "note",
+        "issue": "Confirmation: 'Kunci tetap di tangan Anda' is a common, natural Indonesian idiom; it matches security.keys.text and faq.storage.a.",
+        "backTranslation": "Keys stay in your hands",
+        "suggestion": "No change."
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -939,13 +1534,27 @@
         "issue": "Correct for Malaysian Malay: 'tab baharu' uses the Malaysian spelling 'baharu', not the Indonesian 'baru'.",
         "backTranslation": "(opened in a new tab)",
         "suggestion": "(dibuka dalam tab baharu)"
+      },
+      {
+        "key": "nav.security",
+        "severity": "note",
+        "issue": "Confirmation: Keselamatan is correct Malaysian usage for (cyber) security and matches the app's ms locale (Dasar Keselamatan, Nota Keselamatan). Keamanan would be the Indonesian choice; the difference from id is correct.",
+        "backTranslation": "Security",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.identity.text",
+        "severity": "note",
+        "issue": "'tidak sekali-kali boleh hilang ... dibiarkan boleh dibaca' repeats boleh and reads a little heavy. Meaning is correct.",
+        "backTranslation": "An update that keeps every identity safe, so that it can never be lost, replaced or left readable. On Mac, Windows, iPhone and iPad.",
+        "suggestion": "Kemas kini yang memastikan setiap identiti selamat, supaya ia tidak akan hilang, diganti atau dibiarkan dalam keadaan boleh dibaca. Pada Mac, Windows, iPhone dan iPad."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -962,13 +1571,41 @@
         "issue": "Correct. 'แท็บ' is the standard Thai browser term, and the phrasing has no gendered particles.",
         "backTranslation": "(opens in a new tab)",
         "suggestion": "(เปิดในแท็บใหม่)"
+      },
+      {
+        "key": "security.audit.title",
+        "severity": "note",
+        "issue": "Taken: ยังไม่ได้รับการตรวจสอบ ('not yet checked/inspected') relies on page context; on its own ตรวจสอบ is generic. Not an overclaim (it understates), but naming the security audit is clearer and matches roadmap.audit.title. Thai wraps at word boundaries, so length is fine.",
+        "backTranslation": "Not yet checked",
+        "suggestion": "ยังไม่ได้รับการตรวจสอบความปลอดภัย"
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Taken: เห็น means 'sees' rather than 'can see'; scope (developer only) is unchanged, so not blocking. Adding ได้ matches the English exactly.",
+        "backTranslation": "Only the developer sees your report. You need a GitHub account, which you can sign up for free.",
+        "suggestion": "มีเพียงนักพัฒนาเท่านั้นที่เห็นรายงานของคุณได้ คุณต้องมีบัญชี GitHub ซึ่งสมัครได้ฟรี"
+      },
+      {
+        "key": "security.audit.title",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct. It says not yet, makes no claim that an audit happened, and matches security.audit.text. It uses the same term as the roadmap's audit item.",
+        "backTranslation": "Not yet security audited",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Re-check after the fix: Correct and natural. It covers only the developer seeing the report and the free GitHub account.",
+        "backTranslation": "Only the developer can see your report. You need a GitHub account, which is free to sign up for.",
+        "suggestion": "No change."
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-10-24",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1006,6 +1643,13 @@
         "issue": "Correct. 'thẻ' is the term Vietnamese Chrome uses ('Mở liên kết trong thẻ mới').",
         "backTranslation": "(open in a new tab)",
         "suggestion": "(mở trong thẻ mới)"
+      },
+      {
+        "key": "roadmap.planned",
+        "severity": "note",
+        "issue": "Confirmation: 'Trong kế hoạch' ('in the plan') reads clearly as not done and not promised; better than 'Đã lên kế hoạch', which could read as settled.",
+        "backTranslation": "In the plan",
+        "suggestion": "No change."
       }
     ]
   }

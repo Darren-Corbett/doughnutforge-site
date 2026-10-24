@@ -1,0 +1,59 @@
+---
+// Security: how Doughnut Forge protects files, in what a user needs to know and
+// no more, that no outside audit has happened yet, and how to report a problem
+// privately (GitHub's private vulnerability reporting, never the public issues).
+import PageHero from "../components/PageHero.astro";
+import Prose from "../components/Prose.astro";
+import { site } from "../data/site";
+import { localePath, useStrings, type Language, type UiKey } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t } = useStrings(lang.code);
+const points = ["device", "servers", "quantum", "keys"] as const;
+---
+
+<Base lang={lang} title={t("meta.security.title")} description={t("meta.security.description")} image="/og/security.png">
+  <PageHero title={t("security.title")} lead={t("security.lead")} />
+  <div class="section">
+    <Prose>
+      {
+        points.map((id) => (
+          <>
+            <h2>{t(`security.${id}.title` as UiKey)}</h2>
+            <p>{t(`security.${id}.text` as UiKey)}</p>
+          </>
+        ))
+      }
+      <h2>{t("security.audit.title")}</h2>
+      <p>
+        {t("security.audit.text")} <a href={localePath(lang.code, "roadmap/")}>{t("security.audit.link")}</a>
+      </p>
+
+      <h2 id="report">{t("security.report.title")}</h2>
+      <p>{t("security.report.text")}</p>
+      <p>{t("security.report.private")}</p>
+      <p>{t("security.report.promise")}</p>
+      <p class="action">
+        <a class="btn-primary" href={site.reportUrl} target="_blank" rel="noopener noreferrer">
+          {t("security.report.button")}
+          <span class="sr-only">{t("a11y.newTab")}</span>
+        </a>
+      </p>
+    </Prose>
+  </div>
+</Base>
+
+<style>
+  .action {
+    margin-top: 24px;
+  }
+  /* The button keeps its own look inside the prose card, not the link style */
+  .action a {
+    color: #14171a;
+    text-decoration: none;
+  }
+</style>

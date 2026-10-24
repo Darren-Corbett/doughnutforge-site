@@ -303,6 +303,22 @@
     "en": "376dc8aba614",
     "text": "dbdc552e2e05"
   },
+  "meta.roadmap.description": {
+    "en": "cc137717c3fb",
+    "text": "96ad533fbe3c"
+  },
+  "meta.roadmap.title": {
+    "en": "1677756c8528",
+    "text": "ba38baf02871"
+  },
+  "meta.security.description": {
+    "en": "0b3d7ab3c8e2",
+    "text": "80aae6d31726"
+  },
+  "meta.security.title": {
+    "en": "4eb9d9ba08b6",
+    "text": "7b7212d98a46"
+  },
   "meta.support.description": {
     "en": "cfbb36f46f12",
     "text": "8746d0b35a0a"
@@ -342,6 +358,14 @@
   "nav.pricing": {
     "en": "dfe95783edfe",
     "text": "dc63c2d0d358"
+  },
+  "nav.roadmap": {
+    "en": "92375f997ffe",
+    "text": "f7d93cad8486"
+  },
+  "nav.security": {
+    "en": "8f6fb4eb7f42",
+    "text": "622ae8cb1fdd"
   },
   "nav.support": {
     "en": "be91940b79f4",
@@ -470,6 +494,130 @@
   "pricing.where.title": {
     "en": "f2ff3ffc2c74",
     "text": "dd38fabb7ae8"
+  },
+  "roadmap.android.title": {
+    "en": "c440a933f437",
+    "text": "670ae7120717"
+  },
+  "roadmap.audit.text": {
+    "en": "c53c6b504682",
+    "text": "f93f6707eff6"
+  },
+  "roadmap.audit.title": {
+    "en": "bfb75f56d798",
+    "text": "20dce944f34f"
+  },
+  "roadmap.identity.text": {
+    "en": "b5bc50e7aa24",
+    "text": "430f49dbd4c6"
+  },
+  "roadmap.identity.title": {
+    "en": "5eb9c296993e",
+    "text": "a90dfd5e077f"
+  },
+  "roadmap.later": {
+    "en": "73b6e48a1b55",
+    "text": "34e7ee0b76ad"
+  },
+  "roadmap.lead": {
+    "en": "9ff37932bd71",
+    "text": "00c096a80795"
+  },
+  "roadmap.next": {
+    "en": "1ff57a29d7c9",
+    "text": "bf414a96ad0c"
+  },
+  "roadmap.planned": {
+    "en": "fb6f7c93e6bf",
+    "text": "f3ff9b90bc66"
+  },
+  "roadmap.shipped": {
+    "en": "d332dadf1646",
+    "text": "125243d25a33"
+  },
+  "roadmap.stricter.text": {
+    "en": "317c898c8774",
+    "text": "ced4c754ac8d"
+  },
+  "roadmap.stricter.title": {
+    "en": "06df1b5bb407",
+    "text": "f01ebaf7d67c"
+  },
+  "roadmap.title": {
+    "en": "92375f997ffe",
+    "text": "f7d93cad8486"
+  },
+  "security.audit.link": {
+    "en": "844c086de4c0",
+    "text": "1b85ad47c6e3"
+  },
+  "security.audit.text": {
+    "en": "0da71fd7dbac",
+    "text": "24a5c22d7c22"
+  },
+  "security.audit.title": {
+    "en": "6b168273d20b",
+    "text": "525d8a7da5ed"
+  },
+  "security.device.text": {
+    "en": "2be40a1ef645",
+    "text": "8c197e31ad2a"
+  },
+  "security.device.title": {
+    "en": "c36feec76492",
+    "text": "21266072df6b"
+  },
+  "security.keys.text": {
+    "en": "8669c007539a",
+    "text": "544c74a8b296"
+  },
+  "security.keys.title": {
+    "en": "612860674e4e",
+    "text": "9cc5ca4c957f"
+  },
+  "security.lead": {
+    "en": "7f394d1cef93",
+    "text": "e6e0b9bddd7e"
+  },
+  "security.quantum.text": {
+    "en": "b505ed5b6999",
+    "text": "4d7d9ba62321"
+  },
+  "security.quantum.title": {
+    "en": "e473c02d49cf",
+    "text": "2ec446b21a13"
+  },
+  "security.report.button": {
+    "en": "3805db21012a",
+    "text": "9c6d2f817e76"
+  },
+  "security.report.private": {
+    "en": "5347975cf13a",
+    "text": "ce7cc48b77ce"
+  },
+  "security.report.promise": {
+    "en": "191e4ba13f9b",
+    "text": "4d1c0b8df55b"
+  },
+  "security.report.text": {
+    "en": "91addd62ac27",
+    "text": "d5bed889b487"
+  },
+  "security.report.title": {
+    "en": "3805db21012a",
+    "text": "9c6d2f817e76"
+  },
+  "security.servers.text": {
+    "en": "c4220faba5b7",
+    "text": "7079f484db9c"
+  },
+  "security.servers.title": {
+    "en": "c0164242a75d",
+    "text": "6b3e8fca7475"
+  },
+  "security.title": {
+    "en": "8f6fb4eb7f42",
+    "text": "622ae8cb1fdd"
   },
   "skip": {
     "en": "ac576a66d456",

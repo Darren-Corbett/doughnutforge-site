@@ -25,6 +25,7 @@ const linkClass = "inline-flex min-h-11 items-center font-bold text-slate-700 ho
         <li><a class={linkClass} href={localePath(lang.code, "features/")}>{t("nav.features")}</a></li>
         <li><a class={linkClass} href={localePath(lang.code, "pricing/")}>{t("nav.pricing")}</a></li>
         <li><a class={linkClass} href={localePath(lang.code, "download/")}>{t("nav.download")}</a></li>
+        <li><a class={linkClass} href={localePath(lang.code, "roadmap/")}>{t("nav.roadmap")}</a></li>
         {
           hasPosts && (
             <li>
@@ -40,6 +41,7 @@ const linkClass = "inline-flex min-h-11 items-center font-bold text-slate-700 ho
       <h2 class="text-[12px] font-extrabold tracking-widest text-slate-600 uppercase dark:text-slate-400">{t("footer.help")}</h2>
       <ul class="mt-2" role="list">
         <li><a class={linkClass} href={localePath(lang.code, "support/")}>{t("nav.support")}</a></li>
+        <li><a class={linkClass} href={localePath(lang.code, "security/")}>{t("nav.security")}</a></li>
         <li><a class={linkClass} href={localePath(lang.code, "privacy/")}>{policyTitle(lang.code)}</a></li>
         <li><a class={linkClass} href={localePath(lang.code, "press/")}>{t("nav.press")}</a></li>
         <li><a class={linkClass} href={localePath(lang.code, "legal/")}>{t("nav.legal")}</a></li>

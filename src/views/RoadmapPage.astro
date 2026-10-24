@@ -1,0 +1,84 @@
+---
+// The public roadmap: shipped, next and later (src/data/roadmap.ts). A section
+// with no items is left out. Items not yet shipped say "Planned", never a date.
+import PageHero from "../components/PageHero.astro";
+import Prose from "../components/Prose.astro";
+import { roadmap, roadmapStatuses } from "../data/roadmap";
+import { useStrings, type Language, type UiKey } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t } = useStrings(lang.code);
+const sections = roadmapStatuses
+  .map((status) => ({ status, items: roadmap.filter((i) => i.status === status) }))
+  .filter((s) => s.items.length);
+---
+
+<Base lang={lang} title={t("meta.roadmap.title")} description={t("meta.roadmap.description")} image="/og/roadmap.png">
+  <PageHero title={t("roadmap.title")} lead={t("roadmap.lead")} />
+  <div class="section">
+    <Prose>
+      {
+        sections.map(({ status, items }) => (
+          <section data-roadmap={status} aria-labelledby={`roadmap-${status}`}>
+            <h2 id={`roadmap-${status}`}>{t(`roadmap.${status}` as UiKey)}</h2>
+            <ul class="items" role="list">
+              {items.map((item) => (
+                <li>
+                  <h3>{t(item.title)}</h3>
+                  {item.text && <p>{t(item.text)}</p>}
+                  {status !== "shipped" && (
+                    <p class="planned" data-planned>
+                      {t("roadmap.planned")}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </Prose>
+  </div>
+</Base>
+
+<style>
+  section + section {
+    margin-top: 36px;
+  }
+  /* Under .prose, which gives every other list bullets and an indent */
+  :global(.prose) .items {
+    list-style: none;
+    padding: 0;
+  }
+  :global(.prose) .items li {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 2px solid #e2e8f0;
+  }
+  .items :global(h3) {
+    margin: 0;
+  }
+  .items p {
+    margin-top: 6px;
+  }
+  /* The app's violet ink, as a small label */
+  .planned {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 2px 12px;
+    border: 2px solid currentColor;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--ink-violet);
+  }
+  @media (prefers-color-scheme: dark) {
+    .items li {
+      border-color: #38444d;
+    }
+  }
+</style>
