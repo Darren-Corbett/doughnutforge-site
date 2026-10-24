@@ -20,9 +20,11 @@ const links = [
   { href: localePath(lang.code, "support/"), label: t("nav.support") },
 ];
 const current = Astro.url.pathname;
-// Narrow side padding on phones so all four links fit one row at 360px; 44px tall to tap.
+// Narrow side padding on phones so all four links fit one row; 44px tall to tap.
+// Below 360px (iPhone Display Zoom gives 320px) the links drop to 14px with 2px
+// padding, which fits every language on one row: Ukrainian, the longest, keeps 12px.
 const linkClass =
-  "flex min-h-11 items-center rounded-full px-1.5 text-[15px] font-bold text-slate-200 hover:bg-white/10 hover:text-white aria-[current=page]:text-white aria-[current=page]:underline aria-[current=page]:decoration-[#4cb5f5] aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-8 sm:px-4";
+  "flex min-h-11 items-center rounded-full px-1.5 text-[15px] max-[359px]:px-0.5 max-[359px]:text-[14px] font-bold text-slate-200 hover:bg-white/10 hover:text-white aria-[current=page]:text-white aria-[current=page]:underline aria-[current=page]:decoration-[#4cb5f5] aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-8 sm:px-4";
 ---
 
 <header class="bg-[#15202b] text-white">
