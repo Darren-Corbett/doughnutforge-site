@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 24 October 2026, end of day, after the roadmap and security pages (`f3a577d`; pushed with this docs commit)
+- **Last updated:** 24 October 2026, after Phase 5 (issue forms and the answered-issues pages), the favicons and the translatedPages guard; pushed with this docs commit
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
@@ -18,14 +18,9 @@ Where the site work stands, and what comes next. Read this at the start of every
 | 2 | The other English pages: features, pricing, download, privacy, support/FAQ, press, legal, blog layout, 404, sitemap, robots.txt, social images | Done | `c0d0d83` |
 | 3 | All 30 languages, hreflang, language switcher | Done | `71b71f0` translations, `121d53c` first batch marked reviewed |
 | 4 | The four launch blog posts in English | **Done**: published 23 October 2026 (claims in `docs/BLOG-CLAIMS.md`) | `ee042f8` setup, `70f46f9` `c78eb76` `89ffe96` `8b7a3c4` `d0aca89` posts, `206e3dd` published |
-| 5 | Support issue forms and the "answered issues" Action | **Deferred to next week**, not part of launch | none |
+| 5 | Support issue forms and the "answered issues" pages | **Done** (24 October 2026); see "Phase 5: issue forms and answered issues" below | `583d4cd` `df665db` `9a8627a` tests, `1284373` forms, `129fccb` pages and translations, `e549219` form fields; forge-privacy `b12ffff` |
 | 6 | SEO, Lighthouse and accessibility checks, launch | **Done: the site is live** (23 October 2026). Step 9 (Search Console) is done; steps 6 and 8 of `docs/launch/LAUNCH-CHECKLIST.md` are still open | `a2b003c` to `99d31ff`; forge-privacy `a9ed0d8` |
 | – | `/roadmap/`, `/security/` and `/.well-known/security.txt`, in all 30 languages | **Done** (24 October 2026); see "Roadmap and security pages" below | `a6d1d26` tests, `f3a577d` pages and translations |
-
-### Why Phase 5 is deferred
-The owner moved it out of launch on 23 October 2026, to cut what launch depends on. Support at launch is what the site already has: `/support/` links to GitHub issues on forge-privacy and shows the bold never-attach warning in every language. No page links to "Answered questions" or "Known issues", and none may until Phase 5 ships. Phase 6 must not depend on anything from Phase 5. The full Phase 5 plan is under "Next week" in `docs/PLAN.md`, unchanged and ready to pick up.
-
-Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the bold warning. Those forms do not exist yet, so the "New issue" link opens GitHub's plain new-issue page. The warning is on the site but not on GitHub.
 
 ---
 
@@ -33,14 +28,14 @@ Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the 
 
 - **The site is live** at https://doughnut-forge.app in all 30 languages (every language reviewed and indexed), with the four blog posts, served by GitHub Pages from GitHub Actions. **Every push to `main` deploys** within about two minutes. The deploy fails, and the live site stays as it was, if any check in `npm run build:deploy` fails or the live `apple-app-site-association` is missing.
 - **The old privacy page redirects:** forge-privacy `a9ed0d8` sends `darren-corbett.github.io/forge-privacy` (with or without the trailing slash, and every `?lang=`) to the matching `/privacy/` page. The store Support URL (forge-privacy issues) is unchanged.
-- **Working tree:** clean. Everything up to `919ce28` is pushed and deployed (24 October 2026).
+- **Working tree:** clean. Everything up to this docs commit is pushed (24 October 2026); see "What is next", item 0, for the deploy to check.
 - **Post-launch audit (24 October 2026):** [`docs/audit/2026-10-24.md`](audit/2026-10-24.md). It covers the owner's eight live-site issues and the full audit (246 pages × 30 languages × Chromium, WebKit and WebKit iPhone × five widths × two themes, axe, links, and real Mobile Safari in the iOS Simulator). There are no critical findings. The high ones are the deploy's missing live-page check (issue 1), store links not opening in a new tab (issue 5), the header wrapping at 320px with Display Zoom (issue 8), and a German FAQ heading that pans at 320px (issue 7). **Stage 2 (24 October 2026) fixed H1, H2, H3, H4, M4 and L1**; see "Audit fixes" below. Issues 2 (Mac badge) and 7 (English pan), and M1 (desktop widths), are resolved: the owner confirmed on their own devices after Stage 2 that they no longer happen or look fine. The 320px layout tests stay as the guard.
 - **Launch incident:** the first deploy left out `.well-known/apple-app-site-association` for about 42 minutes (13:13 to 13:55 UTC), because the Pages upload drops files whose names start with a dot. Fixed in `42fb02c` (`include-hidden-files: true`, plus a live check at the end of the deploy job). Whether Apple fetched the file during the gap is unknown.
 
 ## What is next, in order
 
-0. **The 24 October end-of-day deploy passed** (run 40092562540, `919ce28`): "Check private vulnerability reporting is on" and "Check the live pages are this build", which now also compares `/.well-known/security.txt`, both passed on their first run. `security.txt` is live as `text/plain`, and `/roadmap/` and `/security/` are live.
-1. **Next job, next week: Phase 5**, the support issue forms and the answered-issues pages. The plan is under "Next week" in `docs/PLAN.md`. Plan it in plan mode first. When it ships, add the links to `/support/` and rerun the Phase 6 checks on the changed and new pages.
+0. **Check the Phase 5 deploy** (the push of `7f82405` to this docs commit): the log shows "Fetch answered issues" (expect "0 answered question(s), 0 known issue(s)" until issues are labelled) and every existing check passing. Then confirm the support page links to the three forms in a few languages, and that `/support/answered/` does not exist yet.
+1. **Owner: create the two labels** in forge-privacy (Issues → Labels → New label): `site-faq` ("Answer shown on doughnut-forge.app", `#1da1f2`) and `site-known-issue` ("Known issue shown on doughnut-forge.app", `#ff7a00`). On 24 October 2026 neither existed. Also open https://github.com/Darren-Corbett/forge-privacy/issues/new/choose signed in, and confirm it shows the three forms, "Report a security problem privately" and no blank issue (it needs a sign-in, so Claude could not see it).
 2. **Audit follow-ups:** all closed except the iOS App Store ID.
    - **Stage 2 is live:** deploy run 40087614665 passed, including "Check Pages deploys from GitHub Actions" and "Check the live pages are this build", which ran there for the first time.
    - **M1, desktop widths:** resolved; the owner confirmed they look fine (24 October 2026). No change.
@@ -60,6 +55,44 @@ Known gap until then: CLAUDE.md asks for GitHub issue forms that each carry the 
 8. **When the copywriter's notes arrive:** follow "Post-launch copy review" below.
 9. **New blog posts:** no more than one or two a week, each starting as `draft: true` with a claims table in `docs/BLOG-CLAIMS.md`, published only on the owner's say-so.
 10. **By 24 September 2027: renew `security.txt`.** Set `Expires` in `public/.well-known/security.txt` to one year from that day, and move this reminder a year on. The build fails from 24 September 2027 (30 days before the 24 October 2027 expiry) until it is renewed.
+
+## Phase 5: issue forms and answered issues (24 October 2026)
+
+- **Issue forms** in forge-privacy (`b12ffff`), kept in step with `docs/forge-privacy/.github/ISSUE_TEMPLATE/`, which the tests check (`tests/forms/issue-forms.spec.ts`). Change them here first, then copy them across. There are three forms: bug report, question and feature idea.
+  - Each opens with the bold never-attach warning and "Issues are public".
+  - Platform is a dropdown, App version a text field, and no field asks for anything personal.
+  - `config.yml` turns blank issues off and adds "Report a security problem privately", which goes to private vulnerability reporting.
+  - GitHub reported no errors in any form (checked on each file's page).
+- **What appears on the site:**
+  - Only issues the owner labels `site-faq` (Answered questions) or `site-known-issue` (Known issues), open or closed. **A label means the owner has checked the issue is fit to publish.**
+  - The answer is the owner's latest comment (`Darren-Corbett`); an issue the owner has not commented on is left out.
+  - Only the title, the question and the answer are shown, as plain text, with `@handles` replaced and no usernames, avatars or other comments.
+  - Form fields read as "Platform: Mac", empty fields and the "Your question" heading are left out, and longer fields keep their headings.
+- **How it is built:**
+  - `scripts/fetch-issues.mjs` uses the public API with no token and writes `src/data/issues.json`. On any failure it keeps the committed data.
+  - The deploy runs it before every build, and also runs **daily at 06:17 UTC**; the manual run button is still there.
+  - The committed `issues.json` has empty lists. To refresh it, run `npm run fetch:issues`, then make a commit, shown for approval.
+  - Unauthenticated requests are limited to 60 an hour per IP, and runners share IPs. If a day's fetch is limited, that deploy uses the committed data.
+- **Pages:**
+  - `/support/answered/` and `/support/known-issues/` are built in all 30 languages, and only when they have an issue. The support page links to them only then.
+  - Each issue has one English page, `/support/<list>/<number>-<slug>/`, like a blog post.
+  - `check-issues.mjs` checks the data and the pages in every build.
+- **Test builds:** `ISSUES_FILE=tests/fixtures/issues.json npm run build` builds with three sample issues, local only.
+- **GitHub turns off scheduled workflows after 60 days with no repo activity.** If that happens, turn the schedule back on under Actions → Deploy site.
+- **Translations:**
+  - The 13 new strings were reviewed by four independent reviewers. Their one blocking finding (zh-TW `meta.known.description`) is fixed and re-checked.
+  - Every language is stamped. The `issue.*` strings are English only, like the blog.
+- **Checks:**
+  - `build:deploy` has 0 warnings;
+  - forms 8/8, checks 2/2, deploy 7/7, full layout 1976/1976;
+  - with sample issues: 368 pages, support and issue tests 1037/1037;
+  - checked by hand at 360, 768 and 1280px in English and German;
+  - Lighthouse 100/100/100/100 on mobile and desktop.
+
+## Also on 24 October 2026
+
+- **Favicons** (`e87d47c`): `favicon.ico` (16, 32 and 48px) and the 16 and 32px PNGs have iOS-style squircle corners and transparent corners. They are made from the app's square iOS master by `node scripts/make-favicons.mjs`. `apple-touch-icon.png` and the manifest icons stay square. The repo-root copies (the rollback) are unchanged.
+- **Roadmap and security hreflang** (`f7ec59c` test, `09a141c` fix): the two pages were missing from `translatedPages`, so they had no hreflang links and the language menu went to each language's home page. **Guard** (`edd1737` test, `ae161ce` check): `check-hreflang.mjs` now fails when a page built in more than one language has no hreflang links.
 
 ## Roadmap and security pages (24 October 2026)
 
@@ -190,6 +223,11 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 | Layout, accessibility and interaction tests (build first; no network) | `npm run test:layout`, narrowed with `PAGES=` and `LANGS=`; see `tests/README.md` |
 | Link tests (live site and stores) | `npm run test:links` |
 | The deploy's live-page check, against a local server | `npm run test:deploy` |
+| The issue forms and the issue fetch, against a local server | `npm run test:forms` |
+| The build checks, on small built sites of their own | `npm run test:checks` |
+| Refresh the committed answered issues (then commit, shown for approval) | `npm run fetch:issues` |
+| Build with three sample issues (local only) | `ISSUES_FILE=tests/fixtures/issues.json npm run build` |
+| Remake the favicons from the app's master icon | `node scripts/make-favicons.mjs` |
 | The layout checks in real Mobile Safari (iOS Simulator) | `node tests/ios/real-safari.ts <udid>` (setup in the file) |
 | Record which English a translation came from (after review only) | `node scripts/stamp-translations.mjs --lang de --keys a,b` |
 
@@ -197,8 +235,9 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 - `check-production-files.mjs`: the built `apple-app-site-association` and `CNAME` match the live root copies, `.nojekyll` exists, and `security.txt` has its Contact, Policy and Canonical lines and an Expires date between 30 days and a year ahead.
 - `check-privacy-wording.mjs`: the privacy policy wording is unchanged from forge-privacy.
 - `check-translations.mjs`: every language has every key, and no translation is stale. Stale or unstamped strings are a warning locally and fail `build:deploy` (`--strict`).
-- `check-hreflang.mjs`: hreflang and canonical links agree.
+- `check-hreflang.mjs`: hreflang and canonical links agree, and every page built in more than one language has hreflang links (that is, it is in `translatedPages`).
 - `check-og.mjs`: every `og:image` has a file.
+- `check-issues.mjs`: the answered-issues data holds only titles, questions, answers and issue links (no usernames), and every list and issue page is built, and only when it has an issue.
 - `check-placeholders.mjs`: lists unfilled values (fails with `--strict`).
 
 **Deploy:** `.github/workflows/deploy.yml` runs on every push to `main` (and by hand). Pages deploys from GitHub Actions. Before deploying, it checks that Pages still deploys from Actions and that private vulnerability reporting is on in forge-privacy. After deploying, it checks that the live `/`, `/download/` and `/.well-known/security.txt` are this build, and that the live `apple-app-site-association` lists both apps. The root `.well-known/`, `CNAME`, `.nojekyll`, icons, `site.webmanifest` and `index.html` stay as the rollback until step 6 (on or after 6 November 2026).
