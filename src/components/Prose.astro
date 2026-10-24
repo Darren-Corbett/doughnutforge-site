@@ -104,6 +104,13 @@ const { class: className = "" } = Astro.props;
       color: #94a3b8;
     }
   }
+  /* At 320px (iPhone Display Zoom) the longest words in the privacy policy and
+     legal notices, such as "Microsoft-Unternehmensgruppe.", need a wider column */
+  @media (max-width: 359px) {
+    .prose {
+      padding-inline: 12px;
+    }
+  }
   @media (min-width: 768px) {
     .prose {
       padding: 40px;
