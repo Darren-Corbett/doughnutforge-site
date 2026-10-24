@@ -37,7 +37,13 @@ const API: Record<string, { body: unknown; link?: string }> = {
     ],
   },
   [`${REPO}/issues?labels=site-known-issue&state=all&per_page=100`]: {
-    body: [issue(4, "Face ID asks twice after locking", "On iPhone, Face ID asks twice.")],
+    body: [
+      issue(
+        4,
+        "Face ID asks twice after locking",
+        "Platform\n\niPhone\n\nApp version\n\n0.4.44\n\nWhat happened?\n\nOn iPhone, Face ID asks twice.\n\nWhat did you expect to happen?\n\nOnce.",
+      ),
+    ],
   },
   [`${REPO}/issues/1/comments?per_page=100`]: {
     body: [
@@ -111,10 +117,13 @@ test("keeps only answered, labelled issues, with the owner's latest comment as t
     expect(faq.url).toBe("https://github.com/Darren-Corbett/forge-privacy/issues/1");
     // The owner's latest comment, not a later one by someone else or an older one
     expect(faq.answer).toBe("Use Restore Identity with your backup phrase. Thanks a GitHub user for the tip.");
-    // The question without empty form answers, and with no username
-    expect(faq.question).toContain("How do I get my identity back?");
-    expect(faq.question).not.toContain("No response");
-    expect(faq.question).toContain("a GitHub user said to ask here");
+    // The question as written: short form fields on one line, no empty answers,
+    // no "Your question" heading, and no username
+    expect(faq.question).toBe("Platform: Mac\n\nI lost my Mac. a GitHub user said to ask here. How do I get my identity back?");
+    // A bug report keeps its longer fields' headings
+    expect(data.known[0].question).toBe(
+      "Platform: iPhone\n\nApp version: 0.4.44\n\nWhat happened?\n\nOn iPhone, Face ID asks twice.\n\nWhat did you expect to happen?\n\nOnce.",
+    );
     // The newest owner comment, found on the second page
     expect(data.known[0].answer).toBe("Fixed in the next update. Lock the app, then tap to unlock.");
 
