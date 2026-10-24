@@ -120,3 +120,15 @@ test("the deploy job's token may read the Pages settings", () => {
     "gh api repos/Darren-Corbett/forge-privacy/private-vulnerability-reporting --jq .enabled",
   );
 });
+
+test("the deploy runs daily and by hand, fetching the answered issues first, with no token", () => {
+  const workflow = readFileSync(`${root}.github/workflows/deploy.yml`, "utf8");
+  const on = workflow.match(/^on:\n((?:[ \t]+.*\n)+)/m)?.[1] ?? "";
+  expect(on, "a daily schedule").toMatch(/schedule:\n\s+- cron: "\d+ \d+ \* \* \*"/);
+  expect(on, "a manual run button").toContain("workflow_dispatch");
+  // The fetch step comes before the build, and has no token of any kind
+  const fetchStep = workflow.match(/- name: Fetch answered issues\n((?: {8,}.*\n)+)/)?.[0] ?? "";
+  expect(fetchStep, "a Fetch answered issues step").toContain("node scripts/fetch-issues.mjs");
+  expect(fetchStep).not.toMatch(/token|secrets\./i);
+  expect(workflow.indexOf("node scripts/fetch-issues.mjs")).toBeLessThan(workflow.indexOf("npm run build:deploy"));
+});

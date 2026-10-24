@@ -31,5 +31,7 @@ export default defineConfig({
     { name: "links", testMatch: /links\/.*\.spec\.ts/ },
     // The deploy's live-page check, against a local server (no browser, no network)
     { name: "deploy", testMatch: /deploy\/.*\.spec\.ts/ },
+    // The forge-privacy issue forms and the issue fetch, against a local server (no browser, no network)
+    { name: "forms", testMatch: /forms\/.*\.spec\.ts/ },
   ],
 });

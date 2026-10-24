@@ -1,0 +1,30 @@
+{
+  "answered": [
+    {
+      "number": 1,
+      "slug": "1-how-do-i-restore-my-identity",
+      "title": "How do I restore my identity?",
+      "question": "Platform\n\nMac\n\nYour question\n\nI lost my Mac. How do I get my identity back on a new one?",
+      "answer": "Open Doughnut Forge on the new Mac, choose Restore Identity and enter your backup phrase.\n\nYour contacts are not part of the backup phrase, so add their contact cards again.",
+      "url": "https://github.com/Darren-Corbett/forge-privacy/issues/1"
+    },
+    {
+      "number": 2,
+      "slug": "2-kann-ich-ordner-verschlusseln",
+      "title": "Kann ich Ordner verschlüsseln?",
+      "question": "Geht das auch mit ganzen Ordnern?",
+      "answer": "Yes. On a Mac or Windows PC, use Secure Directory.",
+      "url": "https://github.com/Darren-Corbett/forge-privacy/issues/2"
+    }
+  ],
+  "known": [
+    {
+      "number": 3,
+      "slug": "3-face-id-asks-twice-after-locking",
+      "title": "Face ID asks twice after locking",
+      "question": "On iPhone, Face ID asks twice after I lock the app.",
+      "answer": "Fixed in the next update. Until then, lock the app, then tap to unlock.",
+      "url": "https://github.com/Darren-Corbett/forge-privacy/issues/3"
+    }
+  ]
+}
