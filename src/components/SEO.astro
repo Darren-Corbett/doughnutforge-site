@@ -48,7 +48,8 @@ const ogAlternates = alternates
 <meta property="og:site_name" content={site.name} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:url" content={canonical} />
+{/* Like canonical: a noindex page (the 404 page, which answers every unknown address) has no address of its own */}
+{!noindex && <meta property="og:url" content={canonical} />}
 <meta property="og:image" content={imageUrl} />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
