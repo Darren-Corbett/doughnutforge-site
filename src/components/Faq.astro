@@ -43,8 +43,11 @@ const { items } = Astro.props;
   summary::-webkit-details-marker {
     display: none;
   }
+  /* The shared heading size rule (global.css) fits the longest word, keeping
+     room for the plus beside it: 14px and the 16px gap */
   h3 {
-    font-size: 19px;
+    --fs: 19px;
+    --fit-reserve: 30px;
     line-height: 1.3;
     font-weight: 800;
   }

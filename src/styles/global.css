@@ -128,9 +128,12 @@
      src/middleware.ts into --longest, in average letter widths) would not fit the
      column, the heading gets just small enough for it to fit. Short words keep --fs.
      0.64em is a wide average letter at weight 900; Japanese and Chinese letters
-     count as 1.6 each. min-content stops a max-width in ch cutting a long word. */
+     count as 1.6 each. min-content stops a max-width in ch cutting a long word.
+     --fit-reserve is room a component keeps beside its heading, such as an icon.
+     Components set a heading's size in --fs, never in font-size, so this rule
+     always applies. */
   :is(h1, h2, h3, .tagline, .statement, .row-name) {
-    font-size: min(var(--fs, 1em), 100cqi / (var(--longest, 0.01) * 0.64));
+    font-size: min(var(--fs, 1em), (100cqi - var(--fit-reserve, 0px)) / (var(--longest, 0.01) * 0.64));
     min-width: min-content;
   }
 

@@ -92,10 +92,15 @@ const decode = (html: string) =>
     .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
     .replace(/&[a-z]+;/gi, "x");
 
+// Thai has no spaces between words; browsers break it at dictionary words (ICU),
+// which this segmenter finds the same way
+const thaiWords = new Intl.Segmenter("th", { granularity: "word" });
+
 /** The width of the longest piece of text that cannot be broken across lines */
 const longestWord = (html: string, lang: string) => {
   // In Japanese and Chinese the pieces are the words between the <wbr>s
-  const pieces = /^(ja|zh)\b/.test(lang) ? html.split(/<wbr>|\s+/) : decode(html).split(/\s+/);
+  const spaced = /^(ja|zh)\b/.test(lang) ? html.split(/<wbr>|\s+/) : decode(html).split(/\s+/);
+  const pieces = /^th\b/.test(lang) ? spaced.flatMap((p) => [...thaiWords.segment(decode(p))].map((s) => s.segment)) : spaced;
   return Math.max(0, ...pieces.map((p) => widthOf(decode(p))));
 };
 
