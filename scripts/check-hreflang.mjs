@@ -5,16 +5,19 @@
 //   - every hreflang target is a built, indexable page with the same list (both ways)
 //   - no draft (noindex) page appears in any hreflang list or in the sitemap
 //   - the sitemap lists every indexable page, with the same alternates as its <head>
+//   - a page built in more than one language has hreflang links: it is listed in
+//     translatedPages (src/i18n/alternates.ts). Only English-only pages, such as
+//     blog posts, may have none.
 //
-//   node scripts/check-hreflang.mjs [--report <file.json>]
+//   node scripts/check-hreflang.mjs [--report <file.json>] [--dist <dir>]
 
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const SITE_URL = "https://doughnut-forge.app";
 const SITE = new URL("..", import.meta.url).pathname;
-const dist = join(SITE, "dist");
 const args = process.argv.slice(2);
+const dist = args.includes("--dist") ? args[args.indexOf("--dist") + 1] : join(SITE, "dist");
 const reportFile = args.includes("--report") ? args[args.indexOf("--report") + 1] : null;
 
 const attr = (tag, name) => new RegExp(`\\s${name}="([^"]*)"`).exec(tag)?.[1];
@@ -62,6 +65,25 @@ for (const [url, page] of pages) {
     else if (key(target.alternates) !== key(page.alternates)) problems.push(`${url}: ${a.href} does not link back with the same list`);
   }
 }
+
+// A page built in more than one language must have hreflang links. Without them
+// it is missing from translatedPages, and its language menu sends readers to
+// each language's home page instead of the same page.
+const { languages } = JSON.parse(readFileSync(join(SITE, "src/i18n/languages.json"), "utf8"));
+const folders = new Set(languages.filter((l) => l.code !== "en").map((l) => l.path));
+const pageOf = (url) => {
+  const [first = "", ...rest] = url.slice(SITE_URL.length + 1).split("/");
+  return folders.has(first) ? rest.join("/") : [first, ...rest].join("/");
+};
+const builtIn = new Map();
+for (const url of pages.keys()) builtIn.set(pageOf(url), (builtIn.get(pageOf(url)) ?? 0) + 1);
+const unlisted = new Set();
+for (const [url, page] of pages) {
+  const name = pageOf(url);
+  if (!page.noindex && !page.alternates.length && builtIn.get(name) > 1) unlisted.add(name);
+}
+for (const name of unlisted)
+  problems.push(`"${name}" is built in ${builtIn.get(name)} languages but has no hreflang links: add it to translatedPages in src/i18n/alternates.ts`);
 
 // The sitemap
 const sitemapFile = join(dist, "sitemap-0.xml");
