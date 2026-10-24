@@ -6,7 +6,7 @@ import review from "./review.json";
 export type Alternate = { hreflang: string; href: string };
 
 /** The pages that exist in every language, as paths without the language folder */
-export const translatedPages = ["", "features/", "pricing/", "download/", "privacy/", "support/", "press/", "legal/"];
+export const translatedPages = ["", "features/", "pricing/", "download/", "privacy/", "support/", "press/", "legal/", "roadmap/", "security/"];
 
 const SITE = "https://doughnut-forge.app";
 const reviewed = (code: string) => (review as Record<string, { status: string }>)[code]?.status === "reviewed";
