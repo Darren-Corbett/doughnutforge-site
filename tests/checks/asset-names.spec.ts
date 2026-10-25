@@ -22,3 +22,9 @@ test("other assets keep Astro's usual names", () => {
   expect(assetFileNames({ names: ["Base.css"] })).toBe("_astro/Base.[hash][extname]");
   expect(assetFileNames({ name: "app-icon.png" })).toBe("_astro/app-icon.[hash][extname]");
 });
+
+test("Astro's internal @_@ marker never reaches a file name", () => {
+  // As Astro's own assetFileNames: the part before the marker is the name
+  expect(assetFileNames, "scripts/asset-names.mjs").toBeDefined();
+  expect(assetFileNames({ names: ["index@_@astro.css"] })).toBe("_astro/index.[hash][extname]");
+});
