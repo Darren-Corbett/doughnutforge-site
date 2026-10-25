@@ -21,20 +21,23 @@ const RULES: Rule[] = [
   { name: "hides store links a second after load", css: 'a[href^="https://apps."] { display: none !important; }', delay: 1000 },
 ];
 
-/** Applies a rule the way a blocker would: from the start, at DOMContentLoaded, or later */
+/**
+ * Applies a rule the way a blocker would: once the page is parsed, before its
+ * load event (an init script runs before the document exists, so a style added
+ * then is lost), or a while after load
+ */
 const block = (page: Page, rule: Rule) =>
   page.addInitScript((r: Rule) => {
     const apply = () => {
       if (r.css) {
         const style = document.createElement("style");
         style.textContent = r.css;
-        document.documentElement.append(style);
+        document.head.append(style);
       }
       if (r.remove) document.querySelectorAll(r.remove).forEach((e) => e.remove());
     };
     if (r.delay) addEventListener("load", () => setTimeout(apply, r.delay));
-    else if (r.remove) document.addEventListener("DOMContentLoaded", apply);
-    else apply();
+    else document.addEventListener("DOMContentLoaded", apply);
   }, rule);
 
 /** The store badges a page is built with: link address and wording, from dist/ */
@@ -54,7 +57,12 @@ const visibleLinks = (page: Page) =>
         // A badge counts only if its image is drawn: its screen-reader text is not seen
         return drawn && (!img || img.getBoundingClientRect().width > 0);
       })
-      .map((a) => ({ href: a.getAttribute("href")!, text: (a.firstChild?.textContent ?? "").trim() })),
+      .map((a) => {
+        // The words a visitor sees: the whole text (Japanese has <wbr> break points), without the screen-reader note
+        const seen = a.cloneNode(true) as HTMLElement;
+        seen.querySelectorAll(".sr-only").forEach((e) => e.remove());
+        return { href: a.getAttribute("href")!, text: (seen.textContent ?? "").trim() };
+      }),
   );
 
 for (const path of PAGES) {
