@@ -13,9 +13,9 @@ const root = new URL("../../", import.meta.url).pathname;
 const run = promisify(execFile);
 const PLACEHOLDER = "__BUILD_ID__";
 
-const exec = async (script: string, dist: string) => {
+const exec = async (script: string, dist: string, extra: string[] = []) => {
   try {
-    const { stdout, stderr } = await run(process.execPath, [`${root}scripts/${script}`, "--dist", dist]);
+    const { stdout, stderr } = await run(process.execPath, [`${root}scripts/${script}`, "--dist", dist, ...extra]);
     return { code: 0, output: stdout + stderr };
   } catch (e) {
     const err = e as { code?: number; stdout?: string; stderr?: string };
@@ -81,4 +81,38 @@ test("fails when the ID is not the hash of the content", async () => {
   const result = await check(dist);
   expect(result.code).not.toBe(0);
   expect(result.output).toContain("content");
+});
+
+// Astro keeps one file for identical SVGs and names it after whichever it happened
+// to read first, so two builds of the same commit could differ and the build ID
+// would change for nothing. src/assets must hold no two identical SVGs.
+const assets = (files: Record<string, string>) => {
+  const dir = mkdtempSync(join(tmpdir(), "assets-"));
+  for (const [path, body] of Object.entries(files)) {
+    mkdirSync(join(dir, path, ".."), { recursive: true });
+    writeFileSync(join(dir, path), body);
+  }
+  return dir;
+};
+const SVG = (text: string) => `<svg xmlns="http://www.w3.org/2000/svg"><text>${text}</text></svg>`;
+
+test("the site's own assets hold no two identical SVGs", async () => {
+  const result = await check(await site());
+  expect(result.output).not.toContain("identical");
+  expect(result.code).toBe(0);
+});
+
+test("fails when two SVGs in the assets are identical", async () => {
+  const dir = assets({ "badges/store/en.svg": SVG("Download"), "badges/store/en-US.svg": SVG("Download"), "badges/store/fr.svg": SVG("Télécharger") });
+  const result = await exec("check-production-files.mjs", await site(), ["--assets", dir]);
+  expect(result.code).not.toBe(0);
+  expect(result.output).toContain("identical");
+  expect(result.output).toContain("badges/store/en-US.svg");
+});
+
+test("passes when every SVG in the assets is different", async () => {
+  const dir = assets({ "badges/store/en.svg": SVG("Download"), "badges/store/fr.svg": SVG("Télécharger"), "flag.png": "same" , "copy.png": "same" });
+  const result = await exec("check-production-files.mjs", await site(), ["--assets", dir]);
+  expect(result.output).not.toContain("identical");
+  expect(result.code).toBe(0);
 });
