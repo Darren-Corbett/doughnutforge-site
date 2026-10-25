@@ -4,20 +4,23 @@
 // GitHub Actions, the root copies stay, and the built site must carry the same
 // files byte for byte, so the switch changes nothing for the apps.
 import { existsSync, readFileSync } from "node:fs";
+import { parseArgs } from "node:util";
 
 const root = new URL("..", import.meta.url).pathname;
+// --dist <dir> checks another built site (tests/checks)
+const dist = (parseArgs({ options: { dist: { type: "string" } } }).values.dist ?? `${root}dist`).replace(/\/?$/, "/");
 const errors = [];
 
 for (const file of [".well-known/apple-app-site-association", "CNAME"]) {
-  const built = `${root}dist/${file}`;
+  const built = `${dist}${file}`;
   if (!existsSync(built)) errors.push(`dist/${file} is missing`);
   else if (existsSync(`${root}${file}`) && !readFileSync(built).equals(readFileSync(`${root}${file}`)))
     errors.push(`dist/${file} differs from the live copy at the repo root`);
 }
-if (!existsSync(`${root}dist/.nojekyll`)) errors.push("dist/.nojekyll is missing");
+if (!existsSync(`${dist}.nojekyll`)) errors.push("dist/.nojekyll is missing");
 
 try {
-  const aasa = JSON.parse(readFileSync(`${root}dist/.well-known/apple-app-site-association`, "utf8"));
+  const aasa = JSON.parse(readFileSync(`${dist}.well-known/apple-app-site-association`, "utf8"));
   const apps = aasa.webcredentials?.apps ?? [];
   for (const id of ["J74UEFCGU7.com.darrencorbett.doughnutforge", "J74UEFCGU7.com.darrencorbett.doughnutforge.mobile"])
     if (!apps.includes(id)) errors.push(`apple-app-site-association no longer lists ${id}`);
@@ -29,7 +32,7 @@ try {
 // reporting. Expires is one year ahead at most; the build fails 30 days before
 // it lapses, so it is renewed in time (the dated reminder is in docs/HANDOVER.md).
 const DAY = 24 * 3600 * 1000;
-const securityTxt = `${root}dist/.well-known/security.txt`;
+const securityTxt = `${dist}.well-known/security.txt`;
 if (!existsSync(securityTxt)) errors.push("dist/.well-known/security.txt is missing");
 else {
   const txt = readFileSync(securityTxt, "utf8");
@@ -46,8 +49,23 @@ else {
   else if (expires[0] - Date.now() > 366 * DAY) errors.push("security.txt Expires is more than a year ahead (RFC 9116 advises a year at most)");
 }
 
+// The build ID: /build.json and the pages must agree, or open tabs would reload
+// for nothing, or never (src/components/FreshCheck.astro)
+const pageId = existsSync(`${dist}index.html`) ? /<meta name="build-id" content="([^"]+)"/.exec(readFileSync(`${dist}index.html`, "utf8"))?.[1] : undefined;
+if (!pageId) errors.push("dist/index.html has no build-id meta");
+if (!existsSync(`${dist}build.json`)) errors.push("dist/build.json is missing");
+else {
+  let id;
+  try {
+    id = JSON.parse(readFileSync(`${dist}build.json`, "utf8")).id;
+  } catch (e) {
+    errors.push(`dist/build.json is not valid JSON: ${e.message}`);
+  }
+  if (pageId && id !== undefined && id !== pageId) errors.push(`dist/build.json says ${id}, but the home page is build ${pageId}`);
+}
+
 if (errors.length) {
   console.error("check-production-files:\n" + errors.map((e) => `  - ${e}`).join("\n"));
   process.exit(1);
 }
-console.log("check-production-files: apple-app-site-association, CNAME and .nojekyll match production; security.txt is valid");
+console.log("check-production-files: apple-app-site-association, CNAME and .nojekyll match production; security.txt is valid; build.json and the pages share the build ID");

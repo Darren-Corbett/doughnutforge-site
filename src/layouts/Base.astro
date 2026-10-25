@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import FreshCheck from "../components/FreshCheck.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import SEO from "../components/SEO.astro";
@@ -50,6 +51,7 @@ const ogImage =
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <FreshCheck />
     <SEO
       title={title}
       description={description}

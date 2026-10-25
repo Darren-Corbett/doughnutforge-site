@@ -2,7 +2,7 @@
 # day (so newly answered issues appear), and on demand. The deploy fails, and the live site stays as it was, if any check in
 # `npm run build:deploy` fails or Pages no longer deploys from Actions. The run
 # also fails, after the deploy, if the live / and /download/ are not the pages it
-# built, the live security.txt is not the one it built, or the live
+# built, the live security.txt or build.json is not the one it built, or the live
 # apple-app-site-association is missing. It also stops, before deploying, unless
 # private vulnerability reporting is on in forge-privacy, where /security/ and
 # security.txt send reports.
@@ -37,6 +37,7 @@ jobs:
       home: ${{ steps.hashes.outputs.home }}
       download: ${{ steps.hashes.outputs.download }}
       security: ${{ steps.hashes.outputs.security }}
+      build: ${{ steps.hashes.outputs.build }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -66,6 +67,7 @@ jobs:
           echo "home=$(sha256sum dist/index.html | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
           echo "download=$(sha256sum dist/download/index.html | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
           echo "security=$(sha256sum dist/.well-known/security.txt | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          echo "build=$(sha256sum dist/build.json | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
@@ -106,9 +108,10 @@ jobs:
         with:
           sparse-checkout: scripts/check-live-deploy.mjs
           sparse-checkout-cone-mode: false
-      # The live /, /download/ and security.txt must be the files this run built
+      # The live /, /download/, security.txt and build.json (the build ID open tabs
+      # compare with, src/components/FreshCheck.astro) must be the files this run built
       - name: Check the live pages are this build
-        run: node scripts/check-live-deploy.mjs --base https://doughnut-forge.app --expect "/=${{ needs.build.outputs.home }},/download/=${{ needs.build.outputs.download }},/.well-known/security.txt=${{ needs.build.outputs.security }}"
+        run: node scripts/check-live-deploy.mjs --base https://doughnut-forge.app --expect "/=${{ needs.build.outputs.home }},/download/=${{ needs.build.outputs.download }},/.well-known/security.txt=${{ needs.build.outputs.security }},/build.json=${{ needs.build.outputs.build }}"
       # The live site must serve the apps' association file: fail the run if not
       - name: Check apple-app-site-association is live
         run: |

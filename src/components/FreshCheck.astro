@@ -1,0 +1,38 @@
+---
+// Keeps open tabs on the live build. iPhone Safari redraws a tab it comes back
+// to, and restores one from its cache, without asking the server, whatever the
+// headers say, so a tab can show an old build for days. Each time a page is
+// shown, it fetches /build.json uncached and, if the live ID differs from its
+// own, reloads once. Same origin only, and it sends nothing. Any failure (offline,
+// an error, blocked storage) leaves the page as it is. sessionStorage remembers
+// which ID each page last reloaded for, so a CDN that still serves the old page
+// never causes a loop (the one use of web storage on the site, see CLAUDE.md).
+// It also removes any service worker an older site left behind.
+import { buildId } from "../data/build";
+---
+
+<meta name="build-id" content={buildId} />
+<script is:inline>
+  (() => {
+    const id = document.querySelector('meta[name="build-id"]')?.content;
+    const check = () => {
+      if (!id || document.visibilityState !== "visible") return;
+      fetch(`/build.json?t=${Date.now()}`, { cache: "no-store" })
+        .then((res) => (res.ok ? res.json() : null))
+        .then((live) => {
+          if (typeof live?.id !== "string" || live.id === id) return;
+          const key = `build:${location.pathname}`;
+          if (sessionStorage.getItem(key) === live.id) return;
+          sessionStorage.setItem(key, live.id);
+          location.reload();
+        })
+        .catch(() => {});
+    };
+    addEventListener("pageshow", check);
+    document.addEventListener("visibilitychange", check);
+    navigator.serviceWorker
+      ?.getRegistrations()
+      .then((all) => all.forEach((sw) => sw.unregister()))
+      .catch(() => {});
+  })();
+</script>

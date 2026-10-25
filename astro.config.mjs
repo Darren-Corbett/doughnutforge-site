@@ -1,4 +1,5 @@
 // @ts-check
+import { execSync } from "node:child_process";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
@@ -56,6 +57,18 @@ const inSitemap = (page) => {
   return true;
 };
 
+// One ID per build: the commit plus the build time, so the daily rebuild of the
+// same commit gets a new one. Pages carry it and /build.json holds the live one,
+// so an open tab can tell it is out of date (src/components/FreshCheck.astro).
+const commit = (() => {
+  try {
+    return execSync("git rev-parse --short HEAD", { encoding: "utf8" }).trim();
+  } catch {
+    return "local";
+  }
+})();
+const buildId = (process.env.BUILD_ID ||= `${commit}-${Date.now().toString(36)}`);
+
 export default defineConfig({
   site: "https://doughnut-forge.app",
   trailingSlash: "always",
@@ -76,5 +89,6 @@ export default defineConfig({
   ],
   vite: {
     plugins: [tailwindcss()],
+    define: { "import.meta.env.BUILD_ID": JSON.stringify(buildId) },
   },
 });

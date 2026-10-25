@@ -26,6 +26,7 @@ Every plan must say how it serves both goals.
 - Match the app's look: take colours, fonts, spacing, icons and tone from the app repo's styles and assets. Never invent a new brand.
 - No tracking: no analytics scripts, no third-party cookies, no external fonts, CDNs or embeds. Self-host every asset. The site must live up to an app that has no servers.
 - No forms that collect personal data.
+- No web storage, with one exception (owner, 25 October 2026): the page check that keeps open tabs on the live build (`src/components/FreshCheck.astro`) may keep the build ID in `sessionStorage`. It holds only the build ID and clears when the tab closes. This exception is for the website only: the app's no-web-storage rule still applies to the app and must never be relaxed there.
 - Never commit without approval: show files, diff and message, then wait for a yes. Work trunk-based on main. Never create branches.
 - Nothing is published without approval. New blog posts start as drafts (`draft: true`).
 
