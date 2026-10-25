@@ -7,9 +7,11 @@
 import { expect, test } from "@playwright/test";
 import { execFile } from "node:child_process";
 import { createHash } from "node:crypto";
-import { existsSync, readFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { createServer, type Server } from "node:http";
 import type { AddressInfo } from "node:net";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { promisify } from "node:util";
 
 const root = new URL("../../", import.meta.url).pathname;
@@ -21,6 +23,7 @@ const BUILT = {
   "/": `${root}dist/index.html`,
   "/download/": `${root}dist/download/index.html`,
   "/.well-known/security.txt": `${root}dist/.well-known/security.txt`,
+  "/build.json": `${root}dist/build.json`,
 };
 const PLACEHOLDER = `${root}index.html`;
 
@@ -55,6 +58,42 @@ test("passes when the live pages are the build just deployed", async () => {
     const result = await check(server.base, expected);
     expect(result.output).toContain("match");
     expect(result.code).toBe(0);
+  } finally {
+    await server.close();
+  }
+});
+
+test("passes after a rebuild that changed nothing, so the build ID is the same", async () => {
+  // The daily rebuild of an unchanged site: the build ID is a hash of the content
+  // (scripts/build-id.mjs), so the second build's files, build.json included, are
+  // byte for byte the ones already live, and the check must pass at once
+  const rebuilt = mkdtempSync(join(tmpdir(), "rebuild-"));
+  const second = Object.fromEntries(
+    Object.entries(BUILT).map(([path, file], i) => {
+      const copy = join(rebuilt, String(i));
+      copyFileSync(file, copy);
+      return [path, copy];
+    }),
+  );
+  expect(readFileSync(second["/build.json"], "utf8")).toBe(readFileSync(BUILT["/build.json"], "utf8"));
+  const server = await serve(BUILT);
+  try {
+    const result = await check(server.base, Object.fromEntries(Object.entries(second).map(([path, file]) => [path, sha(file)])));
+    expect(result.output).toContain("match");
+    expect(result.code).toBe(0);
+  } finally {
+    await server.close();
+  }
+});
+
+test("fails when the live build.json is an older build", async () => {
+  const older = join(mkdtempSync(join(tmpdir(), "older-")), "build.json");
+  writeFileSync(older, '{"id":"0000000000000000"}');
+  const server = await serve({ ...BUILT, "/build.json": older });
+  try {
+    const result = await check(server.base, expected);
+    expect(result.code).not.toBe(0);
+    expect(result.output).toContain("/build.json");
   } finally {
     await server.close();
   }
