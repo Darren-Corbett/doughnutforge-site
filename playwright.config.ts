@@ -35,6 +35,10 @@ export default defineConfig({
     { name: "deploy-webkit", testMatch: /deploy\/fresh-build\.spec\.ts/, use: { ...devices["iPhone 13"] } },
     // The forge-privacy issue forms and the issue fetch, against a local server (no browser, no network)
     { name: "forms", testMatch: /forms\/.*\.spec\.ts/ },
+    // Content blockers on phones: every public list on every page, and a way to
+    // each store when a badge is hidden anyway (downloads the lists; test:blockers)
+    { name: "blockers-iphone", testMatch: /blockers\/.*\.spec\.ts/, use: { ...devices["iPhone 13"] } },
+    { name: "blockers-android", testMatch: /blockers\/.*\.spec\.ts/, use: { ...devices["Pixel 7"] } },
     // The build's own checks, run on small built sites of their own (no browser)
     { name: "checks", testMatch: /checks\/.*\.spec\.ts/ },
   ],
