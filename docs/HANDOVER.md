@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 25 October 2026, after the stale-page fix (open Safari tabs now reload to the live build); see "Stale pages in iPhone Safari" below
+- **Last updated:** 25 October 2026, after the stale-page fix (open Safari tabs now reload to the live build) and the content build ID; see "Stale pages in iPhone Safari" and "Build ID from the content" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
@@ -21,6 +21,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 | 5 | Support issue forms and the "answered issues" pages | **Done** (24 October 2026); see "Phase 5: issue forms and answered issues" below | `583d4cd` `df665db` `9a8627a` tests, `1284373` forms, `129fccb` pages and translations, `e549219` form fields; forge-privacy `b12ffff` |
 | 6 | SEO, Lighthouse and accessibility checks, launch | **Done: the site is live** (23 October 2026). Step 9 (Search Console) is done; steps 6 and 8 of `docs/launch/LAUNCH-CHECKLIST.md` are still open | `a2b003c` to `99d31ff`; forge-privacy `a9ed0d8` |
 | – | Stale pages in iPhone Safari: build ID check | **Done** (25 October 2026); see "Stale pages in iPhone Safari" below | `cc2f34d` tests, `cc1ccc2` fix |
+| – | Build ID from the content, reproducible builds | **Done** (25 October 2026); see "Build ID from the content" below | `508fc66` `6bc3ceb` `254c60b` `52d77ad` tests, `450f469` restore, `5257e46` fix |
 | – | `/roadmap/`, `/security/` and `/.well-known/security.txt`, in all 30 languages | **Done** (24 October 2026); see "Roadmap and security pages" below | `a6d1d26` tests, `f3a577d` pages and translations |
 
 ---
@@ -29,7 +30,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 - **The site is live** at https://doughnut-forge.app in all 30 languages (every language reviewed and indexed), with the four blog posts, served by GitHub Pages from GitHub Actions. **Every push to `main` deploys** within about two minutes. The deploy fails, and the live site stays as it was, if any check in `npm run build:deploy` fails or the live `apple-app-site-association` is missing.
 - **The old privacy page redirects:** forge-privacy `a9ed0d8` sends `darren-corbett.github.io/forge-privacy` (with or without the trailing slash, and every `?lang=`) to the matching `/privacy/` page. The store Support URL (forge-privacy issues) is unchanged.
-- **Working tree:** clean. Everything up to `cc1ccc2` is pushed and live (deploy run 40191021731, 25 October 2026). This docs commit waits for the owner's yes to push.
+- **Working tree:** clean. Everything up to `5257e46` is pushed and live (deploy run 40193446748, 25 October 2026). This docs commit waits for the owner's yes to push.
 - **Post-launch audit (24 October 2026):** [`docs/audit/2026-10-24.md`](audit/2026-10-24.md). It covers the owner's eight live-site issues and the full audit (246 pages × 30 languages × Chromium, WebKit and WebKit iPhone × five widths × two themes, axe, links, and real Mobile Safari in the iOS Simulator). There are no critical findings. The high ones are the deploy's missing live-page check (issue 1), store links not opening in a new tab (issue 5), the header wrapping at 320px with Display Zoom (issue 8), and a German FAQ heading that pans at 320px (issue 7). **Stage 2 (24 October 2026) fixed H1, H2, H3, H4, M4 and L1**; see "Audit fixes" below. Issues 2 (Mac badge) and 7 (English pan), and M1 (desktop widths), are resolved: the owner confirmed on their own devices after Stage 2 that they no longer happen or look fine. The 320px layout tests stay as the guard.
 - **Launch incident:** the first deploy left out `.well-known/apple-app-site-association` for about 42 minutes (13:13 to 13:55 UTC), because the Pages upload drops files whose names start with a dot. Fixed in `42fb02c` (`include-hidden-files: true`, plus a live check at the end of the deploy job). Whether Apple fetched the file during the gap is unknown.
 
@@ -68,7 +69,7 @@ Where the site work stands, and what comes next. Read this at the start of every
   - No `unload` handlers, so pages go into Safari's back-forward cache.
 - **Cause (most likely):** iOS Safari does not refetch a tab it comes back to. It redraws it from memory or the back-forward cache, and a tab it had unloaded is restored from the disk cache whatever `max-age` says (WebKit loads history and restored tabs that way). A tab opened on Friday shows Friday's page until a real reload. Nothing on the server can force this; only the page can notice it is old. **No hosting move is needed.**
 - **Fix:**
-  - Every build gets an ID (commit plus build time, `astro.config.mjs`). Every page carries it in `<meta name="build-id">`, and `/build.json` holds it.
+  - Every build gets an ID, **a hash of the built site's content** (since the content-ID change below). Every page carries it in `<meta name="build-id">`, and `/build.json` holds it.
   - `src/components/FreshCheck.astro` (in `Base.astro`): on every `pageshow` and whenever the tab comes back into view, it fetches `/build.json?t=<now>` with `cache: "no-store"`. If the live ID differs, it reloads once.
   - Same origin, sends nothing, and any failure leaves the page as it is. It also removes any old service worker.
   - **Reload guard:** `sessionStorage` key `build:<path>` holds the ID that page last reloaded for, so a CDN still serving the old page causes one reload, never a loop.
@@ -85,9 +86,32 @@ Where the site work stands, and what comes next. Read this at the start of every
   - the live `/build.json` (`cc1ccc2-mvnrx4f5`) matched the `build-id` on `/`, `/download/`, `/roadmap/` and `/de/support/`;
   - `build.json` is not in the sitemap;
   - a live WebKit iPhone visit made one load and two checks, with no reload and no errors.
-- **Open question for the owner:** the ID includes the build time, so the daily 06:17 UTC rebuild counts as a new build, and every open tab reloads once a day even when nothing changed. A content-based ID would reload only on real changes. Not done; waiting for the owner's choice.
+- **Settled (owner, 25 October 2026):** the first ID included the build time, so the daily rebuild made every open tab reload once a day for nothing. It is now a content hash; see "Build ID from the content" below.
 - **Owner, optional:** on the iPhone, a Safari tab left open from before should now switch to the new build as soon as it is shown again. A Home Screen icon (if there is one) behaves the same way.
 
+
+## Build ID from the content (25 October 2026)
+
+- **What:** the build ID is the first 16 hex characters of a SHA-256 over every file in `dist/` (path and bytes), without `build.json`, with each page's `build-id` put back to the placeholder `__BUILD_ID__`. A rebuild that changed nothing keeps its ID, so open tabs reload only when something really changed, and the deploy's live check passes as usual.
+- **How:** pages are built with the placeholder (`src/data/build.ts`). `scripts/build-id.mjs` runs after `astro build` and `make-og` in every build script. It stamps the hash into every page and writes `build.json`, so the `src/pages/build.json.ts` endpoint is gone. Stamping again changes nothing. **Anything that writes to `dist/` must run before it**; `check-production-files.mjs` fails if the ID is not the content hash or a page still has the placeholder.
+- **Builds were not reproducible, and now are:** two builds of the same commit differed. Astro keeps one file for identical SVGs and names it after whichever it reads first, and that order varies. The store badges `en-US` (all three stores) and `es-MX` (Microsoft) were byte-identical to `en` and `es`, so the shared file was `en.…svg` or `en-US.…svg` by chance.
+  - **Fix:** those four files are removed. `StoreBadge.astro` uses the language's file with the regional alt text, and `fetch-badges.mjs` no longer writes a regional badge identical to its language's.
+  - **Guard:** `check-production-files.mjs` fails if two SVGs in `src/assets` are identical.
+  - `scripts/asset-names.mjs` also names any asset Rolldown makes from identical files after the first name in sorted order (it does not reach Astro's SVG step).
+  - **Proof:** three `build:deploy` runs of the same tree gave the same ID and identical files.
+- **Commits:** `508fc66` tests, `6bc3ceb` a test type fix that **by mistake also removed `src/pages/build.json.ts`** (a staged removal), `254c60b` and `52d77ad` tests, `450f469` restores that file (history is never rewritten), `5257e46` the fix.
+- **Checks before the push:**
+  - `build:deploy`: 0 errors, 0 warnings, 0 hints;
+  - checks and deploy 38/38, layout 1976/1976;
+  - 8 pages (including `/en-us/download/` and `/es-mx/download/`) at 360, 768 and 1280px: no pan, no reload, no errors;
+  - Lighthouse on the home page: 100 in every category, mobile and desktop.
+- **Deploy:** run 40193446748 passed every step, including "Check the live pages are this build" and "Check apple-app-site-association is live". Afterwards:
+  - the live `/build.json` was `be46717c11f5cf72`, the same as the `build-id` on `/`, `/download/`, `/roadmap/`, `/de/support/`, `/en-us/download/` and `/es-mx/download/`;
+  - no live page had the placeholder;
+  - every badge on those pages loaded;
+  - `apple-app-site-association` listed both apps.
+- **CI and local IDs differ** (`be46717c…` live, `c3dc68b6…` on the owner's Mac) because the machines' builds differ, for example the fonts in the social images. Only CI's builds go live, and they are consistent with each other.
+- **To confirm:** a deploy that changes no site file (this docs commit, or a daily run with no new answered issues) should keep `be46717c11f5cf72`. The previous deploy's live check passes either way.
 
 ## Phase 5: issue forms and answered issues (24 October 2026)
 
