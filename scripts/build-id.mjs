@@ -16,11 +16,11 @@ import { parseArgs } from "node:util";
 
 // The same placeholder as src/data/build.ts
 export const PLACEHOLDER = "__BUILD_ID__";
-const META = /<meta name="build-id" content="[^"]*"/;
+export const META = /<meta name="build-id" content="[^"]*"/;
 const meta = (id) => `<meta name="build-id" content="${id}"`;
 
 /** Every file in the built site but build.json, as sorted paths with "/" */
-const files = (dist) =>
+export const files = (dist) =>
   readdirSync(dist, { recursive: true, withFileTypes: true })
     .filter((e) => e.isFile())
     .map((e) => relative(dist, join(e.parentPath, e.name)).split(sep).join("/"))

@@ -11,6 +11,8 @@
     "sync:app": "node scripts/sync-from-app.mjs",
     "fetch:issues": "node scripts/fetch-issues.mjs",
     "badges": "node scripts/badge-coverage.mjs",
+    "check:commit": "git diff --cached --stat && astro check",
+    "check:reproducible": "node scripts/check-reproducible.mjs",
     "test:layout": "playwright test tests/layout --project=chromium --project=webkit --project=webkit-iphone",
     "test:links": "playwright test tests/links --project=links",
     "test:deploy": "playwright test tests/deploy --project=deploy --project=deploy-webkit",
