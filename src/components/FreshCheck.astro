@@ -1,5 +1,6 @@
 ---
-// Keeps open tabs on the live build. iPhone Safari redraws a tab it comes back
+// Keeps open tabs on the live build. The build ID is a hash of the built site's
+// content (scripts/build-id.mjs), so it changes only when the site does. iPhone Safari redraws a tab it comes back
 // to, and restores one from its cache, without asking the server, whatever the
 // headers say, so a tab can show an old build for days. Each time a page is
 // shown, it fetches /build.json uncached and, if the live ID differs from its

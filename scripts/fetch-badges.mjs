@@ -7,9 +7,12 @@
 //
 // A language the store has no badge for is left out (the page then shows the
 // English badge, marked as English). A store that answers an unknown language with
-// its English badge is detected by comparing with that English badge.
+// its English badge is detected by comparing with that English badge. A regional
+// badge identical to its language's (en-US and en, say) is not written: the page
+// uses the language's file (src/components/StoreBadge.astro), because identical
+// SVGs make the build's file names change by chance (scripts/build-id.mjs).
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const SITE = new URL("..", import.meta.url).pathname;
@@ -47,6 +50,8 @@ for (const [store, s] of Object.entries(STORES)) {
   mkdirSync(join(SITE, "src/assets/badges", store), { recursive: true });
   const got = [];
   const missing = [];
+  const same = [];
+  const fetched = {};
   for (const { code } of languages) {
     const loc = s.locale(code);
     const svg = loc && (await get(s.url(loc)));
@@ -55,11 +60,18 @@ for (const [store, s] of Object.entries(STORES)) {
       missing.push(code);
       continue;
     }
+    fetched[code] = svg;
+    const base = code.split("-")[0];
+    if (base !== code && fetched[base] === svg) {
+      rmSync(join(SITE, "src/assets/badges", store, `${code}.svg`), { force: true });
+      same.push(`${code} (as ${base})`);
+      continue;
+    }
     writeFileSync(join(SITE, "src/assets/badges", store, `${code}.svg`), svg);
     got.push(code);
     sources[`${store}/${code}.svg`] = s.url(loc);
   }
-  console.log(`${store}: ${got.length} badges (${got.join(", ")})${missing.length ? `; none for ${missing.join(", ")}` : ""}`);
+  console.log(`${store}: ${got.length} badges (${got.join(", ")})${same.length ? `; same as their language's: ${same.join(", ")}` : ""}${missing.length ? `; none for ${missing.join(", ")}` : ""}`);
 }
 
 const file = join(SITE, "src/assets/badges/sources.json");

@@ -14,7 +14,6 @@
   "app-store/ru.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/ru-ru",
   "app-store/el.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/el-gr",
   "app-store/uk.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/uk-ua",
-  "app-store/en-US.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us",
   "app-store/es-MX.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/es-mx",
   "app-store/pt-BR.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/pt-br",
   "app-store/tr.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/tr-tr",
@@ -36,7 +35,6 @@
   "mac-app-store/fi.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/fi-fi",
   "mac-app-store/ru.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/ru-ru",
   "mac-app-store/uk.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/uk-ua",
-  "mac-app-store/en-US.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/en-us",
   "mac-app-store/es-MX.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/es-mx",
   "mac-app-store/pt-BR.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/pt-br",
   "mac-app-store/tr.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/tr-tr",
@@ -62,7 +60,6 @@
   "microsoft-store/ru.svg": "https://get.microsoft.com/images/ru%20dark.svg",
   "microsoft-store/el.svg": "https://get.microsoft.com/images/el%20dark.svg",
   "microsoft-store/uk.svg": "https://get.microsoft.com/images/uk%20dark.svg",
-  "microsoft-store/en-US.svg": "https://get.microsoft.com/images/en-us%20dark.svg",
   "microsoft-store/pt-BR.svg": "https://get.microsoft.com/images/pt-br%20dark.svg",
   "microsoft-store/tr.svg": "https://get.microsoft.com/images/tr%20dark.svg",
   "microsoft-store/ja.svg": "https://get.microsoft.com/images/ja%20dark.svg",
@@ -76,6 +73,5 @@
   "microsoft-store/vi.svg": "https://get.microsoft.com/images/vi%20dark.svg",
   "_fetched": "2026-10-23",
   "app-store/no.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/no-no",
-  "mac-app-store/no.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/no-no",
-  "microsoft-store/es-MX.svg": "https://get.microsoft.com/images/es%20dark.svg"
+  "mac-app-store/no.svg": "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/no-no"
 }

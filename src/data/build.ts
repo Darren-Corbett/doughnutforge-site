@@ -1,4 +1,4 @@
-// This build's ID, set once per build in astro.config.mjs: the commit plus the
-// build time, so the daily rebuild of the same commit gets a new one. Every page
-// carries it, and /build.json holds the live one (src/components/FreshCheck.astro).
-export const buildId: string = import.meta.env.BUILD_ID;
+// Every page is built with this placeholder as its build ID. After the build,
+// scripts/build-id.mjs replaces it with a hash of the built site's content and
+// writes the same ID to /build.json (src/components/FreshCheck.astro).
+export const buildId = "__BUILD_ID__";

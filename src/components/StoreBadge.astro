@@ -1,7 +1,10 @@
 ---
 // One official store badge, linked to the store. Uses the page language's
 // badge where an official one exists (src/assets/badges/<store>/<lang>.svg),
-// otherwise English, marked as English. Badges are shown unaltered, all at the
+// otherwise English, marked as English. A regional badge identical to its
+// language's (en-US and en, es-MX and es at Microsoft) is not kept as a file of
+// its own: the language's file is used, with the regional alt text. Identical
+// SVGs would make the build's file names, and so the build ID, change by chance. Badges are shown unaltered, all at the
 // same height. The alt text is the badge's own wording (src/assets/badges/alt.json).
 // The store opens in a new tab, and screen readers hear that after the badge's name.
 import type { ImageMetadata } from "astro";
@@ -18,10 +21,11 @@ const { store, storeId, lang } = Astro.props;
 const { t } = useStrings(lang.code);
 
 const badges = import.meta.glob<{ default: ImageMetadata }>("../assets/badges/*/*.svg", { eager: true });
-const own = badges[`../assets/badges/${store}/${lang.code}.svg`];
+const altText: Record<string, string> = alts[store];
+const base = lang.code.split("-")[0];
+const own = badges[`../assets/badges/${store}/${lang.code}.svg`] ?? (altText[lang.code] ? badges[`../assets/badges/${store}/${base}.svg`] : undefined);
 const badge = (own ?? badges[`../assets/badges/${store}/en.svg`])?.default;
 if (!badge) throw new Error(`No badge for ${store}: add src/assets/badges/${store}/en.svg`);
-const altText: Record<string, string> = alts[store];
 const alt = own ? altText[lang.code] : altText.en;
 if (!alt) throw new Error(`No alt text for ${store}/${own ? lang.code : "en"}.svg in src/assets/badges/alt.json`);
 
