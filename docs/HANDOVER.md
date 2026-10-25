@@ -87,7 +87,8 @@ Where the site work stands, and what comes next. Read this at the start of every
   - `build.json` is not in the sitemap;
   - a live WebKit iPhone visit made one load and two checks, with no reload and no errors.
 - **Settled (owner, 25 October 2026):** the first ID included the build time, so the daily rebuild made every open tab reload once a day for nothing. It is now a content hash; see "Build ID from the content" below.
-- **Owner, optional:** on the iPhone, a Safari tab left open from before should now switch to the new build as soon as it is shown again. A Home Screen icon (if there is one) behaves the same way.
+- **Limit: pages saved before the fix cannot update themselves.** The check is part of each page, so a tab still showing a page from before `cc1ccc2` (25 October 2026) has no check and needs one manual reload. On 25 October the owner's iPhone still showed Friday 23 October's `/pricing/` (no Mac badge: before `f27492f`, 13:58) after the fix was live, and one reload fixes it. From that reload on, the tab updates itself after every deploy. An earlier note here said old tabs would switch by themselves, which was wrong.
+- **Confirmed:** a deploy that changed no site file (run 40194019642, the docs commit `9bd8524`) kept the build ID `be46717c11f5cf72`, and every check passed.
 
 
 ## Build ID from the content (25 October 2026)
@@ -111,7 +112,6 @@ Where the site work stands, and what comes next. Read this at the start of every
   - every badge on those pages loaded;
   - `apple-app-site-association` listed both apps.
 - **CI and local IDs differ** (`be46717c…` live, `c3dc68b6…` on the owner's Mac) because the machines' builds differ, for example the fonts in the social images. Only CI's builds go live, and they are consistent with each other.
-- **To confirm:** a deploy that changes no site file (this docs commit, or a daily run with no new answered issues) should keep `be46717c11f5cf72`. The previous deploy's live check passes either way.
 
 ## Phase 5: issue forms and answered issues (24 October 2026)
 
