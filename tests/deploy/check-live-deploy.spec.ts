@@ -115,6 +115,8 @@ test("the deploy job's token may read the Pages settings", () => {
   expect(workflow, "the workflow checks that Pages deploys from GitHub Actions").toMatch(/gh api repos\/\$\{\{ github\.repository \}\}\/pages --jq \.build_type/);
   expect(workflow, "the workflow runs the live-page check").toContain("scripts/check-live-deploy.mjs");
   expect(workflow, "the live-page check includes security.txt").toMatch(/--expect "[^"]*\/\.well-known\/security\.txt=\$\{\{ needs\.build\.outputs\.security \}\}/);
+  // So the deploy proves the live build ID is this build's (src/components/FreshCheck.astro)
+  expect(workflow, "the live-page check includes build.json").toMatch(/--expect "[^"]*\/build\.json=\$\{\{ needs\.build\.outputs\.build \}\}/);
   // The security page must never be live while its report link leads nowhere
   expect(workflow, "the workflow checks private vulnerability reporting is on").toContain(
     "gh api repos/Darren-Corbett/forge-privacy/private-vulnerability-reporting --jq .enabled",

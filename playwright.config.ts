@@ -30,7 +30,9 @@ export default defineConfig({
     { name: "webkit-iphone", testMatch: /layout\/layout\.spec\.ts/, use: { ...devices["iPhone 13"] } },
     { name: "links", testMatch: /links\/.*\.spec\.ts/ },
     // The deploy's live-page check, against a local server (no browser, no network)
-    { name: "deploy", testMatch: /deploy\/.*\.spec\.ts/ },
+    { name: "deploy", testMatch: /deploy\/check-live-deploy\.spec\.ts/ },
+    // After a deploy, open and fresh tabs in Safari on a phone end up on the new build
+    { name: "deploy-webkit", testMatch: /deploy\/fresh-build\.spec\.ts/, use: { ...devices["iPhone 13"] } },
     // The forge-privacy issue forms and the issue fetch, against a local server (no browser, no network)
     { name: "forms", testMatch: /forms\/.*\.spec\.ts/ },
     // The build's own checks, run on small built sites of their own (no browser)

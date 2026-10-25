@@ -13,7 +13,7 @@
     "badges": "node scripts/badge-coverage.mjs",
     "test:layout": "playwright test tests/layout --project=chromium --project=webkit --project=webkit-iphone",
     "test:links": "playwright test tests/links --project=links",
-    "test:deploy": "playwright test tests/deploy --project=deploy",
+    "test:deploy": "playwright test tests/deploy --project=deploy --project=deploy-webkit",
     "test:forms": "playwright test tests/forms --project=forms",
     "test:checks": "playwright test tests/checks --project=checks"
   },
