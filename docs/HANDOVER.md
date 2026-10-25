@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 24 October 2026, after Phase 5 (issue forms and the answered-issues pages), the favicons and the translatedPages guard; pushed with this docs commit
+- **Last updated:** 25 October 2026, after the stale-page fix (open Safari tabs now reload to the live build); see "Stale pages in iPhone Safari" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
@@ -20,6 +20,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 | 4 | The four launch blog posts in English | **Done**: published 23 October 2026 (claims in `docs/BLOG-CLAIMS.md`) | `ee042f8` setup, `70f46f9` `c78eb76` `89ffe96` `8b7a3c4` `d0aca89` posts, `206e3dd` published |
 | 5 | Support issue forms and the "answered issues" pages | **Done** (24 October 2026); see "Phase 5: issue forms and answered issues" below | `583d4cd` `df665db` `9a8627a` tests, `1284373` forms, `129fccb` pages and translations, `e549219` form fields; forge-privacy `b12ffff` |
 | 6 | SEO, Lighthouse and accessibility checks, launch | **Done: the site is live** (23 October 2026). Step 9 (Search Console) is done; steps 6 and 8 of `docs/launch/LAUNCH-CHECKLIST.md` are still open | `a2b003c` to `99d31ff`; forge-privacy `a9ed0d8` |
+| – | Stale pages in iPhone Safari: build ID check | **Done** (25 October 2026); see "Stale pages in iPhone Safari" below | `cc2f34d` tests, `cc1ccc2` fix |
 | – | `/roadmap/`, `/security/` and `/.well-known/security.txt`, in all 30 languages | **Done** (24 October 2026); see "Roadmap and security pages" below | `a6d1d26` tests, `f3a577d` pages and translations |
 
 ---
@@ -28,7 +29,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 - **The site is live** at https://doughnut-forge.app in all 30 languages (every language reviewed and indexed), with the four blog posts, served by GitHub Pages from GitHub Actions. **Every push to `main` deploys** within about two minutes. The deploy fails, and the live site stays as it was, if any check in `npm run build:deploy` fails or the live `apple-app-site-association` is missing.
 - **The old privacy page redirects:** forge-privacy `a9ed0d8` sends `darren-corbett.github.io/forge-privacy` (with or without the trailing slash, and every `?lang=`) to the matching `/privacy/` page. The store Support URL (forge-privacy issues) is unchanged.
-- **Working tree:** clean. Everything up to this docs commit is pushed (24 October 2026); see "What is next", item 0, for the deploy to check.
+- **Working tree:** clean. Everything up to `cc1ccc2` is pushed and live (deploy run 40191021731, 25 October 2026). This docs commit waits for the owner's yes to push.
 - **Post-launch audit (24 October 2026):** [`docs/audit/2026-10-24.md`](audit/2026-10-24.md). It covers the owner's eight live-site issues and the full audit (246 pages × 30 languages × Chromium, WebKit and WebKit iPhone × five widths × two themes, axe, links, and real Mobile Safari in the iOS Simulator). There are no critical findings. The high ones are the deploy's missing live-page check (issue 1), store links not opening in a new tab (issue 5), the header wrapping at 320px with Display Zoom (issue 8), and a German FAQ heading that pans at 320px (issue 7). **Stage 2 (24 October 2026) fixed H1, H2, H3, H4, M4 and L1**; see "Audit fixes" below. Issues 2 (Mac badge) and 7 (English pan), and M1 (desktop widths), are resolved: the owner confirmed on their own devices after Stage 2 that they no longer happen or look fine. The 320px layout tests stay as the guard.
 - **Launch incident:** the first deploy left out `.well-known/apple-app-site-association` for about 42 minutes (13:13 to 13:55 UTC), because the Pages upload drops files whose names start with a dot. Fixed in `42fb02c` (`include-hidden-files: true`, plus a live check at the end of the deploy job). Whether Apple fetched the file during the gap is unknown.
 
@@ -55,6 +56,38 @@ Where the site work stands, and what comes next. Read this at the start of every
 8. **When the copywriter's notes arrive:** follow "Post-launch copy review" below.
 9. **New blog posts:** no more than one or two a week, each starting as `draft: true` with a claims table in `docs/BLOG-CLAIMS.md`, published only on the owner's say-so.
 10. **By 24 September 2027: renew `security.txt`.** Set `Expires` in `public/.well-known/security.txt` to one year from that day, and move this reminder a year on. The build fails from 24 September 2027 (30 days before the 24 October 2027 expiry) until it is renewed.
+
+## Stale pages in iPhone Safari (25 October 2026)
+
+- **What happened:** on Sunday 25 October the owner's iPhone Safari still showed Friday's site, two days and several deploys later.
+- **Evidence (live, 25 October):**
+  - `/`, `/download/`, `/roadmap/`, a hashed `/_astro/Base.Cq88Ng4X.css`, `/site.webmanifest`, `/sitemap-index.xml` and `/.well-known/apple-app-site-association` all return `cache-control: max-age=600`, an ETag and `last-modified: Sat, 24 Oct 2026 13:39:39 GMT` from Fastly (`x-cache: MISS`). So the CDN served the newest build, and HTML is fresh for 10 minutes only. **The headers cannot explain two days**, and GitHub Pages does not let the site set its own.
+  - **No service worker**, ever: `/sw.js` and `/service-worker.js` are 404, `git log --all -S serviceWorker` finds nothing, and no page registers one.
+  - **Manifest:** `display: standalone`, with no `start_url`, `scope` or `id`. A Home Screen copy runs as its own web app and keeps its page in memory. Unchanged.
+  - CSS and images are hashed; the only scripts are inline; there are no cache `<meta>` tags. These are not the cause.
+  - No `unload` handlers, so pages go into Safari's back-forward cache.
+- **Cause (most likely):** iOS Safari does not refetch a tab it comes back to. It redraws it from memory or the back-forward cache, and a tab it had unloaded is restored from the disk cache whatever `max-age` says (WebKit loads history and restored tabs that way). A tab opened on Friday shows Friday's page until a real reload. Nothing on the server can force this; only the page can notice it is old. **No hosting move is needed.**
+- **Fix:**
+  - Every build gets an ID (commit plus build time, `astro.config.mjs`). Every page carries it in `<meta name="build-id">`, and `/build.json` holds it.
+  - `src/components/FreshCheck.astro` (in `Base.astro`): on every `pageshow` and whenever the tab comes back into view, it fetches `/build.json?t=<now>` with `cache: "no-store"`. If the live ID differs, it reloads once.
+  - Same origin, sends nothing, and any failure leaves the page as it is. It also removes any old service worker.
+  - **Reload guard:** `sessionStorage` key `build:<path>` holds the ID that page last reloaded for, so a CDN still serving the old page causes one reload, never a loop.
+  - `check-production-files.mjs` fails unless `build.json` and the pages share the ID. The deploy's live check now covers `/build.json` too.
+- **Web storage exception (owner, 25 October 2026):** the website may use `sessionStorage` for this guard only. It holds only the build ID and clears when the tab closes. Recorded in `CLAUDE.md`. **The app's no-web-storage rule still applies to the app and is never to be relaxed there.**
+- **Tests:** `tests/deploy/fresh-build.spec.ts` (`deploy-webkit`, WebKit as an iPhone 13) runs against a local server with GitHub Pages' headers. After a switch to a new build, it checks a fresh visit, a tab opened before the switch that comes back into view, pages restored by going back and forward, a failed check (404 and an aborted request), a lagging CDN (one reload at most) and an old service worker. `tests/checks/check-production-files.spec.ts` checks the build ID check.
+- **Commits:** `cc2f34d` tests (12 failed before the fix), `cc1ccc2` fix. Pushed with the owner's yes on 25 October 2026.
+- **Checks before the push:**
+  - `build:deploy`: 0 errors, 0 warnings, 0 hints;
+  - fresh-build 7/7 (35/35 repeated five times), deploy and checks 20/20, layout 1976/1976;
+  - checked at 360, 768 and 1280px in English and German: no pan, no extra reload, no errors;
+  - Lighthouse on the home page: 100 in every category, mobile and desktop.
+- **Deploy:** run 40191021731 passed every step, including "Check the live pages are this build" (now with `/build.json`) and "Check apple-app-site-association is live". Afterwards:
+  - the live `/build.json` (`cc1ccc2-mvnrx4f5`) matched the `build-id` on `/`, `/download/`, `/roadmap/` and `/de/support/`;
+  - `build.json` is not in the sitemap;
+  - a live WebKit iPhone visit made one load and two checks, with no reload and no errors.
+- **Open question for the owner:** the ID includes the build time, so the daily 06:17 UTC rebuild counts as a new build, and every open tab reloads once a day even when nothing changed. A content-based ID would reload only on real changes. Not done; waiting for the owner's choice.
+- **Owner, optional:** on the iPhone, a Safari tab left open from before should now switch to the new build as soon as it is shown again. A Home Screen icon (if there is one) behaves the same way.
+
 
 ## Phase 5: issue forms and answered issues (24 October 2026)
 
@@ -222,7 +255,7 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 | Store badge coverage | `npm run badges` |
 | Layout, accessibility and interaction tests (build first; no network) | `npm run test:layout`, narrowed with `PAGES=` and `LANGS=`; see `tests/README.md` |
 | Link tests (live site and stores) | `npm run test:links` |
-| The deploy's live-page check, against a local server | `npm run test:deploy` |
+| The deploy's live-page check, and open and fresh tabs reaching the new build (WebKit iPhone), against local servers | `npm run test:deploy` |
 | The issue forms and the issue fetch, against a local server | `npm run test:forms` |
 | The build checks, on small built sites of their own | `npm run test:checks` |
 | Refresh the committed answered issues (then commit, shown for approval) | `npm run fetch:issues` |
@@ -232,7 +265,7 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 | Record which English a translation came from (after review only) | `node scripts/stamp-translations.mjs --lang de --keys a,b` |
 
 **The checks** (all run by `npm run build`, in this order):
-- `check-production-files.mjs`: the built `apple-app-site-association` and `CNAME` match the live root copies, `.nojekyll` exists, and `security.txt` has its Contact, Policy and Canonical lines and an Expires date between 30 days and a year ahead.
+- `check-production-files.mjs`: the built `apple-app-site-association` and `CNAME` match the live root copies, `.nojekyll` exists, `build.json` and the home page share the build ID, and `security.txt` has its Contact, Policy and Canonical lines and an Expires date between 30 days and a year ahead.
 - `check-privacy-wording.mjs`: the privacy policy wording is unchanged from forge-privacy.
 - `check-translations.mjs`: every language has every key, and no translation is stale. Stale or unstamped strings are a warning locally and fail `build:deploy` (`--strict`).
 - `check-hreflang.mjs`: hreflang and canonical links agree, and every page built in more than one language has hreflang links (that is, it is in `translatedPages`).
@@ -240,7 +273,7 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 - `check-issues.mjs`: the answered-issues data holds only titles, questions, answers and issue links (no usernames), and every list and issue page is built, and only when it has an issue.
 - `check-placeholders.mjs`: lists unfilled values (fails with `--strict`).
 
-**Deploy:** `.github/workflows/deploy.yml` runs on every push to `main` (and by hand). Pages deploys from GitHub Actions. Before deploying, it checks that Pages still deploys from Actions and that private vulnerability reporting is on in forge-privacy. After deploying, it checks that the live `/`, `/download/` and `/.well-known/security.txt` are this build, and that the live `apple-app-site-association` lists both apps. The root `.well-known/`, `CNAME`, `.nojekyll`, icons, `site.webmanifest` and `index.html` stay as the rollback until step 6 (on or after 6 November 2026).
+**Deploy:** `.github/workflows/deploy.yml` runs on every push to `main` (and by hand). Pages deploys from GitHub Actions. Before deploying, it checks that Pages still deploys from Actions and that private vulnerability reporting is on in forge-privacy. After deploying, it checks that the live `/`, `/download/`, `/.well-known/security.txt` and `/build.json` are this build, and that the live `apple-app-site-association` lists both apps. The root `.well-known/`, `CNAME`, `.nojekyll`, icons, `site.webmanifest` and `index.html` stay as the rollback until step 6 (on or after 6 November 2026).
 
 Before saying a change is done (CLAUDE.md): build with no warnings; run `npm run test:layout` (it also covers WebKit on a phone and 320px, which CLAUDE.md does not name); check each changed page at 360, 768 and 1280px; check one left-to-right language (no right-to-left language is supported yet); run Lighthouse on the home page and report the scores.
 
