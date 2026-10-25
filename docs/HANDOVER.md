@@ -101,7 +101,7 @@ Where the site work stands, and what comes next. Read this at the start of every
   - EasyList, EasyPrivacy, Fanboy's annoyance, social and cookie lists;
   - uBlock Origin's defaults and annoyances, Brave's, and Peter Lowe's.
 
-  The site also loads nothing from any other site, so domain tracker lists (Firefox, Edge, DuckDuckGo) have nothing to block. The rule is most likely a **user rule in the owner's AdGuard**: Safari protection › User rules, anything with `doughnut-forge.app`. **Owner: check and delete it.**
+  The site also loads nothing from any other site, so domain tracker lists (Firefox, Edge, DuckDuckGo) have nothing to block. The rule was a **user rule in the owner's AdGuard** (Safari protection › User rules). Confirmed 25 October 2026: once the owner deleted it, the badge showed again.
 - **What phone browsers block:**
   - Safari: content blockers (AdGuard, 1Blocker, Wipr, Ghostery);
   - Brave: built in;
