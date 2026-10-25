@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 25 October 2026, after the stale-page fix, the content build ID and the content-blocker work; see "Stale pages in iPhone Safari", "Build ID from the content" and "Content blockers on phones" below
+- **Last updated:** 25 October 2026, after the stale-page fix, the content build ID, the content-blocker work and the session retro (`docs/RETRO.md`); see "Stale pages in iPhone Safari", "Build ID from the content" and "Content blockers on phones" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
@@ -31,7 +31,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 - **The site is live** at https://doughnut-forge.app in all 30 languages (every language reviewed and indexed), with the four blog posts, served by GitHub Pages from GitHub Actions. **Every push to `main` deploys** within about two minutes. The deploy fails, and the live site stays as it was, if any check in `npm run build:deploy` fails or the live `apple-app-site-association` is missing.
 - **The old privacy page redirects:** forge-privacy `a9ed0d8` sends `darren-corbett.github.io/forge-privacy` (with or without the trailing slash, and every `?lang=`) to the matching `/privacy/` page. The store Support URL (forge-privacy issues) is unchanged.
-- **Working tree:** clean. Everything up to `3cc8cde` is pushed and live (deploy run 40199633051, 25 October 2026). This docs commit waits for the owner's yes to push.
+- **Working tree:** clean. Everything up to `ed415e3` is pushed and live (deploy run 40207142250, 25 October 2026). The retro commits after it wait for the owner's yes to push.
 - **Post-launch audit (24 October 2026):** [`docs/audit/2026-10-24.md`](audit/2026-10-24.md). It covers the owner's eight live-site issues and the full audit (246 pages × 30 languages × Chromium, WebKit and WebKit iPhone × five widths × two themes, axe, links, and real Mobile Safari in the iOS Simulator). There are no critical findings. The high ones are the deploy's missing live-page check (issue 1), store links not opening in a new tab (issue 5), the header wrapping at 320px with Display Zoom (issue 8), and a German FAQ heading that pans at 320px (issue 7). **Stage 2 (24 October 2026) fixed H1, H2, H3, H4, M4 and L1**; see "Audit fixes" below. Issues 2 (Mac badge) and 7 (English pan), and M1 (desktop widths), are resolved: the owner confirmed on their own devices after Stage 2 that they no longer happen or look fine. The 320px layout tests stay as the guard.
 - **Launch incident:** the first deploy left out `.well-known/apple-app-site-association` for about 42 minutes (13:13 to 13:55 UTC), because the Pages upload drops files whose names start with a dot. Fixed in `42fb02c` (`include-hidden-files: true`, plus a live check at the end of the deploy job). Whether Apple fetched the file during the gap is unknown.
 
@@ -57,7 +57,11 @@ Where the site work stands, and what comes next. Read this at the start of every
 7. **11 December 2026:** iOS launch pricing ends. Pages show no prices; update `src/data/prices.ts` so the record stays true.
 8. **When the copywriter's notes arrive:** follow "Post-launch copy review" below.
 9. **New blog posts:** no more than one or two a week, each starting as `draft: true` with a claims table in `docs/BLOG-CLAIMS.md`, published only on the owner's say-so.
-10. **By 24 September 2027: renew `security.txt`.** Set `Expires` in `public/.well-known/security.txt` to one year from that day, and move this reminder a year on. The build fails from 24 September 2027 (30 days before the 24 October 2027 expiry) until it is renewed.
+10. **Retro follow-ups (25 October 2026), for the owner to decide** (`docs/RETRO.md`):
+   - The fallback link puts `lang="en"` on the whole link, so its "opens in a new tab" note in the page language is read with an English voice (WCAG 3.1.2). Fix: put `lang` on the badge wording only (`src/components/StoreBadge.astro`).
+   - The `/get/` pages' link is about 27px tall, below the 44px target, and the page has no `h1` or `main` (`src/pages/get/[store]/[lang].astro`).
+   - FreshCheck reloads once per new build ID. If that reload gets the old page (a CDN edge not caught up), the tab stays on it until the next deploy or a manual reload.
+11. **By 24 September 2027: renew `security.txt`.** Set `Expires` in `public/.well-known/security.txt` to one year from that day, and move this reminder a year on. The build fails from 24 September 2027 (30 days before the 24 October 2027 expiry) until it is renewed.
 
 ## Stale pages in iPhone Safari (25 October 2026)
 
@@ -112,7 +116,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 - **Fix (`3cc8cde`):**
   - **Fallback:** every store badge carries a hidden link in the badge's own wording (`StoreBadge.astro`). `StoreFallback.astro` shows it when the badge is not drawn: its link, image or container hidden, or the link removed, at load or up to 4 seconds later. If the container is hidden, the link moves out after it. Without a blocker nothing changes.
   - **`/get/<store>/<language>/`:** the fallback link goes here, and the page forwards at once to the same store page as the badge. There are 60 of these pages (2 stores × 30 languages); they are noindex, have no social image (`check-og` skips forwarding pages) and are not in the sitemap. On iPhone the App Store may open as Apple's web page, because the visit comes through a forwarding page; normal badge taps are unchanged.
-  - **Names:** the cards' `badge` wrapper is now `buy`, and the blog's check icon is Lucide's artwork as `verified-check` (`src/components/blog/icons.ts`). `check-blocker-names.mjs` fails the build on class, id or built-file names with words blockers hide (badge, banner, ad, promo, sponsor, popup, social). This covers private lists (1Blocker, Wipr) that cannot be tested.
+  - **Names:** the cards' `badge` wrapper is now `buy`, and the blog's check icon is Lucide's artwork as `verified-check` (`src/components/blog/icons.ts`). `check-blocker-names.mjs` fails the build on class, id or built-file names with words blockers hide (badge, banner, ad, promo, sponsor, popup, social). Private lists (1Blocker, Wipr) cannot be tested; avoiding these words lowers the chance that they match, and the fallback link covers whatever they hide.
 - **Guards:**
   - `npm run test:blockers` (`tests/blockers/`): `lists.spec.ts` runs every list on every page in both phone browsers, with a self-test that a known rule is found. `fallback.spec.ts` simulates hiding by address, image, container, removal and late hiding on six pages.
   - The lists are downloaded fresh and cached 12 hours in `test-results/blocker-lists/`; 8 million lines are de-duplicated to 1.3 million rules.
@@ -313,6 +317,8 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 | The issue forms and the issue fetch, against a local server | `npm run test:forms` |
 | The build checks, on small built sites of their own | `npm run test:checks` |
 | Content blockers on phones: every public list on every page, and the store fallback (downloads the lists) | `npm run test:blockers` |
+| Before every commit: what is staged, and the type check (tests included) | `npm run check:commit` |
+| Two builds of the same commit are the same (after changing the config, `package.json`, `scripts/` or `src/assets/`) | `npm run check:reproducible` |
 | Refresh the committed answered issues (then commit, shown for approval) | `npm run fetch:issues` |
 | Build with three sample issues (local only) | `ISSUES_FILE=tests/fixtures/issues.json npm run build` |
 | Remake the favicons from the app's master icon | `node scripts/make-favicons.mjs` |

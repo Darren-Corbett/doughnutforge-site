@@ -27,7 +27,10 @@ Every plan must say how it serves both goals.
 - No tracking: no analytics scripts, no third-party cookies, no external fonts, CDNs or embeds. Self-host every asset. The site must live up to an app that has no servers.
 - No forms that collect personal data.
 - No web storage, with one exception (owner, 25 October 2026): the page check that keeps open tabs on the live build (`src/components/FreshCheck.astro`) may keep the build ID in `sessionStorage`. It holds only the build ID and clears when the tab closes. This exception is for the website only: the app's no-web-storage rule still applies to the app and must never be relaxed there.
-- Never commit without approval: show files, diff and message, then wait for a yes. Work trunk-based on main. Never create branches.
+- Commit freely on main; ask before every push. A push deploys the site. Work trunk-based on main. Never create branches.
+- Before every commit, run `npm run check:commit`: it shows what is staged (`git diff --cached --stat`) and type-checks with `astro check`, which covers the tests too. Never stage ahead; a test commit holds only tests and test config.
+- After changing `astro.config.mjs`, `package.json`, `scripts/` or `src/assets/`, run `npm run check:reproducible`: two builds of the same commit must be the same, or every deploy gets a new build ID.
+- Before naming a cause for something the owner sees on the live site, reproduce it against the live site in a clean browser (for example a fresh WebKit iPhone context). Never explain it by the last thing fixed.
 - Nothing is published without approval. New blog posts start as drafts (`draft: true`).
 
 ## Languages
