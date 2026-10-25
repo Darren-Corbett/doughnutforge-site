@@ -66,7 +66,13 @@ test("a rebuild that changed nothing keeps the same ID", async () => {
 test("any change to a page, a stylesheet or an image gives a new ID", async () => {
   const base = site();
   await stamp(base);
-  for (const change of [{ "download/index.html": page("Download now") }, { "_astro/site.abc123.css": "body{color:#000}" }, { "icon.png": Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x00, 0xff, 0x11]) }, { "new/index.html": page("New") }]) {
+  const changes: Record<string, string | Buffer>[] = [
+    { "download/index.html": page("Download now") },
+    { "_astro/site.abc123.css": "body{color:#000}" },
+    { "icon.png": Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x00, 0xff, 0x11]) },
+    { "new/index.html": page("New") },
+  ];
+  for (const change of changes) {
     const changed = site(change);
     await stamp(changed);
     expect(idOf(changed), Object.keys(change)[0]).not.toBe(idOf(base));
