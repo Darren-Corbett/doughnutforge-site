@@ -1,0 +1,66 @@
+---
+// Forwards to a store, for a visitor whose content blocker hid the store badge:
+// the badge's fallback link (StoreBadge.astro) comes here, on the site itself,
+// and this page sends the browser on to the store page the badge links to. One
+// per store on sale and language, in that language's wording. Never indexed,
+// and not in the sitemap (astro.config.mjs).
+import type { GetStaticPaths } from "astro";
+import { badgeWording } from "../../../data/badges";
+import { platforms, storeUrl } from "../../../data/stores";
+import { builtLanguages, type Language } from "../../../i18n";
+
+export const getStaticPaths = (() =>
+  platforms.flatMap((p) =>
+    p.status === "available"
+      ? builtLanguages.map((lang) => ({
+          params: { store: p.store, lang: lang.path },
+          props: { lang, url: storeUrl(p.store, p.storeId, lang.hreflang), wording: badgeWording(p.store, lang.code) },
+        }))
+      : [],
+  )) satisfies GetStaticPaths;
+
+interface Props {
+  lang: Language;
+  url: string;
+  wording: { alt: string; own: boolean };
+}
+const { lang, url, wording } = Astro.props;
+const textLang = wording.own ? lang.hreflang : "en";
+---
+
+<!doctype html>
+<html lang={textLang} dir={wording.own ? lang.dir : "ltr"}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta name="color-scheme" content="light dark" />
+    <meta http-equiv="refresh" content={`0; url=${url}`} />
+    <title>{wording.alt}</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 32px 16px;
+        font: 700 18px/1.5 system-ui, sans-serif;
+        background: #fff;
+        color: #14171a;
+      }
+      a {
+        color: #09649c;
+        text-underline-offset: 3px;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #15202b;
+          color: #fff;
+        }
+        a {
+          color: #4cb5f5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href={url}>{wording.alt}</a></p>
+  </body>
+</html>

@@ -9,7 +9,7 @@ lang: en
 import Flow from "../../../components/blog/Flow.astro";
 import Shot from "../../../components/blog/Shot.astro";
 import IdCard from "@lucide/astro/icons/id-card";
-import BadgeCheck from "@lucide/astro/icons/badge-check";
+import { VerifiedCheck } from "../../../components/blog/icons";
 import FileLock from "@lucide/astro/icons/file-lock";
 import Send from "@lucide/astro/icons/send";
 import iphoneIdentity from "../../../assets/app/iphone-identity.webp";
@@ -40,7 +40,7 @@ You share your card once. After that, anyone with it can send you files that onl
   caption="Sharing with Doughnut Forge: swap contact cards, check the contact code, then encrypt the file for that person and send it any way you like."
   steps={[
     { icon: IdCard, text: "Swap contact cards", tone: "violet" },
-    { icon: BadgeCheck, text: "Compare the contact code", tone: "pink" },
+    { icon: VerifiedCheck, text: "Compare the contact code", tone: "pink" },
     { icon: FileLock, text: "Encrypt the file for them", tone: "blue" },
     { icon: Send, text: "Send it however you like", tone: "green" },
   ]}

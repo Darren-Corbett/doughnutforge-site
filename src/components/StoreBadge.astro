@@ -7,9 +7,12 @@
 // SVGs would make the build's file names, and so the build ID, change by chance. Badges are shown unaltered, all at the
 // same height. The alt text is the badge's own wording (src/assets/badges/alt.json).
 // The store opens in a new tab, and screen readers hear that after the badge's name.
+// If a content blocker hides the badge anyway (a person's own rule, or a list no
+// test can see), StoreFallback.astro shows the hidden link below it instead: the
+// badge's own wording, to the site's /get/ page, which forwards to the store.
 import type { ImageMetadata } from "astro";
 import { storeUrl, type StoreId } from "../data/stores";
-import alts from "../assets/badges/alt.json";
+import { badgeWording, getPath } from "../data/badges";
 import { useStrings, type Language } from "../i18n";
 
 interface Props {
@@ -21,13 +24,11 @@ const { store, storeId, lang } = Astro.props;
 const { t } = useStrings(lang.code);
 
 const badges = import.meta.glob<{ default: ImageMetadata }>("../assets/badges/*/*.svg", { eager: true });
-const altText: Record<string, string> = alts[store];
+const { alt, own } = badgeWording(store, lang.code);
 const base = lang.code.split("-")[0];
-const own = badges[`../assets/badges/${store}/${lang.code}.svg`] ?? (altText[lang.code] ? badges[`../assets/badges/${store}/${base}.svg`] : undefined);
-const badge = (own ?? badges[`../assets/badges/${store}/en.svg`])?.default;
-if (!badge) throw new Error(`No badge for ${store}: add src/assets/badges/${store}/en.svg`);
-const alt = own ? altText[lang.code] : altText.en;
-if (!alt) throw new Error(`No alt text for ${store}/${own ? lang.code : "en"}.svg in src/assets/badges/alt.json`);
+const file = own ? (badges[`../assets/badges/${store}/${lang.code}.svg`] ?? badges[`../assets/badges/${store}/${base}.svg`]) : badges[`../assets/badges/${store}/en.svg`];
+const badge = file?.default;
+if (!badge) throw new Error(`No badge for ${store}/${own ? lang.code : "en"}: add src/assets/badges/${store}/${own ? lang.code : "en"}.svg`);
 
 // 48px tall: above Apple's 40px minimum; a quarter of the height is kept clear around it.
 const HEIGHT = 48;
@@ -38,3 +39,26 @@ const width = Math.round((badge.width / badge.height) * HEIGHT);
   <img src={badge.src} width={width} height={HEIGHT} alt={alt} lang={own ? undefined : "en"} loading="lazy" decoding="async" />
   <span class="sr-only">{t("a11y.newTab")}</span>
 </a>
+<p class="store-fallback" hidden data-store-fallback>
+  <a href={getPath(store, lang.path)} target="_blank" rel="noopener noreferrer" lang={own ? undefined : "en"}>{alt}<span class="sr-only">{t("a11y.newTab")}</span></a>
+</p>
+
+<style>
+  .store-fallback {
+    flex-basis: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .store-fallback a {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    color: var(--ink-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .store-fallback[hidden] {
+    display: none;
+  }
+</style>

@@ -33,7 +33,7 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
                 ? fill(t("pricing.oneTime"), { store: storeNames[p.store] })
                 : REQUIRES[p.id] && t(REQUIRES[p.id]!)}
             </p>
-            <div class="badge">
+            <div class="buy">
               <StoreBadge store={p.store} storeId={p.storeId} lang={lang} />
             </div>
           </>
@@ -78,7 +78,7 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
     font-weight: 800;
     color: var(--ink-blue);
   }
-  .badge {
+  .buy {
     margin: 10px -12px -12px;
   }
   @media (prefers-color-scheme: dark) {

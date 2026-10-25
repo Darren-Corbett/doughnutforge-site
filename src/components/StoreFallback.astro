@@ -1,0 +1,30 @@
+---
+// Shows a store badge's fallback link (StoreBadge.astro) when the badge is not
+// drawn: a content blocker hid the link, its image or what holds it, or removed
+// it. If what holds the badge is hidden, the link moves out to just after it.
+// Checks at load and again later, because some blockers hide things after load.
+// Without a blocker nothing changes. Same page only; it sends nothing.
+---
+
+<script is:inline>
+  (() => {
+    const drawn = (link) => {
+      const img = link?.querySelector?.("img");
+      return Boolean(img) && img.getBoundingClientRect().width > 0 && getComputedStyle(link).visibility !== "hidden";
+    };
+    const check = () => {
+      for (const p of document.querySelectorAll("[data-store-fallback][hidden]")) {
+        if (drawn(p.previousElementSibling)) continue;
+        p.hidden = false;
+        let hiddenBox = null;
+        for (let box = p.parentElement; box && box !== document.body && !box.getClientRects().length; box = box.parentElement) hiddenBox = box;
+        hiddenBox?.after(p);
+      }
+    };
+    addEventListener("load", () => {
+      check();
+      setTimeout(check, 1500);
+      setTimeout(check, 4000);
+    });
+  })();
+</script>

@@ -52,6 +52,8 @@ const inSitemap = (page) => {
   const path = new URL(page).pathname;
   if (!reviewed(splitPath(path).code)) return false;
   if (path === "/404/" || path.endsWith("/404/")) return false;
+  // The pages that forward to a store when a blocker hides its badge (src/pages/get/)
+  if (path.startsWith("/get/")) return false;
   if (/\/blog\/$/.test(path)) return published.length > 0;
   if (/\/blog\/.+/.test(path)) return published.includes(path);
   return true;
