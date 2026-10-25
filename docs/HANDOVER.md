@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 25 October 2026, after the stale-page fix (open Safari tabs now reload to the live build) and the content build ID; see "Stale pages in iPhone Safari" and "Build ID from the content" below
+- **Last updated:** 25 October 2026, after the stale-page fix, the content build ID and the content-blocker work; see "Stale pages in iPhone Safari", "Build ID from the content" and "Content blockers on phones" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
@@ -21,6 +21,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 | 5 | Support issue forms and the "answered issues" pages | **Done** (24 October 2026); see "Phase 5: issue forms and answered issues" below | `583d4cd` `df665db` `9a8627a` tests, `1284373` forms, `129fccb` pages and translations, `e549219` form fields; forge-privacy `b12ffff` |
 | 6 | SEO, Lighthouse and accessibility checks, launch | **Done: the site is live** (23 October 2026). Step 9 (Search Console) is done; steps 6 and 8 of `docs/launch/LAUNCH-CHECKLIST.md` are still open | `a2b003c` to `99d31ff`; forge-privacy `a9ed0d8` |
 | – | Stale pages in iPhone Safari: build ID check | **Done** (25 October 2026); see "Stale pages in iPhone Safari" below | `cc2f34d` tests, `cc1ccc2` fix |
+| – | Content blockers on phones: list test, store fallback, naming check | **Done** (25 October 2026); see "Content blockers on phones" below | `97112b0` `78dde60` tests, `3cc8cde` fix |
 | – | Build ID from the content, reproducible builds | **Done** (25 October 2026); see "Build ID from the content" below | `508fc66` `6bc3ceb` `254c60b` `52d77ad` tests, `450f469` restore, `5257e46` fix |
 | – | `/roadmap/`, `/security/` and `/.well-known/security.txt`, in all 30 languages | **Done** (24 October 2026); see "Roadmap and security pages" below | `a6d1d26` tests, `f3a577d` pages and translations |
 
@@ -30,7 +31,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 - **The site is live** at https://doughnut-forge.app in all 30 languages (every language reviewed and indexed), with the four blog posts, served by GitHub Pages from GitHub Actions. **Every push to `main` deploys** within about two minutes. The deploy fails, and the live site stays as it was, if any check in `npm run build:deploy` fails or the live `apple-app-site-association` is missing.
 - **The old privacy page redirects:** forge-privacy `a9ed0d8` sends `darren-corbett.github.io/forge-privacy` (with or without the trailing slash, and every `?lang=`) to the matching `/privacy/` page. The store Support URL (forge-privacy issues) is unchanged.
-- **Working tree:** clean. Everything up to `5257e46` is pushed and live (deploy run 40193446748, 25 October 2026). This docs commit waits for the owner's yes to push.
+- **Working tree:** clean. Everything up to `3cc8cde` is pushed and live (deploy run 40199633051, 25 October 2026). This docs commit waits for the owner's yes to push.
 - **Post-launch audit (24 October 2026):** [`docs/audit/2026-10-24.md`](audit/2026-10-24.md). It covers the owner's eight live-site issues and the full audit (246 pages × 30 languages × Chromium, WebKit and WebKit iPhone × five widths × two themes, axe, links, and real Mobile Safari in the iOS Simulator). There are no critical findings. The high ones are the deploy's missing live-page check (issue 1), store links not opening in a new tab (issue 5), the header wrapping at 320px with Display Zoom (issue 8), and a German FAQ heading that pans at 320px (issue 7). **Stage 2 (24 October 2026) fixed H1, H2, H3, H4, M4 and L1**; see "Audit fixes" below. Issues 2 (Mac badge) and 7 (English pan), and M1 (desktop widths), are resolved: the owner confirmed on their own devices after Stage 2 that they no longer happen or look fine. The 320px layout tests stay as the guard.
 - **Launch incident:** the first deploy left out `.well-known/apple-app-site-association` for about 42 minutes (13:13 to 13:55 UTC), because the Pages upload drops files whose names start with a dot. Fixed in `42fb02c` (`include-hidden-files: true`, plus a live check at the end of the deploy job). Whether Apple fetched the file during the gap is unknown.
 
@@ -87,9 +88,38 @@ Where the site work stands, and what comes next. Read this at the start of every
   - `build.json` is not in the sitemap;
   - a live WebKit iPhone visit made one load and two checks, with no reload and no errors.
 - **Settled (owner, 25 October 2026):** the first ID included the build time, so the daily rebuild made every open tab reload once a day for nothing. It is now a content hash; see "Build ID from the content" below.
-- **Limit: pages saved before the fix cannot update themselves.** The check is part of each page, so a tab still showing a page from before `cc1ccc2` (25 October 2026) has no check and needs one manual reload. On 25 October the owner's iPhone still showed Friday 23 October's `/pricing/` (no Mac badge: before `f27492f`, 13:58) after the fix was live, and one reload fixes it. From that reload on, the tab updates itself after every deploy. An earlier note here said old tabs would switch by themselves, which was wrong.
+- **Limit: pages saved before the fix cannot update themselves.** The check is part of each page, so a tab still showing a page from before `cc1ccc2` (25 October 2026) needs one manual reload; after that it updates itself after every deploy. An earlier note here said old tabs would switch by themselves, which was wrong.
+- **Correction (25 October 2026):** a note in `a3017b9` said the owner's iPhone still showed Friday's `/pricing/` because its Mac badge was missing. That was wrong: the page was current, and an AdGuard rule hid the badge (see "Content blockers on phones").
 - **Confirmed:** a deploy that changed no site file (run 40194019642, the docs commit `9bd8524`) kept the build ID `be46717c11f5cf72`, and every check passed.
 
+
+## Content blockers on phones (25 October 2026)
+
+- **What happened:** AdGuard on the owner's iPhone hid the Mac App Store badge on `/` and `/pricing/`. "Reload Without Content Blockers" brought it back. The same symptom was audit finding M3 on launch day.
+- **No public list does it.** A filter engine (`@ghostery/adblocker`, dev only) ran 536 lists against every page, as an iPhone (WebKit) and an Android phone (Chromium), and found nothing hidden, blocked or injected. The lists:
+  - every list in AdGuard's iPhone, Safari and Android registries;
+  - EasyList, EasyPrivacy, Fanboy's annoyance, social and cookie lists;
+  - uBlock Origin's defaults and annoyances, Brave's, and Peter Lowe's.
+
+  The site also loads nothing from any other site, so domain tracker lists (Firefox, Edge, DuckDuckGo) have nothing to block. The rule is most likely a **user rule in the owner's AdGuard**: Safari protection › User rules, anything with `doughnut-forge.app`. **Owner: check and delete it.**
+- **What phone browsers block:**
+  - Safari: content blockers (AdGuard, 1Blocker, Wipr, Ghostery);
+  - Brave: built in;
+  - Firefox for Android: uBlock Origin or AdGuard;
+  - Samsung Internet: AdGuard or Adblock Plus plug-ins;
+  - DuckDuckGo, Firefox for iOS, Edge, Vivaldi, Opera: tracker or ad lists;
+  - Chrome: no user blocking.
+- **Fix (`3cc8cde`):**
+  - **Fallback:** every store badge carries a hidden link in the badge's own wording (`StoreBadge.astro`). `StoreFallback.astro` shows it when the badge is not drawn: its link, image or container hidden, or the link removed, at load or up to 4 seconds later. If the container is hidden, the link moves out after it. Without a blocker nothing changes.
+  - **`/get/<store>/<language>/`:** the fallback link goes here, and the page forwards at once to the same store page as the badge. There are 60 of these pages (2 stores × 30 languages); they are noindex, have no social image (`check-og` skips forwarding pages) and are not in the sitemap. On iPhone the App Store may open as Apple's web page, because the visit comes through a forwarding page; normal badge taps are unchanged.
+  - **Names:** the cards' `badge` wrapper is now `buy`, and the blog's check icon is Lucide's artwork as `verified-check` (`src/components/blog/icons.ts`). `check-blocker-names.mjs` fails the build on class, id or built-file names with words blockers hide (badge, banner, ad, promo, sponsor, popup, social). This covers private lists (1Blocker, Wipr) that cannot be tested.
+- **Guards:**
+  - `npm run test:blockers` (`tests/blockers/`): `lists.spec.ts` runs every list on every page in both phone browsers, with a self-test that a known rule is found. `fallback.spec.ts` simulates hiding by address, image, container, removal and late hiding on six pages.
+  - The lists are downloaded fresh and cached 12 hours in `test-results/blocker-lists/`; 8 million lines are de-duplicated to 1.3 million rules.
+  - **Daily** `.github/workflows/blockers.yml` (07:41 UTC) runs it apart from the deploy: a new rule fails that run and GitHub emails the owner, but the deploy is never blocked.
+- **Results:** lists 614/614, fallback 76/76 (152/152 run twice), checks 28/28, deploy 16/16, layout 1976/1976, Lighthouse 100 in every category on mobile and desktop.
+- **Deploy:** run 40199633051 passed every check. Live, with Apple links hidden, WebKit iPhone shows "Download on the Mac App Store" as a link; without a blocker it shows the badge and no fallback.
+- **Running tests locally:** `astro preview` now starts in the background and its command exits at once, which Playwright reads as a failed web server. Start it first (`npx astro preview --port 4329`) and the tests reuse it.
 
 ## Build ID from the content (25 October 2026)
 
@@ -282,6 +312,7 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 | The deploy's live-page check, and open and fresh tabs reaching the new build (WebKit iPhone), against local servers | `npm run test:deploy` |
 | The issue forms and the issue fetch, against a local server | `npm run test:forms` |
 | The build checks, on small built sites of their own | `npm run test:checks` |
+| Content blockers on phones: every public list on every page, and the store fallback (downloads the lists) | `npm run test:blockers` |
 | Refresh the committed answered issues (then commit, shown for approval) | `npm run fetch:issues` |
 | Build with three sample issues (local only) | `ISSUES_FILE=tests/fixtures/issues.json npm run build` |
 | Remake the favicons from the app's master icon | `node scripts/make-favicons.mjs` |
@@ -293,7 +324,8 @@ Node version: `.nvmrc` (24). Install with `npm ci`.
 - `check-privacy-wording.mjs`: the privacy policy wording is unchanged from forge-privacy.
 - `check-translations.mjs`: every language has every key, and no translation is stale. Stale or unstamped strings are a warning locally and fail `build:deploy` (`--strict`).
 - `check-hreflang.mjs`: hreflang and canonical links agree, and every page built in more than one language has hreflang links (that is, it is in `translatedPages`).
-- `check-og.mjs`: every `og:image` has a file.
+- `check-og.mjs`: every `og:image` has a file (pages that only forward to a store have none).
+- `check-blocker-names.mjs`: no class, id or built file name uses a word content blockers hide (badge, banner, ad, promo, sponsor, popup, social).
 - `check-issues.mjs`: the answered-issues data holds only titles, questions, answers and issue links (no usernames), and every list and issue page is built, and only when it has an issue.
 - `check-placeholders.mjs`: lists unfilled values (fails with `--strict`).
 
