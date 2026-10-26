@@ -7,7 +7,7 @@
 import { expect, test } from "@playwright/test";
 import { execFile } from "node:child_process";
 import { createHash } from "node:crypto";
-import { copyFileSync, existsSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdtempSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { createServer, type Server } from "node:http";
 import type { AddressInfo } from "node:net";
 import { tmpdir } from "node:os";
@@ -175,22 +175,21 @@ test("the deploy runs daily and by hand, fetching the answered issues first, wit
   expect(workflow.indexOf("run: node scripts/fetch-issues.mjs")).toBeLessThan(workflow.indexOf("run: npm run build:deploy"));
 });
 
-test("the content-blocker check runs on every push to main, daily and by hand, without holding up the deploy", () => {
-  // GitHub's schedule is best effort: on 25 October 2026 the daily runs started five hours
-  // late, and on 26 October they had not started by 10:52 UTC. A push run means each change is checked.
-  const blockers = readFileSync(`${root}.github/workflows/blockers.yml`, "utf8");
-  const on = blockers.match(/^on:\n((?:[ \t]+.*\n)+)/m)?.[1] ?? "";
-  expect(on, "on every push to main").toMatch(/push:\n\s+branches: \[main\]/);
-  expect(on, "still daily").toMatch(/schedule:\n\s+- cron: "\d+ \d+ \* \* \*"/);
-  expect(on, "still by hand").toContain("workflow_dispatch");
-  // Its own workflow and its own queue: never the deploy's "pages" group, which would make deploys wait
-  expect(blockers, "not in the deploy's concurrency group").not.toMatch(/group:\s*pages\b/);
-  const deploy = readFileSync(`${root}.github/workflows/deploy.yml`, "utf8");
-  expect(deploy, "the deploy does not wait for it").not.toMatch(/workflow_run|blockers|test:blockers/);
+test("the content-blocker tests run in no CI workflow, only by hand", () => {
+  // Owner, 26 October 2026: not on push, pull request, deploy or schedule. The tests stay in
+  // tests/blockers/ and run with `npm run test:blockers`.
+  const workflows = readdirSync(`${root}.github/workflows`);
+  for (const file of workflows) {
+    const workflow = readFileSync(`${root}.github/workflows/${file}`, "utf8");
+    expect(workflow, `${file} does not run the blocker tests`).not.toMatch(/test:blockers|tests\/blockers|blockers-iphone|blockers-android/);
+  }
+  expect(workflows, "no blocker workflow").not.toContain("blockers.yml");
+  const scripts = JSON.parse(readFileSync(`${root}package.json`, "utf8")).scripts;
+  expect(scripts["test:blockers"], "a script to run them by hand").toContain("tests/blockers");
 });
 
-test("pushes that change only docs, tests, Markdown or .claude/ start no deploy and no blocker run", () => {
-  for (const file of ["deploy.yml", "blockers.yml"]) {
+test("pushes that change only docs, tests, Markdown or .claude/ start no deploy", () => {
+  for (const file of ["deploy.yml"]) {
     const workflow = readFileSync(`${root}.github/workflows/${file}`, "utf8");
     const on = workflow.match(/^on:\n((?:[ \t]+.*\n)+)/m)?.[1] ?? "";
     const push = on.match(/push:\n((?: {4,}.*\n)+)/)?.[1] ?? "";

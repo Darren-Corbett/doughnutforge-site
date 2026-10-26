@@ -36,7 +36,8 @@ export default defineConfig({
     // The forge-privacy issue forms and the issue fetch, against a local server (no browser, no network)
     { name: "forms", testMatch: /forms\/.*\.spec\.ts/ },
     // Content blockers on phones: every public list on every page, and a way to
-    // each store when a badge is hidden anyway (downloads the lists; test:blockers)
+    // each store when a badge is hidden anyway (downloads the lists). By hand only,
+    // with `npm run test:blockers`; no CI workflow runs them (owner, 26 October 2026)
     { name: "blockers-iphone", testMatch: /blockers\/.*\.spec\.ts/, use: { ...devices["iPhone 13"] } },
     { name: "blockers-android", testMatch: /blockers\/.*\.spec\.ts/, use: { ...devices["Pixel 7"] } },
     // The build's own checks, run on small built sites of their own (no browser)
