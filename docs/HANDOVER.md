@@ -39,7 +39,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 ## What is next, in order
 
 0. **Pushed and checked (26 October 2026, deploy run 40293939511):** every step passed, including "Check the uploaded archive holds every built file". The live `apple-app-site-association` lists both apps. Live `/pricing/` and `/de/download/` (WebKit iPhone and Chromium, 360px) show only the official badges without a blocker, and two second badges with the store links hidden. **Confirmed by the owner (26 October 2026):** on their iPhone, with AdGuard for Safari on default settings, the branded fallback badge shows in place of the hidden official badge, in English and in Chinese.
-0. **Start-of-day check: did the scheduled runs happen?** List the runs with `event=schedule` (public API: `/repos/Darren-Corbett/doughnutforge-site/actions/runs?event=schedule`). The pattern so far:
+0. **No scheduled CI jobs any more (owner, 26 October 2026; CLAUDE.md: CI is lean).** The deploy runs on pushes that change the site and by hand, and the blocker tests run by hand only (`npm run test:blockers`). After labelling an issue for the site, press "Run workflow" under Actions → Deploy site. The scheduled runs were dropped after this pattern:
    - **25 October:** the 06:17 deploy started at 11:22 UTC, five hours late, and passed. The blocker workflow did not exist yet (pushed at 13:52 UTC).
    - **26 October:** at 10:52 UTC neither the 06:17 deploy nor the first 07:41 blocker run had started. In all, GitHub had started one scheduled run in this repo, ever.
    - **What was checked (26 October, read-only):**
@@ -49,7 +49,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 
      No cause in the repo. GitHub documents scheduled runs as best effort (delayed, sometimes dropped, under load), but the scheduler's queue is not visible from outside, so this is not proven.
    - **Later on 26 October** the blocker workflow was removed (owner): the blocker tests no longer run in CI, only by hand with `npm run test:blockers`. The daily deploy only matters for newly labelled answered issues; every push deploys anyway.
-   - If schedules keep slipping or vanishing for several days, record it here and consider whether the daily runs are worth keeping.
+   - Then the owner removed the deploy's 06:17 schedule too, keeping the manual button, so there is nothing scheduled left to check.
 0. **Weekly blog draft:** the owner runs `/blog-draft`. The cloud routine is on hold until the owner decides about linking GitHub; see "Weekly blog draft: `/blog-draft`".
 0. **Blog backlog approved:** the owner approved all 10 topics in `docs/BLOG-TOPICS.md` (26 October 2026), so `/blog-draft` can draft from it.
 0. **Check the Phase 5 deploy** (the push of `7f82405` to this docs commit): the log shows "Fetch answered issues" (expect "0 answered question(s), 0 known issue(s)" until issues are labelled) and every existing check passing. Then confirm the support page links to the three forms in a few languages, and that `/support/answered/` does not exist yet.
@@ -224,7 +224,7 @@ Where the site work stands, and what comes next. Read this at the start of every
   - Form fields read as "Platform: Mac", empty fields and the "Your question" heading are left out, and longer fields keep their headings.
 - **How it is built:**
   - `scripts/fetch-issues.mjs` uses the public API with no token and writes `src/data/issues.json`. On any failure it keeps the committed data.
-  - The deploy runs it before every build, and also runs **daily at 06:17 UTC**; the manual run button is still there.
+  - The deploy runs it before every build. There is no daily run any more (26 October 2026): after labelling an issue, press "Run workflow" under Actions → Deploy site.
   - The committed `issues.json` has empty lists. To refresh it, run `npm run fetch:issues`, then make a commit, shown for approval.
   - Unauthenticated requests are limited to 60 an hour per IP, and runners share IPs. If a day's fetch is limited, that deploy uses the committed data.
 - **Pages:**
@@ -232,7 +232,6 @@ Where the site work stands, and what comes next. Read this at the start of every
   - Each issue has one English page, `/support/<list>/<number>-<slug>/`, like a blog post.
   - `check-issues.mjs` checks the data and the pages in every build.
 - **Test builds:** `ISSUES_FILE=tests/fixtures/issues.json npm run build` builds with three sample issues, local only.
-- **GitHub turns off scheduled workflows after 60 days with no repo activity.** If that happens, turn the schedule back on under Actions → Deploy site.
 - **Translations:**
   - The 13 new strings were reviewed by four independent reviewers. Their one blocking finding (zh-TW `meta.known.description`) is fixed and re-checked.
   - Every language is stamped. The `issue.*` strings are English only, like the blog.
