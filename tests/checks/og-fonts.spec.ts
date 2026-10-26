@@ -73,3 +73,24 @@ test("a title with a character no build font has fails, naming the language and 
   expect(result.output).toMatch(/missing/i);
   expect(result.output).toMatch(/[฀-๿]/);
 });
+
+test("only build-fonts is drawn with: the machine's own fonts never fill in", async () => {
+  // On a Mac, sharp's text drawing uses the system's fonts unless told otherwise, so
+  // a title could look right locally and differ in the deploy. Thai drawn without
+  // the repo's Thai font must come out different from Thai drawn with it.
+  const draw = async (dir: string) => {
+    const script = `
+      import { useBuildFonts } from ${JSON.stringify(`${root}scripts/og-fonts.mjs`)};
+      useBuildFonts(${JSON.stringify(dir)});
+      const { default: sharp } = await import("sharp");
+      const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="100"><rect width="400" height="100" fill="#fff"/><text x="10" y="70" font-family="Noto Sans Thai, Noto Sans" font-size="50" font-weight="900">ความเป็นส่วนตัว</text></svg>';
+      const { createHash } = await import("node:crypto");
+      process.stdout.write(createHash("sha256").update(await sharp(Buffer.from(svg)).raw().toBuffer()).digest("hex"));`;
+    const { stdout } = await run(process.execPath, ["--input-type=module", "-e", script], { cwd: root });
+    return stdout;
+  };
+  const noThai = mkdtempSync(join(tmpdir(), "fonts-"));
+  cpSync(FONTS, noThai, { recursive: true });
+  rmSync(join(noThai, "NotoSansThai-Black.ttf"));
+  expect(await draw(FONTS), "with and without the repo's Thai font").not.toBe(await draw(noThai));
+});
