@@ -3,7 +3,8 @@
 # `npm run build:deploy` fails or Pages no longer deploys from Actions. The run
 # also fails, after the deploy, if the live / and /download/ are not the pages it
 # built, the live security.txt or build.json is not the one it built, or the live
-# apple-app-site-association is missing. It also stops, before deploying, unless
+# apple-app-site-association is missing. Before deploying, it stops if the
+# uploaded archive leaves out any built file (dotfiles included), and unless
 # private vulnerability reporting is on in forge-privacy, where /security/ and
 # security.txt send reports.
 # The build reads this repository, plus one step: "Fetch answered issues" reads
@@ -75,6 +76,11 @@ jobs:
           # with a dot, including .well-known/apple-app-site-association, which
           # the Mac and iOS apps need for password-manager linking, and .nojekyll
           include-hidden-files: true
+      # The archive just uploaded (upload-pages-artifact packs it as
+      # $RUNNER_TEMP/artifact.tar) must hold every built file, dotfiles included.
+      # If the archive is missing or short, this job fails and nothing is deployed.
+      - name: Check the uploaded archive holds every built file
+        run: node scripts/check-artifact.mjs --tar "$RUNNER_TEMP/artifact.tar" --dist dist
 
   deploy:
     needs: build
