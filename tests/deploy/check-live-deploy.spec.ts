@@ -188,3 +188,18 @@ test("the content-blocker check runs on every push to main, daily and by hand, w
   const deploy = readFileSync(`${root}.github/workflows/deploy.yml`, "utf8");
   expect(deploy, "the deploy does not wait for it").not.toMatch(/workflow_run|blockers|test:blockers/);
 });
+
+test("pushes that change only docs, tests, Markdown or .claude/ start no deploy and no blocker run", () => {
+  for (const file of ["deploy.yml", "blockers.yml"]) {
+    const workflow = readFileSync(`${root}.github/workflows/${file}`, "utf8");
+    const on = workflow.match(/^on:\n((?:[ \t]+.*\n)+)/m)?.[1] ?? "";
+    const push = on.match(/push:\n((?: {4,}.*\n)+)/)?.[1] ?? "";
+    const ignored = [...(push.match(/paths-ignore:\n((?: {6,}- .*\n)+)/)?.[1] ?? "").matchAll(/- "([^"]+)"/g)].map((m) => m[1]);
+    for (const pattern of ["docs/**", "tests/**", "**/*.md", ".claude/**"]) expect(ignored, `${file} ignores ${pattern}`).toContain(pattern);
+    // What builds the site must still start a run
+    for (const path of ["src/", "public/", "scripts/", "build-fonts/", "astro.config.mjs", "package.json", ".github/"])
+      expect(ignored.filter((p) => p.startsWith(path)), `${file} still runs for ${path}`).toEqual([]);
+    expect(on, `${file}: still daily`).toMatch(/schedule:\n\s+- cron:/);
+    expect(on, `${file}: still by hand`).toContain("workflow_dispatch");
+  }
+});
