@@ -162,10 +162,11 @@ test("the deploy job's token may read the Pages settings", () => {
   );
 });
 
-test("the deploy runs daily and by hand, fetching the answered issues first, with no token", () => {
+test("the deploy runs on push and by hand, never on a schedule, fetching the answered issues first, with no token", () => {
   const workflow = readFileSync(`${root}.github/workflows/deploy.yml`, "utf8");
   const on = workflow.match(/^on:\n((?:[ \t]+.*\n)+)/m)?.[1] ?? "";
-  expect(on, "a daily schedule").toMatch(/schedule:\n\s+- cron: "\d+ \d+ \* \* \*"/);
+  // Owner, 26 October 2026: no daily run while no issue can appear; "Run workflow" after labelling one
+  expect(on, "no schedule").not.toMatch(/schedule:|cron:/);
   expect(on, "a manual run button").toContain("workflow_dispatch");
   // The fetch step comes before the build, and has no token of any kind
   const fetchStep = workflow.match(/- name: Fetch answered issues\n((?: {8,}.*\n)+)/)?.[0] ?? "";
@@ -198,7 +199,6 @@ test("pushes that change only docs, tests, Markdown or .claude/ start no deploy"
     // What builds the site must still start a run
     for (const path of ["src/", "public/", "scripts/", "build-fonts/", "astro.config.mjs", "package.json", ".github/"])
       expect(ignored.filter((p) => p.startsWith(path)), `${file} still runs for ${path}`).toEqual([]);
-    expect(on, `${file}: still daily`).toMatch(/schedule:\n\s+- cron:/);
     expect(on, `${file}: still by hand`).toContain("workflow_dispatch");
   }
 });
