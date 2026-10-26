@@ -174,3 +174,17 @@ test("the deploy runs daily and by hand, fetching the answered issues first, wit
   // The steps themselves, not the header comment, which names the build too
   expect(workflow.indexOf("run: node scripts/fetch-issues.mjs")).toBeLessThan(workflow.indexOf("run: npm run build:deploy"));
 });
+
+test("the content-blocker check runs on every push to main, daily and by hand, without holding up the deploy", () => {
+  // GitHub's schedule is best effort: on 25 October 2026 the daily runs started five hours
+  // late, and on 26 October they had not started by 10:52 UTC. A push run means each change is checked.
+  const blockers = readFileSync(`${root}.github/workflows/blockers.yml`, "utf8");
+  const on = blockers.match(/^on:\n((?:[ \t]+.*\n)+)/m)?.[1] ?? "";
+  expect(on, "on every push to main").toMatch(/push:\n\s+branches: \[main\]/);
+  expect(on, "still daily").toMatch(/schedule:\n\s+- cron: "\d+ \d+ \* \* \*"/);
+  expect(on, "still by hand").toContain("workflow_dispatch");
+  // Its own workflow and its own queue: never the deploy's "pages" group, which would make deploys wait
+  expect(blockers, "not in the deploy's concurrency group").not.toMatch(/group:\s*pages\b/);
+  const deploy = readFileSync(`${root}.github/workflows/deploy.yml`, "utf8");
+  expect(deploy, "the deploy does not wait for it").not.toMatch(/workflow_run|blockers|test:blockers/);
+});
