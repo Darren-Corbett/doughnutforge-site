@@ -174,3 +174,14 @@ test("the deploy runs daily and by hand, fetching the answered issues first, wit
   // The steps themselves, not the header comment, which names the build too
   expect(workflow.indexOf("run: node scripts/fetch-issues.mjs")).toBeLessThan(workflow.indexOf("run: npm run build:deploy"));
 });
+
+test("the font install has a time limit, so a stuck download fails the run instead of hanging it", () => {
+  // On 26 October 2026 apt-get hung in this step for over ten minutes (run 40295571635);
+  // without a limit, GitHub waits six hours before ending the job
+  const workflow = readFileSync(`${root}.github/workflows/deploy.yml`, "utf8");
+  const fontStep = workflow.match(/- name: Install Noto fonts\n((?: {8,}.*\n)+)/)?.[0] ?? "";
+  expect(fontStep, "an Install Noto fonts step").toContain("apt-get install");
+  const limit = Number(fontStep.match(/^ {8}timeout-minutes:\s*(\d+)\s*$/m)?.[1]);
+  expect(limit, "timeout-minutes on the step").toBeGreaterThan(0);
+  expect(limit, "at most ten minutes").toBeLessThanOrEqual(10);
+});
