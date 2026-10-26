@@ -1,3 +1,19 @@
+Type: marketing site
+Ethos: the general rules and "Marketing websites: move faster" in ~/.claude/CLAUDE.md apply here. Where this file is stricter, it wins.
+Lean: a one-person business, free and local first. No new paid services, GitHub Actions, CI minutes or dependencies without asking first.
+High risk here (stop and ask before changing):
+- Files the apps depend on: `public/.well-known/apple-app-site-association` and its root copy `.well-known/apple-app-site-association`, `public/.well-known/security.txt`, `public/.nojekyll`
+- Store links and badges: `src/data/stores.ts`, `src/data/badges.ts`, `src/assets/badges/`, `src/components/StoreBadge.astro`, `StoreFallback.astro`, `StoreLinks.astro`, `src/pages/go/` (these replaced `/get/`)
+- Prices: `src/data/prices.ts`
+- Privacy, support, legal and security pages: `src/content/legal/privacy/`, `src/data/privacy.ts`, `src/views/PrivacyPage.astro`, `SupportPage.astro`, `LegalPage.astro`, `SecurityPage.astro`, the support and report links in `src/data/site.ts`, the issue forms in `docs/forge-privacy/.github/ISSUE_TEMPLATE/`
+- Answered issues on the site: `scripts/fetch-issues.mjs`, `src/data/issues.json`
+- Build ID and the open-tab reload check: `scripts/build-id.mjs`, `src/data/build.ts`, `src/components/FreshCheck.astro`, `/build.json`
+- Translated pages and languages: `translatedPages` in `src/i18n/alternates.ts`, `src/i18n/languages.json`
+- Domain, DNS, hosting and redirects: `CNAME` and `public/CNAME`, the root rollback files (until step 6 in HANDOVER), GitHub Pages settings, DNS records, the forge-privacy redirect (other repo, `site.legacyPrivacyUrl`)
+- Deploy and build: `.github/workflows/` (no job runs on a schedule today; adding one needs a yes, see below), `package.json` scripts, `astro.config.mjs`, `scripts/check-*.mjs`
+Claims: every claim must have a source, as in `docs/BLOG-CLAIMS.md`, and follow the Copy rules below: no "we", no contractions, no "military-grade", "unbreakable" or "audited", never say a file's sender is verified, never "pay once" for the whole site (one-time purchase on each platform).
+Silent-breakage checks: `npm run build` (type check, plus checks for the files the apps need, privacy wording, translations, hreflang, social images, blocker names, issues and placeholders), `npm run build:deploy` (the same, strict), `npm run test:links` (internal links, live links, store links and the forge-privacy redirects; needs the network), `npm run test:layout`, `npm run check:reproducible`. The deploy also checks the uploaded archive and the live files.
+
 # Doughnut Forge website
 
 CI is lean. Never add a GitHub Action, scheduled job or new CI step without saying what it costs (runs and minutes per month) and why a local check is not enough, and getting my yes first.
@@ -77,7 +93,7 @@ Every plan must say how it serves both goals.
 - The site has no server and holds no GitHub token, ever. Never put a token in site code.
 - Support page: explains how to get help, links to "New issue" using GitHub issue forms (templates for bug report, question, feature idea) in the forge-privacy repo, and says plainly that issues are public and need a GitHub account.
 - Every issue form warns, in bold: never attach vault files, identity files, recovery words, passphrases or screenshots that show them.
-- Answered issues appear on the site through a scheduled GitHub Action that reads public issues at build time and generates static pages (for example "Known issues" and "Answered questions"). Visitors' browsers never call the GitHub API.
+- Answered issues appear on the site through the deploy, which reads public issues at build time and generates static pages (for example "Known issues" and "Answered questions"). The deploy runs on pushes and by hand ("Run workflow" after labelling an issue), never on a schedule. Visitors' browsers never call the GitHub API.
 - Only show issues I have labelled for the site (for example `site-faq`), so spam and unanswered issues never appear.
 
 ## Legal
@@ -94,3 +110,4 @@ Every plan must say how it serves both goals.
 - Run the layout tests in WebKit with the iPhone profile, at 320px as well (`npm run test:layout` does both). Desktop Chromium alone misses Safari-only bugs.
 - Check one left-to-right and (if supported) one right-to-left language.
 - Run Lighthouse on the home page and report the scores.
+- Copy-only fixes: npm run build and the layout tests (including WebKit iPhone) are enough. Three widths, the RTL check and Lighthouse stay for design and layout changes.

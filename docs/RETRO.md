@@ -49,7 +49,7 @@ The 25 October entry covered only that day. These are the launch days' three mai
 3. **Lists differ by device and over time.** The phone's lists come from its own last update and its AdGuard version. A test run hours later on another machine is not the phone's rule set.
 4. **No real-device check.** No test runs Safari with AdGuard installed: the iOS Simulator cannot install it, and this repo has no other access to the owner's phone.
 
-**Agreed (owner, 26 October 2026):** assume blockers hide store badges in ways no one can predict or reproduce. The site shows a second branded badge, then a text link, whatever the cause. It is tested by simulating every way of hiding a badge in WebKit (iPhone) and Chromium, not by any blocker's rules. The daily public-list check stays as it is, with no AdGuard-specific check.
+**Agreed (owner, 26 October 2026):** assume blockers hide store badges in ways no one can predict or reproduce. The site shows a second branded badge, then a text link, whatever the cause. It is tested by simulating every way of hiding a badge in WebKit (iPhone) and Chromium, not by any blocker's rules. The daily public-list check stays as it is, with no AdGuard-specific check. *Later on 26 October 2026 the owner removed the daily public-list check: the blocker tests run by hand only (`npm run test:blockers`), and answered issues are fetched by hand ("Run workflow" on the deploy) or on a push.*
 
 ## 26 October 2026, the session (`ccb02f4..HEAD`)
 

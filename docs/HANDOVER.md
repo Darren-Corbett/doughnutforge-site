@@ -5,7 +5,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 - **Last updated:** 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
-- **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
+- **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: commit freely on main; ask before every push (a push deploys), and never publish anything without approval.
 - **Pre-launch review scope (owner, 23 October 2026):** before launch the owner reviews facts and automated checks only. Copy style is reviewed after launch by an external copywriter (see "Post-launch copy review"). For blog posts, show the owner only each post's claims table for approval, not the full text. The CLAUDE.md copy rules still apply when writing.
 
 ---
@@ -79,6 +79,11 @@ Where the site work stands, and what comes next. Read this at the start of every
    - Done (26 October 2026, `44c25cd`): the text link marks only the badge wording as English; the forwarding pages (now `/go/`) have a `main`, an `h1` and a 44px link.
    - FreshCheck reloads once per new build ID. If that reload gets the old page (a CDN edge not caught up), the tab stays on it until the next deploy or a manual reload.
 11. **By 24 September 2027: renew `security.txt`.** Set `Expires` in `public/.well-known/security.txt` to one year from that day, and move this reminder a year on. The build fails from 24 September 2027 (30 days before the 24 October 2027 expiry) until it is renewed.
+
+### Later (owner, 26 October 2026; not built yet)
+
+- **A static redirect for the old `/get/` addresses.** `/get/<store>/<language>/` was live for about a day before `/go/` replaced it, and now returns 404.
+- **Run `npm run test:links` locally before a push**, by hand or with a local git hook, never a GitHub Action. Today it runs only when asked.
 
 ## Social image fonts in the repo (26 October 2026)
 
