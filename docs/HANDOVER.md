@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 25 October 2026, after the stale-page fix, the content build ID, the content-blocker work and the session retro (`docs/RETRO.md`); see "Stale pages in iPhone Safari", "Build ID from the content" and "Content blockers on phones" below
+- **Last updated:** 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog task" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
@@ -23,6 +23,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 | – | Stale pages in iPhone Safari: build ID check | **Done** (25 October 2026); see "Stale pages in iPhone Safari" below | `cc2f34d` tests, `cc1ccc2` fix |
 | – | Content blockers on phones: list test, store fallback, naming check | **Done** (25 October 2026); see "Content blockers on phones" below | `97112b0` `78dde60` tests, `3cc8cde` fix |
 | – | Build ID from the content, reproducible builds | **Done** (25 October 2026); see "Build ID from the content" below | `508fc66` `6bc3ceb` `254c60b` `52d77ad` tests, `450f469` restore, `5257e46` fix |
+| – | Branded fallback badge, `/go/` pages, uploaded-archive check | **Done, not pushed** (26 October 2026); see "Content blockers on phones" | `828a11d` `aa9d15e` `be191f9` `d668ba6` tests, `44c25cd` `28bc8fe` `de1f21e` fixes |
 | – | `/roadmap/`, `/security/` and `/.well-known/security.txt`, in all 30 languages | **Done** (24 October 2026); see "Roadmap and security pages" below | `a6d1d26` tests, `f3a577d` pages and translations |
 
 ---
@@ -37,6 +38,9 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ## What is next, in order
 
+0. **After the next push** (today's commits, from `828a11d`): confirm the deploy passed, including the new "Check the uploaded archive holds every built file" step, and check `https://doughnut-forge.app/.well-known/apple-app-site-association` live (CLAUDE.md: the deploy workflow changed). Then, in a clean WebKit iPhone context, live `/pricing/` with Apple links hidden shows the second badge, and without a blocker shows only the official badges. The owner will check the branded badge on their iPhone (AdGuard on default settings).
+0. **Weekly blog task: waiting on GitHub.** The routine "Weekly blog draft" could not be saved: GitHub is not connected to the owner's Claude account. Once it is (`/web-setup`, or https://claude.ai/connect-github) and today's commits are pushed (the task reads `docs/BLOG-TOPICS.md` from GitHub), create it as agreed; see "Weekly blog task".
+0. **Owner: review the blog backlog** in `docs/BLOG-TOPICS.md` and approve topics (all 10 are "proposed").
 0. **Check the Phase 5 deploy** (the push of `7f82405` to this docs commit): the log shows "Fetch answered issues" (expect "0 answered question(s), 0 known issue(s)" until issues are labelled) and every existing check passing. Then confirm the support page links to the three forms in a few languages, and that `/support/answered/` does not exist yet.
 1. **Owner: create the two labels** in forge-privacy (Issues → Labels → New label): `site-faq` ("Answer shown on doughnut-forge.app", `#1da1f2`) and `site-known-issue` ("Known issue shown on doughnut-forge.app", `#ff7a00`). On 24 October 2026 neither existed. Also open https://github.com/Darren-Corbett/forge-privacy/issues/new/choose signed in, and confirm it shows the three forms, "Report a security problem privately" and no blank issue (it needs a sign-in, so Claude could not see it).
 2. **Audit follow-ups:** all closed except the iOS App Store ID.
@@ -45,6 +49,9 @@ Where the site work stands, and what comes next. Read this at the start of every
    - **Issues 2 (Mac badge) and 7 (English pan):** resolved; they no longer happen on the owner's iPhone after Stage 2 (24 October 2026). The 320px layout tests stay as the guard.
    - **L2:** left as it is (owner, 24 October 2026).
    - **The iOS App Store ID** (issue 4): it does not exist yet, so iOS stays "Coming soon".
+   - **iPhone and iPad: waiting on App Review** (0.4.44, in review on 26 October 2026). When the owner says it is approved and live, and gives the App Store ID (from App Store Connect, App Information, "Apple ID"), the switch is this one line in `src/data/stores.ts`, replacing `{ id: "ios", status: "coming" },`:
+     `{ id: "ios", status: "available", store: "app-store", storeId: "<App Store ID>" },`
+     The cards, the official badges, the second badges (`/s/`, already built) and the `/go/` pages all follow from it. Then build, run the blocker and layout tests, and ask before the push.
 
    **A branch rollback serves the old "Coming soon" placeholder at `/`** (the repo-root `index.html`), with no other pages, until the root files are removed on or after 6 November. Since H1, the deploy also stops unless Pages deploys from GitHub Actions, and fails if the live `/` and `/download/` are not the pages it built.
 3. **Step 8, store listing URLs (owner, in progress).**
@@ -58,10 +65,22 @@ Where the site work stands, and what comes next. Read this at the start of every
 8. **When the copywriter's notes arrive:** follow "Post-launch copy review" below.
 9. **New blog posts:** no more than one or two a week, each starting as `draft: true` with a claims table in `docs/BLOG-CLAIMS.md`, published only on the owner's say-so.
 10. **Retro follow-ups (25 October 2026), for the owner to decide** (`docs/RETRO.md`):
-   - The fallback link puts `lang="en"` on the whole link, so its "opens in a new tab" note in the page language is read with an English voice (WCAG 3.1.2). Fix: put `lang` on the badge wording only (`src/components/StoreBadge.astro`).
-   - The `/get/` pages' link is about 27px tall, below the 44px target, and the page has no `h1` or `main` (`src/pages/get/[store]/[lang].astro`).
+   - Done (26 October 2026, `44c25cd`): the text link marks only the badge wording as English; the forwarding pages (now `/go/`) have a `main`, an `h1` and a 44px link.
    - FreshCheck reloads once per new build ID. If that reload gets the old page (a CDN edge not caught up), the tab stays on it until the next deploy or a manual reload.
 11. **By 24 September 2027: renew `security.txt`.** Set `Expires` in `public/.well-known/security.txt` to one year from that day, and move this reminder a year on. The build fails from 24 September 2027 (30 days before the 24 October 2027 expiry) until it is renewed.
+
+## Weekly blog task (agreed 26 October 2026, not yet created)
+
+- **What:** a cloud routine, "Weekly blog draft", every Monday at 07:00 UTC (`0 7 * * 1`: 07:00 in winter, 08:00 in summer UK time), Opus 5.5, environment "Default", with the Claude Docs connector. It reads this repo (from GitHub) and the web, never the app repo, and never writes to the repo.
+- **Topic** (`docs/BLOG-TOPICS.md`): the past week's privacy or security news first, if it fits honestly; otherwise the next **approved** backlog topic; otherwise three proposals instead of a draft. Repeat rules and topical guardrails are in that file. The task also reads its own earlier draft docs, so a drafted topic is never picked again.
+- **Output:** one Claude Doc, "Blog draft: <title>", with a digest (why this topic, the repeat checks it ran), the post, a claims table checked live, and image notes. A push notification says it is ready, or why the week was skipped.
+- **The owner replies** by commenting on the doc, or in a Claude Code session:
+  - "publish": a session copies it into `src/content/blog/en/` as `draft: true`, adds the claims rows to `docs/BLOG-CLAIMS.md`, runs every check, shows the claims table, sets `draft: false` only on the owner's yes, and asks before the push;
+  - "bin": drop it, and return the topic to the backlog;
+  - "changes: ...": revise the draft in the doc for review again, without publishing.
+
+  The session that publishes or bins a draft updates the log in `docs/BLOG-TOPICS.md`.
+- **Blocked:** saving it failed ("Connect your GitHub account before saving a scheduled task that uses a GitHub repository"). Create it once GitHub is connected and today's commits are pushed.
 
 ## Stale pages in iPhone Safari (25 October 2026)
 
@@ -115,17 +134,24 @@ Where the site work stands, and what comes next. Read this at the start of every
   - Chrome: no user blocking.
 - **The fix, three layers per badge** (`src/components/StoreBadge.astro`, `src/components/StoreFallback.astro`):
   1. **The official badge**, linking straight to the store. Visitors without a blocker see only this, exactly as before.
-  2. **A second branded badge**, shown in its place when the first is not drawn for any reason: hidden, zero size, invisible, removed, its container hidden, or its image blocked, at load, later, or when an image fails. It is the same official file, byte for byte, served as `/s/<first 12 hex of its SHA-256>.svg` (`src/pages/s/[name].svg.ts`, built for every store's artwork). It has an empty `alt`, the badge's wording as screen-reader text, and neutral names (`get-art`, `data-get`), so nothing in it says store, badge, app or download. It opens `/get/<store>/<language>/` in a new tab (`44c25cd`, 26 October).
-  3. **The plain text link** in the badge's wording, to the same `/get/` page, only if the second badge is not drawn either. Only the wording is marked `lang="en"`, so its "(opens in a new tab)" note is read in the page's language.
+  2. **A second branded badge**, shown in its place when the first is not drawn for any reason: hidden, zero size, invisible, transparent, moved off the page, removed, its container hidden, or its image blocked, at load, later, or when an image fails. It is the same official file, byte for byte, served as `/s/<first 12 hex of its SHA-256>.svg` (`src/pages/s/[name].svg.ts`, built for every store's artwork). It has an empty `alt`, the badge's wording as screen-reader text, and neutral names (`get-art`, `data-get`), so nothing in it says store, badge, app or download. It opens `/go/<code>/<language>/` in a new tab, where the code is the first six hex characters of the SHA-256 of the store's ID (`e18fb8` and `ede629` today), so the address names no store either (`44c25cd`, `de1f21e`, 26 October). The first version linked to `/get/mac-app-store/…`; the review found that one rule on link addresses hid all three layers.
+  3. **The plain text link** in the badge's wording, to the same `/go/` page, only if the second badge is not drawn either. Only the wording is marked `lang="en"`, so its "(opens in a new tab)" note is read in the page's language.
 
-  If the badges' container is hidden, the fallbacks move out to just after it.
-- **`/get/<store>/<language>/`:** forwards at once to the same store page as the badge. It has a `main`, an `h1` (the badge wording) and a link to tap, the store's name, at least 44px tall. There are 60 of these pages (2 stores × 30 languages): noindex, no social image (`check-og` skips forwarding pages), not in the sitemap. On iPhone the App Store may open as Apple's web page, because the visit comes through a forwarding page; normal badge taps are unchanged.
+  If the badges' container is hidden, the fallbacks move out to just after it, in their order.
+- **`/go/<code>/<language>/`** (`src/pages/go/[code]/[lang].astro`; `/get/` before 26 October): forwards at once to the same store page as the badge. It has a `main`, an `h1` (the badge wording) and a link to tap, the store's name, at least 44px tall. There are 60 of these pages (2 stores × 30 languages): noindex, no social image (`check-og` skips forwarding pages), not in the sitemap. On iPhone the App Store may open as Apple's web page, because the visit comes through a forwarding page; normal badge taps are unchanged.
 - **Names:** `check-blocker-names.mjs` fails the build on class, id or built-file names with words blockers hide (badge, banner, ad, promo, sponsor, popup, social).
 - **Guards:**
   - `tests/blockers/fallback.spec.ts` (WebKit as an iPhone 13 and Chromium as a Pixel 7) simulates every way of hiding a badge on six pages, without relying on any blocker's rules:
-    - each one must show the second badge (drawn, the official file byte for byte, neutral names, new tab, the right accessible name) and no text link;
+    - the ways: hidden by link address (including any address that mentions app, store or get), zero size, invisible, transparent, off the page, image hidden by description, image blocked, container hidden, removed, hidden late;
+    - each one must show the second badge (drawn, the official file byte for byte, no store word in any attribute, new tab, the right accessible name) and no text link;
     - hiding both badges must show the text link;
-    - also covered: the text link's `lang`, the `/get/` page's `main`, `h1` and 44px link, and that the iPhone and iPad artwork is built.
+    - also covered: the text link's `lang`, the `/go/` page's `main`, `h1` and 44px link, and that the iPhone and iPad artwork is built.
+  - `scripts/check-artifact.mjs` (deploy, before publishing): the uploaded archive holds every built file, and the build has `apple-app-site-association` (`tests/checks/check-artifact.spec.ts`).
+- **Results (26 October 2026, after `de1f21e`):**
+  - `build:deploy`: 0 errors, 0 warnings; two builds of the same commit are the same;
+  - blockers 804/804 (public lists and fallback, iPhone and Android), checks 36/36, layout 1976/1976 (WebKit iPhone at 320px included);
+  - `/`, `/pricing/`, `/download/` in English and German at 360, 768 and 1280px, in WebKit and Chromium, with and without a simulated blocker: 72/72 with no pan and no errors, two second badges with a blocker and none without;
+  - Lighthouse on the home page: 100 in every category, mobile and desktop.
   - `tests/blockers/lists.spec.ts` (unchanged) runs every public list on every page.
   - The lists are downloaded fresh and cached 12 hours in `test-results/blocker-lists/`.
   - **Daily** `.github/workflows/blockers.yml` (07:41 UTC) runs both apart from the deploy: a failure emails the owner but never blocks a deploy. No AdGuard-specific check (owner, 26 October 2026).

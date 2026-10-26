@@ -32,6 +32,7 @@ Every plan must say how it serves both goals.
 - After changing `astro.config.mjs`, `package.json`, `scripts/` or `src/assets/`, run `npm run check:reproducible`: two builds of the same commit must be the same, or every deploy gets a new build ID.
 - Before naming a cause for something the owner sees on the live site, reproduce it against the live site in a clean browser (for example a fresh WebKit iPhone context). Never explain it by the last thing fixed.
 - After any change to how the site is built, uploaded or hosted (the deploy workflow, Pages settings, the upload step), check every file the apps depend on (`/.well-known/apple-app-site-association`) at its live URL before calling the change done.
+- A plan for any fallback or degraded state (a blocker, an error, a missing file) says what the visitor will see, and asks the owner first if it differs from the normal experience.
 - Nothing is published without approval. New blog posts start as drafts (`draft: true`).
 
 ## Languages

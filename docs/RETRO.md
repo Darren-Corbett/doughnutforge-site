@@ -8,7 +8,7 @@ The work: stale iPhone Safari pages (FreshCheck and `/build.json`), the content-
 
 **Review** (independent subagent): no Must fix. Should fix: the fallback link's `lang` covers its page-language note; the `/get/` link is below 44px and the page has no `h1`; two stale HANDOVER lines (fixed in this entry's commit); test commit `6bc3ceb` also deleted site code (recorded, not rewritten).
 
-**Went well:** tests came first every time; every deploy was checked against the live site; no push without the owner's yes; the blocker tests used the real public lists, which showed the cause had to be a private rule.
+**Went well:** tests came first every time; every deploy was checked against the live site; no push without the owner's yes; the blocker tests used the real public lists (they did not show the cause; see 26 October).
 
 **Went wrong, and why:**
 1. Claude called the missing Mac badge a cached Friday page and wrote it into HANDOVER; it was the owner's AdGuard rule. Cause: explained by the last thing fixed, without reproducing it on the live site.
@@ -50,3 +50,23 @@ The 25 October entry covered only that day. These are the launch days' three mai
 4. **No real-device check.** No test runs Safari with AdGuard installed: the iOS Simulator cannot install it, and this repo has no other access to the owner's phone.
 
 **Agreed (owner, 26 October 2026):** assume blockers hide store badges in ways no one can predict or reproduce. The site shows a second branded badge, then a text link, whatever the cause. It is tested by simulating every way of hiding a badge in WebKit (iPhone) and Chromium, not by any blocker's rules. The daily public-list check stays as it is, with no AdGuard-specific check.
+
+## 26 October 2026, the session (`ccb02f4..HEAD`)
+
+The work: the branded fallback badge (official artwork under a neutral name, then the text link), `/go/` forwarding pages, the accessibility fixes, the uploaded-archive check in the deploy, the launch retro, and the blog topics file and weekly task design.
+
+**Review** (independent subagent): one Must fix, now fixed. Both fallbacks linked to `/get/mac-app-store/…`, so one rule on link addresses (`a[href*="app"]`) hid the badge and both fallbacks, and a visitor saw nothing for the Mac. Should fix, also fixed: transparent or off-page badges counted as drawn; HANDOVER's date, results, iOS line and live AASA check. Notes fixed: the archive check passing on an empty build, and fallbacks coming out of a hidden container in reverse order.
+
+**Went well:** tests came first, and every test commit holds only tests. Every way of hiding was simulated in both engines. The search for the AdGuard rule stopped as soon as the owner said so. The full checks ran before any claim of done.
+
+**Went wrong, and why:**
+1. **The fallback address named the store.** Claude neutralised the file name, the alt text and the classes, but kept yesterday's `/get/<store>/` address without looking at it, and the test checked only the attributes Claude had thought of. Fix: the test now checks every attribute.
+2. **About 25 minutes spent hunting the AdGuard rule** after 536 lists had already come up empty. Claude did not first ask whether finding the rule would change the fix. It would not have.
+3. **The test helper needed two corrections** (it scrolled away from lazy images, then scrolled to a hidden element). Claude wrote it without first checking where the badges sit on each page.
+4. **Why yesterday's fix used a plain text link, not a branded badge:** no plan, commit or HANDOVER line gives a reason; the two were never compared. The fix was built on the wrong diagnosis (one private rule, already deleted), so a minimal "some way to the store" looked enough. Nobody asked the owner what a visitor should see in that case.
+
+**Agreed (owner):**
+- (A)+(C): neutral `/go/<code>/` addresses; the tests hide links by address and check every attribute of each fallback (`d668ba6` tests, `de1f21e` fix).
+- (B): transparent and off-page badges count as hidden (same commits).
+- (D): the archive check fails without `apple-app-site-association` (same commits).
+- (E): CLAUDE.md: a plan for any fallback or degraded state says what the visitor will see, and asks the owner first if it differs from normal.
