@@ -185,3 +185,18 @@ test("the font install has a time limit, so a stuck download fails the run inste
   expect(limit, "timeout-minutes on the step").toBeGreaterThan(0);
   expect(limit, "at most ten minutes").toBeLessThanOrEqual(10);
 });
+
+test("the font install drops a stalled download and tries again, rather than waiting", () => {
+  // On 26 October 2026 the 61 MB fonts-noto-cjk download from GitHub's mirror stalled
+  // twice (runs 40295571635 and 40302985240); a timeout and retries let apt recover
+  const workflow = readFileSync(`${root}.github/workflows/deploy.yml`, "utf8");
+  const fontStep = workflow.match(/- name: Install Noto fonts\n((?: {8,}.*\n)+)/)?.[0] ?? "";
+  for (const command of ["apt-get update", "apt-get install"]) {
+    const call = fontStep.split("&&").find((part) => part.includes(command)) ?? "";
+    expect(call, `${command} is in the step`).not.toBe("");
+    const timeout = Number(call.match(/-o Acquire::http::Timeout=(\d+)/)?.[1]);
+    expect(timeout, `${command}: an HTTP timeout`).toBeGreaterThan(0);
+    expect(timeout, `${command}: short enough to retry within the step's limit`).toBeLessThanOrEqual(60);
+    expect(Number(call.match(/-o Acquire::Retries=(\d+)/)?.[1]), `${command}: retries`).toBeGreaterThanOrEqual(3);
+  }
+});
