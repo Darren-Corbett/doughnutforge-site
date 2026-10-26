@@ -110,14 +110,21 @@ const visibleLinks = (page: Page): Promise<Seen[]> =>
 const newTabNote = (page: Page) => page.locator('a[href^="https://apps."] .sr-only').first().textContent();
 
 /**
- * Opens a page and scrolls through it, as a visitor would, so badges below the
- * fold load (they are lazy), then waits for the fallback's last check
+ * Opens a page and scrolls to its badges, as a visitor would, so the lazy
+ * images there load (the official ones, then any second badge shown in their
+ * place), then waits for the fallback's last check
  */
 const visit = async (page: Page, path: string, wait: number) => {
+  // The first badge, or fallback, that takes up space on the page
+  const toBadges = () =>
+    page.evaluate(() =>
+      [...document.querySelectorAll('a[href^="https://apps."], [data-get]')].find((e) => e.getClientRects().length)?.scrollIntoView({ block: "center" }),
+    );
   await page.goto(path, { waitUntil: "load" });
-  await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+  await toBadges();
   await page.waitForTimeout(500);
-  await page.evaluate(() => window.scrollTo(0, 0));
+  // Again, once a second badge has taken the first one's place
+  await toBadges();
   await page.waitForTimeout(wait);
 };
 
