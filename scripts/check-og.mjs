@@ -1,6 +1,6 @@
 // Every social preview image a built page names must exist in dist/.
 // Runs in every build; any missing image fails it. Pages that only forward to a
-// store (src/pages/get/) are never shared, so they have none.
+// store (src/pages/go/) are never shared, so they have none.
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 

@@ -1,9 +1,10 @@
 ---
 // Shows a store badge's fallbacks (StoreBadge.astro) when the badge is not
 // drawn, whatever the cause: its link, image or what holds it hidden, made zero
-// size or invisible, removed, or its image blocked. First the second badge; if
-// that is not drawn either, the plain link. If what holds the badge is hidden,
-// the fallbacks move out to just after it. Checks at load, again later (some
+// size, invisible or transparent, moved off the page, removed, or its image
+// blocked. First the second badge; if that is not drawn either, the plain link.
+// If what holds the badge is hidden, the fallbacks move out to just after it, in
+// their order. Checks at load, again later (some
 // blockers hide things after load) and whenever a badge image fails. Without a
 // blocker nothing changes. Same page only; it sends nothing.
 ---
@@ -16,8 +17,13 @@
       const img = link?.isConnected && link.querySelector?.("img");
       if (!img) return false;
       const box = img.getBoundingClientRect();
+      // Off the page: wholly left of or above it, where no one can scroll
+      if (box.right + scrollX <= 0 || box.bottom + scrollY <= 0) return false;
+      for (let e = img; e; e = e.parentElement) if (getComputedStyle(e).opacity === "0") return false;
       return box.width > 0 && box.height > 0 && getComputedStyle(img).visibility !== "hidden" && !failed(img);
     };
+    // Where the last fallback moved out of each hidden container went, so several keep their order
+    const movedTo = new Map();
     const watch = (link) => link?.querySelector?.("img")?.addEventListener("error", check, { once: true });
     function check() {
       for (const art of document.querySelectorAll('[data-get="art"]')) {
@@ -30,7 +36,12 @@
           art.hidden = false;
           let hiddenBox = null;
           for (let box = art.parentElement; box && box !== document.body && !box.getClientRects().length; box = box.parentElement) hiddenBox = box;
-          hiddenBox?.after(art, text);
+          if (hiddenBox) {
+            const last = movedTo.get(hiddenBox) ?? hiddenBox;
+            last.after(art);
+            if (text) art.after(text);
+            movedTo.set(hiddenBox, text ?? art);
+          }
           watch(art.querySelector("a"));
         }
         if (text?.hidden && !drawn(art.querySelector("a"))) {

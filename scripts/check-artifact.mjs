@@ -2,7 +2,8 @@
 // dotfiles included. On launch day the upload left out .well-known/ (its name
 // starts with a dot), and the apps' apple-app-site-association was missing from
 // the live site for 42 minutes. The deploy runs this on the uploaded archive,
-// before deploying, so an incomplete one never goes live.
+// before deploying, so an incomplete one never goes live. It also fails if the
+// build itself has no apple-app-site-association.
 //
 //   node scripts/check-artifact.mjs --tar <artifact.tar> [--dist <dir>]
 import { execFileSync } from "node:child_process";
@@ -28,6 +29,12 @@ const packed = new Set(listing.split("\n").map((p) => p.replace(/^\.\//, "")).fi
 const built = readdirSync(dist, { recursive: true })
   .map(String)
   .filter((f) => statSync(`${dist}${f}`).isFile());
+// The apps' file must be among them: an empty or broken build must never pass for having nothing to check
+const REQUIRED = ".well-known/apple-app-site-association";
+if (!built.includes(REQUIRED)) {
+  console.error(`check-artifact: the build has no ${REQUIRED}`);
+  process.exit(1);
+}
 const missing = built.filter((f) => !packed.has(f));
 if (missing.length) {
   console.error(`check-artifact: the archive leaves out ${missing.length} built file(s):\n  ${missing.slice(0, 40).join("\n  ")}`);

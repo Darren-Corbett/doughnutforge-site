@@ -12,12 +12,12 @@
 // 1. A second badge: the same official file, byte for byte, served under a name
 //    made from its content (/s/<hash>.svg), with an empty alt (the wording is
 //    the link's text, for screen readers) and neutral names, so nothing in it
-//    says "store" or "badge". It goes to the site's /get/ page, which forwards
-//    to the store.
+//    says "store" or "badge". It goes to the site's /go/<code>/<language>/
+//    page, whose address names no store either, and which forwards to the store.
 // 2. If that is hidden too, a plain link in the badge's own wording, to the same
-//    /get/ page.
+//    /go/ page.
 import { storeUrl, type StoreId } from "../data/stores";
-import { badgeArt, badgeWording, getPath, secondArt } from "../data/badges";
+import { badgeArt, badgeWording, goPath, secondArt } from "../data/badges";
 import { useStrings, type Language } from "../i18n";
 
 interface Props {
@@ -31,7 +31,7 @@ const { t } = useStrings(lang.code);
 const { alt, own } = badgeWording(store, lang.code);
 const { file, image: badge } = badgeArt(store, lang.code);
 const wordingLang = own ? undefined : "en";
-const get = getPath(store, lang.path);
+const go = goPath(store, lang.path);
 
 // 48px tall: above Apple's 40px minimum; a quarter of the height is kept clear around it.
 const HEIGHT = 48;
@@ -43,13 +43,13 @@ const width = Math.round((badge.width / badge.height) * HEIGHT);
   <span class="sr-only">{t("a11y.newTab")}</span>
 </a>
 <p class="get-art" hidden data-get="art">
-  <a href={get} target="_blank" rel="noopener noreferrer">
+  <a href={go} target="_blank" rel="noopener noreferrer">
     <img src={secondArt(file)} width={width} height={HEIGHT} alt="" loading="lazy" decoding="async" />
     <span class="sr-only"><span lang={wordingLang}>{alt}</span> {t("a11y.newTab")}</span>
   </a>
 </p>
 <p class="get-text" hidden data-get="text">
-  <a href={get} target="_blank" rel="noopener noreferrer"><span lang={wordingLang}>{alt}</span><span class="sr-only">{t("a11y.newTab")}</span></a>
+  <a href={go} target="_blank" rel="noopener noreferrer"><span lang={wordingLang}>{alt}</span><span class="sr-only">{t("a11y.newTab")}</span></a>
 </p>
 
 <style>

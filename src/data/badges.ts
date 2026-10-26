@@ -1,6 +1,6 @@
 // A store badge's wording in a language: the badge's own text (src/assets/badges/alt.json)
 // where the store has a badge in that language, otherwise English, marked as English.
-// Used by the badge itself and by its fallback link and /get/ page (src/components/StoreBadge.astro).
+// Used by the badge itself and by its fallbacks and /go/ page (src/components/StoreBadge.astro).
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import type { ImageMetadata } from "astro";
@@ -43,5 +43,11 @@ export const badgeBytes = (file: string) => readFileSync(`${process.cwd()}/src/a
  */
 export const secondArt = (file: string) => `/s/${createHash("sha256").update(badgeBytes(file)).digest("hex").slice(0, 12)}.svg`;
 
-/** The site's own page that forwards to a store, for when a blocker hides the badge */
-export const getPath = (store: StoreId, langPath: string) => `/get/${store}/${langPath}/`;
+/**
+ * A short code for a store in the fallback's address, made from its ID, so the
+ * address says nothing about stores either: blockers also hide links by address
+ */
+export const storeCode = (store: StoreId) => createHash("sha256").update(store).digest("hex").slice(0, 6);
+
+/** The site's own page that forwards to a store, for when a blocker hides the badge (src/pages/go/) */
+export const goPath = (store: StoreId, langPath: string) => `/go/${storeCode(store)}/${langPath}/`;

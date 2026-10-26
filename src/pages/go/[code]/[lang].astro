@@ -7,7 +7,7 @@
 // per store on sale and language, in that language's wording. Never indexed,
 // and not in the sitemap (astro.config.mjs).
 import type { GetStaticPaths } from "astro";
-import { badgeWording } from "../../../data/badges";
+import { badgeWording, storeCode } from "../../../data/badges";
 import { platforms, storeNames, storeUrl, type StoreId } from "../../../data/stores";
 import { builtLanguages, type Language } from "../../../i18n";
 
@@ -15,7 +15,7 @@ export const getStaticPaths = (() =>
   platforms.flatMap((p) =>
     p.status === "available"
       ? builtLanguages.map((lang) => ({
-          params: { store: p.store, lang: lang.path },
+          params: { code: storeCode(p.store), lang: lang.path },
           props: { lang, store: p.store, url: storeUrl(p.store, p.storeId, lang.hreflang), wording: badgeWording(p.store, lang.code) },
         }))
       : [],
