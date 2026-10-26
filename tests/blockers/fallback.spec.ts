@@ -1,33 +1,50 @@
-// A visitor whose blocker hides a store badge must still reach the store. Rules
-// that no list holds (a person's own rule, or a private list such as 1Blocker's)
-// are simulated the ways blockers apply them: hiding the link by its address,
-// the image by its description, or the badge's container; removing the link from
-// the page; and hiding it a moment after load, as AdGuard's advanced rules do.
-// In each case a visible link with the badge's own wording must lead to the
-// store through the site's /get/ page. Without a blocker, nothing changes.
+// A visitor whose blocker hides a store badge must still reach the store. No
+// blocker's rules are assumed: blockers hide badges in ways no one can predict
+// (AdGuard's defaults hid the Mac badge on an iPhone, and no published list
+// explains it), so each way a badge can be hidden is simulated: hidden, made
+// zero size or invisible, its image hidden by its description or its request
+// blocked, its container hidden, removed from the page, or hidden a moment after
+// load. In each case a second branded badge, the same official artwork under a
+// neutral name, must show in its place and lead to the store through the site's
+// /get/ page. Only if that is hidden too does the plain text link show. Without a
+// blocker, nothing changes.
 import { expect, test, type Page } from "@playwright/test";
-import { readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { readdirSync, readFileSync } from "node:fs";
 import { dist } from "../support/site";
 
 const PAGES = ["/", "/pricing/", "/download/", "/de/download/", "/es-mx/pricing/", "/ja/"];
 const STORE = /^https:\/\/apps\.(apple|microsoft)\.com\//;
+/** Words blockers look for in a store badge's address, file, description or names */
+const STORE_WORDS = /apple|microsoft|google|play|store|badge|itunes|download|(^|[^a-z])app([^a-z]|$)/i;
 
-type Rule = { name: string; css?: string; remove?: string; delay?: number };
+type Rule = { name: string; css?: string; remove?: string; delay?: number; abort?: string };
 const RULES: Rule[] = [
   { name: "hides store links by address", css: 'a[href^="https://apps.apple.com"], a[href^="https://apps.microsoft.com"] { display: none !important; }' },
+  { name: "makes badge images zero size", css: 'a[href^="https://apps."] img { width: 0 !important; height: 0 !important; }' },
+  { name: "makes store links invisible", css: 'a[href^="https://apps."] { visibility: hidden !important; }' },
   { name: "hides badge images by their description", css: 'img[alt*="Store"] { display: none !important; }' },
+  { name: "blocks the badge images", abort: "**/_astro/*.svg" },
   { name: "hides the badge's container", css: '*:has(> a[href^="https://apps."]) { display: none !important; }' },
   { name: "removes store links from the page", remove: 'a[href^="https://apps."]' },
   { name: "hides store links a second after load", css: 'a[href^="https://apps."] { display: none !important; }', delay: 1000 },
 ];
 
+/** Hides the official badges and the second ones: only the text link is left */
+const BOTH: Rule[] = [
+  { name: "blocks every image", abort: "**/*.svg" },
+  { name: "hides every image in a link", css: "a img { display: none !important; }" },
+  { name: "removes every link with an image", remove: "a:has(img)" },
+];
+
 /**
  * Applies a rule the way a blocker would: once the page is parsed, before its
  * load event (an init script runs before the document exists, so a style added
- * then is lost), or a while after load
+ * then is lost), or a while after load; or blocks a request outright
  */
-const block = (page: Page, rule: Rule) =>
-  page.addInitScript((r: Rule) => {
+const block = async (page: Page, rule: Rule) => {
+  if (rule.abort) await page.route(rule.abort, (route) => route.abort("blockedbyclient"));
+  await page.addInitScript((r: Rule) => {
     const apply = () => {
       if (r.css) {
         const style = document.createElement("style");
@@ -39,63 +56,158 @@ const block = (page: Page, rule: Rule) =>
     if (r.delay) addEventListener("load", () => setTimeout(apply, r.delay));
     else document.addEventListener("DOMContentLoaded", apply);
   }, rule);
-
-/** The store badges a page is built with: link address and wording, from dist/ */
-const badgesOf = (path: string) => {
-  const html = readFileSync(`${dist}${path}index.html`, "utf8");
-  return [...html.matchAll(/<a href="(https:\/\/apps\.[^"]+)"[^>]*><img [^>]*alt="([^"]+)"/g)].map((m) => ({ url: m[1]!.replaceAll("&amp;", "&"), alt: m[2]! }));
 };
 
-/** Links a visitor can see and tap: address, text and whether it is drawn */
-const visibleLinks = (page: Page) =>
+/** The store badges a page is built with: link address, wording and image file, from dist/ */
+const badgesOf = (path: string) => {
+  const html = readFileSync(`${dist}${path}index.html`, "utf8");
+  return [...html.matchAll(/<a href="(https:\/\/apps\.[^"]+)"[^>]*><img src="([^"]+)"[^>]*alt="([^"]+)"/g)].map((m) => ({
+    url: m[1]!.replaceAll("&amp;", "&"),
+    src: m[2]!,
+    alt: m[3]!,
+  }));
+};
+
+type Seen = { href: string; text: string; name: string; img: string | null; target: string | null; names: string };
+
+/**
+ * Links a visitor can see and tap: address, the words seen, the name a screen
+ * reader hears, and the image drawn (its address), if any
+ */
+const visibleLinks = (page: Page): Promise<Seen[]> =>
   page.evaluate(() =>
     [...document.querySelectorAll("a[href]")]
       .filter((a) => {
         const r = a.getBoundingClientRect();
         const img = a.querySelector("img");
         const drawn = r.width > 0 && r.height > 0 && getComputedStyle(a).visibility !== "hidden";
-        // A badge counts only if its image is drawn: its screen-reader text is not seen
-        return drawn && (!img || img.getBoundingClientRect().width > 0);
+        // A badge counts only if its image is drawn and did not fail: its screen-reader text is not seen
+        return drawn && (!img || (img.getBoundingClientRect().width > 0 && !(img.complete && img.naturalWidth === 0)));
       })
       .map((a) => {
         // The words a visitor sees: the whole text (Japanese has <wbr> break points), without the screen-reader note
         const seen = a.cloneNode(true) as HTMLElement;
         seen.querySelectorAll(".sr-only").forEach((e) => e.remove());
-        return { href: a.getAttribute("href")!, text: (seen.textContent ?? "").trim() };
+        const img = a.querySelector("img");
+        // Every class and data attribute on the link, its image and what holds it, for the naming test
+        const names = [a, img, a.parentElement]
+          .filter((e): e is Element => Boolean(e))
+          .flatMap((e) => [...e.attributes].filter((x) => x.name === "class" || x.name === "id" || x.name.startsWith("data-")).map((x) => `${x.name}=${x.value}`))
+          .join(" ");
+        const alt = img?.getAttribute("alt") ?? "";
+        return {
+          href: a.getAttribute("href")!,
+          text: (seen.textContent ?? "").replace(/\s+/g, " ").trim(),
+          name: `${alt} ${a.textContent ?? ""}`.replace(/\s+/g, " ").trim(),
+          img: img ? img.getAttribute("src") : null,
+          target: a.getAttribute("target"),
+          names,
+        };
       }),
   );
 
+/** The "(opens in a new tab)" note in the page's language, as the official badge carries it */
+const newTabNote = (page: Page) => page.locator('a[href^="https://apps."] .sr-only').first().textContent();
+
+/**
+ * Opens a page and scrolls through it, as a visitor would, so badges below the
+ * fold load (they are lazy), then waits for the fallback's last check
+ */
+const visit = async (page: Page, path: string, wait: number) => {
+  await page.goto(path, { waitUntil: "load" });
+  await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+  await page.waitForTimeout(500);
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.waitForTimeout(wait);
+};
+
+const sha = (file: string) => createHash("sha256").update(readFileSync(file)).digest("hex");
+
 for (const path of PAGES) {
-  test(`${path}: without a blocker, the badges show and no fallback link does`, async ({ page }) => {
+  test(`${path}: without a blocker, the badges show and no fallback does`, async ({ page }) => {
     const badges = badgesOf(path);
     expect(badges.length, "store badges on the page").toBeGreaterThan(0);
-    await page.goto(path, { waitUntil: "load" });
-    await page.waitForTimeout(2500);
+    await visit(page, path, 2500);
     const links = await visibleLinks(page);
     for (const b of badges) expect(links.some((l) => l.href === b.url), `${b.alt} badge shows`).toBe(true);
-    expect(links.filter((l) => l.href.startsWith("/get/")), "no fallback link").toEqual([]);
+    expect(links.filter((l) => l.href.startsWith("/get/")), "no second badge and no text link").toEqual([]);
   });
 
   for (const rule of RULES) {
-    test(`${path}: a blocker that ${rule.name} still leaves a way to each store`, async ({ page }) => {
+    test(`${path}: a blocker that ${rule.name} gets a second branded badge to each store`, async ({ page }) => {
       const badges = badgesOf(path);
       await block(page, rule);
-      await page.goto(path, { waitUntil: "load" });
-      await page.waitForTimeout((rule.delay ?? 0) + 2500);
+      await visit(page, path, (rule.delay ?? 0) + 4500);
+      const note = rule.remove ? null : await newTabNote(page);
       const links = await visibleLinks(page);
       expect(links.filter((l) => STORE.test(l.href)), "the blocker hid every store link").toEqual([]);
       for (const b of badges) {
-        const fallback = links.find((l) => l.href.startsWith("/get/") && l.text === b.alt);
-        expect(fallback, `a visible "${b.alt}" link to /get/`).toBeTruthy();
+        const second = links.find((l) => l.href.startsWith("/get/") && l.img && l.name.startsWith(b.alt));
+        expect(second, `a second "${b.alt}" badge, drawn, to /get/`).toBeTruthy();
+        expect(second!.target, "opens in a new tab").toBe("_blank");
+        if (note) expect(second!.name, "a screen reader hears the wording and the new-tab note").toBe(`${b.alt} ${note}`);
+        // The same official artwork, byte for byte, under a name blockers do not look for
+        expect(sha(`${dist}${second!.img}`), "the official artwork, unaltered").toBe(sha(`${dist}${b.src}`));
+        expect(second!.img, "a neutral file name").not.toMatch(STORE_WORDS);
+        expect(second!.names, "neutral classes and data names").not.toMatch(STORE_WORDS);
+        expect(links.filter((l) => l.href === second!.href && !l.img), "no text link while the badge shows").toEqual([]);
         // The /get/ page sends the visitor on to exactly the badge's store page
-        const html = readFileSync(`${dist}${fallback!.href}index.html`, "utf8");
+        const html = readFileSync(`${dist}${second!.href}index.html`, "utf8");
         expect(html, "forwards at once").toContain(`<meta http-equiv="refresh" content="0; url=${b.url.replaceAll("&", "&amp;")}">`);
         expect(html, "with a link to tap if it does not").toContain(`href="${b.url.replaceAll("&", "&amp;")}"`);
         expect(html, "never indexed").toContain('<meta name="robots" content="noindex">');
       }
     });
   }
+
+  for (const rule of BOTH) {
+    test(`${path}: a blocker that ${rule.name} still leaves a text link to each store`, async ({ page }) => {
+      const badges = badgesOf(path);
+      await block(page, rule);
+      await visit(page, path, 4500);
+      const links = await visibleLinks(page);
+      for (const b of badges) {
+        const text = links.find((l) => l.href.startsWith("/get/") && !l.img && l.text === b.alt);
+        expect(text, `a visible "${b.alt}" text link to /get/`).toBeTruthy();
+        expect(text!.target, "opens in a new tab").toBe("_blank");
+      }
+    });
+  }
 }
+
+test("the text link marks only the badge's English wording as English", async ({ page }) => {
+  // Polish has no Mac App Store badge of its own, so the wording is English; the new-tab note is Polish
+  await page.goto("/pl/download/", { waitUntil: "load" });
+  const links = page.locator('a[href^="/get/mac-app-store/"]');
+  expect(await links.count(), "a second badge and a text link").toBe(2);
+  for (const link of await links.all()) {
+    expect(await link.getAttribute("lang"), "the link itself keeps the page language").toBeNull();
+    await expect(link.locator('[lang="en"]'), "the wording is marked English").toHaveText("Download on the Mac App Store");
+    const note = link.locator(".sr-only").last();
+    expect(await note.evaluate((e) => e.closest("[lang]")?.getAttribute("lang")), "the note is read in Polish").toBe("pl");
+  }
+});
+
+test("a /get/ page has a main, one h1 and a store link at least 44px tall", async ({ page }) => {
+  for (const file of ["get/mac-app-store/en/index.html", "get/microsoft-store/de/index.html"]) {
+    // Without the forward, so the page itself can be measured
+    const html = readFileSync(`${dist}/${file}`, "utf8").replace(/<meta http-equiv="refresh"[^>]*>/, "");
+    await page.setContent(html);
+    await expect(page.locator("main"), file).toHaveCount(1);
+    await expect(page.locator("h1"), file).toHaveCount(1);
+    const box = await page.locator("main a").boundingBox();
+    expect(box!.height, `${file}: link height`).toBeGreaterThanOrEqual(44);
+  }
+});
+
+test("the iPhone and iPad artwork is built for the second badge", () => {
+  // When iOS goes on sale (src/data/stores.ts), its second badge must already exist
+  const built = new Set(readdirSync(`${dist}/s`).map((f) => f.replace(/\.svg$/, "")));
+  for (const file of readdirSync("src/assets/badges/app-store")) {
+    const hash = sha(`src/assets/badges/app-store/${file}`).slice(0, 12);
+    expect(built.has(hash), `app-store/${file} as /s/${hash}.svg`).toBe(true);
+  }
+});
 
 test("a /get/ page takes the browser to the store", async ({ page }) => {
   const [badge] = badgesOf("/download/");
@@ -103,13 +215,14 @@ test("a /get/ page takes the browser to the store", async ({ page }) => {
   await block(page, RULES[0]!);
   await page.goto("/download/", { waitUntil: "load" });
   await page.waitForTimeout(1500);
-  const href = (await visibleLinks(page)).find((l) => l.href.startsWith("/get/") && l.text === badge!.alt)!.href;
+  const href = (await visibleLinks(page)).find((l) => l.href.startsWith("/get/") && l.name.startsWith(badge!.alt))!.href;
   await page.goto(href);
   await page.waitForURL(badge!.url);
   expect(page.url()).toBe(badge!.url);
 });
 
-test("no /get/ page is in the sitemap", () => {
+test("no /get/ page and no second badge file is in the sitemap", () => {
   const sitemap = readFileSync(`${dist}/sitemap-0.xml`, "utf8");
   expect(sitemap).not.toContain("/get/");
+  expect(sitemap).not.toContain("/s/");
 });
