@@ -70,6 +70,15 @@ Where the site work stands, and what comes next. Read this at the start of every
    - FreshCheck reloads once per new build ID. If that reload gets the old page (a CDN edge not caught up), the tab stays on it until the next deploy or a manual reload.
 11. **By 24 September 2027: renew `security.txt`.** Set `Expires` in `public/.well-known/security.txt` to one year from that day, and move this reminder a year on. The build fails from 24 September 2027 (30 days before the 24 October 2027 expiry) until it is renewed.
 
+## Social image fonts in the repo (26 October 2026)
+
+- **Why:** the deploy installed the Noto fonts with `apt-get` before every build. GitHub's mirror stalled on the 61 MB CJK download three times on 26 October (runs 40295571635, 40302985240 and 40304927284), and the last two failed the deploy. The fonts only draw the non-English social preview images. A 10-minute limit and apt retries were tried first and did not help.
+- **Now:** the fonts are committed in `build-fonts/` (about 20 MB: Noto Sans ExtraBold and Black, Noto Sans CJK Black, Noto Sans Thai Black and Noto Sans Devanagari Black, with each source's OFL licence; sources in `build-fonts/README.md`). The deploy has no font step.
+- **How `make-og.mjs` uses them** (`scripts/og-fonts.mjs`): before sharp loads, it points fontconfig at `build-fonts/fonts.conf` (that folder only) and sets `PANGOCAIRO_BACKEND=fc`. Without that setting, on a Mac sharp drew with the system's fonts (Core Text) and ignored fontconfig; that was found and tested while making this change. Before drawing, every title is checked against its fonts, and a missing character stops the build, naming it.
+- **Build tools only:** no font file is in `public/`, `src/` or `dist/`.
+- **The committed English images** (`public/og/*.png`) were made on the Mac with Helvetica Neue and are unchanged. Running `node scripts/make-og.mjs` again would redraw them in Noto Sans. Not done: the owner can decide.
+- **Tests** (`tests/checks/og-fonts.spec.ts`): the fonts and licences are present; no font file anywhere the site serves; no font download in the deploy; every language drawn with no missing glyphs; a missing glyph fails the run; the system's fonts never fill in.
+
 ## Weekly blog draft: `/blog-draft` (26 October 2026)
 
 - **How it runs:** the owner types `/blog-draft` in this repo, about once a week. The project skill is `.claude/skills/blog-draft/SKILL.md`; it runs only when typed.
@@ -189,7 +198,7 @@ Where the site work stands, and what comes next. Read this at the start of every
   - no live page had the placeholder;
   - every badge on those pages loaded;
   - `apple-app-site-association` listed both apps.
-- **CI and local IDs differ** (`be46717c…` live, `c3dc68b6…` on the owner's Mac) because the machines' builds differ, for example the fonts in the social images. Only CI's builds go live, and they are consistent with each other.
+- **CI and local IDs differed** (`be46717c…` live, `c3dc68b6…` on the owner's Mac) because the machines' builds differed, for example the fonts in the social images. Since 26 October 2026 both draw the images with the same committed fonts (`build-fonts/`), so the IDs may now match; not yet confirmed. Only CI's builds go live.
 
 ## Phase 5: issue forms and answered issues (24 October 2026)
 
