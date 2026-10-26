@@ -1,12 +1,14 @@
 ---
 // Forwards to a store, for a visitor whose content blocker hid the store badge:
 // the badge's fallback link (StoreBadge.astro) comes here, on the site itself,
-// and this page sends the browser on to the store page the badge links to. One
+// and this page sends the browser on to the store page the badge links to. Its
+// heading is the badge's wording, and the link to tap if the forward does not
+// happen is the store's name (a name: the same in every language). One
 // per store on sale and language, in that language's wording. Never indexed,
 // and not in the sitemap (astro.config.mjs).
 import type { GetStaticPaths } from "astro";
 import { badgeWording } from "../../../data/badges";
-import { platforms, storeUrl } from "../../../data/stores";
+import { platforms, storeNames, storeUrl, type StoreId } from "../../../data/stores";
 import { builtLanguages, type Language } from "../../../i18n";
 
 export const getStaticPaths = (() =>
@@ -14,17 +16,18 @@ export const getStaticPaths = (() =>
     p.status === "available"
       ? builtLanguages.map((lang) => ({
           params: { store: p.store, lang: lang.path },
-          props: { lang, url: storeUrl(p.store, p.storeId, lang.hreflang), wording: badgeWording(p.store, lang.code) },
+          props: { lang, store: p.store, url: storeUrl(p.store, p.storeId, lang.hreflang), wording: badgeWording(p.store, lang.code) },
         }))
       : [],
   )) satisfies GetStaticPaths;
 
 interface Props {
   lang: Language;
+  store: StoreId;
   url: string;
   wording: { alt: string; own: boolean };
 }
-const { lang, url, wording } = Astro.props;
+const { lang, store, url, wording } = Astro.props;
 const textLang = wording.own ? lang.hreflang : "en";
 ---
 
@@ -45,7 +48,15 @@ const textLang = wording.own ? lang.hreflang : "en";
         background: #fff;
         color: #14171a;
       }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 22px;
+        line-height: 1.3;
+      }
       a {
+        display: inline-flex;
+        min-height: 44px;
+        align-items: center;
         color: #09649c;
         text-underline-offset: 3px;
       }
@@ -61,6 +72,9 @@ const textLang = wording.own ? lang.hreflang : "en";
     </style>
   </head>
   <body>
-    <p><a href={url}>{wording.alt}</a></p>
+    <main>
+      <h1>{wording.alt}</h1>
+      <p><a href={url} lang="en">{storeNames[store]}</a></p>
+    </main>
   </body>
 </html>

@@ -1,27 +1,46 @@
 ---
-// Shows a store badge's fallback link (StoreBadge.astro) when the badge is not
-// drawn: a content blocker hid the link, its image or what holds it, or removed
-// it. If what holds the badge is hidden, the link moves out to just after it.
-// Checks at load and again later, because some blockers hide things after load.
-// Without a blocker nothing changes. Same page only; it sends nothing.
+// Shows a store badge's fallbacks (StoreBadge.astro) when the badge is not
+// drawn, whatever the cause: its link, image or what holds it hidden, made zero
+// size or invisible, removed, or its image blocked. First the second badge; if
+// that is not drawn either, the plain link. If what holds the badge is hidden,
+// the fallbacks move out to just after it. Checks at load, again later (some
+// blockers hide things after load) and whenever a badge image fails. Without a
+// blocker nothing changes. Same page only; it sends nothing.
 ---
 
 <script is:inline>
   (() => {
+    // A lazy image not loaded yet has not failed; a blocked one has
+    const failed = (img) => img.complete && img.naturalWidth === 0;
     const drawn = (link) => {
-      const img = link?.querySelector?.("img");
-      return Boolean(img) && img.getBoundingClientRect().width > 0 && getComputedStyle(link).visibility !== "hidden";
+      const img = link?.isConnected && link.querySelector?.("img");
+      if (!img) return false;
+      const box = img.getBoundingClientRect();
+      return box.width > 0 && box.height > 0 && getComputedStyle(img).visibility !== "hidden" && !failed(img);
     };
-    const check = () => {
-      for (const p of document.querySelectorAll("[data-store-fallback][hidden]")) {
-        if (drawn(p.previousElementSibling)) continue;
-        p.hidden = false;
-        let hiddenBox = null;
-        for (let box = p.parentElement; box && box !== document.body && !box.getClientRects().length; box = box.parentElement) hiddenBox = box;
-        hiddenBox?.after(p);
+    const watch = (link) => link?.querySelector?.("img")?.addEventListener("error", check, { once: true });
+    function check() {
+      for (const art of document.querySelectorAll('[data-get="art"]')) {
+        const text = art.nextElementSibling;
+        // The last resort is showing: nothing more to try
+        if (text && !text.hidden) continue;
+        if (art.hidden) {
+          const badge = art.previousElementSibling;
+          if (badge?.tagName === "A" && drawn(badge)) continue;
+          art.hidden = false;
+          let hiddenBox = null;
+          for (let box = art.parentElement; box && box !== document.body && !box.getClientRects().length; box = box.parentElement) hiddenBox = box;
+          hiddenBox?.after(art, text);
+          watch(art.querySelector("a"));
+        }
+        if (text?.hidden && !drawn(art.querySelector("a"))) {
+          art.hidden = true;
+          text.hidden = false;
+        }
       }
-    };
+    }
     addEventListener("load", () => {
+      for (const art of document.querySelectorAll('[data-get="art"]')) watch(art.previousElementSibling);
       check();
       setTimeout(check, 1500);
       setTimeout(check, 4000);
