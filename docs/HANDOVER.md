@@ -38,8 +38,18 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ## What is next, in order
 
-0. **Pushed and checked (26 October 2026, deploy run 40293939511):** every step passed, including "Check the uploaded archive holds every built file". The live `apple-app-site-association` lists both apps. Live `/pricing/` and `/de/download/` (WebKit iPhone and Chromium, 360px) show only the official badges without a blocker, and two second badges with the store links hidden. **Owner:** confirm the branded badge on the iPhone (AdGuard on default settings).
-0. **The 26 October scheduled runs:** at 08:43 UTC neither the 06:17 deploy nor the first 07:41 "Content blockers" run had started (GitHub delays scheduled runs; on 25 October the 06:17 run started at 11:22). Check that both ran and passed.
+0. **Pushed and checked (26 October 2026, deploy run 40293939511):** every step passed, including "Check the uploaded archive holds every built file". The live `apple-app-site-association` lists both apps. Live `/pricing/` and `/de/download/` (WebKit iPhone and Chromium, 360px) show only the official badges without a blocker, and two second badges with the store links hidden. **Confirmed by the owner (26 October 2026):** on their iPhone, with AdGuard for Safari on default settings, the branded fallback badge shows in place of the hidden official badge, in English and in Chinese.
+0. **Start-of-day check: did the scheduled runs happen?** List the runs with `event=schedule` (public API: `/repos/Darren-Corbett/doughnutforge-site/actions/runs?event=schedule`). The pattern so far:
+   - **25 October:** the 06:17 deploy started at 11:22 UTC, five hours late, and passed. The blocker workflow did not exist yet (pushed at 13:52 UTC).
+   - **26 October:** at 10:52 UTC neither the 06:17 deploy nor the first 07:41 blocker run had started. In all, GitHub had started one scheduled run in this repo, ever.
+   - **What was checked (26 October, read-only):**
+     - both cron lines are valid and on `main`;
+     - the API reports both workflows `active` (not disabled);
+     - GitHub's status page lists no Actions incident on 24 to 26 October.
+
+     No cause in the repo. GitHub documents scheduled runs as best effort (delayed, sometimes dropped, under load), but the scheduler's queue is not visible from outside, so this is not proven.
+   - **Since 26 October** the blocker check also runs on every push to `main` (`eed6653` test, then the trigger change), so each change is checked even if the schedule slips. The daily deploy only matters for newly labelled answered issues; every push deploys anyway.
+   - If schedules keep slipping or vanishing for several days, record it here and consider whether the daily runs are worth keeping.
 0. **Weekly blog draft:** the owner runs `/blog-draft`. The cloud routine is on hold until the owner decides about linking GitHub; see "Weekly blog draft: `/blog-draft`".
 0. **Blog backlog approved:** the owner approved all 10 topics in `docs/BLOG-TOPICS.md` (26 October 2026), so `/blog-draft` can draft from it.
 0. **Check the Phase 5 deploy** (the push of `7f82405` to this docs commit): the log shows "Fetch answered issues" (expect "0 answered question(s), 0 known issue(s)" until issues are labelled) and every existing check passing. Then confirm the support page links to the three forms in a few languages, and that `/support/answered/` does not exist yet.
@@ -174,7 +184,7 @@ Where the site work stands, and what comes next. Read this at the start of every
   - Lighthouse on the home page: 100 in every category, mobile and desktop.
   - `tests/blockers/lists.spec.ts` (unchanged) runs every public list on every page.
   - The lists are downloaded fresh and cached 12 hours in `test-results/blocker-lists/`.
-  - **Daily** `.github/workflows/blockers.yml` (07:41 UTC) runs both apart from the deploy: a failure emails the owner but never blocks a deploy. No AdGuard-specific check (owner, 26 October 2026).
+  - `.github/workflows/blockers.yml` runs both **on every push to `main`, daily (07:41 UTC) and by hand**, apart from the deploy, in its own concurrency group: a failure emails the owner but never blocks or delays a deploy, and a newer push replaces a run still going. No AdGuard-specific check (owner, 26 October 2026).
 - **iPhone and iPad:** when App Review approves 0.4.44, the switch is one line in `src/data/stores.ts`; see "What is next".
 - **Running tests locally:** `astro preview` now starts in the background and its command exits at once, which Playwright reads as a failed web server. Start it first (`npx astro preview --port 4329`) and the tests reuse it.
 
