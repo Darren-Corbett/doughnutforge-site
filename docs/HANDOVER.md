@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog task" below
+- **Last updated:** 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: never commit without the owner's yes on the files, diff and message, and never publish anything without approval.
@@ -23,7 +23,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 | – | Stale pages in iPhone Safari: build ID check | **Done** (25 October 2026); see "Stale pages in iPhone Safari" below | `cc2f34d` tests, `cc1ccc2` fix |
 | – | Content blockers on phones: list test, store fallback, naming check | **Done** (25 October 2026); see "Content blockers on phones" below | `97112b0` `78dde60` tests, `3cc8cde` fix |
 | – | Build ID from the content, reproducible builds | **Done** (25 October 2026); see "Build ID from the content" below | `508fc66` `6bc3ceb` `254c60b` `52d77ad` tests, `450f469` restore, `5257e46` fix |
-| – | Branded fallback badge, `/go/` pages, uploaded-archive check | **Done, not pushed** (26 October 2026); see "Content blockers on phones" | `828a11d` `aa9d15e` `be191f9` `d668ba6` tests, `44c25cd` `28bc8fe` `de1f21e` fixes |
+| – | Branded fallback badge, `/go/` pages, uploaded-archive check | **Done** (26 October 2026, live); see "Content blockers on phones" | `828a11d` `aa9d15e` `be191f9` `d668ba6` tests, `44c25cd` `28bc8fe` `de1f21e` fixes |
 | – | `/roadmap/`, `/security/` and `/.well-known/security.txt`, in all 30 languages | **Done** (24 October 2026); see "Roadmap and security pages" below | `a6d1d26` tests, `f3a577d` pages and translations |
 
 ---
@@ -38,8 +38,9 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ## What is next, in order
 
-0. **After the next push** (today's commits, from `828a11d`): confirm the deploy passed, including the new "Check the uploaded archive holds every built file" step, and check `https://doughnut-forge.app/.well-known/apple-app-site-association` live (CLAUDE.md: the deploy workflow changed). Then, in a clean WebKit iPhone context, live `/pricing/` with Apple links hidden shows the second badge, and without a blocker shows only the official badges. The owner will check the branded badge on their iPhone (AdGuard on default settings).
-0. **Weekly blog task: waiting on GitHub.** The routine "Weekly blog draft" could not be saved: GitHub is not connected to the owner's Claude account. Once it is (`/web-setup`, or https://claude.ai/connect-github) and today's commits are pushed (the task reads `docs/BLOG-TOPICS.md` from GitHub), create it as agreed; see "Weekly blog task".
+0. **Pushed and checked (26 October 2026, deploy run 40293939511):** every step passed, including "Check the uploaded archive holds every built file". The live `apple-app-site-association` lists both apps. Live `/pricing/` and `/de/download/` (WebKit iPhone and Chromium, 360px) show only the official badges without a blocker, and two second badges with the store links hidden. **Owner:** confirm the branded badge on the iPhone (AdGuard on default settings).
+0. **The 26 October scheduled runs:** at 08:43 UTC neither the 06:17 deploy nor the first 07:41 "Content blockers" run had started (GitHub delays scheduled runs; on 25 October the 06:17 run started at 11:22). Check that both ran and passed.
+0. **Weekly blog draft:** the owner runs `/blog-draft`. The cloud routine is on hold until the owner decides about linking GitHub; see "Weekly blog draft: `/blog-draft`".
 0. **Owner: review the blog backlog** in `docs/BLOG-TOPICS.md` and approve topics (all 10 are "proposed").
 0. **Check the Phase 5 deploy** (the push of `7f82405` to this docs commit): the log shows "Fetch answered issues" (expect "0 answered question(s), 0 known issue(s)" until issues are labelled) and every existing check passing. Then confirm the support page links to the three forms in a few languages, and that `/support/answered/` does not exist yet.
 1. **Owner: create the two labels** in forge-privacy (Issues → Labels → New label): `site-faq` ("Answer shown on doughnut-forge.app", `#1da1f2`) and `site-known-issue` ("Known issue shown on doughnut-forge.app", `#ff7a00`). On 24 October 2026 neither existed. Also open https://github.com/Darren-Corbett/forge-privacy/issues/new/choose signed in, and confirm it shows the three forms, "Report a security problem privately" and no blank issue (it needs a sign-in, so Claude could not see it).
@@ -69,18 +70,28 @@ Where the site work stands, and what comes next. Read this at the start of every
    - FreshCheck reloads once per new build ID. If that reload gets the old page (a CDN edge not caught up), the tab stays on it until the next deploy or a manual reload.
 11. **By 24 September 2027: renew `security.txt`.** Set `Expires` in `public/.well-known/security.txt` to one year from that day, and move this reminder a year on. The build fails from 24 September 2027 (30 days before the 24 October 2027 expiry) until it is renewed.
 
-## Weekly blog task (agreed 26 October 2026, not yet created)
+## Weekly blog draft: `/blog-draft` (26 October 2026)
 
-- **What:** a cloud routine, "Weekly blog draft", every Monday at 07:00 UTC (`0 7 * * 1`: 07:00 in winter, 08:00 in summer UK time), Opus 5.5, environment "Default", with the Claude Docs connector. It reads this repo (from GitHub) and the web, never the app repo, and never writes to the repo.
-- **Topic** (`docs/BLOG-TOPICS.md`): the past week's privacy or security news first, if it fits honestly; otherwise the next **approved** backlog topic; otherwise three proposals instead of a draft. Repeat rules and topical guardrails are in that file. The task also reads its own earlier draft docs, so a drafted topic is never picked again.
-- **Output:** one Claude Doc, "Blog draft: <title>", with a digest (why this topic, the repeat checks it ran), the post, a claims table checked live, and image notes. A push notification says it is ready, or why the week was skipped.
-- **The owner replies** by commenting on the doc, or in a Claude Code session:
-  - "publish": a session copies it into `src/content/blog/en/` as `draft: true`, adds the claims rows to `docs/BLOG-CLAIMS.md`, runs every check, shows the claims table, sets `draft: false` only on the owner's yes, and asks before the push;
-  - "bin": drop it, and return the topic to the backlog;
-  - "changes: ...": revise the draft in the doc for review again, without publishing.
+- **How it runs:** the owner types `/blog-draft` in this repo, about once a week. The project skill is `.claude/skills/blog-draft/SKILL.md`; it runs only when typed.
+- **Step 1, replies to earlier drafts.** It reads the comments on each earlier "Blog draft:" doc:
+  - "publish": copy the post into `src/content/blog/en/` as `draft: true`, add the claims rows to `docs/BLOG-CLAIMS.md`, build and test, show the claims table, set `draft: false` only on the owner's yes, update the log, and ask before the push;
+  - "bin": log it as binned, return a backlog topic to "approved", and retitle the doc;
+  - "changes: ...": revise the doc for review again, publishing nothing.
+- **Step 2, the topic** (`docs/BLOG-TOPICS.md`): the past week's privacy or security news first, if it fits honestly; otherwise the next "approved" backlog topic; otherwise three proposals. It runs the repeat checks against the log, every earlier draft doc and the posts.
+- **Step 3, the draft:** one Claude Doc, "Blog draft: <title>", with:
+  - a weekly note (why this topic, and every repeat check);
+  - the post;
+  - a claims table checked live;
+  - image notes;
+  - a footer explaining "publish", "bin" and "changes".
 
-  The session that publishes or bins a draft updates the log in `docs/BLOG-TOPICS.md`.
-- **Blocked:** saving it failed ("Connect your GitHub account before saving a scheduled task that uses a GitHub repository"). Create it once GitHub is connected and today's commits are pushed.
+  Writing rules: the launch-post rules, plus the topical guardrails.
+- **Step 4:** a one-line summary, also sent as a push notification when one is available.
+- **Cloud routine: on hold, waiting on a GitHub decision (owner, 26 October 2026).**
+  - The scheduled cloud routine "Weekly blog draft" was agreed: Mondays 07:00 UTC, Opus 5.5, the Claude Docs connector, read-only.
+  - It was not saved. A cloud routine clones the repo from GitHub, so it needs the owner's Claude account linked to GitHub. The server refused without that link ("Connect your GitHub account before saving a scheduled task that uses a GitHub repository").
+  - The owner has decided not to link GitHub for now, and to keep approving every push personally. `/blog-draft` does the same job, run by hand.
+  - If the owner links GitHub later (`/web-setup`, or https://claude.ai/connect-github), the routine can be saved with the same prompt as the skill. It must stay read-only: no commits, pushes or branches.
 
 ## Stale pages in iPhone Safari (25 October 2026)
 

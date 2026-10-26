@@ -1,6 +1,6 @@
 # Blog topics
 
-The weekly blog task (Mondays 07:00 UK time) reads this file to choose its topic. It reads this repo and the web, never the app repo, and **never writes to the repo**: each draft is a Claude Doc. The owner approves the backlog. Nothing is published without the owner's yes.
+The weekly blog draft, `/blog-draft` (`.claude/skills/blog-draft/SKILL.md`), run by the owner, reads this file to choose its topic. It reads this repo and the web, never the app repo. Each draft is a Claude Doc; drafting writes nothing to the repo. The owner approves the backlog. Nothing is published without the owner's yes.
 
 ## How a topic is chosen
 1. **News first.** Search the past week's news for a privacy or security story: data breaches, cloud leaks, privacy law changes, NCSC or NIST guidance, quantum computing news. If one fits honestly, explain it plainly, then show a genuine use case where Doughnut Forge helps, tied to one key point: offline, no servers, no account, a one-time purchase on each platform, post-quantum encryption, or private sharing.
@@ -12,7 +12,7 @@ The weekly blog task (Mondays 07:00 UK time) reads this file to choose its topic
 - Repeat a news story.
 - Write about the same feature two weeks running.
 - Reuse a main search phrase.
-- Choose without first checking the existing posts, the log below, **and the task's own earlier draft docs**. A topic drafted but not yet published or binned is taken, even though this file does not show it yet.
+- Choose without first checking the existing posts, the log below, **and every earlier draft doc**. A topic drafted but not yet published or binned is taken, even though this file does not show it yet.
 
 ## Topical posts
 - Use reputable sources only, each linked and checked live.
@@ -24,7 +24,7 @@ The weekly blog task (Mondays 07:00 UK time) reads this file to choose its topic
 All the launch-post rules apply too: true, checkable claims only (`docs/BLOG-CLAIMS.md`, `src/i18n/`); no security internals; no "we" and no contractions; no claim that the sender of a file is verified, and no claim of an outside audit. Prices come only from `src/data/prices.ts`, and are never "pay once" site-wide: the purchase is one-time on each platform. iPhone and iPad stay "coming soon" until the owner says the App Store listing is live. If nothing can be written truthfully, skip the week and tell the owner.
 
 ## Log
-Every post and every binned draft, newest last. The task cannot write here: **when the owner publishes or bins a draft, the session that does it updates this file**, adding the row, and marking the backlog topic taken (published) or returning it to **approved** (binned, if the owner wants it tried again).
+Every post and every binned draft, newest last. Drafting does not write here: **when the owner publishes or bins a draft, the `/blog-draft` run or session that does it updates this file**, adding the row, and marking the backlog topic taken (published) or returning it to **approved** (binned, if the owner wants it tried again).
 
 | Date | Title | News story | Feature | Use case | Main search phrase | Status |
 |---|---|---|---|---|---|---|
