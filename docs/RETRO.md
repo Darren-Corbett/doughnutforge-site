@@ -23,3 +23,30 @@ The work: stale iPhone Safari pages (FreshCheck and `/build.json`), the content-
 - `npm run check:reproducible` (`scripts/check-reproducible.mjs`, tested in `tests/checks/`), with a CLAUDE.md rule on when to run it.
 - CLAUDE.md commit rule now "Commit freely on main; ask before every push." `.claude/settings.json` allows `git commit` and asks for `git push`.
 - The review's Should fix items 1 and 2 and the FreshCheck note are in HANDOVER "What is next" for the owner to decide.
+
+## 22–24 October 2026, the launch work (`ee042f8..b48a193`), written 26 October
+
+The 25 October entry covered only that day. These are the launch days' three main misses, each already fixed at the time; this entry records why they happened and what was added on 26 October.
+
+**Went wrong, and why:**
+1. **`apple-app-site-association` was missing for 42 minutes** (23 October, 13:13 to 13:55 UTC). `actions/upload-pages-artifact` leaves out names starting with a dot, so `.well-known/` and `.nojekyll` never reached Pages. Every check read `dist/`, where the file existed. Nothing compared what was uploaded or live with the build until after launch, and the checklist's curl ran after the switch. Fixed in `42fb02c` (hidden files included, plus a live check after the deploy). That check still runs only after the site is live.
+2. **Safari-only bugs reached the owner's iPhone first.** Before the 24 October audit, layout tests ran on desktop Chromium and desktop WebKit only. Display Zoom at 320px (H3), the German FAQ pan (H4), stale tabs restored by Safari, and the hidden Mac badge were all phone-Safari behaviour. "Responsive" had been checked as a narrow desktop window, not as a phone. Since then: the `webkit-iphone` project at 320 to 430px, the real Mobile Safari script, and the WebKit iPhone deploy and blocker tests.
+3. **`/roadmap/` and `/security/` were missing from `translatedPages`** (`f3a577d`): no hreflang links, and the language menu went to each language's home page. Adding a page needs a hand-written entry in `src/i18n/alternates.ts`, and the hreflang check compared only the links that existed. Caught about 40 minutes later; fixed in `09a141c`, with a guard in `ae161ce`.
+
+**Agreed (owner, 26 October 2026):**
+- The deploy checks the uploaded archive before publishing: `scripts/check-artifact.mjs` fails unless it holds every built file, dotfiles included (`be191f9` tests, `28bc8fe` check).
+- CLAUDE.md: after any change to how the site is built, uploaded or hosted, check the files the apps depend on at their live URLs before calling it done.
+- CLAUDE.md "Before saying a change is done": run the layout tests in WebKit with the iPhone profile, at 320px as well.
+- Not taken: re-running real Mobile Safari before layout pushes; deriving `translatedPages` from the built pages (the `ae161ce` guard stays).
+
+## 26 October 2026: the hidden Mac badge, corrected
+
+**Correction:** the 25 October entry (item 1) and HANDOVER called the rule hiding the Mac badge "the owner's AdGuard rule". The owner has confirmed it is AdGuard for Safari's default behaviour, with no user rules. The cause is not identified, and the owner has stopped the search.
+
+**Why the 25 October check missed it, and why the published lists could not find it:**
+1. **A guess was accepted without being checked.** Every public list came up empty, and Claude concluded "so it must be a private rule". The owner then deleted a rule, the badge came back, and that was recorded as confirmation, but nobody checked that AdGuard had no user rules at all, or that the badge stayed back. An empty result showed only that Claude's own test could not see the cause; it did not prove the cause was private.
+2. **The test did not run AdGuard.** It parsed the lists with Ghostery's engine. AdGuard for Safari does not apply its lists as written: it converts them into Safari content-blocker rules (with limits on rule count and selector syntax, and rewriting of domains and `:has()`), and adds an advanced-protection layer (extended CSS, scriptlets) in its own extension. What actually runs on the iPhone is the converted rule set, which is not published. On 26 October, AdGuard's own filter builds, run through its own extended-CSS engine, and the Mac's compiled Safari rules (from December 2025) still matched nothing.
+3. **Lists differ by device and over time.** The phone's lists come from its own last update and its AdGuard version. A test run hours later on another machine is not the phone's rule set.
+4. **No real-device check.** No test runs Safari with AdGuard installed: the iOS Simulator cannot install it, and this repo has no other access to the owner's phone.
+
+**Agreed (owner, 26 October 2026):** assume blockers hide store badges in ways no one can predict or reproduce. The site shows a second branded badge, then a text link, whatever the cause. It is tested by simulating every way of hiding a badge in WebKit (iPhone) and Chromium, not by any blocker's rules. The daily public-list check stays as it is, with no AdGuard-specific check.

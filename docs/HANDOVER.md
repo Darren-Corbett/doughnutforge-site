@@ -93,19 +93,19 @@ Where the site work stands, and what comes next. Read this at the start of every
   - a live WebKit iPhone visit made one load and two checks, with no reload and no errors.
 - **Settled (owner, 25 October 2026):** the first ID included the build time, so the daily rebuild made every open tab reload once a day for nothing. It is now a content hash; see "Build ID from the content" below.
 - **Limit: pages saved before the fix cannot update themselves.** The check is part of each page, so a tab still showing a page from before `cc1ccc2` (25 October 2026) needs one manual reload; after that it updates itself after every deploy. An earlier note here said old tabs would switch by themselves, which was wrong.
-- **Correction (25 October 2026):** a note in `a3017b9` said the owner's iPhone still showed Friday's `/pricing/` because its Mac badge was missing. That was wrong: the page was current, and an AdGuard rule hid the badge (see "Content blockers on phones").
+- **Correction (25 October 2026):** a note in `a3017b9` said the owner's iPhone still showed Friday's `/pricing/` because its Mac badge was missing. That was wrong: the page was current, and AdGuard's default behaviour hid the badge (see "Content blockers on phones").
 - **Confirmed:** a deploy that changed no site file (run 40194019642, the docs commit `9bd8524`) kept the build ID `be46717c11f5cf72`, and every check passed.
 
 
-## Content blockers on phones (25 October 2026)
+## Content blockers on phones (25 and 26 October 2026)
 
-- **What happened:** AdGuard on the owner's iPhone hid the Mac App Store badge on `/` and `/pricing/`. "Reload Without Content Blockers" brought it back. The same symptom was audit finding M3 on launch day.
-- **No public list does it.** A filter engine (`@ghostery/adblocker`, dev only) ran 536 lists against every page, as an iPhone (WebKit) and an Android phone (Chromium), and found nothing hidden, blocked or injected. The lists:
-  - every list in AdGuard's iPhone, Safari and Android registries;
-  - EasyList, EasyPrivacy, Fanboy's annoyance, social and cookie lists;
-  - uBlock Origin's defaults and annoyances, Brave's, and Peter Lowe's.
+- **What happened:** AdGuard for Safari on the owner's iPhone hides the Mac App Store badge on `/` and `/pricing/`. "Reload Without Content Blockers" brings it back. The same symptom was audit finding M3 on launch day.
+- **Correction (owner, 26 October 2026):** it is **AdGuard's default behaviour, with no user rules involved**. An earlier note here said it was a user rule the owner deleted; that was wrong. On 26 October the owner's iPhone, on AdGuard's default settings, still showed the text link instead of the badge.
+- **Cause: not identified, and no longer pursued (owner, 26 October 2026).** None of these hides it:
+  - 25 October: 536 public lists (every list in AdGuard's iPhone, Safari and Android registries, EasyList, EasyPrivacy, Fanboy's, uBlock Origin's, Brave's and Peter Lowe's), run on every page through `@ghostery/adblocker` as an iPhone and an Android phone;
+  - 26 October: every rule from AdGuard's own Safari and iOS builds of its default and annoyance filters that applies to the site (17,216 selectors, extended CSS included, read with AdGuard's ExtendedCss in WebKit), their network rules, and the rules AdGuard for Safari had compiled on the owner's Mac.
 
-  The site also loads nothing from any other site, so domain tracker lists (Firefox, Edge, DuckDuckGo) have nothing to block. The rule was a **user rule in the owner's AdGuard** (Safari protection › User rules). Confirmed 25 October 2026: once the owner deleted it, the badge showed again.
+  Why the published lists cannot show it: see `docs/RETRO.md`, 26 October. **The site now assumes blockers hide store badges in ways no one can predict, and works around any of them.**
 - **What phone browsers block:**
   - Safari: content blockers (AdGuard, 1Blocker, Wipr, Ghostery);
   - Brave: built in;
@@ -113,16 +113,23 @@ Where the site work stands, and what comes next. Read this at the start of every
   - Samsung Internet: AdGuard or Adblock Plus plug-ins;
   - DuckDuckGo, Firefox for iOS, Edge, Vivaldi, Opera: tracker or ad lists;
   - Chrome: no user blocking.
-- **Fix (`3cc8cde`):**
-  - **Fallback:** every store badge carries a hidden link in the badge's own wording (`StoreBadge.astro`). `StoreFallback.astro` shows it when the badge is not drawn: its link, image or container hidden, or the link removed, at load or up to 4 seconds later. If the container is hidden, the link moves out after it. Without a blocker nothing changes.
-  - **`/get/<store>/<language>/`:** the fallback link goes here, and the page forwards at once to the same store page as the badge. There are 60 of these pages (2 stores × 30 languages); they are noindex, have no social image (`check-og` skips forwarding pages) and are not in the sitemap. On iPhone the App Store may open as Apple's web page, because the visit comes through a forwarding page; normal badge taps are unchanged.
-  - **Names:** the cards' `badge` wrapper is now `buy`, and the blog's check icon is Lucide's artwork as `verified-check` (`src/components/blog/icons.ts`). `check-blocker-names.mjs` fails the build on class, id or built-file names with words blockers hide (badge, banner, ad, promo, sponsor, popup, social). Private lists (1Blocker, Wipr) cannot be tested; avoiding these words lowers the chance that they match, and the fallback link covers whatever they hide.
+- **The fix, three layers per badge** (`src/components/StoreBadge.astro`, `src/components/StoreFallback.astro`):
+  1. **The official badge**, linking straight to the store. Visitors without a blocker see only this, exactly as before.
+  2. **A second branded badge**, shown in its place when the first is not drawn for any reason: hidden, zero size, invisible, removed, its container hidden, or its image blocked, at load, later, or when an image fails. It is the same official file, byte for byte, served as `/s/<first 12 hex of its SHA-256>.svg` (`src/pages/s/[name].svg.ts`, built for every store's artwork). It has an empty `alt`, the badge's wording as screen-reader text, and neutral names (`get-art`, `data-get`), so nothing in it says store, badge, app or download. It opens `/get/<store>/<language>/` in a new tab (`44c25cd`, 26 October).
+  3. **The plain text link** in the badge's wording, to the same `/get/` page, only if the second badge is not drawn either. Only the wording is marked `lang="en"`, so its "(opens in a new tab)" note is read in the page's language.
+
+  If the badges' container is hidden, the fallbacks move out to just after it.
+- **`/get/<store>/<language>/`:** forwards at once to the same store page as the badge. It has a `main`, an `h1` (the badge wording) and a link to tap, the store's name, at least 44px tall. There are 60 of these pages (2 stores × 30 languages): noindex, no social image (`check-og` skips forwarding pages), not in the sitemap. On iPhone the App Store may open as Apple's web page, because the visit comes through a forwarding page; normal badge taps are unchanged.
+- **Names:** `check-blocker-names.mjs` fails the build on class, id or built-file names with words blockers hide (badge, banner, ad, promo, sponsor, popup, social).
 - **Guards:**
-  - `npm run test:blockers` (`tests/blockers/`): `lists.spec.ts` runs every list on every page in both phone browsers, with a self-test that a known rule is found. `fallback.spec.ts` simulates hiding by address, image, container, removal and late hiding on six pages.
-  - The lists are downloaded fresh and cached 12 hours in `test-results/blocker-lists/`; 8 million lines are de-duplicated to 1.3 million rules.
-  - **Daily** `.github/workflows/blockers.yml` (07:41 UTC) runs it apart from the deploy: a new rule fails that run and GitHub emails the owner, but the deploy is never blocked.
-- **Results:** lists 614/614, fallback 76/76 (152/152 run twice), checks 28/28, deploy 16/16, layout 1976/1976, Lighthouse 100 in every category on mobile and desktop.
-- **Deploy:** run 40199633051 passed every check. Live, with Apple links hidden, WebKit iPhone shows "Download on the Mac App Store" as a link; without a blocker it shows the badge and no fallback.
+  - `tests/blockers/fallback.spec.ts` (WebKit as an iPhone 13 and Chromium as a Pixel 7) simulates every way of hiding a badge on six pages, without relying on any blocker's rules:
+    - each one must show the second badge (drawn, the official file byte for byte, neutral names, new tab, the right accessible name) and no text link;
+    - hiding both badges must show the text link;
+    - also covered: the text link's `lang`, the `/get/` page's `main`, `h1` and 44px link, and that the iPhone and iPad artwork is built.
+  - `tests/blockers/lists.spec.ts` (unchanged) runs every public list on every page.
+  - The lists are downloaded fresh and cached 12 hours in `test-results/blocker-lists/`.
+  - **Daily** `.github/workflows/blockers.yml` (07:41 UTC) runs both apart from the deploy: a failure emails the owner but never blocks a deploy. No AdGuard-specific check (owner, 26 October 2026).
+- **iPhone and iPad:** when App Review approves 0.4.44, the switch is one line in `src/data/stores.ts`; see "What is next".
 - **Running tests locally:** `astro preview` now starts in the background and its command exits at once, which Playwright reads as a failed web server. Start it first (`npx astro preview --port 4329`) and the tests reuse it.
 
 ## Build ID from the content (25 October 2026)
