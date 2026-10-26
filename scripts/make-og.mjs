@@ -8,18 +8,23 @@
 // The English home page keeps public/og/default.png from scripts/sync-from-app.mjs.
 //
 // Other languages: <out>/<language folder>/<page>.png, one per page including the
-// home page (default.png). These are not committed: the deploy makes them after
-// `astro build` with Noto fonts installed (.github/workflows/deploy.yml), and
-// `npm run build:preview` makes them locally with the Mac's own fonts:
+// home page (default.png). These are not committed: the deploy (`npm run
+// build:deploy`) and `npm run build:preview` make them after `astro build`:
 //
 //   node scripts/make-og.mjs --langs translations --out dist/og
 //
 // Pages point at these images only when the site is built with OG_IMAGES=all.
+//
+// Fonts: the Noto fonts in build-fonts/ and no others, on every machine
+// (scripts/og-fonts.mjs), so the images look the same in the deploy and on a Mac
+// and nothing is downloaded. Before drawing, every title is checked against its
+// fonts; a character none of them has stops the run, naming it. `--fonts <dir>`
+// uses another folder with its own fonts.conf (for tests).
 
 import { existsSync, mkdirSync, readdirSync, readFileSync } from "node:fs";
-import { join } from "node:path";
+import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
-import sharp from "sharp";
+import { DEFAULT_FONTS, LATIN, familiesFor, loadFonts, missingGlyphs, useBuildFonts } from "./og-fonts.mjs";
 
 const SITE = new URL("..", import.meta.url).pathname;
 const args = process.argv.slice(2);
@@ -30,7 +35,13 @@ const langArg = arg("--langs", "en");
 // "translations" is every language but English, whose images are committed
 const langs =
   langArg === "all" ? languages : langArg === "translations" ? languages.filter((l) => l.code !== "en") : languages.filter((l) => langArg.split(",").includes(l.code));
-const OUT = join(SITE, arg("--out", "public/og"));
+// Relative to the repo; an absolute folder stays as given
+const OUT = resolve(SITE, arg("--out", "public/og"));
+const FONT_DIR = resolve(SITE, arg("--fonts", DEFAULT_FONTS));
+
+// fontconfig reads its settings when sharp first draws text: point it at the build fonts before loading sharp
+useBuildFonts(FONT_DIR);
+const { default: sharp } = await import("sharp");
 
 const readJson = (path) => JSON.parse(readFileSync(join(SITE, path), "utf8"));
 const loadUi = async (code) => (await import(pathToFileURL(join(SITE, "src/i18n/ui", `${code}.ts`)).href)).default;
@@ -65,16 +76,9 @@ if (existsSync(blogDir)) {
   }
 }
 
-// Fonts: Noto in the deploy (Linux), the Mac's own fonts when made locally
-const FONTS = {
-  ja: "Noto Sans CJK JP, Hiragino Sans, sans-serif",
-  "zh-CN": "Noto Sans CJK SC, PingFang SC, sans-serif",
-  "zh-TW": "Noto Sans CJK TC, PingFang TC, sans-serif",
-  ko: "Noto Sans CJK KR, Apple SD Gothic Neo, sans-serif",
-  th: "Noto Sans Thai, Thonburi, sans-serif",
-  hi: "Noto Sans Devanagari, Kohinoor Devanagari, sans-serif",
-};
-const LATIN = "Helvetica Neue, Noto Sans, Arial, sans-serif";
+// The font-family list for a language's titles, and for the "Doughnut Forge" line
+const fontList = (lang) => familiesFor(lang).join(", ");
+const BRAND = LATIN.join(", ");
 
 const escape = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
@@ -120,7 +124,7 @@ const wrap = (text, lang, max) => {
 const icon = await sharp(ICON).resize(150).png().toBuffer();
 
 const make = async (title, lang, path) => {
-  const font = FONTS[lang] ?? LATIN;
+  const font = fontList(lang);
   // Shorter titles get larger text; long titles get up to four lines
   let size = width(title) <= 20 ? 92 : width(title) <= 44 ? 72 : 58;
   let lines = wrap(title, lang, Math.floor(1020 / (size * 0.52)));
@@ -128,12 +132,12 @@ const make = async (title, lang, path) => {
     size -= 6;
     lines = wrap(title, lang, Math.floor(1020 / (size * 0.52)));
   }
-  const lineHeight = Math.round(size * (FONTS[lang] ? 1.3 : 1.1));
+  const lineHeight = Math.round(size * (familiesFor(lang) !== LATIN ? 1.3 : 1.1));
   const top = 330 - ((lines.length - 1) * lineHeight) / 2;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <rect width="1200" height="630" fill="#15202b"/>
   <rect x="0" y="606" width="1200" height="24" fill="#1da1f2"/>
-  <text x="270" y="140" font-family="${LATIN}" font-size="44" font-weight="800" fill="#4cb5f5">Doughnut Forge</text>
+  <text x="270" y="140" font-family="${BRAND}" font-size="44" font-weight="800" fill="#4cb5f5">Doughnut Forge</text>
   ${lines
     .map(
       (line, i) =>
@@ -147,6 +151,25 @@ const make = async (title, lang, path) => {
     .toFile(path);
   console.log(`wrote ${path.replace(SITE, "")}`);
 };
+
+// Every title, checked against its fonts before anything is drawn
+const jobs = [];
+for (const lang of langs) {
+  for (const [name, title] of Object.entries(await titles(lang.code))) jobs.push({ lang, name, title });
+  if (lang.code === "en") for (const [slug, title] of Object.entries(posts)) jobs.push({ lang, name: `blog/${slug}`, title });
+}
+const fonts = loadFonts(FONT_DIR);
+const problems = [];
+if (missingGlyphs(fonts, LATIN, "Doughnut Forge").length) problems.push(`"Doughnut Forge": no ${LATIN.join(", ")} in ${FONT_DIR}`);
+for (const { lang, name, title } of jobs) {
+  const missing = missingGlyphs(fonts, familiesFor(lang.code), title);
+  if (missing.length) problems.push(`${lang.code} ${name}: missing ${missing.join(" ")} in "${title}" (fonts: ${familiesFor(lang.code).join(", ")})`);
+}
+if (problems.length) {
+  console.error(`make-og: these characters are in no font in ${FONT_DIR}, so they would draw as empty boxes:\n  ${problems.join("\n  ")}`);
+  process.exit(1);
+}
+console.log(`make-og: every title's characters are in build-fonts (${jobs.length} images)`);
 
 for (const lang of langs) {
   const dir = lang.code === "en" ? OUT : join(OUT, lang.path);

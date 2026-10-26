@@ -11,6 +11,9 @@
 # forge-privacy's public issues with no token (scripts/fetch-issues.mjs), and if
 # that fails the build uses the committed src/data/issues.json. Store badges, app
 # strings and the privacy policy are committed copies, and no step calls a store.
+# The fonts for the social preview images are committed in build-fonts/
+# (scripts/og-fonts.mjs), so no step downloads fonts: on 26 October 2026 the apt
+# download of the CJK fonts stalled three times and failed the deploy.
 name: Deploy site
 
 on:
@@ -46,23 +49,6 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      # Fonts for the social preview images in every language (scripts/make-og.mjs).
-      # Build tools only: the site itself never serves a font.
-      # GitHub's mirror sometimes stalls on the 61 MB CJK font download (twice on
-      # 26 October 2026). apt drops a download that goes silent for 30 seconds and
-      # tries again, up to five times; if it still cannot finish, the step fails
-      # after ten minutes instead of hanging for GitHub's six-hour job limit.
-      - name: Install Noto fonts
-        timeout-minutes: 10
-        run: >-
-          sudo apt-get update -o Acquire::http::Timeout=30 -o Acquire::Retries=5 &&
-          sudo apt-get install -o Acquire::http::Timeout=30 -o Acquire::Retries=5 -y --no-install-recommends fonts-noto-core fonts-noto-cjk fontconfig
-      - name: Check the fonts are found
-        run: |
-          for font in "Noto Sans" "Noto Sans CJK JP" "Noto Sans CJK SC" "Noto Sans CJK TC" "Noto Sans CJK KR" "Noto Sans Thai" "Noto Sans Devanagari"; do
-            found=$(fc-match -f '%{family}' "$font")
-            case "$found" in *"$font"*) echo "ok: $font" ;; *) echo "missing: $font (got $found)"; exit 1 ;; esac
-          done
       # The issues the owner has labelled for the site. Public, so no token; on any
       # failure it keeps the committed data and the build goes on.
       - name: Fetch answered issues
