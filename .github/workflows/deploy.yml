@@ -48,11 +48,15 @@ jobs:
       - run: npm ci
       # Fonts for the social preview images in every language (scripts/make-og.mjs).
       # Build tools only: the site itself never serves a font.
-      # A stuck download fails the run after ten minutes instead of hanging it
-      # for GitHub's six-hour job limit (apt-get hung here on 26 October 2026)
+      # GitHub's mirror sometimes stalls on the 61 MB CJK font download (twice on
+      # 26 October 2026). apt drops a download that goes silent for 30 seconds and
+      # tries again, up to five times; if it still cannot finish, the step fails
+      # after ten minutes instead of hanging for GitHub's six-hour job limit.
       - name: Install Noto fonts
         timeout-minutes: 10
-        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends fonts-noto-core fonts-noto-cjk fontconfig
+        run: >-
+          sudo apt-get update -o Acquire::http::Timeout=30 -o Acquire::Retries=5 &&
+          sudo apt-get install -o Acquire::http::Timeout=30 -o Acquire::Retries=5 -y --no-install-recommends fonts-noto-core fonts-noto-cjk fontconfig
       - name: Check the fonts are found
         run: |
           for font in "Noto Sans" "Noto Sans CJK JP" "Noto Sans CJK SC" "Noto Sans CJK TC" "Noto Sans CJK KR" "Noto Sans Thai" "Noto Sans Devanagari"; do
