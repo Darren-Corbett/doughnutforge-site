@@ -48,7 +48,7 @@ Where the site work stands, and what comes next. Read this at the start of every
      - GitHub's status page lists no Actions incident on 24 to 26 October.
 
      No cause in the repo. GitHub documents scheduled runs as best effort (delayed, sometimes dropped, under load), but the scheduler's queue is not visible from outside, so this is not proven.
-   - **Since 26 October** the blocker check also runs on every push to `main` (`eed6653` test, then the trigger change), so each change is checked even if the schedule slips. The daily deploy only matters for newly labelled answered issues; every push deploys anyway.
+   - **Later on 26 October** the blocker workflow was removed (owner): the blocker tests no longer run in CI, only by hand with `npm run test:blockers`. The daily deploy only matters for newly labelled answered issues; every push deploys anyway.
    - If schedules keep slipping or vanishing for several days, record it here and consider whether the daily runs are worth keeping.
 0. **Weekly blog draft:** the owner runs `/blog-draft`. The cloud routine is on hold until the owner decides about linking GitHub; see "Weekly blog draft: `/blog-draft`".
 0. **Blog backlog approved:** the owner approved all 10 topics in `docs/BLOG-TOPICS.md` (26 October 2026), so `/blog-draft` can draft from it.
@@ -184,7 +184,7 @@ Where the site work stands, and what comes next. Read this at the start of every
   - Lighthouse on the home page: 100 in every category, mobile and desktop.
   - `tests/blockers/lists.spec.ts` (unchanged) runs every public list on every page.
   - The lists are downloaded fresh and cached 12 hours in `test-results/blocker-lists/`.
-  - `.github/workflows/blockers.yml` runs both **on every push to `main`, daily (07:41 UTC) and by hand**, apart from the deploy, in its own concurrency group: a failure emails the owner but never blocks or delays a deploy, and a newer push replaces a run still going. No AdGuard-specific check (owner, 26 October 2026).
+  - Both run **by hand only**, with `npm run test:blockers`: no CI workflow runs them (owner, 26 October 2026; `.github/workflows/blockers.yml` removed, and `tests/deploy/check-live-deploy.spec.ts` checks no workflow brings them back). No AdGuard-specific check.
 - **iPhone and iPad:** when App Review approves 0.4.44, the switch is one line in `src/data/stores.ts`; see "What is next".
 - **Running tests locally:** `astro preview` now starts in the background and its command exits at once, which Playwright reads as a failed web server. Start it first (`npx astro preview --port 4329`) and the tests reuse it.
 

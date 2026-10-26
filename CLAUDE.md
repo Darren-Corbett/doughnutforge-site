@@ -1,5 +1,7 @@
 # Doughnut Forge website
 
+CI is lean. Never add a GitHub Action, scheduled job or new CI step without saying what it costs (runs and minutes per month) and why a local check is not enough, and getting my yes first.
+
 Marketing and support site for Doughnut Forge, an offline-first encryption app for Mac, Windows, Linux, iPhone and iPad (Android coming). Hosted on GitHub Pages at doughnut-forge.app.
 
 The app repo is at ~/git/doughnut-forge. Read it for style, copy and languages. Never edit it from this repo.
