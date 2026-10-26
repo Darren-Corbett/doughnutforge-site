@@ -63,3 +63,16 @@ test("fails when the archive cannot be read", async () => {
   const result = await exec(["--tar", join(dist, "missing.tar"), "--dist", dist]);
   expect(result.code).toBe(1);
 });
+
+test("fails when the build has no apple-app-site-association, so it cannot pass with nothing to check", async () => {
+  const empty = mkdtempSync(join(tmpdir(), "dist-"));
+  const emptyResult = await exec(["--tar", await pack(empty, ["."]), "--dist", empty]);
+  expect(emptyResult.code, "an empty build").toBe(1);
+  expect(emptyResult.output).toContain(".well-known/apple-app-site-association");
+
+  const dist = mkdtempSync(join(tmpdir(), "dist-"));
+  writeFileSync(join(dist, "index.html"), "<p>home</p>");
+  const result = await exec(["--tar", await pack(dist, ["."]), "--dist", dist]);
+  expect(result.code, "a build without the apps' file").toBe(1);
+  expect(result.output).toContain(".well-known/apple-app-site-association");
+});
