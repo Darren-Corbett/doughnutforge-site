@@ -19,6 +19,12 @@ name: Deploy site
 on:
   push:
     branches: [main]
+    # Changes that do not affect the built site start no run (the daily run and the button still do)
+    paths-ignore:
+      - "docs/**"
+      - "tests/**"
+      - "**/*.md"
+      - ".claude/**"
   # Daily, for the answered issues (GitHub turns this off after 60 days with no
   # activity in the repo; turn it back on under Actions)
   schedule:
