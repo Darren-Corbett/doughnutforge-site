@@ -48,7 +48,10 @@ jobs:
       - run: npm ci
       # Fonts for the social preview images in every language (scripts/make-og.mjs).
       # Build tools only: the site itself never serves a font.
+      # A stuck download fails the run after ten minutes instead of hanging it
+      # for GitHub's six-hour job limit (apt-get hung here on 26 October 2026)
       - name: Install Noto fonts
+        timeout-minutes: 10
         run: sudo apt-get update && sudo apt-get install -y --no-install-recommends fonts-noto-core fonts-noto-cjk fontconfig
       - name: Check the fonts are found
         run: |
