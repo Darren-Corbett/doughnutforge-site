@@ -33,8 +33,8 @@ export default {
   "home.specimen.cipherLabel": "The same note, encrypted: unreadable random characters.",
   "home.specimen.caption": "An illustration: real encrypted files hold far more characters than this.",
 
-  "home.phones.title": "Coming soon to iPhone and iPad.",
-  "home.phones.text": "Available now for Mac and Windows.",
+  "home.phones.title": "Now on iPhone and iPad.",
+  "home.phones.text": "Also available for Mac and Windows.",
   "home.phones.altText": "Doughnut Forge on iPhone: the Secure Text screen with a note ready to encrypt",
   "home.phones.altFile": "Doughnut Forge on iPhone: the Secure File screen with Encrypt File and Decrypt File",
   "home.phones.altIdentity": "Doughnut Forge on iPhone: the Identity screen with a contact card to share",
@@ -84,9 +84,9 @@ export default {
   "pricing.questionsLink": "See the answers on the support page",
 
   // Download page
-  "meta.download.title": "Download Doughnut Forge for Mac and Windows",
+  "meta.download.title": "Download Doughnut Forge for Mac, Windows, iPhone and iPad",
   "meta.download.description":
-    "Get Doughnut Forge from the Mac App Store or the Microsoft Store. Versions for iPhone and iPad, Linux and Android are coming soon.",
+    "Get Doughnut Forge from the Mac App Store, the Microsoft Store or the App Store for iPhone and iPad. Versions for Linux and Android are coming soon.",
   "download.title": "Download Doughnut Forge",
   "download.requires.mac": "Needs macOS 12 Monterey or later.",
   "download.requires.windows": "Needs Windows 11.",
@@ -189,7 +189,7 @@ export default {
   "press.icons.dark": "App icon, square, dark",
   "press.icons.mono": "App icon, mono",
   "press.shots.title": "Screenshots",
-  "press.shots.text": "These show the iPhone and iPad app, which is coming soon.",
+  "press.shots.text": "These show the iPhone and iPad app.",
   // {device} is iPhone or iPad, {screen} the app's name for the screen
   "press.shots.label": "{device}: {screen}",
   "press.download": "PNG, {width} × {height}",
@@ -219,7 +219,9 @@ export default {
   "roadmap.planned": "Planned",
   "roadmap.identity.title": "Identity protection",
   "roadmap.identity.text":
-    "An update that keeps every identity safe, so it can never be lost, replaced or left readable. On Mac, Windows, iPhone and iPad.",
+    "An update that keeps every identity safe, so it can never be lost, replaced or left readable. On Mac, iPhone and iPad.",
+  "roadmap.identityWindows.title": "Identity protection for Windows",
+  "roadmap.identityWindows.text": "The same update for Windows.",
   "roadmap.stricter.title": "Stricter protection",
   "roadmap.stricter.text": "Further protection updates that make the app stricter about what it accepts. Nothing changes for your data.",
   "roadmap.android.title": "Doughnut Forge for Android",

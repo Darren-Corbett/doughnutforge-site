@@ -41,7 +41,7 @@ Not claimed: the "Delete Original File" toggle (hidden behind a feature flag tha
 |---|---|---|
 | 2.1 | Doughnut Forge encrypts files on your device | `mobile-views.json:41`; store `description.txt` |
 | 2.2 | You can keep the locked file on your device, in cloud storage, or send it however you like; only the chosen people can open it | `mobile-guides.json:37`; store ("However you send them, only they can open them.") |
-| 2.3 | iPhone screenshot: files are encrypted and decrypted on the device, nothing is uploaded; the iPhone app is coming soon | `mobile-views.json:41`; screenshot `fastlane/screenshots/ios/en-GB/iphone_01_secure_file.png`; site `home.phones.title`, `press.shots.text` |
+| 2.3 | iPhone screenshot: files are encrypted and decrypted on the device, nothing is uploaded | `mobile-views.json:41`; screenshot `fastlane/screenshots/ios/en-GB/iphone_01_secure_file.png`; App Store lookup `itunes.apple.com/lookup?id=6821344597` (iPhone and iPad app, live 27 October 2026) |
 | 2.4 | Losing both password and 24-word backup phrase means identity and files cannot be recovered; no server copy | `mobile-guides.json:25`; `identity.json:16`; `mobile-guides.json:10` |
 | 2.5 | No account, no servers, no tracking; works entirely on your device, even without an internet connection | store `description.txt`, second paragraph |
 | 2.6 | Password and keys are never stored on a server or sent across the network | `mobile-guides.json:10` |
@@ -94,7 +94,7 @@ Not claimed: that signatures are post-quantum (they are not); "quantum-proof" or
 | 4.8 | Each contact has a short contact code; compare it with the code on the person's own Identity screen, in person or on a call | Mac `release_notes.txt`; `contact_code.rs:3-5`; `contacts.json:94-97` |
 | 4.9 | Only add cards received directly; a card that does not match an existing contact is refused | `mobile-views.json:177`; `contact.rs:68-71`; `errors.json:66` |
 | 4.10 | "Who can open this?": select one or several contacts; you are always included too | `secure-directory.json:35-37`; `writer.rs:161` (`let mut recipients = vec![Contact::from_keys(&my_keys)]`) |
-| 4.11 | On a computer the locked `.vlt2` file appears next to the original; in the iPhone and iPad app (coming soon) the share sheet opens | `writer.rs:286-290`; `mobile_vault.rs:87-88`; `secure-file.json:24` |
+| 4.11 | On a computer the locked `.vlt2` file appears next to the original; in the iPhone and iPad app the share sheet opens | `writer.rs:286-290`; `mobile_vault.rs:87-88`; `secure-file.json:24`; App Store lookup `itunes.apple.com/lookup?id=6821344597` (iPhone and iPad app, live 27 October 2026) |
 | 4.12 | The locked file does not show who can open it; only those it was encrypted for can unlock it | Mac `release_notes.txt` ("Encrypted files now keep the sender and the recipients private."); `writer.rs` (key slots name nobody); `errors.json:21-22` |
 | 4.13 | Send it any way (email, messaging app, cloud folder, USB stick); only the chosen people can open it | store ("However you send them, only they can open them"); `mobile-guides.json:37`; site `faq.share.a` |
 | 4.14 | The recipient decrypts with their own identity; no file password | store ("They open them with their own identity"); `vault.rs:340` (no file passwords exist) |
@@ -102,7 +102,7 @@ Not claimed: that signatures are post-quantum (they are not); "quantum-proof" or
 | 4.16 | "Unknown Sender Detected": the file still opens, but the app cannot match the sender to one of your contacts | `secure-directory.json:60`; `reader.rs:181-182` |
 | 4.17 | Folders encrypted on a computer cannot be opened on iPhone or iPad | `mobile_vault.rs:135, 162` |
 | 4.18 | Losing the backup phrase and password means files sent to you cannot be opened | `mobile-guides.json:25`; `mobile-views.json:126` |
-| 4.19 | Screenshots of the Identity and Contacts screens are from the iPhone app, which is coming soon | `fastlane/screenshots/ios/en-GB/iphone_05_identity.png`, `iphone_03_contacts.png`; site `home.phones.title` |
+| 4.19 | Screenshots of the Identity and Contacts screens are from the iPhone app | `fastlane/screenshots/ios/en-GB/iphone_05_identity.png`, `iphone_03_contacts.png`; App Store lookup `itunes.apple.com/lookup?id=6821344597` (iPhone and iPad app, live 27 October 2026) |
 | R4.1 | *Reasoning:* the usual advice to send a password separately, and why that is fragile | general advice, no external fact |
 
 Not claimed: QR codes; pasting a contact ID; that the app shows who sent a file; password-only sharing; that a Mac-made file opens on Windows (no test found).

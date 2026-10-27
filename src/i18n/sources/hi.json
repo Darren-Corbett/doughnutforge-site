@@ -200,12 +200,12 @@
     "text": "0a6a60920820"
   },
   "home.phones.text": {
-    "en": "abcd317a0c23",
-    "text": "e438693f8ad5"
+    "en": "6c53aebf64ab",
+    "text": "dbc5bd550398"
   },
   "home.phones.title": {
-    "en": "e8ffdfdfc35f",
-    "text": "5518f7d7961e"
+    "en": "6c0cb70958b5",
+    "text": "455faf1170f6"
   },
   "home.pricing.text": {
     "en": "f640ff4b8fab",
@@ -276,12 +276,12 @@
     "text": "a3a49acf997a"
   },
   "meta.download.description": {
-    "en": "db2909b9894d",
-    "text": "78b8ba056d37"
+    "en": "eeab325733ce",
+    "text": "a300f69ec209"
   },
   "meta.download.title": {
-    "en": "05f82d3a1ae6",
-    "text": "0c270425ba45"
+    "en": "e30c198676a5",
+    "text": "1cc27bb2b8e8"
   },
   "meta.features.description": {
     "en": "5f0f52728c20",
@@ -488,8 +488,8 @@
     "text": "8cea17a1f97c"
   },
   "press.shots.text": {
-    "en": "febd7418911f",
-    "text": "8bde70010f47"
+    "en": "b7bf7b34421f",
+    "text": "96003a0a1987"
   },
   "press.shots.title": {
     "en": "067348ce6894",
@@ -540,12 +540,20 @@
     "text": "d20beff23758"
   },
   "roadmap.identity.text": {
-    "en": "b5bc50e7aa24",
-    "text": "1298a92ba244"
+    "en": "1c47e3db5fbf",
+    "text": "b3628b87a275"
   },
   "roadmap.identity.title": {
     "en": "5eb9c296993e",
     "text": "10b0a97c866c"
+  },
+  "roadmap.identityWindows.text": {
+    "en": "344aa8ef7a21",
+    "text": "456a04574678"
+  },
+  "roadmap.identityWindows.title": {
+    "en": "4564c3de1440",
+    "text": "4692652afd5a"
   },
   "roadmap.later": {
     "en": "73b6e48a1b55",

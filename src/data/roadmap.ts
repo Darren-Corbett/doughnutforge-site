@@ -10,8 +10,9 @@ export type RoadmapItem = { status: RoadmapStatus; title: UiKey; text?: UiKey };
 export const roadmapStatuses: RoadmapStatus[] = ["shipped", "next", "later"];
 
 export const roadmap: RoadmapItem[] = [
-  // Shipped once 0.4.44 is live in every store (Mac, Windows, iPhone and iPad)
-  { status: "next", title: "roadmap.identity.title", text: "roadmap.identity.text" },
+  { status: "shipped", title: "roadmap.identity.title", text: "roadmap.identity.text" },
+  // Shipped once the Windows package is live in the Microsoft Store
+  { status: "next", title: "roadmap.identityWindows.title", text: "roadmap.identityWindows.text" },
   { status: "next", title: "roadmap.stricter.title", text: "roadmap.stricter.text" },
   { status: "next", title: "roadmap.android.title" },
   { status: "later", title: "roadmap.audit.title", text: "roadmap.audit.text" },

@@ -16,7 +16,7 @@ export type Platform =
 export const platforms: Platform[] = [
   { id: "mac", status: "available", store: "mac-app-store", storeId: "6812778888" },
   { id: "windows", status: "available", store: "microsoft-store", storeId: "9P25BS9L8LNB" },
-  { id: "ios", status: "coming" },
+  { id: "ios", status: "available", store: "app-store", storeId: "6821344597" },
   // Linux is planned for November 2026 and will be free; pages say "coming soon" until then.
   { id: "linux", status: "coming" },
   { id: "android", status: "coming" },
