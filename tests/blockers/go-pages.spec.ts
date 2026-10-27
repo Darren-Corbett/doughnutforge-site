@@ -54,8 +54,10 @@ const visibleLinks = (page: Page) =>
   );
 
 const block = async (page: Page, css: string | null) => {
-  // The store itself never loads, so the /go/ page stays, as when Safari shows the tab again
-  await page.route(/^https:\/\/apps\.(apple|microsoft)\.com\//, (route) => route.abort());
+  // The store answers with nothing to show, so the tab stays on the /go/ page, as
+  // when the store app opens and the visitor comes back to the browser (an
+  // aborted request would leave Chromium on its error page instead)
+  await page.route(/^https:\/\/apps\.(apple|microsoft)\.com\//, (route) => route.fulfill({ status: 204 }));
   if (css)
     await page.addInitScript((c: string) => {
       document.addEventListener("DOMContentLoaded", () => {
@@ -89,7 +91,7 @@ for (const go of goPages()) {
       await block(page, css);
       await page.goto(go.path, { waitUntil: "load" }).catch(() => {});
       await page.waitForTimeout(300);
-      expect(page.url(), "stays on the page when the store does not open").toContain(go.path);
+      expect(page.url(), "stays on the page after the store opens").toContain(go.path);
       await expectWayOnAndBack(page, go, name);
     });
   }
@@ -108,16 +110,26 @@ test("a /go/ page shown again after leaving it still offers both links", async (
   await expectWayOnAndBack(page, go!, "after pageshow");
 });
 
-test("the retry button forwards to the store again", async ({ page }) => {
-  const [go] = goPages();
-  // The first forward fails, as when a blocker or the tab stops it; the retry must forward again
-  let tries = 0;
-  await page.route(/^https:\/\/apps\.(apple|microsoft)\.com\//, (route) =>
-    ++tries === 1 ? route.abort() : route.fulfill({ status: 200, contentType: "text/html", body: "<p>store</p>" }),
-  );
-  await page.goto(go!.path, { waitUntil: "load" }).catch(() => {});
-  await page.waitForTimeout(300);
-  await page.locator(`a[href="${go!.path}"]`).click();
-  await page.waitForURL(/^https:\/\/apps\.apple\.com\//);
-  expect(tries).toBe(2);
-});
+// Coming back to the tab, the /go/ page is on screen and does not forward by
+// itself. A tap on the button must take the browser to the store again.
+for (const go of goPages().filter((g) => g.lang.path === "en")) {
+  test(`the retry button on ${go.path} (${go.store}) goes to the store again`, async ({ page }) => {
+    let first = true;
+    await page.route((url) => url.pathname === go.path, async (route) => {
+      if (!first) return route.continue();
+      first = false;
+      // The page as it stands after the visitor comes back: the forward is not due again
+      const response = await route.fetch();
+      return route.fulfill({ response, body: (await response.text()).replace('content="0;', 'content="3600;') });
+    });
+    await page.route(/^https:\/\/apps\.(apple|microsoft)\.com\//, (route) => route.fulfill({ status: 200, contentType: "text/html", body: "<p>store</p>" }));
+    await page.goto(go.path);
+    const reached = page.waitForURL(/^https:\/\/apps\.(apple|microsoft)\.com\//).then(() => "reached", (e: Error) => e.message);
+    await page.locator(`a[href="${go.path}"]`).tap();
+    const result = await reached;
+    // WebKit on an iPhone hands a tapped App Store link to the App Store app, as
+    // Safari does, and cancels it in the browser; the app opening cannot be seen here
+    if (go.store !== "Microsoft Store" && test.info().project.name === "blockers-iphone") expect(result).toContain("Navigation canceled by policy check");
+    else expect(result).toBe("reached");
+  });
+}
