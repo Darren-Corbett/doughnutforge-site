@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(terbuka di tab baru)",
   "go.open": "Buka {store}",
   "go.back": "Kembali ke Doughnut Forge",
+  "go.tap": "Ketuk di bawah untuk membuka {store}.",
+  "go.offline": "Berfungsi tanpa internet.",
   "meta.features.title": "Fitur: enkripsi offline file, folder, dan teks | Doughnut Forge",
   "meta.features.description": "Enkripsi file dan teks di iPhone, iPad, atau komputer Anda, bagikan kepada orang tepercaya, dan jaga agar tetap terlindungi dalam jangka panjang. Tanpa akun, tanpa server.",
   "features.title": "Semua yang dilakukan Doughnut Forge",

@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(mở trong thẻ mới)",
   "go.open": "Mở {store}",
   "go.back": "Quay lại Doughnut Forge",
+  "go.tap": "Chạm vào bên dưới để mở {store}.",
+  "go.offline": "Hoạt động không cần internet.",
   "meta.features.title": "Tính năng: mã hóa ngoại tuyến tệp, thư mục, văn bản | Doughnut Forge",
   "meta.features.description": "Mã hóa tệp và văn bản ngay trên iPhone, iPad hoặc máy tính của bạn, chia sẻ với người bạn tin tưởng và giữ chúng được bảo vệ lâu dài. Không tài khoản, không máy chủ.",
   "features.title": "Mọi điều Doughnut Forge làm được",

@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(otwiera się w nowej karcie)",
   "go.open": "Otwórz {store}",
   "go.back": "Wróć do Doughnut Forge",
+  "go.tap": "Stuknij poniżej, aby otworzyć {store}.",
+  "go.offline": "Działa bez internetu.",
   "meta.features.title": "Funkcje: szyfruj pliki, foldery i tekst offline | Doughnut Forge",
   "meta.features.description": "Szyfruj pliki i tekst na własnym iPhonie, iPadzie lub komputerze, udostępniaj je zaufanym osobom i chroń je na długie lata. Bez konta i bez serwerów.",
   "features.title": "Wszystko, co potrafi Doughnut Forge",

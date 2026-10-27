@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(új lapon nyílik meg)",
   "go.open": "{store} megnyitása",
   "go.back": "Vissza a Doughnut Forge oldalára",
+  "go.tap": "Koppints lent a megnyitáshoz: {store}.",
+  "go.offline": "Internet nélkül is működik.",
   "meta.features.title": "Funkciók: fájlok, mappák, szöveg offline titkosítása | Doughnut Forge",
   "meta.features.description": "Titkosíts fájlokat és szöveget a saját iPhone-odon, iPadeden vagy gépeden, oszd meg őket azokkal, akikben megbízol, és védd őket hosszú távon. Fiók és szerverek nélkül.",
   "features.title": "Minden, amit a Doughnut Forge tud",

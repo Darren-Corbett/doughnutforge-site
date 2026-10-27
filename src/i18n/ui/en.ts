@@ -61,6 +61,9 @@ export default {
   // The /go/ page a hidden store badge leads to. {store} is the store's name, never translated
   "go.open": "Open the {store}",
   "go.back": "Back to Doughnut Forge",
+  "go.tap": "Tap below to open the {store}.",
+  // "Works without the internet" (features.offline.title) as a sentence, under the badge
+  "go.offline": "Works without the internet.",
 
   // Features page
   "meta.features.title": "Features: offline encryption for files, folders and text | Doughnut Forge",

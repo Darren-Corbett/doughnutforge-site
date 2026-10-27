@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "（在新标签页中打开）",
   "go.open": "打开 {store}",
   "go.back": "返回 Doughnut Forge",
+  "go.tap": "轻点下方以打开 {store}。",
+  "go.offline": "无需联网即可使用。",
   "meta.features.title": "功能：离线加密文件、文件夹和文本 | Doughnut Forge",
   "meta.features.description": "在自己的 iPhone、iPad 或电脑上加密文件和文本，与您信任的人分享，并长期保护它们。无需账户，没有服务器。",
   "features.title": "Doughnut Forge 的全部功能",

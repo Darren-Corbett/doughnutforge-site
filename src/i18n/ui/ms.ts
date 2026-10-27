@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(dibuka dalam tab baharu)",
   "go.open": "Buka {store}",
   "go.back": "Kembali ke Doughnut Forge",
+  "go.tap": "Ketik di bawah untuk membuka {store}.",
+  "go.offline": "Berfungsi tanpa internet.",
   "meta.features.title": "Ciri: penyulitan luar talian fail, folder dan teks | Doughnut Forge",
   "meta.features.description": "Sulitkan fail dan teks pada iPhone, iPad atau komputer anda sendiri, kongsi dengan orang yang dipercayai dan lindunginya untuk jangka panjang. Tiada akaun, tiada pelayan.",
   "features.title": "Semua yang dilakukan oleh Doughnut Forge",

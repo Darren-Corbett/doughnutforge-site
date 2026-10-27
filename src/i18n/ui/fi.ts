@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(avautuu uuteen välilehteen)",
   "go.open": "Avaa {store}",
   "go.back": "Takaisin Doughnut Forgeen",
+  "go.tap": "Avaa {store} napauttamalla alta.",
+  "go.offline": "Toimii ilman internetiä.",
   "meta.features.title": "Ominaisuudet: offline-salaus tiedostoille | Doughnut Forge",
   "meta.features.description": "Salaa tiedostot ja tekstit omalla iPhonellasi, iPadillasi tai tietokoneellasi, jaa ne luotettujen ihmisten kanssa ja pidä ne suojattuina pitkään. Ei tiliä eikä palvelimia.",
   "features.title": "Kaikki, mitä Doughnut Forge tekee",

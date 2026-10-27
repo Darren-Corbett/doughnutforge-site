@@ -183,9 +183,17 @@
     "en": "2b3d81876202",
     "text": "ad47aee050bc"
   },
+  "go.offline": {
+    "en": "0184acfd9c8c",
+    "text": "1b0b25fe026b"
+  },
   "go.open": {
     "en": "ef3fc854956d",
     "text": "83a434ddb536"
+  },
+  "go.tap": {
+    "en": "753cb13b3d8f",
+    "text": "76f39d42b7fc"
   },
   "home.cta.primary": {
     "en": "48335741e14d",

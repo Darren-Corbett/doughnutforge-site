@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "（在新分頁中開啟）",
   "go.open": "開啟 {store}",
   "go.back": "返回 Doughnut Forge",
+  "go.tap": "點一下下方的按鈕以開啟 {store}。",
+  "go.offline": "不用連上網路也能使用。",
   "meta.features.title": "功能：離線加密檔案、資料夾和文字 | Doughnut Forge",
   "meta.features.description": "在自己的 iPhone、iPad 或電腦上加密檔案和文字，與您信任的人分享，並長期保護它們。不需帳號，沒有伺服器。",
   "features.title": "Doughnut Forge 的所有功能",

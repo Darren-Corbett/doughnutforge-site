@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(öffnet sich in einem neuen Tab)",
   "go.open": "{store} öffnen",
   "go.back": "Zurück zu Doughnut Forge",
+  "go.tap": "Tippen Sie unten, um den {store} zu öffnen.",
+  "go.offline": "Funktioniert ohne Internet.",
   "meta.features.title": "Funktionen: Offline-Verschlüsselung | Doughnut Forge",
   "meta.features.description": "Verschlüsseln Sie Dateien und Texte auf Ihrem iPhone, iPad oder Computer, teilen Sie sie mit Vertrauten und schützen Sie sie langfristig. Kein Konto, keine Server.",
   "features.title": "Alles, was Doughnut Forge kann",

@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(s'ouvre dans un nouvel onglet)",
   "go.open": "Ouvrir {store}",
   "go.back": "Retour à Doughnut Forge",
+  "go.tap": "Touchez ci-dessous pour ouvrir {store}.",
+  "go.offline": "Fonctionne sans Internet.",
   "meta.features.title": "Fonctions : chiffrement hors ligne de fichiers, dossiers et textes | Doughnut Forge",
   "meta.features.description": "Chiffrez fichiers et textes sur votre propre iPhone, iPad ou ordinateur, partagez-les avec des personnes de confiance et gardez-les protégés sur le long terme. Sans compte ni serveur.",
   "features.title": "Tout ce que fait Doughnut Forge",

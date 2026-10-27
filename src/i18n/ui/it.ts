@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(si apre in una nuova scheda)",
   "go.open": "Apri {store}",
   "go.back": "Torna a Doughnut Forge",
+  "go.tap": "Tocca qui sotto per aprire {store}.",
+  "go.offline": "Funziona senza Internet.",
   "meta.features.title": "Funzioni: crittografia offline di file, cartelle e testo | Doughnut Forge",
   "meta.features.description": "Crittografa file e testo sul tuo iPhone, iPad o computer, condividili con le persone di cui ti fidi e mantienili protetti nel tempo. Niente account e niente server.",
   "features.title": "Tutto quello che fa Doughnut Forge",

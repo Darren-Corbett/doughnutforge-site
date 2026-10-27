@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(åbnes i en ny fane)",
   "go.open": "Åbn {store}",
   "go.back": "Tilbage til Doughnut Forge",
+  "go.tap": "Tryk nedenfor for at åbne {store}.",
+  "go.offline": "Virker uden internet.",
   "meta.features.title": "Funktioner: offline kryptering af filer | Doughnut Forge",
   "meta.features.description": "Krypter filer og tekst på din egen iPhone, iPad eller computer, del dem med dem, du stoler på, og hold dem beskyttet på lang sigt. Ingen konto og ingen servere.",
   "features.title": "Alt, hvad Doughnut Forge kan",

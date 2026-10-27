@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(відкриється в новій вкладці)",
   "go.open": "Відкрити {store}",
   "go.back": "Повернутися до Doughnut Forge",
+  "go.tap": "Торкніться нижче, щоб відкрити {store}.",
+  "go.offline": "Працює без інтернету.",
   "meta.features.title": "Функції: офлайн-шифрування файлів і тексту | Doughnut Forge",
   "meta.features.description": "Шифруйте файли й текст на своєму iPhone, iPad або комп’ютері, діліться ними з тими, кому довіряєте, і захищайте їх надовго. Без облікового запису й без серверів.",
   "features.title": "Усе, що вміє Doughnut Forge",

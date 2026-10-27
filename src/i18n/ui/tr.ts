@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(yeni sekmede açılır)",
   "go.open": "{store}'u açın",
   "go.back": "Doughnut Forge'a dönün",
+  "go.tap": "{store}'u açmak için aşağıya dokunun.",
+  "go.offline": "İnternet olmadan çalışır.",
   "meta.features.title": "Özellikler: çevrimdışı dosya, klasör ve metin şifreleme | Doughnut Forge",
   "meta.features.description": "Kendi iPhone, iPad veya bilgisayarınızda dosya ve metinleri şifreleyin, güvendiğiniz kişilerle paylaşın ve uzun vadede korunmalarını sağlayın. Hesap yok, sunucu yok.",
   "features.title": "Doughnut Forge'un yaptığı her şey",

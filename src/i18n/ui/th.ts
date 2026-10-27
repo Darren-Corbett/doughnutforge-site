@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(เปิดในแท็บใหม่)",
   "go.open": "เปิด {store}",
   "go.back": "กลับไปที่ Doughnut Forge",
+  "go.tap": "แตะด้านล่างเพื่อเปิด {store}",
+  "go.offline": "ใช้งานได้โดยไม่ต้องมีอินเทอร์เน็ต",
   "meta.features.title": "ฟีเจอร์: เข้ารหัสไฟล์ โฟลเดอร์ และข้อความแบบออฟไลน์ | Doughnut Forge",
   "meta.features.description": "เข้ารหัสไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณเอง แชร์กับคนที่คุณไว้ใจ และปกป้องไว้ได้ในระยะยาว ไม่มีบัญชีและไม่มีเซิร์ฟเวอร์",
   "features.title": "ทุกสิ่งที่ Doughnut Forge ทำได้",

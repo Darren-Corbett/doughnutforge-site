@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(opent in een nieuw tabblad)",
   "go.open": "{store} openen",
   "go.back": "Terug naar Doughnut Forge",
+  "go.tap": "Tik hieronder om de {store} te openen.",
+  "go.offline": "Werkt zonder internet.",
   "meta.features.title": "Functies: offline versleuteling | Doughnut Forge",
   "meta.features.description": "Versleutel bestanden en tekst op uw eigen iPhone, iPad of computer, deel ze met wie u vertrouwt en houd ze lang beschermd. Geen account en geen servers.",
   "features.title": "Alles wat Doughnut Forge doet",

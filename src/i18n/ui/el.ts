@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(ανοίγει σε νέα καρτέλα)",
   "go.open": "Άνοιγμα του {store}",
   "go.back": "Επιστροφή στο Doughnut Forge",
+  "go.tap": "Πατήστε παρακάτω για να ανοίξετε το {store}.",
+  "go.offline": "Λειτουργεί χωρίς διαδίκτυο.",
   "meta.features.title": "Λειτουργίες: offline κρυπτογράφηση αρχείων | Doughnut Forge",
   "meta.features.description": "Κρυπτογραφήστε αρχεία και κείμενο στο iPhone, το iPad ή τον υπολογιστή σας, μοιραστείτε τα με όσους εμπιστεύεστε και προστατέψτε τα για χρόνια. Χωρίς λογαριασμό και διακομιστές.",
   "features.title": "Όλα όσα κάνει το Doughnut Forge",

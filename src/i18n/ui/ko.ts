@@ -42,6 +42,8 @@ export default {
   "a11y.newTab": "(새 탭에서 열림)",
   "go.open": "{store} 열기",
   "go.back": "Doughnut Forge로 돌아가기",
+  "go.tap": "아래를 탭하여 {store}를 여세요.",
+  "go.offline": "인터넷 없이도 작동합니다.",
   "meta.features.title": "기능: 파일, 폴더, 텍스트 오프라인 암호화 | Doughnut Forge",
   "meta.features.description": "내 iPhone, iPad 또는 컴퓨터에서 파일과 텍스트를 암호화하고, 신뢰하는 사람과 공유하고, 오랫동안 보호하세요. 계정도 서버도 없습니다.",
   "features.title": "Doughnut Forge의 모든 기능",
