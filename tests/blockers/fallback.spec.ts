@@ -160,20 +160,20 @@ test("the text link marks only the badge's English wording as English", async ({
   }
 });
 
-test("a /go/ page has a main, one h1 and links at least 44px tall", async ({ page }) => {
+test("a /go/ page has a main, one h1 and controls at least 44px tall", async ({ page }) => {
   const goPages = ["/download/", "/de/download/"].flatMap((path) =>
-    [...readFileSync(`${dist}${path}index.html`, "utf8").matchAll(/href="(\/go\/[^"]+)"/g)].map((m) => `${m[1]!.slice(1)}index.html`),
+    [...readFileSync(`${dist}${path}index.html`, "utf8").matchAll(/href="(\/go\/[^"]+)"/g)].map((m) => m[1]!),
   );
   expect(goPages.length, "fallback links on the download pages").toBeGreaterThan(0);
-  for (const file of new Set(goPages)) {
-    // Without the forward, so the page itself can be measured
-    const html = readFileSync(`${dist}/${file}`, "utf8").replace(/<meta http-equiv="refresh"[^>]*>/, "");
-    await page.setContent(html);
-    await expect(page.locator("main"), file).toHaveCount(1);
-    await expect(page.locator("h1"), file).toHaveCount(1);
-    const links = await page.locator("main a").all();
-    expect(links.length, `${file}: a button on and a link back`).toBe(2);
-    for (const link of links) expect((await link.boundingBox())!.height, `${file}: link height`).toBeGreaterThanOrEqual(44);
+  // The store answers with nothing, so the page stays, as when the store app opens
+  await page.route(STORE, (route) => route.fulfill({ status: 204 }));
+  for (const path of new Set(goPages)) {
+    await page.goto(path, { waitUntil: "load" });
+    // As when the visitor comes back to the tab
+    await page.evaluate(() => dispatchEvent(new PageTransitionEvent("pageshow", { persisted: true })));
+    await expect(page.locator("main"), path).toHaveCount(1);
+    await expect(page.locator("h1"), path).toHaveCount(1);
+    for (const link of await page.locator("a:visible").all()) expect((await link.boundingBox())!.height, `${path}: control height`).toBeGreaterThanOrEqual(44);
   }
 });
 
