@@ -44,6 +44,9 @@ for (const lang of languages) {
         for (const item of await items.all()) await expect(item.locator("[data-planned]")).toHaveText(planned);
       }
       await expect(page.locator('[data-roadmap="shipped"] [data-planned]')).toHaveCount(0);
+      // The identity update is out on Mac, iPhone and iPad; Windows waits for its package
+      await expect(page.locator('[data-roadmap="shipped"] h3')).toContainText([await ui(lang.code, "roadmap.identity.title")]);
+      await expect(page.locator('[data-roadmap="next"] h3')).toContainText([await ui(lang.code, "roadmap.identityWindows.title")]);
       // No dates, finding codes or version numbers, in any language
       const text = await page.locator("main").innerText();
       expect(text).not.toMatch(/\b20\d\d\b/);

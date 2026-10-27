@@ -226,16 +226,20 @@ test("the iPhone and iPad artwork is built for the second badge", () => {
   }
 });
 
-test("a /go/ page takes the browser to the store", async ({ page }) => {
-  const [badge] = badgesOf("/download/");
+test("a /go/ page takes the browser to each store", async ({ page }) => {
+  const badges = badgesOf("/download/");
+  // Mac, Windows, and iPhone and iPad
+  expect(badges.map((b) => b.url)).toContain("https://apps.apple.com/app/id6821344597");
   await page.route(STORE, (route) => route.fulfill({ status: 200, contentType: "text/html", body: "<p>store</p>" }));
   await block(page, RULES[0]!);
-  await page.goto("/download/", { waitUntil: "load" });
-  await page.waitForTimeout(1500);
-  const href = (await visibleLinks(page)).find((l) => l.href.startsWith("/go/") && l.name.startsWith(badge!.alt))!.href;
-  await page.goto(href);
-  await page.waitForURL(badge!.url);
-  expect(page.url()).toBe(badge!.url);
+  for (const badge of badges) {
+    await page.goto("/download/", { waitUntil: "load" });
+    await page.waitForTimeout(1500);
+    const href = (await visibleLinks(page)).find((l) => l.href.startsWith("/go/") && l.name.startsWith(badge.alt))!.href;
+    await page.goto(href);
+    await page.waitForURL(badge.url);
+    expect(page.url()).toBe(badge.url);
+  }
 });
 
 test("no /go/ page and no second badge file is in the sitemap", () => {

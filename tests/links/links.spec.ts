@@ -79,6 +79,24 @@ test("external links answer", async ({ request }) => {
 // the link. Each language's link is opened in a browser: a page that loads must
 // be the app's page. If every visit is blocked the test is skipped, not passed.
 const MICROSOFT = "https://apps.microsoft.com/";
+// Apple sells the Mac and the iPhone and iPad apps under different IDs, and a
+// link with either ID opens a page: Apple's own lookup says which app each is
+test("App Store links open each platform's own app", async ({ request }) => {
+  const APPS = {
+    "6812778888": { kind: "mac-software", devices: [] },
+    "6821344597": { kind: "software", devices: [/^iPhone/, /^iPad/] },
+  };
+  const urls = new Set<string>();
+  for (const file of files) for (const ref of attrs(readFileSync(file, "utf8")).map(decode)) if (ref.startsWith("https://apps.apple.com/")) urls.add(ref);
+  // No country code, so Apple opens the visitor's own storefront
+  expect([...urls].sort()).toEqual(Object.keys(APPS).map((id) => `https://apps.apple.com/app/id${id}`));
+  for (const [id, want] of Object.entries(APPS)) {
+    const { results } = await (await request.get(`https://itunes.apple.com/lookup?id=${id}`)).json();
+    expect(results[0]?.kind, `id${id} is a ${want.kind} app`).toBe(want.kind);
+    for (const device of want.devices) expect(results[0].supportedDevices.some((d: string) => device.test(d)), `id${id} runs on ${device}`).toBe(true);
+  }
+});
+
 test("Microsoft Store links open the app's page", async ({ page }) => {
   test.setTimeout(5 * 60_000);
   const urls = new Set<string>();
