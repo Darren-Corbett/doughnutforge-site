@@ -44,7 +44,7 @@ export default {
   "home.pricing.title": "One-time purchase, never a subscription.",
   "home.pricing.text": "Buy Doughnut Forge once for each platform you use, from that platform's store. The store shows the price where you live.",
 
-  // {platforms} is a list such as "iPhone and iPad, Linux and Android"
+  // {platforms} is a list such as "Android and Linux"
   "download.coming": "{platforms} are coming soon.",
   "download.availability": "Availability depends on your country or region.",
 
@@ -84,9 +84,9 @@ export default {
   "pricing.questionsLink": "See the answers on the support page",
 
   // Download page
-  "meta.download.title": "Download Doughnut Forge for Mac, Windows, iPhone and iPad",
+  "meta.download.title": "Download Doughnut Forge for iPhone, iPad, Mac and Windows",
   "meta.download.description":
-    "Get Doughnut Forge from the Mac App Store, the Microsoft Store or the App Store for iPhone and iPad. Versions for Linux and Android are coming soon.",
+    "Get Doughnut Forge from the App Store for iPhone and iPad, the Mac App Store or the Microsoft Store. Versions for Android and Linux are coming soon.",
   "download.title": "Download Doughnut Forge",
   "download.requires.mac": "Needs macOS 12 Monterey or later.",
   "download.requires.windows": "Needs Windows 11.",
@@ -151,7 +151,7 @@ export default {
   "faq.recipient.a":
     "Yes. They open it in Doughnut Forge with their own identity. That is what keeps it private: no one without one of the chosen identities can open it.",
   "faq.which.q": "Which platforms can I use it on?",
-  // {available} and {coming} are lists such as "Mac and Windows"
+  // {available} and {coming} are lists such as "iPhone and iPad, Mac and Windows"
   "faq.which.a": "Doughnut Forge is available for {available}. {coming} are coming soon.",
   "faq.data.q": "Does Doughnut Forge or this website collect any data?",
   "faq.data.a":

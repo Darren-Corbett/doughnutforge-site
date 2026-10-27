@@ -1,5 +1,5 @@
 ---
-// One card per platform, in the order of src/data/stores.ts: the store badge
+// One card per platform, in the order of src/data/stores.ts (mobile first): the store badge
 // where the app is on sale, "Coming soon" with no link where it is not.
 import StoreBadge from "./StoreBadge.astro";
 import { platformName, platforms, storeNames, type PlatformId } from "../data/stores";
@@ -24,7 +24,7 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
 <ul class="cards" role="list">
   {
     platforms.map((p) => (
-      <li class:list={["card", p.status === "available" ? "on-sale" : "coming"]}>
+      <li class:list={["card", p.status === "available" ? "on-sale" : "coming"]} data-platform={p.id}>
         <Heading class="name">{platformName(lang, p.id)}</Heading>
         {p.status === "available" ? (
           <>

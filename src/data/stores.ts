@@ -13,13 +13,21 @@ export type Platform =
   | { id: PlatformId; status: "available"; store: StoreId; storeId: string }
   | { id: PlatformId; status: "coming" };
 
-export const platforms: Platform[] = [
+// Mobile first: phones and tablets are the larger market. This is the one place the
+// order is set, and every list on the site follows it.
+const mobileFirst: Platform[] = [
+  { id: "ios", status: "available", store: "app-store", storeId: "6821344597" },
+  { id: "android", status: "coming" },
   { id: "mac", status: "available", store: "mac-app-store", storeId: "6812778888" },
   { id: "windows", status: "available", store: "microsoft-store", storeId: "9P25BS9L8LNB" },
-  { id: "ios", status: "available", store: "app-store", storeId: "6821344597" },
   // Linux is planned for November 2026 and will be free; pages say "coming soon" until then.
   { id: "linux", status: "coming" },
-  { id: "android", status: "coming" },
+];
+
+/** Every platform: those on sale first, then those still coming, each in the mobile-first order */
+export const platforms: Platform[] = [
+  ...mobileFirst.filter((p) => p.status === "available"),
+  ...mobileFirst.filter((p) => p.status === "coming"),
 ];
 
 // Store and platform names are names: the same in every language.
