@@ -1,7 +1,9 @@
 ---
-// One card per platform, in the order of src/data/stores.ts (mobile first): the store badge
-// where the app is on sale, "Coming soon" with no link where it is not.
+// One card per platform, in the order of src/data/stores.ts (mobile first): the
+// store badge where the app is on sale, "Coming soon" with no link where it is
+// not. The visitor's own platform then moves to the front (VisitorFirst.astro).
 import StoreBadge from "./StoreBadge.astro";
+import VisitorFirst from "./VisitorFirst.astro";
 import { platformName, platforms, storeNames, type PlatformId } from "../data/stores";
 import { fill, useStrings, type Language, type UiKey } from "../i18n";
 
@@ -24,7 +26,7 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
 <ul class="cards" role="list">
   {
     platforms.map((p) => (
-      <li class:list={["card", p.status === "available" ? "on-sale" : "coming"]} data-platform={p.id}>
+      <li class:list={["card", p.status === "available" ? "on-sale" : "coming"]} data-platform={p.id} data-coming={p.status === "coming" || undefined}>
         <Heading class="name">{platformName(lang, p.id)}</Heading>
         {p.status === "available" ? (
           <>
@@ -34,7 +36,7 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
                 : REQUIRES[p.id] && t(REQUIRES[p.id]!)}
             </p>
             <div class="buy">
-              <StoreBadge store={p.store} storeId={p.storeId} lang={lang} />
+              <StoreBadge platform={p.id} store={p.store} storeId={p.storeId} lang={lang} />
             </div>
           </>
         ) : (
@@ -44,6 +46,7 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
     ))
   }
 </ul>
+<VisitorFirst />
 
 <style>
   .cards {

@@ -16,16 +16,18 @@
 //    page, whose address names no store either, and which forwards to the store.
 // 2. If that is hidden too, a plain link in the badge's own wording, to the same
 //    /go/ page.
-import { storeUrl, type StoreId } from "../data/stores";
+import { storeUrl, type PlatformId, type StoreId } from "../data/stores";
 import { badgeArt, badgeWording, goPath, secondArt } from "../data/badges";
 import { useStrings, type Language } from "../i18n";
 
 interface Props {
+  /** Marks the badge and its fallbacks, so they move together (VisitorFirst.astro) */
+  platform: PlatformId;
   store: StoreId;
   storeId: string;
   lang: Language;
 }
-const { store, storeId, lang } = Astro.props;
+const { platform, store, storeId, lang } = Astro.props;
 const { t } = useStrings(lang.code);
 
 const { alt, own } = badgeWording(store, lang.code);
@@ -38,17 +40,17 @@ const HEIGHT = 48;
 const width = Math.round((badge.width / badge.height) * HEIGHT);
 ---
 
-<a href={storeUrl(store, storeId, lang.hreflang)} class="inline-block shrink-0 p-3" target="_blank" rel="noopener noreferrer">
+<a href={storeUrl(store, storeId, lang.hreflang)} class="inline-block shrink-0 p-3" target="_blank" rel="noopener noreferrer" data-platform={platform}>
   <img src={badge.src} width={width} height={HEIGHT} alt={alt} lang={wordingLang} loading="lazy" decoding="async" />
   <span class="sr-only">{t("a11y.newTab")}</span>
 </a>
-<p class="get-art" hidden data-get="art">
+<p class="get-art" hidden data-get="art" data-platform={platform}>
   <a href={go} target="_blank" rel="noopener noreferrer">
     <img src={secondArt(file)} width={width} height={HEIGHT} alt="" loading="lazy" decoding="async" />
     <span class="sr-only"><span lang={wordingLang}>{alt}</span> {t("a11y.newTab")}</span>
   </a>
 </p>
-<p class="get-text" hidden data-get="text">
+<p class="get-text" hidden data-get="text" data-platform={platform}>
   <a href={go} target="_blank" rel="noopener noreferrer"><span lang={wordingLang}>{alt}</span><span class="sr-only">{t("a11y.newTab")}</span></a>
 </p>
 

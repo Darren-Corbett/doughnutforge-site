@@ -2,6 +2,7 @@
 // Store badges for the platforms on sale, and one plain sentence for those still
 // coming: never a badge or a link for a platform that is not available.
 import StoreBadge from "./StoreBadge.astro";
+import VisitorFirst from "./VisitorFirst.astro";
 import { platformName, platforms } from "../data/stores";
 import { fill, listOf, useStrings, type Language } from "../i18n";
 
@@ -19,6 +20,7 @@ const note = [coming.length ? fill(t("download.coming"), { platforms: listOf(lan
 ---
 
 <div class="-m-3 flex flex-wrap">
-  {available.map((p) => (p.status === "available" ? <StoreBadge store={p.store} storeId={p.storeId} lang={lang} /> : null))}
+  {available.map((p) => (p.status === "available" ? <StoreBadge platform={p.id} store={p.store} storeId={p.storeId} lang={lang} /> : null))}
 </div>
+<VisitorFirst />
 <p class="mt-4 max-w-[34rem] text-[17px] leading-relaxed">{note}</p>
