@@ -84,7 +84,8 @@ test("English copy does not assume a computer", async ({ page }) => {
     await page.goto(path);
     const description = (await page.locator('meta[name="description"]').getAttribute("content")) ?? "";
     const text = `${description}\n${await page.locator("main").innerText()}`;
-    expect(text, path).not.toMatch(/on your (own )?computer/i);
+    // "On your own computer or phone" covers both
+    expect(text, path).not.toMatch(/on your (own )?computer(?! or phone)/i);
     expect(text, path).not.toMatch(/folders[^.]*iPhone|iPhone[^.]*folders/i);
   }
   await page.goto("/support/");
