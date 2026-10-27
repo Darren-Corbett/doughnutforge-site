@@ -48,7 +48,8 @@ for (const lang of languages) {
     for (const path of ["/download/", "/pricing/"]) {
       // The served HTML, before any script runs
       const html = await (await page.request.get(`${prefix(lang)}${path}`)).text();
-      const order = [...html.matchAll(/data-platform="(\w+)"/g)].map((m) => m[1]);
+      // The cards only, not the badges inside them
+      const order = [...html.matchAll(/<li[^>]*data-platform="(\w+)"/g)].map((m) => m[1]);
       expect(order, `${path}: card order`).toEqual([...ON_SALE, ...COMING]);
     }
     const home = await (await page.request.get(`${prefix(lang)}/`)).text();
