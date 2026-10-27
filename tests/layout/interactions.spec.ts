@@ -10,11 +10,15 @@ const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.
 // What screen readers hear after a store badge's name (the owner's wording)
 const NEW_TAB_EN = "(opens in a new tab)";
 const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-const STORE_HOSTS: Record<string, keyof typeof alts> = { "apps.apple.com": "mac-app-store", "apps.microsoft.com": "microsoft-store" };
+// Apple's Mac and iPhone and iPad apps share a host, so their links differ only by app ID
+const IOS_APP = "https://apps.apple.com/app/id6821344597";
+const storeOf = (href: string): keyof typeof alts =>
+  href === IOS_APP ? "app-store" : new URL(href).host === "apps.apple.com" ? "mac-app-store" : "microsoft-store";
 // The link each store should get (as src/data/stores.ts storeUrl builds it):
 // Apple with no country code, Microsoft in the page language
 const LINK: Record<string, (hreflang: string) => RegExp> = {
   "mac-app-store": () => /^https:\/\/apps\.apple\.com\/app\/id\d+$/,
+  "app-store": () => /^https:\/\/apps\.apple\.com\/app\/id\d+$/,
   "microsoft-store": (hl) => new RegExp(`^https://apps\\.microsoft\\.com/detail/\\w+\\?hl=${hl}$`),
 };
 
@@ -52,7 +56,7 @@ for (const lang of languages) {
         expect(await badges.count(), `${path}: store badges`).toBeGreaterThan(0);
         for (const a of await badges.all()) {
           const href = (await a.getAttribute("href"))!;
-          const store = STORE_HOSTS[new URL(href).host]!;
+          const store = storeOf(href);
           const img = a.locator("img");
           const alt = (await img.getAttribute("alt"))!;
           const altText = alts[store] as Record<string, string>;
