@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 27 October 2026, after the mobile-first order, the phone and tablet copy and the visitor's own platform first (see "Mobile first"); earlier the same day, after iPhone and iPad went on sale on the site (App Store ID 6821344597) and the identity update moved to Shipped for Mac, iPhone and iPad; before that, 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
+- **Last updated:** 27 October 2026, after the /go/ page fix (see "/go/ pages: a way on and a way back"); before that, after the mobile-first order, the phone and tablet copy and the visitor's own platform first (see "Mobile first"); earlier the same day, after iPhone and iPad went on sale on the site (App Store ID 6821344597) and the identity update moved to Shipped for Mac, iPhone and iPad; before that, 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: commit freely on main; ask before every push (a push deploys), and never publish anything without approval.
@@ -84,6 +84,13 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 - **A static redirect for the old `/get/` addresses.** `/get/<store>/<language>/` was live for about a day before `/go/` replaced it, and now returns 404.
 - **Run `npm run test:links` locally before a push**, by hand or with a local git hook, never a GitHub Action. Today it runs only when asked.
+
+## /go/ pages: a way on and a way back (27 October 2026)
+
+- **Bug (owner, iPhone, AdGuard default):** tapping the branded fallback App Store badge opened `/go/ef9771/en/` in a new tab, which forwarded to the App Store. Back in Safari, the tab showed only the heading "Download on the App Store". Reproduced on the live site in WebKit iPhone: with a blocker rule that hides store links, the page's only link (straight to `apps.apple.com`) was hidden.
+- **Fix:** `src/pages/go/[code]/[lang].astro` never links to the store. Its button ("Open the App Store", or the right store; `go.open`) links to the /go/ page itself, so blockers leave it, and a small inline script sends the tap straight to the store address from the page's forward tag; without the script the tap reloads the page, which forwards. "Back to Doughnut Forge" (`go.back`) links to the download page in the page's language, in the same tab. Both are plain parts of the page, so they show whenever Safari shows the tab again. Two strings in all 30 languages (independent review, no findings).
+- **Tests:** `tests/blockers/go-pages.spec.ts`, on the iPhone and Android profiles: every store in five languages under five blocker rules; the page shown again after leaving it; the retry for each store. Tests simulate the return from the store with a 204 answer (an aborted request leaves Chromium on its error page).
+- **Not provable in a test browser:** WebKit's iPhone mode hands a tapped `apps.apple.com` link to the App Store app and cancels it in the browser ("Navigation canceled by policy check"), so for Apple links on iPhone the test checks the hand-off, not the App Store opening. **The owner should check once on the iPhone, with AdGuard on:** tap a fallback badge, come back to Safari, tap "Open the App Store" (the App Store should open) and "Back to Doughnut Forge".
 
 ## Mobile first (27 October 2026)
 
