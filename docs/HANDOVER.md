@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 27 October 2026, after iPhone and iPad went on sale on the site (App Store ID 6821344597) and the identity update moved to Shipped for Mac, iPhone and iPad; before that, 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
+- **Last updated:** 27 October 2026, after the mobile-first order, the phone and tablet copy and the visitor's own platform first (see "Mobile first"); earlier the same day, after iPhone and iPad went on sale on the site (App Store ID 6821344597) and the identity update moved to Shipped for Mac, iPhone and iPad; before that, 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: commit freely on main; ask before every push (a push deploys), and never publish anything without approval.
@@ -82,6 +82,13 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 - **A static redirect for the old `/get/` addresses.** `/get/<store>/<language>/` was live for about a day before `/go/` replaced it, and now returns 404.
 - **Run `npm run test:links` locally before a push**, by hand or with a local git hook, never a GitHub Action. Today it runs only when asked.
+
+## Mobile first (27 October 2026)
+
+- **Order:** set once in `src/data/stores.ts` (`mobileFirst`): iPhone and iPad, Android, Mac, Windows, Linux. Platforms on sale come first, then those still coming, so Android sits with Linux until it ships and then moves to second by itself. Cards, badge rows, the press fact sheet, structured data and the download title and description follow it. Tests: `tests/layout/stores.spec.ts`.
+- **Copy (approved by the owner):** leads, search descriptions, the features title, the offline paragraph, the press short description, the buying FAQ and pricing text now cover iPhone and iPad as well as computers. Phones never get "folders" (the iPhone app does not encrypt them), and copy names iPhone and iPad, not "phone", until Android ships. The pages no longer use the Mac listing's computer-only parts; `scripts/sync-from-app.mjs` writes only `headline` and `never` now. The offline paragraph (`offline.text`) is the iPhone listing's paragraph without "You pay once". Independent review: five Thai comma errors fixed, re-checked clean.
+- **The visitor's own platform first:** `src/components/VisitorFirst.astro`, an inline script after each list, moves the visitor's platform to the front if it is on sale (iPhone; iPad, which calls itself a Mac but has touch; Mac; Windows; Android once on sale). It runs before the first paint, hides nothing, stores and sends nothing, and leaves the fixed order if it fails. Each badge and its two fallbacks carry `data-platform` and move together. Tests: `tests/layout/visitor-first.spec.ts` (six platforms, 320px and 1280px, Chromium and WebKit, a failing script, no scripts, and a blocker).
+- **Checks:** `build:deploy` 0/0/0; layout 2131 passed plus one intermittent failure on `/ru/download/` in WebKit iPhone (3 layout problems, not seen again in 450 repeats of the download pages and a full rerun; cause unknown); blockers 804/804; links 42/42 (a first run hit one 503 from the live site); reproducible builds match; Lighthouse on the home page 100 in every category on mobile and on desktop as a Windows visitor. The only layout shift (CLS 0.011 mobile, 0.002 desktop) is the home specimen's scan animation, not the store lists.
 
 ## Social image fonts in the repo (26 October 2026)
 
