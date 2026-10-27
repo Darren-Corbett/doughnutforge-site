@@ -18,8 +18,11 @@ test("every store and language has a /go/ page", () => {
 for (const path of goPages) {
   test(`${path} fits a phone in both states`, async ({ page }) => {
     await page.addInitScript(installMeasures);
-    // The store answers with nothing, so the page stays, as when the store app opens
-    await page.route(/^https:\/\/apps\.(apple|microsoft)\.com\//, (route) => route.fulfill({ status: 204 }));
+    // The forward an hour away, so the page stays as the visitor sees it
+    await page.route(path, async (route) => {
+      const response = await route.fetch();
+      return route.fulfill({ response, body: (await response.text()).replace('content="0;', 'content="3600;') });
+    });
     await page.goto(path, { waitUntil: "load" });
     const problems: unknown[] = [];
     for (const state of ["opening", "back"]) {

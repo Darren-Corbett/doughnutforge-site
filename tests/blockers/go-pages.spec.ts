@@ -63,8 +63,23 @@ const visibleLinks = (page: Page) =>
       }),
   );
 
-/** The store answers with nothing to show, so the tab stays, as when the store app opens */
-const stayOnPage = (page: Page) => page.route(STORE, (route) => route.fulfill({ status: 204 }));
+/**
+ * Serves the /go/ pages with their forward an hour away, so the page stays as the
+ * visitor sees it while the store opens and after coming back. A real forward
+ * would leave the tab, and a stand-in store answer leaves Chromium with a
+ * navigation that never finishes. The forward itself is tested in
+ * fallback.spec.ts ("a /go/ page takes the browser to each store").
+ */
+const stayOnPage = (page: Page) =>
+  page.route(
+    (url) => url.pathname.startsWith("/go/"),
+    async (route) => {
+      const response = await route.fetch();
+      return route.fulfill({ response, body: (await response.text()).replace('content="0;', 'content="3600;') });
+    },
+  );
+
+const arrive = (page: Page, path: string) => page.goto(path, { waitUntil: "load" });
 
 /** Safari shows the tab again after the visitor comes back from the store */
 const comeBack = (page: Page) => page.evaluate(() => dispatchEvent(new PageTransitionEvent("pageshow", { persisted: true })));
@@ -88,7 +103,7 @@ const expectWayOnAndBack = async (page: Page, go: Go, why: string) => {
 for (const go of goPages()) {
   test(`${go.path} (${go.name}) says what it does, in its language`, async ({ page }) => {
     await stayOnPage(page);
-    await page.goto(go.path, { waitUntil: "load" });
+    await arrive(page, go.path);
     await comeBack(page);
     const main = page.locator("main");
     await expect(main.locator("[data-go=label]")).toContainText(go.platform);
@@ -104,9 +119,8 @@ for (const go of goPages()) {
     test(`${go.path} (${go.name}), a blocker that ${rule.name}: a way on and a way back`, async ({ page }) => {
       await block(page, rule);
       await stayOnPage(page);
-      await page.goto(go.path, { waitUntil: "load" });
+      await arrive(page, go.path);
       await page.waitForTimeout((rule.delay ?? 0) + 300);
-      expect(page.url(), "stays on the page after the store opens").toContain(go.path);
       await comeBack(page);
       await page.waitForTimeout(1500);
       await expectWayOnAndBack(page, go, rule.name);
@@ -119,9 +133,7 @@ test.describe("states", () => {
 
   test("on arrival: the opening moment, while it forwards", async ({ page }) => {
     await stayOnPage(page);
-    const forwarded = page.waitForRequest(STORE);
-    await page.goto(go().path, { waitUntil: "load" });
-    await forwarded;
+    await arrive(page, go().path);
     await expect(page.locator("[data-go=progress]")).toBeVisible();
     await expect(page.locator("main h1")).toBeVisible();
     await expect(page.locator(`main a[href="${go().path}"]`).first()).toBeHidden();
@@ -130,7 +142,7 @@ test.describe("states", () => {
 
   test("Safari shows the tab again: the way on and the way back", async ({ page }) => {
     await stayOnPage(page);
-    await page.goto(go().path, { waitUntil: "load" });
+    await arrive(page, go().path);
     await comeBack(page);
     await expect(page.locator("[data-go=progress]")).toBeHidden();
     await expectWayOnAndBack(page, go(), "pageshow");
@@ -138,7 +150,7 @@ test.describe("states", () => {
 
   test("the tab comes back into view: the way on and the way back", async ({ page }) => {
     await stayOnPage(page);
-    await page.goto(go().path, { waitUntil: "load" });
+    await arrive(page, go().path);
     await page.evaluate(() => {
       for (const state of ["hidden", "visible"]) {
         Object.defineProperty(document, "visibilityState", { value: state, configurable: true });
@@ -150,7 +162,7 @@ test.describe("states", () => {
 
   test("the store did not open: the way on and the way back after a few seconds", async ({ page }) => {
     await stayOnPage(page);
-    await page.goto(go().path, { waitUntil: "load" });
+    await arrive(page, go().path);
     await page.waitForTimeout(4000);
     await expectWayOnAndBack(page, go(), "timeout");
   });
@@ -158,7 +170,7 @@ test.describe("states", () => {
   test("leaving and coming back: the way on and the way back", async ({ page }) => {
     await block(page, RULES[0]!);
     await stayOnPage(page);
-    await page.goto(go().path, { waitUntil: "load" });
+    await arrive(page, go().path);
     await page.goto("/");
     await page.goBack({ waitUntil: "load" });
     await comeBack(page);
@@ -169,7 +181,7 @@ test.describe("states", () => {
   test("reduced motion: the progress bar does not move", async ({ page }) => {
     await page.emulateMedia({ reducedMotion: "reduce" });
     await stayOnPage(page);
-    await page.goto(go().path, { waitUntil: "load" });
+    await arrive(page, go().path);
     const moving = await page.locator("[data-go=progress]").evaluate((e) => {
       const after = getComputedStyle(e, "::after");
       return after.animationName !== "none" && parseFloat(after.animationDuration) > 0.01;
@@ -183,7 +195,7 @@ test.describe("without JavaScript", () => {
   test("the page shows the way on and the way back at once", async ({ page }) => {
     const go = goPages()[0]!;
     await stayOnPage(page);
-    await page.goto(go.path, { waitUntil: "load" });
+    await arrive(page, go.path);
     await expect(page.locator("[data-go=progress]")).toBeHidden();
     await expectWayOnAndBack(page, go, "no JavaScript");
   });

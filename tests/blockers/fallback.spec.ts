@@ -165,8 +165,15 @@ test("a /go/ page has a main, one h1 and controls at least 44px tall", async ({ 
     [...readFileSync(`${dist}${path}index.html`, "utf8").matchAll(/href="(\/go\/[^"]+)"/g)].map((m) => m[1]!),
   );
   expect(goPages.length, "fallback links on the download pages").toBeGreaterThan(0);
-  // The store answers with nothing, so the page stays, as when the store app opens
-  await page.route(STORE, (route) => route.fulfill({ status: 204 }));
+  // The forward an hour away, so the page stays as the visitor sees it (a stand-in
+  // store answer leaves Chromium with a navigation that never finishes)
+  await page.route(
+    (url) => url.pathname.startsWith("/go/"),
+    async (route) => {
+      const response = await route.fetch();
+      return route.fulfill({ response, body: (await response.text()).replace('content="0;', 'content="3600;') });
+    },
+  );
   for (const path of new Set(goPages)) {
     await page.goto(path, { waitUntil: "load" });
     // As when the visitor comes back to the tab
