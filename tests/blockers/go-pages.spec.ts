@@ -127,9 +127,10 @@ for (const go of goPages().filter((g) => g.lang.path === "en")) {
     const reached = page.waitForURL(/^https:\/\/apps\.(apple|microsoft)\.com\//).then(() => "reached", (e: Error) => e.message);
     await page.locator(`a[href="${go.path}"]`).tap();
     const result = await reached;
-    // WebKit on an iPhone hands a tapped App Store link to the App Store app, as
-    // Safari does, and cancels it in the browser; the app opening cannot be seen here
-    if (go.store !== "Microsoft Store" && test.info().project.name === "blockers-iphone") expect(result).toContain("Navigation canceled by policy check");
+    // WebKit on an iPhone sometimes cancels a tapped App Store link in the browser
+    // ("Navigation canceled by policy check") and sometimes loads it; either way the
+    // tap went to the store. Why it varies is not known.
+    if (go.store !== "Microsoft Store" && test.info().project.name === "blockers-iphone") expect(result).toMatch(/^reached$|Navigation canceled by policy check/);
     else expect(result).toBe("reached");
   });
 }
