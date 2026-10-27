@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 27 October 2026, after the /go/ page fix (see "/go/ pages: a way on and a way back"); before that, after the mobile-first order, the phone and tablet copy and the visitor's own platform first (see "Mobile first"); earlier the same day, after iPhone and iPad went on sale on the site (App Store ID 6821344597) and the identity update moved to Shipped for Mac, iPhone and iPad; before that, 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
+- **Last updated:** 27 October 2026, after the /go/ handoff page design (see "/go/ handoff page design, A2"); before that, after the /go/ page fix (see "/go/ pages: a way on and a way back"); before that, after the mobile-first order, the phone and tablet copy and the visitor's own platform first (see "Mobile first"); earlier the same day, after iPhone and iPad went on sale on the site (App Store ID 6821344597) and the identity update moved to Shipped for Mac, iPhone and iPad; before that, 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: commit freely on main; ask before every push (a push deploys), and never publish anything without approval.
@@ -84,6 +84,14 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 - **A static redirect for the old `/get/` addresses.** `/get/<store>/<language>/` was live for about a day before `/go/` replaced it, and now returns 404.
 - **Run `npm run test:links` locally before a push**, by hand or with a local git hook, never a GitHub Action. Today it runs only when asked.
+
+## /go/ handoff page design, A2 (27 October 2026)
+
+- **Picked by the owner** from three previews (dev-only pages, deleted after the pick, never built): A2, one card on the night colour. Copy (owner): the platform name, "Get Doughnut Forge" (`button.getApp`), "Tap below to open the {store}." (`go.tap`), "One-time purchase, never a subscription." (`home.pricing.title`), "Works without the internet." (`go.offline`), "Back to Doughnut Forge" (`go.back`). "Welcome back" and "Did the App Store open?" were dropped.
+- **States** (`src/pages/go/[code]/[lang].astro`): a head script adds `opening` before the page is drawn: icon, platform, heading and a progress bar while it forwards. It drops `opening` on `pageshow` (from the back-forward cache), when the tab comes back into view, or after 3 seconds. Without JavaScript the page is in the come-back state from the start.
+- **Way on:** the badge (`/s/<hash>.svg`, empty alt, wording as screen-reader text) links to the page itself; a tap goes straight to the store. If the badge is not drawn, the plain "Open the App Store" button (`go.open`) replaces it. Without JavaScript there is no such check, so a blocked badge image leaves only the way back.
+- **Tests:** `tests/blockers/go-pages.spec.ts` (copy in six languages, every blocker simulation from `tests/blockers/simulations.ts`, each state, no JavaScript, reduced motion, the badge tap) and `tests/layout/go-pages.spec.ts` (all 90 pages, both states, 320 and 390px). They serve the pages with the forward an hour away: a stand-in store answer leaves Chromium with a navigation that never finishes.
+- **Lighthouse** (a copy without the forward): 100 performance, accessibility and best practices, mobile and desktop, no layout shift. SEO 66, only because the page is `noindex` on purpose.
 
 ## /go/ pages: a way on and a way back (27 October 2026)
 
