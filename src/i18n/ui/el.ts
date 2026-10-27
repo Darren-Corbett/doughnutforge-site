@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Αποκτήστε το Doughnut Forge",
   "status.comingSoon": "Σύντομα",
   "a11y.newTab": "(ανοίγει σε νέα καρτέλα)",
+  "go.open": "Άνοιγμα του {store}",
+  "go.back": "Επιστροφή στο Doughnut Forge",
   "meta.features.title": "Λειτουργίες: offline κρυπτογράφηση αρχείων | Doughnut Forge",
   "meta.features.description": "Κρυπτογραφήστε αρχεία και κείμενο στο iPhone, το iPad ή τον υπολογιστή σας, μοιραστείτε τα με όσους εμπιστεύεστε και προστατέψτε τα για χρόνια. Χωρίς λογαριασμό και διακομιστές.",
   "features.title": "Όλα όσα κάνει το Doughnut Forge",

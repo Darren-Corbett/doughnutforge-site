@@ -2,14 +2,19 @@
 // Forwards to a store, for a visitor whose content blocker hid the store badge:
 // the badge's fallback link (StoreBadge.astro) comes here, on the site itself,
 // and this page sends the browser on to the store page the badge links to. Its
-// heading is the badge's wording, and the link to tap if the forward does not
-// happen is the store's name (a name: the same in every language). One
-// per store on sale and language, in that language's wording. Never indexed,
+// heading is the badge's wording. The same blocker can hide a link to the store
+// here too, so the page never links to the store. Its button goes straight to
+// the store from a small script, reading the address from the forward above; the
+// link itself names only this page, so blockers leave it, and without the script
+// a tap reloads this page, which forwards again. A second link goes back to the
+// download page. Both
+// are part of the page, so they are there whenever Safari shows the tab again
+// after the store opened. One per store on sale and language. Never indexed,
 // and not in the sitemap (astro.config.mjs).
 import type { GetStaticPaths } from "astro";
-import { badgeWording, storeCode } from "../../../data/badges";
+import { badgeWording, goPath, storeCode } from "../../../data/badges";
 import { platforms, storeNames, storeUrl, type StoreId } from "../../../data/stores";
-import { builtLanguages, type Language } from "../../../i18n";
+import { builtLanguages, fill, localePath, useStrings, type Language } from "../../../i18n";
 
 export const getStaticPaths = (() =>
   platforms.flatMap((p) =>
@@ -28,11 +33,13 @@ interface Props {
   wording: { alt: string; own: boolean };
 }
 const { lang, store, url, wording } = Astro.props;
-const textLang = wording.own ? lang.hreflang : "en";
+const { t } = useStrings(lang.code);
+// The badge's wording is English where the language has no badge of its own
+const headingLang = wording.own ? undefined : "en";
 ---
 
 <!doctype html>
-<html lang={textLang} dir={wording.own ? lang.dir : "ltr"}>
+<html lang={lang.hreflang} dir={lang.dir}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -60,6 +67,13 @@ const textLang = wording.own ? lang.hreflang : "en";
         color: #09649c;
         text-underline-offset: 3px;
       }
+      .open {
+        padding: 0 20px;
+        border-radius: 9999px;
+        background: #09649c;
+        color: #fff;
+        text-decoration: none;
+      }
       @media (prefers-color-scheme: dark) {
         body {
           background: #15202b;
@@ -68,13 +82,26 @@ const textLang = wording.own ? lang.hreflang : "en";
         a {
           color: #4cb5f5;
         }
+        .open {
+          background: #4cb5f5;
+          color: #15202b;
+        }
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>{wording.alt}</h1>
-      <p><a href={url} lang="en">{storeNames[store]}</a></p>
+      <h1 lang={headingLang}>{wording.alt}</h1>
+      <p><a class="open" href={goPath(store, lang.path)}>{fill(t("go.open"), { store: storeNames[store] })}</a></p>
+      <p><a href={localePath(lang.code, "download/")}>{t("go.back")}</a></p>
     </main>
+    <script is:inline>
+      document.querySelector(".open").addEventListener("click", (event) => {
+        const to = document.querySelector('meta[http-equiv="refresh"]')?.content.split("url=")[1];
+        if (!to) return;
+        event.preventDefault();
+        location.href = to;
+      });
+    </script>
   </body>
 </html>

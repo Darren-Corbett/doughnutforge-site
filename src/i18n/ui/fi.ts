@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Hanki Doughnut Forge",
   "status.comingSoon": "Tulossa pian",
   "a11y.newTab": "(avautuu uuteen välilehteen)",
+  "go.open": "Avaa {store}",
+  "go.back": "Takaisin Doughnut Forgeen",
   "meta.features.title": "Ominaisuudet: offline-salaus tiedostoille | Doughnut Forge",
   "meta.features.description": "Salaa tiedostot ja tekstit omalla iPhonellasi, iPadillasi tai tietokoneellasi, jaa ne luotettujen ihmisten kanssa ja pidä ne suojattuina pitkään. Ei tiliä eikä palvelimia.",
   "features.title": "Kaikki, mitä Doughnut Forge tekee",

@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Doughnut Forge holen",
   "status.comingSoon": "Demnächst",
   "a11y.newTab": "(öffnet sich in einem neuen Tab)",
+  "go.open": "{store} öffnen",
+  "go.back": "Zurück zu Doughnut Forge",
   "meta.features.title": "Funktionen: Offline-Verschlüsselung | Doughnut Forge",
   "meta.features.description": "Verschlüsseln Sie Dateien und Texte auf Ihrem iPhone, iPad oder Computer, teilen Sie sie mit Vertrauten und schützen Sie sie langfristig. Kein Konto, keine Server.",
   "features.title": "Alles, was Doughnut Forge kann",

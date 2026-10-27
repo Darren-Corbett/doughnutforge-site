@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Отримати Doughnut Forge",
   "status.comingSoon": "Незабаром",
   "a11y.newTab": "(відкриється в новій вкладці)",
+  "go.open": "Відкрити {store}",
+  "go.back": "Повернутися до Doughnut Forge",
   "meta.features.title": "Функції: офлайн-шифрування файлів і тексту | Doughnut Forge",
   "meta.features.description": "Шифруйте файли й текст на своєму iPhone, iPad або комп’ютері, діліться ними з тими, кому довіряєте, і захищайте їх надовго. Без облікового запису й без серверів.",
   "features.title": "Усе, що вміє Doughnut Forge",

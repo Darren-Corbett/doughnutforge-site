@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Doughnut Forge letöltése",
   "status.comingSoon": "Hamarosan",
   "a11y.newTab": "(új lapon nyílik meg)",
+  "go.open": "{store} megnyitása",
+  "go.back": "Vissza a Doughnut Forge oldalára",
   "meta.features.title": "Funkciók: fájlok, mappák, szöveg offline titkosítása | Doughnut Forge",
   "meta.features.description": "Titkosíts fájlokat és szöveget a saját iPhone-odon, iPadeden vagy gépeden, oszd meg őket azokkal, akikben megbízol, és védd őket hosszú távon. Fiók és szerverek nélkül.",
   "features.title": "Minden, amit a Doughnut Forge tud",

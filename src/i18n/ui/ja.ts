@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Doughnut Forgeを入手",
   "status.comingSoon": "近日登場",
   "a11y.newTab": "（新しいタブで開きます）",
+  "go.open": "{store}を開く",
+  "go.back": "Doughnut Forgeに戻る",
   "meta.features.title": "機能：ファイル、フォルダ、テキストをオフラインで暗号化 | Doughnut Forge",
   "meta.features.description": "自分のiPhone、iPad、コンピュータ上でファイルとテキストを暗号化し、信頼できる相手と共有して、長く保護できます。アカウントもサーバーも不要です。",
   "features.title": "Doughnut Forgeでできること",

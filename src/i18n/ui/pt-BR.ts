@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Obtenha o Doughnut Forge",
   "status.comingSoon": "Em breve",
   "a11y.newTab": "(abre em uma nova aba)",
+  "go.open": "Abrir {store}",
+  "go.back": "Voltar para o Doughnut Forge",
   "meta.features.title": "Recursos: criptografia offline de arquivos | Doughnut Forge",
   "meta.features.description": "Criptografe arquivos e textos no seu iPhone, iPad ou computador, compartilhe com quem você confia e mantenha tudo protegido a longo prazo. Sem conta e sem servidores.",
   "features.title": "Tudo o que o Doughnut Forge faz",

@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Získat Doughnut Forge",
   "status.comingSoon": "Již brzy",
   "a11y.newTab": "(otevře se na nové kartě)",
+  "go.open": "Otevřít {store}",
+  "go.back": "Zpět na Doughnut Forge",
   "meta.features.title": "Funkce: šifrování souborů, složek a textu offline | Doughnut Forge",
   "meta.features.description": "Šifrujte soubory a text ve vlastním iPhonu, iPadu nebo počítači, sdílejte je s lidmi, kterým důvěřujete, a chraňte je dlouhodobě. Bez účtu a bez serverů.",
   "features.title": "Vše, co Doughnut Forge umí",

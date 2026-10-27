@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Doughnut Forge पाएँ",
   "status.comingSoon": "जल्द आ रहा है",
   "a11y.newTab": "(नए टैब में खुलता है)",
+  "go.open": "{store} खोलें",
+  "go.back": "Doughnut Forge पर वापस जाएँ",
   "meta.features.title": "फ़ीचर: फ़ाइलों, फ़ोल्डरों और टेक्स्ट के लिए ऑफ़लाइन एन्क्रिप्शन | Doughnut Forge",
   "meta.features.description": "अपने ही iPhone, iPad या कंप्यूटर पर फ़ाइलें और टेक्स्ट एन्क्रिप्ट करें, भरोसेमंद लोगों के साथ शेयर करें और उन्हें लंबे समय तक सुरक्षित रखें। कोई अकाउंट नहीं, कोई सर्वर नहीं।",
   "features.title": "Doughnut Forge क्या-क्या करता है",

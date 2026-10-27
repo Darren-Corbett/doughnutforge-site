@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Consigue Doughnut Forge",
   "status.comingSoon": "Próximamente",
   "a11y.newTab": "(se abre en una pestaña nueva)",
+  "go.open": "Abrir {store}",
+  "go.back": "Volver a Doughnut Forge",
   "meta.features.title": "Funciones: cifra archivos y texto sin conexión | Doughnut Forge",
   "meta.features.description": "Cifra archivos y texto en tu propio iPhone, iPad u ordenador, compártelos con gente de confianza y mantenlos protegidos a largo plazo. Sin cuenta y sin servidores.",
   "features.title": "Todo lo que hace Doughnut Forge",

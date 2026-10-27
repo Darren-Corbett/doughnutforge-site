@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Dapatkan Doughnut Forge",
   "status.comingSoon": "Segera hadir",
   "a11y.newTab": "(terbuka di tab baru)",
+  "go.open": "Buka {store}",
+  "go.back": "Kembali ke Doughnut Forge",
   "meta.features.title": "Fitur: enkripsi offline file, folder, dan teks | Doughnut Forge",
   "meta.features.description": "Enkripsi file dan teks di iPhone, iPad, atau komputer Anda, bagikan kepada orang tepercaya, dan jaga agar tetap terlindungi dalam jangka panjang. Tanpa akun, tanpa server.",
   "features.title": "Semua yang dilakukan Doughnut Forge",

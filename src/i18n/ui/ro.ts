@@ -40,6 +40,8 @@ export default {
   "button.getApp": "Obține Doughnut Forge",
   "status.comingSoon": "În curând",
   "a11y.newTab": "(se deschide într-o filă nouă)",
+  "go.open": "Deschide {store}",
+  "go.back": "Înapoi la Doughnut Forge",
   "meta.features.title": "Funcții: criptare offline pentru fișiere, dosare și text | Doughnut Forge",
   "meta.features.description": "Criptează fișiere și text pe propriul iPhone, iPad sau computer, partajează-le cu oameni de încredere și păstrează-le protejate pe termen lung. Fără cont și fără servere.",
   "features.title": "Tot ce face Doughnut Forge",

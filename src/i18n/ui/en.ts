@@ -58,6 +58,9 @@ export default {
   "status.comingSoon": "Coming soon",
   // Screen-reader text after each store badge, whose link opens in a new tab
   "a11y.newTab": "(opens in a new tab)",
+  // The /go/ page a hidden store badge leads to. {store} is the store's name, never translated
+  "go.open": "Open the {store}",
+  "go.back": "Back to Doughnut Forge",
 
   // Features page
   "meta.features.title": "Features: offline encryption for files, folders and text | Doughnut Forge",
