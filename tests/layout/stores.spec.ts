@@ -73,3 +73,21 @@ test("press fact sheet lists phones first", async ({ page }) => {
   await expect(fact("Available for")).toHaveText("iPhone and iPad, Mac and Windows");
   await expect(fact("Coming soon")).toHaveText("Android and Linux");
 });
+
+// Copy covers phones and tablets too: no English page says the app works only
+// on "your computer", and no page offers folders on a phone (the iPhone and iPad
+// app encrypts files, photos, videos and text, not folders)
+test("English copy does not assume a computer", async ({ page }) => {
+  // The blog post carries the blog's call to action
+  const pages = ["/", "/features/", "/pricing/", "/press/", "/support/", "/blog/offline-encryption-privacy/"];
+  for (const path of pages) {
+    await page.goto(path);
+    const description = (await page.locator('meta[name="description"]').getAttribute("content")) ?? "";
+    const text = `${description}\n${await page.locator("main").innerText()}`;
+    expect(text, path).not.toMatch(/on your (own )?computer/i);
+    expect(text, path).not.toMatch(/folders[^.]*iPhone|iPhone[^.]*folders/i);
+  }
+  await page.goto("/support/");
+  await expect(page.locator("main")).toContainText("If I buy it on one platform, do I also get it on another?");
+  await expect(page.locator("main")).toContainText("buying on a computer does not include iPhone and iPad");
+});
