@@ -1,5 +1,6 @@
 Type: marketing site
 Ethos: the general rules and "Marketing websites: move faster" in ~/.claude/CLAUDE.md apply here. Where this file is stricter, it wins.
+Lessons file: `docs/RETRO.md` (date, problem, change, when to check, result).
 Lean: a one-person business, free and local first. No new paid services, GitHub Actions, CI minutes or dependencies without asking first.
 High risk here (stop and ask before changing):
 - Files the apps depend on: `public/.well-known/apple-app-site-association` and its root copy `.well-known/apple-app-site-association`, `public/.well-known/security.txt`, `public/.nojekyll`
