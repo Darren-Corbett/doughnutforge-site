@@ -68,12 +68,12 @@
     "text": "e643cd8fe8e6"
   },
   "faq.platforms.a": {
-    "en": "443811018f78",
-    "text": "b1c4d48fba55"
+    "en": "c0a37f63ca08",
+    "text": "4c2190caacd7"
   },
   "faq.platforms.q": {
-    "en": "825e4800f055",
-    "text": "6adfb255ce9d"
+    "en": "c6f63a297eb8",
+    "text": "4fddcf4d329c"
   },
   "faq.quantum.a": {
     "en": "30dd4e79e897",
@@ -155,6 +155,10 @@
     "en": "318655cea4bd",
     "text": "45a79d2ba672"
   },
+  "features.lead": {
+    "en": "72359c36e052",
+    "text": "87ae08009f98"
+  },
   "features.offline.title": {
     "en": "46ad7ef790d7",
     "text": "8deaef56c76b"
@@ -184,8 +188,12 @@
     "text": "1cca1c9a5c1d"
   },
   "home.features.title": {
-    "en": "1fc40bef85da",
-    "text": "e6d11106562d"
+    "en": "ae4b298e8a41",
+    "text": "5fd5ba2b3808"
+  },
+  "home.lead": {
+    "en": "93cde9431f4a",
+    "text": "5e82205e4fef"
   },
   "home.phones.altFile": {
     "en": "425723c2bfb0",
@@ -284,16 +292,16 @@
     "text": "67e4dfc35a3c"
   },
   "meta.features.description": {
-    "en": "5f0f52728c20",
-    "text": "ead8d1860e00"
+    "en": "deef289d4c0e",
+    "text": "1113e05919ee"
   },
   "meta.features.title": {
     "en": "a3c61fdbe6dc",
     "text": "f13c7bd31937"
   },
   "meta.home.description": {
-    "en": "11ed037f4b63",
-    "text": "b294e9a5860b"
+    "en": "590275b707f8",
+    "text": "3a43682281ae"
   },
   "meta.home.title": {
     "en": "c249448d7ebf",
@@ -403,6 +411,10 @@
     "en": "be91940b79f4",
     "text": "bbafa20fe393"
   },
+  "offline.text": {
+    "en": "449ed2015c4f",
+    "text": "576b89dd6dc0"
+  },
   "press.about.long": {
     "en": "3bae97ded740",
     "text": "ffa127ece547"
@@ -410,6 +422,10 @@
   "press.about.short": {
     "en": "796aecd3d1a2",
     "text": "783a6373c804"
+  },
+  "press.about.shortText": {
+    "en": "0e65c3796854",
+    "text": "e215d3b4ed98"
   },
   "press.about.title": {
     "en": "444b1330c3dd",
@@ -520,8 +536,8 @@
     "text": "222432129120"
   },
   "pricing.where.text": {
-    "en": "41df0b0c5670",
-    "text": "e106292e93f4"
+    "en": "43304b2e7547",
+    "text": "3320e8d36ddc"
   },
   "pricing.where.title": {
     "en": "f2ff3ffc2c74",

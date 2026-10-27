@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Houd privébestanden privé.",
-      "homeLead": "Doughnut Forge vergrendelt uw bestanden, mappen en tekst op uw computer en laat u ze delen met de mensen die u vertrouwt.",
-      "lead": "Doughnut Forge vergrendelt uw bestanden, mappen en tekst op uw computer en laat u ze delen met de mensen die u vertrouwt. Hoe u ze ook verstuurt, alleen zij kunnen ze openen.",
-      "never": "Geen abonnement. Geen account. Geen servers.",
-      "short": "Geen abonnement. Geen account. Geen servers. Versleutel bestanden, mappen en tekst op uw computer en deel ze veilig met mensen die u vertrouwt.",
-      "offline": "Geen abonnement, geen account, geen servers en geen tracking. Doughnut Forge werkt volledig op uw computer, ook zonder internetverbinding. Uw sleutels en contacten blijven bij u, onder uw controle."
+      "never": "Geen abonnement. Geen account. Geen servers."
     }
   },
   "ios": {

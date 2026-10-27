@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Fișierele private rămân private.",
-      "homeLead": "Doughnut Forge îți blochează fișierele, dosarele și textele pe computer și îți permite să le partajezi cu oamenii în care ai încredere.",
-      "lead": "Doughnut Forge îți blochează fișierele, dosarele și textele pe computer și îți permite să le partajezi cu oamenii în care ai încredere. Oricum le-ai trimite, doar ei le pot deschide.",
-      "never": "Fără abonament. Fără cont. Fără servere.",
-      "short": "Fără abonament. Fără cont. Fără servere. Criptează fișiere, dosare și text pe computer și partajează-le în siguranță cu oamenii de încredere.",
-      "offline": "Fără abonament, fără cont, fără servere și fără urmărire. Doughnut Forge funcționează în întregime pe computerul tău, chiar și fără conexiune la internet. Cheile și contactele tale rămân la tine, sub controlul tău."
+      "never": "Fără abonament. Fără cont. Fără servere."
     }
   },
   "ios": {

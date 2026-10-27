@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Prywatne pliki pozostają prywatne.",
-      "homeLead": "Doughnut Forge blokuje Twoje pliki, foldery i tekst na komputerze i pozwala udostępniać je osobom, którym ufasz.",
-      "lead": "Doughnut Forge blokuje Twoje pliki, foldery i tekst na komputerze i pozwala udostępniać je osobom, którym ufasz. Niezależnie od tego, jak je wyślesz, tylko one mogą je otworzyć.",
-      "never": "Bez subskrypcji. Bez konta. Bez serwerów.",
-      "short": "Bez subskrypcji. Bez konta. Bez serwerów. Szyfruj pliki, foldery i tekst na komputerze i bezpiecznie udostępniaj je zaufanym osobom.",
-      "offline": "Bez subskrypcji, bez konta, bez serwerów i bez śledzenia. Doughnut Forge działa w całości na Twoim komputerze, nawet bez połączenia z internetem. Twoje klucze i kontakty zostają przy Tobie, pod Twoją kontrolą."
+      "never": "Bez subskrypcji. Bez konta. Bez serwerów."
     }
   },
   "ios": {

@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Pastikan fail peribadi kekal peribadi.",
-      "homeLead": "Doughnut Forge mengunci fail, folder dan teks pada komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai.",
-      "lead": "Doughnut Forge mengunci fail, folder dan teks pada komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai. Walau bagaimana anda menghantarnya, hanya mereka yang boleh membukanya.",
-      "never": "Tiada langganan. Tiada akaun. Tiada pelayan.",
-      "short": "Tiada langganan. Tiada akaun. Tiada pelayan. Sulitkan fail, folder dan teks pada komputer anda dan kongsikannya dengan selamat.",
-      "offline": "Tiada langganan, tiada akaun, tiada pelayan dan tiada penjejakan. Doughnut Forge berfungsi sepenuhnya pada komputer anda, walaupun tanpa sambungan internet. Kunci dan kenalan anda kekal bersama anda, di bawah kawalan anda."
+      "never": "Tiada langganan. Tiada akaun. Tiada pelayan."
     }
   },
   "ios": {

@@ -110,8 +110,8 @@ const STORE_LOCALE = {
   "zh-CN": "zh-Hans", "zh-TW": "zh-Hant",
 };
 
-// Pages use parts of the store paragraphs (the headline, the text without "Pay
-// once"...), so the paragraphs are split into sentences here, once, where the
+// Pages use parts of the store paragraphs (the headline, the promotional text
+// without "One price, paid once."), so the paragraphs are split into sentences here, once, where the
 // split can be checked, instead of on the page. Intl.Segmenter knows "。" and "।".
 // Thai marks sentences with spaces only, the same as phrases, so its sentences
 // are listed by hand; each list must join back into the store text exactly.
@@ -121,12 +121,6 @@ const SENTENCES = {
       "เก็บไฟล์ส่วนตัวให้เป็นส่วนตัว",
       "Doughnut Forge ล็อกไฟล์ โฟลเดอร์ และข้อความบนคอมพิวเตอร์ของคุณ และให้คุณแชร์กับคนที่คุณไว้ใจได้",
       "ไม่ว่าคุณจะส่งด้วยวิธีใด มีเพียงพวกเขาเท่านั้นที่เปิดได้",
-    ],
-    "mac.noSubscription": [
-      "ไม่มีการสมัครสมาชิก ไม่มีบัญชี ไม่มีเซิร์ฟเวอร์ และไม่มีการติดตาม",
-      "Doughnut Forge ทำงานบนคอมพิวเตอร์ของคุณทั้งหมด แม้ไม่มีการเชื่อมต่ออินเทอร์เน็ต",
-      "คีย์และรายชื่อติดต่อของคุณอยู่กับคุณ ภายใต้การควบคุมของคุณ",
-      "จ่ายครั้งเดียว แล้วแอปก็เป็นของคุณ",
     ],
     "mac.promotionalText": [
       "ไม่มีการสมัครสมาชิก",
@@ -169,26 +163,19 @@ const readStore = (platform, loc) => {
   };
 };
 
-// The parts of the Mac listing the pages show. The last sentence of the
-// promotional text ("One price, paid once.") and of the no-subscription
-// paragraph ("You pay once, and the app is yours.") are left out everywhere:
-// each platform is a separate purchase.
+// The parts of the Mac listing the pages show. The rest of the Mac copy says "on
+// your computer", so the leads and the offline paragraph are the site's own
+// strings, written for phones, tablets and computers.
 const pageParts = (lang, mac) => {
   const opening = sentencesOf(lang, "mac.opening", mac.opening);
-  const noSub = sentencesOf(lang, "mac.noSubscription", mac.noSubscription);
   const promo = sentencesOf(lang, "mac.promotionalText", mac.promotionalText);
-  if (opening.length < 2 || noSub.length < 2 || promo.length < 3) {
-    throw new Error(`${lang}: store text has too few sentences (${opening.length}, ${noSub.length}, ${promo.length}); list them in SENTENCES`);
+  if (opening.length < 2 || promo.length < 3) {
+    throw new Error(`${lang}: store text has too few sentences (${opening.length}, ${promo.length}); list them in SENTENCES`);
   }
   return {
     headline: opening[0],
-    // The home page shows only the second sentence: its tagline already says the third
-    homeLead: opening[1],
-    lead: joinSentences(opening.slice(1)),
     // "No subscription. No account. No servers.": everything before the last two sentences
     never: joinSentences(promo.slice(0, -2)),
-    short: joinSentences(promo.slice(0, -1)),
-    offline: joinSentences(noSub.slice(0, -1)),
   };
 };
 

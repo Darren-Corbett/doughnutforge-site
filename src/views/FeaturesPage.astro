@@ -23,11 +23,9 @@ const [encFiles, encText, identity, share, longTerm, inLanguage] = store.mac.fea
 if (!encFiles || !encText || !identity || !share || !longTerm || !inLanguage) {
   throw new Error(`The Mac store listing has ${store.mac.features.length} features; the features page expects 6.`);
 }
-// The store opening without its first sentence, which is the home page headline, and
-// "No subscription, no account, no servers and no tracking. ..." without the last
-// sentence, "You pay once, and the app is yours.": each platform is bought separately.
-// Both are split per language by scripts/sync-from-app.mjs.
-const { lead, offline } = store.mac.parts;
+// The site's own lead and offline paragraph, for phones, tablets and computers
+const lead = t("features.lead");
+const offline = t("offline.text");
 
 const rows: ToneRow[] = [
   { name: app("app:navigation.tabs.vault"), tone: "blue", ...encFiles, more: [app("help:secureDirectoryGuide.step1.description")] },

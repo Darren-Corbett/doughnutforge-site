@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Soukromé soubory ať zůstanou soukromé.",
-      "homeLead": "Doughnut Forge zamyká vaše soubory, složky a text ve vašem počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete.",
-      "lead": "Doughnut Forge zamyká vaše soubory, složky a text ve vašem počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete. Ať je pošlete jakkoli, otevřít je mohou jen oni.",
-      "never": "Bez předplatného. Bez účtu. Bez serverů.",
-      "short": "Bez předplatného. Bez účtu. Bez serverů. Šifrujte soubory, složky a text ve svém počítači a bezpečně je sdílejte s lidmi, kterým důvěřujete.",
-      "offline": "Bez předplatného, bez účtu, bez serverů a bez sledování. Doughnut Forge funguje celý ve vašem počítači, i bez připojení k internetu. Vaše klíče a kontakty zůstávají u vás, pod vaší kontrolou."
+      "never": "Bez předplatného. Bez účtu. Bez serverů."
     }
   },
   "ios": {

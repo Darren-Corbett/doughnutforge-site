@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Private Dateien bleiben privat.",
-      "homeLead": "Doughnut Forge verschlüsselt Ihre Dateien, Ordner und Texte auf Ihrem Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen.",
-      "lead": "Doughnut Forge verschlüsselt Ihre Dateien, Ordner und Texte auf Ihrem Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen. Egal, wie Sie sie versenden: Nur diese Menschen können sie öffnen.",
-      "never": "Kein Abo. Kein Konto. Keine Server.",
-      "short": "Kein Abo. Kein Konto. Keine Server. Verschlüsseln Sie Dateien, Ordner und Texte auf Ihrem Computer und teilen Sie sie sicher mit Vertrauten.",
-      "offline": "Kein Abo, kein Konto, keine Server und kein Tracking. Doughnut Forge läuft komplett auf Ihrem Computer, auch ohne Internetverbindung. Ihre Schlüssel und Kontakte bleiben bei Ihnen, unter Ihrer Kontrolle."
+      "never": "Kein Abo. Kein Konto. Keine Server."
     }
   },
   "ios": {

@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Vos fichiers privés restent privés.",
-      "homeLead": "Doughnut Forge verrouille vos fichiers, dossiers et textes sur votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance.",
-      "lead": "Doughnut Forge verrouille vos fichiers, dossiers et textes sur votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance. Quelle que soit la façon dont vous les envoyez, elles seules peuvent les ouvrir.",
-      "never": "Sans abonnement. Sans compte. Sans serveur.",
-      "short": "Sans abonnement. Sans compte. Sans serveur. Chiffrez fichiers, dossiers et textes sur votre ordinateur et partagez-les en toute sécurité.",
-      "offline": "Sans abonnement, sans compte, sans serveur et sans pistage. Doughnut Forge fonctionne entièrement sur votre ordinateur, même sans connexion Internet. Vos clés et vos contacts restent avec vous, sous votre contrôle."
+      "never": "Sans abonnement. Sans compte. Sans serveur."
     }
   },
   "ios": {

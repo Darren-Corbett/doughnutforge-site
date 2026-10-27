@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "A privát fájlok maradjanak privátok.",
-      "homeLead": "A Doughnut Forge lezárja a fájljaidat, mappáidat és szövegeidet a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol.",
-      "lead": "A Doughnut Forge lezárja a fájljaidat, mappáidat és szövegeidet a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol. Bárhogyan küldöd is el őket, csak ők nyithatják meg.",
-      "never": "Nincs előfizetés. Nincs fiók. Nincsenek szerverek.",
-      "short": "Nincs előfizetés. Nincs fiók. Nincsenek szerverek. Titkosíts fájlokat, mappákat és szöveget a gépeden, és oszd meg őket biztonságosan.",
-      "offline": "Nincs előfizetés, nincs fiók, nincsenek szerverek és nincs követés. A Doughnut Forge teljes egészében a számítógépeden működik, internetkapcsolat nélkül is. A kulcsaid és a névjegyeid nálad maradnak, a te irányításod alatt."
+      "never": "Nincs előfizetés. Nincs fiók. Nincsenek szerverek."
     }
   },
   "ios": {

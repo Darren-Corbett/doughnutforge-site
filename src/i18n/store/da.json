@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Hold private filer private.",
-      "homeLead": "Doughnut Forge låser dine filer, mapper og tekst på din computer og lader dig dele dem med dem, du stoler på.",
-      "lead": "Doughnut Forge låser dine filer, mapper og tekst på din computer og lader dig dele dem med dem, du stoler på. Uanset hvordan du sender dem, er det kun dem, der kan åbne dem.",
-      "never": "Intet abonnement. Ingen konto. Ingen servere.",
-      "short": "Intet abonnement. Ingen konto. Ingen servere. Kryptér filer, mapper og tekst på din computer, og del dem sikkert med dem, du stoler på.",
-      "offline": "Intet abonnement, ingen konto, ingen servere og ingen sporing. Doughnut Forge kører helt på din computer, også uden internetforbindelse. Dine nøgler og kontakter bliver hos dig, under din kontrol."
+      "never": "Intet abonnement. Ingen konto. Ingen servere."
     }
   },
   "ios": {

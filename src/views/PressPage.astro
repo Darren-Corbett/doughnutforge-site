@@ -16,11 +16,10 @@ interface Props {
 const { lang } = Astro.props;
 const { t, app, store } = useStrings(lang.code);
 
-// The store's promotional text without its last sentence, "One price, paid once."
-const { short, offline } = store.mac.parts;
-// The store description's opening, then the no-subscription paragraph without
-// "You pay once, and the app is yours.", then the closing line
-const long = [store.mac.opening, offline, store.mac.closing];
+// The site's own descriptions, for phones, tablets and computers, around the
+// store's headline and closing line
+const short = t("press.about.shortText");
+const long = [store.mac.parts.headline, t("features.lead"), t("offline.text"), store.mac.closing];
 
 const names = (status: "available" | "coming") =>
   listOf(lang, platforms.filter((p) => p.status === status).map((p) => platformName(lang, p.id)));

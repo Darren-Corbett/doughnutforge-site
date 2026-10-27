@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Arquivos privados continuam privados.",
-      "homeLead": "Doughnut Forge protege seus arquivos, pastas e textos no seu computador e permite compartilhá-los com as pessoas em quem você confia.",
-      "lead": "Doughnut Forge protege seus arquivos, pastas e textos no seu computador e permite compartilhá-los com as pessoas em quem você confia. Não importa como você os envie, só elas podem abri-los.",
-      "never": "Sem assinatura. Sem conta. Sem servidores.",
-      "short": "Sem assinatura. Sem conta. Sem servidores. Criptografe arquivos, pastas e textos no seu computador e compartilhe com segurança com quem você confia.",
-      "offline": "Sem assinatura, sem conta, sem servidores e sem rastreamento. Doughnut Forge funciona totalmente no seu computador, mesmo sem conexão com a internet. Suas chaves e contatos ficam com você, sob seu controle."
+      "never": "Sem assinatura. Sem conta. Sem servidores."
     }
   },
   "ios": {

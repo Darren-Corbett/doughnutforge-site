@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Giữ tệp riêng tư luôn riêng tư.",
-      "homeLead": "Doughnut Forge khóa tệp, thư mục và văn bản trên máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng.",
-      "lead": "Doughnut Forge khóa tệp, thư mục và văn bản trên máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng. Dù bạn gửi bằng cách nào, chỉ họ mới mở được.",
-      "never": "Không thuê bao. Không tài khoản. Không máy chủ.",
-      "short": "Không thuê bao. Không tài khoản. Không máy chủ. Mã hóa tệp, thư mục và văn bản trên máy tính, rồi chia sẻ an toàn với người bạn tin tưởng.",
-      "offline": "Không thuê bao, không tài khoản, không máy chủ và không theo dõi. Doughnut Forge hoạt động hoàn toàn trên máy tính của bạn, kể cả khi không có kết nối internet. Khóa và danh bạ của bạn luôn ở bên bạn, trong tầm kiểm soát của bạn."
+      "never": "Không thuê bao. Không tài khoản. Không máy chủ."
     }
   },
   "ios": {

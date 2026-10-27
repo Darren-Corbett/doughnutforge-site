@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Özel dosyalarınız özel kalsın.",
-      "homeLead": "Doughnut Forge, bilgisayarınızdaki dosyaları, klasörleri ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar.",
-      "lead": "Doughnut Forge, bilgisayarınızdaki dosyaları, klasörleri ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar. Nasıl gönderirseniz gönderin, onları yalnızca o kişiler açabilir.",
-      "never": "Abonelik yok. Hesap yok. Sunucu yok.",
-      "short": "Abonelik yok. Hesap yok. Sunucu yok. Bilgisayarınızda dosya, klasör ve metinleri şifreleyin, güvendiğiniz kişilerle güvenle paylaşın.",
-      "offline": "Abonelik yok, hesap yok, sunucu yok, takip yok. Doughnut Forge tamamen bilgisayarınızda, internet bağlantısı olmadan bile çalışır. Anahtarlarınız ve kişileriniz sizde, sizin kontrolünüzde kalır."
+      "never": "Abonelik yok. Hesap yok. Sunucu yok."
     }
   },
   "ios": {

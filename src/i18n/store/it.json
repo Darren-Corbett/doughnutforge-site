@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "I file privati restano privati.",
-      "homeLead": "Doughnut Forge blocca file, cartelle e testo sul tuo computer e ti permette di condividerli con le persone di cui ti fidi.",
-      "lead": "Doughnut Forge blocca file, cartelle e testo sul tuo computer e ti permette di condividerli con le persone di cui ti fidi. Comunque tu li invii, solo loro possono aprirli.",
-      "never": "Nessun abbonamento. Nessun account. Nessun server.",
-      "short": "Nessun abbonamento. Nessun account. Nessun server. Cifra file, cartelle e testo sul tuo computer e condividili in sicurezza con chi vuoi.",
-      "offline": "Nessun abbonamento, nessun account, nessun server e nessun tracciamento. Doughnut Forge funziona interamente sul tuo computer, anche senza connessione a Internet. Le tue chiavi e i tuoi contatti restano con te, sotto il tuo controllo."
+      "never": "Nessun abbonamento. Nessun account. Nessun server."
     }
   },
   "ios": {

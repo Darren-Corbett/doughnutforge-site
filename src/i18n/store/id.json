@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Jaga file pribadi tetap pribadi.",
-      "homeLead": "Doughnut Forge mengunci file, folder, dan teks di komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya.",
-      "lead": "Doughnut Forge mengunci file, folder, dan teks di komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya. Apa pun cara Anda mengirimnya, hanya mereka yang dapat membukanya.",
-      "never": "Tanpa langganan. Tanpa akun. Tanpa server.",
-      "short": "Tanpa langganan. Tanpa akun. Tanpa server. Enkripsi file, folder, dan teks di komputer Anda, lalu bagikan dengan aman kepada orang yang Anda percaya.",
-      "offline": "Tanpa langganan, tanpa akun, tanpa server, dan tanpa pelacakan. Doughnut Forge bekerja sepenuhnya di komputer Anda, bahkan tanpa koneksi internet. Kunci dan kontak Anda tetap bersama Anda, di bawah kendali Anda."
+      "never": "Tanpa langganan. Tanpa akun. Tanpa server."
     }
   },
   "ios": {

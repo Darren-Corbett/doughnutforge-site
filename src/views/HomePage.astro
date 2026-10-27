@@ -25,9 +25,11 @@ const [encFiles, encText, identity, share, longTerm, language] = store.mac.featu
 if (!encFiles || !encText || !identity || !share || !longTerm || !language) {
   throw new Error(`The store listing has ${store.mac.features.length} features; the home page expects 6.`);
 }
-// The headline is the store description's first sentence and the lead its second
-// (split per language by scripts/sync-from-app.mjs).
-const { headline, homeLead: lead } = store.mac.parts;
+// The headline is the store description's first sentence (split per language by
+// scripts/sync-from-app.mjs). The lead is the site's own: the Mac listing's says
+// "on your computer", and the app is on phones and tablets too.
+const { headline } = store.mac.parts;
+const lead = t("home.lead");
 
 const rows: ToneRow[] = [
   { name: app("app:navigation.tabs.vault"), tone: "blue", ...encFiles },

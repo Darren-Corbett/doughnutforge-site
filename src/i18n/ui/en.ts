@@ -5,7 +5,7 @@
 export default {
   "meta.home.title": "Doughnut Forge: offline encryption for files, folders and text",
   "meta.home.description":
-    "Encrypt files, folders and text on your computer and share them with the people you trust. No account, no servers, no subscription: a one-time purchase for each platform.",
+    "Encrypt files and text on your iPhone, iPad or computer, and share them with the people you trust. No account, no servers, no subscription: a one-time purchase for each platform.",
 
   "nav.label": "Main",
   "nav.features": "Features",
@@ -23,6 +23,7 @@ export default {
   "skip": "Skip to content",
 
   "home.tagline": "Only the people you choose can open them.",
+  "home.lead": "Doughnut Forge locks your files and text on your iPhone, iPad or computer and lets you share them with the people you trust.",
   "home.cta.primary": "Get Doughnut Forge",
   "home.cta.secondary": "See what it does",
 
@@ -39,7 +40,7 @@ export default {
   "home.phones.altFile": "Doughnut Forge on iPhone: the Secure File screen with Encrypt File and Decrypt File",
   "home.phones.altIdentity": "Doughnut Forge on iPhone: the Identity screen with a contact card to share",
 
-  "home.features.title": "Lock it on your computer. Share it any way you like.",
+  "home.features.title": "Lock it on your device. Share it any way you like.",
 
   "home.pricing.title": "One-time purchase, never a subscription.",
   "home.pricing.text": "Buy Doughnut Forge once for each platform you use, from that platform's store. The store shows the price where you live.",
@@ -61,10 +62,15 @@ export default {
   // Features page
   "meta.features.title": "Features: offline encryption for files, folders and text | Doughnut Forge",
   "meta.features.description":
-    "Encrypt files, folders and text on your own computer, share them with people you trust, and keep them protected for the long term. No account and no servers.",
+    "Encrypt files and text on your own iPhone, iPad or computer, share them with people you trust, and keep them protected for the long term. No account and no servers.",
   "features.title": "Everything Doughnut Forge does",
+  "features.lead":
+    "Doughnut Forge locks your files and text on your iPhone, iPad or computer and lets you share them with the people you trust. However you send them, only they can open them.",
   "features.private.title": "Private from the start",
   "features.offline.title": "Works without the internet",
+  // On the features, pricing and press pages: the iPhone and iPad store listing's paragraph without "You pay once, and the app is yours."
+  "offline.text":
+    "No subscription, no account, no servers and no tracking. Doughnut Forge works entirely on your device, even without an internet connection. Your keys and contacts stay with you, under your control.",
   "features.languages.label": "Languages",
   "features.ios.text": "The iPhone and iPad app adds a few things of its own.",
   "features.ios.altEncrypting": "Doughnut Forge on iPhone: a video being encrypted, 75% done",
@@ -78,7 +84,7 @@ export default {
     "Buy Doughnut Forge once for each platform you use, from that platform's store. No subscription, no account and nothing to renew.",
   "pricing.where.title": "Where to buy",
   "pricing.where.text":
-    "Each platform is a separate purchase from its own store. Buying on Mac does not include Windows, and buying on Windows does not include Mac.",
+    "Each platform is a separate purchase from its own store. Buying on iPhone and iPad does not include Mac or Windows, and buying on a computer does not include iPhone and iPad.",
   "pricing.oneTime": "One-time purchase from the {store}",
   "pricing.questions": "Questions about buying?",
   "pricing.questionsLink": "See the answers on the support page",
@@ -129,9 +135,9 @@ export default {
   "faq.subscription.q": "Is Doughnut Forge a subscription?",
   "faq.subscription.a":
     "No. Doughnut Forge is a one-time purchase, never a subscription. You buy it once from the store for your platform, and there is nothing to renew.",
-  "faq.platforms.q": "If I buy it on Mac, do I also get it on Windows?",
+  "faq.platforms.q": "If I buy it on one platform, do I also get it on another?",
   "faq.platforms.a":
-    "No. Each platform is a separate purchase from its own store: the Mac App Store for Mac and the Microsoft Store for Windows. Buy it once for each platform you use.",
+    "No. Each platform is a separate purchase from its own store: the App Store for iPhone and iPad, the Mac App Store for Mac and the Microsoft Store for Windows. Buying on iPhone and iPad does not include Mac or Windows, and buying on a computer does not include iPhone and iPad.",
   "faq.offline.q": "Do I need an account or an internet connection?",
   "faq.offline.a":
     "No. There is no account to create, and Doughnut Forge works entirely on your device, even without an internet connection. You only need a connection to download the app, or if you choose to send encrypted files over the internet.",
@@ -172,6 +178,8 @@ export default {
   "press.lead": "Everything you need to write about Doughnut Forge: descriptions, facts, icons and screenshots.",
   "press.about.title": "About Doughnut Forge",
   "press.about.short": "Short description",
+  "press.about.shortText":
+    "No subscription. No account. No servers. Encrypt files and text on your iPhone, iPad or computer and share them safely with the people you trust.",
   "press.about.long": "Long description",
   "press.facts.title": "Fact sheet",
   "press.facts.name": "Name",
@@ -265,7 +273,7 @@ export default {
   "blog.draft": "Draft",
   "blog.feed": "RSS feed",
   "blog.cta.title": "Try Doughnut Forge",
-  "blog.cta.text": "Encrypt files on your own computer and share them with the people you trust.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
 
   // One answered question or known issue: English only, like the blog
   "issue.question": "Question",

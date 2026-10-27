@@ -34,11 +34,7 @@
     ],
     "parts": {
       "headline": "Pidä yksityiset tiedostot yksityisinä.",
-      "homeLead": "Doughnut Forge lukitsee tiedostosi, kansiosi ja tekstisi tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa.",
-      "lead": "Doughnut Forge lukitsee tiedostosi, kansiosi ja tekstisi tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa. Lähetitpä ne miten tahansa, vain he voivat avata ne.",
-      "never": "Ei tilausta. Ei tiliä. Ei palvelimia.",
-      "short": "Ei tilausta. Ei tiliä. Ei palvelimia. Salaa tiedostot, kansiot ja tekstit tietokoneellasi ja jaa ne turvallisesti luotettujen ihmisten kanssa.",
-      "offline": "Ei tilausta, ei tiliä, ei palvelimia eikä seurantaa. Doughnut Forge toimii kokonaan tietokoneellasi, myös ilman internetyhteyttä. Avaimesi ja yhteystietosi pysyvät sinulla, sinun hallinnassasi."
+      "never": "Ei tilausta. Ei tiliä. Ei palvelimia."
     }
   },
   "ios": {
