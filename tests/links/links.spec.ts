@@ -141,8 +141,9 @@ test.describe("live site", () => {
     expect(sitemaps.length).toBeGreaterThan(0);
     for (const s of sitemaps) {
       const locs = [...(await (await request.get(s)).text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]!);
-      expect(locs.length, s).toBe(245);
-      // Spot-check one page per language rather than fetching all 245
+      // The live sitemap lists the same pages as this build's
+      expect(locs.length, s).toBe([...readFileSync(`${dist}/sitemap-0.xml`, "utf8").matchAll(/<loc>/g)].length);
+      // Spot-check one page per language rather than fetching every page
       for (const loc of locs.filter((l) => /\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?features\/$/.test(l))) expect((await request.get(loc)).status(), loc).toBe(200);
     }
 
