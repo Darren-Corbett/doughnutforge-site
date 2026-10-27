@@ -1,6 +1,6 @@
-// iPhone and iPad are on sale: in every language the iPhone and iPad card and
-// the home page carry the App Store badge for the iPhone and iPad app, never the
-// Mac app's, and the English pages no longer call that app "coming soon".
+// iPhone and iPad are on sale, and lead: in every language the iPhone and iPad
+// card and the home page carry the App Store badge for the iPhone and iPad app,
+// never the Mac app's, and the English pages no longer call that app "coming soon".
 import { expect, test } from "@playwright/test";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 
@@ -34,4 +34,42 @@ test("English pages do not call the iPhone and iPad app coming soon", async ({ p
   }
   await page.goto("/download/");
   await expect(page).toHaveTitle(/iPhone/);
+});
+
+// Mobile first: on sale before coming soon, each group in the order iPhone and
+// iPad, Android, Mac, Windows, Linux (src/data/stores.ts). This is the order
+// without any script, and what search engines see.
+const ON_SALE = ["ios", "mac", "windows"];
+const COMING = ["android", "linux"];
+const STORE_ORDER = [/apps\.apple\.com\/app\/id6821344597/, /apps\.apple\.com\/app\/id6812778888/, /apps\.microsoft\.com/];
+
+for (const lang of languages) {
+  test(`mobile-first platform order ${lang.code}`, async ({ page }) => {
+    for (const path of ["/download/", "/pricing/"]) {
+      // The served HTML, before any script runs
+      const html = await (await page.request.get(`${prefix(lang)}${path}`)).text();
+      const order = [...html.matchAll(/data-platform="(\w+)"/g)].map((m) => m[1]);
+      expect(order, `${path}: card order`).toEqual([...ON_SALE, ...COMING]);
+    }
+    const home = await (await page.request.get(`${prefix(lang)}/`)).text();
+    const badges = [...home.matchAll(/<a href="(https:\/\/apps\.[^"]+)"/g)].map((m) => m[1]!);
+    expect(badges.length, "home: badges").toBe(3);
+    badges.forEach((href, i) => expect(href, `home badge ${i + 1}`).toMatch(STORE_ORDER[i]!));
+    // Titles and descriptions name the phone platforms first, in every language
+    await page.goto(`${prefix(lang)}/download/`);
+    const title = await page.title();
+    const description = (await page.locator('meta[name="description"]').getAttribute("content"))!;
+    expect(title.indexOf("iPhone"), `title: ${title}`).toBeLessThan(title.indexOf("Mac"));
+    expect(description.indexOf("iPhone"), `description: ${description}`).toBeLessThan(description.indexOf("Mac"));
+    expect(description.indexOf("Android"), `description: ${description}`).toBeLessThan(description.indexOf("Linux"));
+    const ld = JSON.parse((await page.locator('script[type="application/ld+json"]').first().textContent())!);
+    expect([ld].flat().find((d) => d["@type"] === "SoftwareApplication").operatingSystem).toBe("iOS, iPadOS, macOS, Windows");
+  });
+}
+
+test("press fact sheet lists phones first", async ({ page }) => {
+  await page.goto("/press/");
+  const fact = (term: string) => page.locator(".facts div", { has: page.locator("dt", { hasText: term }) }).locator("dd");
+  await expect(fact("Available for")).toHaveText("iPhone and iPad, Mac and Windows");
+  await expect(fact("Coming soon")).toHaveText("Android and Linux");
 });
