@@ -82,6 +82,8 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ### Later (owner, 26 October 2026; not built yet)
 
+- **Optional, small (owner, 27 October 2026): the plain store button on /go/ pages without JavaScript.** With JavaScript off and the badge image blocked, the page shows the empty badge space and "Back to Doughnut Forge", but not the plain "Open the App Store" button, because nothing can notice the badge is missing. A fix: show that button whenever JavaScript is off (for example a `<noscript>` style), and test it in `tests/blockers/go-pages.spec.ts` ("without JavaScript").
+
 - **A static redirect for the old `/get/` addresses.** `/get/<store>/<language>/` was live for about a day before `/go/` replaced it, and now returns 404.
 - **Run `npm run test:links` locally before a push**, by hand or with a local git hook, never a GitHub Action. Today it runs only when asked.
 
