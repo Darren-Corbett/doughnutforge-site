@@ -166,7 +166,8 @@ for (const path of PAGES) {
         // The /go/ page sends the visitor on to exactly the badge's store page
         const html = readFileSync(`${dist}${second!.href}index.html`, "utf8");
         expect(html, "forwards at once").toContain(`<meta http-equiv="refresh" content="0; url=${b.url.replaceAll("&", "&amp;")}">`);
-        expect(html, "with a link to tap if it does not").toContain(`href="${b.url.replaceAll("&", "&amp;")}"`);
+        // A link straight to the store can be hidden too, so the button to tap tries this page again
+        expect(html, "with a button to tap if it does not").toContain(`href="${second!.href}"`);
         expect(html, "never indexed").toContain('<meta name="robots" content="noindex">');
       }
     });
@@ -201,7 +202,7 @@ test("the text link marks only the badge's English wording as English", async ({
   }
 });
 
-test("a /go/ page has a main, one h1 and a store link at least 44px tall", async ({ page }) => {
+test("a /go/ page has a main, one h1 and links at least 44px tall", async ({ page }) => {
   const goPages = ["/download/", "/de/download/"].flatMap((path) =>
     [...readFileSync(`${dist}${path}index.html`, "utf8").matchAll(/href="(\/go\/[^"]+)"/g)].map((m) => `${m[1]!.slice(1)}index.html`),
   );
@@ -212,8 +213,9 @@ test("a /go/ page has a main, one h1 and a store link at least 44px tall", async
     await page.setContent(html);
     await expect(page.locator("main"), file).toHaveCount(1);
     await expect(page.locator("h1"), file).toHaveCount(1);
-    const box = await page.locator("main a").boundingBox();
-    expect(box!.height, `${file}: link height`).toBeGreaterThanOrEqual(44);
+    const links = await page.locator("main a").all();
+    expect(links.length, `${file}: a button on and a link back`).toBe(2);
+    for (const link of links) expect((await link.boundingBox())!.height, `${file}: link height`).toBeGreaterThanOrEqual(44);
   }
 });
 
