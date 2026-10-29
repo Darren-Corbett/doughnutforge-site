@@ -33,6 +33,7 @@ test("home page: SecurityApplication and Organization structured data", async ({
   const data = await jsonLd(page);
   const app = data.find((d) => d["@type"] === "SoftwareApplication");
   expect(app?.applicationCategory).toBe("SecurityApplication");
+  expect(app).toMatchObject({ name: "Doughnut Forge", url: "https://doughnut-forge.app/", operatingSystem: "iOS, iPadOS, macOS, Windows", inLanguage: "en-GB" });
   expect(app?.offers).toBeUndefined();
   const org = data.find((d) => d["@type"] === "Organization");
   expect(org).toMatchObject({ name: "Doughnut Forge", url: "https://doughnut-forge.app/", logo: "https://doughnut-forge.app/icon-512.png" });
