@@ -90,7 +90,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ## 404 page (29 October 2026)
 
-- `src/views/NotFoundPage.astro`: "This page is encrypted. Nobody can find it.", an inline padlock SVG drawn from the app icon (aria-hidden, under 3 KB, shackle clicks shut once), and a one-time 1.2-second scramble of the heading as an aria-hidden overlay. Reduced motion or no JavaScript: final text, no movement. Tests: `tests/layout/not-found.spec.ts`. Lighthouse (mobile, `/404.html`): 100 performance, accessibility and best practices; SEO 66 only because of `noindex`.
+- `src/views/NotFoundPage.astro`: "This page is encrypted. Nobody can find it.", an inline padlock SVG drawn from the app icon (aria-hidden, under 3 KB, shackle clicks shut once), and a one-time 2.4-second scramble of the heading (letters change about 14 times a second; slowed from 1.2 seconds, owner) as an aria-hidden overlay. Reduced motion or no JavaScript: final text, no movement. Tests: `tests/layout/not-found.spec.ts`. Lighthouse (mobile, `/404.html`): 100 performance, accessibility and best practices; SEO 66 only because of `noindex`.
 - **After the next push:** check once that a missing address still answers 404: `curl -s -o /dev/null -w "%{http_code}" https://doughnut-forge.app/no-such-page/`.
 
 ## SEO pass (29 October 2026)
