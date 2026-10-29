@@ -32,6 +32,7 @@ Every post and every binned draft, newest last. Drafting does not write here: **
 | 23 October 2026 | Why offline encryption keeps your files private | – | offline, no servers | understanding offline encryption | offline encryption | published |
 | 23 October 2026 | What quantum-safe encryption means, in plain language | – | post-quantum | understanding quantum-safe encryption | quantum-safe encryption | published |
 | 23 October 2026 | How to share encrypted files with someone you trust | – | private sharing | sharing files with a trusted person | share encrypted files | published |
+| 29 October 2026 | Breaches keep happening. Here is what you can still control | DHS personnel data breach, 28 October 2026 ([NPR](https://www.npr.org/2026/10/28/nx-s1-6021497/dhs-hack-ice), [BBC](https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo)) | no servers | keeping your own private files under your control | protect personal files from data breaches | published |
 
 ## Backlog
 Status: **proposed** (waiting for the owner), **approved**, or **taken** (with the date drafted). Each topic's "Limits" are the facts that rule out the easy, untrue version of the post.
