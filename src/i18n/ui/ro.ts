@@ -21,6 +21,9 @@ export default {
   "home.summary": "Criptare offline a fișierelor pentru Mac, iPhone, iPad și Windows.",
   "home.tagline": "Doar oamenii pe care îi alegi le pot deschide.",
   "home.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad sau computer și îți permite să le partajezi cu oamenii în care ai încredere.",
+  "home.what.title": "Ce este Doughnut Forge?",
+  "home.what.text":
+    "Doughnut Forge este o aplicație de criptare offline a fișierelor pentru Mac, iPhone, iPad și Windows. Îți blochează fișierele și textele pe propriul dispozitiv, iar tu le partajezi doar cu oamenii pe care îi alegi.",
   "home.cta.primary": "Obține Doughnut Forge",
   "home.cta.secondary": "Vezi ce face",
   "home.specimen.stranger": "Ce vede oricine altcineva",

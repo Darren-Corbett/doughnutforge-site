@@ -21,6 +21,9 @@ export default {
   "home.summary": "เข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, iPhone, iPad และ Windows",
   "home.tagline": "มีเพียงคนที่คุณเลือกเท่านั้นที่เปิดได้",
   "home.lead": "Doughnut Forge ล็อกไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณ และให้คุณแชร์กับคนที่คุณไว้ใจได้",
+  "home.what.title": "Doughnut Forge คืออะไร?",
+  "home.what.text":
+    "Doughnut Forge คือแอปเข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, iPhone, iPad และ Windows แอปจะล็อกไฟล์และข้อความไว้บนอุปกรณ์ของคุณเอง และคุณแชร์ให้เฉพาะคนที่คุณเลือกเท่านั้น",
   "home.cta.primary": "รับ Doughnut Forge",
   "home.cta.secondary": "ดูว่าทำอะไรได้บ้าง",
   "home.specimen.stranger": "สิ่งที่คนอื่นเห็น",

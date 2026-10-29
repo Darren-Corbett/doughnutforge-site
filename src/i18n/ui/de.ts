@@ -21,6 +21,9 @@ export default {
   "home.summary": "Offline-Dateiverschlüsselung für Mac, iPhone, iPad und Windows.",
   "home.tagline": "Nur die Menschen, die Sie auswählen, können sie öffnen.",
   "home.lead": "Doughnut Forge verschlüsselt Ihre Dateien und Texte auf Ihrem iPhone, iPad oder Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen.",
+  "home.what.title": "Was ist Doughnut Forge?",
+  "home.what.text":
+    "Doughnut Forge ist eine App zur Offline-Dateiverschlüsselung für Mac, iPhone, iPad und Windows. Sie verschlüsselt Ihre Dateien und Texte auf Ihrem eigenen Gerät, und Sie teilen sie nur mit den Menschen, die Sie auswählen.",
   "home.cta.primary": "Doughnut Forge holen",
   "home.cta.secondary": "Was die App kann",
   "home.specimen.stranger": "Was alle anderen sehen",

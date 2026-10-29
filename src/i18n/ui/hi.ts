@@ -21,6 +21,9 @@ export default {
   "home.summary": "Mac, iPhone, iPad और Windows के लिए ऑफ़लाइन फ़ाइल एन्क्रिप्शन।",
   "home.tagline": "इन्हें केवल वही लोग खोल सकते हैं जिन्हें आप चुनते हैं।",
   "home.lead": "Doughnut Forge आपके iPhone, iPad या कंप्यूटर पर आपकी फ़ाइलों और टेक्स्ट को लॉक करता है और आपको उन्हें अपने भरोसेमंद लोगों के साथ शेयर करने देता है।",
+  "home.what.title": "Doughnut Forge क्या है?",
+  "home.what.text":
+    "Doughnut Forge Mac, iPhone, iPad और Windows के लिए एक ऑफ़लाइन फ़ाइल एन्क्रिप्शन ऐप है। यह आपकी फ़ाइलों और टेक्स्ट को आपके अपने डिवाइस पर लॉक करता है, और आप उन्हें सिर्फ़ उन्हीं लोगों के साथ शेयर करते हैं जिन्हें आप चुनते हैं।",
   "home.cta.primary": "Doughnut Forge पाएँ",
   "home.cta.secondary": "देखें यह क्या करता है",
   "home.specimen.stranger": "बाकी सबको क्या दिखता है",

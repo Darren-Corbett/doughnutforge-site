@@ -21,6 +21,9 @@ export default {
   "home.summary": "Mã hóa tệp ngoại tuyến cho Mac, iPhone, iPad và Windows.",
   "home.tagline": "Chỉ những người bạn chọn mới mở được.",
   "home.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng.",
+  "home.what.title": "Doughnut Forge là gì?",
+  "home.what.text":
+    "Doughnut Forge là ứng dụng mã hóa tệp ngoại tuyến cho Mac, iPhone, iPad và Windows. Ứng dụng khóa tệp và văn bản ngay trên thiết bị của bạn, và bạn chỉ chia sẻ chúng với những người bạn chọn.",
   "home.cta.primary": "Tải Doughnut Forge",
   "home.cta.secondary": "Xem ứng dụng làm được gì",
   "home.specimen.stranger": "Những gì người khác thấy",

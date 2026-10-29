@@ -21,6 +21,9 @@ export default {
   "home.summary": "Tiedostojen offline-salaus Macille, iPhonelle, iPadille ja Windowsille.",
   "home.tagline": "Vain valitsemasi ihmiset voivat avata ne.",
   "home.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa.",
+  "home.what.title": "Mikä Doughnut Forge on?",
+  "home.what.text":
+    "Doughnut Forge on tiedostojen offline-salaussovellus Macille, iPhonelle, iPadille ja Windowsille. Se lukitsee tiedostosi ja tekstisi omalla laitteellasi, ja jaat ne vain valitsemillesi ihmisille.",
   "home.cta.primary": "Hanki Doughnut Forge",
   "home.cta.secondary": "Katso, mitä se tekee",
   "home.specimen.stranger": "Mitä kaikki muut näkevät",

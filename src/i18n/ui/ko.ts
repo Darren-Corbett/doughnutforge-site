@@ -21,6 +21,9 @@ export default {
   "home.summary": "Mac, iPhone, iPad, Windows용 오프라인 파일 암호화.",
   "home.tagline": "내가 선택한 사람만 열 수 있습니다.",
   "home.lead": "Doughnut Forge는 iPhone, iPad 또는 컴퓨터의 파일과 텍스트를 잠그고 신뢰하는 사람과 공유할 수 있게 해 줍니다.",
+  "home.what.title": "Doughnut Forge란?",
+  "home.what.text":
+    "Doughnut Forge는 Mac, iPhone, iPad, Windows용 오프라인 파일 암호화 앱입니다. 파일과 텍스트를 내 기기에서 잠그고, 내가 선택한 사람과만 공유합니다.",
   "home.cta.primary": "Doughnut Forge 받기",
   "home.cta.secondary": "기능 살펴보기",
   "home.specimen.stranger": "다른 사람에게 보이는 내용",

@@ -21,6 +21,9 @@ export default {
   "home.summary": "Mac、iPhone、iPad、Windows向けのオフラインファイル暗号化。",
   "home.tagline": "開けるのは、あなたが選んだ相手だけです。",
   "home.lead": "Doughnut Forgeは、iPhone、iPad、コンピュータ上のファイルとテキストをロックし、信頼できる相手と共有できるようにします。",
+  "home.what.title": "Doughnut Forgeとは？",
+  "home.what.text":
+    "Doughnut Forgeは、Mac、iPhone、iPad、Windows向けのオフラインファイル暗号化アプリです。ファイルとテキストを自分のデバイス上でロックし、共有するのは自分が選んだ相手だけです。",
   "home.cta.primary": "Doughnut Forgeを入手",
   "home.cta.secondary": "できることを見る",
   "home.specimen.stranger": "ほかの人に見える内容",

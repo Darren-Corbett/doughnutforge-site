@@ -21,6 +21,9 @@ export default {
   "home.summary": "适用于 Mac、iPhone、iPad 和 Windows 的离线文件加密。",
   "home.tagline": "只有您选择的人才能打开。",
   "home.lead": "Doughnut Forge 在您的 iPhone、iPad 或电脑上锁定文件和文本，并让您与信任的人分享。",
+  "home.what.title": "Doughnut Forge 是什么？",
+  "home.what.text":
+    "Doughnut Forge 是一款适用于 Mac、iPhone、iPad 和 Windows 的离线文件加密应用。它在您自己的设备上锁定文件和文本，您只与自己选择的人分享。",
   "home.cta.primary": "获取 Doughnut Forge",
   "home.cta.secondary": "了解它能做什么",
   "home.specimen.stranger": "其他任何人看到的",

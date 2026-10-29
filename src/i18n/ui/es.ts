@@ -21,6 +21,9 @@ export default {
   "home.summary": "Cifrado de archivos sin conexión para Mac, iPhone, iPad y Windows.",
   "home.tagline": "Solo las personas que elijas podrán abrirlos.",
   "home.lead": "Doughnut Forge protege tus archivos y texto en tu iPhone, iPad u ordenador y te permite compartirlos con las personas en las que confías.",
+  "home.what.title": "¿Qué es Doughnut Forge?",
+  "home.what.text":
+    "Doughnut Forge es una app de cifrado de archivos sin conexión para Mac, iPhone, iPad y Windows. Protege tus archivos y texto en tu propio dispositivo, y solo los compartes con las personas que elijas.",
   "home.cta.primary": "Consigue Doughnut Forge",
   "home.cta.secondary": "Descubre lo que hace",
   "home.specimen.stranger": "Lo que ve cualquier otra persona",

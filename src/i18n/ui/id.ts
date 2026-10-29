@@ -21,6 +21,9 @@ export default {
   "home.summary": "Enkripsi file offline untuk Mac, iPhone, iPad, dan Windows.",
   "home.tagline": "Hanya orang yang Anda pilih yang dapat membukanya.",
   "home.lead": "Doughnut Forge mengunci file dan teks di iPhone, iPad, atau komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya.",
+  "home.what.title": "Apa itu Doughnut Forge?",
+  "home.what.text":
+    "Doughnut Forge adalah aplikasi enkripsi file offline untuk Mac, iPhone, iPad, dan Windows. Aplikasi ini mengunci file dan teks di perangkat Anda sendiri, dan Anda hanya membagikannya kepada orang yang Anda pilih.",
   "home.cta.primary": "Dapatkan Doughnut Forge",
   "home.cta.secondary": "Lihat kemampuannya",
   "home.specimen.stranger": "Yang dilihat orang lain",

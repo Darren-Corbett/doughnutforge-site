@@ -21,6 +21,9 @@ export default {
   "home.summary": "Chiffrement de fichiers hors ligne pour Mac, iPhone, iPad et Windows.",
   "home.tagline": "Seules les personnes que vous choisissez peuvent les ouvrir.",
   "home.lead": "Doughnut Forge verrouille vos fichiers et textes sur votre iPhone, votre iPad ou votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance.",
+  "home.what.title": "Qu'est-ce que Doughnut Forge ?",
+  "home.what.text":
+    "Doughnut Forge est une application de chiffrement de fichiers hors ligne pour Mac, iPhone, iPad et Windows. Elle verrouille vos fichiers et textes sur votre propre appareil, et vous ne les partagez qu'avec les personnes de votre choix.",
   "home.cta.primary": "Obtenir Doughnut Forge",
   "home.cta.secondary": "Voir ce que fait l'app",
   "home.specimen.stranger": "Ce que voient les autres",

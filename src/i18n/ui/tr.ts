@@ -21,6 +21,9 @@ export default {
   "home.summary": "Mac, iPhone, iPad ve Windows için çevrimdışı dosya şifreleme.",
   "home.tagline": "Onları yalnızca seçtiğiniz kişiler açabilir.",
   "home.lead": "Doughnut Forge, iPhone, iPad veya bilgisayarınızdaki dosyaları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar.",
+  "home.what.title": "Doughnut Forge nedir?",
+  "home.what.text":
+    "Doughnut Forge; Mac, iPhone, iPad ve Windows için çevrimdışı bir dosya şifreleme uygulamasıdır. Dosyalarınızı ve metinlerinizi kendi cihazınızda kilitler ve bunları yalnızca seçtiğiniz kişilerle paylaşırsınız.",
   "home.cta.primary": "Doughnut Forge'u edinin",
   "home.cta.secondary": "Neler yaptığını görün",
   "home.specimen.stranger": "Başka herkesin gördüğü",

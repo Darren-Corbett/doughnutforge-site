@@ -125,6 +125,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "Was blocking: an ordinary space before '?' where every other French question uses U+00A0, so the '?' could wrap alone. Fixed to U+00A0 and re-checked: fr.ts now has no plain space before '?'.",
+        "suggestion": "Qu'est-ce que Doughnut Forge ?"
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -249,6 +261,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -337,6 +361,18 @@
         "key": "meta.download.description",
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
         "suggestion": "No change."
       }
     ]
@@ -470,6 +506,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "Correct, but 'tuoi ... tuo ... tuo' repeats. Optional polish; kept, as the suggestion also drops 'own'.",
+        "suggestion": "Doughnut Forge è un'app di crittografia offline dei file per Mac, iPhone, iPad e Windows. Blocca file e testo sul tuo dispositivo e li condividi solo con le persone che scegli."
       }
     ]
   },
@@ -588,6 +636,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -677,6 +737,18 @@
         "key": "meta.download.description",
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
         "suggestion": "No change."
       }
     ]
@@ -781,6 +853,18 @@
         "key": "meta.download.description",
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "'til ... til' repeats; 'en offline filkrypteringsapp til Mac' would read a little smoother. Optional.",
         "suggestion": "No change."
       }
     ]
@@ -907,6 +991,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1011,6 +1107,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1114,6 +1222,18 @@
         "key": "meta.download.description",
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "'dla urządzeń' avoids inflecting platform names; strictly calls Windows a device, but common usage. Optional.",
         "suggestion": "No change."
       }
     ]
@@ -1232,6 +1352,18 @@
         "key": "meta.download.description",
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
         "suggestion": "No change."
       }
     ]
@@ -1373,6 +1505,18 @@
         "issue": "Standard Hungarian spelling hyphenates a proper name plus noun ('Android-változat'); the file writes 'Mac változat' / 'Windows változat' unhyphenated throughout, so this follows the file's pattern. Consider a file-wide fix separately.",
         "backTranslation": "... The Android version is arriving soon.",
         "suggestion": "Az Android-változat hamarosan érkezik."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1519,6 +1663,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1644,6 +1800,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1763,6 +1931,18 @@
         "issue": "A bare noun subject at sentence start reads like a headline; reordering is more natural. Adopted.",
         "backTranslation": "... Version for Android is coming soon.",
         "suggestion": "Σύντομα έρχεται και έκδοση για Android."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1874,6 +2054,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1979,6 +2171,18 @@
         "key": "meta.download.description",
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
         "suggestion": "No change."
       }
     ]
@@ -2091,6 +2295,18 @@
         "issue": "Starting with a bare noun reads headline-like; an article is more natural. Adopted.",
         "backTranslation": "... Version for Android arrives soon.",
         "suggestion": "Uma versão para Android chega em breve."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "Word order 'criptografia offline de arquivos' differs from home.summary's 'criptografia de arquivos offline' (an earlier review preferred this order as clearer). Optional alignment.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2195,6 +2411,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "A semicolon after the subject is valid (TDK); the person shift from 'kilitler' to 'paylaşırsınız' is clear but slightly abrupt. Optional.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2290,6 +2518,18 @@
         "key": "meta.download.description",
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
         "suggestion": "No change."
       }
     ]
@@ -2415,6 +2655,18 @@
         "key": "meta.download.description",
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
         "suggestion": "No change."
       }
     ]
@@ -2562,6 +2814,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2680,6 +2944,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2769,6 +3045,18 @@
         "key": "meta.download.description",
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
         "suggestion": "No change."
       }
     ]
@@ -2866,6 +3154,18 @@
         "key": "meta.download.description",
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
         "suggestion": "No change."
       }
     ]
@@ -2971,6 +3271,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3068,6 +3380,18 @@
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "'แชร์ได้เฉพาะกับ' read like 'can share only with'. Reviewer's wording adopted ('you share only with').",
+        "suggestion": "และคุณแชร์ให้เฉพาะคนที่คุณเลือกเท่านั้น"
       }
     ]
   },
@@ -3164,6 +3488,18 @@
         "key": "meta.download.description",
         "severity": "note",
         "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.what.text",
+        "severity": "note",
+        "issue": "No problem.",
         "suggestion": "No change."
       }
     ]

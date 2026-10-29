@@ -21,6 +21,9 @@ export default {
   "home.summary": "Offline bestandsversleuteling voor Mac, iPhone, iPad en Windows.",
   "home.tagline": "Alleen de mensen die u kiest, kunnen ze openen.",
   "home.lead": "Doughnut Forge vergrendelt uw bestanden en tekst op uw iPhone, iPad of computer en laat u ze delen met de mensen die u vertrouwt.",
+  "home.what.title": "Wat is Doughnut Forge?",
+  "home.what.text":
+    "Doughnut Forge is een app voor offline bestandsversleuteling voor Mac, iPhone, iPad en Windows. De app vergrendelt uw bestanden en tekst op uw eigen apparaat, en u deelt ze alleen met de mensen die u kiest.",
   "home.cta.primary": "Doughnut Forge downloaden",
   "home.cta.secondary": "Bekijk wat de app doet",
   "home.specimen.stranger": "Wat ieder ander ziet",

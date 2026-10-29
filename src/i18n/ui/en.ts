@@ -25,6 +25,9 @@ export default {
   "home.summary": "Offline file encryption for Mac, iPhone, iPad and Windows.",
   "home.tagline": "Only the people you choose can open them.",
   "home.lead": "Doughnut Forge locks your files and text on your iPhone, iPad or computer and lets you share them with the people you trust.",
+  "home.what.title": "What is Doughnut Forge?",
+  "home.what.text":
+    "Doughnut Forge is an offline file encryption app for Mac, iPhone, iPad and Windows. It locks your files and text on your own device, and you share them only with the people you choose.",
   "home.cta.primary": "Get Doughnut Forge",
   "home.cta.secondary": "See what it does",
 

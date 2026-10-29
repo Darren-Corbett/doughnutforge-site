@@ -21,6 +21,9 @@ export default {
   "home.summary": "Šifrování souborů offline pro Mac, iPhone, iPad a Windows.",
   "home.tagline": "Otevřít je mohou jen lidé, které si vyberete.",
   "home.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete.",
+  "home.what.title": "Co je Doughnut Forge?",
+  "home.what.text":
+    "Doughnut Forge je aplikace pro šifrování souborů offline pro Mac, iPhone, iPad a Windows. Zamyká vaše soubory a text ve vašem vlastním zařízení a sdílíte je jen s lidmi, které si vyberete.",
   "home.cta.primary": "Získat Doughnut Forge",
   "home.cta.secondary": "Podívejte se, co umí",
   "home.specimen.stranger": "Co vidí kdokoli jiný",

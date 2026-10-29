@@ -21,6 +21,9 @@ export default {
   "home.summary": "Offline κρυπτογράφηση αρχείων για Mac, iPhone, iPad και Windows.",
   "home.tagline": "Μόνο όσοι επιλέξετε μπορούν να τα ανοίξουν.",
   "home.lead": "Το Doughnut Forge κλειδώνει τα αρχεία και το κείμενό σας στο iPhone, το iPad ή τον υπολογιστή σας και σας επιτρέπει να τα μοιράζεστε με όσους εμπιστεύεστε.",
+  "home.what.title": "Τι είναι το Doughnut Forge;",
+  "home.what.text":
+    "Το Doughnut Forge είναι μια εφαρμογή offline κρυπτογράφησης αρχείων για Mac, iPhone, iPad και Windows. Κλειδώνει τα αρχεία και το κείμενό σας στη δική σας συσκευή, και τα μοιράζεστε μόνο με όσους επιλέγετε.",
   "home.cta.primary": "Αποκτήστε το Doughnut Forge",
   "home.cta.secondary": "Δείτε τι κάνει",
   "home.specimen.stranger": "Τι βλέπουν όλοι οι άλλοι",

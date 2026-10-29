@@ -21,6 +21,9 @@ export default {
   "home.summary": "Offline filkryptering for Mac, iPhone, iPad og Windows.",
   "home.tagline": "Bare de du velger, kan åpne dem.",
   "home.lead": "Doughnut Forge låser filene og teksten din på iPhone, iPad eller datamaskinen og lar deg dele dem med folk du stoler på.",
+  "home.what.title": "Hva er Doughnut Forge?",
+  "home.what.text":
+    "Doughnut Forge er en app for offline filkryptering for Mac, iPhone, iPad og Windows. Den låser filene og teksten din på din egen enhet, og du deler dem bare med folk du velger.",
   "home.cta.primary": "Skaff deg Doughnut Forge",
   "home.cta.secondary": "Se hva appen gjør",
   "home.specimen.stranger": "Det alle andre ser",

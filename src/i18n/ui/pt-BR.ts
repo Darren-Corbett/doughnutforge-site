@@ -21,6 +21,9 @@ export default {
   "home.summary": "Criptografia de arquivos offline para Mac, iPhone, iPad e Windows.",
   "home.tagline": "Só as pessoas que você escolher podem abri-los.",
   "home.lead": "Doughnut Forge protege seus arquivos e textos no seu iPhone, iPad ou computador e permite compartilhá-los com as pessoas em quem você confia.",
+  "home.what.title": "O que é o Doughnut Forge?",
+  "home.what.text":
+    "O Doughnut Forge é um aplicativo de criptografia offline de arquivos para Mac, iPhone, iPad e Windows. Ele protege seus arquivos e textos no seu próprio dispositivo, e você os compartilha só com as pessoas que escolher.",
   "home.cta.primary": "Obtenha o Doughnut Forge",
   "home.cta.secondary": "Veja o que ele faz",
   "home.specimen.stranger": "O que qualquer outra pessoa vê",

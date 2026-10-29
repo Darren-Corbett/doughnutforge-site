@@ -21,6 +21,9 @@ export default {
   "home.summary": "Szyfrowanie plików offline: Mac, iPhone, iPad i Windows.",
   "home.tagline": "Otworzyć je mogą tylko osoby, które wybierzesz.",
   "home.lead": "Doughnut Forge blokuje Twoje pliki i tekst na iPhonie, iPadzie lub komputerze i pozwala udostępniać je osobom, którym ufasz.",
+  "home.what.title": "Czym jest Doughnut Forge?",
+  "home.what.text":
+    "Doughnut Forge to aplikacja do szyfrowania plików offline dla urządzeń Mac, iPhone, iPad i Windows. Blokuje Twoje pliki i tekst na Twoim własnym urządzeniu, a udostępniasz je tylko wybranym osobom.",
   "home.cta.primary": "Pobierz Doughnut Forge",
   "home.cta.secondary": "Zobacz, co potrafi",
   "home.specimen.stranger": "Co widzą wszyscy inni",

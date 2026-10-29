@@ -21,6 +21,9 @@ export default {
   "home.summary": "Offline fájltitkosítás Macre, iPhone-ra, iPadre és Windowsra.",
   "home.tagline": "Csak azok nyithatják meg őket, akiket te választasz.",
   "home.lead": "A Doughnut Forge lezárja a fájljaidat és szövegeidet az iPhone-odon, iPadeden vagy a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol.",
+  "home.what.title": "Mi az a Doughnut Forge?",
+  "home.what.text":
+    "A Doughnut Forge offline fájltitkosító alkalmazás Macre, iPhone-ra, iPadre és Windowsra. Lezárja a fájljaidat és szövegeidet a saját eszközödön, és csak azokkal osztod meg őket, akiket te választasz.",
   "home.cta.primary": "Doughnut Forge letöltése",
   "home.cta.secondary": "Nézd meg, mit tud",
   "home.specimen.stranger": "Amit bárki más lát",

@@ -21,6 +21,9 @@ export default {
   "home.summary": "Офлайн-шифрування файлів для Mac, iPhone, iPad і Windows.",
   "home.tagline": "Відкрити їх зможуть лише ті, кого ви оберете.",
   "home.lead": "Doughnut Forge захищає ваші файли й текст на iPhone, iPad або комп’ютері та дає змогу ділитися ними з тими, кому ви довіряєте.",
+  "home.what.title": "Що таке Doughnut Forge?",
+  "home.what.text":
+    "Doughnut Forge — застосунок для офлайн-шифрування файлів на Mac, iPhone, iPad і Windows. Він захищає ваші файли й текст на вашому власному пристрої, а ділитеся ви ними лише з тими, кого оберете самі.",
   "home.cta.primary": "Отримати Doughnut Forge",
   "home.cta.secondary": "Що вміє застосунок",
   "home.specimen.stranger": "Що бачать усі інші",

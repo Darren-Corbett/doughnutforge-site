@@ -21,6 +21,9 @@ export default {
   "home.summary": "Penyulitan fail luar talian untuk Mac, iPhone, iPad dan Windows.",
   "home.tagline": "Hanya orang yang anda pilih boleh membukanya.",
   "home.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai.",
+  "home.what.title": "Apakah itu Doughnut Forge?",
+  "home.what.text":
+    "Doughnut Forge ialah aplikasi penyulitan fail luar talian untuk Mac, iPhone, iPad dan Windows. Ia mengunci fail dan teks pada peranti anda sendiri, dan anda hanya berkongsinya dengan orang yang anda pilih.",
   "home.cta.primary": "Dapatkan Doughnut Forge",
   "home.cta.secondary": "Lihat keupayaannya",
   "home.specimen.stranger": "Apa yang orang lain lihat",
