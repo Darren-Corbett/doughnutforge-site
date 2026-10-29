@@ -24,7 +24,7 @@ test("with reduced motion there is no scramble and the padlock does not move", a
   await page.goto(PAGE);
   await expect(page.locator("h1")).toHaveText(en["notFound.title"]!);
   await expect(page.locator("[data-scramble]")).toHaveCount(0);
-  const animation = await page.locator(".shackle").evaluate((el) => getComputedStyle(el).animationName);
+  const animation = await page.locator(".shackle").evaluate((el) => getComputedStyle(el).animationName, undefined, { timeout: 5000 });
   expect(animation).toBe("none");
   await context.close();
 });
