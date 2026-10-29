@@ -1,8 +1,9 @@
 // What search engines and Safari read from the home, features and 404 pages:
 // the Smart App Banner points at the iPhone app, the
 // structured data names the app as security software and the organisation
-// behind it, and the plain summary line shows only where it is translated.
+// behind it, and the plain summary line sits under the heading in every language.
 import { expect, test } from "@playwright/test";
+import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import english from "../../src/i18n/ui/en";
 
 // Read as plain strings, so a key added with this test checks before the copy exists
@@ -37,13 +38,13 @@ test("home page: SecurityApplication and Organization structured data", async ({
   expect(org).toMatchObject({ name: "Doughnut Forge", url: "https://doughnut-forge.app/", logo: "https://doughnut-forge.app/icon-512.png" });
 });
 
-test("home page: the summary line sits under the heading in English only", async ({ page }) => {
-  for (const path of ["/", "/en-us/"]) {
+test("home page: the summary line sits under the heading in every language", async ({ page }) => {
+  for (const lang of languageData.languages) {
+    const path = lang.code === "en" ? "/" : `/${lang.path}/`;
+    const own = ((await import(`../../src/i18n/ui/${lang.code}.ts`)).default as Record<string, string>)["home.summary"];
     await page.goto(path);
-    await expect(page.locator("h1 + p"), path).toHaveText(en["home.summary"]!);
+    await expect(page.locator("h1 + p"), path).toHaveText((own ?? en["home.summary"])!);
   }
-  await page.goto("/de/");
-  await expect(page.getByText(en["home.summary"]!)).toHaveCount(0);
 });
 
 test("features page: four questions answered, no second FAQPage", async ({ page }) => {
