@@ -34,8 +34,8 @@ App sources are paths in `~/git/doughnut-forge` (app 0.4.42, `a036397`). "Store"
 
 Not claimed: the "Delete Original File" toggle (hidden behind a feature flag that is off); drag and drop (the app has none).
 
-## Post 2: Why offline encryption keeps your files private
-`src/content/blog/en/offline-encryption-privacy.mdx`, phrase "offline encryption"
+## Post 2: Offline file encryption: how it works and what it protects
+`src/content/blog/en/offline-encryption-privacy.mdx`, phrase "offline file encryption" (retitled 29 October 2026; first published as "Why offline encryption keeps your files private", phrase "offline encryption")
 
 | # | Claim in the post | Source |
 |---|---|---|
@@ -49,7 +49,7 @@ Not claimed: the "Delete Original File" toggle (hidden behind a feature flag tha
 | 2.8 | This website has no analytics, cookies or tracking scripts | site `faq.data.a`; CLAUDE.md rule; privacy policy section 2 |
 | E2.1 | Cloud providers typically manage the encryption keys, which "does not prevent cloud providers from accessing the data" | ICO, [Encryption scenarios](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/encryption/encryption-scenarios/) |
 | E2.2 | With your own encryption, "the cloud provider only stores the ciphertext and has no access to the encryption keys or the original data" | same page |
-| E2.3 | "You could encrypt the data yourself before you upload it", as long as the key is not stored in the same place | same page |
+| E2.3 | "You could encrypt the data yourself before you upload it", as long as you do not also store the key in the same cloud storage system | same page ("you could encrypt the data yourself before you upload it"; "provided you don’t also store the key in the same cloud storage system"; checked live 29 October 2026, wording matched to the page) |
 | E2.4 | Loss of an unencrypted USB stick holding a case file led to enforcement action | same page (CPS enforcement notice) |
 | R2.1 | *Reasoning:* if a service holds the key, someone with your stolen account password may be able to open the file | follows from E2.1 |
 | R2.2 | *Reasoning:* an email provider or messaging app carrying a locked file cannot see inside; a lost USB stick gives a file that cannot be opened | follows from E2.2 |
