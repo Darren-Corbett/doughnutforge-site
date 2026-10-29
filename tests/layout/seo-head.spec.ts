@@ -36,6 +36,13 @@ test("home page: SecurityApplication and Organization structured data", async ({
   expect(app?.offers).toBeUndefined();
   const org = data.find((d) => d["@type"] === "Organization");
   expect(org).toMatchObject({ name: "Doughnut Forge", url: "https://doughnut-forge.app/", logo: "https://doughnut-forge.app/icon-512.png" });
+  // The store listings of every platform on sale, mobile first (src/data/stores.ts)
+  expect(org.sameAs).toEqual([
+    "https://apps.apple.com/app/id6821344597",
+    "https://apps.apple.com/app/id6812778888",
+    "https://apps.microsoft.com/detail/9P25BS9L8LNB?hl=en-GB",
+  ]);
+  expect(org.email).toBeUndefined();
 });
 
 test("home page: the summary line sits under the heading in every language", async ({ page }) => {
