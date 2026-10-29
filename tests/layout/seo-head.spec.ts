@@ -54,6 +54,23 @@ test("home page: the summary line sits under the heading in every language", asy
   }
 });
 
+test("home page: a plain answer to what Doughnut Forge is, first after the hero, in every language", async ({ page }) => {
+  for (const lang of languageData.languages) {
+    const path = lang.code === "en" ? "/" : `/${lang.path}/`;
+    const own = (await import(`../../src/i18n/ui/${lang.code}.ts`)).default as Record<string, string>;
+    await page.goto(path);
+    const section = page.locator("section.hero + section");
+    await expect(section.locator("h2"), path).toHaveText((own["home.what.title"] ?? en["home.what.title"])!);
+    await expect(section.locator("p"), path).toHaveText((own["home.what.text"] ?? en["home.what.text"])!);
+  }
+});
+
+test("press kit: the short description is the home page's first sentence", async ({ page }) => {
+  await page.goto("/press/");
+  await expect(page.getByText(en["press.about.shortText"]!, { exact: true })).toBeVisible();
+  expect(en["home.what.text"]!.startsWith(en["press.about.shortText"]!)).toBe(true);
+});
+
 test("features page: four questions answered, no second FAQPage", async ({ page }) => {
   await page.goto("/features/");
   for (const id of ["offline", "storage", "restore", "subscription"]) {
