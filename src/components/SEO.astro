@@ -17,9 +17,11 @@ interface Props {
   article?: { published: Date; modified?: Date };
   /** Link the blog's RSS feed (only once a post is published) */
   feed?: boolean;
+  /** App Store ID for Safari's Smart App Banner, drawn by Safari itself */
+  appId?: string;
 }
 
-const { title, description, lang, image = "/og/default.png", alternates = [], jsonLd, noindex = false, article, feed = false } = Astro.props;
+const { title, description, lang, image = "/og/default.png", alternates = [], jsonLd, noindex = false, article, feed = false, appId } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const imageUrl = new URL(image, Astro.site).href;
 const ogLocale = lang.replace("-", "_");
@@ -34,6 +36,7 @@ const ogAlternates = alternates
 <meta name="description" content={description} />
 {noindex ? <meta name="robots" content="noindex, nofollow" /> : <link rel="canonical" href={canonical} />}
 {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+{appId && <meta name="apple-itunes-app" content={`app-id=${appId}`} />}
 {feed && <link rel="alternate" type="application/rss+xml" title={`${site.name} blog`} href="/rss.xml" />}
 
 <meta property="og:type" content={article ? "article" : "website"} />

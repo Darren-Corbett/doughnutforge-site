@@ -6,11 +6,12 @@
 import ipadSecureFile from "../assets/app/ipad-secure-file.webp";
 import iphoneContacts from "../assets/app/iphone-contacts.webp";
 import iphoneEncrypting from "../assets/app/iphone-encrypting.webp";
+import Faq, { type FaqItem } from "../components/Faq.astro";
 import PageHero from "../components/PageHero.astro";
 import Phone from "../components/Phone.astro";
 import Tablet from "../components/Tablet.astro";
 import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
-import { languages, localePath, useStrings, type Language } from "../i18n";
+import { languages, localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
 
 interface Props {
@@ -50,6 +51,14 @@ if (store.ios.features.length !== 8) {
   throw new Error(`The iOS store listing has ${store.ios.features.length} features; the features page expects 8.`);
 }
 const iosFeatures = [0, 1, 5].map((i) => store.ios.features[i]!);
+
+// The questions people ask first, answered as on the support page. Only the
+// support page carries the FAQPage data, so the answers are marked up once.
+const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id) => ({
+  id,
+  q: t(`faq.${id}.q` as UiKey),
+  a: t(`faq.${id}.a` as UiKey),
+}));
 ---
 
 <Base lang={lang} title={t("meta.features.title")} description={t("meta.features.description")} image="/og/features.png">
@@ -118,6 +127,12 @@ const iosFeatures = [0, 1, 5].map((i) => store.ios.features[i]!);
     </div>
   </section>
 
+  <section class="section" aria-labelledby="features-faq">
+    <h2 id="features-faq" class="section-title">{t("support.faq.title")}</h2>
+    <Faq items={faq} />
+    <p class="faq-more"><a href={`${localePath(lang.code, "support/")}#faq`}>{t("pricing.questionsLink")}</a></p>
+  </section>
+
   <section class="section cta" aria-labelledby="features-cta">
     <h2 id="features-cta" class="section-title">{t("features.cta.title")}</h2>
     <p class="section-text">{t("home.pricing.title")} {t("home.phones.text")}</p>
@@ -128,6 +143,11 @@ const iosFeatures = [0, 1, 5].map((i) => store.ios.features[i]!);
 </Base>
 
 <style>
+  .faq-more {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 700;
+  }
   .private {
     padding-top: 0;
   }

@@ -9,7 +9,8 @@ import Ciphertext from "../components/Ciphertext.astro";
 import Phone from "../components/Phone.astro";
 import StoreLinks from "../components/StoreLinks.astro";
 import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
-import { softwareApplication } from "../data/jsonld";
+import { organization, softwareApplication } from "../data/jsonld";
+import { platforms } from "../data/stores";
 import { useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -38,14 +39,19 @@ const rows: ToneRow[] = [
   { name: app("app:navigation.tabs.contacts"), tone: "pink", ...share },
 ];
 
-const jsonLd = softwareApplication(lang, "/", t("meta.home.description"));
+const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), organization()];
+// The plain summary is English only until it is translated
+const summary = lang.code.startsWith("en") ? t("home.summary") : null;
+const ios = platforms.find((p) => p.id === "ios");
+const appId = ios?.status === "available" ? ios.storeId : undefined;
 ---
 
-<Base lang={lang} title={t("meta.home.title")} description={t("meta.home.description")} jsonLd={jsonLd}>
+<Base lang={lang} title={t("meta.home.title")} description={t("meta.home.description")} jsonLd={jsonLd} appId={appId}>
   <section class="hero" aria-labelledby="home-title">
     <div class="hero-inner">
       <div class="hero-copy">
         <h1 id="home-title">{headline}</h1>
+        {summary && <p class="summary">{summary}</p>}
         <p class="tagline">{t("home.tagline")}</p>
         <p class="lead">{lead}</p>
         <div class="actions">
@@ -129,6 +135,14 @@ const jsonLd = softwareApplication(lang, "/", t("meta.home.description"));
     font-weight: 900;
     letter-spacing: -0.03em;
     max-width: 12ch;
+  }
+  .summary {
+    margin-top: 16px;
+    max-width: 34rem;
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 700;
+    color: #cbd5e1;
   }
   /* Ink blue for dark backgrounds: 6.9:1 on the night colour */
   .tagline {

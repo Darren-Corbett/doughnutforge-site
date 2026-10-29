@@ -24,7 +24,16 @@ export const softwareApplication = (lang: Language, path: string, description: s
   description,
   url: new URL(localePath(lang.code, path), site.url).href,
   image: new URL("/og/default.png", site.url).href,
-  applicationCategory: "UtilitiesApplication",
+  applicationCategory: "SecurityApplication",
   operatingSystem: availableSystems(),
   inLanguage: lang.hreflang,
+});
+
+/** `Organization` for the home page: who makes the app, with its icon as the logo */
+export const organization = () => ({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: site.name,
+  url: new URL("/", site.url).href,
+  logo: new URL("/icon-512.png", site.url).href,
 });

@@ -20,8 +20,10 @@ interface Props {
   article?: { published: Date; modified?: Date };
   /** Link the blog's RSS feed in <head> */
   feed?: boolean;
+  /** App Store ID for Safari's Smart App Banner (home page only) */
+  appId?: string;
 }
-const { lang, title, description, jsonLd, noindex, image, article, feed } = Astro.props;
+const { lang, title, description, jsonLd, noindex, image, article, feed, appId } = Astro.props;
 const { t } = useStrings(lang.code);
 
 // A draft translation is built and reachable from the language switcher, but not
@@ -63,6 +65,7 @@ const ogImage =
       image={ogImage}
       article={article}
       feed={feed}
+      appId={appId}
     />
   </head>
   <body class="flex min-h-dvh flex-col">

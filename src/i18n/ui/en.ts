@@ -3,9 +3,9 @@
 // Every other language has a file in this folder with the same keys, less the
 // English-only blog and 404 strings (see TranslatedKey in ../index.ts).
 export default {
-  "meta.home.title": "Doughnut Forge: offline encryption for files, folders and text",
+  "meta.home.title": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
   "meta.home.description":
-    "Encrypt files and text on your iPhone, iPad or computer, and share them with the people you trust. No account, no servers, no subscription: a one-time purchase for each platform.",
+    "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer, encrypt folders too. No account, no servers, no subscription. A one-time purchase on each platform.",
 
   "nav.label": "Main",
   "nav.features": "Features",
@@ -22,6 +22,8 @@ export default {
   "nav.home": "Doughnut Forge home",
   "skip": "Skip to content",
 
+  // English only until it is translated (see EnglishOnlyKey in ../index.ts); other languages leave it out
+  "home.summary": "Offline file encryption for Mac, iPhone, iPad and Windows.",
   "home.tagline": "Only the people you choose can open them.",
   "home.lead": "Doughnut Forge locks your files and text on your iPhone, iPad or computer and lets you share them with the people you trust.",
   "home.cta.primary": "Get Doughnut Forge",
@@ -66,7 +68,7 @@ export default {
   "go.offline": "Works without the internet.",
 
   // Features page
-  "meta.features.title": "Features: offline encryption for files, folders and text | Doughnut Forge",
+  "meta.features.title": "Features: encrypt files, folders and text without an account | Doughnut Forge",
   "meta.features.description":
     "Encrypt files and text on your own iPhone, iPad or computer, share them with people you trust, and keep them protected for the long term. No account and no servers.",
   "features.title": "Everything Doughnut Forge does",
@@ -288,9 +290,9 @@ export default {
 
   // 404
   "meta.notFound.title": "Page not found | Doughnut Forge",
-  "notFound.title": "Page not found",
-  "notFound.lead": "There is nothing at this address. The page may have moved, or the address may have a typing mistake.",
-  "notFound.try": "Try one of these instead:",
+  "notFound.title": "This page is a hole in the dough.",
+  "notFound.lead": "There is nothing here but air.",
+  "notFound.try": "Back to the good stuff:",
 
   // ===================================================================
   // End of new copy

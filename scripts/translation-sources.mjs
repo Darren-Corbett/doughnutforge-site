@@ -15,7 +15,7 @@ export const SOURCES_DIR = join(SITE, "src/i18n/sources");
 /** The first 12 hex characters of SHA-256 of the exact string */
 export const fingerprint = (text) => createHash("sha256").update(text, "utf8").digest("hex").slice(0, 12);
 
-export const englishOnly = (key) => /^(blog|meta\.blog|notFound|meta\.notFound|issue)\.|^nav\.blog$/.test(key);
+export const englishOnly = (key) => /^(blog|meta\.blog|notFound|meta\.notFound|issue)\.|^nav\.blog$|^home\.summary$/.test(key);
 
 /**
  * The keys a language translates. en-US reuses UK English for every string it
