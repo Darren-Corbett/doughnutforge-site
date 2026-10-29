@@ -36,7 +36,7 @@ For each earlier draft doc, read its comments, newest first. Act on the owner's 
   4. Run `npm run build` (no warnings), the layout tests for the new page (`PAGES=<slug> npm run test:layout`), and check the page at 360, 768 and 1280px.
   5. Commit the post with `draft: true`.
   6. Show the owner the claims table (not the full text; this is the pre-launch review scope in HANDOVER), and ask: "Publish this post?"
-  7. Only on a yes, set `draft: false` and commit.
+  7. Only on a yes, set `draft: false`, then run `node scripts/make-og.mjs` to make the post's social preview image (`public/og/blog/<slug>.png`; the script skips drafts), and commit the image with the post. Without it, `npm run build:deploy` fails on the missing image.
   8. Update the log in `docs/BLOG-TOPICS.md`: add the row, and mark the backlog topic **taken**, with the date.
   9. Ask before the push. After the push, check the deploy and the live page.
 - **"bin"**: write nothing to `src/`. In `docs/BLOG-TOPICS.md`, add a log row marked **binned**. If it came from the backlog, return the topic to **approved**. A binned news story counts as used: never draft it again. Commit. Retitle the doc "Blog draft (binned): …" so it is not taken for a live draft.
