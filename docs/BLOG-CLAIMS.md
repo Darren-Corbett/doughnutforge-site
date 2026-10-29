@@ -109,7 +109,7 @@ Not claimed: QR codes; pasting a contact ID; that the app shows who sent a file;
 
 ## Comparison posts (drafts, 29 October 2026)
 
-`src/content/blog/en/doughnut-forge-vs-cryptomator.mdx` (phrase "Cryptomator alternative", secondary "encrypt files for cloud storage") and `src/content/blog/en/doughnut-forge-vs-veracrypt.mdx` (phrase "VeraCrypt alternative", secondary "encrypted drive or encrypted files"). Both `draft: true`, waiting for the owner's approval of this table. Every vendor quote was checked word for word on its live page on 29 October 2026. Independent sources: none used; vendor pages cover every row.
+`src/content/blog/en/doughnut-forge-vs-cryptomator.mdx` (published 29 October 2026; phrase "Cryptomator alternative", secondary "encrypt files for cloud storage") and `src/content/blog/en/doughnut-forge-vs-veracrypt.mdx` (phrase "VeraCrypt alternative", secondary "encrypted drive or encrypted files"). Both `draft: true`, waiting for the owner's approval of this table. Every vendor quote was checked word for word on its live page on 29 October 2026. Independent sources: none used; vendor pages cover every row.
 
 Rules for both posts (owner): no logos; product names as plain words only; never say or imply the recipient can be sure who sent a file; the year next to every "audited"; no Linux for Doughnut Forge; no "we", no contractions.
 
@@ -134,6 +134,8 @@ Rules for both posts (owner): no logos; product names as plain words only; never
 | C16 | Keep the recovery key as safe as the password | [docs: Password and recovery key](https://docs.cryptomator.org/desktop/password-and-recovery-key/) ("Keep it as safe as your password") | 2026-10-29 | verified |
 | C17 | An unlocked vault is a drive you work in like a USB stick | [GitHub README](https://github.com/cryptomator/cryptomator) ("Just work on the virtual drive as if it were a USB flash drive"); [docs: Accessing vaults](https://docs.cryptomator.org/desktop/accessing-vaults/) ("the virtual drive") | 2026-10-29 | verified |
 | C15 | Its encryption libraries were audited by Cure53 in 2017 | [Cure53 report, 27 November 2017](https://cryptomator.org/audits/2017-11-27%20crypto%20cure53.pdf) | 2026-10-29 | verified |
+| C18 | Cryptomator encrypts on your own device | [GitHub README](https://github.com/cryptomator/cryptomator) ("Secure client-side encryption for your cloud storage") | 2026-10-29 | verified |
+| RC1 | *Reasoning:* the two do different jobs and do not compete for the same one; the "fits" lines in "In short" | follows from C12, C17, D5, D6 ("Two different jobs") | 2026-10-29 | verified |
 
 ### VeraCrypt
 
