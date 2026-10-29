@@ -64,11 +64,11 @@ for (const lang of languages) {
     expect(description.indexOf("iPhone"), `description: ${description}`).toBeLessThan(description.indexOf("Mac"));
     expect(description, "download description").toContain("Android");
     expect(description, "download description").not.toContain("Linux");
+    const ld = JSON.parse((await page.locator('script[type="application/ld+json"]').first().textContent())!);
+    expect([ld].flat().find((d) => d["@type"] === "SoftwareApplication").operatingSystem).toBe("iOS, iPadOS, macOS, Windows");
     // The FAQ answers are in closed <details>, so the text is read, not what is shown
     await page.goto(`${prefix(lang)}/support/`);
     expect(await page.locator("main").textContent(), "support page").not.toContain("Linux");
-    const ld = JSON.parse((await page.locator('script[type="application/ld+json"]').first().textContent())!);
-    expect([ld].flat().find((d) => d["@type"] === "SoftwareApplication").operatingSystem).toBe("iOS, iPadOS, macOS, Windows");
   });
 }
 
