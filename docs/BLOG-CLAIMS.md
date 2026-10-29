@@ -109,7 +109,7 @@ Not claimed: QR codes; pasting a contact ID; that the app shows who sent a file;
 
 ## Comparison posts (drafts, 29 October 2026)
 
-`src/content/blog/en/doughnut-forge-vs-cryptomator.mdx` (published 29 October 2026; phrase "Cryptomator alternative", secondary "encrypt files for cloud storage") and `src/content/blog/en/doughnut-forge-vs-veracrypt.mdx` (phrase "VeraCrypt alternative", secondary "encrypted drive or encrypted files"). Both `draft: true`, waiting for the owner's approval of this table. Every vendor quote was checked word for word on its live page on 29 October 2026. Independent sources: none used; vendor pages cover every row.
+`src/content/blog/en/doughnut-forge-vs-cryptomator.mdx` (published 29 October 2026; phrase "Cryptomator alternative", secondary "encrypt files for cloud storage") and `src/content/blog/en/doughnut-forge-vs-veracrypt.mdx` (published 29 October 2026; phrase "VeraCrypt alternative", secondary "encrypted drive or encrypted files"). Both `draft: true`, waiting for the owner's approval of this table. Every vendor quote was checked word for word on its live page on 29 October 2026. Independent sources: none used; vendor pages cover every row.
 
 Rules for both posts (owner): no logos; product names as plain words only; never say or imply the recipient can be sure who sent a file; the year next to every "audited"; no Linux for Doughnut Forge; no "we", no contractions.
 
@@ -154,6 +154,8 @@ Rules for both posts (owner): no logos; product names as plain words only; never
 | V11 | To share, people share the container file and each mounts it on their own computer | [Sharing over Network](https://veracrypt.io/en/Sharing%20over%20Network.html) ("locally mount the shared file") | 2026-10-29 | verified |
 | V12 | Audited by Quarkslab in 2016; the fixes shipped in version 1.19 in October 2016 | [veracrypt.io](https://veracrypt.io/en/Home.html); [FAQ](https://veracrypt.io/en/FAQ.html) | 2026-10-29 | verified |
 | RV1 | *Reasoning:* everyone who opens a shared container needs its password | follows from V5 and V11 | 2026-10-29 | verified |
+| RV2 | *Reasoning:* VeraCrypt encrypts on your own computer: it is software you install on Windows, Mac or Linux that encrypts drives and containers | follows from V1, V8; [veracrypt.io](https://veracrypt.io/en/Home.html) ("Encryption is automatic, real-time (on-the-fly)") | 2026-10-29 | verified |
+| RV3 | *Reasoning:* the two do different jobs and do not compete for the same one; the "fits" lines in "In short" | follows from V7, V8, D5, D6 ("Two different jobs") | 2026-10-29 | verified |
 
 ### Doughnut Forge (existing sources, no new claims)
 

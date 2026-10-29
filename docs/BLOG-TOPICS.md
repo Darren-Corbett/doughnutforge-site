@@ -34,6 +34,7 @@ Every post and every binned draft, newest last. Drafting does not write here: **
 | 23 October 2026 | How to share encrypted files with someone you trust | – | private sharing | sharing files with a trusted person | share encrypted files | published |
 | 29 October 2026 | Breaches keep happening. Here is what you can still control | DHS personnel data breach, 28 October 2026 ([NPR](https://www.npr.org/2026/10/28/nx-s1-6021497/dhs-hack-ice), [BBC](https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo)) | no servers | keeping your own private files under your control | protect personal files from data breaches | published |
 | 29 October 2026 | Doughnut Forge vs Cryptomator: sharing files or syncing a vault | – | private sharing | choosing between a synced vault and files for chosen people | Cryptomator alternative | published |
+| 29 October 2026 | Doughnut Forge vs VeraCrypt: encrypted files or encrypted drives | – | private sharing | choosing between an encrypted drive and files for chosen people | VeraCrypt alternative | published |
 
 ## Backlog
 Status: **proposed** (waiting for the owner), **approved**, or **taken** (with the date drafted). Each topic's "Limits" are the facts that rule out the easy, untrue version of the post.
