@@ -97,3 +97,19 @@ test("English copy does not assume a computer", async ({ page }) => {
   await expect(page.locator("main")).toContainText("If I buy it on one platform, do I also get it on another?");
   await expect(page.locator("main")).toContainText("buying on a computer does not include iPhone and iPad");
 });
+
+// Cards in a row are uniform: each badge sits at the bottom of its card, so the
+// badges line up however long the text above them is, in every language
+for (const lang of languages) {
+  test(`store badges line up ${lang.code}`, async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    for (const path of ["/download/", "/pricing/"]) {
+      await page.goto(`${prefix(lang)}${path}`);
+      const bottoms = await page
+        .locator(".cards .on-sale")
+        .evaluateAll((cards) => cards.map((c) => Math.round(c.getBoundingClientRect().bottom - c.querySelector(".buy")!.getBoundingClientRect().bottom)));
+      expect(bottoms.length, `${path}: cards on sale`).toBe(3);
+      expect(new Set(bottoms).size, `${path}: gap under each badge ${bottoms}`).toBe(1);
+    }
+  });
+}
