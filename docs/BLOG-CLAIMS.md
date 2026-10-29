@@ -175,3 +175,29 @@ Rules for both posts (owner): no logos; product names as plain words only; never
 - The exact Android price model for Cryptomator (see C6).
 - Any comparison of encryption strength, and anything about either product and post-quantum encryption.
 - Recovery shards in Doughnut Forge (not available to users yet, see D7).
+
+## Post 5: Breaches keep happening. Here is what you can still control
+`src/content/blog/en/protect-personal-files-from-data-breaches.mdx`, phrase "protect personal files from data breaches". Topical post on the 28 October 2026 DHS personnel breach, approved by the owner on 29 October 2026. Every external quote re-checked live on 29 October 2026 before publishing (NPR, BBC, ICO). Guardrails (owner): no political stance or quotes; the group, leak site, database, publishers and sign-on company are not named or linked; hacker statements marked as claims; never suggests Doughnut Forge would have prevented it.
+
+| # | Claim in the post | Source | Checked |
+|---|---|---|---|
+| 5.N1 | Names, phone numbers and work addresses of more than 40,000 DHS staff and contractors were published | [NPR](https://www.npr.org/2026/10/28/nx-s1-6021497/dhs-hack-ice) ("names, phone numbers and addresses of more than 40,000"; contractors named); [BBC](https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo) ("names, work addresses and phone numbers"). The cautious figure (NPR) is used | 2026-10-29 |
+| 5.N2 | The BBC puts the figure at more than 41,000 | [BBC](https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo) | 2026-10-29 |
+| 5.N3 | The group **claims** it got in through a single sign-on service | [BBC](https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo) (the company is named there, not in the post) | 2026-10-29 |
+| 5.N4 | Single sign-on is a tool organisations use to control who can log in to internal systems | [BBC](https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo) ("a popular online security tool that organisations use to ensure that only people with access to internal platforms are logging on") | 2026-10-29 |
+| 5.N5 | The company said it has "no evidence our data or systems were compromised" | [BBC](https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo) | 2026-10-29 |
+| 5.N6 | DHS said it is "aware of a potential breach" | [NPR](https://www.npr.org/2026/10/28/nx-s1-6021497/dhs-hack-ice); [BBC](https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo) | 2026-10-29 |
+| 5.N7 | "the third time in recent weeks that a government agency has been targeted by leaks or hacks" | [BBC](https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo) | 2026-10-29 |
+| 5.E1 | ICO: "you could encrypt the data yourself before you upload it"; it helps only if the key is not also stored in the same cloud storage | [ICO: Encryption scenarios](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/encryption/encryption-scenarios/) ("provided you don’t also store the key in the same cloud storage system") | 2026-10-29 |
+| 5.D1 | Encrypts files and text on iPhone, iPad, Mac or Windows PC; works entirely on the device, even without an internet connection; whole folders on a computer | rows D1, D3, D4, 1.1, 2.5; `src/data/stores.ts` | 2026-10-29 |
+| 5.D2 | No servers, no account; password and keys never stored on a server or sent across the network | rows D3, 2.6; site `faq.storage.a`, `security.keys.text` | 2026-10-29 |
+| 5.D3 | Encrypt a private message for your contacts and share it however you like | `src/i18n/store/en.json` ("Encrypt text" feature) | 2026-10-29 |
+| 5.D4 | You choose who can open each file; each opens it with their own identity; no file password | rows D5, 4.10, 4.14 | 2026-10-29 |
+| 5.D5 | The locked file can stay on the device, go in a cloud folder, or be sent by email, messaging app or USB stick; only the chosen people can open it | rows 2.2, 4.13 | 2026-10-29 |
+| 5.D6 | Creating an identity gives a 24-word backup phrase | row 1.5 | 2026-10-29 |
+| 5.D7 | Losing the password and every way to recover the identity (the 24-word backup phrase) means files cannot be opened; no server copy | rows D7, 2.4 | 2026-10-29 |
+| 5.D8 | Screenshot: files are encrypted and decrypted on the device, nothing is uploaded | row 2.3 | 2026-10-29 |
+| 5.D9 | One-time purchase on each platform, never a subscription | row D2 | 2026-10-29 |
+| 5.R1 | *Reasoning:* it cannot protect data other organisations hold about you, or a file already unlocked | follows from 5.D1 and 5.D5 (it works only on files you encrypt) | 2026-10-29 |
+
+Not claimed: that Doughnut Forge would have prevented the breach; any name of the group, company, leak site, database or publishers; any political statement; DHS statements beyond "aware of a potential breach".
