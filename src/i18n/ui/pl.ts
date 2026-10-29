@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: szyfrowanie offline plików, folderów i tekstu",
-  "meta.home.description": "Szyfruj pliki i tekst na iPhonie, iPadzie lub komputerze i udostępniaj je zaufanym osobom. Bez konta, serwerów i subskrypcji: jednorazowy zakup na każdą platformę.",
+  "meta.home.title": "Doughnut Forge: szyfrowanie plików offline – Mac, iPhone i Windows",
+  "meta.home.description": "Szyfruj pliki i tekst na iPhonie, iPadzie, Macu i PC. Na komputerze zaszyfrujesz też foldery. Bez konta, serwerów i subskrypcji. Jednorazowy zakup na każdą platformę.",
   "nav.label": "Menu główne",
   "nav.features": "Funkcje",
   "nav.pricing": "Cennik",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Bezpieczeństwo",
   "nav.home": "Doughnut Forge – strona główna",
   "skip": "Przejdź do treści",
+  "home.summary": "Szyfrowanie plików offline: Mac, iPhone, iPad i Windows.",
   "home.tagline": "Otworzyć je mogą tylko osoby, które wybierzesz.",
   "home.lead": "Doughnut Forge blokuje Twoje pliki i tekst na iPhonie, iPadzie lub komputerze i pozwala udostępniać je osobom, którym ufasz.",
   "home.cta.primary": "Pobierz Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Wróć do Doughnut Forge",
   "go.tap": "Stuknij poniżej, aby otworzyć {store}.",
   "go.offline": "Działa bez internetu.",
-  "meta.features.title": "Funkcje: szyfruj pliki, foldery i tekst offline | Doughnut Forge",
+  "meta.features.title": "Funkcje: szyfruj pliki, foldery i tekst bez konta | Doughnut Forge",
   "meta.features.description": "Szyfruj pliki i tekst na własnym iPhonie, iPadzie lub komputerze, udostępniaj je zaufanym osobom i chroń je na długie lata. Bez konta i bez serwerów.",
   "features.title": "Wszystko, co potrafi Doughnut Forge",
   "features.lead": "Doughnut Forge blokuje Twoje pliki i tekst na iPhonie, iPadzie lub komputerze i pozwala udostępniać je osobom, którym ufasz. Niezależnie od tego, jak je wyślesz, tylko one mogą je otworzyć.",

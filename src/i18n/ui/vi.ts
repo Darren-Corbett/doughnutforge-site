@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: mã hóa ngoại tuyến tệp, thư mục và văn bản",
-  "meta.home.description": "Mã hóa tệp và văn bản trên iPhone, iPad hoặc máy tính, rồi chia sẻ với người bạn tin tưởng. Không tài khoản, không máy chủ, không thuê bao: mua một lần cho mỗi nền tảng.",
+  "meta.home.title": "Doughnut Forge: mã hóa tệp ngoại tuyến cho Mac, iPhone và Windows",
+  "meta.home.description": "Mã hóa tệp và văn bản trên iPhone, iPad, Mac và PC. Trên máy tính, bạn còn có thể mã hóa thư mục. Không tài khoản, không máy chủ, không thuê bao. Mua một lần cho mỗi nền tảng.",
   "nav.label": "Chính",
   "nav.features": "Tính năng",
   "nav.pricing": "Giá",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Bảo mật",
   "nav.home": "Trang chủ Doughnut Forge",
   "skip": "Chuyển đến nội dung",
+  "home.summary": "Mã hóa tệp ngoại tuyến cho Mac, iPhone, iPad và Windows.",
   "home.tagline": "Chỉ những người bạn chọn mới mở được.",
   "home.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng.",
   "home.cta.primary": "Tải Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Quay lại Doughnut Forge",
   "go.tap": "Chạm vào bên dưới để mở {store}.",
   "go.offline": "Hoạt động không cần internet.",
-  "meta.features.title": "Tính năng: mã hóa ngoại tuyến tệp, thư mục, văn bản | Doughnut Forge",
+  "meta.features.title": "Tính năng: mã hóa tệp, thư mục và văn bản, không cần tài khoản | Doughnut Forge",
   "meta.features.description": "Mã hóa tệp và văn bản ngay trên iPhone, iPad hoặc máy tính của bạn, chia sẻ với người bạn tin tưởng và giữ chúng được bảo vệ lâu dài. Không tài khoản, không máy chủ.",
   "features.title": "Mọi điều Doughnut Forge làm được",
   "features.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng. Dù bạn gửi bằng cách nào, chỉ họ mới mở được.",

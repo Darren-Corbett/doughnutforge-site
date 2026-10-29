@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: crittografia offline per file, cartelle e testo",
-  "meta.home.description": "Crittografa file e testo sul tuo iPhone, iPad o computer e condividili con le persone di cui ti fidi. Niente account, server o abbonamento: un acquisto una tantum per piattaforma.",
+  "meta.home.title": "Doughnut Forge: crittografia offline dei file per Mac, iPhone e Windows",
+  "meta.home.description": "Crittografa file e testo su iPhone, iPad, Mac e PC. Sul computer, crittografa anche le cartelle. Niente account, server o abbonamento. Un acquisto una tantum per ogni piattaforma.",
   "nav.label": "Principale",
   "nav.features": "Funzioni",
   "nav.pricing": "Prezzi",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Sicurezza",
   "nav.home": "Home di Doughnut Forge",
   "skip": "Vai al contenuto",
+  "home.summary": "Crittografia offline dei file per Mac, iPhone, iPad e Windows.",
   "home.tagline": "Solo le persone che scegli possono aprirli.",
   "home.lead": "Doughnut Forge blocca file e testo sul tuo iPhone, iPad o computer e ti permette di condividerli con le persone di cui ti fidi.",
   "home.cta.primary": "Scarica Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Torna a Doughnut Forge",
   "go.tap": "Tocca qui sotto per aprire {store}.",
   "go.offline": "Funziona senza Internet.",
-  "meta.features.title": "Funzioni: crittografia offline di file, cartelle e testo | Doughnut Forge",
+  "meta.features.title": "Funzioni: crittografa file, cartelle e testo senza account | Doughnut Forge",
   "meta.features.description": "Crittografa file e testo sul tuo iPhone, iPad o computer, condividili con le persone di cui ti fidi e mantienili protetti nel tempo. Niente account e niente server.",
   "features.title": "Tutto quello che fa Doughnut Forge",
   "features.lead": "Doughnut Forge blocca file e testo sul tuo iPhone, iPad o computer e ti permette di condividerli con le persone di cui ti fidi. Comunque tu li invii, solo loro possono aprirli.",

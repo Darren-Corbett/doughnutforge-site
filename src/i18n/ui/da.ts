@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: offline kryptering af filer, mapper og tekst",
-  "meta.home.description": "Krypter filer og tekst på din iPhone, iPad eller computer, og del dem med dem, du stoler på. Ingen konto, ingen servere, intet abonnement: et engangskøb for hver platform.",
+  "meta.home.title": "Doughnut Forge: offline filkryptering til Mac, iPhone og Windows",
+  "meta.home.description": "Krypter filer og tekst på iPhone, iPad, Mac og pc. På en computer kan du også kryptere mapper. Ingen konto, ingen servere, intet abonnement. Et engangskøb for hver platform.",
   "nav.label": "Hovedmenu",
   "nav.features": "Funktioner",
   "nav.pricing": "Priser",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Sikkerhed",
   "nav.home": "Doughnut Forge, forside",
   "skip": "Gå til indholdet",
+  "home.summary": "Offline filkryptering til Mac, iPhone, iPad og Windows.",
   "home.tagline": "Kun de personer, du vælger, kan åbne dem.",
   "home.lead": "Doughnut Forge låser dine filer og tekst på din iPhone, iPad eller computer og lader dig dele dem med dem, du stoler på.",
   "home.cta.primary": "Hent Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Tilbage til Doughnut Forge",
   "go.tap": "Tryk nedenfor for at åbne {store}.",
   "go.offline": "Virker uden internet.",
-  "meta.features.title": "Funktioner: offline kryptering af filer | Doughnut Forge",
+  "meta.features.title": "Funktioner: krypter filer, mapper og tekst uden konto | Doughnut Forge",
   "meta.features.description": "Krypter filer og tekst på din egen iPhone, iPad eller computer, del dem med dem, du stoler på, og hold dem beskyttet på lang sigt. Ingen konto og ingen servere.",
   "features.title": "Alt, hvad Doughnut Forge kan",
   "features.lead": "Doughnut Forge låser dine filer og tekst på din iPhone, iPad eller computer og lader dig dele dem med dem, du stoler på. Uanset hvordan du sender dem, er det kun dem, der kan åbne dem.",

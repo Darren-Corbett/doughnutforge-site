@@ -40,8 +40,6 @@ const rows: ToneRow[] = [
 ];
 
 const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), organization()];
-// The plain summary is English only until it is translated
-const summary = lang.code.startsWith("en") ? t("home.summary") : null;
 const ios = platforms.find((p) => p.id === "ios");
 const appId = ios?.status === "available" ? ios.storeId : undefined;
 ---
@@ -51,7 +49,7 @@ const appId = ios?.status === "available" ? ios.storeId : undefined;
     <div class="hero-inner">
       <div class="hero-copy">
         <h1 id="home-title">{headline}</h1>
-        {summary && <p class="summary">{summary}</p>}
+        <p class="summary">{t("home.summary")}</p>
         <p class="tagline">{t("home.tagline")}</p>
         <p class="lead">{lead}</p>
         <div class="actions">

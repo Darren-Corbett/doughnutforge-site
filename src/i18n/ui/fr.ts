@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge : chiffrez fichiers, dossiers et textes hors ligne",
-  "meta.home.description": "Chiffrez fichiers et textes sur votre iPhone, votre iPad ou votre ordinateur et partagez-les avec des personnes de confiance. Sans compte, serveur ni abonnement : un achat unique par plateforme.",
+  "meta.home.title": "Doughnut Forge : chiffrement de fichiers hors ligne pour Mac, iPhone et Windows",
+  "meta.home.description": "Chiffrez fichiers et textes sur iPhone, iPad, Mac et PC. Sur ordinateur, chiffrez aussi des dossiers. Sans compte, serveur ni abonnement. Un achat unique sur chaque plateforme.",
   "nav.label": "Navigation principale",
   "nav.features": "Fonctions",
   "nav.pricing": "Tarifs",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Sécurité",
   "nav.home": "Accueil Doughnut Forge",
   "skip": "Aller au contenu",
+  "home.summary": "Chiffrement de fichiers hors ligne pour Mac, iPhone, iPad et Windows.",
   "home.tagline": "Seules les personnes que vous choisissez peuvent les ouvrir.",
   "home.lead": "Doughnut Forge verrouille vos fichiers et textes sur votre iPhone, votre iPad ou votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance.",
   "home.cta.primary": "Obtenir Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Retour à Doughnut Forge",
   "go.tap": "Touchez ci-dessous pour ouvrir {store}.",
   "go.offline": "Fonctionne sans Internet.",
-  "meta.features.title": "Fonctions : chiffrement hors ligne de fichiers, dossiers et textes | Doughnut Forge",
+  "meta.features.title": "Fonctions : chiffrez fichiers, dossiers et textes sans compte | Doughnut Forge",
   "meta.features.description": "Chiffrez fichiers et textes sur votre propre iPhone, iPad ou ordinateur, partagez-les avec des personnes de confiance et gardez-les protégés sur le long terme. Sans compte ni serveur.",
   "features.title": "Tout ce que fait Doughnut Forge",
   "features.lead": "Doughnut Forge verrouille vos fichiers et textes sur votre iPhone, votre iPad ou votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance. Quelle que soit la façon dont vous les envoyez, elles seules peuvent les ouvrir.",

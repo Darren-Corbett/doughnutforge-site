@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: dosya, klasör ve metin için çevrimdışı şifreleme",
-  "meta.home.description": "iPhone, iPad veya bilgisayarınızda dosya ve metinleri şifreleyin, güvendiğiniz kişilerle paylaşın. Hesap, sunucu ve abonelik yok: her platform için tek seferlik satın alma.",
+  "meta.home.title": "Doughnut Forge: Mac, iPhone ve Windows için çevrimdışı dosya şifreleme",
+  "meta.home.description": "iPhone, iPad, Mac ve PC'de dosya ve metinleri şifreleyin. Bilgisayarda klasörleri de şifreleyebilirsiniz. Hesap, sunucu ve abonelik yok. Her platform için tek seferlik satın alma.",
   "nav.label": "Ana menü",
   "nav.features": "Özellikler",
   "nav.pricing": "Fiyatlar",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Güvenlik",
   "nav.home": "Doughnut Forge ana sayfası",
   "skip": "İçeriğe geç",
+  "home.summary": "Mac, iPhone, iPad ve Windows için çevrimdışı dosya şifreleme.",
   "home.tagline": "Onları yalnızca seçtiğiniz kişiler açabilir.",
   "home.lead": "Doughnut Forge, iPhone, iPad veya bilgisayarınızdaki dosyaları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar.",
   "home.cta.primary": "Doughnut Forge'u edinin",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Doughnut Forge'a dönün",
   "go.tap": "{store}'u açmak için aşağıya dokunun.",
   "go.offline": "İnternet olmadan çalışır.",
-  "meta.features.title": "Özellikler: çevrimdışı dosya, klasör ve metin şifreleme | Doughnut Forge",
+  "meta.features.title": "Özellikler: hesap olmadan dosya, klasör ve metin şifreleme | Doughnut Forge",
   "meta.features.description": "Kendi iPhone, iPad veya bilgisayarınızda dosya ve metinleri şifreleyin, güvendiğiniz kişilerle paylaşın ve uzun vadede korunmalarını sağlayın. Hesap yok, sunucu yok.",
   "features.title": "Doughnut Forge'un yaptığı her şey",
   "features.lead": "Doughnut Forge, iPhone, iPad veya bilgisayarınızdaki dosyaları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar. Nasıl gönderirseniz gönderin, onları yalnızca o kişiler açabilir.",

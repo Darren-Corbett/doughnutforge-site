@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge：离线加密文件、文件夹和文本",
-  "meta.home.description": "在 iPhone、iPad 或电脑上加密文件和文本，并与您信任的人分享。无需账户，没有服务器，无需订阅：每个平台一次性购买。",
+  "meta.home.title": "Doughnut Forge：适用于 Mac、iPhone 和 Windows 的离线文件加密",
+  "meta.home.description": "在 iPhone、iPad、Mac 和 PC 上加密文件和文本。在电脑上还可以加密文件夹。无需账户，没有服务器，无需订阅。每个平台一次性购买。",
   "nav.label": "主菜单",
   "nav.features": "功能",
   "nav.pricing": "价格",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "安全",
   "nav.home": "Doughnut Forge 首页",
   "skip": "跳到主要内容",
+  "home.summary": "适用于 Mac、iPhone、iPad 和 Windows 的离线文件加密。",
   "home.tagline": "只有您选择的人才能打开。",
   "home.lead": "Doughnut Forge 在您的 iPhone、iPad 或电脑上锁定文件和文本，并让您与信任的人分享。",
   "home.cta.primary": "获取 Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "返回 Doughnut Forge",
   "go.tap": "轻点下方以打开 {store}。",
   "go.offline": "无需联网即可使用。",
-  "meta.features.title": "功能：离线加密文件、文件夹和文本 | Doughnut Forge",
+  "meta.features.title": "功能：无需账户即可加密文件、文件夹和文本 | Doughnut Forge",
   "meta.features.description": "在自己的 iPhone、iPad 或电脑上加密文件和文本，与您信任的人分享，并长期保护它们。无需账户，没有服务器。",
   "features.title": "Doughnut Forge 的全部功能",
   "features.lead": "Doughnut Forge 在您的 iPhone、iPad 或电脑上锁定文件和文本，并让您与信任的人分享。无论以何种方式发送，只有他们才能打开。",

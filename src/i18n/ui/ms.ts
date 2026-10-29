@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: penyulitan luar talian fail, folder dan teks",
-  "meta.home.description": "Sulitkan fail dan teks pada iPhone, iPad atau komputer anda dan kongsi dengan orang dipercayai. Tiada akaun, pelayan atau langganan: beli sekali bagi setiap platform.",
+  "meta.home.title": "Doughnut Forge: penyulitan fail luar talian untuk Mac, iPhone dan Windows",
+  "meta.home.description": "Sulitkan fail dan teks pada iPhone, iPad, Mac dan PC. Pada komputer, anda juga boleh menyulitkan folder. Tiada akaun, pelayan atau langganan. Beli sekali bagi setiap platform.",
   "nav.label": "Utama",
   "nav.features": "Ciri",
   "nav.pricing": "Harga",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Keselamatan",
   "nav.home": "Laman utama Doughnut Forge",
   "skip": "Langkau ke kandungan",
+  "home.summary": "Penyulitan fail luar talian untuk Mac, iPhone, iPad dan Windows.",
   "home.tagline": "Hanya orang yang anda pilih boleh membukanya.",
   "home.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai.",
   "home.cta.primary": "Dapatkan Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Kembali ke Doughnut Forge",
   "go.tap": "Ketik di bawah untuk membuka {store}.",
   "go.offline": "Berfungsi tanpa internet.",
-  "meta.features.title": "Ciri: penyulitan luar talian fail, folder dan teks | Doughnut Forge",
+  "meta.features.title": "Ciri: sulitkan fail, folder dan teks tanpa akaun | Doughnut Forge",
   "meta.features.description": "Sulitkan fail dan teks pada iPhone, iPad atau komputer anda sendiri, kongsi dengan orang yang dipercayai dan lindunginya untuk jangka panjang. Tiada akaun, tiada pelayan.",
   "features.title": "Semua yang dilakukan oleh Doughnut Forge",
   "features.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai. Walau bagaimana anda menghantarnya, hanya mereka yang boleh membukanya.",

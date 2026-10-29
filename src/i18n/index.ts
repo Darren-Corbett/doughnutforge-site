@@ -11,9 +11,8 @@ export type StoreCopy = typeof enStore;
 
 // Pages and strings that exist only in English: the blog (posts launch in English
 // and are translated only after review), the 404 page (GitHub Pages serves one
-// 404.html for every address), the one page each answered issue has, and the
-// home summary line until it is translated (the home page shows it in English only).
-type EnglishOnlyKey = Extract<UiKey, `blog.${string}` | `meta.blog.${string}` | `notFound.${string}` | `meta.notFound.${string}` | `issue.${string}` | "nav.blog" | "home.summary">;
+// 404.html for every address) and the one page each answered issue has.
+type EnglishOnlyKey = Extract<UiKey, `blog.${string}` | `meta.blog.${string}` | `notFound.${string}` | `meta.notFound.${string}` | `issue.${string}` | "nav.blog">;
 /** The keys every language's string file must have, no more and no fewer */
 export type TranslatedKey = Exclude<UiKey, EnglishOnlyKey>;
 export type Translation = Record<TranslatedKey, string>;
@@ -33,7 +32,7 @@ export const builtLanguages = languages.filter((l) => ui[l.code] && app[l.code] 
 
 export const getLanguage = (code: string) => languages.find((l) => l.code === code) ?? defaultLanguage;
 
-const englishOnly = (key: UiKey): key is EnglishOnlyKey => /^(blog|meta\.blog|notFound|meta\.notFound|issue)\.|^nav\.blog$|^home\.summary$/.test(key);
+const englishOnly = (key: UiKey): key is EnglishOnlyKey => /^(blog|meta\.blog|notFound|meta\.notFound|issue)\.|^nav\.blog$/.test(key);
 
 /** UI copy, app wording and store copy for one language. */
 export const useStrings = (code: string) => {

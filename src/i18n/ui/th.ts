@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: เข้ารหัสไฟล์ โฟลเดอร์ และข้อความแบบออฟไลน์",
-  "meta.home.description": "เข้ารหัสไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณ แล้วแชร์กับคนที่คุณไว้ใจ ไม่มีบัญชี ไม่มีเซิร์ฟเวอร์ ไม่มีการสมัครสมาชิก ซื้อครั้งเดียวสำหรับแต่ละแพลตฟอร์ม",
+  "meta.home.title": "Doughnut Forge: เข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, iPhone และ Windows",
+  "meta.home.description": "เข้ารหัสไฟล์และข้อความบน iPhone, iPad, Mac และ PC บนคอมพิวเตอร์ คุณยังเข้ารหัสโฟลเดอร์ได้ด้วย ไม่มีบัญชี ไม่มีเซิร์ฟเวอร์ ไม่มีการสมัครสมาชิก ซื้อครั้งเดียวสำหรับแต่ละแพลตฟอร์ม",
   "nav.label": "เมนูหลัก",
   "nav.features": "ฟีเจอร์",
   "nav.pricing": "ราคา",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "ความปลอดภัย",
   "nav.home": "หน้าแรก Doughnut Forge",
   "skip": "ข้ามไปยังเนื้อหา",
+  "home.summary": "เข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, iPhone, iPad และ Windows",
   "home.tagline": "มีเพียงคนที่คุณเลือกเท่านั้นที่เปิดได้",
   "home.lead": "Doughnut Forge ล็อกไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณ และให้คุณแชร์กับคนที่คุณไว้ใจได้",
   "home.cta.primary": "รับ Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "กลับไปที่ Doughnut Forge",
   "go.tap": "แตะด้านล่างเพื่อเปิด {store}",
   "go.offline": "ใช้งานได้โดยไม่ต้องมีอินเทอร์เน็ต",
-  "meta.features.title": "ฟีเจอร์: เข้ารหัสไฟล์ โฟลเดอร์ และข้อความแบบออฟไลน์ | Doughnut Forge",
+  "meta.features.title": "ฟีเจอร์: เข้ารหัสไฟล์ โฟลเดอร์ และข้อความโดยไม่ต้องมีบัญชี | Doughnut Forge",
   "meta.features.description": "เข้ารหัสไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณเอง แชร์กับคนที่คุณไว้ใจ และปกป้องไว้ได้ในระยะยาว ไม่มีบัญชีและไม่มีเซิร์ฟเวอร์",
   "features.title": "ทุกสิ่งที่ Doughnut Forge ทำได้",
   "features.lead": "Doughnut Forge ล็อกไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณ และให้คุณแชร์กับคนที่คุณไว้ใจได้ ไม่ว่าคุณจะส่งด้วยวิธีใด มีเพียงพวกเขาเท่านั้นที่เปิดได้",

@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -79,13 +79,41 @@
         "issue": "Drafter's choice checked: 'Questions avec réponse' is grammatical and plain; it avoids the incorrect 'Questions répondues'. Same wording in meta.answered.title. Known issues uses 'Problèmes connus', which fits support.ask.title ('signaler un problème') and keeps 'tickets' for the GitHub issue itself. No-break space (U+00A0) present before '?' in support.ask.security. 'Signalez-le en privé' matches security.report.text.",
         "backTranslation": "Questions with an answer",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. French spacing before the colon matches the file. 'fichiers hors ligne' could also be read as 'offline files'. The features title in the file uses 'chiffrement hors ligne de fichiers', but the draft's order is a natural search phrase.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Uses vous, as the file does. Folders are in their own computer-only sentence. Purchase is per platform. 'Sans compte, serveur ni abonnement' matches the existing description.",
+        "backTranslation": "Encrypt files and texts on iPhone, iPad, Mac and PC. On a computer, also encrypt folders. Without account, server or subscription. A one-time purchase on each platform.",
+        "suggestion": "No change. Optional: 'Sur ordinateur, chiffrez aussi vos dossiers.'"
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem. The features page title does not name iPhone or iPad, so folders are fine here.",
+        "backTranslation": "Features: encrypt files, folders and texts without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -157,13 +185,41 @@
         "issue": "Same stiffness: 'gemeldet auf GitHub' after the relative clause. Meaning is correct.",
         "backTranslation": "Problems in Doughnut Forge that are known to the developer, reported on GitHub, with the developer's answers.",
         "suggestion": "Auf GitHub gemeldete Probleme in Doughnut Forge, die dem Entwickler bekannt sind, mit den Antworten des Entwicklers."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. 'Offline-Dateiverschlüsselung' is a correct compound and a likely search term.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Uses Sie. 'Kein Abo' and 'Einmalkauf pro Plattform' match the file. Folders are limited to the computer.",
+        "backTranslation": "Encrypt files and texts on iPhone, iPad, Mac and PC. On the computer you also encrypt folders. No account, no servers, no subscription. A one-time purchase per platform.",
+        "suggestion": "No change. Optional, a little more idiomatic: 'Am Computer verschlüsseln Sie auch Ordner.'"
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and texts without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -200,13 +256,41 @@
         "issue": "Drafter's choice checked: 'comunicados' (and 'se comunicó' in known.lead) is correct and natural; the file's verb 'informar de' has no usable passive participle, so this is a sound choice. 'Problemas conocidos' fits support.ask.title and keeps 'incidencias' for GitHub issues. 'Infórmalo de forma privada' matches security.report.text; '¿...?' punctuation correct.",
         "backTranslation": "Problems in Doughnut Forge that the developer knows about, reported on GitHub, with the developer's answers.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. 'sin conexión' matches the file's wording for offline.",
+        "backTranslation": "Doughnut Forge: file encryption without connection for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Uses tú and 'ordenador' (Spain), as the file does. Folders are limited to the computer. The file elsewhere says 'pago único por plataforma'; 'en cada plataforma' is also fine.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer, also encrypt folders. No account, no servers, no subscription. One-time payment on each platform.",
+        "suggestion": "No change. Optional, more natural: 'En el ordenador, también puedes cifrar carpetas.'"
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "File encryption without connection for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -286,13 +370,41 @@
         "issue": "Drafter's choice checked: 'Domande con risposta' is natural and adds nothing (unlike 'Domande risolte'). 'Problemi noti' is the standard term and fits support.ask.title; 'segnalazioni' stays for GitHub issues. 'Segnalalo in privato' matches security.report.text.",
         "backTranslation": "Questions with an answer",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. 'crittografia offline dei file' is natural.",
+        "backTranslation": "Doughnut Forge: offline encryption of files for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Uses tu. 'Niente account, server o abbonamento' and 'acquisto una tantum' match the file. Folders are limited to the computer. Purchase is per platform.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On the computer, also encrypt folders. No account, server or subscription. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -358,13 +470,41 @@
         "issue": "Checked: 'vertrouwelijk' (confidentially) keeps the meaning of 'privately' and matches the file's security.report.text ('meld het dan vertrouwelijk'). 'Bekende problemen' fits support.ask.title; 'issues' stays for GitHub issues.",
         "backTranslation": "Report it confidentially",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Uses u, as the file does. Lowercase 'pc' is Dutch convention. 'Eenmalig kopen per platform' matches the file. Folders are limited to the computer.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you also encrypt folders. No account, no servers, no subscription. Buy once per platform.",
+        "suggestion": "No change. Optional: 'Op een computer kunt u ook mappen versleutelen.'"
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -402,13 +542,41 @@
         "issue": "Checked: 'Kända problem' is the standard term and fits support.ask.title ('rapportera ett problem'); 'ärenden' stays for GitHub issues. 'Rapportera det privat' matches security.report.text.",
         "backTranslation": "Known problems",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. 'offlinekryptering' is written as one word, matching the file.",
+        "backTranslation": "Doughnut Forge: offline encryption of files for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Uses du. Lowercase 'pc' is Swedish convention. 'ingen prenumeration' and 'ett engångsköp per plattform' match the file. Folders are limited to the computer.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account, no servers, no subscription. A one-time purchase per platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -460,13 +628,41 @@
         "issue": "Checked: 'Kendte problemer' is the standard term and fits support.ask.title ('rapportér et problem'); 'issues' stays for GitHub issues. 'Rapportér det privat' matches security.report.text.",
         "backTranslation": "Known problems",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. 'offline filkryptering' reads naturally and matches the file's use of 'offline kryptering'.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Lowercase 'pc' is correct Danish spelling; folders sit only in the computer sentence; 'intet abonnement' and 'et engangskøb for hver platform' match the file.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account, no servers, no subscription. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem. Informal imperative, consistent with 'du' form.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -539,13 +735,41 @@
         "issue": "'ongelma' (problem) is used for Known issues, not the file's 'tiketti' (ticket), as the drafter intended. 'Tunnetut ongelmat' is the standard Finnish term. The leads keep 'kehittäjä', which matches security.report.private.",
         "backTranslation": "Known problems | Doughnut Forge",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. Allative forms Macille, iPhonelle, Windowsille are correct and match the file.",
+        "backTranslation": "Doughnut Forge: offline encryption of files for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Adessive iPhonella, iPadilla, Macilla, PC:llä correct; folders only in the computer sentence; 'Ei tiliä, ei palvelimia, ei tilausta' and 'Kertaostos jokaiselle alustalle' match the file.",
+        "backTranslation": "Encrypt files and texts on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account, no servers, no subscription. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and texts without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -597,13 +821,41 @@
         "issue": "'Kjente problemer' is the standard term and uses 'problem', not the file's 'sak'. 'utvikleren' matches security.report.private, and all three buttons are imperatives like support.ask.title. The strings are accurate and natural.",
         "backTranslation": "Known problems",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Correct Bokmål. The file's current title writes the compound 'offlinekryptering'; 'offline filkryptering' is acceptable, but a compound would be more consistent with the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "Optional: \"Doughnut Forge: offline-filkryptering for Mac, iPhone og Windows\"."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Facts correct (folders only in the computer sentence). The old description wrote 'ett engangskjøp per plattform'; the draft has 'Et'. Both are grammatical. Kept 'Et', as in the file's faq.subscription.a ('et engangskjøp').",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account, no servers, no subscription. A one-time purchase per platform.",
+        "suggestion": "Optional: change \"Et engangskjøp per plattform.\" to \"Ett engangskjøp per plattform.\""
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Same compound point as the title; acceptable as is.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "Optional: \"Offline-filkryptering for Mac, iPhone, iPad og Windows.\""
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -655,13 +907,41 @@
         "issue": "Uses 'Problemy', not the file's 'zgłoszenia', as intended. The masculine agreement 'Każdy z nich ... został zgłoszony' is correct, and 'deweloper' matches security.report.private. 'Zgłoś go prywatnie' keeps 'privately', with 'go' agreeing with 'problem'.",
         "backTranslation": "Problems the developer knows about, with the developer's answers. Each of them is displayed in the language in which it was reported.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Grammatical. The en dash plus a bare list stands in for 'for' and avoids inflecting the names; it reads fine in a title. An inflected version would be closer to the English.",
+        "backTranslation": "Doughnut Forge: offline file encryption – Mac, iPhone and Windows",
+        "suggestion": "Optional: \"Doughnut Forge: szyfrowanie plików offline na Maca, iPhone’a i Windows\"."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Locatives 'na iPhonie, iPadzie, Macu' are correct; 'PC' does not inflect. Folders only in the computer sentence; the subscription and one-time-purchase wording matches the file. Informal 'ty' form kept.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you will also encrypt folders. No account, servers or subscription. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Grammatical. A colon list used in place of 'for'; this is acceptable.",
+        "backTranslation": "Offline file encryption: Mac, iPhone, iPad and Windows.",
+        "suggestion": "Optional: \"Szyfrowanie plików offline na Maca, iPhone’a, iPada i Windows.\""
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -727,13 +1007,41 @@
         "issue": "The buttons use the infinitive ('Nahlásit chybu', 'Položit otázku', 'Navrhnout funkci'), which is the normal Czech button form and matches support.ask.search. The link uses the formal imperative 'Nahlaste ho soukromě', which reads naturally after the question 'Našli jste ...?'. The mix is acceptable, and 'soukromě' keeps 'privately'.",
         "backTranslation": "Report it privately",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. 'pro Mac, iPhone a Windows' takes the accusative, which matches the nominative form here.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Locatives 'v iPhonu, iPadu, Macu a PC' are correct and match the file; formal 'vy' kept; folders only in the computer sentence; 'Bez účtu, serverů a předplatného' and 'jednorázový nákup pro každou platformu' match the file.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. Without account, servers and subscription. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -820,13 +1128,41 @@
         "issue": "It reorders the English ('The problems of Doughnut Forge reported on GitHub that the developer knows about, with the developer's answers'), but the meaning is the same and the word order is natural. Using 'problémák' instead of 'bejelentések' for Known issues is right.",
         "backTranslation": "Doughnut Forge's problems reported on GitHub that the developer knows about, with the developer's answers.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Correct. 'Macre', 'iPhone-ra' and 'Windowsra' follow the pronunciation rules. The rest of the file avoids suffixing names directly, but direct suffixes are normal in a short title.",
+        "backTranslation": "Doughnut Forge: offline file encryption for (onto) Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. 'iPhone-on, iPaden, Macen és PC-n' correct; informal 'te' form kept; folders only in the computer sentence; 'Fiók, szerver és előfizetés nélkül' and 'egyszeri vásárlás platformonként' match the file.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. Without account, server and subscription. One-time purchase per platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encryption of files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem. 'iPadre' is correct.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -920,13 +1256,41 @@
         "issue": "The feminine agreement with 'problemă' ('afișată', 'raportată') is correct, and so is the agreement with 'întrebare' in answered.lead. 'Raporteaz-o în privat' keeps 'privately', and 'o' agrees with 'problemă'. 'dezvoltatorul' matches security.report.private.",
         "backTranslation": "Problems that the developer knows about, with the developer's answers. Each is displayed in the language in which it was reported.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. Correct diacritics (ș, ă).",
+        "backTranslation": "Doughnut Forge: offline encryption of files for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Uses tu. 'dosare', 'fără abonament' and 'o achiziție unică pentru fiecare platformă' match the file. Folders are limited to the computer.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account, no servers, no subscription. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -999,13 +1363,41 @@
         "issue": "The two stacked relative clauses ('о которых знает разработчик и о которых сообщили на GitHub') are grammatical and faithful, but slightly heavy. A participle would be lighter, but this is optional.",
         "backTranslation": "Problems in Doughnut Forge that the developer knows about and that were reported on GitHub, with the developer's answers.",
         "suggestion": "Известные разработчику проблемы в Doughnut Forge, о которых сообщили на GitHub, с ответами разработчика."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. 'офлайн-шифрование' matches the file.",
+        "backTranslation": "Doughnut Forge: offline encryption of files for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Formal 'вы' imperative; folders only in the computer sentence; 'Без аккаунта, серверов и подписки' and 'Разовая покупка для каждой платформы' match the file.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. Without account, servers and subscription. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem. A noun phrase in place of the imperative is natural for a Russian title.",
+        "backTranslation": "Features: encryption of files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1071,13 +1463,41 @@
         "issue": "Repeated \"του προγραμματιστή\" mirrors the English and is grammatical; Greek would more often say \"με τις απαντήσεις του\". Acceptable as is.",
         "backTranslation": "Problems the developer knows about, with the developer's answers. Each one is shown in the language in which it was reported.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. 'offline κρυπτογράφηση' matches the file.",
+        "backTranslation": "Doughnut Forge: offline encryption of files for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Formal plural; folders only in the computer sentence; 'Χωρίς λογαριασμό, διακομιστές ή συνδρομή' and 'Εφάπαξ αγορά ανά πλατφόρμα' match the file.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. Without account, servers or subscription. One-time purchase per platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encryption of files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1136,6 +1556,34 @@
         "issue": "Imperative \"Повідомте\" while the three buttons use infinitives (\"Повідомити про помилку\"). Fine for an inline link after a question; \"privately\" kept.",
         "backTranslation": "Report it privately",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. 'офлайн-шифрування' matches the file.",
+        "backTranslation": "Doughnut Forge: offline encryption of files for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Formal 'ви'; 'й' and 'і' alternate correctly; the typographic apostrophe in 'комп’ютері' matches the file; folders only in the computer sentence; 'передплати' and 'Разова покупка для кожної платформи' match the file.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. Without an account, servers and subscription. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem. Long, but 'обліковий запис' is the file's term.",
+        "backTranslation": "Features: encryption of files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1165,7 +1613,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1196,13 +1644,41 @@
         "issue": "Confirmation: 'reportar' and 'reporte' follow Mexican usage and match 'reportes' in support.ask.text. 'Disponible' for Shipped and 'Planeado' for Planned are natural in Mexico and carry no timing or promise.",
         "backTranslation": "If you find a security problem in Doughnut Forge or on this website, report it privately on GitHub. Please do not open a public report.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Doughnut Forge: file encryption without connection for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Uses 'computadora', matching the es-MX file. Folders are limited to the computer.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer, also encrypt folders. No account, no servers, no subscription. One-time payment on each platform.",
+        "suggestion": "No change. Optional: 'En la computadora, también puedes cifrar carpetas.'"
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "File encryption without connection for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -1260,13 +1736,41 @@
         "issue": "\"que o desenvolvedor conhece\" is correct; \"de que o desenvolvedor já sabe\" would add timing, so keep. Repeated \"desenvolvedor\" is acceptable.",
         "backTranslation": "Problems the developer knows, with the developer's answers. Each one appears in the language in which it was reported.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Not wrong. 'criptografia de arquivos offline' can be read as 'encryption of offline files'. The features title in the file uses 'criptografia offline de arquivos', which is clearer and more consistent. The draft's order is a common search phrase, though.",
+        "backTranslation": "Doughnut Forge: encryption of offline files / offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "Optional: 'Doughnut Forge: criptografia offline de arquivos para Mac, iPhone e Windows'"
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem with facts or register (você imperative, 'sem assinatura', 'pagamento único', as in the file). Folders are limited to the computer. 'criptografe também pastas' is slightly stiff.",
+        "backTranslation": "Encrypt files and texts on iPhone, iPad, Mac and PC. On the computer, also encrypt folders. No account, no servers, no subscription. One-time payment on each platform.",
+        "suggestion": "Optional: 'No computador, você também pode criptografar pastas.'"
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and texts without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Same word-order point as the home title. Not wrong.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "Optional: 'Criptografia offline de arquivos para Mac, iPhone, iPad e Windows.'"
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1318,13 +1822,41 @@
         "issue": "\"Kişilerin\" is understandable but slightly stiff; \"İnsanların\" is the more natural word for 'people' here.",
         "backTranslation": "Questions that persons asked on GitHub, and the developer's answers. Each one is shown in the language it was asked in.",
         "suggestion": "İnsanların GitHub'da sorduğu sorular ve geliştiricinin yanıtları. Her biri, sorulduğu dilde gösterilir."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. 'için' does not need suffixes on the names; natural Turkish word order.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. 'PC'de' suffix correct; formal 'siz'; folders only in the computer sentence; 'Hesap, sunucu ve abonelik yok' and 'Her platform için tek seferlik satın alma' match the file.",
+        "backTranslation": "Encrypt files and texts on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account, server or subscription. One-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: file, folder and text encryption without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -1368,13 +1900,41 @@
         "issue": "Ending a heading on the particle 'で' ('デバイス上だけで') feels unfinished. A noun ending matches faq.storage.a ('お使いのデバイス上') and keeps the sense of 'your'.",
         "backTranslation": "Only on the device (with)",
         "suggestion": "お使いのデバイス上だけ"
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. Full-width colon and enumeration commas match the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone, Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Folders are limited to computers (コンピュータでは). The words for subscription (サブスク), one-time purchase per platform (プラットフォームごとの買い切り) and computer (コンピュータ) match the existing description.",
+        "backTranslation": "You can encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account, no servers, no subscription. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem. Natural word order. フォルダ matches the file and the app.",
+        "backTranslation": "Features: encrypt files, folders and text without needing an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1447,13 +2007,41 @@
         "issue": "私下报告 keeps 'privately' and matches GitHub's own Chinese wording for private vulnerability reports. Simplified characters only throughout.",
         "backTranslation": "Report privately",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. Full-width colon, spaces around Latin words, as in the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Folders are limited to computers (在电脑上还可以). 无需账户/没有服务器/无需订阅/每个平台一次性购买 match the existing strings.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account needed, no servers, no subscription needed. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1547,13 +2135,41 @@
         "issue": "Re-check after the fix: No blocking findings. Meaning matches the English: the 已 markers are ordinary perfective aspect matching 'reported' and 'knows about', not an added promise or timing. The passive 已在 GitHub 上回報 names no reporter, so it no longer suggests the developer reported the problems, and 開發者已知 puts the developer only as the one who knows. Natural Taiwan usage (回報, 開發者, 解答), Traditional characters only, no Simplified forms. 開發者 matches security.report.private (只有開發者能看到您的回報) and the sibling strings known.lead and meta.answered.description. Minor: 已 appears twice, which is acceptable in Taiwan usage and needs no fix.",
         "backTranslation": "Problems in Doughnut Forge that have been reported on GitHub and that the developer already knows about, together with the developer's answers.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. Taiwan words (檔案, 離線) and spacing match the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Folders are limited to computers (在電腦上還能). 不需帳號、沒有伺服器、不需訂閱 and 每個平台一次性購買 match the existing strings, including the 、 between items.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account needed, no servers, no subscription needed. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1619,13 +2235,41 @@
         "issue": "I checked the labels as asked. 버그 신고 and 기능 제안 are nouns, and 질문하기 is a -기 form. That mix is normal in Korean UI: a bare 질문 would read as a heading, not an action. 질문하기 also matches support.ask.title, so the labels are short and natural.",
         "backTranslation": "Asking a question",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone, Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Folders are limited to computers (컴퓨터에서는). The polite imperative and 계정도, 서버도, 구독도 없습니다 / 플랫폼마다 한 번만 구매하면 됩니다 match the existing description.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account, no servers, no subscription. You buy once on each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem. A full stop after a noun phrase is acceptable for a standalone line.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1663,13 +2307,41 @@
         "issue": "Re-check after the fix: Correct. It uses the glossary term पहचान. 'replaced' is given as 'another identity cannot take its place', which is the intended meaning. Natural wording.",
         "backTranslation": "An update that keeps every identity safe, so that it is never lost, no other identity can take its place, and it is never left in a readable state. On Mac, Windows, iPhone and iPad.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Folders are limited to computers (कंप्यूटर पर). अकाउंट/सब्सक्रिप्शन/हर प्लेटफ़ॉर्म के लिए एक बार की खरीद match the existing strings, with nukta spellings (फ़ाइल, फ़ोल्डर) as in the file.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account, no server, no subscription. A one-time purchase for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem. फ़ीचर: matches the existing features title.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1714,13 +2386,41 @@
         "issue": "Confirmation: 'Kunci tetap di tangan Anda' is a common, natural Indonesian idiom; it matches security.keys.text and faq.storage.a.",
         "backTranslation": "Keys stay in your hands",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. Lowercase after the colon matches the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Folders are limited to computers (Di komputer). Formal Anda, tanpa akun/server/langganan and sekali beli match the file. Optional: 'Sekali beli per platform.' would match the existing wording exactly, but 'untuk setiap platform' is equally correct.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer, you can also encrypt folders. No account, no server, no subscription. Buy once for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1772,13 +2472,41 @@
         "issue": "'tidak sekali-kali boleh hilang ... dibiarkan boleh dibaca' repeats boleh and reads a little heavy. Meaning is correct.",
         "backTranslation": "An update that keeps every identity safe, so that it can never be lost, replaced or left readable. On Mac, Windows, iPhone and iPad.",
         "suggestion": "Kemas kini yang memastikan setiap identiti selamat, supaya ia tidak akan hilang, diganti atau dibiarkan dalam keadaan boleh dibaca. Pada Mac, Windows, iPhone dan iPad."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem. Malaysian Malay (penyulitan, fail, luar talian), not Indonesian. No serial comma, as in the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Folders are limited to computers (Pada komputer). Malaysian words throughout (sulitkan, pada, boleh, tiada, pelayan, akaun). 'Tiada akaun, pelayan atau langganan' and 'beli sekali bagi setiap platform' match the existing description.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer, you can also encrypt folders. No account, server or subscription. Buy once for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem. Ciri: matches the file.",
+        "backTranslation": "Features: encrypt files, folders and text without an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1823,13 +2551,41 @@
         "issue": "Re-check after the fix: Correct and natural. It covers only the developer seeing the report and the free GitHub account.",
         "backTranslation": "Only the developer can see your report. You need a GitHub account, which is free to sign up for.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Correct, and folders are limited to computers. Spaces, not full stops, separate the sentences, as Thai needs. The terms match the existing description. Optional: a space after the place phrase and an explicit subject read a little more smoothly. Adopted.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer you can also encrypt folders. No account, no server, no subscription. Buy once for each platform.",
+        "suggestion": "เข้ารหัสไฟล์และข้อความบน iPhone, iPad, Mac และ PC บนคอมพิวเตอร์ คุณยังเข้ารหัสโฟลเดอร์ได้ด้วย ไม่มีบัญชี ไม่มีเซิร์ฟเวอร์ ไม่มีการสมัครสมาชิก ซื้อครั้งเดียวสำหรับแต่ละแพลตฟอร์ม"
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "No problem. ฟีเจอร์: matches the file, and the list items are separated by spaces.",
+        "backTranslation": "Features: encrypt files, folders and text without needing an account | Doughnut Forge",
+        "suggestion": "No change."
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem. It correctly has no full stop at the end, as Thai does not use one.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows",
+        "suggestion": "No change."
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-10-29",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1873,6 +2629,34 @@
         "severity": "note",
         "issue": "Confirmation: 'Trong kế hoạch' ('in the plan') reads clearly as not done and not promised; better than 'Đã lên kế hoạch', which could read as settled.",
         "backTranslation": "In the plan",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "No problem. Folders are limited to computers (Trên máy tính). 'Không tài khoản, không máy chủ, không thuê bao' and 'mua một lần cho mỗi nền tảng' match the existing description.",
+        "backTranslation": "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer, you can also encrypt folders. No account, no server, no subscription. Buy once for each platform.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.features.title",
+        "severity": "note",
+        "issue": "Correct. With no comma before 'không cần tài khoản', a reader could briefly take it to describe only 'văn bản'. A comma, or 'và' before the last item, reads cleanly. Adopted.",
+        "backTranslation": "Features: encrypt files, folders, text without needing an account | Doughnut Forge",
+        "suggestion": "Tính năng: mã hóa tệp, thư mục và văn bản, không cần tài khoản | Doughnut Forge"
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "No problem.",
+        "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
       }
     ]

@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: salaa tiedostot, kansiot ja tekstit offline",
-  "meta.home.description": "Salaa tiedostot ja tekstit iPhonellasi, iPadillasi tai tietokoneellasi ja jaa ne luotetuille ihmisille. Ei tiliä, ei palvelimia, ei tilausta: kertaostos jokaiselle alustalle.",
+  "meta.home.title": "Doughnut Forge: tiedostojen offline-salaus Macille, iPhonelle ja Windowsille",
+  "meta.home.description": "Salaa tiedostot ja tekstit iPhonella, iPadilla, Macilla ja PC:llä. Tietokoneella voit salata myös kansioita. Ei tiliä, ei palvelimia, ei tilausta. Kertaostos jokaiselle alustalle.",
   "nav.label": "Päävalikko",
   "nav.features": "Ominaisuudet",
   "nav.pricing": "Hinnat",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Tietoturva",
   "nav.home": "Doughnut Forge, etusivu",
   "skip": "Siirry sisältöön",
+  "home.summary": "Tiedostojen offline-salaus Macille, iPhonelle, iPadille ja Windowsille.",
   "home.tagline": "Vain valitsemasi ihmiset voivat avata ne.",
   "home.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa.",
   "home.cta.primary": "Hanki Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Takaisin Doughnut Forgeen",
   "go.tap": "Avaa {store} napauttamalla alta.",
   "go.offline": "Toimii ilman internetiä.",
-  "meta.features.title": "Ominaisuudet: offline-salaus tiedostoille | Doughnut Forge",
+  "meta.features.title": "Ominaisuudet: salaa tiedostot, kansiot ja tekstit ilman tiliä | Doughnut Forge",
   "meta.features.description": "Salaa tiedostot ja tekstit omalla iPhonellasi, iPadillasi tai tietokoneellasi, jaa ne luotettujen ihmisten kanssa ja pidä ne suojattuina pitkään. Ei tiliä eikä palvelimia.",
   "features.title": "Kaikki, mitä Doughnut Forge tekee",
   "features.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa. Lähetitpä ne miten tahansa, vain he voivat avata ne.",

@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 import en from "./en.ts";
 
-// The English-only blog, 404 and home summary strings are not part of a translation
-const { "nav.blog": _blog, "home.summary": _summary, ...shared } = en;
+// The English-only blog and 404 strings are not part of a translation
+const { "nav.blog": _blog, ...shared } = en;
 const translated = Object.fromEntries(
   Object.entries(shared).filter(([key]) => !/^(blog|meta\.blog|notFound|meta\.notFound|issue)\./.test(key)),
 ) as Translation;

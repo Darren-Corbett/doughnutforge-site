@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: criptografe arquivos, pastas e textos offline",
-  "meta.home.description": "Criptografe arquivos e textos no iPhone, iPad ou computador e compartilhe com quem você confia. Sem conta, sem servidores, sem assinatura: pagamento único por plataforma.",
+  "meta.home.title": "Doughnut Forge: criptografia de arquivos offline para Mac, iPhone e Windows",
+  "meta.home.description": "Criptografe arquivos e textos no iPhone, iPad, Mac e PC. No computador, criptografe também pastas. Sem conta, sem servidores, sem assinatura. Pagamento único em cada plataforma.",
   "nav.label": "Principal",
   "nav.features": "Recursos",
   "nav.pricing": "Preços",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Segurança",
   "nav.home": "Página inicial do Doughnut Forge",
   "skip": "Pular para o conteúdo",
+  "home.summary": "Criptografia de arquivos offline para Mac, iPhone, iPad e Windows.",
   "home.tagline": "Só as pessoas que você escolher podem abri-los.",
   "home.lead": "Doughnut Forge protege seus arquivos e textos no seu iPhone, iPad ou computador e permite compartilhá-los com as pessoas em quem você confia.",
   "home.cta.primary": "Obtenha o Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Voltar para o Doughnut Forge",
   "go.tap": "Toque abaixo para abrir a {store}.",
   "go.offline": "Funciona sem internet.",
-  "meta.features.title": "Recursos: criptografia offline de arquivos | Doughnut Forge",
+  "meta.features.title": "Recursos: criptografe arquivos, pastas e textos sem conta | Doughnut Forge",
   "meta.features.description": "Criptografe arquivos e textos no seu iPhone, iPad ou computador, compartilhe com quem você confia e mantenha tudo protegido a longo prazo. Sem conta e sem servidores.",
   "features.title": "Tudo o que o Doughnut Forge faz",
   "features.lead": "Doughnut Forge protege seus arquivos e textos no seu iPhone, iPad ou computador e permite compartilhá-los com as pessoas em quem você confia. Não importa como você os envie, só elas podem abri-los.",

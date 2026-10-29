@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: criptare offline pentru fișiere, dosare și text",
-  "meta.home.description": "Criptează fișiere și text pe iPhone, iPad sau computer și partajează-le cu oamenii în care ai încredere. Fără cont, fără servere, fără abonament: o achiziție unică pentru fiecare platformă.",
+  "meta.home.title": "Doughnut Forge: criptare offline a fișierelor pentru Mac, iPhone și Windows",
+  "meta.home.description": "Criptează fișiere și text pe iPhone, iPad, Mac și PC. Pe computer poți cripta și dosare. Fără cont, fără servere, fără abonament. O achiziție unică pentru fiecare platformă.",
   "nav.label": "Principal",
   "nav.features": "Funcții",
   "nav.pricing": "Prețuri",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Securitate",
   "nav.home": "Pagina principală Doughnut Forge",
   "skip": "Sari la conținut",
+  "home.summary": "Criptare offline a fișierelor pentru Mac, iPhone, iPad și Windows.",
   "home.tagline": "Doar oamenii pe care îi alegi le pot deschide.",
   "home.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad sau computer și îți permite să le partajezi cu oamenii în care ai încredere.",
   "home.cta.primary": "Obține Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Înapoi la Doughnut Forge",
   "go.tap": "Atinge mai jos pentru a deschide {store}.",
   "go.offline": "Funcționează fără internet.",
-  "meta.features.title": "Funcții: criptare offline pentru fișiere, dosare și text | Doughnut Forge",
+  "meta.features.title": "Funcții: criptează fișiere, dosare și text fără cont | Doughnut Forge",
   "meta.features.description": "Criptează fișiere și text pe propriul iPhone, iPad sau computer, partajează-le cu oameni de încredere și păstrează-le protejate pe termen lung. Fără cont și fără servere.",
   "features.title": "Tot ce face Doughnut Forge",
   "features.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad sau computer și îți permite să le partajezi cu oamenii în care ai încredere. Oricum le-ai trimite, doar ei le pot deschide.",

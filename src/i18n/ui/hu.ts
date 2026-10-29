@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: fájlok, mappák és szöveg offline titkosítása",
-  "meta.home.description": "Titkosíts fájlokat és szöveget az iPhone-odon, iPadeden vagy a gépeden, és oszd meg azokkal, akikben megbízol. Fiók, szerver és előfizetés nélkül: egyszeri vásárlás platformonként.",
+  "meta.home.title": "Doughnut Forge: offline fájltitkosítás Macre, iPhone-ra és Windowsra",
+  "meta.home.description": "Titkosíts fájlokat és szöveget iPhone-on, iPaden, Macen és PC-n. Számítógépen mappákat is titkosíthatsz. Fiók, szerver és előfizetés nélkül. Egyszeri vásárlás platformonként.",
   "nav.label": "Főmenü",
   "nav.features": "Funkciók",
   "nav.pricing": "Árak",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Biztonság",
   "nav.home": "Doughnut Forge – kezdőlap",
   "skip": "Ugrás a tartalomra",
+  "home.summary": "Offline fájltitkosítás Macre, iPhone-ra, iPadre és Windowsra.",
   "home.tagline": "Csak azok nyithatják meg őket, akiket te választasz.",
   "home.lead": "A Doughnut Forge lezárja a fájljaidat és szövegeidet az iPhone-odon, iPadeden vagy a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol.",
   "home.cta.primary": "Doughnut Forge letöltése",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Vissza a Doughnut Forge oldalára",
   "go.tap": "Koppints lent a megnyitáshoz: {store}.",
   "go.offline": "Internet nélkül is működik.",
-  "meta.features.title": "Funkciók: fájlok, mappák, szöveg offline titkosítása | Doughnut Forge",
+  "meta.features.title": "Funkciók: fájlok, mappák és szöveg titkosítása fiók nélkül | Doughnut Forge",
   "meta.features.description": "Titkosíts fájlokat és szöveget a saját iPhone-odon, iPadeden vagy gépeden, oszd meg őket azokkal, akikben megbízol, és védd őket hosszú távon. Fiók és szerverek nélkül.",
   "features.title": "Minden, amit a Doughnut Forge tud",
   "features.lead": "A Doughnut Forge lezárja a fájljaidat és szövegeidet az iPhone-odon, iPadeden vagy a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol. Bárhogyan küldöd is el őket, csak ők nyithatják meg.",

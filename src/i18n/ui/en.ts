@@ -22,7 +22,6 @@ export default {
   "nav.home": "Doughnut Forge home",
   "skip": "Skip to content",
 
-  // English only until it is translated (see EnglishOnlyKey in ../index.ts); other languages leave it out
   "home.summary": "Offline file encryption for Mac, iPhone, iPad and Windows.",
   "home.tagline": "Only the people you choose can open them.",
   "home.lead": "Doughnut Forge locks your files and text on your iPhone, iPad or computer and lets you share them with the people you trust.",

@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: offline κρυπτογράφηση αρχείων και κειμένου",
-  "meta.home.description": "Κρυπτογραφήστε αρχεία και κείμενο στο iPhone, το iPad ή τον υπολογιστή σας και μοιραστείτε τα με όσους εμπιστεύεστε. Χωρίς λογαριασμό, διακομιστές ή συνδρομή: εφάπαξ αγορά ανά πλατφόρμα.",
+  "meta.home.title": "Doughnut Forge: offline κρυπτογράφηση αρχείων για Mac, iPhone και Windows",
+  "meta.home.description": "Κρυπτογραφήστε αρχεία και κείμενο σε iPhone, iPad, Mac και PC. Σε υπολογιστή μπορείτε να κρυπτογραφήσετε και φακέλους. Χωρίς λογαριασμό, διακομιστές ή συνδρομή. Εφάπαξ αγορά ανά πλατφόρμα.",
   "nav.label": "Κύριο μενού",
   "nav.features": "Λειτουργίες",
   "nav.pricing": "Τιμές",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Ασφάλεια",
   "nav.home": "Doughnut Forge: αρχική σελίδα",
   "skip": "Μετάβαση στο περιεχόμενο",
+  "home.summary": "Offline κρυπτογράφηση αρχείων για Mac, iPhone, iPad και Windows.",
   "home.tagline": "Μόνο όσοι επιλέξετε μπορούν να τα ανοίξουν.",
   "home.lead": "Το Doughnut Forge κλειδώνει τα αρχεία και το κείμενό σας στο iPhone, το iPad ή τον υπολογιστή σας και σας επιτρέπει να τα μοιράζεστε με όσους εμπιστεύεστε.",
   "home.cta.primary": "Αποκτήστε το Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Επιστροφή στο Doughnut Forge",
   "go.tap": "Πατήστε παρακάτω για να ανοίξετε το {store}.",
   "go.offline": "Λειτουργεί χωρίς διαδίκτυο.",
-  "meta.features.title": "Λειτουργίες: offline κρυπτογράφηση αρχείων | Doughnut Forge",
+  "meta.features.title": "Λειτουργίες: κρυπτογράφηση αρχείων, φακέλων και κειμένου χωρίς λογαριασμό | Doughnut Forge",
   "meta.features.description": "Κρυπτογραφήστε αρχεία και κείμενο στο iPhone, το iPad ή τον υπολογιστή σας, μοιραστείτε τα με όσους εμπιστεύεστε και προστατέψτε τα για χρόνια. Χωρίς λογαριασμό και διακομιστές.",
   "features.title": "Όλα όσα κάνει το Doughnut Forge",
   "features.lead": "Το Doughnut Forge κλειδώνει τα αρχεία και το κείμενό σας στο iPhone, το iPad ή τον υπολογιστή σας και σας επιτρέπει να τα μοιράζεστε με όσους εμπιστεύεστε. Όπως κι αν τα στείλετε, μόνο εκείνοι μπορούν να τα ανοίξουν.",

@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge：離線加密檔案、資料夾和文字",
-  "meta.home.description": "在 iPhone、iPad 或電腦上加密檔案和文字，並與您信任的人分享。不需帳號、沒有伺服器、不需訂閱：每個平台一次性購買。",
+  "meta.home.title": "Doughnut Forge：適用於 Mac、iPhone 和 Windows 的離線檔案加密",
+  "meta.home.description": "在 iPhone、iPad、Mac 和 PC 上加密檔案和文字。在電腦上還能加密資料夾。不需帳號、沒有伺服器、不需訂閱。每個平台一次性購買。",
   "nav.label": "主選單",
   "nav.features": "功能",
   "nav.pricing": "價格",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "安全性",
   "nav.home": "Doughnut Forge 首頁",
   "skip": "跳到主要內容",
+  "home.summary": "適用於 Mac、iPhone、iPad 和 Windows 的離線檔案加密。",
   "home.tagline": "只有您選擇的人才能開啟。",
   "home.lead": "Doughnut Forge 在您的 iPhone、iPad 或電腦上鎖定檔案和文字，並讓您與信任的人分享。",
   "home.cta.primary": "取得 Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "返回 Doughnut Forge",
   "go.tap": "點一下下方的按鈕以開啟 {store}。",
   "go.offline": "不用連上網路也能使用。",
-  "meta.features.title": "功能：離線加密檔案、資料夾和文字 | Doughnut Forge",
+  "meta.features.title": "功能：不需帳號即可加密檔案、資料夾和文字 | Doughnut Forge",
   "meta.features.description": "在自己的 iPhone、iPad 或電腦上加密檔案和文字，與您信任的人分享，並長期保護它們。不需帳號，沒有伺服器。",
   "features.title": "Doughnut Forge 的所有功能",
   "features.lead": "Doughnut Forge 在您的 iPhone、iPad 或電腦上鎖定檔案和文字，並讓您與信任的人分享。無論用什麼方式傳送，只有他們能開啟。",

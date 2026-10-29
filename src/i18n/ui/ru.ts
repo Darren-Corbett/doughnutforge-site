@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: офлайн-шифрование файлов, папок и текста",
-  "meta.home.description": "Шифруйте файлы и текст на iPhone, iPad или компьютере и делитесь ими с теми, кому доверяете. Без аккаунта, серверов и подписки: разовая покупка для каждой платформы.",
+  "meta.home.title": "Doughnut Forge: офлайн-шифрование файлов для Mac, iPhone и Windows",
+  "meta.home.description": "Шифруйте файлы и текст на iPhone, iPad, Mac и ПК. На компьютере можно шифровать и папки. Без аккаунта, серверов и подписки. Разовая покупка для каждой платформы.",
   "nav.label": "Основное меню",
   "nav.features": "Функции",
   "nav.pricing": "Цены",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Безопасность",
   "nav.home": "Doughnut Forge: главная страница",
   "skip": "Перейти к содержимому",
+  "home.summary": "Офлайн-шифрование файлов для Mac, iPhone, iPad и Windows.",
   "home.tagline": "Открыть их смогут только те, кого вы выберете.",
   "home.lead": "Doughnut Forge защищает ваши файлы и текст на iPhone, iPad или компьютере и позволяет делиться ими с теми, кому вы доверяете.",
   "home.cta.primary": "Получить Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Вернуться в Doughnut Forge",
   "go.tap": "Нажмите ниже, чтобы открыть {store}.",
   "go.offline": "Работает без интернета.",
-  "meta.features.title": "Функции: офлайн-шифрование файлов и текста | Doughnut Forge",
+  "meta.features.title": "Функции: шифрование файлов, папок и текста без аккаунта | Doughnut Forge",
   "meta.features.description": "Шифруйте файлы и текст на своём iPhone, iPad или компьютере, делитесь ими с теми, кому доверяете, и сохраняйте их защиту надолго. Без аккаунта и без серверов.",
   "features.title": "Всё, что умеет Doughnut Forge",
   "features.lead": "Doughnut Forge защищает ваши файлы и текст на iPhone, iPad или компьютере и позволяет делиться ими с теми, кому вы доверяете. Как бы вы их ни отправили, открыть их смогут только они.",

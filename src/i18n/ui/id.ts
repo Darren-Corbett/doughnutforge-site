@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: enkripsi offline file, folder, dan teks",
-  "meta.home.description": "Enkripsi file dan teks di iPhone, iPad, atau komputer Anda, lalu bagikan kepada orang tepercaya. Tanpa akun, tanpa server, tanpa langganan: sekali beli per platform.",
+  "meta.home.title": "Doughnut Forge: enkripsi file offline untuk Mac, iPhone, dan Windows",
+  "meta.home.description": "Enkripsi file dan teks di iPhone, iPad, Mac, dan PC. Di komputer, Anda juga bisa mengenkripsi folder. Tanpa akun, tanpa server, tanpa langganan. Sekali beli untuk setiap platform.",
   "nav.label": "Utama",
   "nav.features": "Fitur",
   "nav.pricing": "Harga",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Keamanan",
   "nav.home": "Beranda Doughnut Forge",
   "skip": "Lewati ke konten",
+  "home.summary": "Enkripsi file offline untuk Mac, iPhone, iPad, dan Windows.",
   "home.tagline": "Hanya orang yang Anda pilih yang dapat membukanya.",
   "home.lead": "Doughnut Forge mengunci file dan teks di iPhone, iPad, atau komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya.",
   "home.cta.primary": "Dapatkan Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Kembali ke Doughnut Forge",
   "go.tap": "Ketuk di bawah untuk membuka {store}.",
   "go.offline": "Berfungsi tanpa internet.",
-  "meta.features.title": "Fitur: enkripsi offline file, folder, dan teks | Doughnut Forge",
+  "meta.features.title": "Fitur: enkripsi file, folder, dan teks tanpa akun | Doughnut Forge",
   "meta.features.description": "Enkripsi file dan teks di iPhone, iPad, atau komputer Anda, bagikan kepada orang tepercaya, dan jaga agar tetap terlindungi dalam jangka panjang. Tanpa akun, tanpa server.",
   "features.title": "Semua yang dilakukan Doughnut Forge",
   "features.lead": "Doughnut Forge mengunci file dan teks di iPhone, iPad, atau komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya. Apa pun cara Anda mengirimnya, hanya mereka yang dapat membukanya.",

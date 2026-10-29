@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: šifrování souborů, složek a textu offline",
-  "meta.home.description": "Šifrujte soubory a text v iPhonu, iPadu nebo počítači a sdílejte je s lidmi, kterým věříte. Bez účtu, serverů a předplatného: jednorázový nákup pro každou platformu.",
+  "meta.home.title": "Doughnut Forge: šifrování souborů offline pro Mac, iPhone a Windows",
+  "meta.home.description": "Šifrujte soubory a text v iPhonu, iPadu, Macu a PC. V počítači můžete šifrovat i složky. Bez účtu, serverů a předplatného. Jednorázový nákup pro každou platformu.",
   "nav.label": "Hlavní nabídka",
   "nav.features": "Funkce",
   "nav.pricing": "Ceník",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Bezpečnost",
   "nav.home": "Doughnut Forge – úvodní stránka",
   "skip": "Přejít na obsah",
+  "home.summary": "Šifrování souborů offline pro Mac, iPhone, iPad a Windows.",
   "home.tagline": "Otevřít je mohou jen lidé, které si vyberete.",
   "home.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete.",
   "home.cta.primary": "Získat Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Zpět na Doughnut Forge",
   "go.tap": "Klepnutím níže otevřete {store}.",
   "go.offline": "Funguje bez internetu.",
-  "meta.features.title": "Funkce: šifrování souborů, složek a textu offline | Doughnut Forge",
+  "meta.features.title": "Funkce: šifrujte soubory, složky a text bez účtu | Doughnut Forge",
   "meta.features.description": "Šifrujte soubory a text ve vlastním iPhonu, iPadu nebo počítači, sdílejte je s lidmi, kterým důvěřujete, a chraňte je dlouhodobě. Bez účtu a bez serverů.",
   "features.title": "Vše, co Doughnut Forge umí",
   "features.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete. Ať je pošlete jakkoli, otevřít je mohou jen oni.",

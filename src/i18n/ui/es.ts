@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: cifra archivos, carpetas y texto sin conexión",
-  "meta.home.description": "Cifra archivos y texto en tu iPhone, iPad u ordenador y compártelos con gente de confianza. Sin cuenta, sin servidores, sin suscripción: pago único por plataforma.",
+  "meta.home.title": "Doughnut Forge: cifrado de archivos sin conexión para Mac, iPhone y Windows",
+  "meta.home.description": "Cifra archivos y texto en iPhone, iPad, Mac y PC. En un ordenador, cifra también carpetas. Sin cuenta, sin servidores, sin suscripción. Pago único en cada plataforma.",
   "nav.label": "Principal",
   "nav.features": "Funciones",
   "nav.pricing": "Precios",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Seguridad",
   "nav.home": "Inicio de Doughnut Forge",
   "skip": "Saltar al contenido",
+  "home.summary": "Cifrado de archivos sin conexión para Mac, iPhone, iPad y Windows.",
   "home.tagline": "Solo las personas que elijas podrán abrirlos.",
   "home.lead": "Doughnut Forge protege tus archivos y texto en tu iPhone, iPad u ordenador y te permite compartirlos con las personas en las que confías.",
   "home.cta.primary": "Consigue Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Volver a Doughnut Forge",
   "go.tap": "Toca abajo para abrir {store}.",
   "go.offline": "Funciona sin internet.",
-  "meta.features.title": "Funciones: cifra archivos y texto sin conexión | Doughnut Forge",
+  "meta.features.title": "Funciones: cifra archivos, carpetas y texto sin cuenta | Doughnut Forge",
   "meta.features.description": "Cifra archivos y texto en tu propio iPhone, iPad u ordenador, compártelos con gente de confianza y mantenlos protegidos a largo plazo. Sin cuenta y sin servidores.",
   "features.title": "Todo lo que hace Doughnut Forge",
   "features.lead": "Doughnut Forge protege tus archivos y texto en tu iPhone, iPad u ordenador y te permite compartirlos con las personas en las que confías. Los envíes como los envíes, solo ellas podrán abrirlos.",

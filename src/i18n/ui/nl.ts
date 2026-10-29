@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: bestanden, mappen en tekst offline versleutelen",
-  "meta.home.description": "Versleutel bestanden en tekst op uw iPhone, iPad of computer en deel ze met wie u vertrouwt. Geen account, geen servers, geen abonnement: eenmalig kopen per platform.",
+  "meta.home.title": "Doughnut Forge: offline bestandsversleuteling voor Mac, iPhone en Windows",
+  "meta.home.description": "Versleutel bestanden en tekst op iPhone, iPad, Mac en pc. Op een computer versleutelt u ook mappen. Geen account, geen servers, geen abonnement. Eenmalig kopen per platform.",
   "nav.label": "Hoofdmenu",
   "nav.features": "Functies",
   "nav.pricing": "Prijzen",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Beveiliging",
   "nav.home": "Startpagina van Doughnut Forge",
   "skip": "Naar de inhoud",
+  "home.summary": "Offline bestandsversleuteling voor Mac, iPhone, iPad en Windows.",
   "home.tagline": "Alleen de mensen die u kiest, kunnen ze openen.",
   "home.lead": "Doughnut Forge vergrendelt uw bestanden en tekst op uw iPhone, iPad of computer en laat u ze delen met de mensen die u vertrouwt.",
   "home.cta.primary": "Doughnut Forge downloaden",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Terug naar Doughnut Forge",
   "go.tap": "Tik hieronder om de {store} te openen.",
   "go.offline": "Werkt zonder internet.",
-  "meta.features.title": "Functies: offline versleuteling | Doughnut Forge",
+  "meta.features.title": "Functies: bestanden, mappen en tekst versleutelen zonder account | Doughnut Forge",
   "meta.features.description": "Versleutel bestanden en tekst op uw eigen iPhone, iPad of computer, deel ze met wie u vertrouwt en houd ze lang beschermd. Geen account en geen servers.",
   "features.title": "Alles wat Doughnut Forge doet",
   "features.lead": "Doughnut Forge vergrendelt uw bestanden en tekst op uw iPhone, iPad of computer en laat u ze delen met de mensen die u vertrouwt. Hoe u ze ook verstuurt, alleen zij kunnen ze openen.",

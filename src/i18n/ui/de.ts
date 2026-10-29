@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: Dateien, Ordner und Texte offline verschlüsseln",
-  "meta.home.description": "Verschlüsseln Sie Dateien und Texte auf Ihrem iPhone, iPad oder Computer und teilen Sie sie mit Vertrauten. Kein Konto, keine Server, kein Abo: ein Einmalkauf pro Plattform.",
+  "meta.home.title": "Doughnut Forge: Offline-Dateiverschlüsselung für Mac, iPhone und Windows",
+  "meta.home.description": "Verschlüsseln Sie Dateien und Texte auf iPhone, iPad, Mac und PC. Auf dem Computer verschlüsseln Sie auch Ordner. Kein Konto, keine Server, kein Abo. Ein Einmalkauf pro Plattform.",
   "nav.label": "Hauptmenü",
   "nav.features": "Funktionen",
   "nav.pricing": "Preise",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Sicherheit",
   "nav.home": "Startseite von Doughnut Forge",
   "skip": "Zum Inhalt springen",
+  "home.summary": "Offline-Dateiverschlüsselung für Mac, iPhone, iPad und Windows.",
   "home.tagline": "Nur die Menschen, die Sie auswählen, können sie öffnen.",
   "home.lead": "Doughnut Forge verschlüsselt Ihre Dateien und Texte auf Ihrem iPhone, iPad oder Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen.",
   "home.cta.primary": "Doughnut Forge holen",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Zurück zu Doughnut Forge",
   "go.tap": "Tippen Sie unten, um den {store} zu öffnen.",
   "go.offline": "Funktioniert ohne Internet.",
-  "meta.features.title": "Funktionen: Offline-Verschlüsselung | Doughnut Forge",
+  "meta.features.title": "Funktionen: Dateien, Ordner und Texte ohne Konto verschlüsseln | Doughnut Forge",
   "meta.features.description": "Verschlüsseln Sie Dateien und Texte auf Ihrem iPhone, iPad oder Computer, teilen Sie sie mit Vertrauten und schützen Sie sie langfristig. Kein Konto, keine Server.",
   "features.title": "Alles, was Doughnut Forge kann",
   "features.lead": "Doughnut Forge verschlüsselt Ihre Dateien und Texte auf Ihrem iPhone, iPad oder Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen. Egal, wie Sie sie versenden: Nur diese Menschen können sie öffnen.",

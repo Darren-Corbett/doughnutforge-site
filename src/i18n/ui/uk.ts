@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: офлайн-шифрування файлів, папок і тексту",
-  "meta.home.description": "Шифруйте файли й текст на iPhone, iPad або комп’ютері та діліться ними з тими, кому довіряєте. Без облікового запису, серверів і передплати: разова покупка для кожної платформи.",
+  "meta.home.title": "Doughnut Forge: офлайн-шифрування файлів для Mac, iPhone і Windows",
+  "meta.home.description": "Шифруйте файли й текст на iPhone, iPad, Mac і ПК. На комп’ютері можна шифрувати й папки. Без облікового запису, серверів і передплати. Разова покупка для кожної платформи.",
   "nav.label": "Головне меню",
   "nav.features": "Функції",
   "nav.pricing": "Ціни",
@@ -18,6 +18,7 @@ export default {
   "nav.security": "Безпека",
   "nav.home": "Doughnut Forge: головна сторінка",
   "skip": "Перейти до вмісту",
+  "home.summary": "Офлайн-шифрування файлів для Mac, iPhone, iPad і Windows.",
   "home.tagline": "Відкрити їх зможуть лише ті, кого ви оберете.",
   "home.lead": "Doughnut Forge захищає ваші файли й текст на iPhone, iPad або комп’ютері та дає змогу ділитися ними з тими, кому ви довіряєте.",
   "home.cta.primary": "Отримати Doughnut Forge",
@@ -44,7 +45,7 @@ export default {
   "go.back": "Повернутися до Doughnut Forge",
   "go.tap": "Торкніться нижче, щоб відкрити {store}.",
   "go.offline": "Працює без інтернету.",
-  "meta.features.title": "Функції: офлайн-шифрування файлів і тексту | Doughnut Forge",
+  "meta.features.title": "Функції: шифрування файлів, папок і тексту без облікового запису | Doughnut Forge",
   "meta.features.description": "Шифруйте файли й текст на своєму iPhone, iPad або комп’ютері, діліться ними з тими, кому довіряєте, і захищайте їх надовго. Без облікового запису й без серверів.",
   "features.title": "Усе, що вміє Doughnut Forge",
   "features.lead": "Doughnut Forge захищає ваші файли й текст на iPhone, iPad або комп’ютері та дає змогу ділитися ними з тими, кому ви довіряєте. Хоч би як ви їх надіслали, відкрити їх зможуть лише вони.",
