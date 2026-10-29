@@ -1,5 +1,8 @@
 ---
 // 404: GitHub Pages serves dist/404.html for any address that does not exist.
+// The app icon as a padlock, and the heading scrambled once like ciphertext. The
+// scramble is an aria-hidden overlay, so the h1 is always the real text; without
+// JavaScript or with reduced motion there is none.
 import PageHero from "../components/PageHero.astro";
 import { localePath, useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
@@ -18,7 +21,51 @@ const links = [
 ---
 
 <Base lang={lang} title={t("meta.notFound.title")} description={t("notFound.lead")} noindex>
-  <PageHero title={t("notFound.title")} lead={t("notFound.lead")} />
+  <PageHero title={t("notFound.title")} lead={t("notFound.lead")}>
+    <svg class="lock-icon" viewBox="0 -8 120 158" width="96" height="126" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="nf-steel" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f8fafc" /><stop offset=".55" stop-color="#94a3b8" /><stop offset="1" stop-color="#e2e8f0" />
+        </linearGradient>
+        <linearGradient id="nf-blue" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3d9bff" /><stop offset="1" stop-color="#1468f0" />
+        </linearGradient>
+      </defs>
+      <path class="shackle" d="M32 64V42a28 28 0 0 1 56 0v22" fill="none" stroke="url(#nf-steel)" stroke-width="11" stroke-linecap="round" />
+      <rect x="4" y="50" width="112" height="98" rx="26" fill="url(#nf-blue)" />
+      <circle cx="60" cy="99" r="29" fill="none" stroke="url(#nf-steel)" stroke-width="21" />
+      <circle cx="60" cy="99" r="29" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2" />
+      <g stroke="#64748b" stroke-width="3" stroke-linecap="round">
+        <path d="M44 80l5 3M70 77l5-2M80 96l1 5M73 118l4 2M43 116l-3 3M38 98l-1 5" />
+      </g>
+    </svg>
+    <script is:inline>
+      (() => {
+        const title = document.getElementById("page-title");
+        if (!title || !window.requestAnimationFrame || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        const text = title.textContent.trim();
+        const glyphs = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+        const overlay = document.createElement("span");
+        overlay.setAttribute("data-scramble", "");
+        overlay.setAttribute("aria-hidden", "true");
+        title.classList.add("scrambling");
+        title.append(overlay);
+        const start = performance.now();
+        // Settles left to right over 1.2 seconds, keeping the spaces so lines wrap alike
+        const frame = (now) => {
+          const done = Math.min(1, (now - start) / 1200);
+          const settled = Math.floor(done * text.length);
+          let shown = text.slice(0, settled);
+          for (const c of text.slice(settled)) shown += c === " " ? c : glyphs[Math.floor(Math.random() * glyphs.length)];
+          overlay.textContent = shown;
+          if (done < 1) return requestAnimationFrame(frame);
+          overlay.remove();
+          title.classList.remove("scrambling");
+        };
+        frame(start);
+      })();
+    </script>
+  </PageHero>
   <section class="section" aria-label={t("notFound.try")}>
     <p class="section-text">{t("notFound.try")}</p>
     <ul class="links" role="list">
@@ -34,6 +81,33 @@ const links = [
 </Base>
 
 <style>
+  .lock-icon {
+    margin-top: 8px;
+  }
+  /* The shackle starts open and clicks shut once, as the heading settles */
+  @media (prefers-reduced-motion: no-preference) {
+    .shackle {
+      animation: shut 0.25s cubic-bezier(0.5, 0, 0.75, 0) 1.1s both;
+    }
+  }
+  @keyframes shut {
+    from {
+      transform: translateY(-12px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  /* The heading belongs to PageHero and the overlay is made by the script, hence :global */
+  :global(#page-title.scrambling) {
+    position: relative;
+    color: transparent;
+  }
+  :global([data-scramble]) {
+    position: absolute;
+    inset: 0;
+    color: #fff;
+  }
   .links {
     margin-top: 16px;
     display: flex;

@@ -289,9 +289,9 @@ export default {
 
   // 404
   "meta.notFound.title": "Page not found | Doughnut Forge",
-  "notFound.title": "This page is a hole in the dough.",
-  "notFound.lead": "There is nothing here but air.",
-  "notFound.try": "Back to the good stuff:",
+  "notFound.title": "This page is encrypted. Nobody can find it.",
+  "notFound.lead": "The page you were looking for is not here, and no copy of it exists.",
+  "notFound.try": "Try one of these:",
 
   // ===================================================================
   // End of new copy
