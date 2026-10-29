@@ -52,7 +52,7 @@ const appId = ios?.status === "available" ? ios.storeId : undefined;
         <p class="summary">{t("home.summary")}</p>
         <p class="tagline">{t("home.tagline")}</p>
         <p class="lead">{lead}</p>
-        <div class="actions">
+        <div class="actions" data-nosnippet>
           <a class="btn-primary" href="#download">{t("home.cta.primary")}</a>
           <a class="btn-quiet" href="#features">{t("home.cta.secondary")}</a>
         </div>

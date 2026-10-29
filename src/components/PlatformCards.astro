@@ -34,7 +34,7 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
                 ? fill(t("pricing.oneTime"), { store: storeNames[p.store] })
                 : REQUIRES[p.id] && t(REQUIRES[p.id]!)}
             </p>
-            <div class="buy">
+            <div class="buy" data-nosnippet>
               <StoreBadge platform={p.id} store={p.store} storeId={p.storeId} lang={lang} />
             </div>
           </>

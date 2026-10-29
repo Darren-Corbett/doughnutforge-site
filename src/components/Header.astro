@@ -28,7 +28,8 @@ const linkClass =
 ---
 
 <header class="bg-[#15202b] text-white">
-  <div class="relative mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-3 gap-y-1 px-4 pt-2.5 pb-1.5 sm:px-6 md:pb-2.5">
+  {/* Chrome, kept out of search snippets (data-nosnippet works on div, span and section) */}
+  <div data-nosnippet class="relative mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-3 gap-y-1 px-4 pt-2.5 pb-1.5 sm:px-6 md:pb-2.5">
     <a href={localePath(lang.code)} class="flex min-h-11 items-center gap-2.5" aria-label={t("nav.home")}>
       <Logo />
       <span class="text-[18px] font-extrabold tracking-tight">{site.name}</span>

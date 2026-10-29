@@ -69,12 +69,14 @@ const ogImage =
     />
   </head>
   <body class="flex min-h-dvh flex-col">
+    <span class="skip" data-nosnippet>
     <a
       href="#main"
       class="sr-only rounded-full bg-white px-5 py-3 font-extrabold text-ink-blue focus:not-sr-only focus:absolute focus:start-4 focus:top-4 focus:z-50 dark:bg-forge-surface-dark"
     >
       {t("skip")}
     </a>
+    </span>
     <Header lang={lang} />
     <main id="main" class="flex-1">
       <slot />

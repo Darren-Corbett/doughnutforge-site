@@ -22,7 +22,17 @@ const dateText = new Intl.DateTimeFormat(lang.hreflang, { dateStyle: "long" }).f
 const ogImage = `/og/blog/${url.split("/").filter(Boolean).at(-1)}.png`;
 
 const organisation = { "@type": "Organization", name: site.name, url: site.url };
-const jsonLd = {
+// Where the post sits: Doughnut Forge, then Blog, then the post
+const breadcrumbs = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: site.name, item: new URL("/", site.url).href },
+    { "@type": "ListItem", position: 2, name: t("blog.title"), item: new URL("/blog/", site.url).href },
+    { "@type": "ListItem", position: 3, name: title, item: new URL(url, site.url).href },
+  ],
+};
+const article = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: title,
@@ -42,7 +52,7 @@ const jsonLd = {
   title={`${title} | ${site.name}`}
   description={description}
   image={ogImage}
-  jsonLd={jsonLd}
+  jsonLd={[article, breadcrumbs]}
   noindex={draft}
   article={{ published: date, modified: updated }}
   feed={!draft}
@@ -60,7 +70,7 @@ const jsonLd = {
     <aside class="cta" aria-labelledby="post-cta">
       <h2 id="post-cta">{t("blog.cta.title")}</h2>
       <p>{t("blog.cta.text")}</p>
-      <a class="btn-primary" href={localePath(lang.code, "download/")}>{t("button.getApp")}</a>
+      <span class="cta-button" data-nosnippet><a class="btn-primary" href={localePath(lang.code, "download/")}>{t("button.getApp")}</a></span>
     </aside>
   </div>
 </Base>

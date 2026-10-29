@@ -18,7 +18,7 @@ const note = [coming.length ? fill(t("download.coming"), { platforms: listOf(lan
   .trim();
 ---
 
-<div class="-m-3 flex flex-wrap">
+<div class="platform-row -m-3 flex flex-wrap" data-nosnippet>
   {available.map((p) => (p.status === "available" ? <StoreBadge platform={p.id} store={p.store} storeId={p.storeId} lang={lang} /> : null))}
 </div>
 <p class="mt-4 max-w-[34rem] text-[17px] leading-relaxed">{note}</p>
