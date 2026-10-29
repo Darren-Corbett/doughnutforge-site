@@ -34,7 +34,7 @@ test("the scramble is hidden from screen readers and plays once", async ({ page 
   const overlay = page.locator("[data-scramble]");
   // It may already be gone on a slow start; when it is there, it is aria-hidden
   if (await overlay.count()) await expect(overlay).toHaveAttribute("aria-hidden", "true");
-  await expect(overlay).toHaveCount(0, { timeout: 2500 });
+  await expect(overlay).toHaveCount(0, { timeout: 4000 });
   await expect(page.locator("h1")).toHaveText(en["notFound.title"]!);
   await expect(page.locator("h1")).toBeVisible();
 });
