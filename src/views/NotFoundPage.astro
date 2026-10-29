@@ -88,10 +88,10 @@ const links = [
   .lock-icon {
     margin-top: 8px;
   }
-  /* The shackle starts open and clicks shut once, as the heading settles */
+  /* The shackle starts open and clicks shut once, just after the heading has settled */
   @media (prefers-reduced-motion: no-preference) {
     .shackle {
-      animation: shut 0.3s cubic-bezier(0.5, 0, 0.75, 0) 1.6s both;
+      animation: shut 0.3s cubic-bezier(0.5, 0, 0.75, 0) 2s both;
     }
   }
   @keyframes shut {
