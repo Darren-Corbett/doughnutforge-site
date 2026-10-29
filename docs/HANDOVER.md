@@ -88,6 +88,12 @@ Where the site work stands, and what comes next. Read this at the start of every
 - **A static redirect for the old `/get/` addresses.** `/get/<store>/<language>/` was live for about a day before `/go/` replaced it, and now returns 404.
 - **Run `npm run test:links` locally before a push**, by hand or with a local git hook, never a GitHub Action. Today it runs only when asked.
 
+## One platform order, badges lined up (29 October 2026)
+
+- **Order (owner):** every visitor sees iPhone and iPad, Mac, Windows, then coming soon. The visitor-first script (`VisitorFirst.astro`, 27 October) is removed: on the live site it put Mac first for the owner on a Mac. Reproduced live before the fix (Mac, iPhone and Windows browsers). The "visitor's own platform first" part of "Mobile first" below no longer applies.
+- **Badges:** each badge sits at the bottom of its card (`PlatformCards.astro`), so they line up on the download and pricing pages. Test: "store badges line up" in `tests/layout/stores.spec.ts`. The badges keep the stores' own widths (their guidelines forbid changing them).
+- **Test fault found:** the Linux change (`88f2885`) put the support-page check in the middle of the order test, so it read the structured data from the wrong page; fixed in `652820b`. It passed in the run reported for that change; why is not known.
+
 ## Linux no longer named, comparison drafts (29 October 2026)
 
 - **Linux (owner):** the site does not name Linux for Doughnut Forge, neither as available nor as coming, until it really is coming (`6086955`, translations `d6a4b04`). Android is the only platform coming soon. To bring Linux back: add `{ id: "linux", status: "coming" }` to `mobileFirst` in `src/data/stores.ts`, `linux` to `PlatformId` and the name list, `OS_NAMES` in `src/data/jsonld.ts`, and update `meta.download.description` and the tests (`tests/layout/stores.spec.ts`, `visitor-first.spec.ts`). `download.coming` and `faq.which.a` read "Coming soon: {platforms}." and need no change. The Linux trademark notice on the legal page stays (owner).
