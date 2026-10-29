@@ -1,9 +1,8 @@
 ---
 // One card per platform, in the order of src/data/stores.ts (mobile first): the
 // store badge where the app is on sale, "Coming soon" with no link where it is
-// not. The visitor's own platform then moves to the front (VisitorFirst.astro).
+// not. Every visitor sees the same order.
 import StoreBadge from "./StoreBadge.astro";
-import VisitorFirst from "./VisitorFirst.astro";
 import { platformName, platforms, storeNames, type PlatformId } from "../data/stores";
 import { fill, useStrings, type Language, type UiKey } from "../i18n";
 
@@ -46,7 +45,6 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
     ))
   }
 </ul>
-<VisitorFirst />
 
 <style>
   .cards {
@@ -81,8 +79,10 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
     font-weight: 800;
     color: var(--ink-blue);
   }
+  /* The badge sits at the bottom, so badges in a row line up whatever the text above them */
   .buy {
-    margin: 10px -12px -12px;
+    margin: auto -12px -12px;
+    padding-top: 10px;
   }
   @media (prefers-color-scheme: dark) {
     .card {

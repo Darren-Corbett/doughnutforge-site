@@ -21,7 +21,7 @@ import { badgeArt, badgeWording, goPath, secondArt } from "../data/badges";
 import { useStrings, type Language } from "../i18n";
 
 interface Props {
-  /** Marks the badge and its fallbacks, so they move together (VisitorFirst.astro) */
+  /** Marks the badge and its fallbacks with their platform */
   platform: PlatformId;
   store: StoreId;
   storeId: string;
