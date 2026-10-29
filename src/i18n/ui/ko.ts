@@ -127,7 +127,7 @@ export default {
   "press.lead": "Doughnut Forge에 관한 글을 쓰는 데 필요한 모든 것: 소개 문구, 제품 정보, 아이콘, 스크린샷.",
   "press.about.title": "Doughnut Forge 소개",
   "press.about.short": "짧은 소개",
-  "press.about.shortText": "구독 없음. 계정 없음. 서버 없음. iPhone, iPad 또는 컴퓨터에서 파일과 텍스트를 암호화하고 신뢰하는 사람과 안전하게 공유하세요.",
+  "press.about.shortText": "Doughnut Forge는 Mac, iPhone, iPad, Windows용 오프라인 파일 암호화 앱입니다.",
   "press.about.long": "자세한 소개",
   "press.facts.title": "제품 정보",
   "press.facts.name": "이름",

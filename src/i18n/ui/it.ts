@@ -127,7 +127,7 @@ export default {
   "press.lead": "Tutto ciò che ti serve per scrivere di Doughnut Forge: descrizioni, informazioni, icone e screenshot.",
   "press.about.title": "Informazioni su Doughnut Forge",
   "press.about.short": "Descrizione breve",
-  "press.about.shortText": "Nessun abbonamento. Nessun account. Nessun server. Cifra file e testo sul tuo iPhone, iPad o computer e condividili in sicurezza con chi vuoi.",
+  "press.about.shortText": "Doughnut Forge è un'app di crittografia offline dei file per Mac, iPhone, iPad e Windows.",
   "press.about.long": "Descrizione lunga",
   "press.facts.title": "Scheda informativa",
   "press.facts.name": "Nome",

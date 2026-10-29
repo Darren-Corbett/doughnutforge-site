@@ -127,7 +127,7 @@ export default {
   "press.lead": "Ό,τι χρειάζεστε για να γράψετε για το Doughnut Forge: περιγραφές, στοιχεία, εικονίδια και στιγμιότυπα οθόνης.",
   "press.about.title": "Σχετικά με το Doughnut Forge",
   "press.about.short": "Σύντομη περιγραφή",
-  "press.about.shortText": "Χωρίς συνδρομή. Χωρίς λογαριασμό. Χωρίς διακομιστές. Κρυπτογραφήστε αρχεία και κείμενο στο iPhone, το iPad ή τον υπολογιστή σας και μοιραστείτε τα με ασφάλεια.",
+  "press.about.shortText": "Το Doughnut Forge είναι μια εφαρμογή offline κρυπτογράφησης αρχείων για Mac, iPhone, iPad και Windows.",
   "press.about.long": "Αναλυτική περιγραφή",
   "press.facts.title": "Βασικά στοιχεία",
   "press.facts.name": "Όνομα",

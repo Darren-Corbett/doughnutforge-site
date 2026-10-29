@@ -127,7 +127,7 @@ export default {
   "press.lead": "Vše, co potřebujete, abyste mohli psát o Doughnut Forge: popisy, fakta, ikony a snímky obrazovky.",
   "press.about.title": "O Doughnut Forge",
   "press.about.short": "Krátký popis",
-  "press.about.shortText": "Bez předplatného. Bez účtu. Bez serverů. Šifrujte soubory a text ve svém iPhonu, iPadu nebo počítači a bezpečně je sdílejte s lidmi, kterým důvěřujete.",
+  "press.about.shortText": "Doughnut Forge je aplikace pro šifrování souborů offline pro Mac, iPhone, iPad a Windows.",
   "press.about.long": "Dlouhý popis",
   "press.facts.title": "Přehled faktů",
   "press.facts.name": "Název",

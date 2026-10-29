@@ -127,7 +127,7 @@ export default {
   "press.lead": "Semua yang anda perlukan untuk menulis tentang Doughnut Forge: penerangan, fakta, ikon dan tangkapan skrin.",
   "press.about.title": "Tentang Doughnut Forge",
   "press.about.short": "Penerangan ringkas",
-  "press.about.shortText": "Tiada langganan. Tiada akaun. Tiada pelayan. Sulitkan fail dan teks pada iPhone, iPad atau komputer anda dan kongsikannya dengan selamat.",
+  "press.about.shortText": "Doughnut Forge ialah aplikasi penyulitan fail luar talian untuk Mac, iPhone, iPad dan Windows.",
   "press.about.long": "Penerangan panjang",
   "press.facts.title": "Helaian fakta",
   "press.facts.name": "Nama",

@@ -137,6 +137,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -273,6 +279,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -373,6 +385,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]
@@ -518,6 +536,12 @@
         "severity": "note",
         "issue": "Correct, but 'tuoi ... tuo ... tuo' repeats. Optional polish; kept, as the suggestion also drops 'own'.",
         "suggestion": "Doughnut Forge è un'app di crittografia offline dei file per Mac, iPhone, iPad e Windows. Blocca file e testo sul tuo dispositivo e li condividi solo con le persone che scegli."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -648,6 +672,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -749,6 +779,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]
@@ -865,6 +901,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "'til ... til' repeats; 'en offline filkrypteringsapp til Mac' would read a little smoother. Optional.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]
@@ -1003,6 +1045,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1119,6 +1167,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1234,6 +1288,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "'dla urządzeń' avoids inflecting platform names; strictly calls Windows a device, but common usage. Optional.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]
@@ -1364,6 +1424,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]
@@ -1516,6 +1582,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]
@@ -1675,6 +1747,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1812,6 +1890,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1943,6 +2027,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2066,6 +2156,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2183,6 +2279,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]
@@ -2307,6 +2409,12 @@
         "severity": "note",
         "issue": "Word order 'criptografia offline de arquivos' differs from home.summary's 'criptografia de arquivos offline' (an earlier review preferred this order as clearer). Optional alignment.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2423,6 +2531,12 @@
         "severity": "note",
         "issue": "A semicolon after the subject is valid (TDK); the person shift from 'kilitler' to 'paylaşırsınız' is clear but slightly abrupt. Optional.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2530,6 +2644,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]
@@ -2667,6 +2787,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]
@@ -2826,6 +2952,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2956,6 +3088,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3057,6 +3195,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]
@@ -3166,6 +3310,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]
@@ -3283,6 +3433,12 @@
         "severity": "note",
         "issue": "No problem.",
         "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3392,6 +3548,12 @@
         "severity": "note",
         "issue": "'แชร์ได้เฉพาะกับ' read like 'can share only with'. Reviewer's wording adopted ('you share only with').",
         "suggestion": "และคุณแชร์ให้เฉพาะคนที่คุณเลือกเท่านั้น"
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3500,6 +3662,12 @@
         "key": "home.what.text",
         "severity": "note",
         "issue": "No problem.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "press.about.shortText",
+        "severity": "note",
+        "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
       }
     ]

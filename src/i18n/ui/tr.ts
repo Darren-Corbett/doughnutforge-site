@@ -127,7 +127,7 @@ export default {
   "press.lead": "Doughnut Forge hakkında yazmak için ihtiyacınız olan her şey: tanıtım metinleri, bilgiler, simgeler ve ekran görüntüleri.",
   "press.about.title": "Doughnut Forge hakkında",
   "press.about.short": "Kısa tanıtım",
-  "press.about.shortText": "Abonelik yok. Hesap yok. Sunucu yok. iPhone, iPad veya bilgisayarınızda dosya ve metinleri şifreleyin, güvendiğiniz kişilerle güvenle paylaşın.",
+  "press.about.shortText": "Doughnut Forge; Mac, iPhone, iPad ve Windows için çevrimdışı bir dosya şifreleme uygulamasıdır.",
   "press.about.long": "Uzun tanıtım",
   "press.facts.title": "Bilgi sayfası",
   "press.facts.name": "Ad",

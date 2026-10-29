@@ -127,7 +127,7 @@ export default {
   "press.lead": "紹介文、概要、アイコン、スクリーンショットなど、Doughnut Forgeについて書くのに必要なものがそろっています。",
   "press.about.title": "Doughnut Forgeについて",
   "press.about.short": "短い紹介文",
-  "press.about.shortText": "サブスクなし。アカウントなし。サーバーなし。iPhone、iPad、コンピュータ上でファイルとテキストを暗号化し、信頼できる相手と安全に共有できます。",
+  "press.about.shortText": "Doughnut Forgeは、Mac、iPhone、iPad、Windows向けのオフラインファイル暗号化アプリです。",
   "press.about.long": "詳しい紹介文",
   "press.facts.title": "ファクトシート",
   "press.facts.name": "名称",

@@ -127,7 +127,7 @@ export default {
   "press.lead": "Semua yang Anda perlukan untuk menulis tentang Doughnut Forge: deskripsi, fakta, ikon, dan tangkapan layar.",
   "press.about.title": "Tentang Doughnut Forge",
   "press.about.short": "Deskripsi singkat",
-  "press.about.shortText": "Tanpa langganan. Tanpa akun. Tanpa server. Enkripsi file dan teks di iPhone, iPad, atau komputer Anda, lalu bagikan dengan aman kepada orang yang Anda percaya.",
+  "press.about.shortText": "Doughnut Forge adalah aplikasi enkripsi file offline untuk Mac, iPhone, iPad, dan Windows.",
   "press.about.long": "Deskripsi panjang",
   "press.facts.title": "Lembar fakta",
   "press.facts.name": "Nama",

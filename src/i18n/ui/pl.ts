@@ -127,7 +127,7 @@ export default {
   "press.lead": "Wszystko, czego potrzebujesz, by pisać o Doughnut Forge: opisy, fakty, ikony i zrzuty ekranu.",
   "press.about.title": "O Doughnut Forge",
   "press.about.short": "Krótki opis",
-  "press.about.shortText": "Bez subskrypcji. Bez konta. Bez serwerów. Szyfruj pliki i tekst na iPhonie, iPadzie lub komputerze i bezpiecznie udostępniaj je zaufanym osobom.",
+  "press.about.shortText": "Doughnut Forge to aplikacja do szyfrowania plików offline dla urządzeń Mac, iPhone, iPad i Windows.",
   "press.about.long": "Długi opis",
   "press.facts.title": "Karta informacyjna",
   "press.facts.name": "Nazwa",

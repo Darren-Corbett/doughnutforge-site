@@ -127,7 +127,7 @@ export default {
   "press.lead": "Alles wat u nodig hebt om over Doughnut Forge te schrijven: beschrijvingen, feiten, iconen en schermafbeeldingen.",
   "press.about.title": "Over Doughnut Forge",
   "press.about.short": "Korte beschrijving",
-  "press.about.shortText": "Geen abonnement. Geen account. Geen servers. Versleutel bestanden en tekst op uw iPhone, iPad of computer en deel ze veilig met mensen die u vertrouwt.",
+  "press.about.shortText": "Doughnut Forge is een app voor offline bestandsversleuteling voor Mac, iPhone, iPad en Windows.",
   "press.about.long": "Lange beschrijving",
   "press.facts.title": "Factsheet",
   "press.facts.name": "Naam",

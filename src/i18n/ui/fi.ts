@@ -127,7 +127,7 @@ export default {
   "press.lead": "Kaikki, mitä tarvitset kirjoittaaksesi Doughnut Forgesta: kuvaukset, faktat, kuvakkeet ja kuvakaappaukset.",
   "press.about.title": "Tietoa Doughnut Forgesta",
   "press.about.short": "Lyhyt kuvaus",
-  "press.about.shortText": "Ei tilausta. Ei tiliä. Ei palvelimia. Salaa tiedostot ja tekstit iPhonellasi, iPadillasi tai tietokoneellasi ja jaa ne turvallisesti luotettujen ihmisten kanssa.",
+  "press.about.shortText": "Doughnut Forge on tiedostojen offline-salaussovellus Macille, iPhonelle, iPadille ja Windowsille.",
   "press.about.long": "Pitkä kuvaus",
   "press.facts.title": "Perustiedot",
   "press.facts.name": "Nimi",

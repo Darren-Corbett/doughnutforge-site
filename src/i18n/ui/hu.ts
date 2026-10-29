@@ -127,7 +127,7 @@ export default {
   "press.lead": "Minden, amire szükséged van, ha a Doughnut Forge alkalmazásról írsz: leírások, tények, ikonok és képernyőképek.",
   "press.about.title": "A Doughnut Forge alkalmazásról",
   "press.about.short": "Rövid leírás",
-  "press.about.shortText": "Nincs előfizetés. Nincs fiók. Nincsenek szerverek. Titkosíts fájlokat és szöveget az iPhone-odon, iPadeden vagy a gépeden, és oszd meg őket biztonságosan.",
+  "press.about.shortText": "A Doughnut Forge offline fájltitkosító alkalmazás Macre, iPhone-ra, iPadre és Windowsra.",
   "press.about.long": "Hosszú leírás",
   "press.facts.title": "Tényadatlap",
   "press.facts.name": "Név",

@@ -189,7 +189,7 @@ export default {
   "press.about.title": "About Doughnut Forge",
   "press.about.short": "Short description",
   "press.about.shortText":
-    "No subscription. No account. No servers. Encrypt files and text on your iPhone, iPad or computer and share them safely with the people you trust.",
+    "Doughnut Forge is an offline file encryption app for Mac, iPhone, iPad and Windows.",
   "press.about.long": "Long description",
   "press.facts.title": "Fact sheet",
   "press.facts.name": "Name",

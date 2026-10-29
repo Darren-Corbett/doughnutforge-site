@@ -127,7 +127,7 @@ export default {
   "press.lead": "Doughnut Forge के बारे में लिखने के लिए आपको जो कुछ चाहिए: विवरण, तथ्य, आइकन और स्क्रीनशॉट।",
   "press.about.title": "Doughnut Forge के बारे में",
   "press.about.short": "छोटा विवरण",
-  "press.about.shortText": "कोई सब्सक्रिप्शन नहीं। कोई अकाउंट नहीं। कोई सर्वर नहीं। iPhone, iPad या कंप्यूटर पर फ़ाइलें और टेक्स्ट एन्क्रिप्ट करें और भरोसेमंद लोगों से सुरक्षित शेयर करें।",
+  "press.about.shortText": "Doughnut Forge Mac, iPhone, iPad और Windows के लिए एक ऑफ़लाइन फ़ाइल एन्क्रिप्शन ऐप है।",
   "press.about.long": "विस्तृत विवरण",
   "press.facts.title": "फ़ैक्ट शीट",
   "press.facts.name": "नाम",

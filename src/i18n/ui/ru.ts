@@ -127,7 +127,7 @@ export default {
   "press.lead": "Всё, что нужно, чтобы написать о Doughnut Forge: описания, факты, иконки и скриншоты.",
   "press.about.title": "О Doughnut Forge",
   "press.about.short": "Краткое описание",
-  "press.about.shortText": "Без подписки. Без аккаунта. Без серверов. Шифруйте файлы и текст на iPhone, iPad или компьютере и безопасно делитесь ими с теми, кому доверяете.",
+  "press.about.shortText": "Doughnut Forge — приложение для офлайн-шифрования файлов на Mac, iPhone, iPad и Windows.",
   "press.about.long": "Подробное описание",
   "press.facts.title": "Основные факты",
   "press.facts.name": "Название",

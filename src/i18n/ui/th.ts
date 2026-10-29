@@ -127,7 +127,7 @@ export default {
   "press.lead": "ทุกสิ่งที่คุณต้องใช้เพื่อเขียนถึง Doughnut Forge: คำอธิบาย ข้อเท็จจริง ไอคอน และภาพหน้าจอ",
   "press.about.title": "เกี่ยวกับ Doughnut Forge",
   "press.about.short": "คำอธิบายแบบสั้น",
-  "press.about.shortText": "ไม่มีการสมัครสมาชิก ไม่มีบัญชี ไม่มีเซิร์ฟเวอร์ เข้ารหัสไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณ แล้วแชร์อย่างปลอดภัยกับคนที่คุณไว้ใจ",
+  "press.about.shortText": "Doughnut Forge คือแอปเข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, iPhone, iPad และ Windows",
   "press.about.long": "คำอธิบายแบบยาว",
   "press.facts.title": "ข้อเท็จจริงโดยสรุป",
   "press.facts.name": "ชื่อ",

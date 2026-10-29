@@ -127,7 +127,7 @@ export default {
   "press.lead": "撰寫 Doughnut Forge 相關內容所需的一切：說明、概況、圖示和螢幕截圖。",
   "press.about.title": "關於 Doughnut Forge",
   "press.about.short": "簡短說明",
-  "press.about.shortText": "不需訂閱、不需帳號、沒有伺服器。在 iPhone、iPad 或電腦上加密檔案和文字，並安全地與您信任的人分享。",
+  "press.about.shortText": "Doughnut Forge 是一款適用於 Mac、iPhone、iPad 和 Windows 的離線檔案加密應用程式。",
   "press.about.long": "完整說明",
   "press.facts.title": "概況",
   "press.facts.name": "名稱",

@@ -127,7 +127,7 @@ export default {
   "press.lead": "Mọi thứ bạn cần để viết về Doughnut Forge: mô tả, thông tin, biểu tượng và ảnh chụp màn hình.",
   "press.about.title": "Giới thiệu Doughnut Forge",
   "press.about.short": "Mô tả ngắn",
-  "press.about.shortText": "Không thuê bao. Không tài khoản. Không máy chủ. Mã hóa tệp và văn bản trên iPhone, iPad hoặc máy tính, rồi chia sẻ an toàn với người bạn tin tưởng.",
+  "press.about.shortText": "Doughnut Forge là ứng dụng mã hóa tệp ngoại tuyến cho Mac, iPhone, iPad và Windows.",
   "press.about.long": "Mô tả dài",
   "press.facts.title": "Bảng thông tin",
   "press.facts.name": "Tên",

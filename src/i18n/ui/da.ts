@@ -127,7 +127,7 @@ export default {
   "press.lead": "Alt, hvad du skal bruge for at skrive om Doughnut Forge: beskrivelser, fakta, ikoner og skærmbilleder.",
   "press.about.title": "Om Doughnut Forge",
   "press.about.short": "Kort beskrivelse",
-  "press.about.shortText": "Intet abonnement. Ingen konto. Ingen servere. Kryptér filer og tekst på din iPhone, iPad eller computer, og del dem sikkert med dem, du stoler på.",
+  "press.about.shortText": "Doughnut Forge er en app til offline filkryptering til Mac, iPhone, iPad og Windows.",
   "press.about.long": "Lang beskrivelse",
   "press.facts.title": "Faktaark",
   "press.facts.name": "Navn",

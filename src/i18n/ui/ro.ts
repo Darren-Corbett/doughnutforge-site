@@ -127,7 +127,7 @@ export default {
   "press.lead": "Tot ce îți trebuie ca să scrii despre Doughnut Forge: descrieri, date, pictograme și capturi de ecran.",
   "press.about.title": "Despre Doughnut Forge",
   "press.about.short": "Descriere scurtă",
-  "press.about.shortText": "Fără abonament. Fără cont. Fără servere. Criptează fișiere și text pe iPhone, iPad sau computer și partajează-le în siguranță cu oamenii de încredere.",
+  "press.about.shortText": "Doughnut Forge este o aplicație de criptare offline a fișierelor pentru Mac, iPhone, iPad și Windows.",
   "press.about.long": "Descriere lungă",
   "press.facts.title": "Fișă informativă",
   "press.facts.name": "Nume",
