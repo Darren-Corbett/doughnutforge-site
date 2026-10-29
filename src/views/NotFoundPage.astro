@@ -52,10 +52,10 @@ const links = [
         title.append(overlay);
         const start = performance.now();
         let drawn = -Infinity;
-        // Settles left to right over 2.4 seconds, keeping the spaces so lines wrap alike.
+        // Settles left to right over 1.8 seconds, keeping the spaces so lines wrap alike.
         // New letters about 14 times a second, slow enough to see them change.
         const frame = (now) => {
-          const done = Math.min(1, (now - start) / 2400);
+          const done = Math.min(1, (now - start) / 1800);
           if (done < 1 && now - drawn < 70) return requestAnimationFrame(frame);
           drawn = now;
           const settled = Math.floor(done * text.length);
@@ -91,7 +91,7 @@ const links = [
   /* The shackle starts open and clicks shut once, as the heading settles */
   @media (prefers-reduced-motion: no-preference) {
     .shackle {
-      animation: shut 0.3s cubic-bezier(0.5, 0, 0.75, 0) 2.2s both;
+      animation: shut 0.3s cubic-bezier(0.5, 0, 0.75, 0) 1.6s both;
     }
   }
   @keyframes shut {
