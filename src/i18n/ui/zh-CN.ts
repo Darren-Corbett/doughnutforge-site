@@ -66,7 +66,7 @@ export default {
   "pricing.questions": "对购买有疑问？",
   "pricing.questionsLink": "在支持页面查看解答",
   "meta.download.title": "下载适用于 iPhone、iPad、Mac 和 Windows 的 Doughnut Forge",
-  "meta.download.description": "从适用于 iPhone 和 iPad 的 App Store、Mac App Store 或 Microsoft Store 获取 Doughnut Forge。Android 和 Linux 版即将推出。",
+  "meta.download.description": "从适用于 iPhone 和 iPad 的 App Store、Mac App Store 或 Microsoft Store 获取 Doughnut Forge。Android 版即将推出。",
   "download.title": "下载 Doughnut Forge",
   "download.requires.mac": "需要 macOS 12 Monterey 或更高版本。",
   "download.requires.windows": "需要 Windows 11。",

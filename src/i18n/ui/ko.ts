@@ -66,7 +66,7 @@ export default {
   "pricing.questions": "구매에 관해 궁금한 점이 있나요?",
   "pricing.questionsLink": "지원 페이지에서 답변 보기",
   "meta.download.title": "iPhone, iPad, Mac 및 Windows용 Doughnut Forge 다운로드",
-  "meta.download.description": "iPhone 및 iPad용 App Store, Mac App Store 또는 Microsoft Store에서 Doughnut Forge를 받으세요. Android와 Linux용도 곧 출시됩니다.",
+  "meta.download.description": "iPhone 및 iPad용 App Store, Mac App Store 또는 Microsoft Store에서 Doughnut Forge를 받으세요. Android용도 곧 출시됩니다.",
   "download.title": "Doughnut Forge 다운로드",
   "download.requires.mac": "macOS 12 Monterey 이상이 필요합니다.",
   "download.requires.windows": "Windows 11이 필요합니다.",

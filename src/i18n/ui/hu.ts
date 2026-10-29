@@ -66,7 +66,7 @@ export default {
   "pricing.questions": "Kérdésed van a vásárlással kapcsolatban?",
   "pricing.questionsLink": "Nézd meg a válaszokat a támogatási oldalon",
   "meta.download.title": "Doughnut Forge letöltése iPhone, iPad, Mac és Windows eszközökre",
-  "meta.download.description": "Szerezd be a Doughnut Forge alkalmazást az iPhone-ra és iPadre szóló App Store, a Mac App Store vagy a Microsoft Store áruházból. Az Android és Linux változat hamarosan érkezik.",
+  "meta.download.description": "Szerezd be a Doughnut Forge alkalmazást az iPhone-ra és iPadre szóló App Store, a Mac App Store vagy a Microsoft Store áruházból. Az Android változat hamarosan érkezik.",
   "download.title": "Doughnut Forge letöltése",
   "download.requires.mac": "macOS 12 Monterey vagy újabb rendszer szükséges.",
   "download.requires.windows": "Windows 11 szükséges.",

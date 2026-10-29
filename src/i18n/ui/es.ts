@@ -66,7 +66,7 @@ export default {
   "pricing.questions": "¿Tienes preguntas sobre la compra?",
   "pricing.questionsLink": "Consulta las respuestas en la página de soporte",
   "meta.download.title": "Descarga Doughnut Forge para iPhone, iPad, Mac y Windows",
-  "meta.download.description": "Consigue Doughnut Forge en el App Store para iPhone y iPad, en el Mac App Store o en Microsoft Store. Las versiones para Android y Linux llegarán pronto.",
+  "meta.download.description": "Consigue Doughnut Forge en el App Store para iPhone y iPad, en el Mac App Store o en Microsoft Store. La versión para Android llegará pronto.",
   "download.title": "Descarga Doughnut Forge",
   "download.requires.mac": "Requiere macOS 12 Monterey o posterior.",
   "download.requires.windows": "Requiere Windows 11.",

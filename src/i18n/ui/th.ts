@@ -66,7 +66,7 @@ export default {
   "pricing.questions": "มีคำถามเกี่ยวกับการซื้อไหม?",
   "pricing.questionsLink": "ดูคำตอบได้ที่หน้าช่วยเหลือ",
   "meta.download.title": "ดาวน์โหลด Doughnut Forge สำหรับ iPhone, iPad, Mac และ Windows",
-  "meta.download.description": "รับ Doughnut Forge จาก App Store สำหรับ iPhone และ iPad, Mac App Store หรือ Microsoft Store เวอร์ชันสำหรับ Android และ Linux จะมาเร็วๆ นี้",
+  "meta.download.description": "รับ Doughnut Forge จาก App Store สำหรับ iPhone และ iPad, Mac App Store หรือ Microsoft Store เวอร์ชันสำหรับ Android จะมาเร็วๆ นี้",
   "download.title": "ดาวน์โหลด Doughnut Forge",
   "download.requires.mac": "ต้องใช้ macOS 12 Monterey ขึ้นไป",
   "download.requires.windows": "ต้องใช้ Windows 11",

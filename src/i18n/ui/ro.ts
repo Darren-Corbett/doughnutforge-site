@@ -66,7 +66,7 @@ export default {
   "pricing.questions": "Ai întrebări despre cumpărare?",
   "pricing.questionsLink": "Vezi răspunsurile pe pagina de suport",
   "meta.download.title": "Descarcă Doughnut Forge pentru iPhone, iPad, Mac și Windows",
-  "meta.download.description": "Obține Doughnut Forge din App Store pentru iPhone și iPad, din Mac App Store sau din Microsoft Store. Versiunile pentru Android și Linux vin în curând.",
+  "meta.download.description": "Obține Doughnut Forge din App Store pentru iPhone și iPad, din Mac App Store sau din Microsoft Store. Versiunea pentru Android vine în curând.",
   "download.title": "Descarcă Doughnut Forge",
   "download.requires.mac": "Necesită macOS 12 Monterey sau o versiune mai nouă.",
   "download.requires.windows": "Necesită Windows 11.",

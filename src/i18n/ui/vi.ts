@@ -66,7 +66,7 @@ export default {
   "pricing.questions": "Có câu hỏi về việc mua?",
   "pricing.questionsLink": "Xem câu trả lời trên trang hỗ trợ",
   "meta.download.title": "Tải Doughnut Forge cho iPhone, iPad, Mac và Windows",
-  "meta.download.description": "Tải Doughnut Forge từ App Store cho iPhone và iPad, Mac App Store hoặc Microsoft Store. Các phiên bản cho Android và Linux sắp ra mắt.",
+  "meta.download.description": "Tải Doughnut Forge từ App Store cho iPhone và iPad, Mac App Store hoặc Microsoft Store. Phiên bản cho Android sắp ra mắt.",
   "download.title": "Tải xuống Doughnut Forge",
   "download.requires.mac": "Cần macOS 12 Monterey trở lên.",
   "download.requires.windows": "Cần Windows 11.",

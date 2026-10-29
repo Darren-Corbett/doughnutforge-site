@@ -66,7 +66,7 @@ export default {
   "pricing.questions": "Satın alma hakkında sorularınız mı var?",
   "pricing.questionsLink": "Yanıtları destek sayfasında görün",
   "meta.download.title": "Doughnut Forge'u iPhone, iPad, Mac ve Windows için indirin",
-  "meta.download.description": "Doughnut Forge'u iPhone ve iPad için App Store'dan, Mac App Store'dan veya Microsoft Store'dan edinin. Android ve Linux sürümleri yakında geliyor.",
+  "meta.download.description": "Doughnut Forge'u iPhone ve iPad için App Store'dan, Mac App Store'dan veya Microsoft Store'dan edinin. Android sürümü yakında geliyor.",
   "download.title": "Doughnut Forge'u indirin",
   "download.requires.mac": "macOS 12 Monterey veya sonrası gerekir.",
   "download.requires.windows": "Windows 11 gerekir.",

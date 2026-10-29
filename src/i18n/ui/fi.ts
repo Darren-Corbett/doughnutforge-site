@@ -66,7 +66,7 @@ export default {
   "pricing.questions": "Kysyttävää ostamisesta?",
   "pricing.questionsLink": "Katso vastaukset tukisivulta",
   "meta.download.title": "Lataa Doughnut Forge iPhonelle, iPadille, Macille ja Windowsille",
-  "meta.download.description": "Hanki Doughnut Forge iPhonen ja iPadin App Storesta, Mac App Storesta tai Microsoft Storesta. Versiot Androidille ja Linuxille ovat tulossa pian.",
+  "meta.download.description": "Hanki Doughnut Forge iPhonen ja iPadin App Storesta, Mac App Storesta tai Microsoft Storesta. Android-versio on tulossa pian.",
   "download.title": "Lataa Doughnut Forge",
   "download.requires.mac": "Vaatii macOS 12 Monterey -version tai uudemman.",
   "download.requires.windows": "Vaatii Windows 11:n.",

@@ -66,7 +66,7 @@ export default {
   "pricing.questions": "Máte otázky k nákupu?",
   "pricing.questionsLink": "Odpovědi najdete na stránce podpory",
   "meta.download.title": "Stáhnout Doughnut Forge pro iPhone, iPad, Mac a Windows",
-  "meta.download.description": "Získejte Doughnut Forge z App Store pro iPhone a iPad, z Mac App Store nebo z Microsoft Store. Verze pro Android a Linux budou brzy k dispozici.",
+  "meta.download.description": "Získejte Doughnut Forge z App Store pro iPhone a iPad, z Mac App Store nebo z Microsoft Store. Verze pro Android bude brzy k dispozici.",
   "download.title": "Stáhnout Doughnut Forge",
   "download.requires.mac": "Vyžaduje macOS 12 Monterey nebo novější.",
   "download.requires.windows": "Vyžaduje Windows 11.",

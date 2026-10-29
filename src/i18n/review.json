@@ -107,6 +107,24 @@
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -213,6 +231,24 @@
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -283,6 +319,24 @@
         "severity": "note",
         "issue": "No problem.",
         "backTranslation": "File encryption without connection for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
       }
     ]
@@ -398,6 +452,24 @@
         "issue": "No problem.",
         "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -498,6 +570,24 @@
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -569,6 +659,24 @@
         "severity": "note",
         "issue": "No problem.",
         "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
       }
     ]
@@ -655,6 +763,24 @@
         "severity": "note",
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
       }
     ]
@@ -763,6 +889,24 @@
         "issue": "No problem.",
         "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -849,6 +993,24 @@
         "issue": "Same compound point as the title; acceptable as is.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
         "suggestion": "Optional: \"Offline-filkryptering for Mac, iPhone, iPad og Windows.\""
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -935,6 +1097,24 @@
         "issue": "Grammatical. A colon list used in place of 'for'; this is acceptable.",
         "backTranslation": "Offline file encryption: Mac, iPhone, iPad and Windows.",
         "suggestion": "Optional: \"Szyfrowanie plików offline na Maca, iPhone’a, iPada i Windows.\""
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1034,6 +1214,24 @@
         "severity": "note",
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
       }
     ]
@@ -1156,6 +1354,25 @@
         "issue": "No problem. 'iPadre' is correct.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "Standard Hungarian spelling hyphenates a proper name plus noun ('Android-változat'); the file writes 'Mac változat' / 'Windows változat' unhyphenated throughout, so this follows the file's pattern. Consider a file-wide fix separately.",
+        "backTranslation": "... The Android version is arriving soon.",
+        "suggestion": "Az Android-változat hamarosan érkezik."
       }
     ]
   },
@@ -1284,6 +1501,24 @@
         "issue": "No problem.",
         "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1391,6 +1626,24 @@
         "issue": "No problem.",
         "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1491,6 +1744,25 @@
         "issue": "No problem.",
         "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "A bare noun subject at sentence start reads like a headline; reordering is more natural. Adopted.",
+        "backTranslation": "... Version for Android is coming soon.",
+        "suggestion": "Σύντομα έρχεται και έκδοση για Android."
       }
     ]
   },
@@ -1584,6 +1856,24 @@
         "issue": "No problem.",
         "backTranslation": "Offline encryption of files for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1671,6 +1961,24 @@
         "severity": "note",
         "issue": "No problem.",
         "backTranslation": "File encryption without connection for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
       }
     ]
@@ -1764,6 +2072,25 @@
         "issue": "Same word-order point as the home title. Not wrong.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
         "suggestion": "Optional: 'Criptografia offline de arquivos para Mac, iPhone, iPad e Windows.'"
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "Starting with a bare noun reads headline-like; an article is more natural. Adopted.",
+        "backTranslation": "... Version for Android arrives soon.",
+        "suggestion": "Uma versão para Android chega em breve."
       }
     ]
   },
@@ -1850,6 +2177,24 @@
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1927,6 +2272,24 @@
         "severity": "note",
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
       }
     ]
@@ -2034,6 +2397,24 @@
         "severity": "note",
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
       }
     ]
@@ -2163,6 +2544,24 @@
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2263,6 +2662,24 @@
         "issue": "No problem. A full stop after a noun phrase is acceptable for a standalone line.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2334,6 +2751,24 @@
         "severity": "note",
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
       }
     ]
@@ -2413,6 +2848,24 @@
         "severity": "note",
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
       }
     ]
@@ -2500,6 +2953,24 @@
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2579,6 +3050,24 @@
         "issue": "No problem. It correctly has no full stop at the end, as Thai does not use one.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2657,6 +3146,24 @@
         "severity": "note",
         "issue": "No problem.",
         "backTranslation": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.coming",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.which.a",
+        "severity": "note",
+        "issue": "No problem. Wording left as it was: it reads correctly with one platform ('Android') and with a list of two.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.download.description",
+        "severity": "note",
+        "issue": "No problem. Linux removed; singular agreement correct.",
         "suggestion": "No change."
       }
     ]
