@@ -71,7 +71,11 @@ const posts = {};
 const blogDir = join(SITE, "src/content/blog/en");
 if (existsSync(blogDir)) {
   for (const file of readdirSync(blogDir).filter((f) => /^[^_].*\.mdx?$/.test(f))) {
-    const title = /^title:\s*["']?(.+?)["']?\s*$/m.exec(readFileSync(join(blogDir, file), "utf8"))?.[1];
+    const text = readFileSync(join(blogDir, file), "utf8");
+    // Published posts only: public/ is deployed as it is, so a draft's image would
+    // put its title online. New posts are drafts unless they say `draft: false`.
+    if (!/^draft:\s*false\s*$/m.test(text)) continue;
+    const title = /^title:\s*["']?(.+?)["']?\s*$/m.exec(text)?.[1];
     if (title) posts[file.replace(/\.mdx?$/, "")] = title;
   }
 }
