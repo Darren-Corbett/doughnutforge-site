@@ -37,10 +37,10 @@ test("English pages do not call the iPhone and iPad app coming soon", async ({ p
 });
 
 // Mobile first: on sale before coming soon, each group in the order iPhone and
-// iPad, Android, Mac, Windows, Linux (src/data/stores.ts). This is the order
+// iPad, Android, Mac, Windows (src/data/stores.ts). Linux is not named until it is coming. This is the order
 // without any script, and what search engines see.
 const ON_SALE = ["ios", "mac", "windows"];
-const COMING = ["android", "linux"];
+const COMING = ["android"];
 const STORE_ORDER = [/apps\.apple\.com\/app\/id6821344597/, /apps\.apple\.com\/app\/id6812778888/, /apps\.microsoft\.com/];
 
 for (const lang of languages) {
@@ -62,7 +62,11 @@ for (const lang of languages) {
     const description = (await page.locator('meta[name="description"]').getAttribute("content"))!;
     expect(title.indexOf("iPhone"), `title: ${title}`).toBeLessThan(title.indexOf("Mac"));
     expect(description.indexOf("iPhone"), `description: ${description}`).toBeLessThan(description.indexOf("Mac"));
-    expect(description.indexOf("Android"), `description: ${description}`).toBeLessThan(description.indexOf("Linux"));
+    expect(description, "download description").toContain("Android");
+    expect(description, "download description").not.toContain("Linux");
+    // The FAQ answers are in closed <details>, so the text is read, not what is shown
+    await page.goto(`${prefix(lang)}/support/`);
+    expect(await page.locator("main").textContent(), "support page").not.toContain("Linux");
     const ld = JSON.parse((await page.locator('script[type="application/ld+json"]').first().textContent())!);
     expect([ld].flat().find((d) => d["@type"] === "SoftwareApplication").operatingSystem).toBe("iOS, iPadOS, macOS, Windows");
   });
@@ -72,7 +76,7 @@ test("press fact sheet lists phones first", async ({ page }) => {
   await page.goto("/press/");
   const fact = (term: string) => page.locator(".facts div", { has: page.locator("dt", { hasText: term }) }).locator("dd");
   await expect(fact("Available for")).toHaveText("iPhone and iPad, Mac and Windows");
-  await expect(fact("Coming soon")).toHaveText("Android and Linux");
+  await expect(fact("Coming soon")).toHaveText("Android");
 });
 
 // Copy covers phones and tablets too: no English page says the app works only

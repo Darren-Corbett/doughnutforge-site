@@ -16,7 +16,7 @@ const VISITORS = [
   { name: "Windows", ua: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36", touch: 0, first: "windows" },
   { name: "an unknown platform", ua: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36", touch: 0, first: "ios" },
 ];
-const CARDS = ["ios", "mac", "windows", "android", "linux"];
+const CARDS = ["ios", "mac", "windows", "android"];
 const BADGES = ["ios", "mac", "windows"];
 const WIDTHS = [320, 1280];
 
