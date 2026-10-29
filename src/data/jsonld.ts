@@ -4,7 +4,7 @@ import { localePath, type Language } from "../i18n";
 import { platforms } from "./stores";
 import { site } from "./site";
 
-const OS_NAMES: Record<string, string> = { mac: "macOS", windows: "Windows", ios: "iOS, iPadOS", linux: "Linux", android: "Android" };
+const OS_NAMES: Record<string, string> = { mac: "macOS", windows: "Windows", ios: "iOS, iPadOS", android: "Android" };
 
 /** The operating systems the app is on sale for today, from the store data */
 export const availableSystems = () =>

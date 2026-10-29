@@ -13,7 +13,7 @@ const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
 const available = platforms.filter((p) => p.status === "available");
 const coming = platforms.filter((p) => p.status === "coming").map((p) => platformName(lang, p.id));
-// "Android and Linux", joined by each language's own rules
+// "Android", or several joined by each language's own rules
 const note = [coming.length ? fill(t("download.coming"), { platforms: listOf(lang, coming) }) : "", t("download.availability")]
   .join(" ")
   .trim();

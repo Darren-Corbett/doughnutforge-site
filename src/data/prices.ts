@@ -9,5 +9,4 @@ export const prices = {
     { amount: 2.99, until: "2026-12-11" },
     { amount: 3.99, from: "2026-12-11" },
   ],
-  linux: [{ amount: 0 }],
 } as const;

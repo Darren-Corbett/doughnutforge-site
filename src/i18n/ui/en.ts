@@ -46,8 +46,8 @@ export default {
   "home.pricing.title": "One-time purchase, never a subscription.",
   "home.pricing.text": "Buy Doughnut Forge once for each platform you use, from that platform's store. The store shows the price where you live.",
 
-  // {platforms} is a list such as "Android and Linux"
-  "download.coming": "{platforms} are coming soon.",
+  // {platforms} is one platform or a list, such as "Android"
+  "download.coming": "Coming soon: {platforms}.",
   "download.availability": "Availability depends on your country or region.",
 
   // ===================================================================
@@ -99,7 +99,7 @@ export default {
   // Download page
   "meta.download.title": "Download Doughnut Forge for iPhone, iPad, Mac and Windows",
   "meta.download.description":
-    "Get Doughnut Forge from the App Store for iPhone and iPad, the Mac App Store or the Microsoft Store. Versions for Android and Linux are coming soon.",
+    "Get Doughnut Forge from the App Store for iPhone and iPad, the Mac App Store or the Microsoft Store. A version for Android is coming soon.",
   "download.title": "Download Doughnut Forge",
   "download.requires.mac": "Needs macOS 12 Monterey or later.",
   "download.requires.windows": "Needs Windows 11.",
@@ -165,7 +165,7 @@ export default {
     "Yes. They open it in Doughnut Forge with their own identity. That is what keeps it private: no one without one of the chosen identities can open it.",
   "faq.which.q": "Which platforms can I use it on?",
   // {available} and {coming} are lists such as "iPhone and iPad, Mac and Windows"
-  "faq.which.a": "Doughnut Forge is available for {available}. {coming} are coming soon.",
+  "faq.which.a": "Doughnut Forge is available for {available}. Coming soon: {coming}.",
   "faq.data.q": "Does Doughnut Forge or this website collect any data?",
   "faq.data.a":
     "No. The app has no tracking, analytics or crash reporting, and this website has no analytics, cookies or tracking scripts. Apple and Microsoft may share aggregated statistics, such as download counts, that contain no personal details. GitHub, which hosts this website, may log technical information such as your IP address. The privacy policy has the details.",

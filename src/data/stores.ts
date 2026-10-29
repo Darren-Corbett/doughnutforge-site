@@ -7,7 +7,7 @@ import { listOf, type Language } from "../i18n";
 // sends the visitor to their own storefront and shows what is available there.
 
 export type StoreId = "mac-app-store" | "app-store" | "microsoft-store" | "google-play";
-export type PlatformId = "mac" | "windows" | "ios" | "linux" | "android";
+export type PlatformId = "mac" | "windows" | "ios" | "android";
 
 export type Platform =
   | { id: PlatformId; status: "available"; store: StoreId; storeId: string }
@@ -20,8 +20,6 @@ const mobileFirst: Platform[] = [
   { id: "android", status: "coming" },
   { id: "mac", status: "available", store: "mac-app-store", storeId: "6812778888" },
   { id: "windows", status: "available", store: "microsoft-store", storeId: "9P25BS9L8LNB" },
-  // Linux is planned for November 2026 and will be free; pages say "coming soon" until then.
-  { id: "linux", status: "coming" },
 ];
 
 /** Every platform: those on sale first, then those still coming, each in the mobile-first order */
@@ -40,7 +38,7 @@ export const storeNames: Record<StoreId, string> = {
 
 /** A platform's name in a language: only "iPhone and iPad" needs the language's own "and" */
 export const platformName = (lang: Language, id: PlatformId) =>
-  id === "ios" ? listOf(lang, ["iPhone", "iPad"]) : { mac: "Mac", windows: "Windows", linux: "Linux", android: "Android" }[id];
+  id === "ios" ? listOf(lang, ["iPhone", "iPad"]) : { mac: "Mac", windows: "Windows", android: "Android" }[id];
 
 /**
  * The store page for an app, in the visitor's language where the store allows it.
