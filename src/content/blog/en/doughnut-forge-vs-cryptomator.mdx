@@ -1,0 +1,80 @@
+---
+title: "Doughnut Forge vs Cryptomator: sharing files or syncing a vault"
+description: Cryptomator keeps a synced cloud folder encrypted. Doughnut Forge encrypts single files and text for the people you choose. Which fits how you work?
+keyphrase: Cryptomator alternative
+date: 2026-10-29
+draft: true
+lang: en
+---
+import Compare from "../../../components/blog/Compare.astro";
+import FolderSync from "@lucide/astro/icons/folder-sync";
+import Send from "@lucide/astro/icons/send";
+
+> **Draft, not published.** This post is waiting for approval of its claims table ("Comparison posts" in `docs/BLOG-CLAIMS.md`).
+
+**In short:** Cryptomator and Doughnut Forge both encrypt files on your own device, but they do different jobs. Cryptomator keeps a whole folder encrypted inside your cloud storage, so you can work on your files as normal while they sync. Doughnut Forge encrypts a single file or a private note for the people you choose, who open it with their own identity. If you want to encrypt files for cloud storage and keep working on them, Cryptomator fits. If you want to send something private to particular people without passing a password around, Doughnut Forge fits.
+
+## Two different jobs
+
+**Cryptomator** makes a vault: an encrypted folder that you keep inside a folder your cloud service syncs, such as Dropbox, Google Drive or OneDrive. You unlock the vault with its password, and it appears as a drive you work in like a USB stick. What syncs to the cloud stays encrypted, including the file names, and the folder structure is hidden.
+
+**Doughnut Forge** locks one file or one note at a time. When you encrypt it, you choose who can open it, from your contacts. Each of them opens it with their own identity, so there is no file password to send. You can then keep the locked file on your device, put it in a cloud folder, or send it by email, in a messaging app or on a USB stick.
+
+<Compare
+  caption="Cryptomator encrypts a folder you sync. Doughnut Forge encrypts a file for chosen people, wherever it goes."
+  sides={[
+    {
+      icon: FolderSync,
+      title: "Cryptomator: an encrypted synced folder",
+      tone: "blue",
+      points: ["One vault, opened with its password.", "You work on the files as normal.", "Your cloud service syncs it, encrypted."],
+    },
+    {
+      icon: Send,
+      title: "Doughnut Forge: encrypted files for chosen people",
+      tone: "green",
+      points: ["Each file is locked for the people you pick.", "They open it with their own identity.", "No password to pass on."],
+    },
+  ]}
+/>
+
+## Where Cryptomator is the better choice
+
+- **You want a whole folder encrypted in your cloud storage.** Cryptomator is built for this. It works with Dropbox, Google Drive, OneDrive and any other service that syncs a folder on your computer.
+- **You want to work on the files as normal.** Once the vault is unlocked, you use it like a USB stick: open, edit and save as usual.
+- **You want file names hidden too.** Cryptomator encrypts file names and hides the folder structure. It does not encrypt timestamps, the number of files and folders, or file sizes.
+- **You want free and open source.** Cryptomator is free on desktop and open source, under GPLv3. Its encryption libraries were audited by Cure53 in 2017.
+- **You use Linux or Android.** Cryptomator has a desktop app for Windows, macOS and Linux, and apps for iPhone and Android.
+- **You work as a team.** For teams, Cryptomator Hub lets each person unlock shared vaults with their own account.
+
+## Where Doughnut Forge is the better choice
+
+- **You want to send a file to particular people.** You choose who can open each file or note, and each of them opens it with their own identity. There is no file password to send or keep in step.
+- **You want to send it any way you like.** A locked file can go by email, in a messaging app, in a cloud folder or on a USB stick. Only the people you chose can open it. They need Doughnut Forge to open it.
+- **You want an app made for iPhone and iPad.** Doughnut Forge is available for iPhone and iPad, Mac and Windows, and Android is coming. On iPhone and iPad it encrypts files and text. Whole folders can be encrypted on a computer.
+- **You want no account and no servers.** Doughnut Forge needs no account and has no servers. It works entirely on your device, even without an internet connection.
+- **You think about the long term.** Doughnut Forge uses post-quantum encryption.
+- **You want to pay once.** It is a one-time purchase on each platform, never a subscription.
+
+## Things to know before you choose
+
+**Cryptomator**
+
+- To share a vault with someone, Cryptomator advises sharing it only with people you trust and passing the password on safely.
+- No one can reset a forgotten vault password for you. The recovery key you are given lets you reset it, so keep it as safe as the password.
+- Cryptomator itself says that protecting files on your computer is not its focus, and points to full-disk encryption for that.
+- On iPhone, reading a vault is free, and writing to it needs a one-time in-app purchase. On Android, writing needs a paid upgrade.
+- On a Mac, Cryptomator recommends installing macFUSE or FUSE-T.
+
+**Doughnut Forge**
+
+- Doughnut Forge is not open source.
+- It has had no independent security audit yet.
+- If you lose your password and every way to recover your identity (your 24-word backup phrase), your files cannot be opened.
+- Folders can be encrypted only on a computer, not on iPhone or iPad.
+
+## You can use both
+
+They do not compete for the same job. You could keep a Cryptomator vault for the folder you sync, and use Doughnut Forge when a single file or note has to reach someone else. To see how sending works, read [How to share encrypted files with someone you trust](/blog/share-encrypted-files/).
+
+Product names are trademarks of their owners.

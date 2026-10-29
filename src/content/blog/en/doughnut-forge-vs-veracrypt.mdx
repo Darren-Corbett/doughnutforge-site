@@ -1,0 +1,78 @@
+---
+title: "Doughnut Forge vs VeraCrypt: encrypted files or encrypted drives"
+description: VeraCrypt encrypts whole drives and containers. Doughnut Forge encrypts single files and text for the people you choose. When is each the better choice?
+keyphrase: VeraCrypt alternative
+date: 2026-10-29
+draft: true
+lang: en
+---
+import Compare from "../../../components/blog/Compare.astro";
+import HardDrive from "@lucide/astro/icons/hard-drive";
+import Send from "@lucide/astro/icons/send";
+
+> **Draft, not published.** This post is waiting for approval of its claims table ("Comparison posts" in `docs/BLOG-CLAIMS.md`).
+
+**In short:** VeraCrypt and Doughnut Forge both encrypt on your own device, but at different sizes. VeraCrypt encrypts whole drives, USB sticks and large container files, and it can hide one encrypted volume inside another. Doughnut Forge encrypts a single file or a private note for the people you choose, who open it with their own identity. If you want an encrypted drive, VeraCrypt fits. If you want encrypted files you can send to particular people, Doughnut Forge fits.
+
+## Two different jobs
+
+**VeraCrypt** makes encrypted volumes. A volume can be a container, which is a normal file that can sit on any storage, or a whole disk, USB drive or memory stick. On Windows it can also encrypt the drive the computer starts from. You mount a volume with its password, and you can also use keyfiles or a PIM (an extra number you enter with it). Nothing can be decrypted without the correct password or key.
+
+**Doughnut Forge** locks one file or one note at a time. When you encrypt it, you choose who can open it, from your contacts. Each of them opens it with their own identity, so there is no file password to send. You can then keep the locked file on your device, put it in a cloud folder, or send it by email, in a messaging app or on a USB stick.
+
+<Compare
+  caption="VeraCrypt encrypts a drive or a container you mount. Doughnut Forge encrypts a file for chosen people, wherever it goes."
+  sides={[
+    {
+      icon: HardDrive,
+      title: "VeraCrypt: encrypted drives and containers",
+      tone: "blue",
+      points: ["A whole disk, USB drive or container file.", "Mounted with its password.", "Can hide a volume inside another."],
+    },
+    {
+      icon: Send,
+      title: "Doughnut Forge: encrypted files for chosen people",
+      tone: "green",
+      points: ["Each file is locked for the people you pick.", "They open it with their own identity.", "No password to pass on."],
+    },
+  ]}
+/>
+
+## Where VeraCrypt is the better choice
+
+- **You want a whole drive encrypted.** VeraCrypt encrypts entire hard disks, USB drives and memory sticks.
+- **You want your Windows system drive encrypted.** VeraCrypt can encrypt the drive Windows starts from.
+- **You want one container for many files.** A VeraCrypt container is a single file that holds a whole encrypted volume.
+- **You need deniability.** VeraCrypt can create a hidden volume inside another volume, and even a hidden operating system "whose existence should be impossible to prove", in its own words.
+- **You want free and open source.** VeraCrypt is free and open source, under the Apache 2.0 and TrueCrypt licences. It was audited by Quarkslab in 2016, and the fixes shipped in version 1.19 that October.
+- **You use Linux.** VeraCrypt runs on Windows, Mac and Linux.
+
+## Where Doughnut Forge is the better choice
+
+- **You want to send a file to particular people.** You choose who can open each file or note, and each of them opens it with their own identity. To share a VeraCrypt container, each person mounts it on their own computer, so each of them needs its password.
+- **You want to send it any way you like.** A locked file can go by email, in a messaging app, in a cloud folder or on a USB stick. Only the people you chose can open it. They need Doughnut Forge to open it.
+- **You use an iPhone or iPad.** VeraCrypt has no official mobile app. Doughnut Forge is available for iPhone and iPad, Mac and Windows, and Android is coming. On iPhone and iPad it encrypts files and text. Whole folders can be encrypted on a computer.
+- **You want no account and no servers.** Doughnut Forge needs no account and has no servers. It works entirely on your device, even without an internet connection.
+- **You think about the long term.** Doughnut Forge uses post-quantum encryption.
+
+## Things to know before you choose
+
+**VeraCrypt**
+
+- Without the correct password or key, nothing can be decrypted. If you set a PIM, you must enter it every time as well.
+- On a Mac, VeraCrypt needs macOS 12 Monterey or later, and comes in one build for macFUSE and one for FUSE-T.
+- VeraCrypt is free.
+
+**Doughnut Forge**
+
+- Doughnut Forge is a one-time purchase on each platform, never a subscription.
+- It is not open source.
+- It has had no independent security audit yet.
+- If you lose your password and every way to recover your identity (your 24-word backup phrase), your files cannot be opened.
+- Folders can be encrypted only on a computer, not on iPhone or iPad.
+
+## You can use both
+
+They do not compete for the same job. You could keep a VeraCrypt drive for everything on your computer, and use Doughnut Forge when a single file or note has to reach someone else. To see how sending works, read [How to share encrypted files with someone you trust](/blog/share-encrypted-files/).
+
+Product names are trademarks of their owners.
