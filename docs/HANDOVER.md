@@ -88,6 +88,11 @@ Where the site work stands, and what comes next. Read this at the start of every
 - **A static redirect for the old `/get/` addresses.** `/get/<store>/<language>/` was live for about a day before `/go/` replaced it, and now returns 404.
 - **Run `npm run test:links` locally before a push**, by hand or with a local git hook, never a GitHub Action. Today it runs only when asked.
 
+## 404 page (29 October 2026)
+
+- `src/views/NotFoundPage.astro`: "This page is encrypted. Nobody can find it.", an inline padlock SVG drawn from the app icon (aria-hidden, under 3 KB, shackle clicks shut once), and a one-time 1.2-second scramble of the heading as an aria-hidden overlay. Reduced motion or no JavaScript: final text, no movement. Tests: `tests/layout/not-found.spec.ts`. Lighthouse (mobile, `/404.html`): 100 performance, accessibility and best practices; SEO 66 only because of `noindex`.
+- **After the next push:** check once that a missing address still answers 404: `curl -s -o /dev/null -w "%{http_code}" https://doughnut-forge.app/no-such-page/`.
+
 ## SEO pass (29 October 2026)
 
 - **Done (not pushed):** `f3c16d4`, `e17aace` tests (`tests/layout/seo-head.spec.ts`); `f78bb55` code. New home title "Doughnut Forge: offline file encryption for Mac, iPhone and Windows"; a new home description; a summary line under the H1 ("Offline file encryption for Mac, iPhone, iPad and Windows.", English only for now); Safari's Smart App Banner (`apple-itunes-app`) on every language's home page, the ID from `src/data/stores.ts`; `SecurityApplication` and an `Organization` in the home structured data, no prices (owner); a Features title aimed at folders and no account; four existing FAQ answers on the Features page (no second `FAQPage`); doughnut 404 copy without contractions.
