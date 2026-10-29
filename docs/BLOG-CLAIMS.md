@@ -106,3 +106,72 @@ Not claimed: that signatures are post-quantum (they are not); "quantum-proof" or
 | R4.1 | *Reasoning:* the usual advice to send a password separately, and why that is fragile | general advice, no external fact |
 
 Not claimed: QR codes; pasting a contact ID; that the app shows who sent a file; password-only sharing; that a Mac-made file opens on Windows (no test found).
+
+## Comparison posts (drafts, 29 October 2026)
+
+`src/content/blog/en/doughnut-forge-vs-cryptomator.mdx` (phrase "Cryptomator alternative", secondary "encrypt files for cloud storage") and `src/content/blog/en/doughnut-forge-vs-veracrypt.mdx` (phrase "VeraCrypt alternative", secondary "encrypted drive or encrypted files"). Both `draft: true`, waiting for the owner's approval of this table. Every vendor quote was checked word for word on its live page on 29 October 2026. Independent sources: none used; vendor pages cover every row.
+
+Rules for both posts (owner): no logos; product names as plain words only; never say or imply the recipient can be sure who sent a file; the year next to every "audited"; no Linux for Doughnut Forge; no "we", no contractions.
+
+### Cryptomator
+
+| # | Claim in the post | Source (vendor) | Checked | Status |
+|---|---|---|---|---|
+| C1 | Desktop app for Windows, macOS and Linux | [docs: Desktop setup](https://docs.cryptomator.org/desktop/setup/) ("currently available for Windows, macOS, and Linux") | 2026-10-29 | verified |
+| C2 | Apps for iPhone and Android | [docs: iOS setup](https://docs.cryptomator.org/ios/setup/), [docs: Android setup](https://docs.cryptomator.org/android/setup/) | 2026-10-29 | verified |
+| C3 | On a Mac it recommends installing macFUSE or FUSE-T | [docs: Desktop setup](https://docs.cryptomator.org/desktop/setup/) | 2026-10-29 | verified |
+| C4 | Free on desktop | [Pricing](https://cryptomator.org/pricing/) ("absolutely free to use on the desktop") | 2026-10-29 | verified |
+| C5 | On iPhone, reading is free; writing needs a one-time in-app purchase | [Pricing](https://cryptomator.org/pricing/) ("read-only mode indefinitely"; "A one-time in-app purchase … will grant you write access") | 2026-10-29 | verified |
+| C6 | On Android, write access is a paid upgrade (the model is not stated: the pricing page says one-time, the Android docs mention a subscription and a lifetime licence) | [Pricing](https://cryptomator.org/pricing/); [docs: Android setup](https://docs.cryptomator.org/android/setup/) | 2026-10-29 | verified |
+| C7 | Open source, under GPLv3 (or a commercial licence) | [GitHub README](https://github.com/cryptomator/cryptomator) ("dual-licensed under the GPLv3") | 2026-10-29 | verified |
+| C8 | No account needed | [cryptomator.org](https://cryptomator.org/) ("no registration") | 2026-10-29 | verified |
+| C9 | A vault opens with its password; a recovery key can reset the password; no one else can reset it | [docs: Password and recovery key](https://docs.cryptomator.org/desktop/password-and-recovery-key/) ("We cannot reset the password of a vault for you in any way") | 2026-10-29 | verified |
+| C10 | File names are encrypted and the folder structure is hidden | [GitHub README](https://github.com/cryptomator/cryptomator) ("File names get encrypted"; "Folder structure gets obfuscated") | 2026-10-29 | verified |
+| C11 | Timestamps, the number of files and folders, and file sizes are not encrypted | [docs: Security target](https://docs.cryptomator.org/security/security-target/) | 2026-10-29 | verified |
+| C12 | Built for cloud storage: Dropbox, Google Drive, OneDrive and any service that syncs a local folder | [GitHub README](https://github.com/cryptomator/cryptomator) ("any other cloud storage service which synchronizes with a local directory") | 2026-10-29 | verified |
+| C13 | Protecting files on the computer itself is not its focus; it points to full-disk encryption for that | [docs: Security target](https://docs.cryptomator.org/security/security-target/) ("Protection of the files on the local computer is not the focus of Cryptomator") | 2026-10-29 | verified |
+| C14 | To share a vault, share it with people you trust and pass the password safely; for teams, Cryptomator Hub unlocks vaults with each person's own account | [docs: Best practices](https://docs.cryptomator.org/security/best-practices/) | 2026-10-29 | verified |
+| C16 | Keep the recovery key as safe as the password | [docs: Password and recovery key](https://docs.cryptomator.org/desktop/password-and-recovery-key/) ("Keep it as safe as your password") | 2026-10-29 | verified |
+| C17 | An unlocked vault is a drive you work in like a USB stick | [GitHub README](https://github.com/cryptomator/cryptomator) ("Just work on the virtual drive as if it were a USB flash drive"); [docs: Accessing vaults](https://docs.cryptomator.org/desktop/accessing-vaults/) ("the virtual drive") | 2026-10-29 | verified |
+| C15 | Its encryption libraries were audited by Cure53 in 2017 | [Cure53 report, 27 November 2017](https://cryptomator.org/audits/2017-11-27%20crypto%20cure53.pdf) | 2026-10-29 | verified |
+
+### VeraCrypt
+
+| # | Claim in the post | Source (vendor) | Checked | Status |
+|---|---|---|---|---|
+| V1 | Free and open source, for Windows, Mac and Linux | [veracrypt.io](https://veracrypt.io/en/Home.html) ("free open source disk encryption software for Windows, Mac OSX and Linux") | 2026-10-29 | verified |
+| V2 | No official mobile app | [Android & iOS Support](https://veracrypt.io/en/Android%20%26%20iOS%20Support.html) ("no plans to develop an official VeraCrypt mobile app") | 2026-10-29 | verified |
+| V3 | On a Mac: macOS 12 Monterey or later, in a build for macFUSE or one for FUSE-T | [Downloads](https://veracrypt.io/en/Downloads.html) | 2026-10-29 | verified |
+| V4 | Licensed under Apache 2.0 and the TrueCrypt License 3.0 | [VeraCrypt License](https://veracrypt.io/en/VeraCrypt%20License.html) | 2026-10-29 | verified |
+| V5 | Nothing can be decrypted without the correct password or key | [FAQ](https://veracrypt.io/en/FAQ.html) ("does not allow decryption of data without knowing the correct password or key") | 2026-10-29 | verified |
+| V6 | Keyfiles can be combined with the password; a PIM, if set, must be entered every time | [Keyfiles](https://veracrypt.io/en/Keyfiles.html); [PIM](https://veracrypt.io/en/Personal%20Iterations%20Multiplier%20%28PIM%29.html) | 2026-10-29 | verified |
+| V7 | A container is a normal file that can sit on any storage | [VeraCrypt Volume](https://veracrypt.io/en/VeraCrypt%20Volume.html) | 2026-10-29 | verified |
+| V8 | It encrypts whole hard disks, USB drives and memory sticks | [VeraCrypt Volume](https://veracrypt.io/en/VeraCrypt%20Volume.html) | 2026-10-29 | verified |
+| V9 | It encrypts the Windows drive the computer starts from | [System Encryption](https://veracrypt.io/en/System%20Encryption.html) | 2026-10-29 | verified |
+| V10 | Hidden volumes inside another volume, and a hidden operating system "whose existence should be impossible to prove" | [Hidden Volume](https://veracrypt.io/en/Hidden%20Volume.html); [Hidden Operating System](https://veracrypt.io/en/Hidden%20Operating%20System.html) | 2026-10-29 | verified |
+| V11 | To share, people share the container file and each mounts it on their own computer | [Sharing over Network](https://veracrypt.io/en/Sharing%20over%20Network.html) ("locally mount the shared file") | 2026-10-29 | verified |
+| V12 | Audited by Quarkslab in 2016; the fixes shipped in version 1.19 in October 2016 | [veracrypt.io](https://veracrypt.io/en/Home.html); [FAQ](https://veracrypt.io/en/FAQ.html) | 2026-10-29 | verified |
+| RV1 | *Reasoning:* everyone who opens a shared container needs its password | follows from V5 and V11 | 2026-10-29 | verified |
+
+### Doughnut Forge (existing sources, no new claims)
+
+| # | Claim in the post | Source | Checked | Status |
+|---|---|---|---|---|
+| D1 | For iPhone and iPad, Mac and Windows; Android is coming | `src/data/stores.ts`; site `faq.which.a` (Linux left out, owner) | 2026-10-29 | verified |
+| D2 | One-time purchase on each platform, never a subscription | row 1.16; site `faq.platforms.a` | 2026-10-29 | verified |
+| D3 | No account and no servers; works entirely on the device, even without an internet connection | rows 1.2, 2.5 | 2026-10-29 | verified |
+| D4 | Encrypts files and text; whole folders on a computer only, not on iPhone or iPad | rows 1.1, 4.17; HANDOVER "Mobile first" | 2026-10-29 | verified |
+| D5 | Each file or note is encrypted for the people you choose, who open it with their own identity; there is no file password | rows 1.14, 4.10, 4.14 | 2026-10-29 | verified |
+| D6 | The locked file can be sent any way, including a cloud folder; the other person needs Doughnut Forge to open it | row 4.13; site `faq.recipient.a` | 2026-10-29 | verified |
+| D7 | If you lose your password and every way to recover your identity (your 24-word backup phrase), your files cannot be opened | row 2.4; app `identity.json:16, 20` (24 words). Recovery shards are not named: the Security tab that makes them is hidden behind `enableDayTwoFunctionality`, which is off (`theme-slice.ts:14`, `common.ts` `ALMOST_ALL_TABS`) | 2026-10-29 | verified |
+| D8 | Uses post-quantum encryption | row 3.1 | 2026-10-29 | verified |
+| D9 | Not open source | app `Cargo.toml` (`license = "Proprietary"`) | 2026-10-29 | verified |
+| D10 | No independent security audit yet | site `security.audit.text` ("planned" dropped, owner) | 2026-10-29 | verified |
+
+### Removed (no source found, so not claimed)
+- VeraCrypt: cloud sync; file name encryption; system encryption on Mac or Linux; any account or server.
+- Both: sharing with a per-person public key.
+- Any Cryptomator audit after 2017 or VeraCrypt audit after 2016.
+- The exact Android price model for Cryptomator (see C6).
+- Any comparison of encryption strength, and anything about either product and post-quantum encryption.
+- Recovery shards in Doughnut Forge (not available to users yet, see D7).
