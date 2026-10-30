@@ -276,6 +276,9 @@ export default {
   "security.report.promise":
     "Every report gets a reply. Doughnut Forge will not take legal action against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and allowing time for a fix before sharing details.",
   "security.report.button": "Report a vulnerability",
+  "security.technical.text":
+    "For technical readers: the encryption methods and keys Doughnut Forge uses, its file format, what can be seen without the key, its network behaviour, and what it does not protect against.",
+  "security.technical.button": "Read the technical details",
 
   // Technical details: the one page that names algorithms and libraries, for
   // technical readers. Every fact comes from docs/TECH-SPEC.md and nowhere else.

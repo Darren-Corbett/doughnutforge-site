@@ -167,6 +167,18 @@
         "severity": "note",
         "issue": "Checked: says changes inside DO cause a problem, matching the English. No-break spaces (U+00A0) before ':' and '?' and in '1 024' and '19 456' match the rest of fr.ts. Protected terms intact. Description 148 characters.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'son comportement réseau' matches meta; 'ce contre quoi il ne protège pas' matches limits title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Infinitive matches 'Voir la feuille de route'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -327,6 +339,18 @@
         "severity": "note",
         "issue": "'Parallele Lanes' is an anglicism. The Argon2 parameter is 'parallelism', counted in lanes.",
         "suggestion": "Parallelität (Lanes):"
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; Sie-register neutral. 'das Verhalten im Netzwerk' is neutral (meta uses 'Netzwerkverhalten'; either is fine). 'wovor Doughnut Forge nicht schützt' matches technical.limits.title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'Zu den technischen Details' matches the file's 'Zur Roadmap' link style.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -439,6 +463,18 @@
         "key": "technical.text.inside.label",
         "severity": "note",
         "issue": "No problem. 'Los cambios dentro del mensaje sí son un problema' keeps the meaning. Terms match the app (frase de seguridad, piezas, tarjetas de contacto, contraseña, llavero). Protected terms intact. '1024' without a separator follows RAE for four digits. Description 151 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'su comportamiento en la red' matches meta; terms match technical.* titles.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Infinitive matches 'Ver la hoja de ruta'.",
         "suggestion": "No change."
       }
     ]
@@ -595,6 +631,18 @@
         "key": "technical.text.inside.label",
         "severity": "note",
         "issue": "No problem. 'Le modifiche al suo interno, invece, sono un problema' keeps the meaning. Terms match the app (frase di backup, frammenti, scheda di contatto, Portachiavi). Protected terms intact. Description 149 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'usati' agrees correctly with metodi+chiavi; 'il suo comportamento in rete' matches meta.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Imperative 'Leggi' matches 'Vedi la tabella di marcia'.",
         "suggestion": "No change."
       }
     ]
@@ -762,6 +810,18 @@
         "severity": "note",
         "issue": "'Ze verwijderen is aan u.' is a little abrupt.",
         "suggestion": "Het originele bestand blijft na het versleutelen staan waar het stond, en geopende bestanden worden als gewone bestanden opgeslagen. Het verwijderen ervan is aan u. Op SSD's garandeert het verwijderen of overschrijven van een bestand niet dat de oude gegevens weg zijn."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'het gedrag op het netwerk' neutral; 'waartegen Doughnut Forge niet beschermt' matches limits title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Imperative 'Lees' matches 'Bekijk de roadmap'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -894,6 +954,18 @@
         "severity": "note",
         "issue": "'Parallella banor' is literal and unclear.",
         "suggestion": "Parallellitet (banor):"
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'hur appen beter sig i nätverket' neutral (meta: 'nätverksbeteende').",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Imperative matches 'Se färdplanen'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1034,6 +1106,18 @@
         "severity": "note",
         "issue": "'Parallelle baner' is literal and unclear.",
         "suggestion": "Parallelitet (baner):"
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches. 'appens netværksadfærd' is the same term as meta.technical.description.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Imperative matches 'Se køreplanen', 'Rapportér...'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1201,6 +1285,24 @@
         "severity": "note",
         "issue": "'Rinnakkaiset kaistat' is literal and unclear.",
         "suggestion": "Rinnakkaisuus (kaistat):"
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Was blocking, now fixed and re-checked by a second independent reviewer: 'sen toiminta verkossa' back-translates as 'its operation/activity online' ('verkossa' is the everyday word for 'online'), which reads as if the app works online. The file's meta.technical.description uses the neutral 'verkkokäyttäytyminen'.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Imperative 'Lue' matches 'Katso tiekartta'; 'tekniset tiedot' matches technical.title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.technical.description",
+        "severity": "note",
+        "issue": "Second reviewer: 'verkkokäyttäytyminen' reads as 'online behaviour'. Replaced with 'miten sovellus käyttää verkkoa'.",
+        "suggestion": "Done."
       }
     ]
   },
@@ -1347,6 +1449,18 @@
         "severity": "note",
         "issue": "'Parallelle baner' is literal and unclear.",
         "suggestion": "Parallellitet (baner):"
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'hvordan appen oppfører seg på nettverket' neutral (meta: 'nettverksatferd').",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Imperative matches 'Se veikartet'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1499,6 +1613,18 @@
         "severity": "note",
         "issue": "'Równoległe tory' is literal and unclear.",
         "suggestion": "Równoległość (tory):"
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'zachowanie w sieci' neutral, consistent with meta; limits matches title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Imperative 'Przeczytaj' matches 'Zobacz plan rozwoju'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1652,6 +1778,18 @@
         "key": "technical.text.inside.label",
         "severity": "note",
         "issue": "Checked: 'Změny uvnitř vadí' keeps the meaning. Terms match the app (záložní fráze, části pro obnovení, kontaktní karta, heslo, Klíčenka). Protected terms intact. Description 137 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Back-translation matches. 'jak se chová v síti' (how it behaves on the network) matches meta.technical.description; terms match technical.* titles.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Infinitive 'Přečíst...' matches 'Nahlásit zranitelnost' / 'Zobrazit plán vývoje'.",
         "suggestion": "No change."
       }
     ]
@@ -1816,6 +1954,18 @@
         "key": "(all 108 keys)",
         "severity": "note",
         "issue": "No problem. Meaning matches the English on every key; fixed terms and numbers intact; terms match the glossary (Identitás, Biztonsági kifejezés, Jelszó, névjegykártya, töredékek as in the app). 'jelkód' and 'Kulcskarika' are Apple's Hungarian terms. 'A benne lévő változtatások viszont igen.' reads correctly after 'nem gond' (changes inside are a problem). Meta description 154 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'hogyan viselkedik a hálózaton' is neutral (meta: 'hálózati működése'). Informal register consistent with the file.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Informal imperative 'Olvasd el' matches 'Nézd meg a fejlesztési tervet'.",
         "suggestion": "No change."
       }
     ]
@@ -1993,6 +2143,18 @@
         "severity": "note",
         "issue": "Checked: 'Modificările din interior sunt o problemă' keeps the meaning. Terms match the app (frază de recuperare, părți, card de contact, parolă, Brelocul). Protected terms intact. Description 144 characters.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'împotriva a ce nu te protejează' mirrors technical.limits.title (adds 'you', not a claim). 'comportamentul său în rețea' matches meta.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Informal imperative matches 'Vezi planul de dezvoltare'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2154,6 +2316,18 @@
         "severity": "note",
         "issue": "'карточек контакта' matches the rest of the site (ru.ts already uses 'карточку контакта'); the app glossary has 'визитка' / 'контактная карта'. Consistent with the site, so style only.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Meaning matches. 'поведение в сети' is acceptable to technical readers but 'в сети' can also mean 'online'; the file's meta uses 'работа с сетью'. Optional: '..., что видно без ключа, работа с сетью и от чего Doughnut Forge не защищает.'",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'Читать' matches 'Открыть дорожную карту'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2297,6 +2471,18 @@
         "severity": "note",
         "issue": "No problem. Meaning matches on every key; fixed terms and numbers intact; 'Φράση ανάκτησης', 'κάρτα επαφής', 'τμήματα' match the app; 'κωδικός πρόσβασης' (password) stays distinct from 'κωδικός της συσκευής' (device passcode). 'Μπρελόκ' is Apple's Greek term. Meta description 156 characters.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'η συμπεριφορά του στο δίκτυο' matches meta. 'από τι δεν προστατεύει' matches limits title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Formal imperative 'Διαβάστε' matches 'Δείτε τον οδικό χάρτη'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2438,6 +2624,18 @@
         "severity": "note",
         "issue": "No other problem. Meaning matches; fixed terms intact; 'Фраза відновлення', 'Особистість', 'картка контакту', 'частини' match the app; 'код допуску' and 'В’язка ключів' are Apple's Ukrainian terms. 'старіших за 0.4.41' clearly means older. Meta description 141 characters.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Meaning matches. 'поведінка в мережі' acceptable but 'в мережі' can read as 'online'; meta uses 'робота з мережею'. Optional: '..., що видно без ключа, робота з мережею та від чого Doughnut Forge не захищає.'",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'Читати' matches 'Переглянути дорожню карту'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2573,6 +2771,18 @@
         "key": "technical.keys.recovery.text",
         "severity": "note",
         "issue": "No problem. Differs from es only where Mexican usage or the es-MX app differs (frase de respaldo, fragmentos, computadora, agrega, encabezado, llenar, administradores, se envió, 1,024 and 19,456). Inside-changes label keeps the meaning. Description 151 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; same as es, appropriate for MX.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Infinitive matches 'Ver la hoja de ruta'.",
         "suggestion": "No change."
       }
     ]
@@ -2721,6 +2931,18 @@
         "severity": "note",
         "issue": "Checked: terms match the app (frase de backup, peças, cartão de contato, senha, Chaves). Protected terms intact. Description 151 characters.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'o comportamento na rede' neutral (meta: 'comportamento de rede').",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Infinitive matches 'Ver o roteiro'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2855,6 +3077,18 @@
         "severity": "note",
         "issue": "No other problem. 'Parola' (password) and 'cihaz parolası' (device passcode) stay distinguishable everywhere the passcode appears. 'Anahtar Zinciri' is Apple's Turkish term. Fixed terms intact. Meta description 156 characters.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'ağdaki davranışı' neutral; 'korumadığı durumlar' matches limits title. Verbless list mirrors English.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "Formal imperative 'okuyun' matches 'Yol haritasına bakın'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2974,6 +3208,18 @@
         "key": "(all 108 keys)",
         "severity": "note",
         "issue": "No problem. Meaning, numbers, 'まだ' (not yet), 'おおよそ' (roughly), hidden/visible and Latin terms match. Terms match the app: パスワード, アイデンティティ, バックアップフレーズ, 連絡先カード, 受信者, 復元用ピース (app uses ピース), キーチェーン, パスコード.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; added 'まとめています' is a neutral verb, not a claim. 'ネットワークでの動作' neutral (meta: 'ネットワーク上の動作'); limits wording matches technical.limits.title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'〜を読む' matches 'ロードマップを見る'.",
         "suggestion": "No change."
       }
     ]
@@ -3129,6 +3375,18 @@
         "key": "(all other keys)",
         "severity": "note",
         "issue": "No problem. 收件人/发件人 match the app; 钥匙串 and 锁屏密码 match Apple; numbers, 尚不 (not yet), 大致 (roughly) and Latin terms all match.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; '网络行为' is the same term as meta; limits wording matches title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'阅读技术细节' matches '查看路线图' style and technical.title.",
         "suggestion": "No change."
       }
     ]
@@ -3312,6 +3570,18 @@
         "severity": "note",
         "issue": "'聯絡人卡片' differs from the app glossary (聯絡人名片), but the site's zh-TW file already uses 聯絡人卡片 elsewhere.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; '網路行為' is the same term as meta; limits wording matches title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'閱讀技術細節' matches '查看開發藍圖' style and technical.title.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3460,6 +3730,18 @@
         "severity": "note",
         "issue": "Adds '모두 회사에 달려 있습니다' (all depend on the company). Close to the English 'you rely on the company', and it does not mislead.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; '정리했습니다' is a neutral verb. '네트워크 동작' matches meta; '막지 못하는 것' matches limits title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'읽기' matches '로드맵 보기'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3573,6 +3855,18 @@
         "key": "(all 108 keys)",
         "severity": "note",
         "issue": "No problem. 'ऐसा डिवाइस जिसमें पहले से ही सेंध लग चुकी है।' correctly means 'a device that is already compromised'. Terms match the app (पहचान, बैकअप वाक्यांश, पासवर्ड, संपर्क कार्ड, शार्ड); 'पासकोड' stays distinct from 'पासवर्ड'; 'कीचेन' matches Apple's Hindi. Fixed terms intact. Meta description 137 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'नेटवर्क पर उसका व्यवहार' matches meta (which uses इसका; harmless). Limits wording matches technical.limits.title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'पढ़ें' matches 'रोडमैप देखें'.",
         "suggestion": "No change."
       }
     ]
@@ -3706,6 +4000,18 @@
         "key": "(other keys)",
         "severity": "note",
         "issue": "No other problem. 'Kata Sandi' (password) vs 'kode sandi perangkat' (passcode) distinct; 'Rantai Kunci' matches Apple's Indonesian; terms match the app. Meta description 152 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches; 'perilakunya di jaringan' neutral (meta: 'perilaku jaringannya'). 'apa yang tidak dilindunginya' mirrors technical.limits.title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'Baca' matches 'Lihat peta jalan'.",
         "suggestion": "No change."
       }
     ]
@@ -3841,6 +4147,18 @@
         "severity": "note",
         "issue": "No problem. Meaning, numbers, 'belum lagi' (not yet), 'lebih kurang' (roughly), hidden/visible, Latin terms and glossary terms (kata laluan, identiti, frasa sandaran, kad kenalan, penerima, serpihan pemulihan) all match. meta description is 158 characters.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Matches. 'kelakuannya pada rangkaian' is understandable but 'kelakuan' leans toward personal conduct; meta uses 'tingkah laku rangkaiannya'. Optional: '..., tingkah laku rangkaiannya dan ...'. Not a network-use implication.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'Baca' matches 'Lihat peta hala tuju'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3967,6 +4285,18 @@
         "key": "technical.unlock.ios.text",
         "severity": "note",
         "issue": "'พวงกุญแจ' is Apple's Thai name for Keychain and matches the app. 'รหัส' for passcode matches Apple's usage. Correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Meaning matches. 'การทำงานกับเครือข่าย' (working with the network) is slightly less neutral than meta's 'การทำงานด้านเครือข่าย'. Optional for consistency: replace with 'การทำงานด้านเครือข่าย'.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'อ่าน...' matches 'ดูแผนงาน'.",
         "suggestion": "No change."
       }
     ]
@@ -4106,6 +4436,18 @@
         "key": "technical.unlock.ios.text",
         "severity": "note",
         "issue": "'Chuỗi khóa' is Apple's Vietnamese name for Keychain, and 'mật mã' is Apple's term for passcode. Correct.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.technical.text",
+        "severity": "note",
+        "issue": "Was blocking, now fixed and re-checked by a second independent reviewer: 'cách ứng dụng hoạt động trên mạng' back-translates as 'how the app operates online' ('trên mạng' is the everyday word for 'online'), which reads as if the app works online. The file's meta.technical.description uses the neutral 'hoạt động mạng'.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "security.technical.button",
+        "severity": "note",
+        "issue": "'Đọc' matches 'Xem lộ trình'; 'chi tiết kỹ thuật' matches technical.title.",
         "suggestion": "No change."
       }
     ]

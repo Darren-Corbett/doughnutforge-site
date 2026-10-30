@@ -196,6 +196,8 @@ export default {
   "security.report.private": "Raporunuzu yalnızca geliştirici görebilir. Ücretsiz bir GitHub hesabına ihtiyacınız vardır.",
   "security.report.promise": "Her rapora yanıt verilir. Doughnut Forge, bir sorunu iyi niyetle arayan ve bildiren hiç kimseye karşı yasal işlem başlatmaz: kimseye zarar vermeden, başkalarının verilerini okumadan ve ayrıntıları paylaşmadan önce düzeltme için zaman tanıyarak.",
   "security.report.button": "Güvenlik açığı bildirin",
+  "security.technical.text": "Teknik okuyucular için: Doughnut Forge'un kullandığı şifreleme yöntemleri ve anahtarlar, dosya biçimi, anahtar olmadan neler görülebileceği, ağdaki davranışı ve korumadığı durumlar.",
+  "security.technical.button": "Teknik ayrıntıları okuyun",
   "technical.link": "Teknik ayrıntılar: Doughnut Forge'un kullandığı algoritmalar, anahtarlar ve dosya biçimi",
   "meta.technical.title": "Teknik ayrıntılar: şifreleme, anahtarlar ve dosya biçimi | Doughnut Forge",
   "meta.technical.description": "Doughnut Forge'un kullandığı standart yöntemler: AES-256-GCM, ML-KEM-768 ile birlikte X25519, Argon2id, anahtar olmadan neyin görülebildiği ve ağ davranışı.",

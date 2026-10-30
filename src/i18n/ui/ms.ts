@@ -196,6 +196,8 @@ export default {
   "security.report.private": "Hanya pembangun boleh melihat laporan anda. Anda memerlukan akaun GitHub percuma.",
   "security.report.promise": "Setiap laporan akan dibalas. Doughnut Forge tidak akan mengambil tindakan undang-undang terhadap sesiapa yang mencari dan melaporkan masalah dengan niat baik: tanpa membahayakan sesiapa atau membaca data orang lain, dan memberi masa untuk pembaikan sebelum berkongsi butiran.",
   "security.report.button": "Laporkan kerentanan",
+  "security.technical.text": "Untuk pembaca teknikal: kaedah penyulitan dan kunci yang digunakan oleh Doughnut Forge, format failnya, apa yang boleh dilihat tanpa kunci, tingkah laku rangkaiannya dan perkara yang tidak dilindunginya.",
+  "security.technical.button": "Baca butiran teknikal",
   "technical.link": "Butiran teknikal: algoritma, kunci dan format fail yang digunakan oleh Doughnut Forge",
   "meta.technical.title": "Butiran teknikal: penyulitan, kunci dan format fail | Doughnut Forge",
   "meta.technical.description": "Kaedah standard yang digunakan Doughnut Forge: AES-256-GCM, X25519 dengan ML-KEM-768, Argon2id, apa yang kelihatan tanpa kunci, dan tingkah laku rangkaiannya.",

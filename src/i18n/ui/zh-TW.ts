@@ -196,6 +196,8 @@ export default {
   "security.report.private": "只有開發者能看到您的回報。您需要一個免費的 GitHub 帳號。",
   "security.report.promise": "每份回報都會得到回覆。對於本著善意尋找並回報問題的人，Doughnut Forge 不會採取法律行動，前提是：沒有傷害任何人、沒有讀取他人的資料，並在公開細節之前留出修正的時間。",
   "security.report.button": "回報安全性漏洞",
+  "security.technical.text": "給具技術背景的讀者：Doughnut Forge 使用的加密方法和金鑰、檔案格式、沒有金鑰時能看到什麼、網路行為，以及它無法防範的情況。",
+  "security.technical.button": "閱讀技術細節",
   "technical.link": "技術細節：Doughnut Forge 使用的演算法、金鑰和檔案格式",
   "meta.technical.title": "技術細節：加密、金鑰和檔案格式 | Doughnut Forge",
   "meta.technical.description": "Doughnut Forge 使用的標準方法：AES-256-GCM、X25519 搭配 ML-KEM-768、Argon2id，沒有金鑰時能看到什麼，以及它的網路行為。",

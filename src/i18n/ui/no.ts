@@ -196,6 +196,8 @@ export default {
   "security.report.private": "Bare utvikleren kan se rapporten din. Du trenger en gratis GitHub-konto.",
   "security.report.promise": "Alle rapporter får svar. Doughnut Forge vil ikke gå rettslig til verks mot noen som leter etter og melder fra om et problem i god tro: uten å skade noen eller lese andres data, og som gir tid til en rettelse før detaljer deles.",
   "security.report.button": "Meld fra om en sårbarhet",
+  "security.technical.text": "For tekniske lesere: krypteringsmetodene og nøklene Doughnut Forge bruker, filformatet, hva som kan ses uten nøkkelen, hvordan appen oppfører seg på nettverket, og hva den ikke beskytter mot.",
+  "security.technical.button": "Les de tekniske detaljene",
   "technical.link": "Tekniske detaljer: algoritmene, nøklene og filformatet Doughnut Forge bruker",
   "meta.technical.title": "Tekniske detaljer: kryptering, nøkler og filformat | Doughnut Forge",
   "meta.technical.description": "Standardmetodene Doughnut Forge bruker: AES-256-GCM, X25519 med ML-KEM-768, Argon2id, hva som kan ses uten nøkkelen, og appens nettverksatferd.",

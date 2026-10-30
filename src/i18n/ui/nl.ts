@@ -196,6 +196,8 @@ export default {
   "security.report.private": "Alleen de ontwikkelaar kan uw melding zien. U hebt een gratis GitHub-account nodig.",
   "security.report.promise": "Elke melding krijgt een antwoord. Doughnut Forge onderneemt geen juridische stappen tegen wie te goeder trouw naar een probleem zoekt en het meldt: zonder iemand schade te doen of gegevens van anderen te lezen, en met tijd voor een oplossing voordat details worden gedeeld.",
   "security.report.button": "Een kwetsbaarheid melden",
+  "security.technical.text": "Voor technische lezers: de versleutelingsmethoden en sleutels die Doughnut Forge gebruikt, het bestandsformaat, wat zonder de sleutel te zien is, het gedrag op het netwerk en waartegen Doughnut Forge niet beschermt.",
+  "security.technical.button": "Lees de technische details",
   "technical.link": "Technische details: de algoritmen, sleutels en het bestandsformaat die Doughnut Forge gebruikt",
   "meta.technical.title": "Technische details: versleuteling, sleutels en bestandsformaat | Doughnut Forge",
   "meta.technical.description": "De standaardmethoden van Doughnut Forge: AES-256-GCM, X25519 met ML-KEM-768, Argon2id, wat zonder de sleutel te zien is, en het netwerkgedrag.",

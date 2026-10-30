@@ -196,6 +196,8 @@ export default {
   "security.report.private": "Só o desenvolvedor pode ver o seu relato. Você precisa de uma conta gratuita no GitHub.",
   "security.report.promise": "Todo relato recebe uma resposta. O Doughnut Forge não tomará medidas legais contra quem procurar e relatar um problema de boa-fé: sem prejudicar ninguém nem ler os dados de outras pessoas, e dando tempo para uma correção antes de compartilhar detalhes.",
   "security.report.button": "Relatar uma vulnerabilidade",
+  "security.technical.text": "Para leitores técnicos: os métodos de criptografia e as chaves que o Doughnut Forge usa, o formato de arquivo, o que pode ser visto sem a chave, o comportamento na rede e contra o que ele não protege.",
+  "security.technical.button": "Ler os detalhes técnicos",
   "technical.link": "Detalhes técnicos: os algoritmos, as chaves e o formato de arquivo que o Doughnut Forge usa",
   "meta.technical.title": "Detalhes técnicos: criptografia, chaves e formato de arquivo | Doughnut Forge",
   "meta.technical.description": "Os métodos padrão que o Doughnut Forge usa: AES-256-GCM, X25519 com ML-KEM-768, Argon2id, o que pode ser visto sem a chave e seu comportamento de rede.",

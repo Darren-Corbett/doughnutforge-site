@@ -28,6 +28,7 @@ for (const lang of languages) {
       await page.goto(`${prefix(lang)}/`);
       await expect(page.locator(`footer a[href="${prefix(lang)}/roadmap/"]`)).toHaveCount(1);
       await expect(page.locator(`footer a[href="${prefix(lang)}/security/"]`)).toHaveCount(1);
+      await expect(page.locator(`footer a[href="${prefix(lang)}/security/technical-details/"]`)).toHaveText(await ui(lang.code, "technical.title"));
     });
 
     test(`roadmap ${lang.code}`, async ({ page }) => {
@@ -131,6 +132,14 @@ for (const lang of languages) {
       const faq = jsonLd.map((j) => JSON.parse(j)).find((j) => j["@type"] === "FAQPage");
       expect(faq.mainEntity.map((q: { name: string }) => q.name)).toContain(question);
     });
+  });
+}
+
+// The two posts on how the encryption works point technical readers to the details
+for (const slug of ["quantum-safe-encryption-explained", "offline-encryption-privacy"]) {
+  test(`blog post ${slug} links to the technical details`, async ({ page }) => {
+    await page.goto(`/blog/${slug}/`);
+    expect(await page.locator('main a[href="/security/technical-details/"]').count()).toBeGreaterThan(0);
   });
 }
 

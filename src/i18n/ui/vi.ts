@@ -196,6 +196,8 @@ export default {
   "security.report.private": "Chỉ nhà phát triển mới xem được báo cáo của bạn. Bạn cần một tài khoản GitHub miễn phí.",
   "security.report.promise": "Mọi báo cáo đều được phản hồi. Doughnut Forge sẽ không có hành động pháp lý nào với bất kỳ ai tìm và báo cáo vấn đề một cách thiện chí: không gây hại cho ai, không đọc dữ liệu của người khác, và dành thời gian để khắc phục trước khi chia sẻ chi tiết.",
   "security.report.button": "Báo cáo lỗ hổng",
+  "security.technical.text": "Dành cho người đọc quan tâm đến kỹ thuật: các phương pháp mã hóa và khóa mà Doughnut Forge sử dụng, định dạng tệp, những gì có thể thấy khi không có khóa, hoạt động mạng của ứng dụng và những gì Doughnut Forge không bảo vệ được.",
+  "security.technical.button": "Đọc chi tiết kỹ thuật",
   "technical.link": "Chi tiết kỹ thuật: các thuật toán, khóa và định dạng tệp mà Doughnut Forge sử dụng",
   "meta.technical.title": "Chi tiết kỹ thuật: mã hóa, khóa và định dạng tệp | Doughnut Forge",
   "meta.technical.description": "Các phương pháp tiêu chuẩn Doughnut Forge dùng: AES-256-GCM, X25519 cùng ML-KEM-768, Argon2id, những gì thấy được khi không có khóa, và hoạt động mạng.",

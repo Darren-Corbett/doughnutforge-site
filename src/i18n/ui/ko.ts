@@ -196,6 +196,8 @@ export default {
   "security.report.private": "신고 내용은 개발자만 볼 수 있습니다. 무료 GitHub 계정이 필요합니다.",
   "security.report.promise": "모든 신고에는 답변이 제공됩니다. Doughnut Forge는 선의로 문제를 찾아 신고하는 사람에게 법적 조치를 취하지 않습니다. 여기서 선의란 누구에게도 피해를 주지 않고, 다른 사람의 데이터를 읽지 않으며, 세부 내용을 공유하기 전에 수정할 시간을 주는 것을 말합니다.",
   "security.report.button": "취약점 신고하기",
+  "security.technical.text": "기술적인 내용이 궁금한 분들을 위해 Doughnut Forge가 사용하는 암호화 방식과 키, 파일 형식, 키 없이 볼 수 있는 정보, 네트워크 동작, Doughnut Forge가 막지 못하는 것을 정리했습니다.",
+  "security.technical.button": "기술 세부 정보 읽기",
   "technical.link": "기술 세부 정보: Doughnut Forge가 사용하는 알고리즘, 키, 파일 형식",
   "meta.technical.title": "기술 세부 정보: 암호화, 키, 파일 형식 | Doughnut Forge",
   "meta.technical.description": "Doughnut Forge가 사용하는 표준 방식: AES-256-GCM, X25519와 ML-KEM-768, Argon2id, 키 없이 볼 수 있는 정보, 네트워크 동작.",

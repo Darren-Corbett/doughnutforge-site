@@ -196,6 +196,8 @@ export default {
   "security.report.private": "報告を見られるのは開発者だけです。無料のGitHubアカウントが必要です。",
   "security.report.promise": "すべての報告に返信があります。Doughnut Forgeは、善意で問題を探して報告する人に対して法的措置をとりません。ここでいう善意とは、誰にも害を与えず、他人のデータを読まず、詳細を共有する前に修正のための時間を設けることです。",
   "security.report.button": "脆弱性を報告",
+  "security.technical.text": "技術的な情報を知りたい方へ：Doughnut Forgeが使用する暗号化方式とキー、ファイル形式、キーがなくても見える情報、ネットワークでの動作、そしてDoughnut Forgeが防げないことをまとめています。",
+  "security.technical.button": "技術的な詳細を読む",
   "technical.link": "技術的な詳細：Doughnut Forgeが使用するアルゴリズム、キー、ファイル形式",
   "meta.technical.title": "技術的な詳細：暗号化、キー、ファイル形式 | Doughnut Forge",
   "meta.technical.description": "Doughnut Forgeが使用する標準的な方式：AES-256-GCM、X25519とML-KEM-768、Argon2id、キーなしで見える情報、ネットワーク上の動作。",

@@ -18,7 +18,7 @@ const points = ["device", "servers", "quantum", "keys"] as const;
 
 <Base lang={lang} title={t("meta.security.title")} description={t("meta.security.description")} image="/og/security.png">
   <PageHero title={t("security.title")} lead={t("security.lead")} />
-  <div class="section">
+  <div class="section cards">
     <Prose>
       {
         points.map((id) => (
@@ -28,8 +28,6 @@ const points = ["device", "servers", "quantum", "keys"] as const;
           </>
         ))
       }
-      <p><a href={localePath(lang.code, "security/technical-details/")}>{t("technical.link")}</a></p>
-
       <h2>{t("security.audit.title")}</h2>
       <p>
         {t("security.audit.text")} <a href={localePath(lang.code, "roadmap/")}>{t("security.audit.link")}</a>
@@ -46,16 +44,33 @@ const points = ["device", "servers", "quantum", "keys"] as const;
         </a>
       </p>
     </Prose>
+    <Prose>
+      <h2>{t("technical.title")}</h2>
+      <p>{t("security.technical.text")}</p>
+      <p class="action">
+        <a class="btn-outline" href={localePath(lang.code, "security/technical-details/")}>{t("security.technical.button")}</a>
+      </p>
+    </Prose>
   </div>
 </Base>
 
 <style>
+  /* The technical details card sits under the main card, as the cards do on that page */
+  .cards {
+    display: grid;
+    gap: 24px;
+  }
   .action {
     margin-top: 24px;
   }
-  /* The button keeps its own look inside the prose card, not the link style */
+  /* The buttons keep their own look inside the prose card, not the link style */
   .action a {
-    color: #14171a;
     text-decoration: none;
+  }
+  .action .btn-primary {
+    color: #14171a;
+  }
+  .action .btn-outline {
+    color: inherit;
   }
 </style>

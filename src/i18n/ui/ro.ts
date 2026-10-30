@@ -196,6 +196,8 @@ export default {
   "security.report.private": "Doar dezvoltatorul îți poate vedea raportul. Ai nevoie de un cont GitHub gratuit.",
   "security.report.promise": "Fiecare raport primește un răspuns. Doughnut Forge nu va iniția acțiuni legale împotriva nimănui care caută și raportează o problemă cu bună-credință: fără să facă rău nimănui sau să citească datele altor persoane și lăsând timp pentru o remediere înainte de a face publice detaliile.",
   "security.report.button": "Raportează o vulnerabilitate",
+  "security.technical.text": "Pentru cititorii cu interes tehnic: metodele de criptare și cheile pe care le folosește Doughnut Forge, formatul său de fișier, ce se poate vedea fără cheie, comportamentul său în rețea și împotriva a ce nu te protejează.",
+  "security.technical.button": "Citește detaliile tehnice",
   "technical.link": "Detalii tehnice: algoritmii, cheile și formatul de fișier pe care le folosește Doughnut Forge",
   "meta.technical.title": "Detalii tehnice: criptare, chei și format de fișier | Doughnut Forge",
   "meta.technical.description": "Metodele standard folosite de Doughnut Forge: AES-256-GCM, X25519 cu ML-KEM-768, Argon2id, ce se vede fără cheie și comportamentul său în rețea.",

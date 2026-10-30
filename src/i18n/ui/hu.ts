@@ -196,6 +196,8 @@ export default {
   "security.report.private": "A bejelentésedet csak a fejlesztő látja. Ingyenes GitHub-fiókra van szükséged.",
   "security.report.promise": "Minden bejelentésre érkezik válasz. A Doughnut Forge nem tesz jogi lépéseket senki ellen, aki jóhiszeműen keres és jelent be egy problémát: anélkül, hogy bárkinek kárt okozna vagy mások adatait elolvasná, és időt hagyva a javításra, mielőtt részleteket osztana meg.",
   "security.report.button": "Sebezhetőség bejelentése",
+  "security.technical.text": "Technikai érdeklődésű olvasóknak: a Doughnut Forge által használt titkosítási módszerek és kulcsok, a fájlformátuma, mi látható kulcs nélkül, hogyan viselkedik a hálózaton, és mi ellen nem véd.",
+  "security.technical.button": "Olvasd el a technikai részleteket",
   "technical.link": "Technikai részletek: a Doughnut Forge által használt algoritmusok, kulcsok és fájlformátum",
   "meta.technical.title": "Technikai részletek: titkosítás, kulcsok és fájlformátum | Doughnut Forge",
   "meta.technical.description": "A Doughnut Forge által használt szabványos módszerek: AES-256-GCM, X25519 és ML-KEM-768 együtt, Argon2id, mi látható kulcs nélkül, és a hálózati működése.",

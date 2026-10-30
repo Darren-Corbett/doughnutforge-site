@@ -405,7 +405,7 @@
   },
   "meta.technical.description": {
     "en": "6fc9bb1cf67a",
-    "text": "db30089d94e6"
+    "text": "931026ae4bb9"
   },
   "meta.technical.title": {
     "en": "99ea67801fc9",
@@ -714,6 +714,14 @@
   "security.servers.title": {
     "en": "c0164242a75d",
     "text": "cdc003496c27"
+  },
+  "security.technical.button": {
+    "en": "c7f5ebebf0a6",
+    "text": "7e596e279bee"
+  },
+  "security.technical.text": {
+    "en": "744f8975aae2",
+    "text": "ce22ff545207"
   },
   "security.title": {
     "en": "8f6fb4eb7f42",

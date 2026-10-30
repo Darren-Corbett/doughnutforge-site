@@ -196,6 +196,8 @@ export default {
   "security.report.private": "Vaše hlášení uvidí jen vývojář. Potřebujete bezplatný účet na GitHubu.",
   "security.report.promise": "Na každé hlášení přijde odpověď. Doughnut Forge nepodnikne právní kroky proti nikomu, kdo v dobré víře hledá a nahlásí problém: aniž by komukoli ublížil nebo četl data jiných lidí, a pokud před zveřejněním podrobností ponechá čas na opravu.",
   "security.report.button": "Nahlásit zranitelnost",
+  "security.technical.text": "Pro technicky zaměřené čtenáře: metody šifrování a klíče, které Doughnut Forge používá, jeho formát souborů, co je vidět bez klíče, jak se chová v síti a před čím nechrání.",
+  "security.technical.button": "Přečíst technické podrobnosti",
   "technical.link": "Technické podrobnosti: algoritmy, klíče a formát souborů, které Doughnut Forge používá",
   "meta.technical.title": "Technické podrobnosti: šifrování, klíče a formát souborů | Doughnut Forge",
   "meta.technical.description": "Standardní metody, které Doughnut Forge používá: AES-256-GCM, X25519 s ML-KEM-768, Argon2id, co je vidět bez klíče a jak se chová v síti.",

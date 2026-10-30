@@ -196,6 +196,8 @@ export default {
   "security.report.private": "Twoje zgłoszenie widzi tylko deweloper. Potrzebujesz bezpłatnego konta GitHub.",
   "security.report.promise": "Na każde zgłoszenie przychodzi odpowiedź. Doughnut Forge nie podejmie kroków prawnych wobec nikogo, kto w dobrej wierze szuka problemu i go zgłasza: nikomu nie szkodząc, nie czytając danych innych osób i dając czas na poprawkę przed ujawnieniem szczegółów.",
   "security.report.button": "Zgłoś lukę bezpieczeństwa",
+  "security.technical.text": "Dla czytelników z wiedzą techniczną: metody szyfrowania i klucze, których używa Doughnut Forge, format plików, co widać bez klucza, zachowanie w sieci oraz przed czym Doughnut Forge nie chroni.",
+  "security.technical.button": "Przeczytaj szczegóły techniczne",
   "technical.link": "Szczegóły techniczne: algorytmy, klucze i format plików używane przez Doughnut Forge",
   "meta.technical.title": "Szczegóły techniczne: szyfrowanie, klucze i format plików | Doughnut Forge",
   "meta.technical.description": "Standardowe metody używane przez Doughnut Forge: AES-256-GCM, X25519 z ML-KEM-768, Argon2id, co widać bez klucza i zachowanie aplikacji w sieci.",
