@@ -166,6 +166,9 @@ export default {
   "faq.recipient.q": "Does the other person need Doughnut Forge to open it?",
   "faq.recipient.a":
     "Yes. They open it in Doughnut Forge with their own identity. That is what keeps it private: no one without one of the chosen identities can open it.",
+  "faq.messaging.q": "Why not just use WhatsApp or another encrypted messaging app?",
+  "faq.messaging.a":
+    "Messaging apps such as WhatsApp encrypt messages end to end, but only inside their own app. You rely on the company that runs it: its app, its rules for backups, what it can see about how you use it, and whether you can easily move away. Doughnut Forge encrypts the file or message itself, on your device. It stays encrypted however you send it: by email, in cloud storage, in a chat, or pasted as text into a social media post, as long as the text arrives unchanged. Only the people you choose can open it. The service it passes through can still see that something was sent or posted, when, and roughly how big it is.",
   "faq.which.q": "Which platforms can I use it on?",
   // {available} and {coming} are lists such as "iPhone and iPad, Mac and Windows"
   "faq.which.a": "Doughnut Forge is available for {available}. Coming soon: {coming}.",
@@ -273,6 +276,135 @@ export default {
   "security.report.promise":
     "Every report gets a reply. Doughnut Forge will not take legal action against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and allowing time for a fix before sharing details.",
   "security.report.button": "Report a vulnerability",
+
+  // Technical details: the one page that names algorithms and libraries, for
+  // technical readers. Every fact comes from docs/TECH-SPEC.md and nowhere else.
+  // Algorithm, library and format names stay in English in every language.
+  "technical.link": "Technical details: the algorithms, keys and file format Doughnut Forge uses",
+  "meta.technical.title": "Technical details: encryption, keys and file format | Doughnut Forge",
+  "meta.technical.description":
+    "The standard methods Doughnut Forge uses: AES-256-GCM, X25519 with ML-KEM-768, Argon2id, what can be seen without the key, and its network behaviour.",
+  "technical.title": "Technical details",
+  "technical.lead":
+    "Doughnut Forge encrypts files, folders and short messages on your own device. There are no accounts, no servers and no cloud storage. This page lists the standard methods it uses, for readers who want to check them.",
+  "technical.encryption.title": "Encryption",
+  "technical.encryption.cipher.label": "Cipher:",
+  "technical.encryption.cipher.text": "AES-256-GCM (256-bit key, 96-bit nonce, 128-bit authentication tag).",
+  "technical.encryption.perItem.label": "One key per item:",
+  "technical.encryption.perItem.text": "every file, folder or message gets its own new random 256-bit key.",
+  "technical.encryption.auth.label": "Authentication:",
+  "technical.encryption.auth.text":
+    "the content and the item's header are authenticated. If they are changed, opening fails and nothing is saved.",
+  "technical.encryption.nonces.label": "Nonces:",
+  "technical.encryption.nonces.text": "never reused under the same key. Each item has its own key and its own random values.",
+  "technical.encryption.compression.label": "Compression:",
+  "technical.encryption.compression.text": "content is compressed (Zstandard) before it is encrypted.",
+  "technical.encryption.random.label": "Randomness:",
+  "technical.encryption.random.text": "keys, nonces and salts come from the operating system's secure random source.",
+  "technical.keys.title": "Keys and identity",
+  "technical.keys.identity.label": "Your identity:",
+  "technical.keys.identity.text": "made from one 256-bit random secret, created on your device.",
+  "technical.keys.recovery.label": "Recovery:",
+  "technical.keys.recovery.text":
+    "that secret can be written down as your 24-word backup phrase (BIP-39). It can also be split into recovery shards with Shamir's Secret Sharing, where any chosen number of shards (at least 2, at most 16 in total) brings it back. Fewer shards than that reveal nothing.",
+  "technical.keys.exchange.label": "Key exchange (post-quantum hybrid):",
+  "technical.keys.exchange.text":
+    "each item's key is sealed separately for every recipient, and for you, using X25519 together with ML-KEM-768. The two shared secrets are combined with SHA-256.",
+  "technical.keys.signatures.label": "Signatures:",
+  "technical.keys.signatures.text": "Ed25519, used to sign contact cards. Proof of who sent an item is not yet offered.",
+  "technical.keys.derivation.label": "Key derivation:",
+  "technical.keys.derivation.text": "HKDF-SHA-256.",
+  "technical.keys.recipients.label": "Several recipients:",
+  "technical.keys.recipients.text":
+    "one encrypted item can be opened by up to 1,024 people, each with their own sealed copy of the item's key.",
+  "technical.stored.title": "How your secret is stored",
+  "technical.stored.text":
+    "Your secret is stored only in encrypted form. It is encrypted with AES-256-GCM, using a key made from your password with Argon2id:",
+  "technical.stored.memory.label": "Memory:",
+  "technical.stored.memory.text": "19 MiB (19,456 KiB)",
+  "technical.stored.passes.label": "Passes:",
+  "technical.stored.passes.text": "2",
+  "technical.stored.lanes.label": "Parallel lanes:",
+  "technical.stored.lanes.text": "1",
+  "technical.stored.salt.label": "Salt:",
+  "technical.stored.salt.text": "128-bit, random",
+  "technical.stored.output.label": "Output:",
+  "technical.stored.output.text": "256-bit key",
+  "technical.stored.contacts": "Your contact list is also stored encrypted (AES-256-GCM).",
+  "technical.unlock.title": "Unlocking on each device",
+  "technical.unlock.mac.label": "Mac:",
+  "technical.unlock.mac.text": "password. The app runs in the macOS App Sandbox.",
+  "technical.unlock.windows.label": "Windows:",
+  "technical.unlock.windows.text": "password.",
+  "technical.unlock.ios.label": "iPhone and iPad:",
+  "technical.unlock.ios.text":
+    "password, or Face ID or Touch ID if you turn it on. Doughnut Forge then keeps your password in the iOS Keychain, on this device only, and only while the device is unlocked. iOS releases it after Face ID, Touch ID or the device passcode. The app's files use iOS Complete data protection.",
+  "technical.visible.title": "What can be seen without the key",
+  "technical.visible.contents.label": "File contents:",
+  "technical.visible.contents.text": "hidden.",
+  "technical.visible.name.label": "Original file name and type:",
+  "technical.visible.name.text":
+    "hidden inside. By default the encrypted file is named after the original (for example report.vlt2). Rename it if the name itself is private.",
+  "technical.visible.for.label": "Who it is for:",
+  "technical.visible.for.text": "hidden.",
+  "technical.visible.from.label": "Who sent it:",
+  "technical.visible.from.text": "hidden.",
+  "technical.visible.count.label": "How many people can open it:",
+  "technical.visible.count.text": "visible (the number of recipients, counting the sender).",
+  "technical.visible.size.label": "Size:",
+  "technical.visible.size.text": "visible, roughly (the compressed size).",
+  "technical.visible.dates.label": "Dates:",
+  "technical.visible.dates.text":
+    "no dates can be read without the key. The file has the normal dates your computer gives any file.",
+  "technical.visible.format.label": "That it is a Doughnut Forge file, and its format version:",
+  "technical.visible.format.text": "visible.",
+  "technical.visible.older":
+    "Files made with versions older than 0.4.41 show who they are for, and who sent them, without the key. They still open in the current version.",
+  "technical.text.title": "Copying an encrypted message as text",
+  "technical.text.intro":
+    "An encrypted message is plain text: standard Base64 between a BEGIN FORGE ENCLAVE line and an END FORGE ENCLAVE line. It can be pasted into an email, a chat or a post.",
+  "technical.text.wrap.label": "Line wrapping is fine.",
+  "technical.text.wrap.text": "Spaces and line breaks are ignored when the message is opened.",
+  "technical.text.around.label": "Extra text around it is fine.",
+  "technical.text.around.text": "Anything before the BEGIN line or after the END line is ignored.",
+  "technical.text.inside.label": "Changes inside it are not.",
+  "technical.text.inside.text":
+    "If an app changes, removes or adds a character inside the message, shortens it, or changes the dashes in the BEGIN and END lines, it will not open. It never opens as different text.",
+  "technical.text.untested": "Doughnut Forge has not been tested with each app that the text might pass through.",
+  "technical.network.title": "Network",
+  "technical.network.none":
+    "Doughnut Forge makes no network connections of its own. There is no account, no sign-in, no analytics, no crash reporting and no update check. The app's content policy does not allow its screens to load anything from the internet.",
+  "technical.network.apple":
+    "On Mac, iPhone and iPad, the operating system may contact the Doughnut Forge website so that password managers can offer to save and fill your password. Apple's system does this, not the app.",
+  "technical.network.sharing": "Encrypted items leave your device only when you share them yourself.",
+  "technical.libraries.title": "Libraries",
+  "technical.libraries.text": "Doughnut Forge uses these libraries for its cryptography and compression:",
+  "technical.libraries.sha": "SHA-256 and SHA-512",
+  "technical.libraries.random": "Operating system random source",
+  "technical.libraries.words": "Backup phrase",
+  "technical.libraries.shards": "Recovery shards",
+  "technical.libraries.memory": "Secrets in memory",
+  "technical.libraries.wipe": "Wiping secrets from memory",
+  "technical.libraries.compression": "Compression",
+  "technical.limits.title": "What Doughnut Forge does not protect against",
+  "technical.limits.compromised.label": "A device that is already compromised.",
+  "technical.limits.compromised.text":
+    "While Doughnut Forge is unlocked, malware with full access to your device could read your secrets.",
+  "technical.limits.access.label":
+    "Anyone with your password and your device, your 24-word backup phrase, or enough recovery shards.",
+  "technical.limits.access.text": "Keep them safe.",
+  "technical.limits.passcode.label": "Your device passcode,",
+  "technical.limits.passcode.text":
+    "on iPhone and iPad with Face ID or Touch ID turned on. iOS accepts the passcode in place of Face ID or Touch ID.",
+  "technical.limits.recipients.label": "Recipients.",
+  "technical.limits.recipients.text": "Anyone who can open an item can save, copy or share what is inside.",
+  "technical.limits.sender.label": "Proof of who sent an item.",
+  "technical.limits.sender.text": "Doughnut Forge does not yet prove who sent an item.",
+  "technical.limits.visible.label": "Size, number of recipients and file name.",
+  "technical.limits.visible.text": "These can be seen without the key, as listed above.",
+  "technical.limits.copies.label": "Unencrypted copies.",
+  "technical.limits.copies.text":
+    "The original file stays where it was after encrypting, and opened files are saved as normal files. Deleting them is up to you. On SSDs, deleting or overwriting a file does not guarantee the old data is gone.",
 
   // Blog
   "meta.blog.title": "Blog: plain-language guides to private files | Doughnut Forge",

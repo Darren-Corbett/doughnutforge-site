@@ -14,6 +14,8 @@ export default {
   ...translated,
   "faq.share.a":
     "Ask the other person for their contact card (a .vltc2 file) and add it to your Contacts. Then encrypt the file and choose them as someone who can open it. Send the encrypted file any way you like, such as by email, in a messaging app or on a USB drive. Only the people you chose can open it.",
+  "meta.technical.description":
+    "The standard methods Doughnut Forge uses: AES-256-GCM, X25519 with ML-KEM-768, Argon2id, what can be seen without the key, and its network behavior.",
   "press.usage.text":
     "You may use these descriptions, icons and screenshots in articles, reviews and videos about Doughnut Forge. Please do not change the shape or colors of the icon.",
 } satisfies Translation;

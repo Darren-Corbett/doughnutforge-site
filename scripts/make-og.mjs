@@ -59,6 +59,7 @@ const titles = async (code) => {
     legal: ui["legal.title"],
     roadmap: ui["roadmap.title"],
     security: ui["security.title"],
+    technical: ui["technical.title"],
     answered: ui["answered.title"],
     "known-issues": ui["known.title"],
     // English uses the separate default.png design for home, and alone has a blog

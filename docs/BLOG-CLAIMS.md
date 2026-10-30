@@ -205,3 +205,19 @@ Rules for both posts (owner): no logos; product names as plain words only; never
 | 5.R1 | *Reasoning:* it cannot protect data other organisations hold about you, or a file already unlocked | follows from 5.D1 and 5.D5 (it works only on files you encrypt) | 2026-10-29 |
 
 Not claimed: that Doughnut Forge would have prevented the breach; any name of the group, company, leak site, database or publishers; any political statement; DHS statements beyond "aware of a potential breach".
+
+## Site FAQ and Technical details page (30 October 2026)
+
+The Technical details page (`/security/technical-details/`, strings `technical.*` in `src/i18n/ui/en.ts`) states only what is in `docs/TECH-SPEC.md`, section by section. Two changes from that file: "password" in place of "passphrase" (the app's own word), and no library versions. The message length figures in TECH-SPEC.md are left out because they were calculated, not measured.
+
+FAQ answer `faq.messaging.a` ("Why not just use WhatsApp or another encrypted messaging app?"). WhatsApp pages checked live on 30 October 2026.
+
+| # | Claim in the answer | Source |
+|---|---|---|
+| F1 | WhatsApp encrypts messages end to end | [WhatsApp Privacy Policy](https://www.whatsapp.com/legal/privacy-policy), "Your Messages": "We offer end-to-end encryption for our Services. End-to-end encryption means that your messages are encrypted to protect against us and third parties from reading them." |
+| F2 | You rely on the company's rules for backups | same policy: "if you use a data backup service integrated with our Services (like iCloud or Google Account), they will receive information you share with them, such as your WhatsApp messages." |
+| F3 | ...and on what it can see about how you use it | same policy, "Usage and Log Information": "how you interact with others using our Services ... and the time, frequency, and duration of your activities and interactions" |
+| F4 | Doughnut Forge encrypts the file or message itself, on your device | `docs/TECH-SPEC.md` opening paragraph |
+| F5 | It can be pasted as text into a social media post, as long as the text arrives unchanged | `docs/TECH-SPEC.md` "Copying an encrypted message as text" ("It can be pasted into an email, a chat or a post"; changes inside it stop it opening; not tested with each app) |
+| F6 | Only the people you choose can open it | `docs/TECH-SPEC.md` "Keys and identity" (the item's key is sealed for each recipient and for you); site `faq.recipient.a` |
+| F7 | The service can still see that something was sent or posted, when, and roughly how big it is | `docs/TECH-SPEC.md` "What can be seen without the key" (size visible, roughly); that a carrier sees when something passes through it follows from carrying it (WhatsApp's own policy, F3, records time) |

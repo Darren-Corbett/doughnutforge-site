@@ -23,7 +23,7 @@ const names = (status: "available" | "coming") =>
     lang,
     platforms.filter((p) => p.status === status).map((p) => platformName(lang, p.id)),
   );
-const ids = ["subscription", "platforms", "offline", "storage", "backup", "restore", "share", "recipient", "which", "data", "quantum"] as const;
+const ids = ["subscription", "platforms", "offline", "storage", "backup", "restore", "share", "recipient", "messaging", "which", "data", "quantum"] as const;
 const items: FaqItem[] = ids.map((id) => ({
   id,
   q: t(`faq.${id}.q` as UiKey),
@@ -76,6 +76,9 @@ const jsonLd = {
   <section id="faq" class="section faq-section" aria-labelledby="support-faq">
     <h2 id="support-faq" class="section-title">{t("support.faq.title")}</h2>
     <Faq items={items} />
+    <p class="section-text">
+      <a class="text-link" href={localePath(lang.code, "security/technical-details/")}>{t("technical.link")}</a>
+    </p>
   </section>
 
   <section class="section privacy" aria-labelledby="support-privacy">

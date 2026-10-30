@@ -18,6 +18,7 @@ export const translatedPages = [
   "legal/",
   "roadmap/",
   "security/",
+  "security/technical-details/",
   // Answered questions and Known issues, once each has an issue in it
   ...shownLists.map((l) => issueLists[l].path),
 ];

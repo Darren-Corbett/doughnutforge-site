@@ -9,7 +9,14 @@
     "press.download",
     "nav.roadmap",
     "meta.roadmap.title",
-    "roadmap.title"
+    "roadmap.title",
+    "technical.encryption.nonces.label",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.stored.salt.label",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "nl": [
     "press.facts.website",
@@ -19,69 +26,230 @@
     "nav.roadmap",
     "meta.roadmap.title",
     "roadmap.title",
-    "roadmap.later"
+    "roadmap.later",
+    "technical.encryption.nonces.label",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.stored.salt.label",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "da": [
     "nav.download",
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.encryption.nonces.label",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.stored.salt.label",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "tr": [
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "hi": [
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.stored.memory.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "th": [
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.stored.memory.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "ko": [
-    "press.download"
+    "press.download",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "it": [
-    "press.shots.label"
+    "press.shots.label",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label",
+    "technical.unlock.windows.text"
   ],
   "ro": [
-    "press.shots.label"
+    "press.shots.label",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.stored.salt.label",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "pl": [
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "cs": [
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "hu": [
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "sv": [
     "nav.support",
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.encryption.nonces.label",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.stored.salt.label",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "no": [
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.encryption.nonces.label",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.stored.salt.label",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "fi": [
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "ru": [
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "uk": [
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ],
   "el": [
     "press.shots.label",
-    "press.download"
+    "press.download",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
+  ],
+  "fr": [
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.libraries.compression"
+  ],
+  "es": [
+    "technical.encryption.nonces.label",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
+  ],
+  "es-MX": [
+    "technical.encryption.nonces.label",
+    "technical.keys.derivation.text",
+    "technical.stored.memory.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
+  ],
+  "pt-BR": [
+    "technical.encryption.nonces.label",
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
+  ],
+  "ja": [
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text"
+  ],
+  "zh-CN": [
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text"
+  ],
+  "zh-TW": [
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text"
+  ],
+  "id": [
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.stored.salt.label",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
+  ],
+  "ms": [
+    "technical.keys.derivation.text",
+    "technical.stored.memory.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
+  ],
+  "vi": [
+    "technical.keys.derivation.text",
+    "technical.stored.passes.text",
+    "technical.stored.lanes.text",
+    "technical.unlock.mac.label",
+    "technical.unlock.windows.label"
   ]
 }

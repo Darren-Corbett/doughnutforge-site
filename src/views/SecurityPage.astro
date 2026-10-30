@@ -28,6 +28,8 @@ const points = ["device", "servers", "quantum", "keys"] as const;
           </>
         ))
       }
+      <p><a href={localePath(lang.code, "security/technical-details/")}>{t("technical.link")}</a></p>
+
       <h2>{t("security.audit.title")}</h2>
       <p>
         {t("security.audit.text")} <a href={localePath(lang.code, "roadmap/")}>{t("security.audit.link")}</a>

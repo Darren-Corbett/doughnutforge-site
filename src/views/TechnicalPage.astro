@@ -1,0 +1,91 @@
+---
+// Technical details: the algorithms, keys, file format, network behaviour and
+// libraries, for technical readers. The one page allowed to name security
+// internals; every fact comes from docs/TECH-SPEC.md. Algorithm and library
+// names are written here or kept in English in every translation.
+import PageHero from "../components/PageHero.astro";
+import Prose from "../components/Prose.astro";
+import { localePath, useStrings, type Language, type UiKey } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t } = useStrings(lang.code);
+
+/** A list of "label text" items, all under one key prefix */
+const items = (prefix: string, ids: string[]) =>
+  ids.map((id) => ({ label: t(`${prefix}.${id}.label` as UiKey), text: t(`${prefix}.${id}.text` as UiKey) }));
+
+const encryption = items("technical.encryption", ["cipher", "perItem", "auth", "nonces", "compression", "random"]);
+const keys = items("technical.keys", ["identity", "recovery", "exchange", "signatures", "derivation", "recipients"]);
+const stored = items("technical.stored", ["memory", "passes", "lanes", "salt", "output"]);
+const unlock = items("technical.unlock", ["mac", "windows", "ios"]);
+const visible = items("technical.visible", ["contents", "name", "for", "from", "count", "size", "dates", "format"]);
+const text = items("technical.text", ["wrap", "around", "inside"]);
+const limits = items("technical.limits", ["compromised", "access", "passcode", "recipients", "sender", "visible", "copies"]);
+
+// Purpose, then library: a purpose that is itself an algorithm name stays as it is
+const libraries: { purpose: string; library: string }[] = [
+  { purpose: "AES-256-GCM", library: "aes-gcm (RustCrypto)" },
+  { purpose: "Argon2id", library: "argon2 (RustCrypto)" },
+  { purpose: "ML-KEM-768", library: "ml-kem (RustCrypto)" },
+  { purpose: "X25519", library: "x25519-dalek" },
+  { purpose: "Ed25519", library: "ed25519-dalek" },
+  { purpose: "Curve25519", library: "curve25519-dalek" },
+  { purpose: "HKDF", library: "hkdf (RustCrypto)" },
+  { purpose: t("technical.libraries.sha"), library: "sha2 (RustCrypto)" },
+  { purpose: t("technical.libraries.random"), library: "getrandom" },
+  { purpose: t("technical.libraries.words"), library: "bip39" },
+  { purpose: t("technical.libraries.shards"), library: "sharks" },
+  { purpose: t("technical.libraries.memory"), library: "secrets (libsodium)" },
+  { purpose: t("technical.libraries.wipe"), library: "zeroize" },
+  { purpose: t("technical.libraries.compression"), library: "zstd" },
+];
+---
+
+<Base lang={lang} title={t("meta.technical.title")} description={t("meta.technical.description")} image="/og/technical.png">
+  <PageHero title={t("technical.title")} lead={t("technical.lead")} />
+  <div class="section">
+    <Prose>
+      <h2>{t("technical.encryption.title")}</h2>
+      <ul>{encryption.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+
+      <h2>{t("technical.keys.title")}</h2>
+      <ul>{keys.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+      <h3>{t("technical.stored.title")}</h3>
+      <p>{t("technical.stored.text")}</p>
+      <ul>{stored.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+      <p>{t("technical.stored.contacts")}</p>
+      <h3>{t("technical.unlock.title")}</h3>
+      <ul>{unlock.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+
+      <h2 id="visible">{t("technical.visible.title")}</h2>
+      <ul>{visible.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+      <p>{t("technical.visible.older")}</p>
+
+      <h2>{t("technical.text.title")}</h2>
+      <p>{t("technical.text.intro")}</p>
+      <ul>{text.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+      <p>{t("technical.text.untested")}</p>
+
+      <h2>{t("technical.network.title")}</h2>
+      <p>{t("technical.network.none")}</p>
+      <p>{t("technical.network.apple")}</p>
+      <p>{t("technical.network.sharing")}</p>
+
+      <h2>{t("technical.libraries.title")}</h2>
+      <p>{t("technical.libraries.text")}</p>
+      <ul>{libraries.map((l) => <li><strong>{l.purpose}:</strong> <span lang="en" translate="no">{l.library}</span></li>)}</ul>
+
+      <h2>{t("technical.limits.title")}</h2>
+      <ul>{limits.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+
+      <h2>{t("security.audit.title")}</h2>
+      <p>
+        {t("security.audit.text")} <a href={localePath(lang.code, "roadmap/")}>{t("security.audit.link")}</a>
+      </p>
+    </Prose>
+  </div>
+</Base>

@@ -1,0 +1,10 @@
+---
+// Technical details in every language but English (English: src/pages/security/technical-details.astro)
+import { otherLanguagePaths, type Language } from "../../../i18n";
+import TechnicalPage from "../../../views/TechnicalPage.astro";
+
+export const getStaticPaths = otherLanguagePaths;
+const { lang } = Astro.props as { lang: Language };
+---
+
+<TechnicalPage lang={lang} />

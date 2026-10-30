@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -143,13 +143,37 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text",
+        "severity": "note",
+        "issue": "Meaning is correct, but 'n'importe quelles pièces, dans le nombre choisi, permettent de le retrouver' reads awkwardly.",
+        "suggestion": "ce secret peut être noté sous la forme de votre phrase de sauvegarde de 24 mots (BIP-39). Il peut aussi être divisé en pièces de récupération avec le partage de secret de Shamir (Shamir's Secret Sharing) : n'importe quel ensemble de pièces atteignant le nombre choisi (au moins 2, au plus 16 au total) permet de le retrouver. Moins de pièces que ce nombre ne révèlent rien."
+      },
+      {
+        "key": "technical.encryption.random.label",
+        "severity": "note",
+        "issue": "'Aléa' is correct but terse; 'Caractère aléatoire' is the more common term. Style only.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.network.none",
+        "severity": "note",
+        "issue": "'ni identification' for 'no sign-in' is understandable; 'ni connexion' is more usual. Style only.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.text.inside.label",
+        "severity": "note",
+        "issue": "Checked: says changes inside DO cause a problem, matching the English. No-break spaces (U+00A0) before ':' and '?' and in '1 024' and '19 456' match the rest of fr.ts. Protected terms intact. Description 148 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -285,13 +309,31 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "Back-translation matches the English in meaning for every key. All protected names and numbers are intact. Terms match the app (Passwort, Identität, Backup-Phrase, Kontaktkarte, Empfänger, Wiederherstellungsteile). Sie form is consistent. technical.text.inside.label ('Änderungen innerhalb der Nachricht dagegen schon.') correctly reads as 'changes inside are a problem'. Description is 151 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.unlock.ios.text",
+        "severity": "note",
+        "issue": "Apple's German name for the class is 'Vollständiger Schutz', so the quoted name is right. In German iOS the feature itself is called 'Datenschutz' ('Datenschutz ist aktiviert'), not 'Datensicherheit', but the current wording does not mislead.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.stored.lanes.label",
+        "severity": "note",
+        "issue": "'Parallele Lanes' is an anglicism. The Argon2 parameter is 'parallelism', counted in lanes.",
+        "suggestion": "Parallelität (Lanes):"
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -392,13 +434,19 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.text.inside.label",
+        "severity": "note",
+        "issue": "No problem. 'Los cambios dentro del mensaje sí son un problema' keeps the meaning. Terms match the app (frase de seguridad, piezas, tarjetas de contacto, contraseña, llavero). Protected terms intact. '1024' without a separator follows RAE for four digits. Description 151 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -542,13 +590,19 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.text.inside.label",
+        "severity": "note",
+        "issue": "No problem. 'Le modifiche al suo interno, invece, sono un problema' keeps the meaning. Terms match the app (frase di backup, frammenti, scheda di contatto, Portachiavi). Protected terms intact. Description 149 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -678,13 +732,43 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "Meaning matches the English for every key. Protected names and numbers are intact. Terms match the app (wachtwoord, identiteit, herstelzin, contactkaart, ontvangers, hersteldelen). u form is consistent. 'Wijzigingen erin wel.' correctly reads as 'changes inside are a problem'. Description is 142 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.unlock.ios.text",
+        "severity": "note",
+        "issue": "Leaves Apple's class name in English, while German translates it. Apple's Dutch security documentation calls the class 'Volledige bescherming' (moderate confidence). Keeping English is not wrong.",
+        "suggestion": "wachtwoord, of Face ID of Touch ID als u dat inschakelt. Doughnut Forge bewaart uw wachtwoord dan in de iOS-sleutelhanger, alleen op dit apparaat en alleen zolang het apparaat ontgrendeld is. iOS geeft het vrij na Face ID, Touch ID of de toegangscode van het apparaat. De bestanden van de app gebruiken de iOS-gegevensbeschermingsklasse ‘Volledige bescherming’."
+      },
+      {
+        "key": "technical.stored.passes.label",
+        "severity": "note",
+        "issue": "'Doorgangen' is understandable but unusual for Argon2 passes; 'Iteraties' is the usual Dutch term.",
+        "suggestion": "Iteraties:"
+      },
+      {
+        "key": "technical.stored.lanes.label",
+        "severity": "note",
+        "issue": "'Parallelle lanes' is an anglicism.",
+        "suggestion": "Parallellisme (lanes):"
+      },
+      {
+        "key": "technical.limits.copies.text",
+        "severity": "note",
+        "issue": "'Ze verwijderen is aan u.' is a little abrupt.",
+        "suggestion": "Het originele bestand blijft na het versleutelen staan waar het stond, en geopende bestanden worden als gewone bestanden opgeslagen. Het verwijderen ervan is aan u. Op SSD's garandeert het verwijderen of overschrijven van een bestand niet dat de oude gegevens weg zijn."
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -786,13 +870,37 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "Meaning matches the English for every key. Protected names and numbers are intact. Terms match the app (lösenord, identitet, återställningsfras, kontaktkort, mottagare, återställningsdelar). 'Ändringar inuti går inte.' is correct. Description is 136 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.text.inside.text",
+        "severity": "note",
+        "issue": "'kortar det' is less natural than 'kortar av det'.",
+        "suggestion": "Om en app ändrar, tar bort eller lägger till ett tecken inuti meddelandet, kortar av det eller ändrar strecken i BEGIN- och END-raderna går det inte att öppna. Det öppnas aldrig som en annan text."
+      },
+      {
+        "key": "technical.unlock.ios.text",
+        "severity": "note",
+        "issue": "Apple's class name left in English, while German translates it. Acceptable.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.stored.lanes.label",
+        "severity": "note",
+        "issue": "'Parallella banor' is literal and unclear.",
+        "suggestion": "Parallellitet (banor):"
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -908,13 +1016,31 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "Meaning matches the English for every key. Protected names and numbers are intact. Terms match the app (adgangskode, identitet, sikkerhedskopi-sætning, kontaktkort, modtagere, gendannelsesdele). 'Ændringer inde i den er ikke i orden.' is correct. Description is 137 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.unlock.ios.text",
+        "severity": "note",
+        "issue": "Apple's class name left in English ('Complete data protection'), while German translates it. Apple does not publish its security guide in Danish as far as I know, so English is acceptable.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.stored.lanes.label",
+        "severity": "note",
+        "issue": "'Parallelle baner' is literal and unclear.",
+        "suggestion": "Parallelitet (baner):"
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1051,13 +1177,37 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "Meaning matches the English for every key. Protected names and numbers are intact (case endings such as 'Face ID:n', 'Doughnut Forgen', 'WhatsAppia' only). Terms match the app (salasana, henkilöllisyys, varmuuskopiolauseke, yhteystietokortti, vastaanottajat, palautusosat). 'kvanttikestävä hybridi' matches the site's existing term for post-quantum. 'Muutokset sen sisällä haittaavat.' is correct. Description is 150 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.visible.name.text",
+        "severity": "note",
+        "issue": "'jos jo nimi on yksityinen' is awkward word order.",
+        "suggestion": "piilossa sisällä. Oletuksena salattu tiedosto nimetään alkuperäisen mukaan (esimerkiksi report.vlt2). Nimeä se uudelleen, jos nimikin on yksityinen."
+      },
+      {
+        "key": "technical.unlock.ios.text",
+        "severity": "note",
+        "issue": "Apple's class name left in English, while German translates it. Acceptable.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.stored.lanes.label",
+        "severity": "note",
+        "issue": "'Rinnakkaiset kaistat' is literal and unclear.",
+        "suggestion": "Rinnakkaisuus (kaistat):"
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1173,13 +1323,37 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "Meaning matches the English for every key. Protected names and numbers are intact. Terms match the app (passord, identitet, sikkerhetskopifrase, kontaktkort, mottakere, gjenopprettingsdeler). 'Endringer inni den går ikke.' is correct. Description is 143 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.messaging.a",
+        "severity": "note",
+        "issue": "'selskapet ... appen deres ... hva de kan se' uses plural 'de' for a singular company. Common in spoken Norwegian and not misleading.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.unlock.ios.text",
+        "severity": "note",
+        "issue": "Apple's class name left in English, while German translates it. Acceptable.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.stored.lanes.label",
+        "severity": "note",
+        "issue": "'Parallelle baner' is literal and unclear.",
+        "suggestion": "Parallellitet (baner):"
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1295,13 +1469,43 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "Meaning matches the English for every key. Protected names and numbers are intact (1024 without a separator is normal Polish style). Terms match the app (hasło, tożsamość, fraza kopii zapasowej, karta kontaktowa, odbiorcy, części do odzyskania). 'Zmiany wewnątrz niej przeszkadzają.' is correct. Description is 144 characters.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.messaging.a",
+        "severity": "note",
+        "issue": "'Zaszyfrowana treść pozostaje zaszyfrowana' stands for 'it'. The meaning holds: the encrypted content of the file or message stays encrypted, only chosen people can open it ('ją'), and the service it passes through still sees size and timing. Slightly repetitive but not misleading.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.limits.compromised.label",
+        "severity": "note",
+        "issue": "'przejęte' (taken over) is a common Polish rendering of 'compromised' and does not change the meaning.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.unlock.ios.text",
+        "severity": "note",
+        "issue": "Apple's class name left in English, while German translates it. Acceptable.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.stored.lanes.label",
+        "severity": "note",
+        "issue": "'Równoległe tory' is literal and unclear.",
+        "suggestion": "Równoległość (tory):"
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1431,13 +1635,31 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.visible.dates.label",
+        "severity": "note",
+        "issue": "'Datumy' is common but colloquial; the standard plural is 'data', which would be ambiguous here. Acceptable as is.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.messaging.a",
+        "severity": "note",
+        "issue": "After 'soubor nebo zprávu' the text switches to plural ('je pošlete', 'zůstanou', 'Otevřít je'). Grammatical and consistent, meaning unchanged. Style only.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.text.inside.label",
+        "severity": "note",
+        "issue": "Checked: 'Změny uvnitř vadí' keeps the meaning. Terms match the app (záložní fráze, části pro obnovení, kontaktní karta, heslo, Klíčenka). Protected terms intact. Description 137 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1589,13 +1811,19 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "No problem. Meaning matches the English on every key; fixed terms and numbers intact; terms match the glossary (Identitás, Biztonsági kifejezés, Jelszó, névjegykártya, töredékek as in the app). 'jelkód' and 'Kulcskarika' are Apple's Hungarian terms. 'A benne lévő változtatások viszont igen.' reads correctly after 'nem gond' (changes inside are a problem). Meta description 154 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1753,13 +1981,25 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text",
+        "severity": "note",
+        "issue": "Meaning is correct; 'îl readuc' (bring it back) is a little odd, 'îl refac' (rebuild it) is more natural. Style only.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.text.inside.label",
+        "severity": "note",
+        "issue": "Checked: 'Modificările din interior sunt o problemă' keeps the meaning. Terms match the app (frază de recuperare, părți, card de contact, parolă, Brelocul). Protected terms intact. Description 144 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1896,13 +2136,31 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.visible.older",
+        "severity": "note",
+        "issue": "Was blocking, now fixed and re-checked by a second independent reviewer: 'в версиях старше 0.4.41' is ambiguous in Russian: 'старше' for versions is often read as 'higher/newer than', which would flip the meaning (it would say newer files expose recipients and sender).",
+        "suggestion": "Done."
+      },
+      {
+        "key": "technical.text.inside.label",
+        "severity": "note",
+        "issue": "'Изменения внутри — нет.' is correct elliptical Russian after '... допустим.' and the text below explains it will not open, so it does not mislead. As a stand-alone bold label a full form is a little clearer.",
+        "suggestion": "Изменения внутри недопустимы."
+      },
+      {
+        "key": "technical.keys.signatures.text",
+        "severity": "note",
+        "issue": "'карточек контакта' matches the rest of the site (ru.ts already uses 'карточку контакта'); the app glossary has 'визитка' / 'контактная карта'. Consistent with the site, so style only.",
+        "suggestion": "No change."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2033,13 +2291,19 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "No problem. Meaning matches on every key; fixed terms and numbers intact; 'Φράση ανάκτησης', 'κάρτα επαφής', 'τμήματα' match the app; 'κωδικός πρόσβασης' (password) stays distinct from 'κωδικός της συσκευής' (device passcode). 'Μπρελόκ' is Apple's Greek term. Meta description 156 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2162,6 +2426,18 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.text.inside.label",
+        "severity": "note",
+        "issue": "'Зміни всередині — ні.' is correct elliptical Ukrainian after '... допустимий.' and does not mislead; a full form reads more clearly as a stand-alone bold label.",
+        "suggestion": "Зміни всередині неприпустимі."
+      },
+      {
+        "key": "(other keys)",
+        "severity": "note",
+        "issue": "No other problem. Meaning matches; fixed terms intact; 'Фраза відновлення', 'Особистість', 'картка контакту', 'частини' match the app; 'код допуску' and 'В’язка ключів' are Apple's Ukrainian terms. 'старіших за 0.4.41' clearly means older. Meta description 141 characters.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2185,13 +2461,19 @@
         "issue": "Lists throughout omit the serial (Oxford) comma (\"files, folders and text\", \"Mac, iPhone and iPad\"). Many US style guides use it, but AP style does not, and the site's own en-US store listing (src/i18n/store/en-US.json) also omits it, so this is consistent and needs no change. The Apple trademark line in legal.trademarks.apple matches the wording given; Apple's own US notice uses the serial comma, if the owner wants to match it exactly.",
         "backTranslation": "Doughnut Forge: offline encryption for files, folders and text",
         "suggestion": "Doughnut Forge: offline encryption for files, folders and text"
+      },
+      {
+        "key": "meta.technical.description",
+        "severity": "note",
+        "issue": "US spelling of the UK string (behavior); no other difference.",
+        "suggestion": "No change."
       }
     ]
   },
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2286,13 +2568,19 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text",
+        "severity": "note",
+        "issue": "No problem. Differs from es only where Mexican usage or the es-MX app differs (frase de respaldo, fragmentos, computadora, agrega, encabezado, llenar, administradores, se envió, 1,024 and 19,456). Inside-changes label keeps the meaning. Description 151 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -2415,13 +2703,31 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.text.inside.label",
+        "severity": "note",
+        "issue": "Meaning is correct, but 'Alterações dentro dela são problema.' is abrupt next to the two labels before it.",
+        "suggestion": "Já alterações dentro dela são um problema."
+      },
+      {
+        "key": "technical.unlock.ios.text",
+        "severity": "note",
+        "issue": "'se você ativar' lacks an object; 'se você ativar essa opção' reads more naturally. Style only.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text",
+        "severity": "note",
+        "issue": "Checked: terms match the app (frase de backup, peças, cartão de contato, senha, Chaves). Protected terms intact. Description 151 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2537,13 +2843,25 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text",
+        "severity": "note",
+        "issue": "'seçilen sayıda herhangi parça' is understandable but slightly awkward; meaning is correct.",
+        "suggestion": "bu sır, 24 kelimelik yedekleme cümleniz (BIP-39) olarak yazılabilir. Shamir's Secret Sharing ile kurtarma parçalarına da bölünebilir; seçilen sayıdaki herhangi parçalar (en az 2, toplamda en fazla 16) onu geri getirir. Bundan daha az parça hiçbir şey açığa çıkarmaz."
+      },
+      {
+        "key": "(other keys)",
+        "severity": "note",
+        "issue": "No other problem. 'Parola' (password) and 'cihaz parolası' (device passcode) stay distinguishable everywhere the passcode appears. 'Anahtar Zinciri' is Apple's Turkish term. Fixed terms intact. Meta description 156 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -2651,13 +2969,19 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "No problem. Meaning, numbers, 'まだ' (not yet), 'おおよそ' (roughly), hidden/visible and Latin terms match. Terms match the app: パスワード, アイデンティティ, バックアップフレーズ, 連絡先カード, 受信者, 復元用ピース (app uses ピース), キーチェーン, パスコード.",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2794,13 +3118,25 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.signatures.text",
+        "severity": "note",
+        "issue": "'联系人卡片' differs from the app glossary 'Import Contact Card' (导入联系人名片), but the rest of the site's zh-CN file already uses 联系人卡片, so it is consistent on the site.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "(all other keys)",
+        "severity": "note",
+        "issue": "No problem. 收件人/发件人 match the app; 钥匙串 and 锁屏密码 match Apple; numbers, 尚不 (not yet), 大致 (roughly) and Latin terms all match.",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2958,13 +3294,31 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.visible.count.text",
+        "severity": "note",
+        "issue": "The app's zh-TW strings use '寄件人' for sender ('senderLabel': '寄件人'); this uses '發件人'.",
+        "suggestion": "可見（收件人的數量，包括寄件人）。"
+      },
+      {
+        "key": "technical.text.inside.text",
+        "severity": "note",
+        "issue": "'破折號' usually means an em dash; the BEGIN/END lines use hyphen-style dashes. '短橫線' (as in zh-CN) is closer.",
+        "suggestion": "如果某個 App 變更、刪除或新增了訊息內部的某個字元、截短了訊息，或變更了 BEGIN 和 END 行中的短橫線，訊息將無法開啟。它絕不會被開啟成另一段不同的文字。"
+      },
+      {
+        "key": "technical.keys.signatures.text",
+        "severity": "note",
+        "issue": "'聯絡人卡片' differs from the app glossary (聯絡人名片), but the site's zh-TW file already uses 聯絡人卡片 elsewhere.",
+        "suggestion": "No change."
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3094,13 +3448,25 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.network.apple",
+        "severity": "note",
+        "issue": "'암호 관리자' sits next to '비밀번호', and on this page '기기 암호' means the device passcode, so '암호' could be misread. The site uses '비밀번호' for password throughout.",
+        "suggestion": "Mac, iPhone, iPad에서는 비밀번호 관리자가 비밀번호 저장과 자동 입력을 제안할 수 있도록 운영 체제가 Doughnut Forge 웹사이트에 접속할 수 있습니다. 이는 앱이 아니라 Apple의 시스템이 하는 일입니다."
+      },
+      {
+        "key": "faq.messaging.a",
+        "severity": "note",
+        "issue": "Adds '모두 회사에 달려 있습니다' (all depend on the company). Close to the English 'you rely on the company', and it does not mislead.",
+        "suggestion": "No change."
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3202,13 +3568,19 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "No problem. 'ऐसा डिवाइस जिसमें पहले से ही सेंध लग चुकी है।' correctly means 'a device that is already compromised'. Terms match the app (पहचान, बैकअप वाक्यांश, पासवर्ड, संपर्क कार्ड, शार्ड); 'पासकोड' stays distinct from 'पासवर्ड'; 'कीचेन' matches Apple's Hindi. Fixed terms intact. Meta description 137 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3317,13 +3689,31 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.encryption.auth.text",
+        "severity": "note",
+        "issue": "Was blocking, now fixed and re-checked by a second independent reviewer: 'Jika keduanya diubah' means 'if both are changed', implying a change to only one would not be caught. The English means a change to either one makes opening fail.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "technical.limits.title",
+        "severity": "note",
+        "issue": "'Doughnut Forge tidak melindungi dari hal-hal ini' ('does not protect against these things') is accurate; a question-style heading matches the English and the other headings ('Apa yang dapat dilihat tanpa kunci') better.",
+        "suggestion": "Apa yang tidak dilindungi oleh Doughnut Forge"
+      },
+      {
+        "key": "(other keys)",
+        "severity": "note",
+        "issue": "No other problem. 'Kata Sandi' (password) vs 'kode sandi perangkat' (passcode) distinct; 'Rantai Kunci' matches Apple's Indonesian; terms match the app. Meta description 152 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3439,13 +3829,25 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.unlock.ios.text",
+        "severity": "note",
+        "issue": "Keychain as 'Rantai Kunci' matches the app's own Malay string ('Akses Rantai Kunci Ditolak'). Apple's Malay localization may use 'Rantaian Kunci' (as in 'Rantaian Kunci iCloud'); I am not certain. Keeping the app's term is the safer choice.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "(all 108 keys)",
+        "severity": "note",
+        "issue": "No problem. Meaning, numbers, 'belum lagi' (not yet), 'lebih kurang' (roughly), hidden/visible, Latin terms and glossary terms (kata laluan, identiti, frasa sandaran, kad kenalan, penerima, serpihan pemulihan) all match. meta description is 158 characters.",
+        "suggestion": "No change."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3554,13 +3956,25 @@
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.technical.description",
+        "severity": "note",
+        "issue": "Commas are used between the first items but not between 'Argon2id' and the next item, so the list break is unclear.",
+        "suggestion": "วิธีมาตรฐานที่ Doughnut Forge ใช้: AES-256-GCM, X25519 ร่วมกับ ML-KEM-768, Argon2id, สิ่งที่มองเห็นได้โดยไม่มีคีย์ และการทำงานด้านเครือข่าย"
+      },
+      {
+        "key": "technical.unlock.ios.text",
+        "severity": "note",
+        "issue": "'พวงกุญแจ' is Apple's Thai name for Keychain and matches the app. 'รหัส' for passcode matches Apple's usage. Correct.",
+        "suggestion": "No change."
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-29",
+    "reviewedAt": "2026-10-30",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3668,6 +4082,30 @@
         "key": "press.about.shortText",
         "severity": "note",
         "issue": "No problem. Same as the first sentence of home.what.text.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "faq.messaging.q",
+        "severity": "note",
+        "issue": "'Sao' is colloquial; the other FAQ questions use a more neutral register.",
+        "suggestion": "Tại sao không dùng luôn WhatsApp hoặc một ứng dụng nhắn tin mã hóa khác?"
+      },
+      {
+        "key": "technical.visible.format.label",
+        "severity": "note",
+        "issue": "Reads as a statement ('This file is a Doughnut Forge file, and format version:') rather than a label for a fact that is visible.",
+        "suggestion": "Việc đây là tệp Doughnut Forge, và phiên bản định dạng của tệp:"
+      },
+      {
+        "key": "technical.limits.copies.text",
+        "severity": "note",
+        "issue": "'Việc xóa chúng là do bạn' can read as 'deleting them is caused by you'. 'Up to you' is clearer as 'tùy bạn quyết định'.",
+        "suggestion": "Tệp gốc vẫn ở nguyên chỗ cũ sau khi mã hóa, và các tệp đã mở được lưu như tệp bình thường. Việc xóa chúng là tùy bạn quyết định. Trên ổ SSD, xóa hoặc ghi đè một tệp không đảm bảo dữ liệu cũ đã mất hẳn."
+      },
+      {
+        "key": "technical.unlock.ios.text",
+        "severity": "note",
+        "issue": "'Chuỗi khóa' is Apple's Vietnamese name for Keychain, and 'mật mã' is Apple's term for passcode. Correct.",
         "suggestion": "No change."
       }
     ]
