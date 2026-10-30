@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 29 October 2026, after the SEO pass (see "SEO pass"); before that, 27 October 2026, after the /go/ handoff page design (see "/go/ handoff page design, A2"); before that, after the /go/ page fix (see "/go/ pages: a way on and a way back"); before that, after the mobile-first order, the phone and tablet copy and the visitor's own platform first (see "Mobile first"); earlier the same day, after iPhone and iPad went on sale on the site (App Store ID 6821344597) and the identity update moved to Shipped for Mac, iPhone and iPad; before that, 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
+- **Last updated:** 30 October 2026, after the Technical details page, the messaging FAQ answer and the WhatsApp blog draft (see "Technical details page (30 October 2026)"); before that, 29 October 2026, after the SEO pass (see "SEO pass"); before that, 27 October 2026, after the /go/ handoff page design (see "/go/ handoff page design, A2"); before that, after the /go/ page fix (see "/go/ pages: a way on and a way back"); before that, after the mobile-first order, the phone and tablet copy and the visitor's own platform first (see "Mobile first"); earlier the same day, after iPhone and iPad went on sale on the site (App Store ID 6821344597) and the identity update moved to Shipped for Mac, iPhone and iPad; before that, 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: commit freely on main; ask before every push (a push deploys), and never publish anything without approval.
@@ -40,6 +40,8 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ## What is next, in order
 
+0. **Technical details page and messaging FAQ ready to push (30 October 2026):** `0aaa7e2` spec, `dad331d` and `b802a4a` tests, `a94a436` page, FAQ and all 28 translations. Waits for the owner's yes to push. After the push, check `/security/technical-details/` and `/de/security/technical-details/` live.
+0. **WhatsApp blog draft waits for the owner's reply** in the doc "Blog draft: Can WhatsApp read my messages? Encryption, trust and what you can check" (https://claude.ai/artifact/D8PghaC49Nk5UURi1GSgNc). Nothing is in the repo yet. The Guardian, Bloomberg (January) and Sky News pages could not be opened from here; the owner checks them by hand before publishing.
 0. **SEO pass ready to push (29 October 2026):** `f78bb55` and the translations `6ab8beb` (all 28 languages, independent review, notes only, stamped). `npm run build:deploy` passes. Waits for the owner's yes to push; then the Search Console steps in "SEO pass".
 0. **Pushed and checked (26 October 2026, deploy run 40293939511):** every step passed, including "Check the uploaded archive holds every built file". The live `apple-app-site-association` lists both apps. Live `/pricing/` and `/de/download/` (WebKit iPhone and Chromium, 360px) show only the official badges without a blocker, and two second badges with the store links hidden. **Confirmed by the owner (26 October 2026):** on their iPhone, with AdGuard for Safari on default settings, the branded fallback badge shows in place of the hidden official badge, in English and in Chinese.
 0. **No scheduled CI jobs any more (owner, 26 October 2026; CLAUDE.md: CI is lean).** The deploy runs on pushes that change the site and by hand, and the blocker tests run by hand only (`npm run test:blockers`). After labelling an issue for the site, press "Run workflow" under Actions → Deploy site. The scheduled runs were dropped after this pattern:
@@ -87,6 +89,17 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 - **A static redirect for the old `/get/` addresses.** `/get/<store>/<language>/` was live for about a day before `/go/` replaced it, and now returns 404.
 - **Run `npm run test:links` locally before a push**, by hand or with a local git hook, never a GitHub Action. Today it runs only when asked.
+
+## Technical details page (30 October 2026)
+
+- **Source of truth:** `docs/TECH-SPEC.md`, copied from the app repo without its version line and without its "Borderline" notes (owner: the Borderline list is never committed here). Signatures read "Ed25519, used to sign contact cards. Proof of who sent an item is not yet offered." (owner). The page states nothing that is not in that file, says "password" (the app's word) for "passphrase", lists no library versions, and leaves out the message length figures (calculated, not measured).
+- **Where:** `/security/technical-details/` in all 30 languages, in `translatedPages`; linked from the Security page and under the FAQ (`technical.link`). The only page allowed to name algorithms (owner's exception); marketing pages are unchanged. It ends with the existing "Not audited yet" lines.
+- **When the app changes encryption, keys, the file or message format, or network behaviour:** `docs/TECH-SPEC.md` and this page need updating (the owner keeps the matching rule in the app repo).
+- **FAQ:** `faq.messaging` ("Why not just use WhatsApp…"), after `faq.recipient`. Sources: `docs/BLOG-CLAIMS.md`, "Site FAQ and Technical details page".
+- **Translations:** four drafters and four independent reviewers by language group. Two blocking findings (ru "older than", id "if both") fixed and re-checked by a second reviewer; everything else notes; stamped. Strings that are really the same as English (numbers, "Mac:", "HKDF-SHA-256.") are in `same-as-english.json`.
+- **Checks:** `build:deploy` passes, no warnings; layout 2793 of 2794 passed (Chromium 1229, WebKit and WebKit iPhone 1564); reproducible builds match; Lighthouse 100 in every category on the home page (mobile and desktop, CLS 0.009 and 0.002) and on the new page (mobile).
+- **Playwright's WebKit was missing on this Mac** (only Chromium was installed), so the first full run failed every WebKit test at launch. Installed with `npx playwright install webkit` (local download, nothing added to the repo).
+- **Second unexplained WebKit iPhone failure:** `/no/features/` failed once in the full run with "7 layout problem(s)" and passed 20 repeats on its own. The page was not changed. As on 27 October (`/ru/download/`), the full run had no `AUDIT_DIR`, so the problems were not recorded. Two in four days on unchanged pages, both only under a full run, points at load rather than a page; still unproven.
 
 ## One platform order, badges lined up (29 October 2026)
 
