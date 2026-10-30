@@ -1,0 +1,93 @@
+---
+title: "Can WhatsApp read my messages? Encryption, trust and what to check"
+description: "WhatsApp messages are end-to-end encrypted, but you still have to trust the company. What the 2026 claims said, and how to keep control of your files."
+keyphrase: can WhatsApp read my messages
+date: 2026-10-30
+draft: false
+lang: en
+---
+import Flow from "../../../components/blog/Flow.astro";
+import Shot from "../../../components/blog/Shot.astro";
+import FileLock from "@lucide/astro/icons/file-lock";
+import Send from "@lucide/astro/icons/send";
+import IdCard from "@lucide/astro/icons/id-card";
+import iphoneContacts from "../../../assets/app/iphone-contacts.webp";
+
+**In short:** WhatsApp messages are end-to-end encrypted, and WhatsApp says it cannot read them. In 2026, a US government agent claimed otherwise. His own agency called the claims unsubstantiated, Meta denied them, and the investigation was closed. You cannot check either side for yourself. That is the real lesson: with any messaging app, you are trusting the company that runs it. For the files and messages that matter most, you can encrypt them yourself, so they stay private whichever app carries them.
+
+## What end-to-end encryption means
+
+End-to-end encryption means a message is locked on the sender's phone and only unlocked on the recipient's phone. In between, including on the company's own servers, it is unreadable. [WhatsApp's privacy policy](https://www.whatsapp.com/legal/privacy-policy) puts it this way: "End-to-end encryption means that your messages are encrypted to protect against us and third parties from reading them." It also says that messages are deleted from its servers once they are delivered.
+
+So the short answer to "can WhatsApp read my messages?" is: by design, WhatsApp says it cannot.
+
+## The 2026 claims, and what is known
+
+In January 2026, [Bloomberg reported](https://www.thestar.com.my/tech/tech-news/2026/01/30/us-has-investigated-claims-whatsapp-chats-arent-private) that an agent in the Office of Export Enforcement, part of the US Commerce Department's Bureau of Industry and Security, had investigated claims that Meta, which owns WhatsApp, can access encrypted WhatsApp messages. In April 2026, [Bloomberg reported](https://www.thestar.com.my/tech/tech-news/2026/04/29/us-ends-investigation-into-claims-whatsapp-chats-arent-private) that the investigation had been closed. According to those reports:
+
+- The agent looked into the claims through much of 2025. In January 2026 he emailed officials at other agencies, writing that "Meta can and does view and store all the text messages, photographs, audio and video recordings".
+- A spokesperson for the Bureau of Industry and Security called the agent's assertions "unsubstantiated and outside the scope of his authority as an export enforcement agent". Meta later repeated that the bureau had called them unsubstantiated.
+- Meta said: "The claim that WhatsApp can access people's encrypted communications is patently false."
+- The investigation was closed. No official reason was given.
+
+These are allegations, not findings. The agent's own agency called them unsubstantiated, and Meta denies them. Nothing here shows that anyone has read WhatsApp messages.
+
+## Why it still matters: you cannot check
+
+The point is not who is right. The point is that an ordinary user has no way to find out. You cannot inspect the app on your phone, the company's servers or the people who work there. When a story like this appears, all you can do is weigh one statement against another.
+
+That is true of every messaging app, not just WhatsApp. End-to-end encryption protects the message on its way. It does not remove the need to trust the company that makes the app.
+
+## Other things the company still sees or controls
+
+Even with messages encrypted, a messaging service handles a lot around them.
+
+- **Information about how you use it.** WhatsApp's privacy policy says it collects "how you interact with others using our Services", "the time, frequency, and duration of your activities and interactions", your "last seen" and connection details such as your IP address.
+- **Backups.** The policy says that if you back up to a service such as iCloud or a Google Account, that service will "receive information you share with them, such as your WhatsApp messages". Check how your chat backups are stored.
+- **Pressure on the company.** Governments ask messaging companies for access. In 2017, [Sky News reported](https://news.sky.com/story/whatsapp-denies-government-access-to-encrypted-messages-11043069) that UK officials had asked WhatsApp for "technical solutions" to hand over messages linked to investigations; WhatsApp refused, saying it cannot hand over what it does not store. In 2025, [Apple stopped offering](https://support.apple.com/en-gb/122234) its optional extra iCloud encryption, Advanced Data Protection, to new users in the UK, while iMessage and FaceTime stayed end-to-end encrypted. Rules, and what a company is able to offer, can change.
+- **Staying in one app.** Your messages are protected inside that app. If you want to send the same private file by email, or keep it in cloud storage, that protection does not come with it.
+
+## What you can do
+
+None of this means you should stop using WhatsApp. For everyday chat it works well. For the things that would really hurt if they leaked, a few habits help:
+
+1. **Decide what is sensitive.** Medical letters, identity documents, contracts and passwords deserve more care than holiday photos.
+2. **Check your backup settings.** Know where your chat backups go and who can read them.
+3. **Encrypt the file itself, not just the chat.** If a file is encrypted before it is sent, it stays protected wherever it goes, whichever app carries it, and whatever happens to that app later.
+
+## Encrypting the file or message itself
+
+This is what [Doughnut Forge](/) does. It encrypts files and short messages on your own device, for the people you choose. There is no account and there are no Doughnut Forge servers, so there is no company in the middle holding your messages.
+
+<Flow
+  caption="An encrypted file goes from your device, through any channel, to the people you chose, and only they can open it."
+  steps={[
+    { icon: FileLock, text: "Encrypt it on your device", tone: "blue" },
+    { icon: Send, text: "Send it any way you like", tone: "green" },
+    { icon: IdCard, text: "Only the people you chose open it", tone: "violet" },
+  ]}
+/>
+
+- **Any route works.** Send the encrypted file by email, in a chat, on a USB stick or through cloud storage. An encrypted message is plain text, so it can be pasted into an email, a chat or even a social media post, as long as the text arrives unchanged. Doughnut Forge has not been tested with every app the text might pass through.
+- **Only the people you choose can open it.** Each person needs Doughnut Forge and their own identity. You add them once, from their contact card.
+- **It does not hide everything.** The service that carries it can still see that something was sent or posted, when, and roughly how big it is. And anyone you send it to can copy what is inside.
+
+<Shot
+  src={iphoneContacts}
+  alt="The Contacts screen in Doughnut Forge on iPhone, where you add the people who can open your files."
+  caption="The Contacts screen in the iPhone app."
+/>
+
+For the full answer to "why not just use a messaging app?", see the [FAQ](/support/#faq). For the methods Doughnut Forge uses, what can be seen without the key, and what it does not protect against, see the [technical details](/security/technical-details/).
+
+[Get Doughnut Forge](/download/) for iPhone and iPad, Mac or Windows. It is a one-time purchase on each platform, never a subscription.
+
+## Sources
+
+- [WhatsApp Privacy Policy](https://www.whatsapp.com/legal/privacy-policy)
+- Bloomberg, republished by The Star, 30 January 2026: [US has investigated claims WhatsApp chats aren't private](https://www.thestar.com.my/tech/tech-news/2026/01/30/us-has-investigated-claims-whatsapp-chats-arent-private)
+- The Guardian, Aisha Down, 31 January 2026: [US authorities reportedly investigate claims that Meta can read encrypted WhatsApp messages](https://www.theguardian.com/technology/2026/jan/31/us-authorities-reportedly-investigate-claims-that-meta-can-read-encrypted-whatsapp-messages)
+- Bloomberg, republished by The Star, 29 April 2026: [US ends investigation into claims WhatsApp chats aren't private](https://www.thestar.com.my/tech/tech-news/2026/04/29/us-ends-investigation-into-claims-whatsapp-chats-arent-private)
+- Sky News, Tom Cheshire, 19 September 2017: [WhatsApp rejected Government request to access encrypted messages](https://news.sky.com/story/whatsapp-denies-government-access-to-encrypted-messages-11043069)
+- IBTimes UK, 20 September 2017: [WhatsApp rejects British government demand for 'backdoor' access to encrypted messages](https://www.ibtimes.co.uk/whatsapp-rejects-british-government-demand-backdoor-access-encryped-messages-1640133)
+- Apple Support: [Apple can no longer offer Advanced Data Protection in the United Kingdom to new users](https://support.apple.com/en-gb/122234)

@@ -49,11 +49,16 @@ test("internal links, images and fragments resolve in the build", () => {
   expect([...new Set(broken)]).toEqual([]);
 });
 
+// Sites that answer 403 to every automated request (bot protection), so a 403
+// says nothing about the link. Each was opened in a browser before it was used:
+// Sky News, 30 October 2026, for the post on WhatsApp (docs/BLOG-CLAIMS.md 6.12).
+const BOT_BLOCKED = ["https://news.sky.com/"];
 test("external links answer", async ({ request }) => {
   test.setTimeout(5 * 60_000);
   const urls = new Set<string>();
   for (const file of files)
-    for (const ref of attrs(readFileSync(file, "utf8")).map(decode)) if (/^https?:/.test(ref) && !ref.startsWith(LIVE) && !ref.startsWith(MICROSOFT)) urls.add(ref);
+    for (const ref of attrs(readFileSync(file, "utf8")).map(decode))
+      if (/^https?:/.test(ref) && !ref.startsWith(LIVE) && !ref.startsWith(MICROSOFT) && !BOT_BLOCKED.some((site) => ref.startsWith(site))) urls.add(ref);
   const results: { url: string; status: number | string; final?: string }[] = [];
   const queue = [...urls].sort();
   await Promise.all(

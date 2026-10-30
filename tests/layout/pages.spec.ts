@@ -144,12 +144,18 @@ for (const lang of languages) {
 }
 
 // The two posts on how the encryption works point technical readers to the details
-for (const slug of ["quantum-safe-encryption-explained", "offline-encryption-privacy"]) {
+for (const slug of ["quantum-safe-encryption-explained", "offline-encryption-privacy", "can-whatsapp-read-my-messages"]) {
   test(`blog post ${slug} links to the technical details`, async ({ page }) => {
     await page.goto(`/blog/${slug}/`);
     expect(await page.locator('main a[href="/security/technical-details/"]').count()).toBeGreaterThan(0);
   });
 }
+
+// The messaging post points to the FAQ answer it expands on
+test("blog post can-whatsapp-read-my-messages links to the FAQ", async ({ page }) => {
+  await page.goto("/blog/can-whatsapp-read-my-messages/");
+  expect(await page.locator('main a[href="/support/#faq"]').count()).toBeGreaterThan(0);
+});
 
 test("security.txt", async ({ request }) => {
   const res = await request.get("/.well-known/security.txt");
