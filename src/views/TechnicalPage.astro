@@ -3,6 +3,12 @@
 // libraries, for technical readers. The one page allowed to name security
 // internals; every fact comes from docs/TECH-SPEC.md. Algorithm and library
 // names are written here or kept in English in every translation.
+// Laid out like the Security page: Prose cards, one per section, under a short
+// "at a glance" strip in the blog figures' tone-card style and an "On this page" list.
+import Atom from "@lucide/astro/icons/atom";
+import Lock from "@lucide/astro/icons/lock";
+import ServerOff from "@lucide/astro/icons/server-off";
+import WifiOff from "@lucide/astro/icons/wifi-off";
 import PageHero from "../components/PageHero.astro";
 import Prose from "../components/Prose.astro";
 import { localePath, useStrings, type Language, type UiKey } from "../i18n";
@@ -17,6 +23,8 @@ const { t } = useStrings(lang.code);
 /** A list of "label text" items, all under one key prefix */
 const items = (prefix: string, ids: string[]) =>
   ids.map((id) => ({ label: t(`${prefix}.${id}.label` as UiKey), text: t(`${prefix}.${id}.text` as UiKey) }));
+// In a table the label stands alone, so it loses the colon that ties it to its text in a list
+const cell = (label: string) => label.replace(/\s*[:：]\s*$/, "");
 
 const encryption = items("technical.encryption", ["cipher", "perItem", "auth", "nonces", "compression", "random"]);
 const keys = items("technical.keys", ["identity", "recovery", "exchange", "signatures", "derivation", "recipients"]);
@@ -43,49 +51,251 @@ const libraries: { purpose: string; library: string }[] = [
   { purpose: t("technical.libraries.wipe"), library: "zeroize" },
   { purpose: t("technical.libraries.compression"), library: "zstd" },
 ];
+
+const glance = [
+  { icon: Lock, tone: "blue", title: "AES-256-GCM" },
+  { icon: Atom, tone: "violet", title: t("technical.glance.exchange") },
+  { icon: WifiOff, tone: "green", title: t("technical.glance.network") },
+  { icon: ServerOff, tone: "orange", title: t("technical.glance.servers") },
+];
+
+// Every section, in page order, for the "On this page" list
+const sections = [
+  { id: "encryption", title: t("technical.encryption.title") },
+  { id: "keys", title: t("technical.keys.title") },
+  { id: "visible", title: t("technical.visible.title") },
+  { id: "text", title: t("technical.text.title") },
+  { id: "network", title: t("technical.network.title") },
+  { id: "libraries", title: t("technical.libraries.title") },
+  { id: "limits", title: t("technical.limits.title") },
+  { id: "audit", title: t("security.audit.title") },
+];
+const title = Object.fromEntries(sections.map((s) => [s.id, s.title]));
 ---
 
 <Base lang={lang} title={t("meta.technical.title")} description={t("meta.technical.description")} image="/og/technical.png">
   <PageHero title={t("technical.title")} lead={t("technical.lead")} />
-  <div class="section">
-    <Prose>
-      <h2>{t("technical.encryption.title")}</h2>
-      <ul>{encryption.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+  <div class="section stack">
+    <section aria-labelledby="glance">
+      <h2 id="glance" class="sr-only">{t("technical.glance.title")}</h2>
+      <ul class="glance" role="list">
+        {
+          glance.map(({ icon: Icon, tone, title }) => (
+            <li class={`tone-${tone}`}>
+              <span class="icon" aria-hidden="true">
+                <Icon size={24} stroke-width={2.4} />
+              </span>
+              <span>{title}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
 
-      <h2>{t("technical.keys.title")}</h2>
+    <Prose>
+      <nav aria-labelledby="toc">
+        <h2 id="toc">{t("technical.toc")}</h2>
+        <ol>{sections.map((s) => <li><a href={`#${s.id}`}>{s.title}</a></li>)}</ol>
+      </nav>
+    </Prose>
+
+    <Prose>
+      <h2 id="encryption">{title.encryption}</h2>
+      <ul>{encryption.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+    </Prose>
+
+    <Prose>
+      <h2 id="keys">{title.keys}</h2>
       <ul>{keys.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
       <h3>{t("technical.stored.title")}</h3>
       <p>{t("technical.stored.text")}</p>
-      <ul>{stored.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+      <table class="facts">
+        <thead><tr><th scope="col">{t("technical.table.setting")}</th><th scope="col">{t("technical.table.value")}</th></tr></thead>
+        <tbody>{stored.map((i) => <tr><th scope="row">{cell(i.label)}</th><td>{i.text}</td></tr>)}</tbody>
+      </table>
       <p>{t("technical.stored.contacts")}</p>
       <h3>{t("technical.unlock.title")}</h3>
-      <ul>{unlock.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+      <table class="facts">
+        <thead><tr><th scope="col">{t("technical.table.device")}</th><th scope="col">{t("technical.table.unlock")}</th></tr></thead>
+        <tbody>{unlock.map((i) => <tr><th scope="row">{cell(i.label)}</th><td>{i.text}</td></tr>)}</tbody>
+      </table>
+    </Prose>
 
-      <h2 id="visible">{t("technical.visible.title")}</h2>
-      <ul>{visible.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+    <Prose>
+      <h2 id="visible">{title.visible}</h2>
+      <table class="facts">
+        <thead><tr><th scope="col">{t("technical.table.detail")}</th><th scope="col">{t("technical.table.withoutKey")}</th></tr></thead>
+        <tbody>{visible.map((i) => <tr><th scope="row">{cell(i.label)}</th><td>{i.text}</td></tr>)}</tbody>
+      </table>
       <p>{t("technical.visible.older")}</p>
+    </Prose>
 
-      <h2>{t("technical.text.title")}</h2>
+    <Prose>
+      <h2 id="text">{title.text}</h2>
       <p>{t("technical.text.intro")}</p>
       <ul>{text.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
       <p>{t("technical.text.untested")}</p>
+    </Prose>
 
-      <h2>{t("technical.network.title")}</h2>
+    <Prose>
+      <h2 id="network">{title.network}</h2>
       <p>{t("technical.network.none")}</p>
       <p>{t("technical.network.apple")}</p>
       <p>{t("technical.network.sharing")}</p>
+    </Prose>
 
-      <h2>{t("technical.libraries.title")}</h2>
+    <Prose>
+      <h2 id="libraries">{title.libraries}</h2>
       <p>{t("technical.libraries.text")}</p>
-      <ul>{libraries.map((l) => <li><strong>{l.purpose}:</strong> <span lang="en" translate="no">{l.library}</span></li>)}</ul>
+      <table class="facts">
+        <thead><tr><th scope="col">{t("technical.table.purpose")}</th><th scope="col">{t("technical.table.library")}</th></tr></thead>
+        <tbody>
+          {
+            libraries.map((l) => (
+              <tr>
+                <th scope="row">{l.purpose}</th>
+                <td lang="en" translate="no">{l.library}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </Prose>
 
-      <h2>{t("technical.limits.title")}</h2>
+    <Prose>
+      <h2 id="limits">{title.limits}</h2>
       <ul>{limits.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
+    </Prose>
 
-      <h2>{t("security.audit.title")}</h2>
+    <Prose>
+      <h2 id="audit">{title.audit}</h2>
       <p>
         {t("security.audit.text")} <a href={localePath(lang.code, "roadmap/")}>{t("security.audit.link")}</a>
       </p>
     </Prose>
   </div>
 </Base>
+
+<style>
+  .stack {
+    display: grid;
+    gap: 24px;
+  }
+  /* The same width as the cards below, so the page reads as one column */
+  .glance {
+    max-width: 42rem;
+    display: grid;
+    gap: 12px;
+  }
+  /* The blog figures' tone cards (src/components/blog/Compare.astro) */
+  .glance li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: 16px;
+    border: 2px solid var(--tone);
+    background: color-mix(in srgb, var(--tone) 8%, transparent);
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.25;
+    color: var(--ink);
+  }
+  .icon {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--tone) 20%, transparent);
+  }
+  nav ol {
+    margin-top: 10px;
+  }
+  /* Section links land below the top of the screen, not under the browser's edge */
+  h2[id] {
+    scroll-margin-top: 24px;
+  }
+
+  .facts {
+    width: 100%;
+    margin-top: 14px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .facts + p {
+    margin-top: 14px;
+  }
+  .facts :is(th, td) {
+    padding: 10px 14px;
+    text-align: start;
+    vertical-align: top;
+  }
+  .facts tbody :is(th, td) {
+    border-top: 1px solid #e2e8f0;
+  }
+  .facts thead th {
+    background: #f1f5f9;
+    font-size: 14px;
+    font-weight: 800;
+    color: #475569;
+  }
+  .facts tbody th {
+    width: 40%;
+    font-weight: 800;
+    color: #1e293b;
+  }
+  /* Values follow a colon in the list wording; in a cell they start a sentence.
+     Library names (lang="en") keep their own case. */
+  .facts td:not([lang])::first-letter {
+    text-transform: uppercase;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .facts,
+    .facts tbody :is(th, td) {
+      border-color: #38444d;
+    }
+    .facts thead th {
+      background: #15202b;
+      color: #cbd5e1;
+    }
+    .facts tbody th {
+      color: #fff;
+    }
+  }
+  /* On a phone each row stacks, label over value, so no word has to break */
+  @media (max-width: 479px) {
+    .facts thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+    .facts tr,
+    .facts tbody :is(th, td) {
+      display: block;
+      width: auto;
+    }
+    .facts tbody th {
+      padding-bottom: 0;
+    }
+    .facts tbody td {
+      border-top: 0;
+      padding-top: 2px;
+    }
+  }
+  @media (min-width: 560px) {
+    .glance {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>

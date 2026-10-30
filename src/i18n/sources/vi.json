@@ -839,6 +839,22 @@
     "en": "82f4e719a19c",
     "text": "ff8be7d00e36"
   },
+  "technical.glance.exchange": {
+    "en": "b4d978a002f5",
+    "text": "ad3a9e3f1ef5"
+  },
+  "technical.glance.network": {
+    "en": "e3910fbdac70",
+    "text": "cfaa1d022f2b"
+  },
+  "technical.glance.servers": {
+    "en": "f4603140af83",
+    "text": "3cef482a6b28"
+  },
+  "technical.glance.title": {
+    "en": "46b396c85919",
+    "text": "c22f8a5dc8af"
+  },
   "technical.keys.derivation.label": {
     "en": "70b893c793f4",
     "text": "a7d9068ac41c"
@@ -1063,6 +1079,38 @@
     "en": "f4340bc41415",
     "text": "9dd62797f5bc"
   },
+  "technical.table.detail": {
+    "en": "fb5f27d5457c",
+    "text": "e762d926984b"
+  },
+  "technical.table.device": {
+    "en": "6ba0bdeccb42",
+    "text": "eb7069795683"
+  },
+  "technical.table.library": {
+    "en": "dc20b3d5d2cd",
+    "text": "58145555537f"
+  },
+  "technical.table.purpose": {
+    "en": "d4e8830a71c7",
+    "text": "2ff0a4a4efb3"
+  },
+  "technical.table.setting": {
+    "en": "818cd8d91aea",
+    "text": "d338020ce98b"
+  },
+  "technical.table.unlock": {
+    "en": "4ac709aa58bc",
+    "text": "73102cd8e69d"
+  },
+  "technical.table.value": {
+    "en": "8e37953d23da",
+    "text": "7a278d0f1f66"
+  },
+  "technical.table.withoutKey": {
+    "en": "5bdcce87bb4c",
+    "text": "c6b9467bdf99"
+  },
   "technical.text.around.label": {
     "en": "9a24c761f090",
     "text": "89b07db05a82"
@@ -1102,6 +1150,10 @@
   "technical.title": {
     "en": "890ab358a55d",
     "text": "f27eb5f6f923"
+  },
+  "technical.toc": {
+    "en": "b5658fc8edda",
+    "text": "fdbae40844f3"
   },
   "technical.unlock.ios.label": {
     "en": "1b1333c08d9f",

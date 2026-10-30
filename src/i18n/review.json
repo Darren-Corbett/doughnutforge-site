@@ -179,6 +179,12 @@
         "severity": "note",
         "issue": "Infinitive matches 'Voir la feuille de route'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "First reviewer suggested 'connexion réseau propre'; a second reviewer found 'propre' after the noun reads as 'clean', losing 'of its own'. Kept 'de sa part'.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -351,6 +357,18 @@
         "severity": "note",
         "issue": "'Zu den technischen Details' matches the file's 'Zur Roadmap' link style.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (eigenen); exchange matches existing Post-Quanten-Hybrid term; headers natural.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.exchange",
+        "severity": "note",
+        "issue": "Reworded so it fits a 320px card without breaking a word (the long hyphenated or loanword form broke or overflowed). Checked by a second independent reviewer.",
+        "suggestion": "Done."
       }
     ]
   },
@@ -475,6 +493,12 @@
         "key": "security.technical.button",
         "severity": "note",
         "issue": "Infinitive matches 'Ver la hoja de ruta'.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (propias); headers short and natural; consistent with existing terms.",
         "suggestion": "No change."
       }
     ]
@@ -643,6 +667,12 @@
         "key": "security.technical.button",
         "severity": "note",
         "issue": "Imperative 'Leggi' matches 'Vedi la tabella di marcia'.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (propria); Libreria matches existing Librerie; headers natural.",
         "suggestion": "No change."
       }
     ]
@@ -822,6 +852,12 @@
         "severity": "note",
         "issue": "Imperative 'Lees' matches 'Bekijk de roadmap'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (eigen); headers natural; terms consistent.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -965,6 +1001,12 @@
         "key": "security.technical.button",
         "severity": "note",
         "issue": "Imperative matches 'Se färdplanen'.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (egna); headers natural; exchange matches existing postkvant-hybrid.",
         "suggestion": "No change."
       }
     ]
@@ -1118,6 +1160,18 @@
         "severity": "note",
         "issue": "Imperative matches 'Se køreplanen', 'Rapportér...'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (egne); headers short and natural; consistent with existing post-kvante-hybrid wording.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.exchange",
+        "severity": "note",
+        "issue": "Reworded so it fits a 320px card without breaking a word (the long hyphenated or loanword form broke or overflowed). Checked by a second independent reviewer.",
+        "suggestion": "Done."
       }
     ]
   },
@@ -1303,6 +1357,12 @@
         "severity": "note",
         "issue": "Second reviewer: 'verkkokäyttäytyminen' reads as 'online behaviour'. Replaced with 'miten sovellus käyttää verkkoa'.",
         "suggestion": "Done."
+      },
+      {
+        "key": "technical.glance.exchange",
+        "severity": "note",
+        "issue": "Word order differs from English but matches the file's existing 'kvanttikestävä hybridi' label; network keeps 'omia'. Fine.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1461,6 +1521,18 @@
         "severity": "note",
         "issue": "Imperative matches 'Se veikartet'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (egne); headers natural; terms consistent.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.exchange",
+        "severity": "note",
+        "issue": "Reworded so it fits a 320px card without breaking a word (the long hyphenated or loanword form broke or overflowed). Checked by a second independent reviewer.",
+        "suggestion": "Done."
       }
     ]
   },
@@ -1624,6 +1696,12 @@
         "key": "security.technical.button",
         "severity": "note",
         "issue": "Imperative 'Przeczytaj' matches 'Zobacz plan rozwoju'.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (własnych); headers natural; terms consistent.",
         "suggestion": "No change."
       }
     ]
@@ -1790,6 +1868,12 @@
         "key": "security.technical.button",
         "severity": "note",
         "issue": "Infinitive 'Přečíst...' matches 'Nahlásit zranitelnost' / 'Zobrazit plán vývoje'.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (vlastní); all 13 strings match meaning and the file's existing terms (postkvantový hybrid, Knihovny).",
         "suggestion": "No change."
       }
     ]
@@ -1967,6 +2051,12 @@
         "severity": "note",
         "issue": "Informal imperative 'Olvasd el' matches 'Nézd meg a fejlesztési tervet'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.servers",
+        "severity": "note",
+        "issue": "Meaning correct; 'Nincs fiók és szerver' is acceptable, but 'Se fiók, se szerver' is the more idiomatic way to say 'neither ... nor' in a short title.",
+        "suggestion": "Se fiók, se szerver"
       }
     ]
   },
@@ -2155,6 +2245,12 @@
         "severity": "note",
         "issue": "Informal imperative matches 'Vezi planul de dezvoltare'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (proprie); headers natural; terms consistent.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2328,6 +2424,12 @@
         "severity": "note",
         "issue": "'Читать' matches 'Открыть дорожную карту'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (собственных); headers natural; terms consistent.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2483,6 +2585,12 @@
         "severity": "note",
         "issue": "Formal imperative 'Διαβάστε' matches 'Δείτε τον οδικό χάρτη'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (δική του); exchange consistent with existing μετακβαντική υβριδική; headers natural.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2636,6 +2744,12 @@
         "severity": "note",
         "issue": "'Читати' matches 'Переглянути дорожню карту'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (власних); headers natural; terms consistent.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2783,6 +2897,12 @@
         "key": "security.technical.button",
         "severity": "note",
         "issue": "Infinitive matches 'Ver la hoja de ruta'.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (propias); identical to es, which suits these neutral strings.",
         "suggestion": "No change."
       }
     ]
@@ -2943,6 +3063,12 @@
         "severity": "note",
         "issue": "Infinitive matches 'Ver o roteiro'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (própria); headers natural; terms consistent.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3089,6 +3215,12 @@
         "severity": "note",
         "issue": "Formal imperative 'okuyun' matches 'Yol haritasına bakın'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (Kendi); Kitaplık matches existing Kitaplıklar; headers natural.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3220,6 +3352,12 @@
         "key": "security.technical.button",
         "severity": "note",
         "issue": "'〜を読む' matches 'ロードマップを見る'.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (アプリ自身の); exchange matches existing 耐量子ハイブリッド; headers natural.",
         "suggestion": "No change."
       }
     ]
@@ -3387,6 +3525,12 @@
         "key": "security.technical.button",
         "severity": "note",
         "issue": "'阅读技术细节' matches '查看路线图' style and technical.title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (自身); headers natural; 库 matches existing libraries title.",
         "suggestion": "No change."
       }
     ]
@@ -3582,6 +3726,12 @@
         "severity": "note",
         "issue": "'閱讀技術細節' matches '查看開發藍圖' style and technical.title.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (本身); headers natural; 程式庫 and 金鑰 match existing terms.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3742,6 +3892,12 @@
         "severity": "note",
         "issue": "'읽기' matches '로드맵 보기'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (자체); exchange matches existing 양자 내성 하이브리드; headers natural.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3867,6 +4023,12 @@
         "key": "security.technical.button",
         "severity": "note",
         "issue": "'पढ़ें' matches 'रोडमैप देखें'.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (अपनी ओर से); headers natural; terms consistent.",
         "suggestion": "No change."
       }
     ]
@@ -4012,6 +4174,12 @@
         "key": "security.technical.button",
         "severity": "note",
         "issue": "'Baca' matches 'Lihat peta jalan'.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (sendiri); headers natural; Pustaka matches existing libraries title.",
         "suggestion": "No change."
       }
     ]
@@ -4159,6 +4327,12 @@
         "severity": "note",
         "issue": "'Baca' matches 'Lihat peta hala tuju'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' (sendiri); headers natural; terms consistent.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -4298,6 +4472,18 @@
         "severity": "note",
         "issue": "'อ่าน...' matches 'ดูแผนงาน'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' ('does not make network connections itself'); headers natural; terms consistent.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.exchange",
+        "severity": "note",
+        "issue": "Reworded so it fits a 320px card without breaking a word (the long hyphenated or loanword form broke or overflowed). Checked by a second independent reviewer.",
+        "suggestion": "Done."
       }
     ]
   },
@@ -4448,6 +4634,12 @@
         "key": "security.technical.button",
         "severity": "note",
         "issue": "'Đọc' matches 'Xem lộ trình'; 'chi tiết kỹ thuật' matches technical.title.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.glance.network",
+        "severity": "note",
+        "issue": "Keeps 'of its own' ('does not make network connections by itself'); headers natural; terms consistent.",
         "suggestion": "No change."
       }
     ]

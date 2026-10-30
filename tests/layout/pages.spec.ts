@@ -104,6 +104,14 @@ for (const lang of languages) {
       await expect(page.locator("h1")).toHaveCount(1);
       const text = await page.locator("main").innerText();
       for (const name of TECHNICAL_NAMES) expect(text, name).toContain(name);
+      // Four facts at a glance, then an "On this page" list that reaches every section
+      await expect(page.locator(".glance li")).toHaveCount(4);
+      const targets = await page.locator("nav ol a").evaluateAll((as) => as.map((a) => a.getAttribute("href")));
+      expect(targets.length).toBeGreaterThan(5);
+      for (const href of targets) await expect(page.locator(`main h2${href}`), href!).toHaveCount(1);
+      // The settings, unlock, visibility and library facts are tables, each with column headers
+      await expect(page.locator("main table")).toHaveCount(4);
+      for (const table of await page.locator("main table").all()) await expect(table.locator('thead th[scope="col"]')).toHaveCount(2);
       // The page describes the app as it is, not one release of it
       expect(text).not.toContain("0.4.46");
       // It says plainly that there has been no audit yet, and links to the plan
