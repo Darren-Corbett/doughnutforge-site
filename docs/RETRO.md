@@ -70,3 +70,24 @@ The work: the branded fallback badge (official artwork under a neutral name, the
 - (B): transparent and off-page badges count as hidden (same commits).
 - (D): the archive check fails without `apple-app-site-association` (same commits).
 - (E): CLAUDE.md: a plan for any fallback or degraded state says what the visitor will see, and asks the owner first if it differs from normal.
+
+## 30 October 2026, the session (`20d49f6..7361389`)
+
+The work: `docs/TECH-SPEC.md` (from the app repo, without its Borderline notes); the Technical details page in 30 languages, then its redesign; a messaging-app FAQ answer; links from the footer, the Security page and two posts; the blog-draft skill change (review notes below the reply line); and the post "Can WhatsApp read my messages? Encryption, trust and what to check". Pushed in two batches.
+
+**Review** (independent subagent, `20d49f6..acb1c54`): no Must fix. Should fix: HANDOVER still said "ready to push" for pushed work (fixed in this entry's commit). Notes: `SupportPage.astro` (high risk) was changed for the FAQ entry without being named in the plan; no test catches library versions coming back; the copy checks run on UK English only.
+
+**Went well:** sources were opened before writing, which caught that "unsubstantiated" was first quoted from WhatsApp, not the agency, and later found the agency's own words in Bloomberg's report. The independent translation reviews caught five real meaning errors (ru "older than", id "if both", fi and vi "works online", a suggested French "propre" meaning "clean"). Each was re-checked by a second reviewer. Measuring every language at 320px found three layout breaks before any test did.
+
+**Went wrong, and why:**
+1. **A commit went in while the type check showed 28 errors.** The command ran the check, then committed regardless. Cause: the commit did not depend on the check passing.
+2. **A full test run with 1,562 failures nearly read as passed.** Only the end of the log was read, and the exit code was lost in a pipe. Cause: the "failed" count was not checked. (Playwright's WebKit was not installed on this Mac.)
+3. **The blog doc mixed review notes into the post.** The owner caught it. Cause: the skill's layout. Fixed in `acb1c54`.
+4. **The Security page card first sat flush against the main card.** Astro's scoped style does not reach a class passed to a child component. Caught in a screenshot; fixed before the push.
+5. **Smaller:** a title one character over the 70 limit (caught by the build); shell backticks emptied a test line (caught by reading the diff); Prettier reformatted a whole test file; a direct download was tried after a fetch was blocked; a reminder kept firing after the work was done; the plan did not list `SupportPage.astro` as high risk.
+
+**Rules that got in the way:** none.
+
+**Numbers:** appetite a day; actual one session for each batch. Review findings: 0 Must fix, 2 Should fix. Problems after shipping: none known; the live check is still to do (HANDOVER).
+
+**Proposed, not yet agreed:** `tests/layout/layout.spec.ts` attaches its list of layout problems to every failure, not only when `AUDIT_DIR` is set. Problem: two one-off WebKit iPhone failures (27 and 30 October) left no details. We will know it worked when the next one-off failure names its cause.
