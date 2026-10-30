@@ -1,7 +1,9 @@
-// The roadmap and security pages, in every language: both are linked from the
-// footer, the roadmap says nothing it must not (dates, finding codes, versions)
-// and marks every item not yet shipped as planned, and the security page sends
-// vulnerability reports to GitHub's private advisories, never to public issues.
+// The roadmap, security and technical details pages, in every language: the
+// first two are linked from the footer, the roadmap says nothing it must not
+// (dates, finding codes, versions) and marks every item not yet shipped as
+// planned, the security page sends vulnerability reports to GitHub's private
+// advisories, never to public issues, and the technical details page is linked
+// from the security page and the FAQ and keeps every algorithm name in English.
 import { expect, test } from "@playwright/test";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 
@@ -10,6 +12,8 @@ const languages = languageData.languages.filter((l) => !process.env.LANGS || pro
 const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.path}`);
 const ADVISORIES = "https://github.com/Darren-Corbett/forge-privacy/security/advisories/new";
 const SECTIONS = ["shipped", "next", "later"];
+// Names that stay untranslated on the technical details page, in every language
+const TECHNICAL_NAMES = ["AES-256-GCM", "X25519", "ML-KEM-768", "Ed25519", "HKDF-SHA-256", "Argon2id", "BIP-39", "aes-gcm (RustCrypto)", "BEGIN FORGE ENCLAVE"];
 
 /** One UI string in a language, falling back to English as the site does */
 const ui = async (code: string, key: string): Promise<string> => {
@@ -56,10 +60,10 @@ for (const lang of languages) {
       if (lang.code === "en") expect(text).not.toMatch(/severity|branch|weakness|finding|audited|verified|military/i);
     });
 
-    // Both pages exist in every language: hreflang lists them all, and the
+    // All three pages exist in every language: hreflang lists them all, and the
     // language menu goes to the same page, not each language's home page
-    test(`roadmap and security hreflang and language menu ${lang.code}`, async ({ page }) => {
-      for (const path of ["/roadmap/", "/security/"]) {
+    test(`roadmap, security and technical details hreflang and language menu ${lang.code}`, async ({ page }) => {
+      for (const path of ["/roadmap/", "/security/", "/security/technical-details/"]) {
         await page.goto(`${prefix(lang)}${path}`);
         await expect(page.locator('link[rel="alternate"][hreflang="x-default"]'), `${path} x-default`).toHaveAttribute("href", `https://doughnut-forge.app${path}`);
         for (const l of languageData.languages) {
@@ -91,6 +95,40 @@ for (const lang of languages) {
         expect(text).not.toMatch(/military|unbreakable|guarantee|verified sender|has been audited|was audited/i);
         expect(text).not.toMatch(/\bwe\b|n't\b/i);
       }
+    });
+
+    test(`technical details ${lang.code}`, async ({ page }) => {
+      const res = await page.goto(`${prefix(lang)}/security/technical-details/`);
+      expect(res?.status()).toBe(200);
+      await expect(page.locator("h1")).toHaveCount(1);
+      const text = await page.locator("main").innerText();
+      for (const name of TECHNICAL_NAMES) expect(text, name).toContain(name);
+      // The page describes the app as it is, not one release of it
+      expect(text).not.toContain("0.4.46");
+      // It says plainly that there has been no audit yet, and links to the plan
+      expect(text).toContain(await ui(lang.code, "security.audit.text"));
+      await expect(page.locator(`main a[href="${prefix(lang)}/roadmap/"]`)).toHaveCount(1);
+      if (lang.code === "en") {
+        expect(text).not.toMatch(/military|unbreakable|guarantee|verified sender|has been audited|was audited|open.source|certified|passphrase/i);
+        expect(text).not.toMatch(/\bwe\b|n't\b/i);
+      }
+    });
+
+    test(`technical details is linked from security and the FAQ ${lang.code}`, async ({ page }) => {
+      const href = `${prefix(lang)}/security/technical-details/`;
+      await page.goto(`${prefix(lang)}/security/`);
+      await expect(page.locator(`main a[href="${href}"]`)).toHaveCount(1);
+      await page.goto(`${prefix(lang)}/support/`);
+      await expect(page.locator(`#faq a[href="${href}"]`)).toHaveCount(1);
+    });
+
+    test(`FAQ answers why not a messaging app ${lang.code}`, async ({ page }) => {
+      await page.goto(`${prefix(lang)}/support/`);
+      const question = await ui(lang.code, "faq.messaging.q");
+      await expect(page.locator("#faq")).toContainText(question);
+      const jsonLd = await page.locator('script[type="application/ld+json"]').allTextContents();
+      const faq = jsonLd.map((j) => JSON.parse(j)).find((j) => j["@type"] === "FAQPage");
+      expect(faq.mainEntity.map((q: { name: string }) => q.name)).toContain(question);
     });
   });
 }
