@@ -13,6 +13,7 @@ The owner runs `/blog-draft` in this repo, about once a week (never more than on
 **Hard limits**
 - Never read or reference `~/git/doughnut-forge` (the app repo). App facts come only from this repo: `src/i18n/`, `src/data/`, `docs/BLOG-CLAIMS.md` and `docs/HANDOVER.md`.
 - Nothing is published without the owner's explicit yes, given in this session. Every push needs its own yes (CLAUDE.md).
+- Review notes stay in the doc, below the reply line, and never reach the post or the repo (see "The doc" below).
 - Drafting writes nothing to the repo: the draft lives in the doc. Only step 1 ("publish" or "bin") changes repo files, and it commits under the usual CLAUDE.md rules (`npm run check:commit` first, never stage ahead).
 - Before any Claude Docs call, load the docs skill (`anthropic-skills:docs`), or call the docs `guide` tool, as the Claude Docs instructions say.
 
@@ -30,8 +31,8 @@ The owner runs `/blog-draft` in this repo, about once a week (never more than on
 For each earlier draft doc, read its comments, newest first. Act on the owner's latest instruction, reply to that comment in the doc saying what was done, and report it in this session.
 
 - **"publish"**:
-  1. Copy the post into `src/content/blog/en/<slug>.mdx` with `draft: true`, matching the front matter of the existing posts: title, description, `keyphrase`, date, and image and alt text.
-  2. Add the post's claims table to `docs/BLOG-CLAIMS.md`. Re-check every external source live first; drop or fix any claim that no longer holds, and tell the owner.
+  1. Copy only what is above the reply line into `src/content/blog/en/<slug>.mdx` with `draft: true`: the post, and the front matter from its post details (title, description, `keyphrase`, date, and image and alt text), matching the existing posts. Nothing from the review notes or the claims table goes into the post.
+  2. Add the post's claims to `docs/BLOG-CLAIMS.md`, one row per claim in the post with its source. Re-check every external source live first; drop or fix any claim that no longer holds, and tell the owner.
   3. Images: use real app screenshots or simple illustrations only, compressed and correctly sized, with alt text.
   4. Run `npm run build` (no warnings), the layout tests for the new page (`PAGES=<slug> npm run test:layout`), and check the page at 360, 768 and 1280px.
   5. Commit the post with `draft: true`.
@@ -40,7 +41,7 @@ For each earlier draft doc, read its comments, newest first. Act on the owner's 
   8. Update the log in `docs/BLOG-TOPICS.md`: add the row, and mark the backlog topic **taken**, with the date.
   9. Ask before the push. After the push, check the deploy and the live page.
 - **"bin"**: write nothing to `src/`. In `docs/BLOG-TOPICS.md`, add a log row marked **binned**. If it came from the backlog, return the topic to **approved**. A binned news story counts as used: never draft it again. Commit. Retitle the doc "Blog draft (binned): …" so it is not taken for a live draft.
-- **"changes: …"**: revise the draft in the doc as asked, keeping every writing rule. Update its claims table and re-check any new source live. Add a dated line to the digest saying what changed. Publish nothing. It waits for the owner's next reply.
+- **"changes: …"**: revise the draft in the doc as asked, keeping every writing rule. Update its claims table and re-check any new source live. Add a dated line to the review notes saying what changed. Publish nothing. It waits for the owner's next reply.
 - **No reply yet**: leave the doc as it is, but count its topic, news story, feature and main search phrase as taken in step 2.
 
 ## Step 2: choose this week's topic
@@ -56,7 +57,7 @@ In this order (as `docs/BLOG-TOPICS.md` says):
 2. **Otherwise, the backlog:** the first topic marked **approved**, never **proposed** or **taken**.
 3. **Otherwise, propose instead:** a doc titled "Blog topics: <date>" with three researched topics. Give each its feature, use case, main search phrase, why people search for it, and the facts that limit it. Stop there; the owner picks one, and you add it to the backlog as **approved** in the next run.
 
-**Repeat checks**, against the log, every earlier draft doc (binned ones included) and the published posts. Record each check and its result in the digest.
+**Repeat checks**, against the log, every earlier draft doc (binned ones included) and the published posts. Record each check and its result in the review notes.
 - No news story already used.
 - Not the same feature as the newest log row or the newest draft.
 - No main search phrase already used.
@@ -92,19 +93,27 @@ In this order (as `docs/BLOG-TOPICS.md` says):
 - **Helpfulness:** the post must help readers even if they never buy the app. Link to the app only where it fits.
 - If nothing can be written truthfully, **skip the week**: no doc, and tell the owner why.
 
-**The doc** is titled "Blog draft: <post title>". In order:
-1. **Weekly note (digest):**
+**The doc** is titled "Blog draft: <post title>". It has two parts, split by the reply line.
+
+Above the reply line, only what readers see or what goes into the front matter:
+1. **Post details:** title, meta description (under 160 characters), main search phrase, slug, and date.
+2. **The post:** the date, then the body (about 800 to 1,400 words, with headings), then a **Sources** list. Each image sits in the body where it belongs, as a placeholder with its alt text: real screenshots or simple illustrations only. Clean Mac and Windows screenshots do not exist yet (HANDOVER backlog item 4).
+
+Then the reply line: "Reply by commenting on this doc: **publish** (the next /blog-draft copies it into the site as a draft, runs every check, shows you the claims table and asks for your yes before anything goes live), **bin** (drop it; a backlog topic goes back to the backlog), or **changes: …** (the next /blog-draft revises this doc for you to review again). You can also say any of these in a Claude Code session. Only what is above this section is ever copied into the site; the review notes below never are."
+
+Below the reply line, review notes for the owner only:
+3. **Review notes:**
    - why this topic;
    - the news story (link and date) or the backlog row number;
    - the feature and the use case;
    - the main search phrase;
    - every repeat check and its result;
+   - which images were chosen and why;
+   - anything about the brief or who asked for the post;
    - one dated line for each later revision.
-2. Title, meta description (under 160 characters), main search phrase, suggested slug, and date stamp.
-3. The post, about 800 to 1,400 words, with headings.
 4. **Claims table:** claim | exact source (repo file and key, or URL) | date checked live.
-5. **Image notes:** which real screenshots or illustrations, with alt text. Clean Mac and Windows screenshots do not exist yet (HANDOVER backlog item 4).
-6. **Footer:** "Reply by commenting on this doc: **publish** (the next /blog-draft copies it into the site as a draft, runs every check, shows you the claims table and asks for your yes before anything goes live), **bin** (drop it; a backlog topic goes back to the backlog), or **changes: …** (the next /blog-draft revises this doc for you to review again). You can also say any of these in a Claude Code session."
+
+**Review notes never reach readers.** Nothing below the reply line is ever copied into the post, its front matter, its meta description, or any file in the repo. The post, and anything copied from the draft into the repo, never mentions "the owner" or anyone deciding what is published. At publish, `docs/BLOG-CLAIMS.md` gets its rows by checking each claim in the post against its source again, live, never by copying the doc's table or notes.
 
 Open the doc for the owner (Artifact `open`) once it is created.
 
