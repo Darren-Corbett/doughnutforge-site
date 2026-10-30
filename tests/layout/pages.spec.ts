@@ -109,7 +109,8 @@ for (const lang of languages) {
       expect(text).toContain(await ui(lang.code, "security.audit.text"));
       await expect(page.locator(`main a[href="${prefix(lang)}/roadmap/"]`)).toHaveCount(1);
       if (lang.code === "en") {
-        expect(text).not.toMatch(/military|unbreakable|guarantee|verified sender|has been audited|was audited|open.source|certified|passphrase/i);
+        // "does not guarantee" is a limit the page must state, never a promise
+        expect(text).not.toMatch(/military|unbreakable|(?<!not )guarantee|verified sender|has been audited|was audited|open.source|certified|passphrase/i);
         expect(text).not.toMatch(/\bwe\b|n't\b/i);
       }
     });
