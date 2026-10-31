@@ -14,15 +14,15 @@ const IOS_ID = "6821344597";
 const jsonLd = async (page: import("@playwright/test").Page) =>
   (await page.locator('script[type="application/ld+json"]').allTextContents()).flatMap((s) => [JSON.parse(s)].flat());
 
-test("home page: Smart App Banner for the iPhone app, in every language", async ({ page }) => {
-  for (const path of ["/", "/de/", "/ja/"]) {
+test("home, download and pricing: Smart App Banner for the iPhone app, in every language", async ({ page }) => {
+  for (const path of ["/", "/de/", "/ja/", "/download/", "/de/download/", "/pricing/", "/ja/pricing/"]) {
     await page.goto(path);
     await expect(page.locator('meta[name="apple-itunes-app"]'), path).toHaveAttribute("content", `app-id=${IOS_ID}`);
   }
 });
 
-test("the Smart App Banner is on the home page only", async ({ page }) => {
-  for (const path of ["/features/", "/download/", "/support/", "/de/features/"]) {
+test("the Smart App Banner is only on the pages that sell the app", async ({ page }) => {
+  for (const path of ["/features/", "/support/", "/de/features/", "/blog/"]) {
     await page.goto(path);
     await expect(page.locator('meta[name="apple-itunes-app"]'), path).toHaveCount(0);
   }

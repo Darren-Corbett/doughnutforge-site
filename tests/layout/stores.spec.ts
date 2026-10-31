@@ -18,8 +18,16 @@ for (const lang of languages) {
       await expect(card.locator(MAC), `${path}: not the Mac app`).toHaveCount(0);
       await expect(page.locator(`.card:has(${MAC}) .name`), `${path}: the Mac card keeps the Mac app`).toHaveText("Mac");
     }
+    // The device names on the Download cards, in order
+    await page.goto(`${prefix(lang)}/download/`);
+    const names = await page.locator(".card.on-sale .name").allTextContents();
     await page.goto(`${prefix(lang)}/`);
     await expect(page.locator(`${IOS} img`), "home: App Store badge").toHaveCount(1);
+    // Each home badge sits under its device's name, as on the Download cards, so
+    // the App Store and Mac App Store badges cannot be mixed up
+    await expect(page.locator(".platform-row .name"), "home: badge names").toHaveText(names);
+    await expect(page.locator(".platform-row li", { has: page.locator(IOS) }).locator(".name"), "home: iPhone badge name").toHaveText(names[0]!);
+    await expect(page.locator(".platform-row li", { has: page.locator(MAC) }).locator(".name"), "home: Mac badge name").toHaveText("Mac");
   });
 }
 

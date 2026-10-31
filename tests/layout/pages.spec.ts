@@ -109,6 +109,12 @@ for (const lang of languages) {
       const targets = await page.locator("nav ol a").evaluateAll((as) => as.map((a) => a.getAttribute("href")));
       expect(targets.length).toBeGreaterThan(5);
       for (const href of targets) await expect(page.locator(`main h2${href}`), href!).toHaveCount(1);
+      // Every section ends with a way back to that list, in the page language
+      const back = page.locator('main a[href="#toc"]');
+      await expect(back).toHaveCount(targets.length);
+      for (const link of await back.all()) await expect(link).toHaveText(await ui(lang.code, "technical.back"));
+      // Green means "on sale" or "yours" (DESIGN.md), so no glance card uses it
+      await expect(page.locator(".glance li.tone-green")).toHaveCount(0);
       // The settings, unlock, visibility and library facts are tables, each with column headers
       await expect(page.locator("main table")).toHaveCount(4);
       for (const table of await page.locator("main table").all()) await expect(table.locator('thead th[scope="col"]')).toHaveCount(2);
