@@ -91,3 +91,10 @@ The work: `docs/TECH-SPEC.md` (from the app repo, without its Borderline notes);
 **Numbers:** appetite a day; actual one session for each batch. Review findings: 0 Must fix, 2 Should fix. Problems after shipping: none known; the live check is still to do (HANDOVER).
 
 **Proposed, not yet agreed:** `tests/layout/layout.spec.ts` attaches its list of layout problems to every failure, not only when `AUDIT_DIR` is set. Problem: two one-off WebKit iPhone failures (27 and 30 October) left no details. We will know it worked when the next one-off failure names its cause.
+
+## 31 October 2026, experiment: the 320px sideways slide in WebKit iPhone
+
+- **Problem:** three one-off failures of `tests/layout/layout.spec.ts` in `webkit-iphone` at 320px (`/ru/download/` 27 October, `/no/features/` 30 October, `/id/download/` 31 October), only in full runs. The 31 October run recorded the details: the page was 320px wide, yet scrolled 15px sideways, with every box at left -15, just after the screen shrank from 430 to 320px. A leftover offset, not a page that is too wide. It did not repeat in 1,500 runs (600 iPhone only, 900 with all three projects), so the WebKit behaviour is unproven. Visitors are not affected.
+- **Change:** `5565075`: the test scrolls to the top left after each viewport change; the far-right scroll probe still catches a real pan.
+- **When to check:** after the next 5 full `npm run test:layout` runs.
+- **Result:** open. Kept if no sideways slide appears in those runs; if one does, the cause is something else, and the change is reverted.
