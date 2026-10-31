@@ -29,6 +29,11 @@ for (const path of pages) {
       await page.emulateMedia({ colorScheme: theme });
       for (const width of widths) {
         await page.setViewportSize({ width, height: phone ? 844 : 900 });
+        // Start each width from the top left. Under load, WebKit on the iPhone
+        // profile can keep a sideways offset from the previous width after
+        // shrinking the screen, which shifts every box and reads as a pan.
+        // The far-right scroll below still catches a page that can really pan.
+        await page.evaluate(() => scrollTo(0, 0));
         await settle(page);
 
         // 1. Nothing wider than the screen, so the page cannot pan sideways
