@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Không tự tạo kết nối mạng",
   "technical.glance.servers": "Không có tài khoản hay máy chủ",
   "technical.toc": "Trên trang này",
+  "technical.back": "Quay lại mục lục",
   "technical.table.setting": "Thiết lập",
   "technical.table.value": "Giá trị",
   "technical.table.device": "Thiết bị",

@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Немає власних мережевих з’єднань",
   "technical.glance.servers": "Немає облікових записів і серверів",
   "technical.toc": "На цій сторінці",
+  "technical.back": "Повернутися до змісту",
   "technical.table.setting": "Параметр",
   "technical.table.value": "Значення",
   "technical.table.device": "Пристрій",

@@ -1,8 +1,9 @@
 ---
-// One blog post: the night hero with title and date, the text on a Prose card,
-// Article structured data, and a short call to action at the end. Posts are by
-// the organisation, so the page shows no author name; the structured data names
-// Doughnut Forge as an Organization.
+// One blog post: the night hero with a link back to the Blog, the title and date,
+// the text on a Prose card (the full width on phones, where the card's edge and
+// padding would cut lines short), Article structured data, and a short call to
+// action at the end. The site is deliberately anonymous: posts show no author
+// name, and the structured data names Doughnut Forge as an Organization.
 import PageHero from "../components/PageHero.astro";
 import Prose from "../components/Prose.astro";
 import type { Post } from "../data/blog";
@@ -58,6 +59,7 @@ const article = {
   feed={!draft}
 >
   <PageHero title={title}>
+    <a slot="above" class="back" href={localePath(lang.code, "blog/")}>{t("blog.title")}</a>
     <p class="byline">
       <time datetime={date.toISOString().slice(0, 10)}>{dateText}</time>
       {draft && <span class="draft">{t("blog.draft")}</span>}
@@ -76,6 +78,25 @@ const article = {
 </Base>
 
 <style>
+  /* Blue ink for night, as the page hero's tagline; a 44px row to tap */
+  .back {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 800;
+    color: #4cb5f5;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  @media (max-width: 639px) {
+    .section :global(.prose) {
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: none;
+    }
+  }
   .byline {
     font-size: 16px;
     font-weight: 700;

@@ -3,14 +3,16 @@
 // libraries, for technical readers. The one page allowed to name security
 // internals; every fact comes from docs/TECH-SPEC.md. Algorithm and library
 // names are written here or kept in English in every translation.
-// Laid out like the Security page: Prose cards, one per section, under a short
-// "at a glance" strip in the blog figures' tone-card style and an "On this page" list.
+// Laid out like the Security page: Prose cards, one per section, each ending in a
+// link back to the "On this page" list, under a short "at a glance" strip of
+// plain cards with a tone edge.
 import Atom from "@lucide/astro/icons/atom";
 import Lock from "@lucide/astro/icons/lock";
 import ServerOff from "@lucide/astro/icons/server-off";
 import WifiOff from "@lucide/astro/icons/wifi-off";
 import PageHero from "../components/PageHero.astro";
 import Prose from "../components/Prose.astro";
+import TocSection from "../components/TocSection.astro";
 import { localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -55,7 +57,7 @@ const libraries: { purpose: string; library: string }[] = [
 const glance = [
   { icon: Lock, tone: "blue", title: "AES-256-GCM" },
   { icon: Atom, tone: "violet", title: t("technical.glance.exchange") },
-  { icon: WifiOff, tone: "green", title: t("technical.glance.network") },
+  { icon: WifiOff, tone: "blue", title: t("technical.glance.network") },
   { icon: ServerOff, tone: "orange", title: t("technical.glance.servers") },
 ];
 
@@ -71,6 +73,7 @@ const sections = [
   { id: "audit", title: t("security.audit.title") },
 ];
 const title = Object.fromEntries(sections.map((s) => [s.id, s.title]));
+const back = t("technical.back");
 ---
 
 <Base lang={lang} title={t("meta.technical.title")} description={t("meta.technical.description")} image="/og/technical.png">
@@ -99,13 +102,11 @@ const title = Object.fromEntries(sections.map((s) => [s.id, s.title]));
       </nav>
     </Prose>
 
-    <Prose>
-      <h2 id="encryption">{title.encryption}</h2>
+    <TocSection id="encryption" title={title.encryption} back={back}>
       <ul>{encryption.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
-    </Prose>
+    </TocSection>
 
-    <Prose>
-      <h2 id="keys">{title.keys}</h2>
+    <TocSection id="keys" title={title.keys} back={back}>
       <ul>{keys.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
       <h3>{t("technical.stored.title")}</h3>
       <p>{t("technical.stored.text")}</p>
@@ -119,33 +120,29 @@ const title = Object.fromEntries(sections.map((s) => [s.id, s.title]));
         <thead><tr><th scope="col">{t("technical.table.device")}</th><th scope="col">{t("technical.table.unlock")}</th></tr></thead>
         <tbody>{unlock.map((i) => <tr><th scope="row">{cell(i.label)}</th><td>{i.text}</td></tr>)}</tbody>
       </table>
-    </Prose>
+    </TocSection>
 
-    <Prose>
-      <h2 id="visible">{title.visible}</h2>
+    <TocSection id="visible" title={title.visible} back={back}>
       <table class="facts">
         <thead><tr><th scope="col">{t("technical.table.detail")}</th><th scope="col">{t("technical.table.withoutKey")}</th></tr></thead>
         <tbody>{visible.map((i) => <tr><th scope="row">{cell(i.label)}</th><td>{i.text}</td></tr>)}</tbody>
       </table>
       <p>{t("technical.visible.older")}</p>
-    </Prose>
+    </TocSection>
 
-    <Prose>
-      <h2 id="text">{title.text}</h2>
+    <TocSection id="text" title={title.text} back={back}>
       <p>{t("technical.text.intro")}</p>
       <ul>{text.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
       <p>{t("technical.text.untested")}</p>
-    </Prose>
+    </TocSection>
 
-    <Prose>
-      <h2 id="network">{title.network}</h2>
+    <TocSection id="network" title={title.network} back={back}>
       <p>{t("technical.network.none")}</p>
       <p>{t("technical.network.apple")}</p>
       <p>{t("technical.network.sharing")}</p>
-    </Prose>
+    </TocSection>
 
-    <Prose>
-      <h2 id="libraries">{title.libraries}</h2>
+    <TocSection id="libraries" title={title.libraries} back={back}>
       <p>{t("technical.libraries.text")}</p>
       <table class="facts">
         <thead><tr><th scope="col">{t("technical.table.purpose")}</th><th scope="col">{t("technical.table.library")}</th></tr></thead>
@@ -160,19 +157,17 @@ const title = Object.fromEntries(sections.map((s) => [s.id, s.title]));
           }
         </tbody>
       </table>
-    </Prose>
+    </TocSection>
 
-    <Prose>
-      <h2 id="limits">{title.limits}</h2>
+    <TocSection id="limits" title={title.limits} back={back}>
       <ul>{limits.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
-    </Prose>
+    </TocSection>
 
-    <Prose>
-      <h2 id="audit">{title.audit}</h2>
+    <TocSection id="audit" title={title.audit} back={back}>
       <p>
         {t("security.audit.text")} <a href={localePath(lang.code, "roadmap/")}>{t("security.audit.link")}</a>
       </p>
-    </Prose>
+    </TocSection>
   </div>
 </Base>
 
@@ -187,7 +182,7 @@ const title = Object.fromEntries(sections.map((s) => [s.id, s.title]));
     display: grid;
     gap: 12px;
   }
-  /* The blog figures' tone cards (src/components/blog/Compare.astro) */
+  /* Plain surface cards; the tab tone only on the edge, its ink on the words */
   .glance li {
     display: flex;
     align-items: center;
@@ -195,7 +190,7 @@ const title = Object.fromEntries(sections.map((s) => [s.id, s.title]));
     padding: 14px 16px;
     border-radius: 16px;
     border: 2px solid var(--tone);
-    background: color-mix(in srgb, var(--tone) 8%, transparent);
+    background: #fff;
     font-size: 17px;
     font-weight: 900;
     line-height: 1.25;
@@ -205,19 +200,10 @@ const title = Object.fromEntries(sections.map((s) => [s.id, s.title]));
     flex: none;
     display: grid;
     place-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    background: color-mix(in srgb, var(--tone) 20%, transparent);
   }
   nav ol {
     margin-top: 10px;
   }
-  /* Section links land below the top of the screen, not under the browser's edge */
-  h2[id] {
-    scroll-margin-top: 24px;
-  }
-
   .facts {
     width: 100%;
     margin-top: 14px;
@@ -258,6 +244,9 @@ const title = Object.fromEntries(sections.map((s) => [s.id, s.title]));
   }
 
   @media (prefers-color-scheme: dark) {
+    .glance li {
+      background: #1e2732;
+    }
     .facts,
     .facts tbody :is(th, td) {
       border-color: #38444d;

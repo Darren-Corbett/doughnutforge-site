@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Inga egna nätverksanslutningar",
   "technical.glance.servers": "Inga konton eller servrar",
   "technical.toc": "På den här sidan",
+  "technical.back": "Tillbaka till innehållsförteckningen",
   "technical.table.setting": "Inställning",
   "technical.table.value": "Värde",
   "technical.table.device": "Enhet",

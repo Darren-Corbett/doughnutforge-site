@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Kendi ağ bağlantısı yok",
   "technical.glance.servers": "Hesap ve sunucu yok",
   "technical.toc": "Bu sayfada",
+  "technical.back": "İçindekilere dönün",
   "technical.table.setting": "Ayar",
   "technical.table.value": "Değer",
   "technical.table.device": "Cihaz",

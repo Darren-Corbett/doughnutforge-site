@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Nicio conexiune de rețea proprie",
   "technical.glance.servers": "Fără conturi sau servere",
   "technical.toc": "Pe această pagină",
+  "technical.back": "Înapoi la cuprins",
   "technical.table.setting": "Setare",
   "technical.table.value": "Valoare",
   "technical.table.device": "Dispozitiv",

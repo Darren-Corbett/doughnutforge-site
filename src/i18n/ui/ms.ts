@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Tiada sambungan rangkaian sendiri",
   "technical.glance.servers": "Tiada akaun atau pelayan",
   "technical.toc": "Di halaman ini",
+  "technical.back": "Kembali ke isi kandungan",
   "technical.table.setting": "Tetapan",
   "technical.table.value": "Nilai",
   "technical.table.device": "Peranti",

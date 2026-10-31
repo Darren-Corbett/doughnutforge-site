@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "ไม่สร้างการเชื่อมต่อเครือข่ายเอง",
   "technical.glance.servers": "ไม่มีบัญชีหรือเซิร์ฟเวอร์",
   "technical.toc": "ในหน้านี้",
+  "technical.back": "กลับไปที่สารบัญ",
   "technical.table.setting": "การตั้งค่า",
   "technical.table.value": "ค่า",
   "technical.table.device": "อุปกรณ์",

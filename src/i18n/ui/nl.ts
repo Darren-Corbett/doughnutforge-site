@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Geen eigen netwerkverbindingen",
   "technical.glance.servers": "Geen accounts of servers",
   "technical.toc": "Op deze pagina",
+  "technical.back": "Terug naar de inhoudsopgave",
   "technical.table.setting": "Instelling",
   "technical.table.value": "Waarde",
   "technical.table.device": "Apparaat",

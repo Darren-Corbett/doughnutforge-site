@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Tanpa koneksi jaringan sendiri",
   "technical.glance.servers": "Tanpa akun atau server",
   "technical.toc": "Di halaman ini",
+  "technical.back": "Kembali ke daftar isi",
   "technical.table.setting": "Pengaturan",
   "technical.table.value": "Nilai",
   "technical.table.device": "Perangkat",

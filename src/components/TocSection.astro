@@ -1,0 +1,27 @@
+---
+// One section of a page with an "On this page" list (nav h2#toc): a Prose card
+// with its heading, ending in a link back to the list, so a long page on a phone
+// always has a way back.
+import Prose from "./Prose.astro";
+
+interface Props {
+  id: string;
+  title: string;
+  /** The link's words, such as "Back to contents" */
+  back: string;
+}
+const { id, title, back } = Astro.props;
+---
+
+<Prose>
+  <h2 id={id}>{title}</h2>
+  <slot />
+  <p class="back"><a href="#toc">{back}</a></p>
+</Prose>
+
+<style>
+  .back {
+    margin-top: 14px;
+    font-size: 15px;
+  }
+</style>

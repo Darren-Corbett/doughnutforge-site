@@ -78,7 +78,7 @@ Every plan must say how it serves both goals.
   2. Why offline encryption keeps your files private
   3. What quantum-safe encryption means, in plain language
   4. How to share encrypted files with someone you trust
-- Every post has: a clear title and meta description, one main search phrase, real app screenshots or simple illustrations, author and date.
+- Every post has: a clear title and meta description, one main search phrase, real app screenshots or simple illustrations, and its date. No author name: the site is deliberately anonymous, and the structured data names Doughnut Forge as the author.
 - Quality over quantity: no more than one or two new posts a week.
 
 ## Technical SEO

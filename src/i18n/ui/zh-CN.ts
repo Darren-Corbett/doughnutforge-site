@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "自身不建立网络连接",
   "technical.glance.servers": "没有账户和服务器",
   "technical.toc": "本页内容",
+  "technical.back": "返回目录",
   "technical.table.setting": "设置",
   "technical.table.value": "值",
   "technical.table.device": "设备",

@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Brak własnych połączeń sieciowych",
   "technical.glance.servers": "Brak kont i serwerów",
   "technical.toc": "Na tej stronie",
+  "technical.back": "Powrót do spisu treści",
   "technical.table.setting": "Ustawienie",
   "technical.table.value": "Wartość",
   "technical.table.device": "Urządzenie",

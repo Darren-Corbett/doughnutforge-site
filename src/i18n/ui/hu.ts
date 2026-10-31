@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Nincs saját hálózati kapcsolat",
   "technical.glance.servers": "Se fiók, se szerver",
   "technical.toc": "Ezen az oldalon",
+  "technical.back": "Vissza a tartalomjegyzékhez",
   "technical.table.setting": "Beállítás",
   "technical.table.value": "Érték",
   "technical.table.device": "Eszköz",

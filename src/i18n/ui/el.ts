@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Καμία δική του σύνδεση στο δίκτυο",
   "technical.glance.servers": "Χωρίς λογαριασμούς ή διακομιστές",
   "technical.toc": "Σε αυτή τη σελίδα",
+  "technical.back": "Επιστροφή στα περιεχόμενα",
   "technical.table.setting": "Ρύθμιση",
   "technical.table.value": "Τιμή",
   "technical.table.device": "Συσκευή",

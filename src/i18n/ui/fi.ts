@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Ei omia verkkoyhteyksiä",
   "technical.glance.servers": "Ei tilejä eikä palvelimia",
   "technical.toc": "Tällä sivulla",
+  "technical.back": "Takaisin sisällysluetteloon",
   "technical.table.setting": "Asetus",
   "technical.table.value": "Arvo",
   "technical.table.device": "Laite",

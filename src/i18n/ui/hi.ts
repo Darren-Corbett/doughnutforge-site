@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "अपनी ओर से कोई नेटवर्क कनेक्शन नहीं",
   "technical.glance.servers": "न अकाउंट, न सर्वर",
   "technical.toc": "इस पेज पर",
+  "technical.back": "विषय-सूची पर वापस जाएँ",
   "technical.table.setting": "सेटिंग",
   "technical.table.value": "मान",
   "technical.table.device": "डिवाइस",

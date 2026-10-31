@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Žádná vlastní síťová připojení",
   "technical.glance.servers": "Žádné účty ani servery",
   "technical.toc": "Na této stránce",
+  "technical.back": "Zpět na přehled obsahu",
   "technical.table.setting": "Nastavení",
   "technical.table.value": "Hodnota",
   "technical.table.device": "Zařízení",

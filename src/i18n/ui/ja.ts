@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "アプリ自身のネットワーク接続なし",
   "technical.glance.servers": "アカウントもサーバーもなし",
   "technical.toc": "このページの内容",
+  "technical.back": "目次に戻る",
   "technical.table.setting": "設定",
   "technical.table.value": "値",
   "technical.table.device": "デバイス",

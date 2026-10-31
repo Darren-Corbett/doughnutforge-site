@@ -16,6 +16,7 @@ const { title, tagline, lead, policyKeys, html = false } = Astro.props;
 
 <section class="page-hero" aria-labelledby="page-title">
   <div class="inner">
+    {Astro.slots.has("above") && <div class="above"><slot name="above" /></div>}
     {
       html ? (
         <h1 id="page-title" data-policy={policyKeys?.title} set:html={title} />
@@ -67,6 +68,9 @@ const { title, tagline, lead, policyKeys, html = false } = Astro.props;
   }
   .extra {
     margin-top: 24px;
+  }
+  .above {
+    margin-bottom: 12px;
   }
   /* In dark mode the page is the same night colour, so the band gets an edge */
   @media (prefers-color-scheme: dark) {

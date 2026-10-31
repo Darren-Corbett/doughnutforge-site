@@ -35,10 +35,14 @@ const { class: className = "" } = Astro.props;
     font-weight: 800;
     color: #0f172a;
   }
+  /* Section links land below the top of the screen, not under the browser's edge */
+  .prose :global(h2[id]) {
+    scroll-margin-top: 24px;
+  }
   .prose :global(:is(h2, h3):first-child) {
     margin-top: 0;
   }
-  .prose :global(p + p),
+  .prose :global(:is(p, ul, ol) + p),
   .prose :global(:is(ul, ol, figure, blockquote)) {
     margin-top: 14px;
   }
@@ -85,7 +89,7 @@ const { class: className = "" } = Astro.props;
   .prose :global(figcaption) {
     margin-top: 8px;
     font-size: 15px;
-    color: #64748b;
+    color: #475569;
   }
 
   @media (prefers-color-scheme: dark) {

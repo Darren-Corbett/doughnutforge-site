@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Ingen egne nettverkstilkoblinger",
   "technical.glance.servers": "Ingen kontoer eller servere",
   "technical.toc": "På denne siden",
+  "technical.back": "Tilbake til innholdsfortegnelsen",
   "technical.table.setting": "Innstilling",
   "technical.table.value": "Verdi",
   "technical.table.device": "Enhet",

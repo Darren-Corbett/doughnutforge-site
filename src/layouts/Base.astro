@@ -5,6 +5,7 @@ import StoreFallback from "../components/StoreFallback.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import SEO from "../components/SEO.astro";
+import { platforms } from "../data/stores";
 import { alternatesFor } from "../i18n/alternates";
 import { isReviewed, splitPath, translatedPages, useStrings, type Language } from "../i18n";
 
@@ -20,10 +21,10 @@ interface Props {
   article?: { published: Date; modified?: Date };
   /** Link the blog's RSS feed in <head> */
   feed?: boolean;
-  /** App Store ID for Safari's Smart App Banner (home page only) */
-  appId?: string;
+  /** Safari's Smart App Banner for the iPhone and iPad app, on the pages that sell it */
+  appBanner?: boolean;
 }
-const { lang, title, description, jsonLd, noindex, image, article, feed, appId } = Astro.props;
+const { lang, title, description, jsonLd, noindex, image, article, feed, appBanner = false } = Astro.props;
 const { t } = useStrings(lang.code);
 
 // A draft translation is built and reachable from the language switcher, but not
@@ -35,6 +36,9 @@ const alternates = indexable && translatedPages.includes(page) ? alternatesFor(l
 // Social preview images: English ones are committed in public/og/. Other languages
 // get their own (public/og/<language>/<page>.png) only in a build with
 // OG_IMAGES=all, which also makes them (scripts/make-og.mjs); otherwise English.
+const ios = platforms.find((p) => p.id === "ios");
+const appId = appBanner && ios?.status === "available" ? ios.storeId : undefined;
+
 const englishImage = image ?? "/og/default.png";
 const ogImage =
   lang.code !== "en" && process.env.OG_IMAGES === "all" && /^\/og\/[^/]+\.png$/.test(englishImage)

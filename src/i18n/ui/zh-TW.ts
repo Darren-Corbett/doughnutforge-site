@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "本身不建立網路連線",
   "technical.glance.servers": "沒有帳號和伺服器",
   "technical.toc": "本頁內容",
+  "technical.back": "返回目錄",
   "technical.table.setting": "設定",
   "technical.table.value": "值",
   "technical.table.device": "裝置",

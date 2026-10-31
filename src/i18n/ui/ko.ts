@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "자체 네트워크 연결 없음",
   "technical.glance.servers": "계정 및 서버 없음",
   "technical.toc": "이 페이지의 내용",
+  "technical.back": "목차로 돌아가기",
   "technical.table.setting": "설정",
   "technical.table.value": "값",
   "technical.table.device": "기기",

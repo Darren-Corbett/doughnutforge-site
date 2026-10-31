@@ -29,7 +29,11 @@ const date = new Intl.DateTimeFormat(lang.hreflang, { dateStyle: "long" });
           {posts.map((post) => (
             <li>
               <h2>
-                <a href={localePath(lang.code, `blog/${postSlug(post)}/`)}>{post.data.title}</a>
+                {/* The arrow keeps to the last word (no-break space), and screen readers hear only the title */}
+                <a href={localePath(lang.code, `blog/${postSlug(post)}/`)}>
+                  {post.data.title}
+                  <span class="arrow" aria-hidden="true">{"\u00a0→"}</span>
+                </a>
               </h2>
               <p class="meta">
                 <time datetime={post.data.date.toISOString().slice(0, 10)}>{date.format(post.data.date)}</time>
@@ -65,8 +69,15 @@ const date = new Intl.DateTimeFormat(lang.hreflang, { dateStyle: "long" });
     font-weight: 900;
     letter-spacing: -0.01em;
   }
-  h2 a:hover {
+  /* The arrow says "tap here" on phones, which have no hover */
+  .arrow {
     color: var(--ink-blue);
+  }
+  h2 a:is(:hover, :focus-visible) {
+    color: var(--ink-blue);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
   }
   .meta {
     margin-top: 6px;

@@ -10,7 +10,6 @@ import Phone from "../components/Phone.astro";
 import StoreLinks from "../components/StoreLinks.astro";
 import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
 import { organization, softwareApplication } from "../data/jsonld";
-import { platforms } from "../data/stores";
 import { useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -40,11 +39,9 @@ const rows: ToneRow[] = [
 ];
 
 const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), organization()];
-const ios = platforms.find((p) => p.id === "ios");
-const appId = ios?.status === "available" ? ios.storeId : undefined;
 ---
 
-<Base lang={lang} title={t("meta.home.title")} description={t("meta.home.description")} jsonLd={jsonLd} appId={appId}>
+<Base lang={lang} title={t("meta.home.title")} description={t("meta.home.description")} jsonLd={jsonLd} appBanner>
   <section class="hero" aria-labelledby="home-title">
     <div class="hero-inner">
       <div class="hero-copy">

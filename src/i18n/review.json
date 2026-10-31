@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -191,7 +191,7 @@
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -375,7 +375,7 @@
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -506,7 +506,7 @@
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -680,7 +680,7 @@
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -864,7 +864,7 @@
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1014,7 +1014,7 @@
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1178,7 +1178,7 @@
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1369,7 +1369,7 @@
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1539,7 +1539,7 @@
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1703,13 +1703,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (własnych); headers natural; terms consistent.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.back",
+        "severity": "note",
+        "issue": "Uses the noun 'Powrót' where go.back uses the imperative 'Wróć'. Both are correct; 'Powrót do ...' matches the app's 'Powrót do Pulpitu'.",
+        "backTranslation": "Return (noun) to the table of contents",
+        "suggestion": "Optional: 'Wróć do spisu treści'."
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1875,13 +1882,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (vlastní); all 13 strings match meaning and the file's existing terms (postkvantový hybrid, Knihovny).",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.back",
+        "severity": "note",
+        "issue": "First draft 'Zpět na obsah' read like the skip link 'Přejít na obsah' (main content); the reviewer's suggestion was taken and re-checked.",
+        "backTranslation": "Back to the overview of contents",
+        "suggestion": "Taken."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2063,7 +2077,7 @@
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2257,7 +2271,7 @@
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2430,13 +2444,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (собственных); headers natural; terms consistent.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.back",
+        "severity": "note",
+        "issue": "'содержание' means a table of contents, different from the skip link's 'содержимому'. 'Назад к' matches the app's 'Назад'.",
+        "backTranslation": "Back to the table of contents",
+        "suggestion": "No change."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2591,13 +2612,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (δική του); exchange consistent with existing μετακβαντική υβριδική; headers natural.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.back",
+        "severity": "note",
+        "issue": "The plural 'περιεχόμενα' means a table of contents, clearly different from the skip link's singular 'περιεχόμενο'.",
+        "backTranslation": "Επιστροφή στα περιεχόμενα",
+        "suggestion": "No change."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2785,7 +2813,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2910,7 +2938,7 @@
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -3075,7 +3103,7 @@
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3221,13 +3249,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (Kendi); Kitaplık matches existing Kitaplıklar; headers natural.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.back",
+        "severity": "note",
+        "issue": "First draft 'İçindekilere dön' was informal, unlike every other link label in tr.ts (blocking); the polite form was taken and re-checked with no findings.",
+        "backTranslation": "Go back (polite) to the table of contents",
+        "suggestion": "Taken."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -3365,7 +3400,7 @@
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3538,7 +3573,7 @@
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3738,7 +3773,7 @@
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3904,7 +3939,7 @@
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4036,7 +4071,7 @@
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4187,7 +4222,7 @@
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4333,13 +4368,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (sendiri); headers natural; terms consistent.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.back",
+        "severity": "note",
+        "issue": "First draft 'Kembali ke kandungan' meant 'back to the content' (blocking); the reviewer's suggestion was taken and re-checked with no findings.",
+        "backTranslation": "Back to the table of contents",
+        "suggestion": "Taken."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4490,7 +4532,7 @@
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-30",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [

@@ -207,6 +207,7 @@ export default {
   "technical.glance.network": "Нет собственных сетевых подключений",
   "technical.glance.servers": "Нет аккаунтов и серверов",
   "technical.toc": "На этой странице",
+  "technical.back": "Назад к содержанию",
   "technical.table.setting": "Параметр",
   "technical.table.value": "Значение",
   "technical.table.device": "Устройство",
