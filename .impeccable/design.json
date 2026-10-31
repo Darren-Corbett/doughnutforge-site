@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-31T09:51:26+00:00",
+  "title": "Design System: Doughnut Forge website",
+  "extensions": {
+    "colorMeta": {
+      "forge-blue": {
+        "role": "primary",
+        "displayName": "Forge Blue"
+      },
+      "forge-green": {
+        "role": "secondary",
+        "displayName": "Forge Green"
+      },
+      "forge-orange": {
+        "role": "tertiary",
+        "displayName": "Tab Orange"
+      },
+      "forge-violet": {
+        "role": "tertiary",
+        "displayName": "Tab Violet"
+      },
+      "forge-pink": {
+        "role": "tertiary",
+        "displayName": "Tab Pink"
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Night"
+      },
+      "night-panel": {
+        "role": "neutral",
+        "displayName": "Night Panel"
+      },
+      "night-line": {
+        "role": "neutral",
+        "displayName": "Night Line"
+      },
+      "page": {
+        "role": "neutral",
+        "displayName": "Page"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface"
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Text"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The home page heading only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "The heading in every other page's night band."
+      },
+      "section-title": {
+        "displayName": "Section title",
+        "purpose": "Each section's heading."
+      },
+      "tagline": {
+        "displayName": "Tagline",
+        "purpose": "The second line under a night-band heading, in blue ink."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Ciphertext and inline code only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "lifted-pane",
+        "value": "0 18px 40px rgb(0 0 0 / 0.45)",
+        "purpose": "The contact pane overlapping the stranger's pane in the home hero."
+      },
+      {
+        "name": "floating-menu",
+        "value": "0 18px 40px rgb(0 0 0 / 0.25)",
+        "purpose": "The language menu panel."
+      },
+      {
+        "name": "device",
+        "value": "0 18px 36px rgb(0 0 0 / 0.35)",
+        "purpose": "Phone screenshots."
+      },
+      {
+        "name": "scan-glow",
+        "value": "0 0 18px #1da1f2",
+        "purpose": "The scan line in the encryption animation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "encrypt-sweep",
+        "value": "1.8s cubic-bezier(0.65, 0, 0.35, 1) 0.6s",
+        "purpose": "The home hero's one animation; removed under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "header-narrow",
+        "value": "360px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action, on any background.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Get Doughnut Forge</a>",
+      "css": ".ds-btn-primary{min-height:48px;display:inline-flex;align-items:center;justify-content:center;text-align:center;padding:10px 24px;border-radius:9999px;font:800 17px system-ui,sans-serif;background:#1da1f2;color:#14171a;text-decoration:none}.ds-btn-primary:focus-visible{outline:3px solid #1da1f2;outline-offset:3px}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "The second action on a night band.",
+      "html": "<div class=\"ds-night\"><a class=\"ds-btn-quiet\" href=\"#\">See what it does</a></div>",
+      "css": ".ds-night{background:#15202b;padding:24px}.ds-btn-quiet{min-height:48px;display:inline-flex;align-items:center;justify-content:center;padding:10px 24px;border-radius:9999px;font:800 17px system-ui,sans-serif;border:2px solid #38444d;color:#fff;text-decoration:none}.ds-btn-quiet:hover{background:rgb(255 255 255 / 0.1)}.ds-btn-quiet:focus-visible{outline:3px solid #1da1f2;outline-offset:3px}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "The second action on a light background.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">See the answers</a>",
+      "css": ".ds-btn-outline{min-height:48px;display:inline-flex;align-items:center;justify-content:center;padding:10px 24px;border-radius:9999px;font:800 17px system-ui,sans-serif;border:2px solid #cbd5e1;color:#14171a;text-decoration:none}.ds-btn-outline:focus-visible{outline:3px solid #1da1f2;outline-offset:3px}"
+    },
+    {
+      "name": "Platform Card",
+      "kind": "card",
+      "refersTo": "card-platform",
+      "description": "One platform; a green edge means it is on sale.",
+      "html": "<div class=\"ds-card ds-on-sale\"><h3 class=\"ds-card-name\">Mac</h3><p class=\"ds-card-status\">Needs macOS 12 Monterey or later.</p></div>",
+      "css": ".ds-card{display:flex;flex-direction:column;padding:20px 20px 22px;border-radius:20px;background:#fff;border:2px solid #e2e8f0;font-family:system-ui,sans-serif}.ds-on-sale{border-color:#00ba7c}.ds-card-name{font-size:24px;line-height:1.15;font-weight:900;letter-spacing:-0.01em;color:#14171a;margin:0}.ds-card-status{margin:6px 0 0;font-size:17px;line-height:1.5;color:#475569}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "The night header; every link visible on phones.",
+      "html": "<nav class=\"ds-header\"><strong class=\"ds-brand\">Doughnut Forge</strong><a class=\"ds-nav\" href=\"#\" aria-current=\"page\">Features</a><a class=\"ds-nav\" href=\"#\">Pricing</a><a class=\"ds-nav\" href=\"#\">Download</a><a class=\"ds-nav\" href=\"#\">Support</a></nav>",
+      "css": ".ds-header{display:flex;flex-wrap:wrap;align-items:center;gap:4px;background:#15202b;padding:10px 16px;font-family:system-ui,sans-serif}.ds-brand{color:#fff;font-size:18px;font-weight:800;margin-inline-end:auto}.ds-nav{display:flex;min-height:44px;align-items:center;padding:0 16px;border-radius:9999px;font-size:15px;font-weight:700;color:#e2e8f0;text-decoration:none}.ds-nav:hover{background:rgb(255 255 255 / 0.1);color:#fff}.ds-nav[aria-current=page]{color:#fff;text-decoration:underline;text-decoration-color:#4cb5f5;text-decoration-thickness:2px;text-underline-offset:8px}.ds-nav:focus-visible{outline:3px solid #1da1f2;outline-offset:3px}"
+    },
+    {
+      "name": "Feature Row",
+      "kind": "custom",
+      "refersTo": "feature-row",
+      "description": "An app tab as a coloured row: tab name in its ink, then what it does.",
+      "html": "<div class=\"ds-row\"><p class=\"ds-row-name\">Secure Directory</p><div><h3 class=\"ds-row-title\">Encrypt files and folders</h3><p class=\"ds-row-text\">Lock a single file or a whole folder in a few clicks, ready to keep safe or to share.</p></div></div>",
+      "css": ".ds-row{display:grid;gap:6px 32px;padding:22px 0 26px;border-top:3px solid #1da1f2;font-family:system-ui,sans-serif}.ds-row-name{margin:0;font-size:32px;line-height:1.1;font-weight:900;letter-spacing:-0.02em;color:#09649c}.ds-row-title{margin:0;font-size:19px;font-weight:800;color:#14171a}.ds-row-text{margin:4px 0 0;font-size:17px;line-height:1.55;color:#475569;max-width:38rem}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The App, Unfolded",
+    "overview": "The site is the app laid out flat and explained page by page. Its colours, tab tones, system fonts and dark night surfaces all come from the app, so someone who has seen the app recognises the site, and the reverse. Nothing here is a separate marketing brand.\n\nEvery page opens on a night band, the app's dark colour, carrying the page's one heading. Below it, plain light sections (dark in dark mode) hold the facts in short blocks of heavy type. The app's five tab colours label the features, in the same order and with the same names. The feel is sturdy and friendly: heavy type, pill buttons, thick 2px edges and big round corners. Confident, never fussy.\n\nThe site follows the system light or dark setting with no script and no switch. It must hold up in 30 languages at 320px wide, so every rule about type and layout serves long words and other writing systems first.",
+    "keyCharacteristics": [
+      "The night band (`#15202b`) opens every page, in both themes.",
+      "One loud colour, the app's blue; the four other tab tones label features only.",
+      "System fonts only, at weights 800 and 900 for anything that is not body text.",
+      "Flat surfaces with 2px edges; shadows only on things that float.",
+      "Big, friendly corners (16 to 24px) and pill buttons."
+    ],
+    "rules": [
+      {
+        "name": "The Ink Rule",
+        "body": "Coloured text and icons always use the ink version of a colour (`ink-*`, with its `-dark` partner in dark mode), which reaches 4.5:1 on every background. The bright tones (`forge-*`) are for borders, dots, rules and fills only.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dark Text on Blue Rule",
+        "body": "The primary button puts near-black (`text`) on Forge Blue, at 6.4:1. White on Forge Blue fails contrast and is never used.",
+        "section": "colors"
+      },
+      {
+        "name": "The No New Colours Rule",
+        "body": "Every colour comes from the app. A new colour starts in the app, never here.",
+        "section": "colors"
+      },
+      {
+        "name": "The Fit the Longest Word Rule",
+        "body": "Large headings set their size in `--fs`, never in `font-size`. A shared rule in `global.css` shrinks a heading just enough for its longest word to fit the column (`src/middleware.ts` measures it). Words never break or hyphenate, in any language.",
+        "section": "typography"
+      },
+      {
+        "name": "The Script-Aware Spacing Rule",
+        "body": "Japanese, Chinese, Korean, Thai and Hindi get normal letter spacing, and taller heading line heights (1.25, or 1.35 for Thai and Hindi), overriding each component's Latin settings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Floats Only Rule",
+        "body": "A shadow means something sits on top of something else. Cards, sheets and buttons at rest have none.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Dark Mode Edge Rule",
+        "body": "In dark mode the page is the same night colour as the hero, so the hero band and the phones band get a 2px bottom or top edge in Night Line.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** open every page with the night band and its one heading.",
+      "**Do** use ink colours for any coloured text, and the bright tones only for borders, dots, rules and fills.",
+      "**Do** put near-black text on Forge Blue.",
+      "**Do** set large heading sizes in `--fs` so the fit-the-longest-word rule applies.",
+      "**Do** keep tap targets at least 44px (48px for buttons).",
+      "**Do** give the app's features their own tab names and tab tones, in the app's order.",
+      "**Do** check every page at 320px and 360px, in both themes, and in a long-word language."
+    ],
+    "donts": [
+      "**Don't** add a colour, font or brand mark that is not in the app.",
+      "**Don't** load web fonts, icon fonts or anything from another server.",
+      "**Don't** put white text on Forge Blue.",
+      "**Don't** break or hyphenate words to make text fit; change the layout instead.",
+      "**Don't** add shadows to cards, sheets or buttons at rest.",
+      "**Don't** hide the header links behind a menu button on phones.",
+      "**Don't** tighten letter spacing in Japanese, Chinese, Korean, Thai or Hindi.",
+      "**Don't** use Forge Green to decorate; it means on sale or yours."
+    ]
+  }
+}
