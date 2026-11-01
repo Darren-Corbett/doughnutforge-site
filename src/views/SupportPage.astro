@@ -49,7 +49,7 @@ const jsonLd = {
   <section id="faq" class="section" aria-labelledby="support-faq">
     <h2 id="support-faq" class="section-title">{t("support.faq.title")}</h2>
     <Faq items={items} />
-    <p class="section-text">
+    <p class="section-text after-faq">
       <a class="text-link" href={localePath(lang.code, "security/technical-details/")}>{t("technical.link")}</a>
     </p>
   </section>
@@ -121,6 +121,10 @@ const jsonLd = {
   .ask,
   .privacy {
     padding-top: 0;
+  }
+  .after-faq {
+    margin-top: 28px;
+    max-width: 46rem;
   }
   .policy-text :global(a),
   .text-link {

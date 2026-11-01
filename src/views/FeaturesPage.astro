@@ -143,10 +143,16 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
 </Base>
 
 <style>
+  /* A new group after the FAQ's last rule, and a link that looks like one */
   .faq-more {
-    margin-top: 20px;
-    font-size: 17px;
+    margin-top: 28px;
+    font-size: 18px;
     font-weight: 700;
+  }
+  .faq-more a {
+    color: var(--ink-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
   .private {
     padding-top: 0;
