@@ -59,6 +59,15 @@ const date = new Intl.DateTimeFormat(lang.hreflang, { dateStyle: "long" });
   .posts {
     max-width: 46rem;
   }
+  /* Two columns on wide screens, so the list uses the page width like the home page */
+  @media (min-width: 1024px) {
+    .posts {
+      max-width: none;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 48px;
+    }
+  }
   .posts li {
     padding: 24px 0;
     border-top: 3px solid #1da1f2;
