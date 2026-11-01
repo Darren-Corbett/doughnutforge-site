@@ -36,10 +36,17 @@ const sections = [1, 2, 3, 4, 5].map((n) => ({ title: `sec${n}Title` as PolicyKe
 </Base>
 
 <style>
+  /* Muted slate on the white sheet; on phones the sheet is dropped, and on the page
+     it would fall under 4.5:1, so it takes Secondary there */
   .publisher {
     margin-top: 32px;
     font-size: 14px;
-    color: #475569;
+    color: #64748b;
+  }
+  @media (max-width: 639px) {
+    .publisher {
+      color: #475569;
+    }
   }
   @media (prefers-color-scheme: dark) {
     .publisher {

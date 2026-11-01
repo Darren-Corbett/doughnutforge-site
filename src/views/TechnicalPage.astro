@@ -81,7 +81,7 @@ const back = t("technical.back");
   <div class="section">
     <section aria-labelledby="glance">
       <h2 id="glance" class="sr-only">{t("technical.glance.title")}</h2>
-      <ul class="glance" role="list">
+      <ul class="glance tone-blue" role="list">
         {
           glance.map(({ icon: Icon, title }) => (
             <li>
@@ -185,11 +185,11 @@ const back = t("technical.back");
     align-items: center;
     gap: 12px;
     padding-top: 14px;
-    border-top: 3px solid #1da1f2;
+    border-top: 3px solid var(--tone);
     font-size: 17px;
     font-weight: 900;
     line-height: 1.25;
-    color: var(--ink-blue);
+    color: var(--ink);
   }
   #toc {
     scroll-margin-top: 24px;
@@ -286,7 +286,7 @@ const back = t("technical.back");
     .glance {
       gap: 12px;
       padding-top: 14px;
-      border-top: 3px solid #1da1f2;
+      border-top: 3px solid var(--tone);
     }
     .glance li {
       padding-top: 0;

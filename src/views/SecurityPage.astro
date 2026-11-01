@@ -36,7 +36,7 @@ const facts: ToneRow[] = [
   <PageHero title={t("security.title")} lead={t("security.lead")} />
   <div class="section">
     <ToneRows rows={facts} />
-    <div class="technical">
+    <div class="technical ruled-row-late">
       <h2>{t("technical.title")}</h2>
       <div>
         <p>{t("security.technical.text")}</p>
@@ -46,7 +46,7 @@ const facts: ToneRow[] = [
   </div>
 
   <section class="section report-section" aria-labelledby="report">
-    <div class="report">
+    <div class="report ruled-row-late">
       <h2 id="report">{t("security.report.title")}</h2>
       <div>
         <p>{t("security.report.text")}</p>
@@ -62,7 +62,8 @@ const facts: ToneRow[] = [
 </Base>
 
 <style>
-  /* The technical details and the report line up with the rows: heading, then text */
+  /* The technical details and the report line up with the rows: heading, then text,
+     side by side from 1024px (.ruled-row-late in global.css), without a rule */
   .technical,
   .report {
     display: grid;
@@ -119,12 +120,4 @@ const facts: ToneRow[] = [
     }
   }
 
-  /* Beside each other from 1024px, as the rows above are */
-  @media (min-width: 1024px) {
-    .technical,
-    .report {
-      grid-template-columns: 5fr 7fr;
-      align-items: baseline;
-    }
-  }
 </style>
