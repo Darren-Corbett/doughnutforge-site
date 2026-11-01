@@ -206,7 +206,7 @@ The app's palette, unchanged: a sky blue, four tab tones, and cool blue-grey neu
 - **Border** (`border`) and **Card Border** (`card-border`): edges in light mode. The outline button and language panel use the stronger one; cards, prose sheets and FAQ rules use the lighter one.
 - **Text** (`text`), **Heading** (`text-heading`), **Body** (`text-body`), **Secondary** (`text-secondary`): near-black for headings and buttons, slate for reading text, a lighter slate for supporting lines.
 - **Strong** (`text-strong`): bold words inside prose and the row headings of the Technical details tables, a step darker than body text.
-- **Muted** (`text-muted`): the strokes of the 404 drawing only. As text it reaches 4.76:1 on Surface but only 4.46:1 on Page, under the 4.5:1 minimum, so small supporting text uses Secondary instead.
+- **Muted** (`text-muted`): the 404 drawing's strokes, and the privacy page's small publisher line while it sits on the white sheet. As text it reaches 4.76:1 on Surface but only 4.46:1 on Page, under the 4.5:1 minimum, so where the sheet is dropped (phones) that line uses Secondary.
 - **On Night** (`text-on-night`, `text-secondary-on-night`, `text-caption-on-night`): white headings, light slate body text and a dimmer slate for captions on the night colour. Light slate is also the body text colour in dark mode.
 
 ### Named Rules
