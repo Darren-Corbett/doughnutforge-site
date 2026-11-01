@@ -98,3 +98,30 @@ The work: `docs/TECH-SPEC.md` (from the app repo, without its Borderline notes);
 - **Change:** `5565075`: the test scrolls to the top left after each viewport change; the far-right scroll probe still catches a real pan.
 - **When to check:** after the next 5 full `npm run test:layout` runs.
 - **Result:** open. Kept if no sideways slide appears in those runs; if one does, the cause is something else, and the change is reverted.
+
+## 1 November 2026, design critique stages 2 and 3 (`bc4fc33..fe7d288`)
+
+The work: Security, Roadmap and Blog index (stage 2); press kit, home, badge space, FAQ gaps, `/go/` dot and DESIGN.md (stage 3); the same fixes on Features, Pricing, Privacy and Legal; Technical details redesigned like Security (decision A). Approved page by page, pushed in one batch.
+
+**Review** (independent subagent): no Must fix. Should fix: a Security test that passed with no rows; DESIGN.md said 34px under dark-mode badges, the test asked for 30; Security and Technical details copied the shared row's grid and colour; two changes missing from the owner's checklist (a Prose first-block margin rule, and the privacy publisher colour changed at every width, not only on phones). All four fixed (`5cdd9b8` tests, `5d4f182` code, `52762bd` DESIGN.md).
+
+**Went well:** page-by-page approval; every new test failed on the old build first; the layout tests in every language caught German headings pushing Security sideways at 768px before the owner saw it; the separate Impeccable review and detector found real problems each round; contrast was computed, not guessed.
+
+**Went wrong, and why:**
+1. **German overflow on Security.** The heading went into a narrow column without checking what the fit-the-longest-word rule measures (the section, not the column). Now built into the shared row.
+2. **A lost space ("planned.See the roadmap").** Astro drops the space between an expression and a tag on the next line. Caught in a screenshot; now tested.
+3. **Removing "Planned" also deleted the next line in 29 files.** A greedy pattern. Caught in the diff before building; redone line by line with a one-line-per-file check.
+4. **Two vacuous tests** (one caught, one shipped) and two wrong ones. Loops over `locator.all()` pass on zero matches; computed CSS values were guessed instead of read.
+5. **Two changes missing from the owner's checklist.** It was written from intent, not from the diff.
+6. **Copied CSS left behind** when the row became shared: no search for other copies.
+
+**Rules that got in the way:** none. The Impeccable passes cost time but found something every round.
+
+**Numbers:** appetite a day, actual one session. Review: 0 Must fix, 4 Should fix. Problems after shipping: none known yet.
+
+**Agreed (owner):**
+- Experiment: `each()` in `tests/support/each.ts` fails on zero matches (or the wrong count), and `tests/checks/each.spec.ts` fails on any bare `.all()` in the tests (`f255f8d`). Problem: vacuous loops. When to check: the next retro. Kept if its reviewer finds no vacuous test.
+- CLAUDE.md: the owner's review checklist is written from `git diff` and lists every changed file (`8a79a73`).
+- The four Should-fix items, as above.
+
+**320px slide experiment (31 October):** 1 of 5 full `test:layout` runs done (2878 passed), no sideways slide.
