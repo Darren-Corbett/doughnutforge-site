@@ -1,7 +1,8 @@
 // The inner pages read as one site with the home page (docs/design/critique-2026-10-31.md):
 // Support answers before it sends anyone to GitHub, Download's tagline stands on
 // its own, blog titles look like links, posts have a way back to the Blog and
-// full-width lines on phones, and the Technical details cards and lists follow DESIGN.md.
+// full-width lines on phones, the Technical details cards and lists follow DESIGN.md,
+// and Security puts its facts before the researchers' reporting section.
 import { expect, test } from "@playwright/test";
 import english from "../../src/i18n/ui/en";
 import de from "../../src/i18n/ui/de";
@@ -19,6 +20,25 @@ for (const [prefix, strings] of [["", en], ["/de", de as Record<string, string>]
     await expect(ask.locator(".btn-primary")).toHaveCount(1);
     await expect(ask.locator(".btn-primary")).toHaveText(strings["support.ask.question"]!);
     await expect(ask.locator(".btn-outline")).toHaveText([strings["support.ask.bug"]!, strings["support.ask.idea"]!, strings["support.ask.search"]!]);
+  });
+
+  test(`security: the facts and the missing audit as blue rows, then a quiet reporting section ${prefix || "/"}`, async ({ page }) => {
+    await page.goto(`${prefix}/security/`);
+    const facts = page.locator("main .row");
+    await expect(facts.locator("h2")).toHaveText(["device", "servers", "quantum", "keys", "audit"].map((id) => strings[`security.${id}.title`]!));
+    for (const row of await facts.all()) expect(await row.evaluate((e) => getComputedStyle(e).borderTopColor)).toBe("rgb(29, 161, 242)");
+    // No loud button: the reporting action is for researchers, not everyday visitors
+    await expect(page.locator("main .btn-primary")).toHaveCount(0);
+    await expect(page.locator("#report ~ * .btn-outline")).toHaveText(new RegExp(strings["security.report.button"]!));
+    await expect(facts.last().locator("p")).toHaveText(`${strings["security.audit.text"]} ${strings["security.audit.link"]}`);
+    const headings = await page.locator("main h2").evaluateAll((hs) => hs.map((h) => h.id || h.textContent));
+    expect(headings.indexOf("report"), `heading order: ${headings}`).toBe(headings.length - 1);
+  });
+
+  test(`security at 768px: no fact heading is smaller than the subheadings ${prefix || "/"}`, async ({ page }) => {
+    await page.setViewportSize({ width: 768, height: 1000 });
+    await page.goto(`${prefix}/security/`);
+    for (const h of await page.locator("main .row h2").all()) expect(await h.evaluate((e) => parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(19);
   });
 
   test(`download: the tagline is the site's summary line ${prefix || "/"}`, async ({ page }) => {
