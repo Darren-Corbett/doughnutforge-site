@@ -20,7 +20,7 @@ const sections = [1, 2, 3, 4, 5].map((n) => ({ title: `sec${n}Title` as PolicyKe
 <Base lang={lang} title={`${policyTitle(lang.code)} | ${site.name}`} description={t("meta.privacy.description")} image="/og/privacy.png">
   <PageHero title={html("title")} lead={html("effectiveDate")} policyKeys={{ title: "title", lead: "effectiveDate" }} html />
   <div class="section">
-    <Prose>
+    <Prose fullWidthOnPhones>
       <p data-policy="hero" set:html={html("hero")} />
       {
         sections.map((s) => (
@@ -39,7 +39,7 @@ const sections = [1, 2, 3, 4, 5].map((n) => ({ title: `sec${n}Title` as PolicyKe
   .publisher {
     margin-top: 32px;
     font-size: 14px;
-    color: #64748b;
+    color: #475569;
   }
   @media (prefers-color-scheme: dark) {
     .publisher {

@@ -3,11 +3,14 @@
 // app's 24px radius and 2px border, as the old privacy page had.
 interface Props {
   class?: string;
+  /** A page that is one long text: on phones the card's edge and padding would
+      cut lines short, so the text runs the full width there instead */
+  fullWidthOnPhones?: boolean;
 }
-const { class: className = "" } = Astro.props;
+const { class: className = "", fullWidthOnPhones = false } = Astro.props;
 ---
 
-<div class:list={["prose", className]}>
+<div class:list={["prose", { "full-width-on-phones": fullWidthOnPhones }, className]}>
   <slot />
 </div>
 
@@ -118,6 +121,14 @@ const { class: className = "" } = Astro.props;
   @media (min-width: 768px) {
     .prose {
       padding: 40px;
+    }
+  }
+  @media (max-width: 639px) {
+    .full-width-on-phones {
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: none;
     }
   }
 </style>

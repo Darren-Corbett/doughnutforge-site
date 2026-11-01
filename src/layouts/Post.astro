@@ -66,7 +66,7 @@ const article = {
     </p>
   </PageHero>
   <div class="section">
-    <Prose>
+    <Prose fullWidthOnPhones>
       <slot />
     </Prose>
     <aside class="cta" aria-labelledby="post-cta">
@@ -88,14 +88,6 @@ const article = {
     color: #4cb5f5;
     text-decoration: underline;
     text-underline-offset: 3px;
-  }
-  @media (max-width: 639px) {
-    .section :global(.prose) {
-      padding: 0;
-      border: 0;
-      border-radius: 0;
-      background: none;
-    }
   }
   .byline {
     font-size: 16px;
