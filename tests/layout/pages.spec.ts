@@ -41,14 +41,12 @@ for (const lang of languages) {
       expect(sections).toEqual([...sections].sort((a, b) => SECTIONS.indexOf(a!) - SECTIONS.indexOf(b!)));
       expect(sections).toContain("next");
       expect(sections).toContain("later");
-      // Every item not yet shipped says it is planned, in the page language
-      const planned = await ui(lang.code, "roadmap.planned");
+      // Next and Later say they are planned in their headings, so no item repeats it
       for (const status of ["next", "later"]) {
-        const items = page.locator(`[data-roadmap="${status}"] li`);
-        expect(await items.count(), `${status} items`).toBeGreaterThan(0);
-        for (const item of await items.all()) await expect(item.locator("[data-planned]")).toHaveText(planned);
+        await expect(page.locator(`[data-roadmap="${status}"] h2`)).toHaveText(await ui(lang.code, `roadmap.${status}`));
+        expect(await page.locator(`[data-roadmap="${status}"] li`).count(), `${status} items`).toBeGreaterThan(0);
       }
-      await expect(page.locator('[data-roadmap="shipped"] [data-planned]')).toHaveCount(0);
+      await expect(page.locator("[data-planned]")).toHaveCount(0);
       // The identity update is out on Mac, iPhone and iPad; Windows waits for its package
       await expect(page.locator('[data-roadmap="shipped"] h3')).toContainText([await ui(lang.code, "roadmap.identity.title")]);
       await expect(page.locator('[data-roadmap="next"] h3')).toContainText([await ui(lang.code, "roadmap.identityWindows.title")]);

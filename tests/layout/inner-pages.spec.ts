@@ -2,7 +2,8 @@
 // Support answers before it sends anyone to GitHub, Download's tagline stands on
 // its own, blog titles look like links, posts have a way back to the Blog and
 // full-width lines on phones, the Technical details cards and lists follow DESIGN.md,
-// and Security puts its facts before the researchers' reporting section.
+// Security puts its facts before the researchers' reporting section, and the
+// Roadmap's groups are tone-ruled rows without a "Planned" pill on every item.
 import { expect, test } from "@playwright/test";
 import english from "../../src/i18n/ui/en";
 import de from "../../src/i18n/ui/de";
@@ -44,6 +45,22 @@ for (const [prefix, strings] of [["", en], ["/de", de as Record<string, string>]
   test(`download: the tagline is the site's summary line ${prefix || "/"}`, async ({ page }) => {
     await page.goto(`${prefix}/download/`);
     await expect(page.locator(".page-hero .tagline")).toHaveText(strings["home.summary"]!);
+  });
+}
+
+for (const scheme of ["light", "dark"] as const) {
+  test(`roadmap: tone-ruled groups, Later ruled in Night Line in dark mode, no lines between items (${scheme})`, async ({ page }) => {
+    await page.emulateMedia({ colorScheme: scheme });
+    await page.goto("/roadmap/");
+    await expect(page.locator("main .prose")).toHaveCount(0);
+    const rule = (status: string) => page.locator(`[data-roadmap="${status}"]`).evaluate((e) => [getComputedStyle(e).borderTopWidth, getComputedStyle(e).borderTopColor]);
+    expect(await rule("shipped")).toEqual(["3px", "rgb(0, 186, 124)"]);
+    expect(await rule("next")).toEqual(["3px", "rgb(29, 161, 242)"]);
+    expect(await rule("later")).toEqual(["3px", scheme === "dark" ? "rgb(56, 68, 77)" : "rgb(203, 213, 225)"]);
+    // The group rule is the only rule, so Later never reads as one more item under Next
+    const between = page.locator("[data-roadmap] li + li");
+    expect(await between.count()).toBeGreaterThan(0);
+    for (const li of await between.all()) expect(await li.evaluate((e) => getComputedStyle(e).borderTopWidth)).toBe("0px");
   });
 }
 
