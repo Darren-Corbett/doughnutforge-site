@@ -200,7 +200,7 @@ test("download in dark mode: space above and below every store badge", async ({ 
       return { above: img.top - text.bottom, below: c.getBoundingClientRect().bottom - img.bottom };
     });
     expect(space.above).toBeGreaterThanOrEqual(28);
-    expect(space.below).toBeGreaterThanOrEqual(30);
+    expect(space.below).toBeGreaterThanOrEqual(34);
   }
 });
 
@@ -252,4 +252,18 @@ test("privacy on a phone: the publisher line passes contrast on the page itself"
   await page.setViewportSize({ width: 360, height: 800 });
   await page.goto("/privacy/");
   expect(await page.locator(".publisher").evaluate((e) => getComputedStyle(e).color)).toBe("rgb(71, 85, 105)");
+});
+
+test("privacy on a computer: the publisher line keeps its muted slate on the white sheet", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto("/privacy/");
+  expect(await page.locator(".publisher").evaluate((e) => getComputedStyle(e).color)).toBe("rgb(100, 116, 139)");
+});
+
+// Without a card above it, a list, table or paragraph that opens a Prose block
+// starts at its top, so it lines up with the heading beside it
+test("prose: the first block starts at the top", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto("/security/technical-details/");
+  for (const first of await each(page.locator(".prose > :first-child"))) expect(await first.evaluate((e) => getComputedStyle(e).marginTop)).toBe("0px");
 });
