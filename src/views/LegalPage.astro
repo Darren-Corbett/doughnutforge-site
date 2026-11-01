@@ -15,7 +15,7 @@ const { t } = useStrings(lang.code);
 <Base lang={lang} title={t("meta.legal.title")} description={t("meta.legal.description")} image="/og/legal.png">
   <PageHero title={t("legal.title")} />
   <div class="section">
-    <Prose fullWidthOnPhones>
+    <Prose sheet="wide">
       <h2>{t("legal.trademarks.title")}</h2>
       <p>{t("legal.trademarks.apple")}</p>
       <p>{t("legal.trademarks.microsoft")}</p>

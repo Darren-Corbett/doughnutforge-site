@@ -257,6 +257,33 @@
     --tone: #00ba7c;
     --ink: var(--ink-green);
   }
+  /* Not a tab: a quiet rule for what matters least, such as the roadmap's Later */
+  .tone-quiet {
+    --tone: #cbd5e1;
+    --ink: #475569;
+  }
+
+  /* A ruled row, first drawn as the home feature rows: a 3px rule in its tone, the
+     name, and what belongs to it beside the name (5:7) from 768px. The name column
+     is its own size container, so a long word shrinks to fit the column rather
+     than push the text off the page. A late row is headed by a whole phrase, often
+     one long German or Finnish word, so it splits only from 1024px. */
+  .ruled-row {
+    display: grid;
+    gap: 6px 32px;
+    padding: 22px 0 26px;
+    border-top: 3px solid var(--tone);
+  }
+  .ruled-row-head {
+    container-type: inline-size;
+  }
+  .row-name {
+    --fs: clamp(26px, 7vw, 36px);
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
 
   @media (prefers-color-scheme: dark) {
     .section-text {
@@ -264,6 +291,22 @@
     }
     .btn-outline {
       border-color: #38444d;
+    }
+    .tone-quiet {
+      --tone: #38444d;
+      --ink: #cbd5e1;
+    }
+  }
+  @media (min-width: 768px) {
+    .ruled-row:not(.ruled-row-late) {
+      grid-template-columns: 5fr 7fr;
+      align-items: baseline;
+    }
+  }
+  @media (min-width: 1024px) {
+    .ruled-row-late {
+      grid-template-columns: 5fr 7fr;
+      align-items: baseline;
     }
   }
   @media (min-width: 768px) {

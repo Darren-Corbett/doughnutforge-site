@@ -1,7 +1,7 @@
 ---
-// One section of a page with an "On this page" list (nav h2#toc): a Prose card
-// with its heading, ending in a link back to the list, so a long page on a phone
-// always has a way back.
+// One section of a page with an "On this page" list (h2#toc): a blue ruled row
+// like the Security facts, its heading beside the text from 1024px, ending in a
+// link back to the list, so a long page on a phone always has a way back.
 import Prose from "./Prose.astro";
 
 interface Props {
@@ -13,15 +13,41 @@ interface Props {
 const { id, title, back } = Astro.props;
 ---
 
-<Prose>
-  <h2 id={id}>{title}</h2>
-  <slot />
-  <p class="back"><a href="#toc">{back}</a></p>
-</Prose>
+<section class="ruled-row ruled-row-late tone-blue" aria-labelledby={id}>
+  <div class="ruled-row-head">
+    <h2 id={id} class="row-name">{title}</h2>
+  </div>
+  <Prose sheet="none">
+    <slot />
+    <p class="back"><a href="#toc">{back}</a></p>
+  </Prose>
+</section>
 
 <style>
+  /* A table straight under the heading on phones gets the same space as after text */
+  section {
+    row-gap: 14px;
+  }
+  /* Section links land below the top of the screen, not under the browser's edge */
+  h2 {
+    scroll-margin-top: 24px;
+  }
+  /* Beside a long section, the heading stays in view while it is read */
+  @media (min-width: 1024px) {
+    .ruled-row-head {
+      align-self: start;
+      position: sticky;
+      top: 24px;
+    }
+  }
   .back {
-    margin-top: 14px;
+    margin-top: 4px;
     font-size: 15px;
+  }
+  /* A link on its own line, so a full 44px tap target */
+  .back a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
   }
 </style>

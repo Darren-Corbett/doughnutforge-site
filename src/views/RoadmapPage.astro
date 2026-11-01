@@ -15,7 +15,7 @@ interface Props {
 }
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
-const tones = { shipped: "tone-green", next: "tone-blue", later: "tone-later" };
+const tones = { shipped: "tone-green", next: "tone-blue", later: "tone-quiet" };
 const sections = roadmapStatuses
   .map((status) => ({ status, items: roadmap.filter((i) => i.status === status) }))
   .filter((s) => s.items.length);
@@ -26,9 +26,9 @@ const sections = roadmapStatuses
   <div class="section">
     {
       sections.map(({ status, items }) => (
-        <section class:list={["group", tones[status]]} data-roadmap={status} aria-labelledby={`roadmap-${status}`}>
-          <div class="group-head">
-            <h2 id={`roadmap-${status}`}>{t(`roadmap.${status}` as UiKey)}</h2>
+        <section class:list={["ruled-row", tones[status]]} data-roadmap={status} aria-labelledby={`roadmap-${status}`}>
+          <div class="ruled-row-head">
+            <h2 id={`roadmap-${status}`} class="row-name">{t(`roadmap.${status}` as UiKey)}</h2>
           </div>
           <ul class="items" role="list">
             {items.map((item) => (
@@ -45,27 +45,6 @@ const sections = roadmapStatuses
 </Base>
 
 <style>
-  .tone-later {
-    --tone: #cbd5e1;
-    --ink: #475569;
-  }
-  .group {
-    display: grid;
-    gap: 6px 32px;
-    padding: 22px 0 26px;
-    border-top: 3px solid var(--tone);
-  }
-  /* The name fits its own column, so a long word shrinks rather than push the items off the page */
-  .group-head {
-    container-type: inline-size;
-  }
-  h2 {
-    --fs: clamp(26px, 7vw, 36px);
-    line-height: 1.1;
-    font-weight: 900;
-    letter-spacing: -0.02em;
-    color: var(--ink);
-  }
   li + li {
     margin-top: 28px;
   }
@@ -83,21 +62,11 @@ const sections = roadmapStatuses
     color: #475569;
   }
   @media (prefers-color-scheme: dark) {
-    .tone-later {
-      --tone: #38444d;
-      --ink: #cbd5e1;
-    }
     h3 {
       color: #fff;
     }
     p {
       color: #cbd5e1;
-    }
-  }
-  @media (min-width: 768px) {
-    .group {
-      grid-template-columns: 5fr 7fr;
-      align-items: baseline;
     }
   }
 </style>

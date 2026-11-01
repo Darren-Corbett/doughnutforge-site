@@ -3,9 +3,9 @@
 // libraries, for technical readers. The one page allowed to name security
 // internals; every fact comes from docs/TECH-SPEC.md. Algorithm and library
 // names are written here or kept in English in every translation.
-// Laid out like the Security page: Prose cards, one per section, each ending in a
-// link back to the "On this page" list, under a short "at a glance" strip of
-// plain cards with a tone edge.
+// Laid out like the Security page: a blue ruled row per section, each ending in a
+// link back to the "On this page" row, under four facts at a glance, each under a
+// blue rule. Blue only: the other tab tones label the app's features.
 import Atom from "@lucide/astro/icons/atom";
 import Lock from "@lucide/astro/icons/lock";
 import ServerOff from "@lucide/astro/icons/server-off";
@@ -55,10 +55,10 @@ const libraries: { purpose: string; library: string }[] = [
 ];
 
 const glance = [
-  { icon: Lock, tone: "blue", title: "AES-256-GCM" },
-  { icon: Atom, tone: "violet", title: t("technical.glance.exchange") },
-  { icon: WifiOff, tone: "blue", title: t("technical.glance.network") },
-  { icon: ServerOff, tone: "orange", title: t("technical.glance.servers") },
+  { icon: Lock, title: "AES-256-GCM" },
+  { icon: Atom, title: t("technical.glance.exchange") },
+  { icon: WifiOff, title: t("technical.glance.network") },
+  { icon: ServerOff, title: t("technical.glance.servers") },
 ];
 
 // Every section, in page order, for the "On this page" list
@@ -78,13 +78,13 @@ const back = t("technical.back");
 
 <Base lang={lang} title={t("meta.technical.title")} description={t("meta.technical.description")} image="/og/technical.png">
   <PageHero title={t("technical.title")} lead={t("technical.lead")} />
-  <div class="section stack">
+  <div class="section">
     <section aria-labelledby="glance">
       <h2 id="glance" class="sr-only">{t("technical.glance.title")}</h2>
       <ul class="glance" role="list">
         {
-          glance.map(({ icon: Icon, tone, title }) => (
-            <li class={`tone-${tone}`}>
+          glance.map(({ icon: Icon, title }) => (
+            <li>
               <span class="icon" aria-hidden="true">
                 <Icon size={24} stroke-width={2.4} />
               </span>
@@ -95,12 +95,14 @@ const back = t("technical.back");
       </ul>
     </section>
 
-    <Prose>
-      <nav aria-labelledby="toc">
-        <h2 id="toc">{t("technical.toc")}</h2>
+    <nav class="ruled-row ruled-row-late tone-quiet" aria-labelledby="toc">
+      <div class="ruled-row-head">
+        <h2 id="toc" class="row-name">{t("technical.toc")}</h2>
+      </div>
+      <Prose sheet="none">
         <ol>{sections.map((s) => <li><a href={`#${s.id}`}>{s.title}</a></li>)}</ol>
-      </nav>
-    </Prose>
+      </Prose>
+    </nav>
 
     <TocSection id="encryption" title={title.encryption} back={back}>
       <ul>{encryption.map((i) => <li><strong>{i.label}</strong> {i.text}</li>)}</ul>
@@ -172,37 +174,36 @@ const back = t("technical.back");
 </Base>
 
 <style>
-  .stack {
-    display: grid;
-    gap: 24px;
-  }
-  /* The same width as the cards below, so the page reads as one column */
+  /* Four facts, each under a blue rule, in blue ink */
   .glance {
-    max-width: 42rem;
     display: grid;
-    gap: 12px;
+    gap: 20px 32px;
+    margin-bottom: 40px;
   }
-  /* Plain surface cards; the tab tone only on the edge, its ink on the words */
   .glance li {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 14px 16px;
-    border-radius: 16px;
-    border: 2px solid var(--tone);
-    background: #fff;
+    padding-top: 14px;
+    border-top: 3px solid #1da1f2;
     font-size: 17px;
     font-weight: 900;
     line-height: 1.25;
-    color: var(--ink);
+    color: var(--ink-blue);
+  }
+  #toc {
+    scroll-margin-top: 24px;
+  }
+  /* Links on their own, so each is a full 44px tap target */
+  nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
   }
   .icon {
     flex: none;
     display: grid;
     place-items: center;
-  }
-  nav ol {
-    margin-top: 10px;
   }
   .facts {
     width: 100%;
@@ -244,9 +245,6 @@ const back = t("technical.back");
   }
 
   @media (prefers-color-scheme: dark) {
-    .glance li {
-      background: #1e2732;
-    }
     .facts,
     .facts tbody :is(th, td) {
       border-color: #38444d;
@@ -282,9 +280,27 @@ const back = t("technical.back");
       padding-top: 2px;
     }
   }
+  /* On phones the four sit in one list under one rule, so they do not read as four
+     sections; side by side, each has its own */
+  @media (max-width: 559px) {
+    .glance {
+      gap: 12px;
+      padding-top: 14px;
+      border-top: 3px solid #1da1f2;
+    }
+    .glance li {
+      padding-top: 0;
+      border-top: 0;
+    }
+  }
   @media (min-width: 560px) {
     .glance {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1024px) {
+    .glance {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
 </style>
