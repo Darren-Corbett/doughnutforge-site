@@ -95,6 +95,12 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
     .status {
       color: #cbd5e1;
     }
+    /* The Microsoft Store badge is dark grey on the dark card, so it needs space to stand
+       apart. Every card gets it, so badges in a row still line up. */
+    .buy {
+      margin-bottom: 0;
+      padding-top: 16px;
+    }
   }
   @media (min-width: 640px) {
     .cards {
