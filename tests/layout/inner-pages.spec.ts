@@ -108,14 +108,28 @@ test("blog post at 640px keeps its sheet", async ({ page }) => {
   expect(await page.locator(".prose").evaluate((e) => getComputedStyle(e).borderInlineStartWidth)).toBe("2px");
 });
 
-test("technical details: plain cards with a tone edge, and the normal gap after a list", async ({ page }) => {
+test("technical details: blue-ruled facts and sections like Security, no sheets, the full width", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto("/security/technical-details/");
-  for (const card of await page.locator(".glance li").all()) {
-    const { background, border } = await card.evaluate((e) => ({ background: getComputedStyle(e).backgroundColor, border: getComputedStyle(e).borderTopWidth }));
-    expect(background).toBe("rgb(255, 255, 255)");
-    expect(border).toBe("2px");
-    expect(await card.locator(".icon").evaluate((e) => getComputedStyle(e).backgroundColor)).toBe("rgba(0, 0, 0, 0)");
+  // At a glance: four facts under a blue rule, no boxes and no feature tones
+  for (const fact of await page.locator(".glance li").all()) {
+    const style = await fact.evaluate((e) => ({ rule: [getComputedStyle(e).borderTopWidth, getComputedStyle(e).borderTopColor], side: getComputedStyle(e).borderInlineStartWidth, background: getComputedStyle(e).backgroundColor }));
+    expect(style).toEqual({ rule: ["3px", "rgb(29, 161, 242)"], side: "0px", background: "rgba(0, 0, 0, 0)" });
   }
+  // Every section is a blue-ruled row with its heading beside the text, on the page itself
+  const sections = page.locator("main section[aria-labelledby]:has(a[href='#toc'])");
+  expect(await sections.count()).toBe(8);
+  for (const section of await sections.all()) {
+    expect(await section.evaluate((e) => [getComputedStyle(e).borderTopWidth, getComputedStyle(e).borderTopColor])).toEqual(["3px", "rgb(29, 161, 242)"]);
+    const [head, body] = await section.evaluate((e) => [e.querySelector("h2")!.getBoundingClientRect(), e.querySelector(".prose")!.getBoundingClientRect()].map((r) => ({ left: r.left, top: r.top })));
+    expect(body.left).toBeGreaterThan(head.left);
+  }
+  await expect(page.locator("main .prose").first()).toHaveCSS("border-top-width", "0px");
+  // The contents and "Back to contents" links stand alone, so each is a full tap target
+  for (const link of await page.locator('nav[aria-labelledby="toc"] a, main a[href="#toc"]').all()) expect((await link.boundingBox())!.height).toBeGreaterThanOrEqual(44);
+  // The rows reach the right of the 72rem column, as on Security
+  const right = await sections.first().evaluate((e) => e.getBoundingClientRect().right);
+  expect(right).toBeGreaterThan(1100);
   // A paragraph after a list gets the same space as one after a paragraph
   const after = page.locator(".prose :is(ul, ol) + p");
   expect(await after.count()).toBeGreaterThan(0);
