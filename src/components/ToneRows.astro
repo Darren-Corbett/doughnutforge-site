@@ -1,14 +1,17 @@
 ---
 // The app's tabs as coloured rows: the tab name in its tab colour, then what it
-// does. Used on the home page and, with more detail, on the features page.
+// does. Used on the home page and, with more detail, on the features page. The
+// security page uses rows without a title: there the name is the section heading.
 export type ToneRow = {
-  /** The app's own tab name, such as "Secure Text" */
+  /** The app's own tab name, such as "Secure Text", or a section heading */
   name: string;
   tone: "blue" | "orange" | "violet" | "pink" | "green";
-  title: string;
+  title?: string;
   text: string;
   /** Further paragraphs, shown under the text */
   more?: string[];
+  /** A link at the end of the text, such as "See the roadmap" */
+  link?: { href: string; label: string };
 };
 interface Props {
   rows: ToneRow[];
@@ -19,11 +22,19 @@ const { rows } = Astro.props;
 <ul class="rows" role="list">
   {
     rows.map((r) => (
-      <li class:list={["row", `tone-${r.tone}`]}>
-        <p class="row-name">{r.name}</p>
+      <li class:list={["row", `tone-${r.tone}`, { "row-heading": !r.title }]}>
+        <div class="row-head">{r.title ? <p class="row-name">{r.name}</p> : <h2 class="row-name">{r.name}</h2>}</div>
         <div>
-          <h3>{r.title}</h3>
-          <p>{r.text}</p>
+          {r.title && <h3>{r.title}</h3>}
+          <p>
+            {r.text}
+            {r.link && (
+              <>
+                {" "}
+                <a href={r.link.href}>{r.link.label}</a>
+              </>
+            )}
+          </p>
           {r.more?.map((m) => <p>{m}</p>)}
         </div>
       </li>
@@ -35,11 +46,18 @@ const { rows } = Astro.props;
   .rows {
     margin-top: 32px;
   }
+  .rows:first-child {
+    margin-top: 0;
+  }
   .row {
     display: grid;
     gap: 6px 32px;
     padding: 22px 0 26px;
     border-top: 3px solid var(--tone);
+  }
+  /* The name fits its own column, so a long word shrinks rather than push the text off the page */
+  .row-head {
+    container-type: inline-size;
   }
   .row-name {
     --fs: clamp(26px, 7vw, 36px);
@@ -62,13 +80,27 @@ const { rows } = Astro.props;
   .row p:not(.row-name) + p {
     margin-top: 10px;
   }
+  .row a {
+    font-weight: 700;
+    color: var(--ink-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
   @media (prefers-color-scheme: dark) {
     .row p:not(.row-name) {
       color: #cbd5e1;
     }
   }
   @media (min-width: 768px) {
-    .row {
+    .row:not(.row-heading) {
+      grid-template-columns: 5fr 7fr;
+      align-items: baseline;
+    }
+  }
+  /* A heading name is a whole phrase, often one long word in German or Finnish, so it
+     sits beside its text only once the name column is wide enough to hold it */
+  @media (min-width: 1024px) {
+    .row-heading {
       grid-template-columns: 5fr 7fr;
       align-items: baseline;
     }

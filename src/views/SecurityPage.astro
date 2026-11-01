@@ -2,8 +2,10 @@
 // Security: how Doughnut Forge protects files, in what a user needs to know and
 // no more, that no outside audit has happened yet, and how to report a problem
 // privately (GitHub's private vulnerability reporting, never the public issues).
+// The facts come first, as rows like the home features; the reporting section is
+// for security researchers, so it comes last and stays quiet.
 import PageHero from "../components/PageHero.astro";
-import Prose from "../components/Prose.astro";
+import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
 import { site } from "../data/site";
 import { localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
@@ -13,64 +15,116 @@ interface Props {
 }
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
-const points = ["device", "servers", "quantum", "keys"] as const;
+// Blue only: the other tab tones label the app's features, and these are not features.
+// The missing audit is a row of its own, as loud as the facts.
+const facts: ToneRow[] = [
+  ...(["device", "servers", "quantum", "keys"] as const).map((id) => ({
+    name: t(`security.${id}.title` as UiKey),
+    tone: "blue" as const,
+    text: t(`security.${id}.text` as UiKey),
+  })),
+  {
+    name: t("security.audit.title"),
+    tone: "blue",
+    text: t("security.audit.text"),
+    link: { href: localePath(lang.code, "roadmap/"), label: t("security.audit.link") },
+  },
+];
 ---
 
 <Base lang={lang} title={t("meta.security.title")} description={t("meta.security.description")} image="/og/security.png">
   <PageHero title={t("security.title")} lead={t("security.lead")} />
-  <div class="section cards">
-    <Prose>
-      {
-        points.map((id) => (
-          <>
-            <h2>{t(`security.${id}.title` as UiKey)}</h2>
-            <p>{t(`security.${id}.text` as UiKey)}</p>
-          </>
-        ))
-      }
-      <h2>{t("security.audit.title")}</h2>
-      <p>
-        {t("security.audit.text")} <a href={localePath(lang.code, "roadmap/")}>{t("security.audit.link")}</a>
-      </p>
+  <div class="section">
+    <ToneRows rows={facts} />
+    <div class="technical">
+      <h2>{t("technical.title")}</h2>
+      <div>
+        <p>{t("security.technical.text")}</p>
+        <a class="btn-outline" href={localePath(lang.code, "security/technical-details/")}>{t("security.technical.button")}</a>
+      </div>
+    </div>
+  </div>
 
+  <section class="section report-section" aria-labelledby="report">
+    <div class="report">
       <h2 id="report">{t("security.report.title")}</h2>
-      <p>{t("security.report.text")}</p>
-      <p>{t("security.report.private")}</p>
-      <p>{t("security.report.promise")}</p>
-      <p class="action">
-        <a class="btn-primary" href={site.reportUrl} target="_blank" rel="noopener noreferrer">
+      <div>
+        <p>{t("security.report.text")}</p>
+        <p>{t("security.report.private")}</p>
+        <p>{t("security.report.promise")}</p>
+        <a class="btn-outline" href={site.reportUrl} target="_blank" rel="noopener noreferrer">
           {t("security.report.button")}
           <span class="sr-only">{t("a11y.newTab")}</span>
         </a>
-      </p>
-    </Prose>
-    <Prose>
-      <h2>{t("technical.title")}</h2>
-      <p>{t("security.technical.text")}</p>
-      <p class="action">
-        <a class="btn-outline" href={localePath(lang.code, "security/technical-details/")}>{t("security.technical.button")}</a>
-      </p>
-    </Prose>
-  </div>
+      </div>
+    </div>
+  </section>
 </Base>
 
 <style>
-  /* The technical details card sits under the main card, as the cards do on that page */
-  .cards {
+  /* The technical details and the report line up with the rows: heading, then text */
+  .technical,
+  .report {
     display: grid;
-    gap: 24px;
+    gap: 6px 32px;
   }
-  .action {
-    margin-top: 24px;
+  .technical {
+    margin-top: 32px;
   }
-  /* The buttons keep their own look inside the prose card, not the link style */
-  .action a {
-    text-decoration: none;
+  h2 {
+    --fs: 19px;
+    line-height: 1.3;
+    font-weight: 800;
+    color: #0f172a;
   }
-  .action .btn-primary {
-    color: #14171a;
+  p {
+    font-size: 17px;
+    line-height: 1.55;
+    max-width: 38rem;
+    color: #475569;
   }
-  .action .btn-outline {
-    color: inherit;
+  p + p {
+    margin-top: 10px;
+  }
+  .btn-outline {
+    margin-top: 20px;
+  }
+
+  /* For security researchers: set apart in a plain card, after everything else */
+  .report-section {
+    padding-top: 0;
+  }
+  .report {
+    padding: 20px 20px 22px;
+    border-radius: 20px;
+    border: 2px solid #e2e8f0;
+    background: #fff;
+  }
+  /* A card name, as on the platform cards */
+  .report h2 {
+    --fs: 24px;
+    font-weight: 900;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    h2 {
+      color: #fff;
+    }
+    p {
+      color: #cbd5e1;
+    }
+    .report {
+      background: #1e2732;
+      border-color: #38444d;
+    }
+  }
+
+  /* Beside each other from 1024px, as the rows above are */
+  @media (min-width: 1024px) {
+    .technical,
+    .report {
+      grid-template-columns: 5fr 7fr;
+      align-items: baseline;
+    }
   }
 </style>
