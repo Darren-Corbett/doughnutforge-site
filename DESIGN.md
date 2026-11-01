@@ -297,7 +297,7 @@ Sturdy pills with heavy labels.
 
 ### Cards / Containers
 - **Platform cards:** Surface (Night Panel in dark mode), 20px corners, 2px Card Border edge (Night Line in dark mode), 20px padding. A card for a platform on sale gets a Forge Green edge in both themes; a "Coming soon" card shows its status in bold blue ink and has no link. The store badge sits at the bottom so badges line up across a row.
-- **Prose sheets:** Surface, 24px corners, 2px Card Border edge, 24px by 20px padding, 42rem wide. A page that is one long text (a blog post, the privacy policy, the legal page) drops the sheet below 640px (`fullWidthOnPhones`), so its lines run the full width between the 16px gutters.
+- **Prose sheets:** Surface, 24px corners, 2px Card Border edge, 24px by 20px padding, 42rem wide. A page that is one long text (a blog post, the privacy policy, the legal page) drops the sheet below 640px (`sheet="wide"`), so its lines run the full width between the 16px gutters. Text set inside a ruled row has no sheet at all (`sheet="none"`).
 
 ### Navigation
 - **Header:** the night colour on every page. Logo and name on the left, four links, then the language menu. Links are 15px at 700 in light slate, white on hover with a faint white fill; the current page is white with a 2px blue-ink underline, 8px below the text.
@@ -307,8 +307,11 @@ Sturdy pills with heavy labels.
 ### Feature rows (signature)
 The app's tabs as coloured rows. Each row has a 3px top rule in its tab tone, the app's own tab name in that tab's ink at section-title weight, then a 19px heading and 17px text. From 768px the name sits beside the text (5:7). The name column is its own size container, so a long word shrinks to fit that column instead of pushing the text off the page.
 
+The row is one shared pattern in `global.css`: `.ruled-row` with a tone class, `.ruled-row-head` around the name, and `.row-name` on it. A row headed by a whole phrase adds `.ruled-row-late`, which splits only from 1024px. `.tone-quiet` (Border rule and Secondary name; Night Line and light slate in dark mode) is for what matters least, or for a page's own navigation such as "On this page"; it is not a tab tone.
+
 The same rows carry other pages' groups, in colours that keep their meaning:
 - **Security facts** (`ToneRows` with no title): the fact's title is the row's `h2`, then its text, and "Not audited yet" is a row of the same weight, ending in its roadmap link. All rows are blue: the other tab tones label features only. Because a heading is a whole phrase (often one long German or Finnish word), these rows put the name beside the text only from 1024px. After the rows, Technical details (19px heading) and the vulnerability report (a plain card with a 24px name and an outline button) use the same 5:7 split from 1024px. The report is for security researchers, so it comes last and has no blue button.
+- **Technical details:** four facts at a glance with blue-ink icons and titles: on phones one list under one 3px blue rule, from 560px two and from 1024px four side by side, each under its own rule. Then "On this page" as a quiet row; then each section as a blue late row, its heading beside its text, lists and tables from 1024px and staying in view while its section scrolls, ending in "Back to contents". The contents and back links are full 44px tap targets. No sheets, so tables are no longer boxes inside boxes.
 - **Roadmap groups:** Shipped, Next and Later, each a row with the group name as its `h2` and its items (19px heading, 17px text) beside it from 768px. Shipped is green (on sale, yours), Next is blue, Later is quiet: a Border rule (Night Line in dark mode) and its name in Secondary. The group rule is the only rule: items are set apart by 28px of space, with no lines between them and no status pill, since the heading already says it.
 
 ### Encryption specimen (signature)
