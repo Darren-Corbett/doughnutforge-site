@@ -87,10 +87,10 @@ test("blog post: a link back to the Blog above the title", async ({ page }) => {
   expect(await back.evaluate((a) => !!(a.compareDocumentPosition(document.querySelector("h1")!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
 });
 
-for (const width of [320, 360, 639]) {
-  test(`blog post at ${width}px: the text runs the full width, with no sheet edge`, async ({ page }) => {
+for (const [name, path] of [["blog post", "/blog/can-whatsapp-read-my-messages/"], ["privacy", "/privacy/"], ["legal", "/legal/"]]) for (const width of [320, 360, 639]) {
+  test(`${name} at ${width}px: the text runs the full width, with no sheet edge`, async ({ page }) => {
     await page.setViewportSize({ width, height: 800 });
-    await page.goto("/blog/can-whatsapp-read-my-messages/");
+    await page.goto(path);
     const sheet = await page.locator(".prose").evaluate((e) => {
       const s = getComputedStyle(e);
       return { border: s.borderInlineStartWidth, padding: s.paddingInlineStart, width: e.getBoundingClientRect().width };
@@ -120,4 +120,121 @@ test("technical details: plain cards with a tone edge, and the normal gap after 
   const after = page.locator(".prose :is(ul, ol) + p");
   expect(await after.count()).toBeGreaterThan(0);
   for (const p of await after.all()) expect(await p.evaluate((e) => getComputedStyle(e).marginTop)).toBe("14px");
+});
+
+// Stage 3 of the critique: the smaller page notes
+
+test("blog index at 1024px: posts in two columns", async ({ page }) => {
+  await page.setViewportSize({ width: 1024, height: 900 });
+  await page.goto("/blog/");
+  const lefts = await page.locator(".posts > li").evaluateAll((lis) => lis.map((li) => Math.round(li.getBoundingClientRect().left)));
+  expect(new Set(lefts).size, `item lefts: ${lefts}`).toBe(2);
+});
+
+test("blog index below 1024px: one column", async ({ page }) => {
+  await page.setViewportSize({ width: 1023, height: 900 });
+  await page.goto("/blog/");
+  const lefts = await page.locator(".posts > li").evaluateAll((lis) => lis.map((li) => Math.round(li.getBoundingClientRect().left)));
+  expect(new Set(lefts).size).toBe(1);
+});
+
+test("press kit: iPhone and iPad screenshots in separate groups, two across on a phone", async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 800 });
+  await page.goto("/press/");
+  const groups = page.locator(".shot-group");
+  await expect(groups.locator("h3")).toHaveText(["iPhone", "iPad"]);
+  const hrefs = (i: number) => groups.nth(i).locator("li a").evaluateAll((as) => as.map((a) => a.getAttribute("href")));
+  expect((await hrefs(0)).every((h) => h!.startsWith("/press/iphone-"))).toBe(true);
+  expect((await hrefs(1)).every((h) => h!.startsWith("/press/ipad-"))).toBe(true);
+  const tops = await groups.nth(0).locator("li").evaluateAll((lis) => lis.map((li) => Math.round(li.getBoundingClientRect().top)));
+  expect(tops[0]).toBe(tops[1]);
+});
+
+test("press kit at 1280px: each device's screenshots fill one row", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto("/press/");
+  await expect(page.locator(".shot-group")).toHaveCount(2);
+  for (const group of await page.locator(".shot-group").all()) {
+    const tops = await group.locator("li").evaluateAll((lis) => lis.map((li) => Math.round(li.getBoundingClientRect().top)));
+    expect(new Set(tops).size, `row tops: ${tops}`).toBe(1);
+  }
+});
+
+for (const scheme of ["light", "dark"] as const) {
+  test(`home: the Android line is a secondary supporting line (${scheme})`, async ({ page }) => {
+    await page.emulateMedia({ colorScheme: scheme });
+    await page.goto("/");
+    const note = page.locator("#download p", { hasText: /Android/ }).last();
+    expect(await note.evaluate((e) => getComputedStyle(e).color)).toBe(scheme === "dark" ? "rgb(203, 213, 225)" : "rgb(71, 85, 105)");
+  });
+}
+
+test("support: the link after the FAQ starts a new group, 28px below its rule", async ({ page }) => {
+  await page.goto("/support/");
+  const gap = await page.locator(".faq").evaluate((faq) => faq.nextElementSibling!.getBoundingClientRect().top - faq.getBoundingClientRect().bottom);
+  expect(gap).toBe(28);
+});
+
+test("download in dark mode: space above and below every store badge", async ({ page }) => {
+  await page.emulateMedia({ colorScheme: "dark" });
+  await page.goto("/download/");
+  for (const card of await page.locator("li.card.on-sale").all()) {
+    const space = await card.evaluate((c) => {
+      const img = c.querySelector(".buy img")!.getBoundingClientRect();
+      const text = c.querySelector(".status")!.getBoundingClientRect();
+      return { above: img.top - text.bottom, below: c.getBoundingClientRect().bottom - img.bottom };
+    });
+    expect(space.above).toBeGreaterThanOrEqual(28);
+    expect(space.below).toBeGreaterThanOrEqual(30);
+  }
+});
+
+test("/go/: the reassurance dots are green and blue, not a feature's violet", async ({ page }) => {
+  const path = "/go/ef9771/en/";
+  // The forward an hour away, so the page stays as the visitor sees it
+  await page.route(path, async (route) => {
+    const response = await route.fetch();
+    return route.fulfill({ response, body: (await response.text()).replace('content="0;', 'content="3600;') });
+  });
+  await page.goto(path, { waitUntil: "load" });
+  const dots = await page.locator(".reassure .dot").evaluateAll((ds) => ds.map((d) => getComputedStyle(d).backgroundColor));
+  expect(dots).toEqual(["rgb(0, 186, 124)", "rgb(29, 161, 242)"]);
+});
+
+test("home in German at 320px: \"Nutzt\" does not sit alone on its line", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 800 });
+  await page.goto("/de/");
+  const tops = await page.locator(".extras p").first().evaluate((p) => {
+    // The top of the first and of the second word, wherever the middleware split the text
+    const walker = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
+    const words: number[] = [];
+    for (let node = walker.nextNode(); node && words.length < 2; node = walker.nextNode()) {
+      for (const m of node.textContent!.matchAll(/\S+/g)) {
+        if (words.length === 2) break;
+        const range = document.createRange();
+        range.setStart(node, m.index!);
+        range.setEnd(node, m.index! + 1);
+        words.push(Math.round(range.getBoundingClientRect().top));
+      }
+    }
+    return words;
+  });
+  expect(tops[0]).toBe(tops[1]);
+});
+
+for (const scheme of ["light", "dark"] as const) {
+  test(`features: the link after the FAQ looks like a link and starts a new group (${scheme})`, async ({ page }) => {
+    await page.emulateMedia({ colorScheme: scheme });
+    await page.goto("/features/");
+    const link = page.locator(".faq-more a");
+    expect(await link.evaluate((a) => [getComputedStyle(a).color, getComputedStyle(a).textDecorationLine])).toEqual([scheme === "dark" ? "rgb(76, 181, 245)" : INK_BLUE, "underline"]);
+    const gap = await page.locator(".faq").evaluate((faq) => faq.nextElementSibling!.getBoundingClientRect().top - faq.getBoundingClientRect().bottom);
+    expect(gap).toBe(28);
+  });
+}
+
+test("privacy on a phone: the publisher line passes contrast on the page itself", async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 800 });
+  await page.goto("/privacy/");
+  expect(await page.locator(".publisher").evaluate((e) => getComputedStyle(e).color)).toBe("rgb(71, 85, 105)");
 });
