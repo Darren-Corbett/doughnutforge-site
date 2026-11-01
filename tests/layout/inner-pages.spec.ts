@@ -7,6 +7,7 @@
 import { expect, test } from "@playwright/test";
 import english from "../../src/i18n/ui/en";
 import de from "../../src/i18n/ui/de";
+import { each } from "../support/each";
 
 // Read as plain strings, so a key added with this test checks before the copy exists
 const en = english as Record<string, string>;
@@ -27,7 +28,7 @@ for (const [prefix, strings] of [["", en], ["/de", de as Record<string, string>]
     await page.goto(`${prefix}/security/`);
     const facts = page.locator("main .row");
     await expect(facts.locator("h2")).toHaveText(["device", "servers", "quantum", "keys", "audit"].map((id) => strings[`security.${id}.title`]!));
-    for (const row of await facts.all()) expect(await row.evaluate((e) => getComputedStyle(e).borderTopColor)).toBe("rgb(29, 161, 242)");
+    for (const row of await each(facts, 5)) expect(await row.evaluate((e) => getComputedStyle(e).borderTopColor)).toBe("rgb(29, 161, 242)");
     // No loud button: the reporting action is for researchers, not everyday visitors
     await expect(page.locator("main .btn-primary")).toHaveCount(0);
     await expect(page.locator("#report ~ * .btn-outline")).toHaveText(new RegExp(strings["security.report.button"]!));
@@ -39,7 +40,7 @@ for (const [prefix, strings] of [["", en], ["/de", de as Record<string, string>]
   test(`security at 768px: no fact heading is smaller than the subheadings ${prefix || "/"}`, async ({ page }) => {
     await page.setViewportSize({ width: 768, height: 1000 });
     await page.goto(`${prefix}/security/`);
-    for (const h of await page.locator("main .row h2").all()) expect(await h.evaluate((e) => parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(19);
+    for (const h of await each(page.locator("main .row h2"), 5)) expect(await h.evaluate((e) => parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(19);
   });
 
   test(`download: the tagline is the site's summary line ${prefix || "/"}`, async ({ page }) => {
@@ -60,7 +61,7 @@ for (const scheme of ["light", "dark"] as const) {
     // The group rule is the only rule, so Later never reads as one more item under Next
     const between = page.locator("[data-roadmap] li + li");
     expect(await between.count()).toBeGreaterThan(0);
-    for (const li of await between.all()) expect(await li.evaluate((e) => getComputedStyle(e).borderTopWidth)).toBe("0px");
+    for (const li of await each(between)) expect(await li.evaluate((e) => getComputedStyle(e).borderTopWidth)).toBe("0px");
   });
 }
 
@@ -69,7 +70,7 @@ test("blog index: every title looks like a link, and underlines on hover and foc
   const titles = page.locator(".posts h2 a");
   expect(await titles.count()).toBeGreaterThan(0);
   // An arrow after every title, hidden from screen readers so the link's name is the title
-  for (const title of await titles.all()) await expect(title.locator('[aria-hidden="true"]')).toHaveText(/→/);
+  for (const title of await each(titles)) await expect(title.locator('[aria-hidden="true"]')).toHaveText(/→/);
   const style = (a: Element) => ({ color: getComputedStyle(a).color, line: getComputedStyle(a).textDecorationLine });
   const first = titles.first();
   await first.hover();
@@ -112,28 +113,28 @@ test("technical details: blue-ruled facts and sections like Security, no sheets,
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto("/security/technical-details/");
   // At a glance: four facts under a blue rule, no boxes and no feature tones
-  for (const fact of await page.locator(".glance li").all()) {
+  for (const fact of await each(page.locator(".glance li"), 4)) {
     const style = await fact.evaluate((e) => ({ rule: [getComputedStyle(e).borderTopWidth, getComputedStyle(e).borderTopColor], side: getComputedStyle(e).borderInlineStartWidth, background: getComputedStyle(e).backgroundColor }));
     expect(style).toEqual({ rule: ["3px", "rgb(29, 161, 242)"], side: "0px", background: "rgba(0, 0, 0, 0)" });
   }
   // Every section is a blue-ruled row with its heading beside the text, on the page itself
   const sections = page.locator("main section[aria-labelledby]:has(a[href='#toc'])");
   expect(await sections.count()).toBe(8);
-  for (const section of await sections.all()) {
+  for (const section of await each(sections, 8)) {
     expect(await section.evaluate((e) => [getComputedStyle(e).borderTopWidth, getComputedStyle(e).borderTopColor])).toEqual(["3px", "rgb(29, 161, 242)"]);
     const [head, body] = await section.evaluate((e) => [e.querySelector("h2")!.getBoundingClientRect(), e.querySelector(".prose")!.getBoundingClientRect()].map((r) => ({ left: r.left, top: r.top })));
     expect(body.left).toBeGreaterThan(head.left);
   }
   await expect(page.locator("main .prose").first()).toHaveCSS("border-top-width", "0px");
   // The contents and "Back to contents" links stand alone, so each is a full tap target
-  for (const link of await page.locator('nav[aria-labelledby="toc"] a, main a[href="#toc"]').all()) expect((await link.boundingBox())!.height).toBeGreaterThanOrEqual(44);
+  for (const link of await each(page.locator('nav[aria-labelledby="toc"] a, main a[href="#toc"]'))) expect((await link.boundingBox())!.height).toBeGreaterThanOrEqual(44);
   // The rows reach the right of the 72rem column, as on Security
   const right = await sections.first().evaluate((e) => e.getBoundingClientRect().right);
   expect(right).toBeGreaterThan(1100);
   // A paragraph after a list gets the same space as one after a paragraph
   const after = page.locator(".prose :is(ul, ol) + p");
   expect(await after.count()).toBeGreaterThan(0);
-  for (const p of await after.all()) expect(await p.evaluate((e) => getComputedStyle(e).marginTop)).toBe("14px");
+  for (const p of await each(after)) expect(await p.evaluate((e) => getComputedStyle(e).marginTop)).toBe("14px");
 });
 
 // Stage 3 of the critique: the smaller page notes
@@ -168,7 +169,7 @@ test("press kit at 1280px: each device's screenshots fill one row", async ({ pag
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto("/press/");
   await expect(page.locator(".shot-group")).toHaveCount(2);
-  for (const group of await page.locator(".shot-group").all()) {
+  for (const group of await each(page.locator(".shot-group"), 2)) {
     const tops = await group.locator("li").evaluateAll((lis) => lis.map((li) => Math.round(li.getBoundingClientRect().top)));
     expect(new Set(tops).size, `row tops: ${tops}`).toBe(1);
   }
@@ -192,7 +193,7 @@ test("support: the link after the FAQ starts a new group, 28px below its rule", 
 test("download in dark mode: space above and below every store badge", async ({ page }) => {
   await page.emulateMedia({ colorScheme: "dark" });
   await page.goto("/download/");
-  for (const card of await page.locator("li.card.on-sale").all()) {
+  for (const card of await each(page.locator("li.card.on-sale"))) {
     const space = await card.evaluate((c) => {
       const img = c.querySelector(".buy img")!.getBoundingClientRect();
       const text = c.querySelector(".status")!.getBoundingClientRect();

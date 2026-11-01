@@ -6,6 +6,7 @@
 // from the security page and the FAQ and keeps every algorithm name in English.
 import { expect, test } from "@playwright/test";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
+import { each } from "../support/each";
 
 // LANGS narrows the run, as in the other layout tests ("en" for English)
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));
@@ -82,7 +83,7 @@ for (const lang of languages) {
       // Reports go to private advisories, in a new tab, never to public issues
       const report = page.locator(`main a[href="${ADVISORIES}"]`);
       expect(await report.count()).toBeGreaterThan(0);
-      for (const a of await report.all()) {
+      for (const a of await each(report)) {
         await expect(a).toHaveAttribute("target", "_blank");
         await expect(a).toHaveAttribute("rel", /noopener/);
       }
@@ -110,12 +111,10 @@ for (const lang of languages) {
       // Every section ends with a way back to that list, in the page language
       const back = page.locator('main a[href="#toc"]');
       await expect(back).toHaveCount(targets.length);
-      for (const link of await back.all()) await expect(link).toHaveText(await ui(lang.code, "technical.back"));
-      // Green means "on sale" or "yours" (DESIGN.md), so no glance card uses it
-      await expect(page.locator(".glance li.tone-green")).toHaveCount(0);
+      for (const link of await each(back, targets.length)) await expect(link).toHaveText(await ui(lang.code, "technical.back"));
       // The settings, unlock, visibility and library facts are tables, each with column headers
       await expect(page.locator("main table")).toHaveCount(4);
-      for (const table of await page.locator("main table").all()) await expect(table.locator('thead th[scope="col"]')).toHaveCount(2);
+      for (const table of await each(page.locator("main table"), 4)) await expect(table.locator('thead th[scope="col"]')).toHaveCount(2);
       // The page describes the app as it is, not one release of it
       expect(text).not.toContain("0.4.46");
       // It says plainly that there has been no audit yet, and links to the plan

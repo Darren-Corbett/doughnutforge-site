@@ -13,6 +13,7 @@ import { createHash } from "node:crypto";
 import { readdirSync, readFileSync } from "node:fs";
 import { dist } from "../support/site";
 import { BOTH, block, RULES } from "./simulations";
+import { each } from "../support/each";
 
 const PAGES = ["/", "/pricing/", "/download/", "/de/download/", "/es-mx/pricing/", "/ja/"];
 const STORE = /^https:\/\/apps\.(apple|microsoft)\.com\//;
@@ -152,7 +153,7 @@ test("the text link marks only the badge's English wording as English", async ({
   await page.goto("/pl/download/", { waitUntil: "load" });
   const links = page.locator('[data-get] a').filter({ hasText: "Mac App Store" });
   expect(await links.count(), "a second badge and a text link").toBe(2);
-  for (const link of await links.all()) {
+  for (const link of await each(links, 2)) {
     expect(await link.getAttribute("lang"), "the link itself keeps the page language").toBeNull();
     await expect(link.locator('[lang="en"]'), "the wording is marked English").toHaveText("Download on the Mac App Store");
     const note = link.locator(".sr-only").last();
@@ -180,7 +181,7 @@ test("a /go/ page has a main, one h1 and controls at least 44px tall", async ({ 
     await page.evaluate(() => dispatchEvent(new PageTransitionEvent("pageshow", { persisted: true })));
     await expect(page.locator("main"), path).toHaveCount(1);
     await expect(page.locator("h1"), path).toHaveCount(1);
-    for (const link of await page.locator("a:visible").all()) expect((await link.boundingBox())!.height, `${path}: control height`).toBeGreaterThanOrEqual(44);
+    for (const link of await each(page.locator("a:visible"))) expect((await link.boundingBox())!.height, `${path}: control height`).toBeGreaterThanOrEqual(44);
   }
 });
 

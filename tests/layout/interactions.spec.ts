@@ -4,6 +4,7 @@ import { expect, test } from "@playwright/test";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import alts from "../../src/assets/badges/alt.json" with { type: "json" };
 import sameAsEnglish from "../../src/i18n/same-as-english.json" with { type: "json" };
+import { each } from "../support/each";
 
 const languages = languageData.languages;
 const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.path}`);
@@ -54,7 +55,7 @@ for (const lang of languages) {
         await page.goto(`${prefix(lang)}${path}`);
         const badges = page.locator('a[href*="apps.apple.com"], a[href*="apps.microsoft.com"], a[href*="play.google.com"]');
         expect(await badges.count(), `${path}: store badges`).toBeGreaterThan(0);
-        for (const a of await badges.all()) {
+        for (const a of await each(badges)) {
           const href = (await a.getAttribute("href"))!;
           const store = storeOf(href);
           const img = a.locator("img");
@@ -93,7 +94,7 @@ test("FAQ answers open and close", async ({ page }) => {
   await page.goto("/support/");
   const items = page.locator("main details");
   expect(await items.count()).toBeGreaterThan(3);
-  for (const d of await items.all()) {
+  for (const d of await each(items)) {
     await d.locator("summary").click();
     await expect(d).toHaveAttribute("open", "");
     await expect(d.locator(":scope > :not(summary)").first()).toBeVisible();

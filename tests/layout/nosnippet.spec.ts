@@ -7,6 +7,7 @@
 // attribute only on span, div and section, so links are wrapped in a span.
 import { expect, test, type Page } from "@playwright/test";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
+import { each } from "../support/each";
 
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));
 const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.path}`);
@@ -37,7 +38,7 @@ const check = async (page: Page, path: string, expected: Record<string, number>)
   await page.goto(path);
   for (const [selector, count] of Object.entries({ ...EVERY_PAGE, ...expected })) {
     await expect(page.locator(selector), `${path} ${selector}`).toHaveCount(count);
-    for (const el of await page.locator(selector).all()) await expect(el, `${path} ${selector}`).toHaveAttribute("data-nosnippet", "");
+    for (const el of await each(page.locator(selector), count)) await expect(el, `${path} ${selector}`).toHaveAttribute("data-nosnippet", "");
   }
   expect(await unapproved(page), `${path}: data-nosnippet outside the approved list`).toEqual([]);
   for (const selector of NEVER) {
