@@ -50,15 +50,26 @@ const icons = [
 ];
 // "iPhone: Secure File", in the order and punctuation of the page language
 const shot = (device: string, screen: string) => fill(t("press.shots.label"), { device, screen });
-const shots = [
-  file("iphone-secure-file.png", shot("iPhone", app("app:navigation.tabs.mobile-vault"))),
-  file("iphone-encrypting.png", shot("iPhone", app("mobile-views:secureFile.howItWorks.encrypt.title"))),
-  file("iphone-secure-text.png", shot("iPhone", app("app:navigation.tabs.text-vault"))),
-  file("iphone-contacts.png", shot("iPhone", app("app:navigation.tabs.contacts"))),
-  file("iphone-identity.png", shot("iPhone", app("app:navigation.tabs.identity"))),
-  file("ipad-secure-file.png", shot("iPad", app("app:navigation.tabs.mobile-vault"))),
-  file("ipad-secure-text.png", shot("iPad", app("app:navigation.tabs.text-vault"))),
-  file("ipad-contacts.png", shot("iPad", app("app:navigation.tabs.contacts"))),
+// One group per device, each under its name (a product name, the same in every language)
+const shotGroups = [
+  {
+    device: "iPhone",
+    files: [
+      file("iphone-secure-file.png", shot("iPhone", app("app:navigation.tabs.mobile-vault"))),
+      file("iphone-encrypting.png", shot("iPhone", app("mobile-views:secureFile.howItWorks.encrypt.title"))),
+      file("iphone-secure-text.png", shot("iPhone", app("app:navigation.tabs.text-vault"))),
+      file("iphone-contacts.png", shot("iPhone", app("app:navigation.tabs.contacts"))),
+      file("iphone-identity.png", shot("iPhone", app("app:navigation.tabs.identity"))),
+    ],
+  },
+  {
+    device: "iPad",
+    files: [
+      file("ipad-secure-file.png", shot("iPad", app("app:navigation.tabs.mobile-vault"))),
+      file("ipad-secure-text.png", shot("iPad", app("app:navigation.tabs.text-vault"))),
+      file("ipad-contacts.png", shot("iPad", app("app:navigation.tabs.contacts"))),
+    ],
+  },
 ];
 ---
 
@@ -120,19 +131,24 @@ const shots = [
   <section class="section next" aria-labelledby="press-shots">
     <h2 id="press-shots" class="section-title">{t("press.shots.title")}</h2>
     <p class="section-text">{t("press.shots.text")}</p>
-    <ul class="files shots" role="list">
-      {
-        shots.map((f) => (
-          <li>
-            <a href={f.href} download>
-              <Image src={f.preview} width={240} densities={[1, 2]} alt="" loading="lazy" />
-              <span class="file-label">{f.label}</span>
-              <span class="file-size">{f.size}</span>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+    {
+      shotGroups.map((group) => (
+        <div class="shot-group">
+          <h3>{group.device}</h3>
+          <ul class:list={["files", "shots", `shots-${group.files.length}`]} role="list">
+            {group.files.map((f) => (
+              <li>
+                <a href={f.href} download>
+                  <Image src={f.preview} width={240} densities={[1, 2]} alt="" loading="lazy" />
+                  <span class="file-label">{f.label}</span>
+                  <span class="file-size">{f.size}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
   </section>
 
   <section class="section next" aria-labelledby="press-usage">
@@ -218,7 +234,22 @@ const shots = [
     height: auto;
     margin-bottom: 8px;
   }
+  .shot-group {
+    margin-top: 28px;
+  }
+  .shot-group h3 {
+    --fs: 19px;
+    line-height: 1.3;
+    font-weight: 800;
+  }
+  /* Two screenshots side by side even on the smallest phones, so the page stays short */
+  .files.shots {
+    margin-top: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* Screenshots fill their column, so both device rows end at the same edge */
   .shots img {
+    max-width: none;
     border-radius: 12px;
     border: 2px solid #38444d;
     background: #000;
@@ -261,9 +292,16 @@ const shots = [
     .icons {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
-    .shots {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      align-items: end;
+  }
+  @media (min-width: 640px) {
+    .files.shots {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  /* Each device's screenshots in one row */
+  @media (min-width: 1024px) {
+    .files.shots-5 {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
 </style>
