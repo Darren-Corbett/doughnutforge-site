@@ -69,6 +69,14 @@
       "mono": {
         "displayName": "Mono",
         "purpose": "Ciphertext and inline code only."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "16px labels under or beside a picture: press file names, diagram labels, the language menu."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "14px for the least important text: file sizes, table column headings, the footer note."
       }
     },
     "shadows": [

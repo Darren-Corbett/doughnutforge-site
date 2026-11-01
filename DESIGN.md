@@ -28,6 +28,9 @@ colors:
   text-heading: "#0f172a"
   text-body: "#334155"
   text-secondary: "#475569"
+  text-strong: "#1e293b"
+  text-muted: "#64748b"
+  device-black: "#000000"
   text-on-night: "#ffffff"
   text-secondary-on-night: "#cbd5e1"
   text-caption-on-night: "#94a3b8"
@@ -55,6 +58,11 @@ typography:
     fontSize: "clamp(20px, 5.5vw, 26px)"
     fontWeight: 800
     lineHeight: 1.25
+  card-name:
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif"
+    fontSize: "24px"
+    fontWeight: 900
+    lineHeight: 1.15
   title:
     fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif"
     fontSize: "19px"
@@ -70,6 +78,14 @@ typography:
     fontSize: "18px"
     fontWeight: 400
     lineHeight: 1.55
+  small:
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif"
+    fontSize: "16px"
+    fontWeight: 800
+  caption:
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif"
+    fontSize: "14px"
+    fontWeight: 400
   label:
     fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif"
     fontSize: "12px"
@@ -80,10 +96,11 @@ typography:
     fontSize: "17px"
     fontWeight: 800
   mono:
-    fontFamily: "ui-monospace, SF Mono, Menlo, Consolas, Liberation Mono, monospace"
+    fontFamily: "ui-monospace, SF Mono, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace"
     fontSize: "15px"
     lineHeight: 1.5
 rounded:
+  scan-line: "3px"
   code: "4px"
   focus: "6px"
   control: "10px"
@@ -188,6 +205,8 @@ The app's palette, unchanged: a sky blue, four tab tones, and cool blue-grey neu
 - **Page** (`page`) and **Surface** (`surface`): the light page and the cards and sheets on it.
 - **Border** (`border`) and **Card Border** (`card-border`): edges in light mode. The outline button and language panel use the stronger one; cards, prose sheets and FAQ rules use the lighter one.
 - **Text** (`text`), **Heading** (`text-heading`), **Body** (`text-body`), **Secondary** (`text-secondary`): near-black for headings and buttons, slate for reading text, a lighter slate for supporting lines.
+- **Strong** (`text-strong`): bold words inside prose and the row headings of the Technical details tables, a step darker than body text.
+- **Muted** (`text-muted`): the strokes of the 404 drawing only. As text it reaches 4.76:1 on Surface but only 4.46:1 on Page, under the 4.5:1 minimum, so small supporting text uses Secondary instead.
 - **On Night** (`text-on-night`, `text-secondary-on-night`, `text-caption-on-night`): white headings, light slate body text and a dimmer slate for captions on the night colour. Light slate is also the body text colour in dark mode.
 
 ### Named Rules
@@ -210,9 +229,13 @@ The app's palette, unchanged: a sky blue, four tab tones, and cool blue-grey neu
 - **Headline** (`headline`): the heading in every other page's night band, at most 18ch.
 - **Section title** (`section-title`): each section's heading, at most 20ch. The closing statement and the feature row names use the same weight and tracking at a smaller size, about 26 to 38px.
 - **Tagline** (`tagline`): the short second line under a night-band heading, in blue ink for night (`ink-blue-dark`).
-- **Title** (`title`): card names (24px, 900), feature row and FAQ headings (19px, 800), blog headings (21px and 18px, 800).
+- **Card name** (`card-name`): platform card names and the Security page's report card, 24px at 900.
+- **Title** (`title`): feature row and FAQ headings (19px, 800), blog headings (21px and 18px, 800).
 - **Body** (`body`, `body-lead`): 17px for reading text, 18px for leads and section text; line length held to about 38 to 42rem. Blog prose runs at a line height of 1.65.
+- **Small** (`small`): 16px labels that sit under or beside a picture, such as the press kit's file names, the labels in blog diagrams, the language menu's links and the `/go/` page's lines.
+- **Caption** (`caption`): 14px for the least important text: file sizes, table column headings, the footer note, the home specimen's caption, and the header links below 360px.
 - **Label** (`label`): uppercase small headings in the footer and language menu.
+- **Mono** (`mono`): ciphertext uses `ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace`; inline code in prose uses `ui-monospace, SFMono-Regular, Menlo, Consolas, monospace` at 15px and 700. Both are system fonts, so nothing is downloaded.
 
 ### Named Rules
 **The Fit the Longest Word Rule.** Large headings set their size in `--fs`, never in `font-size`. A shared rule in `global.css` shrinks a heading just enough for its longest word to fit the column (`src/middleware.ts` measures it). Words never break or hyphenate, in any language.
@@ -255,9 +278,9 @@ Big, friendly corners and thick edges.
 - **Cards** (`rounded.card`, 20px): platform cards, the hero panes, the language menu, the press kit's copy blocks.
 - **Sheets** (`rounded.sheet`, 24px): the blog and prose reading sheets, and the `/go/` handoff card.
 - **Panels** (`rounded.panel`, 16px): smaller boxes in blog diagrams, the support page's warning and the Technical details page.
-- **Small** (12px images in prose, 10px language links, 6px focus ring, 4px inline code).
+- **Small** (12px images in prose, 10px language links, 6px focus ring, 4px inline code, 3px ends on the encryption scan line).
 - **Edges:** 2px borders throughout; 3px rules on feature rows and the extras block, in their tab tone.
-- Phone screenshots use a proportional corner (11% / 5.2%) with a 3px Night Line edge, so they read as devices.
+- **Device frames:** phone and tablet screenshots use a proportional corner (11% / 5.2% on phones) with a 3px Night Line edge and a black (`#000`) fill behind the image, so they read as devices and show black, not the page colour, while they load. The press kit's screenshots use the same black fill with a 12px corner and a 2px Night Line edge. Black appears only inside a device frame.
 
 The site defines 8, 12 and 16px corner tokens and a blue glow shadow (`shadow-glow`) in `global.css`. No page uses them; pages write the values above directly.
 
@@ -274,7 +297,7 @@ Sturdy pills with heavy labels.
 
 ### Cards / Containers
 - **Platform cards:** Surface (Night Panel in dark mode), 20px corners, 2px Card Border edge (Night Line in dark mode), 20px padding. A card for a platform on sale gets a Forge Green edge in both themes; a "Coming soon" card shows its status in bold blue ink and has no link. The store badge sits at the bottom so badges line up across a row.
-- **Prose sheets:** Surface, 24px corners, 2px Card Border edge, 24px by 20px padding, 42rem wide.
+- **Prose sheets:** Surface, 24px corners, 2px Card Border edge, 24px by 20px padding, 42rem wide. A page that is one long text (a blog post, the privacy policy, the legal page) drops the sheet below 640px (`fullWidthOnPhones`), so its lines run the full width between the 16px gutters.
 
 ### Navigation
 - **Header:** the night colour on every page. Logo and name on the left, four links, then the language menu. Links are 15px at 700 in light slate, white on hover with a faint white fill; the current page is white with a 2px blue-ink underline, 8px below the text.
@@ -282,7 +305,11 @@ Sturdy pills with heavy labels.
 - **Footer:** Surface (Night Panel in dark mode) with a 2px top edge; uppercase label headings over link lists, in one, two or three columns.
 
 ### Feature rows (signature)
-The app's tabs as coloured rows. Each row has a 3px top rule in its tab tone, the app's own tab name in that tab's ink at section-title weight, then a 19px heading and 17px text. From 768px the name sits beside the text.
+The app's tabs as coloured rows. Each row has a 3px top rule in its tab tone, the app's own tab name in that tab's ink at section-title weight, then a 19px heading and 17px text. From 768px the name sits beside the text (5:7). The name column is its own size container, so a long word shrinks to fit that column instead of pushing the text off the page.
+
+The same rows carry other pages' groups, in colours that keep their meaning:
+- **Security facts** (`ToneRows` with no title): the fact's title is the row's `h2`, then its text, and "Not audited yet" is a row of the same weight, ending in its roadmap link. All rows are blue: the other tab tones label features only. Because a heading is a whole phrase (often one long German or Finnish word), these rows put the name beside the text only from 1024px. After the rows, Technical details (19px heading) and the vulnerability report (a plain card with a 24px name and an outline button) use the same 5:7 split from 1024px. The report is for security researchers, so it comes last and has no blue button.
+- **Roadmap groups:** Shipped, Next and Later, each a row with the group name as its `h2` and its items (19px heading, 17px text) beside it from 768px. Shipped is green (on sale, yours), Next is blue, Later is quiet: a Border rule (Night Line in dark mode) and its name in Secondary. The group rule is the only rule: items are set apart by 28px of space, with no lines between them and no status pill, since the heading already says it.
 
 ### Encryption specimen (signature)
 The home hero's two overlapping panes. "What anyone else sees" is a Night Panel pane with a blue dot and monospace ciphertext in blue ink. "What your contact sees" is a white pane with a Forge Green edge and dot, lifted by the pane shadow and offset 8% inward. On load, a blue scan line sweeps across the note and turns it into ciphertext (1.8s, `cubic-bezier(0.65, 0, 0.35, 1)`, after 0.6s). Reduced motion removes the animation.
@@ -291,7 +318,14 @@ The home hero's two overlapping panes. "What anyone else sees" is a Night Panel 
 Native `details` elements between 2px Card Border rules, 46rem wide. Each question is a 19px heading, at least 56px tall to tap, with a blue-ink plus that turns into a minus when open.
 
 ### Store badges
-The official store badge for each platform on sale, as each store's guidelines require. A branded fallback badge replaces an official one only when a content blocker hides it.
+The official store badge for each platform on sale, as each store's guidelines require, never recoloured. A branded fallback badge replaces an official one only when a content blocker hides it. On the home page each badge sits under its device's name, and the line about platforms still to come is in Secondary. In dark mode a platform card gives its badge at least 28px above and 34px below, because the Microsoft Store badge is dark grey on the Night Panel card; every card gets the same space, so badges in a row still line up.
+
+### Lists of files and posts
+- **Press kit screenshots:** one group per device under a 19px heading ("iPhone", "iPad"). Two across on phones, three from 640px, and each device in a single row from 1024px.
+- **Blog index:** each post under a 3px Forge Blue rule, its title a link with a blue-ink arrow. One column up to 1024px, two from there.
+
+### `/go/` handoff
+The come-back state's two reassurance lines carry dots in green ("yours": the one-time purchase) and blue. Never a tab tone, which would suggest a feature.
 
 ## Do's and Don'ts
 
