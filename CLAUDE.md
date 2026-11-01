@@ -106,6 +106,7 @@ Every plan must say how it serves both goals.
 - The apps are not sold in the EU yet, but the site is visible there; store links must not promise availability that does not exist.
 
 ## Before saying a change is done
+- The review checklist the owner gets is written from `git diff` (the stat and the diff itself), never from memory, and lists every changed file with what changed in it.
 - Build passes with no warnings.
 - Check every changed page at 360px, 768px and 1280px.
 - Run the layout tests in WebKit with the iPhone profile, at 320px as well (`npm run test:layout` does both). Desktop Chromium alone misses Safari-only bugs.
