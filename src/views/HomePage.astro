@@ -355,6 +355,13 @@ const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), orga
       color: #cbd5e1;
     }
   }
+  /* At 320px the German "Nutzt Post-Quanten-Verschlüsselung," misses its line by
+     under a pixel, leaving "Nutzt" alone. The text may use 4px of the right gutter. */
+  @media (max-width: 359.98px) {
+    .extras p {
+      margin-inline-end: -4px;
+    }
+  }
 
   @media (min-width: 768px) {
     .hero-inner {

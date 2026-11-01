@@ -32,7 +32,7 @@ const note = [coming.length ? fill(t("download.coming"), { platforms: listOf(lan
     )
   }
 </ul>
-<p class="mt-4 max-w-[34rem] text-[17px] leading-relaxed">{note}</p>
+<p class="note mt-4 max-w-[34rem] text-[17px] leading-relaxed">{note}</p>
 
 <style>
   /* Lined up with the badge image, which sits inside its link's 12px padding */
@@ -43,9 +43,16 @@ const note = [coming.length ? fill(t("download.coming"), { platforms: listOf(lan
     line-height: 1.3;
     color: #0f172a;
   }
+  /* A supporting line, in secondary slate */
+  .note {
+    color: #475569;
+  }
   @media (prefers-color-scheme: dark) {
     .name {
       color: #fff;
+    }
+    .note {
+      color: #cbd5e1;
     }
   }
 </style>
