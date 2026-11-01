@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Випущено",
   "roadmap.next": "Далі",
   "roadmap.later": "Пізніше",
-  "roadmap.planned": "Заплановано",
   "roadmap.identity.title": "Захист особистості",
   "roadmap.identity.text": "Оновлення, яке зберігає кожну особистість у безпеці, щоб її ніколи не можна було втратити, замінити чи залишити доступною для читання. На Mac, iPhone і iPad.",
   "roadmap.identityWindows.title": "Захист особистості для Windows",

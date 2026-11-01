@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "已发布",
   "roadmap.next": "下一步",
   "roadmap.later": "以后",
-  "roadmap.planned": "计划中",
   "roadmap.identity.title": "身份保护",
   "roadmap.identity.text": "一项让每个身份都保持安全的更新，使其永远不会丢失、被替换或处于可读状态。适用于 Mac、iPhone 和 iPad。",
   "roadmap.identityWindows.title": "Windows 版身份保护",

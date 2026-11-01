@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Disponible",
   "roadmap.next": "Lo siguiente",
   "roadmap.later": "Más adelante",
-  "roadmap.planned": "Planeado",
   "roadmap.identity.title": "Protección de identidad",
   "roadmap.identity.text": "Una actualización que mantiene segura cada identidad, para que nunca pueda perderse, reemplazarse ni quedar legible. En Mac, iPhone y iPad.",
   "roadmap.identityWindows.title": "Protección de identidad en Windows",

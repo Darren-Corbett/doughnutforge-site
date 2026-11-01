@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Yayımlandı",
   "roadmap.next": "Sırada",
   "roadmap.later": "Daha sonra",
-  "roadmap.planned": "Planlanıyor",
   "roadmap.identity.title": "Kimlik koruması",
   "roadmap.identity.text": "Her kimliği güvende tutan bir güncelleme; böylece kimlik asla kaybolamaz, başkasıyla değiştirilemez veya okunabilir hâlde bırakılamaz. Mac, iPhone ve iPad'de.",
   "roadmap.identityWindows.title": "Windows için kimlik koruması",

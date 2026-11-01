@@ -237,7 +237,6 @@ export default {
   "roadmap.shipped": "Shipped",
   "roadmap.next": "Next",
   "roadmap.later": "Later",
-  "roadmap.planned": "Planned",
   "roadmap.identity.title": "Identity protection",
   "roadmap.identity.text":
     "An update that keeps every identity safe, so it can never be lost, replaced or left readable. On Mac, iPhone and iPad.",

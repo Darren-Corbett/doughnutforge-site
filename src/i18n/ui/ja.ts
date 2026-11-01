@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "リリース済み",
   "roadmap.next": "次",
   "roadmap.later": "その後",
-  "roadmap.planned": "計画中",
   "roadmap.identity.title": "アイデンティティの保護",
   "roadmap.identity.text": "すべてのアイデンティティを安全に保つアップデートです。失われたり、置き換えられたり、読み取れる状態のまま残されたりすることはありません。対象はMac、iPhone、iPadです。",
   "roadmap.identityWindows.title": "アイデンティティの保護（Windows版）",

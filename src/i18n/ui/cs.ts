@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Vydáno",
   "roadmap.next": "Další na řadě",
   "roadmap.later": "Později",
-  "roadmap.planned": "Plánováno",
   "roadmap.identity.title": "Ochrana identity",
   "roadmap.identity.text": "Aktualizace, která udrží každou identitu v bezpečí, takže ji nikdy nepůjde ztratit, nahradit ani nechat čitelnou. Pro Mac, iPhone a iPad.",
   "roadmap.identityWindows.title": "Ochrana identity pro Windows",

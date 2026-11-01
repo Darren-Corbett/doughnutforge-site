@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Lansert",
   "roadmap.next": "Neste",
   "roadmap.later": "Senere",
-  "roadmap.planned": "Planlagt",
   "roadmap.identity.title": "Beskyttelse av identitet",
   "roadmap.identity.text": "En oppdatering som holder hver identitet trygg, slik at den aldri kan gå tapt, bli erstattet eller bli liggende lesbar. På Mac, iPhone og iPad.",
   "roadmap.identityWindows.title": "Beskyttelse av identitet på Windows",

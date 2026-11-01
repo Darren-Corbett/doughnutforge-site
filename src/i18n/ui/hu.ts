@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Megjelent",
   "roadmap.next": "Következő",
   "roadmap.later": "Később",
-  "roadmap.planned": "Tervezett",
   "roadmap.identity.title": "Az identitás védelme",
   "roadmap.identity.text": "Egy frissítés, amely minden identitást biztonságban tart, így az soha nem veszhet el, nem cserélhető le, és nem maradhat olvasható. Mac, iPhone és iPad eszközökön.",
   "roadmap.identityWindows.title": "Az identitás védelme Windows rendszeren",

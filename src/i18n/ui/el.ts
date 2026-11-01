@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Διαθέσιμα",
   "roadmap.next": "Επόμενα",
   "roadmap.later": "Αργότερα",
-  "roadmap.planned": "Σχεδιάζεται",
   "roadmap.identity.title": "Προστασία ταυτότητας",
   "roadmap.identity.text": "Μια ενημέρωση που κρατά κάθε ταυτότητα ασφαλή, ώστε να μην μπορεί ποτέ να χαθεί, να αντικατασταθεί ή να μείνει αναγνώσιμη. Σε Mac, iPhone και iPad.",
   "roadmap.identityWindows.title": "Προστασία ταυτότητας για Windows",

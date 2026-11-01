@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "เปิดตัวแล้ว",
   "roadmap.next": "ลำดับถัดไป",
   "roadmap.later": "ภายหลัง",
-  "roadmap.planned": "อยู่ในแผน",
   "roadmap.identity.title": "การปกป้องข้อมูลประจำตัว",
   "roadmap.identity.text": "การอัปเดตที่ช่วยให้ข้อมูลประจำตัวทุกรายการปลอดภัย จึงไม่มีวันสูญหาย ถูกแทนที่ หรือถูกทิ้งไว้ในสภาพที่อ่านได้ สำหรับ Mac, iPhone และ iPad",
   "roadmap.identityWindows.title": "การปกป้องข้อมูลประจำตัวสำหรับ Windows",

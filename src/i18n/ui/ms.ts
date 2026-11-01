@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Telah dilancarkan",
   "roadmap.next": "Seterusnya",
   "roadmap.later": "Kemudian",
-  "roadmap.planned": "Dirancang",
   "roadmap.identity.title": "Perlindungan identiti",
   "roadmap.identity.text": "Kemas kini yang memastikan setiap identiti selamat, supaya ia tidak sekali-kali boleh hilang, diganti atau dibiarkan boleh dibaca. Pada Mac, iPhone dan iPad.",
   "roadmap.identityWindows.title": "Perlindungan identiti untuk Windows",

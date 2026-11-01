@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Đã phát hành",
   "roadmap.next": "Tiếp theo",
   "roadmap.later": "Sau này",
-  "roadmap.planned": "Trong kế hoạch",
   "roadmap.identity.title": "Bảo vệ danh tính",
   "roadmap.identity.text": "Một bản cập nhật giúp mọi danh tính luôn an toàn, để danh tính không bao giờ bị mất, bị thay thế hoặc bị để lại ở dạng đọc được. Trên Mac, iPhone và iPad.",
   "roadmap.identityWindows.title": "Bảo vệ danh tính trên Windows",

@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "출시됨",
   "roadmap.next": "다음 단계",
   "roadmap.later": "이후 단계",
-  "roadmap.planned": "계획 중",
   "roadmap.identity.title": "신원 보호",
   "roadmap.identity.text": "모든 신원을 안전하게 지켜, 신원이 분실되거나 교체되거나 읽을 수 있는 상태로 남는 일이 절대 없도록 하는 업데이트입니다. Mac, iPhone, iPad용입니다.",
   "roadmap.identityWindows.title": "Windows용 신원 보호",

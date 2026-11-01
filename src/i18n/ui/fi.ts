@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Julkaistu",
   "roadmap.next": "Seuraavaksi",
   "roadmap.later": "Myöhemmin",
-  "roadmap.planned": "Suunnitteilla",
   "roadmap.identity.title": "Henkilöllisyyden suojaus",
   "roadmap.identity.text": "Päivitys, joka pitää jokaisen henkilöllisyyden turvassa: se ei voi koskaan kadota, korvautua toisella tai jäädä luettavaksi. Macille, iPhonelle ja iPadille.",
   "roadmap.identityWindows.title": "Henkilöllisyyden suojaus Windowsille",

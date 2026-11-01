@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "रिलीज़ हो चुका",
   "roadmap.next": "आगे",
   "roadmap.later": "बाद में",
-  "roadmap.planned": "योजना में",
   "roadmap.identity.title": "पहचान की सुरक्षा",
   "roadmap.identity.text": "एक अपडेट जो हर पहचान को सुरक्षित रखता है, ताकि वह कभी न खो जाए, न उसकी जगह कोई दूसरी पहचान ले सके और न ही वह पढ़ने योग्य हालत में छूटे। Mac, iPhone और iPad पर।",
   "roadmap.identityWindows.title": "Windows के लिए पहचान की सुरक्षा",

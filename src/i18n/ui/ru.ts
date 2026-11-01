@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Выпущено",
   "roadmap.next": "Далее",
   "roadmap.later": "Позже",
-  "roadmap.planned": "Запланировано",
   "roadmap.identity.title": "Защита личности",
   "roadmap.identity.text": "Обновление, которое сохраняет каждую личность в безопасности: её никогда нельзя будет потерять, подменить или оставить доступной для чтения. Для Mac, iPhone и iPad.",
   "roadmap.identityWindows.title": "Защита личности для Windows",

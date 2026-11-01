@@ -166,7 +166,6 @@ export default {
   "roadmap.shipped": "Wydane",
   "roadmap.next": "Następne",
   "roadmap.later": "Później",
-  "roadmap.planned": "Planowane",
   "roadmap.identity.title": "Ochrona tożsamości",
   "roadmap.identity.text": "Aktualizacja, która zapewnia bezpieczeństwo każdej tożsamości, tak aby nigdy nie mogła zostać utracona, zastąpiona ani pozostawiona w czytelnej postaci. Na Maca, iPhone’a i iPada.",
   "roadmap.identityWindows.title": "Ochrona tożsamości na Windows",
