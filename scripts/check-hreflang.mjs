@@ -6,7 +6,8 @@
 //   - no draft (noindex) page appears in any hreflang list or in the sitemap
 //   - the sitemap lists every indexable page, with the same alternates as its <head>
 //   - in the sitemap, each blog post's lastmod is its own date (updated, else
-//     published), the blog index's is the newest post's, and no other page has one
+//     published), each blog index's is the newest of the posts under it, and no
+//     other page has one (the same rule as astro.config.mjs)
 //   - a page built in more than one language has hreflang links: it is listed in
 //     translatedPages (src/i18n/alternates.ts). Only English-only pages, such as
 //     blog posts, may have none.
@@ -112,9 +113,15 @@ else {
     if (!page.noindex && !inSitemap.has(url)) problems.push(`sitemap: indexable page ${url} is missing`);
   }
   // A lastmod only where the page has a real date: never a made-up one
-  const postDates = [...inSitemap.keys()].map((loc) => pages.get(loc)?.date).filter(Boolean).sort();
+  const newestUnder = (index) =>
+    [...inSitemap.keys()]
+      .filter((loc) => loc.startsWith(index))
+      .map((loc) => pages.get(loc)?.date)
+      .filter(Boolean)
+      .sort()
+      .at(-1);
   for (const loc of inSitemap.keys()) {
-    const expected = loc === `${SITE_URL}/blog/` ? postDates.at(-1) : pages.get(loc)?.date;
+    const expected = loc.endsWith("/blog/") ? newestUnder(loc) : pages.get(loc)?.date;
     const actual = lastmods.get(loc);
     if (actual !== expected) problems.push(`sitemap: ${loc} lastmod is ${actual ?? "missing"}, expected ${expected ?? "none"}`);
   }

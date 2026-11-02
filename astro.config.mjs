@@ -41,11 +41,15 @@ const postDates = new Map(
     : [],
 );
 const published = [...postDates.keys()];
-// A blog index changes when its newest post does
-const newestPost = [...postDates.values()].sort().at(-1);
 
-/** The sitemap lastmod: only pages with a real date get one, never a made-up date */
-const lastmodFor = (/** @type {string} */ path) => (/\/blog\/$/.test(path) ? newestPost : postDates.get(path));
+/**
+ * The sitemap lastmod: only pages with a real date get one, never a made-up date.
+ * A blog index changes when its newest post does (scripts/check-hreflang.mjs).
+ */
+const lastmodFor = (/** @type {string} */ path) =>
+  /\/blog\/$/.test(path)
+    ? [...postDates].filter(([post]) => post.startsWith(path)).map(([, date]) => date).sort().at(-1)
+    : postDates.get(path);
 
 // A page's language and its path without the language folder: "/de/features/" -> de, "features/"
 /** @param {string} pathname */
