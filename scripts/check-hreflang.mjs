@@ -5,6 +5,8 @@
 //   - every hreflang target is a built, indexable page with the same list (both ways)
 //   - no draft (noindex) page appears in any hreflang list or in the sitemap
 //   - the sitemap lists every indexable page, with the same alternates as its <head>
+//   - in the sitemap, each blog post's lastmod is its own date (updated, else
+//     published), the blog index's is the newest post's, and no other page has one
 //   - a page built in more than one language has hreflang links: it is listed in
 //     translatedPages (src/i18n/alternates.ts). Only English-only pages, such as
 //     blog posts, may have none.
@@ -30,6 +32,7 @@ for (const file of readdirSync(dist, { recursive: true }).map(String)) {
   pages.set(url, {
     lang: /<html[^>]*\slang="([^"]+)"/.exec(html)?.[1],
     noindex: /<meta name="robots" content="[^"]*noindex/.test(head),
+    date: (/<meta property="article:modified_time" content="([^"]+)"/.exec(head) ?? /<meta property="article:published_time" content="([^"]+)"/.exec(head))?.[1].slice(0, 10),
     canonical: attr(/<link rel="canonical"[^>]*>/.exec(head)?.[0] ?? "", "href"),
     alternates: [...head.matchAll(/<link rel="alternate" hreflang[^>]*>/g)].map(([tag]) => ({
       hreflang: attr(tag, "hreflang"),
@@ -88,10 +91,12 @@ for (const name of unlisted)
 // The sitemap
 const sitemapFile = join(dist, "sitemap-0.xml");
 const inSitemap = new Map();
+const lastmods = new Map();
 if (!existsSync(sitemapFile)) problems.push("dist/sitemap-0.xml is missing");
 else {
   for (const [, body] of readFileSync(sitemapFile, "utf8").matchAll(/<url>([\s\S]*?)<\/url>/g)) {
     const loc = /<loc>([^<]+)<\/loc>/.exec(body)[1];
+    lastmods.set(loc, /<lastmod>([^<]+)<\/lastmod>/.exec(body)?.[1].slice(0, 10));
     inSitemap.set(
       loc,
       [...body.matchAll(/<xhtml:link rel="alternate" hreflang="([^"]+)" href="([^"]+)"\/>/g)].map(([, hreflang, href]) => ({ hreflang, href })),
@@ -105,6 +110,13 @@ else {
   }
   for (const [url, page] of pages) {
     if (!page.noindex && !inSitemap.has(url)) problems.push(`sitemap: indexable page ${url} is missing`);
+  }
+  // A lastmod only where the page has a real date: never a made-up one
+  const postDates = [...inSitemap.keys()].map((loc) => pages.get(loc)?.date).filter(Boolean).sort();
+  for (const loc of inSitemap.keys()) {
+    const expected = loc === `${SITE_URL}/blog/` ? postDates.at(-1) : pages.get(loc)?.date;
+    const actual = lastmods.get(loc);
+    if (actual !== expected) problems.push(`sitemap: ${loc} lastmod is ${actual ?? "missing"}, expected ${expected ?? "none"}`);
   }
 }
 

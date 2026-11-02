@@ -21,19 +21,31 @@ const i18n = {
   routing: { prefixDefaultLocale: false },
 };
 
-// Published blog posts by URL: a post is published once its front matter says
-// `draft: false`. Drafts and an empty blog index stay out of the sitemap.
+// Published blog posts by URL, with the date each last changed (`updated`, else
+// `date`): a post is published once its front matter says `draft: false`.
+// Drafts and an empty blog index stay out of the sitemap.
 const blogDir = "./src/content/blog";
-const published = existsSync(blogDir)
-  ? readdirSync(blogDir, { recursive: true })
-      .map(String)
-      .filter((f) => /(^|\/)[^_/][^/]*\.mdx?$/.test(f) && /^draft:\s*false\s*$/m.test(readFileSync(`${blogDir}/${f}`, "utf8")))
-      .map((f) => {
-        const [lang, file] = f.split("/");
-        const path = languageData.languages.find((l) => l.code === lang)?.path ?? lang;
-        return `${lang === "en" ? "" : `/${path}`}/blog/${file.replace(/\.mdx?$/, "")}/`;
-      })
-  : [];
+const postDates = new Map(
+  existsSync(blogDir)
+    ? readdirSync(blogDir, { recursive: true })
+        .map(String)
+        .filter((f) => /(^|\/)[^_/][^/]*\.mdx?$/.test(f))
+        .map((f) => ({ f, text: readFileSync(`${blogDir}/${f}`, "utf8") }))
+        .filter(({ text }) => /^draft:\s*false\s*$/m.test(text))
+        .map(({ f, text }) => {
+          const [lang, file] = f.split("/");
+          const path = languageData.languages.find((l) => l.code === lang)?.path ?? lang;
+          const date = (/^updated:\s*(\S+)/m.exec(text) ?? /^date:\s*(\S+)/m.exec(text))?.[1];
+          return [`${lang === "en" ? "" : `/${path}`}/blog/${file.replace(/\.mdx?$/, "")}/`, date];
+        })
+    : [],
+);
+const published = [...postDates.keys()];
+// A blog index changes when its newest post does
+const newestPost = [...postDates.values()].sort().at(-1);
+
+/** The sitemap lastmod: only pages with a real date get one, never a made-up date */
+const lastmodFor = (/** @type {string} */ path) => (/\/blog\/$/.test(path) ? newestPost : postDates.get(path));
 
 // A page's language and its path without the language folder: "/de/features/" -> de, "features/"
 /** @param {string} pathname */
@@ -71,9 +83,10 @@ export default defineConfig({
       // Alternate-language links: exactly the hreflang list in each page's <head>
       // (src/i18n/alternates.ts), so only reviewed languages, plus x-default
       serialize: (item) => {
-        const { code, page } = splitPath(new URL(item.url).pathname);
+        const path = new URL(item.url).pathname;
+        const { code, page } = splitPath(path);
         const links = alternatesFor(code, page).map((a) => ({ url: a.href, lang: a.hreflang }));
-        return { ...item, links: links.length ? links : undefined };
+        return { ...item, links: links.length ? links : undefined, lastmod: lastmodFor(path) };
       },
     }),
   ],
