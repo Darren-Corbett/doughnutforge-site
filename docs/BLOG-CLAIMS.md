@@ -107,9 +107,11 @@ Not claimed: that signatures are post-quantum (they are not); "quantum-proof" or
 
 Not claimed: QR codes; pasting a contact ID; that the app shows who sent a file; password-only sharing; that a Mac-made file opens on Windows (no test found).
 
-## Comparison posts (drafts, 29 October 2026)
+## Comparison posts (published 29 October 2026)
 
-`src/content/blog/en/doughnut-forge-vs-cryptomator.mdx` (published 29 October 2026; phrase "Cryptomator alternative", secondary "encrypt files for cloud storage") and `src/content/blog/en/doughnut-forge-vs-veracrypt.mdx` (published 29 October 2026; phrase "VeraCrypt alternative", secondary "encrypted drive or encrypted files"). Both `draft: true`, waiting for the owner's approval of this table. Every vendor quote was checked word for word on its live page on 29 October 2026. Independent sources: none used; vendor pages cover every row.
+`src/content/blog/en/doughnut-forge-vs-cryptomator.mdx` (published 29 October 2026; phrase "Cryptomator alternative", secondary "encrypt files for cloud storage") and `src/content/blog/en/doughnut-forge-vs-veracrypt.mdx` (published 29 October 2026; phrase "VeraCrypt alternative", secondary "encrypted drive or encrypted files"). The owner approved this table on 29 October 2026 and both posts are live (`draft: false`). Every vendor quote was checked word for word on its live page on 29 October 2026. Independent sources: none used; vendor pages cover every row.
+
+**Re-checked 2 November 2026 (owner's request, before the posts stay in the sitemap):** every Cryptomator row (C1 to C18) and VeraCrypt row (V1 to V12) still matches its source page. Two notes: the Cure53 PDF (C15) is titled "Pentest-Report Tresor Application Crypto" (an app by 1&1), and its scope lists the four Cryptomator crypto libraries, so the claim stands; Cryptomator's pricing page now lists Android full access as a one-time purchase (€29.99) while its Android docs still mention a yearly subscription or a lifetime licence, so C6 still says only "a paid upgrade". The Doughnut Forge rows (D1 to D10) were not re-checked. The Cryptomator post's bold line "You want to pay once." became "You want a one-time purchase on each platform.", and the sentence after it "It is never a subscription." (owner's wording, 2 November 2026; CLAUDE.md bans "pay once").
 
 Rules for both posts (owner): no logos; product names as plain words only; never say or imply the recipient can be sure who sent a file; the year next to every "audited"; no Linux for Doughnut Forge; no "we", no contractions.
 
