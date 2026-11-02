@@ -94,7 +94,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 An outside crawl reported 35 sitemap URLs, the English subpages and 26 language home pages missing, the WhatsApp post unlinked, no `<lastmod>`, and a home title without iPad.
 
-- **What was true:** the live `sitemap-0.xml` has 339 URLs (1 MB). In file order, 35 URLs are `/`, the 9 blog posts, cs, da and the first de pages, so the crawler stopped reading after about 100 KB. Every English subpage and all 26 language home pages were already in it, each home page with 34 hreflang alternates. All 30 cs, da and de subpages, the 26 home pages and `/rss.xml` return 200 with real content. Live `/blog/` and the feed list all 8 posts.
+- **What was true:** the live `sitemap-0.xml` has 339 URLs (1 MB). In file order, 35 URLs are `/`, `/blog/` and the 8 posts, cs, da and the first de pages, so the crawler stopped reading after about 100 KB. Every English subpage and all 26 language home pages were already in it, each home page with 34 hreflang alternates. All 30 cs, da and de subpages, the 26 home pages and `/rss.xml` return 200 with real content. Live `/blog/` and the feed list all 8 posts.
 - **Changed:**
   - Home title in all 30 languages: "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad" (`meta.home.title`, also `og:title`). Independent review: no blocking findings; stamped.
   - Sitemap `<lastmod>` on blog posts (`updated`, else `date`) and on `/blog/` (the newest post). Other pages get none on purpose: they have no real date. `check-hreflang.mjs` fails the build if a post's lastmod is missing or wrong, or a page without a date gets one.

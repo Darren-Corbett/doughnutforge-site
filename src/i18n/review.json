@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -198,7 +198,7 @@
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -389,7 +389,7 @@
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -527,7 +527,7 @@
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -708,7 +708,7 @@
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -899,7 +899,7 @@
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1056,7 +1056,7 @@
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1227,7 +1227,7 @@
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1425,7 +1425,7 @@
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1602,7 +1602,7 @@
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1786,7 +1786,7 @@
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1972,7 +1972,7 @@
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2161,7 +2161,7 @@
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2362,7 +2362,7 @@
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2555,7 +2555,7 @@
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2730,7 +2730,7 @@
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2925,7 +2925,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3057,7 +3057,7 @@
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -3229,7 +3229,7 @@
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3395,7 +3395,7 @@
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -3540,7 +3540,7 @@
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3720,7 +3720,7 @@
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3927,7 +3927,7 @@
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4100,7 +4100,7 @@
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4239,7 +4239,7 @@
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4397,7 +4397,7 @@
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4563,7 +4563,7 @@
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4721,7 +4721,7 @@
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-02",
+    "reviewedAt": "2026-10-31",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
