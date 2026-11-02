@@ -1,7 +1,8 @@
 // scripts/check-hreflang.mjs on a small built site of its own: a page that is
 // built in more than one language must have hreflang links (that is, be in
 // translatedPages in src/i18n/alternates.ts). A page in English only, such as a
-// blog post, needs none.
+// blog post, needs none. Blog posts carry a lastmod in the sitemap from their own
+// date, the blog index the newest post's; pages without a date carry none.
 import { expect, test } from "@playwright/test";
 import { execFile } from "node:child_process";
 import { mkdirSync, mkdtempSync, writeFileSync } from "node:fs";
@@ -13,11 +14,11 @@ const root = new URL("../../", import.meta.url).pathname;
 const run = promisify(execFile);
 const SITE = "https://doughnut-forge.app";
 
-type Page = { path: string; lang: string; alternates?: { hreflang: string; path: string }[] };
+type Page = { path: string; lang: string; alternates?: { hreflang: string; path: string }[]; published?: string; lastmod?: string };
 const html = (p: Page) =>
-  `<!doctype html><html lang="${p.lang}"><head><link rel="canonical" href="${SITE}${p.path}">${(p.alternates ?? [])
-    .map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${SITE}${a.path}">`)
-    .join("")}</head><body></body></html>`;
+  `<!doctype html><html lang="${p.lang}"><head><link rel="canonical" href="${SITE}${p.path}">${
+    p.published ? `<meta property="article:published_time" content="${p.published}T00:00:00.000Z">` : ""
+  }${(p.alternates ?? []).map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${SITE}${a.path}">`).join("")}</head><body></body></html>`;
 
 /** Builds a fake dist with these pages and a matching sitemap, then runs the check on it */
 const check = async (pages: Page[]) => {
@@ -28,7 +29,7 @@ const check = async (pages: Page[]) => {
     writeFileSync(file, html(p));
   }
   const urls = pages
-    .map((p) => `<url><loc>${SITE}${p.path}</loc>${(p.alternates ?? []).map((a) => `<xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${SITE}${a.path}"/>`).join("")}</url>`)
+    .map((p) => `<url><loc>${SITE}${p.path}</loc>${p.lastmod ? `<lastmod>${p.lastmod}T00:00:00.000Z</lastmod>` : ""}${(p.alternates ?? []).map((a) => `<xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${SITE}${a.path}"/>`).join("")}</url>`)
     .join("");
   writeFileSync(join(dist, "sitemap-0.xml"), `<urlset>${urls}</urlset>`);
   try {
@@ -65,4 +66,31 @@ test("fails when a page built in two languages has no hreflang (missing from tra
   expect(result.code).not.toBe(0);
   expect(result.output).toContain("roadmap/");
   expect(result.output).toContain("translatedPages");
+});
+
+const post = (slug: string, date: string, lastmod: string | null = date): Page => ({ path: `/blog/${slug}/`, lang: "en-GB", published: date, lastmod: lastmod ?? undefined });
+
+test("passes when each post has its date as lastmod and the blog index has the newest", async () => {
+  const result = await check([...pair("/"), { path: "/blog/", lang: "en-GB", lastmod: "2026-10-30" }, post("a", "2026-10-23"), post("b", "2026-10-30")]);
+  expect(result.output).toContain("sitemap matches");
+  expect(result.code).toBe(0);
+});
+
+test("fails when a post has no lastmod in the sitemap", async () => {
+  const result = await check([...pair("/"), { path: "/blog/", lang: "en-GB", lastmod: "2026-10-23" }, post("a", "2026-10-23", null)]);
+  expect(result.code).not.toBe(0);
+  expect(result.output).toContain("/blog/a/ lastmod is missing, expected 2026-10-23");
+});
+
+test("fails when the blog index lastmod is not the newest post's date", async () => {
+  const result = await check([...pair("/"), { path: "/blog/", lang: "en-GB", lastmod: "2026-10-23" }, post("a", "2026-10-23"), post("b", "2026-10-30")]);
+  expect(result.code).not.toBe(0);
+  expect(result.output).toContain("/blog/ lastmod is 2026-10-23, expected 2026-10-30");
+});
+
+test("fails when a page without a date has a lastmod", async () => {
+  const [home, de] = pair("/");
+  const result = await check([{ ...home, lastmod: "2026-11-02" }, de]);
+  expect(result.code).not.toBe(0);
+  expect(result.output).toContain("https://doughnut-forge.app/ lastmod is 2026-11-02, expected none");
 });
