@@ -125,3 +125,27 @@ The work: Security, Roadmap and Blog index (stage 2); press kit, home, badge spa
 - The four Should-fix items, as above.
 
 **320px slide experiment (31 October):** 1 of 5 full `test:layout` runs done (2878 passed), no sideways slide.
+
+## 2 November 2026, weekly SEO check (`edf2683..b5cb7ca`)
+
+The work: the outside crawl's findings checked against the live site (3 of 6 were false: the crawler stopped reading a 1 MB sitemap after about 100 KB); the home title names iPad in 30 languages; sitemap `<lastmod>` on blog posts and `/blog/` with a build check; one link to the WhatsApp post; the comparison posts' vendor claims re-checked; the Cryptomator "pay once" line in the owner's words. Pushed and checked live.
+
+**Review** (independent subagent): no Must fix. Should fix: no test for a post with an `updated` date; no test for a post with a wrong lastmod. Notes: the blog index rule differed between `astro.config.mjs` and the check; a wrong count in HANDOVER; a clumsy BLOG-CLAIMS sentence; `reviewedAt` moved for 28 whole languages though only the title was reviewed; the title is 73 characters (search results may cut "iPad"). Fixed: `dd75952` tests, `c834b80` one blog index rule, `2f1bd67` docs and `reviewedAt`.
+
+**Went well:** checking the live site before planning kept the plan to the two real problems; re-reading the vendor sources caught that the Cure53 PDF is named after another company's app (its scope still covers Cryptomator's libraries); tests failed first, and one exposed a fault in the test itself.
+
+**Went wrong, and why:**
+1. **The first `review.json` update deleted 28 older findings.** The script replaced entries instead of adding. Caught by the diff size; redone append-only. Cause: the file's history convention was not read before writing.
+2. **The Cryptomator line repeated itself** after the owner's wording went in, costing an amend and an 18-minute layout rerun. Cause: the changed sentence was not reread in its paragraph before committing.
+3. **About eight wasted calls:** `grep` here is ugrep, which rejects long context patterns, and zsh rejected a shell function. Cause: retrying the same approach instead of switching to Python sooner.
+4. **A wrong count and an over-wide `reviewedAt`** in the docs. Cause: written from memory, not from the data.
+
+**Rules that got in the way:** the full layout run (2,882 tests, 15 to 18 minutes) for a one-sentence copy fix.
+
+**Numbers:** appetite a few hours, actual about two hours plus two layout runs. Review: 0 Must fix, 2 Should fix, 8 notes. Problems after shipping: none known.
+
+**Experiments checked:** `each()` (1 November): kept, its reviewer found no vacuous test. The 320px slide: 3 of 5 full runs done, clean.
+
+**Agreed (owner):**
+- The two Should-fix tests, one blog index rule, the doc fixes and `reviewedAt` restored, as above.
+- Experiment: copy-only fixes run `test:layout` on the changed pages only, with `PAGES` (CLAUDE.md). Problem: a copy fix waited 15 to 18 minutes on pages it did not touch. When to check: after five copy-only fixes. Kept if the next full layout run after a design change finds nothing those copy fixes caused.

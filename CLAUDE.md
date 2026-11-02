@@ -112,4 +112,4 @@ Every plan must say how it serves both goals.
 - Run the layout tests in WebKit with the iPhone profile, at 320px as well (`npm run test:layout` does both). Desktop Chromium alone misses Safari-only bugs.
 - Check one left-to-right and (if supported) one right-to-left language.
 - Run Lighthouse on the home page and report the scores.
-- Copy-only fixes: npm run build and the layout tests (including WebKit iPhone) are enough. Three widths, the RTL check and Lighthouse stay for design and layout changes.
+- Copy-only fixes: npm run build and the layout tests (including WebKit iPhone) are enough, run on the changed pages only: `PAGES='<regex of changed paths>' npm run test:layout` (all three browsers and 320px still run). Experiment since 2 November 2026, see `docs/RETRO.md`. Three widths, the RTL check, Lighthouse and the full layout run stay for design and layout changes.
