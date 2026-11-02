@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: criptare offline a fișierelor pentru Mac, iPhone și Windows",
+  "meta.home.title": "Doughnut Forge: criptare offline a fișierelor pentru Mac, Windows, iPhone și iPad",
   "meta.home.description": "Criptează fișiere și text pe iPhone, iPad, Mac și PC. Pe computer poți cripta și dosare. Fără cont, fără servere, fără abonament. O achiziție unică pentru fiecare platformă.",
   "nav.label": "Principal",
   "nav.features": "Funcții",

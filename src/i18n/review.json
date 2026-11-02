@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -185,13 +185,20 @@
         "severity": "note",
         "issue": "First reviewer suggested 'connexion réseau propre'; a second reviewer found 'propre' after the noun reads as 'clean', losing 'of its own'. Kept 'de sa part'.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -369,13 +376,20 @@
         "severity": "note",
         "issue": "Reworded so it fits a 320px card without breaking a word (the long hyphenated or loanword form broke or overflowed). Checked by a second independent reviewer.",
         "suggestion": "Done."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -500,13 +514,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (propias); headers short and natural; consistent with existing terms.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: file encryption without a connection for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -674,13 +695,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (propria); Libreria matches existing Librerie; headers natural.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline encryption of files for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -858,13 +886,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (eigen); headers natural; terms consistent.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1008,13 +1043,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (egna); headers natural; exchange matches existing postkvant-hybrid.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline encryption of files for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1172,13 +1214,20 @@
         "severity": "note",
         "issue": "Reworded so it fits a 320px card without breaking a word (the long hyphenated or loanword form broke or overflowed). Checked by a second independent reviewer.",
         "suggestion": "Done."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1363,13 +1412,20 @@
         "severity": "note",
         "issue": "Word order differs from English but matches the file's existing 'kvanttikestävä hybridi' label; network keeps 'omia'. Fine.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline encryption of files for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1533,13 +1589,20 @@
         "severity": "note",
         "issue": "Reworded so it fits a 320px card without breaking a word (the long hyphenated or loanword form broke or overflowed). Checked by a second independent reviewer.",
         "suggestion": "Done."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1710,13 +1773,20 @@
         "issue": "Uses the noun 'Powrót' where go.back uses the imperative 'Wróć'. Both are correct; 'Powrót do ...' matches the app's 'Powrót do Pulpitu'.",
         "backTranslation": "Return (noun) to the table of contents",
         "suggestion": "Optional: 'Wróć do spisu treści'."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption – Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1889,13 +1959,20 @@
         "issue": "First draft 'Zpět na obsah' read like the skip link 'Přejít na obsah' (main content); the reviewer's suggestion was taken and re-checked.",
         "backTranslation": "Back to the overview of contents",
         "suggestion": "Taken."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2071,13 +2148,20 @@
         "severity": "note",
         "issue": "Meaning correct; 'Nincs fiók és szerver' is acceptable, but 'Se fiók, se szerver' is the more idiomatic way to say 'neither ... nor' in a short title.",
         "suggestion": "Se fiók, se szerver"
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2265,13 +2349,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (proprie); headers natural; terms consistent.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline encryption of files for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2451,13 +2542,20 @@
         "issue": "'содержание' means a table of contents, different from the skip link's 'содержимому'. 'Назад к' matches the app's 'Назад'.",
         "backTranslation": "Back to the table of contents",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2619,13 +2717,20 @@
         "issue": "The plural 'περιεχόμενα' means a table of contents, clearly different from the skip link's singular 'περιεχόμενο'.",
         "backTranslation": "Επιστροφή στα περιεχόμενα",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2778,6 +2883,13 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (власних); headers natural; terms consistent.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2813,7 +2925,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2932,13 +3044,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (propias); identical to es, which suits these neutral strings.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: file encryption without a connection for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -3097,13 +3216,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (própria); headers natural; terms consistent.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3256,13 +3382,20 @@
         "issue": "First draft 'İçindekilere dön' was informal, unlike every other link label in tr.ts (blocking); the polite form was taken and re-checked with no findings.",
         "backTranslation": "Go back (polite) to the table of contents",
         "suggestion": "Taken."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -3394,13 +3527,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (アプリ自身の); exchange matches existing 耐量子ハイブリッド; headers natural.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3567,13 +3707,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (自身); headers natural; 库 matches existing libraries title.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3767,13 +3914,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (本身); headers natural; 程式庫 and 金鑰 match existing terms.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3933,13 +4087,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (자체); exchange matches existing 양자 내성 하이브리드; headers natural.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone, iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4065,13 +4226,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (अपनी ओर से); headers natural; terms consistent.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4216,13 +4384,20 @@
         "severity": "note",
         "issue": "Keeps 'of its own' (sendiri); headers natural; Pustaka matches existing libraries title.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone, and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4375,13 +4550,20 @@
         "issue": "First draft 'Kembali ke kandungan' meant 'back to the content' (blocking); the reviewer's suggestion was taken and re-checked with no findings.",
         "backTranslation": "Back to the table of contents",
         "suggestion": "Taken."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4526,13 +4708,20 @@
         "severity": "note",
         "issue": "Reworded so it fits a 320px card without breaking a word (the long hyphenated or loanword form broke or overflowed). Checked by a second independent reviewer.",
         "suggestion": "Done."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: encrypt files offline for Mac, Windows, iPhone and iPad",
+        "suggestion": "No change."
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-02",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4682,6 +4871,13 @@
         "key": "technical.glance.network",
         "severity": "note",
         "issue": "Keeps 'of its own' ('does not make network connections by itself'); headers natural; terms consistent.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
       }
     ]

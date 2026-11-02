@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge：适用于 Mac、iPhone 和 Windows 的离线文件加密",
+  "meta.home.title": "Doughnut Forge：适用于 Mac、Windows、iPhone 和 iPad 的离线文件加密",
   "meta.home.description": "在 iPhone、iPad、Mac 和 PC 上加密文件和文本。在电脑上还可以加密文件夹。无需账户，没有服务器，无需订阅。每个平台一次性购买。",
   "nav.label": "主菜单",
   "nav.features": "功能",

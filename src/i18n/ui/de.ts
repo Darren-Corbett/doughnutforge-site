@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: Offline-Dateiverschlüsselung für Mac, iPhone und Windows",
+  "meta.home.title": "Doughnut Forge: Offline-Dateiverschlüsselung für Mac, Windows, iPhone und iPad",
   "meta.home.description": "Verschlüsseln Sie Dateien und Texte auf iPhone, iPad, Mac und PC. Auf dem Computer verschlüsseln Sie auch Ordner. Kein Konto, keine Server, kein Abo. Ein Einmalkauf pro Plattform.",
   "nav.label": "Hauptmenü",
   "nav.features": "Funktionen",

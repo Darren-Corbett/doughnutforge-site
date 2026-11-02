@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: offline fájltitkosítás Macre, iPhone-ra és Windowsra",
+  "meta.home.title": "Doughnut Forge: offline fájltitkosítás Macre, Windowsra, iPhone-ra és iPadre",
   "meta.home.description": "Titkosíts fájlokat és szöveget iPhone-on, iPaden, Macen és PC-n. Számítógépen mappákat is titkosíthatsz. Fiók, szerver és előfizetés nélkül. Egyszeri vásárlás platformonként.",
   "nav.label": "Főmenü",
   "nav.features": "Funkciók",

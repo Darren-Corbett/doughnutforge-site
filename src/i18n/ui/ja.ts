@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge：Mac、iPhone、Windows向けオフラインファイル暗号化",
+  "meta.home.title": "Doughnut Forge：Mac、Windows、iPhone、iPad向けオフラインファイル暗号化",
   "meta.home.description": "iPhone、iPad、Mac、PCでファイルとテキストを暗号化できます。コンピュータではフォルダも暗号化できます。アカウントなし、サーバーなし、サブスクなし。プラットフォームごとの買い切りです。",
   "nav.label": "メインメニュー",
   "nav.features": "機能",

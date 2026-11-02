@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge : chiffrement de fichiers hors ligne pour Mac, iPhone et Windows",
+  "meta.home.title": "Doughnut Forge : chiffrement de fichiers hors ligne pour Mac, Windows, iPhone et iPad",
   "meta.home.description": "Chiffrez fichiers et textes sur iPhone, iPad, Mac et PC. Sur ordinateur, chiffrez aussi des dossiers. Sans compte, serveur ni abonnement. Un achat unique sur chaque plateforme.",
   "nav.label": "Navigation principale",
   "nav.features": "Fonctions",

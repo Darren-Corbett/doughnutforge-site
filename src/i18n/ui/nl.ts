@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: offline bestandsversleuteling voor Mac, iPhone en Windows",
+  "meta.home.title": "Doughnut Forge: offline bestandsversleuteling voor Mac, Windows, iPhone en iPad",
   "meta.home.description": "Versleutel bestanden en tekst op iPhone, iPad, Mac en pc. Op een computer versleutelt u ook mappen. Geen account, geen servers, geen abonnement. Eenmalig kopen per platform.",
   "nav.label": "Hoofdmenu",
   "nav.features": "Functies",

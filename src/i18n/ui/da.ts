@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: offline filkryptering til Mac, iPhone og Windows",
+  "meta.home.title": "Doughnut Forge: offline filkryptering til Mac, Windows, iPhone og iPad",
   "meta.home.description": "Krypter filer og tekst på iPhone, iPad, Mac og pc. På en computer kan du også kryptere mapper. Ingen konto, ingen servere, intet abonnement. Et engangskøb for hver platform.",
   "nav.label": "Hovedmenu",
   "nav.features": "Funktioner",

@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: Mac, iPhone और Windows के लिए ऑफ़लाइन फ़ाइल एन्क्रिप्शन",
+  "meta.home.title": "Doughnut Forge: Mac, Windows, iPhone और iPad के लिए ऑफ़लाइन फ़ाइल एन्क्रिप्शन",
   "meta.home.description": "iPhone, iPad, Mac और PC पर फ़ाइलें और टेक्स्ट एन्क्रिप्ट करें। कंप्यूटर पर आप फ़ोल्डर भी एन्क्रिप्ट कर सकते हैं। कोई अकाउंट नहीं, कोई सर्वर नहीं, कोई सब्सक्रिप्शन नहीं। हर प्लेटफ़ॉर्म के लिए एक बार की खरीद।",
   "nav.label": "मुख्य मेनू",
   "nav.features": "फ़ीचर",

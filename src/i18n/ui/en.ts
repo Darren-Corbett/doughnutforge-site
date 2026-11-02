@@ -3,7 +3,7 @@
 // Every other language has a file in this folder with the same keys, less the
 // English-only blog and 404 strings (see TranslatedKey in ../index.ts).
 export default {
-  "meta.home.title": "Doughnut Forge: offline file encryption for Mac, iPhone and Windows",
+  "meta.home.title": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
   "meta.home.description":
     "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer, encrypt folders too. No account, no servers, no subscription. A one-time purchase on each platform.",
 

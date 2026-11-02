@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: mã hóa tệp ngoại tuyến cho Mac, iPhone và Windows",
+  "meta.home.title": "Doughnut Forge: mã hóa tệp ngoại tuyến cho Mac, Windows, iPhone và iPad",
   "meta.home.description": "Mã hóa tệp và văn bản trên iPhone, iPad, Mac và PC. Trên máy tính, bạn còn có thể mã hóa thư mục. Không tài khoản, không máy chủ, không thuê bao. Mua một lần cho mỗi nền tảng.",
   "nav.label": "Chính",
   "nav.features": "Tính năng",

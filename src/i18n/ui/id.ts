@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: enkripsi file offline untuk Mac, iPhone, dan Windows",
+  "meta.home.title": "Doughnut Forge: enkripsi file offline untuk Mac, Windows, iPhone, dan iPad",
   "meta.home.description": "Enkripsi file dan teks di iPhone, iPad, Mac, dan PC. Di komputer, Anda juga bisa mengenkripsi folder. Tanpa akun, tanpa server, tanpa langganan. Sekali beli untuk setiap platform.",
   "nav.label": "Utama",
   "nav.features": "Fitur",

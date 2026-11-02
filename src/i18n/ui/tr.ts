@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: Mac, iPhone ve Windows için çevrimdışı dosya şifreleme",
+  "meta.home.title": "Doughnut Forge: Mac, Windows, iPhone ve iPad için çevrimdışı dosya şifreleme",
   "meta.home.description": "iPhone, iPad, Mac ve PC'de dosya ve metinleri şifreleyin. Bilgisayarda klasörleri de şifreleyebilirsiniz. Hesap, sunucu ve abonelik yok. Her platform için tek seferlik satın alma.",
   "nav.label": "Ana menü",
   "nav.features": "Özellikler",

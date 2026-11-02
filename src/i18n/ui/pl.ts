@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: szyfrowanie plików offline – Mac, iPhone i Windows",
+  "meta.home.title": "Doughnut Forge: szyfrowanie plików offline – Mac, Windows, iPhone i iPad",
   "meta.home.description": "Szyfruj pliki i tekst na iPhonie, iPadzie, Macu i PC. Na komputerze zaszyfrujesz też foldery. Bez konta, serwerów i subskrypcji. Jednorazowy zakup na każdą platformę.",
   "nav.label": "Menu główne",
   "nav.features": "Funkcje",

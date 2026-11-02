@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: เข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, iPhone และ Windows",
+  "meta.home.title": "Doughnut Forge: เข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, Windows, iPhone และ iPad",
   "meta.home.description": "เข้ารหัสไฟล์และข้อความบน iPhone, iPad, Mac และ PC บนคอมพิวเตอร์ คุณยังเข้ารหัสโฟลเดอร์ได้ด้วย ไม่มีบัญชี ไม่มีเซิร์ฟเวอร์ ไม่มีการสมัครสมาชิก ซื้อครั้งเดียวสำหรับแต่ละแพลตฟอร์ม",
   "nav.label": "เมนูหลัก",
   "nav.features": "ฟีเจอร์",

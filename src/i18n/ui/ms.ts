@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: penyulitan fail luar talian untuk Mac, iPhone dan Windows",
+  "meta.home.title": "Doughnut Forge: penyulitan fail luar talian untuk Mac, Windows, iPhone dan iPad",
   "meta.home.description": "Sulitkan fail dan teks pada iPhone, iPad, Mac dan PC. Pada komputer, anda juga boleh menyulitkan folder. Tiada akaun, pelayan atau langganan. Beli sekali bagi setiap platform.",
   "nav.label": "Utama",
   "nav.features": "Ciri",

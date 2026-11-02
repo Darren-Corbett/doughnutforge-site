@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: crittografia offline dei file per Mac, iPhone e Windows",
+  "meta.home.title": "Doughnut Forge: crittografia offline dei file per Mac, Windows, iPhone e iPad",
   "meta.home.description": "Crittografa file e testo su iPhone, iPad, Mac e PC. Sul computer, crittografa anche le cartelle. Niente account, server o abbonamento. Un acquisto una tantum per ogni piattaforma.",
   "nav.label": "Principale",
   "nav.features": "Funzioni",

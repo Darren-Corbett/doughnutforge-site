@@ -4,7 +4,7 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: tiedostojen offline-salaus Macille, iPhonelle ja Windowsille",
+  "meta.home.title": "Doughnut Forge: tiedostojen offline-salaus Macille, Windowsille, iPhonelle ja iPadille",
   "meta.home.description": "Salaa tiedostot ja tekstit iPhonella, iPadilla, Macilla ja PC:llä. Tietokoneella voit salata myös kansioita. Ei tiliä, ei palvelimia, ei tilausta. Kertaostos jokaiselle alustalle.",
   "nav.label": "Päävalikko",
   "nav.features": "Ominaisuudet",
