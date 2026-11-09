@@ -4,7 +4,7 @@
 // and no controls covering each other. The pages are not in the sitemap, so the
 // site-wide layout test does not reach them.
 import { expect, test, type Page } from "@playwright/test";
-import { readdirSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { installMeasures, measure } from "../support/measure";
 import { dist } from "../support/site";
 
@@ -13,6 +13,17 @@ const settle = (page: Page) => page.evaluate(() => new Promise((r) => requestAni
 
 test("every store and language has a /go/ page", () => {
   expect(goPages.length).toBe(3 * 30);
+});
+
+// Search engines must crawl these pages to see the noindex, so robots.txt never
+// blocks /go/: the tag and the sitemap are the only guard.
+test("no /go/ page is indexed or in the sitemap", () => {
+  const indexable = goPages.filter(
+    (path) => !readFileSync(`${dist}${path}index.html`, "utf8").includes('<meta name="robots" content="noindex">'),
+  );
+  expect(indexable, "pages without noindex").toEqual([]);
+  const sitemap = readFileSync(`${dist}/sitemap-0.xml`, "utf8");
+  expect(sitemap.match(/<loc>[^<]*\/go\/[^<]*<\/loc>/g) ?? [], "/go/ pages in the sitemap").toEqual([]);
 });
 
 for (const path of goPages) {
