@@ -261,14 +261,29 @@ export default {
   "roadmap.shipped": "Shipped",
   "roadmap.next": "Next",
   "roadmap.later": "Later",
+  "roadmap.v2.title": "Doughnut Forge 2",
+  "roadmap.v2.text":
+    "A new look, an easier start, and a way back in if you forget your password. On iPhone, iPad, Mac and Windows.",
+  "v2.notes.reset":
+    "Forgot your password? Choose “Trouble unlocking?” on the lock screen and set a new one with your recovery words. Your identity, contacts and encrypted files stay the same.",
+  "v2.notes.words":
+    "Your 24-word backup phrase is now called your recovery words. After you write them down, the app asks for two of them, to help you catch a mistake in your copy.",
+  "v2.notes.start": "Setting up is one short welcome, then one choice: create your identity, or restore it.",
+  "v2.notes.design": "A calmer design, in light and dark mode.",
+  "v2.notes.backups":
+    "Backups of your iPhone, iPad or Mac no longer include your identity. Keep your recovery words safe: they are how you restore it on a new device.",
+  "v2.notes.ios":
+    "On iPhone, a tab bar for Files, Text, Identity, Contacts and Settings. On iPhone and iPad, the app is hidden in the app switcher.",
+  "v2.notes.desktop":
+    "On Mac and Windows, zoom from 100% to 200%, and encrypting never replaces a file that is already there.",
   "roadmap.identity.title": "Identity protection",
   "roadmap.identity.text":
-    "An update that keeps every identity safe, so it can never be lost, replaced or left readable. On Mac, iPhone and iPad.",
-  "roadmap.identityWindows.title": "Identity protection for Windows",
-  "roadmap.identityWindows.text": "The same update for Windows.",
+    "An update that keeps every identity safe, so it can never be lost, replaced or left readable. On Mac, iPhone, iPad and Windows.",
   "roadmap.stricter.title": "Stricter protection",
   "roadmap.stricter.text": "Further protection updates that make the app stricter about what it accepts. Nothing changes for your data.",
   "roadmap.android.title": "Doughnut Forge for Android",
+  "roadmap.small.title": "Smaller improvements",
+  "roadmap.small.text": "Small fixes and improvements to Doughnut Forge 2.",
   "roadmap.audit.title": "Independent security audit",
   "roadmap.audit.text": "A security audit of Doughnut Forge by an independent outside expert.",
 

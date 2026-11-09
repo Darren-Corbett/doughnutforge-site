@@ -35,6 +35,13 @@ const sections = roadmapStatuses
               <li>
                 <h3>{t(item.title)}</h3>
                 {item.text && <p>{t(item.text)}</p>}
+                {item.points && (
+                  <ul class="points">
+                    {item.points.map((point) => (
+                      <li>{t(point)}</li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ul>
@@ -45,8 +52,20 @@ const sections = roadmapStatuses
 </Base>
 
 <style>
-  li + li {
+  .items > li + li {
     margin-top: 28px;
+  }
+  /* Doughnut Forge 2's highlights: a plain bulleted list under its text */
+  .points {
+    margin-top: 12px;
+    max-width: 38rem;
+    padding-inline-start: 1.25em;
+    list-style: disc;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .points li + li {
+    margin-top: 6px;
   }
   h3 {
     --fs: 19px;
@@ -61,11 +80,15 @@ const sections = roadmapStatuses
     line-height: 1.55;
     color: #475569;
   }
+  .points {
+    color: #475569;
+  }
   @media (prefers-color-scheme: dark) {
     h3 {
       color: #fff;
     }
-    p {
+    p,
+    .points {
       color: #cbd5e1;
     }
   }
