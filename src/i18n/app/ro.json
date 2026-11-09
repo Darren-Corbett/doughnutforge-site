@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ro/*.json",
-  "app:navigation.tabs.vault": "Dosar securizat",
-  "app:navigation.tabs.mobile-vault": "Fișier securizat",
-  "app:navigation.tabs.text-vault": "Text securizat",
   "app:navigation.tabs.identity": "Identitate",
   "app:navigation.tabs.contacts": "Contacte",
   "app:navigation.language": "Limbă",

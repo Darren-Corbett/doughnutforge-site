@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/nl/*.json",
-  "app:navigation.tabs.vault": "Veilige map",
-  "app:navigation.tabs.mobile-vault": "Veilig bestand",
-  "app:navigation.tabs.text-vault": "Veilige tekst",
   "app:navigation.tabs.identity": "Identiteit",
   "app:navigation.tabs.contacts": "Contacten",
   "app:navigation.language": "Taal",

@@ -1,16 +1,14 @@
 ---
 // Features: the app's tabs in their tab colours, with the store listing's
 // wording and plain sentences from the app's own guides, then what the iPhone
-// and iPad app adds. Screenshots are iPhone and iPad: the Mac and Windows store
-// screenshots are not clean enough to use yet.
-import ipadSecureFile from "../assets/app/ipad-secure-file.webp";
-import iphoneContacts from "../assets/app/iphone-contacts.webp";
-import iphoneEncrypting from "../assets/app/iphone-encrypting.webp";
+// and iPad app adds, and what Mac and Windows add. Screenshots are the v2 iPhone
+// and iPad screens in the page's language (src/data/screens.ts).
 import Faq, { type FaqItem } from "../components/Faq.astro";
 import PageHero from "../components/PageHero.astro";
 import Phone from "../components/Phone.astro";
 import Tablet from "../components/Tablet.astro";
 import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
+import { screen } from "../data/screens";
 import { languages, localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -95,7 +93,7 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
     <div class="phones-inner">
       <h2 id="features-ios">{t("features.ios.title")}</h2>
       <p class="phones-text">{t("features.ios.text")}</p>
-      <ul class="ios-list" role="list">
+      <ul class="band-list ios-list" role="list">
         {
           iosFeatures.map((f) => (
             <li>
@@ -107,13 +105,13 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
       </ul>
       <div class="shots">
         <div class="shot-phone">
-          <Phone src={iphoneEncrypting} sizes="(min-width: 768px) 220px, 44vw" alt={t("features.ios.altEncrypting")} />
+          <Phone src={screen(lang.code, "iphone-progress-light")} sizes="(min-width: 768px) 220px, 44vw" alt={t("features.ios.altEncrypting")} />
         </div>
         <div class="shot-phone">
-          <Phone src={iphoneContacts} sizes="(min-width: 768px) 220px, 44vw" alt={t("features.ios.altContacts")} />
+          <Phone src={screen(lang.code, "iphone-encrypt-light")} sizes="(min-width: 768px) 220px, 44vw" alt={t("features.ios.altChoose")} />
         </div>
         <div class="shot-tablet">
-          <Tablet src={ipadSecureFile} sizes="(min-width: 768px) 420px, 92vw" alt={t("features.ios.altIpad")} />
+          <Tablet src={screen(lang.code, "ipad-files-light")} sizes="(min-width: 768px) 420px, 92vw" alt={t("features.ios.altIpad")} />
         </div>
       </div>
     </div>
@@ -163,8 +161,7 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
     padding-top: 22px;
     border-top: 3px solid var(--tone);
   }
-  .block h3,
-  .ios-list h3 {
+  .block h3 {
     --fs: 19px;
     font-weight: 800;
   }
@@ -218,21 +215,6 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
     font-size: 18px;
     color: #cbd5e1;
   }
-  .ios-list {
-    display: grid;
-    gap: 20px;
-    margin-top: 28px;
-  }
-  .ios-list li {
-    padding-top: 18px;
-    border-top: 2px solid #38444d;
-  }
-  .ios-list p {
-    margin-top: 4px;
-    font-size: 17px;
-    line-height: 1.55;
-    color: #cbd5e1;
-  }
   .shots {
     margin-top: 36px;
     display: grid;
@@ -272,9 +254,15 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
   /* Three columns only once each is wide enough for long words, such as the
      German "Post-Quanten-Verschlüsselung", which never break */
   @media (min-width: 1024px) {
-    .blocks,
-    .ios-list {
+    .blocks {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 32px;
+    }
+  }
+  /* Four items: two by two once there is room */
+  @media (min-width: 768px) {
+    .ios-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 32px;
     }
   }

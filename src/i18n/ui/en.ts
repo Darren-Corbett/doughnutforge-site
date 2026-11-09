@@ -38,11 +38,19 @@ export default {
   "home.specimen.cipherLabel": "The same note, encrypted: unreadable random characters.",
   "home.specimen.caption": "An illustration: real encrypted files hold far more characters than this.",
 
-  "home.phones.title": "Now on iPhone and iPad.",
-  "home.phones.text": "Also available for Mac and Windows.",
-  "home.phones.altText": "Doughnut Forge on iPhone: the Secure Text screen with a note ready to encrypt",
-  "home.phones.altFile": "Doughnut Forge on iPhone: the Secure File screen with Encrypt File and Decrypt File",
-  "home.phones.altIdentity": "Doughnut Forge on iPhone: the Identity screen with a contact card to share",
+  "home.phones.title": "New in Doughnut Forge 2.",
+  "home.phones.text":
+    "A new look, an easier start, and a way back in if you forget your password. On iPhone, iPad, Mac and Windows.",
+  "home.phones.altText": "Doughnut Forge 2 on iPhone: the Text screen with a note ready to encrypt",
+  "home.phones.altFile": "Doughnut Forge 2 on iPhone: the Files screen with Encrypt file and Decrypt file",
+  "home.phones.altIdentity":
+    "Doughnut Forge 2 on iPhone: the Identity screen with your contact code and Share contact card",
+  "home.v2.words.title": "Recovery words and a password reset",
+  "home.v2.words.text":
+    "Your 24-word backup phrase is now called your recovery words. Forgot your password? Choose “Trouble unlocking?” on the lock screen and set a new one with your recovery words. Your identity, contacts and encrypted files stay the same.",
+  "home.v2.cancel.title": "Cancel",
+  "home.v2.cancel.text":
+    "Cancel stops encrypting or decrypting a file, and nothing is saved. On Mac and Windows, it also stops a folder: the files already finished are kept.",
 
   "home.features.title": "Lock it on your device. Share it any way you like.",
   "tabs.files": "Files",
@@ -90,13 +98,14 @@ export default {
   "features.ios.text": "The iPhone and iPad app adds a few things of its own.",
   "v2.privacy.title": "Hidden in the app switcher",
   "v2.privacy.text":
-    "In the app switcher, the app shows the doughnut and “Hidden while in the background” instead of what is on screen.",
+    "On iPhone and iPad, the app shows the doughnut and “Hidden while in the background” in the app switcher, instead of what is on screen.",
   "features.desktop.title": "On Mac and Windows",
   "features.desktop.text":
     "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the File menu, with keyboard shortcuts.",
-  "features.ios.altEncrypting": "Doughnut Forge on iPhone: a video being encrypted, 75% done",
-  "features.ios.altContacts": "Doughnut Forge on iPhone: the Contacts screen with three trusted contacts",
-  "features.ios.altIpad": "Doughnut Forge on iPad: the Secure File screen with Encrypt File and Decrypt File",
+  "features.ios.altEncrypting": "Doughnut Forge 2 on iPhone: a video being encrypted, 75% done",
+  "features.ios.altChoose":
+    "Doughnut Forge 2 on iPhone: choosing who can open a file, with you and three contacts picked",
+  "features.ios.altIpad": "Doughnut Forge 2 on iPad: the Files screen with Encrypt file and Decrypt file",
   "features.cta.title": "Ready to keep your files private?",
 
   // Pricing page
@@ -227,6 +236,7 @@ export default {
   "press.shots.text": "These show the iPhone and iPad app.",
   // {device} is iPhone or iPad, {screen} the app's name for the screen
   "press.shots.label": "{device}: {screen}",
+  "press.shots.choose": "Choosing who can open a file",
   "press.download": "PNG, {width} × {height}",
   "press.usage.title": "Using these files",
   "press.usage.text":

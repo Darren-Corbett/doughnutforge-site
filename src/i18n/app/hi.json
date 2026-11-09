@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/hi/*.json",
-  "app:navigation.tabs.vault": "सुरक्षित निर्देशिका",
-  "app:navigation.tabs.mobile-vault": "सुरक्षित फ़ाइल",
-  "app:navigation.tabs.text-vault": "सुरक्षित टेक्स्ट",
   "app:navigation.tabs.identity": "पहचान",
   "app:navigation.tabs.contacts": "संपर्क",
   "app:navigation.language": "भाषा",

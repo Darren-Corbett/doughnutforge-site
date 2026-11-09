@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/pl/*.json",
-  "app:navigation.tabs.vault": "Bezpieczny folder",
-  "app:navigation.tabs.mobile-vault": "Bezpieczny plik",
-  "app:navigation.tabs.text-vault": "Bezpieczny tekst",
   "app:navigation.tabs.identity": "Tożsamość",
   "app:navigation.tabs.contacts": "Kontakty",
   "app:navigation.language": "Język",

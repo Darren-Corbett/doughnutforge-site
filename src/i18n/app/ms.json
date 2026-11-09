@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ms/*.json",
-  "app:navigation.tabs.vault": "Direktori Selamat",
-  "app:navigation.tabs.mobile-vault": "Fail Selamat",
-  "app:navigation.tabs.text-vault": "Teks Selamat",
   "app:navigation.tabs.identity": "Identiti",
   "app:navigation.tabs.contacts": "Kenalan",
   "app:navigation.language": "Bahasa",

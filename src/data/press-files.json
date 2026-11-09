@@ -1,5 +1,5 @@
 {
-  "_source": "doughnut-forge 0.4.42 (5552323) fastlane/screenshots, src-tauri icons",
+  "_source": "website-pack-v2 (tag v2.0.0) store screenshots, cropped to the screen; icons from doughnut-forge 0.4.42",
   "files": [
     {
       "file": "doughnut-forge-icon.png",
@@ -22,44 +22,44 @@
       "height": 1024
     },
     {
-      "file": "iphone-secure-file.png",
-      "width": 1320,
-      "height": 2868
+      "file": "iphone-files.png",
+      "width": 1008,
+      "height": 2195
     },
     {
-      "file": "iphone-encrypting.png",
-      "width": 1320,
-      "height": 2868
+      "file": "iphone-encrypt.png",
+      "width": 1008,
+      "height": 2195
     },
     {
-      "file": "iphone-contacts.png",
-      "width": 1320,
-      "height": 2868
+      "file": "iphone-progress.png",
+      "width": 1008,
+      "height": 2195
     },
     {
-      "file": "iphone-secure-text.png",
-      "width": 1320,
-      "height": 2868
+      "file": "iphone-text.png",
+      "width": 1008,
+      "height": 2195
     },
     {
       "file": "iphone-identity.png",
-      "width": 1320,
-      "height": 2868
+      "width": 1008,
+      "height": 2195
     },
     {
-      "file": "ipad-secure-file.png",
-      "width": 2064,
-      "height": 2752
+      "file": "ipad-files.png",
+      "width": 1518,
+      "height": 2025
     },
     {
-      "file": "ipad-contacts.png",
-      "width": 2064,
-      "height": 2752
+      "file": "ipad-identity.png",
+      "width": 1518,
+      "height": 2025
     },
     {
-      "file": "ipad-secure-text.png",
-      "width": 2064,
-      "height": 2752
+      "file": "ipad-text.png",
+      "width": 1518,
+      "height": 2025
     }
   ]
 }

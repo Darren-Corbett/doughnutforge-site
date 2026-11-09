@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/zh-CN/*.json",
-  "app:navigation.tabs.vault": "安全目录",
-  "app:navigation.tabs.mobile-vault": "安全文件",
-  "app:navigation.tabs.text-vault": "安全文本",
   "app:navigation.tabs.identity": "身份",
   "app:navigation.tabs.contacts": "联系人",
   "app:navigation.language": "语言",

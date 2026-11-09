@@ -64,9 +64,6 @@ const langs = langsArg === "all" ? allCodes : langsArg.split(",");
 // --- App strings: only the keys the site uses -----------------------------
 const APP_KEYS = {
   app: [
-    "navigation.tabs.vault",
-    "navigation.tabs.mobile-vault",
-    "navigation.tabs.text-vault",
     "navigation.tabs.identity",
     "navigation.tabs.contacts",
     // The language switcher: its label and the app's region groups
@@ -236,43 +233,17 @@ for (const lang of langs) {
 // Strings only: leave the images alone
 if (args.includes("--strings-only")) process.exit(0);
 
-// --- Screenshots: resized and stored as high-quality WebP to keep the repo small;
-// Astro sizes them again per device at build time.
-// iPhone screenshots only: the phone app leads on the site. Add a Mac screenshot
-// here once there is one of a clean demo folder (the current ones show .DS_Store).
-const SCREENSHOTS = [
-  ["fastlane/screenshots/ios/en-GB/iphone_01_secure_file.png", "iphone-secure-file.webp", 900],
-  ["fastlane/screenshots/ios/en-GB/iphone_04_secure_text.png", "iphone-secure-text.webp", 900],
-  ["fastlane/screenshots/ios/en-GB/iphone_05_identity.png", "iphone-identity.webp", 900],
-  ["fastlane/screenshots/ios/en-GB/iphone_02_encrypting.png", "iphone-encrypting.webp", 900],
-  ["fastlane/screenshots/ios/en-GB/iphone_03_contacts.png", "iphone-contacts.webp", 900],
-  ["fastlane/screenshots/ios/en-GB/ipad_01_secure_file_ipad.png", "ipad-secure-file.webp", 1400],
-];
-
-mkdirSync(join(SITE, "src/assets/app"), { recursive: true });
-for (const [from, to, width, crop] of SCREENSHOTS) {
-  const image = sharp(join(APP, from));
-  if (crop) image.extract(crop);
-  await image.resize({ width, withoutEnlargement: true }).webp({ quality: 92 }).toFile(join(SITE, "src/assets/app", to));
-  console.log(`wrote src/assets/app/${to}`);
-}
+// Screenshots and the press kit's screenshots come from the v2 website pack
+// (scripts/images-from-pack.mjs), not from here.
 
 // --- Press kit: full-size files for download from /press/ -------------------
-// Only screens that are clean and true today. Mac and Windows screenshots join
-// once there are new ones (the store sets show .DS_Store and "military-grade").
+// The app icons. Its screenshots come from scripts/images-from-pack.mjs, which
+// keeps these icon entries in src/data/press-files.json, as this keeps its own.
 const PRESS_KIT = [
   ["src-tauri/app-icon.png", "doughnut-forge-icon.png", 1024],
   ["src-tauri/icons/AppIcon.icon/Assets/app-icon-ios.png", "doughnut-forge-icon-square-light.png", 1024],
   ["src-tauri/icons/AppIcon.icon/Assets/app-icon-ios-dark.png", "doughnut-forge-icon-square-dark.png", 1024],
   ["src-tauri/icons/AppIcon.icon/Assets/app-icon-ios-mono.png", "doughnut-forge-icon-mono.png", 1024],
-  ["fastlane/screenshots/ios/en-GB/iphone_01_secure_file.png", "iphone-secure-file.png"],
-  ["fastlane/screenshots/ios/en-GB/iphone_02_encrypting.png", "iphone-encrypting.png"],
-  ["fastlane/screenshots/ios/en-GB/iphone_03_contacts.png", "iphone-contacts.png"],
-  ["fastlane/screenshots/ios/en-GB/iphone_04_secure_text.png", "iphone-secure-text.png"],
-  ["fastlane/screenshots/ios/en-GB/iphone_05_identity.png", "iphone-identity.png"],
-  ["fastlane/screenshots/ios/en-GB/ipad_01_secure_file_ipad.png", "ipad-secure-file.png"],
-  ["fastlane/screenshots/ios/en-GB/ipad_03_contacts_ipad.png", "ipad-contacts.png"],
-  ["fastlane/screenshots/ios/en-GB/ipad_04_secure_text_ipad.png", "ipad-secure-text.png"],
 ];
 
 // The full files go to public/press/ under stable names; small WebP previews go
@@ -291,7 +262,10 @@ for (const [from, to, size] of PRESS_KIT) {
   pressFiles.push({ file: to, width, height });
   console.log(`wrote public/press/${to}`);
 }
-writeJson("src/data/press-files.json", { _source: source("fastlane/screenshots, src-tauri icons"), files: pressFiles });
+const screens = JSON.parse(readFileSync(join(SITE, "src/data/press-files.json"), "utf8")).files.filter(
+  (f) => !f.file.startsWith("doughnut-forge-icon"),
+);
+writeJson("src/data/press-files.json", { _source: source("src-tauri icons; screenshots from website-pack-v2"), files: [...pressFiles, ...screens] });
 
 // --- Brand: app icon, and the default social preview image ------------------
 mkdirSync(join(SITE, "src/assets/brand"), { recursive: true });
