@@ -6,7 +6,7 @@
 // the Technical details line that says proof of who sent an item is not yet offered.
 import { expect, test } from "@playwright/test";
 import { execFile } from "node:child_process";
-import { mkdirSync, mkdtempSync, writeFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { promisify } from "node:util";
@@ -124,3 +124,17 @@ test("fails on a page in a language it has no patterns for", async () => {
   expect(result.code).not.toBe(0);
   expect(result.output).toContain("xx");
 });
+
+// The v1 app's guide sentences, in all 30 languages, that the Features page
+// showed until 9 November 2026: they say the app verifies who someone is, verifies
+// trusted contacts and confirms their true identity. Each must fail on its own.
+const v1 = JSON.parse(readFileSync(`${root}tests/fixtures/v1-identity-claims.json`, "utf8")).sentences as Record<string, string[]>;
+const htmlLang: Record<string, string> = { en: "en-GB", es: "es-ES" };
+for (const [lang, sentences] of Object.entries(v1)) {
+  test(`fails on each of the v1 identity claims in ${lang}`, async () => {
+    const files = Object.fromEntries(sentences.map((s, i) => [`${lang}/claim-${i + 1}/index.html`, page(htmlLang[lang] ?? lang, `<p>${s}</p>`)]));
+    const result = await check(files);
+    expect(result.code).not.toBe(0);
+    for (const file of Object.keys(files)) expect(result.output).toContain(file);
+  });
+}

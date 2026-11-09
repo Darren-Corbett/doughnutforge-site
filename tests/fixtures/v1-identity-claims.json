@@ -1,0 +1,155 @@
+{
+  "_source": "git show 52d96cd^:src/i18n/app/<lang>.json, keys help:identityContactsGuide.step1.description, help:identityContactsGuide.step3.description, help:setupGuide.step2.description: the v1 app sentences removed from the Features page because they claim the app verifies who someone is",
+  "sentences": {
+    "en": [
+      "Export your identity as a secure contact card (.vltc2). Share this file so others can safely verify who you are and add you to their trusted network.",
+      "Manage your trusted network. While anyone with your card can send you secure files, verifying contacts here lets you quickly select them for sharing and confirms their true identity.",
+      "Your digital identity acts as your personal set of keys, which are stored safely within the application. Doughnut Forge uses these keys to protect your files and verify your trusted contacts."
+    ],
+    "fr": [
+      "Exportez votre identité sous forme de carte de contact sécurisée (.vltc2). Partagez ce fichier afin que d'autres puissent vérifier votre identité et vous ajouter à leur réseau de confiance.",
+      "Gérez votre réseau de confiance. Bien que toute personne possédant votre carte puisse vous envoyer des fichiers sécurisés, la vérification des contacts ici vous permet de les sélectionner rapidement pour le partage et confirme leur véritable identité.",
+      "Votre identité numérique agit comme votre trousseau de clés personnel, stocké en toute sécurité dans l'application. Doughnut Forge utilise ces clés pour protéger vos fichiers et vérifier vos contacts de confiance."
+    ],
+    "de": [
+      "Exportieren Sie Ihre Identität als sichere Kontaktkarte (.vltc2). Teilen Sie diese Datei, damit andere sicher überprüfen können, wer Sie sind, und Sie ihrem vertrauenswürdigen Netzwerk hinzufügen können.",
+      "Verwalten Sie Ihr vertrauenswürdiges Netzwerk. Während jeder mit Ihrer Karte Ihnen sichere Dateien senden kann, können Sie durch die Überprüfung von Kontakten hier diese schnell zum Teilen auswählen und ihre wahre Identität bestätigen.",
+      "Ihre digitale Identität fungiert als Ihr persönlicher Schlüsselsatz, der sicher in der Anwendung gespeichert wird. Doughnut Forge verwendet diese Schlüssel, um Ihre Dateien zu schützen und Ihre vertrauenswürdigen Kontakte zu überprüfen."
+    ],
+    "es": [
+      "Exporta tu identidad como una tarjeta de contacto segura (.vltc2). Comparte este archivo para que otros puedan verificar tu identidad y añadirte a su red de confianza.",
+      "Gestiona tu red de confianza. Aunque cualquiera que tenga tu tarjeta puede enviarte archivos seguros, verificar tus contactos aquí te permite seleccionarlos rápidamente para compartir y confirma su verdadera identidad.",
+      "Tu identidad digital actúa como tu propio juego de llaves personales, que se guardan de forma segura en la aplicación. Doughnut Forge usa estas llaves para proteger tus archivos y verificar tus contactos de confianza."
+    ],
+    "it": [
+      "Esporta la tua identità come scheda di contatto sicura (.vltc2). Condividi questo file in modo che altri possano verificare in modo sicuro chi sei e aggiungerti alla loro rete attendibile.",
+      "Gestisci la tua rete di fiducia. Anche se chiunque abbia la tua scheda può inviarti file sicuri, verificare i contatti qui ti consente di selezionarli rapidamente per la condivisione e ne conferma la vera identità.",
+      "La tua identità digitale funge da set personale di chiavi, archiviate in modo sicuro all'interno dell'applicazione. Doughnut Forge utilizza queste chiavi per proteggere i tuoi file e verificare i tuoi contatti attendibili."
+    ],
+    "nl": [
+      "Exporteer uw identiteit als een veilige contactkaart (.vltc2). Deel dit bestand zodat anderen veilig kunnen verifiëren wie u bent en u aan hun vertrouwde netwerk kunnen toevoegen.",
+      "Beheer uw vertrouwde netwerk. Hoewel iedereen met uw kaart u veilige bestanden kan sturen, kunt u door contacten hier te verifiëren ze snel selecteren om te delen en wordt hun ware identiteit bevestigd.",
+      "Uw digitale identiteit fungeert als uw persoonlijke set sleutels, die veilig binnen de applicatie worden opgeslagen. Doughnut Forge gebruikt deze sleutels om uw bestanden te beschermen en uw vertrouwde contacten te verifiëren."
+    ],
+    "sv": [
+      "Exportera din identitet som ett säkert kontaktkort (.vltc2). Dela den här filen så att andra säkert kan bekräfta vem du är och lägga till dig i sitt betrodda nätverk.",
+      "Hantera ditt betrodda nätverk. Även om vem som helst med ditt kort kan skicka säkra filer till dig, låter verifiering av kontakter här dig snabbt välja dem för deling och bekräftar deras sanna identitet.",
+      "Din digitala identitet fungerar som din personliga nyckelknippa, som förvaras säkert i applikationen. Doughnut Forge använder dessa nycklar för att skydda dina filer och verifiera dina betrodda kontakter."
+    ],
+    "da": [
+      "Eksporter din identitet som et sikkert kontaktkort (.vltc2). Del denne fil, så andre sikkert kan bekræfte, hvem du er, og tilføje dig til deres betroede netværk.",
+      "Administrer dit betroede netværk. Selvom alle med dit kort kan sende dig sikre filer, lader verificering af kontakter her dig hurtigt vælge dem til deling og bekræfter deres sande identitet.",
+      "Din digitale identitet fungerer som dit personlige sæt nøgler, som opbevares sikkert i applikationen. Doughnut Forge bruger disse nøgler til at beskytte dine filer og bekræfte dine betroede kontakter."
+    ],
+    "fi": [
+      "Vie identiteettisi turvallisena yhteystietokorttina (.vltc2). Jaa tämä tiedosto, jotta muut voivat turvallisesti vahvistaa henkilöllisyytesi ja lisätä sinut luotettuun verkkoonsa.",
+      "Hallinnoi luotettua verkkoasi. Vaikka kuka tahansa korttisi omaava voi lähettää sinulle turvallisia tiedostoja, yhteystietojen vahvistaminen täällä antaa sinun valita heidät nopeasti jakamista varten ja vahvistaa heidän todellisen identiteettinsä.",
+      "Digitaalinen identiteettisi toimii henkilökohtaisina avaiminasi, jotka tallennetaan turvallisesti sovellukseen. Doughnut Forge käyttää näitä avaimia tiedostojesi suojaamiseen ja luotettujen yhteystietojesi vahvistamiseen."
+    ],
+    "no": [
+      "Eksporter identiteten din som et sikkert kontaktkort (.vltc2). Del denne filen slik at andre trygt kan bekrefte hvem du er og legge deg til i sitt klarerte nettverk.",
+      "Administrer ditt klarerte nettverk. Selv om alle med kortet ditt kan sende deg sikre filer, lar verifisering av kontakter her deg raskt velge dem for deling og bekrefter deres sanne identitet.",
+      "Din digitale identitet fungerer som ditt personlige sett med nøkler, som er trygt lagret i applikasjonen. Doughnut Forge bruker disse nøklene for å beskytte filene dine og bekrefte dine klarerte kontakter."
+    ],
+    "pl": [
+      "Eksportuj swoją tożsamość jako bezpieczną wizytówkę (.vltc2). Udostępnij ten plik, aby inni mogli bezpiecznie zweryfikować, kim jesteś, i dodać Cię do swojej zaufanej sieci.",
+      "Zarządzaj swoją zaufaną siecią. Chociaż każdy, kto ma Twoją wizytówkę, może wysłać Ci bezpieczne pliki, weryfikacja kontaktów tutaj pozwala szybko wybrać je do udostępniania i potwierdza ich prawdziwą tożsamość.",
+      "Twoja cyfrowa tożsamość działa jak Twój osobisty zestaw kluczy, które są bezpiecznie przechowywane w aplikacji. Doughnut Forge używa tych kluczy do ochrony Twoich plików i weryfikacji zaufanych kontaktów."
+    ],
+    "cs": [
+      "Exportujte svou identitu jako bezpečnou vizitku (.vltc2). Sdílejte tento soubor, aby ostatní mohli bezpečně ověřit, kdo jste, a přidat si vás do své důvěryhodné sítě.",
+      "Spravujte svou důvěryhodnou síť. I když vám bezpečné soubory může poslat kdokoli s vaší vizitkou, ověření kontaktů zde vám umožní rychle je vybrat pro sdílení a potvrzuje jejich skutečnou identitu.",
+      "Vaše digitální identita funguje jako vaše osobní sada klíčů, které jsou bezpečně uloženy v aplikaci. Doughnut Forge používá tyto klíče k ochraně vašich souborů a ověřování důvěryhodných kontaktů."
+    ],
+    "hu": [
+      "Exportálja identitását biztonságos névjegykártyaként (.vltc2). Ossza meg ezt a fájlt, hogy mások biztonságosan igazolhassák, ki Ön, és hozzáadhassák a megbízható hálózatukhoz.",
+      "Kezelje megbízható hálózatát. Bár bárki, akinek megvan a kártyája, küldhet biztonságos fájlokat, az itt lévő partnerek ellenőrzése lehetővé teszi, hogy gyorsan kiválassza őket a megosztáshoz, és megerősíti a valódi identitásukat.",
+      "A digitális identitása úgy működik, mint a személyes kulcskészlete, amelyet biztonságosan tárolunk az alkalmazásban. A Doughnut Forge ezeket a kulcsokat használja a fájlok védelmére és a megbízható partnerek ellenőrzésére."
+    ],
+    "ro": [
+      "Exportă identitatea sub forma unei cărți de contact securizate (.vltc2). Trimite acest fișier pentru ca alții să te poată verifica în siguranță și să te adauge în rețeaua lor de încredere.",
+      "Gestionează-ți rețeaua de încredere. Deși oricine deține cartea ta îți poate trimite fișiere sigure, verificarea contactelor aici îți permite să le selectezi rapid pentru distribuire și le confirmă adevărata identitate.",
+      "Identitatea ta digitală acționează ca setul tău personal de chei, care sunt stocate în siguranță în aplicație. Doughnut Forge folosește aceste chei pentru a-ți proteja fișierele și pentru a verifica contactele de încredere."
+    ],
+    "ru": [
+      "Экспортируйте свою личность в виде безопасной контактной карты (.vltc2). Поделитесь этим файлом, чтобы другие могли безопасно подтвердить, кто вы, и добавить вас в свою доверенную сеть.",
+      "Управляйте своей доверенной сетью. Хотя любой, у кого есть ваша карта, может отправить вам безопасные файлы, подтверждение контактов здесь позволяет быстро выбирать их для обмена и подтверждает их истинную личность.",
+      "Ваша цифровая личность действует как ваш личный набор ключей, которые надежно хранятся в приложении. Doughnut Forge использует эти ключи для защиты ваших файлов и проверки доверенных контактов."
+    ],
+    "el": [
+      "Εξαγάγετε την ταυτότητά σας ως ασφαλή κάρτα επαφής (.vltc2). Μοιραστείτε αυτό το αρχείο, ώστε άλλοι να μπορούν να επαληθεύσουν με ασφάλεια ποιοι είστε και να σας προσθέσουν στο αξιόπιστο δίκτυό τους.",
+      "Διαχειριστείτε το αξιόπιστο δίκτυό σας. Παρόλο που οποιοσδήποτε έχει την κάρτα σας μπορεί να σας στείλει ασφαλή αρχεία, η επαλήθευση επαφών εδώ σας επιτρέπει να τις επιλέξετε γρήγορα για κοινή χρήση και επιβεβαιώνει την πραγματική τους ταυτότητα.",
+      "Η ψηφιακή σας ταυτότητα λειτουργεί ως το προσωπικό σας σύνολο κλειδιών, τα οποία αποθηκεύονται με ασφάλεια μέσα στην εφαρμογή. Το Doughnut Forge χρησιμοποιεί αυτά τα κλειδιά για να προστατεύσει τα αρχεία σας και να επαληθεύσει τις αξιόπιστες επαφές σας."
+    ],
+    "uk": [
+      "Експортуйте свою особистість як безпечну контактну картку (.vltc2). Поділіться цим файлом, щоб інші могли безпечно перевірити, хто ви, і додати вас до своєї надійної мережі.",
+      "Керуйте своєю надійною мережею. Хоча будь-хто, хто має вашу картку, може надсилати вам безпечні файли, перевірка контактів тут дозволяє швидко вибирати їх для обміну та підтверджує їхню справжню особистість.",
+      "Ваша цифрова особистість діє як ваш особистий набір ключів, що надійно зберігаються в програмі. Doughnut Forge використовує ці ключі для захисту ваших файлів та перевірки ваших надійних контактів."
+    ],
+    "en-US": [
+      "Export your identity as a secure contact card (.vltc2). Share this file so others can safely verify who you are and add you to their trusted network.",
+      "Manage your trusted network. While anyone with your card can send you secure files, verifying contacts here lets you quickly select them for sharing and confirms their true identity.",
+      "Your digital identity acts as your personal set of keys, which are stored safely within the application. Doughnut Forge uses these keys to protect your files and verify your trusted contacts."
+    ],
+    "es-MX": [
+      "Exporta tu identidad como una tarjeta de contacto segura (.vltc2). Comparte este archivo para que otros puedan verificar tu identidad de forma segura y agregarte a su red de confianza.",
+      "Administra tu red de confianza. Aunque cualquier persona con tu tarjeta puede enviarte archivos seguros, verificar los contactos aquí te permite seleccionarlos rápidamente para compartir y confirma su verdadera identidad.",
+      "Tu identidad digital actúa como tu juego personal de llaves, las cuales se almacenan de forma segura dentro de la aplicación. Doughnut Forge usa estas llaves para proteger tus archivos y verificar tus contactos de confianza."
+    ],
+    "pt-BR": [
+      "Exporte sua identidade como um cartão de contato seguro (.vltc2). Compartilhe este arquivo para que outros possam verificar com segurança quem você é e adicioná-lo à rede de confiança deles.",
+      "Gerencie sua rede de confiança. Embora qualquer pessoa com seu cartão possa lhe enviar arquivos seguros, verificar os contatos aqui permite selecioná-los rapidamente para compartilhar e confirma sua verdadeira identidade.",
+      "Sua identidade digital atua como seu conjunto pessoal de chaves, que são armazenadas com segurança no aplicativo. O Doughnut Forge usa essas chaves para proteger seus arquivos e verificar seus contatos confiáveis."
+    ],
+    "tr": [
+      "Kimliğinizi güvenli bir kişi kartı (.vltc2) olarak dışa aktarın. Başkalarının kim olduğunuzu güvenli bir şekilde doğrulayabilmesi ve sizi güvenilir ağlarına ekleyebilmesi için bu dosyayı paylaşın.",
+      "Güvenilir ağınızı yönetin. Kartınıza sahip olan herkes size güvenli dosyalar gönderebilse de, kişileri burada doğrulamak, onları paylaşım için hızlıca seçmenize olanak tanır ve gerçek kimliklerini onaylar.",
+      "Dijital kimliğiniz, uygulama içinde güvenli bir şekilde saklanan kişisel anahtar setiniz olarak işlev görür. Doughnut Forge, dosyalarınızı korumak ve güvenilir kişilerinizi doğrulamak için bu anahtarları kullanır."
+    ],
+    "ja": [
+      "アイデンティティを安全な連絡先カード（.vltc2）としてエクスポートします。このファイルを共有して、他の人があなたの身元を検証し、信頼できるネットワークに追加できるようにします。",
+      "信頼できるネットワークを管理します。カードを持っている人なら誰でも安全なファイルを送信できますが、ここで連絡先を検証すると、ファイル共有時にすばやく選択でき、本当のアイデンティティを確認できます。",
+      "デジタルアイデンティティは個人の鍵として機能し、アプリ内に安全に保存されます。Doughnut Forgeはこれらの鍵を使用してファイルを保護し、信頼できる連絡先を検証します。"
+    ],
+    "zh-CN": [
+      "将您的身份导出为安全的联系人卡片 (.vltc2)。共享此文件，以便其他人可以安全地验证您的身份并将您添加到他们受信任的网络中。",
+      "管理您受信任的网络。虽然拥有您的卡片的任何人都可以向您发送安全文件，但在此处验证联系人可以快速选择他们进行共享，并确认他们的真实身份。",
+      "您的数字身份作为您的个人密钥集，安全地存储在应用程序中。Doughnut Forge 使用这些密钥来保护您的文件并验证您受信任的联系人。"
+    ],
+    "zh-TW": [
+      "將您的身分匯出為安全的聯絡人卡片 (.vltc2)。共享此檔案，以便其他人可以安全地驗證您的身分並將您新增到他們受信任的網路中。",
+      "管理您受信任的網路。雖然擁有您的卡片的任何人都可以向您傳送安全檔案，但在這裡驗證聯絡人可以快速選擇他們進行共用，並確認他們的真實身分。",
+      "您的數位身分作為您的個人金鑰集，安全地儲存在應用程式中。Doughnut Forge 使用這些金鑰來保護您的檔案並驗證您受信任的聯絡人。"
+    ],
+    "ko": [
+      "신원을 안전한 연락처 카드(.vltc2)로 내보냅니다. 다른 사람이 안전하게 신원을 확인하고 신뢰할 수 있는 네트워크에 추가할 수 있도록 이 파일을 공유하세요.",
+      "신뢰할 수 있는 네트워크를 관리하세요. 카드가 있는 사람 누구나 안전한 파일을 보낼 수 있지만, 여기서 연락처를 확인하면 공유를 위해 빠르게 선택하고 실제 신원을 확인할 수 있습니다.",
+      "디지털 신원은 앱 내에 안전하게 저장되는 개인 키 세트 역할을 합니다. Doughnut Forge는 이 키를 사용하여 파일을 보호하고 신뢰할 수 있는 연락처를 확인합니다."
+    ],
+    "hi": [
+      "एक सुरक्षित संपर्क कार्ड (.vltc2) के रूप में अपनी पहचान निर्यात करें। इस फ़ाइल को साझा करें ताकि अन्य लोग सुरक्षित रूप से सत्यापित कर सकें कि आप कौन हैं और आपको अपने विश्वसनीय नेटवर्क में जोड़ सकें।",
+      "अपना विश्वसनीय नेटवर्क प्रबंधित करें। हालाँकि जिसके पास भी आपका कार्ड है वह आपको सुरक्षित फ़ाइलें भेज सकता है, लेकिन यहाँ संपर्कों को सत्यापित करने से आप साझा करने के लिए उन्हें तुरंत चुन सकते हैं और उनकी वास्तविक पहचान की पुष्टि कर सकते हैं।",
+      "आपकी डिजिटल पहचान आपकी कुंजियों (keys) के व्यक्तिगत सेट के रूप में कार्य करती है, जो एप्लिकेशन के भीतर सुरक्षित रूप से सहेजी जाती हैं। Doughnut Forge इन कुंजियों का उपयोग आपकी फ़ाइलों की सुरक्षा करने और आपके विश्वसनीय संपर्कों को सत्यापित करने के लिए करता है।"
+    ],
+    "id": [
+      "Ekspor identitas Anda sebagai kartu kontak yang aman (.vltc2). Bagikan file ini agar orang lain dapat memverifikasi dengan aman siapa Anda dan menambahkan Anda ke jaringan tepercaya mereka.",
+      "Kelola jaringan tepercaya Anda. Meskipun siapa pun yang memiliki kartu Anda dapat mengirimi Anda file yang aman, memverifikasi kontak di sini memungkinkan Anda memilihnya dengan cepat untuk berbagi dan mengonfirmasi identitas asli mereka.",
+      "Identitas digital Anda bertindak sebagai set kunci pribadi Anda, yang disimpan dengan aman di dalam aplikasi. Doughnut Forge menggunakan kunci-kunci ini untuk melindungi file Anda dan memverifikasi kontak tepercaya Anda."
+    ],
+    "ms": [
+      "Eksport identiti anda sebagai kad kenalan yang selamat (.vltc2). Kongsi fail ini supaya orang lain dapat mengesahkan dengan selamat siapa anda dan menambah anda ke rangkaian mereka yang dipercayai.",
+      "Urus rangkaian anda yang dipercayai. Walaupun sesiapa yang mempunyai kad anda boleh menghantar fail selamat, mengesahkan kenalan di sini membolehkan anda memilihnya dengan pantas untuk perkongsian dan mengesahkan identiti sebenar mereka.",
+      "Identiti digital anda bertindak sebagai set kunci peribadi anda, yang disimpan dengan selamat dalam aplikasi. Doughnut Forge menggunakan kunci ini untuk melindungi fail anda dan mengesahkan kenalan anda yang dipercayai."
+    ],
+    "th": [
+      "ส่งออกข้อมูลประจำตัวของคุณเป็นนามบัตรที่ปลอดภัย (.vltc2) แชร์ไฟล์นี้เพื่อให้ผู้อื่นสามารถตรวจสอบตัวตนของคุณได้อย่างปลอดภัยและเพิ่มคุณไปยังเครือข่ายที่เชื่อถือได้ของพวกเขา",
+      "จัดการเครือข่ายที่เชื่อถือได้ของคุณ แม้ว่าทุกคนที่มีบัตรของคุณจะสามารถส่งไฟล์ที่ปลอดภัยถึงคุณได้ แต่การตรวจสอบผู้ติดต่อที่นี่ช่วยให้คุณเลือกแชร์ไฟล์กับพวกเขาได้อย่างรวดเร็วและยืนยันตัวตนที่แท้จริงของพวกเขาได้",
+      "ข้อมูลประจำตัวดิจิทัลของคุณทำหน้าที่เป็นชุดคีย์ส่วนตัว ซึ่งจัดเก็บไว้อย่างปลอดภัยภายในแอปพลิเคชัน Doughnut Forge ใช้คีย์เหล่านี้เพื่อปกป้องไฟล์ของคุณและตรวจสอบผู้ติดต่อที่เชื่อถือได้"
+    ],
+    "vi": [
+      "Xuất danh tính của bạn dưới dạng thẻ liên hệ an toàn (.vltc2). Chia sẻ tệp này để người khác có thể xác minh an toàn bạn là ai và thêm bạn vào mạng đáng tin cậy của họ.",
+      "Quản lý mạng đáng tin cậy của bạn. Mặc dù bất kỳ ai có thẻ của bạn đều có thể gửi cho bạn tệp an toàn, nhưng việc xác minh liên hệ tại đây cho phép bạn nhanh chóng chọn họ để chia sẻ và xác nhận danh tính thực của họ.",
+      "Danh tính kỹ thuật số của bạn đóng vai trò là bộ khóa cá nhân của bạn, được lưu trữ an toàn trong ứng dụng. Doughnut Forge sử dụng các khóa này để bảo vệ tệp của bạn và xác minh các liên hệ đáng tin cậy của bạn."
+    ]
+  }
+}
