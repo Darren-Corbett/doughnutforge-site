@@ -346,7 +346,7 @@ export default {
   "technical.keys.identity.text": "made from one 256-bit random secret, created on your device.",
   "technical.keys.recovery.label": "Recovery:",
   "technical.keys.recovery.text":
-    "that secret can be written down as your 24-word backup phrase (BIP-39). It can also be split into recovery shards with Shamir's Secret Sharing, where any chosen number of shards (at least 2, at most 16 in total) brings it back. Fewer shards than that reveal nothing.",
+    "that secret can be written down as your 24 recovery words (BIP-39). It can also be split into recovery shards with Shamir's Secret Sharing, where any chosen number of shards (at least 2, at most 16 in total) brings it back. Fewer shards than that reveal nothing.",
   "technical.keys.exchange.label": "Key exchange (post-quantum hybrid):",
   "technical.keys.exchange.text":
     "each item's key is sealed separately for every recipient, and for you, using X25519 together with ML-KEM-768. The two shared secrets are combined with SHA-256.",
@@ -421,7 +421,7 @@ export default {
   "technical.libraries.text": "Doughnut Forge uses these libraries for its cryptography and compression:",
   "technical.libraries.sha": "SHA-256 and SHA-512",
   "technical.libraries.random": "Operating system random source",
-  "technical.libraries.words": "Backup phrase",
+  "technical.libraries.words": "Recovery words",
   "technical.libraries.shards": "Recovery shards",
   "technical.libraries.memory": "Secrets in memory",
   "technical.libraries.wipe": "Wiping secrets from memory",
@@ -431,7 +431,7 @@ export default {
   "technical.limits.compromised.text":
     "While Doughnut Forge is unlocked, malware with full access to your device could read your secrets.",
   "technical.limits.access.label":
-    "Anyone with your password and your device, your 24-word backup phrase, or enough recovery shards.",
+    "Anyone with your password and your device, your 24 recovery words, or enough recovery shards.",
   "technical.limits.access.text": "Keep them safe.",
   "technical.limits.passcode.label": "Your device passcode,",
   "technical.limits.passcode.text":
