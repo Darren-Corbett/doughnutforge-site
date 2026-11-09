@@ -31,12 +31,22 @@ export default {
   "home.specimen.note": "Chào Lan, chìa khóa dự phòng ở trong chậu màu xanh dương cạnh cửa sau. Mã báo động là 4071. Hẹn gặp bạn thứ Sáu nhé.",
   "home.specimen.cipherLabel": "Vẫn ghi chú đó, khi đã mã hóa: các ký tự ngẫu nhiên không thể đọc được.",
   "home.specimen.caption": "Hình minh họa: tệp mã hóa thật chứa nhiều ký tự hơn thế này rất nhiều.",
-  "home.phones.title": "Đã có trên iPhone và iPad.",
-  "home.phones.text": "Cũng có trên Mac và Windows.",
-  "home.phones.altText": "Doughnut Forge trên iPhone: màn hình Văn bản bảo mật với một ghi chú sẵn sàng để mã hóa",
-  "home.phones.altFile": "Doughnut Forge trên iPhone: màn hình Tệp bảo mật với Mã hóa tệp và Giải mã tệp",
-  "home.phones.altIdentity": "Doughnut Forge trên iPhone: màn hình Danh tính với thẻ liên hệ để chia sẻ",
+  "home.phones.title": "Có gì mới trong Doughnut Forge 2.",
+  "home.phones.text":
+    "Giao diện mới, bắt đầu dễ dàng hơn và một cách để vào lại nếu bạn quên mật khẩu. Trên iPhone, iPad, Mac và Windows.",
+  "home.phones.altText": "Doughnut Forge 2 trên iPhone: màn hình Văn bản với một ghi chú sẵn sàng để mã hóa",
+  "home.phones.altFile": "Doughnut Forge 2 trên iPhone: màn hình Tệp với Mã hóa tệp và Giải mã tệp",
+  "home.phones.altIdentity":
+    "Doughnut Forge 2 trên iPhone: màn hình Danh tính với mã liên hệ của bạn và Chia sẻ thẻ liên hệ",
+  "home.v2.words.title": "Các từ khôi phục và đặt lại mật khẩu",
+  "home.v2.words.text":
+    "Cụm từ sao lưu 24 từ của bạn giờ được gọi là các từ khôi phục. Quên mật khẩu? Chọn “Gặp sự cố khi mở khóa?” trên màn hình khóa và đặt mật khẩu mới bằng các từ khôi phục của bạn. Danh tính, liên hệ và các tệp đã mã hóa của bạn vẫn giữ nguyên.",
+  "home.v2.cancel.title": "Hủy",
+  "home.v2.cancel.text":
+    "Hủy dừng việc mã hóa hoặc giải mã một tệp, và không có gì được lưu. Trên Mac và Windows, Hủy cũng dừng một thư mục: các tệp đã xong được giữ lại.",
   "home.features.title": "Khóa tệp ngay trên thiết bị của bạn. Chia sẻ theo cách bạn muốn.",
+  "tabs.files": "Tệp",
+  "tabs.text": "Văn bản",
   "home.pricing.title": "Mua một lần, không bao giờ là thuê bao.",
   "home.pricing.text": "Mua Doughnut Forge một lần cho mỗi nền tảng bạn dùng, từ cửa hàng của nền tảng đó. Cửa hàng sẽ hiển thị giá tại nơi bạn sống.",
   "download.coming": "{platforms} sắp ra mắt.",
@@ -52,14 +62,24 @@ export default {
   "meta.features.description": "Mã hóa tệp và văn bản ngay trên iPhone, iPad hoặc máy tính của bạn, chia sẻ với người bạn tin tưởng và giữ chúng được bảo vệ lâu dài. Không tài khoản, không máy chủ.",
   "features.title": "Mọi điều Doughnut Forge làm được",
   "features.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng. Dù bạn gửi bằng cách nào, chỉ họ mới mở được.",
+  "features.identity.more":
+    "Danh tính của bạn chỉ được lưu trên thiết bị này và được bảo vệ bằng mật khẩu của bạn. Hãy giữ 24 từ khôi phục an toàn: đó là cách duy nhất để khôi phục danh tính hoặc đặt lại mật khẩu bị quên.",
   "features.private.title": "Riêng tư ngay từ đầu",
   "features.offline.title": "Hoạt động không cần internet",
   "offline.text": "Không thuê bao, không tài khoản, không máy chủ và không theo dõi. Doughnut Forge hoạt động hoàn toàn trên thiết bị của bạn, kể cả khi không có kết nối internet. Khóa và danh bạ của bạn luôn ở bên bạn, trong tầm kiểm soát của bạn.",
   "features.languages.label": "Ngôn ngữ",
+  "features.ios.title": "Trên iPhone và iPad",
   "features.ios.text": "Ứng dụng iPhone và iPad có thêm một vài tính năng riêng.",
-  "features.ios.altEncrypting": "Doughnut Forge trên iPhone: một video đang được mã hóa, đã xong 75%",
-  "features.ios.altContacts": "Doughnut Forge trên iPhone: màn hình Liên hệ với ba người liên hệ tin cậy",
-  "features.ios.altIpad": "Doughnut Forge trên iPad: màn hình Tệp bảo mật với Mã hóa tệp và Giải mã tệp",
+  "v2.privacy.title": "Ẩn trong bộ chuyển đổi ứng dụng",
+  "v2.privacy.text":
+    "Trên iPhone và iPad, ứng dụng hiển thị chiếc bánh donut và “Ẩn khi ở chế độ nền” trong bộ chuyển đổi ứng dụng, thay cho nội dung trên màn hình.",
+  "features.desktop.title": "Trên Mac và Windows",
+  "features.desktop.text":
+    "Thu phóng từ 100% đến 200%, và màn hình vừa với các cửa sổ nhỏ hơn. Trong lưới tệp, tên dài được rút gọn ở giữa, nên bạn vẫn thấy phần cuối của tên. Mã hóa không bao giờ thay thế một tệp đã có sẵn. Trên Mac, Mã hóa tệp, Giải mã tệp và Khóa nằm trong thanh menu, kèm phím tắt.",
+  "features.ios.altEncrypting": "Doughnut Forge 2 trên iPhone: một video đang được mã hóa, đã xong 75%",
+  "features.ios.altChoose":
+    "Doughnut Forge 2 trên iPhone: chọn ai có thể mở một tệp, với bạn và ba người liên hệ được chọn",
+  "features.ios.altIpad": "Doughnut Forge 2 trên iPad: màn hình Tệp với Mã hóa tệp và Giải mã tệp",
   "features.cta.title": "Sẵn sàng giữ tệp của bạn riêng tư?",
   "meta.pricing.title": "Giá: mua một lần, không bao giờ là thuê bao | Doughnut Forge",
   "meta.pricing.description": "Mua Doughnut Forge một lần cho mỗi nền tảng bạn dùng, từ cửa hàng của nền tảng đó. Không thuê bao, không tài khoản và không có gì phải gia hạn.",
@@ -74,14 +94,16 @@ export default {
   "download.requires.mac": "Cần macOS 12 Monterey trở lên.",
   "download.requires.windows": "Cần Windows 11.",
   "download.start.title": "Khi bạn mở lần đầu",
-  "download.start.text": "Doughnut Forge yêu cầu bạn đặt mật khẩu cho thiết bị này, rồi tạo danh tính cho bạn. Ứng dụng cung cấp cho bạn cụm từ sao lưu 24 từ: hãy ghi lại và giữ ở một vị trí an toàn, vì đây là cách duy nhất để khôi phục quyền truy cập của bạn.",
+  "download.start.text":
+    "Doughnut Forge bắt đầu bằng một lời chào ngắn, rồi một lựa chọn: tạo danh tính của bạn, hoặc khôi phục danh tính. Khi bạn tạo danh tính, ứng dụng cung cấp cho bạn 24 từ khôi phục. Hãy ghi lại và giữ ở một vị trí an toàn: đó là cách duy nhất để khôi phục danh tính hoặc đặt lại mật khẩu bị quên.",
   "meta.support.title": "Hỗ trợ và câu hỏi thường gặp | Doughnut Forge",
   "meta.support.description": "Nhận trợ giúp về Doughnut Forge: câu trả lời cho các câu hỏi thường gặp, và cách đặt câu hỏi hoặc báo cáo sự cố trên GitHub.",
   "support.title": "Nhận trợ giúp về Doughnut Forge",
   "support.lead": "Hầu hết câu hỏi đã được trả lời bên dưới. Với những vấn đề khác, hãy hỏi trên GitHub.",
   "support.ask.title": "Đặt câu hỏi hoặc báo cáo sự cố",
   "support.ask.text": "Việc hỗ trợ diễn ra công khai trên GitHub, để mọi người đều có thể tìm thấy câu trả lời. Các issue trên GitHub là công khai: bất kỳ ai cũng đọc được những gì bạn viết. Bạn cần một tài khoản GitHub miễn phí để tạo issue.",
-  "support.ask.warning": "Không bao giờ đính kèm tệp kho lưu trữ, tệp danh tính, cụm từ sao lưu của bạn (các từ khôi phục), mật khẩu hoặc cụm mật khẩu, hay ảnh chụp màn hình hiển thị những thông tin đó.",
+  "support.ask.warning":
+    "Không bao giờ đính kèm tệp kho lưu trữ, tệp danh tính, các từ khôi phục của bạn, mật khẩu hoặc cụm mật khẩu, hay ảnh chụp màn hình hiển thị những thông tin đó.",
   "support.ask.bug": "Báo lỗi",
   "support.ask.question": "Đặt câu hỏi",
   "support.ask.idea": "Đề xuất tính năng",
@@ -107,9 +129,14 @@ export default {
   "faq.storage.q": "Tệp và khóa của tôi được lưu ở đâu?",
   "faq.storage.a": "Trên thiết bị của bạn. Mật khẩu và khóa của bạn không bao giờ được lưu trữ trên máy chủ hoặc gửi qua mạng. Tệp đã mã hóa sẽ ở bất cứ nơi nào bạn chọn lưu hoặc gửi đến.",
   "faq.backup.q": "Làm thế nào để sao lưu danh tính của tôi?",
-  "faq.backup.a": "Khi bạn tạo danh tính, ứng dụng hiển thị cho bạn cụm từ sao lưu 24 từ. Hãy ghi lại và giữ ở một vị trí an toàn: đó là tất cả những gì bạn cần để khôi phục danh tính. Ứng dụng cũng đề nghị lưu cụm từ này dưới dạng PDF. Tệp PDF đó chứa cùng 24 từ và không được bảo vệ bằng mật khẩu, vì vậy hãy giữ nó an toàn như chính cụm từ. Các liên hệ của bạn không nằm trong cụm từ sao lưu.",
-  "faq.restore.q": "Làm thế nào để khôi phục danh tính của tôi?",
-  "faq.restore.a": "Cài đặt Doughnut Forge trên thiết bị mới, đặt mật khẩu, rồi chọn Khôi phục danh tính và nhập cụm từ sao lưu 24 từ của bạn. Không cần gì khác, và cách này hoạt động giữa các nền tảng, ví dụ từ Mac sang PC Windows. Việc khôi phục mang danh tính của bạn trở lại, nên các tệp được mã hóa cho danh tính đó lại mở được. Các liên hệ của bạn không được khôi phục cùng.",
+  "faq.backup.a":
+    "Khi bạn chọn “Tạo danh tính của tôi”, ứng dụng cung cấp cho bạn 24 từ khôi phục. Hãy ghi lại và giữ ở một vị trí an toàn: đó là cách duy nhất để khôi phục danh tính hoặc đặt lại mật khẩu bị quên. Sau khi bạn ghi lại, ứng dụng sẽ hỏi hai từ trong đó, để giúp bạn phát hiện lỗi trong bản chép của mình. Ứng dụng cũng có thể lưu các từ này dưới dạng PDF. Tệp PDF đó không được mã hóa, vì vậy hãy in ra, rồi xóa nó, và đừng giữ nó trong iCloud Drive, Dropbox hay bất kỳ thư mục đồng bộ nào. Các liên hệ của bạn không nằm trong các từ khôi phục.",
+  "faq.restore.q": "Làm thế nào để khôi phục danh tính của tôi trên thiết bị mới?",
+  "faq.restore.a":
+    "Bằng 24 từ khôi phục của bạn. Bản sao lưu iPhone, iPad hoặc Mac không bao gồm danh tính của bạn, nên khôi phục bản sao lưu thiết bị không mang danh tính trở lại. Cài đặt Doughnut Forge trên thiết bị mới, chọn “Tôi đã có các từ khôi phục” và nhập các từ đó. Cách này hoạt động giữa các nền tảng, ví dụ từ Mac sang PC Windows. Việc khôi phục mang danh tính của bạn trở lại, nên các tệp được mã hóa cho danh tính đó lại mở được. Các liên hệ của bạn không được khôi phục cùng.",
+  "faq.password.q": "Tôi quên mật khẩu. Tôi có thể làm gì?",
+  "faq.password.a":
+    "Trên màn hình khóa, chọn “Gặp sự cố khi mở khóa?” và đặt mật khẩu mới bằng 24 từ khôi phục của bạn. Danh tính, liên hệ và các tệp đã mã hóa của bạn vẫn giữ nguyên. Nếu không có các từ khôi phục, không thể đặt lại mật khẩu.",
   "faq.share.q": "Làm thế nào để chia sẻ tệp đã mã hóa với ai đó?",
   "faq.share.a": "Hãy xin người đó thẻ liên hệ của họ (một tệp .vltc2) và thêm vào Liên hệ của bạn. Sau đó mã hóa tệp và chọn họ là người có thể mở tệp. Gửi tệp đã mã hóa theo bất kỳ cách nào bạn muốn, chẳng hạn qua email, ứng dụng nhắn tin hoặc USB. Chỉ những người bạn đã chọn mới mở được.",
   "faq.recipient.q": "Người kia có cần Doughnut Forge để mở tệp không?",
@@ -149,6 +176,7 @@ export default {
   "press.shots.title": "Ảnh chụp màn hình",
   "press.shots.text": "Các ảnh này là của ứng dụng iPhone và iPad.",
   "press.shots.label": "{device}: màn hình {screen}",
+  "press.shots.choose": "Chọn ai có thể mở một tệp",
   "press.download": "PNG, {width} × {height} pixel",
   "press.usage.title": "Sử dụng các tệp này",
   "press.usage.text": "Bạn có thể dùng các mô tả, biểu tượng và ảnh chụp màn hình này trong bài viết, bài đánh giá và video về Doughnut Forge. Vui lòng không thay đổi hình dạng hoặc màu sắc của biểu tượng.",
@@ -166,13 +194,30 @@ export default {
   "roadmap.shipped": "Đã phát hành",
   "roadmap.next": "Tiếp theo",
   "roadmap.later": "Sau này",
+  "roadmap.v2.title": "Doughnut Forge 2",
+  "roadmap.v2.text":
+    "Giao diện mới, bắt đầu dễ dàng hơn và một cách để vào lại nếu bạn quên mật khẩu. Trên iPhone, iPad, Mac và Windows.",
+  "v2.notes.reset":
+    "Quên mật khẩu? Chọn “Gặp sự cố khi mở khóa?” trên màn hình khóa và đặt mật khẩu mới bằng các từ khôi phục của bạn. Danh tính, liên hệ và các tệp đã mã hóa của bạn vẫn giữ nguyên.",
+  "v2.notes.words":
+    "Cụm từ sao lưu 24 từ của bạn giờ được gọi là các từ khôi phục. Sau khi bạn ghi lại, ứng dụng sẽ hỏi hai từ trong đó, để giúp bạn phát hiện lỗi trong bản chép của mình.",
+  "v2.notes.start":
+    "Thiết lập chỉ gồm một lời chào ngắn, rồi một lựa chọn: tạo danh tính của bạn, hoặc khôi phục danh tính.",
+  "v2.notes.design": "Thiết kế dịu mắt hơn ở chế độ sáng và tối.",
+  "v2.notes.backups":
+    "Bản sao lưu iPhone, iPad hoặc Mac không còn bao gồm danh tính của bạn. Hãy giữ các từ khôi phục an toàn: đó là cách bạn khôi phục danh tính trên thiết bị mới.",
+  "v2.notes.ios":
+    "Trên iPhone, thanh tab gồm Tệp, Văn bản, Danh tính, Liên hệ và Cài đặt. Trên iPhone và iPad, ứng dụng được ẩn trong bộ chuyển đổi ứng dụng.",
+  "v2.notes.desktop":
+    "Trên Mac và Windows, thu phóng từ 100% đến 200%, và mã hóa không bao giờ thay thế một tệp đã có sẵn.",
   "roadmap.identity.title": "Bảo vệ danh tính",
-  "roadmap.identity.text": "Một bản cập nhật giúp mọi danh tính luôn an toàn, để danh tính không bao giờ bị mất, bị thay thế hoặc bị để lại ở dạng đọc được. Trên Mac, iPhone và iPad.",
-  "roadmap.identityWindows.title": "Bảo vệ danh tính trên Windows",
-  "roadmap.identityWindows.text": "Cùng bản cập nhật đó cho Windows.",
+  "roadmap.identity.text":
+    "Một bản cập nhật giúp mọi danh tính luôn an toàn, để danh tính không bao giờ bị mất, bị thay thế hoặc bị để lại ở dạng đọc được. Trên Mac, iPhone, iPad và Windows.",
   "roadmap.stricter.title": "Bảo vệ chặt chẽ hơn",
   "roadmap.stricter.text": "Các bản cập nhật bảo vệ tiếp theo giúp ứng dụng chặt chẽ hơn với những gì nó chấp nhận. Dữ liệu của bạn không có gì thay đổi.",
   "roadmap.android.title": "Doughnut Forge cho Android",
+  "roadmap.small.title": "Những cải tiến nhỏ",
+  "roadmap.small.text": "Các bản sửa lỗi nhỏ và cải tiến cho Doughnut Forge 2.",
   "roadmap.audit.title": "Kiểm toán bảo mật độc lập",
   "roadmap.audit.text": "Một đợt kiểm toán bảo mật Doughnut Forge do một chuyên gia độc lập bên ngoài thực hiện.",
   "meta.security.title": "Bảo mật: cách tệp của bạn luôn riêng tư | Doughnut Forge",
@@ -233,7 +278,8 @@ export default {
   "technical.keys.identity.label": "Danh tính của bạn:",
   "technical.keys.identity.text": "được tạo từ một bí mật ngẫu nhiên 256 bit, sinh ra ngay trên thiết bị của bạn.",
   "technical.keys.recovery.label": "Khôi phục:",
-  "technical.keys.recovery.text": "bí mật đó có thể được ghi lại thành cụm từ sao lưu 24 từ của bạn (BIP-39). Nó cũng có thể được chia thành các mảnh khôi phục bằng Shamir's Secret Sharing, trong đó một số mảnh bạn chọn trước (ít nhất 2, tổng cộng nhiều nhất 16) là đủ để khôi phục. Ít mảnh hơn số đó thì không tiết lộ gì cả.",
+  "technical.keys.recovery.text":
+    "bí mật đó có thể được ghi lại thành 24 từ khôi phục của bạn (BIP-39). Nó cũng có thể được chia thành các mảnh khôi phục bằng Shamir's Secret Sharing, trong đó một số mảnh bạn chọn trước (ít nhất 2, tổng cộng nhiều nhất 16) là đủ để khôi phục. Ít mảnh hơn số đó thì không tiết lộ gì cả.",
   "technical.keys.exchange.label": "Trao đổi khóa (lai hậu lượng tử):",
   "technical.keys.exchange.text": "khóa của mỗi mục được niêm phong riêng cho từng người nhận, và cho bạn, bằng X25519 kết hợp với ML-KEM-768. Hai bí mật chung được kết hợp bằng SHA-256.",
   "technical.keys.signatures.label": "Chữ ký:",
@@ -297,7 +343,7 @@ export default {
   "technical.libraries.text": "Doughnut Forge dùng các thư viện sau cho mật mã và nén:",
   "technical.libraries.sha": "SHA-256 và SHA-512",
   "technical.libraries.random": "Nguồn ngẫu nhiên của hệ điều hành",
-  "technical.libraries.words": "Cụm từ sao lưu",
+  "technical.libraries.words": "Các từ khôi phục",
   "technical.libraries.shards": "Mảnh khôi phục",
   "technical.libraries.memory": "Bí mật trong bộ nhớ",
   "technical.libraries.wipe": "Xóa bí mật khỏi bộ nhớ",
@@ -305,7 +351,8 @@ export default {
   "technical.limits.title": "Những gì Doughnut Forge không bảo vệ được",
   "technical.limits.compromised.label": "Một thiết bị đã bị xâm nhập từ trước.",
   "technical.limits.compromised.text": "Trong khi Doughnut Forge đang mở khóa, phần mềm độc hại có toàn quyền truy cập vào thiết bị của bạn có thể đọc được các bí mật của bạn.",
-  "technical.limits.access.label": "Bất kỳ ai có mật khẩu và thiết bị của bạn, cụm từ sao lưu 24 từ của bạn, hoặc đủ số mảnh khôi phục.",
+  "technical.limits.access.label":
+    "Bất kỳ ai có mật khẩu và thiết bị của bạn, 24 từ khôi phục của bạn, hoặc đủ số mảnh khôi phục.",
   "technical.limits.access.text": "Hãy giữ chúng an toàn.",
   "technical.limits.passcode.label": "Mật mã thiết bị của bạn,",
   "technical.limits.passcode.text": "trên iPhone và iPad khi bật Face ID hoặc Touch ID. iOS chấp nhận mật mã thay cho Face ID hoặc Touch ID.",

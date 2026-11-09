@@ -16,7 +16,8 @@
     "technical.stored.lanes.text",
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "nl": [
     "press.facts.website",
@@ -33,7 +34,8 @@
     "technical.stored.lanes.text",
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "da": [
     "nav.download",
@@ -45,7 +47,8 @@
     "technical.stored.lanes.text",
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "tr": [
     "press.shots.label",
@@ -54,7 +57,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "hi": [
     "press.shots.label",
@@ -63,7 +67,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "th": [
     "press.shots.label",
@@ -72,7 +77,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "ko": [
     "press.download",
@@ -80,7 +86,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "it": [
     "press.shots.label",
@@ -89,7 +96,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "technical.unlock.windows.text"
+    "technical.unlock.windows.text",
+    "roadmap.v2.title"
   ],
   "ro": [
     "press.shots.label",
@@ -98,7 +106,8 @@
     "technical.stored.lanes.text",
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "pl": [
     "press.shots.label",
@@ -107,7 +116,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "cs": [
     "press.shots.label",
@@ -116,7 +126,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "hu": [
     "press.shots.label",
@@ -125,7 +136,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "sv": [
     "nav.support",
@@ -137,7 +149,8 @@
     "technical.stored.lanes.text",
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "no": [
     "press.shots.label",
@@ -148,7 +161,8 @@
     "technical.stored.lanes.text",
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "fi": [
     "press.shots.label",
@@ -157,7 +171,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "ru": [
     "press.shots.label",
@@ -166,7 +181,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "uk": [
     "press.shots.label",
@@ -175,7 +191,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "el": [
     "press.shots.label",
@@ -184,13 +201,15 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "fr": [
     "technical.keys.derivation.text",
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
-    "technical.libraries.compression"
+    "technical.libraries.compression",
+    "roadmap.v2.title"
   ],
   "es": [
     "technical.encryption.nonces.label",
@@ -198,7 +217,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "es-MX": [
     "technical.encryption.nonces.label",
@@ -207,7 +227,8 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "pt-BR": [
     "technical.encryption.nonces.label",
@@ -215,19 +236,23 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "ja": [
     "technical.stored.passes.text",
-    "technical.stored.lanes.text"
+    "technical.stored.lanes.text",
+    "roadmap.v2.title"
   ],
   "zh-CN": [
     "technical.stored.passes.text",
-    "technical.stored.lanes.text"
+    "technical.stored.lanes.text",
+    "roadmap.v2.title"
   ],
   "zh-TW": [
     "technical.stored.passes.text",
-    "technical.stored.lanes.text"
+    "technical.stored.lanes.text",
+    "roadmap.v2.title"
   ],
   "id": [
     "technical.keys.derivation.text",
@@ -235,7 +260,8 @@
     "technical.stored.lanes.text",
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "ms": [
     "technical.keys.derivation.text",
@@ -243,13 +269,15 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ],
   "vi": [
     "technical.keys.derivation.text",
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
-    "technical.unlock.windows.label"
+    "technical.unlock.windows.label",
+    "roadmap.v2.title"
   ]
 }

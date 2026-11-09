@@ -31,12 +31,22 @@ export default {
   "home.specimen.note": "Hai Siti, kunci pendua ada dalam pasu biru di tepi pintu belakang. Kod penggera ialah 4071. Jumpa hari Jumaat.",
   "home.specimen.cipherLabel": "Nota yang sama, disulitkan: aksara rawak yang tidak boleh dibaca.",
   "home.specimen.caption": "Ilustrasi: fail sebenar yang disulitkan mengandungi jauh lebih banyak aksara daripada ini.",
-  "home.phones.title": "Kini di iPhone dan iPad.",
-  "home.phones.text": "Juga tersedia untuk Mac dan Windows.",
-  "home.phones.altText": "Doughnut Forge pada iPhone: skrin Teks Selamat dengan nota yang sedia untuk disulitkan",
-  "home.phones.altFile": "Doughnut Forge pada iPhone: skrin Fail Selamat dengan Sulitkan Fail dan Nyahsulit Fail",
-  "home.phones.altIdentity": "Doughnut Forge pada iPhone: skrin Identiti dengan kad kenalan untuk dikongsi",
+  "home.phones.title": "Baharu dalam Doughnut Forge 2.",
+  "home.phones.text":
+    "Rupa baharu, permulaan yang lebih mudah, dan cara untuk masuk semula jika anda terlupa kata laluan. Pada iPhone, iPad, Mac dan Windows.",
+  "home.phones.altText": "Doughnut Forge 2 pada iPhone: skrin Teks dengan nota yang sedia untuk disulitkan",
+  "home.phones.altFile": "Doughnut Forge 2 pada iPhone: skrin Fail dengan Sulitkan fail dan Nyahsulit fail",
+  "home.phones.altIdentity":
+    "Doughnut Forge 2 pada iPhone: skrin Identiti dengan kod kenalan anda dan Kongsi kad kenalan",
+  "home.v2.words.title": "Perkataan pemulihan dan penetapan semula kata laluan",
+  "home.v2.words.text":
+    "Frasa sandaran 24 perkataan anda kini dipanggil perkataan pemulihan. Lupa kata laluan? Pilih “Masalah membuka kunci?” pada skrin kunci dan tetapkan kata laluan baharu dengan perkataan pemulihan anda. Identiti, kenalan dan fail yang disulitkan anda kekal sama.",
+  "home.v2.cancel.title": "Batal",
+  "home.v2.cancel.text":
+    "Batal menghentikan penyulitan atau penyahsulitan fail, dan tiada apa-apa disimpan. Pada Mac dan Windows, ia juga menghentikan folder: fail yang sudah siap dikekalkan.",
   "home.features.title": "Kunci fail pada peranti anda. Kongsi mengikut cara anda.",
+  "tabs.files": "Fail",
+  "tabs.text": "Teks",
   "home.pricing.title": "Pembelian sekali sahaja, bukan langganan.",
   "home.pricing.text": "Beli Doughnut Forge sekali bagi setiap platform yang anda gunakan, daripada kedai platform itu. Kedai akan menunjukkan harga bagi tempat anda tinggal.",
   "download.coming": "{platforms} akan tiba tidak lama lagi.",
@@ -52,14 +62,24 @@ export default {
   "meta.features.description": "Sulitkan fail dan teks pada iPhone, iPad atau komputer anda sendiri, kongsi dengan orang yang dipercayai dan lindunginya untuk jangka panjang. Tiada akaun, tiada pelayan.",
   "features.title": "Semua yang dilakukan oleh Doughnut Forge",
   "features.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai. Walau bagaimana anda menghantarnya, hanya mereka yang boleh membukanya.",
+  "features.identity.more":
+    "Identiti anda disimpan hanya pada peranti ini dan dilindungi oleh kata laluan anda. Simpan 24 perkataan pemulihan anda dengan selamat: itu satu-satunya cara untuk memulihkan identiti anda atau menetapkan semula kata laluan yang terlupa.",
   "features.private.title": "Peribadi sejak awal",
   "features.offline.title": "Berfungsi tanpa internet",
   "offline.text": "Tiada langganan, tiada akaun, tiada pelayan dan tiada penjejakan. Doughnut Forge berfungsi sepenuhnya pada peranti anda, walaupun tanpa sambungan internet. Kunci dan kenalan anda kekal bersama anda, di bawah kawalan anda.",
   "features.languages.label": "Bahasa",
+  "features.ios.title": "Pada iPhone dan iPad",
   "features.ios.text": "Aplikasi iPhone dan iPad menambah beberapa ciri tersendiri.",
-  "features.ios.altEncrypting": "Doughnut Forge pada iPhone: video sedang disulitkan, 75% selesai",
-  "features.ios.altContacts": "Doughnut Forge pada iPhone: skrin Kenalan dengan tiga kenalan yang dipercayai",
-  "features.ios.altIpad": "Doughnut Forge pada iPad: skrin Fail Selamat dengan Sulitkan Fail dan Nyahsulit Fail",
+  "v2.privacy.title": "Disembunyikan dalam Penukar App",
+  "v2.privacy.text":
+    "Pada iPhone dan iPad, aplikasi menunjukkan donat dan “Disembunyikan semasa di latar belakang” dalam Penukar App, dan bukannya kandungan skrin.",
+  "features.desktop.title": "Pada Mac dan Windows",
+  "features.desktop.text":
+    "Zum dari 100% hingga 200%, dan skrin muat dalam tetingkap yang lebih kecil. Dalam grid fail, nama yang panjang dipendekkan di tengah, jadi anda masih nampak penghujungnya. Penyulitan tidak sekali-kali menggantikan fail yang sudah ada. Pada Mac, Sulitkan Fail, Nyahsulit Fail dan Kunci ada dalam bar menu, dengan pintasan papan kekunci.",
+  "features.ios.altEncrypting": "Doughnut Forge 2 pada iPhone: video sedang disulitkan, 75% selesai",
+  "features.ios.altChoose":
+    "Doughnut Forge 2 pada iPhone: memilih siapa yang boleh membuka fail, dengan anda dan tiga kenalan dipilih",
+  "features.ios.altIpad": "Doughnut Forge 2 pada iPad: skrin Fail dengan Sulitkan fail dan Nyahsulit fail",
   "features.cta.title": "Sedia untuk memastikan fail anda kekal peribadi?",
   "meta.pricing.title": "Harga: beli sekali, bukan langganan | Doughnut Forge",
   "meta.pricing.description": "Beli Doughnut Forge sekali bagi setiap platform yang anda gunakan, daripada kedai platform itu. Tiada langganan, tiada akaun dan tiada pembaharuan.",
@@ -74,14 +94,16 @@ export default {
   "download.requires.mac": "Memerlukan macOS 12 Monterey atau lebih baharu.",
   "download.requires.windows": "Memerlukan Windows 11.",
   "download.start.title": "Apabila anda membukanya kali pertama",
-  "download.start.text": "Doughnut Forge meminta anda menetapkan kata laluan untuk peranti ini, kemudian mencipta identiti untuk anda. Anda akan menerima frasa sandaran 24 perkataan: tuliskannya dan simpan di lokasi yang selamat, kerana ia satu-satunya cara untuk memulihkan akses anda.",
+  "download.start.text":
+    "Doughnut Forge bermula dengan satu sambutan ringkas, kemudian satu pilihan: cipta identiti anda, atau pulihkannya. Apabila anda menciptanya, aplikasi memberi anda 24 perkataan pemulihan. Tuliskannya dan simpan di tempat yang selamat: itu satu-satunya cara untuk memulihkan identiti anda atau menetapkan semula kata laluan yang terlupa.",
   "meta.support.title": "Sokongan dan soalan lazim | Doughnut Forge",
   "meta.support.description": "Dapatkan bantuan dengan Doughnut Forge: jawapan kepada soalan lazim, dan cara bertanya soalan atau melaporkan masalah di GitHub.",
   "support.title": "Dapatkan bantuan dengan Doughnut Forge",
   "support.lead": "Kebanyakan soalan dijawab di bawah. Untuk perkara lain, tanya di GitHub.",
   "support.ask.title": "Tanya soalan atau laporkan masalah",
   "support.ask.text": "Sokongan diberikan di GitHub secara terbuka, supaya semua orang boleh mencari jawapannya. Isu di GitHub bersifat awam: sesiapa sahaja boleh membaca apa yang anda tulis. Anda memerlukan akaun GitHub percuma untuk membuka isu.",
-  "support.ask.warning": "Jangan sekali-kali lampirkan fail peti besi, fail identiti, frasa sandaran anda (perkataan pemulihan), kata laluan atau frasa laluan, atau tangkapan skrin yang menunjukkannya.",
+  "support.ask.warning":
+    "Jangan sekali-kali lampirkan fail peti besi, fail identiti, perkataan pemulihan anda, kata laluan atau frasa laluan, atau tangkapan skrin yang menunjukkannya.",
   "support.ask.bug": "Laporkan pepijat",
   "support.ask.question": "Tanya soalan",
   "support.ask.idea": "Cadangkan ciri",
@@ -107,9 +129,14 @@ export default {
   "faq.storage.q": "Di manakah fail dan kunci saya disimpan?",
   "faq.storage.a": "Pada peranti anda. Kata laluan dan kunci anda tidak pernah disimpan pada pelayan atau dihantar melalui rangkaian. Fail yang disulitkan berada di mana sahaja anda memilih untuk menyimpan atau menghantarnya.",
   "faq.backup.q": "Bagaimanakah saya membuat sandaran identiti saya?",
-  "faq.backup.a": "Apabila anda mencipta identiti, aplikasi menunjukkan frasa sandaran 24 perkataan. Tuliskannya dan simpan di lokasi yang selamat: itu sahaja yang anda perlukan untuk memulihkan identiti anda. Aplikasi juga menawarkan untuk menyimpan frasa itu sebagai PDF. PDF itu mengandungi 24 perkataan yang sama dan tidak dilindungi kata laluan, jadi simpan PDF itu seselamat frasa itu sendiri. Kenalan anda bukan sebahagian daripada frasa sandaran.",
-  "faq.restore.q": "Bagaimanakah saya memulihkan identiti saya?",
-  "faq.restore.a": "Pasang Doughnut Forge pada peranti baharu, tetapkan kata laluan, kemudian pilih Pulihkan Identiti dan masukkan frasa sandaran 24 perkataan anda. Tiada apa-apa lagi yang diperlukan, dan ia berfungsi merentas platform, contohnya dari Mac ke PC Windows. Pemulihan mengembalikan identiti anda, jadi fail yang disulitkan untuknya boleh dibuka semula. Kenalan anda tidak dikembalikan bersamanya.",
+  "faq.backup.a":
+    "Apabila anda memilih “Cipta identiti saya”, aplikasi memberi anda 24 perkataan pemulihan. Tuliskannya dan simpan di tempat yang selamat: itu satu-satunya cara untuk memulihkan identiti anda atau menetapkan semula kata laluan yang terlupa. Selepas anda menulisnya, aplikasi meminta dua daripadanya, untuk membantu anda mengesan kesilapan dalam salinan anda. Aplikasi juga boleh menyimpannya sebagai PDF. PDF itu tidak disulitkan, jadi cetaknya, kemudian padamkannya, dan jangan simpan dalam iCloud Drive, Dropbox atau mana-mana folder yang disegerakkan. Kenalan anda bukan sebahagian daripada perkataan pemulihan anda.",
+  "faq.restore.q": "Bagaimanakah saya memulihkan identiti saya pada peranti baharu?",
+  "faq.restore.a":
+    "Dengan 24 perkataan pemulihan anda. Sandaran iPhone, iPad atau Mac anda tidak termasuk identiti anda, jadi memulihkan sandaran peranti tidak mengembalikannya. Pasang Doughnut Forge pada peranti baharu, pilih “Saya sudah ada perkataan pemulihan” dan masukkan perkataan itu. Ia berfungsi merentas platform, contohnya dari Mac ke PC Windows. Pemulihan mengembalikan identiti anda, jadi fail yang disulitkan untuknya boleh dibuka semula. Kenalan anda tidak dikembalikan bersamanya.",
+  "faq.password.q": "Saya terlupa kata laluan saya. Apakah yang boleh saya lakukan?",
+  "faq.password.a":
+    "Pada skrin kunci, pilih “Masalah membuka kunci?” dan tetapkan kata laluan baharu dengan 24 perkataan pemulihan anda. Identiti, kenalan dan fail yang disulitkan anda kekal sama. Tanpa perkataan pemulihan anda, kata laluan tidak boleh ditetapkan semula.",
   "faq.share.q": "Bagaimanakah saya berkongsi fail yang disulitkan dengan seseorang?",
   "faq.share.a": "Minta kad kenalan orang itu (fail .vltc2) dan tambahkannya ke Kenalan anda. Kemudian sulitkan fail itu dan pilih mereka sebagai orang yang boleh membukanya. Hantar fail yang disulitkan mengikut cara anda, contohnya melalui e-mel, aplikasi pemesejan atau pemacu USB. Hanya orang yang anda pilih boleh membukanya.",
   "faq.recipient.q": "Adakah orang itu memerlukan Doughnut Forge untuk membukanya?",
@@ -149,6 +176,7 @@ export default {
   "press.shots.title": "Tangkapan skrin",
   "press.shots.text": "Tangkapan skrin ini menunjukkan aplikasi iPhone dan iPad.",
   "press.shots.label": "{device}: skrin {screen}",
+  "press.shots.choose": "Memilih siapa yang boleh membuka fail",
   "press.download": "PNG, {width} × {height} piksel",
   "press.usage.title": "Menggunakan fail ini",
   "press.usage.text": "Anda boleh menggunakan penerangan, ikon dan tangkapan skrin ini dalam artikel, ulasan dan video tentang Doughnut Forge. Sila jangan ubah bentuk atau warna ikon.",
@@ -166,13 +194,30 @@ export default {
   "roadmap.shipped": "Telah dilancarkan",
   "roadmap.next": "Seterusnya",
   "roadmap.later": "Kemudian",
+  "roadmap.v2.title": "Doughnut Forge 2",
+  "roadmap.v2.text":
+    "Rupa baharu, permulaan yang lebih mudah, dan cara untuk masuk semula jika anda terlupa kata laluan. Pada iPhone, iPad, Mac dan Windows.",
+  "v2.notes.reset":
+    "Lupa kata laluan? Pilih “Masalah membuka kunci?” pada skrin kunci dan tetapkan kata laluan baharu dengan perkataan pemulihan anda. Identiti, kenalan dan fail yang disulitkan anda kekal sama.",
+  "v2.notes.words":
+    "Frasa sandaran 24 perkataan anda kini dipanggil perkataan pemulihan. Selepas anda menulisnya, aplikasi meminta dua daripadanya, untuk membantu anda mengesan kesilapan dalam salinan anda.",
+  "v2.notes.start":
+    "Persediaan ialah satu sambutan ringkas, kemudian satu pilihan: cipta identiti anda, atau pulihkannya.",
+  "v2.notes.design": "Reka bentuk yang lebih tenang dalam mod cerah dan gelap.",
+  "v2.notes.backups":
+    "Sandaran iPhone, iPad atau Mac anda tidak lagi termasuk identiti anda. Simpan perkataan pemulihan anda dengan selamat: dengannya anda memulihkan identiti pada peranti baharu.",
+  "v2.notes.ios":
+    "Pada iPhone, bar tab untuk Fail, Teks, Identiti, Kenalan dan Tetapan. Pada iPhone dan iPad, aplikasi disembunyikan dalam Penukar App.",
+  "v2.notes.desktop":
+    "Pada Mac dan Windows, zum dari 100% hingga 200%, dan penyulitan tidak sekali-kali menggantikan fail yang sudah ada.",
   "roadmap.identity.title": "Perlindungan identiti",
-  "roadmap.identity.text": "Kemas kini yang memastikan setiap identiti selamat, supaya ia tidak sekali-kali boleh hilang, diganti atau dibiarkan boleh dibaca. Pada Mac, iPhone dan iPad.",
-  "roadmap.identityWindows.title": "Perlindungan identiti untuk Windows",
-  "roadmap.identityWindows.text": "Kemas kini yang sama untuk Windows.",
+  "roadmap.identity.text":
+    "Kemas kini yang memastikan setiap identiti selamat, supaya ia tidak sekali-kali boleh hilang, diganti atau dibiarkan boleh dibaca. Pada Mac, iPhone, iPad dan Windows.",
   "roadmap.stricter.title": "Perlindungan lebih ketat",
   "roadmap.stricter.text": "Kemas kini perlindungan lanjut yang menjadikan aplikasi lebih ketat tentang apa yang diterimanya. Tiada apa-apa yang berubah bagi data anda.",
   "roadmap.android.title": "Doughnut Forge untuk Android",
+  "roadmap.small.title": "Penambahbaikan kecil",
+  "roadmap.small.text": "Pembaikan kecil dan penambahbaikan untuk Doughnut Forge 2.",
   "roadmap.audit.title": "Audit keselamatan bebas",
   "roadmap.audit.text": "Audit keselamatan Doughnut Forge oleh pakar luar yang bebas.",
   "meta.security.title": "Keselamatan: cara fail anda kekal peribadi | Doughnut Forge",
@@ -233,7 +278,8 @@ export default {
   "technical.keys.identity.label": "Identiti anda:",
   "technical.keys.identity.text": "dibuat daripada satu rahsia rawak 256-bit, yang dicipta pada peranti anda.",
   "technical.keys.recovery.label": "Pemulihan:",
-  "technical.keys.recovery.text": "rahsia itu boleh ditulis sebagai frasa sandaran 24 perkataan anda (BIP-39). Ia juga boleh dipecahkan kepada serpihan pemulihan dengan Shamir's Secret Sharing, dengan bilangan serpihan yang dipilih (sekurang-kurangnya 2, paling banyak 16 kesemuanya) dapat memulihkannya. Serpihan yang kurang daripada bilangan itu tidak mendedahkan apa-apa.",
+  "technical.keys.recovery.text":
+    "rahsia itu boleh ditulis sebagai 24 perkataan pemulihan anda (BIP-39). Ia juga boleh dipecahkan kepada serpihan pemulihan dengan Shamir's Secret Sharing, dengan bilangan serpihan yang dipilih (sekurang-kurangnya 2, paling banyak 16 kesemuanya) dapat memulihkannya. Serpihan yang kurang daripada bilangan itu tidak mendedahkan apa-apa.",
   "technical.keys.exchange.label": "Pertukaran kunci (hibrid pasca-kuantum):",
   "technical.keys.exchange.text": "kunci setiap item dimeterai secara berasingan untuk setiap penerima, dan untuk anda, menggunakan X25519 bersama ML-KEM-768. Kedua-dua rahsia kongsi itu digabungkan dengan SHA-256.",
   "technical.keys.signatures.label": "Tandatangan:",
@@ -297,7 +343,7 @@ export default {
   "technical.libraries.text": "Doughnut Forge menggunakan pustaka ini untuk kriptografi dan pemampatannya:",
   "technical.libraries.sha": "SHA-256 dan SHA-512",
   "technical.libraries.random": "Sumber rawak sistem pengendalian",
-  "technical.libraries.words": "Frasa sandaran",
+  "technical.libraries.words": "Perkataan pemulihan",
   "technical.libraries.shards": "Serpihan pemulihan",
   "technical.libraries.memory": "Rahsia dalam memori",
   "technical.libraries.wipe": "Memadam rahsia daripada memori",
@@ -305,7 +351,8 @@ export default {
   "technical.limits.title": "Perkara yang tidak dilindungi oleh Doughnut Forge",
   "technical.limits.compromised.label": "Peranti yang sudah pun terjejas.",
   "technical.limits.compromised.text": "Semasa Doughnut Forge tidak dikunci, perisian hasad dengan akses penuh kepada peranti anda boleh membaca rahsia anda.",
-  "technical.limits.access.label": "Sesiapa yang mempunyai kata laluan dan peranti anda, frasa sandaran 24 perkataan anda, atau serpihan pemulihan yang mencukupi.",
+  "technical.limits.access.label":
+    "Sesiapa yang mempunyai kata laluan dan peranti anda, 24 perkataan pemulihan anda, atau serpihan pemulihan yang mencukupi.",
   "technical.limits.access.text": "Simpan semuanya dengan selamat.",
   "technical.limits.passcode.label": "Kod laluan peranti anda,",
   "technical.limits.passcode.text": "pada iPhone dan iPad dengan Face ID atau Touch ID dihidupkan. iOS menerima kod laluan sebagai ganti Face ID atau Touch ID.",
