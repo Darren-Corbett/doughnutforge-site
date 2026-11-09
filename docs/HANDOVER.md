@@ -50,9 +50,13 @@ Run it only when the App Store (iPhone and iPad), the Mac App Store and the Micr
    - every store link on `/download/` opens the right store page;
    - `https://doughnut-forge.app/.well-known/apple-app-site-association` answers 200 and lists both apps;
    - `npm run test:links`.
+8. Check every live blog post after the deploy, and put the result in the release-day report:
+   1. Open every post listed at https://doughnut-forge.app/blog/ and confirm it shows the v2 wording ("recovery words", "Files", "Text"), the v2 screenshots, and no "backup phrase", "Secure Text", "Secure File", "Secure Directory" or "Verified Identity".
+   2. Read the Medium feed https://medium.com/feed/@doughnut_forge and compare each Medium copy with its live post. For every copy that differs, list the post, its Medium link, every change as "Was: ... / Now: ..." quoted exactly, and the recommendation: "Edit it" for 3 or fewer small changes, otherwise "Re-import it" (delete the Medium story, then import the live URL at medium.com/p/import, delete " | Doughnut Forge" from the title, add topics including Privacy and Data Privacy, publish).
+   3. List any live post not yet on Medium, with the import steps filled in (its live URL, the title without " | Doughnut Forge", the topics).
 
 **Follow-ups after release day:**
-- Update the Medium copies of every blog post the branch changed (listed in the v2 morning list and in the branch's commits).
+- Act on the Medium list from step 8 (the owner edits or re-imports each copy).
 - Delete `.v2-source/` and its line in `.git/info/exclude`.
 - Delete the local branch with `git branch -d release/v2-site`.
 
