@@ -33,6 +33,28 @@ Where the site work stands, and what comes next. Read this at the start of every
 - **While `release/v2-site` exists, every blog publish and every other site change happens on `main`.** The branch holds only the v2 site, which waits for release day. Before starting any work, check which branch you are on (`git branch --show-current`) and switch to `main` if needed. The branch was created from `main` on 9 November 2026. It stays local: never push it, deploy from it or merge it into `main` before release day.
 - **Release day runs only when all three stores show v2:** the App Store (iPhone and iPad), the Mac App Store and the Microsoft Store. If any one still shows the old version, wait.
 - **Source for v2 copy:** `.v2-source/`, a local copy of the text files in `~/website-pack-v2/` (release notes, `TECH-SPEC-PUBLIC.md`, `features.md`, `roadmap-status.md`, `README.md`). It is never committed: it must be listed in `.git/info/exclude`. The pack's screenshots and hero art are not copied.
+- **Images for v2:** `node scripts/images-from-pack.mjs` makes every v2 screenshot from `~/website-pack-v2/screenshots/` (deterministic). `scripts/sync-from-app.mjs` no longer writes screenshots.
+
+### Release-day checklist
+
+Run it only when the App Store (iPhone and iPad), the Mac App Store and the Microsoft Store all show v2. Each step needs the one before it to pass.
+
+1. Check all three store pages show version 2. If one does not, stop and wait.
+2. `git switch main`, then `git pull`.
+3. If `main` moved since the last merge into the branch: `git switch release/v2-site`, `git merge main`, fix any conflicts, run the checks below, commit, then `git switch main`.
+4. `git merge release/v2-site` into `main`.
+5. Run every check: `npm run check:commit`, `npm run build:deploy` (no warnings), `npm run test:layout`, `npm run check:reproducible`, and Lighthouse on the home page.
+6. Ask the owner, then push `main`. The push deploys.
+7. When the deploy is live, check:
+   - the home, Features, Support, Roadmap and Technical details pages in English plus two other languages (one Asian, one European), at 360px, with the v2 screenshots showing;
+   - every store link on `/download/` opens the right store page;
+   - `https://doughnut-forge.app/.well-known/apple-app-site-association` answers 200 and lists both apps;
+   - `npm run test:links`.
+
+**Follow-ups after release day:**
+- Update the Medium copies of every blog post the branch changed (listed in the v2 morning list and in the branch's commits).
+- Delete `.v2-source/` and its line in `.git/info/exclude`.
+- Delete the local branch with `git branch -d release/v2-site`.
 
 ---
 
@@ -79,7 +101,7 @@ Where the site work stands, and what comes next. Read this at the start of every
    - The app repo session is updating `fastlane/metadata/{mac,ios}/en-GB/privacy_url.txt` and `marketing_url.txt`.
    - Partner Center: the owner updates it by hand.
    - App Store Connect: set the same values by hand if the next fastlane upload does not send them. Privacy `https://doughnut-forge.app/privacy/`, Marketing `https://doughnut-forge.app/`, Support unchanged (`https://github.com/Darren-Corbett/forge-privacy/issues`).
-4. **When the owner confirms the Windows package is live:** in `src/data/roadmap.ts`, set "Identity protection for Windows" (`roadmap.identityWindows`) to `"shipped"`. Since 27 October 2026 the identity update shows as Shipped for Mac, iPhone and iPad (owner), and the Windows item stays under Next. Then consider merging the two items back into one, which needs retranslating.
+4. **Identity protection for Windows:** done on `release/v2-site`. The v2 roadmap folds it into "Identity protection" ("On Mac, iPhone, iPad and Windows", as `roadmap-status.md` suggests); it reaches `main` at the release-day merge.
 4a. **Waiting on the owner's test: restoring an iPhone identity on a Mac (27 October 2026).** When the owner confirms it works, add the example to `faq.restore.a` ("…for example from an iPhone to a Mac, or from a Mac to a Windows PC."), retranslate through the review, and stamp. Until then the answer keeps only the Mac to Windows example. The iPhone app has Restore Identity with the same 24-word phrase (`src/components/identity/mobile-restore-identity-form.tsx` in the app repo), but that is not yet tested across platforms.
 5. **On or after 6 November 2026: step 6, remove the old root files.** Remove the root copies of `.well-known/`, `CNAME`, `.nojekyll`, the icons, `site.webmanifest` and `index.html`, and make `scripts/check-production-files.mjs` check the built files alone. Until then they are the rollback: switch Pages back to "Deploy from a branch" (`main`, root) **and push any commit**, because a source switch alone does not rebuild. That rollback restores only the apps' `apple-app-site-association`: the site itself becomes the old "Coming soon" placeholder at `/`, with no other pages. While Pages deploys from a branch, every push still starts the Actions deploy, which stops at "Check Pages deploys from GitHub Actions". That failure is expected during a rollback.
 6. **Step 9, Google Search Console: done (owner, 24 October 2026).** A Domain property for `doughnut-forge.app`, verified by a DNS TXT record, and `https://doughnut-forge.app/sitemap-index.xml` submitted. Nothing changed on the site: no tag, file or script, and no visitor tracking.

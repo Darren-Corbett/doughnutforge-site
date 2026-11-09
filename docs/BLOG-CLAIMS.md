@@ -274,3 +274,21 @@ FAQ answer `faq.messaging.a` ("Why not just use WhatsApp or another encrypted me
 | 7.19 | Available for iPhone and iPad, Mac and Windows; one-time purchase on each platform, never a subscription | `src/data/stores.ts` (ios, mac, windows available); site `home.pricing.title`, `faq.platforms.a` | repo |
 | 7.20 | Losing your password and your 24-word backup phrase means your files cannot be opened | rows D7, 2.4; site `faq.backup.a` | repo |
 | 7.21 | Reasoning, not a sourced fact: the two clocks; protecting long-lived files as if the second clock might run out first; examples of long-lived files; the six questions; locking a new copy does not change old ones | consistent with 7.5 to 7.9 | n/a |
+
+## v2 changes to the posts (release/v2-site, 9 November 2026)
+Posts changed for Doughnut Forge 2: `encrypt-files-on-mac-without-cloud`, `share-encrypted-files`, `offline-encryption-privacy`, `protect-personal-files-from-data-breaches`, `doughnut-forge-vs-cryptomator`, `doughnut-forge-vs-veracrypt`, `harvest-now-decrypt-later`, `can-whatsapp-read-my-messages` (image only). Sources are the v2 website pack only (`~/website-pack-v2/`, made from tag v2.0.0): its release notes, `features.md`, `roadmap-status.md` and store screenshots. These rows replace the v1 wording of rows 1.5, 1.7, 1.9, 2.3, 2.4, 2.7, 4.1, 4.2, 4.18, 5.D6, 5.D7, 6.14 (image), D7 and 7.17, 7.20 where they say "backup phrase", "Secure Directory", "Secure File", "Share Identity", "Just Me", "Encrypt Selection", "Decrypt & Extract" or that the password cannot be reset.
+
+| # | Claim in the posts | Source | Checked |
+|---|---|---|---|
+| V2.1 | The 24-word backup phrase is now called your recovery words | release notes, iOS, Mac and Windows (`en-GB`, `en`): "Your 24-word backup phrase is now called your recovery words." | 2026-11-09 |
+| V2.2 | After you write them down, the app asks for two of them, to help you catch a mistake | same | 2026-11-09 |
+| V2.3 | Forgot your password: "Trouble unlocking?" on the lock screen sets a new one with your recovery words; identity, contacts and encrypted files stay the same | same | 2026-11-09 |
+| V2.4 | First open: one short welcome, then one choice, create your identity or restore it | same ("Setting up is one short welcome, then one choice") | 2026-11-09 |
+| V2.5 | Your identity is stored only on this device and protected by your password | v2 Mac and iPhone Identity screenshots ("Your identity stays here. It is stored only on this device and protected by your password.") | 2026-11-09 |
+| V2.6 | Mac: open Files, click Add folder; a file's ⋮ button, Encrypt file; under "Who can open this?" you are always included; click Encrypt file; the locked copy is saved next to the original, which stays unchanged | v2 Mac screenshots `light-01-files`, `light-02-encrypt` ("Only you and the people you pick can open the encrypted copy. It is saved next to the original"; "The original stays where it is, unchanged.") | 2026-11-09 |
+| V2.7 | Mac: Encrypt File and Decrypt File are in the File menu | Mac release notes ("Encrypt File, Decrypt File and Lock are in the File menu, with keyboard shortcuts.") | 2026-11-09 |
+| V2.8 | Encrypting and decrypting show progress, then say where the file was saved and who can open it | Mac release notes | 2026-11-09 |
+| V2.9 | Identity screen: Share contact card; Contacts: Add contact | v2 iPhone Identity and iPad Contacts screenshots | 2026-11-09 |
+| V2.10 | Screenshots: the v2 Files, Identity and "Who can open this?" screens on iPhone; "Everything happens on this device. Nothing is uploaded." | v2 iPhone store screenshots, cropped by `scripts/images-from-pack.mjs` | 2026-11-09 |
+
+Not checkable from the pack, so worded only as the notes allow: the exact decrypt steps on Mac (the post says only "Decrypt File in the File menu"), whether a file's ⋮ menu or right-click still offers decrypting, and the card sharing options after "Share contact card".
