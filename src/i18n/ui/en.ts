@@ -108,7 +108,7 @@ export default {
   "download.requires.windows": "Needs Windows 11.",
   "download.start.title": "When you first open it",
   "download.start.text":
-    "Doughnut Forge asks you to set a password for this device and then creates your identity. It gives you a 24-word backup phrase: write it down and keep it somewhere safe, because it is the only way to restore your access.",
+    "Doughnut Forge starts with one short welcome, then one choice: create your identity, or restore it. When you create it, the app gives you 24 recovery words. Write them down and keep them somewhere safe: they are the only way to restore your identity or reset a forgotten password.",
 
   // Support page
   "meta.support.title": "Support and frequently asked questions | Doughnut Forge",
@@ -120,7 +120,7 @@ export default {
   "support.ask.text":
     "Support happens on GitHub, in public, so everyone can find the answers. Issues on GitHub are public: anyone can read what you write. You need a free GitHub account to open one.",
   "support.ask.warning":
-    "Never attach vault files, identity files, your backup phrase (recovery words), passwords or passphrases, or screenshots that show them.",
+    "Never attach vault files, identity files, your recovery words, passwords or passphrases, or screenshots that show them.",
   // The three GitHub issue forms (forge-privacy .github/ISSUE_TEMPLATE/)
   "support.ask.bug": "Report a bug",
   "support.ask.question": "Ask a question",
@@ -156,10 +156,13 @@ export default {
     "On your device. Your password and keys are never stored on a server or sent across the network. Encrypted files go wherever you choose to save or send them.",
   "faq.backup.q": "How do I back up my identity?",
   "faq.backup.a":
-    "When you create your identity, the app shows you a 24-word backup phrase. Write it down and keep it somewhere safe: it is all you need to restore your identity. The app also offers to save the phrase as a PDF. That PDF holds the same 24 words and is not protected by a password, so keep it as safe as the phrase itself. Your contacts are not part of the backup phrase.",
-  "faq.restore.q": "How do I restore my identity?",
+    "When you choose “Create my identity”, the app gives you 24 recovery words. Write them down and keep them somewhere safe: they are the only way to restore your identity or reset a forgotten password. After you write them down, the app asks for two of them, to help you catch a mistake in your copy. The app can also save them as a PDF. That PDF is not encrypted, so print it, then delete it, and do not keep it in iCloud Drive, Dropbox or any synced folder. Your contacts are not part of your recovery words.",
+  "faq.restore.q": "How do I restore my identity on a new device?",
   "faq.restore.a":
-    "Install Doughnut Forge on the new device, set a password, then choose Restore Identity and enter your 24-word backup phrase. Nothing else is needed, and it works across platforms, for example from a Mac to a Windows PC. Restoring brings back your identity, so files encrypted for it open again. Your contacts do not come back with it.",
+    "With your 24 recovery words. Backups of your iPhone, iPad or Mac do not include your identity, so restoring a device backup does not bring it back. Install Doughnut Forge on the new device, choose “I already have recovery words” and enter them. It works across platforms, for example from a Mac to a Windows PC. Restoring brings back your identity, so files encrypted for it open again. Your contacts do not come back with it.",
+  "faq.password.q": "I forgot my password. What can I do?",
+  "faq.password.a":
+    "On the lock screen, choose “Trouble unlocking?” and set a new password with your 24 recovery words. Your identity, contacts and encrypted files stay the same. Without your recovery words, the password cannot be reset.",
   "faq.share.q": "How do I share an encrypted file with someone?",
   "faq.share.a":
     "Ask the other person for their contact card (a .vltc2 file) and add it to your Contacts. Then encrypt the file and choose them as someone who can open it. Send the encrypted file any way you like, such as by email, in a messaging app or on a USB stick. Only the people you chose can open it.",
