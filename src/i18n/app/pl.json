@@ -12,8 +12,5 @@
   "app:languageModal.regions.asiaPacific": "Azja i Pacyfik",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Szyfrowanie pliku",
   "help:secureDirectoryGuide.step1.description": "Dodaj lokalne foldery do swojego obszaru roboczego, aby przeglądać i zarządzać swoimi plikami. Doughnut Forge działa całkowicie lokalnie, co oznacza, że Twoje oryginalne pliki nigdy nie opuszczają Twojego urządzenia.",
-  "help:setupGuide.step2.description": "Twoja cyfrowa tożsamość działa jak Twój osobisty zestaw kluczy, które są bezpiecznie przechowywane w aplikacji. Doughnut Forge używa tych kluczy do ochrony Twoich plików i weryfikacji zaufanych kontaktów.",
-  "help:setupGuide.step3.description": "Twoje klucze są całkowicie prywatne i nie można ich odzyskać, jeśli zostaną utracone. Musisz przechowywać frazę odzyskiwania w bezpiecznym miejscu, ponieważ jest to jedyny sposób na przywrócenie dostępu.",
-  "help:identityContactsGuide.step1.description": "Eksportuj swoją tożsamość jako bezpieczną wizytówkę (.vltc2). Udostępnij ten plik, aby inni mogli bezpiecznie zweryfikować, kim jesteś, i dodać Cię do swojej zaufanej sieci.",
-  "help:identityContactsGuide.step3.description": "Zarządzaj swoją zaufaną siecią. Chociaż każdy, kto ma Twoją wizytówkę, może wysłać Ci bezpieczne pliki, weryfikacja kontaktów tutaj pozwala szybko wybrać je do udostępniania i potwierdza ich prawdziwą tożsamość."
+  "help:setupGuide.step3.description": "Twoje klucze są całkowicie prywatne i nie można ich odzyskać, jeśli zostaną utracone. Musisz przechowywać frazę odzyskiwania w bezpiecznym miejscu, ponieważ jest to jedyny sposób na przywrócenie dostępu."
 }

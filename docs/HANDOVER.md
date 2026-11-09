@@ -28,6 +28,14 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ---
 
+## v2 release
+
+- **While `release/v2-site` exists, every blog publish and every other site change happens on `main`.** The branch holds only the v2 site, which waits for release day. Before starting any work, check which branch you are on (`git branch --show-current`) and switch to `main` if needed. The branch was created from `main` on 9 November 2026. It stays local: never push it, deploy from it or merge it into `main` before release day.
+- **Release day runs only when all three stores show v2:** the App Store (iPhone and iPad), the Mac App Store and the Microsoft Store. If any one still shows the old version, wait.
+- **Source for v2 copy:** `.v2-source/`, a local copy of the text files in `~/website-pack-v2/` (release notes, `TECH-SPEC-PUBLIC.md`, `features.md`, `roadmap-status.md`, `README.md`). It is never committed: it must be listed in `.git/info/exclude`. The pack's screenshots and hero art are not copied.
+
+---
+
 ## Where we are now
 
 - **The site is live** at https://doughnut-forge.app in all 30 languages (every language reviewed and indexed), with the four blog posts, served by GitHub Pages from GitHub Actions. **Every push to `main` deploys** within about two minutes. The deploy fails, and the live site stays as it was, if any check in `npm run build:deploy` fails or the live `apple-app-site-association` is missing.

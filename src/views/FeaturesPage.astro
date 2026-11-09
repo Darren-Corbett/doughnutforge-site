@@ -31,18 +31,9 @@ const offline = t("offline.text");
 const rows: ToneRow[] = [
   { name: app("app:navigation.tabs.vault"), tone: "blue", ...encFiles, more: [app("help:secureDirectoryGuide.step1.description")] },
   { name: app("app:navigation.tabs.text-vault"), tone: "orange", ...encText },
-  {
-    name: app("app:navigation.tabs.identity"),
-    tone: "violet",
-    ...identity,
-    more: [app("help:setupGuide.step2.description"), app("help:setupGuide.step3.description")],
-  },
-  {
-    name: app("app:navigation.tabs.contacts"),
-    tone: "pink",
-    ...share,
-    more: [app("help:identityContactsGuide.step1.description"), app("help:identityContactsGuide.step3.description")],
-  },
+  { name: app("app:navigation.tabs.identity"), tone: "violet", ...identity, more: [app("help:setupGuide.step3.description")] },
+  // No guide sentences here: the app's guides say a contact card verifies who someone is, which it does not
+  { name: app("app:navigation.tabs.contacts"), tone: "pink", ...share },
 ];
 
 // What only the iPhone and iPad app does: the iOS listing's photos and videos,

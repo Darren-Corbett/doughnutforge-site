@@ -78,14 +78,9 @@ const APP_KEYS = {
   ],
   // Press kit label and alt text for the encrypting screenshot
   "mobile-views": ["secureFile.howItWorks.encrypt.title"],
-  // Plain sentences from the app's built-in guides, used on the features page
-  help: [
-    "secureDirectoryGuide.step1.description",
-    "setupGuide.step2.description",
-    "setupGuide.step3.description",
-    "identityContactsGuide.step1.description",
-    "identityContactsGuide.step3.description",
-  ],
+  // Plain sentences from the app's built-in guides, used on the features page.
+  // Never the guide sentences that say contacts or senders are verified: that is not true.
+  help: ["secureDirectoryGuide.step1.description", "setupGuide.step3.description"],
 };
 
 const pick = (obj, path) => path.split(".").reduce((o, k) => o?.[k], obj);
