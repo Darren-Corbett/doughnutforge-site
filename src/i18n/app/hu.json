@@ -11,6 +11,5 @@
   "app:languageModal.regions.middleEastAfrica": "Közel-Kelet és Afrika",
   "app:languageModal.regions.asiaPacific": "Ázsia és a csendes-óceáni térség",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Fájl titkosítása",
-  "help:secureDirectoryGuide.step1.description": "Adjon hozzá helyi mappákat a munkaterületéhez a fájlok böngészéséhez és kezeléséhez. A Doughnut Forge teljes egészében helyileg működik, ami azt jelenti, hogy az eredeti fájlok soha nem hagyják el az eszközt.",
-  "help:setupGuide.step3.description": "A kulcsok teljesen privátok, és elvesztésük esetén nem állíthatók helyre. A helyreállítási kifejezést biztonságos helyen kell tartania, mivel ez az egyetlen módja a hozzáférés visszaállításának."
+  "help:secureDirectoryGuide.step1.description": "Adjon hozzá helyi mappákat a munkaterületéhez a fájlok böngészéséhez és kezeléséhez. A Doughnut Forge teljes egészében helyileg működik, ami azt jelenti, hogy az eredeti fájlok soha nem hagyják el az eszközt."
 }

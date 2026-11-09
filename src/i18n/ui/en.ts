@@ -45,6 +45,8 @@ export default {
   "home.phones.altIdentity": "Doughnut Forge on iPhone: the Identity screen with a contact card to share",
 
   "home.features.title": "Lock it on your device. Share it any way you like.",
+  "tabs.files": "Files",
+  "tabs.text": "Text",
 
   "home.pricing.title": "One-time purchase, never a subscription.",
   "home.pricing.text": "Buy Doughnut Forge once for each platform you use, from that platform's store. The store shows the price where you live.",
@@ -76,13 +78,22 @@ export default {
   "features.title": "Everything Doughnut Forge does",
   "features.lead":
     "Doughnut Forge locks your files and text on your iPhone, iPad or computer and lets you share them with the people you trust. However you send them, only they can open them.",
+  "features.identity.more":
+    "Your identity is stored only on this device and protected by your password. Keep your 24 recovery words safe: they are the only way to restore your identity or reset a forgotten password.",
   "features.private.title": "Private from the start",
   "features.offline.title": "Works without the internet",
   // On the features, pricing and press pages: the iPhone and iPad store listing's paragraph without "You pay once, and the app is yours."
   "offline.text":
     "No subscription, no account, no servers and no tracking. Doughnut Forge works entirely on your device, even without an internet connection. Your keys and contacts stay with you, under your control.",
   "features.languages.label": "Languages",
+  "features.ios.title": "On iPhone and iPad",
   "features.ios.text": "The iPhone and iPad app adds a few things of its own.",
+  "v2.privacy.title": "Hidden in the app switcher",
+  "v2.privacy.text":
+    "In the app switcher, the app shows the doughnut and “Hidden while in the background” instead of what is on screen.",
+  "features.desktop.title": "On Mac and Windows",
+  "features.desktop.text":
+    "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the File menu, with keyboard shortcuts.",
   "features.ios.altEncrypting": "Doughnut Forge on iPhone: a video being encrypted, 75% done",
   "features.ios.altContacts": "Doughnut Forge on iPhone: the Contacts screen with three trusted contacts",
   "features.ios.altIpad": "Doughnut Forge on iPad: the Secure File screen with Encrypt File and Decrypt File",

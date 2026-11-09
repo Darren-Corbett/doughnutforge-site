@@ -29,19 +29,20 @@ const lead = t("features.lead");
 const offline = t("offline.text");
 
 const rows: ToneRow[] = [
-  { name: app("app:navigation.tabs.vault"), tone: "blue", ...encFiles, more: [app("help:secureDirectoryGuide.step1.description")] },
-  { name: app("app:navigation.tabs.text-vault"), tone: "orange", ...encText },
-  { name: app("app:navigation.tabs.identity"), tone: "violet", ...identity, more: [app("help:setupGuide.step3.description")] },
+  { name: t("tabs.files"), tone: "blue", ...encFiles, more: [app("help:secureDirectoryGuide.step1.description")] },
+  { name: t("tabs.text"), tone: "orange", ...encText },
+  { name: app("app:navigation.tabs.identity"), tone: "violet", ...identity, more: [t("features.identity.more")] },
   // No guide sentences here: the app's guides say a contact card verifies who someone is, which it does not
   { name: app("app:navigation.tabs.contacts"), tone: "pink", ...share },
 ];
 
 // What only the iPhone and iPad app does: the iOS listing's photos and videos,
-// opening what is sent to you, and Face ID and Touch ID (features 1, 2 and 6)
+// opening what is sent to you, and Face ID and Touch ID (features 1, 2 and 6),
+// then the v2 privacy screen (features.md: iPhone and iPad only)
 if (store.ios.features.length !== 8) {
   throw new Error(`The iOS store listing has ${store.ios.features.length} features; the features page expects 8.`);
 }
-const iosFeatures = [0, 1, 5].map((i) => store.ios.features[i]!);
+const iosFeatures = [...[0, 1, 5].map((i) => store.ios.features[i]!), { title: t("v2.privacy.title"), text: t("v2.privacy.text") }];
 
 // The questions people ask first, answered as on the support page. Only the
 // support page carries the FAQPage data, so the answers are marked up once.
@@ -92,7 +93,7 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
 
   <section class="phones" aria-labelledby="features-ios">
     <div class="phones-inner">
-      <h2 id="features-ios">{t("home.phones.title")}</h2>
+      <h2 id="features-ios">{t("features.ios.title")}</h2>
       <p class="phones-text">{t("features.ios.text")}</p>
       <ul class="ios-list" role="list">
         {
@@ -116,6 +117,11 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="section" aria-labelledby="features-desktop">
+    <h2 id="features-desktop" class="section-title">{t("features.desktop.title")}</h2>
+    <p class="section-text">{t("features.desktop.text")}</p>
   </section>
 
   <section class="section" aria-labelledby="features-faq">

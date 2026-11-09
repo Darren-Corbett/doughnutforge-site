@@ -42,36 +42,36 @@ Doughnut Forge encrypts files, folders and text on your Mac. It needs no account
 
 ### Set it up once
 
-When you first open the app, you choose a password, which must be rated **Strong** before you can save it. Then you create your identity. The app shows you a **24-word backup phrase**. Write it down and keep it somewhere safe: it is the way back to your identity if you ever need it.
+When you first open the app, you see one short welcome, then one choice: create your identity, or restore it. When you create it, the app gives you **24 recovery words**. Write them down and keep them somewhere safe: they are the way back to your identity if you ever need it. After you write them down, the app asks for two of them, to help you catch a mistake in your copy. Your identity is stored only on this Mac and protected by your password.
 
-The password cannot be reset. If you lose both the password and the backup phrase, your identity and your encrypted files cannot be recovered. No one can unlock them for you, because your password and keys are never stored on a server.
+If you forget your password, choose **Trouble unlocking?** on the lock screen and set a new one with your recovery words. If you lose both the password and the recovery words, your identity and your encrypted files cannot be recovered. No one can unlock them for you, because your password and keys are never stored on a server.
 
 ### Encrypt a file or folder
 
 <Flow
-  caption="Encrypting a file in Doughnut Forge: add a folder, choose Encrypt File, pick who can open it, and the locked copy appears beside the original."
+  caption="Encrypting a file in Doughnut Forge: add a folder, choose Encrypt file, pick who can open it, and the locked copy appears beside the original."
   steps={[
-    { icon: FolderPlus, text: "Add a folder in Secure Directory", tone: "blue" },
-    { icon: FileLock, text: "Choose Encrypt File", tone: "blue" },
-    { icon: UserRound, text: "Who can open this? Just Me", tone: "violet" },
+    { icon: FolderPlus, text: "Add a folder in Files", tone: "blue" },
+    { icon: FileLock, text: "Choose Encrypt file", tone: "blue" },
+    { icon: UserRound, text: "Who can open this? You", tone: "violet" },
     { icon: LockKeyhole, text: "A locked .vlt2 copy appears", tone: "green" },
   ]}
 />
 
-1. Open **Secure Directory** and click **Add Folder** to choose the folder that holds your files.
-2. Find the file or folder you want to protect. Click its **⋮** button, or right-click it, and choose **Encrypt File**.
-3. Under **Who can open this?**, **Just Me** is already selected. Leave it as it is to keep the file for yourself, or select contacts to share it (see [How to share encrypted files with someone you trust](/blog/share-encrypted-files/)).
-4. Click **Encrypt Selection**.
+1. Open **Files** and click **Add folder** to choose the folder that holds your files.
+2. Find the file or folder you want to protect. Click its **⋮** button and choose **Encrypt file**. You can also use **Encrypt File** in the **File** menu.
+3. Under **Who can open this?**, you are always included. Leave it at that to keep the file for yourself, or also pick contacts to share it (see [How to share encrypted files with someone you trust](/blog/share-encrypted-files/)).
+4. Click **Encrypt file**. The app shows its progress, then says where the file was saved and who can open it.
 
 A new file ending in `.vlt2` appears in the same folder. That is the locked copy. Your original file is kept. Check that the locked copy opens before you delete the original yourself.
 
 ### Open it again
 
-Click the `.vlt2` file's **⋮** button, or right-click it, and choose **Decrypt & Extract**. Choose a **Save Location**, then click **Decrypt File**. The original file is saved where you chose.
+Choose **Decrypt File** in the **File** menu and pick the `.vlt2` file. The app shows its progress, then says where the file was saved.
 
-## Keep your backup phrase safe
+## Keep your recovery words safe
 
-Whichever option you use, the weak point is the secret that opens the files. For a disk image, that is the password. For Doughnut Forge, it is your password and your backup phrase. Keep the backup phrase on paper, somewhere private, and never type it into a website or send it to anyone.
+Whichever option you use, the weak point is the secret that opens the files. For a disk image, that is the password. For Doughnut Forge, it is your password and your recovery words. Keep the recovery words on paper, somewhere private, and never type them into a website or send them to anyone.
 
 ## Which option to choose
 

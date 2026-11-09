@@ -11,6 +11,5 @@
   "app:languageModal.regions.middleEastAfrica": "Trung Đông và Châu Phi",
   "app:languageModal.regions.asiaPacific": "Châu Á - Thái Bình Dương",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Mã hóa tệp",
-  "help:secureDirectoryGuide.step1.description": "Thêm các thư mục cục bộ vào không gian làm việc của bạn để duyệt và quản lý các tệp. Doughnut Forge hoạt động hoàn toàn cục bộ, có nghĩa là các tệp gốc của bạn không bao giờ rời khỏi thiết bị.",
-  "help:setupGuide.step3.description": "Các khóa của bạn hoàn toàn riêng tư và không thể khôi phục nếu bị mất. Bạn phải giữ cụm từ sao lưu của mình ở một vị trí an toàn, vì đây là cách duy nhất để khôi phục quyền truy cập của bạn."
+  "help:secureDirectoryGuide.step1.description": "Thêm các thư mục cục bộ vào không gian làm việc của bạn để duyệt và quản lý các tệp. Doughnut Forge hoạt động hoàn toàn cục bộ, có nghĩa là các tệp gốc của bạn không bao giờ rời khỏi thiết bị."
 }

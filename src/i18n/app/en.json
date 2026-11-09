@@ -11,6 +11,5 @@
   "app:languageModal.regions.middleEastAfrica": "Middle East & Africa",
   "app:languageModal.regions.asiaPacific": "Asia-Pacific",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Encrypting a file",
-  "help:secureDirectoryGuide.step1.description": "Add local folders to your workspace to browse and manage your files. Doughnut Forge operates entirely locally, meaning your original files never leave your device.",
-  "help:setupGuide.step3.description": "Your keys are entirely private and cannot be recovered if lost. You must keep your backup phrase in a safe location, as it is the only way to restore your access."
+  "help:secureDirectoryGuide.step1.description": "Add local folders to your workspace to browse and manage your files. Doughnut Forge operates entirely locally, meaning your original files never leave your device."
 }

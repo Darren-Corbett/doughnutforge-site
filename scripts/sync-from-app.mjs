@@ -80,7 +80,7 @@ const APP_KEYS = {
   "mobile-views": ["secureFile.howItWorks.encrypt.title"],
   // Plain sentences from the app's built-in guides, used on the features page.
   // Never the guide sentences that say contacts or senders are verified: that is not true.
-  help: ["secureDirectoryGuide.step1.description", "setupGuide.step3.description"],
+  help: ["secureDirectoryGuide.step1.description"],
 };
 
 const pick = (obj, path) => path.split(".").reduce((o, k) => o?.[k], obj);

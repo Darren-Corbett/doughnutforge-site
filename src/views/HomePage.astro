@@ -32,8 +32,8 @@ const { headline } = store.mac.parts;
 const lead = t("home.lead");
 
 const rows: ToneRow[] = [
-  { name: app("app:navigation.tabs.vault"), tone: "blue", ...encFiles },
-  { name: app("app:navigation.tabs.text-vault"), tone: "orange", ...encText },
+  { name: t("tabs.files"), tone: "blue", ...encFiles },
+  { name: t("tabs.text"), tone: "orange", ...encText },
   { name: app("app:navigation.tabs.identity"), tone: "violet", ...identity },
   { name: app("app:navigation.tabs.contacts"), tone: "pink", ...share },
 ];

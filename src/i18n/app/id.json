@@ -11,6 +11,5 @@
   "app:languageModal.regions.middleEastAfrica": "Timur Tengah dan Afrika",
   "app:languageModal.regions.asiaPacific": "Asia Pasifik",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Mengenknripsi file",
-  "help:secureDirectoryGuide.step1.description": "Tambahkan folder lokal ke ruang kerja Anda untuk menelusuri dan mengelola file Anda. Doughnut Forge beroperasi sepenuhnya secara lokal, yang berarti file asli Anda tidak pernah meninggalkan perangkat Anda.",
-  "help:setupGuide.step3.description": "Kunci Anda sepenuhnya pribadi dan tidak dapat dipulihkan jika hilang. Anda harus menyimpan frasa cadangan Anda di lokasi yang aman, karena ini adalah satu-satunya cara untuk memulihkan akses Anda."
+  "help:secureDirectoryGuide.step1.description": "Tambahkan folder lokal ke ruang kerja Anda untuk menelusuri dan mengelola file Anda. Doughnut Forge beroperasi sepenuhnya secara lokal, yang berarti file asli Anda tidak pernah meninggalkan perangkat Anda."
 }

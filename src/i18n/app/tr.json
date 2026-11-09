@@ -11,6 +11,5 @@
   "app:languageModal.regions.middleEastAfrica": "Orta Doğu ve Afrika",
   "app:languageModal.regions.asiaPacific": "Asya-Pasifik",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Dosya şifreleme",
-  "help:secureDirectoryGuide.step1.description": "Dosyalarınıza göz atmak ve yönetmek için çalışma alanınıza yerel klasörler ekleyin. Doughnut Forge tamamen yerel olarak çalışır, yani orijinal dosyalarınız asla cihazınızdan ayrılmaz.",
-  "help:setupGuide.step3.description": "Anahtarlarınız tamamen size özeldir ve kaybolmaları durumunda kurtarılamazlar. Erişiminizi geri yüklemenin tek yolu bu olduğundan, kurtarma ifadenizi güvenli bir yerde saklamanız gerekir."
+  "help:secureDirectoryGuide.step1.description": "Dosyalarınıza göz atmak ve yönetmek için çalışma alanınıza yerel klasörler ekleyin. Doughnut Forge tamamen yerel olarak çalışır, yani orijinal dosyalarınız asla cihazınızdan ayrılmaz."
 }

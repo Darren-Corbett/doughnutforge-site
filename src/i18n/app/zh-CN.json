@@ -11,6 +11,5 @@
   "app:languageModal.regions.middleEastAfrica": "中东和非洲",
   "app:languageModal.regions.asiaPacific": "亚太地区",
   "mobile-views:secureFile.howItWorks.encrypt.title": "加密文件",
-  "help:secureDirectoryGuide.step1.description": "将本地文件夹添加到您的工作区以浏览和管理您的文件。Doughnut Forge 完全在本地运行，这意味着您的原始文件永远不会离开您的设备。",
-  "help:setupGuide.step3.description": "您的密钥完全是私人的，一旦丢失将无法恢复。您必须将恢复短语保存在安全的地方，因为这是恢复访问权限的唯一方法。"
+  "help:secureDirectoryGuide.step1.description": "将本地文件夹添加到您的工作区以浏览和管理您的文件。Doughnut Forge 完全在本地运行，这意味着您的原始文件永远不会离开您的设备。"
 }

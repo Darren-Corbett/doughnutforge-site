@@ -11,6 +11,5 @@
   "app:languageModal.regions.middleEastAfrica": "中東・アフリカ",
   "app:languageModal.regions.asiaPacific": "アジア太平洋",
   "mobile-views:secureFile.howItWorks.encrypt.title": "ファイルの暗号化",
-  "help:secureDirectoryGuide.step1.description": "ローカルフォルダをワークスペースに追加して、ファイルを参照および管理します。Doughnut Forgeは完全にローカルで動作するため、元のファイルがデバイスから離れることはありません。",
-  "help:setupGuide.step3.description": "鍵は完全にプライベートであり、紛失した場合は復元できません。アクセスを回復する唯一の方法であるため、復元フレーズは安全な場所に保管してください。"
+  "help:secureDirectoryGuide.step1.description": "ローカルフォルダをワークスペースに追加して、ファイルを参照および管理します。Doughnut Forgeは完全にローカルで動作するため、元のファイルがデバイスから離れることはありません。"
 }

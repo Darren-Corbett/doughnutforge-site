@@ -11,6 +11,5 @@
   "app:languageModal.regions.middleEastAfrica": "Midtøsten og Afrika",
   "app:languageModal.regions.asiaPacific": "Asia og Stillehavet",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Kryptere en fil",
-  "help:secureDirectoryGuide.step1.description": "Legg til lokale mapper i arbeidsområdet ditt for å bla gjennom og administrere filene dine. Doughnut Forge fungerer helt lokalt, noe som betyr at de originale filene dine aldri forlater enheten din.",
-  "help:setupGuide.step3.description": "Nøklene dine er helt private og kan ikke gjenopprettes hvis de går tapt. Du må oppbevare gjenopprettingsfrasen på et trygt sted, siden det er den eneste måten å gjenopprette tilgangen på."
+  "help:secureDirectoryGuide.step1.description": "Legg til lokale mapper i arbeidsområdet ditt for å bla gjennom og administrere filene dine. Doughnut Forge fungerer helt lokalt, noe som betyr at de originale filene dine aldri forlater enheten din."
 }

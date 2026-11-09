@@ -11,6 +11,5 @@
   "app:languageModal.regions.middleEastAfrica": "Oriente Medio y África",
   "app:languageModal.regions.asiaPacific": "Asia-Pacífico",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Cifrar un archivo",
-  "help:secureDirectoryGuide.step1.description": "Añade carpetas locales a tu espacio de trabajo para navegar y gestionar tus archivos. Doughnut Forge opera íntegramente a nivel local, lo que significa que tus archivos originales nunca salen de tu dispositivo.",
-  "help:setupGuide.step3.description": "Tus llaves son completamente privadas y no se pueden recuperar si las pierdes. Debes guardar tu frase de recuperación en un lugar seguro, ya que es la única forma de restaurar tu acceso."
+  "help:secureDirectoryGuide.step1.description": "Añade carpetas locales a tu espacio de trabajo para navegar y gestionar tus archivos. Doughnut Forge opera íntegramente a nivel local, lo que significa que tus archivos originales nunca salen de tu dispositivo."
 }

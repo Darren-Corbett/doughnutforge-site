@@ -11,6 +11,5 @@
   "app:languageModal.regions.middleEastAfrica": "Lähi-itä ja Afrikka",
   "app:languageModal.regions.asiaPacific": "Aasia ja Tyynenmeren alue",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Tiedoston salaus",
-  "help:secureDirectoryGuide.step1.description": "Lisää paikallisia kansioita työtilaasi tiedostojen selaamista ja hallintaa varten. Doughnut Forge toimii täysin paikallisesti, mikä tarkoittaa, että alkuperäiset tiedostosi eivät koskaan poistu laitteeltasi.",
-  "help:setupGuide.step3.description": "Avaimet ovat täysin yksityisiä, eikä niitä voi palauttaa, jos ne katoavat. Sinun on säilytettävä palautuslause turvallisessa paikassa, sillä se on ainoa tapa palauttaa käyttöoikeutesi."
+  "help:secureDirectoryGuide.step1.description": "Lisää paikallisia kansioita työtilaasi tiedostojen selaamista ja hallintaa varten. Doughnut Forge toimii täysin paikallisesti, mikä tarkoittaa, että alkuperäiset tiedostosi eivät koskaan poistu laitteeltasi."
 }
