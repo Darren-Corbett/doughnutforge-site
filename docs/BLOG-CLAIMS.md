@@ -90,7 +90,7 @@ Not claimed: that signatures are post-quantum (they are not); "quantum-proof" or
 | 4.4 | The card shows a public name you choose | `share-identity.json:8, 18` |
 | 4.5 | The card is safe to share; it lets people encrypt files for you but cannot open anything sent to you | `share-identity.json:21`; `mobile-views.json:121-122` |
 | 4.6 | Contacts, Add Contact, pick the card file; several at once | `contacts.json:9`; `share-identity.json:24-26`; `add-contact-modal.tsx:66-70`; Mac `release_notes.txt` |
-| 4.7 | The app checks each card has not been tampered with | `mobile-guides.json:56`; `src-tauri/src/engine/contact.rs:213-214` |
+| 4.7 | The app checks each card as you add it; only comparing the contact code tells you it is the right person's card (reworded 9 November 2026: "has not been tampered with" overstated the check) | `src-tauri/src/engine/contact.rs:213-214` (as recorded at launch; the app repo was not read tonight); v2 `TECH-SPEC-PUBLIC.md` (contact cards are signed; the app does not prove who sent an item); row 4.8 |
 | 4.8 | Each contact has a short contact code; compare it with the code on the person's own Identity screen, in person or on a call | Mac `release_notes.txt`; `contact_code.rs:3-5`; `contacts.json:94-97` |
 | 4.9 | Only add cards received directly; a card that does not match an existing contact is refused | `mobile-views.json:177`; `contact.rs:68-71`; `errors.json:66` |
 | 4.10 | "Who can open this?": select one or several contacts; you are always included too | `secure-directory.json:35-37`; `writer.rs:161` (`let mut recipients = vec![Contact::from_keys(&my_keys)]`) |
