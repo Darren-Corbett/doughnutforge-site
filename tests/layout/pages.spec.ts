@@ -48,15 +48,11 @@ for (const lang of languages) {
         expect(await page.locator(`[data-roadmap="${status}"] li`).count(), `${status} items`).toBeGreaterThan(0);
       }
       await expect(page.locator("[data-planned]")).toHaveCount(0);
-      // Doughnut Forge 2 and the identity update (Windows included) have shipped
-      // (roadmap-status.md); Android leads what is next, smaller improvements come last
-      await expect(page.locator('[data-roadmap="shipped"] h3')).toContainText([
-        await ui(lang.code, "roadmap.v2.title"),
-        await ui(lang.code, "roadmap.identity.title"),
-      ]);
-      await expect(page.locator('[data-roadmap="next"] h3')).toContainText([
+      // Doughnut Forge 2 has shipped; next is Android, then smaller improvements.
+      // Nothing describes internal security work (owner, 10 November 2026).
+      await expect(page.locator('[data-roadmap="shipped"] h3')).toHaveText([await ui(lang.code, "roadmap.v2.title")]);
+      await expect(page.locator('[data-roadmap="next"] h3')).toHaveText([
         await ui(lang.code, "roadmap.android.title"),
-        await ui(lang.code, "roadmap.stricter.title"),
         await ui(lang.code, "roadmap.small.title"),
       ]);
       // The Doughnut Forge 2 entry lists its highlights
