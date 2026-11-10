@@ -203,10 +203,6 @@ export default {
     "Pe iPhone, o bară de file pentru Fișiere, Texte, Identitate, Contacte și Setări. Pe iPhone și iPad, aplicația este ascunsă în comutatorul de aplicații.",
   "v2.notes.desktop":
     "Pe Mac și Windows, mărire de la 100% la 200%, iar criptarea nu înlocuiește niciodată un fișier care există deja.",
-  "roadmap.identity.title": "Protecția identității",
-  "roadmap.identity.text": "O actualizare care păstrează fiecare identitate în siguranță, astfel încât să nu poată fi niciodată pierdută, înlocuită sau lăsată lizibilă. Pe Mac, iPhone, iPad și Windows.",
-  "roadmap.stricter.title": "Protecție mai strictă",
-  "roadmap.stricter.text": "Alte actualizări de protecție, care fac aplicația mai strictă în privința a ceea ce acceptă. Pentru datele tale nu se schimbă nimic.",
   "roadmap.android.title": "Doughnut Forge pentru Android",
   "roadmap.small.title": "Îmbunătățiri mai mici",
   "roadmap.small.text": "Mici remedieri și îmbunătățiri pentru Doughnut Forge 2.",

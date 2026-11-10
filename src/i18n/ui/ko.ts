@@ -198,11 +198,6 @@ export default {
   "v2.notes.backups": "iPhone, iPad, Mac 백업에 더 이상 신원이 포함되지 않습니다. 복구 단어를 안전하게 보관하세요. 새 기기에서 신원을 복원하려면 복구 단어가 필요합니다.",
   "v2.notes.ios": "iPhone에서는 파일, 텍스트, 신원, 연락처, 설정 탭 막대를 사용할 수 있습니다. iPhone과 iPad에서는 앱 전환기에서 앱이 숨겨집니다.",
   "v2.notes.desktop": "Mac과 Windows에서는 100%에서 200%까지 확대/축소할 수 있으며, 암호화는 이미 있는 파일을 절대 대체하지 않습니다.",
-  "roadmap.identity.title": "신원 보호",
-  "roadmap.identity.text":
-    "모든 신원을 안전하게 지켜, 신원이 분실되거나 교체되거나 읽을 수 있는 상태로 남는 일이 절대 없도록 하는 업데이트입니다. Mac, iPhone, iPad, Windows용입니다.",
-  "roadmap.stricter.title": "더 엄격한 보호",
-  "roadmap.stricter.text": "앱이 받아들이는 것에 대해 더 엄격해지도록 하는 추가 보호 업데이트입니다. 내 데이터에는 달라지는 것이 없습니다.",
   "roadmap.android.title": "Android용 Doughnut Forge",
   "roadmap.small.title": "작은 개선",
   "roadmap.small.text": "Doughnut Forge 2의 작은 수정 및 개선.",

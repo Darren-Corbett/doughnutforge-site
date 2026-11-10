@@ -203,10 +203,6 @@ export default {
     "iPhone'da Dosyalar, Metin, Kimlik, Kişiler ve Ayarlar için bir sekme çubuğu. iPhone ve iPad'de uygulama, Uygulama Değiştirici'de gizlenir.",
   "v2.notes.desktop":
     "Mac ve Windows'ta %100'den %200'e kadar yakınlaştırma; ayrıca şifreleme, zaten var olan bir dosyanın yerine asla geçmez.",
-  "roadmap.identity.title": "Kimlik koruması",
-  "roadmap.identity.text": "Her kimliği güvende tutan bir güncelleme; böylece kimlik asla kaybolamaz, başkasıyla değiştirilemez veya okunabilir hâlde bırakılamaz. Mac, iPhone, iPad ve Windows'ta.",
-  "roadmap.stricter.title": "Daha sıkı koruma",
-  "roadmap.stricter.text": "Uygulamayı kabul ettiği şeyler konusunda daha sıkı hâle getiren ek koruma güncellemeleri. Verileriniz için hiçbir şey değişmez.",
   "roadmap.android.title": "Android için Doughnut Forge",
   "roadmap.small.title": "Daha küçük iyileştirmeler",
   "roadmap.small.text": "Doughnut Forge 2 için küçük düzeltmeler ve iyileştirmeler.",

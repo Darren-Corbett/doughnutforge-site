@@ -198,11 +198,6 @@ export default {
   "v2.notes.backups": "iPhone、iPad、Macのバックアップにアイデンティティが含まれなくなりました。復元用の単語は大切に保管してください。新しいデバイスで復元するにはこれが必要です。",
   "v2.notes.ios": "iPhoneでは、ファイル、テキスト、アイデンティティ、連絡先、設定を切り替えるタブバー。iPhoneとiPadでは、アプリスイッチャーでアプリが非表示になります。",
   "v2.notes.desktop": "MacとWindowsでは、100%から200%まで拡大・縮小でき、暗号化で既存のファイルが置き換えられることはありません。",
-  "roadmap.identity.title": "アイデンティティの保護",
-  "roadmap.identity.text":
-    "すべてのアイデンティティを安全に保つアップデートです。失われたり、置き換えられたり、読み取れる状態のまま残されたりすることはありません。対象はMac、iPhone、iPad、Windowsです。",
-  "roadmap.stricter.title": "より厳格な保護",
-  "roadmap.stricter.text": "アプリが受け入れるものをより厳しくする、さらなる保護のアップデートです。データには何の変化もありません。",
   "roadmap.android.title": "Android版Doughnut Forge",
   "roadmap.small.title": "細かな改善",
   "roadmap.small.text": "Doughnut Forge 2の細かな修正と改善。",

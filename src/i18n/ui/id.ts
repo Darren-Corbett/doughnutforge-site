@@ -203,10 +203,6 @@ export default {
     "Di iPhone, bilah tab untuk File, Teks, Identitas, Kontak, dan Pengaturan. Di iPhone dan iPad, aplikasi disembunyikan di pengalih App.",
   "v2.notes.desktop":
     "Di Mac dan Windows, perbesar dari 100% hingga 200%, dan enkripsi tidak pernah menimpa file yang sudah ada.",
-  "roadmap.identity.title": "Perlindungan identitas",
-  "roadmap.identity.text": "Pembaruan yang menjaga setiap identitas tetap aman, sehingga identitas tidak akan pernah hilang, diganti, atau dibiarkan dapat dibaca. Di Mac, iPhone, iPad, dan Windows.",
-  "roadmap.stricter.title": "Perlindungan lebih ketat",
-  "roadmap.stricter.text": "Pembaruan perlindungan lanjutan yang membuat aplikasi lebih ketat terhadap apa yang diterimanya. Tidak ada yang berubah pada data Anda.",
   "roadmap.android.title": "Doughnut Forge untuk Android",
   "roadmap.small.title": "Peningkatan yang lebih kecil",
   "roadmap.small.text": "Perbaikan kecil dan peningkatan untuk Doughnut Forge 2.",

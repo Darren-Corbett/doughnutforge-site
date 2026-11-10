@@ -212,11 +212,6 @@ export default {
     "iPhone-on lapsáv: Fájlok, Szöveg, Identitás, Kapcsolatok és Beállítások. iPhone-on és iPaden az alkalmazás el van rejtve az appváltóban.",
   "v2.notes.desktop":
     "Macen és Windowson 100%-tól 200%-ig nagyíthatsz, és a titkosítás soha nem ír felül egy már meglévő fájlt.",
-  "roadmap.identity.title": "Az identitás védelme",
-  "roadmap.identity.text":
-    "Egy frissítés, amely minden identitást biztonságban tart, így az soha nem veszhet el, nem cserélhető le, és nem maradhat olvasható. Mac, iPhone, iPad és Windows eszközökön.",
-  "roadmap.stricter.title": "Szigorúbb védelem",
-  "roadmap.stricter.text": "További védelmi frissítések, amelyek szigorúbbá teszik az alkalmazást abban, hogy mit fogad el. Az adataid szempontjából semmi sem változik.",
   "roadmap.android.title": "Doughnut Forge Androidra",
   "roadmap.small.title": "Kisebb fejlesztések",
   "roadmap.small.text": "Kisebb javítások és fejlesztések a Doughnut Forge 2-höz.",

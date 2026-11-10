@@ -210,11 +210,6 @@ export default {
     "Pada iPhone, bar tab untuk Fail, Teks, Identiti, Kenalan dan Tetapan. Pada iPhone dan iPad, aplikasi disembunyikan dalam Penukar App.",
   "v2.notes.desktop":
     "Pada Mac dan Windows, zum dari 100% hingga 200%, dan penyulitan tidak sekali-kali menggantikan fail yang sudah ada.",
-  "roadmap.identity.title": "Perlindungan identiti",
-  "roadmap.identity.text":
-    "Kemas kini yang memastikan setiap identiti selamat, supaya ia tidak sekali-kali boleh hilang, diganti atau dibiarkan boleh dibaca. Pada Mac, iPhone, iPad dan Windows.",
-  "roadmap.stricter.title": "Perlindungan lebih ketat",
-  "roadmap.stricter.text": "Kemas kini perlindungan lanjut yang menjadikan aplikasi lebih ketat tentang apa yang diterimanya. Tiada apa-apa yang berubah bagi data anda.",
   "roadmap.android.title": "Doughnut Forge untuk Android",
   "roadmap.small.title": "Penambahbaikan kecil",
   "roadmap.small.text": "Pembaikan kecil dan penambahbaikan untuk Doughnut Forge 2.",

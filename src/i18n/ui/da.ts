@@ -208,11 +208,6 @@ export default {
     "På iPhone en fanelinje med Filer, Tekst, Identitet, Kontakter og Indstillinger. På iPhone og iPad er appen skjult i appskifteren.",
   "v2.notes.desktop":
     "På Mac og Windows kan du zoome fra 100 % til 200 %, og kryptering erstatter aldrig en fil, der allerede findes.",
-  "roadmap.identity.title": "Beskyttelse af identiteter",
-  "roadmap.identity.text":
-    "En opdatering, der holder hver identitet sikker, så den aldrig kan gå tabt, erstattes eller efterlades læsbar. På Mac, iPhone, iPad og Windows.",
-  "roadmap.stricter.title": "Strengere beskyttelse",
-  "roadmap.stricter.text": "Flere beskyttelsesopdateringer, der gør appen strengere med, hvad den accepterer. Intet ændrer sig for dine data.",
   "roadmap.android.title": "Doughnut Forge til Android",
   "roadmap.small.title": "Mindre forbedringer",
   "roadmap.small.text": "Små rettelser og forbedringer af Doughnut Forge 2.",

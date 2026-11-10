@@ -27,9 +27,7 @@ export const roadmap: RoadmapItem[] = [
       "v2.notes.desktop",
     ],
   },
-  { status: "shipped", title: "roadmap.identity.title", text: "roadmap.identity.text" },
   { status: "next", title: "roadmap.android.title" },
-  { status: "next", title: "roadmap.stricter.title", text: "roadmap.stricter.text" },
   { status: "next", title: "roadmap.small.title", text: "roadmap.small.text" },
   { status: "later", title: "roadmap.audit.title", text: "roadmap.audit.text" },
 ];

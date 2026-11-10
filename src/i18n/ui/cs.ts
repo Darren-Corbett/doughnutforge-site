@@ -211,11 +211,6 @@ export default {
     "Na iPhonu panel karet: Soubory, Texty, Identita, Kontakty a Nastavení. Na iPhonu a iPadu je aplikace v přepínači aplikací skrytá.",
   "v2.notes.desktop":
     "Na Macu a ve Windows přibližování od 100 % do 200 % a šifrování nikdy nenahradí soubor, který už existuje.",
-  "roadmap.identity.title": "Ochrana identity",
-  "roadmap.identity.text":
-    "Aktualizace, která udrží každou identitu v bezpečí, takže ji nikdy nepůjde ztratit, nahradit ani nechat čitelnou. Pro Mac, iPhone, iPad a Windows.",
-  "roadmap.stricter.title": "Přísnější ochrana",
-  "roadmap.stricter.text": "Další aktualizace ochrany, díky kterým bude aplikace přísnější v tom, co přijme. Pro vaše data se nic nemění.",
   "roadmap.android.title": "Doughnut Forge pro Android",
   "roadmap.small.title": "Menší vylepšení",
   "roadmap.small.text": "Drobné opravy a vylepšení Doughnut Forge 2.",

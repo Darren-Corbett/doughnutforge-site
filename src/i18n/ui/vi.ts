@@ -210,11 +210,6 @@ export default {
     "Trên iPhone, thanh tab gồm Tệp, Văn bản, Danh tính, Liên hệ và Cài đặt. Trên iPhone và iPad, ứng dụng được ẩn trong bộ chuyển đổi ứng dụng.",
   "v2.notes.desktop":
     "Trên Mac và Windows, thu phóng từ 100% đến 200%, và mã hóa không bao giờ thay thế một tệp đã có sẵn.",
-  "roadmap.identity.title": "Bảo vệ danh tính",
-  "roadmap.identity.text":
-    "Một bản cập nhật giúp mọi danh tính luôn an toàn, để danh tính không bao giờ bị mất, bị thay thế hoặc bị để lại ở dạng đọc được. Trên Mac, iPhone, iPad và Windows.",
-  "roadmap.stricter.title": "Bảo vệ chặt chẽ hơn",
-  "roadmap.stricter.text": "Các bản cập nhật bảo vệ tiếp theo giúp ứng dụng chặt chẽ hơn với những gì nó chấp nhận. Dữ liệu của bạn không có gì thay đổi.",
   "roadmap.android.title": "Doughnut Forge cho Android",
   "roadmap.small.title": "Những cải tiến nhỏ",
   "roadmap.small.text": "Các bản sửa lỗi nhỏ và cải tiến cho Doughnut Forge 2.",

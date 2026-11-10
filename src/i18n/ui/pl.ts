@@ -209,11 +209,6 @@ export default {
     "Na iPhonie pasek kart: Pliki, Tekst, Tożsamość, Kontakty i Ustawienia. Na iPhonie i iPadzie aplikacja jest ukryta na ekranie przełączania aplikacji.",
   "v2.notes.desktop":
     "Na Macu i w Windows powiększanie od 100% do 200%, a szyfrowanie nigdy nie zastępuje pliku, który już istnieje.",
-  "roadmap.identity.title": "Ochrona tożsamości",
-  "roadmap.identity.text":
-    "Aktualizacja, która zapewnia bezpieczeństwo każdej tożsamości, tak aby nigdy nie mogła zostać utracona, zastąpiona ani pozostawiona w czytelnej postaci. Na Maca, iPhone’a, iPada i Windows.",
-  "roadmap.stricter.title": "Ściślejsza ochrona",
-  "roadmap.stricter.text": "Kolejne aktualizacje ochrony, dzięki którym aplikacja będzie surowiej podchodzić do tego, co przyjmuje. Dla Twoich danych nic się nie zmienia.",
   "roadmap.android.title": "Doughnut Forge na Androida",
   "roadmap.small.title": "Mniejsze ulepszenia",
   "roadmap.small.text": "Drobne poprawki i ulepszenia Doughnut Forge 2.",

@@ -203,10 +203,6 @@ export default {
     "iPhone पर फ़ाइलें, टेक्स्ट, पहचान, संपर्क और सेटिंग्स के लिए टैब बार। iPhone और iPad पर, ऐप स्विचर में ऐप छिपा रहता है।",
   "v2.notes.desktop":
     "Mac और Windows पर, 100% से 200% तक ज़ूम, और एन्क्रिप्ट करना कभी भी पहले से मौजूद किसी फ़ाइल को रिप्लेस नहीं करता।",
-  "roadmap.identity.title": "पहचान की सुरक्षा",
-  "roadmap.identity.text": "एक अपडेट जो हर पहचान को सुरक्षित रखता है, ताकि वह कभी न खो जाए, न उसकी जगह कोई दूसरी पहचान ले सके और न ही वह पढ़ने योग्य हालत में छूटे। Mac, iPhone, iPad और Windows पर।",
-  "roadmap.stricter.title": "और सख़्त सुरक्षा",
-  "roadmap.stricter.text": "सुरक्षा के और अपडेट, जो ऐप को इस बारे में और सख़्त बनाते हैं कि वह क्या स्वीकार करता है। आपके डेटा के लिए कुछ नहीं बदलता।",
   "roadmap.android.title": "Android के लिए Doughnut Forge",
   "roadmap.small.title": "छोटे सुधार",
   "roadmap.small.text": "Doughnut Forge 2 के लिए कुछ छोटे फ़िक्स और सुधार।",

@@ -212,11 +212,6 @@ export default {
     "iPhonessa välilehtipalkki: Tiedostot, Teksti, Henkilöllisyys, Yhteystiedot ja Asetukset. iPhonessa ja iPadissa sovellus on piilotettu apinvaihtajassa.",
   "v2.notes.desktop":
     "Macissa ja Windowsissa voit zoomata 100 %:sta 200 %:iin, eikä salaus koskaan korvaa jo olemassa olevaa tiedostoa.",
-  "roadmap.identity.title": "Henkilöllisyyden suojaus",
-  "roadmap.identity.text":
-    "Päivitys, joka pitää jokaisen henkilöllisyyden turvassa: se ei voi koskaan kadota, korvautua toisella tai jäädä luettavaksi. Macille, iPhonelle, iPadille ja Windowsille.",
-  "roadmap.stricter.title": "Tiukempi suojaus",
-  "roadmap.stricter.text": "Lisää suojauspäivityksiä, jotka tekevät sovelluksesta tiukemman sen suhteen, mitä se hyväksyy. Tiedoissasi ei muutu mitään.",
   "roadmap.android.title": "Doughnut Forge Androidille",
   "roadmap.small.title": "Pienempiä parannuksia",
   "roadmap.small.text": "Pieniä korjauksia ja parannuksia Doughnut Forge 2:een.",

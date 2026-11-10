@@ -276,11 +276,6 @@ export default {
     "On iPhone, a tab bar for Files, Text, Identity, Contacts and Settings. On iPhone and iPad, the app is hidden in the app switcher.",
   "v2.notes.desktop":
     "On Mac and Windows, zoom from 100% to 200%, and encrypting never replaces a file that is already there.",
-  "roadmap.identity.title": "Identity protection",
-  "roadmap.identity.text":
-    "An update that keeps every identity safe, so it can never be lost, replaced or left readable. On Mac, iPhone, iPad and Windows.",
-  "roadmap.stricter.title": "Stricter protection",
-  "roadmap.stricter.text": "Further protection updates that make the app stricter about what it accepts. Nothing changes for your data.",
   "roadmap.android.title": "Doughnut Forge for Android",
   "roadmap.small.title": "Smaller improvements",
   "roadmap.small.text": "Small fixes and improvements to Doughnut Forge 2.",
