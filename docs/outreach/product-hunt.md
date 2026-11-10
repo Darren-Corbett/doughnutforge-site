@@ -1,6 +1,6 @@
 # Product Hunt listing (draft, not submitted)
 
-Status: draft for the owner. Nothing is posted or sent. Describes the app on sale today (v1). Product Hunt rewards a fresh launch, so the owner may prefer to launch when v2 is live (see the morning list question). Facts come from the site and the store listing, with sources in `docs/BLOG-CLAIMS.md`.
+Status: draft for the owner. Nothing is posted or sent. Describes the app on sale today (v1). Launch it once v2 is live, with the v2 screenshots (owner, 10 November 2026). Facts come from the site and the store listing, with sources in `docs/BLOG-CLAIMS.md`.
 
 ## Name
 Doughnut Forge
@@ -37,4 +37,4 @@ It has not had an independent security audit yet. One is planned, and it is on t
 
 It is on iPhone, iPad, Mac and Windows today, in 30 languages. Android is coming.
 
-Questions and criticism are welcome here, or in public on GitHub: https://github.com/Darren-Corbett/forge-privacy/issues
+Questions and criticism are welcome in the comments.
