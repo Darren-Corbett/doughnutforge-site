@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -220,13 +220,20 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac, then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -446,13 +453,20 @@
         "issue": "v2 copy, re-check: Re-checked: the ambiguous 'Sie sind die einzige Möglichkeit' is now 'Nur mit ihnen können Sie ...', clearly about the words. 'Wiederherstellungswörter' matches the de release notes; 'Meine Identität erstellen' in quotes „“; meaning, 24 words, PDF warning and contacts sentence all kept; formal Sie kept.",
         "backTranslation": "Keep your 24 recovery words safe: only with them can you restore your identity or reset a forgotten password. / ... starts with a short welcome and then one choice: create or restore identity. When you create it the app gives you 24 recovery words ... / When you choose 'Create my identity' ... the app asks for two of them so you notice a mistake in your copy ... This PDF is not encrypted: print it, then delete it, and do not keep it in iCloud Drive, Dropbox or any other synced folder. Your contacts are not part of your recovery words.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -605,13 +619,20 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts also come back.",
+        "suggestion": "None."
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -807,13 +828,20 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1026,13 +1054,27 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of your iPhone, iPad or Mac and afterwards enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.backup.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: ‘Mijn identiteit maken’ equals app text; “Als u ‘Mijn identiteit maken’ kiest” reads correctly. Only change in this key. Needs a stamp after review (changed since stamped).",
+        "backTranslation": "If you choose ‘Create my identity’, the app gives you 24 recovery words.",
+        "suggestion": "None."
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1211,13 +1253,20 @@
         "issue": "v2 copy: ”Återställningsord och återställning av lösenordet” repeats återställ- twice; correct but heavy.",
         "backTranslation": "Recovery words and resetting the password",
         "suggestion": "Optional: ”Återställningsord och nytt lösenord”."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not give you back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1403,13 +1452,20 @@
         "issue": "v2 copy: Drafter point 1: ”i menulinjen” (in the menu bar) for English File menu, as in the da Mac release notes. True, slightly less specific. Acceptable.",
         "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the menu bar with keyboard shortcuts.",
         "suggestion": "Keep."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1636,13 +1692,20 @@
         "issue": "v2 copy: ”Sen valitseminen, kuka voi avata tiedoston” is correct but a little stiff for a caption.",
         "backTranslation": "Choosing who can open the file",
         "suggestion": "Optional: ”Kuka voi avata tiedoston -valinta”."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of the iPhone, iPad or Mac and then enter your recovery words, your contacts are restored too.",
+        "suggestion": "None."
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1827,13 +1890,20 @@
         "issue": "v2 copy: Drafter point 1: ”i menylinjen” (in the menu bar) for File menu, as in the no Mac release notes. True, slightly less specific. Acceptable.",
         "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the menu bar, with shortcuts.",
         "suggestion": "Keep."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not give you back your contacts. If you first restore a backup of iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2032,13 +2102,20 @@
         "issue": "v2 copy: Drafter point 1: ”na pasku menu” (in the menu bar) for File menu, as in the pl Mac release notes. True, slightly less specific. Acceptable.",
         "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "Keep."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not restore your contacts. If you first restore a backup of the iPhone, iPad or Mac, and then type the recovery words, your contacts will come back too.",
+        "suggestion": "None."
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2246,13 +2323,27 @@
         "issue": "v2 copy, re-check: Re-checked: 'mohu' now matches the standard register of the other FAQ questions; gender-neutral 'Nepamatuji si heslo' keeps the meaning. check-translations passes.",
         "backTranslation": "I do not remember my password. What can I do?",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words will not restore your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter the recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.backup.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: „Vytvořit mou identitu“ equals app text; grammar around it fine. Restore button „Už mám obnovovací slova“ also equals app text and reads fine after “zvolte”. Needs a stamp after review.",
+        "backTranslation": "When you choose 'Create my identity', the app gives you 24 recovery words.",
+        "suggestion": "None."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2456,13 +2547,27 @@
         "issue": "v2 copy: Drafter point 1: ”a menüsorban” (in the menu bar) for File menu, as in the hu Mac release notes. True, slightly less specific. Acceptable.",
         "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "Keep."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore the iPhone, iPad or Mac backup and afterwards enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.backup.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: „Identitásom létrehozása” equals app text; article correctly changed a -> az before the vowel. Needs a stamp after review.",
+        "backTranslation": "When you choose the 'Create my identity' option, the app gives 24 recovery words.",
+        "suggestion": "None."
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2699,13 +2804,20 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter the recovery words, your contacts come back too.",
+        "suggestion": "None."
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2927,13 +3039,20 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of the iPhone, iPad or Mac, and then enter the recovery words, your contacts will come back too.",
+        "suggestion": "None."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3151,13 +3270,20 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter the recovery words, your contacts come back too.",
+        "suggestion": "None."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3366,6 +3492,13 @@
         "issue": "v2 copy, re-check: Re-checked: Settings tab is now 'Параметри', matching the uk screenshot tab bar (Файли, Текст, Особистість, Контакти, Параметри). Scope: tab bar on iPhone, hiding on iPhone and iPad, as in the English. 'перемикач програм' matches the uk iOS notes.",
         "backTranslation": "On iPhone, a tab bar: Files, Text, Identity, Contacts and Settings. On iPhone and iPad the app is hidden in the app switcher.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of the iPhone, iPad or Mac, and then enter the recovery words, your contacts will come back too.",
+        "suggestion": "None."
       }
     ]
   },
@@ -3401,7 +3534,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3555,13 +3688,20 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts also come back.",
+        "suggestion": "None."
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -3762,13 +3902,20 @@
         "issue": "v2 copy, re-check: Re-checked: 'interrompe' removes the 'para' ambiguity. Meaning and scope (Mac and Windows for folders) match the English; grammar fine.",
         "backTranslation": "Cancel interrupts the encrypting or decrypting of a file, and nothing is saved. On Mac and Windows, it also interrupts a folder: the files already finished are kept.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of your iPhone, iPad or Mac and then type your recovery words, your contacts come back too.",
+        "suggestion": "None."
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3970,13 +4117,27 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore your iPhone, iPad or Mac backup, then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “Kurtarma kelimelerim zaten var” equals app text; “… seçeneğini seçin” reads correctly. The conditional “geri yükler, ardından … girerseniz” is a correct suspended-suffix construction. src/i18n/review.json still quotes the old button name in a historical note (no site impact).",
+        "backTranslation": "Choose the 'I already have recovery words' option.",
+        "suggestion": "None."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -4157,13 +4318,27 @@
         "issue": "v2 copy, re-check: Re-checked: first sentence now reads naturally ('starts with a short welcome screen, then there is only one choice'). 24 recovery words, write down and keep safe, only way to restore identity or reset forgotten password all kept; polite です/ます register kept.",
         "backTranslation": "Doughnut Forge starts with a short welcome screen, and after that there is just one choice: create your identity or restore it. When you create it, the app shows you 24 recovery words. Write them down and keep them in a safe place. They are the only way to restore your identity or reset a forgotten password.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "With the recovery words, contacts do not come back. If you restore an iPhone, iPad, Mac backup first and then enter the recovery words, contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Platform list “iPhone、iPad、Mac” has no explicit 'or', matching the earlier sentence in the same string; natural in Japanese.",
+        "backTranslation": "",
+        "suggestion": "None."
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4358,13 +4533,20 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words cannot get back your contacts. If you first restore the iPhone, iPad or Mac backup, then enter the recovery words, your contacts will also come back.",
+        "suggestion": "None."
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4586,13 +4768,20 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words cannot get back your contacts. If you first restore the iPhone, iPad or Mac backup, then enter the recovery words, your contacts will also come back.",
+        "suggestion": "None."
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4794,13 +4983,27 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "With recovery words, contacts do not come back. If you restore the iPhone, iPad, Mac backup first and then enter the recovery words, contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Platform list “iPhone, iPad, Mac” without 'or' matches the earlier sentence in the same string; natural in Korean.",
+        "backTranslation": "",
+        "suggestion": "None."
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4975,13 +5178,27 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore the backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts also come back.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.backup.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “मेरी पहचान बनाएं” equals app text (only the nasal mark changed). Other hi keys keep बनाएँ in plain prose; acceptable since not a button quote, but the site now mixes both spellings. src/i18n/review.json line ~4968 still quotes the old spelling in a historical note (no site impact). Needs a stamp after review.",
+        "backTranslation": "When you choose 'Create my identity', the app gives you 24 recovery words.",
+        "suggestion": "Optional: align the two prose uses to बनाएं later for consistency."
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5182,13 +5399,20 @@
         "issue": "v2 copy, re-check: Re-checked: renders as 'iPhone: layar untuk memilih siapa yang dapat membuka file' ('screen for choosing who can open a file'); lower case right after 'layar'. Natural and faithful.",
         "backTranslation": "for choosing who can open a file",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not return your contacts. If you first restore the backup of your iPhone, iPad, or Mac, then enter your recovery words, your contacts also return.",
+        "suggestion": "None."
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5390,13 +5614,27 @@
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not return your contacts. If you restore your iPhone, iPad or Mac backup first and then enter your recovery words, your contacts also come back.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “Saya sudah mempunyai perkataan pemulihan” equals app text; “pilih “…” dan masukkan perkataan itu” reads correctly.",
+        "backTranslation": "Choose 'I already have recovery words' and enter those words.",
+        "suggestion": "None."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5576,13 +5814,27 @@
         "issue": "v2 copy, re-check: The Mac release note line 9 spells Lock as 'ล็อค'; the site uses 'ล็อก', which matches the iOS and Windows notes, the other Mac lines and the rest of th.ts (Royal Institute spelling). Fine as is.",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
         "suggestion": "Keep 'ล็อก'."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not bring your contacts back. If you restore the backup of the iPhone, iPad or Mac first, and only then enter the recovery words, your contacts will come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Dropping the leading แต่ (but) is correct: the new sentence stands alone like the English. ไม่ได้นำ…กลับมา matches the construction already used earlier in the same string.",
+        "backTranslation": "",
+        "suggestion": "None."
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-09",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5767,6 +6019,20 @@
         "severity": "note",
         "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
         "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "The recovery words do not bring your contacts back. If you restore the iPhone, iPad or Mac backup first and only then enter the recovery words, your contacts will come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “Tôi đã có từ khôi phục” equals app text; “chọn “…” và nhập các từ đó” reads correctly.",
+        "backTranslation": "Choose 'I already have recovery words' and enter those words.",
         "suggestion": "None."
       }
     ]
