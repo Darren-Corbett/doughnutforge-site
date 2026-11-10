@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: офлайн-шифрование файлов для Mac, Windows, iPhone и iPad",
-  "meta.home.description": "Шифруйте файлы и текст на iPhone, iPad, Mac и ПК. На компьютере можно шифровать и папки. Без аккаунта, серверов и подписки. Разовая покупка для каждой платформы.",
+  "meta.home.title": "Doughnut Forge: офлайн-шифрование файлов для iPhone, iPad, Mac и Windows",
+  "meta.home.description": "Doughnut Forge: офлайн-шифрование файлов для iPhone, iPad, Mac и ПК. Шифруйте файлы и текст для тех, кого вы выберете. Без аккаунта, серверов и подписки.",
   "nav.label": "Основное меню",
   "nav.features": "Функции",
   "nav.pricing": "Цены",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Безопасность",
   "nav.home": "Doughnut Forge: главная страница",
   "skip": "Перейти к содержимому",
-  "home.summary": "Офлайн-шифрование файлов для Mac, iPhone, iPad и Windows.",
+  "home.summary": "Офлайн-шифрование файлов для iPhone, iPad, Mac и Windows.",
   "home.tagline": "Открыть их смогут только те, кого вы выберете.",
   "home.lead": "Doughnut Forge защищает ваши файлы и текст на iPhone, iPad или компьютере и позволяет делиться ими с теми, кому вы доверяете.",
   "home.what.title": "Что такое Doughnut Forge?",

@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: penyulitan fail luar talian untuk Mac, Windows, iPhone dan iPad",
-  "meta.home.description": "Sulitkan fail dan teks pada iPhone, iPad, Mac dan PC. Pada komputer, anda juga boleh menyulitkan folder. Tiada akaun, pelayan atau langganan. Beli sekali bagi setiap platform.",
+  "meta.home.title": "Doughnut Forge: penyulitan fail luar talian untuk iPhone, iPad, Mac dan Windows",
+  "meta.home.description": "Doughnut Forge: penyulitan fail luar talian untuk iPhone, iPad, Mac dan PC. Sulitkan fail dan teks untuk orang yang anda pilih. Tiada akaun, pelayan atau langganan.",
   "nav.label": "Utama",
   "nav.features": "Ciri",
   "nav.pricing": "Harga",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Keselamatan",
   "nav.home": "Laman utama Doughnut Forge",
   "skip": "Langkau ke kandungan",
-  "home.summary": "Penyulitan fail luar talian untuk Mac, iPhone, iPad dan Windows.",
+  "home.summary": "Penyulitan fail luar talian untuk iPhone, iPad, Mac dan Windows.",
   "home.tagline": "Hanya orang yang anda pilih boleh membukanya.",
   "home.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai.",
   "home.what.title": "Apakah itu Doughnut Forge?",

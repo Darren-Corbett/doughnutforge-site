@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: เข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, Windows, iPhone และ iPad",
-  "meta.home.description": "เข้ารหัสไฟล์และข้อความบน iPhone, iPad, Mac และ PC บนคอมพิวเตอร์ คุณยังเข้ารหัสโฟลเดอร์ได้ด้วย ไม่มีบัญชี ไม่มีเซิร์ฟเวอร์ ไม่มีการสมัครสมาชิก ซื้อครั้งเดียวสำหรับแต่ละแพลตฟอร์ม",
+  "meta.home.title": "Doughnut Forge: เข้ารหัสไฟล์แบบออฟไลน์สำหรับ iPhone, iPad, Mac และ Windows",
+  "meta.home.description": "Doughnut Forge: เข้ารหัสไฟล์แบบออฟไลน์สำหรับ iPhone, iPad, Mac และ PC เข้ารหัสไฟล์และข้อความสำหรับคนที่คุณเลือก ไม่มีบัญชี ไม่มีเซิร์ฟเวอร์ ไม่มีการสมัครสมาชิก",
   "nav.label": "เมนูหลัก",
   "nav.features": "ฟีเจอร์",
   "nav.pricing": "ราคา",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "ความปลอดภัย",
   "nav.home": "หน้าแรก Doughnut Forge",
   "skip": "ข้ามไปยังเนื้อหา",
-  "home.summary": "เข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, iPhone, iPad และ Windows",
+  "home.summary": "เข้ารหัสไฟล์แบบออฟไลน์สำหรับ iPhone, iPad, Mac และ Windows",
   "home.tagline": "มีเพียงคนที่คุณเลือกเท่านั้นที่เปิดได้",
   "home.lead": "Doughnut Forge ล็อกไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณ และให้คุณแชร์กับคนที่คุณไว้ใจได้",
   "home.what.title": "Doughnut Forge คืออะไร?",

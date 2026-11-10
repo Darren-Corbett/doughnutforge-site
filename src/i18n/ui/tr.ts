@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: Mac, Windows, iPhone ve iPad için çevrimdışı dosya şifreleme",
-  "meta.home.description": "iPhone, iPad, Mac ve PC'de dosya ve metinleri şifreleyin. Bilgisayarda klasörleri de şifreleyebilirsiniz. Hesap, sunucu ve abonelik yok. Her platform için tek seferlik satın alma.",
+  "meta.home.title": "Doughnut Forge: iPhone, iPad, Mac ve Windows için çevrimdışı dosya şifreleme",
+  "meta.home.description": "Doughnut Forge: iPhone, iPad, Mac ve PC için çevrimdışı dosya şifreleme. Dosya ve metinleri seçtiğiniz kişiler için şifreleyin. Hesap, sunucu ve abonelik yok.",
   "nav.label": "Ana menü",
   "nav.features": "Özellikler",
   "nav.pricing": "Fiyatlar",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Güvenlik",
   "nav.home": "Doughnut Forge ana sayfası",
   "skip": "İçeriğe geç",
-  "home.summary": "Mac, iPhone, iPad ve Windows için çevrimdışı dosya şifreleme.",
+  "home.summary": "iPhone, iPad, Mac ve Windows için çevrimdışı dosya şifreleme.",
   "home.tagline": "Onları yalnızca seçtiğiniz kişiler açabilir.",
   "home.lead": "Doughnut Forge, iPhone, iPad veya bilgisayarınızdaki dosyaları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar.",
   "home.what.title": "Doughnut Forge nedir?",

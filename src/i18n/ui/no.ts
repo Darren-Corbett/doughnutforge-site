@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: offline filkryptering for Mac, Windows, iPhone og iPad",
-  "meta.home.description": "Krypter filer og tekst på iPhone, iPad, Mac og PC. På en datamaskin kan du også kryptere mapper. Ingen konto, ingen servere, ingen abonnement. Et engangskjøp per plattform.",
+  "meta.home.title": "Doughnut Forge: offline filkryptering for iPhone, iPad, Mac og Windows",
+  "meta.home.description": "Doughnut Forge: offline filkryptering for iPhone, iPad, Mac og PC. Krypter filer og tekst for de personene du velger. Ingen konto, ingen servere, ingen abonnement.",
   "nav.label": "Hovedmeny",
   "nav.features": "Funksjoner",
   "nav.pricing": "Priser",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Sikkerhet",
   "nav.home": "Doughnut Forge, startside",
   "skip": "Hopp til innholdet",
-  "home.summary": "Offline filkryptering for Mac, iPhone, iPad og Windows.",
+  "home.summary": "Offline filkryptering for iPhone, iPad, Mac og Windows.",
   "home.tagline": "Bare de du velger, kan åpne dem.",
   "home.lead": "Doughnut Forge låser filene og teksten din på iPhone, iPad eller datamaskinen og lar deg dele dem med folk du stoler på.",
   "home.what.title": "Hva er Doughnut Forge?",

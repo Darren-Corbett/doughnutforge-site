@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: Offline-Dateiverschlüsselung für Mac, Windows, iPhone und iPad",
-  "meta.home.description": "Verschlüsseln Sie Dateien und Texte auf iPhone, iPad, Mac und PC. Auf dem Computer verschlüsseln Sie auch Ordner. Kein Konto, keine Server, kein Abo. Ein Einmalkauf pro Plattform.",
+  "meta.home.title": "Doughnut Forge: Offline-Dateiverschlüsselung für iPhone, iPad, Mac und Windows",
+  "meta.home.description": "Doughnut Forge: Offline-Dateiverschlüsselung für iPhone, iPad, Mac und PC. Verschlüsseln Sie Dateien und Texte für Menschen Ihrer Wahl. Kein Konto, keine Server, kein Abo.",
   "nav.label": "Hauptmenü",
   "nav.features": "Funktionen",
   "nav.pricing": "Preise",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Sicherheit",
   "nav.home": "Startseite von Doughnut Forge",
   "skip": "Zum Inhalt springen",
-  "home.summary": "Offline-Dateiverschlüsselung für Mac, iPhone, iPad und Windows.",
+  "home.summary": "Offline-Dateiverschlüsselung für iPhone, iPad, Mac und Windows.",
   "home.tagline": "Nur die Menschen, die Sie auswählen, können sie öffnen.",
   "home.lead": "Doughnut Forge verschlüsselt Ihre Dateien und Texte auf Ihrem iPhone, iPad oder Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen.",
   "home.what.title": "Was ist Doughnut Forge?",

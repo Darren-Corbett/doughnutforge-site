@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge：Mac、Windows、iPhone、iPad向けオフラインファイル暗号化",
-  "meta.home.description": "iPhone、iPad、Mac、PCでファイルとテキストを暗号化できます。コンピュータではフォルダも暗号化できます。アカウントなし、サーバーなし、サブスクなし。プラットフォームごとの買い切りです。",
+  "meta.home.title": "Doughnut Forge：iPhone、iPad、Mac、Windows向けオフラインファイル暗号化",
+  "meta.home.description": "Doughnut Forge：iPhone、iPad、Mac、PC向けオフラインファイル暗号化。ファイルとテキストを、あなたが選んだ相手に向けて暗号化できます。アカウントなし、サーバーなし、サブスクなし。",
   "nav.label": "メインメニュー",
   "nav.features": "機能",
   "nav.pricing": "価格",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "セキュリティ",
   "nav.home": "Doughnut Forgeのホーム",
   "skip": "本文へスキップ",
-  "home.summary": "Mac、iPhone、iPad、Windows向けのオフラインファイル暗号化。",
+  "home.summary": "iPhone、iPad、Mac、Windows向けのオフラインファイル暗号化。",
   "home.tagline": "開けるのは、あなたが選んだ相手だけです。",
   "home.lead": "Doughnut Forgeは、iPhone、iPad、コンピュータ上のファイルとテキストをロックし、信頼できる相手と共有できるようにします。",
   "home.what.title": "Doughnut Forgeとは？",

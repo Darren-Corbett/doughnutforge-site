@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: Mac, Windows, iPhone और iPad के लिए ऑफ़लाइन फ़ाइल एन्क्रिप्शन",
-  "meta.home.description": "iPhone, iPad, Mac और PC पर फ़ाइलें और टेक्स्ट एन्क्रिप्ट करें। कंप्यूटर पर आप फ़ोल्डर भी एन्क्रिप्ट कर सकते हैं। कोई अकाउंट नहीं, कोई सर्वर नहीं, कोई सब्सक्रिप्शन नहीं। हर प्लेटफ़ॉर्म के लिए एक बार की खरीद।",
+  "meta.home.title": "Doughnut Forge: iPhone, iPad, Mac और Windows के लिए ऑफ़लाइन फ़ाइल एन्क्रिप्शन",
+  "meta.home.description": "Doughnut Forge: iPhone, iPad, Mac और PC के लिए ऑफ़लाइन फ़ाइल एन्क्रिप्शन। अपने चुने हुए लोगों के लिए फ़ाइलें और टेक्स्ट एन्क्रिप्ट करें। कोई अकाउंट, सर्वर या सब्सक्रिप्शन नहीं।",
   "nav.label": "मुख्य मेनू",
   "nav.features": "फ़ीचर",
   "nav.pricing": "कीमत",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "सुरक्षा",
   "nav.home": "Doughnut Forge होम",
   "skip": "सीधे सामग्री पर जाएँ",
-  "home.summary": "Mac, iPhone, iPad और Windows के लिए ऑफ़लाइन फ़ाइल एन्क्रिप्शन।",
+  "home.summary": "iPhone, iPad, Mac और Windows के लिए ऑफ़लाइन फ़ाइल एन्क्रिप्शन।",
   "home.tagline": "इन्हें केवल वही लोग खोल सकते हैं जिन्हें आप चुनते हैं।",
   "home.lead": "Doughnut Forge आपके iPhone, iPad या कंप्यूटर पर आपकी फ़ाइलों और टेक्स्ट को लॉक करता है और आपको उन्हें अपने भरोसेमंद लोगों के साथ शेयर करने देता है।",
   "home.what.title": "Doughnut Forge क्या है?",

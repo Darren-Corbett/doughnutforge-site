@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: crittografia offline dei file per Mac, Windows, iPhone e iPad",
-  "meta.home.description": "Crittografa file e testo su iPhone, iPad, Mac e PC. Sul computer, crittografa anche le cartelle. Niente account, server o abbonamento. Un acquisto una tantum per ogni piattaforma.",
+  "meta.home.title": "Doughnut Forge: crittografia offline dei file per iPhone, iPad, Mac e Windows",
+  "meta.home.description": "Doughnut Forge: crittografia offline dei file per iPhone, iPad, Mac e PC. Crittografa file e testo per le persone che scegli. Niente account, server o abbonamento.",
   "nav.label": "Principale",
   "nav.features": "Funzioni",
   "nav.pricing": "Prezzi",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Sicurezza",
   "nav.home": "Home di Doughnut Forge",
   "skip": "Vai al contenuto",
-  "home.summary": "Crittografia offline dei file per Mac, iPhone, iPad e Windows.",
+  "home.summary": "Crittografia offline dei file per iPhone, iPad, Mac e Windows.",
   "home.tagline": "Solo le persone che scegli possono aprirli.",
   "home.lead": "Doughnut Forge blocca file e testo sul tuo iPhone, iPad o computer e ti permette di condividerli con le persone di cui ti fidi.",
   "home.what.title": "Che cos'è Doughnut Forge?",

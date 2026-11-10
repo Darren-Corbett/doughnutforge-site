@@ -227,6 +227,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac, then enter your recovery words, your contacts come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 180 chars, over 170; no shorter wording with the same meaning is clearly better (\"de votre choix\" is already the short exact form). 'Sans compte, serveur ni abonnement' is the file's existing wording.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for the people of your choice. Without account, server or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -460,6 +481,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 171 chars, one over 170; acceptable. 'Menschen Ihrer Wahl' is exact; formal Sie kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for people of your choice. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -626,6 +668,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts also come back.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 'para quien elijas' keeps the meaning exactly; tú register kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whoever you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -835,6 +898,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; list form matches the previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, server or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -1068,6 +1152,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Button fix checked: ‘Mijn identiteit maken’ equals app text; “Als u ‘Mijn identiteit maken’ kiest” reads correctly. Only change in this key. Needs a stamp after review (changed since stamped).",
         "backTranslation": "If you choose ‘Create my identity’, the app gives you 24 recovery words.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 'voor wie u kiest' exact; formal u kept, matches home.tagline.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whom you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -1260,6 +1365,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Your recovery words do not give you back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 'för dem du väljer' exact and matches home.tagline.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -1459,6 +1585,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -1699,6 +1846,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of the iPhone, iPad or Mac and then enter your recovery words, your contacts are restored too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 173 chars; no clearly shorter equivalent. 'valitsemillesi ihmisille' exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for people you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -1897,6 +2065,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Your recovery words do not give you back your contacts. If you first restore a backup of iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact. 'ingen abonnement' (rather than 'ikke noe abonnement') is carried over unchanged from the previous string; colloquially accepted.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -2109,6 +2298,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Recovery words do not restore your contacts. If you first restore a backup of the iPhone, iPad or Mac, and then type the recovery words, your contacts will come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; dash after 'offline' matches the title's existing style.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -2337,6 +2547,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Button fix checked: „Vytvořit mou identitu“ equals app text; grammar around it fine. Restore button „Už mám obnovovací slova“ also equals app text and reads fine after “zvolte”. Needs a stamp after review.",
         "backTranslation": "When you choose 'Create my identity', the app gives you 24 recovery words.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; formal vy kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -2561,6 +2792,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Button fix checked: „Identitásom létrehozása” equals app text; article correctly changed a -> az before the vowel. Needs a stamp after review.",
         "backTranslation": "When you choose the 'Create my identity' option, the app gives 24 recovery words.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; informal te kept as in the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. Without account, server and subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -2811,6 +3063,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter the recovery words, your contacts come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Merged list 'Fără cont, servere sau abonament' still means exactly 'no account, no servers, no subscription'. Fine.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -3046,6 +3319,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of the iPhone, iPad or Mac, and then enter the recovery words, your contacts will come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; matches home.tagline phrasing.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -3277,6 +3571,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter the recovery words, your contacts come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 172 chars; 'για όσους επιλέξετε' is already short. Fine.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whoever you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -3499,6 +3814,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of the iPhone, iPad or Mac, and then enter the recovery words, your contacts will come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -3695,6 +4031,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts also come back.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Same as es; fine for Mexico.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whoever you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -3909,6 +4266,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of your iPhone, iPad or Mac and then type your recovery words, your contacts come back too.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Merged list 'Sem conta, servidores ou assinatura' is exact; 'para quem você escolher' exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for whoever you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -4131,6 +4509,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “Kurtarma kelimelerim zaten var” equals app text; “… seçeneğini seçin” reads correctly. The conditional “geri yükler, ardından … girerseniz” is a correct suspended-suffix construction. src/i18n/review.json still quotes the old button name in a historical note (no site impact).",
         "backTranslation": "Choose the 'I already have recovery words' option.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; formal siz kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for the people you choose. No account, server or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -4332,6 +4731,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Platform list “iPhone、iPad、Mac” has no explicit 'or', matching the earlier sentence in the same string; natural in Japanese.",
         "backTranslation": "",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; desu/masu register and 'サブスクなし' carried over from the previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. You can encrypt files and text for the people you chose. No account, no server, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -4540,6 +4960,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Recovery words cannot get back your contacts. If you first restore the iPhone, iPad or Mac backup, then enter the recovery words, your contacts will also come back.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; 您 kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account needed, no servers, no subscription needed.",
+        "suggestion": ""
       }
     ]
   },
@@ -4775,6 +5216,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Recovery words cannot get back your contacts. If you first restore the iPhone, iPad or Mac backup, then enter the recovery words, your contacts will also come back.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; 您 kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account needed, no servers, no subscription needed.",
+        "suggestion": ""
       }
     ]
   },
@@ -4997,6 +5459,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Platform list “iPhone, iPad, Mac” without 'or' matches the earlier sentence in the same string; natural in Korean.",
         "backTranslation": "",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; '내가 선택한' matches home.tagline.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people I choose. No account, no server, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -5192,6 +5675,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “मेरी पहचान बनाएं” equals app text (only the nasal mark changed). Other hi keys keep बनाएँ in plain prose; acceptable since not a button quote, but the site now mixes both spellings. src/i18n/review.json line ~4968 still quotes the old spelling in a historical note (no site impact). Needs a stamp after review.",
         "backTranslation": "When you choose 'Create my identity', the app gives you 24 recovery words.",
         "suggestion": "Optional: align the two prose uses to बनाएं later for consistency."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 176 chars; merged list is exact in meaning. Optional shorter: 'चुने हुए लोगों के लिए' (drop 'अपने'), not needed.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for people you have chosen. No account, server or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -5406,6 +5910,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
         "backTranslation": "Your recovery words do not return your contacts. If you first restore the backup of your iPhone, iPad, or Mac, then enter your recovery words, your contacts also return.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; Anda kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no server, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -5628,6 +6153,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “Saya sudah mempunyai perkataan pemulihan” equals app text; “pilih “…” dan masukkan perkataan itu” reads correctly.",
         "backTranslation": "Choose 'I already have recovery words' and enter those words.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; matches previous list form.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, server or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -5828,6 +6374,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Dropping the leading แต่ (but) is correct: the new sentence stands alone like the English. ไม่ได้นำ…กลับมา matches the construction already used earlier in the same string.",
         "backTranslation": "",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no server, no subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -6034,6 +6601,27 @@
         "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “Tôi đã có từ khôi phục” equals app text; “chọn “…” và nhập các từ đó” reads correctly.",
         "backTranslation": "Choose 'I already have recovery words' and enter those words.",
         "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no server, no subscription.",
+        "suggestion": ""
       }
     ]
   }

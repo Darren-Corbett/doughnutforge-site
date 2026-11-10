@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: mã hóa tệp ngoại tuyến cho Mac, Windows, iPhone và iPad",
-  "meta.home.description": "Mã hóa tệp và văn bản trên iPhone, iPad, Mac và PC. Trên máy tính, bạn còn có thể mã hóa thư mục. Không tài khoản, không máy chủ, không thuê bao. Mua một lần cho mỗi nền tảng.",
+  "meta.home.title": "Doughnut Forge: mã hóa tệp ngoại tuyến cho iPhone, iPad, Mac và Windows",
+  "meta.home.description": "Doughnut Forge: mã hóa tệp ngoại tuyến cho iPhone, iPad, Mac và PC. Mã hóa tệp và văn bản cho những người bạn chọn. Không tài khoản, không máy chủ, không thuê bao.",
   "nav.label": "Chính",
   "nav.features": "Tính năng",
   "nav.pricing": "Giá",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Bảo mật",
   "nav.home": "Trang chủ Doughnut Forge",
   "skip": "Chuyển đến nội dung",
-  "home.summary": "Mã hóa tệp ngoại tuyến cho Mac, iPhone, iPad và Windows.",
+  "home.summary": "Mã hóa tệp ngoại tuyến cho iPhone, iPad, Mac và Windows.",
   "home.tagline": "Chỉ những người bạn chọn mới mở được.",
   "home.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng.",
   "home.what.title": "Doughnut Forge là gì?",

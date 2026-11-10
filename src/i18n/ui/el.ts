@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: offline κρυπτογράφηση αρχείων για Mac, Windows, iPhone και iPad",
-  "meta.home.description": "Κρυπτογραφήστε αρχεία και κείμενο σε iPhone, iPad, Mac και PC. Σε υπολογιστή μπορείτε να κρυπτογραφήσετε και φακέλους. Χωρίς λογαριασμό, διακομιστές ή συνδρομή. Εφάπαξ αγορά ανά πλατφόρμα.",
+  "meta.home.title": "Doughnut Forge: offline κρυπτογράφηση αρχείων για iPhone, iPad, Mac και Windows",
+  "meta.home.description": "Doughnut Forge: offline κρυπτογράφηση αρχείων για iPhone, iPad, Mac και PC. Κρυπτογραφήστε αρχεία και κείμενο για όσους επιλέξετε. Χωρίς λογαριασμό, διακομιστές ή συνδρομή.",
   "nav.label": "Κύριο μενού",
   "nav.features": "Λειτουργίες",
   "nav.pricing": "Τιμές",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Ασφάλεια",
   "nav.home": "Doughnut Forge: αρχική σελίδα",
   "skip": "Μετάβαση στο περιεχόμενο",
-  "home.summary": "Offline κρυπτογράφηση αρχείων για Mac, iPhone, iPad και Windows.",
+  "home.summary": "Offline κρυπτογράφηση αρχείων για iPhone, iPad, Mac και Windows.",
   "home.tagline": "Μόνο όσοι επιλέξετε μπορούν να τα ανοίξουν.",
   "home.lead": "Το Doughnut Forge κλειδώνει τα αρχεία και το κείμενό σας στο iPhone, το iPad ή τον υπολογιστή σας και σας επιτρέπει να τα μοιράζεστε με όσους εμπιστεύεστε.",
   "home.what.title": "Τι είναι το Doughnut Forge;",

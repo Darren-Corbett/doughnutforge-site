@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: Mac, Windows, iPhone, iPad용 오프라인 파일 암호화",
-  "meta.home.description": "iPhone, iPad, Mac, PC에서 파일과 텍스트를 암호화하세요. 컴퓨터에서는 폴더도 암호화할 수 있습니다. 계정도, 서버도, 구독도 없습니다. 플랫폼마다 한 번만 구매하면 됩니다.",
+  "meta.home.title": "Doughnut Forge: iPhone, iPad, Mac, Windows용 오프라인 파일 암호화",
+  "meta.home.description": "Doughnut Forge: iPhone, iPad, Mac, PC용 오프라인 파일 암호화. 내가 선택한 사람을 위해 파일과 텍스트를 암호화하세요. 계정도, 서버도, 구독도 없습니다.",
   "nav.label": "주 메뉴",
   "nav.features": "기능",
   "nav.pricing": "가격",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "보안",
   "nav.home": "Doughnut Forge 홈",
   "skip": "본문으로 건너뛰기",
-  "home.summary": "Mac, iPhone, iPad, Windows용 오프라인 파일 암호화.",
+  "home.summary": "iPhone, iPad, Mac, Windows용 오프라인 파일 암호화.",
   "home.tagline": "내가 선택한 사람만 열 수 있습니다.",
   "home.lead": "Doughnut Forge는 iPhone, iPad 또는 컴퓨터의 파일과 텍스트를 잠그고 신뢰하는 사람과 공유할 수 있게 해 줍니다.",
   "home.what.title": "Doughnut Forge란?",

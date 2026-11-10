@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: šifrování souborů offline pro Mac, Windows, iPhone a iPad",
-  "meta.home.description": "Šifrujte soubory a text v iPhonu, iPadu, Macu a PC. V počítači můžete šifrovat i složky. Bez účtu, serverů a předplatného. Jednorázový nákup pro každou platformu.",
+  "meta.home.title": "Doughnut Forge: šifrování souborů offline pro iPhone, iPad, Mac a Windows",
+  "meta.home.description": "Doughnut Forge: šifrování souborů offline pro iPhone, iPad, Mac a PC. Šifrujte soubory a text pro lidi, které si vyberete. Bez účtu, serverů a předplatného.",
   "nav.label": "Hlavní nabídka",
   "nav.features": "Funkce",
   "nav.pricing": "Ceník",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Bezpečnost",
   "nav.home": "Doughnut Forge – úvodní stránka",
   "skip": "Přejít na obsah",
-  "home.summary": "Šifrování souborů offline pro Mac, iPhone, iPad a Windows.",
+  "home.summary": "Šifrování souborů offline pro iPhone, iPad, Mac a Windows.",
   "home.tagline": "Otevřít je mohou jen lidé, které si vyberete.",
   "home.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete.",
   "home.what.title": "Co je Doughnut Forge?",

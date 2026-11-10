@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: offline fájltitkosítás Macre, Windowsra, iPhone-ra és iPadre",
-  "meta.home.description": "Titkosíts fájlokat és szöveget iPhone-on, iPaden, Macen és PC-n. Számítógépen mappákat is titkosíthatsz. Fiók, szerver és előfizetés nélkül. Egyszeri vásárlás platformonként.",
+  "meta.home.title": "Doughnut Forge: offline fájltitkosítás iPhone-ra, iPadre, Macre és Windowsra",
+  "meta.home.description": "Doughnut Forge: offline fájltitkosítás iPhone-ra, iPadre, Macre és PC-re. Titkosíts fájlokat és szöveget azoknak, akiket választasz. Fiók, szerver és előfizetés nélkül.",
   "nav.label": "Főmenü",
   "nav.features": "Funkciók",
   "nav.pricing": "Árak",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Biztonság",
   "nav.home": "Doughnut Forge – kezdőlap",
   "skip": "Ugrás a tartalomra",
-  "home.summary": "Offline fájltitkosítás Macre, iPhone-ra, iPadre és Windowsra.",
+  "home.summary": "Offline fájltitkosítás iPhone-ra, iPadre, Macre és Windowsra.",
   "home.tagline": "Csak azok nyithatják meg őket, akiket te választasz.",
   "home.lead": "A Doughnut Forge lezárja a fájljaidat és szövegeidet az iPhone-odon, iPadeden vagy a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol.",
   "home.what.title": "Mi az a Doughnut Forge?",

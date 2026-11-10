@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: szyfrowanie plików offline – Mac, Windows, iPhone i iPad",
-  "meta.home.description": "Szyfruj pliki i tekst na iPhonie, iPadzie, Macu i PC. Na komputerze zaszyfrujesz też foldery. Bez konta, serwerów i subskrypcji. Jednorazowy zakup na każdą platformę.",
+  "meta.home.title": "Doughnut Forge: szyfrowanie plików offline – iPhone, iPad, Mac i Windows",
+  "meta.home.description": "Doughnut Forge: szyfrowanie plików offline – iPhone, iPad, Mac i PC. Szyfruj pliki i tekst dla osób, które wybierzesz. Bez konta, serwerów i subskrypcji.",
   "nav.label": "Menu główne",
   "nav.features": "Funkcje",
   "nav.pricing": "Cennik",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Bezpieczeństwo",
   "nav.home": "Doughnut Forge – strona główna",
   "skip": "Przejdź do treści",
-  "home.summary": "Szyfrowanie plików offline: Mac, iPhone, iPad i Windows.",
+  "home.summary": "Szyfrowanie plików offline: iPhone, iPad, Mac i Windows.",
   "home.tagline": "Otworzyć je mogą tylko osoby, które wybierzesz.",
   "home.lead": "Doughnut Forge blokuje Twoje pliki i tekst na iPhonie, iPadzie lub komputerze i pozwala udostępniać je osobom, którym ufasz.",
   "home.what.title": "Czym jest Doughnut Forge?",

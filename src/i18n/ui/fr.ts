@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge : chiffrement de fichiers hors ligne pour Mac, Windows, iPhone et iPad",
-  "meta.home.description": "Chiffrez fichiers et textes sur iPhone, iPad, Mac et PC. Sur ordinateur, chiffrez aussi des dossiers. Sans compte, serveur ni abonnement. Un achat unique sur chaque plateforme.",
+  "meta.home.title": "Doughnut Forge : chiffrement de fichiers hors ligne pour iPhone, iPad, Mac et Windows",
+  "meta.home.description": "Doughnut Forge : chiffrement de fichiers hors ligne pour iPhone, iPad, Mac et PC. Chiffrez fichiers et textes pour les personnes de votre choix. Sans compte, serveur ni abonnement.",
   "nav.label": "Navigation principale",
   "nav.features": "Fonctions",
   "nav.pricing": "Tarifs",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Sécurité",
   "nav.home": "Accueil Doughnut Forge",
   "skip": "Aller au contenu",
-  "home.summary": "Chiffrement de fichiers hors ligne pour Mac, iPhone, iPad et Windows.",
+  "home.summary": "Chiffrement de fichiers hors ligne pour iPhone, iPad, Mac et Windows.",
   "home.tagline": "Seules les personnes que vous choisissez peuvent les ouvrir.",
   "home.lead": "Doughnut Forge verrouille vos fichiers et textes sur votre iPhone, votre iPad ou votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance.",
   "home.what.title": "Qu'est-ce que Doughnut Forge ?",

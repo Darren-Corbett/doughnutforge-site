@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: cifrado de archivos sin conexión para Mac, Windows, iPhone y iPad",
-  "meta.home.description": "Cifra archivos y texto en iPhone, iPad, Mac y PC. En una computadora, cifra también carpetas. Sin cuenta, sin servidores, sin suscripción. Pago único en cada plataforma.",
+  "meta.home.title": "Doughnut Forge: cifrado de archivos sin conexión para iPhone, iPad, Mac y Windows",
+  "meta.home.description": "Doughnut Forge: cifrado de archivos sin conexión para iPhone, iPad, Mac y PC. Cifra archivos y texto para quien elijas. Sin cuenta, sin servidores, sin suscripción.",
   "nav.label": "Principal",
   "nav.features": "Funciones",
   "nav.pricing": "Precios",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Seguridad",
   "nav.home": "Inicio de Doughnut Forge",
   "skip": "Saltar al contenido",
-  "home.summary": "Cifrado de archivos sin conexión para Mac, iPhone, iPad y Windows.",
+  "home.summary": "Cifrado de archivos sin conexión para iPhone, iPad, Mac y Windows.",
   "home.tagline": "Solo las personas que elijas podrán abrirlos.",
   "home.lead": "Doughnut Forge protege tus archivos y texto en tu iPhone, iPad o computadora y te permite compartirlos con las personas en las que confías.",
   "home.what.title": "¿Qué es Doughnut Forge?",

@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: offline bestandsversleuteling voor Mac, Windows, iPhone en iPad",
-  "meta.home.description": "Versleutel bestanden en tekst op iPhone, iPad, Mac en pc. Op een computer versleutelt u ook mappen. Geen account, geen servers, geen abonnement. Eenmalig kopen per platform.",
+  "meta.home.title": "Doughnut Forge: offline bestandsversleuteling voor iPhone, iPad, Mac en Windows",
+  "meta.home.description": "Doughnut Forge: offline bestandsversleuteling voor iPhone, iPad, Mac en pc. Versleutel bestanden en tekst voor wie u kiest. Geen account, geen servers, geen abonnement.",
   "nav.label": "Hoofdmenu",
   "nav.features": "Functies",
   "nav.pricing": "Prijzen",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Beveiliging",
   "nav.home": "Startpagina van Doughnut Forge",
   "skip": "Naar de inhoud",
-  "home.summary": "Offline bestandsversleuteling voor Mac, iPhone, iPad en Windows.",
+  "home.summary": "Offline bestandsversleuteling voor iPhone, iPad, Mac en Windows.",
   "home.tagline": "Alleen de mensen die u kiest, kunnen ze openen.",
   "home.lead": "Doughnut Forge vergrendelt uw bestanden en tekst op uw iPhone, iPad of computer en laat u ze delen met de mensen die u vertrouwt.",
   "home.what.title": "Wat is Doughnut Forge?",

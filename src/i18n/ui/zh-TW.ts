@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge：適用於 Mac、Windows、iPhone 和 iPad 的離線檔案加密",
-  "meta.home.description": "在 iPhone、iPad、Mac 和 PC 上加密檔案和文字。在電腦上還能加密資料夾。不需帳號、沒有伺服器、不需訂閱。每個平台一次性購買。",
+  "meta.home.title": "Doughnut Forge：適用於 iPhone、iPad、Mac 和 Windows 的離線檔案加密",
+  "meta.home.description": "Doughnut Forge：適用於 iPhone、iPad、Mac 和 PC 的離線檔案加密。為您選擇的人加密檔案和文字。不需帳號、沒有伺服器、不需訂閱。",
   "nav.label": "主選單",
   "nav.features": "功能",
   "nav.pricing": "價格",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "安全性",
   "nav.home": "Doughnut Forge 首頁",
   "skip": "跳到主要內容",
-  "home.summary": "適用於 Mac、iPhone、iPad 和 Windows 的離線檔案加密。",
+  "home.summary": "適用於 iPhone、iPad、Mac 和 Windows 的離線檔案加密。",
   "home.tagline": "只有您選擇的人才能開啟。",
   "home.lead": "Doughnut Forge 在您的 iPhone、iPad 或電腦上鎖定檔案和文字，並讓您與信任的人分享。",
   "home.what.title": "Doughnut Forge 是什麼？",

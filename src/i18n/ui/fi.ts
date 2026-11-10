@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: tiedostojen offline-salaus Macille, Windowsille, iPhonelle ja iPadille",
-  "meta.home.description": "Salaa tiedostot ja tekstit iPhonella, iPadilla, Macilla ja PC:llä. Tietokoneella voit salata myös kansioita. Ei tiliä, ei palvelimia, ei tilausta. Kertaostos jokaiselle alustalle.",
+  "meta.home.title": "Doughnut Forge: tiedostojen offline-salaus iPhonelle, iPadille, Macille ja Windowsille",
+  "meta.home.description": "Doughnut Forge: tiedostojen offline-salaus iPhonelle, iPadille, Macille ja PC:lle. Salaa tiedostot ja tekstit valitsemillesi ihmisille. Ei tiliä, ei palvelimia, ei tilausta.",
   "nav.label": "Päävalikko",
   "nav.features": "Ominaisuudet",
   "nav.pricing": "Hinnat",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Tietoturva",
   "nav.home": "Doughnut Forge, etusivu",
   "skip": "Siirry sisältöön",
-  "home.summary": "Tiedostojen offline-salaus Macille, iPhonelle, iPadille ja Windowsille.",
+  "home.summary": "Tiedostojen offline-salaus iPhonelle, iPadille, Macille ja Windowsille.",
   "home.tagline": "Vain valitsemasi ihmiset voivat avata ne.",
   "home.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa.",
   "home.what.title": "Mikä Doughnut Forge on?",

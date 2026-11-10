@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: enkripsi file offline untuk Mac, Windows, iPhone, dan iPad",
-  "meta.home.description": "Enkripsi file dan teks di iPhone, iPad, Mac, dan PC. Di komputer, Anda juga bisa mengenkripsi folder. Tanpa akun, tanpa server, tanpa langganan. Sekali beli untuk setiap platform.",
+  "meta.home.title": "Doughnut Forge: enkripsi file offline untuk iPhone, iPad, Mac, dan Windows",
+  "meta.home.description": "Doughnut Forge: enkripsi file offline untuk iPhone, iPad, Mac, dan PC. Enkripsi file dan teks untuk orang yang Anda pilih. Tanpa akun, tanpa server, tanpa langganan.",
   "nav.label": "Utama",
   "nav.features": "Fitur",
   "nav.pricing": "Harga",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Keamanan",
   "nav.home": "Beranda Doughnut Forge",
   "skip": "Lewati ke konten",
-  "home.summary": "Enkripsi file offline untuk Mac, iPhone, iPad, dan Windows.",
+  "home.summary": "Enkripsi file offline untuk iPhone, iPad, Mac, dan Windows.",
   "home.tagline": "Hanya orang yang Anda pilih yang dapat membukanya.",
   "home.lead": "Doughnut Forge mengunci file dan teks di iPhone, iPad, atau komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya.",
   "home.what.title": "Apa itu Doughnut Forge?",

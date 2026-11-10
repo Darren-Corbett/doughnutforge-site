@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: criptare offline a fișierelor pentru Mac, Windows, iPhone și iPad",
-  "meta.home.description": "Criptează fișiere și text pe iPhone, iPad, Mac și PC. Pe computer poți cripta și dosare. Fără cont, fără servere, fără abonament. O achiziție unică pentru fiecare platformă.",
+  "meta.home.title": "Doughnut Forge: criptare offline a fișierelor pentru iPhone, iPad, Mac și Windows",
+  "meta.home.description": "Doughnut Forge: criptare offline a fișierelor pentru iPhone, iPad, Mac și PC. Criptează fișiere și text pentru cei pe care îi alegi. Fără cont, servere sau abonament.",
   "nav.label": "Principal",
   "nav.features": "Funcții",
   "nav.pricing": "Prețuri",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Securitate",
   "nav.home": "Pagina principală Doughnut Forge",
   "skip": "Sari la conținut",
-  "home.summary": "Criptare offline a fișierelor pentru Mac, iPhone, iPad și Windows.",
+  "home.summary": "Criptare offline a fișierelor pentru iPhone, iPad, Mac și Windows.",
   "home.tagline": "Doar oamenii pe care îi alegi le pot deschide.",
   "home.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad sau computer și îți permite să le partajezi cu oamenii în care ai încredere.",
   "home.what.title": "Ce este Doughnut Forge?",
