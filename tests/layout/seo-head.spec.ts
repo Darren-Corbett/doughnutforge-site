@@ -10,6 +10,8 @@ import english from "../../src/i18n/ui/en";
 const en = english as Record<string, string>;
 // The iPhone and iPad app, as in stores.spec.ts
 const IOS_ID = "6821344597";
+// The one Organization every page's structured data points at
+const ORG_ID = "https://doughnut-forge.app/#organization";
 
 const jsonLd = async (page: import("@playwright/test").Page) =>
   (await page.locator('script[type="application/ld+json"]').allTextContents()).flatMap((s) => [JSON.parse(s)].flat());
@@ -36,14 +38,33 @@ test("home page: SecurityApplication and Organization structured data", async ({
   expect(app).toMatchObject({ name: "Doughnut Forge", url: "https://doughnut-forge.app/", operatingSystem: "iOS, iPadOS, macOS, Windows", inLanguage: "en-GB" });
   expect(app?.offers).toBeUndefined();
   const org = data.find((d) => d["@type"] === "Organization");
-  expect(org).toMatchObject({ name: "Doughnut Forge", url: "https://doughnut-forge.app/", logo: "https://doughnut-forge.app/icon-512.png" });
-  // The store listings of every platform on sale, mobile first (src/data/stores.ts)
+  expect(org).toMatchObject({
+    "@id": ORG_ID,
+    name: "Doughnut Forge",
+    url: "https://doughnut-forge.app/",
+    logo: "https://doughnut-forge.app/icon-512.png",
+  });
+  // Only pages Doughnut Forge controls: the store listings of every platform on
+  // sale, mobile first (src/data/stores.ts), with no language parameter, and Medium
   expect(org.sameAs).toEqual([
     "https://apps.apple.com/app/id6821344597",
     "https://apps.apple.com/app/id6812778888",
-    "https://apps.microsoft.com/detail/9P25BS9L8LNB?hl=en-GB",
+    "https://apps.microsoft.com/detail/9P25BS9L8LNB",
+    "https://medium.com/@doughnut_forge",
   ]);
   expect(org.email).toBeUndefined();
+  // The app, the company and the blog's author are one entity, linked by its @id
+  expect(app?.publisher).toEqual({ "@id": ORG_ID });
+});
+
+test("download page and blog posts point at the same Organization", async ({ page }) => {
+  await page.goto("/download/");
+  expect((await jsonLd(page)).find((d) => d["@type"] === "SoftwareApplication")?.publisher).toEqual({ "@id": ORG_ID });
+  await page.goto("/blog/share-encrypted-files/");
+  const article = (await jsonLd(page)).find((d) => d["@type"] === "Article");
+  for (const role of ["author", "publisher"]) {
+    expect(article?.[role], role).toEqual({ "@type": "Organization", "@id": ORG_ID, name: "Doughnut Forge", url: "https://doughnut-forge.app" });
+  }
 });
 
 test("home page: the summary line sits under the heading in every language", async ({ page }) => {

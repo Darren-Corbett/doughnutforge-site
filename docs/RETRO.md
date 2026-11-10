@@ -149,3 +149,27 @@ The work: the outside crawl's findings checked against the live site (3 of 6 wer
 **Agreed (owner):**
 - The two Should-fix tests, one blog index rule, the doc fixes and `reviewedAt` restored, as above.
 - Experiment: copy-only fixes run `test:layout` on the changed pages only, with `PAGES` (CLAUDE.md). Problem: a copy fix waited 15 to 18 minutes on pages it did not touch. When to check: after five copy-only fixes. Kept if the next full layout run after a design change finds nothing those copy fixes caused.
+
+## 9 November 2026, the v2 website night on `release/v2-site` (`8d7e052..129eb41`)
+
+The work: Part B items 1 to 8 on the local branch, from the v2 website pack only. FAQ and Support (recovery words, restoring on a new device, a forgotten password); "Files", "Text" and "recovery words" everywhere, including 8 blog posts; the home "New in Doughnut Forge 2" band; Technical details; every v1 screenshot replaced by a v2 one (`scripts/images-from-pack.mjs`); the roadmap with its short changelog; the release-day checklist. 43 strings in 28 languages, by four drafters and four independent reviewers.
+
+**Went well:** using the pack and the v2 screenshots as the only source caught a real problem before it shipped: the iPad Contacts screen's guide says "See who sent it", so it is used nowhere. The independent reviewers caught a "File" menu name the pack never shows in 14 languages, and the wrong Ukrainian Settings tab. The image script makes the same bytes on every run. The final branch passes everything: `build:deploy`, 2,891 layout tests, reproducible builds, Lighthouse 100.
+
+**Went wrong, and why:**
+1. **Seven commits fail the type check on their own** (`8d7e052` to `507f88c`). Each added English keys that the other 28 languages only got in `37b8d0a`. `check:commit` printed 28 errors, and the commit went ahead anyway, because the command piped the check through `grep`, which hides its exit code. Cause: batching all translations to the end to save agent runs, and a check that could not stop a commit.
+2. **The first night lost Part B.** The list said "as already given in this session", but it never reached the session. Cause: a list that pointed at context instead of containing it.
+3. **Image work done twice.** The first widths were too small for the frames at 2× (caught by the image agent), and a per-language iPad set (2.3 MB) was made and then deleted, because the press kit does not use it. Cause: the brief was written before checking the frames' sizes and which images each page takes.
+4. **Wrong counts on the review page** (194 and 14 files, really 198 and 22). Cause: written from memory, not from `git diff`, the same cause as 2 November item 4.
+5. **Drafters disagreed** on "File menu" against each language's "menu bar". Cause: the brief did not say which source wins when the English and a language's notes differ.
+
+**Rules that got in the way:** "after each item, `build:deploy`" cannot pass while an item's English waits for its translations; it only passed once, at the end.
+
+**Numbers:** appetite one night; actual about four hours. Review: 15 blocking findings (14 menu names, 1 tab name), all fixed and re-checked; 84 review notes and 28 re-check notes (counted from the review files). Problems after shipping: none; nothing is shipped.
+
+**Experiments checked:** scoped layout runs for copy-only fixes: one more fix used it (`share-encrypted-files`, Part A, 9 November), clean.
+
+**Proposed (for the owner's yes), one experiment:**
+- Problem: commits that fail the type check, and a commit check that cannot stop a commit.
+- Change: English keys and their translations land in the same commit, so every commit passes the type check; and `npm run check:commit` runs as its own step, and a non-zero exit stops the commit (never piped through `grep`).
+- How we will know: on the next item with translated copy, every commit passes `npm run check:commit` when checked out on its own. Check at the next retro.
