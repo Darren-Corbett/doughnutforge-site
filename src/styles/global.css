@@ -314,6 +314,28 @@
       padding: 80px 24px;
     }
   }
+
+  /* A ruled list on a night band, first drawn as the Features page's iPhone and
+     iPad list: Night Line rules between items, grey text. Pages set the columns. */
+  .band-list {
+    display: grid;
+    gap: 20px;
+    margin-top: 28px;
+  }
+  .band-list li {
+    padding-top: 18px;
+    border-top: 2px solid #38444d;
+  }
+  .band-list h3 {
+    --fs: 19px;
+    font-weight: 800;
+  }
+  .band-list p {
+    margin-top: 4px;
+    font-size: 17px;
+    line-height: 1.55;
+    color: #cbd5e1;
+  }
 }
 
 /* Writing systems that letter-spacing harms. Japanese, Chinese and Korean

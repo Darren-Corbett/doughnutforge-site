@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: šifrování souborů offline pro Mac, Windows, iPhone a iPad",
-  "meta.home.description": "Šifrujte soubory a text v iPhonu, iPadu, Macu a PC. V počítači můžete šifrovat i složky. Bez účtu, serverů a předplatného. Jednorázový nákup pro každou platformu.",
+  "meta.home.title": "Doughnut Forge: šifrování souborů offline pro iPhone, iPad, Mac a Windows",
+  "meta.home.description": "Doughnut Forge: šifrování souborů offline pro iPhone, iPad, Mac a PC. Šifrujte soubory a text pro lidi, které si vyberete. Bez účtu, serverů a předplatného.",
   "nav.label": "Hlavní nabídka",
   "nav.features": "Funkce",
   "nav.pricing": "Ceník",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Bezpečnost",
   "nav.home": "Doughnut Forge – úvodní stránka",
   "skip": "Přejít na obsah",
-  "home.summary": "Šifrování souborů offline pro Mac, iPhone, iPad a Windows.",
+  "home.summary": "Šifrování souborů offline pro iPhone, iPad, Mac a Windows.",
   "home.tagline": "Otevřít je mohou jen lidé, které si vyberete.",
   "home.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete.",
   "home.what.title": "Co je Doughnut Forge?",
@@ -31,12 +31,23 @@ export default {
   "home.specimen.note": "Ahoj Petře, náhradní klíč je v modrém květináči u zadních dveří. Kód alarmu je 4071. Uvidíme se v pátek.",
   "home.specimen.cipherLabel": "Stejná poznámka po zašifrování: nečitelné náhodné znaky.",
   "home.specimen.caption": "Jde o ilustraci: skutečné zašifrované soubory obsahují mnohem více znaků.",
-  "home.phones.title": "Nyní i pro iPhone a iPad.",
-  "home.phones.text": "K dispozici také pro Mac a Windows.",
-  "home.phones.altText": "Doughnut Forge na iPhonu: obrazovka Zabezpečený text s poznámkou připravenou k zašifrování",
-  "home.phones.altFile": "Doughnut Forge na iPhonu: obrazovka Bezpečný soubor s volbami Zašifrovat soubor a Dešifrovat soubor",
-  "home.phones.altIdentity": "Doughnut Forge na iPhonu: obrazovka Identita s kontaktní kartou připravenou ke sdílení",
+  "home.phones.title": "Novinky v Doughnut Forge 2.",
+  "home.phones.text":
+    "Nový vzhled, snazší začátek a cesta zpět, když zapomenete heslo. Na iPhonu, iPadu, Macu a ve Windows.",
+  "home.phones.altText": "Doughnut Forge 2 na iPhonu: obrazovka Texty s poznámkou připravenou k zašifrování",
+  "home.phones.altFile":
+    "Doughnut Forge 2 na iPhonu: obrazovka Soubory s volbami Zašifrovat soubor a Dešifrovat soubor",
+  "home.phones.altIdentity":
+    "Doughnut Forge 2 na iPhonu: obrazovka Identita s vaším kódem kontaktu a tlačítkem Sdílet kontaktní kartu",
+  "home.v2.words.title": "Obnovovací slova a obnovení hesla",
+  "home.v2.words.text":
+    "Vaše 24slovná záložní fráze se nyní jmenuje obnovovací slova. Zapomněli jste heslo? Na obrazovce odemknutí zvolte „Potíže s odemknutím?“ a pomocí obnovovacích slov si nastavte nové. Vaše identita, kontakty i šifrované soubory zůstanou stejné.",
+  "home.v2.cancel.title": "Zrušit",
+  "home.v2.cancel.text":
+    "Zrušit zastaví šifrování nebo dešifrování souboru a nic se neuloží. Na Macu a ve Windows zastaví i složku: už hotové soubory zůstanou.",
   "home.features.title": "Zamkněte je ve svém zařízení. Sdílejte je, jak chcete.",
+  "tabs.files": "Soubory",
+  "tabs.text": "Texty",
   "home.pricing.title": "Jednorázový nákup, nikdy předplatné.",
   "home.pricing.text": "Doughnut Forge si koupíte jednou pro každou platformu, kterou používáte, v obchodě dané platformy. Obchod vám ukáže cenu platnou tam, kde žijete.",
   "download.coming": "{platforms} – již brzy.",
@@ -52,14 +63,25 @@ export default {
   "meta.features.description": "Šifrujte soubory a text ve vlastním iPhonu, iPadu nebo počítači, sdílejte je s lidmi, kterým důvěřujete, a chraňte je dlouhodobě. Bez účtu a bez serverů.",
   "features.title": "Vše, co Doughnut Forge umí",
   "features.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete. Ať je pošlete jakkoli, otevřít je mohou jen oni.",
+  "features.identity.more":
+    "Vaše identita je uložena pouze v tomto zařízení a chráněna vaším heslem. Uchovejte svých 24 obnovovacích slov v bezpečí: jsou jediným způsobem, jak obnovit identitu nebo nastavit nové heslo místo zapomenutého.",
   "features.private.title": "Soukromí od samého začátku",
   "features.offline.title": "Funguje bez internetu",
   "offline.text": "Bez předplatného, bez účtu, bez serverů a bez sledování. Doughnut Forge funguje celý ve vašem zařízení, i bez připojení k internetu. Vaše klíče a kontakty zůstávají u vás, pod vaší kontrolou.",
   "features.languages.label": "Jazyky",
+  "features.ios.title": "Na iPhonu a iPadu",
   "features.ios.text": "Aplikace pro iPhone a iPad přidává i několik vlastních funkcí.",
-  "features.ios.altEncrypting": "Doughnut Forge na iPhonu: šifrování videa, hotovo ze 75 %",
-  "features.ios.altContacts": "Doughnut Forge na iPhonu: obrazovka Kontakty se třemi důvěryhodnými kontakty",
-  "features.ios.altIpad": "Doughnut Forge na iPadu: obrazovka Bezpečný soubor s volbami Zašifrovat soubor a Dešifrovat soubor",
+  "v2.privacy.title": "Skryto v přepínači aplikací",
+  "v2.privacy.text":
+    "Na iPhonu a iPadu ukazuje aplikace v přepínači aplikací místo obsahu obrazovky donut a „Skryto, když je aplikace na pozadí“.",
+  "features.desktop.title": "Na Macu a ve Windows",
+  "features.desktop.text":
+    "Přibližujte od 100 % do 200 % a obrazovky se vejdou do menších oken. V mřížce souborů se dlouhé názvy zkracují uprostřed, takže stále vidíte, jak končí. Šifrování nikdy nenahradí soubor, který už existuje. Na Macu najdete Zašifrovat soubor, Dešifrovat soubor a Zamknout v řádku nabídek, s klávesovými zkratkami.",
+  "features.ios.altEncrypting": "Doughnut Forge 2 na iPhonu: šifrování videa, hotovo ze 75 %",
+  "features.ios.altChoose":
+    "Doughnut Forge 2 na iPhonu: výběr toho, kdo může otevřít soubor; vybráni jste vy a tři kontakty",
+  "features.ios.altIpad":
+    "Doughnut Forge 2 na iPadu: obrazovka Soubory s volbami Zašifrovat soubor a Dešifrovat soubor",
   "features.cta.title": "Chcete, aby vaše soubory zůstaly soukromé?",
   "meta.pricing.title": "Ceník: jednorázový nákup, bez předplatného | Doughnut Forge",
   "meta.pricing.description": "Doughnut Forge si koupíte jednou pro každou platformu, kterou používáte, v obchodě dané platformy. Bez předplatného, bez účtu a bez nutnosti cokoli prodlužovat.",
@@ -74,14 +96,16 @@ export default {
   "download.requires.mac": "Vyžaduje macOS 12 Monterey nebo novější.",
   "download.requires.windows": "Vyžaduje Windows 11.",
   "download.start.title": "Při prvním spuštění",
-  "download.start.text": "Doughnut Forge vás požádá o nastavení hesla pro toto zařízení a pak vytvoří vaši identitu. Dostanete 24slovnou záložní frázi: zapište si ji a uchovávejte ji na bezpečném místě, protože je to jediný způsob, jak obnovit přístup.",
+  "download.start.text":
+    "Doughnut Forge začíná krátkým uvítáním a jednou volbou: vytvořit identitu, nebo ji obnovit. Když ji vytvoříte, aplikace vám dá 24 obnovovacích slov. Zapište si je a uchovávejte je na bezpečném místě: jsou jediným způsobem, jak obnovit identitu nebo nastavit nové heslo místo zapomenutého.",
   "meta.support.title": "Podpora a časté otázky | Doughnut Forge",
   "meta.support.description": "Pomoc s Doughnut Forge: odpovědi na časté otázky a postup, jak položit otázku nebo nahlásit problém na GitHubu.",
   "support.title": "Pomoc s Doughnut Forge",
   "support.lead": "Odpovědi na většinu otázek najdete níže. Na cokoli dalšího se zeptejte na GitHubu.",
   "support.ask.title": "Položte otázku nebo nahlaste problém",
   "support.ask.text": "Podpora probíhá na GitHubu, veřejně, aby odpovědi mohl najít každý. Hlášení (issues) na GitHubu jsou veřejná: kdokoli si může přečíst, co napíšete. K založení hlášení potřebujete bezplatný účet na GitHubu.",
-  "support.ask.warning": "Nikdy nepřikládejte soubory trezoru, soubory identity, svou záložní frázi (slova pro obnovení), hesla ani přístupové fráze, ani snímky obrazovky, na kterých jsou vidět.",
+  "support.ask.warning":
+    "Nikdy nepřikládejte soubory trezoru, soubory identity, svá obnovovací slova, hesla ani přístupové fráze, ani snímky obrazovky, na kterých jsou vidět.",
   "support.ask.bug": "Nahlásit chybu",
   "support.ask.question": "Položit otázku",
   "support.ask.idea": "Navrhnout funkci",
@@ -107,9 +131,14 @@ export default {
   "faq.storage.q": "Kde jsou uložené moje soubory a klíče?",
   "faq.storage.a": "Ve vašem zařízení. Vaše heslo a klíče se nikdy neukládají na server ani se neposílají po síti. Zašifrované soubory jsou tam, kam se je rozhodnete uložit nebo poslat.",
   "faq.backup.q": "Jak zálohovat svou identitu?",
-  "faq.backup.a": "Když vytváříte identitu, aplikace vám ukáže 24slovnou záložní frázi. Zapište si ji a uchovávejte ji na bezpečném místě: nic jiného k obnovení identity nepotřebujete. Aplikace také nabízí uložení fráze jako PDF. Toto PDF obsahuje stejných 24 slov a není chráněné heslem, takže ho chraňte stejně pečlivě jako samotnou frázi. Vaše kontakty nejsou součástí záložní fráze.",
-  "faq.restore.q": "Jak obnovit svou identitu?",
-  "faq.restore.a": "Nainstalujte Doughnut Forge do nového zařízení, nastavte heslo, pak zvolte Obnovit identitu a zadejte svou 24slovnou záložní frázi. Nic dalšího není potřeba a funguje to napříč platformami, například z Macu na počítač s Windows. Obnovením získáte zpět svou identitu, takže se soubory pro ni zašifrované znovu otevřou. Vaše kontakty se spolu s ní neobnoví.",
+  "faq.backup.a":
+    "Když zvolíte „Vytvořit mou identitu“, aplikace vám dá 24 obnovovacích slov. Zapište si je a uchovávejte je na bezpečném místě: jsou jediným způsobem, jak obnovit identitu nebo nastavit nové heslo místo zapomenutého. Až si je zapíšete, aplikace se zeptá na dvě z nich, abyste odhalili případnou chybu v opisu. Aplikace je také umí uložit jako PDF. Toto PDF není šifrované, takže ho vytiskněte, pak smažte a neuchovávejte ho na iCloud Drivu, v Dropboxu ani v žádné synchronizované složce. Vaše kontakty nejsou součástí obnovovacích slov.",
+  "faq.restore.q": "Jak obnovit svou identitu na novém zařízení?",
+  "faq.restore.a":
+    "Pomocí svých 24 obnovovacích slov. Zálohy iPhonu, iPadu nebo Macu vaši identitu neobsahují, takže obnovením zálohy zařízení ji zpět nezískáte. Nainstalujte Doughnut Forge do nového zařízení, zvolte „Už mám obnovovací slova“ a zadejte je. Funguje to napříč platformami, například z Macu na počítač s Windows. Obnovením získáte zpět svou identitu, takže se soubory pro ni zašifrované znovu otevřou. Obnovovací slova vaše kontakty neobnoví. Pokud nejprve obnovíte zálohu svého iPhonu, iPadu nebo Macu a potom zadáte obnovovací slova, vrátí se i vaše kontakty.",
+  "faq.password.q": "Nepamatuji si heslo. Co mohu dělat?",
+  "faq.password.a":
+    "Na obrazovce odemknutí zvolte „Potíže s odemknutím?“ a pomocí svých 24 obnovovacích slov si nastavte nové heslo. Vaše identita, kontakty i šifrované soubory zůstanou stejné. Bez obnovovacích slov heslo obnovit nelze.",
   "faq.share.q": "Jak s někým sdílet zašifrovaný soubor?",
   "faq.share.a": "Požádejte druhou osobu o její kontaktní kartu (soubor .vltc2) a přidejte ji do svých Kontaktů. Pak soubor zašifrujte a vyberte tuto osobu jako někoho, kdo ho může otevřít. Zašifrovaný soubor pošlete, jak chcete, například e-mailem, v aplikaci pro zasílání zpráv nebo na USB disku. Otevřít ho mohou jen lidé, které jste vybrali.",
   "faq.recipient.q": "Potřebuje druhá osoba k otevření souboru aplikaci Doughnut Forge?",
@@ -149,6 +178,7 @@ export default {
   "press.shots.title": "Snímky obrazovky",
   "press.shots.text": "Ukazují aplikaci pro iPhone a iPad.",
   "press.shots.label": "{device}: {screen}",
+  "press.shots.choose": "Výběr toho, kdo může otevřít soubor",
   "press.download": "PNG, {width} × {height}",
   "press.usage.title": "Použití těchto souborů",
   "press.usage.text": "Tyto popisy, ikony a snímky obrazovky můžete používat v článcích, recenzích a videích o Doughnut Forge. Neměňte prosím tvar ani barvy ikony.",
@@ -166,13 +196,24 @@ export default {
   "roadmap.shipped": "Vydáno",
   "roadmap.next": "Další na řadě",
   "roadmap.later": "Později",
-  "roadmap.identity.title": "Ochrana identity",
-  "roadmap.identity.text": "Aktualizace, která udrží každou identitu v bezpečí, takže ji nikdy nepůjde ztratit, nahradit ani nechat čitelnou. Pro Mac, iPhone a iPad.",
-  "roadmap.identityWindows.title": "Ochrana identity pro Windows",
-  "roadmap.identityWindows.text": "Stejná aktualizace pro Windows.",
-  "roadmap.stricter.title": "Přísnější ochrana",
-  "roadmap.stricter.text": "Další aktualizace ochrany, díky kterým bude aplikace přísnější v tom, co přijme. Pro vaše data se nic nemění.",
+  "roadmap.v2.title": "Doughnut Forge 2",
+  "roadmap.v2.text":
+    "Nový vzhled, snazší začátek a cesta zpět, když zapomenete heslo. Na iPhonu, iPadu, Macu a ve Windows.",
+  "v2.notes.reset":
+    "Zapomněli jste heslo? Na obrazovce odemknutí zvolte „Potíže s odemknutím?“ a pomocí obnovovacích slov si nastavte nové. Vaše identita, kontakty i šifrované soubory zůstanou stejné.",
+  "v2.notes.words":
+    "Vaše 24slovná záložní fráze se nyní jmenuje obnovovací slova. Až si je zapíšete, aplikace se zeptá na dvě z nich, abyste odhalili případnou chybu v opisu.",
+  "v2.notes.start": "Nastavení začíná krátkým uvítáním a jednou volbou: vytvořit identitu, nebo ji obnovit.",
+  "v2.notes.design": "Klidnější vzhled, ve světlém i tmavém režimu.",
+  "v2.notes.backups":
+    "Zálohy iPhonu, iPadu nebo Macu už neobsahují vaši identitu. Uchovejte obnovovací slova v bezpečí: právě jimi identitu obnovíte na novém zařízení.",
+  "v2.notes.ios":
+    "Na iPhonu panel karet: Soubory, Texty, Identita, Kontakty a Nastavení. Na iPhonu a iPadu je aplikace v přepínači aplikací skrytá.",
+  "v2.notes.desktop":
+    "Na Macu a ve Windows přibližování od 100 % do 200 % a šifrování nikdy nenahradí soubor, který už existuje.",
   "roadmap.android.title": "Doughnut Forge pro Android",
+  "roadmap.small.title": "Menší vylepšení",
+  "roadmap.small.text": "Drobné opravy a vylepšení Doughnut Forge 2.",
   "roadmap.audit.title": "Nezávislý bezpečnostní audit",
   "roadmap.audit.text": "Bezpečnostní audit Doughnut Forge od nezávislého externího odborníka.",
   "meta.security.title": "Bezpečnost: jak vaše soubory zůstávají soukromé | Doughnut Forge",
@@ -233,7 +274,8 @@ export default {
   "technical.keys.identity.label": "Vaše identita:",
   "technical.keys.identity.text": "vzniká z jednoho 256bitového náhodného tajemství, vytvořeného ve vašem zařízení.",
   "technical.keys.recovery.label": "Obnovení:",
-  "technical.keys.recovery.text": "toto tajemství lze zapsat jako vaši 24slovnou záložní frázi (BIP-39). Lze ho také rozdělit na části pro obnovení pomocí Shamir's Secret Sharing: obnoví ho libovolné části ve zvoleném počtu (nejméně 2, celkem nejvýše 16). Méně částí, než je tento počet, neprozradí nic.",
+  "technical.keys.recovery.text":
+    "toto tajemství lze zapsat jako vašich 24 obnovovacích slov (BIP-39). Lze ho také rozdělit na části pro obnovení pomocí Shamir's Secret Sharing: obnoví ho libovolné části ve zvoleném počtu (nejméně 2, celkem nejvýše 16). Méně částí, než je tento počet, neprozradí nic.",
   "technical.keys.exchange.label": "Výměna klíčů (postkvantový hybrid):",
   "technical.keys.exchange.text": "klíč každé položky je zapečetěn zvlášť pro každého příjemce i pro vás, pomocí X25519 spolu s ML-KEM-768. Obě sdílená tajemství se kombinují pomocí SHA-256.",
   "technical.keys.signatures.label": "Podpisy:",
@@ -297,7 +339,7 @@ export default {
   "technical.libraries.text": "Doughnut Forge používá pro kryptografii a kompresi tyto knihovny:",
   "technical.libraries.sha": "SHA-256 a SHA-512",
   "technical.libraries.random": "Zdroj náhodnosti operačního systému",
-  "technical.libraries.words": "Záložní fráze",
+  "technical.libraries.words": "Obnovovací slova",
   "technical.libraries.shards": "Části pro obnovení",
   "technical.libraries.memory": "Tajemství v paměti",
   "technical.libraries.wipe": "Mazání tajemství z paměti",
@@ -305,7 +347,8 @@ export default {
   "technical.limits.title": "Před čím Doughnut Forge nechrání",
   "technical.limits.compromised.label": "Zařízení, které už je napadené.",
   "technical.limits.compromised.text": "Když je Doughnut Forge odemčený, malware s plným přístupem k vašemu zařízení by mohl přečíst vaše tajemství.",
-  "technical.limits.access.label": "Kdokoli, kdo má vaše heslo a vaše zařízení, vaši 24slovnou záložní frázi nebo dost částí pro obnovení.",
+  "technical.limits.access.label":
+    "Kdokoli, kdo má vaše heslo a vaše zařízení, vašich 24 obnovovacích slov nebo dost částí pro obnovení.",
   "technical.limits.access.text": "Chraňte je.",
   "technical.limits.passcode.label": "Kód vašeho zařízení,",
   "technical.limits.passcode.text": "na iPhonu a iPadu se zapnutým Face ID nebo Touch ID. iOS přijme kód místo Face ID nebo Touch ID.",

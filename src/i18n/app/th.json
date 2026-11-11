@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/th/*.json",
-  "app:navigation.tabs.vault": "ไดเรกทอรีที่ปลอดภัย",
-  "app:navigation.tabs.mobile-vault": "ไฟล์ที่ปลอดภัย",
-  "app:navigation.tabs.text-vault": "ข้อความที่ปลอดภัย",
   "app:navigation.tabs.identity": "ข้อมูลประจำตัว",
   "app:navigation.tabs.contacts": "ผู้ติดต่อ",
   "app:navigation.language": "ภาษา",
@@ -11,6 +8,5 @@
   "app:languageModal.regions.middleEastAfrica": "ตะวันออกกลางและแอฟริกา",
   "app:languageModal.regions.asiaPacific": "เอเชียแปซิฟิก",
   "mobile-views:secureFile.howItWorks.encrypt.title": "การเข้ารหัสไฟล์",
-  "help:secureDirectoryGuide.step1.description": "เพิ่มโฟลเดอร์ในเครื่องไปยังพื้นที่ทำงานของคุณเพื่อเรียกดูและจัดการไฟล์ของคุณ Doughnut Forge ทำงานแบบออฟไลน์ 100% ซึ่งหมายความว่าไฟล์ต้นฉบับของคุณจะไม่หลุดออกจากอุปกรณ์",
-  "help:setupGuide.step3.description": "คีย์ของคุณมีความเป็นส่วนตัวโดยสมบูรณ์และไม่สามารถกู้คืนได้หากสูญหาย คุณต้องเก็บวลีสำรองข้อมูลไว้ในที่ปลอดภัย เนื่องจากเป็นวิธีเดียวในการกู้คืนการเข้าถึงของคุณ"
+  "help:secureDirectoryGuide.step1.description": "เพิ่มโฟลเดอร์ในเครื่องไปยังพื้นที่ทำงานของคุณเพื่อเรียกดูและจัดการไฟล์ของคุณ Doughnut Forge ทำงานแบบออฟไลน์ 100% ซึ่งหมายความว่าไฟล์ต้นฉบับของคุณจะไม่หลุดออกจากอุปกรณ์"
 }

@@ -10,7 +10,7 @@ import Compare from "../../../components/blog/Compare.astro";
 import Shot from "../../../components/blog/Shot.astro";
 import Hourglass from "@lucide/astro/icons/hourglass";
 import Atom from "@lucide/astro/icons/atom";
-import iphoneSecureFile from "../../../assets/app/iphone-secure-file.webp";
+import iphoneFiles from "../../../assets/app/v2/en/iphone-files-light.webp";
 
 **In short:** on 4 November 2026, three government security agencies published a set of questions for organisations to ask their suppliers about post-quantum encryption. Behind it sits a risk often called "harvest now, decrypt later": encrypted data copied today could be opened years from now, if quantum computers become powerful enough. For most everyday files this is not a reason to worry. For the files you expect to keep private for many years, it is worth knowing what to ask of the apps you trust with them.
 
@@ -91,8 +91,8 @@ Doughnut Forge uses post-quantum encryption, so what you protect today stays pro
 Files are encrypted on your own device, and your password and keys are never stored on a server or sent across the network. For technical readers, the [technical details](/security/technical-details/) page names the exact methods it uses.
 
 <Shot
-  src={iphoneSecureFile}
-  alt="Doughnut Forge on iPhone: the Secure File screen with Encrypt File and Decrypt File"
+  src={iphoneFiles}
+  alt="Doughnut Forge 2 on iPhone: the Files screen with Encrypt file and Decrypt file"
   caption="Files are encrypted and decrypted on the device, and nothing is uploaded."
 />
 
@@ -107,7 +107,7 @@ It is [available](/download/) for iPhone and iPad, Mac and Windows, as a one-tim
 
 - **It cannot reach copies made in the past.** A file sent or stored earlier with older encryption, or with none, stays as it was. Locking a new copy does not change the old ones.
 - **It does not protect a file once it is open.** Anyone you choose to share a file with can still copy what is inside.
-- **It cannot rescue lost keys.** If you lose your password and your 24-word backup phrase, your files cannot be opened, now or in the future.
+- **It cannot rescue lost keys.** If you lose your password and your 24 recovery words, your files cannot be opened, now or in the future.
 
 ## The short version
 

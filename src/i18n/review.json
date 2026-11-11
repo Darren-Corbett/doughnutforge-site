@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -192,13 +192,69 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English names the File menu, but the pack never shows the app's File menu name in this language; the Mac release notes in this language say 'menu bar'. A menu name the pack does not show is unverifiable (and the standard macOS name may not be what the app uses). Use the release notes' own wording.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the File menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "technical.keys.recovery.text",
+        "severity": "note",
+        "issue": "v2 copy: The drafter changed the space before ':' (after 'Shamir's Secret Sharing)') to a no-break space (U+00A0, confirmed). Correct French typography and matches the file (63 no-break spaces before ':'; the 5 plain ones are in other keys, outside this batch). Agree with the change.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). It can also be split into recovery shards with Shamir's Secret Sharing: any set of shards reaching the chosen number (at least 2, at most 16 in total) brings it back. Fewer shards than that number reveal nothing.",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "(all)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against the English, the v2 iOS/Mac/Windows release notes in this language and the six v2 screenshots: recovery words, 'Trouble unlocking?', tab names, Encrypt file / Decrypt file, Share contact card, contact code, Cancel, 'Hidden while in the background', app switcher, zoom, long names, 'never replaces a file', setup, backups and 'Small fixes and improvements' lines all match. Platform scope matches in every key. No v1 terms (Secure File/Directory/Text) and the old backup-phrase name appears only in home.v2.words.text and v2.notes.words. No forbidden words, no 'we'. The 3 gone keys are absent. check-translations: only 'roadmap.v2.title: still English' (honest, product name). vous kept; « » with no-break spaces, and no-break spaces before : ? % in every reviewed key. 'Create my identity' and 'I already have recovery words' cannot be checked against the app; the drafter's wording is natural and faithful.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac, then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 180 chars, over 170; no shorter wording with the same meaning is clearly better (\"de votre choix\" is already the short exact form). 'Sans compte, serveur ni abonnement' is the file's existing wording.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for the people of your choice. Without account, server or subscription.",
+        "suggestion": ""
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -383,13 +439,76 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English names the File menu, but the pack never shows the app's File menu name in this language; the Mac release notes in this language say 'menu bar'. A menu name the pack does not show is unverifiable (and the standard macOS name may not be what the app uses). Use the release notes' own wording.",
+        "backTranslation": "On the Mac, 'Encrypt file', 'Decrypt file' and 'Lock' are in the 'Ablage' (File) menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "download.start.text, faq.backup.a, features.identity.more",
+        "severity": "note",
+        "issue": "v2 copy: After the colon, 'Sie sind die einzige Möglichkeit' can be read as formal 'You are the only way' rather than 'They (the words) are the only way'. Context resolves it, but the release notes avoid it with 'Mit ihnen ...'.",
+        "backTranslation": "Write them down and keep them in a safe place: they are the only way to restore your identity or reset a forgotten password.",
+        "suggestion": "'... auf: Nur mit ihnen können Sie Ihre Identität wiederherstellen oder ein vergessenes Passwort zurücksetzen.' (or lowercase 'sie sind')"
+      },
+      {
+        "key": "(all)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against the English, the v2 iOS/Mac/Windows release notes in this language and the six v2 screenshots: recovery words, 'Trouble unlocking?', tab names, Encrypt file / Decrypt file, Share contact card, contact code, Cancel, 'Hidden while in the background', app switcher, zoom, long names, 'never replaces a file', setup, backups and 'Small fixes and improvements' lines all match. Platform scope matches in every key. No v1 terms (Secure File/Directory/Text) and the old backup-phrase name appears only in home.v2.words.text and v2.notes.words. No forbidden words, no 'we'. The 3 gone keys are absent. check-translations: only 'roadmap.v2.title: still English' (honest, product name). Sie kept; „ “ quotes. The Text tab is 'Texte' in the app (screenshots and notes) and is used consistently. 'Create my identity' and 'I already have recovery words' cannot be checked against the app; the drafter's wording is natural and faithful.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "features.identity.more, download.start.text, faq.backup.a",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked: the ambiguous 'Sie sind die einzige Möglichkeit' is now 'Nur mit ihnen können Sie ...', clearly about the words. 'Wiederherstellungswörter' matches the de release notes; 'Meine Identität erstellen' in quotes „“; meaning, 24 words, PDF warning and contacts sentence all kept; formal Sie kept.",
+        "backTranslation": "Keep your 24 recovery words safe: only with them can you restore your identity or reset a forgotten password. / ... starts with a short welcome and then one choice: create or restore identity. When you create it the app gives you 24 recovery words ... / When you choose 'Create my identity' ... the app asks for two of them so you notice a mistake in your copy ... This PDF is not encrypted: print it, then delete it, and do not keep it in iCloud Drive, Dropbox or any other synced folder. Your contacts are not part of your recovery words.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 171 chars, one over 170; acceptable. 'Menschen Ihrer Wahl' is exact; formal Sie kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for people of your choice. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -521,13 +640,62 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: file encryption without a connection for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English names the File menu, but the pack never shows the app's File menu name in this language; the Mac release notes in this language say 'menu bar'. A menu name the pack does not show is unverifiable (and the standard macOS name may not be what the app uses). Use the release notes' own wording.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the File menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "(all)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against the English, the v2 iOS/Mac/Windows release notes in this language and the six v2 screenshots: recovery words, 'Trouble unlocking?', tab names, Encrypt file / Decrypt file, Share contact card, contact code, Cancel, 'Hidden while in the background', app switcher, zoom, long names, 'never replaces a file', setup, backups and 'Small fixes and improvements' lines all match. Platform scope matches in every key. No v1 terms (Secure File/Directory/Text) and the old backup-phrase name appears only in home.v2.words.text and v2.notes.words. No forbidden words, no 'we'. The 3 gone keys are absent. check-translations: only 'roadmap.v2.title: still English' (honest, product name). tú kept; « » quotes; 'dónut' and 'selector de apps' as in the notes. 'Create my identity' and 'I already have recovery words' cannot be checked against the app; the drafter's wording is natural and faithful.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts also come back.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 'para quien elijas' keeps the meaning exactly; tú register kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whoever you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -702,13 +870,62 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline encryption of files for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English names the File menu, but the pack never shows the app's File menu name in this language; the Mac release notes in this language say 'menu bar'. A menu name the pack does not show is unverifiable (and the standard macOS name may not be what the app uses). Use the release notes' own wording.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the File menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "(all)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against the English, the v2 iOS/Mac/Windows release notes in this language and the six v2 screenshots: recovery words, 'Trouble unlocking?', tab names, Encrypt file / Decrypt file, Share contact card, contact code, Cancel, 'Hidden while in the background', app switcher, zoom, long names, 'never replaces a file', setup, backups and 'Small fixes and improvements' lines all match. Platform scope matches in every key. No v1 terms (Secure File/Directory/Text) and the old backup-phrase name appears only in home.v2.words.text and v2.notes.words. No forbidden words, no 'we'. The 3 gone keys are absent. check-translations: only 'roadmap.v2.title: still English' (honest, product name). tu kept; « » quotes; tabs.files 'File' matches the app's tab; 'elenco applicazioni' and 'ciambella' as in the notes. 'Create my identity' and 'I already have recovery words' cannot be checked against the app; the drafter's wording is natural and faithful.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; list form matches the previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, server or subscription.",
+        "suggestion": ""
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -893,13 +1110,76 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English names the File menu, but the pack never shows the app's File menu name in this language; the Mac release notes in this language say 'menu bar'. A menu name the pack does not show is unverifiable (and the standard macOS name may not be what the app uses). Use the release notes' own wording.",
+        "backTranslation": "On the Mac, Encrypt file, Decrypt file and Lock are in the Archief (File) menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a, home.v2.words.text, v2.privacy.text, faq.password.a, v2.notes.reset",
+        "severity": "note",
+        "issue": "v2 copy: Single curly quotes ‘ ’: normal in Dutch (common house style) and exactly what the nl release notes use (‘Problemen met ontgrendelen?’, ‘Verborgen op de achtergrond’). The file had no quoted strings before, so nothing to clash with. Accept.",
+        "backTranslation": "",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "(all)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against the English, the v2 iOS/Mac/Windows release notes in this language and the six v2 screenshots: recovery words, 'Trouble unlocking?', tab names, Encrypt file / Decrypt file, Share contact card, contact code, Cancel, 'Hidden while in the background', app switcher, zoom, long names, 'never replaces a file', setup, backups and 'Small fixes and improvements' lines all match. Platform scope matches in every key. No v1 terms (Secure File/Directory/Text) and the old backup-phrase name appears only in home.v2.words.text and v2.notes.words. No forbidden words, no 'we'. The 3 gone keys are absent. check-translations: only 'roadmap.v2.title: still English' (honest, product name). u kept; 'back-upzin' for the old name, as in the notes (the site previously said 'herstelzin', now fully replaced). 'Create my identity' and 'I already have recovery words' cannot be checked against the app; the drafter's wording is natural and faithful.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of your iPhone, iPad or Mac and afterwards enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.backup.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: ‘Mijn identiteit maken’ equals app text; “Als u ‘Mijn identiteit maken’ kiest” reads correctly. Only change in this key. Needs a stamp after review (changed since stamped).",
+        "backTranslation": "If you choose ‘Create my identity’, the app gives you 24 recovery words.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 'voor wie u kiest' exact; formal u kept, matches home.tagline.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whom you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1050,13 +1330,69 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline encryption of files for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 43 keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/mac/windows sv release notes and the six sv v2 screenshots: återställningsord, ”Problem att låsa upp?”, tabs Filer/Texter/Identitet/Kontakter/Inställningar, Avbryt, ”Dold medan appen är i bakgrunden”, appväxlaren, Kryptera fil, Dekryptera fil, Dela kontaktkort, din kontaktkod all match. Platform scope matches English in every key. No v1 term outside home.v2.words.text and v2.notes.words; no forbidden wording; du kept. The 3 gone keys are absent. check-translations: only roadmap.v2.title still English (intended).",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Drafter point 1: says ”i menyraden” (in the menu bar) where English says File menu. This matches the sv Mac release notes word for word and is true (the File menu sits in the menu bar); it is only less specific. Acceptable.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "Keep, unless the owner wants the app's own notes changed too."
+      },
+      {
+        "key": "home.v2.words.text",
+        "severity": "note",
+        "issue": "v2 copy: The old name is given as ”reservfras”, as in the sv release notes. The v1 app label (glossary) and the old site said ”Återställningsfras”, so v1 users may not recognise ”reservfras”. Follows the app's v2 notes, so not blocking. Same in v2.notes.words.",
+        "backTranslation": "Your 24-word backup phrase is now called recovery words.",
+        "suggestion": "Optional: ”Din återställningsfras på 24 ord heter nu återställningsord.” only if the app notes change too; otherwise keep."
+      },
+      {
+        "key": "home.v2.words.title",
+        "severity": "note",
+        "issue": "v2 copy: ”Återställningsord och återställning av lösenordet” repeats återställ- twice; correct but heavy.",
+        "backTranslation": "Recovery words and resetting the password",
+        "suggestion": "Optional: ”Återställningsord och nytt lösenord”."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not give you back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 'för dem du väljer' exact and matches home.tagline.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1221,13 +1557,62 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 43 keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/mac/windows da release notes and the six da v2 screenshots: gendannelsesord, »Problemer med at låse op?«, tabs Filer/Tekst/Identitet/Kontakter/Indstillinger, Annuller, »Skjult, mens appen er i baggrunden«, appskifteren, Krypter fil, Dekrypter fil, Del kontaktkort, din kontaktkode all match. Old name sikkerhedskopi-sætning only in the two allowed keys and matches the v1 glossary. Platform scope matches English. du kept. Gone keys absent. check-translations: only roadmap.v2.title still English.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.backup.a",
+        "severity": "note",
+        "issue": "v2 copy: Drafter point 2: » « (»Opret min identitet«) is standard Danish typography and is used consistently in all six keys with quotes; the file had no quotation marks before, so there is nothing to clash with. „ “ would also be correct. Acceptable as is.",
+        "backTranslation": "When you choose “Create my identity”, the app gives you 24 recovery words.",
+        "suggestion": "Keep » «."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Drafter point 1: ”i menulinjen” (in the menu bar) for English File menu, as in the da Mac release notes. True, slightly less specific. Acceptable.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the menu bar with keyboard shortcuts.",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1419,13 +1804,76 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline encryption of files for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 43 keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/mac fi release notes and the six fi v2 screenshots: palautussanat, ”Ongelmia lukituksen avaamisessa?”, tabs Tiedostot/Teksti/Henkilöllisyys/Yhteystiedot/Asetukset, Peruuta, ”Piilotettu, kun sovellus on taustalla”, Salaa tiedosto, Pura tiedoston salaus, Jaa yhteystietokortti, yhteystietokoodisi all match. Old name varmuuskopiolauseke only in the two allowed keys. Platform scope matches English. sinä kept. Gone keys absent. check-translations: only roadmap.v2.title still English.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "home.phones.title",
+        "severity": "note",
+        "issue": "v2 copy: Drafter point 4: ”Doughnut Forge 2:ssa” is correct. Finnish numerals take the ending of the spoken word: kaksi -> kahdessa -> 2:ssa. Likewise roadmap.small.text ”Doughnut Forge 2:een” (kahteen) is correct, and ”100 %:sta 200 %:iin” matches the fi notes.",
+        "backTranslation": "New in Doughnut Forge 2.",
+        "suggestion": "Keep both."
+      },
+      {
+        "key": "v2.privacy.title",
+        "severity": "note",
+        "issue": "v2 copy: ”apinvaihtaja” is Apple's own Finnish term for the App Switcher and is what the fi release notes use. Correct, not a typo.",
+        "backTranslation": "Hidden in the app switcher",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Drafter point 1: ”valikkoriviltä” (in the menu bar) for File menu, as in the fi Mac release notes. True, slightly less specific. Acceptable.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are found in the menu bar with keyboard shortcuts.",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "press.shots.choose",
+        "severity": "note",
+        "issue": "v2 copy: ”Sen valitseminen, kuka voi avata tiedoston” is correct but a little stiff for a caption.",
+        "backTranslation": "Choosing who can open the file",
+        "suggestion": "Optional: ”Kuka voi avata tiedoston -valinta”."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of the iPhone, iPad or Mac and then enter your recovery words, your contacts are restored too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 173 chars; no clearly shorter equivalent. 'valitsemillesi ihmisille' exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for people you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1596,13 +2044,55 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 43 keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/mac no release notes and the six no v2 screenshots: gjenopprettingsord, «Problemer med å låse opp?», tabs Filer/Tekst/Identitet/Kontakter/Innstillinger, Avbryt, «Skjult mens appen er i bakgrunnen», appveksleren, Krypter fil, Dekrypter fil, Del kontaktkort, kontaktkoden din all match. Old name sikkerhetskopifrase only in the two allowed keys, matches the v1 glossary. « » is the normal Norwegian quote mark. Platform scope matches English. du kept. Gone keys absent. check-translations: only roadmap.v2.title still English.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Drafter point 1: ”i menylinjen” (in the menu bar) for File menu, as in the no Mac release notes. True, slightly less specific. Acceptable.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the menu bar, with shortcuts.",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not give you back your contacts. If you first restore a backup of iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact. 'ingen abonnement' (rather than 'ikke noe abonnement') is carried over unchanged from the previous string; colloquially accepted.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1780,13 +2270,62 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption – Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 43 keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/mac pl release notes and the six pl v2 screenshots: słowa odzyskiwania, „Problem z odblokowaniem?”, tabs Pliki/Tekst/Tożsamość/Kontakty/Ustawienia, Anuluj, „Ukryte, gdy aplikacja działa w tle”, ekran przełączania aplikacji, Zaszyfruj plik, Odszyfruj plik, Udostępnij kartę kontaktową, Twój kod kontaktu all match. Old name fraza kopii zapasowej only in the two allowed keys. Shard term części do odzyskania kept from the existing file. Platform scope matches English. ty with capitalised Ty/Twój kept. Gone keys absent. check-translations: only roadmap.v2.title still English.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "v2.privacy.title",
+        "severity": "note",
+        "issue": "v2 copy: Drafter's doubt: feminine ”Ukryta” agrees with the implied ”aplikacja” and reads naturally as a heading; the quoted app string ”Ukryte” is a separate fixed label. Fine.",
+        "backTranslation": "Hidden in the app switcher screen",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Drafter point 1: ”na pasku menu” (in the menu bar) for File menu, as in the pl Mac release notes. True, slightly less specific. Acceptable.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not restore your contacts. If you first restore a backup of the iPhone, iPad or Mac, and then type the recovery words, your contacts will come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; dash after 'offline' matches the title's existing style.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1966,13 +2505,76 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 43 keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/mac cs release notes and the six cs v2 screenshots: obnovovací slova, „Potíže s odemknutím?“, tabs Soubory/Texty/Identita/Kontakty/Nastavení, Zrušit, „Skryto, když je aplikace na pozadí“, přepínač aplikací, Zašifrovat soubor, Dešifrovat soubor, Sdílet kontaktní kartu, Váš kód kontaktu all match. Old name záložní fráze only in the two allowed keys. „ “ is correct Czech. Platform scope matches English. vy kept. Gone keys absent. check-translations: only roadmap.v2.title still English.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.password.q",
+        "severity": "note",
+        "issue": "v2 copy: Drafter point 3: the gender-neutral ”Nepamatuji si heslo” is a good choice and keeps the meaning. Only the register is mixed: the file's other FAQ questions use the standard ”mohu” / ”Potřebuji” (faq.which.q ”mohu používat”), while this one has colloquial ”můžu”.",
+        "backTranslation": "I do not remember my password. What can I do?",
+        "suggestion": "”Nepamatuji si heslo. Co mohu dělat?”"
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Drafter point 1: ”v řádku nabídek” (in the menu bar) for File menu, as in the cs Mac release notes. True, slightly less specific. Acceptable.",
+        "backTranslation": "On Mac you find Encrypt file, Decrypt file and Lock in the menu bar, with keyboard shortcuts.",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "faq.password.q",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked: 'mohu' now matches the standard register of the other FAQ questions; gender-neutral 'Nepamatuji si heslo' keeps the meaning. check-translations passes.",
+        "backTranslation": "I do not remember my password. What can I do?",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words will not restore your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter the recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.backup.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: „Vytvořit mou identitu“ equals app text; grammar around it fine. Restore button „Už mám obnovovací slova“ also equals app text and reads fine after “zvolte”. Needs a stamp after review.",
+        "backTranslation": "When you choose 'Create my identity', the app gives you 24 recovery words.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; formal vy kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2155,13 +2757,69 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "(all 43 keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/mac hu release notes and the six hu v2 screenshots: helyreállítási szavak, „Nem sikerül feloldani?”, tabs Fájlok/Szöveg/Identitás/Kapcsolatok/Beállítások, Mégse, „Elrejtve, amíg a háttérben van”, appváltó, Fájl titkosítása, Fájl visszafejtése, Névjegykártya megosztása, a névjegykódod all match. Old name biztonsági kifejezés only in the two allowed keys. „ ” is correct Hungarian. Case endings ”2-ben” and ”2-höz” are correct. Platform scope matches English. te kept. Gone keys absent. check-translations: only roadmap.v2.title still English.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "home.phones.altText",
+        "severity": "note",
+        "issue": "v2 copy: Drafter point 3: no mismatch remains. The file has no ”iPhone készüléken” left anywhere; every iPhone mention, edited or not (meta.home.description, technical.network.apple, technical.limits.passcode.text), already uses ”iPhone-on” / ”iPaden”, as the hu release notes do. Consistent.",
+        "backTranslation": "Doughnut Forge 2 on iPhone: the Text screen with a note ready to encrypt",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Drafter point 1: ”a menüsorban” (in the menu bar) for File menu, as in the hu Mac release notes. True, slightly less specific. Acceptable.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore the iPhone, iPad or Mac backup and afterwards enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.backup.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: „Identitásom létrehozása” equals app text; article correctly changed a -> az before the vowel. Needs a stamp after review.",
+        "backTranslation": "When you choose the 'Create my identity' option, the app gives 24 recovery words.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; informal te kept as in the file.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. Without account, server and subscription.",
+        "suggestion": ""
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2356,13 +3014,83 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline encryption of files for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English says \"File menu\"; the drafter translated that menu name literally. The pack (Mac release notes in this language, screenshots) never shows the localised File menu, so the name cannot be checked, and this language's Mac notes say \"menu bar\" instead. Use the notes' own wording. Meaning is kept (the commands are in the menu bar), only less specific.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the File menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "(all changed and new keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys: back-translated, platform scope matches English in every sentence (iPhone, iPad, Mac and Windows; On Mac and Windows; On iPhone and iPad; Backups of your iPhone, iPad or Mac; On Mac). The 3 gone keys are absent. No v1 terms (Secure File/Directory/Text; backup phrase only in home.v2.words.text and v2.notes.words). No verify/audited/military-grade/unbreakable/tamper/sender claims, no \"we\". Register and quotation marks consistent with the file. check-translations: only roadmap.v2.title \"still English\" (honest: product name). Terms matched to the ro iOS/Mac/Windows notes: cuvinte de recuperare, „Probleme la deblocare?”, ecranul de deblocare, „Ascuns cât timp este în fundal”, comutatorul de aplicații, Anulează, Criptare fișier / Decriptare fișier / Blochează, Setări, Contacte. Matched to the ro screenshots: Fișiere, Texte, Identitate, Criptare fișier, Decriptare fișier, Partajează cardul de contact, codul tău de contact, Anulează. Informal tu kept.",
+        "backTranslation": "",
+        "suggestion": "None."
+      },
+      {
+        "key": "tabs.text",
+        "severity": "note",
+        "issue": "v2 copy: Drafter choice (5): \"Texte\" (plural) for the Text tab. Correct: the ro screenshots show the tab and screen title as \"Texte\", and the ro iOS notes list \"Fișiere, Texte, Identitate, Contacte și Setări\". Also used consistently in home.phones.altText and v2.notes.ios.",
+        "backTranslation": "Texts",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "home.phones.altText",
+        "severity": "note",
+        "issue": "v2 copy: \"notă\" for note; the app uses both \"Notă\" (card label) and \"notiță\" (button, notes). Fine.",
+        "backTranslation": "Doughnut Forge 2 on iPhone: the Texts screen, with a note ready to encrypt",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a",
+        "severity": "note",
+        "issue": "v2 copy: Unverifiable button names „Creează-mi identitatea” and „Am deja cuvinte de recuperare” are natural and faithful.",
+        "backTranslation": "Create my identity / I already have recovery words",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter the recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Merged list 'Fără cont, servere sau abonament' still means exactly 'no account, no servers, no subscription'. Fine.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2549,13 +3277,76 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English says \"File menu\"; the drafter translated that menu name literally. The pack (Mac release notes in this language, screenshots) never shows the localised File menu, so the name cannot be checked, and this language's Mac notes say \"menu bar\" instead. Use the notes' own wording. Meaning is kept (the commands are in the menu bar), only less specific.",
+        "backTranslation": "On Mac, the items «Encrypt file», «Decrypt file» and «Lock» are in the «File» menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "(all changed and new keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys: back-translated, platform scope matches English in every sentence (iPhone, iPad, Mac and Windows; On Mac and Windows; On iPhone and iPad; Backups of your iPhone, iPad or Mac; On Mac). The 3 gone keys are absent. No v1 terms (Secure File/Directory/Text; backup phrase only in home.v2.words.text and v2.notes.words). No verify/audited/military-grade/unbreakable/tamper/sender claims, no \"we\". Register and quotation marks consistent with the file. check-translations: only roadmap.v2.title \"still English\" (honest: product name). Terms matched to the ru notes: слова восстановления, «Не удаётся разблокировать?», экран блокировки, «Скрыто, пока приложение в фоне», переключатель приложений, «Отмена», Настройки, Контакты. Matched to the ru screenshots: Файлы, Текст, Личность, «Зашифровать файл», «Расшифровать файл», «Поделиться карточкой контакта», «Ваш код контакта», Отмена. Formal вы kept.",
+        "backTranslation": "",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.password.q",
+        "severity": "note",
+        "issue": "v2 copy: Drafter choice (6): \"Не помню пароль\" (I do not remember my password) avoids the gendered забыл/забыла. Natural, common phrasing, meaning kept. Accept.",
+        "backTranslation": "I do not remember my password. What can be done?",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a",
+        "severity": "note",
+        "issue": "v2 copy: Unverifiable button names «Создать мою личность» and «У меня уже есть слова восстановления» are natural and faithful.",
+        "backTranslation": "Create my identity / I already have recovery words",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of the iPhone, iPad or Mac, and then enter the recovery words, your contacts will come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; matches home.tagline phrasing.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2724,13 +3515,90 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English says \"File menu\"; the drafter translated that menu name literally. The pack (Mac release notes in this language, screenshots) never shows the localised File menu, so the name cannot be checked, and this language's Mac notes say \"menu bar\" instead. Use the notes' own wording. Meaning is kept (the commands are in the menu bar), only less specific.",
+        "backTranslation": "On Mac, «Encrypt file», «Decrypt file» and «Lock» are in the «File» menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "(all changed and new keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys: back-translated, platform scope matches English in every sentence (iPhone, iPad, Mac and Windows; On Mac and Windows; On iPhone and iPad; Backups of your iPhone, iPad or Mac; On Mac). The 3 gone keys are absent. No v1 terms (Secure File/Directory/Text; backup phrase only in home.v2.words.text and v2.notes.words). No verify/audited/military-grade/unbreakable/tamper/sender claims, no \"we\". Register and quotation marks consistent with the file. check-translations: only roadmap.v2.title \"still English\" (honest: product name). Terms matched to the el notes: λέξεις ανάκτησης, «Πρόβλημα με το ξεκλείδωμα;», οθόνη ξεκλειδώματος, «Κρυφό όσο είναι στο παρασκήνιο», Εναλλαγή εφαρμογών, Ακύρωση, Ρυθμίσεις, Επαφές. Matched to the el screenshots: Αρχεία, Κείμενο, Ταυτότητα, Κρυπτογράφηση αρχείου, Αποκρυπτογράφηση αρχείου, Κοινοποίηση κάρτας επαφής, Ο κωδικός επαφής σας, Ακύρωση. Formal εσείς kept.",
+        "backTranslation": "",
+        "suggestion": "None."
+      },
+      {
+        "key": "home.phones.text, roadmap.v2.text, home.v2.words.text, v2.notes.reset",
+        "severity": "note",
+        "issue": "v2 copy: Drafter choice (2): these four lines use \"κωδικό\" for password, copied from the el release notes, while the rest of the site (and the app's identity screen) says \"κωδικό πρόσβασης\". Not wrong: \"κωδικός\" alone is everyday Greek for a password and is the app's own release-note wording. Only home.v2.words.text reads slightly uneven, because its title says \"κωδικού πρόσβασης\". Optional alignment, not required.",
+        "backTranslation": "...if you forget your password (code)...",
+        "suggestion": "Keep as the notes, or in home.v2.words.text only: \"Ξεχάσατε τον κωδικό πρόσβασης; ... και ορίστε νέο κωδικό πρόσβασης με τις λέξεις ανάκτησης.\""
+      },
+      {
+        "key": "home.v2.cancel.text",
+        "severity": "note",
+        "issue": "v2 copy: \"σταματά επίσης και έναν φάκελο\": \"επίσης\" and \"και\" both mean \"also\"; slightly redundant.",
+        "backTranslation": "On Mac and Windows, it also stops a folder too: the files already finished stay.",
+        "suggestion": "Σε Mac και Windows, σταματά επίσης έναν φάκελο: τα αρχεία που έχουν ήδη ολοκληρωθεί μένουν."
+      },
+      {
+        "key": "v2.privacy.title",
+        "severity": "note",
+        "issue": "v2 copy: \"Κρυφό\" (neuter) matches the in-app label \"Κρυφό όσο είναι στο παρασκήνιο\"; v2.notes.ios uses \"η εφαρμογή είναι κρυφή\" (feminine), also correct there. Fine.",
+        "backTranslation": "Hidden in the App Switcher",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a",
+        "severity": "note",
+        "issue": "v2 copy: Unverifiable button names «Δημιουργία της ταυτότητάς μου» and «Έχω ήδη λέξεις ανάκτησης» are natural and faithful.",
+        "backTranslation": "Creation of my identity / I already have recovery words",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter the recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 172 chars; 'για όσους επιλέξετε' is already short. Fine.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whoever you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2890,6 +3758,83 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English says \"File menu\"; the drafter translated that menu name literally. The pack (Mac release notes in this language, screenshots) never shows the localised File menu, so the name cannot be checked, and this language's Mac notes say \"menu bar\" instead. Use the notes' own wording. Meaning is kept (the commands are in the menu bar), only less specific.",
+        "backTranslation": "On Mac, the items «Encrypt file», «Decrypt file» and «Lock» are in the «File» menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "v2.notes.ios",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: Tab name: the uk screenshots show the Settings tab as \"Параметри\", but the line says \"Налаштування\" (copied from the uk iOS notes, which disagree with the app). The tab bar the visitor sees in the app says \"Параметри\".",
+        "backTranslation": "On iPhone, a tab bar: Files, Text, Identity, Contacts and Settings (Налаштування). On iPhone and iPad the app is hidden in the app switcher.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "(all changed and new keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys: back-translated, platform scope matches English in every sentence (iPhone, iPad, Mac and Windows; On Mac and Windows; On iPhone and iPad; Backups of your iPhone, iPad or Mac; On Mac). The 3 gone keys are absent. No v1 terms (Secure File/Directory/Text; backup phrase only in home.v2.words.text and v2.notes.words). No verify/audited/military-grade/unbreakable/tamper/sender claims, no \"we\". Register and quotation marks consistent with the file. check-translations: only roadmap.v2.title \"still English\" (honest: product name). Terms matched to the uk notes: слова відновлення, «Не вдається розблокувати?», екран блокування, «Приховано, поки програма у фоні», перемикач програм, «Скасувати», Контакти. Matched to the uk screenshots: Файли, Текст, Особистість, «Зашифрувати файл», «Розшифрувати файл», «Поділитися карткою контакту», «Ваш код контакту», Скасувати, and the Settings tab \"Параметри\" (see blocking finding). Formal ви kept.",
+        "backTranslation": "",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.password.q",
+        "severity": "note",
+        "issue": "v2 copy: Drafter choice (6): \"Не пам’ятаю пароль\" avoids the gendered забув/забула. Natural, meaning kept. Accept.",
+        "backTranslation": "I do not remember my password. What can be done?",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a",
+        "severity": "note",
+        "issue": "v2 copy: Unverifiable button names «Створити мою особистість» and «У мене вже є слова відновлення» are natural and faithful.",
+        "backTranslation": "Create my identity / I already have recovery words",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "v2.notes.ios",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked: Settings tab is now 'Параметри', matching the uk screenshot tab bar (Файли, Текст, Особистість, Контакти, Параметри). Scope: tab bar on iPhone, hiding on iPhone and iPad, as in the English. 'перемикач програм' matches the uk iOS notes.",
+        "backTranslation": "On iPhone, a tab bar: Files, Text, Identity, Contacts and Settings. On iPhone and iPad the app is hidden in the app switcher.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not bring back your contacts. If you first restore a backup of the iPhone, iPad or Mac, and then enter the recovery words, your contacts will come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
@@ -2925,7 +3870,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3051,13 +3996,69 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: file encryption without a connection for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English names the File menu, but the pack never shows the app's File menu name in this language; the Mac release notes in this language say 'menu bar'. A menu name the pack does not show is unverifiable (and the standard macOS name may not be what the app uses). Use the release notes' own wording.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the File menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a, home.v2.words.text, v2.privacy.text, faq.password.a, v2.notes.reset",
+        "severity": "note",
+        "issue": "v2 copy: Curly double quotes “ ”: normal in Mexican Spanish and the typographic form of the straight quotes the es-MX release notes use. The file had no quoted strings before. Accept.",
+        "backTranslation": "",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "(all)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against the English, the v2 iOS/Mac/Windows release notes in this language and the six v2 screenshots: recovery words, 'Trouble unlocking?', tab names, Encrypt file / Decrypt file, Share contact card, contact code, Cancel, 'Hidden while in the background', app switcher, zoom, long names, 'never replaces a file', setup, backups and 'Small fixes and improvements' lines all match. Platform scope matches in every key. No v1 terms (Secure File/Directory/Text) and the old backup-phrase name appears only in home.v2.words.text and v2.notes.words. No forbidden words, no 'we'. The 3 gone keys are absent. check-translations: only 'roadmap.v2.title: still English' (honest, product name). tú kept; Mexican terms (respaldo, dona, Configuración tab, ingresa, video, una Mac / una PC) match the es-MX notes and file. Screenshot tab labels show only the active tab; Configuración taken from the notes. 'Create my identity' and 'I already have recovery words' cannot be checked against the app; the drafter's wording is natural and faithful.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts also come back.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Same as es; fine for Mexico.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whoever you choose. No account, no servers, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -3223,13 +4224,76 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English names the File menu, but the pack never shows the app's File menu name in this language; the Mac release notes in this language say 'menu bar'. A menu name the pack does not show is unverifiable (and the standard macOS name may not be what the app uses). Use the release notes' own wording.",
+        "backTranslation": "On Mac, Encrypt file, Decrypt file and Lock are in the File menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "home.v2.cancel.text",
+        "severity": "note",
+        "issue": "v2 copy: 'Cancelar para a criptografia...' can be misread as 'Cancel for the encryption' (para = verb 'stops' vs preposition).",
+        "backTranslation": "Cancel stops encrypting or decrypting a file, and nothing is saved. On Mac and Windows, it also stops a folder: the files already finished are kept.",
+        "suggestion": "'Cancelar interrompe a criptografia ou a descriptografia de um arquivo, e nada é salvo. No Mac e no Windows, também interrompe uma pasta: ...'"
+      },
+      {
+        "key": "(all)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against the English, the v2 iOS/Mac/Windows release notes in this language and the six v2 screenshots: recovery words, 'Trouble unlocking?', tab names, Encrypt file / Decrypt file, Share contact card, contact code, Cancel, 'Hidden while in the background', app switcher, zoom, long names, 'never replaces a file', setup, backups and 'Small fixes and improvements' lines all match. Platform scope matches in every key. No v1 terms (Secure File/Directory/Text) and the old backup-phrase name appears only in home.v2.words.text and v2.notes.words. No forbidden words, no 'we'. The 3 gone keys are absent. check-translations: only 'roadmap.v2.title: still English' (honest, product name). você kept; “ ” quotes (the pt-BR notes use straight quotes, the curly form is right for the site). Windows notes are pt-PT, so iOS/Mac pt-BR notes were the source. 'Create my identity' and 'I already have recovery words' cannot be checked against the app; the drafter's wording is natural and faithful.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "home.v2.cancel.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked: 'interrompe' removes the 'para' ambiguity. Meaning and scope (Mac and Windows for folders) match the English; grammar fine.",
+        "backTranslation": "Cancel interrupts the encrypting or decrypting of a file, and nothing is saved. On Mac and Windows, it also interrupts a folder: the files already finished are kept.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring your contacts back. If you first restore a backup of your iPhone, iPad or Mac and then type your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Merged list 'Sem conta, servidores ou assinatura' is exact; 'para quem você escolher' exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for whoever you choose. No account, servers or subscription.",
+        "suggestion": ""
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3389,13 +4453,90 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English says \"File menu\"; the drafter translated that menu name literally. The pack (Mac release notes in this language, screenshots) never shows the localised File menu, so the name cannot be checked, and this language's Mac notes say \"menu bar\" instead. Use the notes' own wording. Meaning is kept (the commands are in the menu bar), only less specific.",
+        "backTranslation": "On Mac, Encrypt File, Decrypt File and Lock are in the File menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "(all changed and new keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys: back-translated, platform scope matches English in every sentence (iPhone, iPad, Mac and Windows; On Mac and Windows; On iPhone and iPad; Backups of your iPhone, iPad or Mac; On Mac). The 3 gone keys are absent. No v1 terms (Secure File/Directory/Text; backup phrase only in home.v2.words.text and v2.notes.words). No verify/audited/military-grade/unbreakable/tamper/sender claims, no \"we\". Register and quotation marks consistent with the file. check-translations: only roadmap.v2.title \"still English\" (honest: product name). Terms matched to the tr notes: kurtarma kelimeleri, “Kilidi açmakta sorun mu var?”, kilit açma ekranı, “Arka plandayken gizli”, Uygulama Değiştirici, İptal, geri yükle(mek) for restore, Ayarlar, Kişiler. Matched to the tr screenshots: Dosyalar, Metin, Kimlik, Dosyayı şifrele, Dosyanın şifresini çöz, Kişi kartını paylaş, Kişi kodunuz, İptal. Formal siz kept.",
+        "backTranslation": "",
+        "suggestion": "None."
+      },
+      {
+        "key": "(restore wording)",
+        "severity": "note",
+        "issue": "v2 copy: Drafter choice (4): changed keys say \"geri yükle\" for restore, as the tr v2 notes do. The concern about untouched keys still saying \"kurtar\" does not hold: in the current tr.ts no key uses \"kurtar\" as the verb for restore any more (every such line was a changed key). Only \"Kurtarma:\" (technical.keys.recovery.label, = Recovery) and \"kurtarma kelimeleri/parçaları\" remain, which mean recovery, correctly. The glossary entry \"Kimliği Kurtar\" is the v1 button and is not used on the site. Consistent; accept.",
+        "backTranslation": "",
+        "suggestion": "Keep. Optionally update the v1 glossary entry later."
+      },
+      {
+        "key": "technical.keys.recovery.text",
+        "severity": "note",
+        "issue": "v2 copy: \"seçilen sayıdaki herhangi parçalar\" is slightly awkward (\"herhangi\" with a plural).",
+        "backTranslation": "any shards of the chosen number (at least 2, at most 16 in total) bring it back",
+        "suggestion": "...; seçilen sayıda herhangi parça (en az 2, toplamda en fazla 16) onu geri getirir."
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a",
+        "severity": "note",
+        "issue": "v2 copy: Unverifiable button names “Kimliğimi oluştur” and “Zaten kurtarma kelimelerim var” are natural and faithful.",
+        "backTranslation": "Create my identity / I already have recovery words",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore your iPhone, iPad or Mac backup, then enter your recovery words, your contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “Kurtarma kelimelerim zaten var” equals app text; “… seçeneğini seçin” reads correctly. The conditional “geri yükler, ardından … girerseniz” is a correct suspended-suffix construction. src/i18n/review.json still quotes the old button name in a historical note (no site impact).",
+        "backTranslation": "Choose the 'I already have recovery words' option.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; formal siz kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for the people you choose. No account, server or subscription.",
+        "suggestion": ""
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -3534,13 +4675,90 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "*",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/ja.txt, mac/ja.txt and the ja v2 screenshots (iphone-files-dark, iphone-identity-dark). Terms match: 復元用の単語, 「ロックを解除できませんか？」, ロック解除画面, 「バックグラウンドでは非表示」, アプリスイッチャー, キャンセル, ファイル/テキスト, 「ファイルを暗号化」「ファイルを復号化」, 「連絡先カードを共有」, あなたの連絡先コード, アイデンティティ画面. No セキュア; バックアップフレーズ only in home.v2.words.text and v2.notes.words. Shard term 復元用ピース unchanged from the file. Gone keys removed. check-translations: only roadmap.v2.title still English. Platform scope kept.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "v2.notes.ios",
+        "severity": "note",
+        "issue": "v2 copy: On the ja iPhone screens the Identity tab label is shortened to “ID” (the screen title is アイデンティティ). The text follows the release notes (アイデンティティ), which is right for prose; no change needed, recorded for awareness.",
+        "backTranslation": "On iPhone, a tab bar for Files, Text, Identity, Contacts and Settings. …",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "download.start.text",
+        "severity": "note",
+        "issue": "v2 copy: First sentence is slightly awkward: “Doughnut Forgeは、短いようこそ画面のあと、選択が1つだけあります” (Doughnut Forge, after a short welcome screen, there is only one choice). Meaning is right.",
+        "backTranslation": "Doughnut Forge: after a short welcome screen there is just one choice: create your identity or restore it. …",
+        "suggestion": "Doughnut Forgeは短いようこそ画面から始まり、そのあと選択は1つだけです：アイデンティティを作成するか、復元するか。"
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Says “ファイルメニューにあり” (File menu); the Mac notes say “メニューバーに入り” (menu bar). Both true; house rule prefers the notes.",
+        "backTranslation": "… On Mac, Encrypt file, Decrypt file and Lock are in the File menu, and keyboard shortcuts work.",
+        "suggestion": "Macでは、「ファイルを暗号化」「ファイルを復号化」「ロック」がメニューバーにあり、キーボードショートカットも使えます。"
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "download.start.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked: first sentence now reads naturally ('starts with a short welcome screen, then there is only one choice'). 24 recovery words, write down and keep safe, only way to restore identity or reset forgotten password all kept; polite です/ます register kept.",
+        "backTranslation": "Doughnut Forge starts with a short welcome screen, and after that there is just one choice: create your identity or restore it. When you create it, the app shows you 24 recovery words. Write them down and keep them in a safe place. They are the only way to restore your identity or reset a forgotten password.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "With the recovery words, contacts do not come back. If you restore an iPhone, iPad, Mac backup first and then enter the recovery words, contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Platform list “iPhone、iPad、Mac” has no explicit 'or', matching the earlier sentence in the same string; natural in Japanese.",
+        "backTranslation": "",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; desu/masu register and 'サブスクなし' carried over from the previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. You can encrypt files and text for the people you chose. No account, no server, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3714,13 +4932,62 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "*",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/zh-Hans.txt and mac/zh-Hans.txt. Terms match: 恢复单词, “无法解锁？”, 锁定界面, “在后台时已隐藏”, App 切换器, 取消, 文件/文本/身份/联系人/设置, 加密文件, 解密文件, 分享联系人卡片, 联系人代码, 加密绝不会替换已存在的文件. No 安全文件/安全文本; 备份短语 only in home.v2.words.text and v2.notes.words. Gone keys removed. check-translations: only roadmap.v2.title still English. Platform scope kept.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Says “位于“文件”菜单中” (File menu); the Mac notes say “已加入菜单栏” (menu bar). Both true; house rule prefers the notes.",
+        "backTranslation": "… On Mac, Encrypt File, Decrypt File and Lock are in the File menu, with keyboard shortcuts.",
+        "suggestion": "在 Mac 上，“加密文件”、“解密文件”和“锁定”位于菜单栏中，并配有键盘快捷键。"
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words cannot get back your contacts. If you first restore the iPhone, iPad or Mac backup, then enter the recovery words, your contacts will also come back.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; 您 kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account needed, no servers, no subscription needed.",
+        "suggestion": ""
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3921,13 +5188,62 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "*",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/zh-Hant.txt, mac/zh-Hant.txt and the zh-TW v2 screenshot iphone-encrypt-light (加密檔案, 誰可以開啟, 取消). Terms match: 復原單字, 「無法解鎖？」, 鎖定畫面, 「在背景時已隱藏」, App 切換器, 檔案/文字/身分/聯絡人/設定, 解密檔案, 分享聯絡人卡片, 取代已存在的檔案. No 安全檔案; 備份短語 only in home.v2.words.text and v2.notes.words. 「」 quotes as in the file. Gone keys removed. check-translations: only roadmap.v2.title still English. Platform scope kept.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Says “位於「檔案」選單中” (File menu); the Mac notes say “已加入選單列” (menu bar). Both true; house rule prefers the notes.",
+        "backTranslation": "… On Mac, Encrypt File, Decrypt File and Lock are in the File menu, with keyboard shortcuts.",
+        "suggestion": "在 Mac 上，「加密檔案」、「解密檔案」和「鎖定」位於選單列中，並有鍵盤快速鍵。"
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words cannot get back your contacts. If you first restore the iPhone, iPad or Mac backup, then enter the recovery words, your contacts will also come back.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; 您 kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account needed, no servers, no subscription needed.",
+        "suggestion": ""
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4094,13 +5410,83 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone, iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "*",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/ko.txt, mac/ko.txt and the ko v2 screenshot iphone-identity-dark (신원, 이름 편집, 연락처 카드 공유, 내 연락처 코드, tabs 파일/텍스트/신원/연락처/설정). Terms match: 복구 단어, “잠금 해제에 문제가 있나요?”, 잠금 화면, “백그라운드에 있는 동안 숨겨짐”, 앱 전환기, 취소, 파일 암호화, 파일 복호화. No 보안 파일; 백업 문구 only in home.v2.words.text and v2.notes.words. Formal register kept. Gone keys removed. check-translations: only roadmap.v2.title still English. Platform scope kept.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a, home.v2.words.text, faq.password.a, v2.notes.reset, v2.privacy.text",
+        "severity": "note",
+        "issue": "v2 copy: Verdict on quotation marks: “ ” are standard Korean quotation marks for quoted words and the ko release notes use exactly these around the same labels. Correct to add them.",
+        "backTranslation": "",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "home.phones.text, roadmap.v2.text",
+        "severity": "note",
+        "issue": "v2 copy: Final sentence “iPhone, iPad, Mac, Windows에서 사용할 수 있습니다” (available on …) is slightly freer than “On iPhone, iPad, Mac and Windows.” Same scope, true; fine as is.",
+        "backTranslation": "A new look, an easier start, and a way to get back in if you forget your password. Available on iPhone, iPad, Mac and Windows.",
+        "suggestion": "Optional: “iPhone, iPad, Mac, Windows에서.”"
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Says “파일 메뉴에 있으며” (File menu); the Mac notes say “메뉴 막대에 있으며” (menu bar). Both true; house rule prefers the notes.",
+        "backTranslation": "… On Mac, Encrypt file, Decrypt file and Lock are in the File menu, and there are keyboard shortcuts.",
+        "suggestion": "Mac에서는 파일 암호화, 파일 복호화, 잠금이 메뉴 막대에 있으며 키보드 단축키도 있습니다."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "With recovery words, contacts do not come back. If you restore the iPhone, iPad, Mac backup first and then enter the recovery words, contacts come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Platform list “iPhone, iPad, Mac” without 'or' matches the earlier sentence in the same string; natural in Korean.",
+        "backTranslation": "",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; '내가 선택한' matches home.tagline.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people I choose. No account, no server, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4233,13 +5619,90 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English says \"File menu\"; the drafter translated that menu name literally. The pack (Mac release notes in this language, screenshots) never shows the localised File menu, so the name cannot be checked, and this language's Mac notes say \"menu bar\" instead. Use the notes' own wording. Meaning is kept (the commands are in the menu bar), only less specific.",
+        "backTranslation": "On Mac, \"Encrypt file\", \"Decrypt file\" and \"Lock\" are in the File menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "(all changed and new keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys: back-translated, platform scope matches English in every sentence (iPhone, iPad, Mac and Windows; On Mac and Windows; On iPhone and iPad; Backups of your iPhone, iPad or Mac; On Mac). The 3 gone keys are absent. No v1 terms (Secure File/Directory/Text; backup phrase only in home.v2.words.text and v2.notes.words). No verify/audited/military-grade/unbreakable/tamper/sender claims, no \"we\". Register and quotation marks consistent with the file. check-translations: only roadmap.v2.title \"still English\" (honest: product name). Terms matched to the hi notes: पुनर्प्राप्ति शब्द, “अनलॉक करने में समस्या?”, लॉक स्क्रीन, “बैकग्राउंड में रहते समय छिपा हुआ”, ऐप स्विचर, रद्द करें, रिप्लेस नहीं करता, सेटिंग्स, संपर्क. Matched to the hi screenshots: फ़ाइलें, टेक्स्ट, पहचान, फ़ाइल एन्क्रिप्ट करें, फ़ाइल डिक्रिप्ट करें, संपर्क कार्ड साझा करें, आपका संपर्क कोड, रद्द करें. आप kept.",
+        "backTranslation": "",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.password.q",
+        "severity": "note",
+        "issue": "v2 copy: Drafter choice (6): \"मुझे अपना पासवर्ड याद नहीं है\" avoids the gendered भूल गया/गई. Natural, meaning kept (\"What should I do?\" for \"What can I do?\" is a natural equivalent). Accept.",
+        "backTranslation": "I do not remember my password. What should I do?",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "home.phones.altIdentity",
+        "severity": "note",
+        "issue": "v2 copy: \"साझा करें\" follows the app button; elsewhere the site says \"शेयर\". App term wins here. Fine.",
+        "backTranslation": "Doughnut Forge 2 on iPhone: Identity screen, with your contact code and the \"Share contact card\" button",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a",
+        "severity": "note",
+        "issue": "v2 copy: Unverifiable button names “मेरी पहचान बनाएँ” and “मेरे पास पहले से पुनर्प्राप्ति शब्द हैं” are natural and faithful.",
+        "backTranslation": "Create my identity / I already have recovery words",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not bring back your contacts. If you first restore the backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts also come back.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.backup.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “मेरी पहचान बनाएं” equals app text (only the nasal mark changed). Other hi keys keep बनाएँ in plain prose; acceptable since not a button quote, but the site now mixes both spellings. src/i18n/review.json line ~4968 still quotes the old spelling in a historical note (no site impact). Needs a stamp after review.",
+        "backTranslation": "When you choose 'Create my identity', the app gives you 24 recovery words.",
+        "suggestion": "Optional: align the two prose uses to बनाएं later for consistency."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 176 chars; merged list is exact in meaning. Optional shorter: 'चुने हुए लोगों के लिए' (drop 'अपने'), not needed.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for people you have chosen. No account, server or subscription.",
+        "suggestion": ""
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4391,13 +5854,90 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone, and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: was blocking, now fixed and re-checked by a second independent reviewer: The English says \"File menu\"; the drafter translated that menu name literally. The pack (Mac release notes in this language, screenshots) never shows the localised File menu, so the name cannot be checked, and this language's Mac notes say \"menu bar\" instead. Use the notes' own wording. Meaning is kept (the commands are in the menu bar), only less specific.",
+        "backTranslation": "On Mac, Encrypt File, Decrypt File and Lock are in the File menu, with keyboard shortcuts.",
+        "suggestion": "Done."
+      },
+      {
+        "key": "(all changed and new keys)",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys: back-translated, platform scope matches English in every sentence (iPhone, iPad, Mac and Windows; On Mac and Windows; On iPhone and iPad; Backups of your iPhone, iPad or Mac; On Mac). The 3 gone keys are absent. No v1 terms (Secure File/Directory/Text; backup phrase only in home.v2.words.text and v2.notes.words). No verify/audited/military-grade/unbreakable/tamper/sender claims, no \"we\". Register and quotation marks consistent with the file. check-translations: only roadmap.v2.title \"still English\" (honest: product name). Terms matched to the id notes: kata pemulihan, “Kesulitan membuka kunci?”, layar kunci, “Disembunyikan saat di latar belakang”, pengalih App, Batal, Enkripsi File / Dekripsi File / Kunci (Mac), Pengaturan, Kontak. Matched to the id screenshots: File, Teks, Identitas, Enkripsi file, Dekripsi file, Bagikan kartu kontak, Kode kontak Anda, Batal. Anda kept.",
+        "backTranslation": "",
+        "suggestion": "None."
+      },
+      {
+        "key": "press.shots.choose",
+        "severity": "note",
+        "issue": "v2 copy: Drafter choice (3): lower case is right, because id's press.shots.label is \"{device}: layar {screen}\" and the phrase follows \"layar\". But the rendered caption \"iPhone: layar memilih siapa yang dapat membuka file\" can read as \"the screen chooses who can open the file\". Adding \"untuk\" makes it \"the screen for choosing\".",
+        "backTranslation": "iPhone: screen choosing who can open file",
+        "suggestion": "untuk memilih siapa yang dapat membuka file (renders \"iPhone: layar untuk memilih siapa yang dapat membuka file\")"
+      },
+      {
+        "key": "tabs.files",
+        "severity": "note",
+        "issue": "v2 copy: \"File\" (not plural) is exactly the id app's tab and screen title. Correct.",
+        "backTranslation": "File(s)",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a",
+        "severity": "note",
+        "issue": "v2 copy: Unverifiable button names “Buat identitas saya” and “Saya sudah punya kata pemulihan” are natural and faithful.",
+        "backTranslation": "Create my identity / I already have recovery words",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "press.shots.choose",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked: renders as 'iPhone: layar untuk memilih siapa yang dapat membuka file' ('screen for choosing who can open a file'); lower case right after 'layar'. Natural and faithful.",
+        "backTranslation": "for choosing who can open a file",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not return your contacts. If you first restore the backup of your iPhone, iPad, or Mac, then enter your recovery words, your contacts also return.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; Anda kept.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no server, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4557,13 +6097,90 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "*",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/ms.txt, mac/ms.txt and the ms v2 screenshots (iphone-files-dark, ipad-files-light, iphone-identity-dark). Terms match: perkataan pemulihan, “Masalah membuka kunci?”, skrin kunci, “Disembunyikan semasa di latar belakang”, Penukar App, Batal, tabs Fail/Teks/Identiti/Kenalan/Tetapan, Sulitkan fail, Nyahsulit fail, Kongsi kad kenalan, kod kenalan anda. No Fail Selamat or frasa sandaran outside home.v2.words.text and v2.notes.words. Gone keys removed. check-translations: only roadmap.v2.title still English (honest). Platform scope kept in every key.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a, home.v2.words.text, v2.privacy.text, faq.password.a, v2.notes.reset",
+        "severity": "note",
+        "issue": "v2 copy: Verdict on quotation marks: “ ” are the normal Malay quotation marks and the ms release notes quote the same labels (with straight quotes). Adding them where the English now quotes a label is correct, not a style break.",
+        "backTranslation": "",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "home.phones.altFile, features.ios.altIpad",
+        "severity": "note",
+        "issue": "v2 copy: Verdict on case: the v2 iPhone and iPad screens show “Sulitkan fail” and “Nyahsulit fail” in lower case, so lower case is the app's v2 wording. The Mac menu (features.desktop.text) keeps title case “Sulitkan Fail”, “Nyahsulit Fail”, as the Mac notes do. Both correct.",
+        "backTranslation": "Doughnut Forge 2 on iPhone: the Files screen with Encrypt file and Decrypt file",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Says “dalam menu Fail” (in the File menu), following the English. The Mac release notes say “ada dalam bar menu”. Both true; house rule prefers the notes' wording.",
+        "backTranslation": "… On Mac, Encrypt File, Decrypt File and Lock are in the File menu, with keyboard shortcuts.",
+        "suggestion": "Pada Mac, Sulitkan Fail, Nyahsulit Fail dan Kunci ada dalam bar menu, dengan pintasan papan kekunci."
+      },
+      {
+        "key": "v2.privacy.title, v2.privacy.text, v2.notes.ios",
+        "severity": "note",
+        "issue": "v2 copy: “Penukar App” is the notes' (Apple) term while the rest of the site says “aplikasi”. Acceptable: it is the system feature's name.",
+        "backTranslation": "Hidden in the App Switcher",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Your recovery words do not return your contacts. If you restore your iPhone, iPad or Mac backup first and then enter your recovery words, your contacts also come back.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “Saya sudah mempunyai perkataan pemulihan” equals app text; “pilih “…” dan masukkan perkataan itu” reads correctly.",
+        "backTranslation": "Choose 'I already have recovery words' and enter those words.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; matches previous list form.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, server or subscription.",
+        "suggestion": ""
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4715,13 +6332,76 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: encrypt files offline for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "*",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/th.txt, mac/th.txt and the th v2 screenshots (iphone-files-dark, iphone-identity-dark). Terms match: คำกู้คืน, “มีปัญหาในการปลดล็อกใช่ไหม”, หน้าจอปลดล็อก, “ซ่อนไว้ขณะทำงานเบื้องหลัง”, แถบสลับแอป, ยกเลิก, tabs ไฟล์/ข้อความ/ข้อมูลประจำตัว/ผู้ติดต่อ/การตั้งค่า, เข้ารหัสไฟล์, ถอดรหัสไฟล์, แชร์นามบัตร, รหัสผู้ติดต่อของคุณ. No ไฟล์ที่ปลอดภัย; วลีสำรองข้อมูล only in home.v2.words.text and v2.notes.words. Gone keys removed. check-translations: only roadmap.v2.title still English. Platform scope kept.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Verdict on ล็อก: keep ล็อก. It is the standard (Royal Institute) spelling, the site's spelling, and the app's own v2 screens use it (ล็อกไฟล์…, ปลดล็อก…); even the notes use ล็อก in ปลดล็อก and only the Mac menu line has ล็อค. Separately: says “อยู่ในเมนูไฟล์” (File menu) where the Mac notes say “อยู่ในแถบเมนู” (menu bar). Both true; house rule prefers the notes.",
+        "backTranslation": "… On Mac, Encrypt file, Decrypt file and Lock are in the File menu, with shortcut keys.",
+        "suggestion": "บน Mac เข้ารหัสไฟล์ ถอดรหัสไฟล์ และล็อก อยู่ในแถบเมนู พร้อมปุ่มลัด"
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: The Mac release note line 9 spells Lock as 'ล็อค'; the site uses 'ล็อก', which matches the iOS and Windows notes, the other Mac lines and the rest of th.ts (Royal Institute spelling). Fine as is.",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "Keep 'ล็อก'."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "Recovery words do not bring your contacts back. If you restore the backup of the iPhone, iPad or Mac first, and only then enter the recovery words, your contacts will come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Dropping the leading แต่ (but) is correct: the new sentence stands alone like the English. ไม่ได้นำ…กลับมา matches the construction already used earlier in the same string.",
+        "backTranslation": "",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no server, no subscription.",
+        "suggestion": ""
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-31",
+    "reviewedAt": "2026-11-10",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4879,6 +6559,69 @@
         "issue": "2 November 2026: iPad added and Windows moved second, to match the new English. Device names and endings match the rest of the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
         "suggestion": "No change."
+      },
+      {
+        "key": "*",
+        "severity": "note",
+        "issue": "v2 copy: Checked all 16 changed and 27 new keys against ios/vi.txt, mac/vi.txt and the vi v2 screenshots (iphone-identity-dark). Terms match: các từ khôi phục, “Gặp sự cố khi mở khóa?”, màn hình khóa, “Ẩn khi ở chế độ nền”, bộ chuyển đổi ứng dụng, Hủy, tabs Tệp/Văn bản/Danh tính/Liên hệ/Cài đặt, Mã hóa tệp, Giải mã tệp, Chia sẻ thẻ liên hệ, mã liên hệ của bạn. No Tệp bảo mật; cụm từ sao lưu only in home.v2.words.text and v2.notes.words. Gone keys removed. check-translations: only roadmap.v2.title still English. Platform scope kept.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.backup.a, faq.restore.a, home.v2.words.text, v2.privacy.text, faq.password.a, v2.notes.reset",
+        "severity": "note",
+        "issue": "v2 copy: Verdict on quotation marks: “ ” are the normal Vietnamese quotation marks and the vi release notes quote the same labels. Correct to add them where the English quotes a label.",
+        "backTranslation": "",
+        "suggestion": "Keep."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy: Says “nằm trong menu Tệp” (File menu); the Mac notes say “nằm trong thanh menu” (menu bar). Both true; house rule prefers the notes.",
+        "backTranslation": "… On Mac, Encrypt file, Decrypt file and Lock are in the File menu, with shortcuts.",
+        "suggestion": "Trên Mac, Mã hóa tệp, Giải mã tệp và Khóa nằm trong thanh menu, kèm phím tắt."
+      },
+      {
+        "key": "features.desktop.text",
+        "severity": "note",
+        "issue": "v2 copy, re-check: Re-checked features.desktop.text: all four points of the English kept (zoom 100% to 200%, screens fit smaller windows, long names shortened in the middle, encrypting never replaces an existing file); the last sentence now says the menu bar, with the command names and wording of this language's Mac release notes (line 9); no File menu named; register matches the file. check-translations: 338 keys, slots match, exit 0 (only stale/unstamped warnings and 3 stamp records for removed keys).",
+        "backTranslation": "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the menu bar, with keyboard shortcuts.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Checked: new ending says contacts do not come back from recovery words alone, and do come back when a device backup (iPhone, iPad or Mac only) is restored first and the words entered after; order kept, nothing added. Restore button equals app text; create button in faq.backup.a equals app text. Rest of both strings unchanged vs HEAD apart from the listed button fixes. Register, quotation marks and the file's recovery-words term kept; no 'we', 'verified', 'audited' or tamper wording. check-translations: only the expected stale/changed-since-stamped warnings, all keys and slots present.",
+        "backTranslation": "The recovery words do not bring your contacts back. If you restore the iPhone, iPad or Mac backup first and only then enter the recovery words, your contacts will come back too.",
+        "suggestion": "None."
+      },
+      {
+        "key": "faq.restore.a",
+        "severity": "note",
+        "issue": "Restore answer and app button names (10 November 2026): Button fix checked: “Tôi đã có từ khôi phục” equals app text; “chọn “…” và nhập các từ đó” reads correctly.",
+        "backTranslation": "Choose 'I already have recovery words' and enter those words.",
+        "suggestion": "None."
+      },
+      {
+        "key": "meta.home.title",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed (iPhone, iPad, Mac, Windows); 'Doughnut Forge' first; rest identical to previous string.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+        "suggestion": ""
+      },
+      {
+        "key": "home.summary",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: only platform order changed; rest identical.",
+        "backTranslation": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.home.description",
+        "severity": "note",
+        "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
+        "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no server, no subscription.",
+        "suggestion": ""
       }
     ]
   }

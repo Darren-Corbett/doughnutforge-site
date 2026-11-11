@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: offline fájltitkosítás Macre, Windowsra, iPhone-ra és iPadre",
-  "meta.home.description": "Titkosíts fájlokat és szöveget iPhone-on, iPaden, Macen és PC-n. Számítógépen mappákat is titkosíthatsz. Fiók, szerver és előfizetés nélkül. Egyszeri vásárlás platformonként.",
+  "meta.home.title": "Doughnut Forge: offline fájltitkosítás iPhone-ra, iPadre, Macre és Windowsra",
+  "meta.home.description": "Doughnut Forge: offline fájltitkosítás iPhone-ra, iPadre, Macre és PC-re. Titkosíts fájlokat és szöveget azoknak, akiket választasz. Fiók, szerver és előfizetés nélkül.",
   "nav.label": "Főmenü",
   "nav.features": "Funkciók",
   "nav.pricing": "Árak",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Biztonság",
   "nav.home": "Doughnut Forge – kezdőlap",
   "skip": "Ugrás a tartalomra",
-  "home.summary": "Offline fájltitkosítás Macre, iPhone-ra, iPadre és Windowsra.",
+  "home.summary": "Offline fájltitkosítás iPhone-ra, iPadre, Macre és Windowsra.",
   "home.tagline": "Csak azok nyithatják meg őket, akiket te választasz.",
   "home.lead": "A Doughnut Forge lezárja a fájljaidat és szövegeidet az iPhone-odon, iPadeden vagy a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol.",
   "home.what.title": "Mi az a Doughnut Forge?",
@@ -31,12 +31,23 @@ export default {
   "home.specimen.note": "Szia Bence! A pótkulcs a hátsó ajtó melletti kék virágcserépben van. A riasztó kódja 4071. Pénteken találkozunk!",
   "home.specimen.cipherLabel": "Ugyanaz a jegyzet titkosítva: olvashatatlan, véletlenszerű karakterek.",
   "home.specimen.caption": "Illusztráció: a valódi titkosított fájlok ennél sokkal több karaktert tartalmaznak.",
-  "home.phones.title": "Most már iPhone és iPad készülékekre is.",
-  "home.phones.text": "Mac és Windows rendszerre is elérhető.",
-  "home.phones.altText": "A Doughnut Forge iPhone készüléken: a Biztonságos szöveg képernyő egy titkosításra kész jegyzettel",
-  "home.phones.altFile": "A Doughnut Forge iPhone készüléken: a Biztonságos fájl képernyő a Fájl titkosítása és a Fájl visszafejtése lehetőséggel",
-  "home.phones.altIdentity": "A Doughnut Forge iPhone készüléken: az Identitás képernyő egy megosztható névjegykártyával",
+  "home.phones.title": "Újdonságok a Doughnut Forge 2-ben.",
+  "home.phones.text":
+    "Új megjelenés, könnyebb kezdés, és visszaút, ha elfelejted a jelszavadat. iPhone-on, iPaden, Macen és Windowson.",
+  "home.phones.altText": "A Doughnut Forge 2 iPhone-on: a Szöveg képernyő egy titkosításra kész jegyzettel",
+  "home.phones.altFile":
+    "A Doughnut Forge 2 iPhone-on: a Fájlok képernyő a Fájl titkosítása és a Fájl visszafejtése lehetőséggel",
+  "home.phones.altIdentity":
+    "A Doughnut Forge 2 iPhone-on: az Identitás képernyő a névjegykódoddal és a Névjegykártya megosztása gombbal",
+  "home.v2.words.title": "Helyreállítási szavak és jelszó-visszaállítás",
+  "home.v2.words.text":
+    "A 24 szavas biztonsági kifejezésed neve mostantól helyreállítási szavak. Elfelejtetted a jelszavadat? Válaszd a feloldási képernyőn a „Nem sikerül feloldani?” lehetőséget, és állíts be újat a helyreállítási szavaiddal. Az identitásod, a kapcsolataid és a titkosított fájljaid változatlanok maradnak.",
+  "home.v2.cancel.title": "Mégse",
+  "home.v2.cancel.text":
+    "A Mégse leállítja egy fájl titkosítását vagy visszafejtését, és semmi sem mentődik. Macen és Windowson egy mappát is leállít: a már elkészült fájlok megmaradnak.",
   "home.features.title": "Zárd le az eszközödön. Oszd meg, ahogy szeretnéd.",
+  "tabs.files": "Fájlok",
+  "tabs.text": "Szöveg",
   "home.pricing.title": "Egyszeri vásárlás, soha nem előfizetés.",
   "home.pricing.text": "Vedd meg a Doughnut Forge alkalmazást egyszer minden platformra, amelyet használsz, az adott platform áruházából. Az áruház a lakóhelyednek megfelelő árat mutatja.",
   "download.coming": "Hamarosan: {platforms}.",
@@ -52,14 +63,25 @@ export default {
   "meta.features.description": "Titkosíts fájlokat és szöveget a saját iPhone-odon, iPadeden vagy gépeden, oszd meg őket azokkal, akikben megbízol, és védd őket hosszú távon. Fiók és szerverek nélkül.",
   "features.title": "Minden, amit a Doughnut Forge tud",
   "features.lead": "A Doughnut Forge lezárja a fájljaidat és szövegeidet az iPhone-odon, iPadeden vagy a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol. Bárhogyan küldöd is el őket, csak ők nyithatják meg.",
+  "features.identity.more":
+    "Az identitásod csak ezen az eszközön van tárolva, és a jelszavad védi. Tartsd biztonságban a 24 helyreállítási szavadat: csak ezekkel állíthatod helyre az identitásodat, vagy állíthatsz be új jelszót, ha elfelejtetted a régit.",
   "features.private.title": "Privát a kezdetektől",
   "features.offline.title": "Internet nélkül is működik",
   "offline.text": "Nincs előfizetés, nincs fiók, nincsenek szerverek és nincs követés. A Doughnut Forge teljes egészében az eszközödön működik, internetkapcsolat nélkül is. A kulcsaid és a névjegyeid nálad maradnak, a te irányításod alatt.",
   "features.languages.label": "Nyelvek",
+  "features.ios.title": "iPhone-on és iPaden",
   "features.ios.text": "Az iPhone és iPad készülékekre készült alkalmazás néhány saját funkciót is kínál.",
-  "features.ios.altEncrypting": "A Doughnut Forge iPhone készüléken: egy videó titkosítása, készültség: 75%",
-  "features.ios.altContacts": "A Doughnut Forge iPhone készüléken: a Kapcsolatok képernyő három megbízható kapcsolattal",
-  "features.ios.altIpad": "A Doughnut Forge iPad készüléken: a Biztonságos fájl képernyő a Fájl titkosítása és a Fájl visszafejtése lehetőséggel",
+  "v2.privacy.title": "Elrejtve az appváltóban",
+  "v2.privacy.text":
+    "iPhone-on és iPaden az alkalmazás az appváltóban a fánkot és az „Elrejtve, amíg a háttérben van” szöveget mutatja a képernyő tartalma helyett.",
+  "features.desktop.title": "Macen és Windowson",
+  "features.desktop.text":
+    "Nagyíts 100%-tól 200%-ig, és a képernyők kisebb ablakokba is beférnek. A fájlrácsban a hosszú nevek középen rövidülnek, így továbbra is látod, hogyan végződnek. A titkosítás soha nem ír felül egy már meglévő fájlt. Macen a Fájl titkosítása, a Fájl visszafejtése és a Zárolás a menüsorban található, billentyűparancsokkal.",
+  "features.ios.altEncrypting": "A Doughnut Forge 2 iPhone-on: egy videó titkosítása, készültség: 75%",
+  "features.ios.altChoose":
+    "A Doughnut Forge 2 iPhone-on: annak kiválasztása, ki nyithat meg egy fájlt, kijelölve te és három kapcsolat",
+  "features.ios.altIpad":
+    "A Doughnut Forge 2 iPaden: a Fájlok képernyő a Fájl titkosítása és a Fájl visszafejtése lehetőséggel",
   "features.cta.title": "Szeretnéd, hogy a fájljaid privátok maradjanak?",
   "meta.pricing.title": "Árak: egyszeri vásárlás, soha nem előfizetés | Doughnut Forge",
   "meta.pricing.description": "Vedd meg a Doughnut Forge alkalmazást egyszer minden platformra, amelyet használsz, annak saját áruházából. Nincs előfizetés, nincs fiók, nincs mit megújítani.",
@@ -74,14 +96,16 @@ export default {
   "download.requires.mac": "macOS 12 Monterey vagy újabb rendszer szükséges.",
   "download.requires.windows": "Windows 11 szükséges.",
   "download.start.title": "Az első indításkor",
-  "download.start.text": "A Doughnut Forge megkér, hogy állíts be egy jelszót ehhez az eszközhöz, majd létrehozza az identitásodat. Kapsz egy 24 szavas biztonsági kifejezést: írd le, és tartsd biztonságos helyen, mivel ez az egyetlen módja a hozzáférés visszaállításának.",
+  "download.start.text":
+    "A Doughnut Forge egy rövid üdvözléssel, majd egyetlen választással indul: létrehozod az identitásodat, vagy visszaállítod. Amikor létrehozod, az alkalmazás 24 helyreállítási szót ad. Írd le őket, és tartsd biztonságos helyen: csak ezekkel állíthatod helyre az identitásodat, vagy állíthatsz be új jelszót, ha elfelejtetted a régit.",
   "meta.support.title": "Támogatás és gyakori kérdések | Doughnut Forge",
   "meta.support.description": "Segítség a Doughnut Forge használatához: válaszok a gyakori kérdésekre, és hogyan tehetsz fel kérdést vagy jelezhetsz problémát a GitHubon.",
   "support.title": "Segítség a Doughnut Forge használatához",
   "support.lead": "A legtöbb kérdésre lent találod a választ. Minden másról kérdezz a GitHubon.",
   "support.ask.title": "Tegyél fel kérdést, vagy jelezz problémát",
   "support.ask.text": "A támogatás a GitHubon, nyilvánosan zajlik, hogy mindenki megtalálja a válaszokat. A GitHubon a bejelentések (issues) nyilvánosak: bárki elolvashatja, amit írsz. Bejelentés nyitásához ingyenes fiókra van szükséged a GitHubon.",
-  "support.ask.warning": "Soha ne csatolj széffájlokat, identitásfájlokat, a biztonsági kifejezésedet (helyreállítási szavak), jelszavakat vagy jelmondatokat, sem olyan képernyőképeket, amelyeken ezek láthatók.",
+  "support.ask.warning":
+    "Soha ne csatolj széffájlokat, identitásfájlokat, a helyreállítási szavaidat, jelszavakat vagy jelmondatokat, sem olyan képernyőképeket, amelyeken ezek láthatók.",
   "support.ask.bug": "Jelents hibát",
   "support.ask.question": "Tegyél fel kérdést",
   "support.ask.idea": "Javasolj funkciót",
@@ -107,9 +131,14 @@ export default {
   "faq.storage.q": "Hol tárolódnak a fájljaim és a kulcsaim?",
   "faq.storage.a": "A te eszközödön. A jelszavad és a kulcsaid soha nem kerülnek szerverre, és nem mennek át a hálózaton. A titkosított fájlok oda kerülnek, ahová mented vagy elküldöd őket.",
   "faq.backup.q": "Hogyan készíthetek biztonsági mentést az identitásomról?",
-  "faq.backup.a": "Amikor létrehozod az identitásodat, az alkalmazás megmutat egy 24 szavas biztonsági kifejezést. Írd le, és tartsd biztonságos helyen: csak erre van szükséged az identitásod helyreállításához. Az alkalmazás azt is felajánlja, hogy a kifejezést PDF formátumban mentsd el. Ez a PDF ugyanazt a 24 szót tartalmazza, és nincs jelszóval védve, ezért ugyanolyan gondosan őrizd, mint magát a kifejezést. A kapcsolataid nem részei a biztonsági kifejezésnek.",
-  "faq.restore.q": "Hogyan állíthatom helyre az identitásomat?",
-  "faq.restore.a": "Telepítsd a Doughnut Forge alkalmazást az új eszközre, állíts be egy jelszót, majd válaszd az Identitás helyreállítása lehetőséget, és add meg a 24 szavas biztonsági kifejezésedet. Mást nem kell tenned, és platformok között is működik, például Mac gépről Windows rendszerű számítógépre. A helyreállítás visszahozza az identitásodat, így a számára titkosított fájlok újra megnyílnak. A kapcsolataid nem jönnek vissza vele.",
+  "faq.backup.a":
+    "Amikor az „Identitásom létrehozása” lehetőséget választod, az alkalmazás 24 helyreállítási szót ad. Írd le őket, és tartsd biztonságos helyen: csak ezekkel állíthatod helyre az identitásodat, vagy állíthatsz be új jelszót, ha elfelejtetted a régit. Miután leírtad őket, az alkalmazás kettőt megkérdez közülük, hogy észrevedd, ha hiba van a másolatodban. Az alkalmazás PDF formátumban is el tudja menteni őket. Ez a PDF nincs titkosítva, ezért nyomtasd ki, majd töröld, és ne tárold az iCloud Drive-on, a Dropboxban vagy más szinkronizált mappában. A kapcsolataid nem részei a helyreállítási szavaidnak.",
+  "faq.restore.q": "Hogyan állíthatom helyre az identitásomat egy új eszközön?",
+  "faq.restore.a":
+    "A 24 helyreállítási szavaddal. Az iPhone, iPad vagy Mac biztonsági mentései nem tartalmazzák az identitásodat, így egy eszközmentés visszaállítása nem hozza vissza. Telepítsd a Doughnut Forge alkalmazást az új eszközre, válaszd a „Már vannak helyreállítási szavaim” lehetőséget, és add meg őket. Platformok között is működik, például Mac gépről Windows rendszerű számítógépre. A helyreállítás visszahozza az identitásodat, így a számára titkosított fájlok újra megnyílnak. A helyreállítási szavaid nem hozzák vissza a kapcsolataidat. Ha előbb visszaállítod az iPhone, iPad vagy Mac biztonsági mentését, és utána megadod a helyreállítási szavaidat, a kapcsolataid is visszajönnek.",
+  "faq.password.q": "Elfelejtettem a jelszavamat. Mit tehetek?",
+  "faq.password.a":
+    "Válaszd a feloldási képernyőn a „Nem sikerül feloldani?” lehetőséget, és állíts be új jelszót a 24 helyreállítási szavaddal. Az identitásod, a kapcsolataid és a titkosított fájljaid változatlanok maradnak. A helyreállítási szavaid nélkül a jelszó nem állítható vissza.",
   "faq.share.q": "Hogyan oszthatok meg valakivel egy titkosított fájlt?",
   "faq.share.a": "Kérd el a másik személytől a névjegykártyáját (egy .vltc2 fájlt), és add hozzá a Kapcsolataidhoz. Ezután titkosítsd a fájlt, és válaszd ki őt olyan személyként, aki megnyithatja. A titkosított fájlt bármilyen módon elküldheted, például e-mailben, üzenetküldő alkalmazásban vagy pendrive-on. Csak azok nyithatják meg, akiket kiválasztottál.",
   "faq.recipient.q": "A másik személynek is szüksége van a Doughnut Forge alkalmazásra a megnyitáshoz?",
@@ -149,6 +178,7 @@ export default {
   "press.shots.title": "Képernyőképek",
   "press.shots.text": "Ezek az iPhone és iPad készülékekre készült alkalmazást mutatják.",
   "press.shots.label": "{device}: {screen}",
+  "press.shots.choose": "Annak kiválasztása, ki nyithat meg egy fájlt",
   "press.download": "PNG, {width} × {height}",
   "press.usage.title": "A fájlok használata",
   "press.usage.text": "Ezeket a leírásokat, ikonokat és képernyőképeket felhasználhatod a Doughnut Forge alkalmazásról szóló cikkekben, értékelésekben és videókban. Az ikon formáján és színein ne változtass.",
@@ -166,13 +196,25 @@ export default {
   "roadmap.shipped": "Megjelent",
   "roadmap.next": "Következő",
   "roadmap.later": "Később",
-  "roadmap.identity.title": "Az identitás védelme",
-  "roadmap.identity.text": "Egy frissítés, amely minden identitást biztonságban tart, így az soha nem veszhet el, nem cserélhető le, és nem maradhat olvasható. Mac, iPhone és iPad eszközökön.",
-  "roadmap.identityWindows.title": "Az identitás védelme Windows rendszeren",
-  "roadmap.identityWindows.text": "Ugyanez a frissítés Windows rendszerre.",
-  "roadmap.stricter.title": "Szigorúbb védelem",
-  "roadmap.stricter.text": "További védelmi frissítések, amelyek szigorúbbá teszik az alkalmazást abban, hogy mit fogad el. Az adataid szempontjából semmi sem változik.",
+  "roadmap.v2.title": "Doughnut Forge 2",
+  "roadmap.v2.text":
+    "Új megjelenés, könnyebb kezdés, és visszaút, ha elfelejted a jelszavadat. iPhone-on, iPaden, Macen és Windowson.",
+  "v2.notes.reset":
+    "Elfelejtetted a jelszavadat? Válaszd a feloldási képernyőn a „Nem sikerül feloldani?” lehetőséget, és állíts be újat a helyreállítási szavaiddal. Az identitásod, a kapcsolataid és a titkosított fájljaid változatlanok maradnak.",
+  "v2.notes.words":
+    "A 24 szavas biztonsági kifejezésed neve mostantól helyreállítási szavak. Miután leírtad őket, az alkalmazás kettőt megkérdez közülük, hogy észrevedd, ha hiba van a másolatodban.",
+  "v2.notes.start":
+    "A beállítás egy rövid üdvözlés, majd egyetlen választás: létrehozod az identitásodat, vagy visszaállítod.",
+  "v2.notes.design": "Nyugodtabb dizájn, világos és sötét módban.",
+  "v2.notes.backups":
+    "Az iPhone, iPad vagy Mac biztonsági mentései már nem tartalmazzák az identitásodat. Tartsd biztonságban a helyreállítási szavaidat: ezekkel állíthatod helyre új eszközön.",
+  "v2.notes.ios":
+    "iPhone-on lapsáv: Fájlok, Szöveg, Identitás, Kapcsolatok és Beállítások. iPhone-on és iPaden az alkalmazás el van rejtve az appváltóban.",
+  "v2.notes.desktop":
+    "Macen és Windowson 100%-tól 200%-ig nagyíthatsz, és a titkosítás soha nem ír felül egy már meglévő fájlt.",
   "roadmap.android.title": "Doughnut Forge Androidra",
+  "roadmap.small.title": "Kisebb fejlesztések",
+  "roadmap.small.text": "Kisebb javítások és fejlesztések a Doughnut Forge 2-höz.",
   "roadmap.audit.title": "Független biztonsági audit",
   "roadmap.audit.text": "A Doughnut Forge biztonsági auditja, amelyet egy független külső szakértő végez.",
   "meta.security.title": "Biztonság: így maradnak privátok a fájljaid | Doughnut Forge",
@@ -233,7 +275,8 @@ export default {
   "technical.keys.identity.label": "Az identitásod:",
   "technical.keys.identity.text": "egyetlen 256 bites véletlenszerű titokból készül, amely a te eszközödön jön létre.",
   "technical.keys.recovery.label": "Helyreállítás:",
-  "technical.keys.recovery.text": "ez a titok leírható a 24 szavas biztonsági kifejezésedként (BIP-39). Helyreállítási töredékekre is felosztható a Shamir's Secret Sharing módszerrel: ilyenkor a választott számú töredék (legalább 2; a töredékek száma összesen legfeljebb 16) bármely csoportja visszaállítja. Ennél kevesebb töredék semmit sem árul el.",
+  "technical.keys.recovery.text":
+    "ez a titok leírható a 24 helyreállítási szavadként (BIP-39). Helyreállítási töredékekre is felosztható a Shamir's Secret Sharing módszerrel: ilyenkor a választott számú töredék (legalább 2; a töredékek száma összesen legfeljebb 16) bármely csoportja visszaállítja. Ennél kevesebb töredék semmit sem árul el.",
   "technical.keys.exchange.label": "Kulcscsere (posztkvantum hibrid):",
   "technical.keys.exchange.text": "minden elem kulcsa külön le van zárva minden címzett számára, és a te számodra is, az X25519 és az ML-KEM-768 együttes használatával. A két közös titkot az SHA-256 egyesíti.",
   "technical.keys.signatures.label": "Aláírások:",
@@ -297,7 +340,7 @@ export default {
   "technical.libraries.text": "A Doughnut Forge a következő könyvtárakat használja a kriptográfiához és a tömörítéshez:",
   "technical.libraries.sha": "SHA-256 és SHA-512",
   "technical.libraries.random": "Az operációs rendszer véletlenforrása",
-  "technical.libraries.words": "Biztonsági kifejezés",
+  "technical.libraries.words": "Helyreállítási szavak",
   "technical.libraries.shards": "Helyreállítási töredékek",
   "technical.libraries.memory": "Titkok a memóriában",
   "technical.libraries.wipe": "Titkok törlése a memóriából",
@@ -305,7 +348,8 @@ export default {
   "technical.limits.title": "Mi ellen nem véd a Doughnut Forge",
   "technical.limits.compromised.label": "Egy már feltört eszköz.",
   "technical.limits.compromised.text": "Amíg a Doughnut Forge fel van oldva, az eszközödhöz teljes hozzáféréssel rendelkező kártevő elolvashatja a titkaidat.",
-  "technical.limits.access.label": "Bárki, akinél ott van a jelszavad és az eszközöd, a 24 szavas biztonsági kifejezésed vagy elegendő helyreállítási töredék.",
+  "technical.limits.access.label":
+    "Bárki, akinél ott van a jelszavad és az eszközöd, a 24 helyreállítási szavad vagy elegendő helyreállítási töredék.",
   "technical.limits.access.text": "Tartsd őket biztonságban.",
   "technical.limits.passcode.label": "Az eszközöd jelkódja,",
   "technical.limits.passcode.text": "iPhone-on és iPaden, ha a Face ID vagy a Touch ID be van kapcsolva. Az iOS a Face ID vagy a Touch ID helyett is elfogadja a jelkódot.",

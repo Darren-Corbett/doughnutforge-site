@@ -32,8 +32,8 @@
     "text": "2c751646ad9b"
   },
   "download.start.text": {
-    "en": "fa78baa55a6c",
-    "text": "d8587d29fbe4"
+    "en": "2e30d9bbb7b0",
+    "text": "c99ae143da84"
   },
   "download.start.title": {
     "en": "bbe4e7b2b238",
@@ -44,8 +44,8 @@
     "text": "a34f22f606eb"
   },
   "faq.backup.a": {
-    "en": "0fe7cfa15460",
-    "text": "909505c5c857"
+    "en": "7285819b4412",
+    "text": "1184952227fa"
   },
   "faq.backup.q": {
     "en": "12fa8f0175a0",
@@ -75,6 +75,14 @@
     "en": "d667044022db",
     "text": "df43f693f779"
   },
+  "faq.password.a": {
+    "en": "bfd119ae593b",
+    "text": "55bbdff5f1ce"
+  },
+  "faq.password.q": {
+    "en": "ab2b4d5792a8",
+    "text": "e4e3caa486f1"
+  },
   "faq.platforms.a": {
     "en": "c0a37f63ca08",
     "text": "2e73dc3e30b4"
@@ -100,12 +108,12 @@
     "text": "15532298e25a"
   },
   "faq.restore.a": {
-    "en": "dbc49a878999",
-    "text": "bde44ac128b5"
+    "en": "edcc80ad1fc4",
+    "text": "e754ab5aaaa6"
   },
   "faq.restore.q": {
-    "en": "8d7d4c82503a",
-    "text": "c7f602b66b5c"
+    "en": "f3bb860b08c7",
+    "text": "a093f40824cd"
   },
   "faq.share.a": {
     "en": "2c35d0460d14",
@@ -143,21 +151,37 @@
     "en": "8a5b1de8eedf",
     "text": "65727e8c7c3e"
   },
-  "features.ios.altContacts": {
-    "en": "19477017c9fa",
-    "text": "9da42c7a3a17"
+  "features.desktop.text": {
+    "en": "c53b90957273",
+    "text": "15f8163135f8"
+  },
+  "features.desktop.title": {
+    "en": "7454b50ed2b7",
+    "text": "c437432385d9"
+  },
+  "features.identity.more": {
+    "en": "b121de21c077",
+    "text": "2710e576d7a5"
+  },
+  "features.ios.altChoose": {
+    "en": "632331f5704d",
+    "text": "c1ae927eadbf"
   },
   "features.ios.altEncrypting": {
-    "en": "9a925dc70b6e",
-    "text": "b1642241769a"
+    "en": "05848a55d486",
+    "text": "c1b72256c856"
   },
   "features.ios.altIpad": {
-    "en": "42087526af01",
-    "text": "26f56940ef5e"
+    "en": "386dcbf91ecc",
+    "text": "f1186b84f0b8"
   },
   "features.ios.text": {
     "en": "ea8adfe90a7d",
     "text": "de9bb4c12b23"
+  },
+  "features.ios.title": {
+    "en": "4f3372a9b89e",
+    "text": "750a45216ee9"
   },
   "features.languages.label": {
     "en": "318655cea4bd",
@@ -220,24 +244,24 @@
     "text": "f6e75bbdb355"
   },
   "home.phones.altFile": {
-    "en": "425723c2bfb0",
-    "text": "a5db33269fdf"
+    "en": "e759d0465dae",
+    "text": "2b6e8940d9a4"
   },
   "home.phones.altIdentity": {
-    "en": "12ce4d41ab15",
-    "text": "96124492614c"
+    "en": "3aa2dbd4cf1e",
+    "text": "34df413a0ae1"
   },
   "home.phones.altText": {
-    "en": "8ff6c777a08a",
-    "text": "f3829c288b8d"
+    "en": "a9f2e246ce09",
+    "text": "ad54b63f2baf"
   },
   "home.phones.text": {
-    "en": "6c53aebf64ab",
-    "text": "cc8c621d5814"
+    "en": "9c8cfb38284d",
+    "text": "f36868d966eb"
   },
   "home.phones.title": {
-    "en": "6c0cb70958b5",
-    "text": "2e44a314d0d2"
+    "en": "f1e7a69f6960",
+    "text": "55c90cd7cdd6"
   },
   "home.pricing.text": {
     "en": "f640ff4b8fab",
@@ -268,12 +292,28 @@
     "text": "a2e1e24fdee7"
   },
   "home.summary": {
-    "en": "3b2c05d1552e",
-    "text": "193740b852fd"
+    "en": "750655f60743",
+    "text": "62138d30f4d6"
   },
   "home.tagline": {
     "en": "caa0861ead91",
     "text": "ebb2d5df9e9a"
+  },
+  "home.v2.cancel.text": {
+    "en": "a7e436c6b18b",
+    "text": "d978b14449a1"
+  },
+  "home.v2.cancel.title": {
+    "en": "19766ed6ccb2",
+    "text": "72278748133a"
+  },
+  "home.v2.words.text": {
+    "en": "97ea52825a0d",
+    "text": "d783757269a8"
+  },
+  "home.v2.words.title": {
+    "en": "a17c53aaea31",
+    "text": "3a0c87824302"
   },
   "home.what.text": {
     "en": "c1fee526712d",
@@ -336,12 +376,12 @@
     "text": "628e76ff0d3d"
   },
   "meta.home.description": {
-    "en": "65d6d8542ba6",
-    "text": "a768cc16f4b1"
+    "en": "24f946cc87e7",
+    "text": "18b8929753f1"
   },
   "meta.home.title": {
-    "en": "23f124eb1c17",
-    "text": "beace8bd2f1b"
+    "en": "1bddaec0f21b",
+    "text": "5c0909d09d9d"
   },
   "meta.known.description": {
     "en": "3d73dde0e8b9",
@@ -543,6 +583,10 @@
     "en": "60527d67ccfc",
     "text": "d907d1e6ddb5"
   },
+  "press.shots.choose": {
+    "en": "499aa9a4bd81",
+    "text": "e0935429461a"
+  },
   "press.shots.label": {
     "en": "8cea17a1f97c",
     "text": "8cea17a1f97c"
@@ -599,22 +643,6 @@
     "en": "bfb75f56d798",
     "text": "7837b9f9aaf5"
   },
-  "roadmap.identity.text": {
-    "en": "1c47e3db5fbf",
-    "text": "5f3ea0b52ea8"
-  },
-  "roadmap.identity.title": {
-    "en": "5eb9c296993e",
-    "text": "ac0211e4f402"
-  },
-  "roadmap.identityWindows.text": {
-    "en": "344aa8ef7a21",
-    "text": "fdeb1ac1e0c8"
-  },
-  "roadmap.identityWindows.title": {
-    "en": "4564c3de1440",
-    "text": "0ceb0257909f"
-  },
   "roadmap.later": {
     "en": "73b6e48a1b55",
     "text": "ebc464d8d55b"
@@ -631,17 +659,25 @@
     "en": "d332dadf1646",
     "text": "9efe73d82704"
   },
-  "roadmap.stricter.text": {
-    "en": "317c898c8774",
-    "text": "22085424fc0e"
+  "roadmap.small.text": {
+    "en": "3b31a32431bc",
+    "text": "74c46ffa0977"
   },
-  "roadmap.stricter.title": {
-    "en": "06df1b5bb407",
-    "text": "eb0bbe5c3669"
+  "roadmap.small.title": {
+    "en": "8db4a227c85b",
+    "text": "e25c68d5875b"
   },
   "roadmap.title": {
     "en": "92375f997ffe",
     "text": "dcd046ec2dbc"
+  },
+  "roadmap.v2.text": {
+    "en": "9c8cfb38284d",
+    "text": "f36868d966eb"
+  },
+  "roadmap.v2.title": {
+    "en": "e52f38a1cf00",
+    "text": "e52f38a1cf00"
   },
   "security.audit.link": {
     "en": "844c086de4c0",
@@ -764,8 +800,8 @@
     "text": "24e64a4ff3bf"
   },
   "support.ask.warning": {
-    "en": "e77daa7c412d",
-    "text": "8547c1f557ac"
+    "en": "9a4e96bb8253",
+    "text": "301f82f7a51f"
   },
   "support.faq.title": {
     "en": "e956a9404b46",
@@ -782,6 +818,14 @@
   "support.title": {
     "en": "e3b8fa0ffe20",
     "text": "4b735ef8517f"
+  },
+  "tabs.files": {
+    "en": "abc7e9892806",
+    "text": "36e14d97cfd9"
+  },
+  "tabs.text": {
+    "en": "71988c4d8e08",
+    "text": "80422e38652c"
   },
   "technical.back": {
     "en": "1fc3cced00ed",
@@ -892,8 +936,8 @@
     "text": "af6d23674075"
   },
   "technical.keys.recovery.text": {
-    "en": "1a10b179bef7",
-    "text": "7c74be37950a"
+    "en": "71f1095f3ab2",
+    "text": "3be15685b832"
   },
   "technical.keys.signatures.label": {
     "en": "24799a86c564",
@@ -944,12 +988,12 @@
     "text": "b5c85c6e21dd"
   },
   "technical.libraries.words": {
-    "en": "00338733bd2e",
-    "text": "5364d4b56622"
+    "en": "5325e5cecd01",
+    "text": "20ad502b71e8"
   },
   "technical.limits.access.label": {
-    "en": "5e4982e0c7ed",
-    "text": "5b814d873748"
+    "en": "45edd9fbb9a9",
+    "text": "40e79eceb06f"
   },
   "technical.limits.access.text": {
     "en": "5bb5b35c38e1",
@@ -1254,5 +1298,41 @@
   "technical.visible.title": {
     "en": "dcba9c4e7f8a",
     "text": "ccf7d0ecfee9"
+  },
+  "v2.notes.backups": {
+    "en": "c9942be7742e",
+    "text": "6a48d1fd635c"
+  },
+  "v2.notes.design": {
+    "en": "b8d151da57b1",
+    "text": "8d8c6bf23ad9"
+  },
+  "v2.notes.desktop": {
+    "en": "e737406a8f0f",
+    "text": "602b667aa10d"
+  },
+  "v2.notes.ios": {
+    "en": "75159033c13d",
+    "text": "269b344d7729"
+  },
+  "v2.notes.reset": {
+    "en": "8c9bde2eca1a",
+    "text": "f6156c46a3b4"
+  },
+  "v2.notes.start": {
+    "en": "da53547cc9f2",
+    "text": "7ae58cd022d0"
+  },
+  "v2.notes.words": {
+    "en": "00cbb37af020",
+    "text": "a09cf4b8c697"
+  },
+  "v2.privacy.text": {
+    "en": "416ba4a82cd9",
+    "text": "392b50f1e88e"
+  },
+  "v2.privacy.title": {
+    "en": "31366e9afa66",
+    "text": "4ca031159080"
   }
 }

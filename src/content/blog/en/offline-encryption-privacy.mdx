@@ -10,7 +10,7 @@ import Compare from "../../../components/blog/Compare.astro";
 import Shot from "../../../components/blog/Shot.astro";
 import Cloud from "@lucide/astro/icons/cloud";
 import MonitorSmartphone from "@lucide/astro/icons/monitor-smartphone";
-import iphoneSecureFile from "../../../assets/app/iphone-secure-file.webp";
+import iphoneFiles from "../../../assets/app/v2/en/iphone-files-light.webp";
 
 **In short:** offline file encryption locks a file on your own device, with keys that stay on that device. Wherever the locked file goes next, whether that is a cloud folder, an email or a USB stick, it stays unreadable to anyone you did not choose. It cannot protect a file that is already unlocked, and it cannot rescue you if you lose your keys.
 
@@ -66,9 +66,9 @@ Offline encryption does not mean giving up cloud storage or email. It means doin
 Doughnut Forge works this way. It encrypts files on your device, and you can then keep the locked file on your device, in cloud storage, or send it however you like. Only the people you chose can open it.
 
 <Shot
-  src={iphoneSecureFile}
-  alt="Doughnut Forge on iPhone: the Secure File screen with Encrypt File and Decrypt File"
-  caption="The Secure File screen in the iPhone app. Files are encrypted and decrypted on the device, and nothing is uploaded."
+  src={iphoneFiles}
+  alt="Doughnut Forge 2 on iPhone: the Files screen with Encrypt file and Decrypt file"
+  caption="The Files screen in the iPhone app. Files are encrypted and decrypted on the device, and nothing is uploaded."
 />
 
 ## What offline encryption cannot do
@@ -76,7 +76,7 @@ Doughnut Forge works this way. It encrypts files on your device, and you can the
 It is a strong protection, but not a complete one. Be clear about its limits:
 
 - **It cannot protect a file that is already unlocked.** Once someone you trust opens a file, what they do with it is up to them.
-- **It cannot help if you lose your keys.** With no server copy, no one can reset them for you. In Doughnut Forge, if you lose both your password and your 24-word backup phrase, your identity and encrypted files cannot be recovered.
+- **It cannot help if you lose your keys.** With no server copy, no one can reset them for you. In Doughnut Forge, if you lose both your password and your 24 recovery words, your identity and encrypted files cannot be recovered.
 - **It cannot protect a device someone else controls.** If a device is already compromised, anything you open on it can be seen.
 
 ## What to look for in an offline encryption app
@@ -84,7 +84,7 @@ It is a strong protection, but not a complete one. Be clear about its limits:
 - **No account.** If an app needs you to sign in, something about you lives on a server.
 - **It works without the internet.** Try it with Wi-Fi turned off.
 - **Your keys stay on your device.** The app should say so plainly.
-- **A clear way to recover.** Look for a backup method you control, such as a written backup phrase.
+- **A clear way to recover.** Look for a backup method you control, such as recovery words you write down.
 - **No tracking.** A privacy tool should not collect data about how you use it.
 
 Doughnut Forge meets each of these. It needs no account and has no servers or tracking. It works entirely on your device, even without an internet connection, and your password and keys are never stored on a server or sent across the network. This website has no analytics, cookies or tracking scripts either; see the [privacy policy](/privacy/). For the exact methods Doughnut Forge uses, and what it does not protect against, see the [technical details](/security/technical-details/).

@@ -48,9 +48,15 @@ for (const lang of languages) {
         expect(await page.locator(`[data-roadmap="${status}"] li`).count(), `${status} items`).toBeGreaterThan(0);
       }
       await expect(page.locator("[data-planned]")).toHaveCount(0);
-      // The identity update is out on Mac, iPhone and iPad; Windows waits for its package
-      await expect(page.locator('[data-roadmap="shipped"] h3')).toContainText([await ui(lang.code, "roadmap.identity.title")]);
-      await expect(page.locator('[data-roadmap="next"] h3')).toContainText([await ui(lang.code, "roadmap.identityWindows.title")]);
+      // Doughnut Forge 2 has shipped; next is Android, then smaller improvements.
+      // Nothing describes internal security work (owner, 10 November 2026).
+      await expect(page.locator('[data-roadmap="shipped"] h3')).toHaveText([await ui(lang.code, "roadmap.v2.title")]);
+      await expect(page.locator('[data-roadmap="next"] h3')).toHaveText([
+        await ui(lang.code, "roadmap.android.title"),
+        await ui(lang.code, "roadmap.small.title"),
+      ]);
+      // The Doughnut Forge 2 entry lists its highlights
+      expect(await page.locator('[data-roadmap="shipped"] li:first-child ul li').count(), "v2 highlights").toBeGreaterThan(0);
       // No dates, finding codes or version numbers, in any language
       const text = await page.locator("main").innerText();
       expect(text).not.toMatch(/\b20\d\d\b/);

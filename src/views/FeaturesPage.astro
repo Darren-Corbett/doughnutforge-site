@@ -1,16 +1,14 @@
 ---
 // Features: the app's tabs in their tab colours, with the store listing's
 // wording and plain sentences from the app's own guides, then what the iPhone
-// and iPad app adds. Screenshots are iPhone and iPad: the Mac and Windows store
-// screenshots are not clean enough to use yet.
-import ipadSecureFile from "../assets/app/ipad-secure-file.webp";
-import iphoneContacts from "../assets/app/iphone-contacts.webp";
-import iphoneEncrypting from "../assets/app/iphone-encrypting.webp";
+// and iPad app adds, and what Mac and Windows add. Screenshots are the v2 iPhone
+// and iPad screens in the page's language (src/data/screens.ts).
 import Faq, { type FaqItem } from "../components/Faq.astro";
 import PageHero from "../components/PageHero.astro";
 import Phone from "../components/Phone.astro";
 import Tablet from "../components/Tablet.astro";
 import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
+import { screen } from "../data/screens";
 import { languages, localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -29,19 +27,20 @@ const lead = t("features.lead");
 const offline = t("offline.text");
 
 const rows: ToneRow[] = [
-  { name: app("app:navigation.tabs.vault"), tone: "blue", ...encFiles, more: [app("help:secureDirectoryGuide.step1.description")] },
-  { name: app("app:navigation.tabs.text-vault"), tone: "orange", ...encText },
-  { name: app("app:navigation.tabs.identity"), tone: "violet", ...identity, more: [app("help:setupGuide.step3.description")] },
+  { name: t("tabs.files"), tone: "blue", ...encFiles, more: [app("help:secureDirectoryGuide.step1.description")] },
+  { name: t("tabs.text"), tone: "orange", ...encText },
+  { name: app("app:navigation.tabs.identity"), tone: "violet", ...identity, more: [t("features.identity.more")] },
   // No guide sentences here: the app's guides say a contact card verifies who someone is, which it does not
   { name: app("app:navigation.tabs.contacts"), tone: "pink", ...share },
 ];
 
 // What only the iPhone and iPad app does: the iOS listing's photos and videos,
-// opening what is sent to you, and Face ID and Touch ID (features 1, 2 and 6)
+// opening what is sent to you, and Face ID and Touch ID (features 1, 2 and 6),
+// then the v2 privacy screen (features.md: iPhone and iPad only)
 if (store.ios.features.length !== 8) {
   throw new Error(`The iOS store listing has ${store.ios.features.length} features; the features page expects 8.`);
 }
-const iosFeatures = [0, 1, 5].map((i) => store.ios.features[i]!);
+const iosFeatures = [...[0, 1, 5].map((i) => store.ios.features[i]!), { title: t("v2.privacy.title"), text: t("v2.privacy.text") }];
 
 // The questions people ask first, answered as on the support page. Only the
 // support page carries the FAQPage data, so the answers are marked up once.
@@ -92,9 +91,9 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
 
   <section class="phones" aria-labelledby="features-ios">
     <div class="phones-inner">
-      <h2 id="features-ios">{t("home.phones.title")}</h2>
+      <h2 id="features-ios">{t("features.ios.title")}</h2>
       <p class="phones-text">{t("features.ios.text")}</p>
-      <ul class="ios-list" role="list">
+      <ul class="band-list ios-list" role="list">
         {
           iosFeatures.map((f) => (
             <li>
@@ -106,16 +105,21 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
       </ul>
       <div class="shots">
         <div class="shot-phone">
-          <Phone src={iphoneEncrypting} sizes="(min-width: 768px) 220px, 44vw" alt={t("features.ios.altEncrypting")} />
+          <Phone src={screen(lang.code, "iphone-progress-light")} sizes="(min-width: 768px) 220px, 44vw" alt={t("features.ios.altEncrypting")} />
         </div>
         <div class="shot-phone">
-          <Phone src={iphoneContacts} sizes="(min-width: 768px) 220px, 44vw" alt={t("features.ios.altContacts")} />
+          <Phone src={screen(lang.code, "iphone-encrypt-light")} sizes="(min-width: 768px) 220px, 44vw" alt={t("features.ios.altChoose")} />
         </div>
         <div class="shot-tablet">
-          <Tablet src={ipadSecureFile} sizes="(min-width: 768px) 420px, 92vw" alt={t("features.ios.altIpad")} />
+          <Tablet src={screen(lang.code, "ipad-files-light")} sizes="(min-width: 768px) 420px, 92vw" alt={t("features.ios.altIpad")} />
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="section" aria-labelledby="features-desktop">
+    <h2 id="features-desktop" class="section-title">{t("features.desktop.title")}</h2>
+    <p class="section-text">{t("features.desktop.text")}</p>
   </section>
 
   <section class="section" aria-labelledby="features-faq">
@@ -157,8 +161,7 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
     padding-top: 22px;
     border-top: 3px solid var(--tone);
   }
-  .block h3,
-  .ios-list h3 {
+  .block h3 {
     --fs: 19px;
     font-weight: 800;
   }
@@ -212,21 +215,6 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
     font-size: 18px;
     color: #cbd5e1;
   }
-  .ios-list {
-    display: grid;
-    gap: 20px;
-    margin-top: 28px;
-  }
-  .ios-list li {
-    padding-top: 18px;
-    border-top: 2px solid #38444d;
-  }
-  .ios-list p {
-    margin-top: 4px;
-    font-size: 17px;
-    line-height: 1.55;
-    color: #cbd5e1;
-  }
   .shots {
     margin-top: 36px;
     display: grid;
@@ -266,9 +254,15 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
   /* Three columns only once each is wide enough for long words, such as the
      German "Post-Quanten-Verschlüsselung", which never break */
   @media (min-width: 1024px) {
-    .blocks,
-    .ios-list {
+    .blocks {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 32px;
+    }
+  }
+  /* Four items: two by two once there is room */
+  @media (min-width: 768px) {
+    .ios-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 32px;
     }
   }

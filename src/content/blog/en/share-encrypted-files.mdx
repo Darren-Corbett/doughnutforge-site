@@ -12,8 +12,8 @@ import IdCard from "@lucide/astro/icons/id-card";
 import { VerifiedCheck } from "../../../components/blog/icons";
 import FileLock from "@lucide/astro/icons/file-lock";
 import Send from "@lucide/astro/icons/send";
-import iphoneIdentity from "../../../assets/app/iphone-identity.webp";
-import iphoneContacts from "../../../assets/app/iphone-contacts.webp";
+import iphoneIdentity from "../../../assets/app/v2/en/iphone-identity-light.webp";
+import iphoneEncrypt from "../../../assets/app/v2/en/iphone-encrypt-light.webp";
 
 **In short:** the safest way to share a private file is to encrypt it so that only the other person's own key can open it. Then it does not matter how you send it. You swap a public "contact card" with them once, check it really is theirs, and from then on you can send them files that no one else can read.
 
@@ -50,23 +50,23 @@ You share your card once. After that, anyone with it can send you files that onl
 
 ### 1. Both of you create an identity
 
-Each person installs Doughnut Forge and creates an identity. This makes the private key, which stays on the device, and a 24-word backup phrase. Keep that phrase safe and never share it.
+Each person installs Doughnut Forge and creates an identity. This makes the private key, which stays on the device, and 24 recovery words. Keep those words safe and never share them.
 
 ### 2. Swap contact cards
 
-Your contact card is a small file ending in `.vltc2`. On the **Identity** screen, choose **Share Identity**. You can share the card straight from the app with **Share Card**, or keep a copy with **Save File** and send it however you like. The card shows a public name that you choose, so the other person knows whose it is.
+Your contact card is a small file ending in `.vltc2`. On the **Identity** screen, choose **Share contact card** and check your name. Then choose **Share card** to send it straight from the app, or **Save file** to keep a copy and send it however you like. The card shows a public name that you choose, so the other person knows whose it is.
 
 Your contact card is safe to share. It lets people encrypt files for you, but it cannot be used to open anything sent to you.
 
 <Shot
   src={iphoneIdentity}
-  alt="Doughnut Forge on iPhone: the Identity screen with a contact card to share"
-  caption="The Identity screen in the iPhone app. Share Identity lets you share or save your contact card."
+  alt="Doughnut Forge 2 on iPhone: the Identity screen with your contact code and Share contact card"
+  caption="The Identity screen in the iPhone app. Share contact card sends your contact card."
 />
 
 ### 3. Add their card to your contacts
 
-When you receive their card, open **Contacts** and choose **Add Contact**, then pick the card file. You can add several cards at once. The app checks each card as you add it, but only comparing the contact code tells you it is the right person's card.
+When you receive their card, open **Contacts** and choose **Add contact**, then pick the card file. You can add several cards at once. The app checks each card as you add it, but only comparing the contact code tells you it is the right person's card.
 
 ### 4. Check the contact code
 
@@ -75,9 +75,9 @@ Each contact has a short contact code. Ask the other person to read out the code
 This step matters most when the card reached you through a channel someone else could interfere with. Only add cards you received directly from the person they belong to. If a card does not match a contact you already have, the app refuses it.
 
 <Shot
-  src={iphoneContacts}
-  alt="Doughnut Forge on iPhone: the Contacts screen with three trusted contacts"
-  caption="The Contacts screen in the iPhone app."
+  src={iphoneEncrypt}
+  alt="Doughnut Forge 2 on iPhone: choosing who can open a file, with you and three contacts picked"
+  caption="Choosing who can open a file in the iPhone app."
 />
 
 ### 5. Encrypt the file for them
@@ -96,14 +96,14 @@ The other person opens the file in Doughnut Forge and decrypts it with their own
 
 ## If something does not look right
 
-- **"Access Denied":** the file was not encrypted for the identity on this device, or it has been changed since it was encrypted. Ask the sender to check they chose the right contact.
-- **"Unknown Sender Detected":** the file still opens, but the app cannot match the sender to one of your contacts. Be careful with files you did not expect.
+- **"Could not open this file":** the file was not encrypted for the identity on this device, or it is damaged. Ask the sender to encrypt it for you again, and to check they chose the right contact.
+- **"Encrypted by someone not in your Contacts":** the file still opens, with this warning. If you were not expecting it, check with the person who sent it before you open or use it.
 
 ## Good habits
 
 - **Only add cards you received directly** from the person they belong to, and compare the contact code.
-- **Never send your backup phrase or password** to anyone, for any reason.
+- **Never send your recovery words or password** to anyone, for any reason.
 - **Folders encrypted on a computer open on computers.** They cannot be opened on iPhone or iPad, so send single files to someone who uses a phone.
-- **Keep your backup phrase safe.** If you lose it and your password, files sent to you cannot be opened.
+- **Keep your recovery words safe.** If you lose them and your password, files sent to you cannot be opened.
 
 New to encrypting files? Start with [How to encrypt files on a Mac without using the cloud](/blog/encrypt-files-on-mac-without-cloud/), or read [Offline file encryption: how it works and what it protects](/blog/offline-encryption-privacy/). Questions are welcome on the [support page](/support/), and the [download page](/download/) lists every platform.

@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ko/*.json",
-  "app:navigation.tabs.vault": "보안 폴더",
-  "app:navigation.tabs.mobile-vault": "보안 파일",
-  "app:navigation.tabs.text-vault": "보안 텍스트",
   "app:navigation.tabs.identity": "신원",
   "app:navigation.tabs.contacts": "연락처",
   "app:navigation.language": "언어",
@@ -11,6 +8,5 @@
   "app:languageModal.regions.middleEastAfrica": "중동 및 아프리카",
   "app:languageModal.regions.asiaPacific": "아시아 태평양",
   "mobile-views:secureFile.howItWorks.encrypt.title": "파일 암호화",
-  "help:secureDirectoryGuide.step1.description": "작업 공간에 로컬 폴더를 추가하여 파일을 탐색하고 관리하세요. Doughnut Forge는 완전히 로컬로 작동하므로 원본 파일이 장치를 벗어나지 않습니다.",
-  "help:setupGuide.step3.description": "키는 완전히 비공개이며 분실 시 복구할 수 없습니다. 액세스를 복구할 수 있는 유일한 방법이므로 복구 문구를 안전한 장소에 보관해야 합니다."
+  "help:secureDirectoryGuide.step1.description": "작업 공간에 로컬 폴더를 추가하여 파일을 탐색하고 관리하세요. Doughnut Forge는 완전히 로컬로 작동하므로 원본 파일이 장치를 벗어나지 않습니다."
 }

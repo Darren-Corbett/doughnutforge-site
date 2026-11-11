@@ -2,14 +2,12 @@
 // Home page. Shows encryption instead of describing it: the same note as a
 // stranger sees it and as your contact sees it. Phones lead because the iPhone
 // app is the face of the product; Mac and Windows are on sale today.
-import iphoneIdentity from "../assets/app/iphone-identity.webp";
-import iphoneFile from "../assets/app/iphone-secure-file.webp";
-import iphoneText from "../assets/app/iphone-secure-text.webp";
 import Ciphertext from "../components/Ciphertext.astro";
 import Phone from "../components/Phone.astro";
 import StoreLinks from "../components/StoreLinks.astro";
 import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
 import { organization, softwareApplication } from "../data/jsonld";
+import { screen } from "../data/screens";
 import { useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -20,7 +18,8 @@ const { lang } = Astro.props;
 const { t, app, store } = useStrings(lang.code);
 
 // Feature titles and text come from the Mac store listing, so they match the
-// store wording and are already translated. Row names are the app's own tab names.
+// store wording and are already translated. Row names are the app's tab names:
+// "Files" and "Text" as in v2 (site strings), Identity and Contacts from the app.
 const [encFiles, encText, identity, share, longTerm, language] = store.mac.features;
 if (!encFiles || !encText || !identity || !share || !longTerm || !language) {
   throw new Error(`The store listing has ${store.mac.features.length} features; the home page expects 6.`);
@@ -32,10 +31,17 @@ const { headline } = store.mac.parts;
 const lead = t("home.lead");
 
 const rows: ToneRow[] = [
-  { name: app("app:navigation.tabs.vault"), tone: "blue", ...encFiles },
-  { name: app("app:navigation.tabs.text-vault"), tone: "orange", ...encText },
+  { name: t("tabs.files"), tone: "blue", ...encFiles },
+  { name: t("tabs.text"), tone: "orange", ...encText },
   { name: app("app:navigation.tabs.identity"), tone: "violet", ...identity },
   { name: app("app:navigation.tabs.contacts"), tone: "pink", ...share },
+];
+
+// What v2 adds, only as features.md and the release notes describe it
+const v2Cards = [
+  { title: t("home.v2.words.title"), text: t("home.v2.words.text") },
+  { title: t("home.v2.cancel.title"), text: t("home.v2.cancel.text") },
+  { title: t("v2.privacy.title"), text: t("v2.privacy.text") },
 ];
 
 const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), organization()];
@@ -83,9 +89,19 @@ const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), orga
       <h2 id="home-phones">{t("home.phones.title")}</h2>
       <p>{t("home.phones.text")}</p>
       <ul class="phone-row" role="list">
-        <li><Phone src={iphoneText} sizes="(min-width: 768px) 240px, 46vw" alt={t("home.phones.altText")} /></li>
-        <li><Phone src={iphoneFile} sizes="(min-width: 768px) 240px, 46vw" alt={t("home.phones.altFile")} /></li>
-        <li class="third"><Phone src={iphoneIdentity} sizes="240px" alt={t("home.phones.altIdentity")} /></li>
+        <li><Phone src={screen(lang.code, "iphone-text-dark")} sizes="(min-width: 768px) 240px, 46vw" alt={t("home.phones.altText")} /></li>
+        <li><Phone src={screen(lang.code, "iphone-files-dark")} sizes="(min-width: 768px) 240px, 46vw" alt={t("home.phones.altFile")} /></li>
+        <li class="third"><Phone src={screen(lang.code, "iphone-identity-dark")} sizes="240px" alt={t("home.phones.altIdentity")} /></li>
+      </ul>
+      <ul class="band-list v2-cards" role="list">
+        {
+          v2Cards.map((c) => (
+            <li>
+              <h3>{c.title}</h3>
+              <p>{c.text}</p>
+            </li>
+          ))
+        }
       </ul>
     </div>
   </section>
@@ -386,6 +402,17 @@ const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), orga
       grid-template-columns: 6fr 6fr;
       align-items: center;
       gap: 56px;
+    }
+  }
+  /* The v2 cards under the phones: clear of the lowered middle phone, three
+     across only once each is wide enough for long words, which never break */
+  .v2-cards {
+    margin-top: 44px;
+  }
+  @media (min-width: 1024px) {
+    .v2-cards {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 32px;
     }
   }
 </style>

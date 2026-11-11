@@ -3,9 +3,9 @@
 // Every other language has a file in this folder with the same keys, less the
 // English-only blog and 404 strings (see TranslatedKey in ../index.ts).
 export default {
-  "meta.home.title": "Doughnut Forge: offline file encryption for Mac, Windows, iPhone and iPad",
+  "meta.home.title": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
   "meta.home.description":
-    "Encrypt files and text on iPhone, iPad, Mac and PC. On a computer, encrypt folders too. No account, no servers, no subscription. A one-time purchase on each platform.",
+    "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no servers, no subscription.",
 
   "nav.label": "Main",
   "nav.features": "Features",
@@ -22,7 +22,7 @@ export default {
   "nav.home": "Doughnut Forge home",
   "skip": "Skip to content",
 
-  "home.summary": "Offline file encryption for Mac, iPhone, iPad and Windows.",
+  "home.summary": "Offline file encryption for iPhone, iPad, Mac and Windows.",
   "home.tagline": "Only the people you choose can open them.",
   "home.lead": "Doughnut Forge locks your files and text on your iPhone, iPad or computer and lets you share them with the people you trust.",
   "home.what.title": "What is Doughnut Forge?",
@@ -38,13 +38,23 @@ export default {
   "home.specimen.cipherLabel": "The same note, encrypted: unreadable random characters.",
   "home.specimen.caption": "An illustration: real encrypted files hold far more characters than this.",
 
-  "home.phones.title": "Now on iPhone and iPad.",
-  "home.phones.text": "Also available for Mac and Windows.",
-  "home.phones.altText": "Doughnut Forge on iPhone: the Secure Text screen with a note ready to encrypt",
-  "home.phones.altFile": "Doughnut Forge on iPhone: the Secure File screen with Encrypt File and Decrypt File",
-  "home.phones.altIdentity": "Doughnut Forge on iPhone: the Identity screen with a contact card to share",
+  "home.phones.title": "New in Doughnut Forge 2.",
+  "home.phones.text":
+    "A new look, an easier start, and a way back in if you forget your password. On iPhone, iPad, Mac and Windows.",
+  "home.phones.altText": "Doughnut Forge 2 on iPhone: the Text screen with a note ready to encrypt",
+  "home.phones.altFile": "Doughnut Forge 2 on iPhone: the Files screen with Encrypt file and Decrypt file",
+  "home.phones.altIdentity":
+    "Doughnut Forge 2 on iPhone: the Identity screen with your contact code and Share contact card",
+  "home.v2.words.title": "Recovery words and a password reset",
+  "home.v2.words.text":
+    "Your 24-word backup phrase is now called your recovery words. Forgot your password? Choose “Trouble unlocking?” on the lock screen and set a new one with your recovery words. Your identity, contacts and encrypted files stay the same.",
+  "home.v2.cancel.title": "Cancel",
+  "home.v2.cancel.text":
+    "Cancel stops encrypting or decrypting a file, and nothing is saved. On Mac and Windows, it also stops a folder: the files already finished are kept.",
 
   "home.features.title": "Lock it on your device. Share it any way you like.",
+  "tabs.files": "Files",
+  "tabs.text": "Text",
 
   "home.pricing.title": "One-time purchase, never a subscription.",
   "home.pricing.text": "Buy Doughnut Forge once for each platform you use, from that platform's store. The store shows the price where you live.",
@@ -76,16 +86,26 @@ export default {
   "features.title": "Everything Doughnut Forge does",
   "features.lead":
     "Doughnut Forge locks your files and text on your iPhone, iPad or computer and lets you share them with the people you trust. However you send them, only they can open them.",
+  "features.identity.more":
+    "Your identity is stored only on this device and protected by your password. Keep your 24 recovery words safe: they are the only way to restore your identity or reset a forgotten password.",
   "features.private.title": "Private from the start",
   "features.offline.title": "Works without the internet",
   // On the features, pricing and press pages: the iPhone and iPad store listing's paragraph without "You pay once, and the app is yours."
   "offline.text":
     "No subscription, no account, no servers and no tracking. Doughnut Forge works entirely on your device, even without an internet connection. Your keys and contacts stay with you, under your control.",
   "features.languages.label": "Languages",
+  "features.ios.title": "On iPhone and iPad",
   "features.ios.text": "The iPhone and iPad app adds a few things of its own.",
-  "features.ios.altEncrypting": "Doughnut Forge on iPhone: a video being encrypted, 75% done",
-  "features.ios.altContacts": "Doughnut Forge on iPhone: the Contacts screen with three trusted contacts",
-  "features.ios.altIpad": "Doughnut Forge on iPad: the Secure File screen with Encrypt File and Decrypt File",
+  "v2.privacy.title": "Hidden in the app switcher",
+  "v2.privacy.text":
+    "On iPhone and iPad, the app shows the doughnut and “Hidden while in the background” in the app switcher, instead of what is on screen.",
+  "features.desktop.title": "On Mac and Windows",
+  "features.desktop.text":
+    "Zoom from 100% to 200%, and screens fit smaller windows. In the file grid, long names are shortened in the middle, so you still see how they end. Encrypting never replaces a file that is already there. On Mac, Encrypt File, Decrypt File and Lock are in the File menu, with keyboard shortcuts.",
+  "features.ios.altEncrypting": "Doughnut Forge 2 on iPhone: a video being encrypted, 75% done",
+  "features.ios.altChoose":
+    "Doughnut Forge 2 on iPhone: choosing who can open a file, with you and three contacts picked",
+  "features.ios.altIpad": "Doughnut Forge 2 on iPad: the Files screen with Encrypt file and Decrypt file",
   "features.cta.title": "Ready to keep your files private?",
 
   // Pricing page
@@ -108,7 +128,7 @@ export default {
   "download.requires.windows": "Needs Windows 11.",
   "download.start.title": "When you first open it",
   "download.start.text":
-    "Doughnut Forge asks you to set a password for this device and then creates your identity. It gives you a 24-word backup phrase: write it down and keep it somewhere safe, because it is the only way to restore your access.",
+    "Doughnut Forge starts with one short welcome, then one choice: create your identity, or restore it. When you create it, the app gives you 24 recovery words. Write them down and keep them somewhere safe: they are the only way to restore your identity or reset a forgotten password.",
 
   // Support page
   "meta.support.title": "Support and frequently asked questions | Doughnut Forge",
@@ -120,7 +140,7 @@ export default {
   "support.ask.text":
     "Support happens on GitHub, in public, so everyone can find the answers. Issues on GitHub are public: anyone can read what you write. You need a free GitHub account to open one.",
   "support.ask.warning":
-    "Never attach vault files, identity files, your backup phrase (recovery words), passwords or passphrases, or screenshots that show them.",
+    "Never attach vault files, identity files, your recovery words, passwords or passphrases, or screenshots that show them.",
   // The three GitHub issue forms (forge-privacy .github/ISSUE_TEMPLATE/)
   "support.ask.bug": "Report a bug",
   "support.ask.question": "Ask a question",
@@ -156,10 +176,13 @@ export default {
     "On your device. Your password and keys are never stored on a server or sent across the network. Encrypted files go wherever you choose to save or send them.",
   "faq.backup.q": "How do I back up my identity?",
   "faq.backup.a":
-    "When you create your identity, the app shows you a 24-word backup phrase. Write it down and keep it somewhere safe: it is all you need to restore your identity. The app also offers to save the phrase as a PDF. That PDF holds the same 24 words and is not protected by a password, so keep it as safe as the phrase itself. Your contacts are not part of the backup phrase.",
-  "faq.restore.q": "How do I restore my identity?",
+    "When you choose “Create my identity”, the app gives you 24 recovery words. Write them down and keep them somewhere safe: they are the only way to restore your identity or reset a forgotten password. After you write them down, the app asks for two of them, to help you catch a mistake in your copy. The app can also save them as a PDF. That PDF is not encrypted, so print it, then delete it, and do not keep it in iCloud Drive, Dropbox or any synced folder. Your contacts are not part of your recovery words.",
+  "faq.restore.q": "How do I restore my identity on a new device?",
   "faq.restore.a":
-    "Install Doughnut Forge on the new device, set a password, then choose Restore Identity and enter your 24-word backup phrase. Nothing else is needed, and it works across platforms, for example from a Mac to a Windows PC. Restoring brings back your identity, so files encrypted for it open again. Your contacts do not come back with it.",
+    "With your 24 recovery words. Backups of your iPhone, iPad or Mac do not include your identity, so restoring a device backup does not bring it back. Install Doughnut Forge on the new device, choose “I already have recovery words” and enter them. It works across platforms, for example from a Mac to a Windows PC. Restoring brings back your identity, so files encrypted for it open again. Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+  "faq.password.q": "I forgot my password. What can I do?",
+  "faq.password.a":
+    "On the lock screen, choose “Trouble unlocking?” and set a new password with your 24 recovery words. Your identity, contacts and encrypted files stay the same. Without your recovery words, the password cannot be reset.",
   "faq.share.q": "How do I share an encrypted file with someone?",
   "faq.share.a":
     "Ask the other person for their contact card (a .vltc2 file) and add it to your Contacts. Then encrypt the file and choose them as someone who can open it. Send the encrypted file any way you like, such as by email, in a messaging app or on a USB stick. Only the people you chose can open it.",
@@ -213,6 +236,7 @@ export default {
   "press.shots.text": "These show the iPhone and iPad app.",
   // {device} is iPhone or iPad, {screen} the app's name for the screen
   "press.shots.label": "{device}: {screen}",
+  "press.shots.choose": "Choosing who can open a file",
   "press.download": "PNG, {width} × {height}",
   "press.usage.title": "Using these files",
   "press.usage.text":
@@ -237,14 +261,24 @@ export default {
   "roadmap.shipped": "Shipped",
   "roadmap.next": "Next",
   "roadmap.later": "Later",
-  "roadmap.identity.title": "Identity protection",
-  "roadmap.identity.text":
-    "An update that keeps every identity safe, so it can never be lost, replaced or left readable. On Mac, iPhone and iPad.",
-  "roadmap.identityWindows.title": "Identity protection for Windows",
-  "roadmap.identityWindows.text": "The same update for Windows.",
-  "roadmap.stricter.title": "Stricter protection",
-  "roadmap.stricter.text": "Further protection updates that make the app stricter about what it accepts. Nothing changes for your data.",
+  "roadmap.v2.title": "Doughnut Forge 2",
+  "roadmap.v2.text":
+    "A new look, an easier start, and a way back in if you forget your password. On iPhone, iPad, Mac and Windows.",
+  "v2.notes.reset":
+    "Forgot your password? Choose “Trouble unlocking?” on the lock screen and set a new one with your recovery words. Your identity, contacts and encrypted files stay the same.",
+  "v2.notes.words":
+    "Your 24-word backup phrase is now called your recovery words. After you write them down, the app asks for two of them, to help you catch a mistake in your copy.",
+  "v2.notes.start": "Setting up is one short welcome, then one choice: create your identity, or restore it.",
+  "v2.notes.design": "A calmer design, in light and dark mode.",
+  "v2.notes.backups":
+    "Backups of your iPhone, iPad or Mac no longer include your identity. Keep your recovery words safe: they are how you restore it on a new device.",
+  "v2.notes.ios":
+    "On iPhone, a tab bar for Files, Text, Identity, Contacts and Settings. On iPhone and iPad, the app is hidden in the app switcher.",
+  "v2.notes.desktop":
+    "On Mac and Windows, zoom from 100% to 200%, and encrypting never replaces a file that is already there.",
   "roadmap.android.title": "Doughnut Forge for Android",
+  "roadmap.small.title": "Smaller improvements",
+  "roadmap.small.text": "Small fixes and improvements to Doughnut Forge 2.",
   "roadmap.audit.title": "Independent security audit",
   "roadmap.audit.text": "A security audit of Doughnut Forge by an independent outside expert.",
 
@@ -322,7 +356,7 @@ export default {
   "technical.keys.identity.text": "made from one 256-bit random secret, created on your device.",
   "technical.keys.recovery.label": "Recovery:",
   "technical.keys.recovery.text":
-    "that secret can be written down as your 24-word backup phrase (BIP-39). It can also be split into recovery shards with Shamir's Secret Sharing, where any chosen number of shards (at least 2, at most 16 in total) brings it back. Fewer shards than that reveal nothing.",
+    "that secret can be written down as your 24 recovery words (BIP-39). It can also be split into recovery shards with Shamir's Secret Sharing, where any chosen number of shards (at least 2, at most 16 in total) brings it back. Fewer shards than that reveal nothing.",
   "technical.keys.exchange.label": "Key exchange (post-quantum hybrid):",
   "technical.keys.exchange.text":
     "each item's key is sealed separately for every recipient, and for you, using X25519 together with ML-KEM-768. The two shared secrets are combined with SHA-256.",
@@ -397,7 +431,7 @@ export default {
   "technical.libraries.text": "Doughnut Forge uses these libraries for its cryptography and compression:",
   "technical.libraries.sha": "SHA-256 and SHA-512",
   "technical.libraries.random": "Operating system random source",
-  "technical.libraries.words": "Backup phrase",
+  "technical.libraries.words": "Recovery words",
   "technical.libraries.shards": "Recovery shards",
   "technical.libraries.memory": "Secrets in memory",
   "technical.libraries.wipe": "Wiping secrets from memory",
@@ -407,7 +441,7 @@ export default {
   "technical.limits.compromised.text":
     "While Doughnut Forge is unlocked, malware with full access to your device could read your secrets.",
   "technical.limits.access.label":
-    "Anyone with your password and your device, your 24-word backup phrase, or enough recovery shards.",
+    "Anyone with your password and your device, your 24 recovery words, or enough recovery shards.",
   "technical.limits.access.text": "Keep them safe.",
   "technical.limits.passcode.label": "Your device passcode,",
   "technical.limits.passcode.text":

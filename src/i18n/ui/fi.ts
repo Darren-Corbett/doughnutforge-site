@@ -4,8 +4,8 @@
 import type { Translation } from "../index";
 
 export default {
-  "meta.home.title": "Doughnut Forge: tiedostojen offline-salaus Macille, Windowsille, iPhonelle ja iPadille",
-  "meta.home.description": "Salaa tiedostot ja tekstit iPhonella, iPadilla, Macilla ja PC:llä. Tietokoneella voit salata myös kansioita. Ei tiliä, ei palvelimia, ei tilausta. Kertaostos jokaiselle alustalle.",
+  "meta.home.title": "Doughnut Forge: tiedostojen offline-salaus iPhonelle, iPadille, Macille ja Windowsille",
+  "meta.home.description": "Doughnut Forge: tiedostojen offline-salaus iPhonelle, iPadille, Macille ja PC:lle. Salaa tiedostot ja tekstit valitsemillesi ihmisille. Ei tiliä, ei palvelimia, ei tilausta.",
   "nav.label": "Päävalikko",
   "nav.features": "Ominaisuudet",
   "nav.pricing": "Hinnat",
@@ -18,7 +18,7 @@ export default {
   "nav.security": "Tietoturva",
   "nav.home": "Doughnut Forge, etusivu",
   "skip": "Siirry sisältöön",
-  "home.summary": "Tiedostojen offline-salaus Macille, iPhonelle, iPadille ja Windowsille.",
+  "home.summary": "Tiedostojen offline-salaus iPhonelle, iPadille, Macille ja Windowsille.",
   "home.tagline": "Vain valitsemasi ihmiset voivat avata ne.",
   "home.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa.",
   "home.what.title": "Mikä Doughnut Forge on?",
@@ -31,12 +31,23 @@ export default {
   "home.specimen.note": "Hei Mikko! Vara-avain on sinisessä ruukussa takaoven vieressä. Hälytyskoodi on 4071. Nähdään perjantaina!",
   "home.specimen.cipherLabel": "Sama muistiinpano salattuna: lukukelvottomia satunnaisia merkkejä.",
   "home.specimen.caption": "Havainnollistus: oikeissa salatuissa tiedostoissa on paljon enemmän merkkejä kuin tässä.",
-  "home.phones.title": "Nyt iPhonelle ja iPadille.",
-  "home.phones.text": "Saatavilla myös Macille ja Windowsille.",
-  "home.phones.altText": "Doughnut Forge iPhonella: Turvallinen teksti -näkymä, jossa muistiinpano on valmiina salattavaksi",
-  "home.phones.altFile": "Doughnut Forge iPhonella: Turvallinen tiedosto -näkymä, jossa ovat painikkeet Salaa tiedosto ja Pura tiedoston salaus",
-  "home.phones.altIdentity": "Doughnut Forge iPhonella: Henkilöllisyys-näkymä, jossa yhteystietokortti on valmiina jaettavaksi",
+  "home.phones.title": "Uutta Doughnut Forge 2:ssa.",
+  "home.phones.text":
+    "Uusi ulkoasu, helpompi alku ja keino päästä takaisin, jos unohdat salasanasi. iPhonelle, iPadille, Macille ja Windowsille.",
+  "home.phones.altText": "Doughnut Forge 2 iPhonella: Teksti-näkymä, jossa muistiinpano on valmiina salattavaksi",
+  "home.phones.altFile":
+    "Doughnut Forge 2 iPhonella: Tiedostot-näkymä, jossa ovat painikkeet Salaa tiedosto ja Pura tiedoston salaus",
+  "home.phones.altIdentity":
+    "Doughnut Forge 2 iPhonella: Henkilöllisyys-näkymä, jossa ovat yhteystietokoodisi ja Jaa yhteystietokortti",
+  "home.v2.words.title": "Palautussanat ja salasanan nollaus",
+  "home.v2.words.text":
+    "24 sanan varmuuskopiolausekkeesi on nyt nimeltään palautussanat. Unohditko salasanasi? Valitse lukituksen avausnäkymässä ”Ongelmia lukituksen avaamisessa?” ja aseta uusi salasana palautussanoillasi. Henkilöllisyytesi, yhteystietosi ja salatut tiedostosi pysyvät ennallaan.",
+  "home.v2.cancel.title": "Peruuta",
+  "home.v2.cancel.text":
+    "Peruuta lopettaa tiedoston salauksen tai salauksen purun, eikä mitään tallenneta. Macissa ja Windowsissa se lopettaa myös kansion käsittelyn: jo valmiit tiedostot säilyvät.",
   "home.features.title": "Lukitse se laitteellasi. Jaa se haluamallasi tavalla.",
+  "tabs.files": "Tiedostot",
+  "tabs.text": "Teksti",
   "home.pricing.title": "Kertaostos, ei koskaan tilausta.",
   "home.pricing.text": "Osta Doughnut Forge kerran jokaiselle käyttämällesi alustalle, sen alustan omasta kaupasta. Kauppa näyttää hinnan siellä, missä asut.",
   "download.coming": "Tulossa pian: {platforms}.",
@@ -52,14 +63,25 @@ export default {
   "meta.features.description": "Salaa tiedostot ja tekstit omalla iPhonellasi, iPadillasi tai tietokoneellasi, jaa ne luotettujen ihmisten kanssa ja pidä ne suojattuina pitkään. Ei tiliä eikä palvelimia.",
   "features.title": "Kaikki, mitä Doughnut Forge tekee",
   "features.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa. Lähetitpä ne miten tahansa, vain he voivat avata ne.",
+  "features.identity.more":
+    "Henkilöllisyytesi on tallennettu vain tälle laitteelle ja suojattu salasanallasi. Säilytä 24 palautussanaasi tallessa: ne ovat ainoa tapa palauttaa henkilöllisyytesi tai nollata unohtunut salasana.",
   "features.private.title": "Yksityinen alusta alkaen",
   "features.offline.title": "Toimii ilman internetiä",
   "offline.text": "Ei tilausta, ei tiliä, ei palvelimia eikä seurantaa. Doughnut Forge toimii kokonaan laitteellasi, myös ilman internetyhteyttä. Avaimesi ja yhteystietosi pysyvät sinulla, sinun hallinnassasi.",
   "features.languages.label": "Kielet",
+  "features.ios.title": "iPhonessa ja iPadissa",
   "features.ios.text": "iPhone- ja iPad-sovelluksessa on lisäksi muutama oma ominaisuus.",
-  "features.ios.altEncrypting": "Doughnut Forge iPhonella: videota salataan, 75 % valmiina",
-  "features.ios.altContacts": "Doughnut Forge iPhonella: Yhteystiedot-näkymä, jossa on kolme luotettua yhteyshenkilöä",
-  "features.ios.altIpad": "Doughnut Forge iPadilla: Turvallinen tiedosto -näkymä, jossa ovat painikkeet Salaa tiedosto ja Pura tiedoston salaus",
+  "v2.privacy.title": "Piilotettu apinvaihtajassa",
+  "v2.privacy.text":
+    "iPhonessa ja iPadissa sovellus näyttää apinvaihtajassa donitsin ja tekstin ”Piilotettu, kun sovellus on taustalla” näytön sisällön sijaan.",
+  "features.desktop.title": "Macissa ja Windowsissa",
+  "features.desktop.text":
+    "Zoomaa 100 %:sta 200 %:iin, ja näkymät mahtuvat pienempiin ikkunoihin. Tiedostoruudukossa pitkät nimet lyhennetään keskeltä, joten näet yhä, miten ne päättyvät. Salaus ei koskaan korvaa jo olemassa olevaa tiedostoa. Macissa Salaa tiedosto, Pura tiedoston salaus ja Lukitse löytyvät valikkoriviltä pikanäppäimineen.",
+  "features.ios.altEncrypting": "Doughnut Forge 2 iPhonella: videota salataan, 75 % valmiina",
+  "features.ios.altChoose":
+    "Doughnut Forge 2 iPhonella: valitaan, kuka voi avata tiedoston, ja valittuina ovat sinä ja kolme yhteyshenkilöä",
+  "features.ios.altIpad":
+    "Doughnut Forge 2 iPadilla: Tiedostot-näkymä, jossa ovat painikkeet Salaa tiedosto ja Pura tiedoston salaus",
   "features.cta.title": "Valmis pitämään tiedostosi yksityisinä?",
   "meta.pricing.title": "Hinnat: kertaostos, ei koskaan tilausta | Doughnut Forge",
   "meta.pricing.description": "Osta Doughnut Forge kerran jokaiselle käyttämällesi alustalle, sen alustan omasta kaupasta. Ei tilausta, ei tiliä eikä mitään uusittavaa.",
@@ -74,14 +96,16 @@ export default {
   "download.requires.mac": "Vaatii macOS 12 Monterey -version tai uudemman.",
   "download.requires.windows": "Vaatii Windows 11:n.",
   "download.start.title": "Kun avaat sovelluksen ensimmäisen kerran",
-  "download.start.text": "Doughnut Forge pyytää sinua asettamaan tälle laitteelle salasanan ja luo sitten henkilöllisyytesi. Saat 24 sanan varmuuskopiolausekkeen: kirjoita se muistiin ja säilytä sitä turvallisessa paikassa, sillä se on ainoa tapa palauttaa käyttöoikeutesi.",
+  "download.start.text":
+    "Doughnut Forge alkaa lyhyellä tervetulotoivotuksella ja sitten yhdellä valinnalla: luo henkilöllisyytesi tai palauta se. Kun luot sen, sovellus antaa sinulle 24 palautussanaa. Kirjoita ne muistiin ja säilytä niitä turvallisessa paikassa: ne ovat ainoa tapa palauttaa henkilöllisyytesi tai nollata unohtunut salasana.",
   "meta.support.title": "Tuki ja usein kysytyt kysymykset | Doughnut Forge",
   "meta.support.description": "Apua Doughnut Forgen käyttöön: vastaukset yleisiin kysymyksiin sekä ohjeet kysymyksen esittämiseen tai ongelman ilmoittamiseen GitHubissa.",
   "support.title": "Apua Doughnut Forgen käyttöön",
   "support.lead": "Useimpiin kysymyksiin löytyy vastaus alta. Kaikessa muussa voit kysyä GitHubissa.",
   "support.ask.title": "Esitä kysymys tai ilmoita ongelmasta",
   "support.ask.text": "Tuki hoidetaan GitHubissa julkisesti, jotta kaikki voivat löytää vastaukset. GitHubin tiketit ovat julkisia: kuka tahansa voi lukea, mitä kirjoitat. Tiketin avaamiseen tarvitset ilmaisen GitHub-tilin.",
-  "support.ask.warning": "Älä koskaan liitä holvitiedostoja, henkilöllisyystiedostoja, varmuuskopiolausekettasi (palautussanoja), salasanoja tai tunnuslauseita äläkä kuvakaappauksia, joissa ne näkyvät.",
+  "support.ask.warning":
+    "Älä koskaan liitä holvitiedostoja, henkilöllisyystiedostoja, palautussanojasi, salasanoja tai tunnuslauseita äläkä kuvakaappauksia, joissa ne näkyvät.",
   "support.ask.bug": "Ilmoita virheestä",
   "support.ask.question": "Esitä kysymys",
   "support.ask.idea": "Ehdota ominaisuutta",
@@ -107,9 +131,14 @@ export default {
   "faq.storage.q": "Missä tiedostojani ja avaimiani säilytetään?",
   "faq.storage.a": "Laitteellasi. Salasanaasi ja avaimiasi ei koskaan tallenneta palvelimelle tai lähetetä verkkoon. Salatut tiedostot menevät sinne, minne päätät tallentaa tai lähettää ne.",
   "faq.backup.q": "Miten varmuuskopioin henkilöllisyyteni?",
-  "faq.backup.a": "Kun luot henkilöllisyytesi, sovellus näyttää sinulle 24 sanan varmuuskopiolausekkeen. Kirjoita se muistiin ja säilytä sitä turvallisessa paikassa: se on kaikki, mitä tarvitset henkilöllisyytesi palauttamiseen. Sovellus tarjoaa myös mahdollisuuden tallentaa lausekkeen PDF-tiedostona. PDF-tiedosto sisältää samat 24 sanaa, eikä sitä ole suojattu salasanalla, joten säilytä sitä yhtä huolellisesti kuin itse lauseketta. Yhteystietosi eivät sisälly varmuuskopiolausekkeeseen.",
-  "faq.restore.q": "Miten palautan henkilöllisyyteni?",
-  "faq.restore.a": "Asenna Doughnut Forge uuteen laitteeseen, aseta salasana, valitse sitten Palauta henkilöllisyys ja syötä 24 sanan varmuuskopiolausekkeesi. Muuta ei tarvita, ja se toimii eri alustojen välillä, esimerkiksi Macilta Windows-tietokoneelle. Palautus tuo henkilöllisyytesi takaisin, joten sille salatut tiedostot aukeavat taas. Yhteystietosi eivät palaudu sen mukana.",
+  "faq.backup.a":
+    "Kun valitset ”Luo henkilöllisyyteni”, sovellus antaa sinulle 24 palautussanaa. Kirjoita ne muistiin ja säilytä niitä turvallisessa paikassa: ne ovat ainoa tapa palauttaa henkilöllisyytesi tai nollata unohtunut salasana. Kun olet kirjoittanut ne muistiin, sovellus kysyy niistä kahta, jotta huomaat mahdollisen virheen kopiossasi. Sovellus voi myös tallentaa ne PDF-tiedostona. PDF-tiedostoa ei ole salattu, joten tulosta se, poista se sitten äläkä säilytä sitä iCloud Drivessa, Dropboxissa tai missään synkronoitavassa kansiossa. Yhteystietosi eivät sisälly palautussanoihisi.",
+  "faq.restore.q": "Miten palautan henkilöllisyyteni uudella laitteella?",
+  "faq.restore.a":
+    "24 palautussanallasi. iPhonen, iPadin tai Macin varmuuskopiot eivät sisällä henkilöllisyyttäsi, joten laitteen varmuuskopion palauttaminen ei tuo sitä takaisin. Asenna Doughnut Forge uuteen laitteeseen, valitse ”Minulla on jo palautussanat” ja syötä ne. Se toimii eri alustojen välillä, esimerkiksi Macilta Windows-tietokoneelle. Palautus tuo henkilöllisyytesi takaisin, joten sille salatut tiedostot aukeavat taas. Palautussanasi eivät tuo yhteystietojasi takaisin. Jos palautat ensin iPhonen, iPadin tai Macin varmuuskopion ja syötät sitten palautussanasi, myös yhteystietosi palautuvat.",
+  "faq.password.q": "Unohdin salasanani. Mitä voin tehdä?",
+  "faq.password.a":
+    "Valitse lukituksen avausnäkymässä ”Ongelmia lukituksen avaamisessa?” ja aseta uusi salasana 24 palautussanallasi. Henkilöllisyytesi, yhteystietosi ja salatut tiedostosi pysyvät ennallaan. Ilman palautussanoja salasanaa ei voi nollata.",
   "faq.share.q": "Miten jaan salatun tiedoston jonkun kanssa?",
   "faq.share.a": "Pyydä toiselta henkilöltä hänen yhteystietokorttinsa (.vltc2-tiedosto) ja lisää se Yhteystietoihisi. Salaa sitten tiedosto ja valitse hänet yhdeksi niistä, jotka voivat avata sen. Lähetä salattu tiedosto haluamallasi tavalla, esimerkiksi sähköpostilla, viestisovelluksessa tai USB-tikulla. Vain valitsemasi ihmiset voivat avata sen.",
   "faq.recipient.q": "Tarvitseeko toinen henkilö Doughnut Forgen avatakseen sen?",
@@ -149,6 +178,7 @@ export default {
   "press.shots.title": "Kuvakaappaukset",
   "press.shots.text": "Niissä näkyy iPhone- ja iPad-sovellus.",
   "press.shots.label": "{device}: {screen}",
+  "press.shots.choose": "Sen valitseminen, kuka voi avata tiedoston",
   "press.download": "PNG, {width} × {height}",
   "press.usage.title": "Tiedostojen käyttö",
   "press.usage.text": "Voit käyttää näitä kuvauksia, kuvakkeita ja kuvakaappauksia Doughnut Forgea käsittelevissä artikkeleissa, arvosteluissa ja videoissa. Älä kuitenkaan muuta kuvakkeen muotoa tai värejä.",
@@ -166,13 +196,25 @@ export default {
   "roadmap.shipped": "Julkaistu",
   "roadmap.next": "Seuraavaksi",
   "roadmap.later": "Myöhemmin",
-  "roadmap.identity.title": "Henkilöllisyyden suojaus",
-  "roadmap.identity.text": "Päivitys, joka pitää jokaisen henkilöllisyyden turvassa: se ei voi koskaan kadota, korvautua toisella tai jäädä luettavaksi. Macille, iPhonelle ja iPadille.",
-  "roadmap.identityWindows.title": "Henkilöllisyyden suojaus Windowsille",
-  "roadmap.identityWindows.text": "Sama päivitys Windowsille.",
-  "roadmap.stricter.title": "Tiukempi suojaus",
-  "roadmap.stricter.text": "Lisää suojauspäivityksiä, jotka tekevät sovelluksesta tiukemman sen suhteen, mitä se hyväksyy. Tiedoissasi ei muutu mitään.",
+  "roadmap.v2.title": "Doughnut Forge 2",
+  "roadmap.v2.text":
+    "Uusi ulkoasu, helpompi alku ja keino päästä takaisin, jos unohdat salasanasi. iPhonelle, iPadille, Macille ja Windowsille.",
+  "v2.notes.reset":
+    "Unohditko salasanasi? Valitse lukituksen avausnäkymässä ”Ongelmia lukituksen avaamisessa?” ja aseta uusi salasana palautussanoillasi. Henkilöllisyytesi, yhteystietosi ja salatut tiedostosi pysyvät ennallaan.",
+  "v2.notes.words":
+    "24 sanan varmuuskopiolausekkeesi on nyt nimeltään palautussanat. Kun olet kirjoittanut ne muistiin, sovellus kysyy niistä kahta, jotta huomaat mahdollisen virheen kopiossasi.",
+  "v2.notes.start":
+    "Käyttöönotto on lyhyt tervetulotoivotus ja sitten yksi valinta: luo henkilöllisyytesi tai palauta se.",
+  "v2.notes.design": "Rauhallisempi ulkoasu vaaleassa ja tummassa tilassa.",
+  "v2.notes.backups":
+    "iPhonen, iPadin tai Macin varmuuskopiot eivät enää sisällä henkilöllisyyttäsi. Säilytä palautussanasi tallessa: niillä palautat sen uudella laitteella.",
+  "v2.notes.ios":
+    "iPhonessa välilehtipalkki: Tiedostot, Teksti, Henkilöllisyys, Yhteystiedot ja Asetukset. iPhonessa ja iPadissa sovellus on piilotettu apinvaihtajassa.",
+  "v2.notes.desktop":
+    "Macissa ja Windowsissa voit zoomata 100 %:sta 200 %:iin, eikä salaus koskaan korvaa jo olemassa olevaa tiedostoa.",
   "roadmap.android.title": "Doughnut Forge Androidille",
+  "roadmap.small.title": "Pienempiä parannuksia",
+  "roadmap.small.text": "Pieniä korjauksia ja parannuksia Doughnut Forge 2:een.",
   "roadmap.audit.title": "Tietoturvan riippumaton tarkastus",
   "roadmap.audit.text": "Doughnut Forgen tietoturvatarkastus, jonka tekee ulkopuolinen riippumaton asiantuntija.",
   "meta.security.title": "Tietoturva: näin tiedostosi pysyvät yksityisinä | Doughnut Forge",
@@ -233,7 +275,8 @@ export default {
   "technical.keys.identity.label": "Henkilöllisyytesi:",
   "technical.keys.identity.text": "muodostetaan yhdestä 256-bittisestä satunnaisesta salaisuudesta, joka luodaan laitteellasi.",
   "technical.keys.recovery.label": "Palautus:",
-  "technical.keys.recovery.text": "salaisuuden voi kirjoittaa muistiin 24 sanan varmuuskopiolausekkeena (BIP-39). Sen voi myös jakaa palautusosiin Shamirin salaisuuden jakamisella (Shamir's Secret Sharing), jolloin mitkä tahansa osat valitun määrän verran (vähintään 2, yhteensä enintään 16) palauttavat sen. Sitä pienempi määrä osia ei paljasta mitään.",
+  "technical.keys.recovery.text":
+    "salaisuuden voi kirjoittaa muistiin 24 palautussanana (BIP-39). Sen voi myös jakaa palautusosiin Shamirin salaisuuden jakamisella (Shamir's Secret Sharing), jolloin mitkä tahansa osat valitun määrän verran (vähintään 2, yhteensä enintään 16) palauttavat sen. Sitä pienempi määrä osia ei paljasta mitään.",
   "technical.keys.exchange.label": "Avaintenvaihto (kvanttikestävä hybridi):",
   "technical.keys.exchange.text": "jokaisen kohteen avain sinetöidään erikseen jokaiselle vastaanottajalle ja sinulle käyttäen menetelmiä X25519 ja ML-KEM-768 yhdessä. Kaksi jaettua salaisuutta yhdistetään SHA-256-funktiolla.",
   "technical.keys.signatures.label": "Allekirjoitukset:",
@@ -297,7 +340,7 @@ export default {
   "technical.libraries.text": "Doughnut Forge käyttää näitä kirjastoja kryptografiaan ja pakkaukseen:",
   "technical.libraries.sha": "SHA-256 ja SHA-512",
   "technical.libraries.random": "Käyttöjärjestelmän satunnaislähde",
-  "technical.libraries.words": "Varmuuskopiolauseke",
+  "technical.libraries.words": "Palautussanat",
   "technical.libraries.shards": "Palautusosat",
   "technical.libraries.memory": "Salaisuudet muistissa",
   "technical.libraries.wipe": "Salaisuuksien pyyhkiminen muistista",
@@ -305,7 +348,8 @@ export default {
   "technical.limits.title": "Mitä vastaan Doughnut Forge ei suojaa",
   "technical.limits.compromised.label": "Laite, joka on jo vaarantunut.",
   "technical.limits.compromised.text": "Kun Doughnut Forgen lukitus on avattu, haittaohjelma, jolla on täysi pääsy laitteeseesi, voisi lukea salaisuutesi.",
-  "technical.limits.access.label": "Kuka tahansa, jolla on salasanasi ja laitteesi, 24 sanan varmuuskopiolausekkeesi tai riittävästi palautusosia.",
+  "technical.limits.access.label":
+    "Kuka tahansa, jolla on salasanasi ja laitteesi, 24 palautussanaasi tai riittävästi palautusosia.",
   "technical.limits.access.text": "Säilytä niitä turvassa.",
   "technical.limits.passcode.label": "Laitteesi pääsykoodi,",
   "technical.limits.passcode.text": "iPhonessa ja iPadissa, kun Face ID tai Touch ID on käytössä. iOS hyväksyy pääsykoodin Face ID:n tai Touch ID:n sijaan.",

@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/hi/*.json",
-  "app:navigation.tabs.vault": "सुरक्षित निर्देशिका",
-  "app:navigation.tabs.mobile-vault": "सुरक्षित फ़ाइल",
-  "app:navigation.tabs.text-vault": "सुरक्षित टेक्स्ट",
   "app:navigation.tabs.identity": "पहचान",
   "app:navigation.tabs.contacts": "संपर्क",
   "app:navigation.language": "भाषा",
@@ -11,6 +8,5 @@
   "app:languageModal.regions.middleEastAfrica": "मध्य पूर्व और अफ़्रीका",
   "app:languageModal.regions.asiaPacific": "एशिया-प्रशांत",
   "mobile-views:secureFile.howItWorks.encrypt.title": "एक फ़ाइल को एन्क्रिप्ट करना",
-  "help:secureDirectoryGuide.step1.description": "अपनी फ़ाइलों को ब्राउज़ करने और प्रबंधित करने के लिए अपने कार्यक्षेत्र में स्थानीय फ़ोल्डर जोड़ें। Doughnut Forge पूरी तरह से स्थानीय रूप से संचालित होता है, जिसका अर्थ है कि आपकी मूल फ़ाइलें कभी भी आपके डिवाइस को नहीं छोड़ती हैं।",
-  "help:setupGuide.step3.description": "आपकी कुंजियाँ पूरी तरह से निजी हैं और खो जाने पर पुनर्प्राप्त नहीं की जा सकतीं। आपको अपना बैकअप वाक्यांश सुरक्षित स्थान पर रखना चाहिए, क्योंकि आपकी पहुँच पुनर्स्थापित करने का यह एकमात्र तरीका है।"
+  "help:secureDirectoryGuide.step1.description": "अपनी फ़ाइलों को ब्राउज़ करने और प्रबंधित करने के लिए अपने कार्यक्षेत्र में स्थानीय फ़ोल्डर जोड़ें। Doughnut Forge पूरी तरह से स्थानीय रूप से संचालित होता है, जिसका अर्थ है कि आपकी मूल फ़ाइलें कभी भी आपके डिवाइस को नहीं छोड़ती हैं।"
 }

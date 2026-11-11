@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/nl/*.json",
-  "app:navigation.tabs.vault": "Veilige map",
-  "app:navigation.tabs.mobile-vault": "Veilig bestand",
-  "app:navigation.tabs.text-vault": "Veilige tekst",
   "app:navigation.tabs.identity": "Identiteit",
   "app:navigation.tabs.contacts": "Contacten",
   "app:navigation.language": "Taal",
@@ -11,6 +8,5 @@
   "app:languageModal.regions.middleEastAfrica": "Midden-Oosten en Afrika",
   "app:languageModal.regions.asiaPacific": "Azië-Pacific",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Een bestand versleutelen",
-  "help:secureDirectoryGuide.step1.description": "Voeg lokale mappen toe aan uw werkruimte om door uw bestanden te bladeren en ze te beheren. Doughnut Forge werkt volledig lokaal, wat betekent dat uw originele bestanden uw apparaat nooit verlaten.",
-  "help:setupGuide.step3.description": "Uw sleutels zijn volledig privé en kunnen niet worden hersteld als u ze verliest. U moet uw herstelzin op een veilige locatie bewaren, aangezien dit de enige manier is om uw toegang te herstellen."
+  "help:secureDirectoryGuide.step1.description": "Voeg lokale mappen toe aan uw werkruimte om door uw bestanden te bladeren en ze te beheren. Doughnut Forge werkt volledig lokaal, wat betekent dat uw originele bestanden uw apparaat nooit verlaten."
 }

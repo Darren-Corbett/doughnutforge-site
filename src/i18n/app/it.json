@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/it/*.json",
-  "app:navigation.tabs.vault": "Directory sicura",
-  "app:navigation.tabs.mobile-vault": "File sicuro",
-  "app:navigation.tabs.text-vault": "Testo sicuro",
   "app:navigation.tabs.identity": "Identità",
   "app:navigation.tabs.contacts": "Contatti",
   "app:navigation.language": "Lingua",
@@ -11,6 +8,5 @@
   "app:languageModal.regions.middleEastAfrica": "Medio Oriente e Africa",
   "app:languageModal.regions.asiaPacific": "Asia-Pacifico",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Crittografia di un file",
-  "help:secureDirectoryGuide.step1.description": "Aggiungi cartelle locali alla tua area di lavoro per sfogliare e gestire i tuoi file. Doughnut Forge opera interamente in locale, il che significa che i tuoi file originali non lasciano mai il tuo dispositivo.",
-  "help:setupGuide.step3.description": "Le tue chiavi sono completamente private e non possono essere recuperate se perse. Devi conservare la tua frase di recupero in un luogo sicuro, poiché è l'unico modo per ripristinare l'accesso."
+  "help:secureDirectoryGuide.step1.description": "Aggiungi cartelle locali alla tua area di lavoro per sfogliare e gestire i tuoi file. Doughnut Forge opera interamente in locale, il che significa che i tuoi file originali non lasciano mai il tuo dispositivo."
 }

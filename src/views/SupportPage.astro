@@ -24,7 +24,7 @@ const names = (status: "available" | "coming") =>
     lang,
     platforms.filter((p) => p.status === status).map((p) => platformName(lang, p.id)),
   );
-const ids = ["subscription", "platforms", "offline", "storage", "backup", "restore", "share", "recipient", "messaging", "which", "data", "quantum"] as const;
+const ids = ["subscription", "platforms", "offline", "storage", "backup", "restore", "password", "share", "recipient", "messaging", "which", "data", "quantum"] as const;
 const items: FaqItem[] = ids.map((id) => ({
   id,
   q: t(`faq.${id}.q` as UiKey),

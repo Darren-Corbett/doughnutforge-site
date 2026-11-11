@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/fr/*.json",
-  "app:navigation.tabs.vault": "Dossier sécurisé",
-  "app:navigation.tabs.mobile-vault": "Fichier sécurisé",
-  "app:navigation.tabs.text-vault": "Texte sécurisé",
   "app:navigation.tabs.identity": "Identité",
   "app:navigation.tabs.contacts": "Contacts",
   "app:navigation.language": "Langue",
@@ -11,6 +8,5 @@
   "app:languageModal.regions.middleEastAfrica": "Moyen-Orient et Afrique",
   "app:languageModal.regions.asiaPacific": "Asie-Pacifique",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Chiffrement d'un fichier",
-  "help:secureDirectoryGuide.step1.description": "Ajoutez des dossiers locaux à votre espace de travail pour parcourir et gérer vos fichiers. Doughnut Forge fonctionne entièrement localement, ce qui signifie que vos fichiers originaux ne quittent jamais votre appareil.",
-  "help:setupGuide.step3.description": "Vos clés sont entièrement privées et ne peuvent être récupérées si vous les perdez. Vous devez conserver votre phrase de récupération dans un endroit sûr, car c'est le seul moyen de restaurer votre accès."
+  "help:secureDirectoryGuide.step1.description": "Ajoutez des dossiers locaux à votre espace de travail pour parcourir et gérer vos fichiers. Doughnut Forge fonctionne entièrement localement, ce qui signifie que vos fichiers originaux ne quittent jamais votre appareil."
 }

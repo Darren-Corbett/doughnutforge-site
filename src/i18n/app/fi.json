@@ -1,8 +1,5 @@
 {
   "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/fi/*.json",
-  "app:navigation.tabs.vault": "Turvallinen hakemisto",
-  "app:navigation.tabs.mobile-vault": "Turvallinen tiedosto",
-  "app:navigation.tabs.text-vault": "Turvallinen teksti",
   "app:navigation.tabs.identity": "Henkilöllisyys",
   "app:navigation.tabs.contacts": "Yhteystiedot",
   "app:navigation.language": "Kieli",
@@ -11,6 +8,5 @@
   "app:languageModal.regions.middleEastAfrica": "Lähi-itä ja Afrikka",
   "app:languageModal.regions.asiaPacific": "Aasia ja Tyynenmeren alue",
   "mobile-views:secureFile.howItWorks.encrypt.title": "Tiedoston salaus",
-  "help:secureDirectoryGuide.step1.description": "Lisää paikallisia kansioita työtilaasi tiedostojen selaamista ja hallintaa varten. Doughnut Forge toimii täysin paikallisesti, mikä tarkoittaa, että alkuperäiset tiedostosi eivät koskaan poistu laitteeltasi.",
-  "help:setupGuide.step3.description": "Avaimet ovat täysin yksityisiä, eikä niitä voi palauttaa, jos ne katoavat. Sinun on säilytettävä palautuslause turvallisessa paikassa, sillä se on ainoa tapa palauttaa käyttöoikeutesi."
+  "help:secureDirectoryGuide.step1.description": "Lisää paikallisia kansioita työtilaasi tiedostojen selaamista ja hallintaa varten. Doughnut Forge toimii täysin paikallisesti, mikä tarkoittaa, että alkuperäiset tiedostosi eivät koskaan poistu laitteeltasi."
 }
