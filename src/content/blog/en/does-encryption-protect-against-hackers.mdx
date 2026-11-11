@@ -1,0 +1,90 @@
+---
+title: "Does encryption protect against hackers? What it can and cannot do"
+description: "Encryption stops hackers reading stolen data, but not ransomware, phishing or a hacked device. What it protects, what it does not, and what to do too."
+keyphrase: does encryption protect against hackers
+date: 2026-11-13
+draft: true
+lang: en
+---
+
+**Partly.** Encryption stops hackers reading your data if they steal it or intercept it without the key, but it does not stop them getting in, locking your files with ransomware, or reading what is on a device they already control. Used with a few other habits, it is one of the strongest protections you have.
+
+## What encryption is, in one paragraph
+
+Encryption turns readable data into something that looks like random noise. Only someone with the right key can turn it back. The US Cybersecurity and Infrastructure Security Agency (CISA) puts its purpose simply: it "prevents people from accessing or manipulating your data without authorization" ([CISA](https://www.cisa.gov/resources-tools/training/how-protect-data-stored-your-devices)).
+
+That is its whole job: it protects data that falls into the wrong hands. Everything below follows from that.
+
+## What encryption protects against
+
+- **A lost or stolen device.** The UK National Cyber Security Centre (NCSC) advises that "disk encryption should be used where there is a risk of physical theft, such as laptop computers and removable media" ([NCSC](https://www.ncsc.gov.uk/collection/10-steps/data-security)). An encrypted laptop or USB stick in a stranger's hands is a locked box.
+- **Data intercepted on the way.** The NCSC recommends "secure, encrypted and authenticated" connections wherever possible. Someone listening in on the network sees only scrambled data. End-to-end encryption goes further: a message is locked on one phone and only unlocked on the other. You still trust the app at each end, as [Can WhatsApp read my messages?](https://doughnut-forge.app/blog/can-whatsapp-read-my-messages/) explains.
+- **Files stored by someone else.** Cloud services usually encrypt what you store. But the UK Information Commissioner's Office (ICO) points out that the provider typically manages the keys, and that "does not prevent cloud providers from accessing the data" ([ICO](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/encryption/encryption-scenarios/)). You can "encrypt the data yourself before you upload it", so the provider holds only a locked copy.
+- **Stolen copies.** If attackers copy encrypted files and do not have the key, they cannot read them. This matters more and more, because attackers often threaten to publish what they take.
+
+## What encryption does not protect against
+
+- **Ransomware locking your files.** CISA lists encryption among the defences against "attacks like ransomware and malware" ([CISA](https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/encrypt-business-data)), and it does help: stolen copies stay unreadable. But ransomware works by encrypting your files with the attacker's key. A file you have already encrypted can be locked a second time, so encryption does not get your files back. A backup does. [Is my Synology NAS at risk from ransomware?](https://doughnut-forge.app/blog/synology-nas-ransomware/) shows what that looks like in practice.
+- **Phishing and stolen passwords.** Phishing is when criminals "use scam emails, text messages or phone calls to trick their victims" ([NCSC](https://www.ncsc.gov.uk/collection/phishing-scams)). If you type your password into a fake page, the attacker signs in as you, and everything you can open, they can open too. Encryption cannot tell the difference.
+- **A device that is already unlocked or compromised.** Encrypted data has to be unlocked to be used. The NCSC notes that disk encryption "does not protect data on running systems". If malware is running on your computer while you work, it can see what you see.
+- **A weak password.** Encryption is only as strong as the password that guards the key. CISA advises a password that is "long, random, and unique".
+- **Losing your own key.** Strong encryption has no back door for you either. CISA warns that losing a recovery key or password can mean losing the data for good.
+- **Everything around a file.** CISA notes that file encryption protects a document's contents, while details such as its author and creation date can stay visible.
+
+## Can hackers break encryption?
+
+Not usually, and they rarely try. Breaking well-made modern encryption by force is not practical today. That is why attackers go around it instead: they trick you into handing over a password, wait for you to unlock a device, or attack the files that were never encrypted.
+
+The long-term question is quantum computers. The NCSC says that, once a large enough one exists, "most traditional public key cryptography (PKC) algorithms in use today will be vulnerable to attack", while "the security of symmetric cryptography is not significantly impacted" ([NCSC](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography)). It is "hard to predict when this may happen". [What quantum-safe encryption means, in plain language](https://doughnut-forge.app/blog/quantum-safe-encryption-explained/) explains what that means for you.
+
+## What to do as well
+
+Encryption covers one risk. These cover most of the rest. They are the NCSC's own Cyber Aware actions ([NCSC Cyber Aware](https://www.ncsc.gov.uk/cyberaware/home)):
+
+1. **Install updates.** Software and app updates "contain vital security updates to help protect your devices from cyber criminals". Turn on automatic updates where you can.
+2. **Back up your important files.** Back up to an external drive or a cloud service. CISA adds that ransomware can reach a backup drive that stays connected, so unplug it when you are not using it.
+3. **Turn on two-step verification.** A stolen password alone is then not enough to get into your account.
+4. **Use strong, separate passwords.** Three random words make a password that is hard to guess. A password manager helps you create and remember them.
+5. **Pause before you click.** Be wary of messages that rush you to sign in, pay or open an attachment. If something looks wrong, go to the website yourself rather than following the link.
+
+## Where file encryption fits
+
+Turning on your device's own encryption is the first step: it protects everything on it if the device is lost. File encryption covers what device encryption cannot: a file once it leaves your device, for a cloud folder, an email or a USB stick.
+
+[Doughnut Forge](https://doughnut-forge.app/) does this. It encrypts files on your own device, and only you and the people you choose can open them, wherever the file goes next. It does not stop ransomware or phishing, and it cannot protect a device that is already compromised: for those, the steps above still matter. [Offline file encryption: how it works and what it protects](https://doughnut-forge.app/blog/offline-encryption-privacy/) explains how it works in practice.
+
+## Questions people ask
+
+### Can encryption stop ransomware?
+
+No, not on its own. Encryption keeps stolen copies unreadable, but ransomware can still lock your files. A backup that is not connected to your computer is what gets them back.
+
+### Does encryption stop phishing?
+
+No. Phishing tricks you into handing over a password or opening something harmful. Once an attacker signs in as you, encryption treats them as you. Two-step verification and care with links are the defence.
+
+### If my phone is encrypted, can it still be hacked?
+
+Yes. Encryption protects the data if the phone is lost or stolen while locked. It does not stop malware or a scam that works while the phone is unlocked and in use. Keeping it updated closes the holes that attackers use.
+
+### Can hackers break modern encryption?
+
+Not in practice, with today's computers and a strong password. Attackers go around encryption instead, by stealing passwords or reaching a device while it is unlocked. Quantum computers may one day break some kinds of encryption, which is why post-quantum methods exist.
+
+### Is my cloud storage encrypted, and who can read it?
+
+Usually it is encrypted, but the provider often holds the key, so the provider can read it if it needs to. To keep a file private from the provider too, encrypt it on your own device before you upload it.
+
+### What happens if I lose my encryption key?
+
+Often, the data is gone for good. Strong encryption has no back door, for you or anyone else. Keep your password, recovery key or recovery words written down somewhere safe.
+
+## Sources
+
+- CISA, [How to protect the data stored on your devices](https://www.cisa.gov/resources-tools/training/how-protect-data-stored-your-devices)
+- CISA, [Encrypt business data](https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/encrypt-business-data)
+- NCSC, [10 Steps to Cyber Security: data security](https://www.ncsc.gov.uk/collection/10-steps/data-security)
+- NCSC, [Phishing scams](https://www.ncsc.gov.uk/collection/phishing-scams)
+- NCSC, [Cyber Aware](https://www.ncsc.gov.uk/cyberaware/home)
+- NCSC, [Next steps in preparing for post-quantum cryptography](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography)
+- ICO, [Encryption scenarios](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/encryption/encryption-scenarios/)
