@@ -1,0 +1,80 @@
+---
+title: "Is my Synology NAS at risk from ransomware? What to do now"
+description: "Synology NAS drives on old DSM versions are being hit by C3RB3R ransomware. How to protect yours, and what to do if your files are locked."
+keyphrase: Synology NAS ransomware
+date: 2026-11-11
+draft: true
+lang: en
+---
+
+If you own a Synology NAS, check today that its software is up to date. Since October 2026, ransomware called C3RB3R has been locking files on Synology drives that run old versions of DSM, the operating system on the NAS. Synology says the attackers use a flaw it fixed in December 2024. The steps below take minutes, and most of them protect you against more than this one attack.
+
+## What to do now
+
+1. **Update DSM to the latest version for your model.** Synology "strongly urges all users running vulnerable versions to update DSM immediately". Kaspersky reports that researchers have also seen newer flaws used in some attacks, which Synology fixed in its September update. So install the latest version, not just one from late 2024.
+2. **Turn on automatic updates.** Synology recommends this "to keep DSM up to date at all times".
+3. **Take the NAS off the internet.** Turn off QuickConnect. On your router, remove any port forwarding or DMZ rule that points at the NAS, and check its UPnP rules. Never leave ports 139 and 445, used for file sharing, open to the internet. If you need your files while away, connect to your home network first, for example through a VPN, instead of opening the NAS itself. Then check from your phone on mobile data that the NAS can no longer be reached.
+4. **Keep a backup that is not on the NAS.** Snapshots help, but the NAS should never hold the only copy of anything important. A backup drive that stays plugged into the NAS, or a folder the NAS can write to, can be locked along with everything else.
+5. **Protect the admin account.** Use a unique password, two-factor authentication and automatic blocking after failed sign-ins. Kaspersky is clear that this will not stop C3RB3R, which needs no password, but it helps if a password is ever stolen.
+
+## What is happening
+
+On 29 October 2026, Synology warned that attackers were targeting "devices running outdated versions of DSM", and that "these attacks aim to encrypt data and extort ransom". It has not said which flaw is being used. Its notice points to its security advisory Synology-SA-24:20, rated critical.
+
+According to Kaspersky, most infections need no action from the owner and no password. Automated scanners probably find Synology drives by checking which version of DSM they run. The ransomware then goes through every folder it can reach and locks photos, documents, archives, videos and music.
+
+Locked files gain the ending `.L0CK3D` and will not open. Renaming them does not help. A note called `read-me3.txt` appears in each folder. It asks for payment, through a hidden website, for a decryption tool. BleepingComputer reports that victims were asked for thousands of dollars. Kaspersky points out that paying comes with no guarantee of getting files back.
+
+## Who is at risk
+
+Kaspersky names two conditions: the NAS has not been updated for a long time, and DSM can be reached from the internet or from the local network. Taking the NAS off the internet helps, but only an update fixes the flaw.
+
+If DSM on your NAS is older than these versions, it is missing the fixes in the advisory Synology points to:
+
+| DSM release | Fixed in |
+| --- | --- |
+| DSM 7.2.2 | 7.2.2-72806-1 or later |
+| DSM 7.2.1 | 7.2.1-69057-6 or later |
+| DSM 7.2 | 7.2-64570-4 or later |
+| DSM 7.1 | 7.1.1-42962-7 or later |
+| DSM 6.2 | 6.2.4-25556-8 or later |
+
+Even if yours is newer, install the latest update.
+
+If you built your own NAS and run DSM through a third-party loader such as Arc, RR or M-Shell, Kaspersky advises checking that an update works with your loader and hardware before installing it. Until you can update, cut off all access from outside, allow local connections only from the devices that need them, and put the NAS on a separate part of your network.
+
+## If your files have already been locked
+
+These steps follow Kaspersky's advice. Take them in order.
+
+1. **Cut the NAS off, but leave it switched on.** Unplug every cable except power, turn off its Wi-Fi, unplug USB drives, and pause any sync or backup jobs. Switching off clears the memory of the NAS, which may hold a key that could help recover files. If you have to turn it off, shut it down normally rather than pulling the plug.
+2. **Save what is there.** Copy the locked files and the ransom note to an empty external drive. Do not connect your backup drives to the NAS, and do not restore backups onto it yet.
+3. **Look for snapshots.** If you used Snapshot Replication, check for snapshots once the ransomware has stopped, and copy what you need from them to external storage.
+4. **Change passwords before reconnecting.** Change passwords, cancel access tokens and keys, end any sessions you do not recognise, and turn on two-factor authentication for the services on the NAS. Reinstalling DSM does not cancel stolen passwords.
+5. **Reset only once everything is saved.** A factory reset and a fresh copy of DSM from Synology clear the NAS. Do not restore settings from a backup made after the infection. Kaspersky suggests considering waiting for a free decryption tool before you wipe anything.
+6. **Close the doors before going back online.** Take the steps under "Take the NAS off the internet" above, then check from mobile data that the NAS cannot be reached.
+7. **Be careful who you trust.** Free decryption tools sometimes come from genuine security researchers. Ignore unknown people or websites that promise instant recovery.
+
+## Threats to publish stolen files
+
+Kaspersky warns that attackers often add a second threat: to publish what they took, such as passwords, private photos and work documents. These threats can arrive by email or on social media. Some are bluffs from scammers who never touched your NAS. But if your NAS really was locked, Kaspersky says theft cannot be ruled out.
+
+This is one more reason to think about what sits on a NAS in readable form, alongside keeping it updated and closed to the internet.
+
+## Where encryption helps, and where it does not
+
+The best defence against losing your files is a backup that is not on the NAS. Many people keep that backup in cloud storage. Encrypting private files on your own device before copying them there keeps the backup private too.
+
+[Doughnut Forge](https://doughnut-forge.app/) does not stop ransomware, and it cannot unlock files that ransomware has locked. What it can do is narrower:
+
+- **A private off-site backup.** Files you encrypt with it on your own device can go into any cloud folder, and only you and the people you choose can open them.
+- **Stolen files stay unreadable.** A file encrypted with it before it goes on the NAS cannot be read by whoever takes it. Ransomware can still lock that file, so you still need the backup.
+
+This covers only files encrypted this way. Encrypt them on your own device and copy only the encrypted file to the NAS. If you encrypt a file that is already on the NAS, the readable original may still be kept in a snapshot or a backup. Keep your recovery words written down somewhere safe, and never on the NAS.
+
+## Sources
+
+- Synology, [Synology urges users to update DSM following ransomware attacks on outdated DSM versions](https://www.synology.com/en-global/company/news/article/C3RB3R/Synology%20urges%20users%20to%20update%20DSM%20following%20ransomware%20attacks%20on%20outdated%20DSM%20versions), 29 October 2026
+- Synology, [Security advisory Synology-SA-24:20](https://www.synology.com/en-global/security/advisory/Synology_SA_24_20), published 5 November 2024, updated 28 March 2025
+- Kaspersky, [C3RB3R attacks Synology: why you shouldn't put off NAS updates](https://www.kaspersky.co.uk/blog/synology-c3rb3r-attack/31044/), 9 November 2026
+- BleepingComputer, [Synology warns customers of ongoing C3RB3R ransomware attacks](https://bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks), 2 November 2026, updated 3 November 2026

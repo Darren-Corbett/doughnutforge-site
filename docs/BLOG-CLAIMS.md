@@ -294,3 +294,40 @@ Posts changed for Doughnut Forge 2: `encrypt-files-on-mac-without-cloud`, `share
 | V2.12 | Share contact card: check your name, then Share card (the system share menu) or Save file (a `.vltc2` file) | app repo: `src/locales/en/share-identity.json` (`exportModal`); `src/components/my-identity-card/export-identity-modal` | 2026-11-10 |
 | V2.13 | Messages: "Could not open this file" (not encrypted for your identity, or damaged; ask the sender to encrypt it for you again) and "Encrypted by someone not in your Contacts" (the file still opens; check with the sender if unexpected) | app repo: `src/locales/en/errors.json` (`errors.vault.DECAPSULATION_FAILED`); `secure-directory.json` (`decryptModal.unknownSignerWarning`, `unknownSignerDetail`) | 2026-11-10 |
 | V2.14 | Restoring from recovery words does not bring back contacts; restoring an iPhone, iPad or Mac backup first and then entering the recovery words does | app repo: `src-tauri/src/commands/identity.rs:66-108`, `src-tauri/src/engine/contact_store.rs:1-12`, `docs/plans/identity-not-in-backups.md:24, 50` (site FAQ `faq.restore.a`) | 2026-11-10 |
+
+## Post 8: Is my Synology NAS at risk from ransomware? What to do now
+`src/content/blog/en/synology-nas-ransomware.mdx`, phrase "Synology NAS ransomware". News: Synology's notice of 29 October 2026. Every external claim was re-checked live on 11 November 2026 against: SY = [Synology notice, 29 October 2026](https://www.synology.com/en-global/company/news/article/C3RB3R/Synology%20urges%20users%20to%20update%20DSM%20following%20ransomware%20attacks%20on%20outdated%20DSM%20versions); SA = [Synology-SA-24:20](https://www.synology.com/en-global/security/advisory/Synology_SA_24_20) (published 5 November 2024, updated 28 March 2025); KA = [Kaspersky, 9 November 2026](https://www.kaspersky.co.uk/blog/synology-c3rb3r-attack/31044/); BC = [BleepingComputer, 2 November 2026, updated 3 November](https://bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks). The thehackerwire.com article was not used (it is about Synergy).
+
+| # | Claim in the post | Source | Checked |
+|---|---|---|---|
+| 8.1 | C3RB3R has locked files on Synology drives since October 2026 | KA ("In October 2026, attackers began infecting Synology NAS devices"); BC (first reports "more than two weeks" before 2 November) | 2026-11-11 |
+| 8.2 | Attackers use a flaw Synology fixed in December 2024, against outdated DSM | SY ("exploiting a vulnerability patched in December 2024 to target devices running outdated versions of DSM") | 2026-11-11 |
+| 8.3 | Synology "strongly urges all users running vulnerable versions to update DSM immediately" | SY | 2026-11-11 |
+| 8.4 | Researchers have seen newer flaws in some attacks, fixed in Synology's September update | KA (360.cn; CVE-2026-13639, CVE-2026-13684; "Synology hasn't confirmed that these vulnerabilities have been used in this campaign") | 2026-11-11 |
+| 8.5 | Synology recommends automatic updates "to keep DSM up to date at all times" | SY | 2026-11-11 |
+| 8.6 | Turn off QuickConnect; remove port forwarding and DMZ rules; check UPnP; test from mobile data | KA (prevention and before-reconnecting steps). Not claimed: that QuickConnect was the way in | 2026-11-11 |
+| 8.7 | Never leave ports 139 and 445 open to the internet | KA | 2026-11-11 |
+| 8.8 | Block the management interface from the internet (as "instead of opening the NAS itself") | BC ("access to the management web interface from the Internet") | 2026-11-11 |
+| 8.9 | For remote access, connect to the home network first, for example by VPN | KA | 2026-11-11 |
+| 8.10 | Never keep the only copy on the NAS; snapshots help | KA (only copy; 3-2-1; snapshots) | 2026-11-11 |
+| 8.11 | Unique password, two-factor and auto-blocking will not stop C3RB3R, which needs no password, but help if a password is stolen | KA ("won't protect you from the current C3RB3R attack"; "doesn't need your password") | 2026-11-11 |
+| 8.12 | "These attacks aim to encrypt data and extort ransom"; the flaw is not named; the notice links SA-24:20, rated critical | SY; SA ("Critical"); BC (spokesperson pointed to "the same 2024 advisory") | 2026-11-11 |
+| 8.13 | Most infections need no owner action and no password; scanners probably find drives by DSM version | KA ("the vast majority of C3RB3R infections happen without any user interaction at all"; scanners "likely") | 2026-11-11 |
+| 8.14 | It locks photos, documents, archives, videos and music in every folder it can reach | KA ("traversing every accessible folder containing user data") | 2026-11-11 |
+| 8.15 | `.L0CK3D` ending; renaming does not help; `read-me3.txt` in each folder | KA ("simply renaming the file won't remove the encryption"); BC | 2026-11-11 |
+| 8.16 | The note asks for payment through a hidden website; no guarantee | KA (Tor; "there's no guarantee you'll get your files back intact"); BC (dark web portal) | 2026-11-11 |
+| 8.17 | Victims were asked for thousands of dollars | BC | 2026-11-11 |
+| 8.18 | Two conditions: not updated for a long time; DSM reachable from the internet or local network | KA ("accessible from the internet (or the local network)") | 2026-11-11 |
+| 8.19 | Fixed versions table | SA (DSM Affected Products: 7.2.2-72806-1, 7.2.1-69057-6, 7.2-64570-4, 7.1.1-42962-7, 6.2.4-25556-8 "or above") | 2026-11-11 |
+| 8.20 | Self-built NAS with Arc, RR or M-Shell: check compatibility; cut outside access; local access only from needed devices; separate network segment | KA | 2026-11-11 |
+| 8.21 | If locked, steps 1 to 7 (disconnect but keep powered, memory may hold a key, shut down normally; copy to an empty drive; snapshots; change passwords, revoke tokens, end sessions, two-factor; reinstalling does not cancel stolen passwords; reset after saving, no settings from after infection, consider waiting for a free decryptor; trust only genuine researchers) | KA (incident steps; "reinstalling DSM doesn't invalidate stolen passwords, sessions, or other secrets") | 2026-11-11 |
+| 8.22 | Attackers often threaten to publish passwords, private photos and work documents, by email or social media; some are scams; theft cannot be ruled out if the NAS was locked | KA ("often blackmail victims"; "you can't rule out data theft"). SY and BC do not mention theft | 2026-11-11 |
+| R8.1 | *Reasoning:* a backup drive left plugged in, or a folder the NAS can write to, can be locked too | follows from 8.14 and KA's advice not to connect backup drives to an infected NAS | 2026-11-11 |
+| R8.2 | *Reasoning:* the best defence is a backup not on the NAS; encrypting before copying to cloud keeps it private | follows from 8.10 and row E2.3 | 2026-11-11 |
+| R8.3 | *Reasoning:* encrypting a file already on the NAS may leave the readable original in a snapshot or backup | follows from 8.10 (snapshots) and V2.6 (encrypting makes a separate copy) | 2026-11-11 |
+| 8.D1 | Doughnut Forge does not stop ransomware and cannot unlock files ransomware has locked | no such feature anywhere in `src/i18n/`, this file or HANDOVER | repo |
+| 8.D2 | Encrypted files can go into any cloud folder; only you and the people you choose can open them | rows 2.2, 4.13, D6 | repo |
+| 8.D3 | A file encrypted before it goes on the NAS cannot be read by whoever takes it; ransomware can still lock it | rows 2.2, 4.13; the second half is reasoning | repo |
+| 8.D4 | Recovery words | row V2.1 | repo |
+
+Not claimed: any CVE number; that QuickConnect was the way in; that the app would have prevented an attack; the 3-2-1 rule's definition; Shadowserver's count of exposed drives.
