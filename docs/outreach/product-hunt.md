@@ -1,6 +1,6 @@
 # Product Hunt listing (draft, not submitted)
 
-Status: draft for the owner. Nothing is posted or sent. Describes the app on sale today (v1). Launch it once v2 is live, with the v2 screenshots (owner, 10 November 2026). Facts come from the site and the store listing, with sources in `docs/BLOG-CLAIMS.md`.
+Status: draft for the owner. Nothing is posted or sent. Describes Doughnut Forge 2, on sale in all three stores and live on the site since 11 November 2026. Ready to launch whenever the owner chooses (the owner asked to launch after v2, 10 November 2026). Facts come from the site and the store listing, with sources in `docs/BLOG-CLAIMS.md`.
 
 ## Name
 Doughnut Forge
@@ -19,7 +19,7 @@ Privacy, Security, Productivity
 - Download: https://doughnut-forge.app/download/
 
 ## Gallery
-The current iPhone and iPad screenshots from the press kit (https://doughnut-forge.app/press/), plus the social preview image. Swap in the v2 screenshots once v2 is live.
+The v2 iPhone and iPad screenshots from the press kit (https://doughnut-forge.app/press/), plus the social preview image.
 
 ## First comment (posted by the maker)
 Hello Product Hunt.
@@ -30,6 +30,8 @@ A few things it does not do, on purpose:
 - No account and no servers. Your password and keys never leave your device.
 - No tracking. The app makes no network connections of its own.
 - No subscription. It is a one-time purchase on each platform.
+
+Doughnut Forge 2 adds a way back in if you forget your password. Choose "Trouble unlocking?" on the lock screen and set a new one with the 24 recovery words you wrote down when you created your identity. Your identity, contacts and encrypted files stay the same.
 
 It uses post-quantum encryption, and the technical details page lists the exact methods: https://doughnut-forge.app/security/technical-details/
 

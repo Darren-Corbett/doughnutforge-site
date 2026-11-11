@@ -2,7 +2,7 @@
 
 Where the site work stands, and what comes next. Read this at the start of every session. Update it at the end of every phase.
 
-- **Last updated:** 2 November 2026, after the retro on the weekly SEO check (`docs/RETRO.md`) and its fixes; before that, the same day, after the weekly SEO check fixes (see "Weekly SEO check (2 November 2026)"); before that, 1 November 2026, after the retro on the design critique work (`docs/RETRO.md`, 1 November) and its fixes; before that, the same day, after stages 2 and 3 of the design critique and the Technical details redesign (see "Design critique, stages 2 and 3 (1 November 2026)"); before that, 31 October 2026, after stage 1 of the design critique (see "Design critique, stage 1 (31 October 2026)"); before that, the same day, after the Impeccable design skill was installed and PRODUCT.md and DESIGN.md were written (see "Impeccable design skill (31 October 2026)"); before that, 30 October 2026 (evening), after the footer and Security page links, the Technical details redesign and the WhatsApp post went live (see "Technical details page (30 October 2026)"); before that, the same day, after the Technical details page, the messaging FAQ answer and the WhatsApp blog draft; before that, 29 October 2026, after the SEO pass (see "SEO pass"); before that, 27 October 2026, after the /go/ handoff page design (see "/go/ handoff page design, A2"); before that, after the /go/ page fix (see "/go/ pages: a way on and a way back"); before that, after the mobile-first order, the phone and tablet copy and the visitor's own platform first (see "Mobile first"); earlier the same day, after iPhone and iPad went on sale on the site (App Store ID 6821344597) and the identity update moved to Shipped for Mac, iPhone and iPad; before that, 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
+- **Last updated:** 11 November 2026, after Doughnut Forge 2 went live on the site (see "v2 is live (11 November 2026)"); before that, 2 November 2026, after the retro on the weekly SEO check (`docs/RETRO.md`) and its fixes; before that, the same day, after the weekly SEO check fixes (see "Weekly SEO check (2 November 2026)"); before that, 1 November 2026, after the retro on the design critique work (`docs/RETRO.md`, 1 November) and its fixes; before that, the same day, after stages 2 and 3 of the design critique and the Technical details redesign (see "Design critique, stages 2 and 3 (1 November 2026)"); before that, 31 October 2026, after stage 1 of the design critique (see "Design critique, stage 1 (31 October 2026)"); before that, the same day, after the Impeccable design skill was installed and PRODUCT.md and DESIGN.md were written (see "Impeccable design skill (31 October 2026)"); before that, 30 October 2026 (evening), after the footer and Security page links, the Technical details redesign and the WhatsApp post went live (see "Technical details page (30 October 2026)"); before that, the same day, after the Technical details page, the messaging FAQ answer and the WhatsApp blog draft; before that, 29 October 2026, after the SEO pass (see "SEO pass"); before that, 27 October 2026, after the /go/ handoff page design (see "/go/ handoff page design, A2"); before that, after the /go/ page fix (see "/go/ pages: a way on and a way back"); before that, after the mobile-first order, the phone and tablet copy and the visitor's own platform first (see "Mobile first"); earlier the same day, after iPhone and iPad went on sale on the site (App Store ID 6821344597) and the identity update moved to Shipped for Mac, iPhone and iPad; before that, 26 October 2026, after the branded fallback badge, the uploaded-archive check, the launch retro, the blog topics file and the session retro (`docs/RETRO.md`); see "Content blockers on phones" and "Weekly blog draft: `/blog-draft`" below
 - **Branch:** `main` (trunk-based, no other branches)
 - **Full plan:** [`docs/PLAN.md`](PLAN.md), a copy of the saved master plan. Each phase also had its own detailed plan, approved before it was built.
 - **Rules:** [`CLAUDE.md`](../CLAUDE.md). Two rules matter most: commit freely on main; ask before every push (a push deploys), and never publish anything without approval.
@@ -28,43 +28,21 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ---
 
-## v2 release
+## v2 is live (11 November 2026)
 
-- **While `release/v2-site` exists, every blog publish and every other site change happens on `main`.** The branch holds only the v2 site, which waits for release day. Before starting any work, check which branch you are on (`git branch --show-current`) and switch to `main` if needed. The branch was created from `main` on 9 November 2026. It stays local: never push it, deploy from it or merge it into `main` before release day.
-- **Release day runs only when all three stores show v2:** the App Store (iPhone and iPad), the Mac App Store and the Microsoft Store. If any one still shows the old version, wait.
-- **Source for v2 copy:** `.v2-source/`, a local copy of the text files in `~/website-pack-v2/` (release notes, `TECH-SPEC-PUBLIC.md`, `features.md`, `roadmap-status.md`, `README.md`). It is never committed: it must be listed in `.git/info/exclude`. The pack's screenshots and hero art are not copied.
-- **Images for v2:** `node scripts/images-from-pack.mjs` makes every v2 screenshot from `~/website-pack-v2/screenshots/` (deterministic). `scripts/sync-from-app.mjs` no longer writes screenshots.
-
-### Release-day checklist
-
-Run it only when the App Store (iPhone and iPad), the Mac App Store and the Microsoft Store all show v2. Each step needs the one before it to pass.
-
-1. Check all three store pages show version 2. If one does not, stop and wait.
-2. `git switch main`, then `git pull`.
-3. If `main` moved since the last merge into the branch: `git switch release/v2-site`, `git merge main`, fix any conflicts, run the checks below, commit, then `git switch main`.
-4. `git merge release/v2-site` into `main`.
-5. Run every check: `npm run check:commit`, `npm run build:deploy` (no warnings), `npm run test:layout`, `npm run check:reproducible`, and Lighthouse on the home page.
-6. Ask the owner, then push `main`. The push deploys.
-7. When the deploy is live, check:
-   - the home, Features, Support, Roadmap and Technical details pages in English plus two other languages (one Asian, one European), at 360px, with the v2 screenshots showing;
-   - every store link on `/download/` opens the right store page;
-   - `https://doughnut-forge.app/.well-known/apple-app-site-association` answers 200 and lists both apps;
-   - `npm run test:links`.
-8. Check every live blog post after the deploy, and put the result in the release-day report:
-   1. Open every post listed at https://doughnut-forge.app/blog/ and confirm it shows the v2 wording ("recovery words", "Files", "Text"), the v2 screenshots, and no "backup phrase", "Secure Text", "Secure File", "Secure Directory" or "Verified Identity".
-   2. Read the Medium feed https://medium.com/feed/@doughnut_forge and compare each Medium copy with its live post. For every copy that differs, list the post, its Medium link, every change as "Was: ... / Now: ..." quoted exactly, and the recommendation: "Edit it" for 3 or fewer small changes, otherwise "Re-import it" (delete the Medium story, then import the live URL at medium.com/p/import, delete " | Doughnut Forge" from the title, add topics including Privacy and Data Privacy, publish).
-   3. List any live post not yet on Medium, with the import steps filled in (its live URL, the title without " | Doughnut Forge", the topics).
-
-**Follow-ups after release day:**
-- Act on the Medium list from step 8 (the owner edits or re-imports each copy).
-- Delete `.v2-source/` and its line in `.git/info/exclude`.
-- Delete the local branch with `git branch -d release/v2-site`.
+- **Doughnut Forge 2 is live on the site**, in all 30 languages, since the push of merge `5444a6d` (build ID `247b5efce690153a`). All three stores showed v2 first: App Store 2.0, Mac App Store 2.0, Microsoft Store `2026.11.2.188` (the owner confirmed this is v2).
+- **Checks before the push:** `check:commit` and `build:deploy` clean (no warnings), layout 2893 of 2893, reproducible builds match, Lighthouse home 100 in every category on mobile and desktop (CLS 0.01 and 0.002).
+- **Live checks after the push:** Home, Features, Download, Support, Roadmap, Technical details and the press kit in English, German and Japanese answer 200, carry the new build ID and show only v2 screenshots. The three store links open the v2 listings, `apple-app-site-association` answers 200 with both apps, and `npm run test:links` passed 42 of 42. No live post contains "backup phrase", "Secure Text", "Secure File", "Secure Directory" or "Verified Identity".
+- **Done after release:** `.v2-source/` and its `.git/info/exclude` lines deleted (the originals stay in `~/website-pack-v2/`), local `release/v2-site` deleted (the owner deletes it on GitHub), `docs/outreach/` drafts describe v2.
+- **Open, owner:** the Medium copies. Edit: Harvest now, WhatsApp, VeraCrypt, Cryptomator, Offline file encryption. Re-import: Breaches, Mac, Share. Quantum-safe needs no change. Every Medium copy has also lost its list of sources, and six still start with a heading ending in " | Doughnut Forge"; both came from the import, not from v2.
+- **Open, owner:** request indexing in Search Console for the changed pages.
+- **Images:** `node scripts/images-from-pack.mjs` makes every v2 screenshot from `~/website-pack-v2/screenshots/` (deterministic). `scripts/sync-from-app.mjs` no longer writes screenshots.
 
 ---
 
 ## Where we are now
 
-- **The site is live** at https://doughnut-forge.app in all 30 languages (every language reviewed and indexed), with the four blog posts, served by GitHub Pages from GitHub Actions. **Every push to `main` deploys** within about two minutes. The deploy fails, and the live site stays as it was, if any check in `npm run build:deploy` fails or the live `apple-app-site-association` is missing.
+- **The site is live** at https://doughnut-forge.app in all 30 languages (every language reviewed and indexed), with nine blog posts and the Doughnut Forge 2 copy and screenshots since 11 November 2026, served by GitHub Pages from GitHub Actions. **Every push to `main` deploys** within about two minutes. The deploy fails, and the live site stays as it was, if any check in `npm run build:deploy` fails or the live `apple-app-site-association` is missing.
 - **The old privacy page redirects:** forge-privacy `a9ed0d8` sends `darren-corbett.github.io/forge-privacy` (with or without the trailing slash, and every `?lang=`) to the matching `/privacy/` page. The store Support URL (forge-privacy issues) is unchanged.
 - **Working tree:** clean. Everything up to `ed415e3` is pushed and live (deploy run 40207142250, 25 October 2026). The retro commits after it wait for the owner's yes to push.
 - **Post-launch audit (24 October 2026):** [`docs/audit/2026-10-24.md`](audit/2026-10-24.md). It covers the owner's eight live-site issues and the full audit (246 pages × 30 languages × Chromium, WebKit and WebKit iPhone × five widths × two themes, axe, links, and real Mobile Safari in the iOS Simulator). There are no critical findings. The high ones are the deploy's missing live-page check (issue 1), store links not opening in a new tab (issue 5), the header wrapping at 320px with Display Zoom (issue 8), and a German FAQ heading that pans at 320px (issue 7). **Stage 2 (24 October 2026) fixed H1, H2, H3, H4, M4 and L1**; see "Audit fixes" below. Issues 2 (Mac badge) and 7 (English pan), and M1 (desktop widths), are resolved: the owner confirmed on their own devices after Stage 2 that they no longer happen or look fine. The 320px layout tests stay as the guard.

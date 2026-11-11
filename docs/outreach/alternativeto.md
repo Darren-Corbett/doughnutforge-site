@@ -1,6 +1,6 @@
 # AlternativeTo listing (draft, not submitted)
 
-Status: draft for the owner. Nothing is posted or sent. Describes the app on sale today (v1); update it on v2 release day. Facts come from the site and the store listing (`src/i18n/store/en.json`, `src/i18n/ui/en.ts`, `src/data/stores.ts`), with sources in `docs/BLOG-CLAIMS.md`.
+Status: draft for the owner. Nothing is posted or sent. Describes Doughnut Forge 2, on sale in all three stores and live on the site since 11 November 2026. Facts come from the site and the store listing (`src/i18n/store/en.json`, `src/i18n/ui/en.ts`, `src/data/stores.ts`), with sources in `docs/BLOG-CLAIMS.md` (v2 rows V2.x).
 
 ## Name
 Doughnut Forge
@@ -17,6 +17,8 @@ Doughnut Forge encrypts files and text on your own device and lets you share the
 It works entirely on your device, even without an internet connection. There is no account to create and there are no Doughnut Forge servers, so there is no company copy of your files or keys. Your password and keys are never stored on a server or sent across the network.
 
 To share, each person creates an identity in the app and swaps contact cards. You then encrypt a file for any of your contacts, and they open it with their own identity. There is no file password to send. Comparing a short contact code, in person or on a call, tells you a card belongs to the right person.
+
+When you create your identity, the app gives you 24 recovery words to write down. If you forget your password, choose "Trouble unlocking?" on the lock screen and set a new one with your recovery words. Your identity, contacts and encrypted files stay the same.
 
 It uses post-quantum encryption, so what you protect today stays protected as computers become more powerful. The technical details page names the exact methods: https://doughnut-forge.app/security/technical-details/
 
@@ -38,6 +40,8 @@ file-encryption, offline, end-to-end-encryption, post-quantum, no-account, priva
 - Encrypt files and text, and whole folders on a computer
 - Share with chosen contacts; each opens files with their own identity
 - Works offline, with no account and no servers
+- Forgot your password? Set a new one with your recovery words
+- Light and dark mode
 - Post-quantum encryption
 - 30 languages
 - No tracking, no analytics
