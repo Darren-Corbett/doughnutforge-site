@@ -16,7 +16,9 @@ export default defineConfig({
   reporter: [["list"], ["json", { outputFile: "test-results/results.json" }]],
   use: { baseURL: `http://localhost:${PORT}` },
   webServer: {
-    command: `npx astro preview --port ${PORT}`,
+    // --ignore-lock keeps the server in the foreground: when an AI agent runs it,
+    // Astro would otherwise background it and Playwright would stop at once
+    command: `npx astro preview --port ${PORT} --ignore-lock`,
     url: `http://localhost:${PORT}/`,
     reuseExistingServer: true,
   },
