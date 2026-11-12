@@ -361,3 +361,37 @@ Not claimed: any CVE number; that QuickConnect was the way in; that the app woul
 | 9.D2 | It does not stop ransomware or phishing, and cannot protect a device that is already compromised | row 8.D1; site `technical.limits` | repo |
 
 Not claimed: that CISA says device encryption fails once a device is unlocked (not on its page; the point rests on 9.9); any algorithm name; "install apps only from the official store" (no source opened). No FAQPage markup (owner).
+
+## Post 10: Should I delete apps for privacy? Which ones to worry about
+`src/content/blog/en/should-i-delete-apps-for-privacy.mdx`, phrase "should I delete apps for privacy". Owner's brief, 12 November 2026; publish date 16 November 2026. Every external page was opened on 12 November 2026 and every quote below was matched word for word on the live page the same day, just before this file was written. AP = [Apple Support 102188: About App Privacy Report](https://support.apple.com/en-gb/102188); GD = [Google Play Help 11416267: Data safety section](https://support.google.com/googleplay/answer/11416267?hl=en-GB); NS = [NCSC: Small organisations guide, protecting your devices](https://www.ncsc.gov.uk/collection/small-organisations-guide-to-cyber-security/protecting-your-devices) (reviewed 21 July 2026); BC = [BleepingComputer, 10 November 2026: Binance warns of iOS flaw that could leak crypto wallet secrets](https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/); PC = [PCMag UK, Kim Key, 5 September 2026](https://uk.pcmag.com/security/167109/check-your-phone-now-these-10-data-hungry-apps-are-secretly-tracking-you).
+
+| # | Claim in the post | Source | Checked |
+|---|---|---|---|
+| 10.1 | App Store pages show an App Privacy label with groups such as "Data Linked to You" and "Data Not Linked to You"; See Details gives the full list | [Apple: privacy labels](https://www.apple.com/uk/privacy/labels/) (headings); the App Store listing [id6821344597](https://apps.apple.com/gb/app/id6821344597) ("App Privacy"); PC ("Tap See Details") | 2026-11-12 |
+| 10.2 | App Privacy Report: Settings > Privacy & Security > App Privacy Report > Turn on App Privacy Report; iOS or iPadOS 15.2 or later | AP | 2026-11-12 |
+| 10.3 | It shows how often apps used location, camera, microphone and more "in the past seven days", and the web domains they contacted | AP ("the web domains that all apps contact most frequently") | 2026-11-12 |
+| 10.4 | The report is "encrypted and stored only on your device"; it starts empty | AP ("will only start gathering information after you've turned it on") | 2026-11-12 |
+| 10.5 | Data safety shows which data an app collects, why, and whether it shares it | GD | 2026-11-12 |
+| 10.6 | Privacy dashboard: Settings > Security and Privacy or Privacy > Privacy dashboard; last 7 days on Android 13, last 24 hours on Android 12 | [Android Help 13530434](https://support.google.com/android/answer/13530434?hl=en-GB) | 2026-11-12 |
+| 10.7 | "You're responsible for keeping your responses accurate and up to date." | [Apple Developer: App privacy details](https://developer.apple.com/app-store/app-privacy-details/) (exact) | 2026-11-12 |
+| 10.8 | The information "is self-reported by the developer" | [Apple Support 102399](https://support.apple.com/en-gb/102399) (published 3 October 2024; exact) | 2026-11-12 |
+| 10.9 | Data safety "is based on information declared by app developers" and differs from permissions | GD (exact) | 2026-11-12 |
+| 10.10 | Data used only on the phone and never sent off it need not be listed as collected | GD ("An app accesses the data only on your device and it is not sent off your device") | 2026-11-12 |
+| 10.11 | Doughnut Forge shows "Data Not Collected" on the App Store | App Store listings [id6821344597](https://apps.apple.com/gb/app/id6821344597) (iPhone and iPad) and [id6812778888](https://apps.apple.com/gb/app/id6812778888) (Mac) | 2026-11-12 |
+| 10.12 | "Only download apps from official stores or websites"; built-in store apps "are vetted before they're released" | NS (exact) | 2026-11-12 |
+| 10.13 | On 10 November 2026 Binance warned of an iOS flaw that could let a malicious app read other apps' files; the app "must be installed on an iPhone for the attack to work" and could be sideloaded outside the App Store | BC | 2026-11-12 |
+| 10.14 | Binance advised deleting unneeded and untrusted apps and updating; no losses confirmed | BC ("delete any unnecessary and untrusted apps"; "no cryptocurrency losses have been confirmed") | 2026-11-12 |
+| 10.15 | "If there are apps or software on your devices that you no longer use, you should delete them." | NS (exact) | 2026-11-12 |
+| 10.16 | Deleting an app stops future collection, not what the company already holds | GD ("Delete apps to stop future data collection"; the section covers how users can request data deletion) | 2026-11-12 |
+| 10.17 | iPhone: Settings > Privacy & Security, pick a data type; Tracking > Allow Apps to Request to Track | [Apple Personal Safety: App privacy features](https://support.apple.com/en-gb/guide/personal-safety/ipsd4dac4a2c/web) | 2026-11-12 |
+| 10.18 | Android: Settings > Apps > the app > Permissions > Allow or Don't allow; Pause app activity if unused, under Unused app settings | [Google Play Help 9431959](https://support.google.com/googleplay/answer/9431959?hl=en-GB) | 2026-11-12 |
+| 10.19 | An app using data "in a way or at a time you didn't expect": change the setting or revoke permission | AP (exact) | 2026-11-12 |
+| 10.20 | PCMag, September 2026: research analysing privacy policies of "more than 5,000 apps" in the App Store; "companies self-report all of this information to Apple" | PC (exact) | 2026-11-12 |
+| 10.21 | Delivery, map and weather apps need location to work | PC ("Delivery, map, and weather apps all require your location to function properly") | 2026-11-12 |
+| 10.22 | "Applying security updates promptly will help protect your devices and accounts from cyber criminals"; automatic updates "if available"; avoid phones no longer supported | [NCSC: Install the latest software and app updates](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/install-the-latest-software-and-app-updates) (reviewed 21 December 2021) | 2026-11-12 |
+| 10.23 | No antivirus needed on a phone or tablet "provided that you only install apps and software from official stores" | [NCSC: What is an antivirus product?](https://www.ncsc.gov.uk/guidance/what-is-an-antivirus-product) (exact) | 2026-11-12 |
+| R10.1 | *Reasoning:* a maps app needs location; a photo editor does not need contacts; collecting is not misusing | consistent with 10.21 | 2026-11-12 |
+| R10.2 | *Reasoning:* a viral list can be old by the time it reaches you; check its date and source | general advice; PC is two months old at publication | 2026-11-12 |
+| 10.D1 | Doughnut Forge is an app for encrypting files on your own device | site `security.device.text`; row 7.15 | repo |
+
+Not claimed: any app named as dangerous (PCMag's ten apps are in a chart image and were not confirmed from its text); any iOS version affected by the Binance flaw, or whether Apple has fixed it (BC: "unclear"); anything from Forbes (403 to automated reading) or The Sun (2023); that people are deleting apps in large numbers (no source opened).
