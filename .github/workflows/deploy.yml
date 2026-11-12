@@ -51,6 +51,7 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
+          check-latest: true
           cache: npm
       - run: npm ci
       # The issues the owner has labelled for the site. Public, so no token; on any
