@@ -5,6 +5,7 @@
 // Visitors' browsers never call GitHub: these are plain links.
 import Faq, { type FaqItem } from "../components/Faq.astro";
 import PageHero from "../components/PageHero.astro";
+import { counting } from "../data/counter";
 import { issueLists, shownLists } from "../data/issues";
 import { getPolicy, policyTitle } from "../data/privacy";
 import { site } from "../data/site";
@@ -28,8 +29,15 @@ const ids = ["subscription", "platforms", "offline", "storage", "backup", "resto
 const items: FaqItem[] = ids.map((id) => ({
   id,
   q: t(`faq.${id}.q` as UiKey),
-  a: id === "which" ? fill(t("faq.which.a"), { available: names("available"), coming: names("coming") }) : t(`faq.${id}.a` as UiKey),
+  a: answer(id),
 }));
+
+function answer(id: (typeof ids)[number]) {
+  if (id === "which") return fill(t("faq.which.a"), { available: names("available"), coming: names("coming") });
+  // Says what the website counts only once it counts (src/data/counter.ts)
+  if (id === "data" && counting) return t("stats.faqData");
+  return t(`faq.${id}.a` as UiKey);
+}
 
 const jsonLd = {
   "@context": "https://schema.org",

@@ -1,0 +1,39 @@
+---
+// Counts this page view, and taps on store links, for the public /stats/ page.
+// After the page loads, one beacon goes to the page counter (analytics-worker/)
+// with the path and the referring site's domain only: {"p":"/features/","r":"google.com"},
+// "direct" without a referrer, "internal" from this site. A tap on a store link,
+// or on its /go/ fallback, sends {"s":"app-store"}. Nothing is stored on the
+// device. Nothing is sent off the live site (local builds, previews), or with
+// Do Not Track or Global Privacy Control on. Left out while counter.ts has no address.
+import { counterUrl, counting, storeTaps } from "../data/counter";
+---
+
+{
+  counting && (
+    <script is:inline data-counter={counterUrl} data-taps={JSON.stringify(storeTaps)}>
+      (() => {
+        const script = document.currentScript;
+        if (location.hostname !== "doughnut-forge.app") return;
+        if (navigator.doNotTrack === "1" || navigator.globalPrivacyControl === true) return;
+        const hit = `${script.dataset.counter}/hit`;
+        const taps = JSON.parse(script.dataset.taps);
+        const send = (beacon) => {
+          try {
+            navigator.sendBeacon(hit, JSON.stringify(beacon));
+          } catch {}
+        };
+        const from = document.referrer ? new URL(document.referrer).hostname.replace(/^www\./, "") : "";
+        const view = { p: location.pathname, r: !from ? "direct" : from === location.hostname ? "internal" : from };
+        if (document.readyState === "complete") send(view);
+        else addEventListener("load", () => send(view), { once: true });
+        document.addEventListener("click", (event) => {
+          const link = event.target instanceof Element ? event.target.closest("a[href]") : null;
+          if (!link) return;
+          const tap = taps.find((t) => link.href.split("?")[0] === t.href || (link.origin === location.origin && link.pathname.startsWith(t.go)));
+          if (tap) send({ s: tap.store });
+        });
+      })();
+    </script>
+  )
+}

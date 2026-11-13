@@ -22,6 +22,16 @@ for (const file of [".well-known/apple-app-site-association", "CNAME"]) {
 }
 if (!existsSync(`${dist}.nojekyll`)) errors.push("dist/.nojekyll is missing");
 
+// The page counter (analytics-worker/) counts only the pages and stores this file
+// lists (astro.config.mjs): without it, every view would be dropped without a word
+try {
+  const list = JSON.parse(readFileSync(`${dist}count-pages.json`, "utf8"));
+  if (list.pages?.["/"] !== "en") errors.push("count-pages.json does not list the home page");
+  if (!Array.isArray(list.stores) || list.stores.length === 0) errors.push("count-pages.json lists no stores");
+} catch (e) {
+  errors.push(`count-pages.json is missing or not valid JSON: ${e.message}`);
+}
+
 try {
   const aasa = JSON.parse(readFileSync(`${dist}.well-known/apple-app-site-association`, "utf8"));
   const apps = aasa.webcredentials?.apps ?? [];
@@ -87,4 +97,4 @@ if (errors.length) {
   console.error("check-production-files:\n" + errors.map((e) => `  - ${e}`).join("\n"));
   process.exit(1);
 }
-console.log("check-production-files: apple-app-site-association, CNAME and .nojekyll match production; security.txt is valid; build.json and the pages share the build ID");
+console.log("check-production-files: apple-app-site-association, CNAME and .nojekyll match production; security.txt and count-pages.json are valid; build.json and the pages share the build ID");

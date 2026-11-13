@@ -1,0 +1,8 @@
+---
+// /stats/ in English, added to the build only while the site counts
+// (astro.config.mjs, src/data/counter.ts)
+import { getLanguage } from "../i18n";
+import StatsPage from "../views/StatsPage.astro";
+---
+
+<StatsPage lang={getLanguage("en")} />

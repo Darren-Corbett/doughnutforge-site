@@ -1,6 +1,7 @@
 ---
 import { policyTitle } from "../data/privacy";
 import { getPosts } from "../data/blog";
+import { counting } from "../data/counter";
 import { site } from "../data/site";
 import { localePath, useStrings, type Language } from "../i18n";
 
@@ -50,6 +51,16 @@ const linkClass = "inline-flex min-h-11 items-center font-bold text-slate-700 ho
     </div>
     <div class="text-[14px] leading-relaxed text-slate-600 sm:col-span-2 lg:col-span-1 dark:text-slate-300">
       <p class="font-bold">© {year} {site.name}</p>
+      {
+        counting && (
+          <p class="mt-2">
+            {t("stats.footer")}{" "}
+            <a class="font-bold underline underline-offset-3 hover:text-ink-blue" href="/stats/" hreflang={lang.code === "en" ? undefined : "en"}>
+              {t("stats.footerLink")}
+            </a>
+          </p>
+        )
+      }
     </div>
   </div>
 </footer>

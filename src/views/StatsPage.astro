@@ -1,0 +1,211 @@
+---
+// /stats/: what the page counter counts and never counts, how not to be counted,
+// and its numbers for the last 7 and 30 days. The explanation is plain HTML.
+// The numbers come from the counter's /summary (analytics-worker/), fetched by
+// the script below and written in with textContent only. Without JavaScript the
+// page says the numbers need it; if the counter does not answer, that they
+// could not load. Built only while counting is on (astro.config.mjs).
+import PageHero from "../components/PageHero.astro";
+import Prose from "../components/Prose.astro";
+import { counterUrl } from "../data/counter";
+import { storeNames } from "../data/stores";
+import { useStrings, type Language } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const { t } = useStrings(lang.code);
+
+const SOURCE = "https://github.com/Darren-Corbett/doughnutforge-site/tree/main/analytics-worker";
+const windows = [
+  { days: 7, title: t("stats.window.7") },
+  { days: 30, title: t("stats.window.30") },
+];
+const tables = [
+  { kind: "page", caption: t("stats.table.pages"), name: t("stats.table.page"), count: t("stats.table.views") },
+  { kind: "country", caption: t("stats.table.countries"), name: t("stats.table.country"), count: t("stats.table.views") },
+  { kind: "referrer", caption: t("stats.table.referrers"), name: t("stats.table.referrer"), count: t("stats.table.views") },
+  { kind: "store", caption: t("stats.table.stores"), name: t("stats.table.store"), count: t("stats.table.taps") },
+];
+const words = {
+  others: t("stats.others"),
+  fewer: t("stats.fewer"),
+  none: t("stats.none"),
+  direct: t("stats.direct"),
+  internal: t("stats.internal"),
+  unknown: t("stats.unknown"),
+};
+const counted = ["page", "language", "country", "referrer", "store"] as const;
+---
+
+<Base lang={lang} title={t("meta.stats.title")} description={t("meta.stats.description")}>
+  <PageHero title={t("stats.title")} />
+  <div class="section">
+    <Prose sheet="wide">
+      <p>{t("stats.intro")}</p>
+      <h2>{t("stats.counted.title")}</h2>
+      <p>{t("stats.counted.intro")}</p>
+      <ul>{counted.map((k) => <li>{t(`stats.counted.${k}`)}</li>)}</ul>
+      <h2>{t("stats.never.title")}</h2>
+      <p>{t("stats.never.text")}</p>
+      <h2>{t("stats.optout.title")}</h2>
+      <p>{t("stats.optout.text")}</p>
+      <h2>{t("stats.how.title")}</h2>
+      <p>{t("stats.how.text")}</p>
+      <p>{t("stats.how.limits")}</p>
+      <p><a href={SOURCE}>{t("stats.how.source")}</a></p>
+
+      <h2>{t("stats.numbers.title")}</h2>
+      <noscript><p>{t("stats.noscript")}</p></noscript>
+      <p data-numbers="failed" hidden>{t("stats.failed")}</p>
+      {
+        windows.map((w) => (
+          <section class="numbers" aria-labelledby={`window-${w.days}`} data-window={w.days} hidden>
+            <h3 id={`window-${w.days}`}>{w.title}</h3>
+            <p data-numbers="range" />
+            {tables.map((tb) => (
+              <table class="totals" data-kind={tb.kind}>
+                <caption>{tb.caption}</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">{tb.name}</th>
+                    <th scope="col">{tb.count}</th>
+                  </tr>
+                </thead>
+                <tbody />
+              </table>
+            ))}
+          </section>
+        ))
+      }
+    </Prose>
+  </div>
+  <script is:inline data-counter={counterUrl} data-lang={lang.hreflang} data-words={JSON.stringify(words)} data-stores={JSON.stringify(storeNames)}>
+    (() => {
+      const script = document.currentScript;
+      const { counter, lang } = script.dataset;
+      const words = JSON.parse(script.dataset.words);
+      const stores = JSON.parse(script.dataset.stores);
+      const number = new Intl.NumberFormat(lang);
+      const regions = new Intl.DisplayNames([lang], { type: "region" });
+      const dates = new Intl.DateTimeFormat(lang, { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+      const label = {
+        page: (value) => value,
+        country: (value) => (value === "unknown" ? words.unknown : (regions.of(value) ?? value)),
+        referrer: (value) => (value === "direct" ? words.direct : value === "internal" ? words.internal : value),
+        store: (value) => stores[value] ?? value,
+      };
+      // Addresses and domains may break after a slash or a dot, never inside a word
+      const breakable = (text) => text.split(/(?<=[/.])/).flatMap((part, i) => (i ? [document.createElement("wbr"), part] : [part]));
+      const row = (name, count) => {
+        const tr = document.createElement("tr");
+        const th = document.createElement("th");
+        const td = document.createElement("td");
+        th.scope = "row";
+        th.append(...breakable(name));
+        td.textContent = count;
+        tr.append(th, td);
+        return tr;
+      };
+      const fill = (section, summary) => {
+        section.querySelector('[data-numbers="range"]').textContent = dates.formatRange(new Date(summary.from), new Date(summary.to));
+        for (const table of section.querySelectorAll("table[data-kind]")) {
+          const kind = table.dataset.kind;
+          const { rows, others } = summary.totals[kind];
+          const body = table.tBodies[0];
+          for (const r of rows) body.append(row(label[kind](r.value), number.format(r.count)));
+          if (others) body.append(row(words.others, others.count === null ? words.fewer : number.format(others.count)));
+          if (!body.rows.length) {
+            const td = document.createElement("td");
+            td.colSpan = 2;
+            td.textContent = words.none;
+            body.insertRow().append(td);
+          }
+        }
+      };
+      const sections = [...document.querySelectorAll("[data-window]")];
+      const load = (days) =>
+        fetch(`${counter}/summary?window=${days}`).then((res) => {
+          if (!res.ok) throw new Error(`summary ${res.status}`);
+          return res.json();
+        });
+      Promise.all(sections.map((s) => load(s.dataset.window)))
+        .then((summaries) => {
+          sections.forEach((s, i) => fill(s, summaries[i]));
+          for (const s of sections) s.hidden = false;
+        })
+        .catch(() => {
+          document.querySelector('[data-numbers="failed"]').hidden = false;
+        });
+    })();
+  </script>
+</Base>
+
+<style>
+  .numbers h3 {
+    margin-top: 28px;
+  }
+  .totals {
+    width: 100%;
+    margin-top: 14px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  /* Rounded here, not by clipping the table, which would clip its caption too */
+  .totals thead th:first-child {
+    border-start-start-radius: 14px;
+  }
+  .totals thead th:last-child {
+    border-start-end-radius: 14px;
+  }
+  .totals caption {
+    padding-bottom: 6px;
+    text-align: start;
+    font-weight: 800;
+    color: #1e293b;
+  }
+  .totals :global(:is(th, td)) {
+    padding: 10px 14px;
+    text-align: start;
+    vertical-align: top;
+  }
+  .totals :global(tbody :is(th, td)) {
+    border-top: 1px solid #e2e8f0;
+  }
+  .totals thead th {
+    background: #f1f5f9;
+    font-size: 14px;
+    font-weight: 800;
+    color: #475569;
+  }
+  .totals :global(tbody th) {
+    font-weight: 700;
+    color: #1e293b;
+  }
+  .totals :global(:is(thead, tbody) :is(th, td):last-child:not([colspan])) {
+    width: 8em;
+    text-align: end;
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .totals,
+    .totals :global(tbody :is(th, td)) {
+      border-color: #38444d;
+    }
+    .totals thead th {
+      background: #15202b;
+      color: #cbd5e1;
+    }
+    .totals caption,
+    .totals :global(tbody th) {
+      color: #fff;
+    }
+  }
+</style>

@@ -1,5 +1,5 @@
 // @ts-check
-import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
@@ -8,6 +8,7 @@ import languageData from "./src/i18n/languages.json" with { type: "json" };
 import review from "./src/i18n/review.json" with { type: "json" };
 import { alternatesFor } from "./src/i18n/alternates.ts";
 import { assetFileNames } from "./scripts/asset-names.mjs";
+import { counting, storeTaps } from "./src/data/counter.ts";
 
 // Every app language gets its own URL tree from the start, so URLs never change
 // when a language goes live. English (UK) is the default and lives at "/".
@@ -75,6 +76,24 @@ const inSitemap = (page) => {
   return true;
 };
 
+// The page counter (src/data/counter.ts, analytics-worker/). /stats/ is built only
+// while the site counts. count-pages.json is always built: the pages the counter
+// may count, exactly the sitemap's, each with its language, and the stores on sale.
+/** @type {import("astro").AstroIntegration} */
+const pageCounter = {
+  name: "page-counter",
+  hooks: {
+    "astro:config:setup": ({ injectRoute }) => {
+      if (counting) injectRoute({ pattern: "/stats", entrypoint: "./src/routes/stats.astro" });
+    },
+    "astro:build:done": ({ dir, pages }) => {
+      const paths = pages.map((p) => `/${p.pathname}`).filter((path) => inSitemap(`https://doughnut-forge.app${path}`)).sort();
+      const list = { pages: Object.fromEntries(paths.map((path) => [path, splitPath(path).code])), stores: storeTaps.map((t) => t.store) };
+      writeFileSync(new URL("count-pages.json", dir), JSON.stringify(list));
+    },
+  },
+};
+
 export default defineConfig({
   site: "https://doughnut-forge.app",
   trailingSlash: "always",
@@ -82,6 +101,7 @@ export default defineConfig({
   i18n,
   integrations: [
     mdx(),
+    pageCounter,
     sitemap({
       filter: inSitemap,
       // Alternate-language links: exactly the hreflang list in each page's <head>

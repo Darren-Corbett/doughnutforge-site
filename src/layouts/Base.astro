@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import FreshCheck from "../components/FreshCheck.astro";
+import PageCount from "../components/PageCount.astro";
 import StoreFallback from "../components/StoreFallback.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
@@ -59,6 +60,7 @@ const ogImage =
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <FreshCheck />
+    <PageCount />
     <SEO
       title={title}
       description={description}
