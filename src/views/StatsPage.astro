@@ -4,12 +4,13 @@
 // The numbers come from the counter's /summary (analytics-worker/), fetched by
 // the script below and written in with textContent only. Without JavaScript the
 // page says the numbers need it; if the counter does not answer, that they
-// could not load. Built only while counting is on (astro.config.mjs).
+// could not load. The opt-out stores one flag in localStorage, which
+// src/components/PageCount.astro reads before every send.
 import PageHero from "../components/PageHero.astro";
 import Prose from "../components/Prose.astro";
-import { counterUrl } from "../data/counter";
+import { counterUrl, optOutKey } from "../data/counter";
 import { storeNames } from "../data/stores";
-import { useStrings, type Language } from "../i18n";
+import { languages, useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
 
 interface Props {
@@ -25,6 +26,7 @@ const windows = [
 ];
 const tables = [
   { kind: "page", caption: t("stats.table.pages"), name: t("stats.table.page"), count: t("stats.table.views") },
+  { kind: "language", caption: t("stats.table.languages"), name: t("stats.table.language"), count: t("stats.table.views") },
   { kind: "country", caption: t("stats.table.countries"), name: t("stats.table.country"), count: t("stats.table.views") },
   { kind: "referrer", caption: t("stats.table.referrers"), name: t("stats.table.referrer"), count: t("stats.table.views") },
   { kind: "store", caption: t("stats.table.stores"), name: t("stats.table.store"), count: t("stats.table.taps") },
@@ -38,9 +40,17 @@ const words = {
   unknown: t("stats.unknown"),
 };
 const counted = ["page", "language", "country", "referrer", "store"] as const;
+const languageNames = Object.fromEntries(languages.map((l) => [l.code, l.name]));
+const optOut = {
+  off: t("stats.optout.off"),
+  on: t("stats.optout.on"),
+  counted: t("stats.optout.counted"),
+  notCounted: t("stats.optout.notCounted"),
+  unavailable: t("stats.optout.unavailable"),
+};
 ---
 
-<Base lang={lang} title={t("meta.stats.title")} description={t("meta.stats.description")}>
+<Base lang={lang} title={t("meta.stats.title")} description={t("meta.stats.description")} image="/og/stats.png">
   <PageHero title={t("stats.title")} />
   <div class="section">
     <Prose sheet="wide">
@@ -52,6 +62,10 @@ const counted = ["page", "language", "country", "referrer", "store"] as const;
       <p>{t("stats.never.text")}</p>
       <h2>{t("stats.optout.title")}</h2>
       <p>{t("stats.optout.text")}</p>
+      <div class="optout" data-optout hidden>
+        <p data-optout-state aria-live="polite"></p>
+        <p data-optout-action><button type="button" class="btn-outline">{optOut.off}</button></p>
+      </div>
       <h2>{t("stats.how.title")}</h2>
       <p>{t("stats.how.text")}</p>
       <p>{t("stats.how.limits")}</p>
@@ -82,28 +96,67 @@ const counted = ["page", "language", "country", "referrer", "store"] as const;
       }
     </Prose>
   </div>
-  <script is:inline data-counter={counterUrl} data-lang={lang.hreflang} data-words={JSON.stringify(words)} data-stores={JSON.stringify(storeNames)}>
+  <script is:inline data-key={optOutKey} data-words={JSON.stringify(optOut)}>
+    // The opt-out. If storage cannot be read or written, the page says visits
+    // are not counted (PageCount.astro sends nothing then) and hides the button.
+    (() => {
+      const script = document.currentScript;
+      const key = script.dataset.key;
+      const words = JSON.parse(script.dataset.words);
+      const box = document.querySelector("[data-optout]");
+      const state = box.querySelector("[data-optout-state]");
+      const action = box.querySelector("[data-optout-action]");
+      const button = action.querySelector("button");
+      const read = () => {
+        try {
+          return localStorage.getItem(key) === null ? "counted" : "notCounted";
+        } catch {
+          return "unavailable";
+        }
+      };
+      const show = (now) => {
+        state.textContent = words[now];
+        action.hidden = now === "unavailable";
+        button.textContent = now === "counted" ? words.off : words.on;
+      };
+      button.addEventListener("click", () => {
+        try {
+          if (read() === "counted") localStorage.setItem(key, "1");
+          else localStorage.removeItem(key);
+          show(read());
+        } catch {
+          show("unavailable");
+        }
+      });
+      show(read());
+      box.hidden = false;
+    })();
+  </script>
+  <script is:inline data-counter={counterUrl} data-lang={lang.hreflang} data-words={JSON.stringify(words)} data-stores={JSON.stringify(storeNames)} data-languages={JSON.stringify(languageNames)}>
     (() => {
       const script = document.currentScript;
       const { counter, lang } = script.dataset;
       const words = JSON.parse(script.dataset.words);
       const stores = JSON.parse(script.dataset.stores);
+      const languageNames = JSON.parse(script.dataset.languages);
       const number = new Intl.NumberFormat(lang);
       const regions = new Intl.DisplayNames([lang], { type: "region" });
       const dates = new Intl.DateTimeFormat(lang, { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
       const label = {
         page: (value) => value,
+        language: (value) => languageNames[value] ?? value,
         country: (value) => (value === "unknown" ? words.unknown : (regions.of(value) ?? value)),
         referrer: (value) => (value === "direct" ? words.direct : value === "internal" ? words.internal : value),
         store: (value) => stores[value] ?? value,
       };
       // Addresses and domains may break after a slash or a dot, never inside a word
       const breakable = (text) => text.split(/(?<=[/.])/).flatMap((part, i) => (i ? [document.createElement("wbr"), part] : [part]));
-      const row = (name, count) => {
+      const row = (name, count, lang) => {
         const tr = document.createElement("tr");
         const th = document.createElement("th");
         const td = document.createElement("td");
         th.scope = "row";
+        if (lang) th.lang = lang;
         th.append(...breakable(name));
         td.textContent = count;
         tr.append(th, td);
@@ -115,7 +168,8 @@ const counted = ["page", "language", "country", "referrer", "store"] as const;
           const kind = table.dataset.kind;
           const { rows, others } = summary.totals[kind];
           const body = table.tBodies[0];
-          for (const r of rows) body.append(row(label[kind](r.value), number.format(r.count)));
+          // A language's own name is marked as that language, for screen readers
+          for (const r of rows) body.append(row(label[kind](r.value), number.format(r.count), kind === "language" && languageNames[r.value] ? r.value : undefined));
           if (others) body.append(row(words.others, others.count === null ? words.fewer : number.format(others.count)));
           if (!body.rows.length) {
             const td = document.createElement("td");
@@ -144,6 +198,12 @@ const counted = ["page", "language", "country", "referrer", "store"] as const;
 </Base>
 
 <style>
+  .optout {
+    margin-top: 14px;
+  }
+  .optout [data-optout-action] {
+    margin-top: 10px;
+  }
   .numbers h3 {
     margin-top: 28px;
   }

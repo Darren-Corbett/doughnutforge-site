@@ -52,8 +52,8 @@
     "text": "82041fa40743"
   },
   "faq.data.a": {
-    "en": "43d06807eb83",
-    "text": "07b3f09eceb9"
+    "en": "bf5bad196719",
+    "text": "301599ca2ff1"
   },
   "faq.data.q": {
     "en": "2207b89043c1",
@@ -416,8 +416,8 @@
     "text": "c3afe0785e75"
   },
   "meta.privacy.description": {
-    "en": "376dc8aba614",
-    "text": "b1493903d798"
+    "en": "be145c3a0f35",
+    "text": "cdf93fc6d157"
   },
   "meta.roadmap.description": {
     "en": "cc137717c3fb",
@@ -434,6 +434,14 @@
   "meta.security.title": {
     "en": "4eb9d9ba08b6",
     "text": "2387a6181abb"
+  },
+  "meta.stats.description": {
+    "en": "1c21585c5e97",
+    "text": "a5318436e921"
+  },
+  "meta.stats.title": {
+    "en": "4f57d3fa8ad9",
+    "text": "97c5e1509864"
   },
   "meta.support.description": {
     "en": "cfbb36f46f12",
@@ -762,6 +770,194 @@
   "skip": {
     "en": "ac576a66d456",
     "text": "649b9da29556"
+  },
+  "stats.counted.country": {
+    "en": "d0f37b075a12",
+    "text": "a6d7b141c938"
+  },
+  "stats.counted.intro": {
+    "en": "49250c4c73d9",
+    "text": "8480960ae9c0"
+  },
+  "stats.counted.language": {
+    "en": "1176c20390f7",
+    "text": "2156de4d0dff"
+  },
+  "stats.counted.page": {
+    "en": "f3dda43d3392",
+    "text": "f69c6d8d69cc"
+  },
+  "stats.counted.referrer": {
+    "en": "7200165edad6",
+    "text": "03b95f316ed7"
+  },
+  "stats.counted.store": {
+    "en": "34db210ea68f",
+    "text": "515aa20c41c5"
+  },
+  "stats.counted.title": {
+    "en": "4e00e8b4f4cf",
+    "text": "a1ac416fa390"
+  },
+  "stats.direct": {
+    "en": "791477c159db",
+    "text": "9ce4333d0f78"
+  },
+  "stats.failed": {
+    "en": "042c15bbaf9c",
+    "text": "4be6e870fe7e"
+  },
+  "stats.fewer": {
+    "en": "005b16b13a6b",
+    "text": "7dcdb957a8cf"
+  },
+  "stats.footer": {
+    "en": "c881ab75c3c6",
+    "text": "656834333492"
+  },
+  "stats.footerLink": {
+    "en": "d9c6b1398391",
+    "text": "db6e58f43e3a"
+  },
+  "stats.how.limits": {
+    "en": "ecb5e1dbed53",
+    "text": "645d76a185a0"
+  },
+  "stats.how.source": {
+    "en": "425957402bcc",
+    "text": "03e4f1ac7be9"
+  },
+  "stats.how.text": {
+    "en": "0b1635dda221",
+    "text": "d4a887245460"
+  },
+  "stats.how.title": {
+    "en": "4e70fcf27b1f",
+    "text": "a52e15bc2150"
+  },
+  "stats.internal": {
+    "en": "e487482d00f6",
+    "text": "0def2d2d0fe0"
+  },
+  "stats.intro": {
+    "en": "68693027eb3f",
+    "text": "113e047e6a91"
+  },
+  "stats.never.text": {
+    "en": "d3f5721d7236",
+    "text": "6034d7eecf68"
+  },
+  "stats.never.title": {
+    "en": "f04d66e823d4",
+    "text": "299834d22e87"
+  },
+  "stats.none": {
+    "en": "adb85cf22bfc",
+    "text": "2dd1e002d81b"
+  },
+  "stats.noscript": {
+    "en": "d823018299ff",
+    "text": "cde2e17e6ade"
+  },
+  "stats.numbers.title": {
+    "en": "2d915f82c872",
+    "text": "f1c31c9bbdcd"
+  },
+  "stats.optout.counted": {
+    "en": "ff8763c99057",
+    "text": "9ce0d1b522c9"
+  },
+  "stats.optout.notCounted": {
+    "en": "6f94cc4df8a9",
+    "text": "3a73cf39ebb5"
+  },
+  "stats.optout.off": {
+    "en": "cedb93c26a53",
+    "text": "046c00bf7f0a"
+  },
+  "stats.optout.on": {
+    "en": "ebc4599d1665",
+    "text": "373996a72ff8"
+  },
+  "stats.optout.text": {
+    "en": "18eb8de33823",
+    "text": "85339ed31e52"
+  },
+  "stats.optout.title": {
+    "en": "c0ee5a2ac043",
+    "text": "137e059f288b"
+  },
+  "stats.optout.unavailable": {
+    "en": "c3fe305b0510",
+    "text": "5f1bd4ea330e"
+  },
+  "stats.others": {
+    "en": "bd0805c2175d",
+    "text": "d1c7b0b6584d"
+  },
+  "stats.table.countries": {
+    "en": "8faf7ec7ab20",
+    "text": "f0af078dc3ec"
+  },
+  "stats.table.country": {
+    "en": "701d021d08c5",
+    "text": "a9f08a2ee1df"
+  },
+  "stats.table.language": {
+    "en": "a4fe65264ef7",
+    "text": "0fcc9b7d744c"
+  },
+  "stats.table.languages": {
+    "en": "318655cea4bd",
+    "text": "5295af12f705"
+  },
+  "stats.table.page": {
+    "en": "0a30a815d67d",
+    "text": "72505985a1fb"
+  },
+  "stats.table.pages": {
+    "en": "9046da16aea9",
+    "text": "07b2af022c38"
+  },
+  "stats.table.referrer": {
+    "en": "9cf1e8250e14",
+    "text": "2bd9f82648f7"
+  },
+  "stats.table.referrers": {
+    "en": "b0b7226a0b0d",
+    "text": "c5f9b3d27cd8"
+  },
+  "stats.table.store": {
+    "en": "ee7da936b5cb",
+    "text": "ee7da936b5cb"
+  },
+  "stats.table.stores": {
+    "en": "d461f945cb08",
+    "text": "a9ceceacbfd6"
+  },
+  "stats.table.taps": {
+    "en": "f3a24b0912f3",
+    "text": "dd92ec59d552"
+  },
+  "stats.table.views": {
+    "en": "69c404591e99",
+    "text": "71a95fc72818"
+  },
+  "stats.title": {
+    "en": "d1867ca42be4",
+    "text": "afbda05b5445"
+  },
+  "stats.unknown": {
+    "en": "b764cdc0eab7",
+    "text": "43d7b5eae9c8"
+  },
+  "stats.window.30": {
+    "en": "f8f03fb441b8",
+    "text": "9c278b19ef6c"
+  },
+  "stats.window.7": {
+    "en": "0603deca4fcb",
+    "text": "1749492006ad"
   },
   "status.comingSoon": {
     "en": "4f7d64017689",

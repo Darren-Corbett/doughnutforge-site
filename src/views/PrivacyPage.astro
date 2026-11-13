@@ -1,6 +1,6 @@
 ---
-// The privacy policy, word for word from forge-privacy. Every element carries
-// data-policy="<key>" so scripts/check-privacy-wording.mjs can compare it with the source.
+// The privacy policy, word for word from src/content/legal/privacy/. Every element
+// carries data-policy="<key>" so scripts/check-privacy-wording.mjs can compare it with the source.
 import PageHero from "../components/PageHero.astro";
 import Prose from "../components/Prose.astro";
 import { getPolicy, policyTitle, type PolicyKey } from "../data/privacy";
@@ -14,7 +14,14 @@ interface Props {
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
 const { html } = getPolicy(lang.code);
-const sections = [1, 2, 3, 4, 5].map((n) => ({ title: `sec${n}Title` as PolicyKey, text: `sec${n}Desc` as PolicyKey }));
+// Sections 1 to 5 are one paragraph each; section 6, the website, has several
+const sections: { title: PolicyKey; texts: PolicyKey[] }[] = [
+  ...[1, 2, 3, 4, 5].map((n) => ({ title: `sec${n}Title` as PolicyKey, texts: [`sec${n}Desc` as PolicyKey] })),
+  {
+    title: "sec6Title",
+    texts: ["sec6Counts", "sec6Never", "sec6Device", "sec6Processor", "sec6Basis", "sec6OptOut", "sec6Public", "sec6Hosting"],
+  },
+];
 ---
 
 <Base lang={lang} title={`${policyTitle(lang.code)} | ${site.name}`} description={t("meta.privacy.description")} image="/og/privacy.png">
@@ -26,7 +33,9 @@ const sections = [1, 2, 3, 4, 5].map((n) => ({ title: `sec${n}Title` as PolicyKe
         sections.map((s) => (
           <>
             <h2 data-policy={s.title} set:html={html(s.title)} />
-            <p data-policy={s.text} set:html={html(s.text)} />
+            {s.texts.map((text) => (
+              <p data-policy={text} set:html={html(text)} />
+            ))}
           </>
         ))
       }

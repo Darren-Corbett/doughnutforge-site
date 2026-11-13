@@ -1,25 +1,36 @@
 {
-  "_source": "forge-privacy@3e7911c index.html",
   "links": {
     "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
     "tally": "https://tally.so/r/yPWQO4",
     "ico": "https://ico.org.uk/make-a-complaint/",
-    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "stats": "/sv/stats/",
+    "cf": "https://www.cloudflare.com/privacypolicy/",
+    "repo": "https://github.com/Darren-Corbett/doughnutforge-site/tree/main/analytics-worker"
   },
   "strings": {
     "title": "Integritetspolicy",
-    "effectiveDate": "Gäller från: oktober 2026",
-    "hero": "<strong>Doughnut Forge bygger på en lokal arkitektur med nollkunskap (zero-knowledge).</strong> Det innebär att vi inte samlar in, överför, lagrar eller har tillgång till dina data, förutom information som du själv väljer att skicka till oss (se avsnitt 3).",
+    "effectiveDate": "Gäller från: november 2026",
+    "hero": "<strong>Appen Doughnut Forge bygger på en lokal arkitektur med nollkunskap (zero-knowledge).</strong> Appen samlar inte in något: den samlar inte in, överför eller lagrar några av dina data, och utvecklaren har ingen tillgång till dem, förutom information som du själv väljer att skicka direkt (se avsnitt 3). Den här webbplatsen beskrivs separat, i avsnitt 6.",
     "sec1Title": "1. Datalagring och radering",
     "sec1Desc": "Alla kryptografiska nycklar, <code class=\"k1\">.vltc2</code>-identiteter och <code class=\"k2\">.vlt2</code>-filer som skapas av Doughnut Forge lagras uteslutande på din enhet. Ingen information lämnar din enhet om du inte själv exporterar och delar en fil. När du avinstallerar appen tas programvaran bort, men inte filer som du har sparat på andra platser på enheten eller nycklar som finns i systemets inloggningshanterare (till exempel Nyckelringen i macOS eller Autentiseringshanteraren i Windows). Du kan radera dessa manuellt.",
-    "sec2Title": "2. Analys och telemetri",
-    "sec2Desc": "Doughnut Forge innehåller inga spårningsskript, analysmotorer eller kraschrapportörer. Om du laddar ner appen från Apple App Store eller Microsoft Store kan Apple eller Microsoft ge oss sammanställd statistik, till exempel antal nedladdningar och kraschstatistik. Dessa rapporter innehåller inga uppgifter som kan identifiera dig personligen. Du kan styra delningen av diagnostikdata i enhetens inställningar.",
+    "sec2Title": "2. Analys och telemetri i appen",
+    "sec2Desc": "Appen Doughnut Forge innehåller inga spårningsskript, analysmotorer eller kraschrapportörer. Om du laddar ner appen från Apple App Store eller Microsoft Store kan Apple eller Microsoft ge oss sammanställd statistik, till exempel antal nedladdningar och kraschstatistik. Dessa rapporter innehåller inga uppgifter som kan identifiera dig personligen. Du kan styra delningen av diagnostikdata i enhetens inställningar.",
     "sec3Title": "3. Support och kontakt",
     "sec3Desc": "Vid frågor eller för att rapportera ett tekniskt problem kan du skapa ett ärende i vår [[gh]]GitHub Issues[[/gh]]-tracker. GitHub är en offentlig plattform som omfattas av sin egen integritetspolicy, så ta aldrig med känsliga eller dekrypterade data i dina rapporter. För integritetsrelaterade frågor, använd vårt [[tally]]kontaktformulär[[/tally]]. Uppgifter som du skickar via formuläret behandlas av Tally (tally.so), som vi använder för att ta emot ditt meddelande, och används endast för att besvara din fråga.",
     "sec4Title": "4. Ändringar av denna policy",
     "sec4Desc": "Vi kan uppdatera denna policy från tid till annan. Eventuella ändringar publiceras på denna sida med ett uppdaterat ikraftträdandedatum.",
     "sec5Title": "5. Dina rättigheter och juridisk information",
-    "sec5Desc": "För förfrågningar som skickas via vårt kontaktformulär behandlar vi dina uppgifter med stöd av vårt berättigade intresse av att tillhandahålla support. Vi sparar meddelanden endast så länge som rimligen behövs för att hantera din förfrågan och strävar efter att radera dem regelbundet därefter. Om du vill att dina meddelanden raderas tidigare kan du be om det via samma formulär. Beroende på var du bor (till exempel enligt brittisk dataskyddslagstiftning) kan du ha rätt att begära tillgång till, rättelse av eller radering av din kommunikation med oss, samt att lämna in ett klagomål till den brittiska tillsynsmyndigheten [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge riktar sig inte till barn under 13 år. Om du tror att ett barn har skickat personuppgifter till oss via vårt kontaktformulär, meddela oss så raderar vi dem. Denna sida finns på GitHub Pages. Vi lägger inte till någon spårning eller analys, men GitHub kan logga teknisk information, till exempel din IP-adress, när du besöker sidan, av säkerhetsskäl och för att driva tjänsten; se [[ghp]]GitHubs integritetspolicy[[/ghp]]. Vi reagerar inte på Do Not Track-signaler (DNT) eftersom vi inte spårar dig.",
+    "sec5Desc": "För förfrågningar som skickas via vårt kontaktformulär behandlar vi dina uppgifter med stöd av vårt berättigade intresse av att tillhandahålla support. Vi sparar meddelanden endast så länge som rimligen behövs för att hantera din förfrågan och strävar efter att radera dem regelbundet därefter. Om du vill att dina meddelanden raderas tidigare kan du be om det via samma formulär. Beroende på var du bor (till exempel enligt brittisk dataskyddslagstiftning) kan du ha rätt att begära tillgång till, rättelse av eller radering av din kommunikation med oss, samt att lämna in ett klagomål till den brittiska tillsynsmyndigheten [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge riktar sig inte till barn under 13 år. Om du tror att ett barn har skickat personuppgifter till oss via vårt kontaktformulär, meddela oss så raderar vi dem.",
+    "sec6Title": "6. Den här webbplatsen",
+    "sec6Counts": "Den här webbplatsen räknar sidvisningar anonymt, för att förstå vilka sidor som hjälper människor. Den sparar endast dagliga summor: de sidor som visats, varje sidas språk, landet (som en kod med två bokstäver, aldrig en stad), den hänvisande webbplatsen (endast dess domän) och tryck på butiksknappar. Var och en är en separat summa, och de lagras aldrig tillsammans.",
+    "sec6Never": "Den sparar aldrig IP-adresser, webbläsarens identifieringssträngar, fullständiga adresser, tidpunkter eller något som kopplar ihop ett besök med ett annat. Den sätter inga cookies.",
+    "sec6Device": "Räknaren lagrar ingenting på din enhet. Det enda den här webbplatsen lagrar där är en markering om att du inte vill räknas i webbläsarens lokala lagring, om du väljer det, och ett byggnummer i webbläsarens sessionslagring, så att en öppen flik kan se när webbplatsen har uppdaterats.",
+    "sec6Processor": "Räknaren körs på Cloudflare (Workers och D1, med databasen lagrad i Västeuropa). Cloudflares nätverk ser din IP-adress för att leverera förfrågan och slå upp landet; räknaren läser eller lagrar den aldrig. Cloudflare lägger också till sin egen rapportering av nätverksfel i sina svar. Se [[cf]]Cloudflares integritetspolicy[[/cf]].",
+    "sec6Basis": "Den rättsliga grunden för dessa räkningar är berättigat intresse, av att förstå vilka sidor som hjälper människor. Dagliga summor raderas efter 13 månader.",
+    "sec6OptOut": "Om du inte vill räknas kan du använda knappen ”Räkna inte mina besök” på sidan [[stats]]Sidvisningar på den här webbplatsen[[/stats]], slå på Do Not Track eller Global Privacy Control eller stänga av JavaScript. Innehållsblockerare kan också stoppa räkningen.",
+    "sec6Public": "Summorna är offentliga på sidan [[stats]]Sidvisningar på den här webbplatsen[[/stats]], och räknarens källkod är offentlig under analytics-worker/ i [[repo]]den här webbplatsens kodförråd[[/repo]].",
+    "sec6Hosting": "Den här webbplatsen finns på GitHub Pages. GitHub kan logga teknisk information, till exempel din IP-adress, när du besöker den, av säkerhetsskäl och för att driva tjänsten; se [[ghp]]GitHubs integritetspolicy[[/ghp]].",
     "publisherInfo": "Publicerad av Darren Corbett."
   }
 }

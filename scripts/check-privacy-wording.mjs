@@ -1,12 +1,12 @@
-// Proves the built privacy policy says exactly what forge-privacy says.
+// Proves the built privacy policy says exactly what its source says. The source is
+// src/content/legal/privacy/<language>.json in this repo (since 13 November 2026;
+// the text was first copied word for word from the forge-privacy repo).
 // Runs after `astro build`. For every element marked data-policy="<key>" in the
 // built pages, compares it with the committed copy in src/content/legal/privacy/:
 //   - the words, character for character (after decoding entities and collapsing spaces)
 //   - the bold, code and link markup, including every link address
-// Every key must appear on the privacy page. Any difference fails the build.
-//
-// To compare the committed copy with forge-privacy itself, use
-//   node scripts/extract-privacy.mjs <index.html> --sha <commit> --check
+// Every key must appear on the privacy page, and every language's file must have
+// English's keys, links and link places. Any difference fails the build.
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -101,6 +101,16 @@ for (const page of pages) {
   }
 }
 
+// Every language has English's parts and links, with each link in the same place
+const tokens = (text) => [...text.matchAll(/\[\[\/?(\w+)\]\]/g)].map((m) => m[0]).join("");
+const sameKeys = (a, b) => JSON.stringify(Object.keys(a).sort()) === JSON.stringify(Object.keys(b).sort());
+for (const [lang, policy] of Object.entries(policies)) {
+  if (!sameKeys(policy.strings, policies.en.strings)) problems.push(`${lang}.json does not have the same parts as en.json`);
+  if (!sameKeys(policy.links, policies.en.links)) problems.push(`${lang}.json does not have the same links as en.json`);
+  for (const [key, text] of Object.entries(policies.en.strings))
+    if (policy.strings[key] !== undefined && tokens(policy.strings[key]) !== tokens(text)) problems.push(`${lang}.json "${key}": its links differ from en.json`);
+}
+
 // The privacy page must show every part of the policy
 const privacyPages = pages.filter((p) => /(^|\/)privacy\/index\.html$/.test(p));
 if (privacyPages.length === 0) problems.push("No privacy page was built");
@@ -120,5 +130,5 @@ if (problems.length) {
   process.exit(1);
 }
 console.log(
-  `check-privacy-wording: ${privacyPages.length} language(s), ${checked} passages, 0 differences from ${policies.en._source}`,
+  `check-privacy-wording: ${privacyPages.length} language(s), ${checked} passages, 0 differences from src/content/legal/privacy`,
 );

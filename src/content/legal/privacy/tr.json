@@ -1,25 +1,36 @@
 {
-  "_source": "forge-privacy@3e7911c index.html",
   "links": {
     "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
     "tally": "https://tally.so/r/yPWQO4",
     "ico": "https://ico.org.uk/make-a-complaint/",
-    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "stats": "/tr/stats/",
+    "cf": "https://www.cloudflare.com/privacypolicy/",
+    "repo": "https://github.com/Darren-Corbett/doughnutforge-site/tree/main/analytics-worker"
   },
   "strings": {
     "title": "Gizlilik Politikası",
-    "effectiveDate": "Yürürlük Tarihi: Ekim 2026",
-    "hero": "<strong>Doughnut Forge, yerel öncelikli ve sıfır bilgi (zero-knowledge) mimarisi üzerine kurulmuştur.</strong> Bu, doğrudan bize göndermeyi seçtiğiniz bilgiler dışında verilerinizi toplamadığımız, iletmediğimiz, saklamadığımız ve verilerinize erişimimiz olmadığı anlamına gelir (bkz. Bölüm 3).",
+    "effectiveDate": "Yürürlük Tarihi: Kasım 2026",
+    "hero": "<strong>Doughnut Forge uygulaması, yerel öncelikli ve sıfır bilgi (zero-knowledge) mimarisi üzerine kurulmuştur.</strong> Uygulama hiçbir şey toplamaz: doğrudan göndermeyi seçtiğiniz bilgiler dışında verilerinizin hiçbirini toplamaz, iletmez veya saklamaz ve geliştiricinin bunlara erişimi yoktur (bkz. Bölüm 3). Bu web sitesi ayrıca, Bölüm 6'da ele alınmıştır.",
     "sec1Title": "1. Veri Depolama ve Silme",
     "sec1Desc": "Doughnut Forge tarafından oluşturulan tüm şifreleme anahtarları, <code class=\"k1\">.vltc2</code> kimlikleri ve <code class=\"k2\">.vlt2</code> dosyaları yalnızca cihazınızda saklanır. Bir dosyayı kendiniz dışa aktarıp paylaşmadığınız sürece hiçbir bilgi cihazınızdan çıkmaz. Uygulamayı kaldırmak yazılımı siler; ancak cihazınızın başka konumlarına kaydettiğiniz dosyaları veya sistemin kimlik bilgisi yöneticisinde (ör. macOS Anahtar Zinciri veya Windows Kimlik Bilgileri Yöneticisi) tutulan anahtarları silmez. Bunları elle silebilirsiniz.",
-    "sec2Title": "2. Analiz ve Telemetri",
-    "sec2Desc": "Doughnut Forge herhangi bir izleme betiği, analiz motoru veya çökme raporlayıcısı içermez. Uygulamayı Apple App Store veya Microsoft Store'dan indirirseniz Apple veya Microsoft bize indirme sayıları ve çökme istatistikleri gibi toplu istatistikler sağlayabilir. Bu raporlar kişisel olarak tanımlanabilir bilgi içermez. Tanılama verilerinin paylaşımını cihazınızın ayarlarından yönetebilirsiniz.",
+    "sec2Title": "2. Uygulamada Analiz ve Telemetri",
+    "sec2Desc": "Doughnut Forge uygulaması herhangi bir izleme betiği, analiz motoru veya çökme raporlayıcısı içermez. Uygulamayı Apple App Store veya Microsoft Store'dan indirirseniz Apple veya Microsoft bize indirme sayıları ve çökme istatistikleri gibi toplu istatistikler sağlayabilir. Bu raporlar kişisel olarak tanımlanabilir bilgi içermez. Tanılama verilerinin paylaşımını cihazınızın ayarlarından yönetebilirsiniz.",
     "sec3Title": "3. Destek ve İletişim",
     "sec3Desc": "Sorularınız için veya teknik bir sorunu bildirmek için [[gh]]GitHub Issues[[/gh]] takip sistemimizde bir kayıt açın. GitHub, kendi gizlilik politikasına tabi, herkese açık bir platformdur; bu nedenle bildirimlerinize asla hassas veya şifresi çözülmüş veri eklemeyin. Gizlilikle ilgili talepleriniz için [[tally]]iletişim formumuzu[[/tally]] kullanın. Bu form aracılığıyla gönderdiğiniz bilgiler, mesajlarınızı almak için kullandığımız Tally (tally.so) tarafından işlenir ve yalnızca talebinizi yanıtlamak için kullanılır.",
     "sec4Title": "4. Bu Politikadaki Değişiklikler",
     "sec4Desc": "Bu politikayı zaman zaman güncelleyebiliriz. Tüm değişiklikler, güncellenmiş bir yürürlük tarihiyle bu sayfada yayımlanır.",
     "sec5Title": "5. Haklarınız ve Yasal Bilgiler",
-    "sec5Desc": "İletişim formumuz aracılığıyla gönderilen talepler için bilgilerinizi, destek sağlamaya yönelik meşru menfaatimize dayanarak işleriz. Mesajları yalnızca talebinizi yanıtlamak için makul ölçüde gereken süre boyunca saklar ve sonrasında düzenli olarak silmeye çalışırız. Mesajlarınızın daha erken silinmesini isterseniz, aynı form aracılığıyla bunu talep edebilirsiniz. Yaşadığınız yere bağlı olarak (örneğin Birleşik Krallık veri koruma mevzuatı kapsamında), bizimle yaptığınız yazışmalara erişim, bunların düzeltilmesi veya silinmesini talep etme ve Birleşik Krallık veri koruma otoritesi olan [[ico]]Information Commissioner's Office'e (ICO)[[/ico]] şikâyette bulunma hakkınız olabilir. Doughnut Forge, 13 yaşından küçük çocuklara yönelik değildir. Bir çocuğun iletişim formumuz aracılığıyla bize kişisel bilgi gönderdiğini düşünüyorsanız lütfen bize bildirin; bu bilgileri sileriz. Bu sayfa GitHub Pages üzerinde barındırılmaktadır. Sayfaya herhangi bir izleme veya analiz aracı eklemiyoruz; ancak GitHub, ziyaretiniz sırasında güvenlik ve hizmetin işletilmesi amacıyla IP adresiniz gibi teknik bilgileri kaydedebilir. Ayrıntılar için [[ghp]]GitHub Gizlilik Bildirimi[[/ghp]]'ne bakın. Sizi izlemediğimiz için Do Not Track (DNT) sinyallerine yanıt vermeyiz.",
+    "sec5Desc": "İletişim formumuz aracılığıyla gönderilen talepler için bilgilerinizi, destek sağlamaya yönelik meşru menfaatimize dayanarak işleriz. Mesajları yalnızca talebinizi yanıtlamak için makul ölçüde gereken süre boyunca saklar ve sonrasında düzenli olarak silmeye çalışırız. Mesajlarınızın daha erken silinmesini isterseniz, aynı form aracılığıyla bunu talep edebilirsiniz. Yaşadığınız yere bağlı olarak (örneğin Birleşik Krallık veri koruma mevzuatı kapsamında), bizimle yaptığınız yazışmalara erişim, bunların düzeltilmesi veya silinmesini talep etme ve Birleşik Krallık veri koruma otoritesi olan [[ico]]Information Commissioner's Office'e (ICO)[[/ico]] şikâyette bulunma hakkınız olabilir. Doughnut Forge, 13 yaşından küçük çocuklara yönelik değildir. Bir çocuğun iletişim formumuz aracılığıyla bize kişisel bilgi gönderdiğini düşünüyorsanız lütfen bize bildirin; bu bilgileri sileriz.",
+    "sec6Title": "6. Bu Web Sitesi",
+    "sec6Counts": "Bu web sitesi, hangi sayfaların insanlara yardımcı olduğunu anlamak için sayfa görüntülemelerini anonim olarak sayar. Yalnızca günlük toplamları tutar: görüntülenen sayfalar, her sayfanın dili, ülke (iki harfli bir kod olarak, asla şehir değil), yönlendiren site (yalnızca alan adı) ve mağaza düğmelerine yapılan dokunmalar. Her biri ayrı bir toplamdır ve asla birlikte saklanmaz.",
+    "sec6Never": "IP adreslerini, tarayıcı kimlik dizelerini, tam adresleri, saatleri veya bir ziyareti diğerine bağlayan herhangi bir şeyi asla saklamaz. Çerez yerleştirmez.",
+    "sec6Device": "Sayaç cihazınızda hiçbir şey saklamaz. Bu web sitesinin orada sakladığı tek şeyler, sayılmamayı seçerseniz tarayıcınızın yerel depolamasındaki bir devre dışı bırakma işareti ve açık bir sekmenin sitenin ne zaman güncellendiğini anlayabilmesi için tarayıcınızın oturum depolamasındaki bir sürüm numarasıdır.",
+    "sec6Processor": "Sayaç Cloudflare üzerinde çalışır (Workers ve D1; veritabanı Batı Avrupa'da saklanır). Cloudflare ağı, isteği iletmek ve ülkeyi belirlemek için IP adresinizi görür; sayaç bu adresi asla okumaz veya saklamaz. Cloudflare ayrıca yanıtlarına kendi ağ hata raporlamasını ekler. Ayrıntılar için [[cf]]Cloudflare Gizlilik Politikası[[/cf]]'na bakın.",
+    "sec6Basis": "Bu sayımların hukuki dayanağı, hangi sayfaların insanlara yardımcı olduğunu anlamaya yönelik meşru menfaattir. Günlük toplamlar 13 ay sonra silinir.",
+    "sec6OptOut": "Sayılmayı durdurmak için [[stats]]Bu sitedeki sayfa görüntülemeleri[[/stats]] sayfasındaki “Ziyaretlerimi sayma” düğmesini kullanın, Do Not Track veya Global Privacy Control'ü açın ya da JavaScript'i kapatın. İçerik engelleyiciler de sayımı durdurabilir.",
+    "sec6Public": "Toplamlar [[stats]]Bu sitedeki sayfa görüntülemeleri[[/stats]] sayfasında herkese açıktır; sayacın kaynak kodu da [[repo]]bu web sitesinin deposunda[[/repo]] analytics-worker/ altında herkese açıktır.",
+    "sec6Hosting": "Bu web sitesi GitHub Pages üzerinde barındırılmaktadır. GitHub, ziyaretiniz sırasında güvenlik ve hizmetin işletilmesi amacıyla IP adresiniz gibi teknik bilgileri kaydedebilir. Ayrıntılar için [[ghp]]GitHub Gizlilik Bildirimi[[/ghp]]'ne bakın.",
     "publisherInfo": "Yayınlayan: Darren Corbett."
   }
 }

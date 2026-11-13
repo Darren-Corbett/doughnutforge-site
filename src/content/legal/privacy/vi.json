@@ -1,25 +1,36 @@
 {
-  "_source": "forge-privacy@3e7911c index.html",
   "links": {
     "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
     "tally": "https://tally.so/r/yPWQO4",
     "ico": "https://ico.org.uk/make-a-complaint/",
-    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "stats": "/vi/stats/",
+    "cf": "https://www.cloudflare.com/privacypolicy/",
+    "repo": "https://github.com/Darren-Corbett/doughnutforge-site/tree/main/analytics-worker"
   },
   "strings": {
     "title": "Chính sách quyền riêng tư",
-    "effectiveDate": "Ngày có hiệu lực: Tháng 10 năm 2026",
-    "hero": "<strong>Doughnut Forge được xây dựng trên kiến trúc cục bộ không tiết lộ thông tin (zero-knowledge).</strong> Điều này có nghĩa là chúng tôi không thu thập, truyền tải, lưu trữ hoặc có quyền truy cập vào dữ liệu của bạn, ngoại trừ thông tin bạn chủ động gửi trực tiếp cho chúng tôi (xem Mục 3).",
+    "effectiveDate": "Ngày có hiệu lực: Tháng 11 năm 2026",
+    "hero": "<strong>Ứng dụng Doughnut Forge được xây dựng trên kiến trúc cục bộ không tiết lộ thông tin (zero-knowledge).</strong> Ứng dụng không thu thập gì cả: ứng dụng không thu thập, truyền tải hay lưu trữ bất kỳ dữ liệu nào của bạn, và nhà phát triển không có quyền truy cập vào dữ liệu đó, ngoại trừ thông tin bạn chủ động gửi trực tiếp (xem Mục 3). Trang web này được đề cập riêng tại Mục 6.",
     "sec1Title": "1. Lưu trữ và xóa dữ liệu",
     "sec1Desc": "Tất cả khóa mã hóa, danh tính <code class=\"k1\">.vltc2</code> và tệp <code class=\"k2\">.vlt2</code> do Doughnut Forge tạo ra chỉ được lưu trữ trên thiết bị của bạn. Không có thông tin nào rời khỏi thiết bị trừ khi chính bạn xuất và chia sẻ tệp. Việc gỡ cài đặt ứng dụng sẽ xóa phần mềm, nhưng không xóa các tệp bạn đã lưu ở vị trí khác trên thiết bị hoặc các khóa được lưu trong trình quản lý thông tin xác thực của hệ thống (chẳng hạn như Chuỗi khóa trên macOS hoặc Credential Manager trên Windows). Bạn có thể xóa chúng theo cách thủ công.",
-    "sec2Title": "2. Phân tích và đo từ xa",
-    "sec2Desc": "Doughnut Forge không chứa tập lệnh theo dõi, công cụ phân tích hay trình báo cáo sự cố. Nếu bạn tải ứng dụng từ Apple App Store hoặc Microsoft Store, Apple hoặc Microsoft có thể cung cấp cho chúng tôi số liệu thống kê tổng hợp, chẳng hạn như số lượt tải xuống và thống kê sự cố. Các báo cáo này không chứa thông tin nhận dạng cá nhân. Bạn có thể kiểm soát việc chia sẻ dữ liệu chẩn đoán trong phần cài đặt của thiết bị.",
+    "sec2Title": "2. Phân tích và đo từ xa trong ứng dụng",
+    "sec2Desc": "Ứng dụng Doughnut Forge không chứa tập lệnh theo dõi, công cụ phân tích hay trình báo cáo sự cố. Nếu bạn tải ứng dụng từ Apple App Store hoặc Microsoft Store, Apple hoặc Microsoft có thể cung cấp cho chúng tôi số liệu thống kê tổng hợp, chẳng hạn như số lượt tải xuống và thống kê sự cố. Các báo cáo này không chứa thông tin nhận dạng cá nhân. Bạn có thể kiểm soát việc chia sẻ dữ liệu chẩn đoán trong phần cài đặt của thiết bị.",
     "sec3Title": "3. Hỗ trợ và liên hệ",
     "sec3Desc": "Nếu có câu hỏi hoặc muốn báo cáo sự cố kỹ thuật, vui lòng tạo phiếu yêu cầu trên [[gh]]GitHub Issues[[/gh]] của chúng tôi. GitHub là nền tảng công khai tuân theo chính sách quyền riêng tư riêng, vì vậy đừng bao giờ đưa dữ liệu nhạy cảm hoặc dữ liệu đã giải mã vào báo cáo. Đối với các yêu cầu liên quan đến quyền riêng tư, vui lòng sử dụng [[tally]]Biểu mẫu liên hệ[[/tally]] của chúng tôi. Thông tin bạn gửi qua biểu mẫu đó được xử lý bởi Tally (tally.so), dịch vụ chúng tôi dùng để nhận tin nhắn, và chỉ được dùng để phản hồi yêu cầu của bạn.",
     "sec4Title": "4. Thay đổi đối với chính sách này",
     "sec4Desc": "Chúng tôi có thể cập nhật chính sách này theo thời gian. Mọi thay đổi sẽ được công bố trên trang này kèm Ngày có hiệu lực được cập nhật.",
     "sec5Title": "5. Quyền của bạn và thông tin pháp lý",
-    "sec5Desc": "Đối với các yêu cầu gửi qua biểu mẫu liên hệ, chúng tôi xử lý thông tin của bạn dựa trên lợi ích hợp pháp của chúng tôi trong việc cung cấp hỗ trợ. Chúng tôi chỉ lưu giữ tin nhắn trong thời gian cần thiết một cách hợp lý để giải quyết yêu cầu của bạn và cố gắng xóa chúng định kỳ sau đó. Nếu bạn muốn tin nhắn của mình được xóa sớm hơn, chỉ cần yêu cầu qua chính biểu mẫu đó. Tùy theo nơi bạn sinh sống (ví dụ: theo luật bảo vệ dữ liệu của Vương quốc Anh), bạn có thể có quyền yêu cầu truy cập, chỉnh sửa hoặc xóa các trao đổi của bạn với chúng tôi, cũng như quyền khiếu nại với cơ quan bảo vệ dữ liệu của Vương quốc Anh là [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge không hướng đến trẻ em dưới 13 tuổi. Nếu bạn cho rằng một trẻ em đã gửi thông tin cá nhân cho chúng tôi qua biểu mẫu liên hệ, vui lòng cho chúng tôi biết và chúng tôi sẽ xóa thông tin đó. Trang này được lưu trữ trên GitHub Pages. Chúng tôi không thêm bất kỳ công cụ theo dõi hay phân tích nào, nhưng GitHub có thể ghi lại thông tin kỹ thuật, chẳng hạn như địa chỉ IP của bạn, khi bạn truy cập, vì mục đích bảo mật và vận hành dịch vụ; xem [[ghp]]Tuyên bố về quyền riêng tư của GitHub[[/ghp]]. Chúng tôi không phản hồi tín hiệu Do Not Track (DNT) vì chúng tôi không theo dõi bạn.",
+    "sec5Desc": "Đối với các yêu cầu gửi qua biểu mẫu liên hệ, chúng tôi xử lý thông tin của bạn dựa trên lợi ích hợp pháp của chúng tôi trong việc cung cấp hỗ trợ. Chúng tôi chỉ lưu giữ tin nhắn trong thời gian cần thiết một cách hợp lý để giải quyết yêu cầu của bạn và cố gắng xóa chúng định kỳ sau đó. Nếu bạn muốn tin nhắn của mình được xóa sớm hơn, chỉ cần yêu cầu qua chính biểu mẫu đó. Tùy theo nơi bạn sinh sống (ví dụ: theo luật bảo vệ dữ liệu của Vương quốc Anh), bạn có thể có quyền yêu cầu truy cập, chỉnh sửa hoặc xóa các trao đổi của bạn với chúng tôi, cũng như quyền khiếu nại với cơ quan bảo vệ dữ liệu của Vương quốc Anh là [[ico]]Information Commissioner's Office (ICO)[[/ico]]. Doughnut Forge không hướng đến trẻ em dưới 13 tuổi. Nếu bạn cho rằng một trẻ em đã gửi thông tin cá nhân cho chúng tôi qua biểu mẫu liên hệ, vui lòng cho chúng tôi biết và chúng tôi sẽ xóa thông tin đó.",
+    "sec6Title": "6. Trang web này",
+    "sec6Counts": "Trang web này đếm lượt xem trang một cách ẩn danh, để hiểu những trang nào giúp ích cho mọi người. Trang web chỉ lưu tổng số theo ngày: các trang được xem, ngôn ngữ của mỗi trang, quốc gia (dưới dạng mã hai chữ cái, không bao giờ là thành phố), trang web giới thiệu (chỉ tên miền) và số lần chạm vào các nút cửa hàng. Mỗi mục là một tổng số riêng và không bao giờ được lưu cùng nhau.",
+    "sec6Never": "Trang web không bao giờ lưu địa chỉ IP, chuỗi nhận dạng trình duyệt, địa chỉ đầy đủ, thời gian hay bất cứ thứ gì liên kết lượt truy cập này với lượt truy cập khác. Trang web không đặt cookie.",
+    "sec6Device": "Bộ đếm không lưu gì trên thiết bị của bạn. Những thứ duy nhất trang web này lưu trên đó là một dấu hiệu từ chối trong bộ nhớ cục bộ (local storage) của trình duyệt, nếu bạn chọn không được đếm, và một mã số bản dựng trong bộ nhớ phiên (session storage) của trình duyệt, để một thẻ đang mở có thể biết khi nào trang web đã được cập nhật.",
+    "sec6Processor": "Bộ đếm chạy trên Cloudflare (Workers và D1, với cơ sở dữ liệu được lưu tại Tây Âu). Mạng của Cloudflare nhìn thấy địa chỉ IP của bạn để chuyển yêu cầu và để tra cứu quốc gia; bộ đếm không bao giờ đọc hay lưu địa chỉ đó. Cloudflare cũng thêm báo cáo lỗi mạng của riêng mình vào các phản hồi. Xem [[cf]]Chính sách quyền riêng tư của Cloudflare[[/cf]].",
+    "sec6Basis": "Cơ sở pháp lý cho việc đếm này là lợi ích hợp pháp trong việc hiểu những trang nào giúp ích cho mọi người. Tổng số theo ngày được xóa sau 13 tháng.",
+    "sec6OptOut": "Để không bị đếm nữa, hãy dùng nút “Không đếm lượt truy cập của tôi” trên [[stats]]Lượt xem trang trên trang web này[[/stats]], bật Do Not Track hoặc Global Privacy Control, hoặc tắt JavaScript. Trình chặn nội dung cũng có thể ngăn việc đếm.",
+    "sec6Public": "Các tổng số được công khai trên [[stats]]Lượt xem trang trên trang web này[[/stats]], và mã nguồn của bộ đếm được công khai trong thư mục analytics-worker/ của [[repo]]kho mã của trang web này[[/repo]].",
+    "sec6Hosting": "Trang web này được lưu trữ trên GitHub Pages. GitHub có thể ghi lại thông tin kỹ thuật, chẳng hạn như địa chỉ IP của bạn, khi bạn truy cập, vì mục đích bảo mật và vận hành dịch vụ; xem [[ghp]]Tuyên bố về quyền riêng tư của GitHub[[/ghp]].",
     "publisherInfo": "Xuất bản bởi Darren Corbett."
   }
 }

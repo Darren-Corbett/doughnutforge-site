@@ -7,7 +7,8 @@
 // own, reloads once. Same origin only, and it sends nothing. Any failure (offline,
 // an error, blocked storage) leaves the page as it is. sessionStorage remembers
 // which ID each page last reloaded for, so a CDN that still serves the old page
-// never causes a loop (the one use of web storage on the site, see CLAUDE.md).
+// never causes a loop (one of the two uses of web storage on the site, with the
+// page counter's opt-out flag; see CLAUDE.md).
 // It also removes any service worker an older site left behind.
 import { buildId } from "../data/build";
 ---

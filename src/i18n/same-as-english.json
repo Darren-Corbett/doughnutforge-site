@@ -17,7 +17,8 @@
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "stats.table.store"
   ],
   "nl": [
     "press.facts.website",
@@ -35,7 +36,8 @@
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "stats.table.store"
   ],
   "da": [
     "nav.download",
@@ -97,7 +99,8 @@
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
     "technical.unlock.windows.text",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "stats.table.store"
   ],
   "ro": [
     "press.shots.label",
@@ -209,7 +212,9 @@
     "technical.stored.passes.text",
     "technical.stored.lanes.text",
     "technical.libraries.compression",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "stats.table.pages",
+    "stats.table.page"
   ],
   "es": [
     "technical.encryption.nonces.label",

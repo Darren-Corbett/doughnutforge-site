@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -248,13 +248,34 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 180 chars, over 170; no shorter wording with the same meaning is clearly better (\"de votre choix\" is already the short exact form). 'Sans compte, serveur ni abonnement' is the file's existing wording.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for the people of your choice. Without account, server or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation against the English brief; mechanics checked by script: markers [[cf]]/[[stats]]/[[repo]]/[[ghp]]/[[ico]] and <strong> match English in count and order, digits (7, 30, 5, 13, 2026, 3, 6) match, names kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text in sec6OptOut and sec6Public equals stats.title, links.stats/cf/repo correct. sec2Desc changed only in its subject (\"the app\"); rest identical to HEAD. sec5Desc is an exact prefix of the old text with only the GitHub Pages hosting and Do Not Track sentences dropped. All key facts present (never, only, anonymous, two-letter code never a city, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). No \"we\" in new text; inherited \"we\" in sec2Desc/sec5Desc is unchanged legal wording. Register matches the file. No blocking findings. Register: vous in ui and policy.",
+        "backTranslation": "stats.footer: \"This site counts page views anonymously. No cookies. Nothing that identifies you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.data.a",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: \"build number\" rendered as \"numéro de version du site\" (site version number); consistent with sec6Device and accurate enough for a visitor. Style only.",
+        "backTranslation": "...and a version number of the site, so that an open tab knows when the site has been updated.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge handles your data. The app keeps your files and your keys on your device and collects nothing. This site keeps only anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -502,13 +523,48 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 171 chars, one over 170; acceptable. 'Menschen Ihrer Wahl' is exact; formal Sie kept.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for people of your choice. No account, no servers, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation against the English brief; mechanics checked by script: markers [[cf]]/[[stats]]/[[repo]]/[[ghp]]/[[ico]] and <strong> match English in count and order, digits (7, 30, 5, 13, 2026, 3, 6) match, names kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text in sec6OptOut and sec6Public equals stats.title, links.stats/cf/repo correct. sec2Desc changed only in its subject (\"the app\"); rest identical to HEAD. sec5Desc is an exact prefix of the old text with only the GitHub Pages hosting and Do Not Track sentences dropped. All key facts present (never, only, anonymous, two-letter code never a city, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). No \"we\" in new text; inherited \"we\" in sec2Desc/sec5Desc is unchanged legal wording. Register matches the file. No blocking findings. Register: Sie throughout.",
+        "backTranslation": "stats.footer: \"This website counts page views anonymously. No cookies. Nothing that identifies you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.table.taps",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Column header \"Angetippt\" (tapped) is a participle next to noun headers (Aufrufe). A noun reads more naturally. Style only.",
+        "backTranslation": "Tapped",
+        "suggestion": "Antippen"
+      },
+      {
+        "key": "faq.data.a",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: \"Apple und Microsoft stellen möglicherweise ... bereit\" says \"provide\" for \"share\"; same meaning in context. Style only.",
+        "backTranslation": "Apple and Microsoft may provide aggregated statistics, such as download numbers, that contain no personal details.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge deals with your data. The app keeps your files and keys on your device and collects nothing. This website stores only anonymous daily totals of page views.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.table.taps",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct and consistent with 'Antippen der Stores' and 'angetippt'.",
+        "backTranslation": "Taps (tapping)",
+        "suggestion": ""
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -689,13 +745,34 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 'para quien elijas' keeps the meaning exactly; tú register kept.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whoever you choose. No account, no servers, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation against the English brief; mechanics checked by script: markers [[cf]]/[[stats]]/[[repo]]/[[ghp]]/[[ico]] and <strong> match English in count and order, digits (7, 30, 5, 13, 2026, 3, 6) match, names kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text in sec6OptOut and sec6Public equals stats.title, links.stats/cf/repo correct. sec2Desc changed only in its subject (\"the app\"); rest identical to HEAD. sec5Desc is an exact prefix of the old text with only the GitHub Pages hosting and Do Not Track sentences dropped. All key facts present (never, only, anonymous, two-letter code never a city, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). No \"we\" in new text; inherited \"we\" in sec2Desc/sec5Desc is unchanged legal wording. Register matches the file. No blocking findings. Register: tú in ui (matches rest of ui file), usted in policy (matches existing policy).",
+        "backTranslation": "stats.footer: \"This site counts page views anonymously. No cookies. Nothing that identifies you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.intro",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: \"no ser contado\" uses the masculine generic; acceptable and consistent across keys. Style only.",
+        "backTranslation": "...your decision not to be counted, if you make it...",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge treats your data. The app keeps your files and keys on your device and collects nothing. This website only keeps anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -919,13 +996,41 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; list form matches the previous string.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, server or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation against the English brief; mechanics checked by script: markers [[cf]]/[[stats]]/[[repo]]/[[ghp]]/[[ico]] and <strong> match English in count and order, digits (7, 30, 5, 13, 2026, 3, 6) match, names kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text in sec6OptOut and sec6Public equals stats.title, links.stats/cf/repo correct. sec2Desc changed only in its subject (\"the app\"); rest identical to HEAD. sec5Desc is an exact prefix of the old text with only the GitHub Pages hosting and Do Not Track sentences dropped. All key facts present (never, only, anonymous, two-letter code never a city, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). No \"we\" in new text; inherited \"we\" in sec2Desc/sec5Desc is unchanged legal wording. Register matches the file. No blocking findings. Register: tu throughout, matching the ui file.",
+        "backTranslation": "stats.footer: \"This site counts page views anonymously. No cookies. Nothing that identifies you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.stats.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: \"come evitare di essere conteggiati\" (plural, impersonal) while stats.optout.title and the policy use the singular \"conteggiato\". Both are correct; minor inconsistency.",
+        "backTranslation": "...how to avoid being counted (plural)...",
+        "suggestion": "Che cosa conta il sito di Doughnut Forge, che cosa non conta mai, come evitare di essere conteggiato e le visualizzazioni di pagina anonime degli ultimi 7 e 30 giorni."
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge treats your data. The app keeps your files and your keys on your device and collects nothing. This site keeps only anonymous daily totals of page views.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.stats.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct; singular generic masculine 'conteggiato' is standard.",
+        "backTranslation": "What the Doughnut Forge site counts, what it never counts, how to avoid being counted and the anonymous page views of the last 7 and 30 days.",
+        "suggestion": ""
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1173,13 +1278,34 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 'voor wie u kiest' exact; formal u kept, matches home.tagline.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whom you choose. No account, no servers, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation against the English brief; mechanics checked by script: markers [[cf]]/[[stats]]/[[repo]]/[[ghp]]/[[ico]] and <strong> match English in count and order, digits (7, 30, 5, 13, 2026, 3, 6) match, names kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text in sec6OptOut and sec6Public equals stats.title, links.stats/cf/repo correct. sec2Desc changed only in its subject (\"the app\"); rest identical to HEAD. sec5Desc is an exact prefix of the old text with only the GitHub Pages hosting and Do Not Track sentences dropped. All key facts present (never, only, anonymous, two-letter code never a city, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). No \"we\" in new text; inherited \"we\" in sec2Desc/sec5Desc is unchanged legal wording. Register matches the file. No blocking findings. Register: u throughout. \"gerechtvaardigd belang\" is the correct AVG term.",
+        "backTranslation": "stats.footer: \"This site counts page views anonymously. No cookies. Nothing that identifies you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: \"identificatiestrings van browsers\" is a little technical; \"browseridentificatie (user-agent)\" may read more easily. Meaning correct. Style only.",
+        "backTranslation": "The website never keeps IP addresses, identification strings of browsers, full addresses, times or anything that links one visit to another. It sets no cookies.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge deals with your data. The app keeps your files and keys on your device and collects nothing. This website keeps only anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1386,13 +1512,27 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 'för dem du väljer' exact and matches home.tagline.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, no servers, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings: back-translated, facts match English (anonymous, daily totals, country never city / two-letter code, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). Markers, <strong>, digits, product names, quoted button = stats.optout.off, [[stats]] link text = stats.title, links.stats/cf/repo all correct. sec2Desc changed only in its first words; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest byte-identical. Terms consistent with the existing ui and policy (website word, cookies word, store, tap, legitimate interest as in sec5Desc). No 'we' in new text, no compliance claims. Register: du, as in the file.",
+        "backTranslation": "stats.footer: 'This website counts page views anonymously. No cookies. Nothing that identifies you.'",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "This is how Doughnut Forge handles your data. The app keeps your files and keys on your device and collects nothing. This website stores only anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1606,13 +1746,27 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no servers, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings: back-translated, facts match English (anonymous, daily totals, country never city / two-letter code, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). Markers, <strong>, digits, product names, quoted button = stats.optout.off, [[stats]] link text = stats.title, links.stats/cf/repo all correct. sec2Desc changed only in its first words; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest byte-identical. Terms consistent with the existing ui and policy (website word, cookies word, store, tap, legitimate interest as in sec5Desc). No 'we' in new text, no compliance claims. Register: du, as in the file.",
+        "backTranslation": "stats.footer: 'This website counts page views anonymously. No cookies. Nothing that identifies you.'",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "This is how Doughnut Forge handles your data. The app keeps your files and keys on your device and collects nothing. This website stores only anonymous daily totals for page views.",
+        "suggestion": ""
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1867,13 +2021,34 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 173 chars; no clearly shorter equivalent. 'valitsemillesi ihmisille' exact.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for people you choose. No account, no servers, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings: back-translated, facts match English (anonymous, daily totals, country never city / two-letter code, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). Markers, <strong>, digits, product names, quoted button = stats.optout.off, [[stats]] link text = stats.title, links.stats/cf/repo all correct. sec2Desc changed only in its first words; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest byte-identical. Terms consistent with the existing ui and policy (website word, cookies word, store, tap, legitimate interest as in sec5Desc). No 'we' in new text, no compliance claims. Register: sinä, as in the file. 'nimettömästi' for anonymously is natural.",
+        "backTranslation": "stats.footer: 'This site counts page views anonymously. No cookies. Nothing that identifies you.'",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.how.text",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'Laskuria pyörittää Cloudflare' uses the colloquial 'pyörittää' (to run/spin); 'ylläpitää' or 'Laskuri toimii Cloudflaressa' (as in the policy) is more neutral. Style only.",
+        "backTranslation": "Cloudflare runs the counter. Like any network, Cloudflare sees your IP address to deliver the count, and infers the country from it. The counter never reads or keeps your IP address. Daily totals are deleted after 13 months.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "This is how Doughnut Forge handles your data. The app keeps your files and keys on your device and collects nothing. This website keeps only anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2086,13 +2261,34 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact. 'ingen abonnement' (rather than 'ikke noe abonnement') is carried over unchanged from the previous string; colloquially accepted.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no servers, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings: back-translated, facts match English (anonymous, daily totals, country never city / two-letter code, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). Markers, <strong>, digits, product names, quoted button = stats.optout.off, [[stats]] link text = stats.title, links.stats/cf/repo all correct. sec2Desc changed only in its first words; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest byte-identical. Terms consistent with the existing ui and policy (website word, cookies word, store, tap, legitimate interest as in sec5Desc). No 'we' in new text, no compliance claims. Register: du, as in the file; 'informasjonskapsler' for cookies as in the existing faq.",
+        "backTranslation": "stats.footer: 'This website counts page views anonymously. No cookies. Nothing that identifies you.'",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Device",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'reservasjonsflagg' (reservation flag) is understandable from 'reservere seg' but slightly technical; a plainer wording reads better. Meaning is correct.",
+        "backTranslation": "an opt-out flag in the browser's local storage, if you choose not to be counted",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "This is how Doughnut Forge handles your data. The app keeps your files and keys on your device and collects nothing. This website stores only anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2319,13 +2515,48 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; dash after 'offline' matches the title's existing style.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, servers or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings: back-translated, facts match English (anonymous, daily totals, country never city / two-letter code, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). Markers, <strong>, digits, product names, quoted button = stats.optout.off, [[stats]] link text = stats.title, links.stats/cf/repo all correct. sec2Desc changed only in its first words; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest byte-identical. Terms consistent with the existing ui and policy (website word, cookies word, store, tap, legitimate interest as in sec5Desc). No 'we' in new text, no compliance claims. Register: capitalised Ty/Twój, as in the file.",
+        "backTranslation": "stats.footer: 'This website counts page views anonymously. Without cookies. Nothing that identifies you.'",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Choice (b), witryna vs strona: agreed with the drafter. In the old policy 'strona' means 'this page' (sec4Desc, the removed sec5Desc sentence, matching English 'this page'), not the website. The new text needs to tell the website (witryna) apart from its pages (strony), so 'witryna' is the clearer term and matches the ui file (meta descriptions already use witryna). No change needed.",
+        "backTranslation": "6. This website",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.others",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'każda' is feminine and fits pages (strony) and sites (witryny) but not languages (języki) or countries (kraje), since the same label is used in every table. A gender-neutral form would read better everywhere.",
+        "backTranslation": "Others, each (fem.) below 5",
+        "suggestion": "Pozostałe, każda pozycja poniżej 5"
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge handles your data. The app keeps your files and keys on your device and collects nothing. This site stores only anonymous daily totals of page views.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.others",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct.",
+        "backTranslation": "Others, each item below 5",
+        "suggestion": ""
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2568,13 +2799,62 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; formal vy kept.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, servers or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings: back-translated, facts match English (anonymous, daily totals, country never city / two-letter code, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). Markers, <strong>, digits, product names, quoted button = stats.optout.off, [[stats]] link text = stats.title, links.stats/cf/repo all correct. sec2Desc changed only in its first words; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest byte-identical. Terms consistent with the existing ui and policy (website word, cookies word, store, tap, legitimate interest as in sec5Desc). No 'we' in new text, no compliance claims. Register: vy, as in the file.",
+        "backTranslation": "stats.footer: 'This website anonymously counts page views. No cookies. Nothing that would identify you.'",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Device",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'příznak odhlášení' can also read as 'logout flag'. Meaning is clear from the sentence, but a plainer wording avoids it.",
+        "backTranslation": "an opt-out (sign-off) flag in the browser's local storage, if you decide not to be counted",
+        "suggestion": "Jediné, co tam tento web ukládá, je příznak, že nechcete být započítáváni, v místním úložišti prohlížeče, pokud se tak rozhodnete, a jedno číslo sestavení v úložišti relace prohlížeče, aby otevřená karta poznala, že byl web aktualizován."
+      },
+      {
+        "key": "stats.others",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'každá' is feminine; fits stránky but not jazyky or weby, as the label is shared by all tables.",
+        "backTranslation": "Others, each (fem.) with fewer than 5",
+        "suggestion": "Ostatní, každá položka s méně než 5"
+      },
+      {
+        "key": "faq.data.a",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'pokud ji uděláte' (if you make it) is slightly unidiomatic for a choice; 'pokud se tak rozhodnete' is more natural. Same phrase in stats.intro.",
+        "backTranslation": "...is your choice that your visits are not counted, if you make it, and one build number...",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge handles your data. The app keeps your files and keys in your device and collects nothing. This website keeps only anonymous daily totals of page views.",
+        "suggestion": ""
+      },
+      {
+        "key": "policy sec6Device",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct: flag stored only if the visitor so decides; build number in session storage.",
+        "backTranslation": "The counter stores nothing on your device. The only thing this website stores there is a flag that you do not want to be counted, in the browser's local storage, if you so decide, and one build number in the browser's session storage, so an open tab recognises that the website was updated.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.others",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct.",
+        "backTranslation": "Others, each item with fewer than 5",
+        "suggestion": ""
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2813,13 +3093,62 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; informal te kept as in the file.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. Without account, server and subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings: back-translated, facts match English (anonymous, daily totals, country never city / two-letter code, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). Markers, <strong>, digits, product names, quoted button = stats.optout.off, [[stats]] link text = stats.title, links.stats/cf/repo all correct. sec2Desc changed only in its first words; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest byte-identical. Terms consistent with the existing ui and policy (website word, cookies word, store, tap, legitimate interest as in sec5Desc). No 'we' in new text, no compliance claims. Register: ui uses te, policy uses Ön, each consistent with its file.",
+        "backTranslation": "stats.footer: 'This website counts page views anonymously. There are no cookies. Nothing that would identify you.'",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Device",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Was blocking at first review; fixed with the suggestion and passed the independent re-check. 'ha Ön nem kéri, hogy a látogatásait számolják' means 'if you do not ask for your visits to be counted', which implies counting is opt-in (off unless requested). English: the flag is stored only if the visitor chooses not to be counted. Also 'kimaradási jelző' (omission/outage flag) is an odd term for an opt-out flag.",
+        "backTranslation": "The counter stores nothing on your device. This website stores only these there: an omission flag in the browser's local storage, if you do not ask that your visits be counted, and a build number in the browser's session storage...",
+        "suggestion": "A számláló semmit nem tárol az Ön eszközén. Ez a weboldal csak ezeket tárolja ott: egy jelzőt a böngésző helyi tárhelyén arról, hogy Ön nem kéri a számlálást, ha így dönt, és egy buildszámot a böngésző munkamenet-tárhelyén, hogy egy nyitott lap észrevegye, ha a weboldal frissült."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Choice (a): agreed. The quoted text is the exact on-screen button label, and it is the visitor speaking to the site ('do not count my visits'), not the policy addressing the reader, so the te-form inside quotes does not break the Ön register. Quoting anything else would not match what the visitor sees.",
+        "backTranslation": "If you do not want your visits counted, use the 'Do not count my visits' button on the Page views on this website page, turn on Do Not Track or Global Privacy Control, or turn off JavaScript. Content blockers may also prevent the count.",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Hosting",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'A GitHub látogatásakor' can be read as 'on GitHub's visit'; the phrase is inherited from the old sec5Desc. 'az Ön látogatásakor' removes the ambiguity.",
+        "backTranslation": "This website runs on GitHub Pages. GitHub may log technical data, such as your IP address, on [your/its] visit for security and operational purposes; see GitHub's Privacy Statement.",
+        "suggestion": "Ez a weboldal a GitHub Pages szolgáltatáson fut. A GitHub az Ön látogatásakor biztonsági és üzemeltetési célból technikai adatokat, például az Ön IP-címét naplózhatja; lásd a [[ghp]]GitHub adatvédelmi nyilatkozatát[[/ghp]]."
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. First sentence restructured with a colon; 'your files and keys stay on your device' instead of 'the app keeps'. Same facts. Informal register matches the rest of the UI file.",
+        "backTranslation": "How Doughnut Forge handles your data: your files and keys stay on your device, and the app collects nothing. This website stores only anonymous daily totals of page views.",
+        "suggestion": ""
+      },
+      {
+        "key": "policy sec6Device",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Reversal is fixed: the flag records that the visitor does not want counting and is stored only 'ha így dönt' (if you decide so). Matches English. Formal Ön register, as in the rest of the policy.",
+        "backTranslation": "The counter stores nothing on your device. This website stores only these there: a flag in the browser's local storage saying that you do not want counting, if you so decide, and a build number in the browser's session storage, so an open tab notices if the website has been updated.",
+        "suggestion": ""
+      },
+      {
+        "key": "policy sec6Hosting",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct; [[ghp]] markers intact. 'fut' (runs on) for 'is hosted on' is acceptable.",
+        "backTranslation": "This website runs on the GitHub Pages service. During your visit, GitHub may log technical data, such as your IP address, for security and operating purposes; see GitHub's privacy statement.",
+        "suggestion": ""
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3084,13 +3413,55 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Merged list 'Fără cont, servere sau abonament' still means exactly 'no account, no servers, no subscription'. Fine.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, servers or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 UI strings and 14 policy parts plus links. Mechanics pass (script check): markers [[cf]]/[[stats]]/[[repo]]/[[ghp]] match English in count and order, <strong> kept, all names and digits kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text equals stats.title in sec6OptOut and sec6Public, links.stats correct. sec2Desc changed only 'Doughnut Forge' to 'the Doughnut Forge app'; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest untouched. All privacy facts present (never/only/anonymous/two-letter code never a city/domain only/never stored together/13 months/legitimate interest/Western Europe/two device-storage exceptions). No 'we' in new text, no legal-compliance claims. Register matches each file. UI file uses informal 'tu' (as the old faq.data.a did); policy uses formal 'dvs.'; both consistent.",
+        "backTranslation": "stats.footer: 'This site counts page views anonymously. No cookies. Nothing that identifies you.'",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Device",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'build number' rendered as 'număr de versiune' (version number), also in faq.data.a and stats.intro. Elsewhere in ro.ts 'versiune' means the app version (0.4.41), so a reader could briefly think of the app; the 'so an open tab can tell when the site has been updated' clause makes it clear it is the site's. Same fact (one number, session storage), plainer than 'număr de build'. Acceptable.",
+        "backTranslation": "... and a version number in the browser's session storage, so an open tab can find out when the site was updated.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.optout.off",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'Nu îmi număra vizitele' is correct standard Romanian and fine as a button; 'Nu-mi număra vizitele' is more colloquial but not needed.",
+        "backTranslation": "Do not count my visits",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.optout.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Masculine generic 'numărat' (also in faq.data.a, stats.intro, policy sec6OptOut/sec6Device). Normal Romanian usage; style only.",
+        "backTranslation": "How you avoid being counted",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:hero",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'arhitectură locală' for 'local-first' carried over from the previous approved text; slightly weaker than local-first but unchanged wording, not a new issue.",
+        "backTranslation": "The Doughnut Forge app is based on a local zero-knowledge architecture.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge treats your data. The app keeps your files and keys on the device and collects nothing. This site keeps only anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3340,13 +3711,41 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; matches home.tagline phrasing.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, servers or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 UI strings and 14 policy parts plus links. Mechanics pass (script check): markers [[cf]]/[[stats]]/[[repo]]/[[ghp]] match English in count and order, <strong> kept, all names and digits kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text equals stats.title in sec6OptOut and sec6Public, links.stats correct. sec2Desc changed only 'Doughnut Forge' to 'the Doughnut Forge app'; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest untouched. All privacy facts present (never/only/anonymous/two-letter code never a city/domain only/never stored together/13 months/legitimate interest/Western Europe/two device-storage exceptions). No 'we' in new text, no legal-compliance claims. Register matches each file.",
+        "backTranslation": "stats.footer: 'This site counts page views anonymously. Without cookies. Nothing that allows your identity to be established.'",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.data.a",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'ваш отказ от подсчёта, если вы его выберете' (your opt-out, if you choose it) and 'один номер сборки' match English exactly. Natural.",
+        "backTranslation": "The only things this site stores on your device are your refusal of counting, if you choose it, and one build number, so an open tab can learn that the site was updated.",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:sec2Desc",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Old translation never had 'built-in' (встроенных); unchanged pre-existing wording, so left as is.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge treats your data. The app stores your files and keys on your device and collects nothing. This site stores only anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3592,13 +3991,41 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 172 chars; 'για όσους επιλέξετε' is already short. Fine.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whoever you choose. No account, servers or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 UI strings and 14 policy parts plus links. Mechanics pass (script check): markers [[cf]]/[[stats]]/[[repo]]/[[ghp]] match English in count and order, <strong> kept, all names and digits kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text equals stats.title in sec6OptOut and sec6Public, links.stats correct. sec2Desc changed only 'Doughnut Forge' to 'the Doughnut Forge app'; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest untouched. All privacy facts present (never/only/anonymous/two-letter code never a city/domain only/never stored together/13 months/legitimate interest/Western Europe/two device-storage exceptions). No 'we' in new text, no legal-compliance claims. Register matches each file.",
+        "backTranslation": "stats.footer: 'This website counts page views anonymously. Without cookies. Nothing that identifies you.'",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Device",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'build number' rendered as 'αριθμός έκδοσης' (version number), also in faq.data.a and stats.intro. 'έκδοση' is also used for app versions elsewhere in el.ts, but the clause about the site being updated makes the meaning clear. Same fact. Acceptable.",
+        "backTranslation": "... and a version number in the session storage of your browser, so an open tab can understand when the site was updated.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.table.stores",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'Πατήματα σε καταστήματα' (taps on stores) is slightly loose versus 'Store taps' (taps on store buttons); clear enough in context.",
+        "backTranslation": "Taps on stores",
+        "suggestion": "Πατήματα σε κουμπιά καταστημάτων"
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. 'Your files and keys stay on your device' instead of 'the app keeps'. Same facts.",
+        "backTranslation": "How Doughnut Forge handles your data. Your files and keys stay on your device, and the app collects nothing. This website keeps only anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3835,13 +4262,48 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for those you choose. No account, servers or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 UI strings and 14 policy parts plus links. Mechanics pass (script check): markers [[cf]]/[[stats]]/[[repo]]/[[ghp]] match English in count and order, <strong> kept, all names and digits kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text equals stats.title in sec6OptOut and sec6Public, links.stats correct. sec2Desc changed only 'Doughnut Forge' to 'the Doughnut Forge app'; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest untouched. All privacy facts present (never/only/anonymous/two-letter code never a city/domain only/never stored together/13 months/legitimate interest/Western Europe/two device-storage exceptions). No 'we' in new text, no legal-compliance claims. Register matches each file.",
+        "backTranslation": "stats.footer: 'This site anonymously counts page views. Without cookie files. Nothing that makes it possible to establish your identity.'",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.never.text",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Apostrophe style: the new UI strings use ASCII ' (пов'язує in stats.never.text, запам'ятати in stats.optout.unavailable), while the rest of uk.ts uses ’ (18 occurrences, e.g. п’ю, м’я). The uk policy file uses ' throughout (зв'язку, пов'язує), so the policy is consistent with itself. Style only, but make uk.ts consistent.",
+        "backTranslation": "",
+        "suggestion": "Use ’ in the two UI strings: пов’язує, запам’ятати"
+      },
+      {
+        "key": "faq.data.a",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'стеження' kept from the previous approved answer; 'один номер збірки' matches English.",
+        "backTranslation": "The app collects nothing: it has no tracking, analytics or crash reports...",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge treats your data. The app stores your files and keys on your device and collects nothing. This site stores only anonymous daily totals of page views.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.never.text, stats.optout.unavailable",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Both apostrophes are now ’ (пов’язує, запам’ятати); no straight apostrophes left in stats.*. The new policy string sec6Never still uses a straight ' (пов'язує), as do the older policy sections, so the policy file is consistent within itself.",
+        "backTranslation": "",
+        "suggestion": "Optional: use ’ in privacy/uk.json sec6Never if the policy file is ever normalised."
       }
     ]
   },
   "en-US": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-10-23",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3864,13 +4326,20 @@
         "severity": "note",
         "issue": "US spelling of the UK string (behavior); no other difference.",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): en-US inherits every new UI string from UK English (no US spelling differences), and its privacy policy file is an exact copy of en.json, as it was before.",
+        "backTranslation": "",
+        "suggestion": ""
       }
     ]
   },
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4052,13 +4521,27 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Same as es; fine for Mexico.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for whoever you choose. No account, no servers, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation against the English brief; mechanics checked by script: markers [[cf]]/[[stats]]/[[repo]]/[[ghp]]/[[ico]] and <strong> match English in count and order, digits (7, 30, 5, 13, 2026, 3, 6) match, names kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text in sec6OptOut and sec6Public equals stats.title, links.stats/cf/repo correct. sec2Desc changed only in its subject (\"the app\"); rest identical to HEAD. sec5Desc is an exact prefix of the old text with only the GitHub Pages hosting and Do Not Track sentences dropped. All key facts present (never, only, anonymous, two-letter code never a city, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). No \"we\" in new text; inherited \"we\" in sec2Desc/sec5Desc is unchanged legal wording. Register matches the file. No blocking findings. Register: tú in ui, usted in policy, matching existing files. Mexican variants used where they differ (agregue, se actualizó, quotation marks “ ”).",
+        "backTranslation": "stats.footer: \"This site counts page views anonymously. No cookies. Nothing that identifies you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge treats your data. The app keeps your files and keys on your device and collects nothing. This website only keeps anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -4287,13 +4770,41 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Merged list 'Sem conta, servidores ou assinatura' is exact; 'para quem você escolher' exact.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for whoever you choose. No account, servers or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation against the English brief; mechanics checked by script: markers [[cf]]/[[stats]]/[[repo]]/[[ghp]]/[[ico]] and <strong> match English in count and order, digits (7, 30, 5, 13, 2026, 3, 6) match, names kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text in sec6OptOut and sec6Public equals stats.title, links.stats/cf/repo correct. sec2Desc changed only in its subject (\"the app\"); rest identical to HEAD. sec5Desc is an exact prefix of the old text with only the GitHub Pages hosting and Do Not Track sentences dropped. All key facts present (never, only, anonymous, two-letter code never a city, domain only, never stored together, 13 months, legitimate interest, Western Europe, the two device-storage exceptions). No \"we\" in new text; inherited \"we\" in sec2Desc/sec5Desc is unchanged legal wording. Register matches the file. No blocking findings. Register: você throughout.",
+        "backTranslation": "stats.footer: \"This site counts page views anonymously. No cookies. Nothing that identifies you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.intro",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: \"A contagem não usa cookies\" (and sec6Never \"Ele não usa cookies\", faq.data.a) says \"does not use cookies\" for \"sets no cookies\". Slightly broader, but still true (the counter neither sets nor reads cookies). Not blocking; \"não define cookies\" would be closer.",
+        "backTranslation": "The count does not use cookies and saves nothing on your device.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge treats your data. The app keeps your files and keys on your device and collects nothing. This site keeps only anonymous daily totals of page views.",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.data.a / stats.intro / policy sec6Never",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: 'não define cookies' (sets no cookies) is right in all three. Unchanged wording 'número de versão do site' for 'build number' reads as 'site version number'; it is used consistently and is not misleading.",
+        "backTranslation": "The count sets no cookies ... / It never keeps IP addresses ... It sets no cookies.",
+        "suggestion": ""
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4530,13 +5041,55 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; formal siz kept.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and texts for the people you choose. No account, server or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 UI strings and 14 policy parts plus links. Mechanics pass (script check): markers [[cf]]/[[stats]]/[[repo]]/[[ghp]] match English in count and order, <strong> kept, all names and digits kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text equals stats.title in sec6OptOut and sec6Public, links.stats correct. sec2Desc changed only 'Doughnut Forge' to 'the Doughnut Forge app'; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest untouched. All privacy facts present (never/only/anonymous/two-letter code never a city/domain only/never stored together/13 months/legitimate interest/Western Europe/two device-storage exceptions). No 'we' in new text, no legal-compliance claims. Register matches each file.",
+        "backTranslation": "stats.footer: 'This site counts page views anonymously. No cookies. Nothing that identifies you.'",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Device",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'build number' rendered as 'sürüm numarası' (version number), also in faq.data.a and stats.intro. 'sürüm' also means the app version elsewhere in tr.ts, but the update-detection clause makes it clear. Same fact. Acceptable.",
+        "backTranslation": "... and a version number in your browser's session storage so an open tab can understand when the site was updated.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.optout.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'Sayılmamak için' means 'In order not to be counted' - the 'how' is implied. Works as a heading but 'Nasıl sayılmazsınız' or 'Sayılmamak için ne yapabilirsiniz' is closer.",
+        "backTranslation": "In order not to be counted",
+        "suggestion": "Sayılmamak için ne yapabilirsiniz"
+      },
+      {
+        "key": "stats.intro",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Last sentence 'Doughnut Forge uygulaması hiçbir şey saymaz' drops the 'at all' emphasis; meaning is the same.",
+        "backTranslation": "The Doughnut Forge app counts nothing.",
+        "suggestion": "Doughnut Forge uygulaması hiçbir şeyi saymaz, hiç."
+      },
+      {
+        "key": "policy:hero",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Exception clause ('except information you choose to send directly') sits before the collect/transmit/store verbs, so it attaches to those rather than to developer access. English is itself ambiguous on this; no fact changed.",
+        "backTranslation": "Apart from information you choose to send directly, it does not collect, transmit or store any of your data, and the developer has no access to them.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Colon joins the first two sentences. Same facts.",
+        "backTranslation": "How Doughnut Forge handles your data: the app keeps your files and keys on your device and collects nothing. This website stores only anonymous daily page-view totals.",
+        "suggestion": ""
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -4752,13 +5305,27 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; desu/masu register and 'サブスクなし' carried over from the previous string.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. You can encrypt files and text for the people you chose. No account, no server, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation; markers [[cf]]/[[stats]]x2/[[repo]]/[[ghp]] match English in count and order; <strong> kept; digits (5, 7, 30, 13) kept; names kept; sec6OptOut button name equals stats.optout.off; [[stats]] link text equals stats.title; links.stats correct; sec2Desc changes only the subject (adds \"app\"); sec5Desc is the old text with exactly the GitHub Pages hosting and Do Not Track sentences removed; no other policy strings changed. No first-person plural in the new text (only in unchanged sec2Desc/sec5Desc sentences). stats.how.text says the counter runs on Cloudflare (カウンターはCloudflareで動作しています), as the drafter asked. Terms consistent with existing ja copy (Cookie, IPアドレス, お客様 in policy, デバイス in ui / 端末 in policy as before).",
+        "backTranslation": "stats.footer: \"This site counts page views anonymously. It does not use cookies. There is nothing that identifies an individual.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "Doughnut Forge's handling of data. The app keeps files and keys on the device and collects nothing. All this website keeps is anonymous per-day page view totals.",
+        "suggestion": ""
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4981,13 +5548,27 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; 您 kept.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account needed, no servers, no subscription needed.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation; markers [[cf]]/[[stats]]x2/[[repo]]/[[ghp]] match English in count and order; <strong> kept; digits (5, 7, 30, 13) kept; names kept; sec6OptOut button name equals stats.optout.off; [[stats]] link text equals stats.title; links.stats correct; sec2Desc changes only the subject (adds \"app\"); sec5Desc is the old text with exactly the GitHub Pages hosting and Do Not Track sentences removed; no other policy strings changed. No first-person plural in the new text (only in unchanged sec2Desc/sec5Desc sentences). Simplified script throughout. stats.how.text: 计数器运行在 Cloudflare 上 = \"the counter runs on Cloudflare\", as asked. Terms consistent with existing copy (应用, 托管, 隐私政策, Cookie).",
+        "backTranslation": "stats.footer: \"This website counts page views anonymously. No cookies are used. Contains no information that can identify you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. '不收集任何内容' (collects no content) is the usual rendering of 'collects nothing'.",
+        "backTranslation": "How Doughnut Forge handles your data. The app saves your files and keys on your device and collects no content. This website keeps only anonymous daily page-view totals.",
+        "suggestion": ""
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5237,13 +5818,27 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; 您 kept.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account needed, no servers, no subscription needed.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation; markers [[cf]]/[[stats]]x2/[[repo]]/[[ghp]] match English in count and order; <strong> kept; digits (5, 7, 30, 13) kept; names kept; sec6OptOut button name equals stats.optout.off; [[stats]] link text equals stats.title; links.stats correct; sec2Desc changes only the subject (adds \"app\"); sec5Desc is the old text with exactly the GitHub Pages hosting and Do Not Track sentences removed; no other policy strings changed. No first-person plural in the new text (only in unchanged sec2Desc/sec5Desc sentences). Traditional script with Taiwan usage (網頁瀏覽次數, 造訪, 位址, 網域, 原始碼, 儲存庫, 工作階段儲存空間). stats.how.text: 計數器在 Cloudflare 上執行 = \"the counter runs on Cloudflare\", as asked. ui uses \"App\" and \"代管\" as the existing ui file does; policy uses \"應用程式\" and \"託管\" as the existing policy does, so each file is internally consistent.",
+        "backTranslation": "stats.footer: \"This website counts page views anonymously. No cookies are used. There is no information that can identify you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. '不收集任何內容' is the usual rendering of 'collects nothing'.",
+        "backTranslation": "How Doughnut Forge handles your data. The app saves your files and keys on your device and collects no content. This website keeps only anonymous daily page-view totals.",
+        "suggestion": ""
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5480,13 +6075,69 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; '내가 선택한' matches home.tagline.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people I choose. No account, no server, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation; markers [[cf]]/[[stats]]x2/[[repo]]/[[ghp]] match English in count and order; <strong> kept; digits (5, 7, 30, 13) kept; names kept; sec6OptOut button name equals stats.optout.off; [[stats]] link text equals stats.title; links.stats correct; sec2Desc changes only the subject (adds \"app\"); sec5Desc is the old text with exactly the GitHub Pages hosting and Do Not Track sentences removed; no other policy strings changed. No first-person plural in the new text (only in unchanged sec2Desc/sec5Desc sentences). Formal -습니다 register consistent with the file. stats.how.text: 카운터는 Cloudflare에서 실행됩니다 = \"the counter runs on Cloudflare\", as asked.",
+        "backTranslation": "stats.footer: \"This site counts page views anonymously. There are no cookies. There is also no information that identifies the user.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.how.text",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: \"never reads or keeps\" is rendered without 절대 (\"does not read or keep\"). Korean 않습니다 is still categorical, so not a softened claim, but faq.data.a uses 절대 for the same IP-address fact; adding it would match the English and the FAQ.",
+        "backTranslation": "The counter does not read or keep the IP address.",
+        "suggestion": "카운터는 IP 주소를 절대 읽거나 보관하지 않습니다."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Same as stats.how.text: \"never reads or stores it\" rendered as \"does not read or store it\" (no 절대).",
+        "backTranslation": "...but the counter does not read or store it.",
+        "suggestion": "Replace \"카운터는 이를 읽거나 저장하지 않습니다\" with \"카운터는 이를 절대 읽거나 저장하지 않습니다\""
+      },
+      {
+        "key": "stats.never.text",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: \"이전 페이지의 전체 주소\" means \"the full address of the previous page\", which could be read as the previous page on this site. The English means the page the visitor came from.",
+        "backTranslation": "..., the full address of the previous page, ...",
+        "suggestion": "Replace \"이전 페이지의 전체 주소\" with \"방문자가 온 페이지의 전체 주소\""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. '내 기기' (my device) matches the file's usual wording.",
+        "backTranslation": "How Doughnut Forge handles data. The app keeps files and keys on my device and collects nothing. This website keeps only anonymous daily page-view totals.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.how.text",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Fix is right: 절대 = never.",
+        "backTranslation": "The counter runs on Cloudflare. Like any network, Cloudflare sees the IP address to deliver the count, and checks the country from it. The counter never reads or keeps the IP address. Daily totals are deleted after 13 months.",
+        "suggestion": ""
+      },
+      {
+        "key": "policy sec6Processor",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Fix is right; [[cf]] markers intact.",
+        "backTranslation": "The counter runs on Cloudflare (Workers and D1, database stored in Western Europe). Cloudflare's network sees the user's IP address to deliver the request and check the country, but the counter never reads or stores it. Cloudflare also adds its own network error reporting to responses. See Cloudflare Privacy Policy.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.never.text",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Fix is right: full address of the page the visitor came from.",
+        "backTranslation": "IP address, cookies or anything else stored on the device, browser or device, the full address of the page the visitor came from, search terms, time of visit, or anything that links one visit to another.",
+        "suggestion": ""
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5696,13 +6347,48 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. 176 chars; merged list is exact in meaning. Optional shorter: 'चुने हुए लोगों के लिए' (drop 'अपने'), not needed.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for people you have chosen. No account, server or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.how.text",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Was blocking at first review; fixed with the suggestion and passed the independent re-check. 'काउंटर Cloudflare चलाता है।' with two bare nouns reads by default as 'The counter runs Cloudflare' (subject first), reversing who runs what. The policy says correctly 'काउंटर Cloudflare पर चलता है'. A processor fact, so fix it.",
+        "backTranslation": "The counter runs Cloudflare. Like any network, Cloudflare sees your IP address to deliver the count...",
+        "suggestion": "काउंटर को Cloudflare चलाता है। किसी भी नेटवर्क की तरह, Cloudflare गिनती पहुँचाने के लिए आपका IP पता देखता है, और उससे देश का पता लगाता है। काउंटर आपका IP पता कभी नहीं पढ़ता या रखता। दैनिक योग 13 महीने बाद हटा दिए जाते हैं।"
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 UI strings and 14 policy parts plus links. Mechanics pass (script check): markers [[cf]]/[[stats]]/[[repo]]/[[ghp]] match English in count and order, <strong> kept, all names and digits kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text equals stats.title in sec6OptOut and sec6Public, links.stats correct. sec2Desc changed only 'Doughnut Forge' to 'the Doughnut Forge app'; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest untouched. All privacy facts present (never/only/anonymous/two-letter code never a city/domain only/never stored together/13 months/legitimate interest/Western Europe/two device-storage exceptions). No 'we' in new text, no legal-compliance claims. Register matches each file. UI file uses 'पेज', policy uses 'पृष्ठ' - each consistent with its own file.",
+        "backTranslation": "stats.footer: 'This site counts page views anonymously. No cookie. Nothing from which you are identified.'",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.data.a",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Says 'केवल दो चीज़ें' (only two things) - matches English, which lists exactly two. Uses 'इकट्ठा' for collect while the policy hero uses 'एकत्र'; both fine.",
+        "backTranslation": "The app collects nothing... This website stores only two things on your device: your choice not to be counted, if you choose it, and a build number, so an open tab can know when the site was updated.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge handles your data. The app keeps your files and keys on your device and does not collect anything. This website keeps only anonymous daily totals of page views.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.how.text",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Fix is right: Cloudflare runs the counter. Rest unchanged and correct.",
+        "backTranslation": "Cloudflare runs the counter. Like any network, Cloudflare sees your IP address to deliver the count, and finds the country from it. The counter never reads or keeps your IP address. Daily totals are deleted after 13 months.",
+        "suggestion": ""
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5931,13 +6617,41 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; Anda kept.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no server, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 UI strings and 14 policy parts plus links. Mechanics pass (script check): markers [[cf]]/[[stats]]/[[repo]]/[[ghp]] match English in count and order, <strong> kept, all names and digits kept, sec6OptOut button text equals stats.optout.off, [[stats]] link text equals stats.title in sec6OptOut and sec6Public, links.stats correct. sec2Desc changed only 'Doughnut Forge' to 'the Doughnut Forge app'; sec5Desc dropped exactly the GitHub Pages and Do Not Track sentences, rest untouched. All privacy facts present (never/only/anonymous/two-letter code never a city/domain only/never stored together/13 months/legitimate interest/Western Europe/two device-storage exceptions). No 'we' in new text, no legal-compliance claims. Register matches each file.",
+        "backTranslation": "stats.footer: 'This site counts page views anonymously. Without cookies. Without anything that identifies you.'",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.data.a",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: 'satu nomor build' keeps 'build' as a loanword, consistent with stats.intro and policy sec6Device. Natural.",
+        "backTranslation": "...the only thing this website stores on your device is your choice not to be counted, if you make it, and one build number...",
+        "suggestion": ""
+      },
+      {
+        "key": "policy:sec2Desc",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Old translation never had 'built-in' (bawaan); unchanged pre-existing wording.",
+        "backTranslation": "",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge handles your data. The app stores your files and keys on your device and does not collect anything. This website only stores anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6174,13 +6888,27 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact; matches previous list form.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, server or subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation; markers [[cf]]/[[stats]]x2/[[repo]]/[[ghp]] match English in count and order; <strong> kept; digits (5, 7, 30, 13) kept; names kept; sec6OptOut button name equals stats.optout.off; [[stats]] link text equals stats.title; links.stats correct; sec2Desc changes only the subject (adds \"app\"); sec5Desc is the old text with exactly the GitHub Pages hosting and Do Not Track sentences removed; no other policy strings changed. No first-person plural in the new text (only in unchanged sec2Desc/sec5Desc sentences). Register consistent with the file (anda). stats.how.text says \"Pembilang dijalankan oleh Cloudflare\" (\"the counter is run by Cloudflare\"), which matches the English source exactly; not part of the drafter's list and fine as is. \"mengehoskan\" in faq.data.a is carried over from the existing FAQ text.",
+        "backTranslation": "stats.footer: \"This site counts page views anonymously. No cookies. Nothing that identifies you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge handles your data. The app stores your files and keys on your device and does not collect anything. This website only stores anonymous daily totals of page views.",
+        "suggestion": ""
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6395,13 +7123,34 @@
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no server, no subscription.",
         "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation; markers [[cf]]/[[stats]]x2/[[repo]]/[[ghp]] match English in count and order; <strong> kept; digits (5, 7, 30, 13) kept; names kept; sec6OptOut button name equals stats.optout.off; [[stats]] link text equals stats.title; links.stats correct; sec2Desc changes only the subject (adds \"app\"); sec5Desc is the old text with exactly the GitHub Pages hosting and Do Not Track sentences removed; no other policy strings changed. No first-person plural in the new text (only in unchanged sec2Desc/sec5Desc sentences). Polite neutral register consistent with the file. stats.how.text: \"ตัวนับทำงานบน Cloudflare\" = \"the counter works on Cloudflare\", as asked.",
+        "backTranslation": "stats.footer: \"This website counts page views anonymously. No cookies. Nothing that identifies you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.data.a",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: \"never\" is rendered with ไม่เคย (literally \"has never\") here and in stats.never.*, sec6Counts, sec6Never, sec6Processor. Usual and acceptable in Thai for \"never\"; no change needed.",
+        "backTranslation": "The count does not set cookies and has never kept your IP address.",
+        "suggestion": ""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge handles your data. The app keeps your files and keys on your device and does not collect anything. This website keeps only daily totals of page views, anonymously.",
+        "suggestion": ""
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6621,6 +7370,62 @@
         "severity": "note",
         "issue": "Home title, summary and meta description (10 November 2026): Checked: starts with 'Doughnut Forge:' and the same encryption term as the title; meaning exact, nothing added; register kept; no we/verified/audited/tamper wording; check-translations shows only the 3 expected stale keys. Exact.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no server, no subscription.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.title",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Checked all 50 ui strings and 14 policy strings by back-translation; markers [[cf]]/[[stats]]x2/[[repo]]/[[ghp]] match English in count and order; <strong> kept; digits (5, 7, 30, 13) kept; names kept; sec6OptOut button name equals stats.optout.off; [[stats]] link text equals stats.title; links.stats correct; sec2Desc changes only the subject (adds \"app\"); sec5Desc is the old text with exactly the GitHub Pages hosting and Do Not Track sentences removed; no other policy strings changed. No first-person plural in the new text (only in unchanged sec2Desc/sec5Desc sentences). stats.how.text: \"Bộ đếm chạy trên Cloudflare\" = \"the counter runs on Cloudflare\", as asked. Hero first sentence (\"kiến trúc cục bộ không tiết lộ thông tin\") is unchanged from the old reviewed text, so not re-flagged.",
+        "backTranslation": "stats.footer: \"This website counts page views anonymously. No cookies. Nothing that identifies you.\"",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.intro",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Was blocking at first review; fixed with the suggestion and passed the independent re-check. \"một số bản dựng\" reads naturally as \"some builds\" (\"một số\" = \"some/several\"), not \"one build number\". This changes the claim about what the site stores on the device.",
+        "backTranslation": "...and some builds, so an open tab can know when the website has been updated.",
+        "suggestion": "Replace \"và một số bản dựng,\" with \"và một mã số bản dựng,\""
+      },
+      {
+        "key": "faq.data.a",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Was blocking at first review; fixed with the suggestion and passed the independent re-check. Same \"một số bản dựng\" (\"some builds\") problem as stats.intro.",
+        "backTranslation": "...and some builds, so an open tab can know...",
+        "suggestion": "Replace \"và một số bản dựng,\" with \"và một mã số bản dựng,\""
+      },
+      {
+        "key": "policy:sec6Device",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): first review: Was blocking at first review; fixed with the suggestion and passed the independent re-check. Same \"một số bản dựng\" (\"some builds\") problem in the privacy policy: the policy must say exactly one build number is stored in session storage.",
+        "backTranslation": "...and some builds in the browser session storage...",
+        "suggestion": "Replace \"và một số bản dựng trong bộ nhớ phiên\" with \"và một mã số bản dựng trong bộ nhớ phiên\""
+      },
+      {
+        "key": "meta.privacy.description",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
+        "backTranslation": "How Doughnut Forge handles your data. The app keeps files and keys on your device and collects nothing. This website only stores anonymous total page views by day.",
+        "suggestion": ""
+      },
+      {
+        "key": "stats.intro",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Fix is right: 'một mã số bản dựng' = one build number. No new problem.",
+        "backTranslation": "... are the choice not to be counted, if you choose so, and one build number, so an open tab can know when the website has been updated ...",
+        "suggestion": ""
+      },
+      {
+        "key": "faq.data.a",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Fix is right; same wording as stats.intro. No new problem.",
+        "backTranslation": "... the only things this website stores on your device are the choice not to be counted, if you choose so, and one build number ...",
+        "suggestion": ""
+      },
+      {
+        "key": "policy sec6Device",
+        "severity": "note",
+        "issue": "Page counter (13 November 2026): re-check: Fix is right. Opt-out flag in local storage only if the visitor chooses, build number in session storage. Matches English.",
+        "backTranslation": "The counter stores nothing on your device. The only things this website stores there are an opt-out flag in the browser's local storage, if you choose not to be counted, and one build number in the browser's session storage, so an open tab can know when the website has been updated.",
         "suggestion": ""
       }
     ]

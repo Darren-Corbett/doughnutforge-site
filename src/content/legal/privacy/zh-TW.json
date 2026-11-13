@@ -1,25 +1,36 @@
 {
-  "_source": "forge-privacy@3e7911c index.html",
   "links": {
     "gh": "https://github.com/Darren-Corbett/forge-privacy/issues",
     "tally": "https://tally.so/r/yPWQO4",
     "ico": "https://ico.org.uk/make-a-complaint/",
-    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    "ghp": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "stats": "/zh-tw/stats/",
+    "cf": "https://www.cloudflare.com/privacypolicy/",
+    "repo": "https://github.com/Darren-Corbett/doughnutforge-site/tree/main/analytics-worker"
   },
   "strings": {
     "title": "隱私權政策",
-    "effectiveDate": "生效日期：2026年10月",
-    "hero": "<strong>Doughnut Forge 採用零知識、本機優先的架構。</strong>這表示，除了您直接傳送給我們的資訊之外，我們不會收集、傳輸、儲存或存取您的資料（見第 3 節）。",
+    "effectiveDate": "生效日期：2026年11月",
+    "hero": "<strong>Doughnut Forge 應用程式採用零知識、本機優先的架構。</strong>應用程式不會收集任何內容：它不會收集、傳輸或儲存您的任何資料，開發者也無法存取這些資料，但您選擇直接傳送的資訊除外（見第 3 節）。本網站另於第 6 節說明。",
     "sec1Title": "1. 資料儲存與刪除",
     "sec1Desc": "Doughnut Forge 產生的所有加密金鑰、<code class=\"k1\">.vltc2</code> 身分檔和 <code class=\"k2\">.vlt2</code> 檔案僅儲存在您的本機裝置上。除非您自行匯出並分享檔案，否則任何資訊都不會離開您的裝置。解除安裝應用程式會移除軟體本身，但不會刪除您儲存在裝置其他位置的檔案，也不會刪除儲存在系統憑證管理員（如 macOS 鑰匙圈或 Windows 認證管理員）中的金鑰。您可以手動刪除這些內容。",
-    "sec2Title": "2. 分析與遙測",
-    "sec2Desc": "Doughnut Forge 不包含任何追蹤指令碼、分析引擎或當機報告工具。如果您從 Apple App Store 或 Microsoft Store 下載本應用程式，Apple 或 Microsoft 可能會提供我們彙總統計資料，例如下載次數和當機統計。這些報告不包含可識別個人身分的資訊。您可以在裝置設定中控制診斷資料的分享。",
+    "sec2Title": "2. 應用程式中的分析與遙測",
+    "sec2Desc": "Doughnut Forge 應用程式不包含任何追蹤指令碼、分析引擎或當機報告工具。如果您從 Apple App Store 或 Microsoft Store 下載本應用程式，Apple 或 Microsoft 可能會提供我們彙總統計資料，例如下載次數和當機統計。這些報告不包含可識別個人身分的資訊。您可以在裝置設定中控制診斷資料的分享。",
     "sec3Title": "3. 支援與聯絡",
     "sec3Desc": "如有問題或需要回報技術故障，請在我們的[[gh]]GitHub Issues[[/gh]]開立工單。GitHub 是公開平台，受其自身隱私權政策約束；請勿在問題回報中包含敏感資訊或解密後的資料。如有隱私權相關問題，請使用我們的[[tally]]聯絡表單[[/tally]]。您透過該表單提交的資訊由 Tally（tally.so）代為處理，我們使用該服務接收您的訊息，僅用於回覆您的諮詢。",
     "sec4Title": "4. 政策變更",
     "sec4Desc": "我們可能會不定期更新本政策。任何變更都會發布在本頁面，並更新生效日期。",
     "sec5Title": "5. 您的權利與法律聲明",
-    "sec5Desc": "對於透過聯絡表單提交的詢問，我們基於提供支援的正當利益處理您的資訊。我們僅在處理您的詢問合理所需的期間內保留訊息，之後會盡量定期刪除。如果您希望更早刪除您的訊息，只需透過同一表單告知我們。視您所在地區而定（例如適用英國資料保護法律時），您可能有權要求查閱、更正或刪除您與我們的往來通訊，並有權向英國資料保護主管機關[[ico]]資訊專員辦公室（ICO）[[/ico]]提出申訴。Doughnut Forge 並非以 13 歲以下兒童為對象。如果您認為有兒童透過我們的聯絡表單向我們傳送了個人資訊，請告知我們，我們會將其刪除。本頁面託管於 GitHub Pages。我們沒有在頁面中加入任何追蹤或分析工具，但 GitHub 可能會在您造訪時基於安全及服務營運目的記錄您的 IP 位址等技術資訊；詳見[[ghp]]GitHub 隱私權聲明[[/ghp]]。由於我們不會追蹤您，因此我們不回應「請勿追蹤」（DNT）訊號。",
+    "sec5Desc": "對於透過聯絡表單提交的詢問，我們基於提供支援的正當利益處理您的資訊。我們僅在處理您的詢問合理所需的期間內保留訊息，之後會盡量定期刪除。如果您希望更早刪除您的訊息，只需透過同一表單告知我們。視您所在地區而定（例如適用英國資料保護法律時），您可能有權要求查閱、更正或刪除您與我們的往來通訊，並有權向英國資料保護主管機關[[ico]]資訊專員辦公室（ICO）[[/ico]]提出申訴。Doughnut Forge 並非以 13 歲以下兒童為對象。如果您認為有兒童透過我們的聯絡表單向我們傳送了個人資訊，請告知我們，我們會將其刪除。",
+    "sec6Title": "6. 本網站",
+    "sec6Counts": "本網站以匿名方式計算網頁瀏覽次數，以了解哪些網頁對大家有幫助。它只保留每日總數：瀏覽的網頁、各網頁的語言、國家（以兩個字母的代碼表示，絕不記錄城市）、來源網站（僅限網域）以及商店按鈕的點按次數。每一項都是個別的總數，絕不會儲存在一起。",
+    "sec6Never": "它絕不保留 IP 位址、瀏覽器識別字串、完整網址、時間，或任何能將一次造訪與另一次造訪連結起來的資訊。它不設定 Cookie。",
+    "sec6Device": "計數器不會在您的裝置上儲存任何內容。本網站在您裝置上儲存的只有：如果您選擇不被計算，瀏覽器本機儲存空間中的一個退出標記；以及瀏覽器工作階段儲存空間中的一個建置編號，讓已開啟的分頁能得知網站何時更新。",
+    "sec6Processor": "計數器在 Cloudflare 上執行（Workers 和 D1，資料庫儲存在西歐）。Cloudflare 的網路會看到您的 IP 位址，以傳送要求並查詢所在國家；計數器絕不讀取或儲存它。Cloudflare 也會在其回應中加入自己的網路錯誤回報。詳見[[cf]]Cloudflare 隱私權政策[[/cf]]。",
+    "sec6Basis": "這些計算的法律依據是正當利益，也就是了解哪些網頁對大家有幫助。每日總數會在 13 個月後刪除。",
+    "sec6OptOut": "如不想被計算，請使用[[stats]]本網站的網頁瀏覽次數[[/stats]]上的「不要計算我的造訪」按鈕、開啟 Do Not Track 或 Global Privacy Control，或關閉 JavaScript。內容封鎖工具也可能阻止計算。",
+    "sec6Public": "總數公開於[[stats]]本網站的網頁瀏覽次數[[/stats]]，計數器的原始碼則公開於[[repo]]本網站的儲存庫[[/repo]]中的 analytics-worker/。",
+    "sec6Hosting": "本網站託管於 GitHub Pages。GitHub 可能會在您造訪時基於安全及服務營運目的記錄您的 IP 位址等技術資訊；詳見[[ghp]]GitHub 隱私權聲明[[/ghp]]。",
     "publisherInfo": "發布者：Darren Corbett"
   }
 }

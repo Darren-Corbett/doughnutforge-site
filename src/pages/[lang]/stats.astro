@@ -1,0 +1,10 @@
+---
+// Page views in every language but English (English: src/pages/stats.astro)
+import { otherLanguagePaths, type Language } from "../../i18n";
+import StatsPage from "../../views/StatsPage.astro";
+
+export const getStaticPaths = otherLanguagePaths;
+const { lang } = Astro.props as { lang: Language };
+---
+
+<StatsPage lang={lang} />

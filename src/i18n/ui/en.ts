@@ -197,14 +197,14 @@ export default {
   "faq.which.a": "Doughnut Forge is available for {available}. Coming soon: {coming}.",
   "faq.data.q": "Does Doughnut Forge or this website collect any data?",
   "faq.data.a":
-    "No. The app has no tracking, analytics or crash reporting, and this website has no analytics, cookies or tracking scripts. Apple and Microsoft may share aggregated statistics, such as download counts, that contain no personal details. GitHub, which hosts this website, may log technical information such as your IP address. The privacy policy has the details.",
+    "The app collects nothing: it has no tracking, analytics or crash reporting. This website keeps only anonymous daily totals of page views, which anyone can see on its statistics page. The count sets no cookies and never keeps your IP address. The only things this website stores on your device are your choice not to be counted, if you make it, and one build number, so an open tab can tell when the site has been updated. Apple and Microsoft may share aggregated statistics, such as download counts, that contain no personal details. GitHub, which hosts this website, may log technical information such as your IP address. The privacy policy has the details.",
   "faq.quantum.q": "What does post-quantum encryption mean?",
   "faq.quantum.a":
     "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Post-quantum encryption is designed to resist them. Doughnut Forge uses it, so what you protect today stays protected as computers become more powerful.",
 
   // Privacy page (the policy text itself is word for word from forge-privacy, in src/content/legal/privacy/)
   "meta.privacy.description":
-    "How Doughnut Forge handles your data. The app keeps your files and keys on your device, and neither the app nor this website tracks you.",
+    "How Doughnut Forge handles your data. The app keeps your files and keys on your device and collects nothing. This website keeps only anonymous daily page counts.",
 
   // Press page
   "meta.press.title": "Press kit: icons, screenshots and facts | Doughnut Forge",
@@ -472,14 +472,13 @@ export default {
   "issue.answer": "Answer",
   "issue.github": "See it on GitHub",
 
-  // Page counter: /stats/, the footer line and the FAQ answer used while the site
-  // counts (src/data/counter.ts). English only until they are translated.
+  // Page counter: /stats/ and the footer line (src/data/counter.ts, analytics-worker/)
   "meta.stats.title": "Page views on this site | Doughnut Forge",
   "meta.stats.description":
     "What the Doughnut Forge website counts, what it never counts, how not to be counted, and the anonymous page views for the last 7 and 30 days.",
   "stats.title": "Page views on this site",
   "stats.intro":
-    "This website counts page views anonymously, to see which pages help people. The count sets no cookies and stores nothing on your device. The numbers are public, on this page. The Doughnut Forge app counts nothing at all.",
+    "This website counts page views anonymously, to see which pages help people. The count sets no cookies and stores nothing on your device. The only things this website stores there are your choice not to be counted, if you make it, and one build number, so an open tab can tell when the site has been updated. The numbers are public, on this page. The Doughnut Forge app counts nothing at all.",
   "stats.counted.title": "What is counted",
   "stats.counted.intro": "Daily totals only, each one counted on its own:",
   "stats.counted.page": "the page viewed, such as /features/, without anything added after its address",
@@ -492,7 +491,12 @@ export default {
     "Your IP address, cookies or anything else stored on your device, your browser or device, the full address of the page you came from, search terms, the time of your visit, or anything that links one visit to another.",
   "stats.optout.title": "How not to be counted",
   "stats.optout.text":
-    "Turn on Global Privacy Control or Do Not Track in your browser, or turn off JavaScript. Visits with either setting, or without JavaScript, are not counted. Content blockers may also stop the count.",
+    "Use the button below, turn on Global Privacy Control or Do Not Track in your browser, or turn off JavaScript. Visits with any of these are not counted. Content blockers may also stop the count.",
+  "stats.optout.off": "Do not count my visits",
+  "stats.optout.on": "Count my visits again",
+  "stats.optout.counted": "Visits from this browser are counted.",
+  "stats.optout.notCounted": "Visits from this browser are not counted.",
+  "stats.optout.unavailable": "Visits from this browser are not counted, because it does not let this site remember your choice.",
   "stats.how.title": "How the counter works",
   "stats.how.text":
     "Cloudflare runs the counter. Like any network, it sees your IP address in order to deliver the count, and it looks up the country from it. The counter never reads or keeps your IP address. Daily totals are deleted after 13 months.",
@@ -503,10 +507,12 @@ export default {
   "stats.window.7": "Last 7 days",
   "stats.window.30": "Last 30 days",
   "stats.table.pages": "Pages",
+  "stats.table.languages": "Languages",
   "stats.table.countries": "Countries",
   "stats.table.referrers": "Referring sites",
   "stats.table.stores": "Store taps",
   "stats.table.page": "Page",
+  "stats.table.language": "Language",
   "stats.table.country": "Country",
   "stats.table.referrer": "Came from",
   "stats.table.store": "Store",
@@ -520,10 +526,8 @@ export default {
   "stats.unknown": "Unknown",
   "stats.noscript": "Turn on JavaScript to see the numbers.",
   "stats.failed": "The numbers could not load. Try again later.",
-  "stats.footer": "This site counts page views anonymously. No cookies. Nothing about you.",
+  "stats.footer": "This site counts page views anonymously. No cookies. Nothing that identifies you.",
   "stats.footerLink": "See the numbers",
-  "stats.faqData":
-    "The app collects nothing: it has no tracking, analytics or crash reporting. This website keeps only anonymous daily totals of page views, which anyone can see on its statistics page. The count sets no cookies, stores nothing on your device and never keeps your IP address. Apple and Microsoft may share aggregated statistics, such as download counts, that contain no personal details. GitHub, which hosts this website, may log technical information such as your IP address. The privacy policy has the details.",
 
   // 404
   "meta.notFound.title": "Page not found | Doughnut Forge",
