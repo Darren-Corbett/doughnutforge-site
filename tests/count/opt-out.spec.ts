@@ -23,7 +23,7 @@ test("after opting out, no page sends anything, not even a store tap", async ({ 
   await page.goto(`${SITE}/stats/`);
   await expect.poll(() => beacons.length).toBe(1);
   await page.getByRole("button", { name: "Do not count my visits" }).click();
-  await expect(page.locator("[data-optout]")).toContainText("Visits from this browser are not counted.");
+  await expect(page.locator("[data-optout-state]:visible")).toHaveText("Visits from this browser are not counted.");
   await expect(page.getByRole("button", { name: "Count my visits again" })).toBeVisible();
   await page.goto(`${SITE}/download/`);
   await page.locator(STORE).first().click();
@@ -36,7 +36,7 @@ test("after opting back in, beacons resume", async ({ context, page }) => {
   await page.goto(`${SITE}/stats/`);
   await page.getByRole("button", { name: "Do not count my visits" }).click();
   await page.getByRole("button", { name: "Count my visits again" }).click();
-  await expect(page.locator("[data-optout]")).toContainText("Visits from this browser are counted.");
+  await expect(page.locator("[data-optout-state]:visible")).toHaveText("Visits from this browser are counted.");
   const before = beacons.length;
   await page.goto(`${SITE}/features/`);
   await expect.poll(() => beacons.length).toBe(before + 1);
@@ -76,7 +76,7 @@ test("when the browser blocks storage, nothing is counted and /stats/ says so", 
   await page.goto(`${SITE}/stats/`);
   await settle(page);
   expect(beacons).toEqual([]);
-  await expect(page.locator("[data-optout]")).toContainText("Visits from this browser are not counted, because it does not let this site remember your choice.");
+  await expect(page.locator("[data-optout-state]:visible")).toHaveText("Visits from this browser are not counted, because it does not let this site remember your choice.");
   await expect(button(page)).toBeHidden();
 });
 
@@ -93,7 +93,7 @@ test("when storing the choice fails, nothing is counted from then on", async ({ 
     };
   });
   await button(page).click();
-  await expect(page.locator("[data-optout]")).toContainText("Visits from this browser are not counted, because it does not let this site remember your choice.");
+  await expect(page.locator("[data-optout-state]:visible")).toHaveText("Visits from this browser are not counted, because it does not let this site remember your choice.");
   // A store tap on this page would be counted if storage were readable
   await page.evaluate(() => {
     const a = Object.assign(document.createElement("a"), { href: "https://apps.apple.com/app/id6821344597", textContent: "store" });
@@ -113,7 +113,7 @@ for (const { code, path } of languages)
     await expect(button(page)).toHaveText(await ui(code, "stats.optout.off"));
     await button(page).click();
     await expect(button(page)).toHaveText(await ui(code, "stats.optout.on"));
-    await expect(page.locator("[data-optout]")).toContainText(await ui(code, "stats.optout.notCounted"));
+    await expect(page.locator("[data-optout-state]:visible")).toHaveText(await ui(code, "stats.optout.notCounted"));
     const counted: Beacon[] = [...beacons];
     await page.goto(`${SITE}${prefix(path)}/`);
     await settle(page);
