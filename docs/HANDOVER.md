@@ -28,6 +28,16 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ---
 
+## Page counter, item A of 3 (13 November 2026)
+
+- **Plan (owner approved, 13 November 2026):** anonymous daily page counts in three items. A: the counter (Cloudflare Worker and D1, `analytics-worker/`). B: the page script, store taps, footer line and `/stats/` in English, hidden until the counter's address is set in `src/data/counter.ts`. C: the other 29 languages, the corrected "no analytics" claims, the privacy copy synced from forge-privacy, then one push. Counting must not go live before the policy and claims say so.
+- **Item A is done** (`5740f6f` `0d720df` tests, `b3efe00` Worker): 53 tests pass (`cd analytics-worker && npm test`); `wrangler deploy --dry-run` is clean. Nothing on the site uses it yet.
+- **Owner, next:** deploy the Worker by hand (`analytics-worker/README.md`, "First deploy") and send the workers.dev address.
+- **Owner decisions:** `/summary` serves only `window=7` and `window=30`; workers.dev, no custom domain; one Others line for values below 5; complete days ending yesterday (UTC); `/stats/` indexed with hreflang; store taps kept; the daily Cloudflare clean-up approved; the `/stats/` fallback wording approved.
+- **Not in this repo:** the privacy policy wording (forge-privacy), and the new CLAUDE.md and PRODUCT.md wording (proposed to the owner, not applied).
+
+---
+
 ## v2 is live (11 November 2026)
 
 - **Doughnut Forge 2 is live on the site**, in all 30 languages, since the push of merge `5444a6d` (build ID `247b5efce690153a`). All three stores showed v2 first: App Store 2.0, Mac App Store 2.0, Microsoft Store `2026.11.2.188` (the owner confirmed this is v2).
