@@ -105,7 +105,7 @@ describe("POST /hit: a page view", () => {
   });
 
   it("stores the country as unknown when Cloudflare does not know it, or it is Tor", async () => {
-    for (const cf of [{ country: "XX" }, { country: "T1" }, { country: "gb" }, {}, undefined]) {
+    for (const cf of [{ country: "XX" }, { country: "T1" }, { country: "gb" }, {}, null]) {
       const { db, send } = setup();
       await send(hit(view("/"), { cf }));
       const country = allRows(db).find((row) => row.kind === "country");
