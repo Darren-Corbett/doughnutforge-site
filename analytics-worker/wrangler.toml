@@ -20,4 +20,4 @@ crons = ["17 3 * * *"]
 binding = "DB"
 database_name = "doughnut-forge-counts"
 # From `npx wrangler d1 create doughnut-forge-counts` (an ID, not a secret)
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "d0f4246e-199f-4ffb-82ac-c256a9ca67a2"
