@@ -1,6 +1,6 @@
 // Every published blog post, the comparisons included, carries a BreadcrumbList
 // that matches its address: Doughnut Forge, then Blog, then the post's own title.
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import { readdirSync, readFileSync } from "node:fs";
 
 const SITE = "https://doughnut-forge.app";

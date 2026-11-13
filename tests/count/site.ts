@@ -4,6 +4,7 @@
 import type { BrowserContext } from "@playwright/test";
 import { existsSync, readFileSync, statSync } from "node:fs";
 import { extname, join } from "node:path";
+import { withStandIns } from "../support/no-stores";
 
 export const SITE = "https://doughnut-forge.app";
 export const COUNTER = "https://counter.test";
@@ -26,9 +27,10 @@ export type Beacon = { url: string; method: string; type: string | undefined; bo
 export type Summaries = Partial<Record<"7" | "30", unknown>> | "fail";
 
 /**
- * Serves the copy at `origin`, records beacons to the fake counter, answers its
- * /summary with `summaries` ("fail" aborts every request), and stops every store
- * page from loading.
+ * Serves the copy at `origin`, records beacons to the fake counter, and answers
+ * its /summary with `summaries` ("fail" aborts every request). No store is ever
+ * opened (support/no-stores.ts); this copy's /go/ pages also get their forward
+ * held an hour away, since this route answers them instead of that one.
  */
 export async function serveSite(context: BrowserContext, { origin = SITE, summaries = {} as Summaries } = {}) {
   const beacons: Beacon[] = [];
@@ -38,7 +40,10 @@ export async function serveSite(context: BrowserContext, { origin = SITE, summar
     let file = join(SITE_DIR, path);
     if (existsSync(file) && statSync(file).isDirectory()) file = join(file, "index.html");
     if (!existsSync(file)) return route.fulfill({ status: 404, contentType: TYPES[".html"], body: readFileSync(join(SITE_DIR, "404.html")) });
-    return route.fulfill({ status: 200, contentType: TYPES[extname(file)] ?? "application/octet-stream", body: readFileSync(file) });
+    const body = readFileSync(file);
+    if (path.startsWith("/go/") && file.endsWith(".html"))
+      return route.fulfill({ status: 200, contentType: TYPES[".html"], body: withStandIns(body.toString("utf8")).replace('http-equiv="refresh" content="0;', 'http-equiv="refresh" content="3600;') });
+    return route.fulfill({ status: 200, contentType: TYPES[extname(file)] ?? "application/octet-stream", body });
   });
   await context.route(`${COUNTER}/**`, (route) => {
     const request = route.request();
@@ -53,7 +58,6 @@ export async function serveSite(context: BrowserContext, { origin = SITE, summar
     if (!body) return route.fulfill({ status: 400 });
     return route.fulfill({ status: 200, contentType: TYPES[".json"], headers: { "access-control-allow-origin": SITE }, body: JSON.stringify(body) });
   });
-  await context.route(/^https:\/\/(apps\.apple\.com|apps\.microsoft\.com|play\.google\.com)\//, (route) => route.abort());
   return { beacons, summaryAsks };
 }
 

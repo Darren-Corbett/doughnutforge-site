@@ -14,4 +14,4 @@ Narrow a run with `PAGES` (a regular expression on the path) or `LANGS` (a comma
 
 With `AUDIT_DIR=<dir>`, every failed check is also written to `<dir>/findings.jsonl` with a screenshot of the first case of each kind. The audits in `docs/audit/` are written from that.
 
-The Microsoft Store blocks most automated visits with a 403, so its links are opened in a browser and a 403 is reported, not failed.
+No test ever opens a real store or hands a store address to the Mac (`support/no-stores.ts`, used by every browser test through `support/browser.ts`): on a Mac, WebKit hands an App Store address to the App Store app before any request is made. Store links are checked by their addresses, `/go/` pages forward to a stand-in that keeps the store's exact address, and the Microsoft Store links are fetched over plain HTTP. The Microsoft Store blocks most automated requests with a 403, which is reported, not failed.

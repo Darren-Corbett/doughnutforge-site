@@ -3,7 +3,8 @@
 // header links sit on one row on phones, every image loads, text fits its box,
 // and no two links cover each other. The language menu and the FAQ answers are
 // opened and measured too.
-import { expect, test, type Page } from "@playwright/test";
+import { type Page } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import { record } from "../support/findings";
 import { installMeasures, measure } from "../support/measure";
 import { langOf, pages, PHONE_WIDTHS, templateOf, THEMES, WIDTHS } from "../support/site";

@@ -3,7 +3,9 @@
 // screen, no sideways panning, no word wider than its box (words never break),
 // and no controls covering each other. The pages are not in the sitemap, so the
 // site-wide layout test does not reach them.
-import { expect, test, type Page } from "@playwright/test";
+import { type Page } from "@playwright/test";
+import { expect, test } from "../support/browser";
+import { withStandIns } from "../support/no-stores";
 import { readdirSync, readFileSync } from "node:fs";
 import { installMeasures, measure } from "../support/measure";
 import { dist } from "../support/site";
@@ -32,7 +34,7 @@ for (const path of goPages) {
     // The forward an hour away, so the page stays as the visitor sees it
     await page.route(path, async (route) => {
       const response = await route.fetch();
-      return route.fulfill({ response, body: (await response.text()).replace('content="0;', 'content="3600;') });
+      return route.fulfill({ response, body: withStandIns(await response.text()).replace('content="0;', 'content="3600;') });
     });
     await page.goto(path, { waitUntil: "load" });
     const problems: unknown[] = [];

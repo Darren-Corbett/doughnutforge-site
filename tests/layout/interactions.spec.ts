@@ -1,6 +1,6 @@
 // What people click and press: the language menu, the FAQ, keyboard focus, the
 // store badges in every language, and the 404 page.
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import alts from "../../src/assets/badges/alt.json" with { type: "json" };
 import sameAsEnglish from "../../src/i18n/same-as-english.json" with { type: "json" };

@@ -5,7 +5,8 @@
 // Doughnut Forge" buttons on the features page and under each post. Nothing else
 // does, and never the text that describes the product. Google honours the
 // attribute only on span, div and section, so links are wrapped in a span.
-import { expect, test, type Page } from "@playwright/test";
+import { type Page } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { each } from "../support/each";
 

@@ -5,7 +5,8 @@
 // script may be injected, and every request stays on the site, so domain-based
 // tracker lists (Firefox, Edge, DuckDuckGo) have nothing to block either.
 // Downloads the lists, so it runs only when asked: `npm run test:blockers`.
-import { expect, test, type Page } from "@playwright/test";
+import { type Page } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import { Request } from "@ghostery/adblocker";
 import { loadLists, type Loaded } from "./lists";
 import { pages } from "../support/site";

@@ -2,7 +2,7 @@
 // desktop width. Colour contrast is checked in each theme because the dark
 // theme has its own colours.
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import { record } from "../support/findings";
 import { langOf, pages, templateOf, THEMES } from "../support/site";
 

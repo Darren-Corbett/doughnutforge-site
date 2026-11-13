@@ -4,7 +4,7 @@
 // planned, the security page sends vulnerability reports to GitHub's private
 // advisories, never to public issues, and the technical details page is linked
 // from the security page and the FAQ and keeps every algorithm name in English.
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { each } from "../support/each";
 

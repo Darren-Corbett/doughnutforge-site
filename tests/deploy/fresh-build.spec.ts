@@ -4,7 +4,9 @@
 // an iPhone, against a local server that serves dist/ with GitHub Pages' headers
 // (max-age=600, ETag, Last-Modified, the query ignored). Build B is dist/ with
 // its build ID swapped, in every page and in /build.json. Build first.
-import { expect, test, type Page } from "@playwright/test";
+import { type Page } from "@playwright/test";
+import { expect, test } from "../support/browser";
+import { keepStoresClosed } from "../support/no-stores";
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync, statSync } from "node:fs";
 import { createServer, type Server } from "node:http";
@@ -83,6 +85,7 @@ test("a fresh visit after a deploy gets the new build", async ({ browser, page }
   expect(await buildId(page)).toBe(A);
   site.live.html = site.live.json = "B";
   const context = await browser.newContext({ ...test.info().project.use });
+  await keepStoresClosed(context);
   const fresh = await context.newPage();
   await fresh.goto(`${site.base}/`);
   await expect.poll(() => buildId(fresh)).toBe(B);

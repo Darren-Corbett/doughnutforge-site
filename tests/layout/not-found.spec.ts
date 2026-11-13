@@ -1,7 +1,8 @@
 // The 404 page: the heading is always the real text, in the HTML and for screen
 // readers; the scramble is a decorative overlay that plays once and goes, never
 // with reduced motion or without JavaScript; the padlock picture is inline and small.
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../support/browser";
+import { keepStoresClosed } from "../support/no-stores";
 import english from "../../src/i18n/ui/en";
 
 // Read as plain strings, so copy changed with this test checks before it exists
@@ -10,6 +11,7 @@ const PAGE = "/404.html";
 
 test("the heading is the final text without JavaScript", async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
+  await keepStoresClosed(context);
   const page = await context.newPage();
   await page.goto(PAGE);
   await expect(page.locator("h1")).toHaveText(en["notFound.title"]!);
@@ -20,6 +22,7 @@ test("the heading is the final text without JavaScript", async ({ browser }) => 
 
 test("with reduced motion there is no scramble and the padlock does not move", async ({ browser }) => {
   const context = await browser.newContext({ reducedMotion: "reduce" });
+  await keepStoresClosed(context);
   const page = await context.newPage();
   await page.goto(PAGE);
   await expect(page.locator("h1")).toHaveText(en["notFound.title"]!);

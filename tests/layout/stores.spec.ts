@@ -1,7 +1,7 @@
 // iPhone and iPad are on sale, and lead: in every language the iPhone and iPad
 // card and the home page carry the App Store badge for the iPhone and iPad app,
 // never the Mac app's, and the English pages no longer call that app "coming soon".
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));

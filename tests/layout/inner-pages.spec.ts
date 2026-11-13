@@ -4,7 +4,7 @@
 // full-width lines on phones, the Technical details cards and lists follow DESIGN.md,
 // Security puts its facts before the researchers' reporting section, and the
 // Roadmap's groups are tone-ruled rows without a "Planned" pill on every item.
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import english from "../../src/i18n/ui/en";
 import de from "../../src/i18n/ui/de";
 import { each } from "../support/each";

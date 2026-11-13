@@ -2,7 +2,7 @@
 // the Smart App Banner points at the iPhone app, the
 // structured data names the app as security software and the organisation
 // behind it, and the plain summary line sits under the heading in every language.
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import english from "../../src/i18n/ui/en";
 

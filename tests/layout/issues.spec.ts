@@ -3,7 +3,7 @@
 // ISSUES_FILE when the build used another file). With no issues, the links and
 // pages do not exist. Issue pages show the title, question and answer only:
 // no usernames, avatars or links to anyone's profile.
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import { readFileSync } from "node:fs";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { dist } from "../support/site";

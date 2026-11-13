@@ -4,7 +4,7 @@
 // - every external link answers (each distinct URL fetched once)
 // - the live feed, sitemap, robots.txt, apple-app-site-association and 404
 // - the old forge-privacy page sends every ?lang= to the right new page
-import { expect, test } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
@@ -81,8 +81,9 @@ test("external links answer", async ({ request }) => {
 
 // The Microsoft Store answers 403 to plain HTTP clients and to about half of
 // headless browser visits (bot protection), so a 403 here says nothing about
-// the link. Each language's link is opened in a browser: a page that loads must
-// be the app's page. If every visit is blocked the test is skipped, not passed.
+// the link. Each language's link is fetched over plain HTTP, never opened in a
+// browser (no test may open a store, support/no-stores.ts): a page that answers
+// must be the app's page. If every request is blocked the test is skipped, not passed.
 const MICROSOFT = "https://apps.microsoft.com/";
 // Apple sells the Mac and the iPhone and iPad apps under different IDs, and a
 // link with either ID opens a page: Apple's own lookup says which app each is
@@ -102,22 +103,22 @@ test("App Store links open each platform's own app", async ({ request }) => {
   }
 });
 
-test("Microsoft Store links open the app's page", async ({ page }) => {
+test("Microsoft Store links open the app's page", async ({ request }) => {
   test.setTimeout(5 * 60_000);
   const urls = new Set<string>();
   for (const file of files) for (const ref of attrs(readFileSync(file, "utf8")).map(decode)) if (ref.startsWith(MICROSOFT)) urls.add(ref);
   expect(urls.size).toBe(languages.length);
   let opened = 0;
   for (const url of urls) {
-    const res = await page.goto(url, { waitUntil: "domcontentloaded" });
-    const status = res?.status() ?? 0;
-    console.log(`${status === 403 ? "403 (blocked as a bot)" : status}  ${url}  -> ${page.url()}`);
+    const res = await request.get(url);
+    const status = res.status();
+    console.log(`${status === 403 ? "403 (blocked as a bot)" : status}  ${url}  -> ${res.url()}`);
     if (status === 403) continue;
     expect.soft(status, url).toBeLessThan(400);
-    await expect.soft(page.locator("h1").first(), url).toContainText("Doughnut Forge", { timeout: 20_000 });
+    expect.soft(await res.text(), url).toContain("Doughnut Forge");
     opened++;
   }
-  test.skip(opened === 0, "The Microsoft Store blocked every visit as a bot: check one link by hand");
+  test.skip(opened === 0, "The Microsoft Store blocked every request as a bot: check one link by hand");
 });
 
 test.describe("live site", () => {

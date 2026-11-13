@@ -2,7 +2,8 @@
 // site with the counter on. The page explains what is counted without
 // JavaScript; with it, the page asks the counter for the two fixed windows and
 // shows them, with every count below 5 as "fewer than 5".
-import { expect, test, type Page } from "@playwright/test";
+import { type Page } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import { readFileSync } from "node:fs";
 import { COUNTER, serveSite, SITE, SITE_DIR } from "./site";
 
@@ -57,7 +58,9 @@ test.describe("/stats/ without JavaScript", () => {
     await expect(page.getByRole("heading", { level: 1 })).toHaveText("Page views on this site");
     for (const heading of ["What is counted", "What is never counted", "How not to be counted", "How the counter works"])
       await expect(page.getByRole("heading", { name: heading })).toBeVisible();
-    await expect(page.getByText("Turn on JavaScript to see the numbers.")).toBeVisible();
+    // getByText skips <noscript>, so the message is found by its tag
+    await expect(page.locator("noscript p")).toHaveText("Turn on JavaScript to see the numbers.");
+    await expect(page.locator("noscript p")).toBeVisible();
     await expect(page.getByRole("table")).toHaveCount(0);
     await expect(page.getByRole("link", { name: "Read the counter's source code" })).toHaveAttribute("href", SOURCE);
     expect(summaryAsks).toEqual([]);
@@ -70,7 +73,7 @@ test.describe("/stats/ with JavaScript", () => {
     await page.goto(`${SITE}/stats/`);
     await expect(page.getByRole("region", { name: "Last 30 days" }).getByRole("table").first()).toBeVisible();
     expect([...summaryAsks].sort()).toEqual([`${COUNTER}/summary?window=30`, `${COUNTER}/summary?window=7`]);
-    await expect(page.getByText("Turn on JavaScript to see the numbers.")).toBeHidden();
+    await expect(page.locator("noscript p")).toHaveCount(0);
   });
 
   test("shows each window's pages, countries, referring sites and store taps, with counts below 5 as fewer than 5", async ({ context, page }) => {

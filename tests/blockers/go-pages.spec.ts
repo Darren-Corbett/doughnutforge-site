@@ -4,10 +4,12 @@
 // store did not open) it shows the way on (the store badge, or a plain button if
 // that is hidden) and a way back to the download page. Under every blocker
 // simulation, without JavaScript, and with reduced motion.
-import { expect, test, type Page } from "@playwright/test";
+import { type Page } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import { readFileSync } from "node:fs";
 import { dist } from "../support/site";
 import { BOTH, block, RULES, type Rule } from "./simulations";
+import { standIn, withStandIns } from "../support/no-stores";
 
 const LANGS = ["en", "de", "ja", "pl", "es-mx", "th"];
 const STORES: Record<string, { name: string; platform: string }> = {
@@ -15,7 +17,6 @@ const STORES: Record<string, { name: string; platform: string }> = {
   "https://apps.apple.com/app/id6812778888": { name: "Mac App Store", platform: "Mac" },
   "https://apps.microsoft.com/": { name: "Microsoft Store", platform: "Windows" },
 };
-const STORE = /^https:\/\/apps\.(apple|microsoft)\.com\//;
 const NONE: Rule = { name: "no blocker" };
 
 /** One UI string in a language, falling back to English as the site does */
@@ -33,7 +34,7 @@ const goPages = () => {
       const html = readFileSync(`${dist}/go/${code}/${path}/index.html`, "utf8");
       const url = /http-equiv="refresh" content="0; url=([^"]+)"/.exec(html)![1]!.replaceAll("&amp;", "&");
       const store = Object.entries(STORES).find(([start]) => url.startsWith(start))![1];
-      return { path: `/go/${code}/${path}/`, lang: languages.find((l) => l.path === path)!, ...store };
+      return { path: `/go/${code}/${path}/`, lang: languages.find((l) => l.path === path)!, url, ...store };
     }),
   );
 };
@@ -75,7 +76,7 @@ const stayOnPage = (page: Page) =>
     (url) => url.pathname.startsWith("/go/"),
     async (route) => {
       const response = await route.fetch();
-      return route.fulfill({ response, body: (await response.text()).replace('content="0;', 'content="3600;') });
+      return route.fulfill({ response, body: withStandIns(await response.text()).replace('content="0;', 'content="3600;') });
     },
   );
 
@@ -202,27 +203,26 @@ test.describe("without JavaScript", () => {
 });
 
 // Coming back to the tab, the page does not forward by itself again. A tap on the
-// way on must take the browser to the store.
+// way on must take the browser to the store: here a stand-in that keeps the
+// store's exact address (support/no-stores.ts). A real App Store address made
+// WebKit cancel the navigation ("Navigation canceled by policy check") and hand
+// it to the Mac's App Store app, which opened on every run.
 for (const go of goPages().filter((g) => g.lang.path === "en")) {
   test(`the badge on ${go.path} (${go.name}) goes to the store again`, async ({ page }) => {
     let first = true;
     await page.route((url) => url.pathname === go.path, async (route) => {
-      if (!first) return route.continue();
-      first = false;
-      // The page as it stands after the visitor comes back: the forward is not due again
       const response = await route.fetch();
-      return route.fulfill({ response, body: (await response.text()).replace('content="0;', 'content="3600;') });
+      // The page as it stands after the visitor comes back: the forward is not due again
+      const html = withStandIns(await response.text());
+      const body = first ? html.replace('content="0;', 'content="3600;') : html;
+      first = false;
+      return route.fulfill({ response, body });
     });
-    await page.route(STORE, (route) => route.fulfill({ status: 200, contentType: "text/html", body: "<p>store</p>" }));
     await page.goto(go.path);
     await comeBack(page);
-    const reached = page.waitForURL(STORE).then(() => "reached", (e: Error) => e.message);
+    const reached = page.waitForURL(standIn(go.url));
     await page.locator(`main a[href="${go.path}"]:visible`).first().tap();
-    const result = await reached;
-    // WebKit on an iPhone sometimes cancels a tapped App Store link in the browser
-    // ("Navigation canceled by policy check") and sometimes loads it; either way the
-    // tap went to the store. Why it varies is not known.
-    if (go.name !== "Microsoft Store" && test.info().project.name === "blockers-iphone") expect(result).toMatch(/^reached$|Navigation canceled by policy check/);
-    else expect(result).toBe("reached");
+    await reached;
+    expect(page.url()).toBe(standIn(go.url));
   });
 }

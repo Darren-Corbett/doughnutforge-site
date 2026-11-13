@@ -2,7 +2,8 @@
 // the counter on: one beacon per view, with the path and the referring site's
 // domain only; one per store tap; nothing stored on the device; nothing at all
 // with Do Not Track or Global Privacy Control, or off the live site.
-import { expect, test, type Page } from "@playwright/test";
+import { type Page } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import { readdirSync } from "node:fs";
 import { bodies, COUNTER, serveSite, SITE, SITE_DIR, type Beacon } from "./site";
 
@@ -102,6 +103,8 @@ test.describe("no beacon at all", () => {
     await page.goto(`${SITE}/go/${code}/${lang}/`, { waitUntil: "domcontentloaded" });
     await settle(page);
     expect(beacons).toEqual([]);
+    // Its forward to the store is held back (site.ts)
+    expect(page.url()).toBe(`${SITE}/go/${code}/${lang}/`);
   });
 });
 
@@ -114,6 +117,9 @@ test.describe("a store tap", () => {
       await expect.poll(() => taps(beacons)).toEqual([{ s: store }]);
       await settle(page);
       expect(taps(beacons)).toEqual([{ s: store }]);
+      // The store itself is never opened (support/no-stores.ts)
+      expect(context.pages()).toHaveLength(1);
+      expect(page.url()).toBe(`${SITE}/download/`);
     });
 
   test("on the fallback link to a /go/ page counts as a tap on that store", async ({ context, page }) => {
@@ -122,6 +128,7 @@ test.describe("a store tap", () => {
     // The fallback shows only when a blocker hides the badge, so it is clicked directly
     await page.locator('[data-get="text"][data-platform="ios"] a').first().evaluate((a: HTMLAnchorElement) => a.click());
     await expect.poll(() => taps(beacons)).toEqual([{ s: "app-store" }]);
+    expect(context.pages()).toHaveLength(1);
   });
 
   test("is not counted for any other link", async ({ context, page }) => {

@@ -8,12 +8,14 @@
 // neutral name, must show in its place and lead to the store through the site's
 // /go/ page. Only if that is hidden too does the plain text link show. Without a
 // blocker, nothing changes.
-import { expect, test, type Page } from "@playwright/test";
+import { type Page } from "@playwright/test";
+import { expect, test } from "../support/browser";
 import { createHash } from "node:crypto";
 import { readdirSync, readFileSync } from "node:fs";
 import { dist } from "../support/site";
 import { BOTH, block, RULES } from "./simulations";
 import { each } from "../support/each";
+import { standIn, withStandIns } from "../support/no-stores";
 
 const PAGES = ["/", "/pricing/", "/download/", "/de/download/", "/es-mx/pricing/", "/ja/"];
 const STORE = /^https:\/\/apps\.(apple|microsoft)\.com\//;
@@ -172,7 +174,7 @@ test("a /go/ page has a main, one h1 and controls at least 44px tall", async ({ 
     (url) => url.pathname.startsWith("/go/"),
     async (route) => {
       const response = await route.fetch();
-      return route.fulfill({ response, body: (await response.text()).replace('content="0;', 'content="3600;') });
+      return route.fulfill({ response, body: withStandIns(await response.text()).replace('content="0;', 'content="3600;') });
     },
   );
   for (const path of new Set(goPages)) {
@@ -194,19 +196,20 @@ test("the iPhone and iPad artwork is built for the second badge", () => {
   }
 });
 
+// The store itself is a stand-in that keeps its exact address (support/no-stores.ts):
+// a real store address would be handed to the Mac's App Store app
 test("a /go/ page takes the browser to each store", async ({ page }) => {
   const badges = badgesOf("/download/");
   // Mac, Windows, and iPhone and iPad
   expect(badges.map((b) => b.url)).toContain("https://apps.apple.com/app/id6821344597");
-  await page.route(STORE, (route) => route.fulfill({ status: 200, contentType: "text/html", body: "<p>store</p>" }));
   await block(page, RULES[0]!);
   for (const badge of badges) {
     await page.goto("/download/", { waitUntil: "load" });
     await page.waitForTimeout(1500);
     const href = (await visibleLinks(page)).find((l) => l.href.startsWith("/go/") && l.name.startsWith(badge.alt))!.href;
     await page.goto(href);
-    await page.waitForURL(badge.url);
-    expect(page.url()).toBe(badge.url);
+    await page.waitForURL(standIn(badge.url));
+    expect(page.url()).toBe(standIn(badge.url));
   }
 });
 
