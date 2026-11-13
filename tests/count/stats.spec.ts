@@ -32,7 +32,7 @@ const THIRTY = {
   to: "2026-11-12",
   totals: {
     page: { rows: [{ value: "/", count: 1234 }], others: null },
-    language: { rows: [{ value: "en", count: 1234 }], others: null },
+    language: { rows: [{ value: "de", count: 1234 }], others: { count: null } },
     country: { rows: [{ value: "DE", count: 1234 }], others: null },
     referrer: { rows: [{ value: "direct", count: 1234 }], others: null },
     store: { rows: [{ value: "app-store", count: 6 }], others: { count: null } },
@@ -62,6 +62,8 @@ test.describe("/stats/ without JavaScript", () => {
     await expect(page.locator("noscript p")).toHaveText("Turn on JavaScript to see the numbers.");
     await expect(page.locator("noscript p")).toBeVisible();
     await expect(page.getByRole("table")).toHaveCount(0);
+    // The opt-out needs JavaScript; without it nothing is counted anyway
+    await expect(page.locator("main").getByRole("button")).toHaveCount(0);
     await expect(page.getByRole("link", { name: "Read the counter's source code" })).toHaveAttribute("href", SOURCE);
     expect(summaryAsks).toEqual([]);
   });
@@ -76,7 +78,7 @@ test.describe("/stats/ with JavaScript", () => {
     await expect(page.locator("noscript p")).toHaveCount(0);
   });
 
-  test("shows each window's pages, countries, referring sites and store taps, with counts below 5 as fewer than 5", async ({ context, page }) => {
+  test("shows each window's pages, languages, countries, referring sites and store taps, with counts below 5 as fewer than 5", async ({ context, page }) => {
     await serveSite(context, { summaries: SUMMARIES });
     await page.goto(`${SITE}/stats/`);
     expect(await rowsOf(page, "Last 7 days", "Pages")).toEqual([
@@ -95,6 +97,11 @@ test.describe("/stats/ with JavaScript", () => {
       ["duckduckgo.com", "9"],
     ]);
     expect(await rowsOf(page, "Last 7 days", "Store taps")).toEqual([["None yet"]]);
+    expect(await rowsOf(page, "Last 7 days", "Languages")).toEqual([["English (UK)", "128"]]);
+    expect(await rowsOf(page, "Last 30 days", "Languages")).toEqual([
+      ["Deutsch", "1,234"],
+      ["Others, each fewer than 5", "fewer than 5"],
+    ]);
     expect(await rowsOf(page, "Last 30 days", "Pages")).toEqual([["/", "1,234"]]);
     expect(await rowsOf(page, "Last 30 days", "Countries")).toEqual([["Germany", "1,234"]]);
     expect(await rowsOf(page, "Last 30 days", "Store taps")).toEqual([
@@ -123,7 +130,7 @@ test("every page's footer says what is counted and links to the numbers", async 
   for (const path of ["/", "/features/", "/blog/", "/stats/"]) {
     await page.goto(`${SITE}${path}`);
     const footer = page.locator("footer");
-    await expect(footer).toContainText("This site counts page views anonymously. No cookies. Nothing about you.");
+    await expect(footer).toContainText("This site counts page views anonymously. No cookies. Nothing that identifies you.");
     await expect(footer.getByRole("link", { name: "See the numbers" })).toHaveAttribute("href", "/stats/");
   }
 });

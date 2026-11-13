@@ -9,7 +9,11 @@ import { type Page } from "@playwright/test";
 import { expect, test } from "../support/browser";
 import { Request } from "@ghostery/adblocker";
 import { loadLists, type Loaded } from "./lists";
-import { pages } from "../support/site";
+import { dist, pages } from "../support/site";
+import { readFileSync } from "node:fs";
+
+// The counter's address, as the built pages carry it (src/components/PageCount.astro)
+const counter = new URL(/data-counter="([^"]+)"/.exec(readFileSync(`${dist}/index.html`, "utf8"))?.[1] ?? "https://counter.invalid").origin;
 
 // One engine per browser: the pages run in order in one worker
 test.describe.configure({ mode: "serial" });
@@ -104,6 +108,10 @@ for (const path of pages) {
     expect(extended.map((e) => JSON.stringify(e)), `${path}: extended hiding rules that apply`).toEqual([]);
 
     for (const r of requests) {
+      // The page counter (src/data/counter.ts) is the one other address: a blocker
+      // that stops it only means the visit is not counted, or /stats/ shows its
+      // "could not load" message
+      if (new URL(r.url).origin === counter) continue;
       expect(new URL(r.url).origin, `${path}: every request stays on the site`).toBe(origin);
       const { match, filter } = loaded.engine.match(Request.fromRawDetails({ url: r.url.replace(origin, "https://doughnut-forge.app"), sourceUrl: url, type: r.type as never }));
       expect(match ? `${r.url} blocked by ${filter?.toString()}` : null, `${path}: requests a blocker would block`).toBeNull();
