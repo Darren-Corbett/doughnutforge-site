@@ -44,12 +44,14 @@ test("the website section states each fact", () => {
   const s = en.strings;
   expect(s.sec6Counts).toContain("daily totals only");
   for (const fact of ["pages viewed", "language", "two-letter code, never a city", "domain only", "taps on store buttons", "never stored together"]) expect(s.sec6Counts, fact).toContain(fact);
-  for (const fact of ["IP addresses", "browser identity strings", "full addresses", "times", "links one visit to another", "no cookies"]) expect(s.sec6Never, fact).toContain(fact);
+  // The counter, not the website: GitHub may log IP addresses (sec6Hosting)
+  for (const fact of ["The counter never keeps", "IP addresses", "browser identity strings", "full addresses", "times", "links one visit to another", "Neither the counter nor this website sets cookies"])
+    expect(s.sec6Never, fact).toContain(fact);
   for (const fact of ["The counter stores nothing on your device", "opt-out flag", "build number", "session storage"]) expect(s.sec6Device, fact).toContain(fact);
-  for (const fact of ["Cloudflare", "Workers and D1", "Western Europe", "IP address", "never reads or stores it", "network error reporting", "[[cf]]"]) expect(s.sec6Processor, fact).toContain(fact);
+  for (const fact of ["Cloudflare", "Workers and D1", "Western Europe", "IP address", "never reads or stores it", "report connection failures to Cloudflare", "[[cf]]"]) expect(s.sec6Processor, fact).toContain(fact);
   for (const fact of ["legitimate interest", "which pages help people", "13 months"]) expect(s.sec6Basis, fact).toContain(fact);
-  for (const fact of ["Do Not Track", "Global Privacy Control", "JavaScript", "Content blockers"]) expect(s.sec6OptOut, fact).toContain(fact);
-  for (const fact of ["[[stats]]", "analytics-worker/", "[[repo]]"]) expect(s.sec6Public, fact).toContain(fact);
+  for (const fact of ["Do Not Track", "Global Privacy Control", "JavaScript", "Content blockers", "[[stats]]the statistics page[[/stats]]"]) expect(s.sec6OptOut, fact).toContain(fact);
+  for (const fact of ["[[stats]]the statistics page[[/stats]]", "analytics-worker/", "[[repo]]"]) expect(s.sec6Public, fact).toContain(fact);
 });
 
 for (const { code, path } of languages)
