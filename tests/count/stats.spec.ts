@@ -164,3 +164,11 @@ for (const path of ["ja", "zh-cn", "zh-tw", "th"])
     await page.locator("[data-optout] button").click();
     expect(await wide()).toBe(0);
   });
+
+test("off the live site, /stats/ asks the counter nothing and says the numbers could not load", async ({ context, page }) => {
+  const origin = "http://localhost:4321";
+  const { summaryAsks } = await serveSite(context, { origin, summaries: SUMMARIES });
+  await page.goto(`${origin}/stats/`);
+  await expect(page.getByText("The numbers could not load. Try again later.")).toBeVisible();
+  expect(summaryAsks).toEqual([]);
+});
