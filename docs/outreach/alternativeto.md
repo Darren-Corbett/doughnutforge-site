@@ -44,7 +44,7 @@ file-encryption, offline, end-to-end-encryption, post-quantum, no-account, priva
 - Light and dark mode
 - Post-quantum encryption
 - 30 languages
-- No tracking, no analytics
+- No tracking or analytics in the app
 
 ## Listed as an alternative to
 - Cryptomator (see https://doughnut-forge.app/blog/doughnut-forge-vs-cryptomator/)
