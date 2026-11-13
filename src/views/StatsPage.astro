@@ -190,6 +190,9 @@ const optOut = {
         }
       };
       const sections = [...document.querySelectorAll("[data-window]")];
+      const failed = () => (document.querySelector('[data-numbers="failed"]').hidden = false);
+      // Like the page script, nothing goes to the counter off the live site
+      if (location.hostname !== "doughnut-forge.app") return failed();
       const load = (days) =>
         fetch(`${counter}/summary?window=${days}`).then((res) => {
           if (!res.ok) throw new Error(`summary ${res.status}`);
@@ -200,9 +203,7 @@ const optOut = {
           sections.forEach((s, i) => fill(s, summaries[i]));
           for (const s of sections) s.hidden = false;
         })
-        .catch(() => {
-          document.querySelector('[data-numbers="failed"]').hidden = false;
-        });
+        .catch(failed);
     })();
   </script>
 </Base>
