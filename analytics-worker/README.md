@@ -49,15 +49,15 @@ npx wrangler d1 execute doughnut-forge-counts --remote --file=schema.sql
 npx wrangler deploy
 ```
 
-`deploy` prints the counter's address, `https://doughnut-forge-counter.<account>.workers.dev`. That address goes into the site's `src/data/counter.ts`.
+`deploy` prints the counter's address, `https://doughnut-forge-counter.doughnutforge.workers.dev`. That address goes into the site's `src/data/counter.ts`.
 
 `npm ci` may say install scripts were skipped for `workerd`. That is fine: `workerd` is only needed to run the Worker on this Mac (`wrangler dev`), not to deploy it.
 
 ### Check it works
 
 ```sh
-curl -i "https://doughnut-forge-counter.<account>.workers.dev/summary?window=7"
-curl -i "https://doughnut-forge-counter.<account>.workers.dev/summary?window=14"
+curl -i "https://doughnut-forge-counter.doughnutforge.workers.dev/summary?window=7"
+curl -i "https://doughnut-forge-counter.doughnutforge.workers.dev/summary?window=14"
 ```
 
 The first answers `200` with empty totals, the second `400`. Until the site publishes `count-pages.json`, every hit is ignored.
