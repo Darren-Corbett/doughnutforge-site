@@ -40,7 +40,7 @@ test("after opting back in, beacons resume", async ({ context, page }) => {
   const before = beacons.length;
   await page.goto(`${SITE}/features/`);
   await expect.poll(() => beacons.length).toBe(before + 1);
-  expect(JSON.parse(beacons.at(-1)!.body!)).toEqual({ p: "/features/", r: "internal" });
+  expect(JSON.parse(beacons.at(-1)!.body!)).toEqual({ p: "/features/", r: "direct" });
 });
 
 test("the choice is the one thing stored: a single flag in localStorage, no cookie", async ({ context, page }) => {

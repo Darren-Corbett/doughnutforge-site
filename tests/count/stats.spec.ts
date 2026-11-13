@@ -150,3 +150,17 @@ test("the counter's page list includes /stats/", () => {
   const list = JSON.parse(readFileSync(`${SITE_DIR}count-pages.json`, "utf8"));
   expect(list.pages["/stats/"]).toBe("en");
 });
+
+// Japanese, Chinese and Thai lines break only between words (src/middleware.ts),
+// so text the page script writes in must carry its own word breaks
+for (const path of ["ja", "zh-cn", "zh-tw", "th"])
+  test(`/${path}/stats/ fits a 320px screen with the numbers and after opting out`, async ({ context, page }) => {
+    await serveSite(context, { summaries: SUMMARIES });
+    await page.setViewportSize({ width: 320, height: 800 });
+    await page.goto(`${SITE}/${path}/stats/`);
+    await expect(page.locator('[data-window="7"] table').first()).toBeVisible();
+    const wide = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(await wide()).toBe(0);
+    await page.locator("[data-optout] button").click();
+    expect(await wide()).toBe(0);
+  });
