@@ -23,14 +23,17 @@ const exec = async (script: string, dist: string, extra: string[] = []) => {
   }
 };
 
+const COUNT_PAGES = JSON.stringify({ pages: { "/": "en" }, stores: ["app-store"] });
+
 /** A fake dist with the production files and a home page carrying the placeholder ID, stamped unless told not to */
-const site = async ({ stamped = true } = {}) => {
+const site = async ({ stamped = true, countPages = COUNT_PAGES as string | null } = {}) => {
   const dist = mkdtempSync(join(tmpdir(), "dist-"));
   mkdirSync(join(dist, ".well-known"));
   copyFileSync(`${root}public/.well-known/apple-app-site-association`, join(dist, ".well-known/apple-app-site-association"));
   copyFileSync(`${root}public/.well-known/security.txt`, join(dist, ".well-known/security.txt"));
   copyFileSync(`${root}public/CNAME`, join(dist, "CNAME"));
   writeFileSync(join(dist, ".nojekyll"), "");
+  if (countPages !== null) writeFileSync(join(dist, "count-pages.json"), countPages);
   writeFileSync(join(dist, "index.html"), `<!doctype html><html><head><meta name="build-id" content="${PLACEHOLDER}"></head><body></body></html>`);
   if (stamped) expect((await exec("build-id.mjs", dist)).code).toBe(0);
   return dist;
@@ -65,6 +68,25 @@ test("fails when the home page has no build ID", async () => {
   expect(result.code).not.toBe(0);
   expect(result.output).toContain("build-id");
 });
+
+// The page counter (analytics-worker/) counts only the pages this file lists:
+// without it, every view would be dropped without a word
+test("fails when count-pages.json is missing", async () => {
+  const result = await check(await site({ countPages: null }));
+  expect(result.code).not.toBe(0);
+  expect(result.output).toContain("count-pages.json");
+});
+
+for (const [why, countPages] of [
+  ["is not JSON", "{"],
+  ["has no home page", JSON.stringify({ pages: { "/features/": "en" }, stores: ["app-store"] })],
+  ["has no stores", JSON.stringify({ pages: { "/": "en" }, stores: [] })],
+])
+  test(`fails when count-pages.json ${why}`, async () => {
+    const result = await check(await site({ countPages }));
+    expect(result.code).not.toBe(0);
+    expect(result.output).toContain("count-pages.json");
+  });
 
 test("fails when the IDs differ", async () => {
   const dist = await site();

@@ -21,6 +21,7 @@
     "test:deploy": "playwright test tests/deploy --project=deploy --project=deploy-webkit",
     "test:forms": "playwright test tests/forms --project=forms",
     "test:checks": "playwright test tests/checks --project=checks",
+    "test:count": "playwright test --project=count --project=count-iphone",
     "test:blockers": "playwright test tests/blockers --project=blockers-iphone --project=blockers-android"
   },
   "dependencies": {

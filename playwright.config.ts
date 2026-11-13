@@ -44,5 +44,10 @@ export default defineConfig({
     { name: "blockers-android", testMatch: /blockers\/.*\.spec\.ts/, use: { ...devices["Pixel 7"] } },
     // The build's own checks, run on small built sites of their own (no browser)
     { name: "checks", testMatch: /checks\/.*\.spec\.ts/ },
+    // The page counter: a copy of the site built with the counter on, in Chrome
+    // and in Safari on a phone, with the counter faked (no network)
+    { name: "count-build", testMatch: /count\/build\.setup\.ts/ },
+    { name: "count", testMatch: /count\/.*\.spec\.ts/, dependencies: ["count-build"], use: { ...devices["Desktop Chrome"] } },
+    { name: "count-iphone", testMatch: /count\/.*\.spec\.ts/, dependencies: ["count-build"], use: { ...devices["iPhone 13"] } },
   ],
 });
