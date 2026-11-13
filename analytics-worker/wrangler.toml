@@ -1,0 +1,23 @@
+# The page counter for doughnut-forge.app. Deployed by hand (README.md).
+name = "doughnut-forge-counter"
+main = "src/index.js"
+compatibility_date = "2026-10-23"
+
+# Served at <name>.<account>.workers.dev only: no custom domain, no DNS change,
+# and no extra preview addresses.
+workers_dev = true
+preview_urls = false
+
+# No request logs are kept: the counter promises to store nothing about visitors.
+[observability]
+enabled = false
+
+# Once a day: delete totals older than 13 months.
+[triggers]
+crons = ["17 3 * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "doughnut-forge-counts"
+# From `npx wrangler d1 create doughnut-forge-counts` (an ID, not a secret)
+database_id = "00000000-0000-0000-0000-000000000000"
