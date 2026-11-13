@@ -269,6 +269,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "How Doughnut Forge handles your data. The app keeps your files and your keys on your device and collects nothing. This site keeps only anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full addresses, times, nor anything linking one visit to another. Neither the counter nor this site sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -558,6 +579,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct and consistent with 'Antippen der Stores' and 'angetippt'.",
         "backTranslation": "Taps (tapping)",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never stores IP addresses, browser identifiers (user-agent strings), full addresses, times or anything that links one visit to another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -766,6 +808,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "How Doughnut Forge treats your data. The app keeps your files and keys on your device and collects nothing. This website only keeps anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full addresses, times or anything that relates one visit to another. Neither the counter nor this website installs cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -1024,6 +1087,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct; singular generic masculine 'conteggiato' is standard.",
         "backTranslation": "What the Doughnut Forge site counts, what it never counts, how to avoid being counted and the anonymous page views of the last 7 and 30 days.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full addresses, times or anything linking one visit to another. Neither the counter nor this site sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -1299,6 +1383,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "How Doughnut Forge deals with your data. The app keeps your files and keys on your device and collects nothing. This website keeps only anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full addresses, times or anything that links one visit to another. Neither the counter nor this website places cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -1526,6 +1631,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "This is how Doughnut Forge handles your data. The app keeps your files and keys on your device and collects nothing. This website stores only anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never saves IP addresses, browser identification strings, full addresses, points in time or anything that links one visit with another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -1760,6 +1886,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "This is how Doughnut Forge handles your data. The app keeps your files and keys on your device and collects nothing. This website stores only anonymous daily totals for page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never stores IP addresses, browser identification strings, full addresses, times or anything that connects one visit with another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -2042,6 +2189,34 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "This is how Doughnut Forge handles your data. The app keeps your files and keys on your device and collects nothing. This website keeps only anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full addresses, times or anything that connects one visit to another. The counter and this site do not set cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Cookie sentence uses 'Laskuri ja tämä sivusto eivät aseta evästeitä' (the counter and this site do not set cookies) rather than an explicit 'neither...nor'. Meaning is the same and covers both.",
+        "backTranslation": "The counter and this site do not set cookies.",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -2282,6 +2457,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "This is how Doughnut Forge handles your data. The app keeps your files and keys on your device and collects nothing. This website stores only anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full addresses, times or anything that links one visit to another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -2550,6 +2746,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct.",
         "backTranslation": "Others, each item below 5",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never stores IP addresses, browser-identifying strings, full addresses, times or anything that links one visit with another. Neither the counter nor this site sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -2848,6 +3065,34 @@
         "issue": "Page counter (13 November 2026): re-check: Correct.",
         "backTranslation": "Others, each item with fewer than 5",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full addresses, times or anything that links one visit with another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Purpose clause rendered as a consequence ('ta díky tomu může...' = thanks to this it can), not 'so that'. Same fact, both destination and purpose kept.",
+        "backTranslation": "Cloudflare's responses also ask your browser to report connection failures to Cloudflare; thanks to this it can fix network problems.",
+        "suggestion": "Optional: '..., aby selhání připojení hlásil společnosti Cloudflare, aby mohla opravovat problémy se sítí.' Not required."
       }
     ]
   },
@@ -3142,6 +3387,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct; [[ghp]] markers intact. 'fut' (runs on) for 'is hosted on' is acceptable.",
         "backTranslation": "This website runs on the GitHub Pages service. During your visit, GitHub may log technical data, such as your IP address, for security and operating purposes; see GitHub's privacy statement.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identifier strings, full addresses, points in time, nor anything that links one visit to another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -3455,6 +3721,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "How Doughnut Forge treats your data. The app keeps your files and keys on the device and collects nothing. This site keeps only anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full addresses, times or anything that links one visit to another. Neither the counter nor this site sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -3739,6 +4026,34 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "How Doughnut Forge treats your data. The app stores your files and keys on your device and collects nothing. This site stores only anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never stores IP addresses, browser identification strings, full addresses, time or anything that links one visit with another. Neither the counter nor this site sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): «» quotes around the old page title correctly removed now that the link is a description, not a title.",
+        "backTranslation": "on the statistics page",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -4019,6 +4334,34 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. 'Your files and keys stay on your device' instead of 'the app keeps'. Same facts.",
         "backTranslation": "How Doughnut Forge handles your data. Your files and keys stay on your device, and the app collects nothing. This website keeps only anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identity strings, full addresses, times or anything that connects one visit with another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): «» quotes around the old page title correctly removed.",
+        "backTranslation": "on the statistics page",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -4297,6 +4640,34 @@
         "issue": "Page counter (13 November 2026): re-check: Both apostrophes are now ’ (пов’язує, запам’ятати); no straight apostrophes left in stats.*. The new policy string sec6Never still uses a straight ' (пов'язує), as do the older policy sections, so the policy file is consistent within itself.",
         "backTranslation": "",
         "suggestion": "Optional: use ’ in privacy/uk.json sec6Never if the policy file is ever normalised."
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never stores IP addresses, browser identification strings, full addresses, time or anything that links one visit with another. Neither the counter nor this site sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): «» quotes around the old page title correctly removed.",
+        "backTranslation": "on the statistics page",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -4535,6 +4906,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "How Doughnut Forge treats your data. The app keeps your files and keys on your device and collects nothing. This website only keeps anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full addresses, times or anything that relates one visit to another. Neither the counter nor this website installs cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -4798,6 +5190,27 @@
         "issue": "Page counter (13 November 2026): re-check: 'não define cookies' (sets no cookies) is right in all three. Unchanged wording 'número de versão do site' for 'build number' reads as 'site version number'; it is used consistently and is not misleading.",
         "backTranslation": "The count sets no cookies ... / It never keeps IP addresses ... It sets no cookies.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full addresses, times or anything that links one visit to another. Neither the counter nor this site sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -5083,6 +5496,34 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Colon joins the first two sentences. Same facts.",
         "backTranslation": "How Doughnut Forge handles your data: the app keeps your files and keys on your device and collects nothing. This website stores only anonymous daily page-view totals.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never stores IP addresses, browser identity strings, full addresses, times or anything that links one visit to another. Neither the counter nor this website places cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link wraps the locative suffix ('istatistik sayfasındaki'); acceptable in Turkish, link text reads as 'on the statistics page'.",
+        "backTranslation": "use the 'Do not count my visits' button on the statistics page",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -5319,6 +5760,34 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "Doughnut Forge's handling of data. The app keeps files and keys on the device and collects nothing. All this website keeps is anonymous per-day page view totals.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter keeps none of: IP addresses, browser identification strings, full addresses, times, anything that ties one visit to another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): '完全なアドレス' (full addresses) is ambiguous about web addresses, but this wording is unchanged from before and outside the changed scope. zh uses '完整网址' (full URL), which is clearer.",
+        "backTranslation": "full addresses",
+        "suggestion": "Optional later: '完全なURL'. Not part of this change."
       }
     ]
   },
@@ -5562,6 +6031,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. '不收集任何内容' (collects no content) is the usual rendering of 'collects nothing'.",
         "backTranslation": "How Doughnut Forge handles your data. The app saves your files and keys on your device and collects no content. This website keeps only anonymous daily page-view totals.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full web addresses, times, or any information that can link one visit with another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -5832,6 +6322,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. '不收集任何內容' is the usual rendering of 'collects nothing'.",
         "backTranslation": "How Doughnut Forge handles your data. The app saves your files and keys on your device and collects no content. This website keeps only anonymous daily page-view totals.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identification strings, full web addresses, times, or any information that can link one visit with another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -6131,6 +6642,27 @@
         "issue": "Page counter (13 November 2026): re-check: Fix is right: full address of the page the visitor came from.",
         "backTranslation": "IP address, cookies or anything else stored on the device, browser or device, the full address of the page the visitor came from, search terms, time of visit, or anything that links one visit to another.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter does not keep IP addresses, browser identification strings, full addresses, times, or any information that links one visit to another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -6382,6 +6914,27 @@
         "issue": "Page counter (13 November 2026): re-check: Fix is right: Cloudflare runs the counter. Rest unchanged and correct.",
         "backTranslation": "Cloudflare runs the counter. Like any network, Cloudflare sees your IP address to deliver the count, and finds the country from it. The counter never reads or keeps your IP address. Daily totals are deleted after 13 months.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identity strings, full addresses, time, or anything that links one visit to another. Neither the counter nor this website sets any cookie.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -6645,6 +7198,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "How Doughnut Forge handles your data. The app stores your files and keys on your device and does not collect anything. This website only stores anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never stores IP addresses, browser identity strings, full addresses, times, or anything that links one visit with another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -6902,6 +7476,27 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "How Doughnut Forge handles your data. The app stores your files and keys on your device and does not collect anything. This website only stores anonymous daily totals of page views.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never stores IP addresses, browser identity strings, full addresses, times or anything that links one visit with another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -7144,6 +7739,34 @@
         "issue": "Page counter (13 November 2026): re-check: Correct. Every fact present: handles data; app keeps files and keys on device; collects nothing; site keeps only anonymous daily page counts. Register matches the file.",
         "backTranslation": "How Doughnut Forge handles your data. The app keeps your files and keys on your device and does not collect anything. This website keeps only daily totals of page views, anonymously.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never keeps IP addresses, browser identity strings, full addresses, times or anything that links one visit to another. Both the counter and this website do not set cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): 'ทั้งตัวนับและเว็บไซต์นี้ไม่ตั้งค่าคุกกี้' (both the counter and this website do not set cookies) is natural Thai for 'neither...nor'. Covers both.",
+        "backTranslation": "Both the counter and this website do not set cookies.",
+        "suggestion": "None needed."
       }
     ]
   },
@@ -7427,6 +8050,27 @@
         "issue": "Page counter (13 November 2026): re-check: Fix is right. Opt-out flag in local storage only if the visitor chooses, build number in session storage. Matches English.",
         "backTranslation": "The counter stores nothing on your device. The only things this website stores there are an opt-out flag in the browser's local storage, if you choose not to be counted, and one build number in the browser's session storage, so an open tab can know when the website has been updated.",
         "suggestion": ""
+      },
+      {
+        "key": "policy:sec6Never",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Subject is the counter; cookie sentence covers both counter and website; no facts added or dropped; register matches file.",
+        "backTranslation": "The counter never stores IP addresses, browser identification strings, full addresses, times or anything that links one visit to another. Neither the counter nor this website sets cookies.",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6Processor",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Back-translation of new sentence matches English: Cloudflare's responses also ask your browser to report connection failures to Cloudflare, so Cloudflare can fix network problems. Rest of sec6Processor byte-identical to HEAD.",
+        "backTranslation": "",
+        "suggestion": "None needed."
+      },
+      {
+        "key": "policy:sec6OptOut",
+        "severity": "note",
+        "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
+        "backTranslation": "",
+        "suggestion": "None needed."
       }
     ]
   }
