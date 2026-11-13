@@ -105,7 +105,7 @@ Every plan must say how it serves both goals.
 - The privacy policy and support page first existed in the forge-privacy repo (github.com/Darren-Corbett/forge-privacy, a single index.html on GitHub Pages). Its URL is the Privacy and Support URL in the store listings, so it must keep working.
 - Since 13 November 2026 the privacy policy's source is this repo (`src/content/legal/privacy/`), in every site language; `scripts/check-privacy-wording.mjs` keeps the pages word for word with it. Every wording change needs the owner's yes.
 - Never break the old URL. When the new pages are live, plan a redirect page in forge-privacy (meta refresh plus a canonical link to the new page, with a visible link). Store listings are updated by me, not by Claude.
-- The policy must state plainly that the app and site collect no personal data, and must stay true as the site changes.
+- The policy must say the app collects nothing. For the website it must say exactly what the anonymous counter keeps, that Cloudflare briefly handles the IP address to deliver requests, and that the counter never reads or stores it. Never claim the website processes no personal data.
 - No company details on the site. The footer carries only the copyright line "© {year} Doughnut Forge", and the legal page carries only the trademark notices.
 - The apps are not sold in the EU yet, but the site is visible there; store links must not promise availability that does not exist.
 
