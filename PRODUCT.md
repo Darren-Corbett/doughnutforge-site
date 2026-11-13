@@ -25,13 +25,13 @@ The site succeeds when a visitor:
 - finds the site through search (the blog and core pages);
 - finds help on the support pages without having to open an issue.
 
-There are no analytics, so these guide judgement; they are not measured.
+The site keeps only anonymous daily page counts (public on /stats/), so these mostly guide judgement; no visitor is ever measured.
 
 ## Positioning
 
 The app works entirely on the person's device: no account, no servers, no subscription, no tracking, and it works without the internet. It uses post-quantum encryption. It is a one-time purchase on each platform, from that platform's store.
 
-The site lives up to the same promise: it has no trackers, no third-party requests and no forms that collect personal data.
+The site lives up to the same promise: the app collects nothing, and the website keeps only the anonymous daily totals described in the privacy policy, with no cookies, no IP addresses, no third-party scripts and no forms that collect personal data. The counter stores nothing on the visitor's device; the website stores only an opt-out flag, if the visitor chooses it, and one build number in sessionStorage, so an open tab can tell when the site has been updated.
 
 ## Operating Context
 

@@ -43,9 +43,13 @@ Every plan must say how it serves both goals.
 ## Hard rules
 - Mobile first and fully responsive. Design and test at 360px wide first, then tablet, then desktop. No horizontal scrolling.
 - Match the app's look: take colours, fonts, spacing, icons and tone from the app repo's styles and assets. Never invent a new brand.
-- No tracking: no analytics scripts, no third-party cookies, no external fonts, CDNs or embeds. Self-host every asset. The site must live up to an app that has no servers.
+- No tracking. The app collects nothing. The website keeps only the anonymous daily totals described in the privacy policy (pages viewed, language, country, referring site, store taps), counted by its own Worker in `analytics-worker/` and public on `/stats/`: no cookies, no IP addresses and no third-party scripts. The counter itself stores nothing on the visitor's device; the only web storage is in the next rule. No other analytics, no external fonts, CDNs or embeds. Self-host every asset. The site must live up to an app that has no servers.
 - No forms that collect personal data.
-- No web storage, with one exception (owner, 25 October 2026): the page check that keeps open tabs on the live build (`src/components/FreshCheck.astro`) may keep the build ID in `sessionStorage`. It holds only the build ID and clears when the tab closes. This exception is for the website only: the app's no-web-storage rule still applies to the app and must never be relaxed there.
+- No web storage, with two exceptions:
+  - (owner, 25 October 2026) the page check that keeps open tabs on the live build (`src/components/FreshCheck.astro`) may keep the build ID in `sessionStorage`. It holds only the build ID and clears when the tab closes.
+  - (owner, 13 November 2026) the page counter's opt-out on `/stats/` may keep one flag in `localStorage`, only when the visitor chooses not to be counted. `src/components/PageCount.astro` reads it before sending anything; if storage cannot be read, nothing is counted.
+
+  These exceptions are for the website only: the app's no-web-storage rule still applies to the app and must never be relaxed there.
 - Commit freely on main; ask before every push. A push deploys the site. Work trunk-based on main. Never create branches.
 - After a push, say it is pushed and stop: never watch or poll GitHub runs. GitHub emails the owner if a run fails. Check a run only when the owner asks, or once, when it should be done, if the push changed a workflow.
 - Before every commit, run `npm run check:commit`: it shows what is staged (`git diff --cached --stat`) and type-checks with `astro check`, which covers the tests too. Never stage ahead; a test commit holds only tests and test config.
@@ -98,8 +102,8 @@ Every plan must say how it serves both goals.
 - Only show issues I have labelled for the site (for example `site-faq`), so spam and unanswered issues never appear.
 
 ## Legal
-- The privacy policy and support page already exist in the forge-privacy repo (github.com/Darren-Corbett/forge-privacy, a single index.html on GitHub Pages). Its URL is the Privacy and Support URL in the store listings, so it must keep working.
-- Bring that content into this site as the privacy and support pages. Keep the wording exactly as it is; propose any changes separately for approval. Translate it into every site language.
+- The privacy policy and support page first existed in the forge-privacy repo (github.com/Darren-Corbett/forge-privacy, a single index.html on GitHub Pages). Its URL is the Privacy and Support URL in the store listings, so it must keep working.
+- Since 13 November 2026 the privacy policy's source is this repo (`src/content/legal/privacy/`), in every site language; `scripts/check-privacy-wording.mjs` keeps the pages word for word with it. Every wording change needs the owner's yes.
 - Never break the old URL. When the new pages are live, plan a redirect page in forge-privacy (meta refresh plus a canonical link to the new page, with a visible link). Store listings are updated by me, not by Claude.
 - The policy must state plainly that the app and site collect no personal data, and must stay true as the site changes.
 - No company details on the site. The footer carries only the copyright line "© {year} Doughnut Forge", and the legal page carries only the trademark notices.
