@@ -42,7 +42,7 @@ try {
 }
 
 // security.txt (RFC 9116): reports go to GitHub's private vulnerability
-// reporting. Expires is one year ahead at most; the build fails 30 days before
+// reporting or by email, in English. Expires is one year ahead at most; the build fails 30 days before
 // it lapses, so it is renewed in time (the dated reminder is in docs/HANDOVER.md).
 const DAY = 24 * 3600 * 1000;
 const securityTxt = `${dist}.well-known/security.txt`;
@@ -51,7 +51,10 @@ else {
   const txt = readFileSync(securityTxt, "utf8");
   for (const line of [
     "Contact: https://github.com/Darren-Corbett/forge-privacy/security/advisories/new",
+    "Contact: mailto:support@doughnut-forge.app",
     "Policy: https://doughnut-forge.app/security/",
+    "Policy: https://doughnut-forge.app/security/white-paper/",
+    "Preferred-Languages: en",
     "Canonical: https://doughnut-forge.app/.well-known/security.txt",
   ])
     if (!txt.split("\n").includes(line)) errors.push(`security.txt has no "${line}" line`);
