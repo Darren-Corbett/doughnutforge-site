@@ -1,0 +1,89 @@
+---
+// The security white paper: the design in full, for every reader. The one
+// document allowed to explain internal security design (owner, 14 November
+// 2026). Its text is src/content/white-paper/<lang>.md; each section's "How this
+// is checked" note is a <details class="checked"> there, folded away on the page
+// and opened in the PDF (scripts/make-white-paper-pdf.mjs).
+import { getEntry, render } from "astro:content";
+import PageHero from "../components/PageHero.astro";
+import Prose from "../components/Prose.astro";
+import type { Language } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Language;
+}
+const { lang } = Astro.props;
+const paper = await getEntry("whitePaper", lang.code);
+if (!paper) throw new Error(`No white paper in src/content/white-paper/${lang.code}.md`);
+const { Content } = await render(paper);
+const base = lang.code === "en" ? "" : `/${lang.path}`;
+const pdf = `${base}/security/white-paper/doughnut-forge-white-paper-${lang.code}.pdf`;
+---
+
+<Base lang={lang} title={paper.data.title} description={paper.data.description}>
+  <PageHero title={paper.data.title} lead={paper.data.lead} />
+  <div class="section">
+    <p class="pdf"><a href={pdf}>{paper.data.pdf}</a></p>
+    <div class="paper">
+      <Prose sheet="wide">
+        <Content />
+      </Prose>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .pdf {
+    margin-bottom: 24px;
+    font-weight: 700;
+  }
+  .pdf a {
+    display: inline-block;
+    min-height: 44px;
+    padding: 10px 0;
+  }
+  .paper :global(details.checked) {
+    margin: 20px 0 8px;
+    border-top: 2px solid #e2e8f0;
+    padding-top: 12px;
+  }
+  .paper :global(details.checked > summary) {
+    cursor: pointer;
+    font-weight: 700;
+    min-height: 44px;
+    padding: 10px 0;
+  }
+  .paper :global(table) {
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  .paper :global(th),
+  .paper :global(td) {
+    border: 1px solid #e2e8f0;
+    padding: 6px 10px;
+    vertical-align: top;
+    text-align: start;
+  }
+  .paper :global(pre) {
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  /* Diagrams keep readable labels: on a phone they scroll sideways in their own box */
+  .paper :global(figure.diagram) {
+    overflow-x: auto;
+  }
+  .paper :global(figure.diagram svg) {
+    min-width: 560px;
+    max-width: 100%;
+    height: auto;
+  }
+  @media print {
+    .pdf {
+      display: none;
+    }
+  }
+</style>

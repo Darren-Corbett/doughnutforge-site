@@ -36,4 +36,20 @@ const blog = defineCollection({
     }),
 });
 
-export const collections = { blog };
+// The security white paper: one Markdown file per language, in
+// src/content/white-paper/<lang code>.md. English is the reference; each
+// translation says so. Its PDF is made from the built page
+// (scripts/make-white-paper-pdf.mjs) and checked by scripts/check-white-paper.mjs.
+const whitePaper = defineCollection({
+  loader: glob({ pattern: "*.md", base: "./src/content/white-paper" }),
+  schema: z.object({
+    title: z.string().max(70),
+    description: z.string().min(50).max(160),
+    lead: z.string(),
+    /** The link to this language's PDF */
+    pdf: z.string(),
+    lang: z.string(),
+  }),
+});
+
+export const collections = { blog, whitePaper };
