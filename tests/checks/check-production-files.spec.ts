@@ -105,6 +105,29 @@ test("fails when the ID is not the hash of the content", async () => {
   expect(result.output).toContain("content");
 });
 
+// security.txt (decisions 1 to 3, 14 November 2026): reports go to GitHub's
+// private reporting or by email, in English, and both policies are named
+test("security.txt names both ways to report, both policies and English only", () => {
+  const lines = readFileSync(`${root}public/.well-known/security.txt`, "utf8").split("\n");
+  expect(lines.filter((l) => l.startsWith("Contact: "))).toEqual([
+    "Contact: https://github.com/Darren-Corbett/forge-privacy/security/advisories/new",
+    "Contact: mailto:support@doughnut-forge.app",
+  ]);
+  expect(lines.filter((l) => l.startsWith("Policy: "))).toEqual(["Policy: https://doughnut-forge.app/security/", "Policy: https://doughnut-forge.app/security/white-paper/"]);
+  expect(lines.filter((l) => l.startsWith("Preferred-Languages: "))).toEqual(["Preferred-Languages: en"]);
+  expect(lines.some((l) => l.startsWith("#") && l.includes('"Security"')), "asks for a subject starting with Security").toBe(true);
+});
+
+for (const line of ["Contact: mailto:support@doughnut-forge.app", "Policy: https://doughnut-forge.app/security/white-paper/", "Preferred-Languages: en"])
+  test(`fails when security.txt has no "${line}" line`, async () => {
+    const dist = await site({ stamped: false });
+    writeFileSync(join(dist, ".well-known/security.txt"), read(dist, ".well-known/security.txt").replace(`${line}\n`, ""));
+    expect((await exec("build-id.mjs", dist)).code).toBe(0);
+    const result = await check(dist);
+    expect(result.code).not.toBe(0);
+    expect(result.output).toContain(line);
+  });
+
 // Astro keeps one file for identical SVGs and names it after whichever it happened
 // to read first, so two builds of the same commit could differ and the build ID
 // would change for nothing. src/assets must hold no two identical SVGs.
