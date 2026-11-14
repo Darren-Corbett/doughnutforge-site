@@ -12,6 +12,7 @@ export type RoadmapItem = { status: RoadmapStatus; title: UiKey; text?: UiKey; p
 export const roadmapStatuses: RoadmapStatus[] = ["shipped", "next", "later"];
 
 export const roadmap: RoadmapItem[] = [
+  { status: "shipped", title: "roadmap.format.title", text: "roadmap.format.text" },
   { status: "shipped", title: "roadmap.android.title" },
   {
     status: "shipped",

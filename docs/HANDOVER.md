@@ -33,7 +33,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 - **On `main`, live:** the quantum promise ("stays protected") replaced by the approved phrase in `faq.quantum.a`, `security.quantum.text` and two posts, in 30 languages (`39a9001`, pushed by the owner). The owner updates the Medium copies of "Harvest now, decrypt later" and "Quantum-safe encryption explained", and the app side the Mac and iOS store descriptions ("Built for the long term").
 - **Branch `release/launch`** (pushed to origin with the owner's yes; the deploy runs on `main` only) holds the Android 1.0 and new-file-format work for the joint launch. What is done, what waits and the launch-day steps: [`docs/launch/JOINT-LAUNCH.md`](launch/JOINT-LAUNCH.md). New strings waiting for translations: [`docs/launch/v3-copy.md`](launch/v3-copy.md).
 - **New checks in every build:** `check-android-claims.mjs` (no iPhone-only file protection claimed for Android, in English) and `check-white-paper.mjs` (nothing from the app's private notes in the white paper; each PDF made from its current text). The PDF is made by hand: `npm run build`, `node scripts/make-white-paper-pdf.mjs --lang <code>`, build again.
-- **Rule for the branch (owner, 14 November 2026):** until launch, nothing on it may describe a weakness of the current file format. Sentences held back are kept outside the repo, in `~/Desktop/review/launch-site/white-paper-held-back.md`.
+- **Rule for the branch (owner, 14 November 2026):** until launch, nothing on it may describe a weakness of the current file format. Sentences held back are kept outside the repo, in `~/Desktop/review/website-handoff/v3/white-paper-held-back.md`.
 
 ---
 

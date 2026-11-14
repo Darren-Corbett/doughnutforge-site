@@ -9,12 +9,14 @@ import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
 import { site } from "../data/site";
 import { localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
+import { whitePaperLink } from "../data/white-paper";
 
 interface Props {
   lang: Language;
 }
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
+const paper = whitePaperLink(lang.code);
 // Blue only: the other tab tones label the app's features, and these are not features.
 // The missing audit is a row of its own, as loud as the facts.
 const facts: ToneRow[] = [
@@ -41,6 +43,13 @@ const facts: ToneRow[] = [
       <div>
         <p>{t("security.technical.text")}</p>
         <a class="btn-outline" href={localePath(lang.code, "security/technical-details/")}>{t("security.technical.button")}</a>
+      </div>
+    </div>
+    <div class="technical ruled-row-late">
+      <h2>{t("security.whitePaper.title")}</h2>
+      <div>
+        <p>{t("security.whitePaper.text")}</p>
+        <a class="btn-outline" href={paper.href} hreflang={paper.hreflang}>{t("security.whitePaper.link")}</a>
       </div>
     </div>
   </div>

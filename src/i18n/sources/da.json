@@ -55,9 +55,17 @@
     "en": "12fa8f0175a0",
     "text": "24b78a734ed1"
   },
+  "faq.code.a": {
+    "en": "6a8efe0f07f5",
+    "text": "1a65074017f3"
+  },
+  "faq.code.q": {
+    "en": "149045881b8b",
+    "text": "d8b845359060"
+  },
   "faq.data.a": {
-    "en": "bf5bad196719",
-    "text": "15af34333855"
+    "en": "43505ed87f6e",
+    "text": "8e3e545bf720"
   },
   "faq.data.q": {
     "en": "2207b89043c1",
@@ -78,6 +86,14 @@
   "faq.offline.q": {
     "en": "d667044022db",
     "text": "422479894a0c"
+  },
+  "faq.older.a": {
+    "en": "20f788510f1b",
+    "text": "af237302a205"
+  },
+  "faq.older.q": {
+    "en": "249de21a831d",
+    "text": "db751068565c"
   },
   "faq.password.a": {
     "en": "bfd119ae593b",
@@ -214,6 +230,10 @@
   "footer.product": {
     "en": "fb9ef894175c",
     "text": "34b157607524"
+  },
+  "footer.whitePaper": {
+    "en": "fbaacd907026",
+    "text": "fd9e98b6847e"
   },
   "go.back": {
     "en": "2b3d81876202",
@@ -667,6 +687,14 @@
     "en": "bfb75f56d798",
     "text": "2d7d7ebe0b2e"
   },
+  "roadmap.format.text": {
+    "en": "af3c5ff375bc",
+    "text": "a6746af2be6f"
+  },
+  "roadmap.format.title": {
+    "en": "8587314a7903",
+    "text": "2544850ea25b"
+  },
   "roadmap.later": {
     "en": "73b6e48a1b55",
     "text": "c38b7e2b1c7f"
@@ -782,6 +810,18 @@
   "security.title": {
     "en": "8f6fb4eb7f42",
     "text": "0390b9066073"
+  },
+  "security.whitePaper.link": {
+    "en": "59672594ace2",
+    "text": "8afdeb896bab"
+  },
+  "security.whitePaper.text": {
+    "en": "8aae5d852e37",
+    "text": "e82ebbdb8cfd"
+  },
+  "security.whitePaper.title": {
+    "en": "3fff81b37295",
+    "text": "2d8fca3b4884"
   },
   "skip": {
     "en": "ac576a66d456",
@@ -1518,6 +1558,10 @@
   "technical.visible.title": {
     "en": "dcba9c4e7f8a",
     "text": "1788a1ddff7c"
+  },
+  "technical.whitePaper": {
+    "en": "02cf03648f01",
+    "text": "d7ac332acb5b"
   },
   "v2.notes.backups": {
     "en": "c9942be7742e",

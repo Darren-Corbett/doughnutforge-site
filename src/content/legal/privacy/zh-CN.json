@@ -11,11 +11,11 @@
   "strings": {
     "title": "隐私政策",
     "effectiveDate": "生效日期：2026年11月",
-    "hero": "<strong>Doughnut Forge 应用采用零知识、本地优先的架构。</strong>应用不收集任何内容：它不会收集、传输或存储您的任何数据，开发者也无法访问这些数据，但您选择直接发送的信息除外（见第 3 节）。本网站另在第 6 节中说明。",
+    "hero": "<strong>Doughnut Forge 应用在您的设备上运行，无需账户，也不使用服务器。</strong>应用不收集任何内容：它不会收集、传输或存储您的任何数据，开发者也无法访问这些数据，但您选择直接发送的信息除外（见第 3 节）。本网站另在第 6 节中说明。",
     "sec1Title": "1. 数据存储与删除",
     "sec1Desc": "Doughnut Forge 生成的所有加密密钥、<code class=\"k1\">.vltc2</code> 身份文件和 <code class=\"k2\">.vlt2</code> 文件仅存储在您的本地设备上。除非您自行导出并分享文件，否则任何信息都不会离开您的设备。卸载应用会删除软件本身，但不会删除您保存在设备其他位置的文件，也不会删除保存在系统凭据管理器（如 macOS 钥匙串或 Windows 凭据管理器）中的密钥。您可以手动删除这些内容。",
     "sec2Title": "2. 应用中的分析与遥测",
-    "sec2Desc": "Doughnut Forge 应用不包含任何跟踪脚本、分析引擎或崩溃报告工具。如果您从 Apple App Store 或 Microsoft Store 下载本应用，Apple 或 Microsoft 可能会向我们提供汇总统计数据，例如下载次数和崩溃统计。这些报告不包含可识别个人身份的信息。您可以在设备设置中控制诊断数据的共享。",
+    "sec2Desc": "Doughnut Forge 应用不包含任何跟踪脚本、分析引擎或崩溃报告工具。如果您从 Apple App Store、Microsoft Store 或 Google Play 下载本应用，Apple、Microsoft 或 Google 可能会向开发者提供汇总统计数据，例如下载次数和崩溃统计。这些报告不包含可识别个人身份的信息。您可以在设备设置中控制诊断数据的共享。",
     "sec3Title": "3. 支持与联系",
     "sec3Desc": "如有问题或需要报告技术故障，请在我们的[[gh]]GitHub Issues[[/gh]]上提交工单。GitHub 是一个公共平台，受其自身隐私政策约束；请勿在问题报告中包含敏感信息或解密后的数据。如有隐私相关咨询，请使用我们的[[tally]]联系表单[[/tally]]。您通过该表单提交的信息由 Tally（tally.so）代为处理，我们使用该服务接收您的消息，仅用于回复您的咨询。",
     "sec4Title": "4. 政策变更",

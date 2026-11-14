@@ -304,6 +304,13 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. Matches Android's 'Déverrouillage par empreinte digitale' and 'Déverrouillage par reconnaissance faciale'; label 'Android :' keeps the French space like 'Windows :'.",
         "backTranslation": "password, or unlocking by fingerprint or by face recognition if you turn it on.",
         "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Livre blanc' is the standard French term.",
+        "backTranslation": "L'app n'indique un contact comme expéditeur que si... = The app shows a contact as sender only if...",
+        "suggestion": "No change."
       }
     ]
   },
@@ -628,6 +635,13 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. Android's German settings say 'Entsperrung per Fingerabdruck' and 'Entsperrung per Gesichtserkennung'; 'Entsperren per Fingerabdruck oder Gesicht' is understandable and acceptable. Preference only.",
         "backTranslation": "Password or, if you turn it on, unlocking by fingerprint or face.",
         "suggestion": "Optional: 'Passwort oder, wenn Sie es aktivieren, Entsperrung per Fingerabdruck oder Gesichtserkennung.'"
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Whitepaper' is the normal German term.",
+        "backTranslation": "The App Doughnut Forge works on your device, without account and without server.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -870,6 +884,13 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. 'desbloqueo con huella digital o facial' matches Android's 'Desbloqueo con huella digital' and 'Desbloqueo facial'.",
         "backTranslation": "password, or fingerprint or face unlock if you turn it on.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Libro blanco' is the standard Spanish term.",
+        "backTranslation": "roadmap.format.text: The app indicates that a contact is the sender only when the file is signed with the keys of that contact's new card.",
         "suggestion": "No change."
       }
     ]
@@ -1163,6 +1184,13 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. Matches Android's 'Sblocco con l'impronta' and 'Sblocco con il volto'.",
         "backTranslation": "password, or unlocking with the fingerprint or with the face if you turn it on.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'White paper' is the normal Italian usage. Note: faq.share.a uses 'scheda di contatto', the new strings use 'scheda contatto' as in home.phones.altIdentity; both exist in the file.",
+        "backTranslation": "—",
         "suggestion": "No change."
       }
     ]
@@ -1474,6 +1502,13 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. 'ontgrendelen met vingerafdruk of gezicht' matches Android Dutch wording.",
         "backTranslation": "password, or unlocking with fingerprint or face if you turn that on.",
         "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Whitepaper' is the normal Dutch term.",
+        "backTranslation": "De app noemt een contact alleen als afzender wanneer... = The app names a contact as sender only when...",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1735,6 +1770,13 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. 'upplåsning med fingeravtryck eller ansikte' matches Android Swedish wording.",
         "backTranslation": "password, or unlocking with fingerprint or face if you turn it on.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Vitbok' is the standard Swedish term.",
+        "backTranslation": "Appen anger en kontakt som avsändare bara när... = The app states a contact as sender only when...",
         "suggestion": "No change."
       }
     ]
@@ -2004,6 +2046,13 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. Android's Danish name for face unlock is 'Ansigtsoplåsning'; 'oplåsning med fingeraftryk eller ansigt' is clear and fine.",
         "backTranslation": "password, or unlocking with fingerprint or face, if you turn it on.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses.",
+        "backTranslation": "The Doughnut Forge app works on your device, without account and without servers. / ...may give the developer aggregated statistics.",
         "suggestion": "No change."
       }
     ]
@@ -2329,6 +2378,27 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. The home title grows to about 100 characters with 'Androidille'; long, but expected for Finnish and in line with the other titles. No change needed.",
         "backTranslation": "Doughnut Forge: offline file encryption for iPhone, iPad, Android, Mac and Windows",
         "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.format.title",
+        "severity": "note",
+        "issue": "'Uusi tiedostomuoto ja kvanttikestävät allekirjoitukset' joins with 'and' instead of 'with'; meaning is the same. 'kvanttikestävä' and 'perinteinen' match faq.quantum.a.",
+        "backTranslation": "A new file format and quantum-resistant signatures",
+        "suggestion": "Optional: 'Uusi tiedostomuoto, jossa kvanttikestävät allekirjoitukset'."
+      },
+      {
+        "key": "security.whitePaper.title",
+        "severity": "note",
+        "issue": "'Tietoturvan white paper' is understood (Finnish tech writing uses 'white paper' as a loanword); slightly awkward compound.",
+        "backTranslation": "Security's white paper",
+        "suggestion": "Optional: 'Tietoturvan white paper -julkaisu' or keep."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses.",
+        "backTranslation": "—",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2603,6 +2673,13 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. 'opplåsing med fingeravtrykk eller ansikt' matches Android Norwegian wording.",
         "backTranslation": "password, or unlocking with fingerprint or face if you turn it on.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Whitepaper' is the normal Norwegian usage.",
+        "backTranslation": "Appen oppgir en kontakt som avsender bare når... = The app states a contact as sender only when...",
         "suggestion": "No change."
       }
     ]
@@ -2906,6 +2983,13 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. 'odblokowywanie odciskiem palca lub twarzą' matches Android Polish wording.",
         "backTranslation": "password or unlocking with fingerprint or face, if you turn them on.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Biała księga' is the standard Polish term.",
+        "backTranslation": "Aplikacja wskazuje kontakt jako nadawcę tylko wtedy, gdy... = The app indicates a contact as sender only when...",
         "suggestion": "No change."
       }
     ]
@@ -3247,6 +3331,27 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. 'Odemknutí otiskem prstu či obličejem' matches Android's Czech names.",
         "backTranslation": "password, or unlocking with fingerprint or face, if you turn this option on.",
         "suggestion": "No change."
+      },
+      {
+        "key": "privacy.sec2Desc",
+        "severity": "note",
+        "issue": "Ambiguous word order: 'mohou vývojáři Apple, Microsoft nebo Google poskytovat' reads most naturally with 'vývojáři' as nominative plural, i.e. 'Apple, Microsoft or Google developers may provide aggregated statistics'. The recipient (the developer) is lost, so the meaning differs from the English. (fixed and re-checked 2026-11-14)",
+        "backTranslation": "...Apple, Microsoft or Google developers may provide aggregated statistics, such as download counts and crash statistics.",
+        "suggestion": "mohou Apple, Microsoft nebo Google poskytovat vývojáři souhrnné statistiky, například počty stažení a statistiky pádů."
+      },
+      {
+        "key": "security.whitePaper.title",
+        "severity": "note",
+        "issue": "'Bílá kniha' is understood and used, though Czech tech companies more often write 'whitepaper'. Preference only.",
+        "backTranslation": "Security white book (white paper)",
+        "suggestion": "Optional: 'Whitepaper o zabezpečení'."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero fine. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. roadmap.format.text uses 'uvede' (states), not 'ověří'.",
+        "backTranslation": "Aplikace uvede kontakt jako odesílatele, jen když... = The app lists a contact as sender only when...",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3575,6 +3680,20 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. 'ujjlenyomatos vagy arcalapú feloldás' matches Android's Hungarian 'Feloldás ujjlenyomattal' and 'Arcalapú feloldás'.",
         "backTranslation": "password, or fingerprint or face-based unlock, if you turn it on.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.whitePaper.title",
+        "severity": "note",
+        "issue": "'fehér könyv' is recognised; Hungarian tech writing also uses 'whitepaper'. Preference only.",
+        "backTranslation": "Security white book",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses.",
+        "backTranslation": "Az alkalmazás csak akkor nevez meg egy kapcsolatot küldőként... = The app names a contact as sender only when...",
         "suggestion": "No change."
       }
     ]
@@ -3924,6 +4043,20 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. 'deblocare cu amprenta sau cu fața' matches Android Romanian wording.",
         "backTranslation": "password or, if you turn this option on, unlocking with fingerprint or face.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.whitePaper.text",
+        "severity": "note",
+        "issue": "'Întregul mod de proiectare' is a little heavy for 'The design in full'; meaning correct. 'Cartea albă' is the standard Romanian term.",
+        "backTranslation": "The whole way of designing: how files, keys and identities are protected...",
+        "suggestion": "Optional: 'Designul complet: ...'"
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses.",
+        "backTranslation": "Aplicația indică un contact drept expeditor doar când... = The app indicates a contact as sender only when...",
+        "suggestion": "No change."
       }
     ]
   },
@@ -4250,6 +4383,20 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. 'разблокировка по отпечатку пальца или по лицу' matches Android Russian wording.",
         "backTranslation": "password or unlocking by fingerprint or by face, if you turn this feature on.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.whitePaper.title",
+        "severity": "note",
+        "issue": "'Белая книга' is recognised as a white paper; Russian tech writing also often uses 'Whitepaper'. Preference only.",
+        "backTranslation": "Security white book",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. roadmap.format.text uses 'указывает' (indicates), not 'подтверждает'.",
+        "backTranslation": "Приложение указывает контакт как отправителя, только если... = The app indicates a contact as sender only if...",
+        "suggestion": "No change."
       }
     ]
   },
@@ -4572,6 +4719,13 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. Matches Android's Greek 'Ξεκλείδωμα με δακτυλικό αποτύπωμα' and 'Ξεκλείδωμα με το πρόσωπο'.",
         "backTranslation": "password or unlocking with fingerprint or with the face, if you turn it on.",
         "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Λευκή βίβλος' is the standard Greek term for a white paper.",
+        "backTranslation": "The Doughnut Forge app works on your device, without account and without servers.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -4892,13 +5046,20 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. 'розблокування відбитком пальця чи обличчям' matches Android Ukrainian wording.",
         "backTranslation": "password or unlocking with fingerprint or face, if you turn this feature on.",
         "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. roadmap.format.text uses 'указує' (indicates), not 'підтверджує'. 'Біла книга' is recognised.",
+        "backTranslation": "Застосунок указує контакт як відправника, лише коли... = The app indicates a contact as sender only when...",
+        "suggestion": "No change."
       }
     ]
   },
   "en-US": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4928,6 +5089,13 @@
         "issue": "Page counter (13 November 2026): en-US inherits every new UI string from UK English (no US spelling differences), and its privacy policy file is an exact copy of en.json, as it was before.",
         "backTranslation": "",
         "suggestion": ""
+      },
+      {
+        "key": "privacy.hero / privacy.sec2Desc",
+        "severity": "note",
+        "issue": "Identical to the approved English in both strings; JSON valid. UI file has no changes (inherits en).",
+        "backTranslation": "—",
+        "suggestion": "No change."
       }
     ]
   },
@@ -5164,6 +5332,13 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. 'desbloqueo con huella digital o facial' matches Android's 'Desbloqueo con huella digital' and 'Desbloqueo facial'.",
         "backTranslation": "password, or fingerprint or face unlock if you turn it on.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Libro blanco' is standard; 'white paper' is also common in Mexican tech usage, preference only.",
+        "backTranslation": "The app indicates that a contact is the sender only when...",
         "suggestion": "No change."
       }
     ]
@@ -5462,6 +5637,13 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. Matches Android's 'Desbloqueio por impressão digital' and 'Desbloqueio facial'; 'o Google Play' correctly masculine.",
         "backTranslation": "password, or fingerprint or face unlock if you turn it on.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'White paper' is the normal Brazilian usage.",
+        "backTranslation": "O app só indica um contato como remetente quando... = The app only indicates a contact as sender when...",
         "suggestion": "No change."
       }
     ]
@@ -5790,6 +5972,20 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. Suffixes 'Google Play'i' and 'Google Play'den' are correct. 'açarsanız ... kilit açma' repeats the verb 'aç'; acceptable, preference only.",
         "backTranslation": "password or, if you turn it on, unlocking with fingerprint or face.",
         "suggestion": "Optional: 'parola ya da etkinleştirirseniz parmak izi veya yüz ile kilit açma.'"
+      },
+      {
+        "key": "security.whitePaper.title",
+        "severity": "note",
+        "issue": "'beyaz kitap' is recognised, though Turkish tech writing often uses 'whitepaper' or 'teknik doküman'. Preference only.",
+        "backTranslation": "Security white book",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses.",
+        "backTranslation": "Uygulama bir kişiyi yalnızca ... gönderen olarak adlandırır = The app names a contact as sender only when...",
+        "suggestion": "No change."
       }
     ]
   },
@@ -6068,6 +6264,13 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. '指紋認証か顔認証によるロック解除' matches Android Japanese terms.",
         "backTranslation": "Password, or if turned on, unlocking by fingerprint or face authentication.",
         "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'ホワイトペーパー' is standard.",
+        "backTranslation": "アプリが連絡先の名前を送信者として表示するのは... = The app shows the contact's name as sender only when...",
+        "suggestion": "No change."
       }
     ]
   },
@@ -6345,6 +6548,20 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. '指纹解锁或人脸解锁' matches Android Simplified Chinese terms.",
         "backTranslation": "Password, or after you turn it on, use fingerprint unlock or face unlock.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "roadmap.format.text",
+        "severity": "note",
+        "issue": "'经典方法' for 'classical method' while faq.quantum.a uses '传统算法'; both understood.",
+        "backTranslation": "Each new file is signed by its sender with a classical and a post-quantum method. Only when... does the app mark that contact as the sender.",
+        "suggestion": "Optional: '传统方法'."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. '白皮书' is standard; '无需账户' is natural for 'no account'.",
+        "backTranslation": "—",
         "suggestion": "No change."
       }
     ]
@@ -6650,6 +6867,13 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. '指紋解鎖或人臉解鎖' matches Android Traditional Chinese terms.",
         "backTranslation": "Password, or after you turn it on, use fingerprint unlock or face unlock.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. '白皮書' is standard; '不需要帳號' is natural for 'no account'.",
+        "backTranslation": "App 才會將該聯絡人標示為傳送者 = only then does the app mark that contact as sender.",
         "suggestion": "No change."
       }
     ]
@@ -6985,6 +7209,13 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. '지문 또는 얼굴 인식 잠금 해제' matches Android Korean terms.",
         "backTranslation": "Password, or if turned on, fingerprint or face recognition unlock.",
         "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. '백서' is standard.",
+        "backTranslation": "앱은 ... 그 연락처를 보낸 사람으로 표시합니다 = The app displays that contact as the sender only when...",
+        "suggestion": "No change."
       }
     ]
   },
@@ -7270,6 +7501,13 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses.",
         "backTranslation": "password, or unlock with fingerprint or face if you turn it on.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'श्वेत पत्र' is the standard Hindi term.",
+        "backTranslation": "The app shows a contact's name as the sender only when the file is signed with the keys of that contact's new card.",
         "suggestion": "No change."
       }
     ]
@@ -7569,6 +7807,13 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. Android's Indonesian names are 'Buka dengan Sidik Jari' and 'Buka dengan Wajah'; 'buka kunci dengan sidik jari atau wajah' is clear.",
         "backTranslation": "password, or unlock with fingerprint or face if you turn it on.",
         "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'White paper' is the normal Indonesian usage.",
+        "backTranslation": "Aplikasi menyebut kontak sebagai pengirim hanya jika... = The app names a contact as sender only if...",
+        "suggestion": "No change."
       }
     ]
   },
@@ -7861,6 +8106,13 @@
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses.",
         "backTranslation": "password, or unlock with fingerprint or face if you turn it on.",
         "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Kertas putih' is the standard Malay term.",
+        "backTranslation": "Aplikasi menamakan kenalan sebagai penghantar hanya apabila... = The app names a contact as sender only when...",
+        "suggestion": "No change."
       }
     ]
   },
@@ -8144,6 +8396,13 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses.",
         "backTranslation": "password or unlocking with fingerprint or face, if you turn it on",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'ไวท์เปเปอร์' is standard; 'นามบัตร' matches the file's contact card term.",
+        "backTranslation": "แอปจะระบุชื่อผู้ติดต่อเป็นผู้ส่งก็ต่อเมื่อ... = The app names the contact as sender only when...",
         "suggestion": "No change."
       }
     ]
@@ -8462,6 +8721,20 @@
         "severity": "note",
         "issue": "Android launch strings (17 keys) reviewed: meaning matches English, Google Play used correctly, faq.which.a has only {available}, faq.restore.a changed only in its second sentence and its last sentence still names only iPhone, iPad or Mac, Android unlock text makes no locked-phone or Complete data protection claim, brand names intact, register consistent, file parses. Matches Android's 'Mở khóa bằng vân tay' and 'Mở khóa bằng khuôn mặt'.",
         "backTranslation": "password, or unlock with fingerprint or face if you turn this feature on.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy.hero",
+        "severity": "note",
+        "issue": "'không cần tài khoản' (no account needed) is natural Vietnamese for 'no account'; not a weakening.",
+        "backTranslation": "The Doughnut Forge app works on your device, no account needed and no servers.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "privacy+ui",
+        "severity": "note",
+        "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Sách trắng' is standard.",
+        "backTranslation": "Ứng dụng chỉ ghi tên một liên hệ là người gửi khi... = The app only writes a contact's name as sender when...",
         "suggestion": "No change."
       }
     ]

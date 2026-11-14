@@ -201,7 +201,13 @@ export default {
   "faq.which.a": "Doughnut Forge is available for {available}.",
   "faq.data.q": "Does Doughnut Forge or this website collect any data?",
   "faq.data.a":
-    "The app collects nothing: it has no tracking, analytics or crash reporting. This website keeps only anonymous daily totals of page views, which anyone can see on its statistics page. The count sets no cookies and never keeps your IP address. The only things this website stores on your device are your choice not to be counted, if you make it, and one build number, so an open tab can tell when the site has been updated. Apple and Microsoft may share aggregated statistics, such as download counts, that contain no personal details. GitHub, which hosts this website, may log technical information such as your IP address. The privacy policy has the details.",
+    "The app collects nothing: it has no tracking, analytics or crash reporting. This website keeps only anonymous daily totals of page views, which anyone can see on its statistics page. The count sets no cookies and never keeps your IP address. The only things this website stores on your device are your choice not to be counted, if you make it, and one build number, so an open tab can tell when the site has been updated. Apple, Microsoft and Google may share aggregated statistics, such as download counts, that contain no personal details. GitHub, which hosts this website, may log technical information such as your IP address. The privacy policy has the details.",
+  "faq.code.q": "Why did my contact code change?",
+  "faq.code.a":
+    "With this update, everyone's contact card carries new keys, so everyone's contact code changed once. It still has 16 characters in four groups. Share your contact card again with the people you write to, and compare codes again when a contact sends you their new card.",
+  "faq.older.q": "Why can someone not open a file I sent?",
+  "faq.older.a":
+    "Files and contact cards made with the latest version of Doughnut Forge do not open in older versions. Ask them to update the app. Files made with any earlier version still open in the latest one.",
   "faq.quantum.q": "What does post-quantum encryption mean?",
   "faq.quantum.a":
     "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones, to protect files and to sign them.",
@@ -280,6 +286,9 @@ export default {
     "On iPhone, a tab bar for Files, Text, Identity, Contacts and Settings. On iPhone and iPad, the app is hidden in the app switcher.",
   "v2.notes.desktop":
     "On Mac and Windows, zoom from 100% to 200%, and encrypting never replaces a file that is already there.",
+  "roadmap.format.title": "A new file format, with post-quantum signatures",
+  "roadmap.format.text":
+    "Every new file is signed by its sender with a classical and a post-quantum method. The app names a contact as the sender only when the file is signed with the keys on that contact's new card. Files made with earlier versions still open.",
   "roadmap.android.title": "Doughnut Forge for Android",
   "roadmap.small.title": "Smaller improvements",
   "roadmap.small.text": "Small fixes and improvements to Doughnut Forge 2.",
@@ -316,6 +325,9 @@ export default {
   "security.technical.text":
     "For technical readers: the encryption methods and keys Doughnut Forge uses, its file format, what can be seen without the key, its network behaviour, and what it does not protect against.",
   "security.technical.button": "Read the technical details",
+  "security.whitePaper.title": "Security white paper",
+  "security.whitePaper.text": "The design in full: how files, keys and identities are protected, in plain words first and in full technical detail after.",
+  "security.whitePaper.link": "Read the white paper",
 
   // Technical details: the one page that names algorithms and libraries, for
   // technical readers. Every fact comes from docs/TECH-SPEC.md and nowhere else.
@@ -339,6 +351,7 @@ export default {
   "technical.table.withoutKey": "Without the key",
   "technical.table.purpose": "Purpose",
   "technical.table.library": "Library",
+  "technical.whitePaper": "The white paper explains the design in full.",
   "technical.lead":
     "Doughnut Forge encrypts files, folders and short messages on your own device. There are no accounts, no servers and no cloud storage. This page lists the standard methods it uses, for readers who want to check them.",
   "technical.encryption.title": "Encryption",
@@ -548,4 +561,5 @@ export default {
 
   "footer.product": "Product",
   "footer.help": "Help",
+  "footer.whitePaper": "White paper",
 } as const;

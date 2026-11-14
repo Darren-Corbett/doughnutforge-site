@@ -15,12 +15,14 @@ import Prose from "../components/Prose.astro";
 import TocSection from "../components/TocSection.astro";
 import { localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
+import { whitePaperLink } from "../data/white-paper";
 
 interface Props {
   lang: Language;
 }
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
+const paper = whitePaperLink(lang.code);
 
 /** A list of "label text" items, all under one key prefix */
 const items = (prefix: string, ids: string[]) =>
@@ -79,6 +81,7 @@ const back = t("technical.back");
 
 <Base lang={lang} title={t("meta.technical.title")} description={t("meta.technical.description")} image="/og/technical.png">
   <PageHero title={t("technical.title")} lead={t("technical.lead")} />
+  <p class="section white-paper"><a href={paper.href} hreflang={paper.hreflang}>{t("technical.whitePaper")}</a></p>
   <div class="section">
     <section aria-labelledby="glance">
       <h2 id="glance" class="sr-only">{t("technical.glance.title")}</h2>
@@ -175,6 +178,13 @@ const back = t("technical.back");
 </Base>
 
 <style>
+  /* The link to the full design, under the lead */
+  .white-paper a {
+    display: inline-block;
+    min-height: 44px;
+    padding: 10px 0;
+    font-weight: 700;
+  }
   /* Four facts, each under a blue rule, in blue ink */
   .glance {
     display: grid;

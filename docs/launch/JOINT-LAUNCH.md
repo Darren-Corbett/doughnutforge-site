@@ -33,7 +33,7 @@ Sources: `~/Desktop/review/website-handoff/v3/` (decisions, brief, white paper d
 ## Launch day, in order
 
 1. Owner's go.
-2. Put back the sentences held for launch day (`~/Desktop/review/launch-site/white-paper-held-back.md`), checked against the final paper and translated.
+2. Put back the sentences held for launch day (`~/Desktop/review/website-handoff/v3/white-paper-held-back.md`), checked against the final paper and translated.
 3. In `tests/links/links.spec.ts`, set `PLAY_PUBLISHED` to `true`; `npm run test:links` must pass, including the Play listing.
 4. Open the Play link by hand once: `https://play.google.com/store/apps/details?id=com.darrencorbett.doughnutforge.mobile`.
 5. Set `Expires` in `public/.well-known/security.txt` to one year from today, and move the renewal reminder in `docs/HANDOVER.md`.
