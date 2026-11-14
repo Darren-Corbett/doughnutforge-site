@@ -15,7 +15,7 @@ const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.
 const ADVISORIES = "https://github.com/Darren-Corbett/forge-privacy/security/advisories/new";
 const SECTIONS = ["shipped", "next", "later"];
 // Names that stay untranslated on the technical details page, in every language
-const TECHNICAL_NAMES = ["AES-256-GCM", "X25519", "ML-KEM-768", "Ed25519", "HKDF-SHA-256", "Argon2id", "BIP-39", "aes-gcm (RustCrypto)", "BEGIN FORGE ENCLAVE"];
+const TECHNICAL_NAMES = ["AES-256-GCM", "X25519", "ML-KEM-768", "ML-KEM-1024", "Ed25519", "ML-DSA-87", "HKDF-SHA-256", "Argon2id", "BIP-39", "aes-gcm (RustCrypto)", "BEGIN FORGE ENCLAVE"];
 
 for (const lang of languages) {
   test.describe(lang.code, () => {
