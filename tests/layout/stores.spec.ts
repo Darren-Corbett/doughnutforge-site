@@ -112,7 +112,7 @@ test("English copy does not assume a computer", async ({ page }) => {
   }
   await page.goto("/support/");
   await expect(page.locator("main")).toContainText("If I buy it on one platform, do I also get it on another?");
-  await expect(page.locator("main")).toContainText("buying on a computer does not include iPhone and iPad");
+  await expect(page.locator("main")).toContainText("buying on Android, Mac or Windows does not include any other platform");
 });
 
 // Cards in a row are uniform: each badge sits at the bottom of its card, so the
