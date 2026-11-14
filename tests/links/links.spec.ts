@@ -58,7 +58,7 @@ test("external links answer", async ({ request }) => {
   const urls = new Set<string>();
   for (const file of files)
     for (const ref of attrs(readFileSync(file, "utf8")).map(decode))
-      if (/^https?:/.test(ref) && !ref.startsWith(LIVE) && !ref.startsWith(MICROSOFT) && !BOT_BLOCKED.some((site) => ref.startsWith(site))) urls.add(ref);
+      if (/^https?:/.test(ref) && !ref.startsWith(LIVE) && !ref.startsWith(MICROSOFT) && !ref.startsWith(PLAY) && !BOT_BLOCKED.some((site) => ref.startsWith(site))) urls.add(ref);
   const results: { url: string; status: number | string; final?: string }[] = [];
   const queue = [...urls].sort();
   await Promise.all(
@@ -119,6 +119,23 @@ test("Microsoft Store links open the app's page", async ({ request }) => {
     opened++;
   }
   test.skip(opened === 0, "The Microsoft Store blocked every request as a bot: check one link by hand");
+});
+
+// Google Play: one listing, linked in each page language. Fetched over plain
+// HTTP only (support/no-stores.ts). Play answers 404 until the app is published,
+// so until launch day only the addresses are checked: on launch day set
+// PLAY_PUBLISHED to true (docs/launch/JOINT-LAUNCH.md).
+const PLAY = "https://play.google.com/";
+const PLAY_PACKAGE = "com.darrencorbett.doughnutforge.mobile";
+const PLAY_PUBLISHED = false;
+test("Google Play links open the app's listing", async ({ request }) => {
+  const urls = new Set<string>();
+  for (const file of files) for (const ref of attrs(readFileSync(file, "utf8")).map(decode)) if (ref.startsWith(PLAY)) urls.add(ref);
+  expect([...urls].sort()).toEqual(languages.map((l) => `${PLAY}store/apps/details?id=${PLAY_PACKAGE}&hl=${l.hreflang}`).sort());
+  test.skip(!PLAY_PUBLISHED, "The Play listing is not published until launch day: addresses checked, listing not fetched");
+  const res = await request.get(`${PLAY}store/apps/details?id=${PLAY_PACKAGE}&hl=en`);
+  expect(res.status()).toBe(200);
+  expect(await res.text()).toContain("Doughnut Forge");
 });
 
 test.describe("live site", () => {
