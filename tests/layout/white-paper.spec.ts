@@ -25,3 +25,23 @@ test("white paper: opening a note shows how that section is checked", async ({ p
   await expect(note).toHaveAttribute("open", "");
   await expect(note.locator("p").first()).toBeVisible();
 });
+
+// Line-break markup (src/middleware.ts) is HTML, so it must never reach SVG text:
+// a <span> there pushes the labels out of the drawing
+test("white paper: diagram labels stay inside the drawing", async ({ page }) => {
+  await page.goto("/security/white-paper/");
+  const svg = page.locator("figure.diagram svg").first();
+  await expect(svg.locator("span")).toHaveCount(0);
+  await expect(svg.locator("text").first()).toHaveText("24 recovery words");
+  const box = (await svg.boundingBox())!;
+  for (const rect of await svg.locator("rect").all()) {
+    const r = (await rect.boundingBox())!;
+    expect(r.y + r.height, "box inside the drawing").toBeLessThanOrEqual(box.y + box.height + 1);
+  }
+});
+
+test("white paper: no sideways scrolling on a 360px phone", async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 800 });
+  await page.goto("/security/white-paper/");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(360);
+});
