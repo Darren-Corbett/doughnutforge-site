@@ -151,6 +151,11 @@ test("the counter's page list includes /stats/", () => {
   expect(list.pages["/stats/"]).toBe("en");
 });
 
+test("the counter's store list has every store on sale, Google Play included", () => {
+  const list = JSON.parse(readFileSync(`${SITE_DIR}count-pages.json`, "utf8"));
+  expect(list.stores).toEqual(["app-store", "google-play", "mac-app-store", "microsoft-store"]);
+});
+
 // Japanese, Chinese and Thai lines break only between words (src/middleware.ts),
 // so text the page script writes in must carry its own word breaks
 for (const path of ["ja", "zh-cn", "zh-tw", "th"])

@@ -16,6 +16,7 @@ const STORE_LINKS = {
   "app-store": "https://apps.apple.com/app/id6821344597",
   "mac-app-store": "https://apps.apple.com/app/id6812778888",
   "microsoft-store": "https://apps.microsoft.com/detail/9P25BS9L8LNB",
+  "google-play": "https://play.google.com/store/apps/details?id=com.darrencorbett.doughnutforge.mobile",
 };
 
 test.describe("a page view", () => {
