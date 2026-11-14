@@ -31,7 +31,7 @@ const cell = (label: string) => label.replace(/\s*[:：]\s*$/, "");
 const encryption = items("technical.encryption", ["cipher", "perItem", "auth", "nonces", "compression", "random"]);
 const keys = items("technical.keys", ["identity", "recovery", "exchange", "signatures", "derivation", "recipients"]);
 const stored = items("technical.stored", ["memory", "passes", "lanes", "salt", "output"]);
-const unlock = items("technical.unlock", ["mac", "windows", "ios"]);
+const unlock = items("technical.unlock", ["mac", "windows", "ios", "android"]);
 const visible = items("technical.visible", ["contents", "name", "for", "from", "count", "size", "dates", "format"]);
 const text = items("technical.text", ["wrap", "around", "inside"]);
 const limits = items("technical.limits", ["compromised", "access", "passcode", "recipients", "sender", "visible", "copies"]);

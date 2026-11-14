@@ -32,7 +32,10 @@ const items: FaqItem[] = ids.map((id) => ({
 }));
 
 function answer(id: (typeof ids)[number]) {
-  if (id === "which") return fill(t("faq.which.a"), { available: names("available"), coming: names("coming") });
+  if (id === "which") {
+    const coming = platforms.some((p) => p.status === "coming") ? fill(t("download.coming"), { platforms: names("coming") }) : "";
+    return [fill(t("faq.which.a"), { available: names("available") }), coming].join(" ").trim();
+  }
   return t(`faq.${id}.a` as UiKey);
 }
 

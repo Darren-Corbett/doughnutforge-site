@@ -23,6 +23,10 @@
     "en": "bc1ee089d6a8",
     "text": "75844b450339"
   },
+  "download.requires.android": {
+    "en": "a9e35bd27bb3",
+    "text": "8bda64503ce2"
+  },
   "download.requires.mac": {
     "en": "1b9c04bcfb6a",
     "text": "f6d4005c3725"
@@ -84,8 +88,8 @@
     "text": "a30c837c7822"
   },
   "faq.platforms.a": {
-    "en": "c0a37f63ca08",
-    "text": "87b68b6fe165"
+    "en": "d9d248a422b3",
+    "text": "64541c591dce"
   },
   "faq.platforms.q": {
     "en": "c6f63a297eb8",
@@ -108,8 +112,8 @@
     "text": "45caaee671bc"
   },
   "faq.restore.a": {
-    "en": "edcc80ad1fc4",
-    "text": "882e51cb7be5"
+    "en": "b00bb672723e",
+    "text": "fdf801b18c5b"
   },
   "faq.restore.q": {
     "en": "f3bb860b08c7",
@@ -140,8 +144,8 @@
     "text": "b7965a205de2"
   },
   "faq.which.a": {
-    "en": "9bfd0a79849e",
-    "text": "0cbb0ade75a9"
+    "en": "43d37ce43de2",
+    "text": "6f169535b02b"
   },
   "faq.which.q": {
     "en": "be4932a64133",
@@ -223,9 +227,17 @@
     "en": "ef3fc854956d",
     "text": "758539d0127f"
   },
+  "go.open.googlePlay": {
+    "en": "31ee65efe5b4",
+    "text": "3e79e369e948"
+  },
   "go.tap": {
     "en": "753cb13b3d8f",
     "text": "df33fa591165"
+  },
+  "go.tap.googlePlay": {
+    "en": "1cc0afbd5373",
+    "text": "4df8dc74a394"
   },
   "home.cta.primary": {
     "en": "48335741e14d",
@@ -292,8 +304,8 @@
     "text": "1c3c95965c25"
   },
   "home.summary": {
-    "en": "750655f60743",
-    "text": "127eb395c165"
+    "en": "b6bb11a084c4",
+    "text": "f3b9e4a49c35"
   },
   "home.tagline": {
     "en": "caa0861ead91",
@@ -344,8 +356,8 @@
     "text": "70e8904ea87c"
   },
   "legal.trademarks.other": {
-    "en": "f2da63942724",
-    "text": "7fc4f25290f7"
+    "en": "e3d539153cfc",
+    "text": "55b50d79fa48"
   },
   "legal.trademarks.title": {
     "en": "722a2858f406",
@@ -360,12 +372,12 @@
     "text": "31ea787f3fd3"
   },
   "meta.download.description": {
-    "en": "f6ff650daf93",
-    "text": "d0e77769f176"
+    "en": "c98332618171",
+    "text": "0b035b5d02d4"
   },
   "meta.download.title": {
-    "en": "68404345f410",
-    "text": "d6e440cffb59"
+    "en": "4eda7a94e198",
+    "text": "bb8fcd9b8b32"
   },
   "meta.features.description": {
     "en": "deef289d4c0e",
@@ -380,8 +392,8 @@
     "text": "b3ce35fd588e"
   },
   "meta.home.title": {
-    "en": "1bddaec0f21b",
-    "text": "a71b039529c0"
+    "en": "284f6503d5bf",
+    "text": "7bc36abb4092"
   },
   "meta.known.description": {
     "en": "3d73dde0e8b9",
@@ -420,8 +432,8 @@
     "text": "166e4237806f"
   },
   "meta.roadmap.description": {
-    "en": "cc137717c3fb",
-    "text": "a6a11f127d5a"
+    "en": "16b6175342a2",
+    "text": "226eac6f921d"
   },
   "meta.roadmap.title": {
     "en": "1677756c8528",
@@ -516,8 +528,8 @@
     "text": "8aa79d5f85b3"
   },
   "press.about.shortText": {
-    "en": "f00bd863aa46",
-    "text": "a93816e867ce"
+    "en": "8b7c94b17b05",
+    "text": "6e340215965b"
   },
   "press.about.title": {
     "en": "444b1330c3dd",
@@ -623,6 +635,10 @@
     "en": "4ae6486e7206",
     "text": "a7d04ebb6717"
   },
+  "pricing.oneTime.googlePlay": {
+    "en": "4c7571d1ee4f",
+    "text": "141e37b8c900"
+  },
   "pricing.questions": {
     "en": "ad227025ac3b",
     "text": "e7d04eb9754d"
@@ -632,8 +648,8 @@
     "text": "2b641d565649"
   },
   "pricing.where.text": {
-    "en": "43304b2e7547",
-    "text": "d1b7f2a1cb94"
+    "en": "52ea15cd0d39",
+    "text": "79e6d222cecc"
   },
   "pricing.where.title": {
     "en": "f2ff3ffc2c74",
@@ -1394,6 +1410,14 @@
   "technical.toc": {
     "en": "b5658fc8edda",
     "text": "5b9c95043c2d"
+  },
+  "technical.unlock.android.label": {
+    "en": "17d3f4de6a7e",
+    "text": "726542b622b9"
+  },
+  "technical.unlock.android.text": {
+    "en": "48df0df40061",
+    "text": "256599897711"
   },
   "technical.unlock.ios.label": {
     "en": "1b1333c08d9f",

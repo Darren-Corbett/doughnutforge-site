@@ -39,6 +39,7 @@ Your contact list is also stored encrypted (AES-256-GCM).
 | Mac | Passphrase. The app runs in the macOS App Sandbox. |
 | Windows | Passphrase. |
 | iPhone and iPad | Passphrase, or Face ID or Touch ID if you turn it on. Doughnut Forge then keeps your passphrase in the iOS Keychain, on this device only, and only while the device is unlocked. iOS releases it after Face ID, Touch ID or the device passcode. The app's files use iOS Complete data protection. |
+| Android | Passphrase, or fingerprint or face unlock if you turn it on. |
 
 ## What can be seen without the key
 

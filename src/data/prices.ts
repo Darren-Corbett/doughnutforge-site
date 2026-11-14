@@ -9,4 +9,6 @@ export const prices = {
     { amount: 2.99, until: "2026-12-11" },
     { amount: 3.99, from: "2026-12-11" },
   ],
+  // Owner, 14 November 2026: no launch price
+  android: [{ amount: 3.99 }],
 } as const;

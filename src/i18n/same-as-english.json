@@ -18,7 +18,8 @@
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
     "roadmap.v2.title",
-    "stats.table.store"
+    "stats.table.store",
+    "technical.unlock.android.label"
   ],
   "nl": [
     "press.facts.website",
@@ -37,7 +38,8 @@
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
     "roadmap.v2.title",
-    "stats.table.store"
+    "stats.table.store",
+    "technical.unlock.android.label"
   ],
   "da": [
     "nav.download",
@@ -50,7 +52,8 @@
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "tr": [
     "press.shots.label",
@@ -60,7 +63,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "hi": [
     "press.shots.label",
@@ -70,7 +74,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "th": [
     "press.shots.label",
@@ -80,7 +85,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "ko": [
     "press.download",
@@ -89,7 +95,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "it": [
     "press.shots.label",
@@ -100,7 +107,8 @@
     "technical.unlock.windows.label",
     "technical.unlock.windows.text",
     "roadmap.v2.title",
-    "stats.table.store"
+    "stats.table.store",
+    "technical.unlock.android.label"
   ],
   "ro": [
     "press.shots.label",
@@ -110,7 +118,8 @@
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "pl": [
     "press.shots.label",
@@ -120,7 +129,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "cs": [
     "press.shots.label",
@@ -130,7 +140,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "hu": [
     "press.shots.label",
@@ -140,7 +151,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "sv": [
     "nav.support",
@@ -153,7 +165,8 @@
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "no": [
     "press.shots.label",
@@ -165,7 +178,8 @@
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "fi": [
     "press.shots.label",
@@ -175,7 +189,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "ru": [
     "press.shots.label",
@@ -185,7 +200,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "uk": [
     "press.shots.label",
@@ -195,7 +211,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "el": [
     "press.shots.label",
@@ -205,7 +222,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "fr": [
     "technical.keys.derivation.text",
@@ -223,7 +241,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "es-MX": [
     "technical.encryption.nonces.label",
@@ -233,7 +252,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "pt-BR": [
     "technical.encryption.nonces.label",
@@ -242,7 +262,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "ja": [
     "technical.stored.passes.text",
@@ -266,7 +287,8 @@
     "technical.stored.salt.label",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "ms": [
     "technical.keys.derivation.text",
@@ -275,7 +297,8 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ],
   "vi": [
     "technical.keys.derivation.text",
@@ -283,6 +306,7 @@
     "technical.stored.lanes.text",
     "technical.unlock.mac.label",
     "technical.unlock.windows.label",
-    "roadmap.v2.title"
+    "roadmap.v2.title",
+    "technical.unlock.android.label"
   ]
 }

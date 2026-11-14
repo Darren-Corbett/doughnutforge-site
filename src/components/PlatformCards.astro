@@ -5,6 +5,7 @@
 import StoreBadge from "./StoreBadge.astro";
 import { platformName, platforms, storeNames, type PlatformId } from "../data/stores";
 import { fill, useStrings, type Language, type UiKey } from "../i18n";
+import { storePhrase } from "../i18n/store-phrases";
 
 interface Props {
   lang: Language;
@@ -19,6 +20,7 @@ const { t } = useStrings(lang.code);
 const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
   mac: "download.requires.mac",
   windows: "download.requires.windows",
+  android: "download.requires.android",
 };
 ---
 
@@ -31,7 +33,7 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
           <>
             <p class="status">
               {mode === "pricing"
-                ? fill(t("pricing.oneTime"), { store: storeNames[p.store] })
+                ? fill(t(storePhrase(p.store, "oneTime")), { store: storeNames[p.store] })
                 : REQUIRES[p.id] && t(REQUIRES[p.id]!)}
             </p>
             <div class="buy" data-nosnippet>

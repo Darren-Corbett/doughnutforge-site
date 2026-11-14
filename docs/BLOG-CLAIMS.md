@@ -100,7 +100,7 @@ Not claimed: that signatures are post-quantum (they are not); "quantum-proof" or
 | 4.14 | The recipient decrypts with their own identity; no file password | store ("They open them with their own identity"); `vault.rs:340` (no file passwords exist) |
 | 4.15 | "Access Denied": not encrypted for this identity, or changed since it was encrypted | `errors.json:21-22` |
 | 4.16 | "Unknown Sender Detected": the file still opens, but the app cannot match the sender to one of your contacts | `secure-directory.json:60`; `reader.rs:181-182` |
-| 4.17 | Folders encrypted on a computer cannot be opened on iPhone or iPad | `mobile_vault.rs:135, 162` |
+| 4.17 | Folders encrypted on a computer cannot be opened on iPhone, iPad or Android | `mobile_vault.rs:135, 162`; Android: `~/Desktop/review/android-live/app-answers.md` (Android launch: package, §3 files and text, no folders); `src/data/stores.ts` (android available) |
 | 4.18 | Losing the backup phrase and password means files sent to you cannot be opened | `mobile-guides.json:25`; `mobile-views.json:126` |
 | 4.19 | Screenshots of the Identity and Contacts screens are from the iPhone app | `fastlane/screenshots/ios/en-GB/iphone_05_identity.png`, `iphone_03_contacts.png`; App Store lookup `itunes.apple.com/lookup?id=6821344597` (iPhone and iPad app, live 27 October 2026) |
 | R4.1 | *Reasoning:* the usual advice to send a password separately, and why that is fragile | general advice, no external fact |
@@ -163,10 +163,10 @@ Rules for both posts (owner): no logos; product names as plain words only; never
 
 | # | Claim in the post | Source | Checked | Status |
 |---|---|---|---|---|
-| D1 | For iPhone and iPad, Mac and Windows; Android is coming | `src/data/stores.ts`; site `faq.which.a` (Linux left out, owner) | 2026-10-29 | verified |
+| D1 | For iPhone and iPad, Android, Mac and Windows (Android from the joint launch) | `src/data/stores.ts`; site `faq.which.a` (Linux left out, owner) | 2026-10-29 | verified |
 | D2 | One-time purchase on each platform, never a subscription | row 1.16; site `faq.platforms.a` | 2026-10-29 | verified |
 | D3 | No account and no servers; works entirely on the device, even without an internet connection | rows 1.2, 2.5 | 2026-10-29 | verified |
-| D4 | Encrypts files and text; whole folders on a computer only, not on iPhone or iPad | rows 1.1, 4.17; HANDOVER "Mobile first" | 2026-10-29 | verified |
+| D4 | Encrypts files and text; whole folders on a computer only, not on iPhone, iPad or Android | rows 1.1, 4.17; `~/Desktop/review/android-live/app-answers.md` (Android launch: package, §3 files and text, no folders); `src/data/stores.ts` (android available); HANDOVER "Mobile first" | 2026-10-29 | verified |
 | D5 | Each file or note is encrypted for the people you choose, who open it with their own identity; there is no file password | rows 1.14, 4.10, 4.14 | 2026-10-29 | verified |
 | D6 | The locked file can be sent any way, including a cloud folder; the other person needs Doughnut Forge to open it | row 4.13; site `faq.recipient.a` | 2026-10-29 | verified |
 | D7 | If you lose your password and every way to recover your identity (your 24-word backup phrase), your files cannot be opened | row 2.4; app `identity.json:16, 20` (24 words). Recovery shards are not named: the Security tab that makes them is hidden behind `enableDayTwoFunctionality`, which is off (`theme-slice.ts:14`, `common.ts` `ALMOST_ALL_TABS`) | 2026-10-29 | verified |
@@ -195,7 +195,7 @@ Rules for both posts (owner): no logos; product names as plain words only; never
 | 5.N6 | DHS said it is "aware of a potential breach" | [NPR](https://www.npr.org/2026/10/28/nx-s1-6021497/dhs-hack-ice); [BBC](https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo) | 2026-10-29 |
 | 5.N7 | "the third time in recent weeks that a government agency has been targeted by leaks or hacks" | [BBC](https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo) | 2026-10-29 |
 | 5.E1 | ICO: "you could encrypt the data yourself before you upload it"; it helps only if the key is not also stored in the same cloud storage | [ICO: Encryption scenarios](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/encryption/encryption-scenarios/) ("provided you don’t also store the key in the same cloud storage system") | 2026-10-29 |
-| 5.D1 | Encrypts files and text on iPhone, iPad, Mac or Windows PC; works entirely on the device, even without an internet connection; whole folders on a computer | rows D1, D3, D4, 1.1, 2.5; `src/data/stores.ts` | 2026-10-29 |
+| 5.D1 | Encrypts files and text on iPhone, iPad, Android phone, Mac or Windows PC; works entirely on the device, even without an internet connection; whole folders on a computer | rows D1, D3, D4, 1.1, 2.5; `src/data/stores.ts` | 2026-10-29 |
 | 5.D2 | No servers, no account; password and keys never stored on a server or sent across the network | rows D3, 2.6; site `faq.storage.a`, `security.keys.text` | 2026-10-29 |
 | 5.D3 | Encrypt a private message for your contacts and share it however you like | `src/i18n/store/en.json` ("Encrypt text" feature) | 2026-10-29 |
 | 5.D4 | You choose who can open each file; each opens it with their own identity; no file password | rows D5, 4.10, 4.14 | 2026-10-29 |
@@ -271,7 +271,7 @@ FAQ answer `faq.messaging.a` ("Why not just use WhatsApp or another encrypted me
 | 7.16 | The technical details page names the exact methods and lists what Doughnut Forge does not protect against, including a compromised device and anyone who can open a file copying what is inside | site `security.technical.text`; `docs/TECH-SPEC.md` "What Doughnut Forge does not protect against"; row 6.17 | repo |
 | 7.17 | Screenshot caption: files are encrypted and decrypted on the device, and nothing is uploaded | row 2.3; same image, alt text and caption as post 5 | repo |
 | 7.18 | No independent security audit yet; one is planned | site `security.audit.text` ("One is planned."); `src/data/roadmap.ts` (`roadmap.audit`, later) | repo |
-| 7.19 | Available for iPhone and iPad, Mac and Windows; one-time purchase on each platform, never a subscription | `src/data/stores.ts` (ios, mac, windows available); site `home.pricing.title`, `faq.platforms.a` | repo |
+| 7.19 | Available for iPhone and iPad, Android, Mac and Windows; one-time purchase on each platform, never a subscription | `src/data/stores.ts` (ios, android, mac, windows available); site `home.pricing.title`, `faq.platforms.a` | repo |
 | 7.20 | Losing your password and your 24-word backup phrase means your files cannot be opened | rows D7, 2.4; site `faq.backup.a` | repo |
 | 7.21 | Reasoning, not a sourced fact: the two clocks; protecting long-lived files as if the second clock might run out first; examples of long-lived files; the six questions; locking a new copy does not change old ones | consistent with 7.5 to 7.9 | n/a |
 

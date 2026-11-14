@@ -3,7 +3,7 @@
 // Every other language has a file in this folder with the same keys, less the
 // English-only blog and 404 strings (see TranslatedKey in ../index.ts).
 export default {
-  "meta.home.title": "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and Windows",
+  "meta.home.title": "Doughnut Forge: offline file encryption for iPhone, iPad, Android, Mac and Windows",
   "meta.home.description":
     "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no servers, no subscription.",
 
@@ -22,7 +22,7 @@ export default {
   "nav.home": "Doughnut Forge home",
   "skip": "Skip to content",
 
-  "home.summary": "Offline file encryption for iPhone, iPad, Mac and Windows.",
+  "home.summary": "Offline file encryption for iPhone, iPad, Android, Mac and Windows.",
   "home.tagline": "Only the people you choose can open them.",
   "home.lead": "Doughnut Forge locks your files and text on your iPhone, iPad or computer and lets you share them with the people you trust.",
   "home.what.title": "What is Doughnut Forge?",
@@ -74,8 +74,10 @@ export default {
   "a11y.newTab": "(opens in a new tab)",
   // The /go/ page a hidden store badge leads to. {store} is the store's name, never translated
   "go.open": "Open the {store}",
+  "go.open.googlePlay": "Open Google Play",
   "go.back": "Back to Doughnut Forge",
   "go.tap": "Tap below to open the {store}.",
+  "go.tap.googlePlay": "Tap below to open Google Play.",
   // "Works without the internet" (features.offline.title) as a sentence, under the badge
   "go.offline": "Works without the internet.",
 
@@ -114,18 +116,20 @@ export default {
     "Buy Doughnut Forge once for each platform you use, from that platform's store. No subscription, no account and nothing to renew.",
   "pricing.where.title": "Where to buy",
   "pricing.where.text":
-    "Each platform is a separate purchase from its own store. Buying on iPhone and iPad does not include Mac or Windows, and buying on a computer does not include iPhone and iPad.",
+    "Each platform is a separate purchase from its own store. Buying on iPhone and iPad does not include Android, Mac or Windows, and buying on Android, Mac or Windows does not include any other platform.",
   "pricing.oneTime": "One-time purchase from the {store}",
+  "pricing.oneTime.googlePlay": "One-time purchase from Google Play",
   "pricing.questions": "Questions about buying?",
   "pricing.questionsLink": "See the answers on the support page",
 
   // Download page
-  "meta.download.title": "Download Doughnut Forge for iPhone, iPad, Mac and Windows",
+  "meta.download.title": "Download Doughnut Forge for iPhone, iPad, Android, Mac and Windows",
   "meta.download.description":
-    "Get Doughnut Forge from the App Store for iPhone and iPad, the Mac App Store or the Microsoft Store. A version for Android is coming soon.",
+    "Get Doughnut Forge from the App Store for iPhone and iPad, Google Play for Android, the Mac App Store or the Microsoft Store.",
   "download.title": "Download Doughnut Forge",
   "download.requires.mac": "Needs macOS 12 Monterey or later.",
   "download.requires.windows": "Needs Windows 11.",
+  "download.requires.android": "Needs Android 10 or later.",
   "download.start.title": "When you first open it",
   "download.start.text":
     "Doughnut Forge starts with one short welcome, then one choice: create your identity, or restore it. When you create it, the app gives you 24 recovery words. Write them down and keep them somewhere safe: they are the only way to restore your identity or reset a forgotten password.",
@@ -167,7 +171,7 @@ export default {
     "No. Doughnut Forge is a one-time purchase, never a subscription. You buy it once from the store for your platform, and there is nothing to renew.",
   "faq.platforms.q": "If I buy it on one platform, do I also get it on another?",
   "faq.platforms.a":
-    "No. Each platform is a separate purchase from its own store: the App Store for iPhone and iPad, the Mac App Store for Mac and the Microsoft Store for Windows. Buying on iPhone and iPad does not include Mac or Windows, and buying on a computer does not include iPhone and iPad.",
+    "No. Each platform is a separate purchase from its own store: the App Store for iPhone and iPad, Google Play for Android, the Mac App Store for Mac and the Microsoft Store for Windows. Buying on iPhone and iPad does not include Android, Mac or Windows, and buying on Android, Mac or Windows does not include any other platform.",
   "faq.offline.q": "Do I need an account or an internet connection?",
   "faq.offline.a":
     "No. There is no account to create, and Doughnut Forge works entirely on your device, even without an internet connection. You only need a connection to download the app, or if you choose to send encrypted files over the internet.",
@@ -179,7 +183,7 @@ export default {
     "When you choose “Create my identity”, the app gives you 24 recovery words. Write them down and keep them somewhere safe: they are the only way to restore your identity or reset a forgotten password. After you write them down, the app asks for two of them, to help you catch a mistake in your copy. The app can also save them as a PDF. That PDF is not encrypted, so print it, then delete it, and do not keep it in iCloud Drive, Dropbox or any synced folder. Your contacts are not part of your recovery words.",
   "faq.restore.q": "How do I restore my identity on a new device?",
   "faq.restore.a":
-    "With your 24 recovery words. Backups of your iPhone, iPad or Mac do not include your identity, so restoring a device backup does not bring it back. Install Doughnut Forge on the new device, choose “I already have recovery words” and enter them. It works across platforms, for example from a Mac to a Windows PC. Restoring brings back your identity, so files encrypted for it open again. Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+    "With your 24 recovery words. Backups of your iPhone, iPad or Mac, and Android backups, do not include your identity, so restoring a device backup does not bring it back. Install Doughnut Forge on the new device, choose “I already have recovery words” and enter them. It works across platforms, for example from a Mac to a Windows PC. Restoring brings back your identity, so files encrypted for it open again. Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
   "faq.password.q": "I forgot my password. What can I do?",
   "faq.password.a":
     "On the lock screen, choose “Trouble unlocking?” and set a new password with your 24 recovery words. Your identity, contacts and encrypted files stay the same. Without your recovery words, the password cannot be reset.",
@@ -193,8 +197,8 @@ export default {
   "faq.messaging.a":
     "Messaging apps such as WhatsApp encrypt messages end to end, but only inside their own app. You rely on the company that runs it: its app, its rules for backups, what it can see about how you use it, and whether you can easily move away. Doughnut Forge encrypts the file or message itself, on your device. It stays encrypted however you send it: by email, in cloud storage, in a chat, or pasted as text into a social media post, as long as the text arrives unchanged. Only the people you choose can open it. The service it passes through can still see that something was sent or posted, when, and roughly how big it is.",
   "faq.which.q": "Which platforms can I use it on?",
-  // {available} and {coming} are lists such as "iPhone and iPad, Mac and Windows"
-  "faq.which.a": "Doughnut Forge is available for {available}. Coming soon: {coming}.",
+  // {available} is a list such as "iPhone and iPad, Android, Mac and Windows"; SupportPage adds download.coming when a platform is coming
+  "faq.which.a": "Doughnut Forge is available for {available}.",
   "faq.data.q": "Does Doughnut Forge or this website collect any data?",
   "faq.data.a":
     "The app collects nothing: it has no tracking, analytics or crash reporting. This website keeps only anonymous daily totals of page views, which anyone can see on its statistics page. The count sets no cookies and never keeps your IP address. The only things this website stores on your device are your choice not to be counted, if you make it, and one build number, so an open tab can tell when the site has been updated. Apple and Microsoft may share aggregated statistics, such as download counts, that contain no personal details. GitHub, which hosts this website, may log technical information such as your IP address. The privacy policy has the details.",
@@ -215,7 +219,7 @@ export default {
   "press.about.title": "About Doughnut Forge",
   "press.about.short": "Short description",
   "press.about.shortText":
-    "Doughnut Forge is an offline file encryption app for Mac, iPhone, iPad and Windows.",
+    "Doughnut Forge is an offline file encryption app for Mac, iPhone, iPad, Android and Windows.",
   "press.about.long": "Long description",
   "press.facts.title": "Fact sheet",
   "press.facts.name": "Name",
@@ -251,11 +255,11 @@ export default {
     "Apple, the Apple logo, Mac, iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store and Mac App Store are service marks of Apple Inc.",
   "legal.trademarks.microsoft": "Microsoft, Windows and the Microsoft Store logo are trademarks of the Microsoft group of companies.",
   "legal.trademarks.other":
-    "Android is a trademark of Google LLC. Linux is the registered trademark of Linus Torvalds in the U.S. and other countries.",
+    "Android, Google Play and the Google Play logo are trademarks of Google LLC. Linux is the registered trademark of Linus Torvalds in the U.S. and other countries.",
 
   // Roadmap: shipped, next and later only. Never a date, version or finding code.
   "meta.roadmap.title": "Roadmap | Doughnut Forge",
-  "meta.roadmap.description": "What is planned next for Doughnut Forge, including Android and an independent security audit.",
+  "meta.roadmap.description": "What is planned next for Doughnut Forge, including an independent security audit.",
   "roadmap.title": "Roadmap",
   "roadmap.lead": "What has shipped, and what is planned next. Plans can change, so nothing here has a date.",
   "roadmap.shipped": "Shipped",
@@ -386,6 +390,8 @@ export default {
   "technical.unlock.mac.text": "password. The app runs in the macOS App Sandbox.",
   "technical.unlock.windows.label": "Windows:",
   "technical.unlock.windows.text": "password.",
+  "technical.unlock.android.label": "Android:",
+  "technical.unlock.android.text": "password, or fingerprint or face unlock if you turn it on.",
   "technical.unlock.ios.label": "iPhone and iPad:",
   "technical.unlock.ios.text":
     "password, or Face ID or Touch ID if you turn it on. Doughnut Forge then keeps your password in the iOS Keychain, on this device only, and only while the device is unlocked. iOS releases it after Face ID, Touch ID or the device passcode. The app's files use iOS Complete data protection.",

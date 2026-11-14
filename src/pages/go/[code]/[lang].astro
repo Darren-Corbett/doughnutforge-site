@@ -23,6 +23,7 @@ import { Image } from "astro:assets";
 import icon from "../../../assets/brand/app-icon.png";
 import { badgeArt, badgeWording, goPath, secondArt, storeCode } from "../../../data/badges";
 import { platformName, platforms, storeNames, storeUrl, type PlatformId, type StoreId } from "../../../data/stores";
+import { storePhrase } from "../../../i18n/store-phrases";
 import { builtLanguages, fill, localePath, useStrings, type Language } from "../../../i18n";
 
 export const getStaticPaths = (() =>
@@ -62,7 +63,7 @@ const width = Math.round((image.width / image.height) * HEIGHT);
     <meta name="color-scheme" content="dark" />
     <meta http-equiv="refresh" content={`0; url=${url}`} />
     <title>{t("button.getApp")}</title>
-    <meta name="description" content={fill(t("go.tap"), { store: storeName })} />
+    <meta name="description" content={fill(t(storePhrase(store, "tap")), { store: storeName })} />
     <script is:inline>
       (() => {
         const root = document.documentElement;
@@ -337,13 +338,13 @@ const width = Math.round((image.width / image.height) * HEIGHT);
       <h1>{t("button.getApp")}</h1>
       <div class="progress" data-go="progress" aria-hidden="true"></div>
       <div class="later">
-        <p class="line" data-go="line">{fill(t("go.tap"), { store: storeName })}</p>
+        <p class="line" data-go="line">{fill(t(storePhrase(store, "tap")), { store: storeName })}</p>
         <a class="way-on" href={self} data-go="on">
           <img src={secondArt(file)} width={width} height={HEIGHT} alt="" />
           <span class="sr-only"><span lang={wordingLang}>{alt}</span></span>
         </a>
         <p class="pill-row" data-go="text" hidden>
-          <a class="pill primary" href={self}>{fill(t("go.open"), { store: storeName })}</a>
+          <a class="pill primary" href={self}>{fill(t(storePhrase(store, "open")), { store: storeName })}</a>
         </p>
         <ul class="reassure" data-go="reassure">
           <li class="green"><span class="dot"></span><span>{t("home.pricing.title")}</span></li>

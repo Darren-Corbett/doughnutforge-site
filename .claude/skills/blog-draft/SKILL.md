@@ -82,7 +82,7 @@ In this order (as `docs/BLOG-TOPICS.md` says):
 - **Purchase and prices:**
   - Never "pay once" site-wide: it is a one-time purchase on each platform.
   - No prices unless they come from `src/data/prices.ts` and will still be true on the publish date.
-  - iPhone and iPad are "coming soon" unless `src/data/stores.ts` marks iOS available.
+  - A platform is "coming soon" unless `src/data/stores.ts` marks it available. Android is sold on Google Play; it encrypts files and text, never folders, and never claim iPhone file protection ("unreadable while locked", "Complete data protection") for it.
 - **Content:** no security internals and no algorithm names. NIST's 2024 post-quantum standards may be mentioned in general.
 - **Style:** plain language that never talks down. No "we", no contractions, British English.
 - **Topical posts:**

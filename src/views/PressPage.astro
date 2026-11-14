@@ -27,7 +27,7 @@ const facts = [
   [t("press.facts.name"), site.name],
   [t("press.facts.developer"), site.name],
   [t("press.facts.available"), names("available")],
-  [t("press.facts.coming"), names("coming")],
+  ...(platforms.some((p) => p.status === "coming") ? [[t("press.facts.coming"), names("coming")]] : []),
   [t("press.facts.price"), t("press.facts.priceValue")],
   [t("press.facts.languages"), String(languages.length)],
   [t("press.facts.website"), site.url.replace("https://", "")],
