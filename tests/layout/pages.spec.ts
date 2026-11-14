@@ -42,9 +42,14 @@ for (const lang of languages) {
         expect(await page.locator(`[data-roadmap="${status}"] li`).count(), `${status} items`).toBeGreaterThan(0);
       }
       await expect(page.locator("[data-planned]")).toHaveCount(0);
-      // Android and Doughnut Forge 2 have shipped, newest first; next are smaller
-      // improvements. Nothing describes internal security work (owner, 10 November 2026).
-      await expect(page.locator('[data-roadmap="shipped"] h3')).toHaveText([await ui(lang.code, "roadmap.android.title"), await ui(lang.code, "roadmap.v2.title")]);
+      // The new file format, Android and Doughnut Forge 2 have shipped, newest
+      // first; next are smaller improvements. Nothing describes internal security
+      // work (owner, 10 November 2026).
+      await expect(page.locator('[data-roadmap="shipped"] h3')).toHaveText([
+        await ui(lang.code, "roadmap.format.title"),
+        await ui(lang.code, "roadmap.android.title"),
+        await ui(lang.code, "roadmap.v2.title"),
+      ]);
       await expect(page.locator('[data-roadmap="next"] h3')).toHaveText([await ui(lang.code, "roadmap.small.title")]);
       // The Doughnut Forge 2 entry lists its highlights
       expect(await page.locator('[data-roadmap="shipped"] .points li').count(), "v2 highlights").toBeGreaterThan(0);
@@ -170,4 +175,13 @@ test("security.txt", async ({ request }) => {
   expect(expires).toHaveLength(1);
   expect(expires[0]! > Date.now()).toBe(true);
   expect(expires[0]! - Date.now()).toBeLessThanOrEqual(366 * 24 * 3600 * 1000);
+});
+
+// Decision 7 (owner, 14 November 2026): everyone's contact code changes once with
+// the new file format, so the FAQ says why, on the page and in its FAQPage data
+test("support: the FAQ answers why the contact code changed", async ({ page }) => {
+  await page.goto("/support/");
+  await expect(page.locator("main summary", { hasText: "Why did my contact code change?" })).toHaveCount(1);
+  const data = await page.locator('script[type="application/ld+json"]').allTextContents();
+  expect(data.join(" ")).toContain("Why did my contact code change?");
 });

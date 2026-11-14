@@ -40,6 +40,15 @@ test("no English sentence still says the website does not track or count", () =>
   expect(en.strings.sec2Desc).toContain("The Doughnut Forge app contains no");
 });
 
+// Owner, 14 November 2026: the opening says what the app is without
+// "zero-knowledge", and section 2 names Google Play beside Apple and Microsoft
+test("the opening and section 2 say what the owner approved", () => {
+  expect(en.strings.hero).toContain("The Doughnut Forge app works on your device, with no account and no servers.");
+  expect(en.strings.hero).not.toMatch(/zero-knowledge|architecture/i);
+  expect(en.strings.sec2Desc).toContain("Apple App Store, Microsoft Store or Google Play, Apple, Microsoft or Google may provide the developer with aggregated statistics");
+  expect(en.strings.sec2Desc).not.toContain("provide us");
+});
+
 test("the website section states each fact", () => {
   const s = en.strings;
   expect(s.sec6Counts).toContain("daily totals only");
@@ -62,6 +71,7 @@ for (const { code, path } of languages)
     for (const key of Object.keys(en.strings)) expect(tokens(policy.strings[key]!), `${code} ${key}`).toBe(tokens(en.strings[key]!));
     for (const key of Object.keys(en.links)) if (key !== "stats") expect(policy.links[key], `${code} ${key}`).toBe(en.links[key]);
     expect(policy.links.stats).toBe(path === "en" ? "/stats/" : `/${path}/stats/`);
+    expect(policy.strings.sec2Desc, `${code} names Google Play`).toContain("Google Play");
     // The policy names the opt-out button by the words on it
     expect(policy.strings.sec6OptOut).toContain(await ui(code, "stats.optout.off"));
   });
