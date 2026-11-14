@@ -25,7 +25,7 @@
 //    kept on one line so a particle never starts a line on its own.
 //
 // Left alone: the <head> (titles, descriptions, structured data), tags and their
-// attributes (link addresses), scripts and styles, and web and email addresses,
+// attributes (link addresses), scripts, styles and SVG drawings, and web and email addresses,
 // which may break at their dots and slashes.
 import { defineMiddleware } from "astro:middleware";
 
@@ -139,8 +139,8 @@ export const fixLineBreaks = (html: string) => {
   const korean = /^ko\b/.test(lang);
   const body = html
     .slice(start)
-    // Odd parts are tags, scripts and styles; even parts are text
-    .split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<[^>]*>)/)
+    // Odd parts are tags, scripts, styles and drawings (SVG text cannot hold HTML); even parts are text
+    .split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<svg[\s\S]*?<\/svg>|<[^>]*>)/)
     .map((part, i) => (i % 2 ? part : korean ? keepKoreanWords(part) : keepWords(cjk ? cjk(part) : part)))
     .join("");
   return html.slice(0, start) + measureHeadings(body, lang);
