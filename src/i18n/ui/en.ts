@@ -189,7 +189,7 @@ export default {
     "On the lock screen, choose “Trouble unlocking?” and set a new password with your 24 recovery words. Your identity, contacts and encrypted files stay the same. Without your recovery words, the password cannot be reset.",
   "faq.share.q": "How do I share an encrypted file with someone?",
   "faq.share.a":
-    "Ask the other person for their contact card (a .vltc2 file) and add it to your Contacts. Then encrypt the file and choose them as someone who can open it. Send the encrypted file any way you like, such as by email, in a messaging app or on a USB stick. Only the people you chose can open it.",
+    "Ask the other person for their contact card (a .vltc2 file) and add it to your Contacts. Then encrypt the file and choose them as someone who can open it. Send the encrypted file any way you like, such as by email, in a messaging app or on a USB stick. Only the people you chose can open it. If a contact shows “Old card: ask for a new one”, ask them to share their card again.",
   "faq.recipient.q": "Does the other person need Doughnut Forge to open it?",
   "faq.recipient.a":
     "Yes. They open it in Doughnut Forge with their own identity. That is what keeps it private: no one without one of the chosen identities can open it.",

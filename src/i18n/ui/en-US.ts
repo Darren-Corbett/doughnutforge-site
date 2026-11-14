@@ -15,7 +15,7 @@ export default {
   "faq.quantum.a":
     "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardized post-quantum algorithms alongside classical ones, to protect files and to sign them.",
   "faq.share.a":
-    "Ask the other person for their contact card (a .vltc2 file) and add it to your Contacts. Then encrypt the file and choose them as someone who can open it. Send the encrypted file any way you like, such as by email, in a messaging app or on a USB drive. Only the people you chose can open it.",
+    "Ask the other person for their contact card (a .vltc2 file) and add it to your Contacts. Then encrypt the file and choose them as someone who can open it. Send the encrypted file any way you like, such as by email, in a messaging app or on a USB drive. Only the people you chose can open it. If a contact shows “Old card: ask for a new one”, ask them to share their card again.",
   "meta.technical.description":
     "The standard methods Doughnut Forge uses: AES-256-GCM, X25519 with ML-KEM-1024, Ed25519 with ML-DSA-87, Argon2id, what can be seen without the key, and its network behavior.",
   "press.usage.text":

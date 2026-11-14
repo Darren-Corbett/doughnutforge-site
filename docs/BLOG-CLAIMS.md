@@ -103,6 +103,9 @@ Not claimed: that signatures are post-quantum (they are not); "quantum-proof" or
 | 4.17 | Folders encrypted on a computer cannot be opened on iPhone, iPad or Android | `mobile_vault.rs:135, 162`; Android: `~/Desktop/review/android-live/app-answers.md` (Android launch: package, §3 files and text, no folders); `src/data/stores.ts` (android available) |
 | 4.18 | Losing the backup phrase and password means files sent to you cannot be opened | `mobile-guides.json:25`; `mobile-views.json:126` |
 | 4.19 | Screenshots of the Identity and Contacts screens are from the iPhone app | `fastlane/screenshots/ios/en-GB/iphone_05_identity.png`, `iphone_03_contacts.png`; App Store lookup `itunes.apple.com/lookup?id=6821344597` (iPhone and iPad app, live 27 October 2026) |
+| 4.20 | A contact on an older card shows "Old card: ask for a new one" until they share their card again | Owner, 14 November 2026 (the app's words for the joint launch); exact string to be confirmed by the app side in `website-brief.md` |
+| 4.21 | After the update to the new file format, everyone has a new contact code | `src/content/white-paper/en.md` section 6.3 (contact code v2); website brief section 1 |
+| 4.22 | The unknown-sender warning is also shown for files made with an earlier version, and for contacts who have not yet shared their new card | `src/content/white-paper/en.md` sections 7.1 and 12.1 |
 | R4.1 | *Reasoning:* the usual advice to send a password separately, and why that is fragile | general advice, no external fact |
 
 Not claimed: QR codes; pasting a contact ID; that the app shows who sent a file; password-only sharing; that a Mac-made file opens on Windows (no test found).
