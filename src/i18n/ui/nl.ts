@@ -136,7 +136,7 @@ export default {
   "faq.data.a":
     "De app verzamelt niets: geen tracking, analytics of crashrapportage. Deze website bewaart alleen anonieme dagtotalen van paginaweergaven, die iedereen kan zien op de statistiekenpagina. De telling plaatst geen cookies en bewaart nooit uw IP-adres. Het enige wat deze website op uw apparaat bewaart, is uw keuze om niet geteld te worden, als u die maakt, en één versienummer van de site, zodat een open tabblad kan zien wanneer de site is bijgewerkt. Apple en Microsoft kunnen samengevoegde statistieken delen, zoals aantallen downloads, zonder persoonlijke gegevens. GitHub, dat deze website host, kan technische informatie vastleggen, zoals uw IP-adres. Het privacybeleid geeft de details.",
   "faq.quantum.q": "Wat betekent post-kwantumversleuteling?",
-  "faq.quantum.a": "In de toekomst kunnen krachtige kwantumcomputers mogelijk een deel van de versleuteling kraken die nu veel wordt gebruikt. Post-kwantumversleuteling is ontworpen om daartegen bestand te zijn. Doughnut Forge gebruikt het, zodat wat u vandaag beschermt beschermd blijft naarmate computers krachtiger worden.",
+  "faq.quantum.a": "In de toekomst kunnen krachtige kwantumcomputers mogelijk een deel van de versleuteling kraken die nu veel wordt gebruikt. Doughnut Forge is ontworpen om bestand te zijn tegen aanvallen van toekomstige kwantumcomputers, met door NIST gestandaardiseerde post-kwantumalgoritmen naast klassieke algoritmen.",
   "meta.privacy.description": "Hoe Doughnut Forge met uw gegevens omgaat. De app houdt uw bestanden en sleutels op uw apparaat en verzamelt niets. Deze website bewaart alleen anonieme dagtotalen van paginaweergaven.",
   "meta.press.title": "Perskit: iconen, schermafbeeldingen en feiten | Doughnut Forge",
   "meta.press.description": "App-iconen, schermafbeeldingen, een factsheet en kant-en-klare beschrijvingen van Doughnut Forge voor artikelen, reviews en video's.",
@@ -205,7 +205,7 @@ export default {
   "security.servers.title": "Geen servers, geen account",
   "security.servers.text": "Er zijn geen servers van Doughnut Forge en er is geen account om aan te maken, dus geen van uw bestanden of gegevens wordt ergens anders opgeslagen.",
   "security.quantum.title": "Post-kwantumversleuteling",
-  "security.quantum.text": "Doughnut Forge gebruikt post-kwantumversleuteling, die is ontworpen om bestand te zijn tegen de krachtige kwantumcomputers van de toekomst, zodat wat u vandaag beschermt beschermd blijft.",
+  "security.quantum.text": "Doughnut Forge is ontworpen om bestand te zijn tegen aanvallen van toekomstige kwantumcomputers, met door NIST gestandaardiseerde post-kwantumalgoritmen naast klassieke algoritmen.",
   "security.keys.title": "Uw sleutels blijven bij u",
   "security.keys.text": "Uw wachtwoord en sleutels blijven op uw apparaat. Ze worden nooit opgeslagen op een server of verzonden via het netwerk.",
   "security.audit.title": "Nog niet geaudit",

@@ -136,7 +136,7 @@ export default {
   "faq.data.a":
     "O app não coleta nada: não tem rastreamento, ferramentas de análise nem relatórios de falhas. Este site guarda apenas totais diários anônimos de visualizações de página, que qualquer pessoa pode ver na página de estatísticas dele. A contagem não define cookies e nunca guarda o seu endereço IP. As únicas coisas que este site guarda no seu dispositivo são a sua escolha de não ser contado, se você fizer essa escolha, e um número de versão do site, para que uma aba aberta saiba quando o site foi atualizado. A Apple e a Microsoft podem compartilhar estatísticas agregadas, como o número de downloads, que não contêm dados pessoais. O GitHub, que hospeda este site, pode registrar informações técnicas, como o seu endereço IP. A política de privacidade traz os detalhes.",
   "faq.quantum.q": "O que significa criptografia pós-quântica?",
-  "faq.quantum.a": "No futuro, computadores quânticos poderosos talvez consigam quebrar parte da criptografia amplamente usada hoje. A criptografia pós-quântica foi projetada para resistir a eles. O Doughnut Forge usa essa criptografia, para que o que você protege hoje continue protegido à medida que os computadores ficam mais potentes.",
+  "faq.quantum.a": "No futuro, computadores quânticos poderosos talvez consigam quebrar parte da criptografia amplamente usada hoje. O Doughnut Forge foi projetado para resistir a ataques de futuros computadores quânticos, usando algoritmos pós-quânticos padronizados pelo NIST em conjunto com algoritmos clássicos.",
   "meta.privacy.description": "Como o Doughnut Forge trata os seus dados. O app mantém seus arquivos e chaves no seu dispositivo e não coleta nada. Este site guarda apenas totais diários anônimos de visualizações de página.",
   "meta.press.title": "Kit de imprensa: ícones, capturas e dados | Doughnut Forge",
   "meta.press.description": "Ícones do app, capturas de tela, uma ficha técnica e descrições prontas para usar do Doughnut Forge em matérias, análises e vídeos.",
@@ -205,7 +205,7 @@ export default {
   "security.servers.title": "Sem servidores, sem conta",
   "security.servers.text": "Não existem servidores do Doughnut Forge nem conta para criar, então nenhum dos seus arquivos ou dados fica armazenado em outro lugar.",
   "security.quantum.title": "Criptografia pós-quântica",
-  "security.quantum.text": "O Doughnut Forge usa criptografia pós-quântica, projetada para resistir aos poderosos computadores quânticos do futuro, para que o que você protege hoje continue protegido.",
+  "security.quantum.text": "O Doughnut Forge foi projetado para resistir a ataques de futuros computadores quânticos, usando algoritmos pós-quânticos padronizados pelo NIST em conjunto com algoritmos clássicos.",
   "security.keys.title": "Suas chaves ficam com você",
   "security.keys.text": "Sua senha e chaves ficam no seu dispositivo. Elas nunca são armazenadas em um servidor ou enviadas pela rede.",
   "security.audit.title": "Ainda sem auditoria",

@@ -200,7 +200,7 @@ export default {
     "The app collects nothing: it has no tracking, analytics or crash reporting. This website keeps only anonymous daily totals of page views, which anyone can see on its statistics page. The count sets no cookies and never keeps your IP address. The only things this website stores on your device are your choice not to be counted, if you make it, and one build number, so an open tab can tell when the site has been updated. Apple and Microsoft may share aggregated statistics, such as download counts, that contain no personal details. GitHub, which hosts this website, may log technical information such as your IP address. The privacy policy has the details.",
   "faq.quantum.q": "What does post-quantum encryption mean?",
   "faq.quantum.a":
-    "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Post-quantum encryption is designed to resist them. Doughnut Forge uses it, so what you protect today stays protected as computers become more powerful.",
+    "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones.",
 
   // Privacy page (the policy text itself is word for word from forge-privacy, in src/content/legal/privacy/)
   "meta.privacy.description":
@@ -296,7 +296,7 @@ export default {
     "There are no Doughnut Forge servers and no account to create, so none of your files or details are stored anywhere else.",
   "security.quantum.title": "Post-quantum encryption",
   "security.quantum.text":
-    "Doughnut Forge uses post-quantum encryption, which is designed to resist the powerful quantum computers of the future, so what you protect today stays protected.",
+    "Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones.",
   "security.keys.title": "Your keys stay with you",
   "security.keys.text": "Your password and keys stay on your device. They are never stored on a server or sent across the network.",
   "security.audit.title": "Not audited yet",

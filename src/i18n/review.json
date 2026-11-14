@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -290,13 +290,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Faithful; 'en complément d'algorithmes classiques' (in addition to classical algorithms) is natural.",
+        "backTranslation": "Doughnut Forge is designed to resist attacks by future quantum computers, using post-quantum algorithms standardised by NIST in addition to classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -600,13 +607,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. 'klassischen Verfahren' (classical methods) for 'classical ones' is natural; 'dafür' (for this) is fine.",
+        "backTranslation": "Doughnut Forge is designed to withstand attacks by future quantum computers, and for this uses NIST-standardised post-quantum algorithms together with classical methods.",
+        "suggestion": "No change."
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -829,13 +843,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Faithful; 'con' (with) for 'using' is natural.",
+        "backTranslation": "Doughnut Forge is designed to resist attacks from future quantum computers, with post-quantum algorithms standardised by NIST together with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1108,13 +1129,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Faithful.",
+        "backTranslation": "Doughnut Forge is designed to resist the attacks of future quantum computers, using post-quantum algorithms standardised by NIST together with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1404,13 +1432,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Faithful.",
+        "backTranslation": "Doughnut Forge is designed to be resistant to attacks from future quantum computers, with NIST-standardised post-quantum algorithms alongside classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1652,13 +1687,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Subject is 'the encryption in Doughnut Forge'; same claim, natural in Swedish.",
+        "backTranslation": "The encryption in Doughnut Forge is designed to withstand attacks from the quantum computers of the future and combines NIST-standardised post-quantum algorithms with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1907,13 +1949,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Faithful.",
+        "backTranslation": "Doughnut Forge is designed to resist attacks from the quantum computers of the future and uses NIST-standardised post-quantum algorithms together with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2217,13 +2266,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Cookie sentence uses 'Laskuri ja tämä sivusto eivät aseta evästeitä' (the counter and this site do not set cookies) rather than an explicit 'neither...nor'. Meaning is the same and covers both.",
         "backTranslation": "The counter and this site do not set cookies.",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. 'kvanttikestäviä' (quantum-resistant) for post-quantum matches the file's title and question ('Kvanttikestävä salaus'). 'perinteisten' (traditional) for classical is common in Finnish; 'klassisten' would be more literal. Both fine.",
+        "backTranslation": "Doughnut Forge is designed to withstand attacks by future quantum computers: it uses NIST-standardised quantum-resistant algorithms together with traditional algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2478,13 +2534,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Comma before 'og' joining two predicates with one subject is not needed in Norwegian ('..., og bruker'); harmless and widely written.",
+        "backTranslation": "Doughnut Forge is made to withstand attacks from the quantum computers of the future, and uses NIST-standardised post-quantum algorithms together with classical algorithms.",
+        "suggestion": "Optional: drop the comma before 'og bruker'."
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2767,13 +2830,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Subject is 'the encryption in Doughnut Forge'; same claim, natural in Polish.",
+        "backTranslation": "The encryption in Doughnut Forge was designed to resist attacks by future quantum computers: it combines post-quantum algorithms standardised by NIST with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3093,13 +3163,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Purpose clause rendered as a consequence ('ta díky tomu může...' = thanks to this it can), not 'so that'. Same fact, both destination and purpose kept.",
         "backTranslation": "Cloudflare's responses also ask your browser to report connection failures to Cloudflare; thanks to this it can fix network problems.",
         "suggestion": "Optional: '..., aby selhání připojení hlásil společnosti Cloudflare, aby mohla opravovat problémy se sítí.' Not required."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Subject is 'the encryption in Doughnut Forge' rather than 'Doughnut Forge'; same claim, natural in Czech. 'institutem NIST' adds 'institute' so NIST can decline; accurate and fine.",
+        "backTranslation": "faq.quantum.a ends: The encryption in Doughnut Forge is designed to withstand attacks by future quantum computers: it combines post-quantum algorithms standardised by the NIST institute with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3408,13 +3485,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. 'tervezték' is the usual impersonal 'was designed', not 'we'. 'posztkvantum algoritmusokat' written open, consistent with the file's 'posztkvantum titkosítás'.",
+        "backTranslation": "Doughnut Forge was designed to resist attacks of future quantum computers: it uses post-quantum algorithms standardised by NIST together with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3742,13 +3826,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Faithful.",
+        "backTranslation": "Doughnut Forge is designed to resist attacks of future quantum computers, using post-quantum algorithms standardised by NIST alongside classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4054,13 +4145,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): «» quotes around the old page title correctly removed now that the link is a description, not a title.",
         "backTranslation": "on the statistics page",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Subject is 'the encryption in Doughnut Forge'; same claim, natural in Russian.",
+        "backTranslation": "The encryption in Doughnut Forge is designed to resist attacks by future quantum computers: it combines post-quantum algorithms standardised by NIST with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4362,13 +4460,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): «» quotes around the old page title correctly removed.",
         "backTranslation": "on the statistics page",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Faithful.",
+        "backTranslation": "Doughnut Forge has been designed to withstand attacks from future quantum computers, using post-quantum algorithms standardised by NIST together with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4668,6 +4773,13 @@
         "issue": "Policy section 6 fixes (13 November 2026): «» quotes around the old page title correctly removed.",
         "backTranslation": "on the statistics page",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Subject is 'the encryption in Doughnut Forge'; same claim, natural in Ukrainian.",
+        "backTranslation": "The encryption in Doughnut Forge is designed to resist attacks by future quantum computers: it combines post-quantum algorithms standardised by NIST with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -4710,7 +4822,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4927,13 +5039,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Faithful; 'con' (with) for 'using' is natural.",
+        "backTranslation": "Doughnut Forge is designed to resist attacks from future quantum computers, with post-quantum algorithms standardised by NIST together with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -5211,13 +5330,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Faithful.",
+        "backTranslation": "Doughnut Forge was designed to resist attacks from future quantum computers, using post-quantum algorithms standardised by NIST together with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5524,13 +5650,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link wraps the locative suffix ('istatistik sayfasındaki'); acceptable in Turkish, link text reads as 'on the statistics page'.",
         "backTranslation": "use the 'Do not count my visits' button on the statistics page",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. 'kuantum bilgisayarların' treats 'kuantum bilgisayar' as a fixed term, matching the file's earlier 'güçlü kuantum bilgisayarlar'; acceptable ('kuantum bilgisayarlarının' would be the stricter compound form).",
+        "backTranslation": "Doughnut Forge is designed to withstand the attacks of future quantum computers; it uses post-quantum algorithms standardised by NIST together with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -5788,13 +5921,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): '完全なアドレス' (full addresses) is ambiguous about web addresses, but this wording is unchanged from before and outside the changed scope. zh uses '完整网址' (full URL), which is clearer.",
         "backTranslation": "full addresses",
         "suggestion": "Optional later: '完全なURL'. Not part of this change."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. '従来の' (conventional) for classical is the usual Japanese phrasing. '耐量子暗号のアルゴリズム' matches the title '耐量子暗号'.",
+        "backTranslation": "Doughnut Forge is designed to withstand attacks by future quantum computers, and uses NIST-standardised post-quantum cryptography algorithms in combination with conventional cryptographic algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6052,13 +6192,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. '传统算法' (traditional algorithms) for classical is natural. '在设计上旨在' (by design aims to) is slightly wordy but correct and keeps the hedge.",
+        "backTranslation": "Doughnut Forge is, by design, intended to resist attacks by future quantum computers: it uses NIST-standardised post-quantum algorithms in combination with traditional algorithms.",
+        "suggestion": "Optional: 'Doughnut Forge 旨在抵御…'."
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6343,13 +6490,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. '傳統演算法' (traditional algorithms) for classical is natural. '在設計上旨在' slightly wordy but correct and keeps the hedge.",
+        "backTranslation": "Doughnut Forge is, by design, intended to resist attacks by future quantum computers: it uses NIST-standardised post-quantum algorithms paired with traditional algorithms.",
+        "suggestion": "Optional: 'Doughnut Forge 旨在抵禦…'."
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6663,13 +6817,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. '기존' (existing/conventional) for classical is natural. '양자 내성' matches the title.",
+        "backTranslation": "Doughnut Forge is designed to withstand attacks by future quantum computers, and uses NIST-standardised quantum-resistant algorithms together with existing cryptographic algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6935,13 +7096,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. 'सामना करने' (to face/withstand) for 'resist' keeps the hedge and matches the old wording. 'पारंपरिक' (traditional) for classical is fine in Hindi.",
+        "backTranslation": "Doughnut Forge has been designed to withstand attacks of future quantum computers, and it uses NIST-standardised post-quantum algorithms with traditional algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7219,13 +7387,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Faithful.",
+        "backTranslation": "Doughnut Forge is designed to be resistant to attacks by quantum computers in the future, using post-quantum algorithms standardised by NIST together with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7497,13 +7672,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. 'dipiawaikan' (standardised, from 'piawai') is correct standard Malay.",
+        "backTranslation": "Doughnut Forge is designed to withstand attacks by quantum computers in the future, using post-quantum algorithms standardised by NIST together with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7767,13 +7949,20 @@
         "issue": "Policy section 6 fixes (13 November 2026): 'ทั้งตัวนับและเว็บไซต์นี้ไม่ตั้งค่าคุกกี้' (both the counter and this website do not set cookies) is natural Thai for 'neither...nor'. Covers both.",
         "backTranslation": "Both the counter and this website do not set cookies.",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. 'แบบดั้งเดิม' (traditional) for classical is natural Thai.",
+        "backTranslation": "Doughnut Forge is designed to resist attacks from quantum computers in the future, using post-quantum algorithms that NIST set as a standard, alongside traditional algorithms.",
+        "suggestion": "No change."
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-13",
+    "reviewedAt": "2026-11-14",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8071,6 +8260,13 @@
         "issue": "Policy section 6 fixes (13 November 2026): Link text renders as 'the statistics page' with surrounding grammar adjusted; no duplicated or dangling words; button name unchanged; markers match English.",
         "backTranslation": "",
         "suggestion": "None needed."
+      },
+      {
+        "key": "faq.quantum.a + security.quantum.text",
+        "severity": "note",
+        "issue": "Checked both keys: meaning matches English, 'designed to resist' kept, no lasting-protection promise, NIST and Doughnut Forge intact, no 'we', grammar correct, post-quantum/quantum computer terms match security.quantum.title and faq.quantum.q. Faithful.",
+        "backTranslation": "Doughnut Forge is designed to resist attacks by quantum computers in the future, by using post-quantum algorithms standardised by NIST together with classical algorithms.",
+        "suggestion": "No change."
       }
     ]
   }

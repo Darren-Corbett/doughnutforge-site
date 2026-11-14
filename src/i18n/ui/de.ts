@@ -136,7 +136,7 @@ export default {
   "faq.data.a":
     "Die App erfasst nichts: kein Tracking, keine Analyse, keine Absturzberichte. Diese Website speichert nur anonyme Tagessummen der Seitenaufrufe, die jeder auf ihrer Statistikseite einsehen kann. Die Zählung setzt keine Cookies und speichert nie Ihre IP-Adresse. Auf Ihrem Gerät speichert diese Website nur Ihre Entscheidung, nicht gezählt zu werden, falls Sie sie treffen, und eine Versionsnummer der Website, damit ein offener Tab erkennt, wann die Website aktualisiert wurde. Apple und Microsoft stellen möglicherweise zusammengefasste Statistiken bereit, etwa Downloadzahlen, die keine persönlichen Angaben enthalten. GitHub, wo diese Website gehostet wird, protokolliert möglicherweise technische Informationen wie Ihre IP-Adresse. Einzelheiten finden Sie in der Datenschutzerklärung.",
   "faq.quantum.q": "Was bedeutet Post-Quanten-Verschlüsselung?",
-  "faq.quantum.a": "In Zukunft könnten leistungsstarke Quantencomputer in der Lage sein, einen Teil der heute weit verbreiteten Verschlüsselung zu knacken. Post-Quanten-Verschlüsselung ist darauf ausgelegt, ihnen standzuhalten. Doughnut Forge nutzt sie, damit geschützt bleibt, was Sie heute schützen, auch wenn Computer leistungsfähiger werden.",
+  "faq.quantum.a": "In Zukunft könnten leistungsstarke Quantencomputer in der Lage sein, einen Teil der heute weit verbreiteten Verschlüsselung zu knacken. Doughnut Forge ist darauf ausgelegt, Angriffen künftiger Quantencomputer standzuhalten, und nutzt dafür vom NIST standardisierte Post-Quanten-Algorithmen zusammen mit klassischen Verfahren.",
   "meta.privacy.description": "Wie Doughnut Forge mit Ihren Daten umgeht. Die App behält Ihre Dateien und Schlüssel auf Ihrem Gerät und sammelt nichts. Diese Website speichert nur anonyme Tagessummen der Seitenaufrufe.",
   "meta.press.title": "Pressemappe: Icons, Screenshots und Fakten | Doughnut Forge",
   "meta.press.description": "App-Icons, Screenshots, ein Datenblatt und fertige Beschreibungen von Doughnut Forge für Artikel, Testberichte und Videos.",
@@ -205,7 +205,7 @@ export default {
   "security.servers.title": "Keine Server, kein Konto",
   "security.servers.text": "Es gibt keine Server von Doughnut Forge und kein Konto, das Sie anlegen müssen. Deshalb werden weder Ihre Dateien noch Ihre Angaben anderswo gespeichert.",
   "security.quantum.title": "Post-Quanten-Verschlüsselung",
-  "security.quantum.text": "Doughnut Forge nutzt Post-Quanten-Verschlüsselung, die darauf ausgelegt ist, den leistungsstarken Quantencomputern der Zukunft standzuhalten, damit geschützt bleibt, was Sie heute schützen.",
+  "security.quantum.text": "Doughnut Forge ist darauf ausgelegt, Angriffen künftiger Quantencomputer standzuhalten, und nutzt dafür vom NIST standardisierte Post-Quanten-Algorithmen zusammen mit klassischen Verfahren.",
   "security.keys.title": "Ihre Schlüssel bleiben bei Ihnen",
   "security.keys.text": "Ihr Passwort und Ihre Schlüssel bleiben auf Ihrem Gerät. Sie werden niemals auf einem Server gespeichert oder über das Netzwerk gesendet.",
   "security.audit.title": "Noch kein Audit",

@@ -20,7 +20,7 @@ To share, each person creates an identity in the app and swaps contact cards. Yo
 
 When you create your identity, the app gives you 24 recovery words to write down. If you forget your password, choose "Trouble unlocking?" on the lock screen and set a new one with your recovery words. Your identity, contacts and encrypted files stay the same.
 
-It uses post-quantum encryption, so what you protect today stays protected as computers become more powerful. The technical details page names the exact methods: https://doughnut-forge.app/security/technical-details/
+It is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones. The technical details page names the exact methods: https://doughnut-forge.app/security/technical-details/
 
 It is a one-time purchase on each platform, never a subscription. It has not had an independent security audit yet; one is planned.
 

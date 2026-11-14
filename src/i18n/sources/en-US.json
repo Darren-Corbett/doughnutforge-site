@@ -1,4 +1,8 @@
 {
+  "faq.quantum.a": {
+    "en": "914cd520f6fc",
+    "text": "3cc4b7814d98"
+  },
   "faq.share.a": {
     "en": "2c35d0460d14",
     "text": "f201fb0529c1"
@@ -10,5 +14,9 @@
   "press.usage.text": {
     "en": "b2ec36c8952f",
     "text": "4d5fa12d6b4c"
+  },
+  "security.quantum.text": {
+    "en": "e9b9846bb9c9",
+    "text": "ee0288fd935e"
   }
 }
