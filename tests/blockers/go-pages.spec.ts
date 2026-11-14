@@ -10,20 +10,17 @@ import { readFileSync } from "node:fs";
 import { dist } from "../support/site";
 import { BOTH, block, RULES, type Rule } from "./simulations";
 import { standIn, withStandIns } from "../support/no-stores";
+import { ui } from "../support/ui";
 
 const LANGS = ["en", "de", "ja", "pl", "es-mx", "th"];
 const STORES: Record<string, { name: string; platform: string }> = {
   "https://apps.apple.com/app/id6821344597": { name: "App Store", platform: "iPhone" },
   "https://apps.apple.com/app/id6812778888": { name: "Mac App Store", platform: "Mac" },
   "https://apps.microsoft.com/": { name: "Microsoft Store", platform: "Windows" },
+  "https://play.google.com/store/apps/details?id=com.darrencorbett.doughnutforge.mobile&": { name: "Google Play", platform: "Android" },
 };
 const NONE: Rule = { name: "no blocker" };
 
-/** One UI string in a language, falling back to English as the site does */
-const ui = async (code: string, key: string): Promise<string> => {
-  const own = (await import(`../../src/i18n/ui/${code}.ts`)).default as Record<string, string>;
-  return own[key] ?? ((await import("../../src/i18n/ui/en.ts")).default as Record<string, string>)[key]!;
-};
 const languages = JSON.parse(readFileSync("src/i18n/languages.json", "utf8")).languages as { code: string; path: string }[];
 
 /** The /go/ pages for the sampled languages: path, language and the store it forwards to */

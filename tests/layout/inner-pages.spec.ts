@@ -176,10 +176,10 @@ test("press kit at 1280px: each device's screenshots fill one row", async ({ pag
 });
 
 for (const scheme of ["light", "dark"] as const) {
-  test(`home: the Android line is a secondary supporting line (${scheme})`, async ({ page }) => {
+  test(`home: the availability line is a secondary supporting line (${scheme})`, async ({ page }) => {
     await page.emulateMedia({ colorScheme: scheme });
     await page.goto("/");
-    const note = page.locator("#download p", { hasText: /Android/ }).last();
+    const note = page.locator("#download p", { hasText: "Availability depends on your country or region." }).last();
     expect(await note.evaluate((e) => getComputedStyle(e).color)).toBe(scheme === "dark" ? "rgb(203, 213, 225)" : "rgb(71, 85, 105)");
   });
 }

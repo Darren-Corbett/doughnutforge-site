@@ -7,6 +7,7 @@
 import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { each } from "../support/each";
+import { ui } from "../support/ui";
 
 // LANGS narrows the run, as in the other layout tests ("en" for English)
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));
@@ -15,13 +16,6 @@ const ADVISORIES = "https://github.com/Darren-Corbett/forge-privacy/security/adv
 const SECTIONS = ["shipped", "next", "later"];
 // Names that stay untranslated on the technical details page, in every language
 const TECHNICAL_NAMES = ["AES-256-GCM", "X25519", "ML-KEM-768", "Ed25519", "HKDF-SHA-256", "Argon2id", "BIP-39", "aes-gcm (RustCrypto)", "BEGIN FORGE ENCLAVE"];
-
-/** One UI string in a language, falling back to English as the site does */
-const ui = async (code: string, key: string): Promise<string> => {
-  const own = (await import(`../../src/i18n/ui/${code}.ts`)).default as Record<string, string>;
-  if (own[key] !== undefined) return own[key];
-  return ((await import("../../src/i18n/ui/en.ts")).default as Record<string, string>)[key]!;
-};
 
 for (const lang of languages) {
   test.describe(lang.code, () => {
@@ -48,15 +42,12 @@ for (const lang of languages) {
         expect(await page.locator(`[data-roadmap="${status}"] li`).count(), `${status} items`).toBeGreaterThan(0);
       }
       await expect(page.locator("[data-planned]")).toHaveCount(0);
-      // Doughnut Forge 2 has shipped; next is Android, then smaller improvements.
-      // Nothing describes internal security work (owner, 10 November 2026).
-      await expect(page.locator('[data-roadmap="shipped"] h3')).toHaveText([await ui(lang.code, "roadmap.v2.title")]);
-      await expect(page.locator('[data-roadmap="next"] h3')).toHaveText([
-        await ui(lang.code, "roadmap.android.title"),
-        await ui(lang.code, "roadmap.small.title"),
-      ]);
+      // Android and Doughnut Forge 2 have shipped, newest first; next are smaller
+      // improvements. Nothing describes internal security work (owner, 10 November 2026).
+      await expect(page.locator('[data-roadmap="shipped"] h3')).toHaveText([await ui(lang.code, "roadmap.android.title"), await ui(lang.code, "roadmap.v2.title")]);
+      await expect(page.locator('[data-roadmap="next"] h3')).toHaveText([await ui(lang.code, "roadmap.small.title")]);
       // The Doughnut Forge 2 entry lists its highlights
-      expect(await page.locator('[data-roadmap="shipped"] li:first-child ul li').count(), "v2 highlights").toBeGreaterThan(0);
+      expect(await page.locator('[data-roadmap="shipped"] .points li').count(), "v2 highlights").toBeGreaterThan(0);
       // No dates, finding codes or version numbers, in any language
       const text = await page.locator("main").innerText();
       expect(text).not.toMatch(/\b20\d\d\b/);
