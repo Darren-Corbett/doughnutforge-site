@@ -185,3 +185,9 @@ test("support: the FAQ answers why the contact code changed", async ({ page }) =
   const data = await page.locator('script[type="application/ld+json"]').allTextContents();
   expect(data.join(" ")).toContain("Why did my contact code change?");
 });
+
+// Decision 7: files and cards in the new format do not open in older versions
+test("support: the FAQ says older versions do not open new files", async ({ page }) => {
+  await page.goto("/support/");
+  await expect(page.locator("main summary", { hasText: "Why can someone not open a file I sent?" })).toHaveCount(1);
+});
