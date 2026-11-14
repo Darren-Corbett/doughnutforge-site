@@ -204,7 +204,7 @@ export default {
     "The app collects nothing: it has no tracking, analytics or crash reporting. This website keeps only anonymous daily totals of page views, which anyone can see on its statistics page. The count sets no cookies and never keeps your IP address. The only things this website stores on your device are your choice not to be counted, if you make it, and one build number, so an open tab can tell when the site has been updated. Apple and Microsoft may share aggregated statistics, such as download counts, that contain no personal details. GitHub, which hosts this website, may log technical information such as your IP address. The privacy policy has the details.",
   "faq.quantum.q": "What does post-quantum encryption mean?",
   "faq.quantum.a":
-    "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones.",
+    "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones, to protect files and to sign them.",
 
   // Privacy page (the policy text itself is word for word from forge-privacy, in src/content/legal/privacy/)
   "meta.privacy.description":
@@ -298,9 +298,9 @@ export default {
   "security.servers.title": "No servers, no account",
   "security.servers.text":
     "There are no Doughnut Forge servers and no account to create, so none of your files or details are stored anywhere else.",
-  "security.quantum.title": "Post-quantum encryption",
+  "security.quantum.title": "Post-quantum encryption and signatures",
   "security.quantum.text":
-    "Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones.",
+    "Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones, to protect files and to sign them.",
   "security.keys.title": "Your keys stay with you",
   "security.keys.text": "Your password and keys stay on your device. They are never stored on a server or sent across the network.",
   "security.audit.title": "Not audited yet",
@@ -323,10 +323,10 @@ export default {
   "technical.link": "Technical details: the algorithms, keys and file format Doughnut Forge uses",
   "meta.technical.title": "Technical details: encryption, keys and file format | Doughnut Forge",
   "meta.technical.description":
-    "The standard methods Doughnut Forge uses: AES-256-GCM, X25519 with ML-KEM-768, Argon2id, what can be seen without the key, and its network behaviour.",
+    "The standard methods Doughnut Forge uses: AES-256-GCM, X25519 with ML-KEM-1024, Ed25519 with ML-DSA-87, Argon2id, what can be seen without the key, and its network behaviour.",
   "technical.title": "Technical details",
   "technical.glance.title": "At a glance",
-  "technical.glance.exchange": "Post-quantum hybrid key exchange",
+  "technical.glance.exchange": "Post-quantum hybrid key exchange and signatures",
   "technical.glance.network": "No network connections of its own",
   "technical.glance.servers": "No accounts or servers",
   "technical.toc": "On this page",
@@ -363,9 +363,9 @@ export default {
     "that secret can be written down as your 24 recovery words (BIP-39). It can also be split into recovery shards with Shamir's Secret Sharing, where any chosen number of shards (at least 2, at most 16 in total) brings it back. Fewer shards than that reveal nothing.",
   "technical.keys.exchange.label": "Key exchange (post-quantum hybrid):",
   "technical.keys.exchange.text":
-    "each item's key is sealed separately for every recipient, and for you, using X25519 together with ML-KEM-768. The two shared secrets are combined with SHA-256.",
+    "each item's key is sealed separately for every recipient, and for you, using X25519 together with ML-KEM-1024. The two shared secrets are combined with HKDF-SHA-256. Contacts who have not yet shared their new contact card get ML-KEM-768.",
   "technical.keys.signatures.label": "Signatures:",
-  "technical.keys.signatures.text": "Ed25519, used to sign contact cards. Proof of who sent an item is not yet offered.",
+  "technical.keys.signatures.text": "Ed25519 together with ML-DSA-87, on every item and every contact card. Both must be valid.",
   "technical.keys.derivation.label": "Key derivation:",
   "technical.keys.derivation.text": "HKDF-SHA-256.",
   "technical.keys.recipients.label": "Several recipients:",
@@ -373,11 +373,11 @@ export default {
     "one encrypted item can be opened by up to 1,024 people, each with their own sealed copy of the item's key.",
   "technical.stored.title": "How your secret is stored",
   "technical.stored.text":
-    "Your secret is stored only in encrypted form. It is encrypted with AES-256-GCM, using a key made from your password with Argon2id:",
+    "Your secret is stored only in encrypted form. It is encrypted with AES-256-GCM, using a key made from your password with Argon2id. The settings are stored with it. Identities made by earlier versions move to these settings at their next unlock:",
   "technical.stored.memory.label": "Memory:",
-  "technical.stored.memory.text": "19 MiB (19,456 KiB)",
+  "technical.stored.memory.text": "256 MiB (262,144 KiB)",
   "technical.stored.passes.label": "Passes:",
-  "technical.stored.passes.text": "2",
+  "technical.stored.passes.text": "3",
   "technical.stored.lanes.label": "Parallel lanes:",
   "technical.stored.lanes.text": "1",
   "technical.stored.salt.label": "Salt:",
@@ -406,7 +406,7 @@ export default {
   "technical.visible.from.label": "Who sent it:",
   "technical.visible.from.text": "hidden.",
   "technical.visible.count.label": "How many people can open it:",
-  "technical.visible.count.text": "visible (the number of recipients, counting the sender).",
+  "technical.visible.count.text": "visible only roughly: the count is rounded up to 4, 8, 16, 32 or 64, then to the next multiple of 64.",
   "technical.visible.size.label": "Size:",
   "technical.visible.size.text": "visible, roughly (the compressed size).",
   "technical.visible.dates.label": "Dates:",
@@ -454,9 +454,10 @@ export default {
     "on iPhone and iPad with Face ID or Touch ID turned on. iOS accepts the passcode in place of Face ID or Touch ID.",
   "technical.limits.recipients.label": "Recipients.",
   "technical.limits.recipients.text": "Anyone who can open an item can save, copy or share what is inside.",
-  "technical.limits.sender.label": "Proof of who sent an item.",
-  "technical.limits.sender.text": "Doughnut Forge does not yet prove who sent an item.",
-  "technical.limits.visible.label": "Size, number of recipients and file name.",
+  "technical.limits.sender.label": "Who sent an item.",
+  "technical.limits.sender.text":
+    "The app names a contact as the sender only when the item is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown. The name is only as reliable as the card: compare the contact code.",
+  "technical.limits.visible.label": "Size, a rough number of recipients, and file name.",
   "technical.limits.visible.text": "These can be seen without the key, as listed above.",
   "technical.limits.copies.label": "Unencrypted copies.",
   "technical.limits.copies.text":

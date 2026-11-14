@@ -15,19 +15,19 @@ Doughnut Forge encrypts files, folders and short messages on your own device. Th
 
 - **Your identity** is made from one 256-bit random secret, created on your device.
 - **Recovery:** that secret can be written down as 24 recovery words (BIP-39). It can also be split into recovery shards with Shamir's Secret Sharing, where any chosen number of shards (at least 2, at most 16 in total) brings it back. Fewer shards than that reveal nothing.
-- **Key exchange (post-quantum hybrid):** each item's key is sealed separately for every recipient, and for you, using X25519 together with ML-KEM-768. The two shared secrets are combined with SHA-256.
-- **Signatures:** Ed25519, used to sign contact cards. Proof of who sent an item is not yet offered.
+- **Key exchange (post-quantum hybrid):** each item's key is sealed separately for every recipient, and for you, using X25519 together with ML-KEM-1024. The two shared secrets are combined with HKDF-SHA-256. Contacts who have not yet shared their new contact card get ML-KEM-768.
+- **Signatures:** Ed25519 together with ML-DSA-87, on every item and every contact card. Both must be valid. The app names a contact as the sender only when the item is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown.
 - **Key derivation:** HKDF-SHA-256.
 - **Several recipients:** one encrypted item can be opened by up to 1,024 people, each with their own sealed copy of the item's key.
 
 ### How your secret is stored
 
-Your secret is stored only in encrypted form. It is encrypted with AES-256-GCM, using a key made from your passphrase with **Argon2id**:
+Your secret is stored only in encrypted form. It is encrypted with AES-256-GCM, using a key made from your passphrase with **Argon2id**. The settings are stored with it. Identities made by earlier versions move to these settings at their next unlock:
 
 | Setting | Value |
 |---|---|
-| Memory | 19 MiB (19,456 KiB) |
-| Passes | 2 |
+| Memory | 256 MiB (262,144 KiB) |
+| Passes | 3 |
 | Parallel lanes | 1 |
 | Salt | 128-bit, random |
 | Output | 256-bit key |
@@ -49,7 +49,7 @@ Your contact list is also stored encrypted (AES-256-GCM).
 | Original file name and type | Hidden inside. By default the encrypted file is named after the original (for example `report.vlt2`); rename it if the name itself is private. |
 | Who it is for | Hidden |
 | Who sent it | Hidden |
-| How many people can open it | Visible (the number of recipients, counting the sender) |
+| How many people can open it | Visible only roughly: the count is rounded up to 4, 8, 16, 32 or 64, then to the next multiple of 64 |
 | Size | Visible, roughly (the compressed size) |
 | Dates | No dates can be read without the key. The file has the normal dates your computer gives any file. |
 | That it is a Doughnut Forge file, and its format version | Visible |
@@ -81,7 +81,8 @@ Encrypted items leave your device only when you share them yourself.
 |---|---|---|
 | AES-256-GCM | aes-gcm (RustCrypto) | 0.10.3 |
 | Argon2id | argon2 (RustCrypto) | 0.5.3 |
-| ML-KEM-768 | ml-kem (RustCrypto) | 0.3.2 |
+| ML-KEM-768 and ML-KEM-1024 | ml-kem (RustCrypto) | 0.3.2 |
+| ML-DSA-87 | ml-dsa (RustCrypto) | 0.1.2 |
 | X25519 | x25519-dalek | 2.0.1 |
 | Ed25519 | ed25519-dalek | 2.2.0 |
 | Curve25519 | curve25519-dalek | 4.1.3 |
@@ -100,6 +101,6 @@ Encrypted items leave your device only when you share them yourself.
 - **Anyone with your passphrase and your device, your 24 recovery words, or enough recovery shards.** Keep them safe.
 - **Your device passcode,** on iPhone and iPad with Face ID or Touch ID turned on. iOS accepts the passcode in place of Face ID or Touch ID.
 - **Recipients.** Anyone who can open an item can save, copy or share what is inside.
-- **Proof of who sent an item.** Doughnut Forge does not yet prove who sent an item.
-- **Size, number of recipients and file name.** See "What can be seen without the key".
+- **Who sent an item.** The app names a contact as the sender only when the item is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown. The name is only as reliable as the card: compare the contact code.
+- **Size, a rough number of recipients, and file name.** See "What can be seen without the key".
 - **Unencrypted copies.** The original file stays where it was after encrypting, and opened files are saved as normal files. Deleting them is up to you. On SSDs, deleting or overwriting a file does not guarantee the old data is gone.

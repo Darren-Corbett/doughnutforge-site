@@ -170,7 +170,7 @@ Rules for both posts (owner): no logos; product names as plain words only; never
 | D5 | Each file or note is encrypted for the people you choose, who open it with their own identity; there is no file password | rows 1.14, 4.10, 4.14 | 2026-10-29 | verified |
 | D6 | The locked file can be sent any way, including a cloud folder; the other person needs Doughnut Forge to open it | row 4.13; site `faq.recipient.a` | 2026-10-29 | verified |
 | D7 | If you lose your password and every way to recover your identity (your 24-word backup phrase), your files cannot be opened | row 2.4; app `identity.json:16, 20` (24 words). Recovery shards are not named: the Security tab that makes them is hidden behind `enableDayTwoFunctionality`, which is off (`theme-slice.ts:14`, `common.ts` `ALMOST_ALL_TABS`) | 2026-10-29 | verified |
-| D8 | Uses post-quantum encryption | row 3.1 | 2026-10-29 | verified |
+| D8 | Uses post-quantum encryption and signatures (from the joint launch) | row 3.1; `src/content/white-paper/en.md` section 3.3 (Ed25519 with ML-DSA-87) | 2026-11-14 | verified |
 | D9 | Not open source | app `Cargo.toml` (`license = "Proprietary"`) | 2026-10-29 | verified |
 | D10 | No independent security audit yet | site `security.audit.text` ("planned" dropped, owner) | 2026-10-29 | verified |
 
