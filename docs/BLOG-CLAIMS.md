@@ -360,6 +360,9 @@ Not claimed: any CVE number; that QuickConnect was the way in; that the app woul
 | R9.5 | *Reasoning:* device encryption is the first step; file encryption covers a file once it leaves the device | rows 9.2, 9.5 | 2026-11-11; re-checked live 2026-11-16 |
 | 9.D1 | Doughnut Forge encrypts files on your own device; only you and the people you choose can open them, wherever the file goes | rows 2.2, 4.13, D6 | repo |
 | 9.D2 | It does not stop ransomware or phishing, and cannot protect a device that is already compromised | row 8.D1; site `technical.limits` | repo |
+| 9.L1 | In `offline-encryption-privacy` (limits list, added 16 November 2026): offline encryption cannot stop ransomware locking your files, or phishing; link to this guide | rows R9.1, R9.2 | 2026-11-16 |
+| 9.L2 | In `protect-personal-files-from-data-breaches` (limits list, added 16 November 2026): it cannot stop someone getting into your accounts; a stolen password or a fake sign-in page gets around encryption; link to this guide | rows 9.8, R9.2, 9.14 | 2026-11-16 |
+| 9.L3 | In `harvest-now-decrypt-later` (limits list, added 16 November 2026): encryption of any kind, quantum-safe or not, cannot stop ransomware locking your files, a phishing message, or someone using a device that has been hacked; link to this guide | rows R9.1, R9.2, 9.9 | 2026-11-16 |
 
 Not claimed: that CISA says device encryption fails once a device is unlocked (not on its page; the point rests on 9.9); any algorithm name; "install apps only from the official store" (no source opened). No FAQPage markup (owner).
 
