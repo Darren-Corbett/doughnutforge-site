@@ -9,6 +9,7 @@ Sources: `~/Desktop/review/website-handoff/v3/` (decisions, brief, white paper d
 - Price on Google Play: USD 3.99, no launch price (14 November 2026). Pages show no amounts; `src/data/prices.ts` records it.
 - White paper section 7.5 (a signature cannot be taken back) and the "stays protected" change: approved 14 November 2026.
 - security.txt: email contact, white paper as a second Policy, English only (decisions 1 to 3).
+- Country wording (16 November 2026): the site names no countries anywhere. "Availability depends on your country or region." stays for every store, Android included.
 
 ## Done on the branch (14 November 2026)
 
@@ -21,7 +22,7 @@ Sources: `~/Desktop/review/website-handoff/v3/` (decisions, brief, white paper d
 
 ## Waiting
 
-- **Owner:** the privacy policy English (`~/Desktop/review/launch-site/L4-privacy-draft.md`); the country wording; the Google Play badge files; confirmation that sharing encrypted text has shipped on Android.
+- **Owner:** the privacy policy English (`~/Desktop/review/launch-site/L4-privacy-draft.md`); the Google Play badge files; confirmation that sharing encrypted text has shipped on Android.
 - **App side:** the final white paper; the exact "Old card: ask for a new one" string; the final unknown-sender warning; confirmation that Android recovery words restore the identity but not the contact list (mailbox Q5). Only then add the owner-approved Android restore line to `faq.restore.a` in 30 languages: "On Android, a new phone starts empty: your recovery words bring back your identity, but not the contacts you added in Doughnut Forge. Ask them to share their cards again."
 - **Then, on this branch:**
   - The `stores.ts` switch, which makes the Android tests pass.

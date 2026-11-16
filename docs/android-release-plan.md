@@ -189,7 +189,7 @@ What that means here:
 
 ## 3. Nothing implies the app is sold in the EU or other excluded countries
 
-`app-answers.md` §2 says the plan is to exclude **the EU, Russia and Belarus**, but the Play country list is not set yet. **Unconfirmed until the owner says so.** The site names no countries, so its wording does not depend on the final list. Apple and Microsoft listings are not sold in the EU either. What was checked:
+`app-answers.md` §2 says the plan is to exclude **the EU, Russia and Belarus**, but the Play country list is not set yet. **Owner decision (16 November 2026):** the site names no countries anywhere, and "Availability depends on your country or region." stays for every store, Android included. So the site's wording does not depend on the final list. Apple and Microsoft listings are not sold in the EU either. What was checked:
 
 - **Store links never name a country.** Apple links have no country code; Microsoft and Play links carry only `hl=<language>`, which sets the language, not the storefront. Each store shows a visitor what is available where they are. A German visitor to `/de/` reaches a Play page that says the app is not available in their country. That is the same as Apple and Microsoft today.
 - **"Availability depends on your country or region."** (`download.availability`) is on download and pricing in every language. Keep it.
@@ -212,6 +212,7 @@ No problem found. Nothing to change for this point.
 | 8 | Folders on Android | Cannot encrypt folders, and cannot open a folder made on Mac or Windows | `app-answers.md` §3 |
 | 9 | Requirements line | Yes: "Needs Android 10 or later." | `app-answers.md` §4, owner |
 | 12 | Android differences to state | The restore FAQ (Android backups) and fingerprint or face unlock where unlock is described (1c). Nothing else for now | `app-answers.md` §5, owner |
+| 6 | Country wording | Name no countries anywhere on the site; "Availability depends on your country or region." for every store, Android included. The Play country list no longer affects the site | Owner, 16 November 2026 |
 
 **Still open (the owner answers later):**
 
@@ -221,7 +222,6 @@ No problem found. Nothing to change for this point.
 | 3 | **SHA-256 of the app signing key**, Play Console → App integrity → App signing → *App signing key certificate* (not the upload key) | Only needed if Android autofill ships; autofill off is unconfirmed | `assetlinks.json`, later |
 | 4 | **Price** | Not in `app-answers.md`. (An earlier draft said USD 3.99, from the app repo; dropped as unsourced.) Any launch price, and until when? | `src/data/prices.ts` (record only; pages show no amounts) |
 | 5 | **Release date** | None | When to merge the release branch and push |
-| 6 | **Excluded countries**, confirmed against the Play Console | Planned: EU, Russia, Belarus (`app-answers.md` §2); not set yet | Section 3 (no site wording depends on it) |
 | 10 | **Android screenshots** for the press kit or features page, or keep iPhone and iPad only? | None exist on the site | Press, Features (optional) |
 | 11 | **Google Play badge files**: the Partner Marketing Hub download (it may need a sign-in), and whether it has SVG | Not in the repo | 2.2 |
 | 13 | **Sharing encrypted text** on Android shipped? | Not merged yet (`app-answers.md` §5, still changing) | Unblocks the lines marked Blocked in 1c |
