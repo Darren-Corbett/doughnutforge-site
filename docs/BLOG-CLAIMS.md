@@ -338,26 +338,26 @@ Not claimed: any CVE number; that QuickConnect was the way in; that the app woul
 
 | # | Claim in the post | Source | Checked |
 |---|---|---|---|
-| 9.1 | Encryption "prevents people from accessing or manipulating your data without authorization" | CT (exact) | 2026-11-11 |
-| 9.2 | "disk encryption should be used where there is a risk of physical theft, such as laptop computers and removable media" | N10 (exact) | 2026-11-11 |
-| 9.3 | Use "secure, encrypted and authenticated" connections wherever possible | N10 ("secure, encrypted and authenticated, application protocols") | 2026-11-11 |
+| 9.1 | Encryption "prevents people from accessing or manipulating your data without authorization" | CT (exact) | 2026-11-11; re-checked live 2026-11-16 |
+| 9.2 | "disk encryption should be used where there is a risk of physical theft, such as laptop computers and removable media" | N10 (exact) | 2026-11-11; re-checked live 2026-11-16 |
+| 9.3 | Use "secure, encrypted and authenticated" connections wherever possible | N10 ("secure, encrypted and authenticated, application protocols") | 2026-11-11; re-checked live 2026-11-16 |
 | 9.4 | End-to-end encryption: locked on one phone, unlocked on the other; you still trust the app at each end | post 6 rows (WhatsApp privacy policy) | repo |
-| 9.5 | Providers typically manage the keys; "does not prevent cloud providers from accessing the data"; "encrypt the data yourself before you upload it" | [ICO: Encryption scenarios](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/encryption/encryption-scenarios/) | 2026-11-11 |
-| 9.6 | Stolen encrypted copies cannot be read without the key; attackers often threaten to publish what they take | row 9.5; row 8.22 (Kaspersky) | 2026-11-11 |
-| 9.7 | CISA lists encryption among defences against "attacks like ransomware and malware" | CB ("It's a critical defense against attacks like ransomware and malware.") | 2026-11-11 |
-| R9.1 | *Reasoning:* ransomware encrypts files with the attacker's key; an encrypted file can be locked again; a backup, not encryption, gets files back | rows 8.14, 8.10; CT ("Start the encryption process only after backing up your data") | 2026-11-11 |
-| 9.8 | Phishing: criminals "use scam emails, text messages or phone calls to trick their victims" | [NCSC: Phishing scams](https://www.ncsc.gov.uk/collection/phishing-scams) | 2026-11-11 |
-| R9.2 | *Reasoning:* a password typed into a fake page lets the attacker sign in as you; encryption cannot tell the difference | rows 9.8, 9.1 | 2026-11-11 |
-| 9.9 | Disk encryption "does not protect data on running systems" | N10 (exact) | 2026-11-11 |
-| 9.10 | CISA advises a password that is "long, random, and unique" | CT ("Make sure to use a password that is long, random, and unique.") | 2026-11-11 |
-| 9.11 | Losing a recovery key or password can mean losing the data for good (paraphrase) | CT ("Losing this information can lead to permanent data loss.") | 2026-11-11 |
-| 9.12 | File encryption protects contents; author and creation date can stay visible (paraphrase) | CT and CB ("metadata like the file's author and the time and date it was created will still be visible") | 2026-11-11 |
-| R9.3 | *Reasoning:* breaking well-made modern encryption by force is not practical today; attackers go around it | consistent with 9.13 and E3.2 | 2026-11-11 |
-| 9.13 | "most traditional public key cryptography (PKC) algorithms in use today will be vulnerable to attack"; symmetric "not significantly impacted"; "hard to predict when this may happen" | [NCSC: Next steps in preparing for PQC](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography) | 2026-11-11 |
-| 9.14 | Updates "contain vital security updates to help protect your devices from cyber criminals"; back up to an external drive or cloud; two-step verification; three random words; password managers | [NCSC Cyber Aware](https://www.ncsc.gov.uk/cyberaware/home) | 2026-11-11 |
-| 9.15 | Ransomware can reach a backup drive that stays connected; unplug it (paraphrase) | CT ("the connection could be used by ransomware to gain access to the drive and delete or corrupt your backups") | 2026-11-11 |
-| R9.4 | *Reasoning:* pause before you click; go to the website yourself | general advice, consistent with 9.8 | 2026-11-11 |
-| R9.5 | *Reasoning:* device encryption is the first step; file encryption covers a file once it leaves the device | rows 9.2, 9.5 | 2026-11-11 |
+| 9.5 | Providers typically manage the keys; "does not prevent cloud providers from accessing the data"; "encrypt the data yourself before you upload it" | [ICO: Encryption scenarios](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/encryption/encryption-scenarios/) | 2026-11-11; re-checked live 2026-11-16 |
+| 9.6 | Stolen encrypted copies cannot be read without the key; attackers often threaten to publish what they take | row 9.5; row 8.22 (Kaspersky) | 2026-11-11; re-checked live 2026-11-16 |
+| 9.7 | CISA lists encryption among defences against "attacks like ransomware and malware" | CB ("It's a critical defense against attacks like ransomware and malware.") | 2026-11-11; re-checked live 2026-11-16 |
+| R9.1 | *Reasoning:* ransomware encrypts files with the attacker's key; an encrypted file can be locked again; a backup, not encryption, gets files back | rows 8.14, 8.10; CT ("Start the encryption process only after backing up your data") | 2026-11-11; re-checked live 2026-11-16 |
+| 9.8 | Phishing: criminals "use scam emails, text messages or phone calls to trick their victims" | [NCSC: Phishing scams](https://www.ncsc.gov.uk/collection/phishing-scams) | 2026-11-11; re-checked live 2026-11-16 |
+| R9.2 | *Reasoning:* a password typed into a fake page lets the attacker sign in as you; encryption cannot tell the difference | rows 9.8, 9.1 | 2026-11-11; re-checked live 2026-11-16 |
+| 9.9 | Disk encryption "does not protect data on running systems" | N10 (exact) | 2026-11-11; re-checked live 2026-11-16 |
+| 9.10 | CISA advises a password that is "long, random, and unique" | CT ("Make sure to use a password that is long, random, and unique.") | 2026-11-11; re-checked live 2026-11-16 |
+| 9.11 | Losing a recovery key or password can mean losing the data for good (paraphrase) | CT ("Losing this information can lead to permanent data loss.") | 2026-11-11; re-checked live 2026-11-16 |
+| 9.12 | File encryption protects contents; author and creation date can stay visible (paraphrase) | CT and CB ("metadata like the file's author and the time and date it was created will still be visible") | 2026-11-11; re-checked live 2026-11-16 |
+| R9.3 | *Reasoning:* breaking well-made modern encryption by force is not practical today; attackers go around it | consistent with 9.13 and E3.2 | 2026-11-11; re-checked live 2026-11-16 |
+| 9.13 | "most traditional public key cryptography (PKC) algorithms in use today will be vulnerable to attack"; symmetric "not significantly impacted"; "hard to predict when this may happen" | [NCSC: Next steps in preparing for PQC](https://www.ncsc.gov.uk/whitepaper/next-steps-preparing-for-post-quantum-cryptography) | 2026-11-11; re-checked live 2026-11-16 |
+| 9.14 | Updates "contain vital security updates to help protect your devices from cyber criminals"; back up to an external drive or cloud; two-step verification; three random words; password managers | [NCSC Cyber Aware](https://www.ncsc.gov.uk/cyberaware/home) | 2026-11-11; re-checked live 2026-11-16 |
+| 9.15 | Ransomware can reach a backup drive that stays connected; unplug it (paraphrase) | CT ("the connection could be used by ransomware to gain access to the drive and delete or corrupt your backups") | 2026-11-11; re-checked live 2026-11-16 |
+| R9.4 | *Reasoning:* pause before you click; go to the website yourself | general advice, consistent with 9.8 | 2026-11-11; re-checked live 2026-11-16 |
+| R9.5 | *Reasoning:* device encryption is the first step; file encryption covers a file once it leaves the device | rows 9.2, 9.5 | 2026-11-11; re-checked live 2026-11-16 |
 | 9.D1 | Doughnut Forge encrypts files on your own device; only you and the people you choose can open them, wherever the file goes | rows 2.2, 4.13, D6 | repo |
 | 9.D2 | It does not stop ransomware or phishing, and cannot protect a device that is already compromised | row 8.D1; site `technical.limits` | repo |
 
