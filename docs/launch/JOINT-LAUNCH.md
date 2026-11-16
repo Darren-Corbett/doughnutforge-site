@@ -22,7 +22,8 @@ Sources: `~/Desktop/review/website-handoff/v3/` (decisions, brief, white paper d
 
 ## Waiting
 
-- **Owner:** the privacy policy English (`~/Desktop/review/launch-site/L4-privacy-draft.md`); the Google Play badge files; confirmation that sharing encrypted text has shipped on Android.
+- **Owner:** the privacy policy English (`~/Desktop/review/launch-site/L4-privacy-draft.md`); confirmation that sharing encrypted text has shipped on Android.
+- **Deferred (owner, 16 November 2026):** the Google Play badge files, until the Android app is submitted to the store.
 - **App side:** the final white paper; the exact "Old card: ask for a new one" string; the final unknown-sender warning; confirmation that Android recovery words restore the identity but not the contact list (mailbox Q5). Only then add the owner-approved Android restore line to `faq.restore.a` in 30 languages: "On Android, a new phone starts empty: your recovery words bring back your identity, but not the contacts you added in Doughnut Forge. Ask them to share their cards again."
 - **Then, on this branch:**
   - The `stores.ts` switch, which makes the Android tests pass.

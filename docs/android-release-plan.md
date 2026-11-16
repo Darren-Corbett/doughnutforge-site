@@ -223,7 +223,7 @@ No problem found. Nothing to change for this point.
 | 4 | **Price** | Not in `app-answers.md`. (An earlier draft said USD 3.99, from the app repo; dropped as unsourced.) Any launch price, and until when? | `src/data/prices.ts` (record only; pages show no amounts) |
 | 5 | **Release date** | None | When to merge the release branch and push |
 | 10 | **Android screenshots** for the press kit or features page, or keep iPhone and iPad only? | None exist on the site | Press, Features (optional) |
-| 11 | **Google Play badge files**: the Partner Marketing Hub download (it may need a sign-in), and whether it has SVG | Not in the repo | 2.2 |
+| 11 | **Google Play badge files**: the Partner Marketing Hub download (it may need a sign-in), and whether it has SVG | Not in the repo. Deferred until the Android app is submitted to the store (owner, 16 November 2026) | 2.2 |
 | 13 | **Sharing encrypted text** on Android shipped? | Not merged yet (`app-answers.md` §5, still changing) | Unblocks the lines marked Blocked in 1c |
 | 14 | **Password autofill** off on Android, confirmed? | Being turned off (`app-answers.md` §5, still changing) | Whether `assetlinks.json` stays out (0.1, 2.1) |
 | 15 | Does Android accept the phone's **PIN in place of fingerprint or face**? | Not in `app-answers.md` | Whether `technical.limits.passcode.text` names Android (1c) |
