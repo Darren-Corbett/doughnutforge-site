@@ -272,7 +272,7 @@ export default {
   "technical.keys.identity.text": "byggd på en enda slumpmässig hemlighet på 256 bitar som skapas på din enhet.",
   "technical.keys.recovery.label": "Återställning:",
   "technical.keys.recovery.text":
-    "hemligheten kan skrivas ned som dina 24 återställningsord (BIP-39). Den kan också delas upp i återställningsdelar med Shamir's Secret Sharing, där ett valt antal valfria delar (minst 2, högst 16 totalt) återställer den. Färre delar än så avslöjar ingenting.",
+    "hemligheten kan skrivas ned som dina 24 återställningsord (BIP-39).",
   "technical.keys.exchange.label": "Nyckelutbyte (postkvant-hybrid):",
   "technical.keys.exchange.text": "varje objekts nyckel förseglas separat för varje mottagare, och för dig, med X25519 tillsammans med ML-KEM-768. De två delade hemligheterna kombineras med SHA-256.",
   "technical.keys.signatures.label": "Signaturer:",
@@ -337,7 +337,6 @@ export default {
   "technical.libraries.sha": "SHA-256 och SHA-512",
   "technical.libraries.random": "Operativsystemets slumpkälla",
   "technical.libraries.words": "Återställningsord",
-  "technical.libraries.shards": "Återställningsdelar",
   "technical.libraries.memory": "Hemligheter i minnet",
   "technical.libraries.wipe": "Radering av hemligheter ur minnet",
   "technical.libraries.compression": "Komprimering",
@@ -345,7 +344,7 @@ export default {
   "technical.limits.compromised.label": "En enhet som redan är komprometterad.",
   "technical.limits.compromised.text": "Medan Doughnut Forge är upplåst kan skadlig kod med full åtkomst till din enhet läsa dina hemligheter.",
   "technical.limits.access.label":
-    "Alla som har ditt lösenord och din enhet, dina 24 återställningsord eller tillräckligt många återställningsdelar.",
+    "Alla som har ditt lösenord och din enhet, eller som har dina 24 återställningsord.",
   "technical.limits.access.text": "Förvara dem säkert.",
   "technical.limits.passcode.label": "Enhetens lösenkod,",
   "technical.limits.passcode.text": "på iPhone och iPad med Face ID eller Touch ID påslaget. iOS godtar lösenkoden i stället för Face ID eller Touch ID.",

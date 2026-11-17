@@ -1132,8 +1132,8 @@
     "text": "000f2bf93d57"
   },
   "technical.keys.recovery.text": {
-    "en": "71f1095f3ab2",
-    "text": "55928ff7bfe7"
+    "en": "5b845e001348",
+    "text": "7fb67a6a4eec"
   },
   "technical.keys.signatures.label": {
     "en": "24799a86c564",
@@ -1167,10 +1167,6 @@
     "en": "06673863d293",
     "text": "c2706e4a5fe1"
   },
-  "technical.libraries.shards": {
-    "en": "7fbb7e842e95",
-    "text": "f643cd85f672"
-  },
   "technical.libraries.text": {
     "en": "228c22dad0bc",
     "text": "f5a61ab2e538"
@@ -1188,8 +1184,8 @@
     "text": "01e37fc96a6d"
   },
   "technical.limits.access.label": {
-    "en": "45edd9fbb9a9",
-    "text": "7fe8493e730f"
+    "en": "8ea763689d68",
+    "text": "d99ef3881a01"
   },
   "technical.limits.access.text": {
     "en": "5bb5b35c38e1",

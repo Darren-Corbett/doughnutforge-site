@@ -274,7 +274,7 @@ export default {
   "technical.keys.identity.text": "dibuat daripada satu rahsia rawak 256-bit, yang dicipta pada peranti anda.",
   "technical.keys.recovery.label": "Pemulihan:",
   "technical.keys.recovery.text":
-    "rahsia itu boleh ditulis sebagai 24 perkataan pemulihan anda (BIP-39). Ia juga boleh dipecahkan kepada serpihan pemulihan dengan Shamir's Secret Sharing, dengan bilangan serpihan yang dipilih (sekurang-kurangnya 2, paling banyak 16 kesemuanya) dapat memulihkannya. Serpihan yang kurang daripada bilangan itu tidak mendedahkan apa-apa.",
+    "rahsia itu boleh ditulis sebagai 24 perkataan pemulihan anda (BIP-39).",
   "technical.keys.exchange.label": "Pertukaran kunci (hibrid pasca-kuantum):",
   "technical.keys.exchange.text": "kunci setiap item dimeterai secara berasingan untuk setiap penerima, dan untuk anda, menggunakan X25519 bersama ML-KEM-768. Kedua-dua rahsia kongsi itu digabungkan dengan SHA-256.",
   "technical.keys.signatures.label": "Tandatangan:",
@@ -339,7 +339,6 @@ export default {
   "technical.libraries.sha": "SHA-256 dan SHA-512",
   "technical.libraries.random": "Sumber rawak sistem pengendalian",
   "technical.libraries.words": "Perkataan pemulihan",
-  "technical.libraries.shards": "Serpihan pemulihan",
   "technical.libraries.memory": "Rahsia dalam memori",
   "technical.libraries.wipe": "Memadam rahsia daripada memori",
   "technical.libraries.compression": "Pemampatan",
@@ -347,7 +346,7 @@ export default {
   "technical.limits.compromised.label": "Peranti yang sudah pun terjejas.",
   "technical.limits.compromised.text": "Semasa Doughnut Forge tidak dikunci, perisian hasad dengan akses penuh kepada peranti anda boleh membaca rahsia anda.",
   "technical.limits.access.label":
-    "Sesiapa yang mempunyai kata laluan dan peranti anda, 24 perkataan pemulihan anda, atau serpihan pemulihan yang mencukupi.",
+    "Sesiapa yang mempunyai kata laluan dan peranti anda, atau 24 perkataan pemulihan anda.",
   "technical.limits.access.text": "Simpan semuanya dengan selamat.",
   "technical.limits.passcode.label": "Kod laluan peranti anda,",
   "technical.limits.passcode.text": "pada iPhone dan iPad dengan Face ID atau Touch ID dihidupkan. iOS menerima kod laluan sebagai ganti Face ID atau Touch ID.",

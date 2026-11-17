@@ -272,7 +272,7 @@ export default {
   "technical.keys.identity.text": "laget av én tilfeldig hemmelighet på 256 biter, opprettet på enheten din.",
   "technical.keys.recovery.label": "Gjenoppretting:",
   "technical.keys.recovery.text":
-    "hemmeligheten kan skrives ned som de 24 gjenopprettingsordene dine (BIP-39). Den kan også deles opp i gjenopprettingsdeler med Shamir's Secret Sharing, der et valgt antall vilkårlige deler (minst 2, høyst 16 totalt) gjenoppretter den. Færre deler enn det avslører ingenting.",
+    "hemmeligheten kan skrives ned som de 24 gjenopprettingsordene dine (BIP-39).",
   "technical.keys.exchange.label": "Nøkkelutveksling (postkvante-hybrid):",
   "technical.keys.exchange.text": "nøkkelen til hvert element forsegles separat for hver mottaker, og for deg, med X25519 sammen med ML-KEM-768. De to delte hemmelighetene kombineres med SHA-256.",
   "technical.keys.signatures.label": "Signaturer:",
@@ -337,7 +337,6 @@ export default {
   "technical.libraries.sha": "SHA-256 og SHA-512",
   "technical.libraries.random": "Operativsystemets kilde til tilfeldige tall",
   "technical.libraries.words": "Gjenopprettingsord",
-  "technical.libraries.shards": "Gjenopprettingsdeler",
   "technical.libraries.memory": "Hemmeligheter i minnet",
   "technical.libraries.wipe": "Sletting av hemmeligheter fra minnet",
   "technical.libraries.compression": "Komprimering",
@@ -345,7 +344,7 @@ export default {
   "technical.limits.compromised.label": "En enhet som allerede er kompromittert.",
   "technical.limits.compromised.text": "Mens Doughnut Forge er låst opp, kan skadevare med full tilgang til enheten din lese hemmelighetene dine.",
   "technical.limits.access.label":
-    "Alle som har passordet ditt og enheten din, de 24 gjenopprettingsordene dine eller nok gjenopprettingsdeler.",
+    "Alle som har passordet ditt og enheten din, eller som har de 24 gjenopprettingsordene dine.",
   "technical.limits.access.text": "Oppbevar dem trygt.",
   "technical.limits.passcode.label": "Enhetskoden din,",
   "technical.limits.passcode.text": "på iPhone og iPad med Face ID eller Touch ID slått på. iOS godtar koden i stedet for Face ID eller Touch ID.",
