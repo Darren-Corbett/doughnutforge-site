@@ -24,6 +24,16 @@ const pdf = `${base}/security/white-paper/doughnut-forge-white-paper-${lang.code
 <Base lang={lang} title={paper.data.title} description={paper.data.description}>
   <PageHero title={paper.data.title} lead={paper.data.lead} />
   <div class="section">
+    {
+      paper.data.reference && (
+        <p class="reference">
+          {paper.data.reference}{" "}
+          <a href="/security/white-paper/" hreflang="en" lang="en">
+            English
+          </a>
+        </p>
+      )
+    }
     <p class="pdf"><a href={pdf}>{paper.data.pdf}</a></p>
     <div class="paper">
       <Prose sheet="wide">
@@ -34,6 +44,11 @@ const pdf = `${base}/security/white-paper/doughnut-forge-white-paper-${lang.code
 </Base>
 
 <style>
+  .reference a {
+    display: inline-block;
+    min-height: 44px;
+    padding: 10px 0;
+  }
   .pdf {
     margin-bottom: 24px;
     font-weight: 700;

@@ -48,6 +48,8 @@ const whitePaper = defineCollection({
     lead: z.string(),
     /** The link to this language's PDF */
     pdf: z.string(),
+    /** Translations only: "This is a translation. The English version is the reference." */
+    reference: z.string().optional(),
     lang: z.string(),
   }),
 });
