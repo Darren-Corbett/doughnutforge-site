@@ -13,6 +13,7 @@ import { ui } from "../support/ui";
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));
 const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.path}`);
 const ADVISORIES = "https://github.com/Darren-Corbett/forge-privacy/security/advisories/new";
+const SECURITY_EMAIL = "support@doughnut-forge.app";
 const SECTIONS = ["shipped", "next", "later"];
 // Names that stay untranslated on the technical details page, in every language
 const TECHNICAL_NAMES = ["AES-256-GCM", "X25519", "ML-KEM-768", "ML-KEM-1024", "Ed25519", "ML-DSA-87", "HKDF-SHA-256", "Argon2id", "BIP-39", "aes-gcm (RustCrypto)", "BEGIN FORGE ENCLAVE"];
@@ -90,6 +91,10 @@ for (const lang of languages) {
         await expect(a).toHaveAttribute("rel", /noopener/);
       }
       await expect(page.locator('main a[href*="/issues"]')).toHaveCount(0);
+      // Or by email (decision 1), the address written out in every language
+      const email = page.locator(`main a[href="mailto:${SECURITY_EMAIL}"]`);
+      await expect(email).toHaveCount(1);
+      await expect(email).toHaveText(SECURITY_EMAIL);
       // The page links to the roadmap, where the planned audit is listed
       await expect(page.locator(`main a[href="${prefix(lang)}/roadmap/"]`)).toHaveCount(1);
       if (lang.code === "en") {
