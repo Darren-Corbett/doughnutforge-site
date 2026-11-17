@@ -225,9 +225,14 @@ export default {
   "security.audit.text": "Doughnut Forge 尚未經過獨立的安全性稽核。稽核已在計畫中。",
   "security.audit.link": "查看開發藍圖",
   "security.report.title": "回報安全性漏洞",
-  "security.report.text": "如果您發現 Doughnut Forge 或本網站有安全性問題，請在 GitHub 上私下回報。請不要建立公開的 issue。",
-  "security.report.private": "只有開發者能看到您的回報。您需要一個免費的 GitHub 帳號。",
-  "security.report.promise": "每份回報都會得到回覆。對於本著善意尋找並回報問題的人，Doughnut Forge 不會採取法律行動，前提是：沒有傷害任何人、沒有讀取他人的資料，並在公開細節之前留出修正的時間。",
+  "security.report.text":
+    "如果您發現 Doughnut Forge 或本網站有安全性問題，請私下回報：在 GitHub 上回報，或寄送電子郵件至 support@doughnut-forge.app，郵件主旨以「Security」開頭。請不要建立公開的 issue。",
+  "security.report.private": "在 GitHub 上，只有開發者能看到您的回報。為此您需要一個免費的 GitHub 帳號；透過電子郵件回報則不需要帳號。",
+  "security.report.include":
+    "請附上 App 版本和平台（或網頁位址）、您做了什麼、發生了什麼；若可以，也請附上重現步驟或能呈現問題的檔案。切勿傳送您的復原單字、密碼或私密金鑰。",
+  "security.report.promise":
+    "每份回報都會得到回覆，通常在 7 天內。對於本著善意尋找並回報問題的人，Doughnut Forge 不會採取法律行動，前提是：沒有傷害任何人、沒有讀取他人的資料，並在公開細節之前留出修正的時間。",
+  "security.report.credit": "如果您願意，修正發布時會列出您的名字以示感謝。沒有漏洞賞金計畫：回報不會獲得報酬。",
   "security.report.button": "回報安全性漏洞",
   "security.technical.text": "給具技術背景的讀者：Doughnut Forge 使用的加密方法和金鑰、檔案格式、沒有金鑰時能看到什麼、網路行為，以及它無法防範的情況。",
   "security.technical.button": "閱讀技術細節",

@@ -239,9 +239,14 @@ export default {
   "security.audit.text": "Doughnut Forge har endnu ikke været igennem en uafhængig sikkerhedsaudit. En audit er planlagt.",
   "security.audit.link": "Se køreplanen",
   "security.report.title": "Rapportér en sårbarhed",
-  "security.report.text": "Hvis du finder et sikkerhedsproblem i Doughnut Forge eller på dette websted, så rapportér det privat på GitHub. Opret ikke et offentligt issue.",
-  "security.report.private": "Kun udvikleren kan se din rapport. Du skal have en gratis GitHub-konto.",
-  "security.report.promise": "Alle rapporter får et svar. Doughnut Forge vil ikke tage retslige skridt mod nogen, der i god tro leder efter og rapporterer et problem: uden at skade nogen eller læse andres data, og med tid til en rettelse, før detaljer deles.",
+  "security.report.text":
+    "Hvis du finder et sikkerhedsproblem i Doughnut Forge eller på dette websted, så rapportér det privat: på GitHub eller via e-mail til support@doughnut-forge.app med et emne, der starter med »Security«. Opret ikke et offentligt issue.",
+  "security.report.private": "På GitHub kan kun udvikleren se din rapport. Du skal have en gratis GitHub-konto til det; e-mail virker uden en.",
+  "security.report.include":
+    "Oplys venligst appens version og platform eller sidens adresse, hvad du gjorde, hvad der skete, og om muligt trinnene eller en fil, der viser problemet. Send aldrig dine gendannelsesord, din adgangskode eller dine private nøgler.",
+  "security.report.promise":
+    "Alle rapporter får et svar, som regel inden for 7 dage. Doughnut Forge vil ikke tage retslige skridt mod nogen, der i god tro leder efter og rapporterer et problem: uden at skade nogen eller læse andres data, og med tid til en rettelse, før detaljer deles.",
+  "security.report.credit": "Hvis du ønsker det, bliver du nævnt ved navn, når rettelsen udgives. Der er ingen bug bounty: rapporter bliver ikke betalt.",
   "security.report.button": "Rapportér en sårbarhed",
   "security.technical.text": "Til tekniske læsere: de krypteringsmetoder og nøgler, som Doughnut Forge bruger, appens filformat, hvad der kan ses uden nøglen, appens netværksadfærd, og hvad den ikke beskytter mod.",
   "security.technical.button": "Læs de tekniske detaljer",

@@ -241,9 +241,14 @@ export default {
   "security.audit.text": "Doughnut Forge belum menjalani audit keselamatan bebas. Satu audit telah dirancang.",
   "security.audit.link": "Lihat peta hala tuju",
   "security.report.title": "Laporkan kerentanan",
-  "security.report.text": "Jika anda menemui masalah keselamatan dalam Doughnut Forge atau laman web ini, laporkan secara peribadi di GitHub. Sila jangan buka isu awam.",
-  "security.report.private": "Hanya pembangun boleh melihat laporan anda. Anda memerlukan akaun GitHub percuma.",
-  "security.report.promise": "Setiap laporan akan dibalas. Doughnut Forge tidak akan mengambil tindakan undang-undang terhadap sesiapa yang mencari dan melaporkan masalah dengan niat baik: tanpa membahayakan sesiapa atau membaca data orang lain, dan memberi masa untuk pembaikan sebelum berkongsi butiran.",
+  "security.report.text":
+    "Jika anda menemui masalah keselamatan dalam Doughnut Forge atau laman web ini, laporkan secara peribadi: di GitHub, atau melalui e-mel ke support@doughnut-forge.app dengan subjek yang bermula dengan “Security”. Sila jangan buka isu awam.",
+  "security.report.private": "Di GitHub, hanya pembangun boleh melihat laporan anda. Untuk itu, anda memerlukan akaun GitHub percuma; melalui e-mel, akaun tidak diperlukan.",
+  "security.report.include":
+    "Sila sertakan versi aplikasi dan platform, atau alamat halaman, apa yang anda lakukan, apa yang berlaku dan, jika boleh, langkah-langkahnya atau fail yang menunjukkan masalah itu. Jangan sekali-kali hantar perkataan pemulihan, kata laluan atau kunci peribadi anda.",
+  "security.report.promise":
+    "Setiap laporan akan dibalas, biasanya dalam masa 7 hari. Doughnut Forge tidak akan mengambil tindakan undang-undang terhadap sesiapa yang mencari dan melaporkan masalah dengan niat baik: tanpa membahayakan sesiapa atau membaca data orang lain, dan memberi masa untuk pembaikan sebelum berkongsi butiran.",
+  "security.report.credit": "Jika anda mahu, nama anda akan disebut apabila pembaikan dikeluarkan. Tiada bug bounty: laporan tidak dibayar.",
   "security.report.button": "Laporkan kerentanan",
   "security.technical.text": "Untuk pembaca teknikal: kaedah penyulitan dan kunci yang digunakan oleh Doughnut Forge, format failnya, apa yang boleh dilihat tanpa kunci, tingkah laku rangkaiannya dan perkara yang tidak dilindunginya.",
   "security.technical.button": "Baca butiran teknikal",

@@ -234,9 +234,14 @@ export default {
   "security.audit.text": "Doughnut Forge belum menjalani audit keamanan independen. Audit sudah direncanakan.",
   "security.audit.link": "Lihat peta jalan",
   "security.report.title": "Laporkan kerentanan",
-  "security.report.text": "Jika Anda menemukan masalah keamanan di Doughnut Forge atau situs web ini, laporkan secara pribadi di GitHub. Mohon jangan membuat issue publik.",
-  "security.report.private": "Hanya pengembang yang dapat melihat laporan Anda. Anda memerlukan akun GitHub gratis.",
-  "security.report.promise": "Setiap laporan akan dibalas. Doughnut Forge tidak akan mengambil tindakan hukum terhadap siapa pun yang mencari dan melaporkan masalah dengan iktikad baik: tanpa merugikan siapa pun atau membaca data orang lain, dan dengan memberi waktu untuk perbaikan sebelum membagikan detailnya.",
+  "security.report.text":
+    "Jika Anda menemukan masalah keamanan di Doughnut Forge atau situs web ini, laporkan secara pribadi: di GitHub, atau melalui email ke support@doughnut-forge.app dengan subjek yang diawali “Security”. Mohon jangan membuat issue publik.",
+  "security.report.private": "Di GitHub, hanya pengembang yang dapat melihat laporan Anda. Untuk itu, Anda memerlukan akun GitHub gratis; melalui email, akun tidak diperlukan.",
+  "security.report.include":
+    "Mohon sertakan versi aplikasi dan platformnya, atau alamat halamannya, apa yang Anda lakukan, apa yang terjadi, dan jika bisa, langkah-langkahnya atau file yang menunjukkan masalahnya. Jangan pernah mengirim kata pemulihan, kata sandi, atau kunci privat Anda.",
+  "security.report.promise":
+    "Setiap laporan akan dibalas, biasanya dalam 7 hari. Doughnut Forge tidak akan mengambil tindakan hukum terhadap siapa pun yang mencari dan melaporkan masalah dengan iktikad baik: tanpa merugikan siapa pun atau membaca data orang lain, dan dengan memberi waktu untuk perbaikan sebelum membagikan detailnya.",
+  "security.report.credit": "Jika Anda mau, nama Anda akan dicantumkan saat perbaikannya dirilis. Tidak ada bug bounty: laporan tidak dibayar.",
   "security.report.button": "Laporkan kerentanan",
   "security.technical.text": "Untuk pembaca teknis: metode enkripsi dan kunci yang digunakan Doughnut Forge, format filenya, apa yang dapat dilihat tanpa kunci, perilakunya di jaringan, dan apa yang tidak dilindunginya.",
   "security.technical.button": "Baca detail teknis",

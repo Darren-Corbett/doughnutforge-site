@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -311,13 +311,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Livre blanc' is the standard French term.",
         "backTranslation": "L'app n'indique un contact comme expéditeur que si... = The app shows a contact as sender only if...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -642,13 +656,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Whitepaper' is the normal German term.",
         "backTranslation": "The App Doughnut Forge works on your device, without account and without server.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -892,13 +920,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Libro blanco' is the standard Spanish term.",
         "backTranslation": "roadmap.format.text: The app indicates that a contact is the sender only when the file is signed with the keys of that contact's new card.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  Credit: \"se menciona\" correct; \"se mencionará\" would read more naturally.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. \"no hace falta\" leaves the account unsaid; it can only mean the account.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1192,13 +1234,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'White paper' is the normal Italian usage. Note: faq.share.a uses 'scheda di contatto', the new strings use 'scheda contatto' as in home.phones.altIdentity; both exist in the file.",
         "backTranslation": "—",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural. The GitHub-account line first lacked \"for it\", then read \"that is why\"; now \"Per segnalare su GitHub\", re-checked clean. ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. \"su GitHub\" repeated: style only.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1509,13 +1565,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Whitepaper' is the normal Dutch term.",
         "backTranslation": "De app noemt een contact alleen als afzender wanneer... = The app names a contact as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1778,13 +1848,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Vitbok' is the standard Swedish term.",
         "backTranslation": "Appen anger en kontakt som avsändare bara när... = The app states a contact as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2054,13 +2138,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses.",
         "backTranslation": "The Doughnut Forge app works on your device, without account and without servers. / ...may give the developer aggregated statistics.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2399,13 +2497,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses.",
         "backTranslation": "—",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2681,13 +2793,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Whitepaper' is the normal Norwegian usage.",
         "backTranslation": "Appen oppgir en kontakt som avsender bare når... = The app states a contact as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2991,13 +3117,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Biała księga' is the standard Polish term.",
         "backTranslation": "Aplikacja wskazuje kontakt jako nadawcę tylko wtedy, gdy... = The app indicates a contact as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  Credit: \"Twoje nazwisko\" (your surname); \"imię i nazwisko\" would be closer. Acceptable.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3352,13 +3492,27 @@
         "issue": "Privacy hero fine. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. roadmap.format.text uses 'uvede' (states), not 'ověří'.",
         "backTranslation": "Aplikace uvede kontakt jako odesílatele, jen když... = The app lists a contact as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3695,13 +3849,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses.",
         "backTranslation": "Az alkalmazás csak akkor nevez meg egy kapcsolatot küldőként... = The app names a contact as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4057,13 +4225,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses.",
         "backTranslation": "Aplicația indică un contact drept expeditor doar când... = The app indicates a contact as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  Promise: \"de obicei în 7 zile\" is fine; \"în termen de 7 zile\" would make \"within\" clearer.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4397,13 +4579,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. roadmap.format.text uses 'указывает' (indicates), not 'подтверждает'.",
         "backTranslation": "Приложение указывает контакт как отправителя, только если... = The app indicates a contact as sender only if...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4726,13 +4922,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Λευκή βίβλος' is the standard Greek term for a white paper.",
         "backTranslation": "The Doughnut Forge app works on your device, without account and without servers.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5053,6 +5263,20 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. roadmap.format.text uses 'указує' (indicates), not 'підтверджує'. 'Біла книга' is recognised.",
         "backTranslation": "Застосунок указує контакт як відправника, лише коли... = The app indicates a contact as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -5102,7 +5326,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5340,13 +5564,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Libro blanco' is standard; 'white paper' is also common in Mexican tech usage, preference only.",
         "backTranslation": "The app indicates that a contact is the sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  Credit: \"se menciona\" correct; \"se mencionará\" would read more naturally.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. \"no hace falta\" leaves the account unsaid; it can only mean the account.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -5645,13 +5883,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'White paper' is the normal Brazilian usage.",
         "backTranslation": "O app só indica um contato como remetente quando... = The app only indicates a contact as sender when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5986,13 +6238,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses.",
         "backTranslation": "Uygulama bir kişiyi yalnızca ... gönderen olarak adlandırır = The app names a contact as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -6271,13 +6537,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'ホワイトペーパー' is standard.",
         "backTranslation": "アプリが連絡先の名前を送信者として表示するのは... = The app shows the contact's name as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6563,13 +6843,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. '白皮书' is standard; '无需账户' is natural for 'no account'.",
         "backTranslation": "—",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6875,13 +7169,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. '白皮書' is standard; '不需要帳號' is natural for 'no account'.",
         "backTranslation": "App 才會將該聯絡人標示為傳送者 = only then does the app mark that contact as sender.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7216,13 +7524,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. '백서' is standard.",
         "backTranslation": "앱은 ... 그 연락처를 보낸 사람으로 표시합니다 = The app displays that contact as the sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7509,13 +7831,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'श्वेत पत्र' is the standard Hindi term.",
         "backTranslation": "The app shows a contact's name as the sender only when the file is signed with the keys of that contact's new card.",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. \"इसकी\" is a pronoun; both readings (account, GitHub) give the right meaning.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7814,13 +8150,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'White paper' is the normal Indonesian usage.",
         "backTranslation": "Aplikasi menyebut kontak sebagai pengirim hanya jika... = The app names a contact as sender only if...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8113,13 +8463,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Kertas putih' is the standard Malay term.",
         "backTranslation": "Aplikasi menamakan kenalan sebagai penghantar hanya apabila... = The app names a contact as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  \"kunci peribadi\" is an accepted term for private key.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8404,13 +8768,27 @@
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'ไวท์เปเปอร์' is standard; 'นามบัตร' matches the file's contact card term.",
         "backTranslation": "แอปจะระบุชื่อผู้ติดต่อเป็นผู้ส่งก็ต่อเมื่อ... = The app names the contact as sender only when...",
         "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural. The GitHub-account line first lacked \"for it\"; now \"for this channel\", re-checked clean. Text: \"privately\" grammatically covers only GitHub; email is still clearly an alternative. Acceptable.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-14",
+    "reviewedAt": "2026-11-17",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8735,6 +9113,20 @@
         "severity": "note",
         "issue": "Privacy hero and sec2Desc: only the approved parts changed; 'zero-knowledge' removed, 'no account' and 'no servers' kept, 'us' replaced by the same word for 'the developer' as the hero, Google Play and Google present, markup and JSON valid. UI: faq.data.a changed only in the Apple/Microsoft/Google sentence; new FAQ, roadmap and white-paper strings match the English, contact card/code terms and register match the file, roadmap text says the app names/indicates a contact as sender (no 'verified' wording), file parses. 'Sách trắng' is standard.",
         "backTranslation": "Ứng dụng chỉ ghi tên một liên hệ là người gửi khi... = The app only writes a contact's name as sender when...",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.text/private/include/promise/credit",
+        "severity": "note",
+        "issue": "Security reporting copy (17 November 2026), independent review: email address exact once, subject word stays English \"Security\", 7 days reads as usual not guaranteed, credit is by name if wished and not payment, GitHub account only for the GitHub route, promise unchanged after its first sentence, no first person plural.  ",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "security.report.private",
+        "severity": "note",
+        "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
+        "backTranslation": "",
         "suggestion": "No change."
       }
     ]

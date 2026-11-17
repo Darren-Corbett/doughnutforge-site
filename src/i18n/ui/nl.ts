@@ -222,9 +222,14 @@ export default {
   "security.audit.text": "Doughnut Forge heeft nog geen onafhankelijke beveiligingsaudit gehad. Er is er een gepland.",
   "security.audit.link": "Bekijk de roadmap",
   "security.report.title": "Een kwetsbaarheid melden",
-  "security.report.text": "Als u een beveiligingsprobleem vindt in Doughnut Forge of op deze website, meld het dan vertrouwelijk op GitHub. Open er alstublieft geen openbare issue voor.",
-  "security.report.private": "Alleen de ontwikkelaar kan uw melding zien. U hebt een gratis GitHub-account nodig.",
-  "security.report.promise": "Elke melding krijgt een antwoord. Doughnut Forge onderneemt geen juridische stappen tegen wie te goeder trouw naar een probleem zoekt en het meldt: zonder iemand schade te doen of gegevens van anderen te lezen, en met tijd voor een oplossing voordat details worden gedeeld.",
+  "security.report.text":
+    "Als u een beveiligingsprobleem vindt in Doughnut Forge of op deze website, meld het dan vertrouwelijk: op GitHub, of per e-mail aan support@doughnut-forge.app met een onderwerp dat begint met ‘Security’. Open er alstublieft geen openbare issue voor.",
+  "security.report.private": "Op GitHub kan alleen de ontwikkelaar uw melding zien. U hebt daarvoor een gratis GitHub-account nodig; per e-mail kan het zonder.",
+  "security.report.include":
+    "Vermeld alstublieft de app-versie en het platform, of het adres van de pagina, wat u deed, wat er gebeurde en, als het kan, de stappen of een bestand dat het probleem laat zien. Stuur nooit uw herstelwoorden, wachtwoord of privésleutels.",
+  "security.report.promise":
+    "Elke melding krijgt een antwoord, meestal binnen 7 dagen. Doughnut Forge onderneemt geen juridische stappen tegen wie te goeder trouw naar een probleem zoekt en het meldt: zonder iemand schade te doen of gegevens van anderen te lezen, en met tijd voor een oplossing voordat details worden gedeeld.",
+  "security.report.credit": "Als u dat wilt, wordt uw naam vermeld wanneer de oplossing verschijnt. Er is geen bug bounty: meldingen worden niet betaald.",
   "security.report.button": "Een kwetsbaarheid melden",
   "security.technical.text": "Voor technische lezers: de versleutelingsmethoden en sleutels die Doughnut Forge gebruikt, het bestandsformaat, wat zonder de sleutel te zien is, het gedrag op het netwerk en waartegen Doughnut Forge niet beschermt.",
   "security.technical.button": "Lees de technische details",

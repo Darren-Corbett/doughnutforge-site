@@ -234,9 +234,14 @@ export default {
   "security.audit.text": "Doughnut Forge nu a trecut încă printr-un audit de securitate independent. Unul este planificat.",
   "security.audit.link": "Vezi planul de dezvoltare",
   "security.report.title": "Raportează o vulnerabilitate",
-  "security.report.text": "Dacă găsești o problemă de securitate în Doughnut Forge sau pe acest site, raporteaz-o în privat pe GitHub. Nu deschide un tichet public.",
-  "security.report.private": "Doar dezvoltatorul îți poate vedea raportul. Ai nevoie de un cont GitHub gratuit.",
-  "security.report.promise": "Fiecare raport primește un răspuns. Doughnut Forge nu va iniția acțiuni legale împotriva nimănui care caută și raportează o problemă cu bună-credință: fără să facă rău nimănui sau să citească datele altor persoane și lăsând timp pentru o remediere înainte de a face publice detaliile.",
+  "security.report.text":
+    "Dacă găsești o problemă de securitate în Doughnut Forge sau pe acest site, raporteaz-o în privat: pe GitHub sau prin e-mail la support@doughnut-forge.app, cu un subiect care începe cu „Security”. Nu deschide un tichet public.",
+  "security.report.private": "Pe GitHub, doar dezvoltatorul îți poate vedea raportul. Ai nevoie pentru asta de un cont GitHub gratuit; prin e-mail merge și fără cont.",
+  "security.report.include":
+    "Include versiunea aplicației și platforma sau adresa paginii, ce ai făcut, ce s-a întâmplat și, dacă poți, pașii sau un fișier care arată problema. Nu trimite niciodată cuvintele de recuperare, parola sau cheile private.",
+  "security.report.promise":
+    "Fiecare raport primește un răspuns, de obicei în 7 zile. Doughnut Forge nu va iniția acțiuni legale împotriva nimănui care caută și raportează o problemă cu bună-credință: fără să facă rău nimănui sau să citească datele altor persoane și lăsând timp pentru o remediere înainte de a face publice detaliile.",
+  "security.report.credit": "Dacă dorești, numele tău este menționat când este lansată remedierea. Nu există un program de recompense pentru erori (bug bounty): rapoartele nu sunt plătite.",
   "security.report.button": "Raportează o vulnerabilitate",
   "security.technical.text": "Pentru cititorii cu interes tehnic: metodele de criptare și cheile pe care le folosește Doughnut Forge, formatul său de fișier, ce se poate vedea fără cheie, comportamentul său în rețea și împotriva a ce nu te protejează.",
   "security.technical.button": "Citește detaliile tehnice",

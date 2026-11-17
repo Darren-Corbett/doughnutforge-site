@@ -243,9 +243,14 @@ export default {
   "security.audit.text": "A Doughnut Forge még nem esett át független biztonsági auditon. Ez a tervek között szerepel.",
   "security.audit.link": "Nézd meg a fejlesztési tervet",
   "security.report.title": "Sebezhetőség bejelentése",
-  "security.report.text": "Ha biztonsági problémát találsz a Doughnut Forge alkalmazásban vagy ezen a webhelyen, jelentsd be privát módon a GitHubon. Ne nyiss nyilvános bejelentést.",
-  "security.report.private": "A bejelentésedet csak a fejlesztő látja. Ingyenes GitHub-fiókra van szükséged.",
-  "security.report.promise": "Minden bejelentésre érkezik válasz. A Doughnut Forge nem tesz jogi lépéseket senki ellen, aki jóhiszeműen keres és jelent be egy problémát: anélkül, hogy bárkinek kárt okozna vagy mások adatait elolvasná, és időt hagyva a javításra, mielőtt részleteket osztana meg.",
+  "security.report.text":
+    "Ha biztonsági problémát találsz a Doughnut Forge alkalmazásban vagy ezen a webhelyen, jelentsd be privát módon: a GitHubon, vagy e-mailben a support@doughnut-forge.app címre, olyan tárggyal, amely a „Security” szóval kezdődik. Ne nyiss nyilvános bejelentést.",
+  "security.report.private": "A GitHubon a bejelentésedet csak a fejlesztő látja. Ehhez ingyenes GitHub-fiókra van szükséged; e-mailben fiók nélkül is beküldheted.",
+  "security.report.include":
+    "Add meg az alkalmazás verzióját és a platformot, vagy az oldal címét, hogy mit csináltál, mi történt, és ha tudod, a lépéseket vagy egy fájlt, amely megmutatja a problémát. Soha ne küldd el a helyreállítási szavaidat, a jelszavadat vagy a privát kulcsaidat.",
+  "security.report.promise":
+    "Minden bejelentésre érkezik válasz, általában 7 napon belül. A Doughnut Forge nem tesz jogi lépéseket senki ellen, aki jóhiszeműen keres és jelent be egy problémát: anélkül, hogy bárkinek kárt okozna vagy mások adatait elolvasná, és időt hagyva a javításra, mielőtt részleteket osztana meg.",
+  "security.report.credit": "Ha szeretnéd, a javítás kiadásakor a neved is megjelenik a köszönetnyilvánításban. Bug bounty program nincs: a bejelentésekért nem jár fizetség.",
   "security.report.button": "Sebezhetőség bejelentése",
   "security.technical.text": "Technikai érdeklődésű olvasóknak: a Doughnut Forge által használt titkosítási módszerek és kulcsok, a fájlformátuma, mi látható kulcs nélkül, hogyan viselkedik a hálózaton, és mi ellen nem véd.",
   "security.technical.button": "Olvasd el a technikai részleteket",

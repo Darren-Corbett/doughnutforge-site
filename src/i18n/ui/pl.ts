@@ -240,9 +240,14 @@ export default {
   "security.audit.text": "Niezależny audyt bezpieczeństwa Doughnut Forge jeszcze się nie odbył. Jest planowany.",
   "security.audit.link": "Zobacz plan rozwoju",
   "security.report.title": "Zgłoś lukę bezpieczeństwa",
-  "security.report.text": "Jeśli znajdziesz problem z bezpieczeństwem w Doughnut Forge lub w tej witrynie, zgłoś go prywatnie na GitHubie. Nie twórz publicznego zgłoszenia.",
-  "security.report.private": "Twoje zgłoszenie widzi tylko deweloper. Potrzebujesz bezpłatnego konta GitHub.",
-  "security.report.promise": "Na każde zgłoszenie przychodzi odpowiedź. Doughnut Forge nie podejmie kroków prawnych wobec nikogo, kto w dobrej wierze szuka problemu i go zgłasza: nikomu nie szkodząc, nie czytając danych innych osób i dając czas na poprawkę przed ujawnieniem szczegółów.",
+  "security.report.text":
+    "Jeśli znajdziesz problem z bezpieczeństwem w Doughnut Forge lub w tej witrynie, zgłoś go prywatnie: na GitHubie lub e-mailem na adres support@doughnut-forge.app z tematem zaczynającym się od „Security”. Nie twórz publicznego zgłoszenia.",
+  "security.report.private": "Na GitHubie Twoje zgłoszenie widzi tylko deweloper. Potrzebujesz do tego bezpłatnego konta GitHub; e-mailem możesz zgłosić problem bez konta.",
+  "security.report.include":
+    "Podaj wersję aplikacji i platformę albo adres strony, opisz swoje działania i to, co się stało, a jeśli możesz, dołącz kroki lub plik, który pokazuje problem. Nigdy nie wysyłaj swoich słów odzyskiwania, hasła ani kluczy prywatnych.",
+  "security.report.promise":
+    "Na każde zgłoszenie przychodzi odpowiedź, zwykle w ciągu 7 dni. Doughnut Forge nie podejmie kroków prawnych wobec nikogo, kto w dobrej wierze szuka problemu i go zgłasza: nikomu nie szkodząc, nie czytając danych innych osób i dając czas na poprawkę przed ujawnieniem szczegółów.",
+  "security.report.credit": "Jeśli chcesz, Twoje nazwisko zostanie podane przy wydaniu poprawki. Nie ma programu nagród za błędy (bug bounty): za zgłoszenia nie jest wypłacane wynagrodzenie.",
   "security.report.button": "Zgłoś lukę bezpieczeństwa",
   "security.technical.text": "Dla czytelników z wiedzą techniczną: metody szyfrowania i klucze, których używa Doughnut Forge, format plików, co widać bez klucza, zachowanie w sieci oraz przed czym Doughnut Forge nie chroni.",
   "security.technical.button": "Przeczytaj szczegóły techniczne",

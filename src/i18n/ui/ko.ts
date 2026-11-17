@@ -229,9 +229,14 @@ export default {
   "security.audit.text": "Doughnut Forge는 아직 독립적인 보안 감사를 받지 않았습니다. 감사가 계획되어 있습니다.",
   "security.audit.link": "로드맵 보기",
   "security.report.title": "취약점 신고",
-  "security.report.text": "Doughnut Forge나 이 웹사이트에서 보안 문제를 발견하면 GitHub에서 비공개로 신고하세요. 공개 이슈는 열지 마세요.",
-  "security.report.private": "신고 내용은 개발자만 볼 수 있습니다. 무료 GitHub 계정이 필요합니다.",
-  "security.report.promise": "모든 신고에는 답변이 제공됩니다. Doughnut Forge는 선의로 문제를 찾아 신고하는 사람에게 법적 조치를 취하지 않습니다. 여기서 선의란 누구에게도 피해를 주지 않고, 다른 사람의 데이터를 읽지 않으며, 세부 내용을 공유하기 전에 수정할 시간을 주는 것을 말합니다.",
+  "security.report.text":
+    "Doughnut Forge나 이 웹사이트에서 보안 문제를 발견하면 비공개로 신고하세요. GitHub에서 신고하거나, 제목이 “Security”로 시작하는 이메일을 support@doughnut-forge.app으로 보내면 됩니다. 공개 이슈는 열지 마세요.",
+  "security.report.private": "GitHub에서는 신고 내용을 개발자만 볼 수 있습니다. 이를 위해 무료 GitHub 계정이 필요합니다. 이메일로는 계정 없이도 신고할 수 있습니다.",
+  "security.report.include":
+    "앱 버전과 플랫폼 또는 페이지 주소, 무엇을 했는지, 무슨 일이 일어났는지, 그리고 가능하면 재현 단계나 문제를 보여 주는 파일을 함께 보내 주세요. 복구 단어, 비밀번호, 개인 키는 절대 보내지 마세요.",
+  "security.report.promise":
+    "모든 신고에는 보통 7일 이내에 답변이 제공됩니다. Doughnut Forge는 선의로 문제를 찾아 신고하는 사람에게 법적 조치를 취하지 않습니다. 여기서 선의란 누구에게도 피해를 주지 않고, 다른 사람의 데이터를 읽지 않으며, 세부 내용을 공유하기 전에 수정할 시간을 주는 것을 말합니다.",
+  "security.report.credit": "원하는 경우 수정 사항이 출시될 때 이름이 기재됩니다. 버그 바운티는 없으며, 신고에 대한 보상은 지급되지 않습니다.",
   "security.report.button": "취약점 신고하기",
   "security.technical.text": "기술적인 내용이 궁금한 분들을 위해 Doughnut Forge가 사용하는 암호화 방식과 키, 파일 형식, 키 없이 볼 수 있는 정보, 네트워크 동작, Doughnut Forge가 막지 못하는 것을 정리했습니다.",
   "security.technical.button": "기술 세부 정보 읽기",

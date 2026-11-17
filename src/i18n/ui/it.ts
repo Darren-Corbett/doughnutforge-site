@@ -222,9 +222,14 @@ export default {
   "security.audit.text": "Doughnut Forge non è ancora stato sottoposto a un audit di sicurezza indipendente. Un audit è previsto.",
   "security.audit.link": "Vedi la tabella di marcia",
   "security.report.title": "Segnala una vulnerabilità",
-  "security.report.text": "Se trovi un problema di sicurezza in Doughnut Forge o in questo sito, segnalalo in privato su GitHub. Per favore, non aprire una issue pubblica.",
-  "security.report.private": "Solo lo sviluppatore può vedere la tua segnalazione. Ti serve un account GitHub gratuito.",
-  "security.report.promise": "Ogni segnalazione riceve una risposta. Doughnut Forge non intraprenderà azioni legali contro chi cerca e segnala un problema in buona fede: senza danneggiare nessuno né leggere i dati di altre persone, e lasciando il tempo per una correzione prima di condividere i dettagli.",
+  "security.report.text":
+    "Se trovi un problema di sicurezza in Doughnut Forge o in questo sito, segnalalo in privato: su GitHub o via email a support@doughnut-forge.app con un oggetto che inizia con «Security». Per favore, non aprire una issue pubblica.",
+  "security.report.private": "Su GitHub, solo lo sviluppatore può vedere la tua segnalazione. Per segnalare su GitHub ti serve un account GitHub gratuito; via email non serve.",
+  "security.report.include":
+    "Per favore, indica la versione dell'app e la piattaforma, oppure l'indirizzo della pagina, cosa hai fatto, cosa è successo e, se puoi, i passaggi o un file che mostra il problema. Non inviare mai le tue parole di recupero, la tua password o le tue chiavi private.",
+  "security.report.promise":
+    "Ogni segnalazione riceve una risposta, di solito entro 7 giorni. Doughnut Forge non intraprenderà azioni legali contro chi cerca e segnala un problema in buona fede: senza danneggiare nessuno né leggere i dati di altre persone, e lasciando il tempo per una correzione prima di condividere i dettagli.",
+  "security.report.credit": "Se lo desideri, il tuo nome viene citato quando la correzione viene rilasciata. Non esiste un programma di bug bounty: le segnalazioni non sono pagate.",
   "security.report.button": "Segnala una vulnerabilità",
   "security.technical.text": "Per i lettori tecnici: i metodi di crittografia e le chiavi usati da Doughnut Forge, il suo formato di file, cosa si vede senza la chiave, il suo comportamento in rete e da cosa non protegge.",
   "security.technical.button": "Leggi i dettagli tecnici",

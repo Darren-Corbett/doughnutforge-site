@@ -316,11 +316,15 @@ export default {
   "security.audit.text": "Doughnut Forge has not had an independent security audit yet. One is planned.",
   "security.audit.link": "See the roadmap",
   "security.report.title": "Report a vulnerability",
+  // The email address stays exactly as written in every language: the page makes it a link
   "security.report.text":
-    "If you find a security problem in Doughnut Forge or this website, report it privately on GitHub. Please do not open a public issue.",
-  "security.report.private": "Only the developer can see your report. You need a free GitHub account.",
+    "If you find a security problem in Doughnut Forge or this website, report it privately: on GitHub, or by email to support@doughnut-forge.app with a subject that starts with “Security”. Please do not open a public issue.",
+  "security.report.private": "On GitHub, only the developer can see your report. You need a free GitHub account for it; email works without one.",
+  "security.report.include":
+    "Please include the app version and platform, or the page address, what you did, what happened, and, if you can, the steps or a file that shows the problem. Never send your recovery words, password or private keys.",
   "security.report.promise":
-    "Every report gets a reply. Doughnut Forge will not take legal action against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and allowing time for a fix before sharing details.",
+    "Every report gets a reply, usually within 7 days. Doughnut Forge will not take legal action against anyone who looks for and reports a problem in good faith: without harming anyone or reading other people's data, and allowing time for a fix before sharing details.",
+  "security.report.credit": "If you wish, you are credited by name when the fix is released. There is no bug bounty: reports are not paid.",
   "security.report.button": "Report a vulnerability",
   "security.technical.text":
     "For technical readers: the encryption methods and keys Doughnut Forge uses, its file format, what can be seen without the key, its network behaviour, and what it does not protect against.",

@@ -234,9 +234,14 @@ export default {
   "security.audit.text": "Doughnut Forge henüz bağımsız bir güvenlik denetiminden geçmedi. Bir denetim planlanıyor.",
   "security.audit.link": "Yol haritasına bakın",
   "security.report.title": "Güvenlik açığı bildirin",
-  "security.report.text": "Doughnut Forge'da veya bu web sitesinde bir güvenlik sorunu bulursanız, bunu GitHub'da gizli olarak bildirin. Lütfen herkese açık bir konu (issue) açmayın.",
-  "security.report.private": "Raporunuzu yalnızca geliştirici görebilir. Ücretsiz bir GitHub hesabına ihtiyacınız vardır.",
-  "security.report.promise": "Her rapora yanıt verilir. Doughnut Forge, bir sorunu iyi niyetle arayan ve bildiren hiç kimseye karşı yasal işlem başlatmaz: kimseye zarar vermeden, başkalarının verilerini okumadan ve ayrıntıları paylaşmadan önce düzeltme için zaman tanıyarak.",
+  "security.report.text":
+    "Doughnut Forge'da veya bu web sitesinde bir güvenlik sorunu bulursanız, bunu gizli olarak bildirin: GitHub'da ya da support@doughnut-forge.app adresine konu satırı “Security” ile başlayan bir e-posta göndererek. Lütfen herkese açık bir konu (issue) açmayın.",
+  "security.report.private": "GitHub'da raporunuzu yalnızca geliştirici görebilir. Bunun için ücretsiz bir GitHub hesabına ihtiyacınız vardır; e-postayla bildirmek için hesap gerekmez.",
+  "security.report.include":
+    "Lütfen uygulama sürümünü ve platformu ya da sayfa adresini, ne yaptığınızı, ne olduğunu ve mümkünse adımları ya da sorunu gösteren bir dosyayı ekleyin. Kurtarma kelimelerinizi, parolanızı veya özel anahtarlarınızı asla göndermeyin.",
+  "security.report.promise":
+    "Her rapora genellikle 7 gün içinde yanıt verilir. Doughnut Forge, bir sorunu iyi niyetle arayan ve bildiren hiç kimseye karşı yasal işlem başlatmaz: kimseye zarar vermeden, başkalarının verilerini okumadan ve ayrıntıları paylaşmadan önce düzeltme için zaman tanıyarak.",
+  "security.report.credit": "İsterseniz düzeltme yayımlandığında adınız belirtilir. Ödül programı (bug bounty) yoktur: raporlar için ödeme yapılmaz.",
   "security.report.button": "Güvenlik açığı bildirin",
   "security.technical.text": "Teknik okuyucular için: Doughnut Forge'un kullandığı şifreleme yöntemleri ve anahtarlar, dosya biçimi, anahtar olmadan neler görülebileceği, ağdaki davranışı ve korumadığı durumlar.",
   "security.technical.button": "Teknik ayrıntıları okuyun",

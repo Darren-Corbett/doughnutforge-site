@@ -225,9 +225,14 @@ export default {
   "security.audit.text": "Doughnut Forge 尚未经过独立安全审计。审计已在计划中。",
   "security.audit.link": "查看路线图",
   "security.report.title": "报告漏洞",
-  "security.report.text": "如果您在 Doughnut Forge 或本网站中发现安全问题，请在 GitHub 上私下报告。请不要创建公开的 issue。",
-  "security.report.private": "只有开发者能看到您的报告。您需要一个免费的 GitHub 账户。",
-  "security.report.promise": "每份报告都会得到回复。对于出于善意寻找并报告问题的人，Doughnut Forge 不会采取法律行动：前提是不伤害任何人、不读取他人的数据，并在分享细节之前留出修复时间。",
+  "security.report.text":
+    "如果您在 Doughnut Forge 或本网站中发现安全问题，请私下报告：在 GitHub 上报告，或发送电子邮件至 support@doughnut-forge.app，邮件主题以“Security”开头。请不要创建公开的 issue。",
+  "security.report.private": "在 GitHub 上，只有开发者能看到您的报告。为此您需要一个免费的 GitHub 账户；通过电子邮件报告则无需账户。",
+  "security.report.include":
+    "请附上应用版本和平台（或页面地址）、您做了什么、发生了什么；如果可以，再附上复现步骤或能展示问题的文件。切勿发送您的恢复单词、密码或私钥。",
+  "security.report.promise":
+    "每份报告都会得到回复，通常在 7 天内。对于出于善意寻找并报告问题的人，Doughnut Forge 不会采取法律行动：前提是不伤害任何人、不读取他人的数据，并在分享细节之前留出修复时间。",
+  "security.report.credit": "如果您愿意，修复发布时会署上您的名字以示致谢。没有漏洞赏金计划：报告不会获得报酬。",
   "security.report.button": "报告漏洞",
   "security.technical.text": "面向技术读者：Doughnut Forge 使用的加密方法和密钥、文件格式、没有密钥时能看到什么、网络行为，以及它无法防范的情况。",
   "security.technical.button": "阅读技术细节",

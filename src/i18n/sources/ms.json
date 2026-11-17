@@ -775,17 +775,25 @@
     "en": "3805db21012a",
     "text": "4c3a888612a7"
   },
+  "security.report.credit": {
+    "en": "8820225128b7",
+    "text": "ce3196ebd373"
+  },
+  "security.report.include": {
+    "en": "17fd74ecd40d",
+    "text": "bae702b3ac45"
+  },
   "security.report.private": {
-    "en": "5347975cf13a",
-    "text": "484959f282c5"
+    "en": "5e892b824be6",
+    "text": "697f296681b1"
   },
   "security.report.promise": {
-    "en": "191e4ba13f9b",
-    "text": "4a1d251e2d53"
+    "en": "cb0d8ba69f25",
+    "text": "aacb97348688"
   },
   "security.report.text": {
-    "en": "91addd62ac27",
-    "text": "62fda1c54038"
+    "en": "264c874d372e",
+    "text": "66d09757348e"
   },
   "security.report.title": {
     "en": "3805db21012a",

@@ -229,9 +229,14 @@ export default {
   "security.audit.text": "Doughnut Forgeは、独立したセキュリティ監査をまだ受けていません。監査は計画中です。",
   "security.audit.link": "ロードマップを見る",
   "security.report.title": "脆弱性を報告",
-  "security.report.text": "Doughnut Forgeまたはこのウェブサイトにセキュリティの問題を見つけた場合は、GitHubで非公開で報告してください。公開のIssueは作成しないでください。",
-  "security.report.private": "報告を見られるのは開発者だけです。無料のGitHubアカウントが必要です。",
-  "security.report.promise": "すべての報告に返信があります。Doughnut Forgeは、善意で問題を探して報告する人に対して法的措置をとりません。ここでいう善意とは、誰にも害を与えず、他人のデータを読まず、詳細を共有する前に修正のための時間を設けることです。",
+  "security.report.text":
+    "Doughnut Forgeまたはこのウェブサイトにセキュリティの問題を見つけた場合は、非公開で報告してください。GitHubで報告するか、件名が「Security」で始まるメールをsupport@doughnut-forge.appに送ってください。公開のIssueは作成しないでください。",
+  "security.report.private": "GitHubでは、報告を見られるのは開発者だけです。そのためには無料のGitHubアカウントが必要です。メールなら、アカウントがなくても報告できます。",
+  "security.report.include":
+    "アプリのバージョンとプラットフォーム（またはページのアドレス）、行った操作、起きたこと、そして可能であれば再現手順や問題がわかるファイルを添えてください。復元用の単語、パスワード、秘密鍵は絶対に送らないでください。",
+  "security.report.promise":
+    "すべての報告に、通常7日以内に返信があります。Doughnut Forgeは、善意で問題を探して報告する人に対して法的措置をとりません。ここでいう善意とは、誰にも害を与えず、他人のデータを読まず、詳細を共有する前に修正のための時間を設けることです。",
+  "security.report.credit": "希望する場合は、修正のリリース時に名前がクレジットとして記載されます。バグバウンティ（報奨金制度）はなく、報告に報酬は支払われません。",
   "security.report.button": "脆弱性を報告",
   "security.technical.text": "技術的な情報を知りたい方へ：Doughnut Forgeが使用する暗号化方式とキー、ファイル形式、キーがなくても見える情報、ネットワークでの動作、そしてDoughnut Forgeが防げないことをまとめています。",
   "security.technical.button": "技術的な詳細を読む",

@@ -17,6 +17,9 @@ interface Props {
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
 const paper = whitePaperLink(lang.code);
+// The address is written out in every language's sentence; it becomes the link
+const [reportBefore, reportAfter] = t("security.report.text").split(site.securityEmail);
+if (reportAfter === undefined) throw new Error(`security.report.text (${lang.code}) must contain ${site.securityEmail}`);
 // Blue only: the other tab tones label the app's features, and these are not features.
 // The missing audit is a row of its own, as loud as the facts.
 const facts: ToneRow[] = [
@@ -58,9 +61,11 @@ const facts: ToneRow[] = [
     <div class="report ruled-row-late">
       <h2 id="report">{t("security.report.title")}</h2>
       <div>
-        <p>{t("security.report.text")}</p>
+        <p>{reportBefore}<a href={`mailto:${site.securityEmail}`}>{site.securityEmail}</a>{reportAfter}</p>
         <p>{t("security.report.private")}</p>
+        <p>{t("security.report.include")}</p>
         <p>{t("security.report.promise")}</p>
+        <p>{t("security.report.credit")}</p>
         <a class="btn-outline" href={site.reportUrl} target="_blank" rel="noopener noreferrer">
           {t("security.report.button")}
           <span class="sr-only">{t("a11y.newTab")}</span>

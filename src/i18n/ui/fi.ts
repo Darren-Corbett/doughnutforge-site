@@ -243,9 +243,14 @@ export default {
   "security.audit.text": "Doughnut Forgelle ei ole vielä tehty riippumatonta tietoturvatarkastusta. Sellainen on suunnitteilla.",
   "security.audit.link": "Katso tiekartta",
   "security.report.title": "Ilmoita haavoittuvuudesta",
-  "security.report.text": "Jos löydät tietoturvaongelman Doughnut Forgesta tai tältä verkkosivustolta, ilmoita siitä yksityisesti GitHubissa. Älä avaa julkista tikettiä.",
-  "security.report.private": "Vain kehittäjä näkee ilmoituksesi. Tarvitset ilmaisen GitHub-tilin.",
-  "security.report.promise": "Jokaiseen ilmoitukseen vastataan. Doughnut Forge ei ryhdy oikeustoimiin ketään vastaan, joka etsii ongelmaa ja ilmoittaa siitä vilpittömässä mielessä: vahingoittamatta ketään, lukematta muiden ihmisten tietoja ja antaen aikaa korjaukselle ennen yksityiskohtien jakamista.",
+  "security.report.text":
+    "Jos löydät tietoturvaongelman Doughnut Forgesta tai tältä verkkosivustolta, ilmoita siitä yksityisesti: GitHubissa tai sähköpostilla osoitteeseen support@doughnut-forge.app niin, että aiherivi alkaa sanalla ”Security”. Älä avaa julkista tikettiä.",
+  "security.report.private": "GitHubissa vain kehittäjä näkee ilmoituksesi. Tarvitset siihen ilmaisen GitHub-tilin; sähköpostilla ilmoittaminen onnistuu ilman sitä.",
+  "security.report.include":
+    "Kerro sovelluksen versio ja alusta tai sivun osoite, mitä teit, mitä tapahtui ja, jos voit, vaiheet tai tiedosto, joka näyttää ongelman. Älä koskaan lähetä palautussanojasi, salasanaasi tai yksityisiä avaimiasi.",
+  "security.report.promise":
+    "Jokaiseen ilmoitukseen vastataan, yleensä 7 päivän kuluessa. Doughnut Forge ei ryhdy oikeustoimiin ketään vastaan, joka etsii ongelmaa ja ilmoittaa siitä vilpittömässä mielessä: vahingoittamatta ketään, lukematta muiden ihmisten tietoja ja antaen aikaa korjaukselle ennen yksityiskohtien jakamista.",
+  "security.report.credit": "Halutessasi nimesi mainitaan, kun korjaus julkaistaan. Bug bounty -palkkioita ei ole: ilmoituksista ei makseta.",
   "security.report.button": "Ilmoita haavoittuvuudesta",
   "security.technical.text": "Teknisesti suuntautuneille lukijoille: Doughnut Forgen käyttämät salausmenetelmät ja avaimet, sen tiedostomuoto, mitä näkyy ilman avainta, miten se käyttää verkkoa ja mitä vastaan se ei suojaa.",
   "security.technical.button": "Lue tekniset tiedot",

@@ -241,9 +241,14 @@ export default {
   "security.audit.text": "Doughnut Forge chưa trải qua đợt kiểm toán bảo mật độc lập nào. Một đợt kiểm toán đã được lên kế hoạch.",
   "security.audit.link": "Xem lộ trình",
   "security.report.title": "Báo cáo lỗ hổng",
-  "security.report.text": "Nếu bạn phát hiện một vấn đề bảo mật trong Doughnut Forge hoặc trang web này, hãy báo cáo riêng tư trên GitHub. Vui lòng không tạo issue công khai.",
-  "security.report.private": "Chỉ nhà phát triển mới xem được báo cáo của bạn. Bạn cần một tài khoản GitHub miễn phí.",
-  "security.report.promise": "Mọi báo cáo đều được phản hồi. Doughnut Forge sẽ không có hành động pháp lý nào với bất kỳ ai tìm và báo cáo vấn đề một cách thiện chí: không gây hại cho ai, không đọc dữ liệu của người khác, và dành thời gian để khắc phục trước khi chia sẻ chi tiết.",
+  "security.report.text":
+    "Nếu bạn phát hiện một vấn đề bảo mật trong Doughnut Forge hoặc trang web này, hãy báo cáo riêng tư: trên GitHub, hoặc qua email tới support@doughnut-forge.app với tiêu đề bắt đầu bằng “Security”. Vui lòng không tạo issue công khai.",
+  "security.report.private": "Trên GitHub, chỉ nhà phát triển mới xem được báo cáo của bạn. Bạn cần một tài khoản GitHub miễn phí để làm việc này; gửi qua email thì không cần tài khoản.",
+  "security.report.include":
+    "Vui lòng cho biết phiên bản ứng dụng và nền tảng, hoặc địa chỉ trang, bạn đã làm gì, điều gì đã xảy ra, và nếu có thể, các bước hoặc một tệp cho thấy vấn đề. Đừng bao giờ gửi các từ khôi phục, mật khẩu hoặc khóa riêng tư của bạn.",
+  "security.report.promise":
+    "Mọi báo cáo đều được phản hồi, thường trong vòng 7 ngày. Doughnut Forge sẽ không có hành động pháp lý nào với bất kỳ ai tìm và báo cáo vấn đề một cách thiện chí: không gây hại cho ai, không đọc dữ liệu của người khác, và dành thời gian để khắc phục trước khi chia sẻ chi tiết.",
+  "security.report.credit": "Nếu bạn muốn, tên của bạn sẽ được ghi nhận khi bản sửa lỗi được phát hành. Không có chương trình thưởng lỗi (bug bounty): báo cáo không được trả tiền.",
   "security.report.button": "Báo cáo lỗ hổng",
   "security.technical.text": "Dành cho người đọc quan tâm đến kỹ thuật: các phương pháp mã hóa và khóa mà Doughnut Forge sử dụng, định dạng tệp, những gì có thể thấy khi không có khóa, hoạt động mạng của ứng dụng và những gì Doughnut Forge không bảo vệ được.",
   "security.technical.button": "Đọc chi tiết kỹ thuật",

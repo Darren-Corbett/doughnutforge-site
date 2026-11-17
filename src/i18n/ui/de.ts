@@ -222,9 +222,14 @@ export default {
   "security.audit.text": "Doughnut Forge wurde noch keinem unabhängigen Sicherheitsaudit unterzogen. Ein Audit ist geplant.",
   "security.audit.link": "Zur Roadmap",
   "security.report.title": "Schwachstelle melden",
-  "security.report.text": "Wenn Sie ein Sicherheitsproblem in Doughnut Forge oder auf dieser Website finden, melden Sie es bitte vertraulich auf GitHub. Bitte eröffnen Sie dafür kein öffentliches Issue.",
-  "security.report.private": "Nur der Entwickler kann Ihre Meldung sehen. Sie brauchen ein kostenloses GitHub-Konto.",
-  "security.report.promise": "Jede Meldung erhält eine Antwort. Doughnut Forge geht rechtlich nicht gegen Personen vor, die in gutem Glauben nach einem Problem suchen und es melden: ohne jemandem zu schaden oder fremde Daten zu lesen, und mit genügend Zeit für eine Behebung, bevor Details geteilt werden.",
+  "security.report.text":
+    "Wenn Sie ein Sicherheitsproblem in Doughnut Forge oder auf dieser Website finden, melden Sie es bitte vertraulich: auf GitHub oder per E-Mail an support@doughnut-forge.app mit einem Betreff, der mit „Security“ beginnt. Bitte eröffnen Sie dafür kein öffentliches Issue.",
+  "security.report.private": "Auf GitHub kann nur der Entwickler Ihre Meldung sehen. Sie brauchen dafür ein kostenloses GitHub-Konto; per E-Mail geht es auch ohne.",
+  "security.report.include":
+    "Bitte nennen Sie die App-Version und Plattform oder die Adresse der Seite, was Sie getan haben, was passiert ist und, wenn möglich, die Schritte oder eine Datei, die das Problem zeigt. Senden Sie niemals Ihre Wiederherstellungswörter, Ihr Passwort oder Ihre privaten Schlüssel.",
+  "security.report.promise":
+    "Jede Meldung erhält eine Antwort, meist innerhalb von 7 Tagen. Doughnut Forge geht rechtlich nicht gegen Personen vor, die in gutem Glauben nach einem Problem suchen und es melden: ohne jemandem zu schaden oder fremde Daten zu lesen, und mit genügend Zeit für eine Behebung, bevor Details geteilt werden.",
+  "security.report.credit": "Wenn Sie möchten, werden Sie bei der Veröffentlichung der Behebung namentlich genannt. Es gibt kein Bug-Bounty-Programm: Meldungen werden nicht bezahlt.",
   "security.report.button": "Schwachstelle melden",
   "security.technical.text": "Für technisch Interessierte: die Verschlüsselungsverfahren und Schlüssel, die Doughnut Forge verwendet, das Dateiformat, was ohne den Schlüssel sichtbar ist, das Verhalten im Netzwerk und wovor Doughnut Forge nicht schützt.",
   "security.technical.button": "Zu den technischen Details",

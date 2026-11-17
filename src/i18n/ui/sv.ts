@@ -239,9 +239,14 @@ export default {
   "security.audit.text": "Doughnut Forge har ännu inte genomgått någon oberoende säkerhetsgranskning. En sådan granskning är planerad.",
   "security.audit.link": "Se färdplanen",
   "security.report.title": "Rapportera en sårbarhet",
-  "security.report.text": "Om du hittar ett säkerhetsproblem i Doughnut Forge eller på den här webbplatsen, rapportera det privat på GitHub. Skapa inte ett offentligt ärende.",
-  "security.report.private": "Bara utvecklaren kan se din rapport. Du behöver ett kostnadsfritt GitHub-konto.",
-  "security.report.promise": "Varje rapport får ett svar. Doughnut Forge vidtar inga rättsliga åtgärder mot någon som letar efter och rapporterar ett problem i god tro: utan att skada någon eller läsa andras data, och med tid för en åtgärd innan detaljer delas.",
+  "security.report.text":
+    "Om du hittar ett säkerhetsproblem i Doughnut Forge eller på den här webbplatsen, rapportera det privat: på GitHub, eller via e-post till support@doughnut-forge.app med en ämnesrad som börjar med ”Security”. Skapa inte ett offentligt ärende.",
+  "security.report.private": "På GitHub kan bara utvecklaren se din rapport. Du behöver ett kostnadsfritt GitHub-konto för det; via e-post går det utan.",
+  "security.report.include":
+    "Ange appens version och plattform, eller sidans adress, vad du gjorde, vad som hände och, om du kan, stegen eller en fil som visar problemet. Skicka aldrig dina återställningsord, ditt lösenord eller dina privata nycklar.",
+  "security.report.promise":
+    "Varje rapport får ett svar, oftast inom 7 dagar. Doughnut Forge vidtar inga rättsliga åtgärder mot någon som letar efter och rapporterar ett problem i god tro: utan att skada någon eller läsa andras data, och med tid för en åtgärd innan detaljer delas.",
+  "security.report.credit": "Om du vill nämns du vid namn när rättelsen släpps. Det finns ingen bug bounty: rapporter ger ingen ersättning.",
   "security.report.button": "Rapportera en sårbarhet",
   "security.technical.text": "För tekniska läsare: de krypteringsmetoder och nycklar som Doughnut Forge använder, filformatet, vad som syns utan nyckeln, hur appen beter sig i nätverket och vad den inte skyddar mot.",
   "security.technical.button": "Läs de tekniska detaljerna",

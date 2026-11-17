@@ -242,9 +242,14 @@ export default {
   "security.audit.text": "Nezávislý bezpečnostní audit Doughnut Forge zatím neproběhl. Plánuje se.",
   "security.audit.link": "Zobrazit plán vývoje",
   "security.report.title": "Nahlásit zranitelnost",
-  "security.report.text": "Pokud najdete bezpečnostní problém v Doughnut Forge nebo na tomto webu, nahlaste ho soukromě na GitHubu. Nezakládejte prosím veřejné hlášení.",
-  "security.report.private": "Vaše hlášení uvidí jen vývojář. Potřebujete bezplatný účet na GitHubu.",
-  "security.report.promise": "Na každé hlášení přijde odpověď. Doughnut Forge nepodnikne právní kroky proti nikomu, kdo v dobré víře hledá a nahlásí problém: aniž by komukoli ublížil nebo četl data jiných lidí, a pokud před zveřejněním podrobností ponechá čas na opravu.",
+  "security.report.text":
+    "Pokud najdete bezpečnostní problém v Doughnut Forge nebo na tomto webu, nahlaste ho soukromě: na GitHubu, nebo e-mailem na support@doughnut-forge.app s předmětem, který začíná slovem „Security“. Nezakládejte prosím veřejné hlášení.",
+  "security.report.private": "Na GitHubu uvidí vaše hlášení jen vývojář. Potřebujete k tomu bezplatný účet na GitHubu; e-mail funguje i bez něj.",
+  "security.report.include":
+    "Uveďte prosím verzi aplikace a platformu, nebo adresu stránky, co jste udělali, co se stalo, a pokud můžete, také postup nebo soubor, který problém ukazuje. Nikdy neposílejte svá obnovovací slova, heslo ani soukromé klíče.",
+  "security.report.promise":
+    "Na každé hlášení přijde odpověď, obvykle do 7 dnů. Doughnut Forge nepodnikne právní kroky proti nikomu, kdo v dobré víře hledá a nahlásí problém: aniž by komukoli ublížil nebo četl data jiných lidí, a pokud před zveřejněním podrobností ponechá čas na opravu.",
+  "security.report.credit": "Pokud si to přejete, budete při vydání opravy uvedeni jménem. Žádný program odměn za chyby (bug bounty) není: hlášení se neplatí.",
   "security.report.button": "Nahlásit zranitelnost",
   "security.technical.text": "Pro technicky zaměřené čtenáře: metody šifrování a klíče, které Doughnut Forge používá, jeho formát souborů, co je vidět bez klíče, jak se chová v síti a před čím nechrání.",
   "security.technical.button": "Přečíst technické podrobnosti",
