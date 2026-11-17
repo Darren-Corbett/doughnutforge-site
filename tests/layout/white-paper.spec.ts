@@ -68,3 +68,17 @@ for (const lang of languages)
       }
     }
   });
+
+// Each translation says the English paper is the reference, and links to it
+for (const lang of languages.filter((l) => l.code !== "en" && translated.has(l.code)))
+  test(`white paper ${lang.code}: names the English version as the reference`, async ({ page }) => {
+    await page.goto(`/${lang.path}/security/white-paper/`);
+    const note = page.locator("main .reference");
+    await expect(note).toHaveCount(1);
+    await expect(note.locator('a[href="/security/white-paper/"][hreflang="en"]')).toHaveText("English");
+  });
+
+test("white paper en: no reference note on the English paper itself", async ({ page }) => {
+  await page.goto("/security/white-paper/");
+  await expect(page.locator("main .reference")).toHaveCount(0);
+});
