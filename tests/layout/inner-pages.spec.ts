@@ -8,12 +8,14 @@ import { expect, test } from "../support/browser";
 import english from "../../src/i18n/ui/en";
 import de from "../../src/i18n/ui/de";
 import { each } from "../support/each";
+import { uiNow } from "../support/release";
 
 // Read as plain strings, so a key added with this test checks before the copy exists
 const en = english as Record<string, string>;
 const INK_BLUE = "rgb(9, 100, 156)";
 
 for (const [prefix, strings] of [["", en], ["/de", de as Record<string, string>]] as const) {
+  const code = prefix ? "de" : "en";
   test(`support: the answers come first, then one blue button ${prefix || "/"}`, async ({ page }) => {
     await page.goto(`${prefix}/support/`);
     const order = await page.locator("main section[aria-labelledby]").evaluateAll((s) => s.map((e) => e.getAttribute("aria-labelledby")));
@@ -27,7 +29,7 @@ for (const [prefix, strings] of [["", en], ["/de", de as Record<string, string>]
   test(`security: the facts and the missing audit as blue rows, then a quiet reporting section ${prefix || "/"}`, async ({ page }) => {
     await page.goto(`${prefix}/security/`);
     const facts = page.locator("main .row");
-    await expect(facts.locator("h2")).toHaveText(["device", "servers", "quantum", "keys", "audit"].map((id) => strings[`security.${id}.title`]!));
+    await expect(facts.locator("h2")).toHaveText(await Promise.all(["device", "servers", "quantum", "keys", "audit"].map((id) => uiNow(code, `security.${id}.title`))));
     for (const row of await each(facts, 5)) expect(await row.evaluate((e) => getComputedStyle(e).borderTopColor)).toBe("rgb(29, 161, 242)");
     // No loud button: the reporting action is for researchers, not everyday visitors
     await expect(page.locator("main .btn-primary")).toHaveCount(0);
@@ -47,7 +49,7 @@ for (const [prefix, strings] of [["", en], ["/de", de as Record<string, string>]
 
   test(`download: the tagline is the site's summary line ${prefix || "/"}`, async ({ page }) => {
     await page.goto(`${prefix}/download/`);
-    await expect(page.locator(".page-hero .tagline")).toHaveText(strings["home.summary"]!);
+    await expect(page.locator(".page-hero .tagline")).toHaveText(await uiNow(code, "home.summary"));
   });
 }
 
