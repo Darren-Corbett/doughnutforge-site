@@ -25,5 +25,11 @@
   "technical.visible.count.text": "sichtbar (die Anzahl der Empfänger, einschließlich des Absenders).",
   "technical.limits.sender.label": "Nachweis, wer ein Element gesendet hat.",
   "technical.limits.sender.text": "Doughnut Forge weist noch nicht nach, wer ein Element gesendet hat.",
-  "technical.limits.visible.label": "Größe, Anzahl der Empfänger und Dateiname."
+  "technical.limits.visible.label": "Größe, Anzahl der Empfänger und Dateiname.",
+  "meta.home.description": "Doughnut Forge: Offline-Dateiverschlüsselung für iPhone, iPad, Mac und PC. Verschlüsseln Sie Dateien und Texte für Menschen Ihrer Wahl. Kein Konto, keine Server, kein Abo.",
+  "home.lead": "Doughnut Forge verschlüsselt Ihre Dateien und Texte auf Ihrem iPhone, iPad oder Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen.",
+  "home.what.text": "Doughnut Forge ist eine App zur Offline-Dateiverschlüsselung für Mac, iPhone, iPad und Windows. Sie verschlüsselt Ihre Dateien und Texte auf Ihrem eigenen Gerät, und Sie teilen sie nur mit den Menschen, die Sie auswählen.",
+  "meta.features.description": "Verschlüsseln Sie Dateien und Texte auf Ihrem iPhone, iPad oder Computer, teilen Sie sie mit Vertrauten und schützen Sie sie langfristig. Kein Konto, keine Server.",
+  "features.lead": "Doughnut Forge verschlüsselt Ihre Dateien und Texte auf Ihrem iPhone, iPad oder Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen. Egal, wie Sie sie versenden: Nur diese Menschen können sie öffnen.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

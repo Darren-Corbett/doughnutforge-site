@@ -25,5 +25,11 @@
   "technical.visible.count.text": "viditelné (počet příjemců včetně odesílatele).",
   "technical.limits.sender.label": "Důkaz o tom, kdo položku odeslal.",
   "technical.limits.sender.text": "Doughnut Forge zatím neprokazuje, kdo položku odeslal.",
-  "technical.limits.visible.label": "Velikost, počet příjemců a název souboru."
+  "technical.limits.visible.label": "Velikost, počet příjemců a název souboru.",
+  "meta.home.description": "Doughnut Forge: šifrování souborů offline pro iPhone, iPad, Mac a PC. Šifrujte soubory a text pro lidi, které si vyberete. Bez účtu, serverů a předplatného.",
+  "home.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete.",
+  "home.what.text": "Doughnut Forge je aplikace pro šifrování souborů offline pro Mac, iPhone, iPad a Windows. Zamyká vaše soubory a text ve vašem vlastním zařízení a sdílíte je jen s lidmi, které si vyberete.",
+  "meta.features.description": "Šifrujte soubory a text ve vlastním iPhonu, iPadu nebo počítači, sdílejte je s lidmi, kterým důvěřujete, a chraňte je dlouhodobě. Bez účtu a bez serverů.",
+  "features.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete. Ať je pošlete jakkoli, otevřít je mohou jen oni.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: Offline-Dateiverschlüsselung für iPhone, iPad, Android, Mac und Windows",
-  "meta.home.description": "Doughnut Forge: Offline-Dateiverschlüsselung für iPhone, iPad, Mac und PC. Verschlüsseln Sie Dateien und Texte für Menschen Ihrer Wahl. Kein Konto, keine Server, kein Abo.",
+  "meta.home.description": "Doughnut Forge: Offline-Dateiverschlüsselung für iPhone, iPad, Android, Mac und PC. Verschlüsseln Sie Dateien und Texte für Menschen Ihrer Wahl. Kein Konto, keine Server, kein Abo.",
   "nav.label": "Hauptmenü",
   "nav.features": "Funktionen",
   "nav.pricing": "Preise",
@@ -20,10 +20,10 @@ export default {
   "skip": "Zum Inhalt springen",
   "home.summary": "Offline-Dateiverschlüsselung für iPhone, iPad, Android, Mac und Windows.",
   "home.tagline": "Nur die Menschen, die Sie auswählen, können sie öffnen.",
-  "home.lead": "Doughnut Forge verschlüsselt Ihre Dateien und Texte auf Ihrem iPhone, iPad oder Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen.",
+  "home.lead": "Doughnut Forge verschlüsselt Ihre Dateien und Texte auf Ihrem iPhone, iPad, Android oder Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen.",
   "home.what.title": "Was ist Doughnut Forge?",
   "home.what.text":
-    "Doughnut Forge ist eine App zur Offline-Dateiverschlüsselung für Mac, iPhone, iPad und Windows. Sie verschlüsselt Ihre Dateien und Texte auf Ihrem eigenen Gerät, und Sie teilen sie nur mit den Menschen, die Sie auswählen.",
+    "Doughnut Forge ist eine App zur Offline-Dateiverschlüsselung für Mac, iPhone, iPad, Android und Windows. Sie verschlüsselt Ihre Dateien und Texte auf Ihrem eigenen Gerät, und Sie teilen sie nur mit den Menschen, die Sie auswählen.",
   "home.cta.primary": "Doughnut Forge holen",
   "home.cta.secondary": "Was die App kann",
   "home.specimen.stranger": "Was alle anderen sehen",
@@ -57,9 +57,9 @@ export default {
   "go.tap.googlePlay": "Tippen Sie unten, um Google Play zu öffnen.",
   "go.offline": "Funktioniert ohne Internet.",
   "meta.features.title": "Funktionen: Dateien, Ordner und Texte ohne Konto verschlüsseln | Doughnut Forge",
-  "meta.features.description": "Verschlüsseln Sie Dateien und Texte auf Ihrem iPhone, iPad oder Computer, teilen Sie sie mit Vertrauten und schützen Sie sie langfristig. Kein Konto, keine Server.",
+  "meta.features.description": "Verschlüsseln Sie Dateien und Texte auf Ihrem iPhone, iPad, Android oder Computer, teilen Sie sie mit Vertrauten und schützen Sie sie langfristig. Kein Konto, keine Server.",
   "features.title": "Alles, was Doughnut Forge kann",
-  "features.lead": "Doughnut Forge verschlüsselt Ihre Dateien und Texte auf Ihrem iPhone, iPad oder Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen. Egal, wie Sie sie versenden: Nur diese Menschen können sie öffnen.",
+  "features.lead": "Doughnut Forge verschlüsselt Ihre Dateien und Texte auf Ihrem iPhone, iPad, Android oder Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen. Egal, wie Sie sie versenden: Nur diese Menschen können sie öffnen.",
   "features.identity.more": "Ihre Identität wird nur auf diesem Gerät gespeichert und durch Ihr Passwort geschützt. Bewahren Sie Ihre 24 Wiederherstellungswörter sicher auf: Nur mit ihnen können Sie Ihre Identität wiederherstellen oder ein vergessenes Passwort zurücksetzen.",
   "features.private.title": "Von Anfang an privat",
   "features.offline.title": "Funktioniert ohne Internet",

@@ -25,5 +25,11 @@
   "technical.visible.count.text": "näkyvissä (vastaanottajien määrä lähettäjä mukaan lukien).",
   "technical.limits.sender.label": "Todiste siitä, kuka kohteen lähetti.",
   "technical.limits.sender.text": "Doughnut Forge ei vielä todista, kuka kohteen lähetti.",
-  "technical.limits.visible.label": "Koko, vastaanottajien määrä ja tiedostonimi."
+  "technical.limits.visible.label": "Koko, vastaanottajien määrä ja tiedostonimi.",
+  "meta.home.description": "Doughnut Forge: tiedostojen offline-salaus iPhonelle, iPadille, Macille ja PC:lle. Salaa tiedostot ja tekstit valitsemillesi ihmisille. Ei tiliä, ei palvelimia, ei tilausta.",
+  "home.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa.",
+  "home.what.text": "Doughnut Forge on tiedostojen offline-salaussovellus Macille, iPhonelle, iPadille ja Windowsille. Se lukitsee tiedostosi ja tekstisi omalla laitteellasi, ja jaat ne vain valitsemillesi ihmisille.",
+  "meta.features.description": "Salaa tiedostot ja tekstit omalla iPhonellasi, iPadillasi tai tietokoneellasi, jaa ne luotettujen ihmisten kanssa ja pidä ne suojattuina pitkään. Ei tiliä eikä palvelimia.",
+  "features.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa. Lähetitpä ne miten tahansa, vain he voivat avata ne.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

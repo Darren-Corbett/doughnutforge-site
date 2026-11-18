@@ -5,7 +5,7 @@
 export default {
   "meta.home.title": "Doughnut Forge: offline file encryption for iPhone, iPad, Android, Mac and Windows",
   "meta.home.description":
-    "Doughnut Forge: offline file encryption for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose. No account, no servers, no subscription.",
+    "Doughnut Forge: offline file encryption for iPhone, iPad, Android, Mac and PC. Encrypt files and text for the people you choose. No account, no servers, no subscription.",
 
   "nav.label": "Main",
   "nav.features": "Features",
@@ -24,10 +24,10 @@ export default {
 
   "home.summary": "Offline file encryption for iPhone, iPad, Android, Mac and Windows.",
   "home.tagline": "Only the people you choose can open them.",
-  "home.lead": "Doughnut Forge locks your files and text on your iPhone, iPad or computer and lets you share them with the people you trust.",
+  "home.lead": "Doughnut Forge locks your files and text on your iPhone, iPad, Android or computer and lets you share them with the people you trust.",
   "home.what.title": "What is Doughnut Forge?",
   "home.what.text":
-    "Doughnut Forge is an offline file encryption app for Mac, iPhone, iPad and Windows. It locks your files and text on your own device, and you share them only with the people you choose.",
+    "Doughnut Forge is an offline file encryption app for Mac, iPhone, iPad, Android and Windows. It locks your files and text on your own device, and you share them only with the people you choose.",
   "home.cta.primary": "Get Doughnut Forge",
   "home.cta.secondary": "See what it does",
 
@@ -84,10 +84,10 @@ export default {
   // Features page
   "meta.features.title": "Features: encrypt files, folders and text without an account | Doughnut Forge",
   "meta.features.description":
-    "Encrypt files and text on your own iPhone, iPad or computer, share them with people you trust, and keep them protected for the long term. No account and no servers.",
+    "Encrypt files and text on your own iPhone, iPad, Android or computer, share them with people you trust, and keep them protected for the long term. No account and no servers.",
   "features.title": "Everything Doughnut Forge does",
   "features.lead":
-    "Doughnut Forge locks your files and text on your iPhone, iPad or computer and lets you share them with the people you trust. However you send them, only they can open them.",
+    "Doughnut Forge locks your files and text on your iPhone, iPad, Android or computer and lets you share them with the people you trust. However you send them, only they can open them.",
   "features.identity.more":
     "Your identity is stored only on this device and protected by your password. Keep your 24 recovery words safe: they are the only way to restore your identity or reset a forgotten password.",
   "features.private.title": "Private from the start",
@@ -492,7 +492,7 @@ export default {
   "blog.draft": "Draft",
   "blog.feed": "RSS feed",
   "blog.cta.title": "Try Doughnut Forge",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad, Android or computer and share them with the people you trust.",
 
   // One answered question or known issue: English only, like the blog
   "issue.question": "Question",

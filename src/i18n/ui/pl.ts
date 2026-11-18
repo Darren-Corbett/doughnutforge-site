@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: szyfrowanie plików offline – iPhone, iPad, Android, Mac i Windows",
-  "meta.home.description": "Doughnut Forge: szyfrowanie plików offline – iPhone, iPad, Mac i PC. Szyfruj pliki i tekst dla osób, które wybierzesz. Bez konta, serwerów i subskrypcji.",
+  "meta.home.description": "Doughnut Forge: szyfrowanie plików offline – iPhone, iPad, Android, Mac i PC. Szyfruj pliki i tekst dla osób, które wybierzesz. Bez konta, serwerów i subskrypcji.",
   "nav.label": "Menu główne",
   "nav.features": "Funkcje",
   "nav.pricing": "Cennik",
@@ -20,10 +20,10 @@ export default {
   "skip": "Przejdź do treści",
   "home.summary": "Szyfrowanie plików offline: iPhone, iPad, Android, Mac i Windows.",
   "home.tagline": "Otworzyć je mogą tylko osoby, które wybierzesz.",
-  "home.lead": "Doughnut Forge blokuje Twoje pliki i tekst na iPhonie, iPadzie lub komputerze i pozwala udostępniać je osobom, którym ufasz.",
+  "home.lead": "Doughnut Forge blokuje Twoje pliki i tekst na iPhonie, iPadzie, Androidzie lub komputerze i pozwala udostępniać je osobom, którym ufasz.",
   "home.what.title": "Czym jest Doughnut Forge?",
   "home.what.text":
-    "Doughnut Forge to aplikacja do szyfrowania plików offline dla urządzeń Mac, iPhone, iPad i Windows. Blokuje Twoje pliki i tekst na Twoim własnym urządzeniu, a udostępniasz je tylko wybranym osobom.",
+    "Doughnut Forge to aplikacja do szyfrowania plików offline dla urządzeń Mac, iPhone, iPad, Android i Windows. Blokuje Twoje pliki i tekst na Twoim własnym urządzeniu, a udostępniasz je tylko wybranym osobom.",
   "home.cta.primary": "Pobierz Doughnut Forge",
   "home.cta.secondary": "Zobacz, co potrafi",
   "home.specimen.stranger": "Co widzą wszyscy inni",
@@ -61,9 +61,9 @@ export default {
   "go.tap.googlePlay": "Stuknij poniżej, aby otworzyć Google Play.",
   "go.offline": "Działa bez internetu.",
   "meta.features.title": "Funkcje: szyfruj pliki, foldery i tekst bez konta | Doughnut Forge",
-  "meta.features.description": "Szyfruj pliki i tekst na własnym iPhonie, iPadzie lub komputerze, udostępniaj je zaufanym osobom i chroń je na długie lata. Bez konta i bez serwerów.",
+  "meta.features.description": "Szyfruj pliki i tekst na własnym iPhonie, iPadzie, Androidzie lub komputerze, udostępniaj je zaufanym osobom i chroń je na długie lata. Bez konta i bez serwerów.",
   "features.title": "Wszystko, co potrafi Doughnut Forge",
-  "features.lead": "Doughnut Forge blokuje Twoje pliki i tekst na iPhonie, iPadzie lub komputerze i pozwala udostępniać je osobom, którym ufasz. Niezależnie od tego, jak je wyślesz, tylko one mogą je otworzyć.",
+  "features.lead": "Doughnut Forge blokuje Twoje pliki i tekst na iPhonie, iPadzie, Androidzie lub komputerze i pozwala udostępniać je osobom, którym ufasz. Niezależnie od tego, jak je wyślesz, tylko one mogą je otworzyć.",
   "features.identity.more":
     "Twoja tożsamość jest przechowywana tylko na tym urządzeniu i chroniona Twoim hasłem. Przechowuj swoje 24 słowa odzyskiwania w bezpiecznym miejscu: to jedyny sposób, aby przywrócić tożsamość lub zresetować zapomniane hasło.",
   "features.private.title": "Prywatność od samego początku",

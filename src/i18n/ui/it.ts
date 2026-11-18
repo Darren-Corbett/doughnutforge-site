@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: crittografia offline dei file per iPhone, iPad, Android, Mac e Windows",
-  "meta.home.description": "Doughnut Forge: crittografia offline dei file per iPhone, iPad, Mac e PC. Crittografa file e testo per le persone che scegli. Niente account, server o abbonamento.",
+  "meta.home.description": "Doughnut Forge: crittografia offline dei file per iPhone, iPad, Android, Mac e PC. Crittografa file e testo per le persone che scegli. Niente account, server o abbonamento.",
   "nav.label": "Principale",
   "nav.features": "Funzioni",
   "nav.pricing": "Prezzi",
@@ -20,10 +20,10 @@ export default {
   "skip": "Vai al contenuto",
   "home.summary": "Crittografia offline dei file per iPhone, iPad, Android, Mac e Windows.",
   "home.tagline": "Solo le persone che scegli possono aprirli.",
-  "home.lead": "Doughnut Forge blocca file e testo sul tuo iPhone, iPad o computer e ti permette di condividerli con le persone di cui ti fidi.",
+  "home.lead": "Doughnut Forge blocca file e testo sul tuo iPhone, iPad, Android o computer e ti permette di condividerli con le persone di cui ti fidi.",
   "home.what.title": "Che cos'è Doughnut Forge?",
   "home.what.text":
-    "Doughnut Forge è un'app di crittografia offline dei file per Mac, iPhone, iPad e Windows. Blocca i tuoi file e il tuo testo sul tuo dispositivo, e li condividi solo con le persone che scegli.",
+    "Doughnut Forge è un'app di crittografia offline dei file per Mac, iPhone, iPad, Android e Windows. Blocca i tuoi file e il tuo testo sul tuo dispositivo, e li condividi solo con le persone che scegli.",
   "home.cta.primary": "Scarica Doughnut Forge",
   "home.cta.secondary": "Scopri cosa fa",
   "home.specimen.stranger": "Cosa vedono gli altri",
@@ -57,9 +57,9 @@ export default {
   "go.tap.googlePlay": "Tocca qui sotto per aprire Google Play.",
   "go.offline": "Funziona senza Internet.",
   "meta.features.title": "Funzioni: crittografa file, cartelle e testo senza account | Doughnut Forge",
-  "meta.features.description": "Crittografa file e testo sul tuo iPhone, iPad o computer, condividili con le persone di cui ti fidi e mantienili protetti nel tempo. Niente account e niente server.",
+  "meta.features.description": "Crittografa file e testo sul tuo iPhone, iPad, Android o computer, condividili con le persone di cui ti fidi e mantienili protetti nel tempo. Niente account e niente server.",
   "features.title": "Tutto quello che fa Doughnut Forge",
-  "features.lead": "Doughnut Forge blocca file e testo sul tuo iPhone, iPad o computer e ti permette di condividerli con le persone di cui ti fidi. Comunque tu li invii, solo loro possono aprirli.",
+  "features.lead": "Doughnut Forge blocca file e testo sul tuo iPhone, iPad, Android o computer e ti permette di condividerli con le persone di cui ti fidi. Comunque tu li invii, solo loro possono aprirli.",
   "features.identity.more": "La tua identità è archiviata solo su questo dispositivo e protetta dalla tua password. Conserva al sicuro le tue 24 parole di recupero: sono l'unico modo per ripristinare la tua identità o reimpostare una password dimenticata.",
   "features.private.title": "Privato fin dall'inizio",
   "features.offline.title": "Funziona senza Internet",

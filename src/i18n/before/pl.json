@@ -25,5 +25,11 @@
   "technical.visible.count.text": "widoczne (liczba odbiorców, wliczając nadawcę).",
   "technical.limits.sender.label": "Dowód tego, kto wysłał element.",
   "technical.limits.sender.text": "Doughnut Forge nie dowodzi jeszcze, kto wysłał element.",
-  "technical.limits.visible.label": "Rozmiar, liczba odbiorców i nazwa pliku."
+  "technical.limits.visible.label": "Rozmiar, liczba odbiorców i nazwa pliku.",
+  "meta.home.description": "Doughnut Forge: szyfrowanie plików offline – iPhone, iPad, Mac i PC. Szyfruj pliki i tekst dla osób, które wybierzesz. Bez konta, serwerów i subskrypcji.",
+  "home.lead": "Doughnut Forge blokuje Twoje pliki i tekst na iPhonie, iPadzie lub komputerze i pozwala udostępniać je osobom, którym ufasz.",
+  "home.what.text": "Doughnut Forge to aplikacja do szyfrowania plików offline dla urządzeń Mac, iPhone, iPad i Windows. Blokuje Twoje pliki i tekst na Twoim własnym urządzeniu, a udostępniasz je tylko wybranym osobom.",
+  "meta.features.description": "Szyfruj pliki i tekst na własnym iPhonie, iPadzie lub komputerze, udostępniaj je zaufanym osobom i chroń je na długie lata. Bez konta i bez serwerów.",
+  "features.lead": "Doughnut Forge blokuje Twoje pliki i tekst na iPhonie, iPadzie lub komputerze i pozwala udostępniać je osobom, którym ufasz. Niezależnie od tego, jak je wyślesz, tylko one mogą je otworzyć.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

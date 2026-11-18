@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: tiedostojen offline-salaus iPhonelle, iPadille, Androidille, Macille ja Windowsille",
-  "meta.home.description": "Doughnut Forge: tiedostojen offline-salaus iPhonelle, iPadille, Macille ja PC:lle. Salaa tiedostot ja tekstit valitsemillesi ihmisille. Ei tiliä, ei palvelimia, ei tilausta.",
+  "meta.home.description": "Doughnut Forge: tiedostojen offline-salaus iPhonelle, iPadille, Androidille, Macille ja PC:lle. Salaa tiedostot ja tekstit valitsemillesi ihmisille. Ei tiliä, ei palvelimia, ei tilausta.",
   "nav.label": "Päävalikko",
   "nav.features": "Ominaisuudet",
   "nav.pricing": "Hinnat",
@@ -20,10 +20,10 @@ export default {
   "skip": "Siirry sisältöön",
   "home.summary": "Tiedostojen offline-salaus iPhonelle, iPadille, Androidille, Macille ja Windowsille.",
   "home.tagline": "Vain valitsemasi ihmiset voivat avata ne.",
-  "home.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa.",
+  "home.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi, Androidillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa.",
   "home.what.title": "Mikä Doughnut Forge on?",
   "home.what.text":
-    "Doughnut Forge on tiedostojen offline-salaussovellus Macille, iPhonelle, iPadille ja Windowsille. Se lukitsee tiedostosi ja tekstisi omalla laitteellasi, ja jaat ne vain valitsemillesi ihmisille.",
+    "Doughnut Forge on tiedostojen offline-salaussovellus Macille, iPhonelle, iPadille, Androidille ja Windowsille. Se lukitsee tiedostosi ja tekstisi omalla laitteellasi, ja jaat ne vain valitsemillesi ihmisille.",
   "home.cta.primary": "Hanki Doughnut Forge",
   "home.cta.secondary": "Katso, mitä se tekee",
   "home.specimen.stranger": "Mitä kaikki muut näkevät",
@@ -62,9 +62,9 @@ export default {
   "go.tap.googlePlay": "Avaa Google Play napauttamalla alta.",
   "go.offline": "Toimii ilman internetiä.",
   "meta.features.title": "Ominaisuudet: salaa tiedostot, kansiot ja tekstit ilman tiliä | Doughnut Forge",
-  "meta.features.description": "Salaa tiedostot ja tekstit omalla iPhonellasi, iPadillasi tai tietokoneellasi, jaa ne luotettujen ihmisten kanssa ja pidä ne suojattuina pitkään. Ei tiliä eikä palvelimia.",
+  "meta.features.description": "Salaa tiedostot ja tekstit omalla iPhonellasi, iPadillasi, Androidillasi tai tietokoneellasi, jaa ne luotettujen ihmisten kanssa ja pidä ne suojattuina pitkään. Ei tiliä eikä palvelimia.",
   "features.title": "Kaikki, mitä Doughnut Forge tekee",
-  "features.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa. Lähetitpä ne miten tahansa, vain he voivat avata ne.",
+  "features.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi, Androidillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa. Lähetitpä ne miten tahansa, vain he voivat avata ne.",
   "features.identity.more":
     "Henkilöllisyytesi on tallennettu vain tälle laitteelle ja suojattu salasanallasi. Säilytä 24 palautussanaasi tallessa: ne ovat ainoa tapa palauttaa henkilöllisyytesi tai nollata unohtunut salasana.",
   "features.private.title": "Yksityinen alusta alkaen",

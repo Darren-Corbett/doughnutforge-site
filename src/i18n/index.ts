@@ -28,7 +28,7 @@ const byCode = <T>(files: Record<string, T>) =>
 const ui = byCode(import.meta.glob<Translation>("./ui/*.ts", { eager: true, import: "default" }));
 const app = byCode(import.meta.glob<Record<AppKey, string>>("./app/*.json", { eager: true, import: "default" }));
 const store = byCode(import.meta.glob<StoreCopy>("./store/*.json", { eager: true, import: "default" }));
-const before = byCode(import.meta.glob<Partial<Translation>>("./before/*.json", { eager: true, import: "default" }));
+const before = byCode(import.meta.glob<Partial<Record<UiKey, string>>>("./before/*.json", { eager: true, import: "default" }));
 
 /** The languages with site copy: every app language once Phase 3 is complete */
 export const builtLanguages = languages.filter((l) => ui[l.code] && app[l.code] && store[l.code]);
@@ -43,9 +43,8 @@ export const useStrings = (code: string) => {
   if (!strings || !app[code] || !store[code]) throw new Error(`No site copy for ${code}: add src/i18n/ui/${code}.ts and run npm run sync:app`);
   return {
     t: (key: UiKey) => {
-      if (englishOnly(key)) return enUi[key];
       const stage = gated[key];
-      if (!stage || reached(stage)) return strings[key];
+      if (!stage || reached(stage)) return englishOnly(key) ? enUi[key] : strings[key];
       // Before its stage a gated key shows its earlier text; a new one has none,
       // and asking for it means a page shows it too early
       const earlier = before[code]?.[key];

@@ -25,5 +25,11 @@
   "technical.visible.count.text": "kelihatan (bilangan penerima, termasuk penghantar).",
   "technical.limits.sender.label": "Bukti siapa yang menghantar sesuatu item.",
   "technical.limits.sender.text": "Doughnut Forge belum lagi membuktikan siapa yang menghantar sesuatu item.",
-  "technical.limits.visible.label": "Saiz, bilangan penerima dan nama fail."
+  "technical.limits.visible.label": "Saiz, bilangan penerima dan nama fail.",
+  "meta.home.description": "Doughnut Forge: penyulitan fail luar talian untuk iPhone, iPad, Mac dan PC. Sulitkan fail dan teks untuk orang yang anda pilih. Tiada akaun, pelayan atau langganan.",
+  "home.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai.",
+  "home.what.text": "Doughnut Forge ialah aplikasi penyulitan fail luar talian untuk Mac, iPhone, iPad dan Windows. Ia mengunci fail dan teks pada peranti anda sendiri, dan anda hanya berkongsinya dengan orang yang anda pilih.",
+  "meta.features.description": "Sulitkan fail dan teks pada iPhone, iPad atau komputer anda sendiri, kongsi dengan orang yang dipercayai dan lindunginya untuk jangka panjang. Tiada akaun, tiada pelayan.",
+  "features.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai. Walau bagaimana anda menghantarnya, hanya mereka yang boleh membukanya.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

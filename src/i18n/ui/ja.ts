@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge：iPhone、iPad、Android、Mac、Windows向けオフラインファイル暗号化",
-  "meta.home.description": "Doughnut Forge：iPhone、iPad、Mac、PC向けオフラインファイル暗号化。ファイルとテキストを、あなたが選んだ相手に向けて暗号化できます。アカウントなし、サーバーなし、サブスクなし。",
+  "meta.home.description": "Doughnut Forge：iPhone、iPad、Android、Mac、PC向けオフラインファイル暗号化。ファイルとテキストを、あなたが選んだ相手に向けて暗号化できます。アカウントなし、サーバーなし、サブスクなし。",
   "nav.label": "メインメニュー",
   "nav.features": "機能",
   "nav.pricing": "価格",
@@ -20,10 +20,10 @@ export default {
   "skip": "本文へスキップ",
   "home.summary": "iPhone、iPad、Android、Mac、Windows向けのオフラインファイル暗号化。",
   "home.tagline": "開けるのは、あなたが選んだ相手だけです。",
-  "home.lead": "Doughnut Forgeは、iPhone、iPad、コンピュータ上のファイルとテキストをロックし、信頼できる相手と共有できるようにします。",
+  "home.lead": "Doughnut Forgeは、iPhone、iPad、Android、コンピュータ上のファイルとテキストをロックし、信頼できる相手と共有できるようにします。",
   "home.what.title": "Doughnut Forgeとは？",
   "home.what.text":
-    "Doughnut Forgeは、Mac、iPhone、iPad、Windows向けのオフラインファイル暗号化アプリです。ファイルとテキストを自分のデバイス上でロックし、共有するのは自分が選んだ相手だけです。",
+    "Doughnut Forgeは、Mac、iPhone、iPad、Android、Windows向けのオフラインファイル暗号化アプリです。ファイルとテキストを自分のデバイス上でロックし、共有するのは自分が選んだ相手だけです。",
   "home.cta.primary": "Doughnut Forgeを入手",
   "home.cta.secondary": "できることを見る",
   "home.specimen.stranger": "ほかの人に見える内容",
@@ -58,9 +58,9 @@ export default {
   "go.tap.googlePlay": "下をタップしてGoogle Playを開きます。",
   "go.offline": "インターネットなしで使えます。",
   "meta.features.title": "機能：アカウント不要でファイル、フォルダ、テキストを暗号化 | Doughnut Forge",
-  "meta.features.description": "自分のiPhone、iPad、コンピュータ上でファイルとテキストを暗号化し、信頼できる相手と共有して、長く保護できます。アカウントもサーバーも不要です。",
+  "meta.features.description": "自分のiPhone、iPad、Android、コンピュータ上でファイルとテキストを暗号化し、信頼できる相手と共有して、長く保護できます。アカウントもサーバーも不要です。",
   "features.title": "Doughnut Forgeでできること",
-  "features.lead": "Doughnut Forgeは、iPhone、iPad、コンピュータ上のファイルとテキストをロックし、信頼できる相手と共有できるようにします。どんな方法で送っても、開けるのはその相手だけです。",
+  "features.lead": "Doughnut Forgeは、iPhone、iPad、Android、コンピュータ上のファイルとテキストをロックし、信頼できる相手と共有できるようにします。どんな方法で送っても、開けるのはその相手だけです。",
   "features.identity.more":
     "アイデンティティはこのデバイスにのみ保存され、パスワードによって保護されます。24個の復元用の単語は大切に保管してください。アイデンティティを復元したり、忘れたパスワードをリセットしたりする唯一の方法です。",
   "features.private.title": "最初からプライベート",

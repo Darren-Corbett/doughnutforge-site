@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: mã hóa tệp ngoại tuyến cho iPhone, iPad, Android, Mac và Windows",
-  "meta.home.description": "Doughnut Forge: mã hóa tệp ngoại tuyến cho iPhone, iPad, Mac và PC. Mã hóa tệp và văn bản cho những người bạn chọn. Không tài khoản, không máy chủ, không thuê bao.",
+  "meta.home.description": "Doughnut Forge: mã hóa tệp ngoại tuyến cho iPhone, iPad, Android, Mac và PC. Mã hóa tệp và văn bản cho những người bạn chọn. Không tài khoản, không máy chủ, không thuê bao.",
   "nav.label": "Chính",
   "nav.features": "Tính năng",
   "nav.pricing": "Giá",
@@ -20,10 +20,10 @@ export default {
   "skip": "Chuyển đến nội dung",
   "home.summary": "Mã hóa tệp ngoại tuyến cho iPhone, iPad, Android, Mac và Windows.",
   "home.tagline": "Chỉ những người bạn chọn mới mở được.",
-  "home.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng.",
+  "home.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad, Android hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng.",
   "home.what.title": "Doughnut Forge là gì?",
   "home.what.text":
-    "Doughnut Forge là ứng dụng mã hóa tệp ngoại tuyến cho Mac, iPhone, iPad và Windows. Ứng dụng khóa tệp và văn bản ngay trên thiết bị của bạn, và bạn chỉ chia sẻ chúng với những người bạn chọn.",
+    "Doughnut Forge là ứng dụng mã hóa tệp ngoại tuyến cho Mac, iPhone, iPad, Android và Windows. Ứng dụng khóa tệp và văn bản ngay trên thiết bị của bạn, và bạn chỉ chia sẻ chúng với những người bạn chọn.",
   "home.cta.primary": "Tải Doughnut Forge",
   "home.cta.secondary": "Xem ứng dụng làm được gì",
   "home.specimen.stranger": "Những gì người khác thấy",
@@ -61,9 +61,9 @@ export default {
   "go.tap.googlePlay": "Chạm vào bên dưới để mở Google Play.",
   "go.offline": "Hoạt động không cần internet.",
   "meta.features.title": "Tính năng: mã hóa tệp, thư mục và văn bản, không cần tài khoản | Doughnut Forge",
-  "meta.features.description": "Mã hóa tệp và văn bản ngay trên iPhone, iPad hoặc máy tính của bạn, chia sẻ với người bạn tin tưởng và giữ chúng được bảo vệ lâu dài. Không tài khoản, không máy chủ.",
+  "meta.features.description": "Mã hóa tệp và văn bản ngay trên iPhone, iPad, Android hoặc máy tính của bạn, chia sẻ với người bạn tin tưởng và giữ chúng được bảo vệ lâu dài. Không tài khoản, không máy chủ.",
   "features.title": "Mọi điều Doughnut Forge làm được",
-  "features.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng. Dù bạn gửi bằng cách nào, chỉ họ mới mở được.",
+  "features.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad, Android hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng. Dù bạn gửi bằng cách nào, chỉ họ mới mở được.",
   "features.identity.more":
     "Danh tính của bạn chỉ được lưu trên thiết bị này và được bảo vệ bằng mật khẩu của bạn. Hãy giữ 24 từ khôi phục an toàn: đó là cách duy nhất để khôi phục danh tính hoặc đặt lại mật khẩu bị quên.",
   "features.private.title": "Riêng tư ngay từ đầu",

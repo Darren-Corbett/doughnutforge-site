@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: criptare offline a fișierelor pentru iPhone, iPad, Android, Mac și Windows",
-  "meta.home.description": "Doughnut Forge: criptare offline a fișierelor pentru iPhone, iPad, Mac și PC. Criptează fișiere și text pentru cei pe care îi alegi. Fără cont, servere sau abonament.",
+  "meta.home.description": "Doughnut Forge: criptare offline a fișierelor pentru iPhone, iPad, Android, Mac și PC. Criptează fișiere și text pentru cei pe care îi alegi. Fără cont, servere sau abonament.",
   "nav.label": "Principal",
   "nav.features": "Funcții",
   "nav.pricing": "Prețuri",
@@ -20,10 +20,10 @@ export default {
   "skip": "Sari la conținut",
   "home.summary": "Criptare offline a fișierelor pentru iPhone, iPad, Android, Mac și Windows.",
   "home.tagline": "Doar oamenii pe care îi alegi le pot deschide.",
-  "home.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad sau computer și îți permite să le partajezi cu oamenii în care ai încredere.",
+  "home.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad, Android sau computer și îți permite să le partajezi cu oamenii în care ai încredere.",
   "home.what.title": "Ce este Doughnut Forge?",
   "home.what.text":
-    "Doughnut Forge este o aplicație de criptare offline a fișierelor pentru Mac, iPhone, iPad și Windows. Îți blochează fișierele și textele pe propriul dispozitiv, iar tu le partajezi doar cu oamenii pe care îi alegi.",
+    "Doughnut Forge este o aplicație de criptare offline a fișierelor pentru Mac, iPhone, iPad, Android și Windows. Îți blochează fișierele și textele pe propriul dispozitiv, iar tu le partajezi doar cu oamenii pe care îi alegi.",
   "home.cta.primary": "Obține Doughnut Forge",
   "home.cta.secondary": "Vezi ce face",
   "home.specimen.stranger": "Ce vede oricine altcineva",
@@ -59,9 +59,9 @@ export default {
   "go.tap.googlePlay": "Atinge mai jos pentru a deschide Google Play.",
   "go.offline": "Funcționează fără internet.",
   "meta.features.title": "Funcții: criptează fișiere, dosare și text fără cont | Doughnut Forge",
-  "meta.features.description": "Criptează fișiere și text pe propriul iPhone, iPad sau computer, partajează-le cu oameni de încredere și păstrează-le protejate pe termen lung. Fără cont și fără servere.",
+  "meta.features.description": "Criptează fișiere și text pe propriul iPhone, iPad, Android sau computer, partajează-le cu oameni de încredere și păstrează-le protejate pe termen lung. Fără cont și fără servere.",
   "features.title": "Tot ce face Doughnut Forge",
-  "features.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad sau computer și îți permite să le partajezi cu oamenii în care ai încredere. Oricum le-ai trimite, doar ei le pot deschide.",
+  "features.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad, Android sau computer și îți permite să le partajezi cu oamenii în care ai încredere. Oricum le-ai trimite, doar ei le pot deschide.",
   "features.identity.more":
     "Identitatea ta este stocată doar pe acest dispozitiv și protejată de parola ta. Păstrează în siguranță cele 24 de cuvinte de recuperare: sunt singura modalitate de a-ți restaura identitatea sau de a reseta o parolă uitată.",
   "features.private.title": "Privat de la început",

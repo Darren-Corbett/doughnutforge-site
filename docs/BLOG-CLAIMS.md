@@ -217,6 +217,7 @@ Not claimed: that Doughnut Forge would have prevented the breach; any name of th
 | # | Claim on the page | Source |
 |---|---|---|
 | DL1 | `download.requires.android`: "Needs Android 10 or later, with Android System WebView 111 or later (updated from Google Play)." Shown only once Android is on sale (`src/data/stages.ts`, stage "android") | Android 10: `app-answers.md` §4 (minimum Android 10, API 29), owner's yes in `docs/android-release-plan.md` item 9. WebView 111 and the update from Google Play: final white paper (3.0.0, held until stage 3), section 9.3 ("if the phone's System WebView is older than version 111, the app shows only a screen asking the person to update it from Google Play"). Owner's yes to the wording, 19 November 2026 |
+| DL2 | From the Android stage, the platform lists that say files and text can be encrypted and shared name Android: `meta.home.description`, `home.lead`, `home.what.text`, `meta.features.description`, `features.lead`, `blog.cta.text` | Owner, 19 November 2026: Android 3.0.0 can encrypt text and share it through the phone's share sheet; approved Play listing: "Encrypt text: Encrypt a private message for your contacts and share it however you like." Files on Android: `app-answers.md` §3 (single files; no folders). Nothing is claimed about how shared text opens |
 
 ## Site FAQ and Technical details page (30 October 2026)
 

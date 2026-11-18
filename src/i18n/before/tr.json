@@ -25,5 +25,11 @@
   "technical.visible.count.text": "görünür (gönderen dahil alıcı sayısı).",
   "technical.limits.sender.label": "Bir öğeyi kimin gönderdiğinin kanıtı.",
   "technical.limits.sender.text": "Doughnut Forge, bir öğeyi kimin gönderdiğini henüz kanıtlamıyor.",
-  "technical.limits.visible.label": "Boyut, alıcı sayısı ve dosya adı."
+  "technical.limits.visible.label": "Boyut, alıcı sayısı ve dosya adı.",
+  "meta.home.description": "Doughnut Forge: iPhone, iPad, Mac ve PC için çevrimdışı dosya şifreleme. Dosya ve metinleri seçtiğiniz kişiler için şifreleyin. Hesap, sunucu ve abonelik yok.",
+  "home.lead": "Doughnut Forge, iPhone, iPad veya bilgisayarınızdaki dosyaları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar.",
+  "home.what.text": "Doughnut Forge; Mac, iPhone, iPad ve Windows için çevrimdışı bir dosya şifreleme uygulamasıdır. Dosyalarınızı ve metinlerinizi kendi cihazınızda kilitler ve bunları yalnızca seçtiğiniz kişilerle paylaşırsınız.",
+  "meta.features.description": "Kendi iPhone, iPad veya bilgisayarınızda dosya ve metinleri şifreleyin, güvendiğiniz kişilerle paylaşın ve uzun vadede korunmalarını sağlayın. Hesap yok, sunucu yok.",
+  "features.lead": "Doughnut Forge, iPhone, iPad veya bilgisayarınızdaki dosyaları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar. Nasıl gönderirseniz gönderin, onları yalnızca o kişiler açabilir.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

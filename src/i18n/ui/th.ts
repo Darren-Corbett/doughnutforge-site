@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: เข้ารหัสไฟล์แบบออฟไลน์สำหรับ iPhone, iPad, Android, Mac และ Windows",
-  "meta.home.description": "Doughnut Forge: เข้ารหัสไฟล์แบบออฟไลน์สำหรับ iPhone, iPad, Mac และ PC เข้ารหัสไฟล์และข้อความสำหรับคนที่คุณเลือก ไม่มีบัญชี ไม่มีเซิร์ฟเวอร์ ไม่มีการสมัครสมาชิก",
+  "meta.home.description": "Doughnut Forge: เข้ารหัสไฟล์แบบออฟไลน์สำหรับ iPhone, iPad, Android, Mac และ PC เข้ารหัสไฟล์และข้อความสำหรับคนที่คุณเลือก ไม่มีบัญชี ไม่มีเซิร์ฟเวอร์ ไม่มีการสมัครสมาชิก",
   "nav.label": "เมนูหลัก",
   "nav.features": "ฟีเจอร์",
   "nav.pricing": "ราคา",
@@ -20,10 +20,10 @@ export default {
   "skip": "ข้ามไปยังเนื้อหา",
   "home.summary": "เข้ารหัสไฟล์แบบออฟไลน์สำหรับ iPhone, iPad, Android, Mac และ Windows",
   "home.tagline": "มีเพียงคนที่คุณเลือกเท่านั้นที่เปิดได้",
-  "home.lead": "Doughnut Forge ล็อกไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณ และให้คุณแชร์กับคนที่คุณไว้ใจได้",
+  "home.lead": "Doughnut Forge ล็อกไฟล์และข้อความบน iPhone, iPad, Android หรือคอมพิวเตอร์ของคุณ และให้คุณแชร์กับคนที่คุณไว้ใจได้",
   "home.what.title": "Doughnut Forge คืออะไร?",
   "home.what.text":
-    "Doughnut Forge คือแอปเข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, iPhone, iPad และ Windows แอปจะล็อกไฟล์และข้อความไว้บนอุปกรณ์ของคุณเอง และคุณแชร์ให้เฉพาะคนที่คุณเลือกเท่านั้น",
+    "Doughnut Forge คือแอปเข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, iPhone, iPad, Android และ Windows แอปจะล็อกไฟล์และข้อความไว้บนอุปกรณ์ของคุณเอง และคุณแชร์ให้เฉพาะคนที่คุณเลือกเท่านั้น",
   "home.cta.primary": "รับ Doughnut Forge",
   "home.cta.secondary": "ดูว่าทำอะไรได้บ้าง",
   "home.specimen.stranger": "สิ่งที่คนอื่นเห็น",
@@ -61,9 +61,9 @@ export default {
   "go.tap.googlePlay": "แตะด้านล่างเพื่อเปิด Google Play",
   "go.offline": "ใช้งานได้โดยไม่ต้องมีอินเทอร์เน็ต",
   "meta.features.title": "ฟีเจอร์: เข้ารหัสไฟล์ โฟลเดอร์ และข้อความโดยไม่ต้องมีบัญชี | Doughnut Forge",
-  "meta.features.description": "เข้ารหัสไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณเอง แชร์กับคนที่คุณไว้ใจ และปกป้องไว้ได้ในระยะยาว ไม่มีบัญชีและไม่มีเซิร์ฟเวอร์",
+  "meta.features.description": "เข้ารหัสไฟล์และข้อความบน iPhone, iPad, Android หรือคอมพิวเตอร์ของคุณเอง แชร์กับคนที่คุณไว้ใจ และปกป้องไว้ได้ในระยะยาว ไม่มีบัญชีและไม่มีเซิร์ฟเวอร์",
   "features.title": "ทุกสิ่งที่ Doughnut Forge ทำได้",
-  "features.lead": "Doughnut Forge ล็อกไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณ และให้คุณแชร์กับคนที่คุณไว้ใจได้ ไม่ว่าคุณจะส่งด้วยวิธีใด มีเพียงพวกเขาเท่านั้นที่เปิดได้",
+  "features.lead": "Doughnut Forge ล็อกไฟล์และข้อความบน iPhone, iPad, Android หรือคอมพิวเตอร์ของคุณ และให้คุณแชร์กับคนที่คุณไว้ใจได้ ไม่ว่าคุณจะส่งด้วยวิธีใด มีเพียงพวกเขาเท่านั้นที่เปิดได้",
   "features.identity.more":
     "ข้อมูลประจำตัวของคุณถูกเก็บไว้ในอุปกรณ์นี้เท่านั้นและได้รับการปกป้องด้วยรหัสผ่านของคุณ เก็บคำกู้คืน 24 คำของคุณไว้ให้ปลอดภัย เพราะเป็นวิธีเดียวในการกู้คืนข้อมูลประจำตัวของคุณหรือรีเซ็ตรหัสผ่านที่ลืม",
   "features.private.title": "เป็นส่วนตัวตั้งแต่แรก",

@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge : chiffrement de fichiers hors ligne pour iPhone, iPad, Android, Mac et Windows",
-  "meta.home.description": "Doughnut Forge : chiffrement de fichiers hors ligne pour iPhone, iPad, Mac et PC. Chiffrez fichiers et textes pour les personnes de votre choix. Sans compte, serveur ni abonnement.",
+  "meta.home.description": "Doughnut Forge : chiffrement de fichiers hors ligne pour iPhone, iPad, Android, Mac et PC. Chiffrez fichiers et textes pour les personnes de votre choix. Sans compte, serveur ni abonnement.",
   "nav.label": "Navigation principale",
   "nav.features": "Fonctions",
   "nav.pricing": "Tarifs",
@@ -20,10 +20,10 @@ export default {
   "skip": "Aller au contenu",
   "home.summary": "Chiffrement de fichiers hors ligne pour iPhone, iPad, Android, Mac et Windows.",
   "home.tagline": "Seules les personnes que vous choisissez peuvent les ouvrir.",
-  "home.lead": "Doughnut Forge verrouille vos fichiers et textes sur votre iPhone, votre iPad ou votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance.",
+  "home.lead": "Doughnut Forge verrouille vos fichiers et textes sur votre iPhone, votre iPad, votre Android ou votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance.",
   "home.what.title": "Qu'est-ce que Doughnut Forge ?",
   "home.what.text":
-    "Doughnut Forge est une application de chiffrement de fichiers hors ligne pour Mac, iPhone, iPad et Windows. Elle verrouille vos fichiers et textes sur votre propre appareil, et vous ne les partagez qu'avec les personnes de votre choix.",
+    "Doughnut Forge est une application de chiffrement de fichiers hors ligne pour Mac, iPhone, iPad, Android et Windows. Elle verrouille vos fichiers et textes sur votre propre appareil, et vous ne les partagez qu'avec les personnes de votre choix.",
   "home.cta.primary": "Obtenir Doughnut Forge",
   "home.cta.secondary": "Voir ce que fait l'app",
   "home.specimen.stranger": "Ce que voient les autres",
@@ -57,9 +57,9 @@ export default {
   "go.tap.googlePlay": "Touchez ci-dessous pour ouvrir Google Play.",
   "go.offline": "Fonctionne sans Internet.",
   "meta.features.title": "Fonctions : chiffrez fichiers, dossiers et textes sans compte | Doughnut Forge",
-  "meta.features.description": "Chiffrez fichiers et textes sur votre propre iPhone, iPad ou ordinateur, partagez-les avec des personnes de confiance et gardez-les protégés sur le long terme. Sans compte ni serveur.",
+  "meta.features.description": "Chiffrez fichiers et textes sur votre propre iPhone, iPad, Android ou ordinateur, partagez-les avec des personnes de confiance et gardez-les protégés sur le long terme. Sans compte ni serveur.",
   "features.title": "Tout ce que fait Doughnut Forge",
-  "features.lead": "Doughnut Forge verrouille vos fichiers et textes sur votre iPhone, votre iPad ou votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance. Quelle que soit la façon dont vous les envoyez, elles seules peuvent les ouvrir.",
+  "features.lead": "Doughnut Forge verrouille vos fichiers et textes sur votre iPhone, votre iPad, votre Android ou votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance. Quelle que soit la façon dont vous les envoyez, elles seules peuvent les ouvrir.",
   "features.identity.more": "Votre identité est stockée uniquement sur cet appareil et protégée par votre mot de passe. Conservez vos 24 mots de récupération en lieu sûr : ce sont le seul moyen de restaurer votre identité ou de réinitialiser un mot de passe oublié.",
   "features.private.title": "Privé dès le départ",
   "features.offline.title": "Fonctionne sans Internet",

@@ -20,6 +20,13 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   "meta.roadmap.description": "android",
   "technical.unlock.android.label": "android",
   "technical.unlock.android.text": "android",
+  // Android encrypts text and shares it too (owner, 19 November 2026)
+  "meta.home.description": "android",
+  "home.lead": "android",
+  "home.what.text": "android",
+  "meta.features.description": "android",
+  "features.lead": "android",
+  "blog.cta.text": "android",
 
   // The first store with 3.0: what people meet first in the new version
   "faq.code.q": "first3",

@@ -25,5 +25,11 @@
   "technical.visible.count.text": "synlig (antall mottakere, avsenderen medregnet).",
   "technical.limits.sender.label": "Bevis på hvem som sendte et element.",
   "technical.limits.sender.text": "Doughnut Forge beviser ennå ikke hvem som sendte et element.",
-  "technical.limits.visible.label": "Størrelse, antall mottakere og filnavn."
+  "technical.limits.visible.label": "Størrelse, antall mottakere og filnavn.",
+  "meta.home.description": "Doughnut Forge: offline filkryptering for iPhone, iPad, Mac og PC. Krypter filer og tekst for de personene du velger. Ingen konto, ingen servere, ingen abonnement.",
+  "home.lead": "Doughnut Forge låser filene og teksten din på iPhone, iPad eller datamaskinen og lar deg dele dem med folk du stoler på.",
+  "home.what.text": "Doughnut Forge er en app for offline filkryptering for Mac, iPhone, iPad og Windows. Den låser filene og teksten din på din egen enhet, og du deler dem bare med folk du velger.",
+  "meta.features.description": "Krypter filer og tekst på din egen iPhone, iPad eller datamaskin, del dem med folk du stoler på, og hold dem beskyttet på lang sikt. Ingen konto og ingen servere.",
+  "features.lead": "Doughnut Forge låser filene og teksten din på iPhone, iPad eller datamaskinen og lar deg dele dem med folk du stoler på. Uansett hvordan du sender dem, er det bare de som kan åpne dem.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

@@ -79,17 +79,17 @@ These are true today and become incomplete. Each gets "Android" added (owner: ju
 | Key | English today | Status |
 |---|---|---|
 | `meta.home.title` | "…offline file encryption for iPhone, iPad, Mac and Windows" (also `og:title`) | Ready |
-| `meta.home.description` | "…for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose…" | **Blocked**: says text can be shared |
+| `meta.home.description` | "…for iPhone, iPad, Mac and PC. Encrypt files and text for the people you choose…" | Ready (text sharing shipped, owner 19 November 2026) |
 | `home.summary` | "Offline file encryption for iPhone, iPad, Mac and Windows." | Ready |
-| `home.lead`, `features.lead` | "…locks your files and text on your iPhone, iPad or computer and lets you share them…" (`features.lead` adds "However you send them, only they can open them.") | **Blocked**: says text can be shared |
-| `meta.features.description`, `blog.cta.text` | "Encrypt files and text on your own iPhone, iPad or computer, share them…" / "Encrypt files on your own iPhone, iPad or computer and share them…" | **Blocked** (`blog.cta.text` names only files, but is kept with its pair; release it on the owner's word if wanted sooner) |
-| `home.what.text` | "…for Mac, iPhone, iPad and Windows. It locks your files and text on your own device, and you share them…" | **Blocked**: says text can be shared |
+| `home.lead`, `features.lead` | "…locks your files and text on your iPhone, iPad or computer and lets you share them…" (`features.lead` adds "However you send them, only they can open them.") | Ready (text sharing shipped, owner 19 November 2026) |
+| `meta.features.description`, `blog.cta.text` | "Encrypt files and text on your own iPhone, iPad or computer, share them…" / "Encrypt files on your own iPhone, iPad or computer and share them…" | Ready (owner 19 November 2026) |
+| `home.what.text` | "…for Mac, iPhone, iPad and Windows. It locks your files and text on your own device, and you share them…" | Ready (text sharing shipped, owner 19 November 2026) |
 | `press.about.shortText` | "…for Mac, iPhone, iPad and Windows." | Ready |
 | `meta.download.title` | "Download Doughnut Forge for iPhone, iPad, Mac and Windows" | Ready |
 | `pricing.where.text` | "Buying on iPhone and iPad does not include Mac or Windows…" | Ready |
 | `faq.platforms.a` | Lists the three stores; add "Google Play for Android" and say Android is a separate purchase too | Ready |
 
-**Blocked** means: sharing encrypted text through Android's share sheet is not merged yet (`app-answers.md` §5, "still changing"). Until the owner confirms it has shipped, these lines keep their current wording, without Android, even on release day. That leaves them incomplete but true. On the owner's word they get Android added like the rest. No line may say "share it however you like" for Android before then.
+**Owner, 19 November 2026:** text sharing shipped in Android 3.0.0 ("Encrypt text: Encrypt a private message for your contacts and share it however you like.", the approved Play listing), so the lines that were Blocked are Ready and gated to the Android stage like the rest. Earlier note: **Blocked** meant: sharing encrypted text through Android's share sheet is not merged yet (`app-answers.md` §5, "still changing"). Until the owner confirms it has shipped, these lines keep their current wording, without Android, even on release day. That leaves them incomplete but true. On the owner's word they get Android added like the rest. No line may say "share it however you like" for Android before then.
 
 Strings that name iPhone and iPad **on purpose** and stay as they are: `features.ios.*` (iOS-only extras), `technical.unlock.ios.label` and `.text`, `technical.limits.passcode.text` (see below), `press.shots.text` (the screenshots are of the iPhone and iPad app), `home.phones.alt*`, `home.phones.text` and `v2.notes.*` (what was new in v2; Android did not exist then), `v2.notes.backups` (part of the v2 notes).
 
@@ -224,7 +224,7 @@ No problem found. Nothing to change for this point.
 | 5 | **Release date** | None | When to merge the release branch and push |
 | 10 | **Android screenshots** for the press kit or features page, or keep iPhone and iPad only? | None exist on the site | Press, Features (optional) |
 | 11 | **Google Play badge files**: the Partner Marketing Hub download (it may need a sign-in), and whether it has SVG | Not in the repo. Deferred until the Android app is submitted to the store (owner, 16 November 2026) | 2.2 |
-| 13 | **Sharing encrypted text** on Android shipped? | Not merged yet (`app-answers.md` §5, still changing) | Unblocks the lines marked Blocked in 1c |
+| 13 | **Sharing encrypted text** on Android shipped? | Yes, shipped in 3.0.0 (owner, 19 November 2026) | The Blocked lines in 1c are Ready |
 | 14 | **Password autofill** off on Android, confirmed? | Being turned off (`app-answers.md` §5, still changing) | Whether `assetlinks.json` stays out (0.1, 2.1) |
 | 15 | Does Android accept the phone's **PIN in place of fingerprint or face**? | Not in `app-answers.md` | Whether `technical.limits.passcode.text` names Android (1c) |
 | 16 | The Android line on restore: "a new phone starts empty: your recovery words bring back your identity, but not your contacts" | Follows from §5 "No Android backup" | `faq.restore.a` wording (1c) |
@@ -240,7 +240,7 @@ No problem found. Nothing to change for this point.
 5. Tests first (1e, 2.3), then the one-line switch in `stores.ts`, `prices.ts`, the roadmap status.
 6. Checks: `check:commit`, `build:deploy` with no warnings, full `test:layout` (WebKit iPhone and 320px), `test:blockers`, `test:links` (needs the live Play listing), `check:reproducible`, Lighthouse on the home page, three widths on Download, Pricing, Home, Support and a `/go/` page in English and one other language (no right-to-left languages on the site).
 7. Release day: merge to `main`, push with the owner's yes, then check live: the Play badge on `/download/` and `/de/download/`, a `/go/7427ad/en/` page, the press fact sheet and the FAQ (no empty "Coming soon"), and that `apple-app-site-association` still answers 200.
-8. On the owner's word that text sharing has shipped: the Blocked lines in 1c, in all 30 languages, with review. May come after release day.
+8. Done (19 November 2026): the formerly Blocked lines in 1c, in all 30 languages, with review, gated to the Android stage.
 9. Later, its own item: `assetlinks.json` and its guards (2.1), only if Android autofill ships.
 
 Out of scope: the app repo, Play Console, the Medium copies, outreach drafts, a Chrome install prompt, App Links.

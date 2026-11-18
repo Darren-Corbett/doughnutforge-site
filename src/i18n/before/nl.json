@@ -25,5 +25,11 @@
   "technical.visible.count.text": "zichtbaar (het aantal ontvangers, de afzender meegeteld).",
   "technical.limits.sender.label": "Bewijs van wie een item heeft verstuurd.",
   "technical.limits.sender.text": "Doughnut Forge bewijst nog niet wie een item heeft verstuurd.",
-  "technical.limits.visible.label": "Grootte, aantal ontvangers en bestandsnaam."
+  "technical.limits.visible.label": "Grootte, aantal ontvangers en bestandsnaam.",
+  "meta.home.description": "Doughnut Forge: offline bestandsversleuteling voor iPhone, iPad, Mac en pc. Versleutel bestanden en tekst voor wie u kiest. Geen account, geen servers, geen abonnement.",
+  "home.lead": "Doughnut Forge vergrendelt uw bestanden en tekst op uw iPhone, iPad of computer en laat u ze delen met de mensen die u vertrouwt.",
+  "home.what.text": "Doughnut Forge is een app voor offline bestandsversleuteling voor Mac, iPhone, iPad en Windows. De app vergrendelt uw bestanden en tekst op uw eigen apparaat, en u deelt ze alleen met de mensen die u kiest.",
+  "meta.features.description": "Versleutel bestanden en tekst op uw eigen iPhone, iPad of computer, deel ze met wie u vertrouwt en houd ze lang beschermd. Geen account en geen servers.",
+  "features.lead": "Doughnut Forge vergrendelt uw bestanden en tekst op uw iPhone, iPad of computer en laat u ze delen met de mensen die u vertrouwt. Hoe u ze ook verstuurt, alleen zij kunnen ze openen.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

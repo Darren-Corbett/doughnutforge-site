@@ -25,5 +25,11 @@
   "technical.visible.count.text": "มองเห็นได้ (จำนวนผู้รับ โดยนับรวมผู้ส่งด้วย)",
   "technical.limits.sender.label": "การพิสูจน์ว่าใครเป็นผู้ส่งรายการ",
   "technical.limits.sender.text": "Doughnut Forge ยังไม่ได้พิสูจน์ว่าใครเป็นผู้ส่งรายการ",
-  "technical.limits.visible.label": "ขนาด จำนวนผู้รับ และชื่อไฟล์"
+  "technical.limits.visible.label": "ขนาด จำนวนผู้รับ และชื่อไฟล์",
+  "meta.home.description": "Doughnut Forge: เข้ารหัสไฟล์แบบออฟไลน์สำหรับ iPhone, iPad, Mac และ PC เข้ารหัสไฟล์และข้อความสำหรับคนที่คุณเลือก ไม่มีบัญชี ไม่มีเซิร์ฟเวอร์ ไม่มีการสมัครสมาชิก",
+  "home.lead": "Doughnut Forge ล็อกไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณ และให้คุณแชร์กับคนที่คุณไว้ใจได้",
+  "home.what.text": "Doughnut Forge คือแอปเข้ารหัสไฟล์แบบออฟไลน์สำหรับ Mac, iPhone, iPad และ Windows แอปจะล็อกไฟล์และข้อความไว้บนอุปกรณ์ของคุณเอง และคุณแชร์ให้เฉพาะคนที่คุณเลือกเท่านั้น",
+  "meta.features.description": "เข้ารหัสไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณเอง แชร์กับคนที่คุณไว้ใจ และปกป้องไว้ได้ในระยะยาว ไม่มีบัญชีและไม่มีเซิร์ฟเวอร์",
+  "features.lead": "Doughnut Forge ล็อกไฟล์และข้อความบน iPhone, iPad หรือคอมพิวเตอร์ของคุณ และให้คุณแชร์กับคนที่คุณไว้ใจได้ ไม่ว่าคุณจะส่งด้วยวิธีใด มีเพียงพวกเขาเท่านั้นที่เปิดได้",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

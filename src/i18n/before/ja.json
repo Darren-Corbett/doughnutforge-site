@@ -25,5 +25,11 @@
   "technical.visible.count.text": "見えます（送信者を含めた受信者の数）。",
   "technical.limits.sender.label": "アイテムを誰が送ったかの証明。",
   "technical.limits.sender.text": "Doughnut Forgeは、アイテムを誰が送ったかをまだ証明しません。",
-  "technical.limits.visible.label": "サイズ、受信者の数、ファイル名。"
+  "technical.limits.visible.label": "サイズ、受信者の数、ファイル名。",
+  "meta.home.description": "Doughnut Forge：iPhone、iPad、Mac、PC向けオフラインファイル暗号化。ファイルとテキストを、あなたが選んだ相手に向けて暗号化できます。アカウントなし、サーバーなし、サブスクなし。",
+  "home.lead": "Doughnut Forgeは、iPhone、iPad、コンピュータ上のファイルとテキストをロックし、信頼できる相手と共有できるようにします。",
+  "home.what.text": "Doughnut Forgeは、Mac、iPhone、iPad、Windows向けのオフラインファイル暗号化アプリです。ファイルとテキストを自分のデバイス上でロックし、共有するのは自分が選んだ相手だけです。",
+  "meta.features.description": "自分のiPhone、iPad、コンピュータ上でファイルとテキストを暗号化し、信頼できる相手と共有して、長く保護できます。アカウントもサーバーも不要です。",
+  "features.lead": "Doughnut Forgeは、iPhone、iPad、コンピュータ上のファイルとテキストをロックし、信頼できる相手と共有できるようにします。どんな方法で送っても、開けるのはその相手だけです。",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

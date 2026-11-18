@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: offline fájltitkosítás iPhone-ra, iPadre, Androidra, Macre és Windowsra",
-  "meta.home.description": "Doughnut Forge: offline fájltitkosítás iPhone-ra, iPadre, Macre és PC-re. Titkosíts fájlokat és szöveget azoknak, akiket választasz. Fiók, szerver és előfizetés nélkül.",
+  "meta.home.description": "Doughnut Forge: offline fájltitkosítás iPhone-ra, iPadre, Androidra, Macre és PC-re. Titkosíts fájlokat és szöveget azoknak, akiket választasz. Fiók, szerver és előfizetés nélkül.",
   "nav.label": "Főmenü",
   "nav.features": "Funkciók",
   "nav.pricing": "Árak",
@@ -20,10 +20,10 @@ export default {
   "skip": "Ugrás a tartalomra",
   "home.summary": "Offline fájltitkosítás iPhone-ra, iPadre, Androidra, Macre és Windowsra.",
   "home.tagline": "Csak azok nyithatják meg őket, akiket te választasz.",
-  "home.lead": "A Doughnut Forge lezárja a fájljaidat és szövegeidet az iPhone-odon, iPadeden vagy a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol.",
+  "home.lead": "A Doughnut Forge lezárja a fájljaidat és szövegeidet az iPhone-odon, iPadeden, Androidodon vagy a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol.",
   "home.what.title": "Mi az a Doughnut Forge?",
   "home.what.text":
-    "A Doughnut Forge offline fájltitkosító alkalmazás Macre, iPhone-ra, iPadre és Windowsra. Lezárja a fájljaidat és szövegeidet a saját eszközödön, és csak azokkal osztod meg őket, akiket te választasz.",
+    "A Doughnut Forge offline fájltitkosító alkalmazás Macre, iPhone-ra, iPadre, Androidra és Windowsra. Lezárja a fájljaidat és szövegeidet a saját eszközödön, és csak azokkal osztod meg őket, akiket te választasz.",
   "home.cta.primary": "Doughnut Forge letöltése",
   "home.cta.secondary": "Nézd meg, mit tud",
   "home.specimen.stranger": "Amit bárki más lát",
@@ -62,9 +62,9 @@ export default {
   "go.tap.googlePlay": "Koppints lent a Google Play megnyitásához.",
   "go.offline": "Internet nélkül is működik.",
   "meta.features.title": "Funkciók: fájlok, mappák és szöveg titkosítása fiók nélkül | Doughnut Forge",
-  "meta.features.description": "Titkosíts fájlokat és szöveget a saját iPhone-odon, iPadeden vagy gépeden, oszd meg őket azokkal, akikben megbízol, és védd őket hosszú távon. Fiók és szerverek nélkül.",
+  "meta.features.description": "Titkosíts fájlokat és szöveget a saját iPhone-odon, iPadeden, Androidodon vagy gépeden, oszd meg őket azokkal, akikben megbízol, és védd őket hosszú távon. Fiók és szerverek nélkül.",
   "features.title": "Minden, amit a Doughnut Forge tud",
-  "features.lead": "A Doughnut Forge lezárja a fájljaidat és szövegeidet az iPhone-odon, iPadeden vagy a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol. Bárhogyan küldöd is el őket, csak ők nyithatják meg.",
+  "features.lead": "A Doughnut Forge lezárja a fájljaidat és szövegeidet az iPhone-odon, iPadeden, Androidodon vagy a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol. Bárhogyan küldöd is el őket, csak ők nyithatják meg.",
   "features.identity.more":
     "Az identitásod csak ezen az eszközön van tárolva, és a jelszavad védi. Tartsd biztonságban a 24 helyreállítási szavadat: csak ezekkel állíthatod helyre az identitásodat, vagy állíthatsz be új jelszót, ha elfelejtetted a régit.",
   "features.private.title": "Privát a kezdetektől",

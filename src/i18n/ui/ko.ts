@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: iPhone, iPad, Android, Mac, Windows용 오프라인 파일 암호화",
-  "meta.home.description": "Doughnut Forge: iPhone, iPad, Mac, PC용 오프라인 파일 암호화. 내가 선택한 사람을 위해 파일과 텍스트를 암호화하세요. 계정도, 서버도, 구독도 없습니다.",
+  "meta.home.description": "Doughnut Forge: iPhone, iPad, Android, Mac, PC용 오프라인 파일 암호화. 내가 선택한 사람을 위해 파일과 텍스트를 암호화하세요. 계정도, 서버도, 구독도 없습니다.",
   "nav.label": "주 메뉴",
   "nav.features": "기능",
   "nav.pricing": "가격",
@@ -20,10 +20,10 @@ export default {
   "skip": "본문으로 건너뛰기",
   "home.summary": "iPhone, iPad, Android, Mac, Windows용 오프라인 파일 암호화.",
   "home.tagline": "내가 선택한 사람만 열 수 있습니다.",
-  "home.lead": "Doughnut Forge는 iPhone, iPad 또는 컴퓨터의 파일과 텍스트를 잠그고 신뢰하는 사람과 공유할 수 있게 해 줍니다.",
+  "home.lead": "Doughnut Forge는 iPhone, iPad, Android 또는 컴퓨터의 파일과 텍스트를 잠그고 신뢰하는 사람과 공유할 수 있게 해 줍니다.",
   "home.what.title": "Doughnut Forge란?",
   "home.what.text":
-    "Doughnut Forge는 Mac, iPhone, iPad, Windows용 오프라인 파일 암호화 앱입니다. 파일과 텍스트를 내 기기에서 잠그고, 내가 선택한 사람과만 공유합니다.",
+    "Doughnut Forge는 Mac, iPhone, iPad, Android, Windows용 오프라인 파일 암호화 앱입니다. 파일과 텍스트를 내 기기에서 잠그고, 내가 선택한 사람과만 공유합니다.",
   "home.cta.primary": "Doughnut Forge 받기",
   "home.cta.secondary": "기능 살펴보기",
   "home.specimen.stranger": "다른 사람에게 보이는 내용",
@@ -59,9 +59,9 @@ export default {
   "go.tap.googlePlay": "아래를 탭하여 Google Play를 여세요.",
   "go.offline": "인터넷 없이도 작동합니다.",
   "meta.features.title": "기능: 계정 없이 파일, 폴더, 텍스트 암호화 | Doughnut Forge",
-  "meta.features.description": "내 iPhone, iPad 또는 컴퓨터에서 파일과 텍스트를 암호화하고, 신뢰하는 사람과 공유하고, 오랫동안 보호하세요. 계정도 서버도 없습니다.",
+  "meta.features.description": "내 iPhone, iPad, Android 또는 컴퓨터에서 파일과 텍스트를 암호화하고, 신뢰하는 사람과 공유하고, 오랫동안 보호하세요. 계정도 서버도 없습니다.",
   "features.title": "Doughnut Forge의 모든 기능",
-  "features.lead": "Doughnut Forge는 iPhone, iPad 또는 컴퓨터의 파일과 텍스트를 잠그고 신뢰하는 사람과 공유할 수 있게 해 줍니다. 어떤 방법으로 보내든 그 사람만 열 수 있습니다.",
+  "features.lead": "Doughnut Forge는 iPhone, iPad, Android 또는 컴퓨터의 파일과 텍스트를 잠그고 신뢰하는 사람과 공유할 수 있게 해 줍니다. 어떤 방법으로 보내든 그 사람만 열 수 있습니다.",
   "features.identity.more":
     "신원은 이 기기에만 저장되며 비밀번호로 보호됩니다. 24개의 복구 단어를 안전하게 보관하세요. 신원을 복원하거나 잊어버린 비밀번호를 재설정할 수 있는 유일한 방법입니다.",
   "features.private.title": "처음부터 비공개로",

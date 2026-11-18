@@ -25,5 +25,11 @@
   "technical.visible.count.text": "visible (el número de destinatarios, contando al remitente).",
   "technical.limits.sender.label": "La prueba de quién envió un elemento.",
   "technical.limits.sender.text": "Doughnut Forge todavía no demuestra quién envió un elemento.",
-  "technical.limits.visible.label": "El tamaño, el número de destinatarios y el nombre del archivo."
+  "technical.limits.visible.label": "El tamaño, el número de destinatarios y el nombre del archivo.",
+  "meta.home.description": "Doughnut Forge: cifrado de archivos sin conexión para iPhone, iPad, Mac y PC. Cifra archivos y texto para quien elijas. Sin cuenta, sin servidores, sin suscripción.",
+  "home.lead": "Doughnut Forge protege tus archivos y texto en tu iPhone, iPad o computadora y te permite compartirlos con las personas en las que confías.",
+  "home.what.text": "Doughnut Forge es una app de cifrado de archivos sin conexión para Mac, iPhone, iPad y Windows. Protege tus archivos y texto en tu propio dispositivo, y solo los compartes con las personas que elijas.",
+  "meta.features.description": "Cifra archivos y texto en tu propio iPhone, iPad o computadora, compártelos con gente de confianza y mantenlos protegidos a largo plazo. Sin cuenta y sin servidores.",
+  "features.lead": "Doughnut Forge protege tus archivos y texto en tu iPhone, iPad o computadora y te permite compartirlos con las personas en las que confías. Sin importar cómo los envíes, solo ellas podrán abrirlos.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

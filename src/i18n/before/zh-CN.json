@@ -25,5 +25,11 @@
   "technical.visible.count.text": "可见（收件人的数量，包括发件人）。",
   "technical.limits.sender.label": "证明某项内容由谁发送。",
   "technical.limits.sender.text": "Doughnut Forge 目前尚不能证明某项内容由谁发送。",
-  "technical.limits.visible.label": "大小、收件人数量和文件名。"
+  "technical.limits.visible.label": "大小、收件人数量和文件名。",
+  "meta.home.description": "Doughnut Forge：适用于 iPhone、iPad、Mac 和 PC 的离线文件加密。为您选择的人加密文件和文本。无需账户，没有服务器，无需订阅。",
+  "home.lead": "Doughnut Forge 在您的 iPhone、iPad 或电脑上锁定文件和文本，并让您与信任的人分享。",
+  "home.what.text": "Doughnut Forge 是一款适用于 Mac、iPhone、iPad 和 Windows 的离线文件加密应用。它在您自己的设备上锁定文件和文本，您只与自己选择的人分享。",
+  "meta.features.description": "在自己的 iPhone、iPad 或电脑上加密文件和文本，与您信任的人分享，并长期保护它们。无需账户，没有服务器。",
+  "features.lead": "Doughnut Forge 在您的 iPhone、iPad 或电脑上锁定文件和文本，并让您与信任的人分享。无论以何种方式发送，只有他们才能打开。",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

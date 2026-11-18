@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: iPhone, iPad, Android, Mac ve Windows için çevrimdışı dosya şifreleme",
-  "meta.home.description": "Doughnut Forge: iPhone, iPad, Mac ve PC için çevrimdışı dosya şifreleme. Dosya ve metinleri seçtiğiniz kişiler için şifreleyin. Hesap, sunucu ve abonelik yok.",
+  "meta.home.description": "Doughnut Forge: iPhone, iPad, Android, Mac ve PC için çevrimdışı dosya şifreleme. Dosya ve metinleri seçtiğiniz kişiler için şifreleyin. Hesap, sunucu ve abonelik yok.",
   "nav.label": "Ana menü",
   "nav.features": "Özellikler",
   "nav.pricing": "Fiyatlar",
@@ -20,10 +20,10 @@ export default {
   "skip": "İçeriğe geç",
   "home.summary": "iPhone, iPad, Android, Mac ve Windows için çevrimdışı dosya şifreleme.",
   "home.tagline": "Onları yalnızca seçtiğiniz kişiler açabilir.",
-  "home.lead": "Doughnut Forge, iPhone, iPad veya bilgisayarınızdaki dosyaları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar.",
+  "home.lead": "Doughnut Forge, iPhone, iPad, Android veya bilgisayarınızdaki dosyaları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar.",
   "home.what.title": "Doughnut Forge nedir?",
   "home.what.text":
-    "Doughnut Forge; Mac, iPhone, iPad ve Windows için çevrimdışı bir dosya şifreleme uygulamasıdır. Dosyalarınızı ve metinlerinizi kendi cihazınızda kilitler ve bunları yalnızca seçtiğiniz kişilerle paylaşırsınız.",
+    "Doughnut Forge; Mac, iPhone, iPad, Android ve Windows için çevrimdışı bir dosya şifreleme uygulamasıdır. Dosyalarınızı ve metinlerinizi kendi cihazınızda kilitler ve bunları yalnızca seçtiğiniz kişilerle paylaşırsınız.",
   "home.cta.primary": "Doughnut Forge'u edinin",
   "home.cta.secondary": "Neler yaptığını görün",
   "home.specimen.stranger": "Başka herkesin gördüğü",
@@ -59,9 +59,9 @@ export default {
   "go.tap.googlePlay": "Google Play'i açmak için aşağıya dokunun.",
   "go.offline": "İnternet olmadan çalışır.",
   "meta.features.title": "Özellikler: hesap olmadan dosya, klasör ve metin şifreleme | Doughnut Forge",
-  "meta.features.description": "Kendi iPhone, iPad veya bilgisayarınızda dosya ve metinleri şifreleyin, güvendiğiniz kişilerle paylaşın ve uzun vadede korunmalarını sağlayın. Hesap yok, sunucu yok.",
+  "meta.features.description": "Kendi iPhone, iPad, Android veya bilgisayarınızda dosya ve metinleri şifreleyin, güvendiğiniz kişilerle paylaşın ve uzun vadede korunmalarını sağlayın. Hesap yok, sunucu yok.",
   "features.title": "Doughnut Forge'un yaptığı her şey",
-  "features.lead": "Doughnut Forge, iPhone, iPad veya bilgisayarınızdaki dosyaları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar. Nasıl gönderirseniz gönderin, onları yalnızca o kişiler açabilir.",
+  "features.lead": "Doughnut Forge, iPhone, iPad, Android veya bilgisayarınızdaki dosyaları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar. Nasıl gönderirseniz gönderin, onları yalnızca o kişiler açabilir.",
   "features.identity.more":
     "Kimliğiniz yalnızca bu cihazda saklanır ve parolanızla korunur. 24 kurtarma kelimenizi güvende tutun: kimliğinizi geri yüklemenin veya unuttuğunuz bir parolayı sıfırlamanın tek yolu bunlardır.",
   "features.private.title": "En baştan gizli",

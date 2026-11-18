@@ -25,5 +25,11 @@
   "technical.visible.count.text": "terlihat (jumlah penerima, termasuk pengirim).",
   "technical.limits.sender.label": "Bukti siapa yang mengirim item.",
   "technical.limits.sender.text": "Doughnut Forge belum membuktikan siapa yang mengirim item.",
-  "technical.limits.visible.label": "Ukuran, jumlah penerima, dan nama file."
+  "technical.limits.visible.label": "Ukuran, jumlah penerima, dan nama file.",
+  "meta.home.description": "Doughnut Forge: enkripsi file offline untuk iPhone, iPad, Mac, dan PC. Enkripsi file dan teks untuk orang yang Anda pilih. Tanpa akun, tanpa server, tanpa langganan.",
+  "home.lead": "Doughnut Forge mengunci file dan teks di iPhone, iPad, atau komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya.",
+  "home.what.text": "Doughnut Forge adalah aplikasi enkripsi file offline untuk Mac, iPhone, iPad, dan Windows. Aplikasi ini mengunci file dan teks di perangkat Anda sendiri, dan Anda hanya membagikannya kepada orang yang Anda pilih.",
+  "meta.features.description": "Enkripsi file dan teks di iPhone, iPad, atau komputer Anda, bagikan kepada orang tepercaya, dan jaga agar tetap terlindungi dalam jangka panjang. Tanpa akun, tanpa server.",
+  "features.lead": "Doughnut Forge mengunci file dan teks di iPhone, iPad, atau komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya. Apa pun cara Anda mengirimnya, hanya mereka yang dapat membukanya.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

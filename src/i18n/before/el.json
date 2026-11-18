@@ -25,5 +25,11 @@
   "technical.visible.count.text": "ορατό (ο αριθμός των παραληπτών, μαζί με τον αποστολέα).",
   "technical.limits.sender.label": "Απόδειξη του ποιος έστειλε ένα στοιχείο.",
   "technical.limits.sender.text": "Το Doughnut Forge δεν αποδεικνύει ακόμη ποιος έστειλε ένα στοιχείο.",
-  "technical.limits.visible.label": "Μέγεθος, αριθμός παραληπτών και όνομα αρχείου."
+  "technical.limits.visible.label": "Μέγεθος, αριθμός παραληπτών και όνομα αρχείου.",
+  "meta.home.description": "Doughnut Forge: offline κρυπτογράφηση αρχείων για iPhone, iPad, Mac και PC. Κρυπτογραφήστε αρχεία και κείμενο για όσους επιλέξετε. Χωρίς λογαριασμό, διακομιστές ή συνδρομή.",
+  "home.lead": "Το Doughnut Forge κλειδώνει τα αρχεία και το κείμενό σας στο iPhone, το iPad ή τον υπολογιστή σας και σας επιτρέπει να τα μοιράζεστε με όσους εμπιστεύεστε.",
+  "home.what.text": "Το Doughnut Forge είναι μια εφαρμογή offline κρυπτογράφησης αρχείων για Mac, iPhone, iPad και Windows. Κλειδώνει τα αρχεία και το κείμενό σας στη δική σας συσκευή, και τα μοιράζεστε μόνο με όσους επιλέγετε.",
+  "meta.features.description": "Κρυπτογραφήστε αρχεία και κείμενο στο iPhone, το iPad ή τον υπολογιστή σας, μοιραστείτε τα με όσους εμπιστεύεστε και προστατέψτε τα για χρόνια. Χωρίς λογαριασμό και διακομιστές.",
+  "features.lead": "Το Doughnut Forge κλειδώνει τα αρχεία και το κείμενό σας στο iPhone, το iPad ή τον υπολογιστή σας και σας επιτρέπει να τα μοιράζεστε με όσους εμπιστεύεστε. Όπως κι αν τα στείλετε, μόνο εκείνοι μπορούν να τα ανοίξουν.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

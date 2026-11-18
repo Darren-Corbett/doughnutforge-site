@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: criptografia de arquivos offline para iPhone, iPad, Android, Mac e Windows",
-  "meta.home.description": "Doughnut Forge: criptografia de arquivos offline para iPhone, iPad, Mac e PC. Criptografe arquivos e textos para quem você escolher. Sem conta, servidores ou assinatura.",
+  "meta.home.description": "Doughnut Forge: criptografia de arquivos offline para iPhone, iPad, Android, Mac e PC. Criptografe arquivos e textos para quem você escolher. Sem conta, servidores ou assinatura.",
   "nav.label": "Principal",
   "nav.features": "Recursos",
   "nav.pricing": "Preços",
@@ -20,10 +20,10 @@ export default {
   "skip": "Pular para o conteúdo",
   "home.summary": "Criptografia de arquivos offline para iPhone, iPad, Android, Mac e Windows.",
   "home.tagline": "Só as pessoas que você escolher podem abri-los.",
-  "home.lead": "Doughnut Forge protege seus arquivos e textos no seu iPhone, iPad ou computador e permite compartilhá-los com as pessoas em quem você confia.",
+  "home.lead": "Doughnut Forge protege seus arquivos e textos no seu iPhone, iPad, Android ou computador e permite compartilhá-los com as pessoas em quem você confia.",
   "home.what.title": "O que é o Doughnut Forge?",
   "home.what.text":
-    "O Doughnut Forge é um aplicativo de criptografia offline de arquivos para Mac, iPhone, iPad e Windows. Ele protege seus arquivos e textos no seu próprio dispositivo, e você os compartilha só com as pessoas que escolher.",
+    "O Doughnut Forge é um aplicativo de criptografia offline de arquivos para Mac, iPhone, iPad, Android e Windows. Ele protege seus arquivos e textos no seu próprio dispositivo, e você os compartilha só com as pessoas que escolher.",
   "home.cta.primary": "Obtenha o Doughnut Forge",
   "home.cta.secondary": "Veja o que ele faz",
   "home.specimen.stranger": "O que qualquer outra pessoa vê",
@@ -57,9 +57,9 @@ export default {
   "go.tap.googlePlay": "Toque abaixo para abrir o Google Play.",
   "go.offline": "Funciona sem internet.",
   "meta.features.title": "Recursos: criptografe arquivos, pastas e textos sem conta | Doughnut Forge",
-  "meta.features.description": "Criptografe arquivos e textos no seu iPhone, iPad ou computador, compartilhe com quem você confia e mantenha tudo protegido a longo prazo. Sem conta e sem servidores.",
+  "meta.features.description": "Criptografe arquivos e textos no seu iPhone, iPad, Android ou computador, compartilhe com quem você confia e mantenha tudo protegido a longo prazo. Sem conta e sem servidores.",
   "features.title": "Tudo o que o Doughnut Forge faz",
-  "features.lead": "Doughnut Forge protege seus arquivos e textos no seu iPhone, iPad ou computador e permite compartilhá-los com as pessoas em quem você confia. Não importa como você os envie, só elas podem abri-los.",
+  "features.lead": "Doughnut Forge protege seus arquivos e textos no seu iPhone, iPad, Android ou computador e permite compartilhá-los com as pessoas em quem você confia. Não importa como você os envie, só elas podem abri-los.",
   "features.identity.more": "Sua identidade é armazenada apenas neste dispositivo e protegida por sua senha. Guarde bem suas 24 palavras de recuperação: elas são a única maneira de restaurar sua identidade ou redefinir uma senha esquecida.",
   "features.private.title": "Privado desde o início",
   "features.offline.title": "Funciona sem internet",

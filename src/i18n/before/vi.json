@@ -25,5 +25,11 @@
   "technical.visible.count.text": "thấy được (số người nhận, tính cả người gửi).",
   "technical.limits.sender.label": "Bằng chứng ai đã gửi một mục.",
   "technical.limits.sender.text": "Doughnut Forge chưa chứng minh ai đã gửi một mục.",
-  "technical.limits.visible.label": "Kích thước, số người nhận và tên tệp."
+  "technical.limits.visible.label": "Kích thước, số người nhận và tên tệp.",
+  "meta.home.description": "Doughnut Forge: mã hóa tệp ngoại tuyến cho iPhone, iPad, Mac và PC. Mã hóa tệp và văn bản cho những người bạn chọn. Không tài khoản, không máy chủ, không thuê bao.",
+  "home.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng.",
+  "home.what.text": "Doughnut Forge là ứng dụng mã hóa tệp ngoại tuyến cho Mac, iPhone, iPad và Windows. Ứng dụng khóa tệp và văn bản ngay trên thiết bị của bạn, và bạn chỉ chia sẻ chúng với những người bạn chọn.",
+  "meta.features.description": "Mã hóa tệp và văn bản ngay trên iPhone, iPad hoặc máy tính của bạn, chia sẻ với người bạn tin tưởng và giữ chúng được bảo vệ lâu dài. Không tài khoản, không máy chủ.",
+  "features.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng. Dù bạn gửi bằng cách nào, chỉ họ mới mở được.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

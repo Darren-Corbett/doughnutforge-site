@@ -25,5 +25,11 @@
   "technical.visible.count.text": "보입니다(보낸 사람을 포함한 수신자 수).",
   "technical.limits.sender.label": "항목을 누가 보냈는지에 대한 증명.",
   "technical.limits.sender.text": "Doughnut Forge는 아직 항목을 누가 보냈는지 증명하지 않습니다.",
-  "technical.limits.visible.label": "크기, 수신자 수, 파일 이름."
+  "technical.limits.visible.label": "크기, 수신자 수, 파일 이름.",
+  "meta.home.description": "Doughnut Forge: iPhone, iPad, Mac, PC용 오프라인 파일 암호화. 내가 선택한 사람을 위해 파일과 텍스트를 암호화하세요. 계정도, 서버도, 구독도 없습니다.",
+  "home.lead": "Doughnut Forge는 iPhone, iPad 또는 컴퓨터의 파일과 텍스트를 잠그고 신뢰하는 사람과 공유할 수 있게 해 줍니다.",
+  "home.what.text": "Doughnut Forge는 Mac, iPhone, iPad, Windows용 오프라인 파일 암호화 앱입니다. 파일과 텍스트를 내 기기에서 잠그고, 내가 선택한 사람과만 공유합니다.",
+  "meta.features.description": "내 iPhone, iPad 또는 컴퓨터에서 파일과 텍스트를 암호화하고, 신뢰하는 사람과 공유하고, 오랫동안 보호하세요. 계정도 서버도 없습니다.",
+  "features.lead": "Doughnut Forge는 iPhone, iPad 또는 컴퓨터의 파일과 텍스트를 잠그고 신뢰하는 사람과 공유할 수 있게 해 줍니다. 어떤 방법으로 보내든 그 사람만 열 수 있습니다.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

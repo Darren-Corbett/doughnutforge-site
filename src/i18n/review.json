@@ -346,6 +346,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -712,6 +719,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -995,6 +1009,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -1330,6 +1351,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -1684,6 +1712,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1986,6 +2021,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -2297,6 +2339,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -2686,6 +2735,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3001,6 +3057,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -3346,6 +3409,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -3744,6 +3814,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md). Note kept: \"ve vašem … Androidu\" can read slightly like the system; the fix would add \"phone\", which the owner's \"just Android\" rule excludes.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -4120,6 +4197,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md); note applied: \"Google Playen\" as elsewhere in the file.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -4519,6 +4603,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -4894,6 +4985,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md). Note: \"на своём … Android\" is a little informal; matches the English.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -5258,6 +5356,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -5620,6 +5725,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md). Note: \"на своєму … Android\" is a little informal; matches the English.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -5940,6 +6052,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -6280,6 +6399,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -6658,6 +6784,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -6976,6 +7109,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -7303,6 +7443,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -7650,6 +7797,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -8028,6 +8182,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md); note applied: \"이상과\" in place of \", 그리고\".",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -8354,6 +8515,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -8696,6 +8864,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -9030,6 +9205,13 @@
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -9354,6 +9536,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -9721,6 +9910,13 @@
         "key": "download.requires.android",
         "severity": "note",
         "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "meta.home.description, home.lead, home.what.text, meta.features.description, features.lead",
+        "severity": "note",
+        "issue": "\"Android\" added to the platform lists from the Android stage (owner, 19 November 2026: text sharing shipped in Android 3.0.0). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-android-sharing-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }

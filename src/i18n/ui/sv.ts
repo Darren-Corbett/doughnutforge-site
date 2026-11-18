@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: offlinekryptering av filer för iPhone, iPad, Android, Mac och Windows",
-  "meta.home.description": "Doughnut Forge: offlinekryptering av filer för iPhone, iPad, Mac och pc. Kryptera filer och text för dem du väljer. Inget konto, inga servrar, ingen prenumeration.",
+  "meta.home.description": "Doughnut Forge: offlinekryptering av filer för iPhone, iPad, Android, Mac och pc. Kryptera filer och text för dem du väljer. Inget konto, inga servrar, ingen prenumeration.",
   "nav.label": "Huvudmeny",
   "nav.features": "Funktioner",
   "nav.pricing": "Priser",
@@ -20,10 +20,10 @@ export default {
   "skip": "Hoppa till innehållet",
   "home.summary": "Offlinekryptering av filer för iPhone, iPad, Android, Mac och Windows.",
   "home.tagline": "Bara de du väljer kan öppna dem.",
-  "home.lead": "Doughnut Forge låser dina filer och texter på din iPhone, iPad eller dator och låter dig dela dem med dem du litar på.",
+  "home.lead": "Doughnut Forge låser dina filer och texter på din iPhone, iPad, Android eller dator och låter dig dela dem med dem du litar på.",
   "home.what.title": "Vad är Doughnut Forge?",
   "home.what.text":
-    "Doughnut Forge är en app för offlinekryptering av filer för Mac, iPhone, iPad och Windows. Den låser dina filer och texter på din egen enhet, och du delar dem bara med dem du väljer.",
+    "Doughnut Forge är en app för offlinekryptering av filer för Mac, iPhone, iPad, Android och Windows. Den låser dina filer och texter på din egen enhet, och du delar dem bara med dem du väljer.",
   "home.cta.primary": "Skaffa Doughnut Forge",
   "home.cta.secondary": "Se vad appen gör",
   "home.specimen.stranger": "Det alla andra ser",
@@ -60,9 +60,9 @@ export default {
   "go.tap.googlePlay": "Tryck nedan för att öppna Google Play.",
   "go.offline": "Fungerar utan internet.",
   "meta.features.title": "Funktioner: kryptera filer, mappar och text utan konto | Doughnut Forge",
-  "meta.features.description": "Kryptera filer och text på din egen iPhone, iPad eller dator, dela dem med dem du litar på och håll dem skyddade på lång sikt. Inget konto och inga servrar.",
+  "meta.features.description": "Kryptera filer och text på din egen iPhone, iPad, Android eller dator, dela dem med dem du litar på och håll dem skyddade på lång sikt. Inget konto och inga servrar.",
   "features.title": "Allt som Doughnut Forge gör",
-  "features.lead": "Doughnut Forge låser dina filer och texter på din iPhone, iPad eller dator och låter dig dela dem med dem du litar på. Hur du än skickar dem kan bara de öppna dem.",
+  "features.lead": "Doughnut Forge låser dina filer och texter på din iPhone, iPad, Android eller dator och låter dig dela dem med dem du litar på. Hur du än skickar dem kan bara de öppna dem.",
   "features.identity.more":
     "Din identitet lagras bara på den här enheten och skyddas av ditt lösenord. Förvara dina 24 återställningsord säkert: de är det enda sättet att återställa din identitet eller ett glömt lösenord.",
   "features.private.title": "Privat från början",

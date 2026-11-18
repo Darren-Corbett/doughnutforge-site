@@ -25,5 +25,11 @@
   "technical.visible.count.text": "видно (число получателей, включая отправителя).",
   "technical.limits.sender.label": "Подтверждение того, кто отправил элемент.",
   "technical.limits.sender.text": "Doughnut Forge пока не подтверждает, кто отправил элемент.",
-  "technical.limits.visible.label": "Размер, число получателей и имя файла."
+  "technical.limits.visible.label": "Размер, число получателей и имя файла.",
+  "meta.home.description": "Doughnut Forge: офлайн-шифрование файлов для iPhone, iPad, Mac и ПК. Шифруйте файлы и текст для тех, кого вы выберете. Без аккаунта, серверов и подписки.",
+  "home.lead": "Doughnut Forge защищает ваши файлы и текст на iPhone, iPad или компьютере и позволяет делиться ими с теми, кому вы доверяете.",
+  "home.what.text": "Doughnut Forge — приложение для офлайн-шифрования файлов на Mac, iPhone, iPad и Windows. Оно защищает ваши файлы и текст на вашем собственном устройстве, а делитесь вы ими только с теми, кого выберете сами.",
+  "meta.features.description": "Шифруйте файлы и текст на своём iPhone, iPad или компьютере, делитесь ими с теми, кому доверяете, и сохраняйте их защиту надолго. Без аккаунта и без серверов.",
+  "features.lead": "Doughnut Forge защищает ваши файлы и текст на iPhone, iPad или компьютере и позволяет делиться ими с теми, кому вы доверяете. Как бы вы их ни отправили, открыть их смогут только они.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

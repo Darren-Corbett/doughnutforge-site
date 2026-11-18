@@ -25,5 +25,11 @@
   "technical.visible.count.text": "visibile (il numero di destinatari, mittente compreso).",
   "technical.limits.sender.label": "La prova di chi ha inviato un elemento.",
   "technical.limits.sender.text": "Doughnut Forge non dimostra ancora chi ha inviato un elemento.",
-  "technical.limits.visible.label": "Dimensione, numero di destinatari e nome del file."
+  "technical.limits.visible.label": "Dimensione, numero di destinatari e nome del file.",
+  "meta.home.description": "Doughnut Forge: crittografia offline dei file per iPhone, iPad, Mac e PC. Crittografa file e testo per le persone che scegli. Niente account, server o abbonamento.",
+  "home.lead": "Doughnut Forge blocca file e testo sul tuo iPhone, iPad o computer e ti permette di condividerli con le persone di cui ti fidi.",
+  "home.what.text": "Doughnut Forge è un'app di crittografia offline dei file per Mac, iPhone, iPad e Windows. Blocca i tuoi file e il tuo testo sul tuo dispositivo, e li condividi solo con le persone che scegli.",
+  "meta.features.description": "Crittografa file e testo sul tuo iPhone, iPad o computer, condividili con le persone di cui ti fidi e mantienili protetti nel tempo. Niente account e niente server.",
+  "features.lead": "Doughnut Forge blocca file e testo sul tuo iPhone, iPad o computer e ti permette di condividerli con le persone di cui ti fidi. Comunque tu li invii, solo loro possono aprirli.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

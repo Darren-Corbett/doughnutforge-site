@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge：适用于 iPhone、iPad、Android、Mac 和 Windows 的离线文件加密",
-  "meta.home.description": "Doughnut Forge：适用于 iPhone、iPad、Mac 和 PC 的离线文件加密。为您选择的人加密文件和文本。无需账户，没有服务器，无需订阅。",
+  "meta.home.description": "Doughnut Forge：适用于 iPhone、iPad、Android、Mac 和 PC 的离线文件加密。为您选择的人加密文件和文本。无需账户，没有服务器，无需订阅。",
   "nav.label": "主菜单",
   "nav.features": "功能",
   "nav.pricing": "价格",
@@ -20,10 +20,10 @@ export default {
   "skip": "跳到主要内容",
   "home.summary": "适用于 iPhone、iPad、Android、Mac 和 Windows 的离线文件加密。",
   "home.tagline": "只有您选择的人才能打开。",
-  "home.lead": "Doughnut Forge 在您的 iPhone、iPad 或电脑上锁定文件和文本，并让您与信任的人分享。",
+  "home.lead": "Doughnut Forge 在您的 iPhone、iPad、Android 或电脑上锁定文件和文本，并让您与信任的人分享。",
   "home.what.title": "Doughnut Forge 是什么？",
   "home.what.text":
-    "Doughnut Forge 是一款适用于 Mac、iPhone、iPad 和 Windows 的离线文件加密应用。它在您自己的设备上锁定文件和文本，您只与自己选择的人分享。",
+    "Doughnut Forge 是一款适用于 Mac、iPhone、iPad、Android 和 Windows 的离线文件加密应用。它在您自己的设备上锁定文件和文本，您只与自己选择的人分享。",
   "home.cta.primary": "获取 Doughnut Forge",
   "home.cta.secondary": "了解它能做什么",
   "home.specimen.stranger": "其他任何人看到的",
@@ -57,9 +57,9 @@ export default {
   "go.tap.googlePlay": "轻点下方以打开 Google Play。",
   "go.offline": "无需联网即可使用。",
   "meta.features.title": "功能：无需账户即可加密文件、文件夹和文本 | Doughnut Forge",
-  "meta.features.description": "在自己的 iPhone、iPad 或电脑上加密文件和文本，与您信任的人分享，并长期保护它们。无需账户，没有服务器。",
+  "meta.features.description": "在自己的 iPhone、iPad、Android 或电脑上加密文件和文本，与您信任的人分享，并长期保护它们。无需账户，没有服务器。",
   "features.title": "Doughnut Forge 的全部功能",
-  "features.lead": "Doughnut Forge 在您的 iPhone、iPad 或电脑上锁定文件和文本，并让您与信任的人分享。无论以何种方式发送，只有他们才能打开。",
+  "features.lead": "Doughnut Forge 在您的 iPhone、iPad、Android 或电脑上锁定文件和文本，并让您与信任的人分享。无论以何种方式发送，只有他们才能打开。",
   "features.identity.more": "您的身份仅存储在此设备上，并受您的密码保护。请妥善保管您的 24 个恢复单词：这是恢复身份或重置忘记的密码的唯一方法。",
   "features.private.title": "从一开始就保护隐私",
   "features.offline.title": "无需联网即可使用",

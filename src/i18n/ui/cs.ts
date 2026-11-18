@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: šifrování souborů offline pro iPhone, iPad, Android, Mac a Windows",
-  "meta.home.description": "Doughnut Forge: šifrování souborů offline pro iPhone, iPad, Mac a PC. Šifrujte soubory a text pro lidi, které si vyberete. Bez účtu, serverů a předplatného.",
+  "meta.home.description": "Doughnut Forge: šifrování souborů offline pro iPhone, iPad, Android, Mac a PC. Šifrujte soubory a text pro lidi, které si vyberete. Bez účtu, serverů a předplatného.",
   "nav.label": "Hlavní nabídka",
   "nav.features": "Funkce",
   "nav.pricing": "Ceník",
@@ -20,10 +20,10 @@ export default {
   "skip": "Přejít na obsah",
   "home.summary": "Šifrování souborů offline pro iPhone, iPad, Android, Mac a Windows.",
   "home.tagline": "Otevřít je mohou jen lidé, které si vyberete.",
-  "home.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete.",
+  "home.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu, Androidu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete.",
   "home.what.title": "Co je Doughnut Forge?",
   "home.what.text":
-    "Doughnut Forge je aplikace pro šifrování souborů offline pro Mac, iPhone, iPad a Windows. Zamyká vaše soubory a text ve vašem vlastním zařízení a sdílíte je jen s lidmi, které si vyberete.",
+    "Doughnut Forge je aplikace pro šifrování souborů offline pro Mac, iPhone, iPad, Android a Windows. Zamyká vaše soubory a text ve vašem vlastním zařízení a sdílíte je jen s lidmi, které si vyberete.",
   "home.cta.primary": "Získat Doughnut Forge",
   "home.cta.secondary": "Podívejte se, co umí",
   "home.specimen.stranger": "Co vidí kdokoli jiný",
@@ -62,9 +62,9 @@ export default {
   "go.tap.googlePlay": "Klepnutím níže otevřete Google Play.",
   "go.offline": "Funguje bez internetu.",
   "meta.features.title": "Funkce: šifrujte soubory, složky a text bez účtu | Doughnut Forge",
-  "meta.features.description": "Šifrujte soubory a text ve vlastním iPhonu, iPadu nebo počítači, sdílejte je s lidmi, kterým důvěřujete, a chraňte je dlouhodobě. Bez účtu a bez serverů.",
+  "meta.features.description": "Šifrujte soubory a text ve vlastním iPhonu, iPadu, Androidu nebo počítači, sdílejte je s lidmi, kterým důvěřujete, a chraňte je dlouhodobě. Bez účtu a bez serverů.",
   "features.title": "Vše, co Doughnut Forge umí",
-  "features.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete. Ať je pošlete jakkoli, otevřít je mohou jen oni.",
+  "features.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu, Androidu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete. Ať je pošlete jakkoli, otevřít je mohou jen oni.",
   "features.identity.more":
     "Vaše identita je uložena pouze v tomto zařízení a chráněna vaším heslem. Uchovejte svých 24 obnovovacích slov v bezpečí: jsou jediným způsobem, jak obnovit identitu nebo nastavit nové heslo místo zapomenutého.",
   "features.private.title": "Soukromí od samého začátku",

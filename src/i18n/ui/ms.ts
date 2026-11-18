@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: penyulitan fail luar talian untuk iPhone, iPad, Android, Mac dan Windows",
-  "meta.home.description": "Doughnut Forge: penyulitan fail luar talian untuk iPhone, iPad, Mac dan PC. Sulitkan fail dan teks untuk orang yang anda pilih. Tiada akaun, pelayan atau langganan.",
+  "meta.home.description": "Doughnut Forge: penyulitan fail luar talian untuk iPhone, iPad, Android, Mac dan PC. Sulitkan fail dan teks untuk orang yang anda pilih. Tiada akaun, pelayan atau langganan.",
   "nav.label": "Utama",
   "nav.features": "Ciri",
   "nav.pricing": "Harga",
@@ -20,10 +20,10 @@ export default {
   "skip": "Langkau ke kandungan",
   "home.summary": "Penyulitan fail luar talian untuk iPhone, iPad, Android, Mac dan Windows.",
   "home.tagline": "Hanya orang yang anda pilih boleh membukanya.",
-  "home.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai.",
+  "home.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad, Android atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai.",
   "home.what.title": "Apakah itu Doughnut Forge?",
   "home.what.text":
-    "Doughnut Forge ialah aplikasi penyulitan fail luar talian untuk Mac, iPhone, iPad dan Windows. Ia mengunci fail dan teks pada peranti anda sendiri, dan anda hanya berkongsinya dengan orang yang anda pilih.",
+    "Doughnut Forge ialah aplikasi penyulitan fail luar talian untuk Mac, iPhone, iPad, Android dan Windows. Ia mengunci fail dan teks pada peranti anda sendiri, dan anda hanya berkongsinya dengan orang yang anda pilih.",
   "home.cta.primary": "Dapatkan Doughnut Forge",
   "home.cta.secondary": "Lihat keupayaannya",
   "home.specimen.stranger": "Apa yang orang lain lihat",
@@ -61,9 +61,9 @@ export default {
   "go.tap.googlePlay": "Ketik di bawah untuk membuka Google Play.",
   "go.offline": "Berfungsi tanpa internet.",
   "meta.features.title": "Ciri: sulitkan fail, folder dan teks tanpa akaun | Doughnut Forge",
-  "meta.features.description": "Sulitkan fail dan teks pada iPhone, iPad atau komputer anda sendiri, kongsi dengan orang yang dipercayai dan lindunginya untuk jangka panjang. Tiada akaun, tiada pelayan.",
+  "meta.features.description": "Sulitkan fail dan teks pada iPhone, iPad, Android atau komputer anda sendiri, kongsi dengan orang yang dipercayai dan lindunginya untuk jangka panjang. Tiada akaun, tiada pelayan.",
   "features.title": "Semua yang dilakukan oleh Doughnut Forge",
-  "features.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai. Walau bagaimana anda menghantarnya, hanya mereka yang boleh membukanya.",
+  "features.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad, Android atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai. Walau bagaimana anda menghantarnya, hanya mereka yang boleh membukanya.",
   "features.identity.more":
     "Identiti anda disimpan hanya pada peranti ini dan dilindungi oleh kata laluan anda. Simpan 24 perkataan pemulihan anda dengan selamat: itu satu-satunya cara untuk memulihkan identiti anda atau menetapkan semula kata laluan yang terlupa.",
   "features.private.title": "Peribadi sejak awal",

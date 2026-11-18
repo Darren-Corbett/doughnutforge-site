@@ -25,5 +25,11 @@
   "technical.visible.count.text": "vizibil (numărul de destinatari, inclusiv expeditorul).",
   "technical.limits.sender.label": "Dovada cu privire la cine a trimis un element.",
   "technical.limits.sender.text": "Doughnut Forge nu dovedește încă cine a trimis un element.",
-  "technical.limits.visible.label": "Dimensiunea, numărul de destinatari și numele fișierului."
+  "technical.limits.visible.label": "Dimensiunea, numărul de destinatari și numele fișierului.",
+  "meta.home.description": "Doughnut Forge: criptare offline a fișierelor pentru iPhone, iPad, Mac și PC. Criptează fișiere și text pentru cei pe care îi alegi. Fără cont, servere sau abonament.",
+  "home.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad sau computer și îți permite să le partajezi cu oamenii în care ai încredere.",
+  "home.what.text": "Doughnut Forge este o aplicație de criptare offline a fișierelor pentru Mac, iPhone, iPad și Windows. Îți blochează fișierele și textele pe propriul dispozitiv, iar tu le partajezi doar cu oamenii pe care îi alegi.",
+  "meta.features.description": "Criptează fișiere și text pe propriul iPhone, iPad sau computer, partajează-le cu oameni de încredere și păstrează-le protejate pe termen lung. Fără cont și fără servere.",
+  "features.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad sau computer și îți permite să le partajezi cu oamenii în care ai încredere. Oricum le-ai trimite, doar ei le pot deschide.",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

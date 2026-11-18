@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: enkripsi file offline untuk iPhone, iPad, Android, Mac, dan Windows",
-  "meta.home.description": "Doughnut Forge: enkripsi file offline untuk iPhone, iPad, Mac, dan PC. Enkripsi file dan teks untuk orang yang Anda pilih. Tanpa akun, tanpa server, tanpa langganan.",
+  "meta.home.description": "Doughnut Forge: enkripsi file offline untuk iPhone, iPad, Android, Mac, dan PC. Enkripsi file dan teks untuk orang yang Anda pilih. Tanpa akun, tanpa server, tanpa langganan.",
   "nav.label": "Utama",
   "nav.features": "Fitur",
   "nav.pricing": "Harga",
@@ -20,10 +20,10 @@ export default {
   "skip": "Lewati ke konten",
   "home.summary": "Enkripsi file offline untuk iPhone, iPad, Android, Mac, dan Windows.",
   "home.tagline": "Hanya orang yang Anda pilih yang dapat membukanya.",
-  "home.lead": "Doughnut Forge mengunci file dan teks di iPhone, iPad, atau komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya.",
+  "home.lead": "Doughnut Forge mengunci file dan teks di iPhone, iPad, Android, atau komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya.",
   "home.what.title": "Apa itu Doughnut Forge?",
   "home.what.text":
-    "Doughnut Forge adalah aplikasi enkripsi file offline untuk Mac, iPhone, iPad, dan Windows. Aplikasi ini mengunci file dan teks di perangkat Anda sendiri, dan Anda hanya membagikannya kepada orang yang Anda pilih.",
+    "Doughnut Forge adalah aplikasi enkripsi file offline untuk Mac, iPhone, iPad, Android, dan Windows. Aplikasi ini mengunci file dan teks di perangkat Anda sendiri, dan Anda hanya membagikannya kepada orang yang Anda pilih.",
   "home.cta.primary": "Dapatkan Doughnut Forge",
   "home.cta.secondary": "Lihat kemampuannya",
   "home.specimen.stranger": "Yang dilihat orang lain",
@@ -59,9 +59,9 @@ export default {
   "go.tap.googlePlay": "Ketuk di bawah untuk membuka Google Play.",
   "go.offline": "Berfungsi tanpa internet.",
   "meta.features.title": "Fitur: enkripsi file, folder, dan teks tanpa akun | Doughnut Forge",
-  "meta.features.description": "Enkripsi file dan teks di iPhone, iPad, atau komputer Anda, bagikan kepada orang tepercaya, dan jaga agar tetap terlindungi dalam jangka panjang. Tanpa akun, tanpa server.",
+  "meta.features.description": "Enkripsi file dan teks di iPhone, iPad, Android, atau komputer Anda, bagikan kepada orang tepercaya, dan jaga agar tetap terlindungi dalam jangka panjang. Tanpa akun, tanpa server.",
   "features.title": "Semua yang dilakukan Doughnut Forge",
-  "features.lead": "Doughnut Forge mengunci file dan teks di iPhone, iPad, atau komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya. Apa pun cara Anda mengirimnya, hanya mereka yang dapat membukanya.",
+  "features.lead": "Doughnut Forge mengunci file dan teks di iPhone, iPad, Android, atau komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya. Apa pun cara Anda mengirimnya, hanya mereka yang dapat membukanya.",
   "features.identity.more":
     "Identitas Anda hanya disimpan di perangkat ini dan dilindungi oleh kata sandi Anda. Simpan 24 kata pemulihan Anda dengan aman: kata-kata itu adalah satu-satunya cara untuk memulihkan identitas Anda atau mengatur ulang kata sandi yang terlupa.",
   "features.private.title": "Pribadi sejak awal",

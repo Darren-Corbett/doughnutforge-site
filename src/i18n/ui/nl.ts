@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: offline bestandsversleuteling voor iPhone, iPad, Android, Mac en Windows",
-  "meta.home.description": "Doughnut Forge: offline bestandsversleuteling voor iPhone, iPad, Mac en pc. Versleutel bestanden en tekst voor wie u kiest. Geen account, geen servers, geen abonnement.",
+  "meta.home.description": "Doughnut Forge: offline bestandsversleuteling voor iPhone, iPad, Android, Mac en pc. Versleutel bestanden en tekst voor wie u kiest. Geen account, geen servers, geen abonnement.",
   "nav.label": "Hoofdmenu",
   "nav.features": "Functies",
   "nav.pricing": "Prijzen",
@@ -20,10 +20,10 @@ export default {
   "skip": "Naar de inhoud",
   "home.summary": "Offline bestandsversleuteling voor iPhone, iPad, Android, Mac en Windows.",
   "home.tagline": "Alleen de mensen die u kiest, kunnen ze openen.",
-  "home.lead": "Doughnut Forge vergrendelt uw bestanden en tekst op uw iPhone, iPad of computer en laat u ze delen met de mensen die u vertrouwt.",
+  "home.lead": "Doughnut Forge vergrendelt uw bestanden en tekst op uw iPhone, iPad, Android of computer en laat u ze delen met de mensen die u vertrouwt.",
   "home.what.title": "Wat is Doughnut Forge?",
   "home.what.text":
-    "Doughnut Forge is een app voor offline bestandsversleuteling voor Mac, iPhone, iPad en Windows. De app vergrendelt uw bestanden en tekst op uw eigen apparaat, en u deelt ze alleen met de mensen die u kiest.",
+    "Doughnut Forge is een app voor offline bestandsversleuteling voor Mac, iPhone, iPad, Android en Windows. De app vergrendelt uw bestanden en tekst op uw eigen apparaat, en u deelt ze alleen met de mensen die u kiest.",
   "home.cta.primary": "Doughnut Forge downloaden",
   "home.cta.secondary": "Bekijk wat de app doet",
   "home.specimen.stranger": "Wat ieder ander ziet",
@@ -57,9 +57,9 @@ export default {
   "go.tap.googlePlay": "Tik hieronder om Google Play te openen.",
   "go.offline": "Werkt zonder internet.",
   "meta.features.title": "Functies: bestanden, mappen en tekst versleutelen zonder account | Doughnut Forge",
-  "meta.features.description": "Versleutel bestanden en tekst op uw eigen iPhone, iPad of computer, deel ze met wie u vertrouwt en houd ze lang beschermd. Geen account en geen servers.",
+  "meta.features.description": "Versleutel bestanden en tekst op uw eigen iPhone, iPad, Android of computer, deel ze met wie u vertrouwt en houd ze lang beschermd. Geen account en geen servers.",
   "features.title": "Alles wat Doughnut Forge doet",
-  "features.lead": "Doughnut Forge vergrendelt uw bestanden en tekst op uw iPhone, iPad of computer en laat u ze delen met de mensen die u vertrouwt. Hoe u ze ook verstuurt, alleen zij kunnen ze openen.",
+  "features.lead": "Doughnut Forge vergrendelt uw bestanden en tekst op uw iPhone, iPad, Android of computer en laat u ze delen met de mensen die u vertrouwt. Hoe u ze ook verstuurt, alleen zij kunnen ze openen.",
   "features.identity.more": "Uw identiteit wordt alleen op dit apparaat opgeslagen en is beveiligd met uw wachtwoord. Bewaar uw 24 herstelwoorden veilig: ze zijn de enige manier om uw identiteit te herstellen of een vergeten wachtwoord opnieuw in te stellen.",
   "features.private.title": "Vanaf het begin privé",
   "features.offline.title": "Werkt zonder internet",

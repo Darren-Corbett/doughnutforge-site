@@ -25,5 +25,11 @@
   "technical.visible.count.text": "दिखाई देता है (प्राप्तकर्ताओं की संख्या, भेजने वाले को मिलाकर)।",
   "technical.limits.sender.label": "किसी आइटम को किसने भेजा, इसका प्रमाण।",
   "technical.limits.sender.text": "Doughnut Forge अभी यह साबित नहीं करता कि किसी आइटम को किसने भेजा।",
-  "technical.limits.visible.label": "आकार, प्राप्तकर्ताओं की संख्या और फ़ाइल का नाम।"
+  "technical.limits.visible.label": "आकार, प्राप्तकर्ताओं की संख्या और फ़ाइल का नाम।",
+  "meta.home.description": "Doughnut Forge: iPhone, iPad, Mac और PC के लिए ऑफ़लाइन फ़ाइल एन्क्रिप्शन। अपने चुने हुए लोगों के लिए फ़ाइलें और टेक्स्ट एन्क्रिप्ट करें। कोई अकाउंट, सर्वर या सब्सक्रिप्शन नहीं।",
+  "home.lead": "Doughnut Forge आपके iPhone, iPad या कंप्यूटर पर आपकी फ़ाइलों और टेक्स्ट को लॉक करता है और आपको उन्हें अपने भरोसेमंद लोगों के साथ शेयर करने देता है।",
+  "home.what.text": "Doughnut Forge Mac, iPhone, iPad और Windows के लिए एक ऑफ़लाइन फ़ाइल एन्क्रिप्शन ऐप है। यह आपकी फ़ाइलों और टेक्स्ट को आपके अपने डिवाइस पर लॉक करता है, और आप उन्हें सिर्फ़ उन्हीं लोगों के साथ शेयर करते हैं जिन्हें आप चुनते हैं।",
+  "meta.features.description": "अपने ही iPhone, iPad या कंप्यूटर पर फ़ाइलें और टेक्स्ट एन्क्रिप्ट करें, भरोसेमंद लोगों के साथ शेयर करें और उन्हें लंबे समय तक सुरक्षित रखें। कोई अकाउंट नहीं, कोई सर्वर नहीं।",
+  "features.lead": "Doughnut Forge आपके iPhone, iPad या कंप्यूटर पर आपकी फ़ाइलों और टेक्स्ट को लॉक करता है और आपको उन्हें अपने भरोसेमंद लोगों के साथ शेयर करने देता है। आप उन्हें किसी भी तरह भेजें, केवल वही उन्हें खोल सकते हैं।",
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
 }

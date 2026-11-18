@@ -5,7 +5,7 @@ import type { Translation } from "../index";
 
 export default {
   "meta.home.title": "Doughnut Forge: cifrado de archivos sin conexión para iPhone, iPad, Android, Mac y Windows",
-  "meta.home.description": "Doughnut Forge: cifrado de archivos sin conexión para iPhone, iPad, Mac y PC. Cifra archivos y texto para quien elijas. Sin cuenta, sin servidores, sin suscripción.",
+  "meta.home.description": "Doughnut Forge: cifrado de archivos sin conexión para iPhone, iPad, Android, Mac y PC. Cifra archivos y texto para quien elijas. Sin cuenta, sin servidores, sin suscripción.",
   "nav.label": "Principal",
   "nav.features": "Funciones",
   "nav.pricing": "Precios",
@@ -20,10 +20,10 @@ export default {
   "skip": "Saltar al contenido",
   "home.summary": "Cifrado de archivos sin conexión para iPhone, iPad, Android, Mac y Windows.",
   "home.tagline": "Solo las personas que elijas podrán abrirlos.",
-  "home.lead": "Doughnut Forge protege tus archivos y texto en tu iPhone, iPad u ordenador y te permite compartirlos con las personas en las que confías.",
+  "home.lead": "Doughnut Forge protege tus archivos y texto en tu iPhone, iPad, Android u ordenador y te permite compartirlos con las personas en las que confías.",
   "home.what.title": "¿Qué es Doughnut Forge?",
   "home.what.text":
-    "Doughnut Forge es una app de cifrado de archivos sin conexión para Mac, iPhone, iPad y Windows. Protege tus archivos y texto en tu propio dispositivo, y solo los compartes con las personas que elijas.",
+    "Doughnut Forge es una app de cifrado de archivos sin conexión para Mac, iPhone, iPad, Android y Windows. Protege tus archivos y texto en tu propio dispositivo, y solo los compartes con las personas que elijas.",
   "home.cta.primary": "Consigue Doughnut Forge",
   "home.cta.secondary": "Descubre lo que hace",
   "home.specimen.stranger": "Lo que ve cualquier otra persona",
@@ -57,9 +57,9 @@ export default {
   "go.tap.googlePlay": "Toca abajo para abrir Google Play.",
   "go.offline": "Funciona sin internet.",
   "meta.features.title": "Funciones: cifra archivos, carpetas y texto sin cuenta | Doughnut Forge",
-  "meta.features.description": "Cifra archivos y texto en tu propio iPhone, iPad u ordenador, compártelos con gente de confianza y mantenlos protegidos a largo plazo. Sin cuenta y sin servidores.",
+  "meta.features.description": "Cifra archivos y texto en tu propio iPhone, iPad, Android u ordenador, compártelos con gente de confianza y mantenlos protegidos a largo plazo. Sin cuenta y sin servidores.",
   "features.title": "Todo lo que hace Doughnut Forge",
-  "features.lead": "Doughnut Forge protege tus archivos y texto en tu iPhone, iPad u ordenador y te permite compartirlos con las personas en las que confías. Los envíes como los envíes, solo ellas podrán abrirlos.",
+  "features.lead": "Doughnut Forge protege tus archivos y texto en tu iPhone, iPad, Android u ordenador y te permite compartirlos con las personas en las que confías. Los envíes como los envíes, solo ellas podrán abrirlos.",
   "features.identity.more": "Tu identidad se almacena solo en este dispositivo y está protegida por tu contraseña. Guarda bien tus 24 palabras de recuperación: son la única forma de restaurar tu identidad o restablecer una contraseña olvidada.",
   "features.private.title": "Privado desde el principio",
   "features.offline.title": "Funciona sin internet",
