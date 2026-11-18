@@ -48,5 +48,5 @@ The stores release 3.0 one by one. The site moves through three stages, set by `
 2. The PDFs: `npm run build`, then `node scripts/make-white-paper-pdf.mjs --lang <code>` per language, then build again. Never in GitHub Actions.
 3. Put back the sentences held for launch day, checked against the final paper and translated.
 4. Delete the stage machinery: `src/data/release.json`, `src/data/stages.ts`, `src/i18n/gated.ts`, `src/i18n/before/`, the `<Stage>` tags (keep their "from" words), and the stage branches in the views and tests.
-5. Set `Expires` in `public/.well-known/security.txt` to one year from today, and move the renewal reminder in `docs/HANDOVER.md`.
+5. Add `Policy: https://doughnut-forge.app/security/white-paper/` back to `public/.well-known/security.txt` (the build fails without it once the paper is built, and with it before), and set `Expires` to one year from today, and move the renewal reminder in `docs/HANDOVER.md`.
 6. Live: `/.well-known/apple-app-site-association` answers 200 and lists both apps; `/.well-known/security.txt`; the white paper page and one PDF in English and one other language; the counter's `/summary?window=7` answers 200.

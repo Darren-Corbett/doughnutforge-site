@@ -98,8 +98,19 @@ The other person opens the file in Doughnut Forge and decrypts it with their own
 
 ## If something does not look right
 
+<Stage until="all3">
+
 - **"Could not open this file":** the file was not encrypted for the identity on this device, or it is damaged. Ask the sender to encrypt it for you again, and to check they chose the right contact.
 - **"Encrypted by someone not in your Contacts":** the file still opens, with this warning. If you were not expecting it, check with the person who sent it before you open or use it.
+
+</Stage>
+<Stage from="all3">
+
+- **"Could not open this file":** the file was not encrypted for the identity on this device, or it is damaged. Ask the sender to encrypt it for you again, and to check they chose the right contact.
+- **"The sender is not in your Contacts, or their contact card is out of date.":** the file still opens, with this warning and "If you were not expecting this, check with the person who sent it before you open or use it." The app names a contact as the sender only when the file is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown. The name is only as reliable as the card: compare the contact code.
+- **"Sender not shown":** shown for files made with an older version of Doughnut Forge, which does not say who sent them.
+
+</Stage>
 
 ## Good habits
 

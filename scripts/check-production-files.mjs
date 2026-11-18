@@ -42,7 +42,8 @@ try {
 }
 
 // security.txt (RFC 9116): reports go to GitHub's private vulnerability
-// reporting or by email, in English. Expires is one year ahead at most; the build fails 30 days before
+// reporting or by email, in English. It names the white paper as a second policy
+// exactly when the paper's page is built, so the policy never answers 404. Expires is one year ahead at most; the build fails 30 days before
 // it lapses, so it is renewed in time (the dated reminder is in docs/HANDOVER.md).
 const DAY = 24 * 3600 * 1000;
 const securityTxt = `${dist}.well-known/security.txt`;
@@ -53,11 +54,14 @@ else {
     "Contact: https://github.com/Darren-Corbett/forge-privacy/security/advisories/new",
     "Contact: mailto:support@doughnut-forge.app",
     "Policy: https://doughnut-forge.app/security/",
-    "Policy: https://doughnut-forge.app/security/white-paper/",
     "Preferred-Languages: en",
     "Canonical: https://doughnut-forge.app/.well-known/security.txt",
   ])
     if (!txt.split("\n").includes(line)) errors.push(`security.txt has no "${line}" line`);
+  const paperPolicy = "Policy: https://doughnut-forge.app/security/white-paper/";
+  const paperBuilt = existsSync(`${dist}security/white-paper/index.html`);
+  if (paperBuilt && !txt.split("\n").includes(paperPolicy)) errors.push(`security.txt has no "${paperPolicy}" line, but the white paper is published`);
+  if (!paperBuilt && txt.includes("security/white-paper")) errors.push("security.txt names security/white-paper/, but the white paper is not built");
   const expires = [...txt.matchAll(/^Expires: (.+)$/gm)].map((m) => Date.parse(m[1]));
   const renew = "set Expires in public/.well-known/security.txt to one year from today, and move the reminder in docs/HANDOVER.md";
   if (expires.length !== 1 || Number.isNaN(expires[0])) errors.push("security.txt needs exactly one valid Expires date");
