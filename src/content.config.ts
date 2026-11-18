@@ -44,7 +44,11 @@ const blog = defineCollection({
 // Its texts come in once every store sells 3.0 (src/data/stages.ts); until then
 // the collection is empty.
 const whitePaper = defineCollection({
-  loader: reached("all3") ? glob({ pattern: "*.md", base: "./src/content/white-paper" }) : () => [],
+  // Ids keep the file name's case ("es-MX", not Astro's default "es-mx"), so each
+  // language's page finds its own text
+  loader: reached("all3")
+    ? glob({ pattern: "*.md", base: "./src/content/white-paper", generateId: ({ entry }) => entry.replace(/\.md$/, "") })
+    : () => [],
   schema: z.object({
     title: z.string().max(70),
     description: z.string().min(50).max(160),
