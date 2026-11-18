@@ -1,7 +1,7 @@
 // The white paper page (src/views/WhitePaperPage.astro): one h1, an overview
 // first, each "How this is checked" note folded away, and a PDF of the same text
 // to download, served from this site.
-import { readdirSync } from "node:fs";
+import { existsSync, readdirSync } from "node:fs";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { expect, test } from "../support/browser";
 import { reached } from "../support/release";
@@ -57,7 +57,8 @@ test("white paper: no sideways scrolling on a 360px phone", async ({ page }) => 
 // Technical details: to its own translation once there is one, otherwise to the
 // English paper, marked as English (hreflang), as the footer does for the blog
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));
-const translated = new Set(readdirSync("src/content/white-paper").map((f) => f.replace(/\.md$/, "")));
+const texts = "src/content/white-paper";
+const translated = new Set(existsSync(texts) ? readdirSync(texts).map((f) => f.replace(/\.md$/, "")) : []);
 for (const lang of languages)
   test(`white paper linked from footer, Security and Technical details ${lang.code}`, async ({ page }) => {
     const base = lang.code === "en" ? "" : `/${lang.path}`;
