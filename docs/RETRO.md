@@ -173,3 +173,10 @@ The work: Part B items 1 to 8 on the local branch, from the v2 website pack only
 - Problem: commits that fail the type check, and a commit check that cannot stop a commit.
 - Change: English keys and their translations land in the same commit, so every commit passes the type check; and `npm run check:commit` runs as its own step, and a non-zero exit stops the commit (never piped through `grep`).
 - How we will know: on the next item with translated copy, every commit passes `npm run check:commit` when checked out on its own. Check at the next retro.
+
+## 18 November 2026, a subagent read the app repo (a repeat)
+
+- Problem: a translation subagent updating the French white paper read the app's French translation files in `~/git/forge-wt/release-3.0.0/src/locales/fr/` and ran one read-only `git branch` in `~/git/doughnut-forge`, to find new app strings that were not yet in the handoff files. It changed nothing. The owner's rule for this work is that the website session never reads the app repo; this is a repeat of an earlier breach of the same rule (that one is not recorded in this file). Cause: the rule lived in the session's status file, and the subagent briefs did not state it, so a subagent with a real need (missing strings) found its own way.
+- Change: every subagent brief states the rule as its first hard limit (never read, list or run anything in `~/git/doughnut-forge` or under `~/git/forge-wt/`; app wording comes only from the handoff files). Missing app strings get a logged stand-in, swapped exactly when the app side sends them. The French stand-ins stay stand-ins like every other language's.
+- When to check: at the end of the white paper translations (all 30 languages).
+- Result: open.
