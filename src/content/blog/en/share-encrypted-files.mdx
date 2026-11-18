@@ -7,6 +7,7 @@ draft: false
 updated: 2026-11-14
 lang: en
 ---
+import Stage from "../../../components/blog/Stage.astro";
 import Flow from "../../../components/blog/Flow.astro";
 import Shot from "../../../components/blog/Shot.astro";
 import IdCard from "@lucide/astro/icons/id-card";
@@ -67,11 +68,11 @@ Your contact card is safe to share. It lets people encrypt files for you, but it
 
 ### 3. Add their card to your contacts
 
-When you receive their card, open **Contacts** and choose **Add contact**, then pick the card file. You can add several cards at once. The app checks each card as you add it, but only comparing the contact code tells you it is the right person's card. A contact on an older card shows “Old card: ask for a new one” until they share their card again.
+When you receive their card, open **Contacts** and choose **Add contact**, then pick the card file. You can add several cards at once. The app checks each card as you add it, but only comparing the contact code tells you it is the right person's card.<Stage from="first3"> A contact on an older card shows “Old card: ask for a new one” until they share their card again.</Stage>
 
 ### 4. Check the contact code
 
-Each contact has a short contact code. Ask the other person to read out the code shown on their own **Identity** screen, in person or on a call, and compare it with the code shown for them in your contacts. If they match, you have the right card. After the update to the new file format, everyone has a new code, so compare codes again when a contact sends you their new card.
+Each contact has a short contact code. Ask the other person to read out the code shown on their own **Identity** screen, in person or on a call, and compare it with the code shown for them in your contacts. If they match, you have the right card.<Stage from="first3"> After the update to the new file format, everyone has a new code, so compare codes again when a contact sends you their new card.</Stage>
 
 This step matters most when the card reached you through a channel someone else could interfere with. Only add cards you received directly from the person they belong to. If a card does not match a contact you already have, the app refuses it.
 
@@ -98,13 +99,13 @@ The other person opens the file in Doughnut Forge and decrypts it with their own
 ## If something does not look right
 
 - **"Could not open this file":** the file was not encrypted for the identity on this device, or it is damaged. Ask the sender to encrypt it for you again, and to check they chose the right contact.
-- **"Encrypted by someone not in your Contacts":** the file still opens, with this warning. If you were not expecting it, check with the person who sent it before you open or use it. It is also shown for files made with an earlier version of the app, and for contacts who have not yet shared their new card.
+- **"Encrypted by someone not in your Contacts":** the file still opens, with this warning. If you were not expecting it, check with the person who sent it before you open or use it.
 
 ## Good habits
 
 - **Only add cards you received directly** from the person they belong to, and compare the contact code.
 - **Never send your recovery words or password** to anyone, for any reason.
-- **Folders encrypted on a computer open on computers.** They cannot be opened on iPhone, iPad or Android, so send single files to someone who uses a phone.
+- **Folders encrypted on a computer open on computers.** They cannot be opened on iPhone<Stage until="android"> or iPad</Stage><Stage from="android">, iPad or Android</Stage>, so send single files to someone who uses a phone.
 - **Keep your recovery words safe.** If you lose them and your password, files sent to you cannot be opened.
 
 New to encrypting files? Start with [How to encrypt files on a Mac without using the cloud](/blog/encrypt-files-on-mac-without-cloud/), or read [Offline file encryption: how it works and what it protects](/blog/offline-encryption-privacy/). Questions are welcome on the [support page](/support/), and the [download page](/download/) lists every platform.

@@ -1,0 +1,12 @@
+---
+// Words in a post that depend on a launch stage (src/data/stages.ts): shown from
+// that stage on, or only until it, so a post reads right at every stage.
+//   for iPhone and iPad<Stage from="android">, Android</Stage>, Mac or Windows
+import { reached, type Stage } from "../../data/stages";
+
+type Props = { from: Stage; until?: never } | { until: Stage; from?: never };
+const { from, until } = Astro.props;
+const shown = from ? reached(from) : !reached(until!);
+---
+
+{shown && <slot />}
