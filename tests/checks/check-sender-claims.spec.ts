@@ -138,3 +138,36 @@ for (const [lang, sentences] of Object.entries(v1)) {
     for (const file of Object.keys(files)) expect(result.output).toContain(file);
   });
 }
+
+// Three app screen texts the white paper quotes word for word (owner, 19 November
+// 2026): each tells the reader the sender was NOT confirmed, but a "proves" word
+// sits beside "sender" in the same table cell or sentence. Only these exact texts
+// are allowed; the same words anywhere else still fail.
+const IT_WARNING = "Il mittente non è nei tuoi Contatti, oppure la sua scheda contatto non è aggiornata.";
+const IT_DETAIL = "Se non te lo aspettavi, chiedi conferma alla persona che l'ha inviato prima di aprirlo o usarlo.";
+const JA_FOLDER = "復号が停止されたため、アプリはこのフォルダの送信者を確認できませんでした。";
+const RO_WARNING = "Expeditorul nu este în Contactele tale sau cardul lui de contact nu este actualizat.";
+const RO_DETAIL = "Dacă nu te așteptai la asta, verifică cu persoana care l-a trimis înainte să îl deschizi sau să îl folosești.";
+
+test("passes the app's own exact unknown-sender texts that the white paper quotes", async () => {
+  const result = await check({
+    "it/index.html": page("it", `<table><tr><td>«${IT_WARNING}» e «${IT_DETAIL}»</td></tr></table>`),
+    "ja/index.html": page("ja", `<p>その場合、送信者は不明と示され、画面にはさらに「${JA_FOLDER}」と表示されます。</p>`),
+    "ro/index.html": page("ro", `<table><tr><td>„${RO_WARNING}” și „${RO_DETAIL}”</td></tr></table>`),
+  });
+  expect(result.output).toContain("no claim");
+  expect(result.code).toBe(0);
+});
+
+for (const [name, lang, body, word] of [
+  ["it: the same words in other text", "it", `<p>Il mittente: chiedi conferma alla persona prima di aprirlo.</p>`, "conferma"],
+  ["it: the app text changed by one word", "it", `<td>«${IT_WARNING}» e «${IT_DETAIL.replace("chiedi", "ottieni")}»</td>`, "conferma"],
+  ["it: another claim beside the allowed text", "it", `<td>«${IT_DETAIL}» Il mittente è verificato.</td>`, "verificato"],
+  ["ja: the same words in other text", "ja", `<p>アプリはこのフォルダの送信者を確認できます。</p>`, "確認でき"],
+  ["ro: the same words in other text", "ro", `<td>Expeditorul: verifică cu persoana care l-a trimis.</td>`, "verifică"],
+] as const)
+  test(`fails when ${name}`, async () => {
+    const result = await check({ [`${lang}/index.html`]: page(lang, body) });
+    expect(result.code).not.toBe(0);
+    expect(result.output).toContain(word);
+  });
