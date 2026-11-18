@@ -160,6 +160,20 @@ const blocksOf = (html) => {
   return [...text.split("\n"), ...attrs].map((b) => decode(b).normalize("NFC").replace(/\s+/g, " ").trim()).filter(Boolean);
 };
 
+// App screen texts the white paper quotes word for word, each saying the sender was
+// NOT confirmed (owner, 19 November 2026). Only these exact texts are set aside; the
+// rest of their block, and the same words anywhere else, are still checked
+// (tests/checks/check-sender-claims.spec.ts).
+const QUOTED_APP_TEXTS = [
+  // it secure-directory.json decryptModal.unknownSignerDetail (white paper 7.1)
+  "Se non te lo aspettavi, chiedi conferma alla persona che l'ha inviato prima di aprirlo o usarlo.",
+  // ja common.json status.folderDecryptNotChecked (white paper 7.4)
+  "復号が停止されたため、アプリはこのフォルダの送信者を確認できませんでした。",
+  // ro secure-directory.json decryptModal.unknownSignerDetail (white paper 7.1)
+  "Dacă nu te așteptai la asta, verifică cu persoana care l-a trimis înainte să îl deschizi sau să îl folosești.",
+].map((t) => t.normalize("NFC"));
+const withoutQuotedAppTexts = (block) => QUOTED_APP_TEXTS.reduce((text, quoted) => text.split(quoted).join(" "), block);
+
 const hits = (re, s) => [...s.matchAll(new RegExp(re, "giu"))].map((m) => m[0]);
 const problems = [];
 const langs = new Set();
@@ -176,7 +190,7 @@ for (const file of readdirSync(dist, { recursive: true }).map(String).filter((f)
   }
   // English too, for any English word left on a translated page
   const tables = own === compiled.en ? [own] : [own, compiled.en];
-  for (const block of blocksOf(html)) {
+  for (const block of blocksOf(html).map(withoutQuotedAppTexts)) {
     const words = new Set();
     for (const t of tables) {
       for (const w of [...hits(t.verified, block), ...hits(t.tamper, block), ...hits(t.identity, block)]) words.add(w);
