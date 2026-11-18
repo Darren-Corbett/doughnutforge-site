@@ -27,6 +27,11 @@ test("first 3.0 store: the FAQs on new contact codes and older apps", async ({ p
   }
   const data = (await page.locator('script[type="application/ld+json"]').allTextContents()).join(" ");
   expect(data.includes("Why did my contact code change?"), "FAQPage data").toBe(on);
+  // Older files: every .vlt2 file still opens in 3.0 (it no longer reads .vlt1, which the site never names)
+  await page.goto("/security/technical-details/");
+  const technical = await page.locator("main").innerText();
+  expect(technical.includes("Every .vlt2 file made by an earlier version still opens"), "older files line").toBe(on);
+  expect(technical).not.toContain(".vlt1");
 });
 
 test("every store has 3.0: the new format's copy and the white paper", async ({ page }) => {
@@ -35,6 +40,9 @@ test("every store has 3.0: the new format's copy and the white paper", async ({ 
   const technical = await page.locator("main").innerText();
   expect(technical.includes("ML-DSA-87"), "ML-DSA-87").toBe(on);
   expect(technical.includes("256 MiB"), "Argon2id 256 MiB").toBe(on);
+  // The exact count of old-card recipients, and no forward secrecy (white paper 4.3, 8.2)
+  expect(technical.includes("known only by an old contact card shows exactly"), "old-card count").toBe(on);
+  expect(technical.includes("Anyone who later gets your recovery words."), "forward secrecy limit").toBe(on);
   await page.goto("/security/");
   await expect(page.locator("main")).toContainText(await uiNow("en", "security.quantum.title"));
   expect((await uiNow("en", "security.quantum.title")).includes("signatures")).toBe(on);
