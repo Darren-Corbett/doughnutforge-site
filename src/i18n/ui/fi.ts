@@ -295,7 +295,7 @@ export default {
   "technical.keys.identity.text": "muodostetaan yhdestä 256-bittisestä satunnaisesta salaisuudesta, joka luodaan laitteellasi.",
   "technical.keys.recovery.label": "Palautus:",
   "technical.keys.recovery.text":
-    "salaisuuden voi kirjoittaa muistiin 24 palautussanana (BIP-39). Sen voi myös jakaa palautusosiin Shamirin salaisuuden jakamisella (Shamir's Secret Sharing), jolloin mitkä tahansa osat valitun määrän verran (vähintään 2, yhteensä enintään 16) palauttavat sen. Sitä pienempi määrä osia ei paljasta mitään.",
+    "salaisuuden voi kirjoittaa muistiin 24 palautussanana (BIP-39).",
   "technical.keys.exchange.label": "Avaintenvaihto (kvanttikestävä hybridi):",
   "technical.keys.exchange.text": "jokaisen kohteen avain sinetöidään erikseen jokaiselle vastaanottajalle ja sinulle käyttäen menetelmiä X25519 ja ML-KEM-768 yhdessä. Kaksi jaettua salaisuutta yhdistetään SHA-256-funktiolla.",
   "technical.keys.signatures.label": "Allekirjoitukset:",
@@ -362,7 +362,6 @@ export default {
   "technical.libraries.sha": "SHA-256 ja SHA-512",
   "technical.libraries.random": "Käyttöjärjestelmän satunnaislähde",
   "technical.libraries.words": "Palautussanat",
-  "technical.libraries.shards": "Palautusosat",
   "technical.libraries.memory": "Salaisuudet muistissa",
   "technical.libraries.wipe": "Salaisuuksien pyyhkiminen muistista",
   "technical.libraries.compression": "Pakkaus",
@@ -370,7 +369,7 @@ export default {
   "technical.limits.compromised.label": "Laite, joka on jo vaarantunut.",
   "technical.limits.compromised.text": "Kun Doughnut Forgen lukitus on avattu, haittaohjelma, jolla on täysi pääsy laitteeseesi, voisi lukea salaisuutesi.",
   "technical.limits.access.label":
-    "Kuka tahansa, jolla on salasanasi ja laitteesi, 24 palautussanaasi tai riittävästi palautusosia.",
+    "Kuka tahansa, jolla on salasanasi ja laitteesi tai jolla on 24 palautussanaasi.",
   "technical.limits.access.text": "Säilytä niitä turvassa.",
   "technical.limits.passcode.label": "Laitteesi pääsykoodi,",
   "technical.limits.passcode.text": "iPhonessa ja iPadissa, kun Face ID tai Touch ID on käytössä. iOS hyväksyy pääsykoodin Face ID:n tai Touch ID:n sijaan.",

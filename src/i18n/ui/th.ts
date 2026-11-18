@@ -289,7 +289,7 @@ export default {
   "technical.keys.identity.text": "สร้างจากความลับแบบสุ่มขนาด 256 บิตหนึ่งค่า ซึ่งสร้างขึ้นบนอุปกรณ์ของคุณ",
   "technical.keys.recovery.label": "การกู้คืน:",
   "technical.keys.recovery.text":
-    "ความลับนั้นสามารถจดไว้เป็นคำกู้คืน 24 คำของคุณ (BIP-39) และยังแบ่งเป็นชาร์ดสำหรับกู้คืนด้วย Shamir's Secret Sharing ได้ด้วย โดยใช้ชาร์ดตามจำนวนที่เลือกไว้ (อย่างน้อย 2 และรวมทั้งหมดไม่เกิน 16) ก็กู้คืนความลับได้ หากมีชาร์ดน้อยกว่านั้นจะไม่เปิดเผยสิ่งใดเลย",
+    "ความลับนั้นสามารถจดไว้เป็นคำกู้คืน 24 คำของคุณ (BIP-39)",
   "technical.keys.exchange.label": "การแลกเปลี่ยนคีย์ (แบบไฮบริดหลังควอนตัม):",
   "technical.keys.exchange.text": "คีย์ของแต่ละรายการจะถูกผนึกแยกกันสำหรับผู้รับแต่ละคน และสำหรับคุณ โดยใช้ X25519 ร่วมกับ ML-KEM-768 ความลับร่วมทั้งสองค่าจะถูกรวมกันด้วย SHA-256",
   "technical.keys.signatures.label": "ลายเซ็น:",
@@ -356,7 +356,6 @@ export default {
   "technical.libraries.sha": "SHA-256 และ SHA-512",
   "technical.libraries.random": "แหล่งค่าสุ่มของระบบปฏิบัติการ",
   "technical.libraries.words": "คำกู้คืน",
-  "technical.libraries.shards": "ชาร์ดสำหรับกู้คืน",
   "technical.libraries.memory": "ความลับในหน่วยความจำ",
   "technical.libraries.wipe": "การล้างความลับออกจากหน่วยความจำ",
   "technical.libraries.compression": "การบีบอัด",
@@ -364,7 +363,7 @@ export default {
   "technical.limits.compromised.label": "อุปกรณ์ที่ถูกเจาะระบบไปแล้ว",
   "technical.limits.compromised.text": "ขณะที่ Doughnut Forge ปลดล็อกอยู่ มัลแวร์ที่เข้าถึงอุปกรณ์ของคุณได้เต็มที่อาจอ่านความลับของคุณได้",
   "technical.limits.access.label":
-    "ใครก็ตามที่มีรหัสผ่านและอุปกรณ์ของคุณ คำกู้คืน 24 คำของคุณ หรือชาร์ดสำหรับกู้คืนครบจำนวน",
+    "ใครก็ตามที่มีรหัสผ่านและอุปกรณ์ของคุณ หรือคำกู้คืน 24 คำของคุณ",
   "technical.limits.access.text": "เก็บสิ่งเหล่านี้ไว้ให้ปลอดภัย",
   "technical.limits.passcode.label": "รหัสอุปกรณ์ของคุณ",
   "technical.limits.passcode.text": "บน iPhone และ iPad ที่เปิดใช้ Face ID หรือ Touch ID ไว้ iOS ยอมรับรหัสอุปกรณ์แทน Face ID หรือ Touch ID ได้",

@@ -293,7 +293,7 @@ export default {
   "technical.keys.identity.text": "được tạo từ một bí mật ngẫu nhiên 256 bit, sinh ra ngay trên thiết bị của bạn.",
   "technical.keys.recovery.label": "Khôi phục:",
   "technical.keys.recovery.text":
-    "bí mật đó có thể được ghi lại thành 24 từ khôi phục của bạn (BIP-39). Nó cũng có thể được chia thành các mảnh khôi phục bằng Shamir's Secret Sharing, trong đó một số mảnh bạn chọn trước (ít nhất 2, tổng cộng nhiều nhất 16) là đủ để khôi phục. Ít mảnh hơn số đó thì không tiết lộ gì cả.",
+    "bí mật đó có thể được ghi lại thành 24 từ khôi phục của bạn (BIP-39).",
   "technical.keys.exchange.label": "Trao đổi khóa (lai hậu lượng tử):",
   "technical.keys.exchange.text": "khóa của mỗi mục được niêm phong riêng cho từng người nhận, và cho bạn, bằng X25519 kết hợp với ML-KEM-768. Hai bí mật chung được kết hợp bằng SHA-256.",
   "technical.keys.signatures.label": "Chữ ký:",
@@ -360,7 +360,6 @@ export default {
   "technical.libraries.sha": "SHA-256 và SHA-512",
   "technical.libraries.random": "Nguồn ngẫu nhiên của hệ điều hành",
   "technical.libraries.words": "Các từ khôi phục",
-  "technical.libraries.shards": "Mảnh khôi phục",
   "technical.libraries.memory": "Bí mật trong bộ nhớ",
   "technical.libraries.wipe": "Xóa bí mật khỏi bộ nhớ",
   "technical.libraries.compression": "Nén",
@@ -368,7 +367,7 @@ export default {
   "technical.limits.compromised.label": "Một thiết bị đã bị xâm nhập từ trước.",
   "technical.limits.compromised.text": "Trong khi Doughnut Forge đang mở khóa, phần mềm độc hại có toàn quyền truy cập vào thiết bị của bạn có thể đọc được các bí mật của bạn.",
   "technical.limits.access.label":
-    "Bất kỳ ai có mật khẩu và thiết bị của bạn, 24 từ khôi phục của bạn, hoặc đủ số mảnh khôi phục.",
+    "Bất kỳ ai có mật khẩu và thiết bị của bạn, hoặc 24 từ khôi phục của bạn.",
   "technical.limits.access.text": "Hãy giữ chúng an toàn.",
   "technical.limits.passcode.label": "Mật mã thiết bị của bạn,",
   "technical.limits.passcode.text": "trên iPhone và iPad khi bật Face ID hoặc Touch ID. iOS chấp nhận mật mã thay cho Face ID hoặc Touch ID.",

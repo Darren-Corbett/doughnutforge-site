@@ -14,7 +14,7 @@ Doughnut Forge encrypts files, folders and short messages on your own device. Th
 ## Keys and identity
 
 - **Your identity** is made from one 256-bit random secret, created on your device.
-- **Recovery:** that secret can be written down as 24 recovery words (BIP-39). It can also be split into recovery shards with Shamir's Secret Sharing, where any chosen number of shards (at least 2, at most 16 in total) brings it back. Fewer shards than that reveal nothing.
+- **Recovery:** that secret can be written down as 24 recovery words (BIP-39).
 - **Key exchange (post-quantum hybrid):** each item's key is sealed separately for every recipient, and for you, using X25519 together with ML-KEM-1024. The two shared secrets are combined with HKDF-SHA-256. Contacts who have not yet shared their new contact card get ML-KEM-768.
 - **Signatures:** Ed25519 together with ML-DSA-87, on every item and every contact card. Both must be valid. The app names a contact as the sender only when the item is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown.
 - **Key derivation:** HKDF-SHA-256.
@@ -90,7 +90,6 @@ Encrypted items leave your device only when you share them yourself.
 | SHA-256 and SHA-512 | sha2 (RustCrypto) | 0.10.9 |
 | Operating system random source | getrandom | 0.2.17 |
 | Recovery words | bip39 | 2.2.2 |
-| Recovery shards | sharks | 0.5.0 |
 | Secrets in memory | secrets (libsodium) | 1.3.0 |
 | Wiping secrets from memory | zeroize | 1.9.0 |
 | Compression | zstd | 0.13.3 |
@@ -98,7 +97,7 @@ Encrypted items leave your device only when you share them yourself.
 ## What Doughnut Forge does not protect against
 
 - **A device that is already compromised.** While Doughnut Forge is unlocked, malware with full access to your device could read your secrets.
-- **Anyone with your passphrase and your device, your 24 recovery words, or enough recovery shards.** Keep them safe.
+- **Anyone with your passphrase and your device, or your 24 recovery words.** Keep them safe.
 - **Your device passcode,** on iPhone and iPad with Face ID or Touch ID turned on. iOS accepts the passcode in place of Face ID or Touch ID.
 - **Recipients.** Anyone who can open an item can save, copy or share what is inside.
 - **Who sent an item.** The app names a contact as the sender only when the item is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown. The name is only as reliable as the card: compare the contact code.

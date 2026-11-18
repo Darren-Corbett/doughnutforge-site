@@ -294,7 +294,7 @@ export default {
   "technical.keys.identity.text": "vzniká z jednoho 256bitového náhodného tajemství, vytvořeného ve vašem zařízení.",
   "technical.keys.recovery.label": "Obnovení:",
   "technical.keys.recovery.text":
-    "toto tajemství lze zapsat jako vašich 24 obnovovacích slov (BIP-39). Lze ho také rozdělit na části pro obnovení pomocí Shamir's Secret Sharing: obnoví ho libovolné části ve zvoleném počtu (nejméně 2, celkem nejvýše 16). Méně částí, než je tento počet, neprozradí nic.",
+    "toto tajemství lze zapsat jako vašich 24 obnovovacích slov (BIP-39).",
   "technical.keys.exchange.label": "Výměna klíčů (postkvantový hybrid):",
   "technical.keys.exchange.text": "klíč každé položky je zapečetěn zvlášť pro každého příjemce i pro vás, pomocí X25519 spolu s ML-KEM-768. Obě sdílená tajemství se kombinují pomocí SHA-256.",
   "technical.keys.signatures.label": "Podpisy:",
@@ -361,7 +361,6 @@ export default {
   "technical.libraries.sha": "SHA-256 a SHA-512",
   "technical.libraries.random": "Zdroj náhodnosti operačního systému",
   "technical.libraries.words": "Obnovovací slova",
-  "technical.libraries.shards": "Části pro obnovení",
   "technical.libraries.memory": "Tajemství v paměti",
   "technical.libraries.wipe": "Mazání tajemství z paměti",
   "technical.libraries.compression": "Komprese",
@@ -369,7 +368,7 @@ export default {
   "technical.limits.compromised.label": "Zařízení, které už je napadené.",
   "technical.limits.compromised.text": "Když je Doughnut Forge odemčený, malware s plným přístupem k vašemu zařízení by mohl přečíst vaše tajemství.",
   "technical.limits.access.label":
-    "Kdokoli, kdo má vaše heslo a vaše zařízení, vašich 24 obnovovacích slov nebo dost částí pro obnovení.",
+    "Kdokoli, kdo má vaše heslo a vaše zařízení, nebo kdo má vašich 24 obnovovacích slov.",
   "technical.limits.access.text": "Chraňte je.",
   "technical.limits.passcode.label": "Kód vašeho zařízení,",
   "technical.limits.passcode.text": "na iPhonu a iPadu se zapnutým Face ID nebo Touch ID. iOS přijme kód místo Face ID nebo Touch ID.",

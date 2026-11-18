@@ -292,7 +292,7 @@ export default {
   "technical.keys.identity.text": "powstaje z jednego losowego, 256-bitowego sekretu, utworzonego na Twoim urządzeniu.",
   "technical.keys.recovery.label": "Odzyskiwanie:",
   "technical.keys.recovery.text":
-    "ten sekret można zapisać jako Twoje 24 słowa odzyskiwania (BIP-39). Można go też podzielić na części do odzyskania za pomocą Shamir's Secret Sharing (schematu podziału sekretu Shamira), gdzie dowolne części w wybranej liczbie (co najmniej 2, łącznie najwyżej 16) go przywracają. Mniej części niż ta liczba nic nie ujawnia.",
+    "ten sekret można zapisać jako Twoje 24 słowa odzyskiwania (BIP-39).",
   "technical.keys.exchange.label": "Wymiana kluczy (hybryda postkwantowa):",
   "technical.keys.exchange.text": "klucz każdego elementu jest pieczętowany osobno dla każdego odbiorcy oraz dla Ciebie, z użyciem X25519 razem z ML-KEM-768. Dwa wspólne sekrety są łączone za pomocą SHA-256.",
   "technical.keys.signatures.label": "Podpisy:",
@@ -359,7 +359,6 @@ export default {
   "technical.libraries.sha": "SHA-256 i SHA-512",
   "technical.libraries.random": "Źródło losowości systemu operacyjnego",
   "technical.libraries.words": "Słowa odzyskiwania",
-  "technical.libraries.shards": "Części do odzyskania",
   "technical.libraries.memory": "Sekrety w pamięci",
   "technical.libraries.wipe": "Usuwanie sekretów z pamięci",
   "technical.libraries.compression": "Kompresja",
@@ -367,7 +366,7 @@ export default {
   "technical.limits.compromised.label": "Urządzenie, które jest już przejęte.",
   "technical.limits.compromised.text": "Gdy aplikacja Doughnut Forge jest odblokowana, złośliwe oprogramowanie z pełnym dostępem do Twojego urządzenia mogłoby odczytać Twoje sekrety.",
   "technical.limits.access.label":
-    "Każdy, kto ma Twoje hasło i Twoje urządzenie, Twoje 24 słowa odzyskiwania lub wystarczająco wiele części do odzyskania.",
+    "Każdy, kto ma Twoje hasło i Twoje urządzenie lub kto ma Twoje 24 słowa odzyskiwania.",
   "technical.limits.access.text": "Przechowuj je bezpiecznie.",
   "technical.limits.passcode.label": "Kod Twojego urządzenia,",
   "technical.limits.passcode.text": "na iPhonie i iPadzie z włączonym Face ID lub Touch ID. iOS akceptuje kod zamiast Face ID lub Touch ID.",

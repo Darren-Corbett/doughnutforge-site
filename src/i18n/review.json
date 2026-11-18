@@ -325,6 +325,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -670,6 +677,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -933,6 +947,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. \"no hace falta\" leaves the account unsaid; it can only mean the account.",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -1247,6 +1268,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. \"su GitHub\" repeated: style only.",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -1579,6 +1607,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1861,6 +1896,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -2151,6 +2193,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -2511,6 +2560,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2806,6 +2862,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -3130,6 +3193,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -3506,6 +3576,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -3862,6 +3939,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -4239,6 +4323,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -4593,6 +4684,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -4936,6 +5034,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -5277,6 +5382,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -5577,6 +5689,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. \"no hace falta\" leaves the account unsaid; it can only mean the account.",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -5896,6 +6015,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -6252,6 +6378,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -6550,6 +6683,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -6856,6 +6996,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -7182,6 +7329,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -7538,6 +7692,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -7844,6 +8005,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. \"इसकी\" is a pronoun; both readings (account, GitHub) give the right meaning.",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -8164,6 +8332,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -8477,6 +8652,13 @@
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
       }
     ]
   },
@@ -8781,6 +8963,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]
@@ -9127,6 +9316,13 @@
         "severity": "note",
         "issue": "Added \"; email works without one\" (owner, 17 November 2026), independent review: says clearly that email reports need no GitHub account, email word and address form match security.report.text. ",
         "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.keys.recovery.text + technical.limits.access.label",
+        "severity": "note",
+        "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
+        "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
       }
     ]

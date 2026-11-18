@@ -295,7 +295,7 @@ export default {
   "technical.keys.identity.text": "egyetlen 256 bites véletlenszerű titokból készül, amely a te eszközödön jön létre.",
   "technical.keys.recovery.label": "Helyreállítás:",
   "technical.keys.recovery.text":
-    "ez a titok leírható a 24 helyreállítási szavadként (BIP-39). Helyreállítási töredékekre is felosztható a Shamir's Secret Sharing módszerrel: ilyenkor a választott számú töredék (legalább 2; a töredékek száma összesen legfeljebb 16) bármely csoportja visszaállítja. Ennél kevesebb töredék semmit sem árul el.",
+    "ez a titok leírható a 24 helyreállítási szavadként (BIP-39).",
   "technical.keys.exchange.label": "Kulcscsere (posztkvantum hibrid):",
   "technical.keys.exchange.text": "minden elem kulcsa külön le van zárva minden címzett számára, és a te számodra is, az X25519 és az ML-KEM-768 együttes használatával. A két közös titkot az SHA-256 egyesíti.",
   "technical.keys.signatures.label": "Aláírások:",
@@ -362,7 +362,6 @@ export default {
   "technical.libraries.sha": "SHA-256 és SHA-512",
   "technical.libraries.random": "Az operációs rendszer véletlenforrása",
   "technical.libraries.words": "Helyreállítási szavak",
-  "technical.libraries.shards": "Helyreállítási töredékek",
   "technical.libraries.memory": "Titkok a memóriában",
   "technical.libraries.wipe": "Titkok törlése a memóriából",
   "technical.libraries.compression": "Tömörítés",
@@ -370,7 +369,7 @@ export default {
   "technical.limits.compromised.label": "Egy már feltört eszköz.",
   "technical.limits.compromised.text": "Amíg a Doughnut Forge fel van oldva, az eszközödhöz teljes hozzáféréssel rendelkező kártevő elolvashatja a titkaidat.",
   "technical.limits.access.label":
-    "Bárki, akinél ott van a jelszavad és az eszközöd, a 24 helyreállítási szavad vagy elegendő helyreállítási töredék.",
+    "Bárki, akinél ott van a jelszavad és az eszközöd, vagy akinél ott van a 24 helyreállítási szavad.",
   "technical.limits.access.text": "Tartsd őket biztonságban.",
   "technical.limits.passcode.label": "Az eszközöd jelkódja,",
   "technical.limits.passcode.text": "iPhone-on és iPaden, ha a Face ID vagy a Touch ID be van kapcsolva. Az iOS a Face ID vagy a Touch ID helyett is elfogadja a jelkódot.",

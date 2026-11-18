@@ -291,7 +291,7 @@ export default {
   "technical.keys.identity.text": "dannet ud fra én tilfældig hemmelighed på 256 bit, oprettet på din enhed.",
   "technical.keys.recovery.label": "Gendannelse:",
   "technical.keys.recovery.text":
-    "hemmeligheden kan skrives ned som dine 24 gendannelsesord (BIP-39). Den kan også deles op i gendannelsesdele med Shamir's Secret Sharing, hvor et valgt antal vilkårlige dele (mindst 2, højst 16 i alt) bringer den tilbage. Færre dele end det afslører intet.",
+    "hemmeligheden kan skrives ned som dine 24 gendannelsesord (BIP-39).",
   "technical.keys.exchange.label": "Nøgleudveksling (post-kvante-hybrid):",
   "technical.keys.exchange.text": "hvert elements nøgle forsegles separat for hver modtager og for dig med X25519 sammen med ML-KEM-768. De to delte hemmeligheder kombineres med SHA-256.",
   "technical.keys.signatures.label": "Signaturer:",
@@ -358,7 +358,6 @@ export default {
   "technical.libraries.sha": "SHA-256 og SHA-512",
   "technical.libraries.random": "Styresystemets kilde til tilfældige tal",
   "technical.libraries.words": "Gendannelsesord",
-  "technical.libraries.shards": "Gendannelsesdele",
   "technical.libraries.memory": "Hemmeligheder i hukommelsen",
   "technical.libraries.wipe": "Sletning af hemmeligheder fra hukommelsen",
   "technical.libraries.compression": "Komprimering",
@@ -366,7 +365,7 @@ export default {
   "technical.limits.compromised.label": "En enhed, der allerede er kompromitteret.",
   "technical.limits.compromised.text": "Mens Doughnut Forge er låst op, kan malware med fuld adgang til din enhed læse dine hemmeligheder.",
   "technical.limits.access.label":
-    "Alle med din adgangskode og din enhed, dine 24 gendannelsesord eller nok gendannelsesdele.",
+    "Alle med din adgangskode og din enhed, eller med dine 24 gendannelsesord.",
   "technical.limits.access.text": "Opbevar dem sikkert.",
   "technical.limits.passcode.label": "Din enheds kode,",
   "technical.limits.passcode.text": "på iPhone og iPad med Face ID eller Touch ID slået til. iOS accepterer koden i stedet for Face ID eller Touch ID.",
