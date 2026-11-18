@@ -94,7 +94,7 @@ export default {
   "download.title": "Descarcă Doughnut Forge",
   "download.requires.mac": "Necesită macOS 12 Monterey sau o versiune mai nouă.",
   "download.requires.windows": "Necesită Windows 11.",
-  "download.requires.android": "Necesită Android 10 sau o versiune mai nouă.",
+  "download.requires.android": "Necesită Android 10 sau o versiune mai nouă, cu Android System WebView 111 sau o versiune mai nouă (actualizat din Google Play).",
   "download.start.title": "La prima deschidere",
   "download.start.text": "Doughnut Forge începe cu un scurt mesaj de bun venit, apoi o singură alegere: îți creezi identitatea sau o restaurezi. Când o creezi, aplicația îți dă 24 de cuvinte de recuperare. Notează-le și păstrează-le într-un loc sigur: sunt singura modalitate de a-ți restaura identitatea sau de a reseta o parolă uitată.",
   "meta.support.title": "Suport și întrebări frecvente | Doughnut Forge",

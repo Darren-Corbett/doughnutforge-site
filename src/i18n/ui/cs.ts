@@ -98,7 +98,7 @@ export default {
   "download.title": "Stáhnout Doughnut Forge",
   "download.requires.mac": "Vyžaduje macOS 12 Monterey nebo novější.",
   "download.requires.windows": "Vyžaduje Windows 11.",
-  "download.requires.android": "Vyžaduje Android 10 nebo novější.",
+  "download.requires.android": "Vyžaduje Android 10 nebo novější a Android System WebView 111 nebo novější (aktualizovaný přes Google Play).",
   "download.start.title": "Při prvním spuštění",
   "download.start.text":
     "Doughnut Forge začíná krátkým uvítáním a jednou volbou: vytvořit identitu, nebo ji obnovit. Když ji vytvoříte, aplikace vám dá 24 obnovovacích slov. Zapište si je a uchovávejte je na bezpečném místě: jsou jediným způsobem, jak obnovit identitu nebo nastavit nové heslo místo zapomenutého.",

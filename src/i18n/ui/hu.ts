@@ -98,7 +98,7 @@ export default {
   "download.title": "Doughnut Forge letöltése",
   "download.requires.mac": "macOS 12 Monterey vagy újabb rendszer szükséges.",
   "download.requires.windows": "Windows 11 szükséges.",
-  "download.requires.android": "Android 10 vagy újabb rendszer szükséges.",
+  "download.requires.android": "Android 10 vagy újabb rendszer szükséges, Android System WebView 111 vagy újabb verzióval (Google Playen keresztül frissítve).",
   "download.start.title": "Az első indításkor",
   "download.start.text":
     "A Doughnut Forge egy rövid üdvözléssel, majd egyetlen választással indul: létrehozod az identitásodat, vagy visszaállítod. Amikor létrehozod, az alkalmazás 24 helyreállítási szót ad. Írd le őket, és tartsd biztonságos helyen: csak ezekkel állíthatod helyre az identitásodat, vagy állíthatsz be új jelszót, ha elfelejtetted a régit.",

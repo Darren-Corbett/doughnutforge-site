@@ -94,7 +94,7 @@ export default {
   "download.title": "Скачать Doughnut Forge",
   "download.requires.mac": "Требуется macOS 12 Monterey или новее.",
   "download.requires.windows": "Требуется Windows 11.",
-  "download.requires.android": "Требуется Android 10 или новее.",
+  "download.requires.android": "Требуется Android 10 или новее, а также Android System WebView 111 или новее (обновляется через Google Play).",
   "download.start.title": "При первом запуске",
   "download.start.text": "Doughnut Forge начинается с короткого приветствия и одного выбора: создать личность или восстановить её. Когда вы её создаёте, приложение даёт вам 24 слова восстановления. Запишите их и храните в надёжном месте: это единственный способ восстановить личность или сбросить забытый пароль.",
   "meta.support.title": "Поддержка и частые вопросы | Doughnut Forge",

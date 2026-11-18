@@ -212,6 +212,12 @@ Rules for both posts (owner): no logos; product names as plain words only; never
 
 Not claimed: that Doughnut Forge would have prevented the breach; any name of the group, company, leak site, database or publishers; any political statement; DHS statements beyond "aware of a potential breach".
 
+## Download page requirements (19 November 2026)
+
+| # | Claim on the page | Source |
+|---|---|---|
+| DL1 | `download.requires.android`: "Needs Android 10 or later, with Android System WebView 111 or later (updated from Google Play)." Shown only once Android is on sale (`src/data/stages.ts`, stage "android") | Android 10: `app-answers.md` §4 (minimum Android 10, API 29), owner's yes in `docs/android-release-plan.md` item 9. WebView 111 and the update from Google Play: final white paper (3.0.0, held until stage 3), section 9.3 ("if the phone's System WebView is older than version 111, the app shows only a screen asking the person to update it from Google Play"). Owner's yes to the wording, 19 November 2026 |
+
 ## Site FAQ and Technical details page (30 October 2026)
 
 The Technical details page (`/security/technical-details/`, strings `technical.*` in `src/i18n/ui/en.ts`) states only what is in `docs/TECH-SPEC.md`, section by section. Two changes from that file: "password" in place of "passphrase" (the app's own word), and no library versions. The message length figures in TECH-SPEC.md are left out because they were calculated, not measured.

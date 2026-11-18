@@ -95,7 +95,7 @@ export default {
   "download.title": "Hent Doughnut Forge",
   "download.requires.mac": "Kræver macOS 12 Monterey eller nyere.",
   "download.requires.windows": "Kræver Windows 11.",
-  "download.requires.android": "Kræver Android 10 eller nyere.",
+  "download.requires.android": "Kræver Android 10 eller nyere samt Android System WebView 111 eller nyere (opdateret via Google Play).",
   "download.start.title": "Når du åbner den første gang",
   "download.start.text":
     "Doughnut Forge starter med en kort velkomst og derefter ét valg: opret din identitet, eller gendan den. Når du opretter den, giver appen dig 24 gendannelsesord. Skriv dem ned, og opbevar dem et sikkert sted: de er den eneste måde at gendanne din identitet eller nulstille en glemt adgangskode på.",

@@ -339,6 +339,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -698,6 +705,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -974,6 +988,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -1302,6 +1323,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -1649,6 +1677,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -1944,6 +1979,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -2248,6 +2290,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -2630,6 +2679,13 @@
         "issue": "\"Audit\" is now \"tietoturva-auditointi\" (owner, 19 November 2026), as in the Finnish white paper, so audits stay apart from \"tarkistus\" (checks). Independent review: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-fi-audit.md).",
         "backTranslation": "Not yet audited / an independent security audit",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -2938,6 +2994,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -3276,6 +3339,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -3667,6 +3737,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -4036,6 +4113,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md); note applied: \"Google Playen\" as elsewhere in the file.",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -4428,6 +4512,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -4796,6 +4887,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -5153,6 +5251,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -5508,6 +5613,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -5821,6 +5933,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -6154,6 +6273,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -6525,6 +6651,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -6836,6 +6969,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -7156,6 +7296,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -7496,6 +7643,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -7867,6 +8021,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md); note applied: \"이상과\" in place of \", 그리고\".",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -8186,6 +8347,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -8521,6 +8689,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-A.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -8848,6 +9023,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -9165,6 +9347,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }
@@ -9525,6 +9714,13 @@
         "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
         "severity": "note",
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
+      },
+      {
+        "key": "download.requires.android",
+        "severity": "note",
+        "issue": "Android System WebView 111 or later added (owner, 19 November 2026; white paper 9.3). Independent review with back-translation: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-webview-B.md).",
         "backTranslation": "",
         "suggestion": "No change."
       }

@@ -94,7 +94,7 @@ export default {
   "download.title": "ดาวน์โหลด Doughnut Forge",
   "download.requires.mac": "ต้องใช้ macOS 12 Monterey ขึ้นไป",
   "download.requires.windows": "ต้องใช้ Windows 11",
-  "download.requires.android": "ต้องใช้ Android 10 ขึ้นไป",
+  "download.requires.android": "ต้องใช้ Android 10 ขึ้นไป พร้อม Android System WebView 111 ขึ้นไป (อัปเดตจาก Google Play)",
   "download.start.title": "เมื่อเปิดครั้งแรก",
   "download.start.text":
     "Doughnut Forge เริ่มต้นด้วยหน้าต้อนรับสั้นๆ แล้วให้เลือกหนึ่งอย่าง: สร้างข้อมูลประจำตัว หรือกู้คืน เมื่อคุณสร้างข้อมูลประจำตัว แอปจะให้คำกู้คืน 24 คำแก่คุณ จดไว้และเก็บไว้ในที่ปลอดภัย เพราะเป็นวิธีเดียวในการกู้คืนข้อมูลประจำตัวของคุณหรือรีเซ็ตรหัสผ่านที่ลืม",

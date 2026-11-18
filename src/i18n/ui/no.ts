@@ -95,7 +95,7 @@ export default {
   "download.title": "Last ned Doughnut Forge",
   "download.requires.mac": "Krever macOS 12 Monterey eller nyere.",
   "download.requires.windows": "Krever Windows 11.",
-  "download.requires.android": "Krever Android 10 eller nyere.",
+  "download.requires.android": "Krever Android 10 eller nyere, med Android System WebView 111 eller nyere (oppdatert fra Google Play).",
   "download.start.title": "Første gang du åpner appen",
   "download.start.text":
     "Doughnut Forge starter med én kort velkomst og så ett valg: opprett identiteten din, eller gjenopprett den. Når du oppretter den, gir appen deg 24 gjenopprettingsord. Skriv dem ned og oppbevar dem på et trygt sted: de er den eneste måten å gjenopprette identiteten din eller tilbakestille et glemt passord på.",

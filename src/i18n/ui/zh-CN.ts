@@ -89,7 +89,7 @@ export default {
   "download.title": "下载 Doughnut Forge",
   "download.requires.mac": "需要 macOS 12 Monterey 或更高版本。",
   "download.requires.windows": "需要 Windows 11。",
-  "download.requires.android": "需要 Android 10 或更高版本。",
+  "download.requires.android": "需要 Android 10 或更高版本，以及 Android System WebView 111 或更高版本（通过 Google Play 更新）。",
   "download.start.title": "首次打开时",
   "download.start.text":
     "Doughnut Forge 开始时只有一段简短的欢迎，然后是一个选择：创建您的身份，或恢复身份。创建身份时，应用会给您 24 个恢复单词。请把它们写下来并保存在安全的地方：这是恢复身份或重置忘记的密码的唯一方法。",

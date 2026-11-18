@@ -94,7 +94,7 @@ export default {
   "download.title": "Λήψη του Doughnut Forge",
   "download.requires.mac": "Απαιτεί macOS 12 Monterey ή νεότερο.",
   "download.requires.windows": "Απαιτεί Windows 11.",
-  "download.requires.android": "Απαιτεί Android 10 ή νεότερο.",
+  "download.requires.android": "Απαιτεί Android 10 ή νεότερο, με Android System WebView 111 ή νεότερο (ενημερωμένο μέσω Google Play).",
   "download.start.title": "Την πρώτη φορά που θα το ανοίξετε",
   "download.start.text": "Το Doughnut Forge ξεκινά με ένα σύντομο καλωσόρισμα και μετά μία επιλογή: δημιουργία της ταυτότητάς σας ή επαναφορά της. Όταν τη δημιουργείτε, η εφαρμογή σάς δίνει 24 λέξεις ανάκτησης. Γράψτε τις και φυλάξτε τις σε ασφαλές μέρος: είναι ο μόνος τρόπος για να επαναφέρετε την ταυτότητά σας ή να ορίσετε νέο κωδικό πρόσβασης αν τον ξεχάσετε.",
   "meta.support.title": "Υποστήριξη και συχνές ερωτήσεις | Doughnut Forge",

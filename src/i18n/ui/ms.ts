@@ -96,7 +96,7 @@ export default {
   "download.title": "Muat turun Doughnut Forge",
   "download.requires.mac": "Memerlukan macOS 12 Monterey atau lebih baharu.",
   "download.requires.windows": "Memerlukan Windows 11.",
-  "download.requires.android": "Memerlukan Android 10 atau lebih baharu.",
+  "download.requires.android": "Memerlukan Android 10 atau lebih baharu, dengan Android System WebView 111 atau lebih baharu (dikemas kini daripada Google Play).",
   "download.start.title": "Apabila anda membukanya kali pertama",
   "download.start.text":
     "Doughnut Forge bermula dengan satu sambutan ringkas, kemudian satu pilihan: cipta identiti anda, atau pulihkannya. Apabila anda menciptanya, aplikasi memberi anda 24 perkataan pemulihan. Tuliskannya dan simpan di tempat yang selamat: itu satu-satunya cara untuk memulihkan identiti anda atau menetapkan semula kata laluan yang terlupa.",

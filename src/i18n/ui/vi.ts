@@ -96,7 +96,7 @@ export default {
   "download.title": "Tải xuống Doughnut Forge",
   "download.requires.mac": "Cần macOS 12 Monterey trở lên.",
   "download.requires.windows": "Cần Windows 11.",
-  "download.requires.android": "Cần Android 10 trở lên.",
+  "download.requires.android": "Cần Android 10 trở lên, cùng Android System WebView 111 trở lên (cập nhật từ Google Play).",
   "download.start.title": "Khi bạn mở lần đầu",
   "download.start.text":
     "Doughnut Forge bắt đầu bằng một lời chào ngắn, rồi một lựa chọn: tạo danh tính của bạn, hoặc khôi phục danh tính. Khi bạn tạo danh tính, ứng dụng cung cấp cho bạn 24 từ khôi phục. Hãy ghi lại và giữ ở một vị trí an toàn: đó là cách duy nhất để khôi phục danh tính hoặc đặt lại mật khẩu bị quên.",

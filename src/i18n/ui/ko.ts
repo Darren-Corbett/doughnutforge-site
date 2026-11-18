@@ -92,7 +92,7 @@ export default {
   "download.title": "Doughnut Forge 다운로드",
   "download.requires.mac": "macOS 12 Monterey 이상이 필요합니다.",
   "download.requires.windows": "Windows 11이 필요합니다.",
-  "download.requires.android": "Android 10 이상이 필요합니다.",
+  "download.requires.android": "Android 10 이상과 Android System WebView 111 이상(Google Play에서 업데이트)이 필요합니다.",
   "download.start.title": "처음 열 때",
   "download.start.text":
     "Doughnut Forge는 짧은 환영 인사 후 한 가지 선택으로 시작합니다: 신원을 만들거나 복원하세요. 신원을 만들면 앱이 24개의 복구 단어를 알려 줍니다. 적어서 안전한 곳에 보관하세요. 신원을 복원하거나 잊어버린 비밀번호를 재설정할 수 있는 유일한 방법입니다.",

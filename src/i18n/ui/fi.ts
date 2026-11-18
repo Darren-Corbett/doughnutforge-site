@@ -98,7 +98,7 @@ export default {
   "download.title": "Lataa Doughnut Forge",
   "download.requires.mac": "Vaatii macOS 12 Monterey -version tai uudemman.",
   "download.requires.windows": "Vaatii Windows 11:n.",
-  "download.requires.android": "Vaatii Android 10 -version tai uudemman.",
+  "download.requires.android": "Vaatii Android 10 -version tai uudemman sekä Android System WebView 111 -version tai uudemman (päivitettynä Google Playn kautta).",
   "download.start.title": "Kun avaat sovelluksen ensimmäisen kerran",
   "download.start.text":
     "Doughnut Forge alkaa lyhyellä tervetulotoivotuksella ja sitten yhdellä valinnalla: luo henkilöllisyytesi tai palauta se. Kun luot sen, sovellus antaa sinulle 24 palautussanaa. Kirjoita ne muistiin ja säilytä niitä turvallisessa paikassa: ne ovat ainoa tapa palauttaa henkilöllisyytesi tai nollata unohtunut salasana.",

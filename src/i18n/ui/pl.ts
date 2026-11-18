@@ -96,7 +96,7 @@ export default {
   "download.title": "Pobierz Doughnut Forge",
   "download.requires.mac": "Wymaga systemu macOS 12 Monterey lub nowszego.",
   "download.requires.windows": "Wymaga systemu Windows 11.",
-  "download.requires.android": "Wymaga systemu Android 10 lub nowszego.",
+  "download.requires.android": "Wymaga systemu Android 10 lub nowszego oraz Android System WebView 111 lub nowszego (aktualizowanego z Google Play).",
   "download.start.title": "Przy pierwszym uruchomieniu",
   "download.start.text":
     "Doughnut Forge zaczyna się od krótkiego powitania, a potem jednego wyboru: utwórz tożsamość albo ją przywróć. Gdy ją tworzysz, aplikacja daje Ci 24 słowa odzyskiwania. Zapisz je i przechowuj w bezpiecznym miejscu: to jedyny sposób, aby przywrócić tożsamość lub zresetować zapomniane hasło.",

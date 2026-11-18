@@ -94,7 +94,7 @@ export default {
   "download.title": "Doughnut Forge'u indirin",
   "download.requires.mac": "macOS 12 Monterey veya sonrası gerekir.",
   "download.requires.windows": "Windows 11 gerekir.",
-  "download.requires.android": "Android 10 veya sonrası gerekir.",
+  "download.requires.android": "Android 10 veya sonrası ile Android System WebView 111 veya sonrası gerekir (Google Play üzerinden güncellenir).",
   "download.start.title": "İlk açtığınızda",
   "download.start.text": "Doughnut Forge kısa bir karşılama ve ardından tek bir seçimle başlar: kimliğinizi oluşturun veya geri yükleyin. Kimliğinizi oluşturduğunuzda uygulama size 24 kurtarma kelimesi verir. Bunları bir yere yazın ve güvenli bir yerde saklayın: kimliğinizi geri yüklemenin veya unuttuğunuz bir parolayı sıfırlamanın tek yolu bunlardır.",
   "meta.support.title": "Destek ve sık sorulan sorular | Doughnut Forge",

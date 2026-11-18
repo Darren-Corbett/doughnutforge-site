@@ -54,7 +54,7 @@ Android then moves to second place (after iPhone and iPad) by itself. What follo
 
 | Place | Today | When Android is live |
 |---|---|---|
-| Download and pricing cards (`PlatformCards.astro`) | Android card, "Coming soon", no link | Google Play badge (with its two fallbacks); on pricing "One-time purchase from Google Play" (after the string fix in 0.2); on download "Needs Android 10 or later." (owner, see 2.3) |
+| Download and pricing cards (`PlatformCards.astro`) | Android card, "Coming soon", no link | Google Play badge (with its two fallbacks); on pricing "One-time purchase from Google Play" (after the string fix in 0.2); on download "Needs Android 10 or later, with Android System WebView 111 or later (updated from Google Play)." (owner, see 2.3; WebView line added 19 November 2026, white paper 9.3) |
 | Store badge rows (`StoreLinks.astro`) | "Coming soon: Android." plus "Availability depends on your country or region." | Only the availability sentence. `download.coming` is then unused; keep it for the next platform (Linux) |
 | Support FAQ "Which devices?" (`faq.which.a`) | "Available for iPhone and iPad, Mac and Windows. Coming soon: Android." | **Breaks**: with nothing coming, `SupportPage.astro` fills `{coming}` with an empty list and prints "Coming soon: ." Needs a version of the answer without the second sentence |
 | Press fact sheet (`PressPage.astro`) | "Coming soon: Android" row | **Same problem**: an empty "Coming soon" row. Hide the row when nothing is coming |

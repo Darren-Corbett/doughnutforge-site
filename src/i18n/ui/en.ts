@@ -129,7 +129,7 @@ export default {
   "download.title": "Download Doughnut Forge",
   "download.requires.mac": "Needs macOS 12 Monterey or later.",
   "download.requires.windows": "Needs Windows 11.",
-  "download.requires.android": "Needs Android 10 or later.",
+  "download.requires.android": "Needs Android 10 or later, with Android System WebView 111 or later (updated from Google Play).",
   "download.start.title": "When you first open it",
   "download.start.text":
     "Doughnut Forge starts with one short welcome, then one choice: create your identity, or restore it. When you create it, the app gives you 24 recovery words. Write them down and keep them somewhere safe: they are the only way to restore your identity or reset a forgotten password.",

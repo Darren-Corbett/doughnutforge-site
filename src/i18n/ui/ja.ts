@@ -91,7 +91,7 @@ export default {
   "download.title": "Doughnut Forgeをダウンロード",
   "download.requires.mac": "macOS 12 Monterey以降が必要です。",
   "download.requires.windows": "Windows 11が必要です。",
-  "download.requires.android": "Android 10以降が必要です。",
+  "download.requires.android": "Android 10以降と、Android System WebView 111以降（Google Playで更新）が必要です。",
   "download.start.title": "初めて開くとき",
   "download.start.text":
     "Doughnut Forgeは短いようこそ画面から始まり、そのあと選択は1つだけです：アイデンティティを作成するか、復元するか。作成すると、アプリに24個の復元用の単語が表示されます。書き留めて、安全な場所に保管してください。アイデンティティを復元したり、忘れたパスワードをリセットしたりする唯一の方法です。",

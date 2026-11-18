@@ -88,7 +88,7 @@ export default {
   "download.title": "Doughnut Forge downloaden",
   "download.requires.mac": "Vereist macOS 12 Monterey of nieuwer.",
   "download.requires.windows": "Vereist Windows 11.",
-  "download.requires.android": "Vereist Android 10 of nieuwer.",
+  "download.requires.android": "Vereist Android 10 of nieuwer, met Android System WebView 111 of nieuwer (bijgewerkt via Google Play).",
   "download.start.title": "Als u de app voor het eerst opent",
   "download.start.text": "Doughnut Forge begint met één korte welkomst en dan één keuze: uw identiteit aanmaken, of herstellen. Als u die aanmaakt, geeft de app u 24 herstelwoorden. Schrijf ze op en bewaar ze op een veilige plek: ze zijn de enige manier om uw identiteit te herstellen of een vergeten wachtwoord opnieuw in te stellen.",
   "meta.support.title": "Hulp en veelgestelde vragen | Doughnut Forge",

@@ -94,7 +94,7 @@ export default {
   "download.title": "Doughnut Forge डाउनलोड करें",
   "download.requires.mac": "macOS 12 Monterey या उसके बाद का वर्ज़न चाहिए।",
   "download.requires.windows": "Windows 11 चाहिए।",
-  "download.requires.android": "Android 10 या उसके बाद का वर्ज़न चाहिए।",
+  "download.requires.android": "Android 10 या उसके बाद का वर्ज़न चाहिए, साथ में Android System WebView 111 या उसके बाद का वर्ज़न (Google Play से अपडेट किया हुआ)।",
   "download.start.title": "जब आप इसे पहली बार खोलते हैं",
   "download.start.text": "Doughnut Forge एक छोटे स्वागत से शुरू होता है, फिर एक विकल्प: अपनी पहचान बनाएँ, या उसे पुनर्स्थापित करें। जब आप इसे बनाते हैं, तो ऐप आपको 24 पुनर्प्राप्ति शब्द देता है। इन्हें लिख लें और किसी सुरक्षित जगह पर रखें: अपनी पहचान पुनर्स्थापित करने या भूला हुआ पासवर्ड रीसेट करने का यही एकमात्र तरीका है।",
   "meta.support.title": "सहायता और अक्सर पूछे जाने वाले सवाल | Doughnut Forge",
