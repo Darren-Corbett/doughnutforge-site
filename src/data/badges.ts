@@ -15,7 +15,11 @@ export const badgeWording = (store: StoreId, code: string) => {
   return { alt, own };
 };
 
-const badges = import.meta.glob<{ default: ImageMetadata }>("../assets/badges/*/*.svg", { eager: true });
+// A "<code>.placeholder.svg" stands in until the owner adds official files
+// (Google Play): it is never loaded, served or shown, so a store with only a
+// placeholder has no badge and the build fails if it goes on sale
+// (tests/checks/badge-placeholder.spec.ts).
+const badges = import.meta.glob<{ default: ImageMetadata }>(["../assets/badges/*/*.svg", "!../assets/badges/*/*.placeholder.svg"], { eager: true });
 
 /** Every badge file, as "<store>/<code>.svg" */
 export const badgeFiles = Object.keys(badges).map((k) => k.replace("../assets/badges/", ""));

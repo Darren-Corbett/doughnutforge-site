@@ -19,6 +19,10 @@ When a store offers two variants of one language, save the right one under each 
 - Chinese: the Simplified badge goes in `zh-CN.svg` and the Traditional badge in `zh-TW.svg`.
 - English: the US/UK badge serves both `en` and `en-US`.
 
+## Placeholder (until the official Google Play files arrive)
+
+`google-play/en.placeholder.svg` is a marked placeholder (`data-placeholder="true"`), not a badge. `src/data/badges.ts` never loads a `*.placeholder.svg`, so it is never served or shown, and with no official file the build fails if Android goes on sale; `tests/checks/badge-placeholder.spec.ts` also fails if Android is switched on while it is there. Replace it with the official files.
+
 ## Sources
 
 The localised badges are downloaded by `node scripts/fetch-badges.mjs`, run on a developer machine only. The files are committed. No build and no deploy runs it or calls a store's site. `sources.json` records the address each file came from, and the date.
