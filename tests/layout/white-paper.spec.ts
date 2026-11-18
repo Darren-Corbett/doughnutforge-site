@@ -91,3 +91,17 @@ test("white paper en: no reference note on the English paper itself", async ({ p
   await page.goto("/security/white-paper/");
   await expect(page.locator("main .reference")).toHaveCount(0);
 });
+
+// Every language with a paper text gets its page, including the codes with a
+// capital letter (en-US, es-MX, pt-BR, zh-CN, zh-TW): Astro lowercases content
+// ids unless told not to, and the page then finds no text (found 19 November 2026)
+test("white paper: every language's page builds", async ({ request }) => {
+  const codes = [...translated];
+  expect(codes.length, "paper texts").toBeGreaterThan(1);
+  for (const code of codes) {
+    const lang = languageData.languages.find((l) => l.code === code);
+    expect(lang, `${code} is a site language`).toBeTruthy();
+    const path = code === "en" ? "/security/white-paper/" : `/${lang!.path}/security/white-paper/`;
+    expect((await request.get(path)).status(), path).toBe(200);
+  }
+});
