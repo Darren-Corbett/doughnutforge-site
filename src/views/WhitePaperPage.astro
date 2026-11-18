@@ -69,6 +69,12 @@ const pdf = `${base}/security/white-paper/doughnut-forge-white-paper-${lang.code
     min-height: 44px;
     padding: 10px 0;
   }
+  /* Inline code is technical text, not a word: a long one (the 32-character
+     contact-code alphabet) may wrap at any character rather than push the page
+     sideways on a narrow phone (owner, 19 November 2026) */
+  .paper :global(:not(pre) > code) {
+    overflow-wrap: anywhere;
+  }
   .paper :global(table) {
     display: block;
     overflow-x: auto;
