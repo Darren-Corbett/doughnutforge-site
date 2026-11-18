@@ -8,6 +8,7 @@ import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } fro
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { promisify } from "node:util";
+import { reached } from "../support/release";
 
 const root = new URL("../../", import.meta.url).pathname;
 const run = promisify(execFile);
@@ -106,19 +107,23 @@ test("fails when the ID is not the hash of the content", async () => {
 });
 
 // security.txt (decisions 1 to 3, 14 November 2026): reports go to GitHub's
-// private reporting or by email, in English, and both policies are named
-test("security.txt names both ways to report, both policies and English only", () => {
+// private reporting or by email, in English; it names the white paper as a
+// second policy once the paper is published (owner, 18 November 2026)
+test("security.txt names both ways to report, its policies and English only", () => {
   const lines = readFileSync(`${root}public/.well-known/security.txt`, "utf8").split("\n");
   expect(lines.filter((l) => l.startsWith("Contact: "))).toEqual([
     "Contact: https://github.com/Darren-Corbett/forge-privacy/security/advisories/new",
     "Contact: mailto:support@doughnut-forge.app",
   ]);
-  expect(lines.filter((l) => l.startsWith("Policy: "))).toEqual(["Policy: https://doughnut-forge.app/security/", "Policy: https://doughnut-forge.app/security/white-paper/"]);
+  expect(lines.filter((l) => l.startsWith("Policy: "))).toEqual([
+    "Policy: https://doughnut-forge.app/security/",
+    ...(reached("all3") ? ["Policy: https://doughnut-forge.app/security/white-paper/"] : []),
+  ]);
   expect(lines.filter((l) => l.startsWith("Preferred-Languages: "))).toEqual(["Preferred-Languages: en"]);
   expect(lines.some((l) => l.startsWith("#") && l.includes('"Security"')), "asks for a subject starting with Security").toBe(true);
 });
 
-for (const line of ["Contact: mailto:support@doughnut-forge.app", "Policy: https://doughnut-forge.app/security/white-paper/", "Preferred-Languages: en"])
+for (const line of ["Contact: mailto:support@doughnut-forge.app", "Preferred-Languages: en"])
   test(`fails when security.txt has no "${line}" line`, async () => {
     const dist = await site({ stamped: false });
     writeFileSync(join(dist, ".well-known/security.txt"), read(dist, ".well-known/security.txt").replace(`${line}\n`, ""));
@@ -160,4 +165,35 @@ test("passes when every SVG in the assets is different", async () => {
   const result = await exec("check-production-files.mjs", await site(), ["--assets", dir]);
   expect(result.output).not.toContain("identical");
   expect(result.code).toBe(0);
+});
+
+// The white paper Policy line and the white paper page come together: never a
+// policy that answers 404, never a published paper security.txt leaves out
+const PAPER_POLICY = "Policy: https://doughnut-forge.app/security/white-paper/";
+const withPaper = async ({ page, policy }: { page: boolean; policy: boolean }) => {
+  const dist = await site({ stamped: false });
+  const txt = read(dist, ".well-known/security.txt").replace(`${PAPER_POLICY}\n`, "");
+  writeFileSync(join(dist, ".well-known/security.txt"), policy ? txt.replace("Canonical:", `${PAPER_POLICY}\nCanonical:`) : txt);
+  if (page) {
+    mkdirSync(join(dist, "security/white-paper"), { recursive: true });
+    writeFileSync(join(dist, "security/white-paper/index.html"), `<!doctype html><html><head><meta name="build-id" content="${PLACEHOLDER}"></head><body></body></html>`);
+  }
+  expect((await exec("build-id.mjs", dist)).code).toBe(0);
+  return check(dist);
+};
+
+test("passes with the white paper page and its Policy line, or with neither", async () => {
+  for (const both of [true, false]) expect((await withPaper({ page: both, policy: both })).code, `both ${both}`).toBe(0);
+});
+
+test("fails when the white paper page is built but security.txt does not name it", async () => {
+  const result = await withPaper({ page: true, policy: false });
+  expect(result.code).not.toBe(0);
+  expect(result.output).toContain(PAPER_POLICY);
+});
+
+test("fails when security.txt names the white paper but its page is not built", async () => {
+  const result = await withPaper({ page: false, policy: true });
+  expect(result.code).not.toBe(0);
+  expect(result.output).toContain("security/white-paper");
 });

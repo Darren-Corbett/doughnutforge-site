@@ -62,6 +62,11 @@ test("posts: Android, the old-card line and post-quantum signatures follow their
     return page.locator("main").innerText();
   };
   expect((await text("/blog/harvest-now-decrypt-later/")).includes("iPhone and iPad, Android, Mac and Windows"), "Android").toBe(reached("android"));
-  expect((await text("/blog/share-encrypted-files/")).includes("Old card: ask for a new one"), "old card").toBe(reached("first3"));
+  const share = await text("/blog/share-encrypted-files/");
+  expect(share.includes("Old card: ask for a new one"), "old card").toBe(reached("first3"));
+  // The unknown-sender warning as each version shows it: 3.0's two lines once every store sells it
+  expect(share.includes("The sender is not in your Contacts, or their contact card is out of date."), "3.0 warning").toBe(reached("all3"));
+  expect(share.includes("Sender not shown"), "older files").toBe(reached("all3"));
+  expect(share.includes("Encrypted by someone not in your Contacts"), "2.0 warning").toBe(!reached("all3"));
   expect((await text("/blog/doughnut-forge-vs-cryptomator/")).includes("post-quantum encryption and signatures"), "signatures").toBe(reached("all3"));
 });

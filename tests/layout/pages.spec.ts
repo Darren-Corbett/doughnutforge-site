@@ -174,6 +174,8 @@ test("security.txt", async ({ request }) => {
   const body = await res.text();
   expect(body).toContain(`Contact: ${ADVISORIES}`);
   expect(body).toContain("Policy: https://doughnut-forge.app/security/");
+  // The white paper is named once it is published
+  expect(body.includes("Policy: https://doughnut-forge.app/security/white-paper/"), "white paper policy").toBe(reached("all3"));
   expect(body).toContain("Canonical: https://doughnut-forge.app/.well-known/security.txt");
   expect(body).not.toContain("/issues");
   // RFC 9116: one Expires, in the future and no more than a year ahead
