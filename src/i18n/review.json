@@ -2623,6 +2623,13 @@
         "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
         "backTranslation": "",
         "suggestion": "No change."
+      },
+      {
+        "key": "meta.roadmap.description, roadmap.audit.*, security.audit.*",
+        "severity": "note",
+        "issue": "\"Audit\" is now \"tietoturva-auditointi\" (owner, 19 November 2026), as in the Finnish white paper, so audits stay apart from \"tarkistus\" (checks). Independent review: 0 blocking (~/Desktop/review/launch-site/v3-held/work/review-fi-audit.md).",
+        "backTranslation": "Not yet audited / an independent security audit",
+        "suggestion": "No change."
       }
     ]
   },
