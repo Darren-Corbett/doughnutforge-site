@@ -45,6 +45,7 @@ The stores release 3.0 one by one. The site moves through three stages, set by `
 
 **Stage 3, every store on sale sells 3.0** (every platform in `storesWith3`):
 1. The white paper texts, final and reviewed, from `~/Desktop/review/launch-site/v3-held/white-paper/texts/` into `src/content/white-paper/`, with the release-day [PENDING] lines filled in; the per-language route; `security/white-paper/` in `translatedPages` (`src/i18n/alternates.ts`, high risk); a social image.
+1b. In `src/content.config.ts`, give the white paper's glob loader `generateId: ({ entry }) => entry.replace(/\.md$/, "")`, so `es-MX`, `pt-BR`, `zh-CN`, `zh-TW` and `en-US` keep their case (Astro lowercases ids by default and the pages would not build).
 2. The PDFs: `npm run build`, then `node scripts/make-white-paper-pdf.mjs --lang <code>` per language, then build again. Never in GitHub Actions.
 3. Put back the sentences held for launch day, checked against the final paper and translated.
 4. Delete the stage machinery: `src/data/release.json`, `src/data/stages.ts`, `src/i18n/gated.ts`, `src/i18n/before/`, the `<Stage>` tags (keep their "from" words), and the stage branches in the views and tests.

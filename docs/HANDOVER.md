@@ -37,6 +37,14 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ---
 
+## Night of 18 to 19 November 2026 (`release/launch`)
+
+- Technical details, the Android restore line and the old-file wording, in all 30 languages, each behind its stage (`4c53801`); tests first (`82ff3a8`, `a96f3a6`). Four translation batches, independent review with back-translation, every blocking finding fixed and re-checked, stamped.
+- Google Play badge placeholder that the site never loads (`57c5db0`, `0141911`); the build fails if Android goes on sale before the official files are in.
+- The white paper may wrap inline code at any character, so 320px phones never scroll sideways (`f7b5844`, `638db6e`, owner's yes).
+- White paper: all 29 translations and US English are finished and held outside git (`~/Desktop/review/launch-site/v3-held/`), with the app's real screen texts. Stage 3 checklist addition: set `generateId: ({ entry }) => entry.replace(/\.md$/, "")` on the white paper's glob loader in `src/content.config.ts`, or the five hyphenated languages (en-US, es-MX, pt-BR, zh-CN, zh-TW) do not build (Astro lowercases ids). Found while making preview PDFs.
+- Waiting on the owner: the morning list at the top of `~/Desktop/review/launch-site/v3-held/work/STATUS.md`.
+
 ## Store switch on `release/launch` (18 November 2026)
 
 - The stores release 3.0 one by one, so the branch now switches in three stages (Android on sale, the first store with 3.0, every store with 3.0), set by `src/data/release.json`. Until a stage, its strings keep main's text in every language and its new lines, links, FAQs, roadmap entries, library rows, post sentences and the white paper page are left out. Today's data reaches no stage, so the branch builds the same pages as `main` plus the security reporting changes. Steps per stage: `docs/launch/JOINT-LAUNCH.md`.
