@@ -5,6 +5,7 @@
 import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import english from "../../src/i18n/ui/en";
+import { uiNow } from "../support/release";
 
 // Read as plain strings, so a key added with this test checks before the copy exists
 const en = english as Record<string, string>;
@@ -70,9 +71,8 @@ test("download page and blog posts point at the same Organization", async ({ pag
 test("home page: the summary line sits under the heading in every language", async ({ page }) => {
   for (const lang of languageData.languages) {
     const path = lang.code === "en" ? "/" : `/${lang.path}/`;
-    const own = ((await import(`../../src/i18n/ui/${lang.code}.ts`)).default as Record<string, string>)["home.summary"];
     await page.goto(path);
-    await expect(page.locator("h1 + p"), path).toHaveText((own ?? en["home.summary"])!);
+    await expect(page.locator("h1 + p"), path).toHaveText(await uiNow(lang.code, "home.summary"));
   }
 });
 
@@ -89,8 +89,9 @@ test("home page: a plain answer to what Doughnut Forge is, first after the hero,
 
 test("press kit: the short description is the home page's first sentence", async ({ page }) => {
   await page.goto("/press/");
-  await expect(page.getByText(en["press.about.shortText"]!, { exact: true })).toBeVisible();
-  expect(en["home.what.text"]!.startsWith(en["press.about.shortText"]!)).toBe(true);
+  const short = await uiNow("en", "press.about.shortText");
+  await expect(page.getByText(short, { exact: true })).toBeVisible();
+  expect(en["home.what.text"]!.startsWith(short)).toBe(true);
 });
 
 test("features page: four questions answered, no second FAQPage", async ({ page }) => {
