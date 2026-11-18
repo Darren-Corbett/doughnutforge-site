@@ -37,6 +37,13 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ---
 
+## Store switch on `release/launch` (18 November 2026)
+
+- The stores release 3.0 one by one, so the branch now switches in three stages (Android on sale, the first store with 3.0, every store with 3.0), set by `src/data/release.json`. Until a stage, its strings keep main's text in every language and its new lines, links, FAQs, roadmap entries, library rows, post sentences and the white paper page are left out. Today's data reaches no stage, so the branch builds the same pages as `main` plus the security reporting changes. Steps per stage: `docs/launch/JOINT-LAUNCH.md`.
+- Checked: stage 0 and stage 2 builds and stage tests (Chromium, WebKit, WebKit iPhone on the changed specs). Stage 1 needs the Play badge files; stage 3 needs the paper texts, which stay outside git until then.
+- The stale 14 November English white paper and its PDF left the branch; the final texts are held in `~/Desktop/review/launch-site/v3-held/`.
+- Waiting on the owner: the replacement for the sharing post's unknown-sender bullet; whether security.txt keeps its white paper Policy line before stage 3.
+
 ## Joint launch branch (14 November 2026)
 
 - **On `main`, live:** the quantum promise ("stays protected") replaced by the approved phrase in `faq.quantum.a`, `security.quantum.text` and two posts, in 30 languages (`39a9001`, pushed by the owner). The owner updates the Medium copies of "Harvest now, decrypt later" and "Quantum-safe encryption explained", and the app side the Mac and iOS store descriptions ("Built for the long term").
