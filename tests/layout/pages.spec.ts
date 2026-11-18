@@ -8,6 +8,7 @@ import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { each } from "../support/each";
 import { ui } from "../support/ui";
+import { reached } from "../support/release";
 
 // LANGS narrows the run, as in the other layout tests ("en" for English)
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));
@@ -15,8 +16,9 @@ const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.
 const ADVISORIES = "https://github.com/Darren-Corbett/forge-privacy/security/advisories/new";
 const SECURITY_EMAIL = "support@doughnut-forge.app";
 const SECTIONS = ["shipped", "next", "later"];
-// Names that stay untranslated on the technical details page, in every language
-const TECHNICAL_NAMES = ["AES-256-GCM", "X25519", "ML-KEM-768", "ML-KEM-1024", "Ed25519", "ML-DSA-87", "HKDF-SHA-256", "Argon2id", "BIP-39", "aes-gcm (RustCrypto)", "BEGIN FORGE ENCLAVE"];
+// Names that stay untranslated on the technical details page, in every language;
+// the new format's names appear once every store sells 3.0
+const TECHNICAL_NAMES = ["AES-256-GCM", "X25519", "ML-KEM-768", ...(reached("all3") ? ["ML-KEM-1024", "ML-DSA-87"] : []), "Ed25519", "HKDF-SHA-256", "Argon2id", "BIP-39", "aes-gcm (RustCrypto)", "BEGIN FORGE ENCLAVE"];
 
 for (const lang of languages) {
   test.describe(lang.code, () => {
@@ -43,15 +45,14 @@ for (const lang of languages) {
         expect(await page.locator(`[data-roadmap="${status}"] li`).count(), `${status} items`).toBeGreaterThan(0);
       }
       await expect(page.locator("[data-planned]")).toHaveCount(0);
-      // The new file format, Android and Doughnut Forge 2 have shipped, newest
-      // first; next are smaller improvements. Nothing describes internal security
-      // work (owner, 10 November 2026).
-      await expect(page.locator('[data-roadmap="shipped"] h3')).toHaveText([
-        await ui(lang.code, "roadmap.format.title"),
-        await ui(lang.code, "roadmap.android.title"),
-        await ui(lang.code, "roadmap.v2.title"),
-      ]);
-      await expect(page.locator('[data-roadmap="next"] h3')).toHaveText([await ui(lang.code, "roadmap.small.title")]);
+      // Shipped, newest first: the new file format (once every store sells 3.0),
+      // Android (once on sale) and Doughnut Forge 2; next, Android until then, and
+      // smaller improvements. Nothing describes internal security work (owner,
+      // 10 November 2026).
+      const shipped = [...(reached("all3") ? ["roadmap.format.title"] : []), ...(reached("android") ? ["roadmap.android.title"] : []), "roadmap.v2.title"];
+      const next = [...(reached("android") ? [] : ["roadmap.android.title"]), "roadmap.small.title"];
+      await expect(page.locator('[data-roadmap="shipped"] h3')).toHaveText(await Promise.all(shipped.map((k) => ui(lang.code, k))));
+      await expect(page.locator('[data-roadmap="next"] h3')).toHaveText(await Promise.all(next.map((k) => ui(lang.code, k))));
       // The Doughnut Forge 2 entry lists its highlights
       expect(await page.locator('[data-roadmap="shipped"] .points li').count(), "v2 highlights").toBeGreaterThan(0);
       // No dates, finding codes or version numbers, in any language
@@ -180,19 +181,4 @@ test("security.txt", async ({ request }) => {
   expect(expires).toHaveLength(1);
   expect(expires[0]! > Date.now()).toBe(true);
   expect(expires[0]! - Date.now()).toBeLessThanOrEqual(366 * 24 * 3600 * 1000);
-});
-
-// Decision 7 (owner, 14 November 2026): everyone's contact code changes once with
-// the new file format, so the FAQ says why, on the page and in its FAQPage data
-test("support: the FAQ answers why the contact code changed", async ({ page }) => {
-  await page.goto("/support/");
-  await expect(page.locator("main summary", { hasText: "Why did my contact code change?" })).toHaveCount(1);
-  const data = await page.locator('script[type="application/ld+json"]').allTextContents();
-  expect(data.join(" ")).toContain("Why did my contact code change?");
-});
-
-// Decision 7: files and cards in the new format do not open in older versions
-test("support: the FAQ says older versions do not open new files", async ({ page }) => {
-  await page.goto("/support/");
-  await expect(page.locator("main summary", { hasText: "Why can someone not open a file I sent?" })).toHaveCount(1);
 });

@@ -4,6 +4,11 @@
 import { readdirSync } from "node:fs";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { expect, test } from "../support/browser";
+import { reached } from "../support/release";
+
+// The paper is published once every store sells 3.0 (tests/layout/release-stages.spec.ts
+// checks it is absent before then)
+test.skip(!reached("all3"), "the white paper is published once every store sells 3.0");
 
 test("white paper: overview first, notes folded away, PDF from this site", async ({ page }) => {
   await page.goto("/security/white-paper/");

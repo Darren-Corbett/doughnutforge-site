@@ -4,6 +4,7 @@
 import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { ui } from "../support/ui";
+import { reached, uiNow } from "../support/release";
 
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));
 const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.path}`);
@@ -48,10 +49,17 @@ test("English pages do not call the iPhone and iPad app coming soon", async ({ p
 
 // Mobile first: on sale before coming soon, each group in the order iPhone and
 // iPad, Android, Mac, Windows (src/data/stores.ts). Linux is not named until it is coming. This is the order
-// without any script, and what search engines see.
-const ON_SALE = ["ios", "android", "mac", "windows"];
-const COMING: string[] = [];
-const STORE_ORDER = [/apps\.apple\.com\/app\/id6821344597/, /play\.google\.com\/store\/apps\/details\?id=com\.darrencorbett\.doughnutforge\.mobile&/, /apps\.apple\.com\/app\/id6812778888/, /apps\.microsoft\.com/];
+// without any script, and what search engines see. Android is on sale once the
+// Android stage is reached (src/data/release.json).
+const ANDROID = reached("android");
+const ON_SALE = ANDROID ? ["ios", "android", "mac", "windows"] : ["ios", "mac", "windows"];
+const COMING: string[] = ANDROID ? [] : ["android"];
+const STORE_ORDER = [
+  /apps\.apple\.com\/app\/id6821344597/,
+  ...(ANDROID ? [/play\.google\.com\/store\/apps\/details\?id=com\.darrencorbett\.doughnutforge\.mobile&/] : []),
+  /apps\.apple\.com\/app\/id6812778888/,
+  /apps\.microsoft\.com/,
+];
 
 for (const lang of languages) {
   test(`mobile-first platform order ${lang.code}`, async ({ page }) => {
@@ -64,7 +72,7 @@ for (const lang of languages) {
     }
     const home = await (await page.request.get(`${prefix(lang)}/`)).text();
     const badges = [...home.matchAll(/<a href="(https:\/\/(?:apps\.|play\.google\.com\/)[^"]+)"/g)].map((m) => m[1]!.replaceAll("&amp;", "&"));
-    expect(badges.length, "home: badges").toBe(4);
+    expect(badges.length, "home: badges").toBe(ON_SALE.length);
     badges.forEach((href, i) => expect(href, `home badge ${i + 1}`).toMatch(STORE_ORDER[i]!));
     // Titles and descriptions name the phone platforms first, in every language
     await page.goto(`${prefix(lang)}/download/`);
@@ -72,16 +80,15 @@ for (const lang of languages) {
     const description = (await page.locator('meta[name="description"]').getAttribute("content"))!;
     expect(title.indexOf("iPhone"), `title: ${title}`).toBeLessThan(title.indexOf("Mac"));
     expect(description.indexOf("iPhone"), `description: ${description}`).toBeLessThan(description.indexOf("Mac"));
-    expect(description, "download description").toContain("Android");
-    expect(description, "download description").toContain("Google Play");
+    expect(description.includes("Google Play"), "download description names Google Play").toBe(ANDROID);
     expect(description, "download description").not.toContain("Linux");
     const ld = JSON.parse((await page.locator('script[type="application/ld+json"]').first().textContent())!);
-    expect([ld].flat().find((d) => d["@type"] === "SoftwareApplication").operatingSystem).toBe("iOS, iPadOS, Android, macOS, Windows");
+    expect([ld].flat().find((d) => d["@type"] === "SoftwareApplication").operatingSystem).toBe(ANDROID ? "iOS, iPadOS, Android, macOS, Windows" : "iOS, iPadOS, macOS, Windows");
     // The FAQ answers are in closed <details>, so the text is read, not what is shown
     await page.goto(`${prefix(lang)}/support/`);
     expect(await page.locator("main").textContent(), "support page").not.toContain("Linux");
-    // Nothing is coming, so no empty "Coming soon" is left anywhere
-    for (const path of ["/support/", "/press/", "/download/", "/pricing/", "/"]) {
+    // Once nothing is coming, no empty "Coming soon" is left anywhere
+    for (const path of ANDROID ? ["/support/", "/press/", "/download/", "/pricing/", "/"] : []) {
       await page.goto(`${prefix(lang)}${path}`);
       expect(await page.locator("main").textContent(), path).not.toContain(await ui(lang.code, "status.comingSoon"));
     }
@@ -91,8 +98,8 @@ for (const lang of languages) {
 test("press fact sheet lists phones first", async ({ page }) => {
   await page.goto("/press/");
   const fact = (term: string) => page.locator(".facts div", { has: page.locator("dt", { hasText: term }) }).locator("dd");
-  await expect(fact("Available for")).toHaveText("iPhone and iPad, Android, Mac and Windows");
-  await expect(page.locator(".facts dt", { hasText: "Coming soon" })).toHaveCount(0);
+  await expect(fact("Available for")).toHaveText(ANDROID ? "iPhone and iPad, Android, Mac and Windows" : "iPhone and iPad, Mac and Windows");
+  await expect(page.locator(".facts dt", { hasText: "Coming soon" })).toHaveCount(ANDROID ? 0 : 1);
 });
 
 // Copy covers phones and tablets too: no English page says the app works only
@@ -112,7 +119,7 @@ test("English copy does not assume a computer", async ({ page }) => {
   }
   await page.goto("/support/");
   await expect(page.locator("main")).toContainText("If I buy it on one platform, do I also get it on another?");
-  await expect(page.locator("main")).toContainText("buying on Android, Mac or Windows does not include any other platform");
+  await expect(page.locator("main")).toContainText(await uiNow("en", "faq.platforms.a"));
 });
 
 // Cards in a row are uniform: each badge sits at the bottom of its card, so the
@@ -125,7 +132,7 @@ for (const lang of languages) {
       const bottoms = await page
         .locator(".cards .on-sale")
         .evaluateAll((cards) => cards.map((c) => Math.round(c.getBoundingClientRect().bottom - c.querySelector(".buy")!.getBoundingClientRect().bottom)));
-      expect(bottoms.length, `${path}: cards on sale`).toBe(4);
+      expect(bottoms.length, `${path}: cards on sale`).toBe(ON_SALE.length);
       expect(new Set(bottoms).size, `${path}: gap under each badge ${bottoms}`).toBe(1);
     }
   });
@@ -134,7 +141,7 @@ for (const lang of languages) {
 // Android is on sale from Google Play: its card carries the Play badge for the
 // Android app, says what it needs on Download, and how it is bought on Pricing,
 // naming the store without "the" ("from Google Play")
-for (const lang of languages) {
+for (const lang of ANDROID ? languages : []) {
   test(`Android card ${lang.code}`, async ({ page }) => {
     const card = page.locator('.card[data-platform="android"]');
     await page.goto(`${prefix(lang)}/download/`);
@@ -147,6 +154,7 @@ for (const lang of languages) {
 }
 
 test("English names Google Play without \"the\"", async ({ page }) => {
+  test.skip(!ANDROID, "Google Play is named once Android is on sale");
   for (const path of ["/pricing/", "/go/7427ad/en/"]) {
     await page.goto(path);
     const text = `${await page.title()}\n${await page.locator("body").innerText()}`;
