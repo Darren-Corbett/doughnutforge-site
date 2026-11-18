@@ -47,11 +47,14 @@ test("white paper: diagram labels stay inside the drawing", async ({ page }) => 
   }
 });
 
-test("white paper: no sideways scrolling on a 360px phone", async ({ page }) => {
-  await page.setViewportSize({ width: 360, height: 800 });
-  await page.goto("/security/white-paper/");
-  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(360);
-});
+// At 320px too: a long code word (the 32-character contact-code alphabet in
+// section 6) may wrap at any character (owner, 19 November 2026)
+for (const width of [320, 360])
+  test(`white paper: no sideways scrolling on a ${width}px phone`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 800 });
+    await page.goto("/security/white-paper/");
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+  });
 
 // Every language links to the white paper from the footer, Security and
 // Technical details: to its own translation once there is one, otherwise to the
