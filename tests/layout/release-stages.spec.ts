@@ -15,6 +15,9 @@ test("Android stage: the Play badge and Android in the platform lists", async ({
   expect((await uiNow("en", "home.summary")).includes("Android")).toBe(on);
   await page.goto("/security/technical-details/");
   expect((await page.locator("main").innerText()).includes("fingerprint or face unlock"), "Android unlock row").toBe(on);
+  // The owner's Android restore line (mailbox Q5): a new Android phone starts empty
+  await page.goto("/support/");
+  expect((await page.locator("main").textContent())!.includes("On Android, a new phone starts empty"), "Android restore line").toBe(on);
   await page.goto("/roadmap/");
   await expect(page.locator(`[data-roadmap="${on ? "shipped" : "next"}"] h3`, { hasText: "Doughnut Forge for Android" })).toHaveCount(1);
 });
