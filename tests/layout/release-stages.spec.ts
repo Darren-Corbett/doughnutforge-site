@@ -54,3 +54,14 @@ test("a gated string keeps its earlier text in German", async ({ page }) => {
   await page.goto("/de/security/technical-details/");
   await expect(page.locator("main")).toContainText(await uiNow("de", "technical.stored.memory.text"));
 });
+
+// Posts follow the stages too (src/components/blog/Stage.astro)
+test("posts: Android, the old-card line and post-quantum signatures follow their stages", async ({ page }) => {
+  const text = async (path: string) => {
+    await page.goto(path);
+    return page.locator("main").innerText();
+  };
+  expect((await text("/blog/harvest-now-decrypt-later/")).includes("iPhone and iPad, Android, Mac and Windows"), "Android").toBe(reached("android"));
+  expect((await text("/blog/share-encrypted-files/")).includes("Old card: ask for a new one"), "old card").toBe(reached("first3"));
+  expect((await text("/blog/doughnut-forge-vs-cryptomator/")).includes("post-quantum encryption and signatures"), "signatures").toBe(reached("all3"));
+});
