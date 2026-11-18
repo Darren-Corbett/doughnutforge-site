@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Az Android a Google LLC védjegye. A Linux Linus Torvalds bejegyzett védjegye az Egyesült Államokban és más országokban.",
   "meta.roadmap.description": "A Doughnut Forge következő tervei, köztük az Android-verzió és egy független biztonsági audit.",
   "faq.share.a": "Kérd el a másik személytől a névjegykártyáját (egy .vltc2 fájlt), és add hozzá a Kapcsolataidhoz. Ezután titkosítsd a fájlt, és válaszd ki őt olyan személyként, aki megnyithatja. A titkosított fájlt bármilyen módon elküldheted, például e-mailben, üzenetküldő alkalmazásban vagy pendrive-on. Csak azok nyithatják meg, akiket kiválasztottál.",
+  "technical.visible.older": "A 0.4.41-nél régebbi verziókkal készült fájlok kulcs nélkül is megmutatják, kinek szólnak, és ki küldte őket. A jelenlegi verzióban továbbra is megnyílnak.",
   "security.quantum.title": "Posztkvantum titkosítás",
   "security.quantum.text": "A Doughnut Forge-ot arra tervezték, hogy ellenálljon a jövőbeli kvantumszámítógépek támadásainak: a NIST által szabványosított posztkvantum algoritmusokat klasszikus algoritmusokkal együtt használja.",
   "faq.quantum.a": "A jövőben a nagy teljesítményű kvantumszámítógépek talán képesek lesznek feltörni a ma széles körben használt titkosítás egy részét. A Doughnut Forge-ot arra tervezték, hogy ellenálljon a jövőbeli kvantumszámítógépek támadásainak: a NIST által szabványosított posztkvantum algoritmusokat klasszikus algoritmusokkal együtt használja.",

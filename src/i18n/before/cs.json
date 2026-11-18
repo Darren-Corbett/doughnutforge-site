@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android je ochranná známka společnosti Google LLC. Linux je ochranná známka registrovaná v USA a dalších zemích, jejímž vlastníkem je Linus Torvalds.",
   "meta.roadmap.description": "Co se pro Doughnut Forge plánuje dál, včetně Androidu a nezávislého bezpečnostního auditu.",
   "faq.share.a": "Požádejte druhou osobu o její kontaktní kartu (soubor .vltc2) a přidejte ji do svých Kontaktů. Pak soubor zašifrujte a vyberte tuto osobu jako někoho, kdo ho může otevřít. Zašifrovaný soubor pošlete, jak chcete, například e-mailem, v aplikaci pro zasílání zpráv nebo na USB disku. Otevřít ho mohou jen lidé, které jste vybrali.",
+  "technical.visible.older": "Soubory vytvořené ve verzích starších než 0.4.41 ukazují bez klíče, pro koho jsou a kdo je poslal. V aktuální verzi se stále otevřou.",
   "security.quantum.title": "Postkvantové šifrování",
   "security.quantum.text": "Šifrování v Doughnut Forge je navrženo tak, aby odolalo útokům budoucích kvantových počítačů: kombinuje postkvantové algoritmy standardizované institutem NIST s klasickými algoritmy.",
   "faq.quantum.a": "Výkonné kvantové počítače možná v budoucnu dokážou prolomit část šifrování, které se dnes běžně používá. Šifrování v Doughnut Forge je navrženo tak, aby odolalo útokům budoucích kvantových počítačů: kombinuje postkvantové algoritmy standardizované institutem NIST s klasickými algoritmy.",

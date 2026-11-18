@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android, Google LLC'nin ticari markasıdır. Linux, Linus Torvalds'ın ABD'de ve diğer ülkelerde tescilli ticari markasıdır.",
   "meta.roadmap.description": "Doughnut Forge için sırada neler planlandığı; Android ve bağımsız bir güvenlik denetimi dahil.",
   "faq.share.a": "Diğer kişiden kişi kartını (bir .vltc2 dosyası) isteyin ve Kişiler'e ekleyin. Ardından dosyayı şifreleyin ve onu açabilecek kişi olarak bu kişiyi seçin. Şifreli dosyayı istediğiniz gibi gönderin: örneğin e-postayla, bir mesajlaşma uygulamasıyla ya da bir USB bellekte. Onu yalnızca seçtiğiniz kişiler açabilir.",
+  "technical.visible.older": "0.4.41'den eski sürümlerle oluşturulan dosyalar, kimin için olduklarını ve kimin gönderdiğini anahtar olmadan gösterir. Bu dosyalar güncel sürümde yine de açılır.",
   "security.quantum.title": "Kuantum sonrası şifreleme",
   "security.quantum.text": "Doughnut Forge, gelecekteki kuantum bilgisayarların saldırılarına dayanacak şekilde tasarlanmıştır; NIST tarafından standartlaştırılmış kuantum sonrası algoritmaları klasik algoritmalarla birlikte kullanır.",
   "faq.quantum.a": "Gelecekte güçlü kuantum bilgisayarlar, bugün yaygın olarak kullanılan şifrelemenin bir kısmını kırabilecek hâle gelebilir. Doughnut Forge, gelecekteki kuantum bilgisayarların saldırılarına dayanacak şekilde tasarlanmıştır; NIST tarafından standartlaştırılmış kuantum sonrası algoritmaları klasik algoritmalarla birlikte kullanır.",

@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android ialah tanda dagangan Google LLC. Linux ialah tanda dagangan berdaftar Linus Torvalds di A.S. dan negara lain.",
   "meta.roadmap.description": "Apa yang dirancang seterusnya untuk Doughnut Forge, termasuk Android dan audit keselamatan bebas.",
   "faq.share.a": "Minta kad kenalan orang itu (fail .vltc2) dan tambahkannya ke Kenalan anda. Kemudian sulitkan fail itu dan pilih mereka sebagai orang yang boleh membukanya. Hantar fail yang disulitkan mengikut cara anda, contohnya melalui e-mel, aplikasi pemesejan atau pemacu USB. Hanya orang yang anda pilih boleh membukanya.",
+  "technical.visible.older": "Fail yang dibuat dengan versi lebih lama daripada 0.4.41 menunjukkan untuk siapa ia, dan siapa yang menghantarnya, tanpa kunci. Ia masih boleh dibuka dalam versi semasa.",
   "security.quantum.title": "Penyulitan pasca-kuantum",
   "security.quantum.text": "Doughnut Forge direka untuk menahan serangan komputer kuantum pada masa hadapan, menggunakan algoritma pasca-kuantum yang dipiawaikan oleh NIST bersama algoritma klasik.",
   "faq.quantum.a": "Pada masa hadapan, komputer kuantum yang berkuasa mungkin dapat memecahkan sebahagian penyulitan yang digunakan secara meluas hari ini. Doughnut Forge direka untuk menahan serangan komputer kuantum pada masa hadapan, menggunakan algoritma pasca-kuantum yang dipiawaikan oleh NIST bersama algoritma klasik.",

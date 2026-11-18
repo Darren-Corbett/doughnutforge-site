@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android é uma marca comercial da Google LLC. Linux é a marca registrada de Linus Torvalds nos EUA e em outros países.",
   "meta.roadmap.description": "O que está planejado a seguir para o Doughnut Forge, incluindo Android e uma auditoria de segurança independente.",
   "faq.share.a": "Peça à outra pessoa o cartão de contato dela (um arquivo .vltc2) e adicione-o aos seus Contatos. Depois, criptografe o arquivo e escolha essa pessoa como alguém que pode abri-lo. Envie o arquivo criptografado como quiser, por exemplo por e-mail, em um app de mensagens ou em um pen drive. Só as pessoas que você escolheu podem abri-lo.",
+  "technical.visible.older": "Arquivos criados com versões anteriores à 0.4.41 mostram, sem a chave, para quem são e quem os enviou. Eles ainda abrem na versão atual.",
   "security.quantum.title": "Criptografia pós-quântica",
   "security.quantum.text": "O Doughnut Forge foi projetado para resistir a ataques de futuros computadores quânticos, usando algoritmos pós-quânticos padronizados pelo NIST em conjunto com algoritmos clássicos.",
   "faq.quantum.a": "No futuro, computadores quânticos poderosos talvez consigam quebrar parte da criptografia amplamente usada hoje. O Doughnut Forge foi projetado para resistir a ataques de futuros computadores quânticos, usando algoritmos pós-quânticos padronizados pelo NIST em conjunto com algoritmos clássicos.",

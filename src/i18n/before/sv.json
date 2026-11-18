@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android är ett varumärke som tillhör Google LLC. Linux är ett registrerat varumärke som tillhör Linus Torvalds i USA och andra länder.",
   "meta.roadmap.description": "Vad som planeras härnäst för Doughnut Forge, bland annat Android och en oberoende säkerhetsgranskning.",
   "faq.share.a": "Be den andra personen att skicka sitt kontaktkort (en .vltc2-fil) och lägg till det i dina Kontakter. Kryptera sedan filen och välj personen bland dem som får öppna den. Skicka den krypterade filen hur du vill, till exempel via e-post, i en meddelandeapp eller på ett USB-minne. Bara de du valde kan öppna den.",
+  "technical.visible.older": "Filer som skapats med versioner äldre än 0.4.41 visar utan nyckeln vem de är till och vem som skickade dem. De går fortfarande att öppna i den nuvarande versionen.",
   "security.quantum.title": "Postkvantkryptering",
   "security.quantum.text": "Krypteringen i Doughnut Forge är utformad för att stå emot attacker från framtidens kvantdatorer och kombinerar NIST-standardiserade postkvantalgoritmer med klassiska algoritmer.",
   "faq.quantum.a": "I framtiden kanske kraftfulla kvantdatorer kan knäcka en del av den kryptering som är vanlig i dag. Krypteringen i Doughnut Forge är utformad för att stå emot attacker från framtidens kvantdatorer och kombinerar NIST-standardiserade postkvantalgoritmer med klassiska algoritmer.",

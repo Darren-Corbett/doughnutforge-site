@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android er et varemerke for Google LLC. Linux er et registrert varemerke for Linus Torvalds i USA og andre land.",
   "meta.roadmap.description": "Hva som er planlagt videre for Doughnut Forge, blant annet Android og en uavhengig sikkerhetsrevisjon.",
   "faq.share.a": "Be den andre personen om kontaktkortet sitt (en .vltc2-fil), og legg det til i Kontakter. Krypter deretter filen, og velg personen blant dem som kan åpne den. Send den krypterte filen slik du vil, for eksempel på e-post, i en meldingsapp eller på en minnepinne. Bare de du valgte, kan åpne den.",
+  "technical.visible.older": "Filer laget med versjoner eldre enn 0.4.41 viser uten nøkkelen hvem de er til, og hvem som sendte dem. De kan fortsatt åpnes i den nåværende versjonen.",
   "security.quantum.title": "Postkvantekryptering",
   "security.quantum.text": "Doughnut Forge er laget for å stå imot angrep fra fremtidens kvantedatamaskiner, og bruker NIST-standardiserte postkvantealgoritmer sammen med klassiske algoritmer.",
   "faq.quantum.a": "I fremtiden kan kraftige kvantedatamaskiner kanskje knekke noe av krypteringen som er mye brukt i dag. Doughnut Forge er laget for å stå imot angrep fra fremtidens kvantedatamaskiner, og bruker NIST-standardiserte postkvantealgoritmer sammen med klassiske algoritmer.",

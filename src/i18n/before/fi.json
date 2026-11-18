@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android on Google LLC:n tavaramerkki. Linux on Linus Torvaldsin rekisteröity tavaramerkki Yhdysvalloissa ja muissa maissa.",
   "meta.roadmap.description": "Mitä Doughnut Forgelle on suunniteltu seuraavaksi, mukaan lukien Android-versio ja riippumaton tietoturvatarkastus.",
   "faq.share.a": "Pyydä toiselta henkilöltä hänen yhteystietokorttinsa (.vltc2-tiedosto) ja lisää se Yhteystietoihisi. Salaa sitten tiedosto ja valitse hänet yhdeksi niistä, jotka voivat avata sen. Lähetä salattu tiedosto haluamallasi tavalla, esimerkiksi sähköpostilla, viestisovelluksessa tai USB-tikulla. Vain valitsemasi ihmiset voivat avata sen.",
+  "technical.visible.older": "Versiota 0.4.41 vanhemmilla versioilla tehdyt tiedostot näyttävät ilman avainta, kenelle ne on tarkoitettu ja kuka ne lähetti. Ne aukeavat silti nykyisessä versiossa.",
   "security.quantum.title": "Kvanttikestävä salaus",
   "security.quantum.text": "Doughnut Forge on suunniteltu kestämään tulevaisuuden kvanttitietokoneiden hyökkäyksiä: se käyttää NISTin standardoimia kvanttikestäviä algoritmeja yhdessä perinteisten algoritmien kanssa.",
   "faq.quantum.a": "Tulevaisuudessa tehokkaat kvanttitietokoneet saattavat pystyä murtamaan osan nykyään laajasti käytetystä salauksesta. Doughnut Forge on suunniteltu kestämään tulevaisuuden kvanttitietokoneiden hyökkäyksiä: se käyttää NISTin standardoimia kvanttikestäviä algoritmeja yhdessä perinteisten algoritmien kanssa.",

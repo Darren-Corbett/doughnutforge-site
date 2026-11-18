@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android is a trademark of Google LLC. Linux is the registered trademark of Linus Torvalds in the U.S. and other countries.",
   "meta.roadmap.description": "What is planned next for Doughnut Forge, including Android and an independent security audit.",
   "faq.share.a": "Ask the other person for their contact card (a .vltc2 file) and add it to your Contacts. Then encrypt the file and choose them as someone who can open it. Send the encrypted file any way you like, such as by email, in a messaging app or on a USB drive. Only the people you chose can open it.",
+  "technical.visible.older": "Files made with versions older than 0.4.41 show who they are for, and who sent them, without the key. They still open in the current version.",
   "security.quantum.title": "Post-quantum encryption",
   "security.quantum.text": "Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardized post-quantum algorithms alongside classical ones.",
   "faq.quantum.a": "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardized post-quantum algorithms alongside classical ones.",

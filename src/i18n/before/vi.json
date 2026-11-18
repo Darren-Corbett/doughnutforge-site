@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android là nhãn hiệu của Google LLC. Linux là nhãn hiệu đã đăng ký của Linus Torvalds tại Hoa Kỳ và các quốc gia khác.",
   "meta.roadmap.description": "Những gì dự kiến tiếp theo cho Doughnut Forge, bao gồm Android và một đợt kiểm toán bảo mật độc lập.",
   "faq.share.a": "Hãy xin người đó thẻ liên hệ của họ (một tệp .vltc2) và thêm vào Liên hệ của bạn. Sau đó mã hóa tệp và chọn họ là người có thể mở tệp. Gửi tệp đã mã hóa theo bất kỳ cách nào bạn muốn, chẳng hạn qua email, ứng dụng nhắn tin hoặc USB. Chỉ những người bạn đã chọn mới mở được.",
+  "technical.visible.older": "Các tệp được tạo bằng phiên bản cũ hơn 0.4.41 cho thấy chúng được gửi cho ai và ai đã gửi, mà không cần khóa. Chúng vẫn mở được trong phiên bản hiện tại.",
   "security.quantum.title": "Mã hóa hậu lượng tử",
   "security.quantum.text": "Doughnut Forge được thiết kế để chống lại các cuộc tấn công của máy tính lượng tử trong tương lai, bằng cách dùng các thuật toán hậu lượng tử được NIST chuẩn hóa cùng với các thuật toán cổ điển.",
   "faq.quantum.a": "Trong tương lai, các máy tính lượng tử mạnh có thể phá được một số phương pháp mã hóa đang được dùng rộng rãi hiện nay. Doughnut Forge được thiết kế để chống lại các cuộc tấn công của máy tính lượng tử trong tương lai, bằng cách dùng các thuật toán hậu lượng tử được NIST chuẩn hóa cùng với các thuật toán cổ điển.",

@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android jest znakiem towarowym Google LLC. Linux jest znakiem towarowym zarejestrowanym w USA i innych krajach, którego właścicielem jest Linus Torvalds.",
   "meta.roadmap.description": "Co jest planowane w Doughnut Forge w dalszej kolejności, w tym wersja na Androida i niezależny audyt bezpieczeństwa.",
   "faq.share.a": "Poproś drugą osobę o jej kartę kontaktową (plik .vltc2) i dodaj ją do swoich Kontaktów. Następnie zaszyfruj plik i wybierz tę osobę jako kogoś, kto może go otworzyć. Wyślij zaszyfrowany plik w dowolny sposób, na przykład e-mailem, przez komunikator lub na pendrivie. Otworzyć go mogą tylko wybrane przez Ciebie osoby.",
+  "technical.visible.older": "Pliki utworzone w wersjach starszych niż 0.4.41 pokazują bez klucza, dla kogo są i kto je wysłał. Nadal otwierają się w obecnej wersji.",
   "security.quantum.title": "Szyfrowanie postkwantowe",
   "security.quantum.text": "Szyfrowanie w Doughnut Forge zaprojektowano tak, aby opierało się atakom przyszłych komputerów kwantowych: łączy algorytmy postkwantowe ustandaryzowane przez NIST z klasycznymi algorytmami.",
   "faq.quantum.a": "W przyszłości potężne komputery kwantowe mogą być w stanie złamać część szyfrowania, które jest dziś powszechnie stosowane. Szyfrowanie w Doughnut Forge zaprojektowano tak, aby opierało się atakom przyszłych komputerów kwantowych: łączy algorytmy postkwantowe ustandaryzowane przez NIST z klasycznymi algorytmami.",

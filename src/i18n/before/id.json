@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android adalah merek dagang Google LLC. Linux adalah merek dagang terdaftar milik Linus Torvalds di AS dan negara lain.",
   "meta.roadmap.description": "Apa yang direncanakan berikutnya untuk Doughnut Forge, termasuk Android dan audit keamanan independen.",
   "faq.share.a": "Mintalah kartu kontak orang tersebut (file .vltc2) dan tambahkan ke Kontak Anda. Lalu enkripsi file dan pilih orang itu sebagai orang yang dapat membukanya. Kirim file terenkripsi dengan cara apa pun, misalnya lewat email, aplikasi perpesanan, atau flashdisk USB. Hanya orang yang Anda pilih yang dapat membukanya.",
+  "technical.visible.older": "File yang dibuat dengan versi lebih lama dari 0.4.41 menunjukkan untuk siapa file itu dan siapa pengirimnya tanpa kunci. File tersebut tetap dapat dibuka di versi saat ini.",
   "security.quantum.title": "Enkripsi pascakuantum",
   "security.quantum.text": "Doughnut Forge dirancang untuk tahan terhadap serangan komputer kuantum di masa depan, dengan menggunakan algoritma pascakuantum yang distandardisasi oleh NIST bersama algoritma klasik.",
   "faq.quantum.a": "Di masa depan, komputer kuantum yang kuat mungkin dapat membobol sebagian enkripsi yang banyak digunakan saat ini. Doughnut Forge dirancang untuk tahan terhadap serangan komputer kuantum di masa depan, dengan menggunakan algoritma pascakuantum yang distandardisasi oleh NIST bersama algoritma klasik.",

@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android 是 Google LLC 的商標。Linux 是 Linus Torvalds 在美國及其他國家的註冊商標。",
   "meta.roadmap.description": "Doughnut Forge 接下來的計畫，包括 Android 版和獨立的安全性稽核。",
   "faq.share.a": "請對方把他們的聯絡人卡片（.vltc2 檔案）傳給您，並將它新增到您的聯絡人。接著加密檔案，並選擇對方為可以開啟它的人。您可以用任何方式傳送加密檔案，例如透過電子郵件、通訊 App 或隨身碟。只有您選擇的人才能開啟它。",
+  "technical.visible.older": "用早於 0.4.41 的版本建立的檔案，不需金鑰即可看出它傳給誰、由誰傳送。這些檔案在目前版本中仍可開啟。",
   "security.quantum.title": "後量子加密",
   "security.quantum.text": "Doughnut Forge 在設計上旨在抵禦未來量子電腦的攻擊：它將經 NIST 標準化的後量子演算法與傳統演算法搭配使用。",
   "faq.quantum.a": "未來，強大的量子電腦可能會破解目前廣泛使用的部分加密。Doughnut Forge 在設計上旨在抵禦未來量子電腦的攻擊：它將經 NIST 標準化的後量子演算法與傳統演算法搭配使用。",

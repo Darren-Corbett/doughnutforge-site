@@ -27,6 +27,7 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   "faq.older.q": "first3",
   "faq.older.a": "first3",
   "faq.share.a": "first3",
+  "technical.visible.older": "first3",
 
   // Every store with 3.0: the new format's copy and the white paper
   "security.quantum.title": "all3",
@@ -43,6 +44,8 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   "technical.limits.sender.label": "all3",
   "technical.limits.sender.text": "all3",
   "technical.limits.visible.label": "all3",
+  "technical.limits.forward.label": "all3",
+  "technical.limits.forward.text": "all3",
   "roadmap.format.title": "all3",
   "roadmap.format.text": "all3",
   "security.whitePaper.title": "all3",

@@ -49,12 +49,12 @@ Your contact list is also stored encrypted (AES-256-GCM).
 | Original file name and type | Hidden inside. By default the encrypted file is named after the original (for example `report.vlt2`); rename it if the name itself is private. |
 | Who it is for | Hidden |
 | Who sent it | Hidden |
-| How many people can open it | Visible only roughly: the count is rounded up to 4, 8, 16, 32 or 64, then to the next multiple of 64 |
+| How many people can open it | Visible only roughly: the count is rounded up to 4, 8, 16, 32 or 64, then to the next multiple of 64. The number of recipients known only by an old contact card shows exactly (white paper 4.3, 8.3) |
 | Size | Visible, roughly (the compressed size) |
 | Dates | No dates can be read without the key. The file has the normal dates your computer gives any file. |
 | That it is a Doughnut Forge file, and its format version | Visible |
 
-Files made with versions older than 0.4.41 show who they are for, and who sent them, without the key. They still open in the current version.
+Files made with versions older than 0.4.41 show who they are for, and who sent them, without the key. Every .vlt2 file made by an earlier version still opens in the current version. (3.0.0 no longer reads the `.vlt1` files of the August 2026 test builds; the site does not name them.)
 
 ## Copying an encrypted message as text
 
@@ -100,6 +100,7 @@ Encrypted items leave your device only when you share them yourself.
 - **Anyone with your passphrase and your device, or your 24 recovery words.** Keep them safe.
 - **Your device passcode,** on iPhone and iPad with Face ID or Touch ID turned on. iOS accepts the passcode in place of Face ID or Touch ID.
 - **Recipients.** Anyone who can open an item can save, copy or share what is inside.
+- **Anyone who later gets your recovery words.** There is no forward secrecy and no revocation: files are sealed to each person's long-lived keys, so anyone who later gets an identity's 24 recovery words can open every file sent to it that they have a copy of. A leaked identity cannot be withdrawn; only a new identity protects later files. (white paper, Overview and 8.2)
 - **Who sent an item.** The app names a contact as the sender only when the item is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown. The name is only as reliable as the card: compare the contact code.
 - **Size, a rough number of recipients, and file name.** See "What can be seen without the key".
 - **Unencrypted copies.** The original file stays where it was after encrypting, and opened files are saved as normal files. Deleting them is up to you. On SSDs, deleting or overwriting a file does not guarantee the old data is gone.

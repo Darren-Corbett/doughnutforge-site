@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -332,13 +332,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -684,13 +691,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -955,13 +969,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1276,13 +1297,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1614,13 +1642,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1904,13 +1939,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2201,13 +2243,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2567,13 +2616,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2870,13 +2926,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3201,13 +3264,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3583,13 +3653,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3947,13 +4024,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4330,13 +4414,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch3), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch3.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4691,13 +4782,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5041,13 +5139,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5389,6 +5494,13 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
@@ -5438,7 +5550,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5697,13 +5809,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -6023,13 +6142,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch1), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch1.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6385,13 +6511,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -6691,13 +6824,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7004,13 +7144,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7337,13 +7484,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7699,13 +7853,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch2), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch2.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8013,13 +8174,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8339,13 +8507,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8659,13 +8834,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8971,13 +9153,20 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
+        "backTranslation": "",
+        "suggestion": "No change."
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-19",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -9323,6 +9512,13 @@
         "severity": "note",
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
+        "suggestion": "No change."
+      },
+      {
+        "key": "technical.* (v3 and forward secrecy), security.quantum.*, faq.quantum.a, faq.share.a, faq.older.a, faq.restore.a, roadmap.format.text, meta.technical.description",
+        "severity": "note",
+        "issue": "Launch-stage strings (19 November 2026): 19 changed keys retranslated and technical.limits.forward.* added, independent review with back-translation (batch4), every blocking finding fixed and re-checked (Doughnut Forge, never the encryption, as the subject of the quantum lines; hybrid covers key exchange and signatures; forward secrecy's copy condition attaches to the file). Details: ~/Desktop/review/launch-site/v3-held/work/review-strings-batch4.md and the re-checks after it.",
+        "backTranslation": "",
         "suggestion": "No change."
       }
     ]

@@ -11,6 +11,7 @@
   "legal.trademarks.other": "Android is een handelsmerk van Google LLC. Linux is het gedeponeerde handelsmerk van Linus Torvalds in de VS en andere landen.",
   "meta.roadmap.description": "Wat er hierna gepland is voor Doughnut Forge, waaronder Android en een onafhankelijke beveiligingsaudit.",
   "faq.share.a": "Vraag de ander om zijn of haar contactkaart (een .vltc2-bestand) en voeg die toe aan uw Contacten. Versleutel daarna het bestand en kies die persoon als iemand die het mag openen. Verstuur het versleutelde bestand zoals u wilt, bijvoorbeeld per e-mail, via een berichtenapp of op een usb-stick. Alleen de mensen die u hebt gekozen, kunnen het openen.",
+  "technical.visible.older": "Bestanden die zijn gemaakt met versies ouder dan 0.4.41, tonen zonder de sleutel voor wie ze zijn en wie ze heeft verstuurd. Ze openen nog steeds in de huidige versie.",
   "security.quantum.title": "Post-kwantumversleuteling",
   "security.quantum.text": "Doughnut Forge is ontworpen om bestand te zijn tegen aanvallen van toekomstige kwantumcomputers, met door NIST gestandaardiseerde post-kwantumalgoritmen naast klassieke algoritmen.",
   "faq.quantum.a": "In de toekomst kunnen krachtige kwantumcomputers mogelijk een deel van de versleuteling kraken die nu veel wordt gebruikt. Doughnut Forge is ontworpen om bestand te zijn tegen aanvallen van toekomstige kwantumcomputers, met door NIST gestandaardiseerde post-kwantumalgoritmen naast klassieke algoritmen.",

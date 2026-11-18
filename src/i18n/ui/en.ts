@@ -183,7 +183,7 @@ export default {
     "When you choose “Create my identity”, the app gives you 24 recovery words. Write them down and keep them somewhere safe: they are the only way to restore your identity or reset a forgotten password. After you write them down, the app asks for two of them, to help you catch a mistake in your copy. The app can also save them as a PDF. That PDF is not encrypted, so print it, then delete it, and do not keep it in iCloud Drive, Dropbox or any synced folder. Your contacts are not part of your recovery words.",
   "faq.restore.q": "How do I restore my identity on a new device?",
   "faq.restore.a":
-    "With your 24 recovery words. Backups of your iPhone, iPad or Mac, and Android backups, do not include your identity, so restoring a device backup does not bring it back. Install Doughnut Forge on the new device, choose “I already have recovery words” and enter them. It works across platforms, for example from a Mac to a Windows PC. Restoring brings back your identity, so files encrypted for it open again. Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too.",
+    "With your 24 recovery words. Backups of your iPhone, iPad or Mac, and Android backups, do not include your identity, so restoring a device backup does not bring it back. Install Doughnut Forge on the new device, choose “I already have recovery words” and enter them. It works across platforms, for example from a Mac to a Windows PC. Restoring brings back your identity, so files encrypted for it open again. Your recovery words do not bring back your contacts. If you first restore a backup of your iPhone, iPad or Mac and then enter your recovery words, your contacts come back too. On Android, a new phone starts empty: your recovery words bring back your identity, but not the contacts you added in Doughnut Forge. Ask them to share their cards again.",
   "faq.password.q": "I forgot my password. What can I do?",
   "faq.password.a":
     "On the lock screen, choose “Trouble unlocking?” and set a new password with your 24 recovery words. Your identity, contacts and encrypted files stay the same. Without your recovery words, the password cannot be reset.",
@@ -207,7 +207,7 @@ export default {
     "With this update, everyone's contact card carries new keys, so everyone's contact code changed once. It still has 16 characters in four groups. Share your contact card again with the people you write to, and compare codes again when a contact sends you their new card.",
   "faq.older.q": "Why can someone not open a file I sent?",
   "faq.older.a":
-    "Files and contact cards made with the latest version of Doughnut Forge do not open in older versions. Ask them to update the app. Files made with any earlier version still open in the latest one.",
+    "Files and contact cards made with the latest version of Doughnut Forge do not open in older versions. Ask them to update the app once the update reaches their store. Every .vlt2 file made with an earlier version still opens in the latest one.",
   "faq.quantum.q": "What does post-quantum encryption mean?",
   "faq.quantum.a":
     "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones, to protect files and to sign them.",
@@ -288,7 +288,7 @@ export default {
     "On Mac and Windows, zoom from 100% to 200%, and encrypting never replaces a file that is already there.",
   "roadmap.format.title": "A new file format, with post-quantum signatures",
   "roadmap.format.text":
-    "Every new file is signed by its sender with a classical and a post-quantum method. The app names a contact as the sender only when the file is signed with the keys on that contact's new card. Files made with earlier versions still open.",
+    "Every new file is signed by its sender with a classical and a post-quantum method. The app names a contact as the sender only when the file is signed with the keys on that contact's new card. Every .vlt2 file made with an earlier version still opens.",
   "roadmap.android.title": "Doughnut Forge for Android",
   "roadmap.small.title": "Smaller improvements",
   "roadmap.small.text": "Small fixes and improvements to Doughnut Forge 2.",
@@ -423,7 +423,8 @@ export default {
   "technical.visible.from.label": "Who sent it:",
   "technical.visible.from.text": "hidden.",
   "technical.visible.count.label": "How many people can open it:",
-  "technical.visible.count.text": "visible only roughly: the count is rounded up to 4, 8, 16, 32 or 64, then to the next multiple of 64.",
+  "technical.visible.count.text":
+    "visible only roughly: the count is rounded up to 4, 8, 16, 32 or 64, then to the next multiple of 64. The number of recipients known only by an old contact card shows exactly.",
   "technical.visible.size.label": "Size:",
   "technical.visible.size.text": "visible, roughly (the compressed size).",
   "technical.visible.dates.label": "Dates:",
@@ -432,7 +433,7 @@ export default {
   "technical.visible.format.label": "That it is a Doughnut Forge file, and its format version:",
   "technical.visible.format.text": "visible.",
   "technical.visible.older":
-    "Files made with versions older than 0.4.41 show who they are for, and who sent them, without the key. They still open in the current version.",
+    "Files made with versions older than 0.4.41 show who they are for, and who sent them, without the key. Every .vlt2 file made by an earlier version still opens in the current version.",
   "technical.text.title": "Copying an encrypted message as text",
   "technical.text.intro":
     "An encrypted message is plain text: standard Base64 between a BEGIN FORGE ENCLAVE line and an END FORGE ENCLAVE line. It can be pasted into an email, a chat or a post.",
@@ -470,6 +471,9 @@ export default {
     "on iPhone and iPad with Face ID or Touch ID turned on. iOS accepts the passcode in place of Face ID or Touch ID.",
   "technical.limits.recipients.label": "Recipients.",
   "technical.limits.recipients.text": "Anyone who can open an item can save, copy or share what is inside.",
+  "technical.limits.forward.label": "Anyone who later gets your recovery words.",
+  "technical.limits.forward.text":
+    "There is no forward secrecy and no revocation: files are sealed to each person's long-lived keys, so anyone who later gets an identity's 24 recovery words can open every file sent to it that they have a copy of. A leaked identity cannot be withdrawn; only a new identity protects later files.",
   "technical.limits.sender.label": "Who sent an item.",
   "technical.limits.sender.text":
     "The app names a contact as the sender only when the item is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown. The name is only as reliable as the card: compare the contact code.",
