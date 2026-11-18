@@ -45,7 +45,7 @@ const linkClass = "inline-flex min-h-11 items-center font-bold text-slate-700 ho
         <li><a class={linkClass} href={localePath(lang.code, "support/")}>{t("nav.support")}</a></li>
         <li><a class={linkClass} href={localePath(lang.code, "security/")}>{t("nav.security")}</a></li>
         <li><a class={linkClass} href={localePath(lang.code, "security/technical-details/")}>{t("technical.title")}</a></li>
-        <li><a class={linkClass} href={paper.href} hreflang={paper.hreflang}>{t("footer.whitePaper")}</a></li>
+        {paper && <li><a class={linkClass} href={paper.href} hreflang={paper.hreflang}>{t("footer.whitePaper")}</a></li>}
         <li><a class={linkClass} href={localePath(lang.code, "privacy/")}>{policyTitle(lang.code)}</a></li>
         <li><a class={linkClass} href={localePath(lang.code, "press/")}>{t("nav.press")}</a></li>
         <li><a class={linkClass} href={localePath(lang.code, "legal/")}>{t("nav.legal")}</a></li>

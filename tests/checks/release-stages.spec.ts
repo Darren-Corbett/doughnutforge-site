@@ -8,9 +8,7 @@ import { expect, test } from "@playwright/test";
 import { existsSync, readFileSync } from "node:fs";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import english from "../../src/i18n/ui/en";
-// @ts-expect-error: src/data/stages.ts comes with the store switch
 import { stageReached } from "../../src/data/stages";
-// @ts-expect-error: src/i18n/gated.ts comes with the store switch
 import { gated } from "../../src/i18n/gated";
 
 type Status = "available" | "coming";
@@ -19,7 +17,7 @@ const today = list({ ios: "available", android: "coming", mac: "available", wind
 const androidOnSale = list({ ios: "available", android: "available", mac: "available", windows: "available" });
 
 test("no stage is reached before any store sells 3.0", () => {
-  for (const stage of ["android", "first3", "all3"]) expect(stageReached(stage, today, []), stage).toBe(false);
+  for (const stage of ["android", "first3", "all3"] as const) expect(stageReached(stage, today, []), stage).toBe(false);
 });
 
 test("one store with 3.0 reaches the first stage only", () => {

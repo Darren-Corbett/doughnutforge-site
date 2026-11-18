@@ -4,6 +4,7 @@
 // is built from roadmap-status.md in the v2 website pack, and its points are the
 // short changelog, from the release notes.
 import type { UiKey } from "../i18n";
+import { reached } from "./stages";
 
 export type RoadmapStatus = "shipped" | "next" | "later";
 
@@ -11,9 +12,10 @@ export type RoadmapItem = { status: RoadmapStatus; title: UiKey; text?: UiKey; p
 
 export const roadmapStatuses: RoadmapStatus[] = ["shipped", "next", "later"];
 
+// The new format and Android ship by stage (src/data/stages.ts)
 export const roadmap: RoadmapItem[] = [
-  { status: "shipped", title: "roadmap.format.title", text: "roadmap.format.text" },
-  { status: "shipped", title: "roadmap.android.title" },
+  ...(reached("all3") ? [{ status: "shipped", title: "roadmap.format.title", text: "roadmap.format.text" } as const] : []),
+  ...(reached("android") ? [{ status: "shipped", title: "roadmap.android.title" } as const] : []),
   {
     status: "shipped",
     title: "roadmap.v2.title",
@@ -29,6 +31,7 @@ export const roadmap: RoadmapItem[] = [
       "v2.notes.desktop",
     ],
   },
+  ...(reached("android") ? [] : [{ status: "next", title: "roadmap.android.title" } as const]),
   { status: "next", title: "roadmap.small.title", text: "roadmap.small.text" },
   { status: "later", title: "roadmap.audit.title", text: "roadmap.audit.text" },
 ];

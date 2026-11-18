@@ -6,6 +6,7 @@
 import { defineCollection } from "astro:content";
 import { glob, type Loader } from "astro/loaders";
 import { z } from "astro/zod";
+import { reached } from "./data/stages";
 
 const BASE = "./src/content/blog";
 const posts = glob({ pattern: "*/[^_]*.{md,mdx}", base: BASE });
@@ -40,8 +41,10 @@ const blog = defineCollection({
 // src/content/white-paper/<lang code>.md. English is the reference; each
 // translation says so. Its PDF is made from the built page
 // (scripts/make-white-paper-pdf.mjs) and checked by scripts/check-white-paper.mjs.
+// Its texts come in once every store sells 3.0 (src/data/stages.ts); until then
+// the collection is empty.
 const whitePaper = defineCollection({
-  loader: glob({ pattern: "*.md", base: "./src/content/white-paper" }),
+  loader: reached("all3") ? glob({ pattern: "*.md", base: "./src/content/white-paper" }) : () => [],
   schema: z.object({
     title: z.string().max(70),
     description: z.string().min(50).max(160),

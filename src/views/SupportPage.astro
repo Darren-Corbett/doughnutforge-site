@@ -8,6 +8,7 @@ import PageHero from "../components/PageHero.astro";
 import { issueLists, shownLists } from "../data/issues";
 import { getPolicy, policyTitle } from "../data/privacy";
 import { site } from "../data/site";
+import { reached } from "../data/stages";
 import { platformName, platforms } from "../data/stores";
 import { fill, listOf, localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
@@ -25,7 +26,9 @@ const names = (status: "available" | "coming") =>
     platforms.filter((p) => p.status === status).map((p) => platformName(lang, p.id)),
   );
 const ids = ["subscription", "platforms", "offline", "storage", "backup", "restore", "password", "share", "code", "older", "recipient", "messaging", "which", "data", "quantum"] as const;
-const items: FaqItem[] = ids.map((id) => ({
+// New contact codes and older apps matter once the first store sells 3.0
+const shown = ids.filter((id) => reached("first3") || (id !== "code" && id !== "older"));
+const items: FaqItem[] = shown.map((id) => ({
   id,
   q: t(`faq.${id}.q` as UiKey),
   a: answer(id),

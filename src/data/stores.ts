@@ -1,4 +1,6 @@
-import { listOf, type Language } from "../i18n";
+import type { Language } from "../i18n";
+import { listOf } from "../i18n/list";
+import release from "./release.json" with { type: "json" };
 
 // Where each platform is sold. Adding a store later is a data change here only:
 // set the platform to "available" and give it a store and an ID.
@@ -17,7 +19,10 @@ export type Platform =
 // order is set, and every list on the site follows it.
 const mobileFirst: Platform[] = [
   { id: "ios", status: "available", store: "app-store", storeId: "6821344597" },
-  { id: "android", status: "coming" },
+  // On sale once src/data/release.json says so (see src/data/stages.ts)
+  release.androidOnSale
+    ? { id: "android", status: "available", store: "google-play", storeId: "com.darrencorbett.doughnutforge.mobile" }
+    : { id: "android", status: "coming" },
   { id: "mac", status: "available", store: "mac-app-store", storeId: "6812778888" },
   { id: "windows", status: "available", store: "microsoft-store", storeId: "9P25BS9L8LNB" },
 ];

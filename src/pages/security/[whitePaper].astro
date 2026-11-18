@@ -1,0 +1,10 @@
+---
+// The English white paper, published once every store sells 3.0 (src/data/stages.ts)
+import { reached } from "../../data/stages";
+import { getLanguage } from "../../i18n";
+import WhitePaperPage from "../../views/WhitePaperPage.astro";
+
+export const getStaticPaths = () => (reached("all3") ? [{ params: { whitePaper: "white-paper" } }] : []);
+---
+
+<WhitePaperPage lang={getLanguage("en")} />

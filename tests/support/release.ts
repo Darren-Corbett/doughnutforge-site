@@ -1,9 +1,7 @@
 // Which launch stages the site's data has reached (src/data/release.json), so
 // layout tests check the stage the built site is in, never a guess
 import { readFileSync } from "node:fs";
-// @ts-expect-error: src/data/stages.ts comes with the store switch
 import { reached as stageReached, type Stage } from "../../src/data/stages";
-// @ts-expect-error: src/i18n/gated.ts comes with the store switch
 import { gated } from "../../src/i18n/gated";
 import { ui } from "./ui";
 

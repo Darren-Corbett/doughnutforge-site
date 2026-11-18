@@ -48,13 +48,17 @@ const facts: ToneRow[] = [
         <a class="btn-outline" href={localePath(lang.code, "security/technical-details/")}>{t("security.technical.button")}</a>
       </div>
     </div>
-    <div class="technical ruled-row-late">
-      <h2>{t("security.whitePaper.title")}</h2>
-      <div>
-        <p>{t("security.whitePaper.text")}</p>
-        <a class="btn-outline" href={paper.href} hreflang={paper.hreflang}>{t("security.whitePaper.link")}</a>
-      </div>
-    </div>
+    {
+      paper && (
+        <div class="technical ruled-row-late">
+          <h2>{t("security.whitePaper.title")}</h2>
+          <div>
+            <p>{t("security.whitePaper.text")}</p>
+            <a class="btn-outline" href={paper.href} hreflang={paper.hreflang}>{t("security.whitePaper.link")}</a>
+          </div>
+        </div>
+      )
+    }
   </div>
 
   <section class="section report-section" aria-labelledby="report">

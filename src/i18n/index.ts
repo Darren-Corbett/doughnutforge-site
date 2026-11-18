@@ -3,6 +3,8 @@ import review from "./review.json";
 import enUi from "./ui/en";
 import enApp from "./app/en.json";
 import enStore from "./store/en.json";
+import { reached } from "../data/stages";
+import { gated } from "./gated";
 
 export type Language = (typeof languageData.languages)[number];
 export type UiKey = keyof typeof enUi;
@@ -26,6 +28,7 @@ const byCode = <T>(files: Record<string, T>) =>
 const ui = byCode(import.meta.glob<Translation>("./ui/*.ts", { eager: true, import: "default" }));
 const app = byCode(import.meta.glob<Record<AppKey, string>>("./app/*.json", { eager: true, import: "default" }));
 const store = byCode(import.meta.glob<StoreCopy>("./store/*.json", { eager: true, import: "default" }));
+const before = byCode(import.meta.glob<Partial<Translation>>("./before/*.json", { eager: true, import: "default" }));
 
 /** The languages with site copy: every app language once Phase 3 is complete */
 export const builtLanguages = languages.filter((l) => ui[l.code] && app[l.code] && store[l.code]);
@@ -39,7 +42,16 @@ export const useStrings = (code: string) => {
   const strings = ui[code];
   if (!strings || !app[code] || !store[code]) throw new Error(`No site copy for ${code}: add src/i18n/ui/${code}.ts and run npm run sync:app`);
   return {
-    t: (key: UiKey) => (englishOnly(key) ? enUi[key] : strings[key]),
+    t: (key: UiKey) => {
+      if (englishOnly(key)) return enUi[key];
+      const stage = gated[key];
+      if (!stage || reached(stage)) return strings[key];
+      // Before its stage a gated key shows its earlier text; a new one has none,
+      // and asking for it means a page shows it too early
+      const earlier = before[code]?.[key];
+      if (earlier === undefined) throw new Error(`${key} is shown only from the "${stage}" stage (src/i18n/gated.ts)`);
+      return earlier;
+    },
     app: (key: AppKey) => app[code]![key],
     store: store[code]!,
   };
@@ -72,9 +84,7 @@ export const splitPath = (pathname: string) => {
 export const otherLanguagePaths = () =>
   builtLanguages.filter((l) => l.code !== defaultLanguage.code).map((l) => ({ params: { lang: l.path }, props: { lang: l } }));
 
-/** Joins items the way the language does: "Mac and Windows", "Mac und Windows" */
-export const listOf = (lang: Language, items: string[]) =>
-  new Intl.ListFormat(lang.hreflang, { type: "conjunction" }).format(items);
+export { listOf } from "./list";
 
 /** Fills the {name} slots in a string */
 export const fill = (text: string, values: Record<string, string | number>) =>

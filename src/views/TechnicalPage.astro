@@ -15,6 +15,7 @@ import Prose from "../components/Prose.astro";
 import TocSection from "../components/TocSection.astro";
 import { localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
+import { reached } from "../data/stages";
 import { whitePaperLink } from "../data/white-paper";
 
 interface Props {
@@ -33,7 +34,7 @@ const cell = (label: string) => label.replace(/\s*[:：]\s*$/, "");
 const encryption = items("technical.encryption", ["cipher", "perItem", "auth", "nonces", "compression", "random"]);
 const keys = items("technical.keys", ["identity", "recovery", "exchange", "signatures", "derivation", "recipients"]);
 const stored = items("technical.stored", ["memory", "passes", "lanes", "salt", "output"]);
-const unlock = items("technical.unlock", ["mac", "windows", "ios", "android"]);
+const unlock = items("technical.unlock", ["mac", "windows", "ios", ...(reached("android") ? ["android"] : [])]);
 const visible = items("technical.visible", ["contents", "name", "for", "from", "count", "size", "dates", "format"]);
 const text = items("technical.text", ["wrap", "around", "inside"]);
 const limits = items("technical.limits", ["compromised", "access", "passcode", "recipients", "sender", "visible", "copies"]);
@@ -42,8 +43,13 @@ const limits = items("technical.limits", ["compromised", "access", "passcode", "
 const libraries: { purpose: string; library: string }[] = [
   { purpose: "AES-256-GCM", library: "aes-gcm (RustCrypto)" },
   { purpose: "Argon2id", library: "argon2 (RustCrypto)" },
-  { purpose: "ML-KEM-768, ML-KEM-1024", library: "ml-kem (RustCrypto)" },
-  { purpose: "ML-DSA-87", library: "ml-dsa (RustCrypto)" },
+  // ML-KEM-1024 and ML-DSA-87 are named once every store sells 3.0
+  ...(reached("all3")
+    ? [
+        { purpose: "ML-KEM-768, ML-KEM-1024", library: "ml-kem (RustCrypto)" },
+        { purpose: "ML-DSA-87", library: "ml-dsa (RustCrypto)" },
+      ]
+    : [{ purpose: "ML-KEM-768", library: "ml-kem (RustCrypto)" }]),
   { purpose: "X25519", library: "x25519-dalek" },
   { purpose: "Ed25519", library: "ed25519-dalek" },
   { purpose: "Curve25519", library: "curve25519-dalek" },
@@ -80,7 +86,7 @@ const back = t("technical.back");
 
 <Base lang={lang} title={t("meta.technical.title")} description={t("meta.technical.description")} image="/og/technical.png">
   <PageHero title={t("technical.title")} lead={t("technical.lead")} />
-  <p class="section white-paper"><a href={paper.href} hreflang={paper.hreflang}>{t("technical.whitePaper")}</a></p>
+  {paper && <p class="section white-paper"><a href={paper.href} hreflang={paper.hreflang}>{t("technical.whitePaper")}</a></p>}
   <div class="section">
     <section aria-labelledby="glance">
       <h2 id="glance" class="sr-only">{t("technical.glance.title")}</h2>
