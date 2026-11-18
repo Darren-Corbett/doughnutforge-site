@@ -22,6 +22,31 @@ test("Android stage: the Play badge and Android in the platform lists", async ({
   await expect(page.locator(`[data-roadmap="${on ? "shipped" : "next"}"] h3`, { hasText: "Doughnut Forge for Android" })).toHaveCount(1);
 });
 
+// Encrypting text and sharing it through the share sheet shipped on Android in
+// 3.0.0 (owner, 19 November 2026), so the lines that say files and text can be
+// shared name Android only once it is on sale
+test("Android stage: the lines about sharing files and text name Android", async ({ page }) => {
+  const on = reached("android");
+  const description = page.locator('meta[name="description"]');
+  for (const [path, keys] of [
+    ["/", ["meta.home.description", "home.lead", "home.what.text"]],
+    ["/features/", ["meta.features.description", "features.lead"]],
+  ] as const) {
+    await page.goto(path);
+    const main = (await page.locator("main").textContent())!.replace(/\s+/g, " ");
+    const meta = (await description.getAttribute("content"))!;
+    for (const key of keys) {
+      const text = await uiNow("en", key);
+      expect(text.includes("Android"), key).toBe(on);
+      expect(key.startsWith("meta.") ? meta : main, key).toContain(text);
+    }
+  }
+  await page.goto("/blog/share-encrypted-files/");
+  const cta = await uiNow("en", "blog.cta.text");
+  expect(cta.includes("Android"), "blog.cta.text").toBe(on);
+  await expect(page.locator("main")).toContainText(cta);
+});
+
 test("first 3.0 store: the FAQs on new contact codes and older apps", async ({ page }) => {
   const on = reached("first3");
   await page.goto("/support/");

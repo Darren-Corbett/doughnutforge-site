@@ -83,7 +83,7 @@ test("home page: a plain answer to what Doughnut Forge is, first after the hero,
     await page.goto(path);
     const section = page.locator("section.hero + section");
     await expect(section.locator("h2"), path).toHaveText((own["home.what.title"] ?? en["home.what.title"])!);
-    await expect(section.locator("p"), path).toHaveText((own["home.what.text"] ?? en["home.what.text"])!);
+    await expect(section.locator("p"), path).toHaveText(await uiNow(lang.code, "home.what.text"));
   }
 });
 
@@ -91,7 +91,7 @@ test("press kit: the short description is the home page's first sentence", async
   await page.goto("/press/");
   const short = await uiNow("en", "press.about.shortText");
   await expect(page.getByText(short, { exact: true })).toBeVisible();
-  expect(en["home.what.text"]!.startsWith(short)).toBe(true);
+  expect((await uiNow("en", "home.what.text")).startsWith(short)).toBe(true);
 });
 
 test("features page: four questions answered, no second FAQPage", async ({ page }) => {
