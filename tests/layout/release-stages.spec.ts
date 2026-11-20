@@ -2,6 +2,9 @@
 // (src/data/release.json, tests/checks/release-stages.spec.ts): before a stage,
 // nothing of it is on any page, and after it, all of it is.
 import { expect, test } from "../support/browser";
+import release from "../../src/data/release.json" with { type: "json" };
+import { pricingSplit } from "../../src/data/pricing";
+import { platforms } from "../../src/data/stores";
 import { reached, uiNow } from "../support/release";
 
 const PLAY = 'a[href^="https://play.google.com/store/apps/details?id=com.darrencorbett.doughnutforge.mobile&hl="]';
@@ -105,4 +108,46 @@ test("posts: Android, the old-card line and post-quantum signatures follow their
   expect(share.includes("Sender not shown"), "older files").toBe(reached("all3"));
   expect(share.includes("Encrypted by someone not in your Contacts"), "2.0 warning").toBe(!reached("all3"));
   expect((await text("/blog/doughnut-forge-vs-cryptomator/")).includes("post-quantum encryption and signatures"), "signatures").toBe(reached("all3"));
+});
+
+// From 3.0.0 the phone and tablet apps are free to download, with one in-app
+// purchase, paid once, that unlocks encrypting files, photos and videos; Mac and
+// Windows stay a one-time purchase (owner, 20 November 2026). Each card follows
+// its own store; the site-wide lines switch at the mobile pricing stage.
+test("mobile pricing stage: each card says how that platform is bought", async ({ page }) => {
+  const { free, paid } = pricingSplit(platforms, release.storesWith3);
+  await page.goto("/pricing/");
+  for (const id of free) {
+    await expect(page.locator(`.card[data-platform="${id}"] .status`), id).toHaveText(
+      `Free to download from ${id === "android" ? "Google Play" : "the App Store"}, with one in-app purchase, paid once, to encrypt files, photos and videos`,
+    );
+  }
+  for (const id of paid) await expect(page.locator(`.card[data-platform="${id}"] .status`), id).toHaveText(/^One-time purchase from /);
+});
+
+test("mobile pricing stage: the site-wide price lines, the buying FAQ and the privacy line", async ({ page }) => {
+  const on = reached("mobileFree");
+  const iosFree = pricingSplit(platforms, release.storesWith3).free.includes("ios");
+  await page.goto("/pricing/");
+  await expect(page.locator("h1")).toHaveText(on ? "No subscription." : "One-time purchase, never a subscription.");
+  await page.goto("/support/");
+  const questions = await page.locator("#faq summary, #faq h3").allInnerTexts();
+  const asked = (q: string) => questions.some((text) => text.includes(q));
+  expect(asked("What does the in-app purchase unlock?"), "unlock FAQ").toBe(on);
+  expect(asked("What happens if my purchase is refunded?"), "refund FAQ").toBe(on);
+  expect(asked("How do I unlock file encryption on my other devices?"), "restore FAQ").toBe(on);
+  expect(asked("Does anything change on Mac or Windows?"), "desktop FAQ").toBe(on);
+  expect(asked("I bought Doughnut Forge for iPhone or iPad before. Do I need to pay again?"), "earlier buyers FAQ").toBe(iosFree);
+  await page.goto("/privacy/");
+  expect((await page.locator("main").innerText()).includes("Apple or Google keeps a record of the purchase"), "privacy purchase line").toBe(on);
+});
+
+test("no English page says pay once, or that every platform is a one-time purchase, once phones are free", async ({ page }) => {
+  const posts = ["can-whatsapp-read-my-messages", "doughnut-forge-vs-cryptomator", "doughnut-forge-vs-veracrypt", "encrypt-files-on-mac-without-cloud", "harvest-now-decrypt-later", "protect-personal-files-from-data-breaches"];
+  for (const path of ["/", "/pricing/", "/download/", "/features/", "/support/", "/press/", ...posts.map((p) => `/blog/${p}/`)]) {
+    await page.goto(path);
+    const text = `${await page.title()}\n${await page.locator("body").innerText()}`;
+    expect(text, path).not.toMatch(/\bpay once\b|the app is yours/i);
+    if (reached("mobileFree")) expect(text, path).not.toMatch(/one-time purchase on each platform|for each platform you use|separate purchase from its own store\. Buying on iPhone/i);
+  }
 });

@@ -82,3 +82,15 @@ test("the built privacy pages say exactly what the policy files say, in every la
   expect(stdout).toContain("0 differences from src/content/legal/privacy");
   expect(stdout).not.toContain("forge-privacy");
 });
+
+// From 3.0.0 the phone apps sell one in-app purchase, so the policy says what
+// Apple and Google keep (owner, 20 November 2026); the line waits for its launch
+// stage, and the wording check accepts it as missing only until then
+test("the in-app purchase line is held back until the mobile pricing stage, in every language", () => {
+  const held = (JSON.parse(readFileSync(`${dir}en.json`, "utf8")) as { held?: Record<string, string> }).held;
+  expect(held).toEqual({ sec2Purchase: "mobileFree" });
+  expect(en.strings.sec2Purchase).toBe(
+    "If you buy the in-app purchase, Apple or Google keeps a record of the purchase under its own privacy policy. The developer does not receive your files, keys or contacts.",
+  );
+  for (const { code } of languages) expect(read(code).strings.sec2Purchase, code).toBeTruthy();
+});

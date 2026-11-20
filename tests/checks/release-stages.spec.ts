@@ -1,6 +1,7 @@
 // The stores release 3.0 one by one (owner, 18 November 2026), so the site
-// switches in three stages, each worked out from src/data/release.json:
-//   android  Android is on sale (Google Play)
+// switches in stages, each worked out from src/data/release.json:
+//   android     Android is on sale (Google Play)
+//   mobileFree  a phone store on sale sells 3.0: free to download, with one in-app purchase
 //   first3   the first store sells 3.0: the FAQs on new contact codes and older apps
 //   all3     every store on sale sells 3.0: the new format's copy and the white paper
 // Until a stage is reached, its strings keep their earlier text (src/i18n/before/).
@@ -39,6 +40,15 @@ test("the last stage needs every store on sale to sell 3.0", () => {
   expect(stageReached("all3", today, ["ios", "mac", "windows"])).toBe(true);
 });
 
+test("the mobile pricing stage follows the first phone store with 3.0, never a computer store", () => {
+  expect(stageReached("mobileFree", today, [])).toBe(false);
+  expect(stageReached("mobileFree", today, ["mac", "windows"])).toBe(false);
+  expect(stageReached("mobileFree", today, ["ios"])).toBe(true);
+  expect(stageReached("mobileFree", androidOnSale, ["android"])).toBe(true);
+  // Android not on sale yet: its 3.0 alone does not count
+  expect(stageReached("mobileFree", today, ["android"])).toBe(false);
+});
+
 test("the release data names only real platforms, and Android goes on sale with 3.0", () => {
   const release = JSON.parse(readFileSync("src/data/release.json", "utf8")) as { androidOnSale: boolean; storesWith3: string[] };
   expect(typeof release.androidOnSale).toBe("boolean");
@@ -51,7 +61,7 @@ test("every gated key is an English key with a known stage", () => {
   expect(keys.length).toBeGreaterThan(0);
   for (const [key, stage] of Object.entries(gated as Record<string, string>)) {
     expect(Object.keys(english), key).toContain(key);
-    expect(["android", "first3", "all3"], key).toContain(stage);
+    expect(["android", "mobileFree", "first3", "all3"], key).toContain(stage);
   }
 });
 
