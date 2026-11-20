@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge 是一款適用於 Mac、iPhone、iPad 和 Windows 的離線檔案加密應用程式。它在您自己的裝置上鎖定檔案和文字，您只與自己選擇的人分享。",
   "meta.features.description": "在自己的 iPhone、iPad 或電腦上加密檔案和文字，與您信任的人分享，並長期保護它們。不需帳號，沒有伺服器。",
   "features.lead": "Doughnut Forge 在您的 iPhone、iPad 或電腦上鎖定檔案和文字，並讓您與信任的人分享。無論用什麼方式傳送，只有他們能開啟。",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "一次性購買，絕非訂閱。",
+  "home.pricing.text": "您使用的每個平台，都要在該平台的商店購買一次 Doughnut Forge。商店會顯示您所在地區的價格。",
+  "meta.pricing.title": "價格：一次性購買，絕非訂閱 | Doughnut Forge",
+  "meta.pricing.description": "您使用的每個平台，都在該平台的商店購買一次 Doughnut Forge。不需訂閱、不需帳號，也不用續訂。",
+  "faq.subscription.a": "不需要。Doughnut Forge 是一次性購買，絕非訂閱。您只要在您所用平台的商店購買一次，不需要續訂。",
+  "faq.offline.a": "不需要。不必建立帳號，Doughnut Forge 完全在您的裝置上執行，即使沒有網路連線也能使用。只有下載 App 時，或是您選擇透過網際網路傳送加密檔案時，才需要連線。",
+  "press.facts.priceValue": "每個平台一次性購買，絕非訂閱",
+  "technical.network.none": "Doughnut Forge 本身不會建立任何網路連線。沒有帳號、沒有登入、沒有分析、沒有當機回報，也沒有更新檢查。App 的內容政策不允許其畫面從網際網路載入任何內容。"
 }

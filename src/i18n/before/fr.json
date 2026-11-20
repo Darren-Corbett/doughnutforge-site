@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge est une application de chiffrement de fichiers hors ligne pour Mac, iPhone, iPad et Windows. Elle verrouille vos fichiers et textes sur votre propre appareil, et vous ne les partagez qu'avec les personnes de votre choix.",
   "meta.features.description": "Chiffrez fichiers et textes sur votre propre iPhone, iPad ou ordinateur, partagez-les avec des personnes de confiance et gardez-les protégés sur le long terme. Sans compte ni serveur.",
   "features.lead": "Doughnut Forge verrouille vos fichiers et textes sur votre iPhone, votre iPad ou votre ordinateur et vous permet de les partager avec les personnes en qui vous avez confiance. Quelle que soit la façon dont vous les envoyez, elles seules peuvent les ouvrir.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Achat unique, jamais d'abonnement.",
+  "home.pricing.text": "Achetez Doughnut Forge une fois pour chaque plateforme que vous utilisez, dans la boutique de cette plateforme. La boutique affiche le prix en vigueur là où vous vivez.",
+  "meta.pricing.title": "Tarifs : achat unique, jamais d'abonnement | Doughnut Forge",
+  "meta.pricing.description": "Achetez Doughnut Forge une fois pour chaque plateforme que vous utilisez, dans la boutique de cette plateforme. Sans abonnement, sans compte, rien à renouveler.",
+  "faq.subscription.a": "Non. Doughnut Forge est un achat unique, jamais un abonnement. Vous l'achetez une fois dans la boutique de votre plateforme, et il n'y a rien à renouveler.",
+  "faq.offline.a": "Non. Il n'y a aucun compte à créer, et Doughnut Forge fonctionne entièrement sur votre appareil, même sans connexion Internet. Une connexion n'est nécessaire que pour télécharger l'app, ou si vous choisissez d'envoyer des fichiers chiffrés par Internet.",
+  "press.facts.priceValue": "Achat unique pour chaque plateforme, jamais d'abonnement",
+  "technical.network.none": "Doughnut Forge n'établit aucune connexion réseau de lui-même. Il n'y a ni compte, ni identification, ni outil d'analyse, ni rapport de plantage, ni vérification des mises à jour. La politique de contenu de l'app n'autorise pas ses écrans à charger quoi que ce soit depuis Internet."
 }

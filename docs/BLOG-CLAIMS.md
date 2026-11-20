@@ -410,3 +410,22 @@ Not claimed: that CISA says device encryption fails once a device is unlocked (n
 | 10.D1 | Doughnut Forge is an app for encrypting files on your own device | site `security.device.text`; row 7.15 | repo |
 
 Not claimed: any app named as dangerous (PCMag's ten apps are in a chart image and were not confirmed from its text); any iOS version affected by the Binance flaw, or whether Apple has fixed it (BC: "unclear"); anything from Forbes (403 to automated reading) or The Sun (2023); that people are deleting apps in large numbers (no source opened).
+
+## Mobile pricing from 3.0.0 (20 November 2026, behind the "mobileFree" stage)
+
+Source for every row: the owner's decisions of 20 November 2026 (night-mode message, items 1 to 3: mobile pricing, desktop unchanged, approved store wording). Each phone platform switches when its own store sells 3.0 (`src/data/pricing.ts`); Mac and Windows never change.
+
+| # | Claim on the site | Source |
+|---|---|---|
+| P1 | iPhone, iPad and Android: free to download; one in-app purchase, paid once, unlocks encrypting files, photos and videos (`home.pricing.text`, `meta.pricing.description`, `pricing.free`, `faq.subscription.a`, `press.facts.priceValue`) | owner item 1; approved description paragraph (item 3) |
+| P2 | Free: encrypting text, opening what is sent to you (files, photos, videos), saving received items, contacts, identity, settings; no ads (`faq.free.a`) | owner item 1 ("Free: …"; "No subscription, account, servers or ads") |
+| P3 | The purchase is called "Encrypt files" in the store; in the app "Unlock file encryption", "Restore purchase"; the store shows the price in your own currency (`faq.unlock.a`, `faq.restorePurchase.a`) | owner items 1 and 3 (app wording) |
+| P4 | Earlier iPhone and iPad buyers are unlocked automatically (`faq.earlier.a`; shown only once the iPhone and iPad app is free) | owner item 1 |
+| P5 | The purchase restores on other devices on the same App Store or Google Play account; not across stores (`pricing.where.textFree`, `faq.platforms.aFree`, `faq.restorePurchase.a`). Family Sharing is not mentioned | owner item 1 |
+| P6 | A refund locks file encryption again; opening anything stays free (`faq.refund.a`) | owner item 1 |
+| P7 | Mac and Windows: still a one-time purchase, nothing locked (`faq.desktop.a`, `pricing.oneTime`) | owner item 2 |
+| P8 | A connection is needed to buy or restore the in-app purchase (`faq.offline.a`) | follows from P1 and P5: the stores sell and restore it |
+| P9 | Privacy policy `sec2Purchase`: Apple or Google keeps a record of the purchase under its own privacy policy; the developer does not receive files, keys or contacts | owner's answer 1, 20 November 2026 (wording) |
+| P10 | Posts: "never a subscription: pricing shows how it is bought on each platform" (rows 1.16, D2, 5.D9, 6.18, 7.19 until the stage); the Mac post now says "On Mac, … a one-time purchase" (row 1.16) | rows P1, P7 |
+
+Not claimed: any price amount; Family Sharing; anything about what Apple or Google see beyond P9 (the white paper's buying section is [PENDING-WHITEPAPER-PDF]: `technical.network.none` carries the marker, so the stage cannot go live without it); any Android internet or permission claim ([PENDING-ANDROID-PERMISSION]).

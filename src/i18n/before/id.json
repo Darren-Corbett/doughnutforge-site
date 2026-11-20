@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge adalah aplikasi enkripsi file offline untuk Mac, iPhone, iPad, dan Windows. Aplikasi ini mengunci file dan teks di perangkat Anda sendiri, dan Anda hanya membagikannya kepada orang yang Anda pilih.",
   "meta.features.description": "Enkripsi file dan teks di iPhone, iPad, atau komputer Anda, bagikan kepada orang tepercaya, dan jaga agar tetap terlindungi dalam jangka panjang. Tanpa akun, tanpa server.",
   "features.lead": "Doughnut Forge mengunci file dan teks di iPhone, iPad, atau komputer Anda dan memungkinkan Anda membagikannya kepada orang yang Anda percaya. Apa pun cara Anda mengirimnya, hanya mereka yang dapat membukanya.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Sekali beli, bukan langganan.",
+  "home.pricing.text": "Beli Doughnut Forge sekali untuk setiap platform yang Anda gunakan, dari toko platform tersebut. Toko menampilkan harga yang berlaku di tempat Anda tinggal.",
+  "meta.pricing.title": "Harga: sekali beli, bukan langganan | Doughnut Forge",
+  "meta.pricing.description": "Beli Doughnut Forge sekali untuk setiap platform yang Anda gunakan, dari toko platform itu. Tanpa langganan, tanpa akun, dan tanpa perpanjangan.",
+  "faq.subscription.a": "Tidak. Doughnut Forge adalah pembelian sekali bayar, bukan langganan. Anda membelinya sekali dari toko untuk platform Anda, dan tidak ada yang perlu diperpanjang.",
+  "faq.offline.a": "Tidak. Tidak ada akun yang perlu dibuat, dan Doughnut Forge bekerja sepenuhnya di perangkat Anda, bahkan tanpa koneksi internet. Anda hanya memerlukan koneksi untuk mengunduh aplikasi, atau jika Anda memilih mengirim file terenkripsi melalui internet.",
+  "press.facts.priceValue": "Sekali beli untuk setiap platform, bukan langganan",
+  "technical.network.none": "Doughnut Forge tidak membuat koneksi jaringannya sendiri. Tidak ada akun, tidak ada proses masuk, tidak ada analitik, tidak ada pelaporan crash, dan tidak ada pemeriksaan pembaruan. Kebijakan konten aplikasi tidak mengizinkan layarnya memuat apa pun dari internet."
 }

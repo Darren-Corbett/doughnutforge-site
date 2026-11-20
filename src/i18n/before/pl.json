@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge to aplikacja do szyfrowania plików offline dla urządzeń Mac, iPhone, iPad i Windows. Blokuje Twoje pliki i tekst na Twoim własnym urządzeniu, a udostępniasz je tylko wybranym osobom.",
   "meta.features.description": "Szyfruj pliki i tekst na własnym iPhonie, iPadzie lub komputerze, udostępniaj je zaufanym osobom i chroń je na długie lata. Bez konta i bez serwerów.",
   "features.lead": "Doughnut Forge blokuje Twoje pliki i tekst na iPhonie, iPadzie lub komputerze i pozwala udostępniać je osobom, którym ufasz. Niezależnie od tego, jak je wyślesz, tylko one mogą je otworzyć.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Jednorazowy zakup, nigdy subskrypcja.",
+  "home.pricing.text": "Kup Doughnut Forge raz dla każdej platformy, z której korzystasz, w sklepie tej platformy. Sklep pokazuje cenę obowiązującą tam, gdzie mieszkasz.",
+  "meta.pricing.title": "Cennik: jednorazowy zakup, bez subskrypcji | Doughnut Forge",
+  "meta.pricing.description": "Kup Doughnut Forge raz dla każdej platformy, z której korzystasz, w sklepie tej platformy. Bez subskrypcji, bez konta i bez odnawiania.",
+  "faq.subscription.a": "Nie. Doughnut Forge to jednorazowy zakup, nigdy subskrypcja. Kupujesz go raz w sklepie dla swojej platformy i nie musisz niczego odnawiać.",
+  "faq.offline.a": "Nie. Nie trzeba zakładać żadnego konta, a Doughnut Forge działa całkowicie na Twoim urządzeniu, nawet bez połączenia z internetem. Połączenie jest potrzebne tylko do pobrania aplikacji lub wtedy, gdy zdecydujesz się wysłać zaszyfrowane pliki przez internet.",
+  "press.facts.priceValue": "Jednorazowy zakup na każdą platformę, nigdy subskrypcja",
+  "technical.network.none": "Doughnut Forge nie nawiązuje żadnych własnych połączeń sieciowych. Nie ma konta, logowania, analityki, raportowania awarii ani sprawdzania aktualizacji. Zasady treści aplikacji nie pozwalają jej ekranom wczytywać niczego z internetu."
 }

@@ -2,7 +2,9 @@
 // first copied word for word from the forge-privacy repo): src/content/legal/privacy/
 // holds the text in every language. scripts/check-privacy-wording.mjs fails the
 // build if a page differs from it by a single character or link.
-type Policy = { links: Record<string, string>; strings: Record<PolicyKey, string> };
+import { reached, type Stage } from "./stages";
+
+type Policy = { links: Record<string, string>; strings: Record<PolicyKey, string>; held?: Partial<Record<PolicyKey, Stage>> };
 export type PolicyKey =
   | "title"
   | "effectiveDate"
@@ -11,6 +13,7 @@ export type PolicyKey =
   | "sec1Desc"
   | "sec2Title"
   | "sec2Desc"
+  | "sec2Purchase"
   | "sec3Title"
   | "sec3Desc"
   | "sec4Title"
@@ -29,6 +32,14 @@ export type PolicyKey =
   | "publisherInfo";
 
 const files = import.meta.glob<Policy>("../content/legal/privacy/*.json", { eager: true, import: "default" });
+
+/**
+ * Parts of the policy held back until a launch stage (en.json "held"): the page
+ * leaves them out and marks them, and scripts/check-privacy-wording.mjs accepts
+ * only those as missing
+ */
+export const heldParts = (): PolicyKey[] =>
+  (Object.entries(files["../content/legal/privacy/en.json"]?.held ?? {}) as [PolicyKey, Stage][]).filter(([, stage]) => !reached(stage)).map(([key]) => key);
 
 /** The policy in one language, with links made into <a> tags. Every site language has its own file. */
 export const getPolicy = (lang: string) => {

@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge este o aplicație de criptare offline a fișierelor pentru Mac, iPhone, iPad și Windows. Îți blochează fișierele și textele pe propriul dispozitiv, iar tu le partajezi doar cu oamenii pe care îi alegi.",
   "meta.features.description": "Criptează fișiere și text pe propriul iPhone, iPad sau computer, partajează-le cu oameni de încredere și păstrează-le protejate pe termen lung. Fără cont și fără servere.",
   "features.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad sau computer și îți permite să le partajezi cu oamenii în care ai încredere. Oricum le-ai trimite, doar ei le pot deschide.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Achiziție unică, niciodată abonament.",
+  "home.pricing.text": "Cumpără Doughnut Forge o singură dată pentru fiecare platformă pe care o folosești, din magazinul acelei platforme. Magazinul îți arată prețul pentru locul în care trăiești.",
+  "meta.pricing.title": "Prețuri: achiziție unică, fără abonament | Doughnut Forge",
+  "meta.pricing.description": "Cumpără Doughnut Forge o singură dată pentru fiecare platformă pe care o folosești, din magazinul acelei platforme. Fără abonament, fără cont, nimic de reînnoit.",
+  "faq.subscription.a": "Nu. Doughnut Forge este o achiziție unică, niciodată un abonament. Îl cumperi o singură dată din magazinul platformei tale și nu ai nimic de reînnoit.",
+  "faq.offline.a": "Nu. Nu există niciun cont de creat, iar Doughnut Forge funcționează în întregime pe dispozitivul tău, chiar și fără conexiune la internet. Ai nevoie de conexiune doar ca să descarci aplicația sau dacă alegi să trimiți fișiere criptate prin internet.",
+  "press.facts.priceValue": "Achiziție unică pentru fiecare platformă, niciodată abonament",
+  "technical.network.none": "Doughnut Forge nu face nicio conexiune de rețea proprie. Nu există cont, autentificare, analize, raportare a blocărilor sau verificare a actualizărilor. Politica de conținut a aplicației nu permite ecranelor sale să încarce nimic de pe internet."
 }

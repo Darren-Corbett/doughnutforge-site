@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge는 Mac, iPhone, iPad, Windows용 오프라인 파일 암호화 앱입니다. 파일과 텍스트를 내 기기에서 잠그고, 내가 선택한 사람과만 공유합니다.",
   "meta.features.description": "내 iPhone, iPad 또는 컴퓨터에서 파일과 텍스트를 암호화하고, 신뢰하는 사람과 공유하고, 오랫동안 보호하세요. 계정도 서버도 없습니다.",
   "features.lead": "Doughnut Forge는 iPhone, iPad 또는 컴퓨터의 파일과 텍스트를 잠그고 신뢰하는 사람과 공유할 수 있게 해 줍니다. 어떤 방법으로 보내든 그 사람만 열 수 있습니다.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "구독이 아닌 한 번 구매입니다.",
+  "home.pricing.text": "사용하는 플랫폼마다 해당 플랫폼의 스토어에서 Doughnut Forge를 한 번 구매하세요. 거주 지역의 가격은 스토어에 표시됩니다.",
+  "meta.pricing.title": "가격: 구독 없는 한 번 구매 | Doughnut Forge",
+  "meta.pricing.description": "사용하는 플랫폼마다 해당 스토어에서 Doughnut Forge를 한 번 구매하세요. 구독도, 계정도, 갱신할 것도 없습니다.",
+  "faq.subscription.a": "아니요. Doughnut Forge는 구독이 아닌 한 번 구매입니다. 사용하는 플랫폼의 스토어에서 한 번 구매하면 갱신할 것이 없습니다.",
+  "faq.offline.a": "아니요. 만들어야 할 계정이 없으며, Doughnut Forge는 인터넷 연결 없이도 전적으로 기기에서 작동합니다. 인터넷 연결은 앱을 다운로드할 때나, 암호화한 파일을 인터넷으로 보내기로 한 경우에만 필요합니다.",
+  "press.facts.priceValue": "플랫폼별 한 번 구매, 구독 없음",
+  "technical.network.none": "Doughnut Forge는 자체적으로 네트워크에 연결하지 않습니다. 계정, 로그인, 분석, 충돌 보고, 업데이트 확인이 모두 없습니다. 앱의 콘텐츠 정책은 앱 화면이 인터넷에서 무엇이든 불러오는 것을 허용하지 않습니다."
 }

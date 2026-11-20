@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge je aplikace pro šifrování souborů offline pro Mac, iPhone, iPad a Windows. Zamyká vaše soubory a text ve vašem vlastním zařízení a sdílíte je jen s lidmi, které si vyberete.",
   "meta.features.description": "Šifrujte soubory a text ve vlastním iPhonu, iPadu nebo počítači, sdílejte je s lidmi, kterým důvěřujete, a chraňte je dlouhodobě. Bez účtu a bez serverů.",
   "features.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete. Ať je pošlete jakkoli, otevřít je mohou jen oni.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Jednorázový nákup, nikdy předplatné.",
+  "home.pricing.text": "Doughnut Forge si koupíte jednou pro každou platformu, kterou používáte, v obchodě dané platformy. Obchod vám ukáže cenu platnou tam, kde žijete.",
+  "meta.pricing.title": "Ceník: jednorázový nákup, bez předplatného | Doughnut Forge",
+  "meta.pricing.description": "Doughnut Forge si koupíte jednou pro každou platformu, kterou používáte, v obchodě dané platformy. Bez předplatného, bez účtu a bez nutnosti cokoli prodlužovat.",
+  "faq.subscription.a": "Ne. Doughnut Forge je jednorázový nákup, nikdy předplatné. Koupíte si ho jednou v obchodě pro svou platformu a nic není třeba prodlužovat.",
+  "faq.offline.a": "Ne. Není potřeba zakládat žádný účet a Doughnut Forge funguje výhradně ve vašem zařízení, i bez připojení k internetu. Připojení potřebujete jen ke stažení aplikace, nebo když se rozhodnete posílat zašifrované soubory přes internet.",
+  "press.facts.priceValue": "Jednorázový nákup pro každou platformu, nikdy předplatné",
+  "technical.network.none": "Doughnut Forge sám nenavazuje žádná síťová připojení. Nemá účet, přihlašování, analytiku, hlášení pádů ani kontrolu aktualizací. Zásady obsahu aplikace nedovolují, aby její obrazovky cokoli načítaly z internetu."
 }

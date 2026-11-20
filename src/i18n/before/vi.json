@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge là ứng dụng mã hóa tệp ngoại tuyến cho Mac, iPhone, iPad và Windows. Ứng dụng khóa tệp và văn bản ngay trên thiết bị của bạn, và bạn chỉ chia sẻ chúng với những người bạn chọn.",
   "meta.features.description": "Mã hóa tệp và văn bản ngay trên iPhone, iPad hoặc máy tính của bạn, chia sẻ với người bạn tin tưởng và giữ chúng được bảo vệ lâu dài. Không tài khoản, không máy chủ.",
   "features.lead": "Doughnut Forge khóa tệp và văn bản trên iPhone, iPad hoặc máy tính của bạn và cho phép bạn chia sẻ chúng với những người bạn tin tưởng. Dù bạn gửi bằng cách nào, chỉ họ mới mở được.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Mua một lần, không bao giờ là thuê bao.",
+  "home.pricing.text": "Mua Doughnut Forge một lần cho mỗi nền tảng bạn dùng, từ cửa hàng của nền tảng đó. Cửa hàng sẽ hiển thị giá tại nơi bạn sống.",
+  "meta.pricing.title": "Giá: mua một lần, không bao giờ là thuê bao | Doughnut Forge",
+  "meta.pricing.description": "Mua Doughnut Forge một lần cho mỗi nền tảng bạn dùng, từ cửa hàng của nền tảng đó. Không thuê bao, không tài khoản và không có gì phải gia hạn.",
+  "faq.subscription.a": "Không. Doughnut Forge là sản phẩm mua một lần, không bao giờ là thuê bao. Bạn mua một lần từ cửa hàng cho nền tảng của mình, và không có gì phải gia hạn.",
+  "faq.offline.a": "Không. Không cần tạo tài khoản, và Doughnut Forge hoạt động hoàn toàn trên thiết bị của bạn, kể cả khi không có kết nối internet. Bạn chỉ cần kết nối để tải ứng dụng, hoặc khi bạn chọn gửi tệp đã mã hóa qua internet.",
+  "press.facts.priceValue": "Mua một lần cho mỗi nền tảng, không bao giờ là thuê bao",
+  "technical.network.none": "Doughnut Forge không tự tạo kết nối mạng nào. Không có tài khoản, không đăng nhập, không phân tích, không báo cáo sự cố và không kiểm tra cập nhật. Chính sách nội dung của ứng dụng không cho phép các màn hình của nó tải bất cứ thứ gì từ internet."
 }

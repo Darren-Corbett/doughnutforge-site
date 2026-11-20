@@ -6,6 +6,7 @@
 import Faq, { type FaqItem } from "../components/Faq.astro";
 import PageHero from "../components/PageHero.astro";
 import { issueLists, shownLists } from "../data/issues";
+import { pricingLists, pricingNow } from "../data/pricing";
 import { getPolicy, policyTitle } from "../data/privacy";
 import { site } from "../data/site";
 import { reached } from "../data/stages";
@@ -25,12 +26,18 @@ const names = (status: "available" | "coming") =>
     lang,
     platforms.filter((p) => p.status === status).map((p) => platformName(lang, p.id)),
   );
-const ids = ["subscription", "platforms", "offline", "storage", "backup", "restore", "password", "share", "code", "older", "recipient", "messaging", "which", "data", "quantum"] as const;
+const ids = ["subscription", "free", "unlock", "earlier", "restorePurchase", "refund", "desktop", "platforms", "offline", "storage", "backup", "restore", "password", "share", "code", "older", "recipient", "messaging", "which", "data", "quantum"] as const;
 // New contact codes and older apps matter once the first store sells 3.0
-const shown = ids.filter((id) => reached("first3") || (id !== "code" && id !== "older"));
+// Buying questions matter once a phone store sells 3.0 (free to download, with one
+// in-app purchase); earlier buyers only once the iPhone and iPad app is free
+const buying = ["free", "unlock", "earlier", "restorePurchase", "refund", "desktop"];
+const shown = ids
+  .filter((id) => reached("first3") || (id !== "code" && id !== "older"))
+  .filter((id) => !buying.includes(id) || (reached("mobileFree") && (id !== "earlier" || pricingNow.free.includes("ios"))));
+const lists = pricingLists(lang);
 const items: FaqItem[] = shown.map((id) => ({
   id,
-  q: t(`faq.${id}.q` as UiKey),
+  q: fill(t(`faq.${id}.q` as UiKey), lists),
   a: answer(id),
 }));
 
@@ -39,7 +46,8 @@ function answer(id: (typeof ids)[number]) {
     const coming = platforms.some((p) => p.status === "coming") ? fill(t("download.coming"), { platforms: names("coming") }) : "";
     return [fill(t("faq.which.a"), { available: names("available") }), coming].join(" ").trim();
   }
-  return t(`faq.${id}.a` as UiKey);
+  if (id === "platforms" && reached("mobileFree")) return fill(t("faq.platforms.aFree"), lists);
+  return fill(t(`faq.${id}.a` as UiKey), lists);
 }
 
 const jsonLd = {

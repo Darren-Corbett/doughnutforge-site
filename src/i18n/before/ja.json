@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forgeは、Mac、iPhone、iPad、Windows向けのオフラインファイル暗号化アプリです。ファイルとテキストを自分のデバイス上でロックし、共有するのは自分が選んだ相手だけです。",
   "meta.features.description": "自分のiPhone、iPad、コンピュータ上でファイルとテキストを暗号化し、信頼できる相手と共有して、長く保護できます。アカウントもサーバーも不要です。",
   "features.lead": "Doughnut Forgeは、iPhone、iPad、コンピュータ上のファイルとテキストをロックし、信頼できる相手と共有できるようにします。どんな方法で送っても、開けるのはその相手だけです。",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "買い切り。サブスクリプションではありません。",
+  "home.pricing.text": "Doughnut Forgeは、お使いのプラットフォームごとに、そのプラットフォームのストアで一度購入します。お住まいの地域での価格はストアに表示されます。",
+  "meta.pricing.title": "価格：買い切り、サブスクリプションなし | Doughnut Forge",
+  "meta.pricing.description": "Doughnut Forgeは、お使いのプラットフォームごとにそのストアで一度購入するだけ。サブスクリプションもアカウントもなく、更新の必要もありません。",
+  "faq.subscription.a": "いいえ。Doughnut Forgeは買い切りで、サブスクリプションではありません。お使いのプラットフォームのストアで一度購入すれば、更新するものは何もありません。",
+  "faq.offline.a": "いいえ。作成するアカウントはなく、Doughnut Forgeはインターネットに接続していなくても、完全にデバイス上で動作します。接続が必要なのは、アプリをダウンロードするときと、暗号化したファイルをインターネット経由で送ることにしたときだけです。",
+  "press.facts.priceValue": "プラットフォームごとの買い切り。サブスクリプションではありません",
+  "technical.network.none": "Doughnut Forgeが自らネットワークに接続することはありません。アカウントも、サインインも、アクセス解析も、クラッシュレポートも、アップデートの確認もありません。アプリのコンテンツポリシーにより、アプリの画面がインターネットから何かを読み込むことはできません。"
 }

@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge es una app de cifrado de archivos sin conexión para Mac, iPhone, iPad y Windows. Protege tus archivos y texto en tu propio dispositivo, y solo los compartes con las personas que elijas.",
   "meta.features.description": "Cifra archivos y texto en tu propio iPhone, iPad u ordenador, compártelos con gente de confianza y mantenlos protegidos a largo plazo. Sin cuenta y sin servidores.",
   "features.lead": "Doughnut Forge protege tus archivos y texto en tu iPhone, iPad u ordenador y te permite compartirlos con las personas en las que confías. Los envíes como los envíes, solo ellas podrán abrirlos.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Pago único, nunca una suscripción.",
+  "home.pricing.text": "Compra Doughnut Forge una vez para cada plataforma que uses, en la tienda de esa plataforma. La tienda te muestra el precio del lugar donde vives.",
+  "meta.pricing.title": "Precios: pago único, nunca una suscripción | Doughnut Forge",
+  "meta.pricing.description": "Compra Doughnut Forge una vez para cada plataforma que uses, en la tienda de esa plataforma. Sin suscripción, sin cuenta y nada que renovar.",
+  "faq.subscription.a": "No. Doughnut Forge es un pago único, nunca una suscripción. Lo compras una vez en la tienda de tu plataforma y no hay nada que renovar.",
+  "faq.offline.a": "No. No hay ninguna cuenta que crear, y Doughnut Forge funciona por completo en tu dispositivo, incluso sin conexión a internet. Solo necesitas conexión para descargar la app o si decides enviar archivos cifrados por internet.",
+  "press.facts.priceValue": "Pago único para cada plataforma, nunca una suscripción",
+  "technical.network.none": "Doughnut Forge no establece conexiones de red por su cuenta. No hay cuenta, ni inicio de sesión, ni analíticas, ni informes de fallos, ni comprobación de actualizaciones. La política de contenido de la app no permite que sus pantallas carguen nada de internet."
 }

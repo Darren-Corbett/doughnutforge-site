@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge è un'app di crittografia offline dei file per Mac, iPhone, iPad e Windows. Blocca i tuoi file e il tuo testo sul tuo dispositivo, e li condividi solo con le persone che scegli.",
   "meta.features.description": "Crittografa file e testo sul tuo iPhone, iPad o computer, condividili con le persone di cui ti fidi e mantienili protetti nel tempo. Niente account e niente server.",
   "features.lead": "Doughnut Forge blocca file e testo sul tuo iPhone, iPad o computer e ti permette di condividerli con le persone di cui ti fidi. Comunque tu li invii, solo loro possono aprirli.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Acquisto una tantum, mai un abbonamento.",
+  "home.pricing.text": "Acquista Doughnut Forge una volta per ogni piattaforma che usi, dallo store di quella piattaforma. Lo store mostra il prezzo per il paese in cui vivi.",
+  "meta.pricing.title": "Prezzi: acquisto una tantum, mai un abbonamento | Doughnut Forge",
+  "meta.pricing.description": "Acquista Doughnut Forge una volta per ogni piattaforma che usi, dallo store di quella piattaforma. Nessun abbonamento, nessun account e niente da rinnovare.",
+  "faq.subscription.a": "No. Doughnut Forge è un acquisto una tantum, mai un abbonamento. Lo acquisti una volta dallo store della tua piattaforma e non c'è nulla da rinnovare.",
+  "faq.offline.a": "No. Non c'è nessun account da creare e Doughnut Forge funziona interamente sul tuo dispositivo, anche senza connessione a Internet. La connessione ti serve solo per scaricare l'app o se scegli di inviare file crittografati via Internet.",
+  "press.facts.priceValue": "Acquisto una tantum per ogni piattaforma, mai un abbonamento",
+  "technical.network.none": "Doughnut Forge non effettua connessioni di rete proprie. Non ci sono account, accesso, analisi, segnalazione degli arresti anomali né controllo degli aggiornamenti. La politica sui contenuti dell'app non consente alle sue schermate di caricare nulla da Internet."
 }

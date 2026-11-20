@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge är en app för offlinekryptering av filer för Mac, iPhone, iPad och Windows. Den låser dina filer och texter på din egen enhet, och du delar dem bara med dem du väljer.",
   "meta.features.description": "Kryptera filer och text på din egen iPhone, iPad eller dator, dela dem med dem du litar på och håll dem skyddade på lång sikt. Inget konto och inga servrar.",
   "features.lead": "Doughnut Forge låser dina filer och texter på din iPhone, iPad eller dator och låter dig dela dem med dem du litar på. Hur du än skickar dem kan bara de öppna dem.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Engångsköp, aldrig en prenumeration.",
+  "home.pricing.text": "Köp Doughnut Forge en gång för varje plattform du använder, i den plattformens butik. Butiken visar priset där du bor.",
+  "meta.pricing.title": "Priser: engångsköp, aldrig en prenumeration | Doughnut Forge",
+  "meta.pricing.description": "Köp Doughnut Forge en gång för varje plattform du använder, i den plattformens butik. Ingen prenumeration, inget konto och inget att förnya.",
+  "faq.subscription.a": "Nej. Doughnut Forge är ett engångsköp, aldrig en prenumeration. Du köper appen en gång i butiken för din plattform, och det finns inget att förnya.",
+  "faq.offline.a": "Nej. Det finns inget konto att skapa, och Doughnut Forge fungerar helt och hållet på din enhet, även utan internetanslutning. Du behöver bara en anslutning för att ladda ner appen, eller om du väljer att skicka krypterade filer via internet.",
+  "press.facts.priceValue": "Engångsköp för varje plattform, aldrig en prenumeration",
+  "technical.network.none": "Doughnut Forge gör inga egna nätverksanslutningar. Det finns inget konto, ingen inloggning, ingen analys, ingen kraschrapportering och ingen kontroll av uppdateringar. Appens innehållspolicy tillåter inte att dess skärmar läser in något från internet."
 }

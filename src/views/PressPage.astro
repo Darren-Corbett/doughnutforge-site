@@ -5,6 +5,7 @@ import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import PageHero from "../components/PageHero.astro";
 import pressFiles from "../data/press-files.json";
+import { pricingLists } from "../data/pricing";
 import { site } from "../data/site";
 import { platformName, platforms } from "../data/stores";
 import { fill, languages, listOf, useStrings, type Language } from "../i18n";
@@ -28,7 +29,7 @@ const facts = [
   [t("press.facts.developer"), site.name],
   [t("press.facts.available"), names("available")],
   ...(platforms.some((p) => p.status === "coming") ? [[t("press.facts.coming"), names("coming")]] : []),
-  [t("press.facts.price"), t("press.facts.priceValue")],
+  [t("press.facts.price"), fill(t("press.facts.priceValue"), pricingLists(lang))],
   [t("press.facts.languages"), String(languages.length)],
   [t("press.facts.website"), site.url.replace("https://", "")],
   // Press questions go to the same public GitHub issues as support

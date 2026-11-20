@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge ist eine App zur Offline-Dateiverschlüsselung für Mac, iPhone, iPad und Windows. Sie verschlüsselt Ihre Dateien und Texte auf Ihrem eigenen Gerät, und Sie teilen sie nur mit den Menschen, die Sie auswählen.",
   "meta.features.description": "Verschlüsseln Sie Dateien und Texte auf Ihrem iPhone, iPad oder Computer, teilen Sie sie mit Vertrauten und schützen Sie sie langfristig. Kein Konto, keine Server.",
   "features.lead": "Doughnut Forge verschlüsselt Ihre Dateien und Texte auf Ihrem iPhone, iPad oder Computer und lässt Sie diese mit Menschen teilen, denen Sie vertrauen. Egal, wie Sie sie versenden: Nur diese Menschen können sie öffnen.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Einmaliger Kauf, niemals ein Abo.",
+  "home.pricing.text": "Kaufen Sie Doughnut Forge einmal für jede Plattform, die Sie nutzen, im Store dieser Plattform. Der Store zeigt Ihnen den Preis für Ihr Land.",
+  "meta.pricing.title": "Preise: einmaliger Kauf, kein Abo | Doughnut Forge",
+  "meta.pricing.description": "Kaufen Sie Doughnut Forge einmal für jede Plattform, die Sie nutzen, im Store dieser Plattform. Kein Abo, kein Konto und nichts zu verlängern.",
+  "faq.subscription.a": "Nein. Doughnut Forge ist ein einmaliger Kauf, niemals ein Abo. Sie kaufen die App einmal im Store für Ihre Plattform, und es gibt nichts zu verlängern.",
+  "faq.offline.a": "Nein. Sie müssen kein Konto erstellen, und Doughnut Forge arbeitet vollständig auf Ihrem Gerät, auch ohne Internetverbindung. Eine Verbindung brauchen Sie nur, um die App herunterzuladen, oder wenn Sie verschlüsselte Dateien über das Internet senden möchten.",
+  "press.facts.priceValue": "Einmaliger Kauf pro Plattform, niemals ein Abo",
+  "technical.network.none": "Doughnut Forge baut keine eigenen Netzwerkverbindungen auf. Es gibt kein Konto, keine Anmeldung, keine Nutzungsanalyse, keine Absturzberichte und keine Suche nach Updates. Die Inhaltsrichtlinie der App erlaubt ihren Bildschirmen nicht, etwas aus dem Internet zu laden."
 }

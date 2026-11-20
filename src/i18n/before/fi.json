@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge on tiedostojen offline-salaussovellus Macille, iPhonelle, iPadille ja Windowsille. Se lukitsee tiedostosi ja tekstisi omalla laitteellasi, ja jaat ne vain valitsemillesi ihmisille.",
   "meta.features.description": "Salaa tiedostot ja tekstit omalla iPhonellasi, iPadillasi tai tietokoneellasi, jaa ne luotettujen ihmisten kanssa ja pidä ne suojattuina pitkään. Ei tiliä eikä palvelimia.",
   "features.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa. Lähetitpä ne miten tahansa, vain he voivat avata ne.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Kertaostos, ei koskaan tilausta.",
+  "home.pricing.text": "Osta Doughnut Forge kerran jokaiselle käyttämällesi alustalle, sen alustan omasta kaupasta. Kauppa näyttää hinnan siellä, missä asut.",
+  "meta.pricing.title": "Hinnat: kertaostos, ei koskaan tilausta | Doughnut Forge",
+  "meta.pricing.description": "Osta Doughnut Forge kerran jokaiselle käyttämällesi alustalle, sen alustan omasta kaupasta. Ei tilausta, ei tiliä eikä mitään uusittavaa.",
+  "faq.subscription.a": "Ei. Doughnut Forge on kertaostos, ei koskaan tilaus. Ostat sen kerran alustasi kaupasta, eikä mitään tarvitse uusia.",
+  "faq.offline.a": "Et. Tiliä ei tarvitse luoda, ja Doughnut Forge toimii täysin laitteellasi, myös ilman internetyhteyttä. Yhteyttä tarvitset vain sovelluksen lataamiseen tai jos haluat lähettää salattuja tiedostoja internetin kautta.",
+  "press.facts.priceValue": "Kertaostos jokaiselle alustalle, ei koskaan tilaus",
+  "technical.network.none": "Doughnut Forge ei muodosta omia verkkoyhteyksiä. Siinä ei ole tiliä, kirjautumista, analytiikkaa, kaatumisraportointia eikä päivitysten tarkistusta. Sovelluksen sisältökäytäntö ei salli sen näkymien ladata mitään internetistä."
 }

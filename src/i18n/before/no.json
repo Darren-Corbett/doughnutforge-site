@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge er en app for offline filkryptering for Mac, iPhone, iPad og Windows. Den låser filene og teksten din på din egen enhet, og du deler dem bare med folk du velger.",
   "meta.features.description": "Krypter filer og tekst på din egen iPhone, iPad eller datamaskin, del dem med folk du stoler på, og hold dem beskyttet på lang sikt. Ingen konto og ingen servere.",
   "features.lead": "Doughnut Forge låser filene og teksten din på iPhone, iPad eller datamaskinen og lar deg dele dem med folk du stoler på. Uansett hvordan du sender dem, er det bare de som kan åpne dem.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Engangskjøp, aldri et abonnement.",
+  "home.pricing.text": "Kjøp Doughnut Forge én gang for hver plattform du bruker, i butikken for den plattformen. Butikken viser prisen der du bor.",
+  "meta.pricing.title": "Priser: engangskjøp, aldri abonnement | Doughnut Forge",
+  "meta.pricing.description": "Kjøp Doughnut Forge én gang for hver plattform du bruker, i butikken for den plattformen. Ingen abonnement, ingen konto og ingenting å fornye.",
+  "faq.subscription.a": "Nei. Doughnut Forge er et engangskjøp, aldri et abonnement. Du kjøper appen én gang i butikken for plattformen din, og det er ingenting å fornye.",
+  "faq.offline.a": "Nei. Det er ingen konto å opprette, og Doughnut Forge fungerer utelukkende på enheten din, også uten internettilkobling. Du trenger bare en tilkobling for å laste ned appen, eller hvis du velger å sende krypterte filer over internett.",
+  "press.facts.priceValue": "Engangskjøp for hver plattform, aldri et abonnement",
+  "technical.network.none": "Doughnut Forge oppretter ingen nettverkstilkoblinger på egen hånd. Det finnes ingen konto, ingen pålogging, ingen analyse, ingen krasjrapportering og ingen sjekk etter oppdateringer. Appens innholdspolicy tillater ikke at skjermene laster inn noe fra internett."
 }

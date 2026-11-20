@@ -1,9 +1,13 @@
 ---
 // Pricing: no amounts, because each store shows the local price (amounts are kept
-// for reference in src/data/prices.ts). Each platform is its own one-time purchase.
+// for reference in src/data/prices.ts). Mac and Windows are each a one-time
+// purchase; from 3.0.0 the phone apps are free, with one in-app purchase
+// (src/data/pricing.ts).
 import PageHero from "../components/PageHero.astro";
 import PlatformCards from "../components/PlatformCards.astro";
-import { localePath, useStrings, type Language } from "../i18n";
+import { pricingLists } from "../data/pricing";
+import { reached } from "../data/stages";
+import { fill, localePath, useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
 
 interface Props {
@@ -15,14 +19,16 @@ const { t, store } = useStrings(lang.code);
 // "No subscription. No account. No servers." from the store's promotional text
 const { never } = store.mac.parts;
 const offline = t("offline.text");
+const lists = pricingLists(lang);
+const where = reached("mobileFree") ? fill(t("pricing.where.textFree"), lists) : t("pricing.where.text");
 ---
 
-<Base lang={lang} title={t("meta.pricing.title")} description={t("meta.pricing.description")} image="/og/pricing.png" appBanner>
-  <PageHero title={t("home.pricing.title")} lead={t("home.pricing.text")} />
+<Base lang={lang} title={t("meta.pricing.title")} description={fill(t("meta.pricing.description"), lists)} image="/og/pricing.png" appBanner>
+  <PageHero title={t("home.pricing.title")} lead={fill(t("home.pricing.text"), lists)} />
 
   <section class="section" aria-labelledby="pricing-where">
     <h2 id="pricing-where" class="section-title">{t("pricing.where.title")}</h2>
-    <p class="section-text">{t("pricing.where.text")}</p>
+    <p class="section-text">{where}</p>
     <PlatformCards lang={lang} mode="pricing" heading="h3" />
     <p class="section-text">{t("download.availability")}</p>
   </section>

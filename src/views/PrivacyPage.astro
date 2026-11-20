@@ -3,7 +3,7 @@
 // carries data-policy="<key>" so scripts/check-privacy-wording.mjs can compare it with the source.
 import PageHero from "../components/PageHero.astro";
 import Prose from "../components/Prose.astro";
-import { getPolicy, policyTitle, type PolicyKey } from "../data/privacy";
+import { getPolicy, heldParts, policyTitle, type PolicyKey } from "../data/privacy";
 import { site } from "../data/site";
 import { useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
@@ -14,9 +14,14 @@ interface Props {
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
 const { html } = getPolicy(lang.code);
-// Sections 1 to 5 are one paragraph each; section 6, the website, has several
+const held = heldParts();
+// Sections 1 to 5 are one paragraph each, and section 2 adds the in-app purchase
+// line once a phone store sells it; section 6, the website, has several
 const sections: { title: PolicyKey; texts: PolicyKey[] }[] = [
-  ...[1, 2, 3, 4, 5].map((n) => ({ title: `sec${n}Title` as PolicyKey, texts: [`sec${n}Desc` as PolicyKey] })),
+  ...[1, 2, 3, 4, 5].map((n) => ({
+    title: `sec${n}Title` as PolicyKey,
+    texts: [`sec${n}Desc` as PolicyKey, ...(n === 2 ? (["sec2Purchase"] as PolicyKey[]) : [])].filter((key) => !held.includes(key)),
+  })),
   {
     title: "sec6Title",
     texts: ["sec6Counts", "sec6Never", "sec6Device", "sec6Processor", "sec6Basis", "sec6OptOut", "sec6Public", "sec6Hosting"],
@@ -40,6 +45,7 @@ const sections: { title: PolicyKey; texts: PolicyKey[] }[] = [
         ))
       }
       <p class="publisher" data-policy="publisherInfo" set:html={html("publisherInfo")} />
+      {held.map((key) => <template data-policy-held={key} />)}
     </Prose>
   </div>
 </Base>

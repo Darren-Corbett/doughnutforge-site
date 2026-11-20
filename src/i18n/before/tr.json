@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge; Mac, iPhone, iPad ve Windows için çevrimdışı bir dosya şifreleme uygulamasıdır. Dosyalarınızı ve metinlerinizi kendi cihazınızda kilitler ve bunları yalnızca seçtiğiniz kişilerle paylaşırsınız.",
   "meta.features.description": "Kendi iPhone, iPad veya bilgisayarınızda dosya ve metinleri şifreleyin, güvendiğiniz kişilerle paylaşın ve uzun vadede korunmalarını sağlayın. Hesap yok, sunucu yok.",
   "features.lead": "Doughnut Forge, iPhone, iPad veya bilgisayarınızdaki dosyaları ve metinleri kilitler ve bunları güvendiğiniz kişilerle paylaşmanızı sağlar. Nasıl gönderirseniz gönderin, onları yalnızca o kişiler açabilir.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Tek seferlik satın alma. Asla abonelik yok.",
+  "home.pricing.text": "Doughnut Forge'u kullandığınız her platform için o platformun mağazasından bir kez satın alın. Mağaza, bulunduğunuz yerdeki fiyatı gösterir.",
+  "meta.pricing.title": "Fiyatlar: tek seferlik satın alma, abonelik yok | Doughnut Forge",
+  "meta.pricing.description": "Doughnut Forge'u kullandığınız her platform için o platformun mağazasından bir kez satın alın. Abonelik yok, hesap yok, yenilenecek bir şey yok.",
+  "faq.subscription.a": "Hayır. Doughnut Forge tek seferlik bir satın almadır, asla abonelik değildir. Platformunuzun mağazasından bir kez satın alırsınız ve yenilenecek bir şey yoktur.",
+  "faq.offline.a": "Hayır. Oluşturulacak bir hesap yoktur ve Doughnut Forge, internet bağlantısı olmadan bile tamamen cihazınızda çalışır. Bağlantıya yalnızca uygulamayı indirmek için ya da şifreli dosyaları internet üzerinden göndermeyi seçerseniz ihtiyacınız olur.",
+  "press.facts.priceValue": "Her platform için tek seferlik satın alma, asla abonelik değil",
+  "technical.network.none": "Doughnut Forge kendi başına hiçbir ağ bağlantısı kurmaz. Hesap, oturum açma, analiz, çökme raporlama ve güncelleme denetimi yoktur. Uygulamanın içerik politikası, ekranlarının internetten herhangi bir şey yüklemesine izin vermez."
 }

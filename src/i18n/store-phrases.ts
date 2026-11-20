@@ -7,6 +7,7 @@ const PHRASES = {
   open: "go.open",
   tap: "go.tap",
   oneTime: "pricing.oneTime",
+  free: "pricing.free",
 } as const satisfies Record<string, UiKey>;
 
 export const storePhrase = (store: StoreId, phrase: keyof typeof PHRASES): UiKey =>

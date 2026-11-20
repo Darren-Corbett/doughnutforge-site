@@ -7,8 +7,9 @@ import Phone from "../components/Phone.astro";
 import StoreLinks from "../components/StoreLinks.astro";
 import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
 import { organization, softwareApplication } from "../data/jsonld";
+import { pricingLists } from "../data/pricing";
 import { screen } from "../data/screens";
-import { useStrings, type Language } from "../i18n";
+import { fill, useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
 
 interface Props {
@@ -123,7 +124,7 @@ const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), orga
 
   <section id="download" class="section" aria-labelledby="pricing">
     <h2 id="pricing" class="section-title">{t("home.pricing.title")}</h2>
-    <p class="download-lead">{t("home.pricing.text")}</p>
+    <p class="download-lead">{fill(t("home.pricing.text"), pricingLists(lang))}</p>
     <p class="statement bill">{store.mac.closing}</p>
     <StoreLinks lang={lang} />
   </section>

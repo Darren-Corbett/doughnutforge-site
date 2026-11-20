@@ -6,7 +6,9 @@
 //   - the words, character for character (after decoding entities and collapsing spaces)
 //   - the bold, code and link markup, including every link address
 // Every key must appear on the privacy page, and every language's file must have
-// English's keys, links and link places. Any difference fails the build.
+// English's keys, links and link places. Any difference fails the build. A part
+// held back until a launch stage (en.json "held") may be missing only from a page
+// that marks it held (data-policy-held="<key>", src/views/PrivacyPage.astro).
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -82,6 +84,10 @@ for (const page of pages) {
     continue;
   }
   const isPrivacy = /(^|\/)privacy\/index\.html$/.test(page);
+  if (isPrivacy)
+    for (const [, key] of html.matchAll(/data-policy-held="(\w+)"/g))
+      if (key in (policies.en.held ?? {})) seenOnPrivacy.set(page, (seenOnPrivacy.get(page) ?? new Set()).add(key));
+      else problems.push(`${page}: "${key}" is marked held, but en.json does not hold it back`);
 
   for (let [, , key, inner] of html.matchAll(/<(\w+)\b[^>]*?\sdata-policy="(\w+)"[^>]*>([\s\S]*?)<\/\1>/g)) {
     checked++;

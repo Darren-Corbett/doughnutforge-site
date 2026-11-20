@@ -56,8 +56,8 @@ export default {
   "tabs.files": "Files",
   "tabs.text": "Text",
 
-  "home.pricing.title": "One-time purchase, never a subscription.",
-  "home.pricing.text": "Buy Doughnut Forge once for each platform you use, from that platform's store. The store shows the price where you live.",
+  "home.pricing.title": "No subscription.",
+  "home.pricing.text": "On {free}, Doughnut Forge is free to download, and one in-app purchase, paid once, unlocks encrypting files, photos and videos. On {paid}, it is a one-time purchase from each store. The store shows the price where you live.",
 
   // {platforms} is one platform or a list, such as "Android"
   "download.coming": "Coming soon: {platforms}.",
@@ -111,14 +111,17 @@ export default {
   "features.cta.title": "Ready to keep your files private?",
 
   // Pricing page
-  "meta.pricing.title": "Pricing: a one-time purchase, never a subscription | Doughnut Forge",
+  "meta.pricing.title": "Pricing: no subscription | Doughnut Forge",
   "meta.pricing.description":
-    "Buy Doughnut Forge once for each platform you use, from that platform's store. No subscription, no account and nothing to renew.",
+    "Free to download on {free}, with one in-app purchase, paid once, to encrypt files, photos and videos. A one-time purchase on {paid}. No subscription.",
   "pricing.where.title": "Where to buy",
   "pricing.where.text":
     "Each platform is a separate purchase from its own store. Buying on iPhone and iPad does not include Android, Mac or Windows, and buying on Android, Mac or Windows does not include any other platform.",
+  "pricing.where.textFree": "On {paid}, each platform is a separate purchase from its own store. On {free}, the in-app purchase restores on your other devices that use the same App Store or Google Play account.",
   "pricing.oneTime": "One-time purchase from the {store}",
   "pricing.oneTime.googlePlay": "One-time purchase from Google Play",
+  "pricing.free": "Free to download from the {store}, with one in-app purchase, paid once, to encrypt files, photos and videos",
+  "pricing.free.googlePlay": "Free to download from Google Play, with one in-app purchase, paid once, to encrypt files, photos and videos",
   "pricing.questions": "Questions about buying?",
   "pricing.questionsLink": "See the answers on the support page",
 
@@ -168,13 +171,26 @@ export default {
 
   "faq.subscription.q": "Is Doughnut Forge a subscription?",
   "faq.subscription.a":
-    "No. Doughnut Forge is a one-time purchase, never a subscription. You buy it once from the store for your platform, and there is nothing to renew.",
+    "No. Doughnut Forge is never a subscription. On {free}, it is free to download, and one in-app purchase, paid once, unlocks encrypting files, photos and videos. On {paid}, it is a one-time purchase from each store. There is nothing to renew.",
+  "faq.free.q": "What is free on {free}?",
+  "faq.free.a": "Doughnut Forge is free to download: encrypting text, opening what is sent to you, your contacts and your identity cost nothing. You can open and decrypt anything sent to you, including files, photos and videos, save what you receive and change your settings. There are no ads.",
+  "faq.unlock.q": "What does the in-app purchase unlock?",
+  "faq.unlock.a": "Encrypting files, photos and videos. It is one in-app purchase, paid once, called “Encrypt files” in the store. In the app, tap “Unlock file encryption”. There is no subscription, and the store shows the price in your own currency.",
+  "faq.earlier.q": "I bought Doughnut Forge for iPhone or iPad before. Do I need to pay again?",
+  "faq.earlier.a": "No. If you bought Doughnut Forge for iPhone or iPad before it became free to download, file encryption is unlocked for you automatically.",
+  "faq.restorePurchase.q": "How do I unlock file encryption on my other devices?",
+  "faq.restorePurchase.a": "Tap “Restore purchase” in the app. The purchase restores on your other devices that use the same App Store or Google Play account.",
+  "faq.refund.q": "What happens if my purchase is refunded?",
+  "faq.refund.a": "A refunded purchase locks file encryption again. Opening anything sent to you always stays free.",
+  "faq.desktop.q": "Does anything change on Mac or Windows?",
+  "faq.desktop.a": "No. On Mac and Windows, Doughnut Forge is still a one-time purchase from the Mac App Store or the Microsoft Store, and nothing in the app is locked.",
   "faq.platforms.q": "If I buy it on one platform, do I also get it on another?",
   "faq.platforms.a":
     "No. Each platform is a separate purchase from its own store: the App Store for iPhone and iPad, Google Play for Android, the Mac App Store for Mac and the Microsoft Store for Windows. Buying on iPhone and iPad does not include Android, Mac or Windows, and buying on Android, Mac or Windows does not include any other platform.",
+  "faq.platforms.aFree": "No. On {paid}, each platform is a separate purchase from its own store. On {free}, the in-app purchase restores on your other devices that use the same App Store or Google Play account, but a purchase on the App Store does not unlock Android, and a purchase on Google Play does not unlock iPhone or iPad.",
   "faq.offline.q": "Do I need an account or an internet connection?",
   "faq.offline.a":
-    "No. There is no account to create, and Doughnut Forge works entirely on your device, even without an internet connection. You only need a connection to download the app, or if you choose to send encrypted files over the internet.",
+    "No. There is no account to create, and Doughnut Forge works entirely on your device, even without an internet connection. You only need a connection to download the app, to buy or restore the in-app purchase, or if you choose to send encrypted files over the internet.",
   "faq.storage.q": "Where are my files and keys kept?",
   "faq.storage.a":
     "On your device. Your password and keys are never stored on a server or sent across the network. Encrypted files go wherever you choose to save or send them.",
@@ -233,7 +249,7 @@ export default {
   "press.facts.available": "Available for",
   "press.facts.coming": "Coming soon",
   "press.facts.price": "Price",
-  "press.facts.priceValue": "One-time purchase for each platform, never a subscription",
+  "press.facts.priceValue": "Free to download on {free}, with one in-app purchase, paid once, to encrypt files, photos and videos. One-time purchase on {paid}. Never a subscription.",
   "press.facts.languages": "Languages",
   "press.facts.website": "Website",
   "press.facts.contact": "Press contact",
@@ -447,7 +463,7 @@ export default {
   "technical.text.untested": "Doughnut Forge has not been tested with each app that the text might pass through.",
   "technical.network.title": "Network",
   "technical.network.none":
-    "Doughnut Forge makes no network connections of its own. There is no account, no sign-in, no analytics, no crash reporting and no update check. The app's content policy does not allow its screens to load anything from the internet.",
+    "[PENDING-WHITEPAPER-PDF] [PENDING-ANDROID-PERMISSION] Doughnut Forge makes no network connections of its own. There is no account, no sign-in, no analytics, no crash reporting and no update check. The app's content policy does not allow its screens to load anything from the internet.",
   "technical.network.apple":
     "On Mac, iPhone and iPad, the operating system may contact the Doughnut Forge website so that password managers can offer to save and fill your password. Apple's system does this, not the app.",
   "technical.network.sharing": "Encrypted items leave your device only when you share them yourself.",

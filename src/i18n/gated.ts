@@ -28,6 +28,35 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   "features.lead": "android",
   "blog.cta.text": "android",
 
+  // A phone store sells 3.0: free to download, with one in-app purchase, paid
+  // once, that unlocks encrypting files, photos and videos (owner, 20 November 2026)
+  "home.pricing.title": "mobileFree",
+  "home.pricing.text": "mobileFree",
+  "meta.pricing.title": "mobileFree",
+  "meta.pricing.description": "mobileFree",
+  "pricing.where.textFree": "mobileFree",
+  "pricing.free": "mobileFree",
+  "pricing.free.googlePlay": "mobileFree",
+  "faq.subscription.a": "mobileFree",
+  "faq.free.q": "mobileFree",
+  "faq.free.a": "mobileFree",
+  "faq.unlock.q": "mobileFree",
+  "faq.unlock.a": "mobileFree",
+  "faq.earlier.q": "mobileFree",
+  "faq.earlier.a": "mobileFree",
+  "faq.restorePurchase.q": "mobileFree",
+  "faq.restorePurchase.a": "mobileFree",
+  "faq.refund.q": "mobileFree",
+  "faq.refund.a": "mobileFree",
+  "faq.desktop.q": "mobileFree",
+  "faq.desktop.a": "mobileFree",
+  "faq.platforms.aFree": "mobileFree",
+  "faq.offline.a": "mobileFree",
+  "press.facts.priceValue": "mobileFree",
+  // Buying goes through Apple and Google, and the Android permissions are not
+  // settled: waits for the final white paper and android-permission.md
+  "technical.network.none": "mobileFree",
+
   // The first store with 3.0: what people meet first in the new version
   "faq.code.q": "first3",
   "faq.code.a": "first3",

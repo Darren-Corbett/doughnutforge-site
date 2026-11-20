@@ -31,5 +31,13 @@
   "home.what.text": "Doughnut Forge ialah aplikasi penyulitan fail luar talian untuk Mac, iPhone, iPad dan Windows. Ia mengunci fail dan teks pada peranti anda sendiri, dan anda hanya berkongsinya dengan orang yang anda pilih.",
   "meta.features.description": "Sulitkan fail dan teks pada iPhone, iPad atau komputer anda sendiri, kongsi dengan orang yang dipercayai dan lindunginya untuk jangka panjang. Tiada akaun, tiada pelayan.",
   "features.lead": "Doughnut Forge mengunci fail dan teks pada iPhone, iPad atau komputer anda dan membolehkan anda berkongsinya dengan orang yang anda percayai. Walau bagaimana anda menghantarnya, hanya mereka yang boleh membukanya.",
-  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust."
+  "blog.cta.text": "Encrypt files on your own iPhone, iPad or computer and share them with the people you trust.",
+  "home.pricing.title": "Pembelian sekali sahaja, bukan langganan.",
+  "home.pricing.text": "Beli Doughnut Forge sekali bagi setiap platform yang anda gunakan, daripada kedai platform itu. Kedai akan menunjukkan harga bagi tempat anda tinggal.",
+  "meta.pricing.title": "Harga: beli sekali, bukan langganan | Doughnut Forge",
+  "meta.pricing.description": "Beli Doughnut Forge sekali bagi setiap platform yang anda gunakan, daripada kedai platform itu. Tiada langganan, tiada akaun dan tiada pembaharuan.",
+  "faq.subscription.a": "Tidak. Doughnut Forge ialah pembelian sekali sahaja, bukan langganan. Anda membelinya sekali daripada kedai untuk platform anda, dan tiada apa-apa untuk diperbaharui.",
+  "faq.offline.a": "Tidak. Tiada akaun untuk dicipta, dan Doughnut Forge berfungsi sepenuhnya pada peranti anda, walaupun tanpa sambungan internet. Anda hanya memerlukan sambungan untuk memuat turun aplikasi, atau jika anda memilih untuk menghantar fail yang disulitkan melalui internet.",
+  "press.facts.priceValue": "Pembelian sekali bagi setiap platform, bukan langganan",
+  "technical.network.none": "Doughnut Forge tidak membuat sebarang sambungan rangkaian sendiri. Tiada akaun, tiada log masuk, tiada analitik, tiada laporan ranap dan tiada semakan kemas kini. Dasar kandungan aplikasi tidak membenarkan skrinnya memuatkan apa-apa daripada internet."
 }
