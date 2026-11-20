@@ -279,7 +279,7 @@ export default {
   "technical.encryption.perItem.label": "Uma chave por item:",
   "technical.encryption.perItem.text": "cada arquivo, pasta ou mensagem recebe sua própria chave aleatória nova de 256 bits.",
   "technical.encryption.auth.label": "Autenticação:",
-  "technical.encryption.auth.text": "cada parte do item, e as assinaturas dele, são verificadas. Se algo foi alterado, a abertura falha e nada é mantido, exceto os arquivos já concluídos quando você interrompe a abertura de uma pasta no meio do caminho. No Mac e no Windows, se o app fechar inesperadamente ou for forçado a fechar durante a abertura, parte do arquivo pode ficar na pasta de destino até o app ser iniciado de novo.",
+  "technical.encryption.auth.text": "cada parte do item, e as assinaturas dele, são conferidas. Se algo foi alterado, a abertura falha e nada é mantido, exceto os arquivos já concluídos quando você interrompe a abertura de uma pasta no meio do caminho. No Mac e no Windows, se o app fechar inesperadamente ou for forçado a fechar durante a abertura, parte do arquivo pode ficar na pasta de destino até o app ser iniciado de novo.",
   "technical.encryption.nonces.label": "Nonces:",
   "technical.encryption.nonces.text": "nunca são reutilizados com a mesma chave. Cada item tem sua própria chave e seus próprios valores aleatórios.",
   "technical.encryption.compression.label": "Compressão:",

@@ -279,7 +279,7 @@ export default {
   "technical.encryption.perItem.label": "Une clé par élément :",
   "technical.encryption.perItem.text": "chaque fichier, dossier ou message reçoit sa propre nouvelle clé aléatoire de 256 bits.",
   "technical.encryption.auth.label": "Authentification :",
-  "technical.encryption.auth.text": "chaque partie de l'élément, ainsi que ses signatures, est vérifiée. Si quoi que ce soit a été modifié, l'ouverture échoue et rien n'est conservé, sauf les fichiers déjà terminés si vous arrêtez l'ouverture d'un dossier en cours de route. Sur Mac et Windows, si l'app plante ou est forcée de quitter pendant l'ouverture, une partie du fichier peut rester dans le dossier de destination jusqu'au prochain démarrage de l'app.",
+  "technical.encryption.auth.text": "chaque partie de l'élément, ainsi que ses signatures, est contrôlée. Si quoi que ce soit a été modifié, l'ouverture échoue et rien n'est conservé, sauf les fichiers déjà terminés si vous arrêtez l'ouverture d'un dossier en cours de route. Sur Mac et Windows, si l'app plante ou est forcée de quitter pendant l'ouverture, une partie du fichier peut rester dans le dossier de destination jusqu'au prochain démarrage de l'app.",
   "technical.encryption.nonces.label": "Nonces :",
   "technical.encryption.nonces.text": "jamais réutilisés avec la même clé. Chaque élément a sa propre clé et ses propres valeurs aléatoires.",
   "technical.encryption.compression.label": "Compression :",

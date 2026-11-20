@@ -180,3 +180,10 @@ The work: Part B items 1 to 8 on the local branch, from the v2 website pack only
 - Change: every subagent brief states the rule as its first hard limit (never read, list or run anything in `~/git/doughnut-forge` or under `~/git/forge-wt/`; app wording comes only from the handoff files). Missing app strings get a logged stand-in, swapped exactly when the app side sends them. The French stand-ins stay stand-ins like every other language's.
 - When to check: at the end of the white paper translations (all 30 languages).
 - Result: open.
+
+## 21 November 2026, a translation passed review and then stopped the build
+
+- Problem: the copy sweep's Russian FAQ answer said "давно проверенными временем методами" (time-tested); two independent reviewers passed it, but the site's sender check rejects forms of "проверенный" near words about contacts, so the build stopped after the commit (`3344ba2`, fixed in `7f83b2b`, before any push). Running the same check on every string at every stage then found three more drafts that would have stopped the stage-3 build (fr "vérifiée", pt-BR "verificadas", ro "verificate" in the authentication line).
+- Change (owner's yes, 21 November): every translation review runs the site's own sender check on the drafted strings before its verdict (`~/Desktop/review/launch-site/v3-held/work/strings-sender-check.mjs <drafts.json>`, which feeds them to `scripts/check-sender-claims.mjs` unchanged); a hit is blocking. Written into the review briefs.
+- When to check: after the next two translation batches (pricing from pricing-and-unlock.md; the features closing line).
+- Result: open.

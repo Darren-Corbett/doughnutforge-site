@@ -291,7 +291,7 @@ export default {
   "technical.encryption.perItem.label": "O cheie pentru fiecare element:",
   "technical.encryption.perItem.text": "fiecare fișier, dosar sau mesaj primește propria cheie aleatorie nouă de 256 de biți.",
   "technical.encryption.auth.label": "Autentificare:",
-  "technical.encryption.auth.text": "fiecare parte a elementului și semnăturile sale sunt verificate. Dacă ceva a fost modificat, deschiderea eșuează și nu se păstrează nimic, cu excepția fișierelor deja terminate atunci când oprești la jumătate deschiderea unui dosar. Pe Mac și Windows, dacă aplicația se închide neașteptat sau este închisă forțat în timpul deschiderii, o parte din fișier poate rămâne în dosarul de destinație până la următoarea pornire a aplicației.",
+  "technical.encryption.auth.text": "fiecare parte a elementului și semnăturile sale sunt controlate. Dacă ceva a fost modificat, deschiderea eșuează și nu se păstrează nimic, cu excepția fișierelor deja terminate atunci când oprești la jumătate deschiderea unui dosar. Pe Mac și Windows, dacă aplicația se închide neașteptat sau este închisă forțat în timpul deschiderii, o parte din fișier poate rămâne în dosarul de destinație până la următoarea pornire a aplicației.",
   "technical.encryption.nonces.label": "Nonce-uri:",
   "technical.encryption.nonces.text": "nu sunt niciodată refolosite cu aceeași cheie. Fiecare element are propria cheie și propriile valori aleatorii.",
   "technical.encryption.compression.label": "Comprimare:",
