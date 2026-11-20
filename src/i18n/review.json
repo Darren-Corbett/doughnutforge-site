@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -359,13 +359,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses a post-quantum encryption, designed to resist the attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share in private, with a protection designed for the quantum era."
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -738,13 +744,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, developed to withstand attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with a protection developed for the quantum age."
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -1036,13 +1048,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, designed to resist attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share in private, with protection designed for the quantum era."
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1384,13 +1402,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum cryptography, designed to resist the attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share in private, with a protection conceived for the quantum era."
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1749,13 +1773,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, designed to withstand attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection designed for the quantum age."
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2066,13 +2096,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, designed to withstand attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection designed for the quantum age."
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2390,13 +2426,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, designed to withstand attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection designed for the quantum age."
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2790,13 +2832,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1); post-quantum term per the owner (21 November), re-checked (recheck-2): no blocking findings.",
         "backTranslation": "Uses post-quantum encryption, which has been designed to withstand the attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately with protection designed for the quantum age."
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3120,13 +3168,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, developed to withstand attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection made for the quantum age."
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3478,13 +3532,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, designed so that it resists attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection designed for the quantum era."
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3887,13 +3947,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, designed so that it withstands attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection designed for the quantum era."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4278,13 +4344,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, which was designed so that it resists the attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share in a private way, with protection designed for the quantum era."
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4688,13 +4760,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, designed to resist the attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection designed for the quantum era."
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5076,13 +5154,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, developed so as to withstand attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection created for the quantum era."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5453,13 +5537,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, designed so that it withstands attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection designed for the quantum era."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5828,6 +5918,12 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, developed so as to withstand attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection created for the quantum era."
       }
     ]
   },
@@ -5877,7 +5973,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6163,13 +6259,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, designed to resist attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share in private, with protection designed for the quantum era."
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -6516,13 +6618,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum cryptography, designed to resist attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share in confidence, with protection created for the quantum era."
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6905,13 +7013,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption designed to withstand the attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately with protection designed for the quantum age."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -7238,13 +7352,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1); post-quantum term per the owner (21 November), re-checked (recheck-2): no blocking findings.",
         "backTranslation": "Adopts post-quantum cryptography. Designed so it can withstand attacks by future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "With protection designed for the quantum age, encrypt and share privately."
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7578,13 +7698,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Adopts post-quantum encryption, intended to resist attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately; protection specially designed for the quantum era."
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7938,13 +8064,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Adopts post-quantum encryption, intended to resist attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately; protection specially designed for the quantum era."
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8327,13 +8459,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1); post-quantum term per the owner (21 November), re-checked (recheck-2): no blocking findings.",
         "backTranslation": "Uses post-quantum encryption and was designed to withstand attacks by future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately with protection designed for the quantum age."
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8668,13 +8806,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, which has been designed to face attacks of future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately with protection designed for the quantum age."
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -9021,13 +9165,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, which is designed to withstand attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection designed for the quantum era."
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -9368,13 +9518,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, which is designed to withstand attacks from future quantum computers."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with protection designed for the quantum era."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -9707,13 +9863,19 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, which is designed to resist attacks from quantum computers in the future"
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share in a private way, with protection designed for the quantum era"
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-20",
+    "reviewedAt": "2026-11-21",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -10087,6 +10249,12 @@
         "severity": "note",
         "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
         "backTranslation": "Uses post-quantum encryption, designed to resist attacks from quantum computers in the future."
+      },
+      {
+        "key": "copy sweep 20 Nov (18 strings) and security.quantum.title",
+        "severity": "note",
+        "issue": "Reviewed 20-21 November 2026 by independent subagents (sweep-keys review-1 and recheck-1; long-term-headline review-1 and recheck-1): no blocking findings left. Back-translations in ~/Desktop/review/launch-site/v3-held/work/.",
+        "backTranslation": "Encrypt and share privately, with a layer of protection designed for the quantum era."
       }
     ]
   }

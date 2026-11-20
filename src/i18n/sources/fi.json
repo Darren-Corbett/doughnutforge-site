@@ -20,12 +20,12 @@
     "text": "156972d32355"
   },
   "download.coming": {
-    "en": "bc1ee089d6a8",
-    "text": "d6e4af2213be"
+    "en": "18609915cb99",
+    "text": "e9e92194b806"
   },
   "download.requires.android": {
-    "en": "0b20d4c2e601",
-    "text": "8969eecf267e"
+    "en": "e2e4491c5f63",
+    "text": "c7e842290d5b"
   },
   "download.requires.mac": {
     "en": "1b9c04bcfb6a",
@@ -88,8 +88,8 @@
     "text": "ee485a50a63a"
   },
   "faq.older.a": {
-    "en": "78adff411235",
-    "text": "9829e6ec4fab"
+    "en": "fce95b9f3bff",
+    "text": "2fedc5f13184"
   },
   "faq.older.q": {
     "en": "249de21a831d",
@@ -112,8 +112,8 @@
     "text": "bf30304021ad"
   },
   "faq.quantum.a": {
-    "en": "27fc787b08f7",
-    "text": "dc212e9d172d"
+    "en": "94ff9027483d",
+    "text": "7b61b75d9019"
   },
   "faq.quantum.q": {
     "en": "b430b5338c1b",
@@ -404,8 +404,8 @@
     "text": "3f340e81832e"
   },
   "meta.features.description": {
-    "en": "f3187e7d966c",
-    "text": "46d33c50fc9a"
+    "en": "5679170ab5d8",
+    "text": "9f26dca84876"
   },
   "meta.features.title": {
     "en": "46598fa7ce7a",
@@ -568,8 +568,8 @@
     "text": "c816446539de"
   },
   "press.facts.coming": {
-    "en": "4f7d64017689",
-    "text": "d53ec860e1b2"
+    "en": "fb6f7c93e6bf",
+    "text": "6cd6b421cfbf"
   },
   "press.facts.contact": {
     "en": "7131fea1917d",
@@ -692,12 +692,12 @@
     "text": "50d06966ff87"
   },
   "roadmap.format.text": {
-    "en": "9af3f0cfaa38",
-    "text": "858b3e478f1e"
+    "en": "837e3a275b93",
+    "text": "7b6a9e908bac"
   },
   "roadmap.format.title": {
-    "en": "8587314a7903",
-    "text": "edd508fcb458"
+    "en": "f01b986a6870",
+    "text": "6cbb18f4ae70"
   },
   "roadmap.later": {
     "en": "73b6e48a1b55",
@@ -716,8 +716,8 @@
     "text": "e4ea814781fe"
   },
   "roadmap.small.text": {
-    "en": "3b31a32431bc",
-    "text": "0d7263268621"
+    "en": "15276dc38567",
+    "text": "07b277a48a54"
   },
   "roadmap.small.title": {
     "en": "8db4a227c85b",
@@ -772,8 +772,8 @@
     "text": "ded7f2e140fc"
   },
   "security.quantum.title": {
-    "en": "4b2bf697ce26",
-    "text": "a492a64ab120"
+    "en": "e683c6934540",
+    "text": "886a39b754e4"
   },
   "security.report.button": {
     "en": "3805db21012a",
@@ -1028,8 +1028,8 @@
     "text": "060598b75807"
   },
   "status.comingSoon": {
-    "en": "4f7d64017689",
-    "text": "d53ec860e1b2"
+    "en": "fb6f7c93e6bf",
+    "text": "6cd6b421cfbf"
   },
   "support.ask.bug": {
     "en": "f75e0bd8ff23",
@@ -1100,8 +1100,8 @@
     "text": "1a4f9bff4e6b"
   },
   "technical.encryption.auth.text": {
-    "en": "4764c508cc48",
-    "text": "38f51f7b5abe"
+    "en": "ddab55326028",
+    "text": "7cf534485d7d"
   },
   "technical.encryption.cipher.label": {
     "en": "689922a56a27",
@@ -1208,8 +1208,8 @@
     "text": "c2a600b6fe11"
   },
   "technical.keys.signatures.text": {
-    "en": "5b4b48a972a8",
-    "text": "ec45e42766be"
+    "en": "7c6a28701694",
+    "text": "aa5df57a4944"
   },
   "technical.keys.title": {
     "en": "3889a7f966da",
@@ -1296,8 +1296,8 @@
     "text": "89ab7e3adbb0"
   },
   "technical.limits.recipients.text": {
-    "en": "490c0578f7e0",
-    "text": "9d97cb26e6af"
+    "en": "4747ef64576d",
+    "text": "3c1e3f15517e"
   },
   "technical.limits.sender.label": {
     "en": "242be0019eb8",
@@ -1472,8 +1472,8 @@
     "text": "17d3f4de6a7e"
   },
   "technical.unlock.android.text": {
-    "en": "48df0df40061",
-    "text": "686304635a54"
+    "en": "0e26b4beb0f2",
+    "text": "a52212d54e33"
   },
   "technical.unlock.ios.label": {
     "en": "1b1333c08d9f",
@@ -1568,8 +1568,8 @@
     "text": "0ec43c5017f1"
   },
   "technical.visible.size.text": {
-    "en": "2824f9986bf1",
-    "text": "24b973bba1c0"
+    "en": "8c54a6592899",
+    "text": "b1e126ee3b1e"
   },
   "technical.visible.title": {
     "en": "dcba9c4e7f8a",
