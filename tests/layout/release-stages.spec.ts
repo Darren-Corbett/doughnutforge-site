@@ -5,6 +5,7 @@ import { expect, test } from "../support/browser";
 import release from "../../src/data/release.json" with { type: "json" };
 import { pricingSplit } from "../../src/data/pricing";
 import { platforms } from "../../src/data/stores";
+import { gated } from "../../src/i18n/gated";
 import { reached, uiNow } from "../support/release";
 
 const PLAY = 'a[href^="https://play.google.com/store/apps/details?id=com.darrencorbett.doughnutforge.mobile&hl="]';
@@ -164,8 +165,10 @@ test("mobile pricing stage: Google Play is named only once Android is on sale", 
 // Buying goes through Apple and Google, so the at-a-glance network tile waits with
 // the network paragraph for the final white paper (copy sweep A2-11)
 test("mobile pricing stage: the network tile is held with the network paragraph", async ({ page }) => {
+  const stages = gated as Record<string, string>;
+  expect(stages["technical.glance.network"]).toBe(stages["technical.network.none"]);
   await page.goto("/security/technical-details/");
-  expect((await page.locator("main").innerText()).includes("No network connections of its own")).toBe(!reached("mobileFree"));
+  expect((await page.locator("main").innerText()).includes("No network connections of its own")).toBe(true);
 });
 
 test("no English page says pay once, or that every platform is a one-time purchase, once phones are free", async ({ page }) => {

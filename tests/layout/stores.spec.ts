@@ -120,7 +120,9 @@ test("English copy does not assume a computer", async ({ page }) => {
   }
   await page.goto("/support/");
   await expect(page.locator("main")).toContainText("If I buy it on one platform, do I also get it on another?");
-  await expect(page.locator("main")).toContainText(await uiNow("en", "faq.platforms.a"));
+  // From the mobile pricing stage the answer names the platforms from the store data
+  if (!reached("mobileFree")) await expect(page.locator("main")).toContainText(await uiNow("en", "faq.platforms.a"));
+  else await expect(page.locator("main")).toContainText("each platform is a separate purchase from its own store");
 });
 
 // Cards in a row are uniform: each badge sits at the bottom of its card, so the
