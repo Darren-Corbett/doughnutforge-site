@@ -66,6 +66,7 @@ export default {
     "Identitas Anda hanya disimpan di perangkat ini dan dilindungi oleh kata sandi Anda. Simpan 24 kata pemulihan Anda dengan aman: kata-kata itu adalah satu-satunya cara untuk memulihkan identitas Anda atau mengatur ulang kata sandi yang terlupa.",
   "features.private.title": "Pribadi sejak awal",
   "features.offline.title": "Berfungsi tanpa internet",
+  "features.longTerm.text": "Menggunakan enkripsi pascakuantum, yang dirancang untuk menahan serangan dari komputer kuantum masa depan.",
   "offline.text": "Tanpa langganan, tanpa akun, tanpa server, dan tanpa pelacakan. Doughnut Forge bekerja sepenuhnya di perangkat Anda, bahkan tanpa koneksi internet. Kunci dan kontak Anda tetap bersama Anda, di bawah kendali Anda.",
   "features.languages.label": "Bahasa",
   "features.ios.title": "Di iPhone dan iPad",

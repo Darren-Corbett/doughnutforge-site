@@ -92,6 +92,8 @@ export default {
     "Your identity is stored only on this device and protected by your password. Keep your 24 recovery words safe: they are the only way to restore your identity or reset a forgotten password.",
   "features.private.title": "Private from the start",
   "features.offline.title": "Works without the internet",
+  // The "Built for the long term" card on the home and features pages, in place of the store listing's "stays protected" line
+  "features.longTerm.text": "Uses post-quantum encryption, designed to resist attacks from future quantum computers.",
   // On the features, pricing and press pages: the iPhone and iPad store listing's paragraph without "You pay once, and the app is yours."
   "offline.text":
     "No subscription, no account, no servers and no tracking. Doughnut Forge works entirely on your device, even without an internet connection. Your keys and contacts stay with you, under your control.",

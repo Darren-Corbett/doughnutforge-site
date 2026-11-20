@@ -69,6 +69,7 @@ export default {
     "Henkilöllisyytesi on tallennettu vain tälle laitteelle ja suojattu salasanallasi. Säilytä 24 palautussanaasi tallessa: ne ovat ainoa tapa palauttaa henkilöllisyytesi tai nollata unohtunut salasana.",
   "features.private.title": "Yksityinen alusta alkaen",
   "features.offline.title": "Toimii ilman internetiä",
+  "features.longTerm.text": "Käyttää post-kvanttisalausta, joka on suunniteltu kestämään tulevien kvanttitietokoneiden hyökkäyksiä.",
   "offline.text": "Ei tilausta, ei tiliä, ei palvelimia eikä seurantaa. Doughnut Forge toimii kokonaan laitteellasi, myös ilman internetyhteyttä. Avaimesi ja yhteystietosi pysyvät sinulla, sinun hallinnassasi.",
   "features.languages.label": "Kielet",
   "features.ios.title": "iPhonessa ja iPadissa",

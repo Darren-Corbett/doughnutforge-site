@@ -69,6 +69,7 @@ export default {
     "Az identitásod csak ezen az eszközön van tárolva, és a jelszavad védi. Tartsd biztonságban a 24 helyreállítási szavadat: csak ezekkel állíthatod helyre az identitásodat, vagy állíthatsz be új jelszót, ha elfelejtetted a régit.",
   "features.private.title": "Privát a kezdetektől",
   "features.offline.title": "Internet nélkül is működik",
+  "features.longTerm.text": "Posztkvantum titkosítást használ, amelyet úgy terveztek, hogy ellenálljon a jövőbeli kvantumszámítógépek támadásainak.",
   "offline.text": "Nincs előfizetés, nincs fiók, nincsenek szerverek és nincs követés. A Doughnut Forge teljes egészében az eszközödön működik, internetkapcsolat nélkül is. A kulcsaid és a névjegyeid nálad maradnak, a te irányításod alatt.",
   "features.languages.label": "Nyelvek",
   "features.ios.title": "iPhone-on és iPaden",

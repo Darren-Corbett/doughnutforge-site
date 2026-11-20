@@ -68,6 +68,7 @@ export default {
     "Danh tính của bạn chỉ được lưu trên thiết bị này và được bảo vệ bằng mật khẩu của bạn. Hãy giữ 24 từ khôi phục an toàn: đó là cách duy nhất để khôi phục danh tính hoặc đặt lại mật khẩu bị quên.",
   "features.private.title": "Riêng tư ngay từ đầu",
   "features.offline.title": "Hoạt động không cần internet",
+  "features.longTerm.text": "Sử dụng mã hóa hậu lượng tử, được thiết kế để chống lại các cuộc tấn công từ máy tính lượng tử trong tương lai.",
   "offline.text": "Không thuê bao, không tài khoản, không máy chủ và không theo dõi. Doughnut Forge hoạt động hoàn toàn trên thiết bị của bạn, kể cả khi không có kết nối internet. Khóa và danh bạ của bạn luôn ở bên bạn, trong tầm kiểm soát của bạn.",
   "features.languages.label": "Ngôn ngữ",
   "features.ios.title": "Trên iPhone và iPad",

@@ -66,6 +66,7 @@ export default {
     "Kimliğiniz yalnızca bu cihazda saklanır ve parolanızla korunur. 24 kurtarma kelimenizi güvende tutun: kimliğinizi geri yüklemenin veya unuttuğunuz bir parolayı sıfırlamanın tek yolu bunlardır.",
   "features.private.title": "En baştan gizli",
   "features.offline.title": "İnternet olmadan çalışır",
+  "features.longTerm.text": "Gelecekteki kuantum bilgisayarların saldırılarına dayanacak şekilde tasarlanmış kuantum sonrası şifreleme kullanır.",
   "offline.text": "Abonelik yok, hesap yok, sunucu yok, takip yok. Doughnut Forge tamamen cihazınızda, internet bağlantısı olmadan bile çalışır. Anahtarlarınız ve kişileriniz sizde, sizin kontrolünüzde kalır.",
   "features.languages.label": "Diller",
   "features.ios.title": "iPhone ve iPad'de",

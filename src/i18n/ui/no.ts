@@ -67,6 +67,7 @@ export default {
     "Identiteten din lagres bare på denne enheten og er beskyttet av passordet ditt. Ta godt vare på de 24 gjenopprettingsordene dine: de er den eneste måten å gjenopprette identiteten din eller tilbakestille et glemt passord på.",
   "features.private.title": "Privat fra starten",
   "features.offline.title": "Fungerer uten internett",
+  "features.longTerm.text": "Bruker postkvantekryptering, utviklet for å motstå angrep fra fremtidige kvantedatamaskiner.",
   "offline.text": "Ingen abonnement, ingen konto, ingen servere og ingen sporing. Doughnut Forge kjører helt på enheten din, også uten internettilkobling. Nøklene og kontaktene dine blir hos deg, under din kontroll.",
   "features.languages.label": "Språk",
   "features.ios.title": "På iPhone og iPad",

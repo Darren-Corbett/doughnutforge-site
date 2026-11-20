@@ -67,6 +67,7 @@ export default {
     "Din identitet gemmes kun på denne enhed og beskyttes af din adgangskode. Opbevar dine 24 gendannelsesord sikkert: de er den eneste måde at gendanne din identitet eller nulstille en glemt adgangskode på.",
   "features.private.title": "Privat fra starten",
   "features.offline.title": "Virker uden internet",
+  "features.longTerm.text": "Bruger post-kvante-kryptering, designet til at modstå angreb fra fremtidige kvantecomputere.",
   "offline.text": "Intet abonnement, ingen konto, ingen servere og ingen sporing. Doughnut Forge kører helt på din enhed, også uden internetforbindelse. Dine nøgler og kontakter bliver hos dig, under din kontrol.",
   "features.languages.label": "Sprog",
   "features.ios.title": "På iPhone og iPad",
