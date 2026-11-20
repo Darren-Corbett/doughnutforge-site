@@ -4,6 +4,7 @@
 import { existsSync, readdirSync } from "node:fs";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { expect, test } from "../support/browser";
+import { each } from "../support/each";
 import { reached } from "../support/release";
 
 // The paper is published once every store sells 3.0 (tests/layout/release-stages.spec.ts
@@ -16,7 +17,7 @@ test("white paper: overview first, notes folded away, PDF from this site", async
   await expect(page.locator("main h2").first()).toHaveText("Overview");
   const notes = page.locator("main details.checked");
   expect(await notes.count()).toBeGreaterThan(5);
-  for (const note of await notes.all()) expect(await note.getAttribute("open")).toBeNull();
+  for (const note of await each(notes)) expect(await note.getAttribute("open")).toBeNull();
   await expect(notes.first().locator("summary")).toHaveText("How this is checked");
   const pdf = page.locator('a[href="/security/white-paper/doughnut-forge-white-paper-en.pdf"]');
   await expect(pdf).toHaveCount(1);
@@ -41,7 +42,7 @@ test("white paper: diagram labels stay inside the drawing", async ({ page }) => 
   await expect(svg.locator("span")).toHaveCount(0);
   await expect(svg.locator("text").first()).toHaveText("24 recovery words");
   const box = (await svg.boundingBox())!;
-  for (const rect of await svg.locator("rect").all()) {
+  for (const rect of await each(svg.locator("rect"))) {
     const r = (await rect.boundingBox())!;
     expect(r.y + r.height, "box inside the drawing").toBeLessThanOrEqual(box.y + box.height + 1);
   }
@@ -71,7 +72,7 @@ for (const lang of languages)
       await page.goto(`${base}${path}`);
       const links = page.locator(`main a[href="${href}"], footer a[href="${href}"]`);
       expect(await links.count(), `${path}: links to ${href}`).toBeGreaterThanOrEqual(2);
-      for (const link of await links.all()) {
+      for (const link of await each(links)) {
         await expect(link).toHaveText(/\S/);
         if (!own) await expect(link).toHaveAttribute("hreflang", "en");
       }
