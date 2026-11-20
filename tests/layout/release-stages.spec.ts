@@ -180,3 +180,16 @@ test("no English page says pay once, or that every platform is a one-time purcha
     if (reached("mobileFree")) expect(text, path).not.toMatch(/one-time purchase on each platform|for each platform you use|separate purchase from its own store\. Buying on iPhone/i);
   }
 });
+
+// From the first store with 3.0, the home page's v2 section and the features
+// page's closing line no longer say "New in Doughnut Forge 2" or list only
+// the v2 platforms (copy sweep A2-18; owner, 21 November 2026)
+test("first 3.0 store: no \"New in Doughnut Forge 2\", and the features closing line follows", async ({ page }) => {
+  const on = reached("first3");
+  await page.goto("/");
+  expect((await page.locator("#home-phones").innerText()).includes("New in Doughnut Forge 2"), "home v2 title").toBe(!on);
+  await page.goto("/features/");
+  const cta = await page.locator("section.cta .section-text").innerText();
+  expect(cta.includes(await uiNow("en", on ? "features.cta.text" : "home.phones.text")), "features closing line").toBe(true);
+  expect(cta.includes("A new look, an easier start"), "v2 line in the closing line").toBe(!on);
+});
