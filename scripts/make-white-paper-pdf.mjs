@@ -29,7 +29,8 @@ const codes = readdirSync(TEXTS)
 if (codes.length === 0) throw new Error(`No white paper text for ${only ?? "any language"} in src/content/white-paper/`);
 
 const server = spawn("npx", ["astro", "preview", "--port", String(PORT), "--ignore-lock"], { cwd: root, stdio: "ignore" });
-const browser = await chromium.launch();
+// Never touches the macOS keychain (owner, 21 November 2026)
+const browser = await chromium.launch({ args: ["--use-mock-keychain", "--password-store=basic"] });
 try {
   for (let tries = 0; ; tries++) {
     if ((await fetch(`http://localhost:${PORT}/`).catch(() => null))?.ok) break;
