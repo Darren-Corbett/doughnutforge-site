@@ -6,6 +6,9 @@ import { defineConfig, devices } from "@playwright/test";
 
 const PORT = 4329;
 
+const CHROMIUM_ARGS = ["--use-mock-keychain", "--password-store=basic"];
+const WEBKIT = { launchOptions: {} };
+
 export default defineConfig({
   testDir: "tests",
   outputDir: "test-results",
@@ -14,7 +17,9 @@ export default defineConfig({
   workers: process.env.CI ? 2 : 6,
   timeout: 10 * 60_000,
   reporter: [["list"], ["json", { outputFile: "test-results/results.json" }]],
-  use: { baseURL: `http://localhost:${PORT}` },
+  // Chromium never touches the macOS keychain (owner, 21 November 2026: a test
+  // browser raised a "Keychain Not Found" dialog); WebKit takes no such flags
+  use: { baseURL: `http://localhost:${PORT}`, launchOptions: { args: CHROMIUM_ARGS } },
   webServer: {
     // --ignore-lock keeps the server in the foreground: when an AI agent runs it,
     // Astro would otherwise background it and Playwright would stop at once
@@ -25,22 +30,22 @@ export default defineConfig({
   projects: [
     // Desktop engines at every audit width
     { name: "chromium", testMatch: /layout\/.*\.spec\.ts/, use: { ...devices["Desktop Chrome"] } },
-    { name: "webkit", testMatch: /layout\/.*\.spec\.ts/, use: { ...devices["Desktop Safari"] } },
+    { name: "webkit", testMatch: /layout\/.*\.spec\.ts/, use: { ...devices["Desktop Safari"], ...WEBKIT } },
     // Safari on a phone: a mobile viewport, touch and the meta viewport, where
     // any element wider than the screen lets the page pan sideways. Layout and
     // pan checks only: accessibility and interactions repeat desktop WebKit.
-    { name: "webkit-iphone", testMatch: /layout\/layout\.spec\.ts/, use: { ...devices["iPhone 13"] } },
+    { name: "webkit-iphone", testMatch: /layout\/layout\.spec\.ts/, use: { ...devices["iPhone 13"], ...WEBKIT } },
     { name: "links", testMatch: /links\/.*\.spec\.ts/ },
     // The deploy's live-page check, against a local server (no browser, no network)
     { name: "deploy", testMatch: /deploy\/check-live-deploy\.spec\.ts/ },
     // After a deploy, open and fresh tabs in Safari on a phone end up on the new build
-    { name: "deploy-webkit", testMatch: /deploy\/fresh-build\.spec\.ts/, use: { ...devices["iPhone 13"] } },
+    { name: "deploy-webkit", testMatch: /deploy\/fresh-build\.spec\.ts/, use: { ...devices["iPhone 13"], ...WEBKIT } },
     // The forge-privacy issue forms and the issue fetch, against a local server (no browser, no network)
     { name: "forms", testMatch: /forms\/.*\.spec\.ts/ },
     // Content blockers on phones: every public list on every page, and a way to
     // each store when a badge is hidden anyway (downloads the lists). By hand only,
     // with `npm run test:blockers`; no CI workflow runs them (owner, 26 October 2026)
-    { name: "blockers-iphone", testMatch: /blockers\/.*\.spec\.ts/, use: { ...devices["iPhone 13"] } },
+    { name: "blockers-iphone", testMatch: /blockers\/.*\.spec\.ts/, use: { ...devices["iPhone 13"], ...WEBKIT } },
     { name: "blockers-android", testMatch: /blockers\/.*\.spec\.ts/, use: { ...devices["Pixel 7"] } },
     // The build's own checks, run on small built sites of their own (no browser)
     { name: "checks", testMatch: /checks\/.*\.spec\.ts/ },
@@ -48,6 +53,6 @@ export default defineConfig({
     // and in Safari on a phone, with the counter faked (no network)
     { name: "count-build", testMatch: /count\/build\.setup\.ts/ },
     { name: "count", testMatch: /count\/.*\.spec\.ts/, dependencies: ["count-build"], use: { ...devices["Desktop Chrome"] } },
-    { name: "count-iphone", testMatch: /count\/.*\.spec\.ts/, dependencies: ["count-build"], use: { ...devices["iPhone 13"] } },
+    { name: "count-iphone", testMatch: /count\/.*\.spec\.ts/, dependencies: ["count-build"], use: { ...devices["iPhone 13"], ...WEBKIT } },
   ],
 });
