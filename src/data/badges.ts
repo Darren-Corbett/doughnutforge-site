@@ -15,9 +15,9 @@ export const badgeWording = (store: StoreId, code: string) => {
   return { alt, own };
 };
 
-// A "<code>.placeholder.svg" stands in until the owner adds official files
-// (Google Play): it is never loaded, served or shown, so a store with only a
-// placeholder has no badge and the build fails if it goes on sale
+// A "<code>.placeholder.svg" may stand in until a store's official files arrive:
+// it is never loaded, served or shown, so a store with only a placeholder has
+// no badge and the build fails if it goes on sale
 // (tests/checks/badge-placeholder.spec.ts).
 const badges = import.meta.glob<{ default: ImageMetadata }>(["../assets/badges/*/*.svg", "!../assets/badges/*/*.placeholder.svg"], { eager: true });
 

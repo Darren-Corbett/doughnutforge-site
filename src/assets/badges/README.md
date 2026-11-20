@@ -19,9 +19,11 @@ When a store offers two variants of one language, save the right one under each 
 - Chinese: the Simplified badge goes in `zh-CN.svg` and the Traditional badge in `zh-TW.svg`.
 - English: the US/UK badge serves both `en` and `en-US`.
 
-## Placeholder (until the official Google Play files arrive)
+## Google Play
 
-`google-play/en.placeholder.svg` is a marked placeholder (`data-placeholder="true"`), not a badge. `src/data/badges.ts` never loads a `*.placeholder.svg`, so it is never served or shown, and with no official file the build fails if Android goes on sale; `tests/checks/badge-placeholder.spec.ts` also fails if Android is switched on while it is there. Replace it with the official files.
+The Google Play badges are the owner's official "Get it on Google Play" files (`Badge_GetItOnGP_<locale>_Digital_Fullcolor_GooglePlay.svg`, 19 November 2026), copied unaltered: never the pre-register badges. `sources.json` records each file's original name and SHA-256, and `tests/checks/google-play-badges.spec.ts` fails if a file changes. The US English badge serves `en` and `en-US`; the Latin America badge is `es-MX.svg`; the Traditional Chinese (Taiwan) badge is `zh-TW.svg`.
+
+A badge file marked `data-placeholder="true"` is never loaded (`src/data/badges.ts`), and `tests/checks/badge-placeholder.spec.ts` fails if Android is on sale while one is there.
 
 ## Sources
 
@@ -31,7 +33,7 @@ The localised badges are downloaded by `node scripts/fetch-badges.mjs`, run on a
 |---|---|---|
 | App Store and Mac App Store | Apple Marketing Tools, https://toolbox.marketingtools.apple.com/app-store/ (its badge service, `api/v2/badges/<badge>/black/<locale>`). The guidelines are at https://developer.apple.com/app-store/marketing/guidelines/ | Black |
 | Microsoft Store | Microsoft's badge service, `https://get.microsoft.com/images/<locale> dark.svg` (the badge generator at https://apps.microsoft.com/badge) | Dark |
-| Google Play | https://play.google.com/intl/en_us/badges/, which has a download of all languages | Default |
+| Google Play | The owner's download of all languages from https://play.google.com/intl/en_us/badges/ (files from the owner, not fetched by the script) | Get it on, full colour |
 
 The English Apple badges (`en.svg`) came from:
 - https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg
