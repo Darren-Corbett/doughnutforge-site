@@ -72,3 +72,11 @@ test("the built privacy pages say exactly what the policy files say, in every la
   expect(stdout).toContain("0 differences from src/content/legal/privacy");
   expect(stdout).not.toContain("forge-privacy");
 });
+
+// Copy rules: the policy never says "we", "our" or "us" (it says "the
+// developer"), and .vltc2 files are contact cards, not identities (owner, 21
+// November 2026; copy sweep A1-5, A1-6)
+test("the English policy says the developer, never we, and calls .vltc2 files contact cards", () => {
+  for (const [key, text] of Object.entries(en.strings)) expect(text, key).not.toMatch(/\b(we|our|us)\b/i);
+  expect(en.strings.sec1Desc).toContain('<code class="k1">.vltc2</code> contact cards');
+});
