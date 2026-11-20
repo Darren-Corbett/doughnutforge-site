@@ -66,7 +66,7 @@ export default {
     "신원은 이 기기에만 저장되며 비밀번호로 보호됩니다. 24개의 복구 단어를 안전하게 보관하세요. 신원을 복원하거나 잊어버린 비밀번호를 재설정할 수 있는 유일한 방법입니다.",
   "features.private.title": "처음부터 비공개로",
   "features.offline.title": "인터넷 없이도 작동",
-  "features.longTerm.text": "포스트 양자 암호화를 사용하며, 미래의 양자 컴퓨터 공격에 견디도록 설계되었습니다.",
+  "features.longTerm.text": "양자 내성 암호화를 사용하며, 미래의 양자 컴퓨터 공격에 견디도록 설계되었습니다.",
   "offline.text": "구독도, 계정도, 서버도, 추적도 없습니다. Doughnut Forge는 인터넷 연결 없이도 기기에서 완전히 작동합니다. 키와 연락처는 내 기기에 남아 내가 직접 관리합니다.",
   "features.languages.label": "언어",
   "features.ios.title": "iPhone과 iPad에서",
