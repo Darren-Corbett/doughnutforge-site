@@ -44,5 +44,7 @@
   "technical.visible.size.text": "大致可見（壓縮後的大小）。",
   "technical.encryption.auth.text": "內容和該項目的標頭都經過驗證。如果它們遭到變更，開啟就會失敗，而且不會儲存任何內容。",
   "technical.limits.recipients.text": "任何能開啟某個項目的人，都可以儲存、複製或分享其中的內容。",
-  "roadmap.small.text": "Doughnut Forge 2 的細節修正和改進。"
+  "roadmap.small.text": "Doughnut Forge 2 的細節修正和改進。",
+  "home.phones.title": "Doughnut Forge 2 新功能。",
+  "home.phones.text": "全新外觀、更輕鬆的開始，忘記密碼時也有辦法重新進入。適用於 iPhone、iPad、Mac 和 Windows。"
 }

@@ -44,5 +44,7 @@
   "technical.visible.size.text": "visible, approximativement (la taille compressée).",
   "technical.encryption.auth.text": "le contenu et l'en-tête de l'élément sont authentifiés. S'ils sont modifiés, l'ouverture échoue et rien n'est enregistré.",
   "technical.limits.recipients.text": "Toute personne qui peut ouvrir un élément peut enregistrer, copier ou partager son contenu.",
-  "roadmap.small.text": "Petites corrections et améliorations de Doughnut Forge 2."
+  "roadmap.small.text": "Petites corrections et améliorations de Doughnut Forge 2.",
+  "home.phones.title": "Nouveautés de Doughnut Forge 2.",
+  "home.phones.text": "Une nouvelle apparence, un démarrage plus simple et un moyen de rentrer si vous oubliez votre mot de passe. Sur iPhone, iPad, Mac et Windows."
 }

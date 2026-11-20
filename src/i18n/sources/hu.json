@@ -167,6 +167,10 @@
     "en": "be4932a64133",
     "text": "f304aded5eff"
   },
+  "features.cta.text": {
+    "en": "5e99ea1d01d5",
+    "text": "1cd5c475d84f"
+  },
   "features.cta.title": {
     "en": "8a5b1de8eedf",
     "text": "085e21b86e31"
@@ -292,12 +296,12 @@
     "text": "837ae90b377f"
   },
   "home.phones.text": {
-    "en": "9c8cfb38284d",
-    "text": "70225de474e7"
+    "en": "a0f2fa9b6c55",
+    "text": "03592e2ef716"
   },
   "home.phones.title": {
-    "en": "f1e7a69f6960",
-    "text": "e4dad72c3127"
+    "en": "3345c7824151",
+    "text": "bd70c6b87b9c"
   },
   "home.pricing.text": {
     "en": "f640ff4b8fab",

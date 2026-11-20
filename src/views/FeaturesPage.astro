@@ -9,6 +9,7 @@ import Phone from "../components/Phone.astro";
 import Tablet from "../components/Tablet.astro";
 import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
 import { screen } from "../data/screens";
+import { reached } from "../data/stages";
 import { languages, localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -130,7 +131,7 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
 
   <section class="section cta" aria-labelledby="features-cta">
     <h2 id="features-cta" class="section-title">{t("features.cta.title")}</h2>
-    <p class="section-text">{t("home.pricing.title")} {t("home.phones.text")}</p>
+    <p class="section-text">{t("home.pricing.title")} {t(reached("first3") ? "features.cta.text" : "home.phones.text")}</p>
     <p class="cta-actions">
       <span class="cta-button" data-nosnippet><a class="btn-primary" href={localePath(lang.code, "download/")}>{t("button.getApp")}</a></span>
     </p>

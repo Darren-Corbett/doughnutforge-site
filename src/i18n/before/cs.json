@@ -44,5 +44,7 @@
   "technical.visible.size.text": "viditelná, přibližně (velikost po kompresi).",
   "technical.encryption.auth.text": "obsah i hlavička položky jsou autentizované. Pokud se změní, otevření selže a nic se neuloží.",
   "technical.limits.recipients.text": "Kdokoli, kdo může položku otevřít, může její obsah uložit, zkopírovat nebo sdílet.",
-  "roadmap.small.text": "Drobné opravy a vylepšení Doughnut Forge 2."
+  "roadmap.small.text": "Drobné opravy a vylepšení Doughnut Forge 2.",
+  "home.phones.title": "Novinky v Doughnut Forge 2.",
+  "home.phones.text": "Nový vzhled, snazší začátek a cesta zpět, když zapomenete heslo. Na iPhonu, iPadu, Macu a ve Windows."
 }

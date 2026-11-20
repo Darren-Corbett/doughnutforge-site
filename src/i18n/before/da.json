@@ -44,5 +44,7 @@
   "technical.visible.size.text": "omtrent synlig (den komprimerede størrelse).",
   "technical.encryption.auth.text": "indholdet og elementets header autentificeres. Hvis de ændres, mislykkes åbningen, og intet gemmes.",
   "technical.limits.recipients.text": "Alle, der kan åbne et element, kan gemme, kopiere eller dele indholdet.",
-  "roadmap.small.text": "Små rettelser og forbedringer af Doughnut Forge 2."
+  "roadmap.small.text": "Små rettelser og forbedringer af Doughnut Forge 2.",
+  "home.phones.title": "Nyt i Doughnut Forge 2.",
+  "home.phones.text": "Et nyt udseende, en nemmere start og en vej tilbage, hvis du glemmer din adgangskode. På iPhone, iPad, Mac og Windows."
 }

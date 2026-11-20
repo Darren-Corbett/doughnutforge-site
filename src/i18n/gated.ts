@@ -66,6 +66,9 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   "faq.share.a": "first3",
   "technical.visible.older": "first3",
   "roadmap.small.text": "first3",
+  "home.phones.title": "first3",
+  "home.phones.text": "first3",
+  "features.cta.text": "first3",
 
   // Every store with 3.0: the new format's copy and the white paper
   "technical.visible.size.text": "all3",

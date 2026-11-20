@@ -31,9 +31,9 @@ export default {
   "home.specimen.note": "หวัดดีต้น กุญแจสำรองอยู่ในกระถางสีน้ำเงินข้างประตูหลัง รหัสสัญญาณกันขโมยคือ 4071 เจอกันวันศุกร์นะ",
   "home.specimen.cipherLabel": "บันทึกเดียวกันเมื่อเข้ารหัสแล้ว: ตัวอักษรสุ่มที่อ่านไม่ออก",
   "home.specimen.caption": "นี่เป็นภาพประกอบ: ไฟล์ที่เข้ารหัสจริงมีตัวอักษรมากกว่านี้มาก",
-  "home.phones.title": "มีอะไรใหม่ใน Doughnut Forge 2",
+  "home.phones.title": "ง่ายตั้งแต่แรก",
   "home.phones.text":
-    "รูปลักษณ์ใหม่ เริ่มต้นใช้งานง่ายขึ้น และมีทางกลับเข้ามาได้หากคุณลืมรหัสผ่าน บน iPhone, iPad, Mac และ Windows",
+    "มีเพียงหน้าต้อนรับสั้นๆ แล้วเลือกหนึ่งอย่าง: สร้างข้อมูลประจำตัว หรือกู้คืน หากคุณลืมรหัสผ่าน คำกู้คืนของคุณจะพาคุณกลับเข้ามาได้",
   "home.phones.altText": "Doughnut Forge 2 บน iPhone: หน้าจอข้อความพร้อมบันทึกที่พร้อมเข้ารหัส",
   "home.phones.altFile": "Doughnut Forge 2 บน iPhone: หน้าจอไฟล์พร้อมปุ่มเข้ารหัสไฟล์และถอดรหัสไฟล์",
   "home.phones.altIdentity":
@@ -82,6 +82,7 @@ export default {
   "features.ios.altChoose": "Doughnut Forge 2 บน iPhone: การเลือกว่าใครเปิดไฟล์ได้ โดยเลือกคุณและผู้ติดต่ออีกสามคนไว้",
   "features.ios.altIpad": "Doughnut Forge 2 บน iPad: หน้าจอไฟล์พร้อมปุ่มเข้ารหัสไฟล์และถอดรหัสไฟล์",
   "features.cta.title": "พร้อมเก็บไฟล์ของคุณให้เป็นส่วนตัวแล้วหรือยัง?",
+  "features.cta.text": "เข้ารหัสไฟล์และข้อความบนอุปกรณ์ของคุณเอง และแชร์ให้เฉพาะคนที่คุณเลือกเท่านั้น",
   "meta.pricing.title": "[PENDING-PRICING]",
   "meta.pricing.description": "[PENDING-PRICING] {free} {paid}",
   "pricing.where.title": "ซื้อได้ที่ไหน",

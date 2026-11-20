@@ -31,9 +31,9 @@ export default {
   "home.specimen.note": "Cześć Ola, zapasowy klucz jest w niebieskiej doniczce przy tylnych drzwiach. Kod alarmu to 4071. Do zobaczenia w piątek.",
   "home.specimen.cipherLabel": "Ta sama notatka po zaszyfrowaniu: nieczytelne, losowe znaki.",
   "home.specimen.caption": "To ilustracja: prawdziwe zaszyfrowane pliki zawierają znacznie więcej znaków.",
-  "home.phones.title": "Nowości w Doughnut Forge 2.",
+  "home.phones.title": "Prostota od samego początku.",
   "home.phones.text":
-    "Nowy wygląd, łatwiejszy start i sposób na powrót, gdy zapomnisz hasła. Na iPhonie, iPadzie, Macu i Windows.",
+    "Krótkie powitanie, a potem jeden wybór: utwórz tożsamość albo ją przywróć. Jeśli zapomnisz hasła, słowa odzyskiwania przywrócą Ci dostęp.",
   "home.phones.altText": "Doughnut Forge 2 na iPhonie: ekran Tekst z notatką gotową do zaszyfrowania",
   "home.phones.altFile": "Doughnut Forge 2 na iPhonie: ekran Pliki z opcjami Zaszyfruj plik i Odszyfruj plik",
   "home.phones.altIdentity":
@@ -84,6 +84,7 @@ export default {
     "Doughnut Forge 2 na iPhonie: wybór osób, które mogą otworzyć plik, z zaznaczonymi Tobą i trzema kontaktami",
   "features.ios.altIpad": "Doughnut Forge 2 na iPadzie: ekran Pliki z opcjami Zaszyfruj plik i Odszyfruj plik",
   "features.cta.title": "Chcesz, by Twoje pliki pozostały prywatne?",
+  "features.cta.text": "Szyfruj pliki i tekst na własnym urządzeniu i udostępniaj je tylko wybranym osobom.",
   "meta.pricing.title": "[PENDING-PRICING]",
   "meta.pricing.description": "[PENDING-PRICING] {free} {paid}",
   "pricing.where.title": "Gdzie kupić",

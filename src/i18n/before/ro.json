@@ -44,5 +44,7 @@
   "technical.visible.size.text": "vizibilă, aproximativ (dimensiunea comprimată).",
   "technical.encryption.auth.text": "conținutul și antetul elementului sunt autentificate. Dacă sunt modificate, deschiderea eșuează și nu se salvează nimic.",
   "technical.limits.recipients.text": "Oricine poate deschide un element poate salva, copia sau partaja ce conține.",
-  "roadmap.small.text": "Mici remedieri și îmbunătățiri pentru Doughnut Forge 2."
+  "roadmap.small.text": "Mici remedieri și îmbunătățiri pentru Doughnut Forge 2.",
+  "home.phones.title": "Nou în Doughnut Forge 2.",
+  "home.phones.text": "Un aspect nou, un început mai ușor și o cale de întoarcere dacă îți uiți parola. Pe iPhone, iPad, Mac și Windows."
 }

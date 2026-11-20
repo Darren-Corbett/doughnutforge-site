@@ -44,5 +44,7 @@
   "technical.visible.size.text": "ongeveer zichtbaar (de gecomprimeerde grootte).",
   "technical.encryption.auth.text": "de inhoud en de header van het item worden geauthenticeerd. Als ze zijn gewijzigd, mislukt het openen en wordt er niets opgeslagen.",
   "technical.limits.recipients.text": "Iedereen die een item kan openen, kan de inhoud bewaren, kopiëren of delen.",
-  "roadmap.small.text": "Kleine oplossingen en verbeteringen voor Doughnut Forge 2."
+  "roadmap.small.text": "Kleine oplossingen en verbeteringen voor Doughnut Forge 2.",
+  "home.phones.title": "Nieuw in Doughnut Forge 2.",
+  "home.phones.text": "Een nieuw uiterlijk, een makkelijkere start en een weg terug als u uw wachtwoord vergeet. Op iPhone, iPad, Mac en Windows."
 }

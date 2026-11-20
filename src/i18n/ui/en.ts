@@ -38,9 +38,9 @@ export default {
   "home.specimen.cipherLabel": "The same note, encrypted: unreadable random characters.",
   "home.specimen.caption": "An illustration: real encrypted files hold far more characters than this.",
 
-  "home.phones.title": "New in Doughnut Forge 2.",
+  "home.phones.title": "Simple from the start.",
   "home.phones.text":
-    "A new look, an easier start, and a way back in if you forget your password. On iPhone, iPad, Mac and Windows.",
+    "One short welcome, then one choice: create your identity, or restore it. If you forget your password, your recovery words get you back in.",
   "home.phones.altText": "Doughnut Forge 2 on iPhone: the Text screen with a note ready to encrypt",
   "home.phones.altFile": "Doughnut Forge 2 on iPhone: the Files screen with Encrypt file and Decrypt file",
   "home.phones.altIdentity":
@@ -111,6 +111,7 @@ export default {
     "Doughnut Forge 2 on iPhone: choosing who can open a file, with you and three contacts picked",
   "features.ios.altIpad": "Doughnut Forge 2 on iPad: the Files screen with Encrypt file and Decrypt file",
   "features.cta.title": "Ready to keep your files private?",
+  "features.cta.text": "Encrypt files and text on your own device, and share them only with the people you choose.",
 
   // Pricing page
   "meta.pricing.title": "Pricing: no subscription | Doughnut Forge",

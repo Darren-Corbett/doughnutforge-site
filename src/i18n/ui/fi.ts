@@ -31,9 +31,9 @@ export default {
   "home.specimen.note": "Hei Mikko! Vara-avain on sinisessä ruukussa takaoven vieressä. Hälytyskoodi on 4071. Nähdään perjantaina!",
   "home.specimen.cipherLabel": "Sama muistiinpano salattuna: lukukelvottomia satunnaisia merkkejä.",
   "home.specimen.caption": "Havainnollistus: oikeissa salatuissa tiedostoissa on paljon enemmän merkkejä kuin tässä.",
-  "home.phones.title": "Uutta Doughnut Forge 2:ssa.",
+  "home.phones.title": "Helppoa alusta alkaen.",
   "home.phones.text":
-    "Uusi ulkoasu, helpompi alku ja keino päästä takaisin, jos unohdat salasanasi. iPhonelle, iPadille, Macille ja Windowsille.",
+    "Lyhyt tervetulotoivotus ja sitten yksi valinta: luo henkilöllisyytesi tai palauta se. Jos unohdat salasanasi, pääset palautussanoillasi takaisin sisään.",
   "home.phones.altText": "Doughnut Forge 2 iPhonella: Teksti-näkymä, jossa muistiinpano on valmiina salattavaksi",
   "home.phones.altFile":
     "Doughnut Forge 2 iPhonella: Tiedostot-näkymä, jossa ovat painikkeet Salaa tiedosto ja Pura tiedoston salaus",
@@ -86,6 +86,7 @@ export default {
   "features.ios.altIpad":
     "Doughnut Forge 2 iPadilla: Tiedostot-näkymä, jossa ovat painikkeet Salaa tiedosto ja Pura tiedoston salaus",
   "features.cta.title": "Valmis pitämään tiedostosi yksityisinä?",
+  "features.cta.text": "Salaa tiedostot ja tekstit omalla laitteellasi ja jaa ne vain valitsemillesi ihmisille.",
   "meta.pricing.title": "[PENDING-PRICING]",
   "meta.pricing.description": "[PENDING-PRICING] {free} {paid}",
   "pricing.where.title": "Mistä ostaa",

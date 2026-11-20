@@ -31,9 +31,9 @@ export default {
   "home.specimen.note": "Ahoj Petře, náhradní klíč je v modrém květináči u zadních dveří. Kód alarmu je 4071. Uvidíme se v pátek.",
   "home.specimen.cipherLabel": "Stejná poznámka po zašifrování: nečitelné náhodné znaky.",
   "home.specimen.caption": "Jde o ilustraci: skutečné zašifrované soubory obsahují mnohem více znaků.",
-  "home.phones.title": "Novinky v Doughnut Forge 2.",
+  "home.phones.title": "Jednoduchost od samého začátku.",
   "home.phones.text":
-    "Nový vzhled, snazší začátek a cesta zpět, když zapomenete heslo. Na iPhonu, iPadu, Macu a ve Windows.",
+    "Krátké uvítání a pak jedna volba: vytvořit identitu, nebo ji obnovit. Když zapomenete heslo, dostanete se zpět pomocí obnovovacích slov.",
   "home.phones.altText": "Doughnut Forge 2 na iPhonu: obrazovka Texty s poznámkou připravenou k zašifrování",
   "home.phones.altFile":
     "Doughnut Forge 2 na iPhonu: obrazovka Soubory s volbami Zašifrovat soubor a Dešifrovat soubor",
@@ -86,6 +86,7 @@ export default {
   "features.ios.altIpad":
     "Doughnut Forge 2 na iPadu: obrazovka Soubory s volbami Zašifrovat soubor a Dešifrovat soubor",
   "features.cta.title": "Chcete, aby vaše soubory zůstaly soukromé?",
+  "features.cta.text": "Šifrujte soubory a text ve vlastním zařízení a sdílejte je jen s lidmi, které si vyberete.",
   "meta.pricing.title": "[PENDING-PRICING]",
   "meta.pricing.description": "[PENDING-PRICING] {free} {paid}",
   "pricing.where.title": "Kde koupit",

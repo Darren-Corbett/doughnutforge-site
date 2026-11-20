@@ -31,9 +31,9 @@ export default {
   "home.specimen.note": "Hai Siti, kunci pendua ada dalam pasu biru di tepi pintu belakang. Kod penggera ialah 4071. Jumpa hari Jumaat.",
   "home.specimen.cipherLabel": "Nota yang sama, disulitkan: aksara rawak yang tidak boleh dibaca.",
   "home.specimen.caption": "Ilustrasi: fail sebenar yang disulitkan mengandungi jauh lebih banyak aksara daripada ini.",
-  "home.phones.title": "Baharu dalam Doughnut Forge 2.",
+  "home.phones.title": "Mudah sejak awal.",
   "home.phones.text":
-    "Rupa baharu, permulaan yang lebih mudah, dan cara untuk masuk semula jika anda terlupa kata laluan. Pada iPhone, iPad, Mac dan Windows.",
+    "Satu sambutan ringkas, kemudian satu pilihan: cipta identiti anda, atau pulihkannya. Jika anda terlupa kata laluan, anda boleh masuk semula dengan perkataan pemulihan anda.",
   "home.phones.altText": "Doughnut Forge 2 pada iPhone: skrin Teks dengan nota yang sedia untuk disulitkan",
   "home.phones.altFile": "Doughnut Forge 2 pada iPhone: skrin Fail dengan Sulitkan fail dan Nyahsulit fail",
   "home.phones.altIdentity":
@@ -84,6 +84,7 @@ export default {
     "Doughnut Forge 2 pada iPhone: memilih siapa yang boleh membuka fail, dengan anda dan tiga kenalan dipilih",
   "features.ios.altIpad": "Doughnut Forge 2 pada iPad: skrin Fail dengan Sulitkan fail dan Nyahsulit fail",
   "features.cta.title": "Sedia untuk memastikan fail anda kekal peribadi?",
+  "features.cta.text": "Sulitkan fail dan teks pada peranti anda sendiri, dan kongsi hanya dengan orang yang anda pilih.",
   "meta.pricing.title": "[PENDING-PRICING]",
   "meta.pricing.description": "[PENDING-PRICING] {free} {paid}",
   "pricing.where.title": "Tempat untuk membeli",

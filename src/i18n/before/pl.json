@@ -44,5 +44,7 @@
   "technical.visible.size.text": "widoczny w przybliżeniu (rozmiar po kompresji).",
   "technical.encryption.auth.text": "treść i nagłówek elementu są uwierzytelniane. Jeśli zostaną zmienione, otwarcie się nie powiedzie i nic nie zostanie zapisane.",
   "technical.limits.recipients.text": "Każdy, kto może otworzyć element, może zapisać, skopiować lub udostępnić jego zawartość.",
-  "roadmap.small.text": "Drobne poprawki i ulepszenia Doughnut Forge 2."
+  "roadmap.small.text": "Drobne poprawki i ulepszenia Doughnut Forge 2.",
+  "home.phones.title": "Nowości w Doughnut Forge 2.",
+  "home.phones.text": "Nowy wygląd, łatwiejszy start i sposób na powrót, gdy zapomnisz hasła. Na iPhonie, iPadzie, Macu i Windows."
 }

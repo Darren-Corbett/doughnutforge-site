@@ -44,5 +44,7 @@
   "technical.visible.size.text": "มองเห็นได้โดยประมาณ (ขนาดหลังการบีบอัด)",
   "technical.encryption.auth.text": "ทั้งเนื้อหาและส่วนหัวของรายการได้รับการยืนยันความถูกต้อง หากถูกแก้ไข การเปิดจะล้มเหลวและจะไม่มีสิ่งใดถูกบันทึก",
   "technical.limits.recipients.text": "ใครก็ตามที่เปิดรายการได้ สามารถบันทึก คัดลอก หรือแชร์สิ่งที่อยู่ข้างในได้",
-  "roadmap.small.text": "การแก้ไขและการปรับปรุงเล็กน้อยสำหรับ Doughnut Forge 2"
+  "roadmap.small.text": "การแก้ไขและการปรับปรุงเล็กน้อยสำหรับ Doughnut Forge 2",
+  "home.phones.title": "มีอะไรใหม่ใน Doughnut Forge 2",
+  "home.phones.text": "รูปลักษณ์ใหม่ เริ่มต้นใช้งานง่ายขึ้น และมีทางกลับเข้ามาได้หากคุณลืมรหัสผ่าน บน iPhone, iPad, Mac และ Windows"
 }

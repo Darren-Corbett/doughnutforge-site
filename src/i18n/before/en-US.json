@@ -44,5 +44,7 @@
   "technical.visible.size.text": "visible, roughly (the compressed size).",
   "technical.encryption.auth.text": "the content and the item's header are authenticated. If they are changed, opening fails and nothing is saved.",
   "technical.limits.recipients.text": "Anyone who can open an item can save, copy or share what is inside.",
-  "roadmap.small.text": "Small fixes and improvements to Doughnut Forge 2."
+  "roadmap.small.text": "Small fixes and improvements to Doughnut Forge 2.",
+  "home.phones.title": "New in Doughnut Forge 2.",
+  "home.phones.text": "A new look, an easier start, and a way back in if you forget your password. On iPhone, iPad, Mac and Windows."
 }

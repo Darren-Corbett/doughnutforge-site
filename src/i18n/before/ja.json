@@ -44,5 +44,7 @@
   "technical.visible.size.text": "おおよそ見えます（圧縮後のサイズ）。",
   "technical.encryption.auth.text": "内容とアイテムのヘッダーが認証されます。これらが変更されていると開くことに失敗し、何も保存されません。",
   "technical.limits.recipients.text": "アイテムを開ける人は誰でも、その中身を保存、コピー、共有できます。",
-  "roadmap.small.text": "Doughnut Forge 2の細かな修正と改善。"
+  "roadmap.small.text": "Doughnut Forge 2の細かな修正と改善。",
+  "home.phones.title": "Doughnut Forge 2の新機能。",
+  "home.phones.text": "新しい見た目、より簡単な始め方、そしてパスワードを忘れても戻れる方法。対象はiPhone、iPad、Mac、Windowsです。"
 }

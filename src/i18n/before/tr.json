@@ -44,5 +44,7 @@
   "technical.visible.size.text": "yaklaşık olarak görünür (sıkıştırılmış boyut).",
   "technical.encryption.auth.text": "içerik ve öğenin başlığı doğrulanır. Bunlar değiştirilirse açma başarısız olur ve hiçbir şey kaydedilmez.",
   "technical.limits.recipients.text": "Bir öğeyi açabilen herkes içindekileri kaydedebilir, kopyalayabilir veya paylaşabilir.",
-  "roadmap.small.text": "Doughnut Forge 2 için küçük düzeltmeler ve iyileştirmeler."
+  "roadmap.small.text": "Doughnut Forge 2 için küçük düzeltmeler ve iyileştirmeler.",
+  "home.phones.title": "Doughnut Forge 2'deki yenilikler.",
+  "home.phones.text": "Yeni bir görünüm, daha kolay bir başlangıç ve parolanızı unutursanız geri dönmenin bir yolu. iPhone, iPad, Mac ve Windows'ta."
 }

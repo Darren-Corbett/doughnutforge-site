@@ -31,9 +31,9 @@ export default {
   "home.specimen.note": "Chào Lan, chìa khóa dự phòng ở trong chậu màu xanh dương cạnh cửa sau. Mã báo động là 4071. Hẹn gặp bạn thứ Sáu nhé.",
   "home.specimen.cipherLabel": "Vẫn ghi chú đó, khi đã mã hóa: các ký tự ngẫu nhiên không thể đọc được.",
   "home.specimen.caption": "Hình minh họa: tệp mã hóa thật chứa nhiều ký tự hơn thế này rất nhiều.",
-  "home.phones.title": "Có gì mới trong Doughnut Forge 2.",
+  "home.phones.title": "Đơn giản ngay từ đầu.",
   "home.phones.text":
-    "Giao diện mới, bắt đầu dễ dàng hơn và một cách để vào lại nếu bạn quên mật khẩu. Trên iPhone, iPad, Mac và Windows.",
+    "Một lời chào ngắn, rồi một lựa chọn: tạo danh tính của bạn, hoặc khôi phục danh tính. Nếu bạn quên mật khẩu, các từ khôi phục giúp bạn vào lại.",
   "home.phones.altText": "Doughnut Forge 2 trên iPhone: màn hình Văn bản với một ghi chú sẵn sàng để mã hóa",
   "home.phones.altFile": "Doughnut Forge 2 trên iPhone: màn hình Tệp với Mã hóa tệp và Giải mã tệp",
   "home.phones.altIdentity":
@@ -84,6 +84,7 @@ export default {
     "Doughnut Forge 2 trên iPhone: chọn ai có thể mở một tệp, với bạn và ba người liên hệ được chọn",
   "features.ios.altIpad": "Doughnut Forge 2 trên iPad: màn hình Tệp với Mã hóa tệp và Giải mã tệp",
   "features.cta.title": "Sẵn sàng giữ tệp của bạn riêng tư?",
+  "features.cta.text": "Mã hóa tệp và văn bản ngay trên thiết bị của bạn, và chỉ chia sẻ chúng với những người bạn chọn.",
   "meta.pricing.title": "[PENDING-PRICING]",
   "meta.pricing.description": "[PENDING-PRICING] {free} {paid}",
   "pricing.where.title": "Nơi mua",

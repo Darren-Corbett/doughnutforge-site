@@ -31,9 +31,9 @@ export default {
   "home.specimen.note": "Szia Bence! A pótkulcs a hátsó ajtó melletti kék virágcserépben van. A riasztó kódja 4071. Pénteken találkozunk!",
   "home.specimen.cipherLabel": "Ugyanaz a jegyzet titkosítva: olvashatatlan, véletlenszerű karakterek.",
   "home.specimen.caption": "Illusztráció: a valódi titkosított fájlok ennél sokkal több karaktert tartalmaznak.",
-  "home.phones.title": "Újdonságok a Doughnut Forge 2-ben.",
+  "home.phones.title": "Egyszerű a kezdetektől.",
   "home.phones.text":
-    "Új megjelenés, könnyebb kezdés, és visszaút, ha elfelejted a jelszavadat. iPhone-on, iPaden, Macen és Windowson.",
+    "Egy rövid üdvözlés, majd egyetlen választás: létrehozod az identitásodat, vagy visszaállítod. Ha elfelejted a jelszavadat, a helyreállítási szavaiddal visszajutsz az alkalmazásba.",
   "home.phones.altText": "A Doughnut Forge 2 iPhone-on: a Szöveg képernyő egy titkosításra kész jegyzettel",
   "home.phones.altFile":
     "A Doughnut Forge 2 iPhone-on: a Fájlok képernyő a Fájl titkosítása és a Fájl visszafejtése lehetőséggel",
@@ -86,6 +86,7 @@ export default {
   "features.ios.altIpad":
     "A Doughnut Forge 2 iPaden: a Fájlok képernyő a Fájl titkosítása és a Fájl visszafejtése lehetőséggel",
   "features.cta.title": "Szeretnéd, hogy a fájljaid privátok maradjanak?",
+  "features.cta.text": "Titkosíts fájlokat és szöveget a saját eszközödön, és csak azokkal oszd meg őket, akiket te választasz.",
   "meta.pricing.title": "[PENDING-PRICING]",
   "meta.pricing.description": "[PENDING-PRICING] {free} {paid}",
   "pricing.where.title": "Hol vásárolhatod meg",

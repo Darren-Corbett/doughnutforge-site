@@ -44,5 +44,7 @@
   "technical.visible.size.text": "nagyjából látható (a tömörített méret).",
   "technical.encryption.auth.text": "a tartalom és az elem fejléce hitelesítve van. Ha megváltoztatják őket, a megnyitás sikertelen, és semmi sem kerül mentésre.",
   "technical.limits.recipients.text": "Bárki, aki meg tud nyitni egy elemet, mentheti, másolhatja vagy megoszthatja a tartalmát.",
-  "roadmap.small.text": "Kisebb javítások és fejlesztések a Doughnut Forge 2-höz."
+  "roadmap.small.text": "Kisebb javítások és fejlesztések a Doughnut Forge 2-höz.",
+  "home.phones.title": "Újdonságok a Doughnut Forge 2-ben.",
+  "home.phones.text": "Új megjelenés, könnyebb kezdés, és visszaút, ha elfelejted a jelszavadat. iPhone-on, iPaden, Macen és Windowson."
 }

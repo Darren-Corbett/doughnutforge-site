@@ -44,5 +44,7 @@
   "technical.visible.size.text": "kelihatan, lebih kurang (saiz selepas dimampatkan).",
   "technical.encryption.auth.text": "kandungan dan pengepala item disahkan. Jika ia diubah, pembukaan gagal dan tiada apa-apa disimpan.",
   "technical.limits.recipients.text": "Sesiapa yang boleh membuka sesuatu item boleh menyimpan, menyalin atau berkongsi apa yang ada di dalamnya.",
-  "roadmap.small.text": "Pembaikan kecil dan penambahbaikan untuk Doughnut Forge 2."
+  "roadmap.small.text": "Pembaikan kecil dan penambahbaikan untuk Doughnut Forge 2.",
+  "home.phones.title": "Baharu dalam Doughnut Forge 2.",
+  "home.phones.text": "Rupa baharu, permulaan yang lebih mudah, dan cara untuk masuk semula jika anda terlupa kata laluan. Pada iPhone, iPad, Mac dan Windows."
 }
