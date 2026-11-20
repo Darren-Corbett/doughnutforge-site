@@ -155,6 +155,11 @@ for (const lang of ANDROID ? languages : []) {
 
 test("English names Google Play without \"the\"", async ({ page }) => {
   test.skip(!ANDROID, "Google Play is named once Android is on sale");
+  // The forward an hour away, so the /go/ page stays as the visitor sees it
+  await page.route("/go/7427ad/en/", async (route) => {
+    const response = await route.fetch();
+    return route.fulfill({ response, body: (await response.text()).replace('content="0;', 'content="3600;') });
+  });
   for (const path of ["/pricing/", "/go/7427ad/en/"]) {
     await page.goto(path);
     const text = `${await page.title()}\n${await page.locator("body").innerText()}`;
