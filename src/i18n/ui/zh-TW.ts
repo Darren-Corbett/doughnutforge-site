@@ -61,6 +61,7 @@ export default {
   "features.identity.more": "您的身分僅儲存在此裝置上，並受您的密碼保護。請妥善保管您的 24 個復原單字：這是復原身分或重設忘記的密碼的唯一方法。",
   "features.private.title": "從一開始就保護隱私",
   "features.offline.title": "不用連上網路也能使用",
+  "features.longTerm.text": "採用後量子加密，旨在抵禦未來量子電腦的攻擊。",
   "offline.text": "不需訂閱、不需帳號、沒有伺服器，也沒有追蹤。Doughnut Forge 完全在您的裝置上執行，即使沒有網路連線也能使用。您的金鑰和聯絡人都留在您身邊，由您掌控。",
   "features.languages.label": "語言",
   "features.ios.title": "在 iPhone 和 iPad 上",

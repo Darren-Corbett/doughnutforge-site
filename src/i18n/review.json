@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -304,13 +304,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses a post-quantum encryption, designed to resist the attacks of future quantum computers."
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -628,13 +634,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, developed to withstand attacks of future quantum computers."
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -871,13 +883,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, designed to resist attacks from future quantum computers."
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1164,13 +1182,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum cryptography, designed to resist the attacks of future quantum computers."
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1474,13 +1498,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, designed to withstand attacks from future quantum computers."
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1736,13 +1766,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, designed to withstand attacks from future quantum computers."
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2005,13 +2041,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, designed to withstand attacks from future quantum computers."
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2329,13 +2371,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1); post-quantum term per the owner (21 November), re-checked (recheck-2): no blocking findings.",
+        "backTranslation": "Uses post-quantum encryption, which has been designed to withstand the attacks of future quantum computers."
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2604,13 +2652,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, developed to withstand attacks from future quantum computers."
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2907,13 +2961,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, designed so that it resists attacks of future quantum computers."
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3247,13 +3307,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, designed so that it withstands attacks of future quantum computers."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3576,13 +3642,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, which was designed so that it resists the attacks of future quantum computers."
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3924,13 +3996,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, designed to resist the attacks of future quantum computers."
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4250,13 +4328,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, developed so as to withstand attacks of future quantum computers."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4572,13 +4656,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, designed so that it withstands attacks from future quantum computers."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4892,6 +4982,12 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, developed so as to withstand attacks of future quantum computers."
       }
     ]
   },
@@ -4934,7 +5030,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5165,13 +5261,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, designed to resist attacks from future quantum computers."
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -5463,13 +5565,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum cryptography, designed to resist attacks from future quantum computers."
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5790,13 +5898,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label first read as \"password and (device or words)\"; reworded to repeat the verb or preposition, re-checked by a second reviewer: two cases, terms match the file.",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption designed to withstand the attacks of future quantum computers."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -6068,13 +6182,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1); post-quantum term per the owner (21 November), re-checked (recheck-2): no blocking findings.",
+        "backTranslation": "Adopts post-quantum cryptography. Designed so it can withstand attacks by future quantum computers."
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6346,13 +6466,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Adopts post-quantum encryption, intended to resist attacks from future quantum computers."
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6651,13 +6777,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Adopts post-quantum encryption, intended to resist attacks from future quantum computers."
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6985,13 +7117,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1); post-quantum term per the owner (21 November), re-checked (recheck-2): no blocking findings.",
+        "backTranslation": "Uses post-quantum encryption and was designed to withstand attacks by future quantum computers."
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7271,13 +7409,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, which has been designed to face attacks of future quantum computers."
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7569,13 +7713,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, which is designed to withstand attacks from future quantum computers."
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7861,13 +8011,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, which is designed to withstand attacks from future quantum computers."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8145,13 +8301,19 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, which is designed to resist attacks from quantum computers in the future"
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-17",
+    "reviewedAt": "2026-11-20",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8463,6 +8625,12 @@
         "issue": "Recovery shards removed (17 November 2026; no release build offers them): the recovery text is the first sentence of the earlier translation, terms unchanged. The access label reads as two cases, (password and device) or (recovery words).",
         "backTranslation": "that secret can be written down as your 24 recovery words (BIP-39). / Anyone with your password and your device, or your 24 recovery words.",
         "suggestion": "No change."
+      },
+      {
+        "key": "features.longTerm.text",
+        "severity": "note",
+        "issue": "Reviewed 20 November 2026 by an independent subagent (review-1, recheck-1): no blocking findings left.",
+        "backTranslation": "Uses post-quantum encryption, designed to resist attacks from quantum computers in the future."
       }
     ]
   }

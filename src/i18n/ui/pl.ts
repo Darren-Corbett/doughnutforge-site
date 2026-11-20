@@ -66,6 +66,7 @@ export default {
     "Twoja tożsamość jest przechowywana tylko na tym urządzeniu i chroniona Twoim hasłem. Przechowuj swoje 24 słowa odzyskiwania w bezpiecznym miejscu: to jedyny sposób, aby przywrócić tożsamość lub zresetować zapomniane hasło.",
   "features.private.title": "Prywatność od samego początku",
   "features.offline.title": "Działa bez internetu",
+  "features.longTerm.text": "Korzysta z szyfrowania postkwantowego, zaprojektowanego tak, by opierało się atakom przyszłych komputerów kwantowych.",
   "offline.text": "Bez subskrypcji, bez konta, bez serwerów i bez śledzenia. Doughnut Forge działa w całości na Twoim urządzeniu, nawet bez połączenia z internetem. Twoje klucze i kontakty zostają przy Tobie, pod Twoją kontrolą.",
   "features.languages.label": "Języki",
   "features.ios.title": "Na iPhonie i iPadzie",

@@ -64,6 +64,7 @@ export default {
     "Identitatea ta este stocată doar pe acest dispozitiv și protejată de parola ta. Păstrează în siguranță cele 24 de cuvinte de recuperare: sunt singura modalitate de a-ți restaura identitatea sau de a reseta o parolă uitată.",
   "features.private.title": "Privat de la început",
   "features.offline.title": "Funcționează fără internet",
+  "features.longTerm.text": "Folosește criptare post-cuantică, concepută să reziste atacurilor viitoarelor computere cuantice.",
   "offline.text": "Fără abonament, fără cont, fără servere și fără urmărire. Doughnut Forge funcționează în întregime pe dispozitivul tău, chiar și fără conexiune la internet. Cheile și contactele tale rămân la tine, sub controlul tău.",
   "features.languages.label": "Limbi",
   "features.ios.title": "Pe iPhone și iPad",

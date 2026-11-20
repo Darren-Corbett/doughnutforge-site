@@ -67,6 +67,7 @@ export default {
     "Vaše identita je uložena pouze v tomto zařízení a chráněna vaším heslem. Uchovejte svých 24 obnovovacích slov v bezpečí: jsou jediným způsobem, jak obnovit identitu nebo nastavit nové heslo místo zapomenutého.",
   "features.private.title": "Soukromí od samého začátku",
   "features.offline.title": "Funguje bez internetu",
+  "features.longTerm.text": "Používá postkvantové šifrování, navržené tak, aby odolalo útokům budoucích kvantových počítačů.",
   "offline.text": "Bez předplatného, bez účtu, bez serverů a bez sledování. Doughnut Forge funguje celý ve vašem zařízení, i bez připojení k internetu. Vaše klíče a kontakty zůstávají u vás, pod vaší kontrolou.",
   "features.languages.label": "Jazyky",
   "features.ios.title": "Na iPhonu a iPadu",

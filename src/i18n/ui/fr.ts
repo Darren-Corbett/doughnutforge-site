@@ -61,6 +61,7 @@ export default {
   "features.identity.more": "Votre identité est stockée uniquement sur cet appareil et protégée par votre mot de passe. Conservez vos 24 mots de récupération en lieu sûr : ce sont le seul moyen de restaurer votre identité ou de réinitialiser un mot de passe oublié.",
   "features.private.title": "Privé dès le départ",
   "features.offline.title": "Fonctionne sans Internet",
+  "features.longTerm.text": "Utilise un chiffrement post-quantique, conçu pour résister aux attaques des futurs ordinateurs quantiques.",
   "offline.text": "Sans abonnement, sans compte, sans serveur et sans pistage. Doughnut Forge fonctionne entièrement sur votre appareil, même sans connexion Internet. Vos clés et vos contacts restent avec vous, sous votre contrôle.",
   "features.languages.label": "Langues",
   "features.ios.title": "Sur iPhone et iPad",

@@ -61,6 +61,7 @@ export default {
   "features.identity.more": "Uw identiteit wordt alleen op dit apparaat opgeslagen en is beveiligd met uw wachtwoord. Bewaar uw 24 herstelwoorden veilig: ze zijn de enige manier om uw identiteit te herstellen of een vergeten wachtwoord opnieuw in te stellen.",
   "features.private.title": "Vanaf het begin privé",
   "features.offline.title": "Werkt zonder internet",
+  "features.longTerm.text": "Gebruikt post-kwantumversleuteling, ontworpen om aanvallen van toekomstige kwantumcomputers te weerstaan.",
   "offline.text": "Geen abonnement, geen account, geen servers en geen tracking. Doughnut Forge werkt volledig op uw apparaat, ook zonder internetverbinding. Uw sleutels en contacten blijven bij u, onder uw controle.",
   "features.languages.label": "Talen",
   "features.ios.title": "Op iPhone en iPad",
