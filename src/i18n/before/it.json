@@ -39,5 +39,10 @@
   "faq.subscription.a": "No. Doughnut Forge è un acquisto una tantum, mai un abbonamento. Lo acquisti una volta dallo store della tua piattaforma e non c'è nulla da rinnovare.",
   "faq.offline.a": "No. Non c'è nessun account da creare e Doughnut Forge funziona interamente sul tuo dispositivo, anche senza connessione a Internet. La connessione ti serve solo per scaricare l'app o se scegli di inviare file crittografati via Internet.",
   "press.facts.priceValue": "Acquisto una tantum per ogni piattaforma, mai un abbonamento",
-  "technical.network.none": "Doughnut Forge non effettua connessioni di rete proprie. Non ci sono account, accesso, analisi, segnalazione degli arresti anomali né controllo degli aggiornamenti. La politica sui contenuti dell'app non consente alle sue schermate di caricare nulla da Internet."
+  "technical.network.none": "Doughnut Forge non effettua connessioni di rete proprie. Non ci sono account, accesso, analisi, segnalazione degli arresti anomali né controllo degli aggiornamenti. La politica sui contenuti dell'app non consente alle sue schermate di caricare nulla da Internet.",
+  "technical.glance.network": "Nessuna connessione di rete propria",
+  "technical.visible.size.text": "visibile, in modo approssimativo (la dimensione compressa).",
+  "technical.encryption.auth.text": "il contenuto e l'intestazione dell'elemento sono autenticati. Se vengono modificati, l'apertura non riesce e non viene salvato nulla.",
+  "technical.limits.recipients.text": "Chiunque possa aprire un elemento può salvarne, copiarne o condividerne il contenuto.",
+  "roadmap.small.text": "Piccole correzioni e miglioramenti per Doughnut Forge 2."
 }

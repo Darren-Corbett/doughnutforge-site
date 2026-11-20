@@ -6,7 +6,7 @@ Doughnut Forge encrypts files, folders and short messages on your own device. Th
 
 - **Cipher:** AES-256-GCM (256-bit key, 96-bit nonce, 128-bit authentication tag).
 - **One key per item:** every file, folder or message gets its own new random 256-bit key.
-- **Authentication:** the content and the item's header are authenticated. If they are changed, opening fails and nothing is saved.
+- **Authentication:** every part of the item, and its signatures, are checked. If anything was changed, opening fails and nothing is kept, except the files already finished when you stop opening a folder part-way. On Mac and Windows, if the app crashes or is forced to quit while opening, part of the file can be left in the destination folder until the app next starts (white paper, Overview and 8.2).
 - **Nonces:** never reused under the same key. Each item has its own key and its own random values.
 - **Compression:** content is compressed (Zstandard) before it is encrypted.
 - **Randomness:** keys, nonces and salts come from the operating system's secure random source.
@@ -16,7 +16,7 @@ Doughnut Forge encrypts files, folders and short messages on your own device. Th
 - **Your identity** is made from one 256-bit random secret, created on your device.
 - **Recovery:** that secret can be written down as 24 recovery words (BIP-39).
 - **Key exchange (post-quantum hybrid):** each item's key is sealed separately for every recipient, and for you, using X25519 together with ML-KEM-1024. The two shared secrets are combined with HKDF-SHA-256. Contacts who have not yet shared their new contact card get ML-KEM-768.
-- **Signatures:** Ed25519 together with ML-DSA-87, on every item and every contact card. Both must be valid. The app names a contact as the sender only when the item is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown.
+- **Signatures:** Ed25519 together with ML-DSA-87, on every new item and every new contact card. Both must be valid (white paper 3.3, 12.1). The app names a contact as the sender only when the item is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown.
 - **Key derivation:** HKDF-SHA-256.
 - **Several recipients:** one encrypted item can be opened by up to 1,024 people, each with their own sealed copy of the item's key.
 
@@ -39,7 +39,7 @@ Your contact list is also stored encrypted (AES-256-GCM).
 | Mac | Passphrase. The app runs in the macOS App Sandbox. |
 | Windows | Passphrase. |
 | iPhone and iPad | Passphrase, or Face ID or Touch ID if you turn it on. Doughnut Forge then keeps your passphrase in the iOS Keychain, on this device only, and only while the device is unlocked. iOS releases it after Face ID, Touch ID or the device passcode. The app's files use iOS Complete data protection. |
-| Android | Passphrase, or fingerprint or face unlock if you turn it on. |
+| Android | Passphrase, or fingerprint or face unlock if you turn it on and the phone has a strong fingerprint or face sensor. The phone's PIN cannot be used instead (white paper 9.2). |
 
 ## What can be seen without the key
 
@@ -50,7 +50,7 @@ Your contact list is also stored encrypted (AES-256-GCM).
 | Who it is for | Hidden |
 | Who sent it | Hidden |
 | How many people can open it | Visible only roughly: the count is rounded up to 4, 8, 16, 32 or 64, then to the next multiple of 64. The number of recipients known only by an old contact card shows exactly (white paper 4.3, 8.3) |
-| Size | Visible, roughly (the compressed size) |
+| Size | Visible: the total size, from which the compressed size of the content can be worked out exactly (white paper 8.3) |
 | Dates | No dates can be read without the key. The file has the normal dates your computer gives any file. |
 | That it is a Doughnut Forge file, and its format version | Visible |
 
@@ -99,7 +99,7 @@ Encrypted items leave your device only when you share them yourself.
 - **A device that is already compromised.** While Doughnut Forge is unlocked, malware with full access to your device could read your secrets.
 - **Anyone with your passphrase and your device, or your 24 recovery words.** Keep them safe.
 - **Your device passcode,** on iPhone and iPad with Face ID or Touch ID turned on. iOS accepts the passcode in place of Face ID or Touch ID.
-- **Recipients.** Anyone who can open an item can save, copy or share what is inside.
+- **Recipients.** Anyone who can open an item can save, copy or share what is inside, and can show others who signed it (white paper 7.5, 8.2).
 - **Anyone who later gets your recovery words.** There is no forward secrecy and no revocation: files are sealed to each person's long-lived keys, so anyone who later gets an identity's 24 recovery words can open every file sent to it that they have a copy of. A leaked identity cannot be withdrawn; only a new identity protects later files. (white paper, Overview and 8.2)
 - **Who sent an item.** The app names a contact as the sender only when the item is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown. The name is only as reliable as the card: compare the contact code.
 - **Size, a rough number of recipients, and file name.** See "What can be seen without the key".

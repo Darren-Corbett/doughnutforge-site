@@ -60,7 +60,7 @@ export default {
   "home.pricing.text": "On {free}, Doughnut Forge is free to download, and one in-app purchase, paid once, unlocks encrypting files, photos and videos. On {paid}, it is a one-time purchase from each store. The store shows the price where you live.",
 
   // {platforms} is one platform or a list, such as "Android"
-  "download.coming": "Coming soon: {platforms}.",
+  "download.coming": "Planned: {platforms}.",
   "download.availability": "Availability depends on your country or region.",
 
   // ===================================================================
@@ -69,7 +69,7 @@ export default {
   // ===================================================================
 
   "button.getApp": "Get Doughnut Forge",
-  "status.comingSoon": "Coming soon",
+  "status.comingSoon": "Planned",
   // Screen-reader text after each store badge, whose link opens in a new tab
   "a11y.newTab": "(opens in a new tab)",
   // The /go/ page a hidden store badge leads to. {store} is the store's name, never translated
@@ -84,7 +84,7 @@ export default {
   // Features page
   "meta.features.title": "Features: encrypt files, folders and text without an account | Doughnut Forge",
   "meta.features.description":
-    "Encrypt files and text on your own iPhone, iPad, Android or computer, share them with people you trust, and keep them protected for the long term. No account and no servers.",
+    "Encrypt files and text on your own iPhone, iPad, Android or computer, and share them with people you trust, with encryption designed to resist future quantum computers. No account and no servers.",
   "features.title": "Everything Doughnut Forge does",
   "features.lead":
     "Doughnut Forge locks your files and text on your iPhone, iPad, Android or computer and lets you share them with the people you trust. However you send them, only they can open them.",
@@ -117,7 +117,7 @@ export default {
   "pricing.where.title": "Where to buy",
   "pricing.where.text":
     "Each platform is a separate purchase from its own store. Buying on iPhone and iPad does not include Android, Mac or Windows, and buying on Android, Mac or Windows does not include any other platform.",
-  "pricing.where.textFree": "On {paid}, each platform is a separate purchase from its own store. On {free}, the in-app purchase restores on your other devices that use the same App Store or Google Play account.",
+  "pricing.where.textFree": "On {paid}, each platform is a separate purchase from its own store. On {free}, the in-app purchase restores on your other devices that use the same {stores} account.",
   "pricing.oneTime": "One-time purchase from the {store}",
   "pricing.oneTime.googlePlay": "One-time purchase from Google Play",
   "pricing.free": "Free to download from the {store}, with one in-app purchase, paid once, to encrypt files, photos and videos",
@@ -132,7 +132,7 @@ export default {
   "download.title": "Download Doughnut Forge",
   "download.requires.mac": "Needs macOS 12 Monterey or later.",
   "download.requires.windows": "Needs Windows 11.",
-  "download.requires.android": "Needs Android 10 or later, with Android System WebView 111 or later (updated from Google Play).",
+  "download.requires.android": "Needs Android 10 or later. If the app asks, update Android System WebView (a free part of Android) from Google Play.",
   "download.start.title": "When you first open it",
   "download.start.text":
     "Doughnut Forge starts with one short welcome, then one choice: create your identity, or restore it. When you create it, the app gives you 24 recovery words. Write them down and keep them somewhere safe: they are the only way to restore your identity or reset a forgotten password.",
@@ -179,15 +179,15 @@ export default {
   "faq.earlier.q": "I bought Doughnut Forge for iPhone or iPad before. Do I need to pay again?",
   "faq.earlier.a": "No. If you bought Doughnut Forge for iPhone or iPad before it became free to download, file encryption is unlocked for you automatically.",
   "faq.restorePurchase.q": "How do I unlock file encryption on my other devices?",
-  "faq.restorePurchase.a": "Tap “Restore purchase” in the app. The purchase restores on your other devices that use the same App Store or Google Play account.",
+  "faq.restorePurchase.a": "Tap “Restore purchase” in the app. The purchase restores on your other devices that use the same {stores} account.",
   "faq.refund.q": "What happens if my purchase is refunded?",
-  "faq.refund.a": "A refunded purchase locks file encryption again. Opening anything sent to you always stays free.",
-  "faq.desktop.q": "Does anything change on Mac or Windows?",
+  "faq.refund.a": "A refunded purchase locks file encryption again. Opening anything sent to you is still free.",
+  "faq.desktop.q": "Does buying change on Mac or Windows?",
   "faq.desktop.a": "No. On Mac and Windows, Doughnut Forge is still a one-time purchase from the Mac App Store or the Microsoft Store, and nothing in the app is locked.",
   "faq.platforms.q": "If I buy it on one platform, do I also get it on another?",
   "faq.platforms.a":
     "No. Each platform is a separate purchase from its own store: the App Store for iPhone and iPad, Google Play for Android, the Mac App Store for Mac and the Microsoft Store for Windows. Buying on iPhone and iPad does not include Android, Mac or Windows, and buying on Android, Mac or Windows does not include any other platform.",
-  "faq.platforms.aFree": "No. On {paid}, each platform is a separate purchase from its own store. On {free}, the in-app purchase restores on your other devices that use the same App Store or Google Play account, but a purchase on the App Store does not unlock Android, and a purchase on Google Play does not unlock iPhone or iPad.",
+  "faq.platforms.aFree": "No. On {paid}, each platform is a separate purchase from its own store. On {free}, the in-app purchase restores on your other devices that use the same {stores} account. A purchase in one store never unlocks the app from another store.",
   "faq.offline.q": "Do I need an account or an internet connection?",
   "faq.offline.a":
     "No. There is no account to create, and Doughnut Forge works entirely on your device, even without an internet connection. You only need a connection to download the app, to buy or restore the in-app purchase, or if you choose to send encrypted files over the internet.",
@@ -223,10 +223,10 @@ export default {
     "With this update, everyone's contact card carries new keys, so everyone's contact code changed once. It still has 16 characters in four groups. Share your contact card again with the people you write to, and compare codes again when a contact sends you their new card.",
   "faq.older.q": "Why can someone not open a file I sent?",
   "faq.older.a":
-    "Files and contact cards made with the latest version of Doughnut Forge do not open in older versions. Ask them to update the app once the update reaches their store. Every .vlt2 file made with an earlier version still opens in the latest one.",
+    "Files and contact cards made with the latest version of Doughnut Forge do not open in older versions. Ask them to update the app once the update reaches their store. Every file made with an earlier version (its name ends in .vlt2) still opens in the latest one.",
   "faq.quantum.q": "What does post-quantum encryption mean?",
   "faq.quantum.a":
-    "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones, to protect files and to sign them.",
+    "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Doughnut Forge is designed to resist attacks by future quantum computers. It uses newer methods built for this, published as standards by the US standards body NIST, together with long-trusted ones. It uses them to lock files, and to sign them, so the app can show which of your contacts made a file.",
 
   // Privacy page (the policy text itself is word for word from forge-privacy, in src/content/legal/privacy/)
   "meta.privacy.description":
@@ -247,7 +247,7 @@ export default {
   "press.facts.name": "Name",
   "press.facts.developer": "Developer",
   "press.facts.available": "Available for",
-  "press.facts.coming": "Coming soon",
+  "press.facts.coming": "Planned",
   "press.facts.price": "Price",
   "press.facts.priceValue": "Free to download on {free}, with one in-app purchase, paid once, to encrypt files, photos and videos. One-time purchase on {paid}. Never a subscription.",
   "press.facts.languages": "Languages",
@@ -302,12 +302,12 @@ export default {
     "On iPhone, a tab bar for Files, Text, Identity, Contacts and Settings. On iPhone and iPad, the app is hidden in the app switcher.",
   "v2.notes.desktop":
     "On Mac and Windows, zoom from 100% to 200%, and encrypting never replaces a file that is already there.",
-  "roadmap.format.title": "A new file format, with post-quantum signatures",
+  "roadmap.format.title": "A new file format that shows who sent a file",
   "roadmap.format.text":
-    "Every new file is signed by its sender with a classical and a post-quantum method. The app names a contact as the sender only when the file is signed with the keys on that contact's new card. Every .vlt2 file made with an earlier version still opens.",
+    "Every new file is signed by the person who made it, in a way designed to resist future quantum computers. The app names a contact as the sender only when the file is signed with the keys on that contact's new card. Every file made with an earlier version (its name ends in .vlt2) still opens.",
   "roadmap.android.title": "Doughnut Forge for Android",
   "roadmap.small.title": "Smaller improvements",
-  "roadmap.small.text": "Small fixes and improvements to Doughnut Forge 2.",
+  "roadmap.small.text": "Smaller improvements to Doughnut Forge.",
   "roadmap.audit.title": "Independent security audit",
   "roadmap.audit.text": "A security audit of Doughnut Forge by an independent outside expert.",
 
@@ -323,7 +323,7 @@ export default {
   "security.servers.title": "No servers, no account",
   "security.servers.text":
     "There are no Doughnut Forge servers and no account to create, so none of your files or details are stored anywhere else.",
-  "security.quantum.title": "Post-quantum encryption and signatures",
+  "security.quantum.title": "Encrypt and share privately, with protection designed for the quantum age.",
   "security.quantum.text":
     "Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones, to protect files and to sign them.",
   "security.keys.title": "Your keys stay with you",
@@ -359,7 +359,7 @@ export default {
   "technical.title": "Technical details",
   "technical.glance.title": "At a glance",
   "technical.glance.exchange": "Post-quantum hybrid key exchange and signatures",
-  "technical.glance.network": "No network connections of its own",
+  "technical.glance.network": "[PENDING-WHITEPAPER-PDF] [PENDING-ANDROID-PERMISSION] No network connections of its own",
   "technical.glance.servers": "No accounts or servers",
   "technical.toc": "On this page",
   "technical.back": "Back to contents",
@@ -381,7 +381,7 @@ export default {
   "technical.encryption.perItem.text": "every file, folder or message gets its own new random 256-bit key.",
   "technical.encryption.auth.label": "Authentication:",
   "technical.encryption.auth.text":
-    "the content and the item's header are authenticated. If they are changed, opening fails and nothing is saved.",
+    "every part of the item, and its signatures, are checked. If anything was changed, opening fails and nothing is kept, except the files already finished when you stop opening a folder part-way. On Mac and Windows, if the app crashes or is forced to quit while opening, part of the file can be left in the destination folder until the app next starts.",
   "technical.encryption.nonces.label": "Nonces:",
   "technical.encryption.nonces.text": "never reused under the same key. Each item has its own key and its own random values.",
   "technical.encryption.compression.label": "Compression:",
@@ -398,7 +398,7 @@ export default {
   "technical.keys.exchange.text":
     "each item's key is sealed separately for every recipient, and for you, using X25519 together with ML-KEM-1024. The two shared secrets are combined with HKDF-SHA-256. Contacts who have not yet shared their new contact card get ML-KEM-768.",
   "technical.keys.signatures.label": "Signatures:",
-  "technical.keys.signatures.text": "Ed25519 together with ML-DSA-87, on every item and every contact card. Both must be valid.",
+  "technical.keys.signatures.text": "Ed25519 together with ML-DSA-87, on every new item and every new contact card. Both must be valid.",
   "technical.keys.derivation.label": "Key derivation:",
   "technical.keys.derivation.text": "HKDF-SHA-256.",
   "technical.keys.recipients.label": "Several recipients:",
@@ -424,7 +424,7 @@ export default {
   "technical.unlock.windows.label": "Windows:",
   "technical.unlock.windows.text": "password.",
   "technical.unlock.android.label": "Android:",
-  "technical.unlock.android.text": "password, or fingerprint or face unlock if you turn it on.",
+  "technical.unlock.android.text": "password, or fingerprint or face unlock if you turn it on and the phone has a strong fingerprint or face sensor. The phone's PIN cannot be used instead.",
   "technical.unlock.ios.label": "iPhone and iPad:",
   "technical.unlock.ios.text":
     "password, or Face ID or Touch ID if you turn it on. Doughnut Forge then keeps your password in the iOS Keychain, on this device only, and only while the device is unlocked. iOS releases it after Face ID, Touch ID or the device passcode. The app's files use iOS Complete data protection.",
@@ -442,7 +442,7 @@ export default {
   "technical.visible.count.text":
     "visible only roughly: the count is rounded up to 4, 8, 16, 32 or 64, then to the next multiple of 64. The number of recipients known only by an old contact card shows exactly.",
   "technical.visible.size.label": "Size:",
-  "technical.visible.size.text": "visible, roughly (the compressed size).",
+  "technical.visible.size.text": "visible: the total size, from which the compressed size of the content can be worked out exactly.",
   "technical.visible.dates.label": "Dates:",
   "technical.visible.dates.text":
     "no dates can be read without the key. The file has the normal dates your computer gives any file.",
@@ -486,7 +486,7 @@ export default {
   "technical.limits.passcode.text":
     "on iPhone and iPad with Face ID or Touch ID turned on. iOS accepts the passcode in place of Face ID or Touch ID.",
   "technical.limits.recipients.label": "Recipients.",
-  "technical.limits.recipients.text": "Anyone who can open an item can save, copy or share what is inside.",
+  "technical.limits.recipients.text": "Anyone who can open an item can save, copy or share what is inside, and can show others who signed it.",
   "technical.limits.forward.label": "Anyone who later gets your recovery words.",
   "technical.limits.forward.text":
     "There is no forward secrecy and no revocation: files are sealed to each person's long-lived keys, so anyone who later gets an identity's 24 recovery words can open every file sent to it that they have a copy of. A leaked identity cannot be withdrawn; only a new identity protects later files.",

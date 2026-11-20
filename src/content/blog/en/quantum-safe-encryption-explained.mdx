@@ -57,11 +57,11 @@ So the box stays solid. It is the envelope that needs replacing.
 If no quantum computer can do this yet, why change anything now? Because encrypted data can be copied and kept. The NCSC describes the risk of "an attacker collecting and storing data today and decrypting it at some point in the future".
 
 <Flow
-  caption="The risk of collecting now and decrypting later: a file saved today needs a lock that will still hold years from now."
+  caption="The risk of collecting now and decrypting later: a file saved today needs a lock designed to hold years from now."
   steps={[
     { icon: FileLock, text: "A file is encrypted today", tone: "blue" },
     { icon: Hourglass, text: "Someone copies and keeps it", tone: "orange" },
-    { icon: ShieldCheck, text: "With a post-quantum lock, it stays locked", tone: "green" },
+    { icon: ShieldCheck, text: "A post-quantum lock is designed to keep it locked", tone: "green" },
   ]}
 />
 
@@ -85,6 +85,6 @@ Post-quantum methods are newer than the ones they replace. A common approach is 
 
 ## How Doughnut Forge uses it
 
-Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones. It uses a hybrid: when it protects the key to each file, folder or note, it pairs a long-trusted method with a post-quantum one, and both are needed to open it. That applies to every person a file is encrypted for, including you. The [technical details](/security/technical-details/) page names the exact methods it uses. [Get Doughnut Forge](https://doughnut-forge.app/download/).
+Doughnut Forge is designed to resist attacks by future quantum computers. It uses the post-quantum methods NIST published, together with long-trusted ones. It uses a hybrid: when it protects the key to each file, folder or note, it pairs a long-trusted method with a post-quantum one, and both are needed to open it. That applies to every person a file is encrypted for, including you. The [technical details](/security/technical-details/) page names the exact methods it uses. [Get Doughnut Forge](https://doughnut-forge.app/download/).
 
 Read more in [Offline file encryption: how it works and what it protects](/blog/offline-encryption-privacy/), or see how to [share encrypted files with someone you trust](/blog/share-encrypted-files/). The [features page](/features/) lists everything the app does.

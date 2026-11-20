@@ -39,5 +39,10 @@
   "faq.subscription.a": "Ei. Doughnut Forge on kertaostos, ei koskaan tilaus. Ostat sen kerran alustasi kaupasta, eikä mitään tarvitse uusia.",
   "faq.offline.a": "Et. Tiliä ei tarvitse luoda, ja Doughnut Forge toimii täysin laitteellasi, myös ilman internetyhteyttä. Yhteyttä tarvitset vain sovelluksen lataamiseen tai jos haluat lähettää salattuja tiedostoja internetin kautta.",
   "press.facts.priceValue": "Kertaostos jokaiselle alustalle, ei koskaan tilaus",
-  "technical.network.none": "Doughnut Forge ei muodosta omia verkkoyhteyksiä. Siinä ei ole tiliä, kirjautumista, analytiikkaa, kaatumisraportointia eikä päivitysten tarkistusta. Sovelluksen sisältökäytäntö ei salli sen näkymien ladata mitään internetistä."
+  "technical.network.none": "Doughnut Forge ei muodosta omia verkkoyhteyksiä. Siinä ei ole tiliä, kirjautumista, analytiikkaa, kaatumisraportointia eikä päivitysten tarkistusta. Sovelluksen sisältökäytäntö ei salli sen näkymien ladata mitään internetistä.",
+  "technical.glance.network": "Ei omia verkkoyhteyksiä",
+  "technical.visible.size.text": "suunnilleen näkyvissä (pakattu koko).",
+  "technical.encryption.auth.text": "sisältö ja kohteen otsake todennetaan. Jos niitä on muutettu, avaaminen epäonnistuu eikä mitään tallenneta.",
+  "technical.limits.recipients.text": "Kuka tahansa, joka voi avata kohteen, voi tallentaa, kopioida tai jakaa sen sisällön.",
+  "roadmap.small.text": "Pieniä korjauksia ja parannuksia Doughnut Forge 2:een."
 }

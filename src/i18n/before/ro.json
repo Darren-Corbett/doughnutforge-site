@@ -39,5 +39,10 @@
   "faq.subscription.a": "Nu. Doughnut Forge este o achiziție unică, niciodată un abonament. Îl cumperi o singură dată din magazinul platformei tale și nu ai nimic de reînnoit.",
   "faq.offline.a": "Nu. Nu există niciun cont de creat, iar Doughnut Forge funcționează în întregime pe dispozitivul tău, chiar și fără conexiune la internet. Ai nevoie de conexiune doar ca să descarci aplicația sau dacă alegi să trimiți fișiere criptate prin internet.",
   "press.facts.priceValue": "Achiziție unică pentru fiecare platformă, niciodată abonament",
-  "technical.network.none": "Doughnut Forge nu face nicio conexiune de rețea proprie. Nu există cont, autentificare, analize, raportare a blocărilor sau verificare a actualizărilor. Politica de conținut a aplicației nu permite ecranelor sale să încarce nimic de pe internet."
+  "technical.network.none": "Doughnut Forge nu face nicio conexiune de rețea proprie. Nu există cont, autentificare, analize, raportare a blocărilor sau verificare a actualizărilor. Politica de conținut a aplicației nu permite ecranelor sale să încarce nimic de pe internet.",
+  "technical.glance.network": "Nicio conexiune de rețea proprie",
+  "technical.visible.size.text": "vizibilă, aproximativ (dimensiunea comprimată).",
+  "technical.encryption.auth.text": "conținutul și antetul elementului sunt autentificate. Dacă sunt modificate, deschiderea eșuează și nu se salvează nimic.",
+  "technical.limits.recipients.text": "Oricine poate deschide un element poate salva, copia sau partaja ce conține.",
+  "roadmap.small.text": "Mici remedieri și îmbunătățiri pentru Doughnut Forge 2."
 }

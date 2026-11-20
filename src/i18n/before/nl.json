@@ -39,5 +39,10 @@
   "faq.subscription.a": "Nee. Doughnut Forge is een eenmalige aankoop, nooit een abonnement. U koopt de app één keer in de store voor uw platform, en er hoeft niets verlengd te worden.",
   "faq.offline.a": "Nee. U hoeft geen account aan te maken, en Doughnut Forge werkt volledig op uw apparaat, ook zonder internetverbinding. U hebt alleen een verbinding nodig om de app te downloaden, of als u versleutelde bestanden via internet wilt versturen.",
   "press.facts.priceValue": "Eenmalige aankoop per platform, nooit een abonnement",
-  "technical.network.none": "Doughnut Forge maakt zelf geen netwerkverbindingen. Er is geen account, geen aanmelding, geen analytics, geen crashrapportage en geen controle op updates. Het contentbeleid van de app staat niet toe dat de schermen iets van internet laden."
+  "technical.network.none": "Doughnut Forge maakt zelf geen netwerkverbindingen. Er is geen account, geen aanmelding, geen analytics, geen crashrapportage en geen controle op updates. Het contentbeleid van de app staat niet toe dat de schermen iets van internet laden.",
+  "technical.glance.network": "Geen eigen netwerkverbindingen",
+  "technical.visible.size.text": "ongeveer zichtbaar (de gecomprimeerde grootte).",
+  "technical.encryption.auth.text": "de inhoud en de header van het item worden geauthenticeerd. Als ze zijn gewijzigd, mislukt het openen en wordt er niets opgeslagen.",
+  "technical.limits.recipients.text": "Iedereen die een item kan openen, kan de inhoud bewaren, kopiëren of delen.",
+  "roadmap.small.text": "Kleine oplossingen en verbeteringen voor Doughnut Forge 2."
 }

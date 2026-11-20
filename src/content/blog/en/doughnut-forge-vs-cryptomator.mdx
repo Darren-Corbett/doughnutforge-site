@@ -44,16 +44,16 @@ import Send from "@lucide/astro/icons/send";
 - **You want to work on the files as normal.** Once the vault is unlocked, you use it like a USB stick: open, edit and save as usual.
 - **You want file names hidden too.** Cryptomator encrypts file names and hides the folder structure. It does not encrypt timestamps, the number of files and folders, or file sizes.
 - **You want free and open source.** Cryptomator is free on desktop and open source, under GPLv3. Its encryption libraries were audited by Cure53 in 2017.
-- **You use Linux or Android.** Cryptomator has a desktop app for Windows, macOS and Linux, and apps for iPhone and Android.
+- <Stage until="android">**You use Linux or Android.**</Stage><Stage from="android">**You use Linux.**</Stage> Cryptomator has a desktop app for Windows, macOS and Linux, and apps for iPhone and Android.
 - **You work as a team.** For teams, Cryptomator Hub lets each person unlock shared vaults with their own account.
 
 ## Where Doughnut Forge is the better choice
 
 - **You want to send a file to particular people.** You choose who can open each file or note, and each of them opens it with their own identity. There is no file password to send or keep in step.
 - **You want to send it any way you like.** A locked file can go by email, in a messaging app, in a cloud folder or on a USB stick. Only the people you chose can open it. They need Doughnut Forge to open it.
-- **You want an app made for iPhone and iPad.** Doughnut Forge is available for iPhone and iPad<Stage from="android">, Android</Stage>, Mac and Windows<Stage until="android">, and Android is coming</Stage>. On <Stage until="android">iPhone and iPad</Stage><Stage from="android">iPhone, iPad and Android</Stage> it encrypts files and text. Whole folders can be encrypted on a computer.
+- **You want an app made for iPhone and iPad.** Doughnut Forge is available for iPhone and iPad<Stage from="android">, Android</Stage>, Mac and Windows<Stage until="android">, and an Android version is planned</Stage>. On <Stage until="android">iPhone and iPad</Stage><Stage from="android">iPhone, iPad and Android</Stage> it encrypts <Stage until="mobileFree">files and text</Stage><Stage from="mobileFree">text, and files with the one in-app purchase</Stage>. Whole folders can be encrypted on a computer.
 - **You want no account and no servers.** Doughnut Forge needs no account and has no servers. It works entirely on your device, even without an internet connection.
-- **You think about the long term.** Doughnut Forge uses post-quantum encryption<Stage from="all3"> and signatures</Stage>.
+- **You think about the long term.** Doughnut Forge uses post-quantum encryption, designed to resist future quantum computers.<Stage from="all3"> Each new file is also signed by the person who made it, so the app can name that person when you have their new contact card.</Stage>
 - <Stage until="mobileFree">**You want a one-time purchase on each platform.** It is never a subscription.</Stage><Stage from="mobileFree">**You want no subscription.** Doughnut Forge is never a subscription: [pricing](/pricing/) shows how it is bought on each platform.</Stage>
 
 ## Things to know before you choose

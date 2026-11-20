@@ -39,5 +39,10 @@
   "faq.subscription.a": "Hayır. Doughnut Forge tek seferlik bir satın almadır, asla abonelik değildir. Platformunuzun mağazasından bir kez satın alırsınız ve yenilenecek bir şey yoktur.",
   "faq.offline.a": "Hayır. Oluşturulacak bir hesap yoktur ve Doughnut Forge, internet bağlantısı olmadan bile tamamen cihazınızda çalışır. Bağlantıya yalnızca uygulamayı indirmek için ya da şifreli dosyaları internet üzerinden göndermeyi seçerseniz ihtiyacınız olur.",
   "press.facts.priceValue": "Her platform için tek seferlik satın alma, asla abonelik değil",
-  "technical.network.none": "Doughnut Forge kendi başına hiçbir ağ bağlantısı kurmaz. Hesap, oturum açma, analiz, çökme raporlama ve güncelleme denetimi yoktur. Uygulamanın içerik politikası, ekranlarının internetten herhangi bir şey yüklemesine izin vermez."
+  "technical.network.none": "Doughnut Forge kendi başına hiçbir ağ bağlantısı kurmaz. Hesap, oturum açma, analiz, çökme raporlama ve güncelleme denetimi yoktur. Uygulamanın içerik politikası, ekranlarının internetten herhangi bir şey yüklemesine izin vermez.",
+  "technical.glance.network": "Kendi ağ bağlantısı yok",
+  "technical.visible.size.text": "yaklaşık olarak görünür (sıkıştırılmış boyut).",
+  "technical.encryption.auth.text": "içerik ve öğenin başlığı doğrulanır. Bunlar değiştirilirse açma başarısız olur ve hiçbir şey kaydedilmez.",
+  "technical.limits.recipients.text": "Bir öğeyi açabilen herkes içindekileri kaydedebilir, kopyalayabilir veya paylaşabilir.",
+  "roadmap.small.text": "Doughnut Forge 2 için küçük düzeltmeler ve iyileştirmeler."
 }

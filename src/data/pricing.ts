@@ -5,7 +5,7 @@
 import type { Language } from "../i18n";
 import { listOf } from "../i18n/list";
 import release from "./release.json" with { type: "json" };
-import { platforms, type PlatformId } from "./stores";
+import { platforms, storeNames, type PlatformId } from "./stores";
 
 const PHONES: readonly string[] = ["ios", "android"] satisfies PlatformId[];
 
@@ -22,9 +22,10 @@ const DEVICES: Record<PlatformId, string[]> = { ios: ["iPhone", "iPad"], android
 /** How each platform on sale is bought today */
 export const pricingNow = pricingSplit(platforms, release.storesWith3);
 
-/** The {free} and {paid} lists for the price lines, in a language */
+/** The {free} and {paid} lists for the price lines, and {stores}, the stores selling the in-app purchase ("App Store or Google Play"), in a language */
 export const pricingLists = (lang: Language) => {
   const { free, paid } = pricingNow;
   const names = (ids: string[]) => listOf(lang, ids.flatMap((id) => DEVICES[id as PlatformId]));
-  return { free: names(free), paid: names(paid) };
+  const stores = new Intl.ListFormat(lang.hreflang, { type: "disjunction" }).format(platforms.flatMap((p) => (p.status === "available" && free.includes(p.id) ? [storeNames[p.store]] : [])));
+  return { free: names(free), paid: names(paid), stores };
 };

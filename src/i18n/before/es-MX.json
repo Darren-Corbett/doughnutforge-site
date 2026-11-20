@@ -39,5 +39,10 @@
   "faq.subscription.a": "No. Doughnut Forge es un pago único, nunca una suscripción. Lo compras una vez en la tienda de tu plataforma y no hay nada que renovar.",
   "faq.offline.a": "No. No hay ninguna cuenta que crear, y Doughnut Forge funciona por completo en tu dispositivo, incluso sin conexión a internet. Solo necesitas conexión para descargar la app o si decides enviar archivos cifrados por internet.",
   "press.facts.priceValue": "Pago único para cada plataforma, nunca una suscripción",
-  "technical.network.none": "Doughnut Forge no establece conexiones de red por su cuenta. No hay cuenta, ni inicio de sesión, ni analíticas, ni informes de fallos, ni comprobación de actualizaciones. La política de contenido de la app no permite que sus pantallas carguen nada de internet."
+  "technical.network.none": "Doughnut Forge no establece conexiones de red por su cuenta. No hay cuenta, ni inicio de sesión, ni analíticas, ni informes de fallos, ni comprobación de actualizaciones. La política de contenido de la app no permite que sus pantallas carguen nada de internet.",
+  "technical.glance.network": "Sin conexiones de red propias",
+  "technical.visible.size.text": "visible, aproximadamente (el tamaño comprimido).",
+  "technical.encryption.auth.text": "el contenido y el encabezado del elemento están autenticados. Si se modifican, la apertura falla y no se guarda nada.",
+  "technical.limits.recipients.text": "Cualquiera que pueda abrir un elemento puede guardar, copiar o compartir su contenido.",
+  "roadmap.small.text": "Pequeñas correcciones y mejoras en Doughnut Forge 2."
 }

@@ -56,6 +56,7 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   // Buying goes through Apple and Google, and the Android permissions are not
   // settled: waits for the final white paper and android-permission.md
   "technical.network.none": "mobileFree",
+  "technical.glance.network": "mobileFree",
 
   // The first store with 3.0: what people meet first in the new version
   "faq.code.q": "first3",
@@ -64,8 +65,12 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   "faq.older.a": "first3",
   "faq.share.a": "first3",
   "technical.visible.older": "first3",
+  "roadmap.small.text": "first3",
 
   // Every store with 3.0: the new format's copy and the white paper
+  "technical.visible.size.text": "all3",
+  "technical.encryption.auth.text": "all3",
+  "technical.limits.recipients.text": "all3",
   "security.quantum.title": "all3",
   "security.quantum.text": "all3",
   "faq.quantum.a": "all3",

@@ -39,5 +39,10 @@
   "faq.subscription.a": "Nei. Doughnut Forge er et engangskjøp, aldri et abonnement. Du kjøper appen én gang i butikken for plattformen din, og det er ingenting å fornye.",
   "faq.offline.a": "Nei. Det er ingen konto å opprette, og Doughnut Forge fungerer utelukkende på enheten din, også uten internettilkobling. Du trenger bare en tilkobling for å laste ned appen, eller hvis du velger å sende krypterte filer over internett.",
   "press.facts.priceValue": "Engangskjøp for hver plattform, aldri et abonnement",
-  "technical.network.none": "Doughnut Forge oppretter ingen nettverkstilkoblinger på egen hånd. Det finnes ingen konto, ingen pålogging, ingen analyse, ingen krasjrapportering og ingen sjekk etter oppdateringer. Appens innholdspolicy tillater ikke at skjermene laster inn noe fra internett."
+  "technical.network.none": "Doughnut Forge oppretter ingen nettverkstilkoblinger på egen hånd. Det finnes ingen konto, ingen pålogging, ingen analyse, ingen krasjrapportering og ingen sjekk etter oppdateringer. Appens innholdspolicy tillater ikke at skjermene laster inn noe fra internett.",
+  "technical.glance.network": "Ingen egne nettverkstilkoblinger",
+  "technical.visible.size.text": "omtrent synlig (den komprimerte størrelsen).",
+  "technical.encryption.auth.text": "innholdet og elementets header autentiseres. Hvis de endres, mislykkes åpningen, og ingenting lagres.",
+  "technical.limits.recipients.text": "Alle som kan åpne et element, kan lagre, kopiere eller dele innholdet.",
+  "roadmap.small.text": "Små rettelser og forbedringer av Doughnut Forge 2."
 }

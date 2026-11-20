@@ -39,5 +39,10 @@
   "faq.subscription.a": "Ne. Doughnut Forge je jednorázový nákup, nikdy předplatné. Koupíte si ho jednou v obchodě pro svou platformu a nic není třeba prodlužovat.",
   "faq.offline.a": "Ne. Není potřeba zakládat žádný účet a Doughnut Forge funguje výhradně ve vašem zařízení, i bez připojení k internetu. Připojení potřebujete jen ke stažení aplikace, nebo když se rozhodnete posílat zašifrované soubory přes internet.",
   "press.facts.priceValue": "Jednorázový nákup pro každou platformu, nikdy předplatné",
-  "technical.network.none": "Doughnut Forge sám nenavazuje žádná síťová připojení. Nemá účet, přihlašování, analytiku, hlášení pádů ani kontrolu aktualizací. Zásady obsahu aplikace nedovolují, aby její obrazovky cokoli načítaly z internetu."
+  "technical.network.none": "Doughnut Forge sám nenavazuje žádná síťová připojení. Nemá účet, přihlašování, analytiku, hlášení pádů ani kontrolu aktualizací. Zásady obsahu aplikace nedovolují, aby její obrazovky cokoli načítaly z internetu.",
+  "technical.glance.network": "Žádná vlastní síťová připojení",
+  "technical.visible.size.text": "viditelná, přibližně (velikost po kompresi).",
+  "technical.encryption.auth.text": "obsah i hlavička položky jsou autentizované. Pokud se změní, otevření selže a nic se neuloží.",
+  "technical.limits.recipients.text": "Kdokoli, kdo může položku otevřít, může její obsah uložit, zkopírovat nebo sdílet.",
+  "roadmap.small.text": "Drobné opravy a vylepšení Doughnut Forge 2."
 }

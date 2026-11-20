@@ -74,7 +74,7 @@ When you receive their card, open **Contacts** and choose **Add contact**, then 
 
 Each contact has a short contact code. Ask the other person to read out the code shown on their own **Identity** screen, in person or on a call, and compare it with the code shown for them in your contacts. If they match, you have the right card.<Stage from="first3"> After the update to the new file format, everyone has a new code, so compare codes again when a contact sends you their new card.</Stage>
 
-This step matters most when the card reached you through a channel someone else could interfere with. Only add cards you received directly from the person they belong to. If a card does not match a contact you already have, the app refuses it.
+This step matters most when the card reached you through a channel someone else could interfere with. Only add cards you received directly from the person they belong to. <Stage until="first3">If a card does not match a contact you already have, the app refuses it.</Stage><Stage from="first3">The app cannot tell on its own whether a card really belongs to the person who sent it. Comparing the contact code is the only way to know.</Stage>
 
 <Shot
   src={iphoneEncrypt}
@@ -108,7 +108,7 @@ The other person opens the file in Doughnut Forge and decrypts it with their own
 
 - **"Could not open this file":** the file was not encrypted for the identity on this device, or it is damaged. Ask the sender to encrypt it for you again, and to check they chose the right contact.
 - **"The sender is not in your Contacts, or their contact card is out of date.":** the file still opens, with this warning and "If you were not expecting this, check with the person who sent it before you open or use it." The app names a contact as the sender only when the file is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown. The name is only as reliable as the card: compare the contact code.
-- **"Sender not shown":** shown for files made with an older version of Doughnut Forge, which does not say who sent them.
+- **"Sender not shown":** shown for files made with an older version of Doughnut Forge, for files from a contact whose card is out of date, and when opening a folder was stopped part-way. The line under it says which.
 
 </Stage>
 

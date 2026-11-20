@@ -39,5 +39,10 @@
   "faq.subscription.a": "Nem. A Doughnut Forge egyszeri vásárlás, soha nem előfizetés. Egyszer veszed meg a platformod áruházában, és nincs mit megújítani.",
   "faq.offline.a": "Nem. Nem kell fiókot létrehoznod, és a Doughnut Forge teljes egészében a te eszközödön működik, internetkapcsolat nélkül is. Kapcsolat csak az alkalmazás letöltéséhez kell, vagy ha úgy döntesz, hogy titkosított fájlokat küldesz az interneten keresztül.",
   "press.facts.priceValue": "Egyszeri vásárlás platformonként, soha nem előfizetés",
-  "technical.network.none": "A Doughnut Forge nem létesít saját hálózati kapcsolatot. Nincs fiók, nincs bejelentkezés, nincs analitika, nincs összeomlás-jelentés, és nincs frissítéskeresés. Az alkalmazás tartalomszabályzata nem engedi, hogy a képernyői bármit betöltsenek az internetről."
+  "technical.network.none": "A Doughnut Forge nem létesít saját hálózati kapcsolatot. Nincs fiók, nincs bejelentkezés, nincs analitika, nincs összeomlás-jelentés, és nincs frissítéskeresés. Az alkalmazás tartalomszabályzata nem engedi, hogy a képernyői bármit betöltsenek az internetről.",
+  "technical.glance.network": "Nincs saját hálózati kapcsolat",
+  "technical.visible.size.text": "nagyjából látható (a tömörített méret).",
+  "technical.encryption.auth.text": "a tartalom és az elem fejléce hitelesítve van. Ha megváltoztatják őket, a megnyitás sikertelen, és semmi sem kerül mentésre.",
+  "technical.limits.recipients.text": "Bárki, aki meg tud nyitni egy elemet, mentheti, másolhatja vagy megoszthatja a tartalmát.",
+  "roadmap.small.text": "Kisebb javítások és fejlesztések a Doughnut Forge 2-höz."
 }
