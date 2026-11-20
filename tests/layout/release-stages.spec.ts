@@ -76,7 +76,9 @@ test("every store has 3.0: the new format's copy and the white paper", async ({ 
   expect(technical.includes("Anyone who later gets your recovery words."), "forward secrecy limit").toBe(on);
   await page.goto("/security/");
   await expect(page.locator("main")).toContainText(await uiNow("en", "security.quantum.title"));
-  expect((await uiNow("en", "security.quantum.title")).includes("signatures")).toBe(on);
+  // The owner's stage-3 headline (20 November 2026), never "Post-quantum encryption and signatures"
+  expect((await uiNow("en", "security.quantum.title")).includes("protection designed for the quantum age")).toBe(on);
+  expect(await uiNow("en", "security.quantum.title")).not.toMatch(/encryption and signatures/i);
   // The white paper: its page, its PDF and every link to it
   await expect(page.locator('a[href="/security/white-paper/"]')).toHaveCount(on ? 2 : 0);
   for (const path of ["/security/white-paper/", "/security/white-paper/doughnut-forge-white-paper-en.pdf"]) {
@@ -107,7 +109,15 @@ test("posts: Android, the old-card line and post-quantum signatures follow their
   expect(share.includes("The sender is not in your Contacts, or their contact card is out of date."), "3.0 warning").toBe(reached("all3"));
   expect(share.includes("Sender not shown"), "older files").toBe(reached("all3"));
   expect(share.includes("Encrypted by someone not in your Contacts"), "2.0 warning").toBe(!reached("all3"));
-  expect((await text("/blog/doughnut-forge-vs-cryptomator/")).includes("post-quantum encryption and signatures"), "signatures").toBe(reached("all3"));
+  const cryptomator = await text("/blog/doughnut-forge-vs-cryptomator/");
+  expect(cryptomator.includes("Each new file is also signed by the person who made it"), "signatures").toBe(reached("all3"));
+  // Never the withdrawn opening "post-quantum encryption and signatures" (owner, 20 November 2026)
+  expect(cryptomator, "withdrawn wording").not.toContain("post-quantum encryption and signatures");
+  // Copy sweep A1-4: from Android, Cryptomator is no longer the choice for Android users
+  expect(cryptomator.includes("You use Linux or Android."), "Linux or Android").toBe(!reached("android"));
+  // Copy sweep A1-3 and A1-8: Android named only from its stage; the forged-card line follows 3.0
+  expect((await text("/blog/protect-personal-files-from-data-breaches/")).includes("Android phone"), "breaches post Android").toBe(reached("android"));
+  expect((await text("/blog/share-encrypted-files/")).includes("the app refuses it"), "refuses").toBe(!reached("first3"));
 });
 
 // From 3.0.0 the phone and tablet apps are free to download, with one in-app
@@ -136,10 +146,26 @@ test("mobile pricing stage: the site-wide price lines, the buying FAQ and the pr
   expect(asked("What does the in-app purchase unlock?"), "unlock FAQ").toBe(on);
   expect(asked("What happens if my purchase is refunded?"), "refund FAQ").toBe(on);
   expect(asked("How do I unlock file encryption on my other devices?"), "restore FAQ").toBe(on);
-  expect(asked("Does anything change on Mac or Windows?"), "desktop FAQ").toBe(on);
+  expect(asked("Does buying change on Mac or Windows?"), "desktop FAQ").toBe(on);
   expect(asked("I bought Doughnut Forge for iPhone or iPad before. Do I need to pay again?"), "earlier buyers FAQ").toBe(iosFree);
   await page.goto("/privacy/");
   expect((await page.locator("main").innerText()).includes("Apple or Google keeps a record of the purchase"), "privacy purchase line").toBe(on);
+});
+
+// A store is named only once it sells the app: with only the App Store selling
+// 3.0, the buying answers name no Google Play account (copy sweep A2-7)
+test("mobile pricing stage: Google Play is named only once Android is on sale", async ({ page }) => {
+  for (const path of ["/pricing/", "/support/"]) {
+    await page.goto(path);
+    if (!reached("android")) expect(await page.locator("main").innerText(), path).not.toContain("Google Play");
+  }
+});
+
+// Buying goes through Apple and Google, so the at-a-glance network tile waits with
+// the network paragraph for the final white paper (copy sweep A2-11)
+test("mobile pricing stage: the network tile is held with the network paragraph", async ({ page }) => {
+  await page.goto("/security/technical-details/");
+  expect((await page.locator("main").innerText()).includes("No network connections of its own")).toBe(!reached("mobileFree"));
 });
 
 test("no English page says pay once, or that every platform is a one-time purchase, once phones are free", async ({ page }) => {

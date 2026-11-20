@@ -99,7 +99,8 @@ test("press fact sheet lists phones first", async ({ page }) => {
   await page.goto("/press/");
   const fact = (term: string) => page.locator(".facts div", { has: page.locator("dt", { hasText: term }) }).locator("dd");
   await expect(fact("Available for")).toHaveText(ANDROID ? "iPhone and iPad, Android, Mac and Windows" : "iPhone and iPad, Mac and Windows");
-  await expect(page.locator(".facts dt", { hasText: "Coming soon" })).toHaveCount(ANDROID ? 0 : 1);
+  // "Planned", not "Coming soon", a promise about the future (copy sweep A2-20)
+  await expect(page.locator(".facts dt", { hasText: "Planned" })).toHaveCount(ANDROID ? 0 : 1);
 });
 
 // Copy covers phones and tablets too: no English page says the app works only
