@@ -23,7 +23,7 @@ export default {
   "home.lead": "Doughnut Forge 在您的 iPhone、iPad、Android 或電腦上鎖定檔案和文字，並讓您與信任的人分享。",
   "home.what.title": "Doughnut Forge 是什麼？",
   "home.what.text":
-    "Doughnut Forge 是一款適用於 Mac、iPhone、iPad、Android 和 Windows 的離線檔案加密應用程式。它在您自己的裝置上鎖定檔案和文字，您只與自己選擇的人分享。",
+    "Doughnut Forge 是一款適用於 Mac、iPhone、iPad、Android 和 Windows 的離線檔案加密 App。它在您自己的裝置上鎖定檔案和文字，您只與自己選擇的人分享。",
   "home.cta.primary": "取得 Doughnut Forge",
   "home.cta.secondary": "看看它能做什麼",
   "home.specimen.stranger": "其他任何人看到的",
@@ -173,7 +173,7 @@ export default {
   "press.lead": "撰寫 Doughnut Forge 相關內容所需的一切：說明、概況、圖示和螢幕截圖。",
   "press.about.title": "關於 Doughnut Forge",
   "press.about.short": "簡短說明",
-  "press.about.shortText": "Doughnut Forge 是一款適用於 Mac、iPhone、iPad、Android 和 Windows 的離線檔案加密應用程式。",
+  "press.about.shortText": "Doughnut Forge 是一款適用於 Mac、iPhone、iPad、Android 和 Windows 的離線檔案加密 App。",
   "press.about.long": "完整說明",
   "press.facts.title": "概況",
   "press.facts.name": "名稱",

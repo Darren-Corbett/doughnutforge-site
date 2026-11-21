@@ -34,7 +34,7 @@ export default {
   "home.phones.title": "最初からシンプル。",
   "home.phones.text": "短いようこそ画面のあと、選択は1つだけ：アイデンティティを作成するか、復元するか。パスワードを忘れても、復元用の単語でまたアプリを開けます。",
   "home.phones.altText": "iPhone版Doughnut Forge 2：暗号化するメモが入力されたテキスト画面",
-  "home.phones.altFile": "iPhone版Doughnut Forge 2：「ファイルを暗号化」と「ファイルを復号化」があるファイル画面",
+  "home.phones.altFile": "iPhone版Doughnut Forge 2：「ファイルを暗号化」と「ファイルを復号」があるファイル画面",
   "home.phones.altIdentity": "iPhone版Doughnut Forge 2：あなたの連絡先コードと「連絡先カードを共有」があるアイデンティティ画面",
   "home.v2.words.title": "復元用の単語とパスワードのリセット",
   "home.v2.words.text":
@@ -74,10 +74,10 @@ export default {
   "v2.privacy.text": "iPhoneとiPadでは、アプリスイッチャーに画面の内容の代わりにドーナツと「バックグラウンドでは非表示」が表示されます。",
   "features.desktop.title": "MacとWindowsで",
   "features.desktop.text":
-    "100%から200%まで拡大・縮小でき、画面は小さいウインドウにも収まります。ファイルグリッドでは、長い名前は中央で省略されるため、末尾まで確認できます。暗号化で既存のファイルが置き換えられることはありません。Macでは、「ファイルを暗号化」「ファイルを復号化」「ロック」がメニューバーにあり、キーボードショートカットも使えます。",
+    "100%から200%まで拡大・縮小でき、画面は小さいウインドウにも収まります。ファイルグリッドでは、長い名前は中央で省略されるため、末尾まで確認できます。暗号化で既存のファイルが置き換えられることはありません。Macでは、「ファイルを暗号化」「ファイルを復号」「ロック」がメニューバーにあり、キーボードショートカットも使えます。",
   "features.ios.altEncrypting": "iPhone版Doughnut Forge 2：ビデオを暗号化中、75%完了",
   "features.ios.altChoose": "iPhone版Doughnut Forge 2：ファイルを開ける人の選択画面。自分と連絡先3件が選ばれています",
-  "features.ios.altIpad": "iPad版Doughnut Forge 2：「ファイルを暗号化」と「ファイルを復号化」があるファイル画面",
+  "features.ios.altIpad": "iPad版Doughnut Forge 2：「ファイルを暗号化」と「ファイルを復号」があるファイル画面",
   "features.cta.title": "ファイルをプライベートに保つ準備はできましたか？",
   "features.cta.text": "自分のデバイス上でファイルとテキストを暗号化し、自分が選んだ相手とだけ共有できます。",
   "meta.pricing.title": "[PENDING-PRICING]",
