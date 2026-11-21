@@ -80,7 +80,7 @@ export default {
     "Zoomaa 100 %:sta 200 %:iin, ja näkymät mahtuvat pienempiin ikkunoihin. Tiedostoruudukossa pitkät nimet lyhennetään keskeltä, joten näet yhä, miten ne päättyvät. Salaus ei koskaan korvaa jo olemassa olevaa tiedostoa. Macissa Salaa tiedosto, Pura tiedoston salaus ja Lukitse löytyvät valikkoriviltä pikanäppäimineen.",
   "features.ios.altEncrypting": "Doughnut Forge 2 iPhonella: videota salataan, 75 % valmiina",
   "features.ios.altChoose":
-    "Doughnut Forge 2 iPhonella: valitaan, kuka voi avata tiedoston, ja valittuina ovat sinä ja kolme yhteyshenkilöä",
+    "Doughnut Forge 2 iPhonella: valitaan, kuka voi avata tiedoston, ja valittuina ovat sinä ja kolme yhteystietoa",
   "features.ios.altIpad":
     "Doughnut Forge 2 iPadilla: Tiedostot-näkymä, jossa ovat painikkeet Salaa tiedosto ja Pura tiedoston salaus",
   "features.cta.title": "Valmis pitämään tiedostosi yksityisinä?",

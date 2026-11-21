@@ -68,7 +68,7 @@ export default {
   "features.private.title": "Privát a kezdetektől",
   "features.offline.title": "Internet nélkül is működik",
   "features.longTerm.text": "Posztkvantum-titkosítást használ, amelyet úgy terveztek, hogy ellenálljon a jövőbeli kvantumszámítógépek támadásainak.",
-  "offline.text": "Nincs előfizetés, nincs fiók, nincsenek szerverek és nincs követés. A Doughnut Forge teljes egészében az eszközödön működik, internetkapcsolat nélkül is. A kulcsaid és a névjegyeid nálad maradnak, a te irányításod alatt.",
+  "offline.text": "Nincs előfizetés, nincs fiók, nincsenek szerverek és nincs követés. A Doughnut Forge teljes egészében az eszközödön működik, internetkapcsolat nélkül is. A kulcsaid és a kapcsolataid nálad maradnak, a te irányításod alatt.",
   "features.languages.label": "Nyelvek",
   "features.ios.title": "iPhone-on és iPaden",
   "features.ios.text": "Az iPhone és iPad készülékekre készült alkalmazás néhány saját funkciót is kínál.",
