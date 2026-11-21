@@ -117,7 +117,7 @@
   },
   "faq.quantum.q": {
     "en": "b430b5338c1b",
-    "text": "2ff309fb16f5"
+    "text": "c3ed3d602517"
   },
   "faq.recipient.a": {
     "en": "ed246da2765d",
@@ -217,7 +217,7 @@
   },
   "features.longTerm.text": {
     "en": "cc5e6f51c8b5",
-    "text": "993b535b7fee"
+    "text": "84d7977ba96b"
   },
   "features.offline.title": {
     "en": "46ad7ef790d7",
@@ -773,7 +773,7 @@
   },
   "security.quantum.text": {
     "en": "957956a17370",
-    "text": "a7fb87891ea9"
+    "text": "7720062d0b70"
   },
   "security.quantum.title": {
     "en": "e683c6934540",
@@ -1153,7 +1153,7 @@
   },
   "technical.glance.exchange": {
     "en": "1894881afc21",
-    "text": "69ae40225fca"
+    "text": "90ed81308cae"
   },
   "technical.glance.network": {
     "en": "e3910fbdac70",
@@ -1177,7 +1177,7 @@
   },
   "technical.keys.exchange.label": {
     "en": "7758f5134e68",
-    "text": "e46360f9007a"
+    "text": "cf55d0250a9b"
   },
   "technical.keys.exchange.text": {
     "en": "11b3f54233ec",
