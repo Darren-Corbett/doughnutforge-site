@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/zh-CN/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Formal: 您. Full-width punctuation (，。？：). A space between Latin text and Chinese (在 Doughnut Forge 中). Share is 分享 for files and notes (共享 only on the card button).",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "安全文件"
+    "Recovery words (label)": {
+      "text": "恢复单词",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "安全目录"
+    "recovery words (in a sentence)": {
+      "text": "输入您的恢复单词",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "安全文本"
+    "word (\"What is word 7?\")": {
+      "text": "第 {{n}} 个单词是什么？",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "身份"
+      "text": "身份",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "已添加联系人",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "联系人"
+      "text": "联系人",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "备份短语"
+    "Contact code": {
+      "text": "联系人代码",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "恢复身份"
+    "Encrypt": {
+      "text": "加密",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "导出为 PDF"
+    "Decrypt": {
+      "text": "解密",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "已加密",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "文件已加密",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "解密后的文件",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "文件已解密",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "文件",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "文件夹",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "笔记已加密",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "笔记已解密",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "密码"
+      "text": "密码",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "加密文件"
+    "Tab: Files": {
+      "text": "文件",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "解密文件"
+    "Tab: Text": {
+      "text": "文本",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "加密文件"
+    "Tab: Identity": {
+      "text": "身份",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "分享名片"
+    "Tab: Contacts": {
+      "text": "联系人",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "导入联系人名片"
+    "Tab: Settings": {
+      "text": "设置",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "分享您的联系人卡片，别人就能向您发送只有您能打开的文件和笔记。"
+    "Share card (the share sheet's button)": {
+      "text": "共享名片",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "您的联系人卡片可以放心分享。它无法用来打开发送给您的任何内容。"
+    "Share contact card (the Identity screen's button)": {
+      "text": "分享联系人卡片",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge 完全在您的设备上运行。您的密码和密钥绝不会存储在服务器上或通过网络发送。"
+    "Shared": {
+      "text": "已分享",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "您的密钥完全是私人的，一旦丢失将无法恢复。您必须将恢复短语保存在安全的地方，因为这是恢复访问权限的唯一方法。"
+    "Done": {
+      "text": "完成",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "为此设备设置一个容易记住的密码。此密码可解锁应用，让您在本地安全地加密和解密数据。"
+    "Close": {
+      "text": "关闭",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "使用安全生成的 24 个单词备份短语创建新身份。"
+    "Cancel": {
+      "text": "取消",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "使用您的 24 个单词备份短语恢复现有身份。"
+    "Retry": {
+      "text": "重试",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "只有发送给您时它才会打开，并显示发件人。"
+    "Try again (in a sentence)": {
+      "text": "发生了意外问题。请重试。",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "语言"
+    "You (the You chip)": {
+      "text": "您",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "只有您和您选择的人可以在 Doughnut Forge 中打开加密副本。加密后，通过分享选项选择保存或发送位置。",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "请保持应用打开，直到完成。",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Doughnut Forge 无法启动",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "要将 {{alias}} 从您的联系人中移除吗？您将无法再为对方加密文件。对方发给您的文件仍可打开，并会显示未知发件人警告。",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "原件保留在原处，不会有任何更改。",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "无法完成",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "应用无法读取或保存文件。请检查文件或文件夹是否仍在原处，以及是否有可用空间，然后重试。",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "请选择您自己的文件夹，例如“文稿”中的文件夹。无法添加整个磁盘、个人文件夹和系统文件夹。",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. 正在准备",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. 正在加密",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. 正在解密",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. 正在保存文件",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "抗量子 (quantum-resistant)",
+      "approved": "抗量子加密和签名"
     }
   }
 }

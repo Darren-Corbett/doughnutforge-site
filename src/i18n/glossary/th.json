@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/th/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Polite and neutral: คุณ. No full stop at the end of a sentence; a space separates sentences. โปรด (please) before a request.",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "ไฟล์ที่ปลอดภัย"
+    "Recovery words (label)": {
+      "text": "คำกู้คืน",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "ไดเรกทอรีที่ปลอดภัย"
+    "recovery words (in a sentence)": {
+      "text": "ป้อนคำกู้คืนของคุณ",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "ข้อความที่ปลอดภัย"
+    "word (\"What is word 7?\")": {
+      "text": "คำที่ {{n}} คืออะไร?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "ข้อมูลประจำตัว"
+      "text": "ข้อมูลประจำตัว",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "เพิ่มผู้ติดต่อแล้ว",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "ผู้ติดต่อ"
+      "text": "ผู้ติดต่อ",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "วลีสำรองข้อมูล"
+    "Contact code": {
+      "text": "รหัสผู้ติดต่อ",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "กู้คืนข้อมูลประจำตัว"
+    "Encrypt": {
+      "text": "เข้ารหัส",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "ส่งออก PDF สำหรับสำรองข้อมูล"
+    "Decrypt": {
+      "text": "ถอดรหัส",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "เข้ารหัสแล้ว",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "เข้ารหัสไฟล์แล้ว",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "ไฟล์ที่ถอดรหัสแล้ว",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "ถอดรหัสไฟล์แล้ว",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "ไฟล์",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "โฟลเดอร์",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "เข้ารหัสบันทึกแล้ว",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "ถอดรหัสบันทึกแล้ว",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "รหัสผ่าน"
+      "text": "รหัสผ่าน",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "เข้ารหัสไฟล์"
+    "Tab: Files": {
+      "text": "ไฟล์",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "ถอดรหัสไฟล์"
+    "Tab: Text": {
+      "text": "ข้อความ",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "การเข้ารหัสไฟล์"
+    "Tab: Identity": {
+      "text": "ข้อมูลประจำตัว",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "แชร์นามบัตร"
+    "Tab: Contacts": {
+      "text": "ผู้ติดต่อ",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "นำเข้านามบัตร"
+    "Tab: Settings": {
+      "text": "การตั้งค่า",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "แชร์นามบัตรของคุณ เพื่อให้ผู้อื่นส่งไฟล์และบันทึกที่มีเพียงคุณเท่านั้นที่เปิดได้มาให้คุณ"
+    "Share card (the share sheet's button)": {
+      "text": "แชร์บัตร",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "นามบัตรของคุณแชร์ได้อย่างปลอดภัย ไม่สามารถใช้เปิดสิ่งใดก็ตามที่ส่งถึงคุณได้"
+    "Share contact card (the Identity screen's button)": {
+      "text": "แชร์นามบัตร",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge ทำงานบนอุปกรณ์ของคุณทั้งหมด รหัสผ่านและกุญแจของคุณจะไม่ถูกเก็บไว้บนเซิร์ฟเวอร์หรือส่งผ่านเครือข่าย"
+    "Shared": {
+      "text": "แชร์แล้ว",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "คีย์ของคุณมีความเป็นส่วนตัวโดยสมบูรณ์และไม่สามารถกู้คืนได้หากสูญหาย คุณต้องเก็บวลีสำรองข้อมูลไว้ในที่ปลอดภัย เนื่องจากเป็นวิธีเดียวในการกู้คืนการเข้าถึงของคุณ"
+    "Done": {
+      "text": "เสร็จสิ้น",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "ตั้งรหัสผ่านที่จำง่ายสำหรับอุปกรณ์นี้ เพื่อปลดล็อคแอปพลิเคชันและช่วยให้คุณสามารถเข้ารหัสและถอดรหัสข้อมูลในเครื่องได้อย่างปลอดภัย"
+    "Close": {
+      "text": "ปิด",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "สร้างข้อมูลประจำตัวใหม่ด้วยวลีสำรองข้อมูล 24 คำที่สร้างขึ้นอย่างปลอดภัย"
+    "Cancel": {
+      "text": "ยกเลิก",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "กู้คืนข้อมูลประจำตัวที่มีอยู่โดยใช้วลีสำรองข้อมูล 24 คำของคุณ"
+    "Retry": {
+      "text": "ลองใหม่",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "จะเปิดได้ก็ต่อเมื่อส่งถึงคุณ และแสดงว่ามาจากใคร"
+    "Try again (in a sentence)": {
+      "text": "เกิดข้อผิดพลาดที่ไม่คาดคิด โปรดลองอีกครั้ง",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "ภาษา"
+    "You (the You chip)": {
+      "text": "คุณ",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "มีเพียงคุณและคนที่คุณเลือกเท่านั้นที่เปิดสำเนาที่เข้ารหัสได้ ใน Doughnut Forge หลังจากเข้ารหัสแล้ว ให้เลือกสถานที่ที่จะบันทึกหรือส่งผ่านตัวเลือกการแชร์",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "เปิดแอปไว้จนกว่าจะเสร็จ",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "ไม่สามารถเริ่ม Doughnut Forge ได้",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "นำ {{alias}} ออกจากผู้ติดต่อของคุณใช่ไหม คุณจะเข้ารหัสไฟล์ให้บุคคลนี้ไม่ได้อีก ไฟล์ที่บุคคลนี้ส่งให้คุณยังเปิดได้ โดยมีคำเตือนผู้ส่งที่ไม่รู้จัก",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "ต้นฉบับยังอยู่ที่เดิม โดยไม่มีการเปลี่ยนแปลง",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "ทำให้เสร็จไม่ได้",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "แอปไม่สามารถอ่านหรือบันทึกไฟล์ได้ โปรดตรวจสอบว่าไฟล์หรือโฟลเดอร์ยังอยู่ และมีพื้นที่ว่าง แล้วลองอีกครั้ง",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "เลือกโฟลเดอร์ของคุณเอง เช่น โฟลเดอร์ในเอกสาร ไม่สามารถเพิ่มทั้งไดรฟ์ โฟลเดอร์ผู้ใช้ของคุณ และโฟลเดอร์ระบบได้",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. กำลังเตรียม",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. กำลังเข้ารหัส",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. กำลังถอดรหัส",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. กำลังบันทึกไฟล์",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "แบบทนทานต่อควอนตัม (quantum-resistant)",
+      "approved": "การเข้ารหัสและลายเซ็นแบบทนทานต่อควอนตัม"
     }
   }
 }

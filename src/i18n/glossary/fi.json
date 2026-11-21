@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/fi/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Informal: sinä, as Finnish apps do (Anna, Yritä uudelleen). The name takes case endings with no hyphen: Doughnut Forgessa, Doughnut Forgea. \"Decrypt\" is two words (Pura salaus), so its forms are \"salaus purettu\", \"purettu tiedosto\".",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "Turvallinen tiedosto"
+    "Recovery words (label)": {
+      "text": "Palautussanat",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "Turvallinen hakemisto"
+    "recovery words (in a sentence)": {
+      "text": "Anna palautussanasi",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "Turvallinen teksti"
+    "word (\"What is word 7?\")": {
+      "text": "Mikä on sana {{n}}?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "Henkilöllisyys"
+      "text": "Henkilöllisyys",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "Yhteystieto lisätty",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "Yhteystiedot"
+      "text": "Yhteystiedot",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "Varmuuskopiolauseke"
+    "Contact code": {
+      "text": "Yhteystietokoodi",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "Palauta henkilöllisyys"
+    "Encrypt": {
+      "text": "Salaa",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "Vie varmuuskopio PDF"
+    "Decrypt": {
+      "text": "Pura salaus",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "Salattu",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "Tiedosto salattu",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "Purettu tiedosto",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "Tiedoston salaus purettu",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "Tiedosto",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "Kansio",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "Muistiinpano salattu",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "Muistiinpanon salaus purettu",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "Salasana"
+      "text": "Salasana",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "Salaa tiedosto"
+    "Tab: Files": {
+      "text": "Tiedostot",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "Pura tiedoston salaus"
+    "Tab: Text": {
+      "text": "Teksti",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "Tiedoston salaus"
+    "Tab: Identity": {
+      "text": "Henkilöllisyys",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "Jaa yhteystietokortti"
+    "Tab: Contacts": {
+      "text": "Yhteystiedot",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "Tuo yhteystietokortti"
+    "Tab: Settings": {
+      "text": "Asetukset",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "Jaa yhteystietokorttisi, jotta muut voivat lähettää sinulle tiedostoja ja muistiinpanoja, jotka vain sinä voit avata."
+    "Share card (the share sheet's button)": {
+      "text": "Jaa kortti",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "Yhteystietokorttisi on turvallista jakaa. Sillä ei voi avata mitään sinulle lähetettyä."
+    "Share contact card (the Identity screen's button)": {
+      "text": "Jaa yhteystietokortti",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge toimii täysin laitteellasi. Salasanaasi ja avaimiasi ei koskaan tallenneta palvelimelle tai lähetetä verkkoon."
+    "Shared": {
+      "text": "Jaettu",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "Avaimet ovat täysin yksityisiä, eikä niitä voi palauttaa, jos ne katoavat. Sinun on säilytettävä palautuslause turvallisessa paikassa, sillä se on ainoa tapa palauttaa käyttöoikeutesi."
+    "Done": {
+      "text": "Valmis",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "Aseta tälle laitteelle mieleenpainuva salasana. Se avaa sovelluksen ja antaa sinun salata ja purkaa tietoja turvallisesti paikallisesti."
+    "Close": {
+      "text": "Sulje",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "Luo uusi henkilöllisyys turvallisesti luodulla 24 sanan varmuuskopiolausekkeella."
+    "Cancel": {
+      "text": "Peruuta",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "Palauta olemassa oleva henkilöllisyys 24 sanan varmuuskopiolausekkeellasi."
+    "Retry": {
+      "text": "Yritä uudelleen",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "Se aukeaa vain, jos se lähetettiin sinulle, ja näyttää, kuka sen lähetti."
+    "Try again (in a sentence)": {
+      "text": "Tapahtui jotain odottamatonta. Yritä uudelleen.",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "Kieli"
+    "You (the You chip)": {
+      "text": "Sinä",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "Vain sinä ja valitsemasi henkilöt voivat avata salatun kopion Doughnut Forgessa. Kun salaus on valmis, valitse, minne haluat tallentaa tai lähettää sen jakamisvalikosta.",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "Pidä sovellus auki, kunnes tämä on valmis.",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Doughnut Forgea ei voitu käynnistää",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "Poistetaanko {{alias}} yhteystiedoistasi? Et voi enää salata tiedostoja hänelle. Hänen lähettämänsä tiedostot avautuvat yhä, ja niissä näkyy varoitus tuntemattomasta lähettäjästä.",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "Alkuperäinen pysyy paikallaan muuttumattomana.",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "Ei voitu viedä loppuun",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "Sovellus ei voinut lukea tai tallentaa tiedostoa. Tarkista, että tiedosto tai kansio on yhä olemassa ja että vapaata tilaa on, ja yritä sitten uudelleen.",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "Valitse oma kansio, esimerkiksi Dokumentit-kansiosta. Kokonaista asemaa, kotikansiota tai järjestelmäkansioita ei voi lisätä.",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. Valmistellaan",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. Salataan",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. Puretaan salausta",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. Tallennetaan tiedostoa",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "post-kvantti-",
+      "approved": "post-kvanttisalaus ja -allekirjoitukset"
     }
   }
 }

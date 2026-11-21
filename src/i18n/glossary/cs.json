@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/cs/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Formal: vy (Zadejte, Zkuste to znovu). Numbers in questions take \"č.\" (slovo č. {{n}}). Past forms are short passives (Soubor zašifrován), so they do not depend on who acted.",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "Bezpečný soubor"
+    "Recovery words (label)": {
+      "text": "Obnovovací slova",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "Zabezpečená složka"
+    "recovery words (in a sentence)": {
+      "text": "Zadejte obnovovací slova",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "Zabezpečený text"
+    "word (\"What is word 7?\")": {
+      "text": "Jaké je slovo č. {{n}}?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "Identita"
+      "text": "Identita",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "Kontakt přidán",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "Kontakty"
+      "text": "Kontakty",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "Záložní fráze"
+    "Contact code": {
+      "text": "Kód kontaktu",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "Obnovit identitu"
+    "Encrypt": {
+      "text": "Šifrovat",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "Exportovat záložní PDF"
+    "Decrypt": {
+      "text": "Dešifrovat",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "Zašifrováno",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "Soubor zašifrován",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "Dešifrovaný soubor",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "Soubor dešifrován",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "Soubor",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "Složka",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "Poznámka zašifrována",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "Poznámka dešifrována",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "Heslo"
+      "text": "Heslo",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "Zašifrovat soubor"
+    "Tab: Files": {
+      "text": "Soubory",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "Dešifrovat soubor"
+    "Tab: Text": {
+      "text": "Texty",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "Šifrování souboru"
+    "Tab: Identity": {
+      "text": "Identita",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "Sdílet vizitku"
+    "Tab: Contacts": {
+      "text": "Kontakty",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "Importovat kontaktní kartu"
+    "Tab: Settings": {
+      "text": "Nastavení",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "Sdílejte svou kontaktní kartu, aby vám lidé mohli posílat soubory a poznámky, které otevřete jen vy."
+    "Share card (the share sheet's button)": {
+      "text": "Sdílet kartu",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "Vaši kontaktní kartu můžete bezpečně sdílet. Nelze ji použít k otevření ničeho, co vám bylo posláno."
+    "Share contact card (the Identity screen's button)": {
+      "text": "Sdílet kontaktní kartu",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge funguje výhradně ve vašem zařízení. Vaše heslo a klíče se nikdy neukládají na server ani se neposílají po síti."
+    "Shared": {
+      "text": "Sdíleno",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "Vaše klíče jsou zcela soukromé a v případě ztráty je nelze obnovit. Záložní frázi musíte uchovávat na bezpečném místě, protože je to jediný způsob, jak obnovit přístup."
+    "Done": {
+      "text": "Hotovo",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "Nastavte si zapamatovatelné heslo pro toto zařízení. To odemkne aplikaci a umožní vám bezpečně šifrovat a dešifrovat data lokálně."
+    "Close": {
+      "text": "Zavřít",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "Vytvořit novou identitu pomocí bezpečně vygenerované 24slovné záložní fráze."
+    "Cancel": {
+      "text": "Zrušit",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "Obnovte stávající identitu pomocí vaší 24slovné záložní fráze."
+    "Retry": {
+      "text": "Opakovat",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "Otevře se pouze v případě, že byl zaslán vám, a ukáže, od koho pochází."
+    "Try again (in a sentence)": {
+      "text": "Stalo se něco neočekávaného. Zkuste to znovu.",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "Jazyk"
+    "You (the You chip)": {
+      "text": "Vy",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "Zašifrovanou kopii můžete otevřít jen vy a lidé, které vyberete, a to v Doughnut Forge. Po zašifrování vyberte, kam ji chcete uložit nebo odeslat pomocí možností sdílení.",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "Nechte aplikaci otevřenou, dokud nebude hotovo.",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Doughnut Forge se nepodařilo spustit",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "Odstranit {{alias}} z vašich kontaktů? Už pro tento kontakt nebudete moci šifrovat soubory. Soubory, které vám poslal, se stále otevřou, s upozorněním na neznámého odesílatele.",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "Originál zůstane tam, kde je, beze změny.",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "Nelze dokončit",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "Aplikace nemohla přečíst nebo uložit soubor. Zkontrolujte, zda soubor nebo složka stále existuje a zda je volné místo, a zkuste to znovu.",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "Vyberte vlastní složku, například ve složce Dokumenty. Celý disk, domovskou složku a systémové složky přidat nelze.",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. Příprava",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. Šifrování",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. Dešifrování",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. Ukládání souboru",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "postkvantový",
+      "approved": "postkvantové šifrování a podpisy"
     }
   }
 }

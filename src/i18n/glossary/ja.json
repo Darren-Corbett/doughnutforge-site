@@ -1,97 +1,233 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ja/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Polite: です/ます, and the command form ...してください. \"You\" is mostly left out; the You chip is 自分. Decrypt is 復号 (one old text has 復号化); the Decrypt file button is ファイルを復号, so quote it as 「ファイルを復号」, not 「ファイルを復号化」. Full-width ？ and ：. A space between Latin text and Japanese (Doughnut Forge を).",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "セキュアファイル"
+    "Recovery words (label)": {
+      "text": "復元用の単語",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "セキュアフォルダ"
+    "recovery words (in a sentence)": {
+      "text": "復元用の単語を入力してください",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "セキュアテキスト"
+    "word (\"What is word 7?\")": {
+      "text": "{{n}}番目の単語は何ですか？",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "アイデンティティ"
+      "text": "アイデンティティ",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "連絡先を追加しました",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "連絡先"
+      "text": "連絡先",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "バックアップフレーズ"
+    "Contact code": {
+      "text": "連絡先コード",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "アイデンティティを復元"
+    "Encrypt": {
+      "text": "暗号化",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "PDFでエクスポート"
+    "Decrypt": {
+      "text": "復号",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "暗号化済み",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "ファイルを暗号化しました",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "復号化されたファイル",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "ファイルを復号しました",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "ファイル",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "フォルダ",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "メモを暗号化しました",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "メモを復号しました",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "パスワード"
+      "text": "パスワード",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "ファイルを暗号化"
+    "Tab: Files": {
+      "text": "ファイル",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "ファイルを復号化"
+    "Tab: Text": {
+      "text": "テキスト",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "ファイルの暗号化"
+    "Tab: Identity": {
+      "text": "アイデンティティ",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "連絡先カードの共有"
+    "Tab: Contacts": {
+      "text": "連絡先",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "連絡先カードをインポート"
+    "Tab: Settings": {
+      "text": "設定",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "コンタクトカードを共有すると、あなただけが開けるファイルやメモを送ってもらえます。"
+    "Share card (the share sheet's button)": {
+      "text": "カードを共有",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "コンタクトカードは安全に共有できます。あなた宛てに送られたものを、このカードで開くことはできません。"
+    "Share contact card (the Identity screen's button)": {
+      "text": "連絡先カードを共有",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge は完全にデバイス上で動作します。パスワードとキーがサーバーに保存されたり、ネットワーク経由で送信されたりすることはありません。"
+    "Decrypt file (button)": {
+      "text": "ファイルを復号"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "鍵は完全にプライベートであり、紛失した場合は復元できません。アクセスを回復する唯一の方法であるため、復元フレーズは安全な場所に保管してください。"
+    "Shared": {
+      "text": "共有しました",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "このデバイス用に覚えやすいパスワードを設定してください。これによりアプリのロックが解除され、ローカルで安全にデータを暗号化・復号できるようになります。"
+    "Done": {
+      "text": "完了",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "安全に生成された24単語のバックアップフレーズを使用して新しいアイデンティティを作成します。"
+    "Close": {
+      "text": "閉じる",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "24単語のバックアップフレーズを使用して既存のアイデンティティを復元します。"
+    "Cancel": {
+      "text": "キャンセル",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "あなた宛てに送信された場合のみ開き、送信元が表示されます。"
+    "Retry": {
+      "text": "再試行",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "言語"
+    "Try again (in a sentence)": {
+      "text": "予期しない問題が発生しました。もう一度お試しください。",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
+    },
+    "You (the You chip)": {
+      "text": "自分",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "暗号化したコピーは、あなたと選んだ相手だけが Doughnut Forge で開けます。暗号化した後、共有メニューから保存先または送信先を選択します。",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "完了するまでアプリを開いたままにしてください。",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Doughnut Forge を起動できませんでした",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "{{alias}} を連絡先から削除しますか？この人のためにファイルを暗号化できなくなります。この人から送られたファイルは引き続き開けますが、不明な送信元の警告が表示されます。",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "元のファイルやフォルダは、同じ場所にそのまま残ります。",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "完了できませんでした",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "アプリがファイルを読み取りまたは保存できませんでした。ファイルまたはフォルダがまだあること、空き容量があることを確認してから、もう一度お試しください。",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "書類フォルダ内など、ご自身のフォルダを選んでください。ドライブ全体、ホームフォルダ、システムフォルダは追加できません。",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. 準備中",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. 暗号化中",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. 復号中",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. ファイルを保存中",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "耐量子 (quantum-resistant)",
+      "approved": "耐量子暗号化と署名"
     }
   }
 }

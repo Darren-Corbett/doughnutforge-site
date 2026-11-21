@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/hi/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Formal: आप (दर्ज करें, प्रयास करें). Encrypt and decrypt are the English loanwords एन्क्रिप्ट / डिक्रिप्ट; file and folder are फ़ाइल / फ़ोल्डर. Sentences end with ।.",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "सुरक्षित फ़ाइल"
+    "Recovery words (label)": {
+      "text": "पुनर्प्राप्ति शब्द",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "सुरक्षित निर्देशिका"
+    "recovery words (in a sentence)": {
+      "text": "अपने पुनर्प्राप्ति शब्द दर्ज करें",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "सुरक्षित टेक्स्ट"
+    "word (\"What is word 7?\")": {
+      "text": "शब्द {{n}} क्या है?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "पहचान"
+      "text": "पहचान",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "संपर्क जोड़ा गया",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "संपर्क"
+      "text": "संपर्क",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "बैकअप वाक्यांश"
+    "Contact code": {
+      "text": "संपर्क कोड",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "पहचान पुनर्स्थापित करें"
+    "Encrypt": {
+      "text": "एन्क्रिप्ट करें",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "बैकअप PDF निर्यात करें"
+    "Decrypt": {
+      "text": "डिक्रिप्ट करें",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "एन्क्रिप्टेड",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "फ़ाइल एन्क्रिप्ट हो गई",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "डिक्रिप्टेड फ़ाइल",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "फ़ाइल डिक्रिप्ट हो गई",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "फ़ाइल",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "फ़ोल्डर",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "नोट एन्क्रिप्ट हो गया",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "नोट डिक्रिप्ट हो गया",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "पासवर्ड"
+      "text": "पासवर्ड",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "फ़ाइल एन्क्रिप्ट करें"
+    "Tab: Files": {
+      "text": "फ़ाइलें",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "फ़ाइल डिक्रिप्ट करें"
+    "Tab: Text": {
+      "text": "टेक्स्ट",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "एक फ़ाइल को एन्क्रिप्ट करना"
+    "Tab: Identity": {
+      "text": "पहचान",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "संपर्क कार्ड साझा करें"
+    "Tab: Contacts": {
+      "text": "संपर्क",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "संपर्क कार्ड आयात करें"
+    "Tab: Settings": {
+      "text": "सेटिंग्स",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "अपना संपर्क कार्ड साझा करें, ताकि लोग आपको ऐसी फ़ाइलें और नोट्स भेज सकें जिन्हें केवल आप खोल सकते हैं।"
+    "Share card (the share sheet's button)": {
+      "text": "कार्ड साझा करें",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "आपका संपर्क कार्ड साझा करना सुरक्षित है। इससे आपको भेजी गई कोई भी चीज़ नहीं खोली जा सकती।"
+    "Share contact card (the Identity screen's button)": {
+      "text": "संपर्क कार्ड साझा करें",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "डोनट फोर्ज पूरी तरह से आपके डिवाइस पर काम करता है। आपका पासवर्ड और कुंजियाँ कभी भी सर्वर पर संग्रहीत या नेटवर्क पर नहीं भेजी जाती हैं।"
+    "Shared": {
+      "text": "साझा किया गया",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "आपकी कुंजियाँ पूरी तरह से निजी हैं और खो जाने पर पुनर्प्राप्त नहीं की जा सकतीं। आपको अपना बैकअप वाक्यांश सुरक्षित स्थान पर रखना चाहिए, क्योंकि आपकी पहुँच पुनर्स्थापित करने का यह एकमात्र तरीका है।"
+    "Done": {
+      "text": "हो गया",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "इस डिवाइस के लिए एक यादगार पासवर्ड सेट करें। यह एप्लिकेशन को अनलॉक करता है, जिससे आप डेटा को स्थानीय रूप से सुरक्षित रूप से एन्क्रिप्ट और डिक्रिप्ट कर सकते हैं।"
+    "Close": {
+      "text": "बंद करें",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "सुरक्षित रूप से जनरेट किए गए 24-शब्दों के बैकअप वाक्यांश के साथ एक नई पहचान बनाएं।"
+    "Cancel": {
+      "text": "रद्द करें",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "अपने 24-शब्दों के बैकअप वाक्यांश का उपयोग करके मौजूदा पहचान पुनर्स्थापित करें।"
+    "Retry": {
+      "text": "पुनः प्रयास करें",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "यह तभी खुलता है जब यह आपको भेजा गया हो, और दिखाता है कि यह किसने भेजा है।"
+    "Try again (in a sentence)": {
+      "text": "कुछ अनपेक्षित गलत हो गया। फिर से प्रयास करें।",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "भाषा"
+    "You (the You chip)": {
+      "text": "आप",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "Doughnut Forge में एन्क्रिप्ट की गई कॉपी केवल आप और आपके चुने हुए लोग खोल सकते हैं। एन्क्रिप्ट करने के बाद, शेयर विकल्पों में से चुनें कि इसे कहाँ सहेजना है या भेजना है।",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "यह पूरा होने तक ऐप खुला रखें।",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Doughnut Forge शुरू नहीं हो सका",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "{{alias}} को अपने संपर्कों से निकालें? आप अब उनके लिए फ़ाइलें एन्क्रिप्ट नहीं कर पाएंगे। उनकी भेजी हुई फ़ाइलें अब भी खुलेंगी, अज्ञात प्रेषक चेतावनी के साथ।",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "मूल जहाँ है वहीं रहता है, बिना किसी बदलाव के।",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "पूरा नहीं हो सका",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "ऐप किसी फ़ाइल को पढ़ या सहेज नहीं सका। जांचें कि फ़ाइल या फ़ोल्डर अब भी वहीं है और खाली जगह है, फिर दोबारा प्रयास करें।",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "अपना कोई फ़ोल्डर चुनें, जैसे दस्तावेज़ में कोई फ़ोल्डर। पूरी ड्राइव, आपका होम फ़ोल्डर और सिस्टम फ़ोल्डर नहीं जोड़े जा सकते।",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. तैयारी हो रही है",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. एन्क्रिप्ट हो रहा है",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. डिक्रिप्ट हो रहा है",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. फ़ाइल सहेजी जा रही है",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "पोस्ट-क्वांटम",
+      "approved": "पोस्ट-क्वांटम एन्क्रिप्शन और हस्ताक्षर"
     }
   }
 }

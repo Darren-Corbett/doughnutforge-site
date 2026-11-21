@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/nl/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Formal: u (Voer uw ... in, Probeer het opnieuw).",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "Veilig bestand"
+    "Recovery words (label)": {
+      "text": "Herstelwoorden",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "Veilige map"
+    "recovery words (in a sentence)": {
+      "text": "Voer uw herstelwoorden in",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "Veilige tekst"
+    "word (\"What is word 7?\")": {
+      "text": "Wat is woord {{n}}?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "Identiteit"
+      "text": "Identiteit",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "Contact toegevoegd",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "Contacten"
+      "text": "Contacten",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "Herstelzin"
+    "Contact code": {
+      "text": "Contactcode",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "Identiteit herstellen"
+    "Encrypt": {
+      "text": "Versleutelen",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "Back-up PDF exporteren"
+    "Decrypt": {
+      "text": "Ontsleutelen",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "Versleuteld",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "Bestand versleuteld",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "Ontsleuteld bestand",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "Bestand ontsleuteld",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "Bestand",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "Map",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "Notitie versleuteld",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "Notitie ontsleuteld",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "Wachtwoord"
+      "text": "Wachtwoord",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "Bestand versleutelen"
+    "Tab: Files": {
+      "text": "Bestanden",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "Bestand ontsleutelen"
+    "Tab: Text": {
+      "text": "Tekst",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "Een bestand versleutelen"
+    "Tab: Identity": {
+      "text": "Identiteit",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "Contactkaart delen"
+    "Tab: Contacts": {
+      "text": "Contacten",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "Contactkaart importeren"
+    "Tab: Settings": {
+      "text": "Instellingen",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "Deel uw contactkaart zodat anderen u bestanden en notities kunnen sturen die alleen u kunt openen."
+    "Share card (the share sheet's button)": {
+      "text": "Kaart delen",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "Uw contactkaart kunt u veilig delen. Er kan niets mee worden geopend wat naar u is verstuurd."
+    "Share contact card (the Identity screen's button)": {
+      "text": "Contactkaart delen",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge werkt volledig op uw apparaat. Uw wachtwoord en sleutels worden nooit opgeslagen op een server of verzonden via het netwerk."
+    "Shared": {
+      "text": "Gedeeld",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "Uw sleutels zijn volledig privé en kunnen niet worden hersteld als u ze verliest. U moet uw herstelzin op een veilige locatie bewaren, aangezien dit de enige manier is om uw toegang te herstellen."
+    "Done": {
+      "text": "Klaar",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "Stel een gedenkwaardig wachtwoord in voor dit apparaat. Hiermee ontgrendelt u de applicatie, zodat u gegevens lokaal veilig kunt versleutelen en ontsleutelen."
+    "Close": {
+      "text": "Sluiten",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "Maak een nieuwe identiteit aan met een veilig gegenereerde 24-woord herstelzin."
+    "Cancel": {
+      "text": "Annuleren",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "Herstel een bestaande identiteit met behulp van uw 24-woord herstelzin."
+    "Retry": {
+      "text": "Opnieuw",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "Het opent alleen als het naar u is verzonden, en toont van wie het afkomstig is."
+    "Try again (in a sentence)": {
+      "text": "Er ging iets onverwachts mis. Probeer het opnieuw.",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "Taal"
+    "You (the You chip)": {
+      "text": "U",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "Alleen u en de personen die u kiest kunnen de versleutelde kopie openen, in Doughnut Forge. Kies na het versleutelen via het deelmenu waar u het wilt opslaan of verzenden.",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "Houd de app open tot dit klaar is.",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Doughnut Forge kon niet starten",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "{{alias}} uit uw contacten verwijderen? U kunt dan geen bestanden meer voor deze persoon versleutelen. Bestanden die deze persoon u heeft gestuurd, openen nog steeds, met de waarschuwing voor een onbekende afzender.",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "Het origineel blijft waar het is, ongewijzigd.",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "Kan niet worden voltooid",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "De app kon een bestand niet lezen of opslaan. Controleer of het bestand of de map er nog is en of er vrije ruimte is, en probeer het opnieuw.",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "Kies een eigen map, bijvoorbeeld een in Documenten. Een hele schijf, uw thuismap en systeemmappen kunnen niet worden toegevoegd.",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. Voorbereiden",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. Versleutelen",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. Ontsleutelen",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. Bestand opslaan",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "post-kwantum-",
+      "approved": "post-kwantumversleuteling en -handtekeningen"
     }
   }
 }

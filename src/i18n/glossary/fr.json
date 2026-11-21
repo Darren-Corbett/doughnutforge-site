@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/fr/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Formal: vous. A space before \"?\" and \":\" (a plain space in today's files, not a no-break space). Straight apostrophe ' in most texts (a few use ’). Some older labels are in title case (Mots de Récupération, Partager la Carte); new texts use sentence case. Note: \"Note\" is spelt as in English, so a label of only \"Note\" would equal the English text.",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "Fichier sécurisé"
+    "Recovery words (label)": {
+      "text": "Mots de Récupération",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "Dossier sécurisé"
+    "recovery words (in a sentence)": {
+      "text": "Saisissez vos mots de récupération",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "Texte sécurisé"
+    "word (\"What is word 7?\")": {
+      "text": "Quel est le mot {{n}} ?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "Identité"
+      "text": "Identité",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "Contact ajouté",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "Contacts"
+      "text": "Contacts",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "Phrase de Sauvegarde"
+    "Contact code": {
+      "text": "Code de contact",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "Restaurer une Identité"
+    "Encrypt": {
+      "text": "Chiffrer",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "Exporter le PDF"
+    "Decrypt": {
+      "text": "Déchiffrer",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "Chiffré",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "Fichier chiffré",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "Fichier déchiffré",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "Fichier déchiffré",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "Fichier",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "Dossier",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "Note chiffrée",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "Note déchiffrée",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "Mot de passe"
+      "text": "Mot de passe",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "Chiffrer le fichier"
+    "Tab: Files": {
+      "text": "Fichiers",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "Déchiffrer le fichier"
+    "Tab: Text": {
+      "text": "Texte",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "Chiffrement d'un fichier"
+    "Tab: Identity": {
+      "text": "Identité",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "Partager la carte"
+    "Tab: Contacts": {
+      "text": "Contacts",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "Importer une Carte de Contact"
+    "Tab: Settings": {
+      "text": "Paramètres",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "Partagez votre carte de contact pour recevoir des fichiers et des notes que personne d'autre ne peut ouvrir."
+    "Share card (the share sheet's button)": {
+      "text": "Partager la Carte",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "Votre carte de contact peut être partagée en toute sécurité. Elle ne permet pas d'ouvrir ce qui vous est envoyé."
+    "Share contact card (the Identity screen's button)": {
+      "text": "Partager la carte de contact",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge fonctionne entièrement sur votre appareil. Votre mot de passe et vos clés ne sont jamais stockés sur un serveur ni envoyés sur le réseau."
+    "Shared": {
+      "text": "Partagé",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "Vos clés sont entièrement privées et ne peuvent être récupérées si vous les perdez. Vous devez conserver votre phrase de récupération dans un endroit sûr, car c'est le seul moyen de restaurer votre accès."
+    "Done": {
+      "text": "Terminé",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "Définissez un mot de passe mémorable pour cet appareil. Cela déverrouille l'application, vous permettant de chiffrer et déchiffrer des données localement en toute sécurité."
+    "Close": {
+      "text": "Fermer",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "Créez une nouvelle identité avec une phrase de sauvegarde sécurisée de 24 mots."
+    "Cancel": {
+      "text": "Annuler",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "Restaurez une identité existante à l'aide de votre phrase de sauvegarde de 24 mots."
+    "Retry": {
+      "text": "Réessayer",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "Il ne s'ouvre que s'il vous a été envoyé et indique l'expéditeur."
+    "Try again (in a sentence)": {
+      "text": "Un problème inattendu est survenu. Réessayez.",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "Langue"
+    "You (the You chip)": {
+      "text": "Vous",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "Vous seul et les personnes que vous choisissez pouvez ouvrir la copie chiffrée dans Doughnut Forge. Après le chiffrement, choisissez où l'enregistrer ou l'envoyer depuis le menu de partage.",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "Laissez l'application ouverte jusqu'à la fin.",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Doughnut Forge n’a pas pu démarrer",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "Retirer {{alias}} de vos contacts ? Vous ne pourrez plus chiffrer de fichiers pour cette personne. Les fichiers qu'elle vous a envoyés s'ouvrent toujours, avec l'avertissement d'expéditeur inconnu.",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "L'original reste à sa place, sans modification.",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "Opération non terminée",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "L'application n'a pas pu lire ou enregistrer un fichier. Vérifiez que le fichier ou le dossier est toujours là et qu'il reste de l'espace libre, puis réessayez.",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "Choisissez un de vos propres dossiers, par exemple dans Documents. Un disque entier, votre dossier personnel et les dossiers système ne peuvent pas être ajoutés.",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. Préparation",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. Chiffrement",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. Déchiffrement",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. Enregistrement du fichier",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "post-quantique",
+      "approved": "chiffrement et signatures post-quantiques"
     }
   }
 }

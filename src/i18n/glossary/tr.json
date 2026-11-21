@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/tr/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Formal: siz (girin, deneyin). Suffixes on the name follow an apostrophe: Doughnut Forge'da. Older titles are in title case (Kişi Eklendi, Kartı Paylaş).",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "Güvenli Dosya"
+    "Recovery words (label)": {
+      "text": "Kurtarma Kelimeleri",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "Güvenli Dizin"
+    "recovery words (in a sentence)": {
+      "text": "Kurtarma kelimelerinizi girin",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "Güvenli Metin"
+    "word (\"What is word 7?\")": {
+      "text": "{{n}}. kelime nedir?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "Kimlik"
+      "text": "Kimlik",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "Kişi Eklendi",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "Kişiler"
+      "text": "Kişiler",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "Yedekleme Cümlesi"
+    "Contact code": {
+      "text": "Kişi kodu",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "Kimliği Kurtar"
+    "Encrypt": {
+      "text": "Şifrele",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "Yedekleme PDF'ini Dışa Aktar"
+    "Decrypt": {
+      "text": "Şifreyi çöz",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "Şifreli",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "Dosya şifrelendi",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "Şifresi çözülmüş dosya",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "Dosyanın şifresi çözüldü",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "Dosya",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "Klasör",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "Not şifrelendi",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "Notun şifresi çözüldü",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "Parola"
+      "text": "Parola",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "Dosyayı Şifrele"
+    "Tab: Files": {
+      "text": "Dosyalar",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "Dosyanın Şifresini Çöz"
+    "Tab: Text": {
+      "text": "Metin",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "Dosya şifreleme"
+    "Tab: Identity": {
+      "text": "Kimlik",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "Kişi Kartını Paylaş"
+    "Tab: Contacts": {
+      "text": "Kişiler",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "Kişi Kartını İçe Aktar"
+    "Tab: Settings": {
+      "text": "Ayarlar",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "Kişi kartınızı paylaşın; böylece başkaları size yalnızca sizin açabileceğiniz dosyalar ve notlar gönderebilir."
+    "Share card (the share sheet's button)": {
+      "text": "Kartı Paylaş",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "Kişi kartınızı güvenle paylaşabilirsiniz. Size gönderilen hiçbir şeyi açmak için kullanılamaz."
+    "Share contact card (the Identity screen's button)": {
+      "text": "Kişi kartını paylaş",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge tamamen cihazınızda çalışır. Şifreniz ve anahtarlarınız asla bir sunucuda saklanmaz veya ağ üzerinden gönderilmez."
+    "Shared": {
+      "text": "Paylaşıldı",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "Anahtarlarınız tamamen size özeldir ve kaybolmaları durumunda kurtarılamazlar. Erişiminizi geri yüklemenin tek yolu bu olduğundan, kurtarma ifadenizi güvenli bir yerde saklamanız gerekir."
+    "Done": {
+      "text": "Bitti",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "Bu cihaz için akılda kalıcı bir parola belirleyin. Bu, uygulamanın kilidini açarak verileri yerel olarak güvenli bir şekilde şifrelemenize ve şifresini çözmenize olanak tanır."
+    "Close": {
+      "text": "Kapat",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "Güvenli bir şekilde oluşturulmuş 24 kelimelik yedekleme cümlesi ile yeni bir kimlik oluşturun."
+    "Cancel": {
+      "text": "İptal",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "24 kelimelik yedekleme cümlenizi kullanarak mevcut bir kimliği kurtarın."
+    "Retry": {
+      "text": "Yeniden Dene",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "Sadece size gönderildiyse açılır ve kimden geldiğini gösterir."
+    "Try again (in a sentence)": {
+      "text": "Beklenmeyen bir sorun oluştu. Tekrar deneyin.",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "Dil"
+    "You (the You chip)": {
+      "text": "Siz",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "Şifreli kopyayı Doughnut Forge'da yalnızca siz ve seçtiğiniz kişiler açabilir. Şifreledikten sonra, paylaşım seçeneklerinden nereye kaydedeceğinizi veya göndereceğinizi seçin.",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "İşlem bitene kadar uygulamayı açık tutun.",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Doughnut Forge başlatılamadı",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "{{alias}} kişilerinizden kaldırılsın mı? Artık onun için dosya şifreleyemeyeceksiniz. Size gönderdiği dosyalar bilinmeyen gönderen uyarısıyla açılmaya devam eder.",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "Orijinal olduğu yerde, değişmeden kalır.",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "Tamamlanamadı",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "Uygulama bir dosyayı okuyamadı veya kaydedemedi. Dosyanın veya klasörün hâlâ yerinde olduğunu ve boş alan bulunduğunu kontrol edin, sonra tekrar deneyin.",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "Belgeler içindeki bir klasör gibi kendi klasörlerinizden birini seçin. Bir sürücünün tamamı, ana klasörünüz ve sistem klasörleri eklenemez.",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. Hazırlanıyor",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. Şifreleniyor",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. Şifre çözülüyor",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. Dosya kaydediliyor",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "kuantum sonrası",
+      "approved": "kuantum sonrası şifreleme ve imzalar"
     }
   }
 }

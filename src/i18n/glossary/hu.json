@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/hu/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Informal: te (Add meg, Próbáld újra). Suffixes on the name take a hyphen: Doughnut Forge-ban. Numbers before a noun take the article a(z) and a full stop: a(z) {{n}}. szó.",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "Biztonságos fájl"
+    "Recovery words (label)": {
+      "text": "Helyreállítási szavak",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "Biztonságos mappa"
+    "recovery words (in a sentence)": {
+      "text": "Add meg a helyreállítási szavakat",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "Biztonságos szöveg"
+    "word (\"What is word 7?\")": {
+      "text": "Mi a(z) {{n}}. szó?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "Identitás"
+      "text": "Identitás",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "Kapcsolat hozzáadva",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "Kapcsolatok"
+      "text": "Kapcsolatok",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "Biztonsági kifejezés"
+    "Contact code": {
+      "text": "Névjegykód",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "Identitás helyreállítása"
+    "Encrypt": {
+      "text": "Titkosítás",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "Biztonsági másolat exportálása (PDF)"
+    "Decrypt": {
+      "text": "Visszafejtés",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "Titkosítva",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "Fájl titkosítva",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "Visszafejtett fájl",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "Fájl visszafejtve",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "Fájl",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "Mappa",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "Jegyzet titkosítva",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "Jegyzet visszafejtve",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "Jelszó"
+      "text": "Jelszó",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "Fájl titkosítása"
+    "Tab: Files": {
+      "text": "Fájlok",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "Fájl visszafejtése"
+    "Tab: Text": {
+      "text": "Szöveg",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "Fájl titkosítása"
+    "Tab: Identity": {
+      "text": "Identitás",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "Névjegykártya megosztása"
+    "Tab: Contacts": {
+      "text": "Kapcsolatok",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "Névjegykártya importálása"
+    "Tab: Settings": {
+      "text": "Beállítások",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "Oszd meg a névjegykártyádat, hogy mások olyan fájlokat és jegyzeteket küldhessenek neked, amelyeket csak te nyithatsz meg."
+    "Share card (the share sheet's button)": {
+      "text": "Kártya megosztása",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "A névjegykártyádat nyugodtan megoszthatod. Semmit sem lehet vele megnyitni, amit neked küldenek."
+    "Share contact card (the Identity screen's button)": {
+      "text": "Névjegykártya megosztása",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "A Doughnut Forge teljes egészében a te eszközödön működik. A jelszavadat és a kulcsaidat soha nem tároljuk szerveren, és nem küldjük át a hálózaton."
+    "Shared": {
+      "text": "Megosztva",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "A kulcsok teljesen privátok, és elvesztésük esetén nem állíthatók helyre. A helyreállítási kifejezést biztonságos helyen kell tartania, mivel ez az egyetlen módja a hozzáférés visszaállításának."
+    "Done": {
+      "text": "Kész",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "Állítson be egy könnyen megjegyezhető jelszót ehhez az eszközhöz. Ez feloldja az alkalmazást, lehetővé téve az adatok helyi, biztonságos titkosítását és visszafejtését."
+    "Close": {
+      "text": "Bezárás",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "Hozzon létre egy új identitást egy biztonságosan generált 24 szavas biztonsági kifejezés használatával."
+    "Cancel": {
+      "text": "Mégse",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "Állítson helyre egy meglévő identitást a 24 szavas biztonsági kifejezés használatával."
+    "Retry": {
+      "text": "Újra",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "Csak akkor nyílik meg, ha neked küldték, és megmutatja, kitől származik."
+    "Try again (in a sentence)": {
+      "text": "Váratlan hiba történt. Próbáld újra.",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "Nyelv"
+    "You (the You chip)": {
+      "text": "Te",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "A titkosított másolatot csak te és az általad kiválasztott személyek nyithatjátok meg, a Doughnut Forge-ban. Titkosítás után válaszd ki a megosztási lehetőségeknél, hová szeretnéd menteni vagy elküldeni.",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "Tartsd nyitva az alkalmazást, amíg ez be nem fejeződik.",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "A Doughnut Forge nem tudott elindulni",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "Eltávolítod a kapcsolataid közül: {{alias}}? Ezután nem tudsz majd fájlokat titkosítani neki. Az általa küldött fájlok továbbra is megnyílnak, az ismeretlen feladóra vonatkozó figyelmeztetéssel.",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "Az eredeti a helyén marad, változatlanul.",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "Nem sikerült befejezni",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "Az alkalmazás nem tudott beolvasni vagy menteni egy fájlt. Ellenőrizd, hogy a fájl vagy a mappa még megvan-e, és van-e szabad hely, majd próbáld újra.",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "Válassz egy saját mappát, például a Dokumentumok egyikét. Teljes meghajtó, a felhasználói mappád és a rendszermappák nem adhatók hozzá.",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. Előkészítés",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. Titkosítás",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. Visszafejtés",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. Fájl mentése",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "posztkvantum-",
+      "approved": "posztkvantum-titkosítás és -aláírások"
     }
   }
 }

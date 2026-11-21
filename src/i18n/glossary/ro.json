@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ro/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Mostly informal: tu (Introdu, alegi, Încearcă din nou); one older text is formal (Păstrați aplicația deschisă). New texts use tu. Note is both notă (status.done) and notiță (the note screens). Some older labels are in title case (Cuvinte de Recuperare).",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "Fișier securizat"
+    "Recovery words (label)": {
+      "text": "Cuvinte de Recuperare",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "Dosar securizat"
+    "recovery words (in a sentence)": {
+      "text": "Introdu cuvintele de recuperare",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "Text securizat"
+    "word (\"What is word 7?\")": {
+      "text": "Care este cuvântul {{n}}?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "Identitate"
+      "text": "Identitate",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "Contact adăugat",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "Contacte"
+      "text": "Contacte",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "Frază de Recuperare"
+    "Contact code": {
+      "text": "Cod de contact",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "Restaurează identitatea"
+    "Encrypt": {
+      "text": "Criptează",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "Exportă PDF backup"
+    "Decrypt": {
+      "text": "Decriptează",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "Criptat",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "Fișier criptat",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "Fișier decriptat",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "Fișier decriptat",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "Fișier",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "Dosar",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "Notă criptată",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "Notă decriptată",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "Parolă"
+      "text": "Parolă",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "Criptare fișier"
+    "Tab: Files": {
+      "text": "Fișiere",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "Decriptare fișier"
+    "Tab: Text": {
+      "text": "Texte",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "Criptarea unui fișier"
+    "Tab: Identity": {
+      "text": "Identitate",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "Distribuie Cartea de Contact"
+    "Tab: Contacts": {
+      "text": "Contacte",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "Importă Card de Contact"
+    "Tab: Settings": {
+      "text": "Setări",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "Partajează-ți cardul de contact, ca alte persoane să-ți poată trimite fișiere și note pe care doar tu le poți deschide."
+    "Share card (the share sheet's button)": {
+      "text": "Partajează cardul",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "Cardul tău de contact poate fi partajat în siguranță. Nu poate fi folosit pentru a deschide nimic din ce ți se trimite."
+    "Share contact card (the Identity screen's button)": {
+      "text": "Partajează cardul de contact",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge funcționează în întregime pe dispozitivul tău. Parola și cheile tale nu sunt niciodată stocate pe un server și nu sunt trimise prin rețea."
+    "Shared": {
+      "text": "Partajat",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "Cheile tale sunt complet private și nu pot fi recuperate dacă le pierzi. Trebuie să păstrezi fraza de recuperare într-un loc sigur, deoarece este singura modalitate de a-ți restabili accesul."
+    "Done": {
+      "text": "Gata",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "Setează o parolă ușor de memorat pentru acest dispozitiv. Aceasta deblochează aplicația, permițându-ți să criptezi și să decriptezi datele local, în deplină siguranță."
+    "Close": {
+      "text": "Închide",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "Creează o nouă identitate cu o frază de recuperare din 24 de cuvinte generată în siguranță."
+    "Cancel": {
+      "text": "Anulează",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "Restaurează o identitate existentă folosind fraza de recuperare din 24 de cuvinte."
+    "Retry": {
+      "text": "Încearcă din nou",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "Se deschide doar dacă ți-a fost trimis ție și arată de la cine provine."
+    "Try again (in a sentence)": {
+      "text": "A apărut o problemă neașteptată. Încearcă din nou.",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "Limbă"
+    "You (the You chip)": {
+      "text": "Tu",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "Doar tu și persoanele pe care le alegi puteți deschide fișierul criptat în Doughnut Forge. După criptare, alege unde să îl salvezi sau trimite-l din opțiunile de partajare.",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "Păstrați aplicația deschisă până la finalizare.",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Doughnut Forge nu a putut porni",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "Elimini {{alias}} din contactele tale? Nu vei mai putea cripta fișiere pentru această persoană. Fișierele pe care ți le-a trimis se deschid în continuare, cu avertismentul de expeditor necunoscut.",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "Originalul rămâne unde este, neschimbat.",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "Nu a putut fi finalizat",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "Aplicația nu a putut citi sau salva un fișier. Verifică dacă fișierul sau dosarul mai există și dacă ai spațiu liber, apoi încearcă din nou.",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "Alege un dosar propriu, de exemplu unul din Documente. Nu se pot adăuga o unitate întreagă, dosarul personal sau dosarele de sistem.",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. Pregătire",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. Se criptează",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. Se decriptează",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. Salvarea fișierului",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "post-cuantic",
+      "approved": "criptare și semnături post-cuantice"
     }
   }
 }

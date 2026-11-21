@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ko/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Polite: -세요 / -습니다. The You chip is 본인 (oneself). A space between the name and particles is not used (Doughnut Forge를).",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "보안 파일"
+    "Recovery words (label)": {
+      "text": "복구 단어",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "보안 폴더"
+    "recovery words (in a sentence)": {
+      "text": "복구 단어를 입력하세요",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "보안 텍스트"
+    "word (\"What is word 7?\")": {
+      "text": "{{n}}번째 단어는 무엇인가요?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "신원"
+      "text": "신원",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "연락처 추가됨",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "연락처"
+      "text": "연락처",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "백업 문구"
+    "Contact code": {
+      "text": "연락처 코드",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "신원 복원"
+    "Encrypt": {
+      "text": "암호화",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "백업 PDF 내보내기"
+    "Decrypt": {
+      "text": "복호화",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "암호화됨",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "파일 암호화 완료",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "복호화된 파일",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "파일 복호화 완료",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "파일",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "폴더",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "메모 암호화 완료",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "메모 복호화 완료",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "비밀번호"
+      "text": "비밀번호",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "파일 암호화"
+    "Tab: Files": {
+      "text": "파일",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "파일 복호화"
+    "Tab: Text": {
+      "text": "텍스트",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "파일 암호화"
+    "Tab: Identity": {
+      "text": "신원",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "연락처 카드 공유"
+    "Tab: Contacts": {
+      "text": "연락처",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "연락처 카드 가져오기"
+    "Tab: Settings": {
+      "text": "설정",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "연락처 카드를 공유하면 다른 사람이 본인만 열 수 있는 파일과 메모를 보낼 수 있습니다."
+    "Share card (the share sheet's button)": {
+      "text": "카드 공유",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "연락처 카드는 안전하게 공유할 수 있습니다. 이 카드로는 본인에게 보낸 어떤 것도 열 수 없습니다."
+    "Share contact card (the Identity screen's button)": {
+      "text": "연락처 카드 공유",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge는 전적으로 기기에서만 작동합니다. 비밀번호와 키는 서버에 저장되거나 네트워크를 통해 전송되지 않습니다."
+    "Shared": {
+      "text": "공유됨",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "키는 완전히 비공개이며 분실 시 복구할 수 없습니다. 액세스를 복구할 수 있는 유일한 방법이므로 복구 문구를 안전한 장소에 보관해야 합니다."
+    "Done": {
+      "text": "완료",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "이 기기에 대해 기억하기 쉬운 비밀번호를 설정하세요. 앱을 잠금 해제하여 로컬에서 데이터를 안전하게 암호화하고 복호화할 수 있습니다."
+    "Close": {
+      "text": "닫기",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "안전하게 생성된 24단어 백업 문구를 사용하여 새 신원을 만드십시오."
+    "Cancel": {
+      "text": "취소",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "24단어 백업 문구를 사용하여 기존 신원을 복원하십시오."
+    "Retry": {
+      "text": "다시 시도",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "나에게 전송된 경우에만 열리며 누구에게서 왔는지 표시됩니다."
+    "Try again (in a sentence)": {
+      "text": "예기치 않은 문제가 발생했습니다. 다시 시도하세요.",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "언어"
+    "You (the You chip)": {
+      "text": "본인",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "암호화된 사본은 Doughnut Forge에서 본인과 선택한 사람만 열 수 있습니다. 암호화한 후 공유 메뉴에서 저장하거나 보낼 위치를 선택하세요.",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "완료될 때까지 앱을 열어 두세요.",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Doughnut Forge를 시작할 수 없습니다",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "연락처에서 {{alias}}님을 제거하시겠습니까? 더 이상 이 사람을 위해 파일을 암호화할 수 없습니다. 이 사람이 보낸 파일은 계속 열 수 있지만 알 수 없는 보낸 사람 경고가 표시됩니다.",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "원본은 바뀌지 않고 그대로 제자리에 남아 있습니다.",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "완료할 수 없습니다",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "앱이 파일을 읽거나 저장할 수 없습니다. 파일이나 폴더가 아직 있는지, 여유 공간이 있는지 확인한 후 다시 시도하세요.",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "문서 폴더 안의 폴더처럼 직접 사용하는 폴더를 선택하세요. 드라이브 전체, 홈 폴더, 시스템 폴더는 추가할 수 없습니다.",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. 준비 중",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. 암호화 중",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. 복호화 중",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. 파일 저장 중",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "양자 내성 (quantum-resistant)",
+      "approved": "양자 내성 암호화와 서명"
     }
   }
 }

@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/ms/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Formal-neutral: anda (lower case). File is Fail; label \"Fail yang dipilih\".",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "Fail Selamat"
+    "Recovery words (label)": {
+      "text": "Perkataan Pemulihan",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "Direktori Selamat"
+    "recovery words (in a sentence)": {
+      "text": "Masukkan perkataan pemulihan anda",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "Teks Selamat"
+    "word (\"What is word 7?\")": {
+      "text": "Apakah perkataan ke-{{n}}?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "Identiti"
+      "text": "Identiti",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "Kenalan Ditambah",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "Kenalan"
+      "text": "Kenalan",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "Frasa Sandaran"
+    "Contact code": {
+      "text": "Kod kenalan",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "Pulihkan Identiti"
+    "Encrypt": {
+      "text": "Sulitkan",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "Eksport PDF Sandaran"
+    "Decrypt": {
+      "text": "Nyahsulit",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "Disulitkan",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "Fail disulitkan",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "Fail yang dinyahsulit",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "Fail dinyahsulit",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "Fail yang dipilih",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "Folder yang dipilih",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "Nota disulitkan",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "Nota dinyahsulit",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "Kata Laluan"
+      "text": "Kata Laluan",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "Sulitkan Fail"
+    "Tab: Files": {
+      "text": "Fail",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "Nyahsulit Fail"
+    "Tab: Text": {
+      "text": "Teks",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "Menyulitkan fail"
+    "Tab: Identity": {
+      "text": "Identiti",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "Kongsi Kad Kenalan"
+    "Tab: Contacts": {
+      "text": "Kenalan",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "Import Kad Kenalan"
+    "Tab: Settings": {
+      "text": "Tetapan",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "Kongsi kad kenalan anda supaya orang lain boleh menghantar fail dan nota yang hanya anda boleh buka."
+    "Share card (the share sheet's button)": {
+      "text": "Kongsi Kad",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "Kad kenalan anda selamat untuk dikongsi. Ia tidak boleh digunakan untuk membuka apa-apa yang dihantar kepada anda."
+    "Share contact card (the Identity screen's button)": {
+      "text": "Kongsi kad kenalan",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge beroperasi sepenuhnya pada peranti anda. Kata laluan dan kunci anda tidak pernah disimpan pada pelayan atau dihantar melalui rangkaian."
+    "Shared": {
+      "text": "Dikongsi",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "Kunci anda sepenuhnya peribadi dan tidak boleh dipulihkan jika hilang. Anda mesti menyimpan frasa sandaran anda di lokasi yang selamat, kerana ia satu-satunya cara untuk memulihkan akses anda."
+    "Done": {
+      "text": "Selesai",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "Tetapkan kata laluan yang mudah diingati untuk peranti ini. Ia membuka kunci aplikasi, membolehkan anda menyulitkan dan menyahsulit data secara setempat dengan selamat."
+    "Close": {
+      "text": "Tutup",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "Cipta identiti baharu dengan frasa sandaran 24 perkataan yang dijana secara selamat."
+    "Cancel": {
+      "text": "Batal",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "Pulihkan identiti sedia ada menggunakan frasa sandaran 24 perkataan anda."
+    "Retry": {
+      "text": "Cuba Lagi",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "Ia hanya dibuka jika ia dihantar kepada anda, dan menunjukkan dari siapa ia datang."
+    "Try again (in a sentence)": {
+      "text": "Sesuatu yang tidak dijangka berlaku. Cuba lagi.",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "Bahasa"
+    "You (the You chip)": {
+      "text": "Anda",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "Hanya anda dan orang yang anda pilih boleh membuka salinan yang disulitkan, dalam Doughnut Forge. Selepas menyulitkan, pilih tempat untuk menyimpan atau menghantarnya daripada pilihan perkongsian.",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "Biarkan aplikasi terbuka sehingga selesai.",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Doughnut Forge tidak dapat dimulakan",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "Alih keluar {{alias}} daripada kenalan anda? Anda tidak lagi dapat menyulitkan fail untuk mereka. Fail yang mereka hantar kepada anda masih boleh dibuka, dengan amaran pengirim yang tidak dikenali.",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "Item asal kekal di tempatnya, tanpa sebarang perubahan.",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "Tidak dapat diselesaikan",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "Apl tidak dapat membaca atau menyimpan fail. Semak bahawa fail atau folder masih ada dan terdapat ruang kosong, kemudian cuba lagi.",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "Pilih folder anda sendiri, contohnya dalam Dokumen. Seluruh pemacu, folder pengguna anda dan folder sistem tidak boleh ditambah.",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. Menyediakan",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. Menyulitkan",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. Menyahsulit",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. Menyimpan fail",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "pascakuantum",
+      "approved": "penyulitan dan tandatangan pascakuantum"
     }
   }
 }

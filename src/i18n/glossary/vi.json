@@ -1,97 +1,230 @@
 {
-  "_source": "doughnut-forge 0.4.42 (1229e88) src/locales/vi/*.json",
+  "_source": "~/Desktop/review/website-handoff/v3/translation-glossary.md (Version 2026-11-21 (v3)); the app's glossary wins over site wording (owner, 21 November 2026)",
+  "voice": "Bạn (neutral, friendly). Results start with Đã (Đã mã hóa tệp). Hãy before a request.",
   "terms": {
-    "Secure File": {
-      "app": "app:navigation.tabs.mobile-vault",
-      "text": "Tệp bảo mật"
+    "Recovery words (label)": {
+      "text": "Từ khôi phục",
+      "app": "identity.json:generate.form.mnemonicLabel",
+      "english": "Recovery Words"
     },
-    "Secure Directory": {
-      "app": "app:navigation.tabs.vault",
-      "text": "Thư mục bảo mật"
+    "recovery words (in a sentence)": {
+      "text": "Nhập các từ khôi phục của bạn",
+      "app": "identity.json:reset.header.subtitle",
+      "english": "Enter your recovery words"
     },
-    "Secure Text": {
-      "app": "app:navigation.tabs.text-vault",
-      "text": "Văn bản bảo mật"
+    "word (\"What is word 7?\")": {
+      "text": "Từ thứ {{n}} là gì?",
+      "app": "identity.json:generate.check.question",
+      "english": "What is word {{n}}?"
     },
     "Identity": {
-      "app": "app:navigation.tabs.identity",
-      "text": "Danh tính"
+      "text": "Danh tính",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
+    },
+    "Contact (singular)": {
+      "text": "Đã thêm liên hệ",
+      "app": "share-identity.json:addModal.success.title",
+      "english": "Contact Added"
     },
     "Contacts": {
-      "app": "app:navigation.tabs.contacts",
-      "text": "Liên hệ"
+      "text": "Liên hệ",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Backup Phrase": {
-      "app": "identity:generate.form.mnemonicLabel",
-      "text": "Cụm từ sao lưu"
+    "Contact code": {
+      "text": "Mã liên hệ",
+      "app": "contacts.json:code.label",
+      "english": "Contact code"
     },
-    "Restore Identity": {
-      "app": "identity:provision.cards.restore.title",
-      "text": "Khôi phục danh tính"
+    "Encrypt": {
+      "text": "Mã hóa",
+      "app": "secure-directory.json:sealModal.titleEnclave",
+      "english": "Encrypt"
     },
-    "Export Backup PDF": {
-      "app": "identity:generate.actions.exportPdf",
-      "text": "Xuất PDF sao lưu"
+    "Decrypt": {
+      "text": "Giải mã",
+      "app": "secure-directory.json:decryptModal.titleEnclave",
+      "english": "Decrypt"
+    },
+    "Encrypted (badge)": {
+      "text": "Đã mã hóa",
+      "app": "secure-directory.json:fileList.encryptedBadge",
+      "english": "Encrypted"
+    },
+    "File encrypted": {
+      "text": "Đã mã hóa tệp",
+      "app": "common.json:status.done.fileEncrypted",
+      "english": "File encrypted"
+    },
+    "Decrypted file": {
+      "text": "Tệp đã giải mã",
+      "app": "secure-file.json:decryptModal.decryptedFile",
+      "english": "Decrypted file"
+    },
+    "File decrypted": {
+      "text": "Đã giải mã tệp",
+      "app": "common.json:status.done.fileDecrypted",
+      "english": "File decrypted"
+    },
+    "File (label)": {
+      "text": "Tệp",
+      "app": "secure-directory.json:sealModal.targetFile",
+      "english": "File"
+    },
+    "Folder (label)": {
+      "text": "Thư mục",
+      "app": "secure-directory.json:sealModal.targetFolder",
+      "english": "Folder"
+    },
+    "Note encrypted": {
+      "text": "Đã mã hóa ghi chú",
+      "app": "common.json:status.done.noteEncrypted",
+      "english": "Note encrypted"
+    },
+    "Note decrypted": {
+      "text": "Đã giải mã ghi chú",
+      "app": "common.json:status.done.noteDecrypted",
+      "english": "Note decrypted"
     },
     "Password": {
-      "app": "common:shell.unlock.passphrasePlaceholder",
-      "text": "Mật khẩu"
+      "text": "Mật khẩu",
+      "app": "common.json:shell.unlock.passphrasePlaceholder",
+      "english": "Password"
     },
-    "Encrypt File": {
-      "app": "secure-file:view.encrypt.title",
-      "text": "Mã hóa tệp"
+    "Tab: Files": {
+      "text": "Tệp",
+      "app": "app.json:navigation.tabBar.files",
+      "english": "Files"
     },
-    "Decrypt File": {
-      "app": "secure-file:view.decrypt.title",
-      "text": "Giải mã tệp"
+    "Tab: Text": {
+      "text": "Văn bản",
+      "app": "app.json:navigation.tabBar.text",
+      "english": "Text"
     },
-    "Encrypting a file": {
-      "app": "mobile-views:secureFile.howItWorks.encrypt.title",
-      "text": "Mã hóa tệp"
+    "Tab: Identity": {
+      "text": "Danh tính",
+      "app": "app.json:navigation.tabBar.identity",
+      "english": "Identity"
     },
-    "Share Contact Card": {
-      "app": "help:identityContactsGuide.step1.title",
-      "text": "Chia sẻ Thẻ Liên hệ"
+    "Tab: Contacts": {
+      "text": "Liên hệ",
+      "app": "app.json:navigation.tabBar.contacts",
+      "english": "Contacts"
     },
-    "Import Contact Card": {
-      "app": "share-identity:addModal.dialogTitle",
-      "text": "Nhập thẻ liên hệ"
+    "Tab: Settings": {
+      "text": "Cài đặt",
+      "app": "app.json:navigation.tabBar.settings",
+      "english": "Settings"
     },
-    "contact card (sentence)": {
-      "app": "mobile-views:identity.intro",
-      "text": "Chia sẻ thẻ liên hệ của bạn để mọi người có thể gửi cho bạn các tệp và ghi chú mà chỉ bạn mới mở được."
+    "Share card (the share sheet's button)": {
+      "text": "Chia sẻ thẻ",
+      "app": "share-identity.json:exportModal.actions.shareCard",
+      "english": "Share card"
     },
-    "Your contact card is safe to share (sentence)": {
-      "app": "share-identity:exportModal.mobileDescription",
-      "text": "Thẻ liên hệ của bạn có thể chia sẻ an toàn. Không thể dùng thẻ này để mở bất cứ thứ gì được gửi cho bạn."
+    "Share contact card (the Identity screen's button)": {
+      "text": "Chia sẻ thẻ liên hệ",
+      "app": "share-identity.json:card.shareLabel",
+      "english": "Share contact card"
     },
-    "password and keys never on a server (sentence)": {
-      "app": "mobile-guides:setup.core",
-      "text": "Doughnut Forge hoạt động hoàn toàn trên thiết bị của bạn. Mật khẩu và khóa của bạn không bao giờ được lưu trữ trên máy chủ hoặc gửi qua mạng."
+    "Shared": {
+      "text": "Đã chia sẻ",
+      "app": "common.json:actions.shared",
+      "english": "Shared"
     },
-    "backup phrase, only way to restore (sentence)": {
-      "app": "help:setupGuide.step3.description",
-      "text": "Các khóa của bạn hoàn toàn riêng tư và không thể khôi phục nếu bị mất. Bạn phải giữ cụm từ sao lưu của mình ở một vị trí an toàn, vì đây là cách duy nhất để khôi phục quyền truy cập của bạn."
+    "Done": {
+      "text": "Xong",
+      "app": "secure-directory.json:sealModal.done",
+      "english": "Done"
     },
-    "set a password (sentence)": {
-      "app": "help:setupGuide.step1.description",
-      "text": "Đặt một mật khẩu dễ nhớ cho thiết bị này. Nó mở khóa ứng dụng, cho phép bạn mã hóa và giải mã dữ liệu cục bộ một cách an toàn."
+    "Close": {
+      "text": "Đóng",
+      "app": "common.json:actions.close",
+      "english": "Close"
     },
-    "24-word backup phrase, create (sentence)": {
-      "app": "identity:provision.cards.generate.description",
-      "text": "Tạo danh tính mới bằng cụm từ sao lưu 24 từ được tạo an toàn."
+    "Cancel": {
+      "text": "Hủy",
+      "app": "common.json:actions.cancel",
+      "english": "Cancel"
     },
-    "24-word backup phrase, restore (sentence)": {
-      "app": "identity:provision.cards.restore.description",
-      "text": "Khôi phục danh tính hiện có bằng cụm từ sao lưu 24 từ của bạn."
+    "Retry": {
+      "text": "Thử lại",
+      "app": "common.json:actions.retry",
+      "english": "Retry"
     },
-    "only opens if sent to you (sentence)": {
-      "app": "mobile-views:secureFile.howItWorks.decrypt.steps.two.detail",
-      "text": "Tệp chỉ mở nếu được gửi cho bạn và hiển thị người gửi."
+    "Try again (in a sentence)": {
+      "text": "Đã xảy ra sự cố ngoài dự kiến. Hãy thử lại.",
+      "app": "errors.json:errors.vault.UNKNOWN_ERROR.message",
+      "english": "Something unexpected went wrong. Try again."
     },
-    "Language": {
-      "app": "app:navigation.language",
-      "text": "Ngôn ngữ"
+    "You (the You chip)": {
+      "text": "Bạn",
+      "app": "secure-directory.json:sealModal.selfNode",
+      "english": "You"
+    },
+    "you (address in a sentence)": {
+      "text": "Chỉ bạn và những người bạn chọn mới mở được bản mã hóa, trong Doughnut Forge. Sau khi mã hóa, hãy chọn vị trí để lưu hoặc gửi từ tùy chọn chia sẻ.",
+      "app": "secure-file.json:sealModal.sendHint",
+      "english": "Only you and the people you pick can open the encrypted copy, in Doughnut Forge. After encrypting, choose where to save or send it from the share sheet."
+    },
+    "Keep the app open": {
+      "text": "Hãy giữ ứng dụng mở cho đến khi hoàn tất.",
+      "app": "common.json:status.keepOpen",
+      "english": "Keep the app open until this is finished."
+    },
+    "Doughnut Forge": {
+      "text": "Không thể khởi động Doughnut Forge",
+      "app": "common.json:shell.bootError.title",
+      "english": "Doughnut Forge could not start"
+    },
+    "unknown sender": {
+      "text": "Gỡ {{alias}} khỏi danh bạ của bạn? Bạn sẽ không thể mã hóa tệp cho họ nữa. Các tệp họ đã gửi cho bạn vẫn mở được, kèm cảnh báo người gửi không xác định.",
+      "app": "contacts.json:alerts.delete.message",
+      "english": "Remove {{alias}} from your contacts? You will no longer be able to encrypt files for them. Files they sent you still open, with an unknown sender warning."
+    },
+    "The original stays": {
+      "text": "Bản gốc vẫn ở nguyên chỗ cũ, không thay đổi.",
+      "app": "secure-directory.json:sealModal.originalStays",
+      "english": "The original stays where it is, unchanged."
+    },
+    "Could not finish (error title)": {
+      "text": "Không thể hoàn tất",
+      "app": "errors.json:errors.vault.SYSTEM_ERROR.title",
+      "english": "Could Not Finish"
+    },
+    "Free space (IO error)": {
+      "text": "Ứng dụng không thể đọc hoặc lưu một tệp. Hãy kiểm tra xem tệp hoặc thư mục vẫn còn đó và còn dung lượng trống, rồi thử lại.",
+      "app": "errors.json:errors.vault.IO_ERROR.message",
+      "english": "The app could not read or save a file. Check that the file or folder is still there and that there is free space, then try again."
+    },
+    "Folder of your own, Documents": {
+      "text": "Hãy chọn một thư mục của riêng bạn, ví dụ một thư mục trong Tài liệu. Không thể thêm cả ổ đĩa, thư mục người dùng của bạn và các thư mục hệ thống.",
+      "app": "errors.json:errors.vault.FOLDER_NOT_ALLOWED.message",
+      "english": "Choose a folder of your own, such as one in Documents. A whole drive, your home folder and system folders cannot be added."
+    },
+    "Step words": {
+      "text": "1. Đang chuẩn bị",
+      "app": "common.json:shell.progress.mobileSteps.prepare",
+      "english": "1. Getting ready"
+    },
+    "Step: encrypting": {
+      "text": "2. Đang mã hóa",
+      "app": "common.json:shell.progress.mobileSteps.encrypt",
+      "english": "2. Encrypting"
+    },
+    "Step: decrypting": {
+      "text": "2. Đang giải mã",
+      "app": "common.json:shell.progress.mobileSteps.decrypt",
+      "english": "2. Decrypting"
+    },
+    "Step: saving file": {
+      "text": "3. Đang lưu tệp",
+      "app": "common.json:shell.progress.mobileSteps.save",
+      "english": "3. Saving file"
+    },
+    "Post-quantum": {
+      "text": "hậu lượng tử",
+      "approved": "mã hóa và chữ ký hậu lượng tử"
     }
   }
 }
