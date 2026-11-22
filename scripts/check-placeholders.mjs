@@ -2,8 +2,10 @@
 // required at launch: the site shows no company details, press contact or first
 // release date, and every store ID is filled in.
 // Local builds: warns and lists them. Deploy builds (--strict): fails.
-// A [PENDING-...] marker (text still waiting on the app side, owner 20 November
-// 2026) fails every build: it must never reach a published page.
+// Any "[PENDING" text fails every build: the site's [PENDING-...] markers (text
+// still waiting on the app side, owner 20 November 2026) and the app side's plain
+// "[PENDING]" in the white paper (owner, 22 November 2026), closed or not. It must
+// never reach a published page.
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
@@ -12,7 +14,7 @@ const { values } = parseArgs({ options: { strict: { type: "boolean" }, dist: { t
 const strict = Boolean(values.strict);
 const dist = values.dist ?? new URL("../dist", import.meta.url).pathname;
 const MARKER = /\[\[PLACEHOLDER: ([^\]]+)\]\]/g;
-const PENDING = /\[PENDING-[A-Z0-9-]+\]/g;
+const PENDING = /\[PENDING[^\]\s<]*\]?/g;
 
 const files = readdirSync(dist, { recursive: true })
   .map(String)
@@ -31,7 +33,7 @@ for (const file of files) {
 if (pending.size > 0) {
   console.error(`\ncheck-placeholders: ${pending.size} pending marker(s) on built pages:`);
   for (const [what, where] of pending) console.error(`  - ${what}  (${[...where].join(", ")})`);
-  console.error("\nBuild stopped: a [PENDING-...] text may only sit behind a launch stage that is not reached (src/i18n/gated.ts).");
+  console.error("\nBuild stopped: a [PENDING...] text may only sit behind a launch stage that is not reached (src/i18n/gated.ts), or in a held text that is not built.");
   process.exit(1);
 }
 
