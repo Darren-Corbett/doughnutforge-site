@@ -3,5 +3,15 @@
     "rule": "long",
     "text": "When a contact sends you a file made with this version, and their contact card is up to date, you see their name when you open it.",
     "approved": "Darren, 21 Nov 2026 (roadmap.md and copy-style.md): splitting it would lose meaning"
+  },
+  {
+    "rule": "platforms",
+    "text": "Free to download and use from the App Store, with a one-time purchase",
+    "approved": "Darren, 22 Nov 2026: each store card names one platform, like the store listings"
+  },
+  {
+    "rule": "platforms",
+    "text": "Free to download and use from Google Play, with a one-time purchase",
+    "approved": "Darren, 22 Nov 2026: each store card names one platform, like the store listings"
   }
 ]
