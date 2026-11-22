@@ -71,6 +71,30 @@
     "en": "2207b89043c1",
     "text": "4f2459908aaf"
   },
+  "faq.desktop.a": {
+    "en": "459592d2a760",
+    "text": "1961b756132d"
+  },
+  "faq.desktop.q": {
+    "en": "dd20a7118adb",
+    "text": "70a5f52771f1"
+  },
+  "faq.earlier.a": {
+    "en": "0cf25f6d24b7",
+    "text": "191a8d002d59"
+  },
+  "faq.earlier.q": {
+    "en": "fe518eedd06d",
+    "text": "7268e8cf5485"
+  },
+  "faq.free.a": {
+    "en": "2a97cfbcada0",
+    "text": "f75d14b906a0"
+  },
+  "faq.free.q": {
+    "en": "b8293ef87a01",
+    "text": "b2a196ec80b1"
+  },
   "faq.messaging.a": {
     "en": "df8a6450b9a0",
     "text": "f66f9051ffe5"
@@ -80,8 +104,8 @@
     "text": "1cd6aecc5640"
   },
   "faq.offline.a": {
-    "en": "2414ba67c954",
-    "text": "4e5a7a85799d"
+    "en": "24b25a49f1d6",
+    "text": "0dcc9a71bbb9"
   },
   "faq.offline.q": {
     "en": "d667044022db",
@@ -107,6 +131,10 @@
     "en": "d9d248a422b3",
     "text": "a7625b43762e"
   },
+  "faq.platforms.aFree": {
+    "en": "71c49635fc39",
+    "text": "c9255a76cbad"
+  },
   "faq.platforms.q": {
     "en": "c6f63a297eb8",
     "text": "45a7d79e4af5"
@@ -127,6 +155,14 @@
     "en": "6caa7273994b",
     "text": "5d8d1cdcb982"
   },
+  "faq.refund.a": {
+    "en": "7aa3d9475ac3",
+    "text": "a5741e1a6dce"
+  },
+  "faq.refund.q": {
+    "en": "e570f20be087",
+    "text": "c73cc262a724"
+  },
   "faq.restore.a": {
     "en": "b011315255f7",
     "text": "0d4df5f7133e"
@@ -134,6 +170,14 @@
   "faq.restore.q": {
     "en": "f3bb860b08c7",
     "text": "9b0059d1ef31"
+  },
+  "faq.restorePurchase.a": {
+    "en": "a2a0c9f311e6",
+    "text": "bf4a88ca67cc"
+  },
+  "faq.restorePurchase.q": {
+    "en": "89c90a22d0ec",
+    "text": "7a40895c4903"
   },
   "faq.share.a": {
     "en": "b5188970c764",
@@ -152,12 +196,20 @@
     "text": "a60bcff94dfd"
   },
   "faq.subscription.a": {
-    "en": "3f3cab79da06",
-    "text": "8774bd676541"
+    "en": "b00341e78e4f",
+    "text": "a91a4b807679"
   },
   "faq.subscription.q": {
     "en": "e755b5900d91",
     "text": "e6073a4b4cfb"
+  },
+  "faq.unlock.a": {
+    "en": "ff79edcfe854",
+    "text": "8d7e25f044c0"
+  },
+  "faq.unlock.q": {
+    "en": "c4f31d91ebb0",
+    "text": "53529e3f5a47"
   },
   "faq.which.a": {
     "en": "43d37ce43de2",
@@ -304,12 +356,12 @@
     "text": "9819f1f19a9a"
   },
   "home.pricing.text": {
-    "en": "f640ff4b8fab",
-    "text": "2cc7164c79e5"
+    "en": "b32384f15312",
+    "text": "6af01a1367f5"
   },
   "home.pricing.title": {
-    "en": "4d20b15bd090",
-    "text": "cb1c4c2c7f98"
+    "en": "1f7f79212359",
+    "text": "5a06def1a9c0"
   },
   "home.specimen.caption": {
     "en": "0a006b8705a3",
@@ -448,12 +500,12 @@
     "text": "13d470708ce8"
   },
   "meta.pricing.description": {
-    "en": "41f6484a616f",
-    "text": "73e834e68d21"
+    "en": "9e2dce5237c0",
+    "text": "39e457616a11"
   },
   "meta.pricing.title": {
-    "en": "0baa34c080e5",
-    "text": "5980bf5ce601"
+    "en": "8b31abd34ed8",
+    "text": "d561caf01fd2"
   },
   "meta.privacy.description": {
     "en": "be145c3a0f35",
@@ -596,8 +648,8 @@
     "text": "855e4ca05bf2"
   },
   "press.facts.priceValue": {
-    "en": "835917ca0915",
-    "text": "2769dc010bd7"
+    "en": "0cc3c89d6e8c",
+    "text": "176a64b77981"
   },
   "press.facts.title": {
     "en": "235407ec6905",
@@ -659,13 +711,21 @@
     "en": "66310250e650",
     "text": "776c2051a7eb"
   },
+  "pricing.free": {
+    "en": "43784e22ffb5",
+    "text": "3771c1e66fa6"
+  },
+  "pricing.free.googlePlay": {
+    "en": "76b180db9d1f",
+    "text": "fb26d8b41d7a"
+  },
   "pricing.oneTime": {
     "en": "4ae6486e7206",
-    "text": "b7a827850faa"
+    "text": "51345b12399e"
   },
   "pricing.oneTime.googlePlay": {
     "en": "4c7571d1ee4f",
-    "text": "e37d897f6185"
+    "text": "d36291f9b6af"
   },
   "pricing.questions": {
     "en": "ad227025ac3b",
@@ -678,6 +738,10 @@
   "pricing.where.text": {
     "en": "52ea15cd0d39",
     "text": "05161d041da9"
+  },
+  "pricing.where.textFree": {
+    "en": "8d7aec6cabb2",
+    "text": "110793cc4c9c"
   },
   "pricing.where.title": {
     "en": "f2ff3ffc2c74",

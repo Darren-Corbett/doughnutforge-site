@@ -71,6 +71,30 @@
     "en": "2207b89043c1",
     "text": "68c3efb33b64"
   },
+  "faq.desktop.a": {
+    "en": "459592d2a760",
+    "text": "9af1147410c2"
+  },
+  "faq.desktop.q": {
+    "en": "dd20a7118adb",
+    "text": "e24ed97d6950"
+  },
+  "faq.earlier.a": {
+    "en": "0cf25f6d24b7",
+    "text": "5482d5ab1333"
+  },
+  "faq.earlier.q": {
+    "en": "fe518eedd06d",
+    "text": "bb1e4acbda6f"
+  },
+  "faq.free.a": {
+    "en": "2a97cfbcada0",
+    "text": "e6bb2ea48390"
+  },
+  "faq.free.q": {
+    "en": "b8293ef87a01",
+    "text": "02d688add315"
+  },
   "faq.messaging.a": {
     "en": "df8a6450b9a0",
     "text": "6419d2747491"
@@ -80,8 +104,8 @@
     "text": "55f7738c192e"
   },
   "faq.offline.a": {
-    "en": "2414ba67c954",
-    "text": "e4424eb80685"
+    "en": "24b25a49f1d6",
+    "text": "08993e7b7115"
   },
   "faq.offline.q": {
     "en": "d667044022db",
@@ -107,6 +131,10 @@
     "en": "d9d248a422b3",
     "text": "52f1ab8b80b4"
   },
+  "faq.platforms.aFree": {
+    "en": "71c49635fc39",
+    "text": "b8f5125a1265"
+  },
   "faq.platforms.q": {
     "en": "c6f63a297eb8",
     "text": "c51318784d51"
@@ -127,6 +155,14 @@
     "en": "6caa7273994b",
     "text": "92ebef9fc0e0"
   },
+  "faq.refund.a": {
+    "en": "7aa3d9475ac3",
+    "text": "9ce362e59f5b"
+  },
+  "faq.refund.q": {
+    "en": "e570f20be087",
+    "text": "32b24ff2add3"
+  },
   "faq.restore.a": {
     "en": "b011315255f7",
     "text": "7d59cd3766e0"
@@ -134,6 +170,14 @@
   "faq.restore.q": {
     "en": "f3bb860b08c7",
     "text": "e4a6c79a32ae"
+  },
+  "faq.restorePurchase.a": {
+    "en": "a2a0c9f311e6",
+    "text": "2ea7f7875540"
+  },
+  "faq.restorePurchase.q": {
+    "en": "89c90a22d0ec",
+    "text": "675a6a35d452"
   },
   "faq.share.a": {
     "en": "b5188970c764",
@@ -152,12 +196,20 @@
     "text": "053513f8570e"
   },
   "faq.subscription.a": {
-    "en": "3f3cab79da06",
-    "text": "e8cc7e0616e4"
+    "en": "b00341e78e4f",
+    "text": "19d6575f2232"
   },
   "faq.subscription.q": {
     "en": "e755b5900d91",
     "text": "9c32d98a81b7"
+  },
+  "faq.unlock.a": {
+    "en": "ff79edcfe854",
+    "text": "4585219d0c93"
+  },
+  "faq.unlock.q": {
+    "en": "c4f31d91ebb0",
+    "text": "9371911d4c54"
   },
   "faq.which.a": {
     "en": "43d37ce43de2",
@@ -304,12 +356,12 @@
     "text": "b112a9c6c024"
   },
   "home.pricing.text": {
-    "en": "f640ff4b8fab",
-    "text": "7b7d87aae022"
+    "en": "b32384f15312",
+    "text": "07d7502458f0"
   },
   "home.pricing.title": {
-    "en": "4d20b15bd090",
-    "text": "b1dd21026c40"
+    "en": "1f7f79212359",
+    "text": "84a87570a632"
   },
   "home.specimen.caption": {
     "en": "0a006b8705a3",
@@ -448,12 +500,12 @@
     "text": "026cb7b20de1"
   },
   "meta.pricing.description": {
-    "en": "41f6484a616f",
-    "text": "cd157203074e"
+    "en": "9e2dce5237c0",
+    "text": "dda375bc6132"
   },
   "meta.pricing.title": {
-    "en": "0baa34c080e5",
-    "text": "9079501e51f2"
+    "en": "8b31abd34ed8",
+    "text": "1fb24d25631c"
   },
   "meta.privacy.description": {
     "en": "be145c3a0f35",
@@ -596,8 +648,8 @@
     "text": "82090cdebbcd"
   },
   "press.facts.priceValue": {
-    "en": "835917ca0915",
-    "text": "775d6aa50aa0"
+    "en": "0cc3c89d6e8c",
+    "text": "57ac14ca065d"
   },
   "press.facts.title": {
     "en": "235407ec6905",
@@ -659,6 +711,14 @@
     "en": "66310250e650",
     "text": "08b4b5e0b928"
   },
+  "pricing.free": {
+    "en": "43784e22ffb5",
+    "text": "8964e2116cdd"
+  },
+  "pricing.free.googlePlay": {
+    "en": "76b180db9d1f",
+    "text": "7a27911c7353"
+  },
   "pricing.oneTime": {
     "en": "4ae6486e7206",
     "text": "d398f6dd911a"
@@ -678,6 +738,10 @@
   "pricing.where.text": {
     "en": "52ea15cd0d39",
     "text": "50ec2c246318"
+  },
+  "pricing.where.textFree": {
+    "en": "8d7aec6cabb2",
+    "text": "07ba734d467d"
   },
   "pricing.where.title": {
     "en": "f2ff3ffc2c74",
