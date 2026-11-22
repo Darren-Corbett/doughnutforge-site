@@ -80,6 +80,17 @@ test("leaves quoted words to their sources, and lets the site say it is not audi
   expect(result.output).toContain("check-copy: 0 findings");
 });
 
+// The white paper is the technical paper, written on the app side; its sentences
+// may run long (owner, 22 November 2026). Every other rule still applies there.
+test("the white paper page is exempt from the long-sentence rule only", async () => {
+  const body = `<p>${"word ".repeat(30).trim()}.</p><p>This powerful method.</p>`;
+  const result = await check({ "security/white-paper/index.html": page("en-GB", body), "en-us/security/white-paper/index.html": page("en-US", body) });
+  expect(result.output).not.toContain("[long]");
+  expect(result.output).toContain("[hype]");
+  const elsewhere = await check({ "security/index.html": page("en-GB", body) });
+  expect(elsewhere.output).toContain("[long]");
+});
+
 test("--summary prints one line", async () => {
   const result = await check({ "index.html": page("en-GB", "<p>Amazing!</p>") }, "--summary");
   expect(result.output.trim().split("\n")).toHaveLength(1);
