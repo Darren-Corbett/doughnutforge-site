@@ -17,6 +17,12 @@ test("Thai and Chinese keep a space around Latin names", () => {
   expect(listOf(lang("zh-TW"), ["Mac", "Windows"])).toBe("Mac 和 Windows");
 });
 
+// copy-style.md: en-US differs from en only in spelling, so no serial comma
+test("US English lists match UK English", () => {
+  expect(listOf(lang("en-US"), ["iPhone", "iPad", "Android"])).toBe("iPhone, iPad and Android");
+  expect(listOf(lang("en-US"), ["Mac", "Windows"])).toBe("Mac and Windows");
+});
+
 test("other languages are left as Intl writes them", () => {
   expect(listOf(lang("de"), ["iPhone", "iPad", "Android"])).toBe("iPhone, iPad und Android");
   expect(listOf(lang("ja"), ["iPhone", "iPad", "Android"])).toBe("iPhone、iPad、Android");
