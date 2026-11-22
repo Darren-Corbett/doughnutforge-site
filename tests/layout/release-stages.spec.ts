@@ -8,6 +8,9 @@ import { platforms } from "../../src/data/stores";
 import { gated } from "../../src/i18n/gated";
 import { reached, uiNow } from "../support/release";
 
+// 3.0 is live: every store on sale sells it, and Android is on sale
+const v3 = () => reached("all3") && reached("android");
+
 const PLAY = 'a[href^="https://play.google.com/store/apps/details?id=com.darrencorbett.doughnutforge.mobile&hl="]';
 
 test("Android stage: the Play badge and Android in the platform lists", async ({ page }) => {
@@ -23,7 +26,8 @@ test("Android stage: the Play badge and Android in the platform lists", async ({
   await page.goto("/support/");
   expect((await page.locator("main").textContent())!.includes("On Android, a new phone starts empty"), "Android restore line").toBe(on);
   await page.goto("/roadmap/");
-  await expect(page.locator(`[data-roadmap="${on ? "shipped" : "next"}"] h3`, { hasText: "Doughnut Forge for Android" })).toHaveCount(1);
+  // From 3.0, Android is a line in the Doughnut Forge 3.0 entry instead (roadmap.md)
+  await expect(page.locator(`[data-roadmap="${on ? "shipped" : "next"}"] h3`, { hasText: "Doughnut Forge for Android" })).toHaveCount(v3() ? 0 : 1);
 });
 
 // Encrypting text and sharing it through the share sheet shipped on Android in
@@ -86,7 +90,37 @@ test("every store has 3.0: the new format's copy and the white paper", async ({ 
     expect((await page.request.get(path)).status(), path).toBe(on ? 200 : 404);
   }
   await page.goto("/roadmap/");
-  await expect(page.locator('[data-roadmap="shipped"] h3', { hasText: "A new file format" })).toHaveCount(on ? 1 : 0);
+  await expect(page.locator('[data-roadmap="shipped"] h3', { hasText: "A new file format" })).toHaveCount(on && !v3() ? 1 : 0);
+});
+
+// The roadmap from roadmap.md (v2, approved by Darren 21 November 2026), once 3.0
+// is live: every store sells 3.0 and Android is on sale. Its lines word for word,
+// the next items in their order, no "Smaller improvements"; the security audit
+// stays under Later (parked for Darren, 22 November 2026).
+test("3.0 live: the roadmap from roadmap.md", async ({ page }) => {
+  const on = v3();
+  await page.goto("/roadmap/");
+  const shipped = page.locator('[data-roadmap="shipped"] > .items > li', { has: page.locator("h3", { hasText: /^Doughnut Forge 3\.0$/ }) });
+  await expect(shipped).toHaveCount(on ? 1 : 0);
+  await expect(page.locator('[data-roadmap="next"] h2')).toHaveText(on ? "Next, in this order" : "Next");
+  const next = await page.locator('[data-roadmap="next"] h3').allInnerTexts();
+  await expect(page.locator('[data-roadmap="later"] h3', { hasText: "Independent security audit" })).toHaveCount(1);
+  if (!on) {
+    expect(next).toContain("Smaller improvements");
+    return;
+  }
+  await expect(shipped.locator(".points li")).toHaveText([
+    "Doughnut Forge is now on Android, as well as iPhone, iPad, Mac and Windows.",
+    "On iPhone, iPad and Android, Doughnut Forge is free to download and use, including text encryption and opening anything sent to you. Encrypting files, photos and videos is a one-time purchase.",
+    "Files made with this version use post-quantum encryption and signatures.",
+    "When a contact sends you a file made with this version, and their contact card is up to date, you see their name when you open it.",
+    "Who sent a file is sealed inside it: only the people who can open the file can see it.",
+    "Contact cards have a new version. Ask your contacts to share their card with you again, and share your new card with them.",
+    "Everyone you share files with needs Doughnut Forge 3.0 or later to open them. Older files still open as before.",
+  ]);
+  expect(next).toEqual(["A terminal tool for Linux and Mac", "Right-to-left languages: Arabic and Hebrew first, then Urdu and Persian"]);
+  // Shown in order, as a numbered list
+  await expect(page.locator('[data-roadmap="next"] ol.items')).toHaveCount(1);
 });
 
 // Other languages keep their own earlier text, not the English
