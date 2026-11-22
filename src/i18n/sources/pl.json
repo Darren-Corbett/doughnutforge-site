@@ -759,6 +759,10 @@
     "en": "bfb75f56d798",
     "text": "9459b8e68771"
   },
+  "roadmap.cli.title": {
+    "en": "4e517514add1",
+    "text": "f4ecdcd3e420"
+  },
   "roadmap.format.text": {
     "en": "837e3a275b93",
     "text": "1216ab922b8e"
@@ -778,6 +782,14 @@
   "roadmap.next": {
     "en": "1ff57a29d7c9",
     "text": "8b9b63bad8ba"
+  },
+  "roadmap.nextInOrder": {
+    "en": "034e2d7fc8d1",
+    "text": "27bf93eeb9f3"
+  },
+  "roadmap.rtl.title": {
+    "en": "ec6d2bc1c0ca",
+    "text": "8a1e5ce749a4"
   },
   "roadmap.shipped": {
     "en": "d332dadf1646",
@@ -802,6 +814,38 @@
   "roadmap.v2.title": {
     "en": "e52f38a1cf00",
     "text": "e52f38a1cf00"
+  },
+  "roadmap.v3.android": {
+    "en": "8cf459f193d0",
+    "text": "4dde81131637"
+  },
+  "roadmap.v3.cards": {
+    "en": "e586d43338de",
+    "text": "a2393b4bac07"
+  },
+  "roadmap.v3.format": {
+    "en": "7304b4092ab5",
+    "text": "7980cb381b65"
+  },
+  "roadmap.v3.free": {
+    "en": "c79ca394108f",
+    "text": "cb7a153d4be4"
+  },
+  "roadmap.v3.older": {
+    "en": "e7ba4af67a8c",
+    "text": "60a3687eaf0a"
+  },
+  "roadmap.v3.sealed": {
+    "en": "7ddcdd7dd27d",
+    "text": "f76e3401b13d"
+  },
+  "roadmap.v3.sender": {
+    "en": "2ec07bea5c58",
+    "text": "602a23268644"
+  },
+  "roadmap.v3.title": {
+    "en": "0b7a11731dd4",
+    "text": "0b7a11731dd4"
   },
   "security.audit.link": {
     "en": "844c086de4c0",
@@ -1390,6 +1434,14 @@
   "technical.link": {
     "en": "146705414621",
     "text": "0f7e8c3b6398"
+  },
+  "technical.network.androidA": {
+    "en": "47185b0f1350",
+    "text": "6e673eefbadb"
+  },
+  "technical.network.androidB": {
+    "en": "c008b8ec6409",
+    "text": "e3a21c87e4ac"
   },
   "technical.network.apple": {
     "en": "9104e3a917c0",
