@@ -19,7 +19,7 @@ const tones = { shipped: "tone-green", next: "tone-blue", later: "tone-quiet" };
 // From 3.0 the next items come in their order, as a numbered list
 const ordered = (status: string) => status === "next" && nextInOrder;
 const sections = roadmapStatuses
-  .map((status) => ({ status, items: roadmap.filter((i) => i.status === status), Items: ordered(status) ? "ol" : "ul" }))
+  .map((status) => ({ status, items: roadmap.filter((i) => i.status === status), Items: (ordered(status) ? "ol" : "ul") as "ol" | "ul" }))
   .filter((s) => s.items.length);
 ---
 
