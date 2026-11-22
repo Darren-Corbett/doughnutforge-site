@@ -32,6 +32,21 @@ test("a page with no markers passes", async () => {
   expect(code).toBe(0);
 });
 
+// The app side marks unfinished white paper sentences with a plain "[PENDING]"
+// (owner, 22 November 2026): any "[PENDING" text fails, whatever follows it
+test("any [PENDING text fails: plain, with a note, or left open", async () => {
+  for (const text of ["The Windows run is made just before release. [PENDING]", "[PENDING: Windows run] The full checks.", "The full checks [PENDING", "[PENDING-ROADMAP]"]) {
+    const { code, output } = await check({ "security/white-paper/index.html": page("", `<p>${text}</p>`) });
+    expect(code, text).toBe(1);
+    expect(output, text).toContain("security/white-paper/index.html");
+  }
+});
+
+test("the word pending without the bracket passes", async () => {
+  const { code } = await check({ "support/index.html": page("", "<p>Pending: this issue is waiting for an answer. PENDING review.</p>") });
+  expect(code).toBe(0);
+});
+
 test("a pending marker in page text fails every build, not only the deploy", async () => {
   const { code, output } = await check({ "pricing/index.html": page("", "<p>[PENDING-PRICING] Free to download.</p>") });
   expect(code).toBe(1);
