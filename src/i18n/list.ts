@@ -1,8 +1,9 @@
 import type { Language } from "./index";
 
-// Thai and Chinese put a space between their own script and a Latin name
-// ("iPhone และ iPad", "iPhone 和 iPad"; copy-style.md), which Intl.ListFormat leaves out
-const SCRIPT_THEN_LATIN = /([\u0E00-\u0E7F\u4E00-\u9FFF])(?=[A-Za-z0-9])|([A-Za-z0-9])(?=[\u0E00-\u0E7F\u4E00-\u9FFF])/g;
+// Thai, Chinese and Japanese put a space between their own script and a Latin name
+// ("iPhone และ iPad", "iPhone 和 iPad", "App Store または Google Play"; copy-style.md),
+// which Intl.ListFormat leaves out. Ranges: Thai, Japanese kana, CJK ideographs.
+const SCRIPT_THEN_LATIN = /([\u0E00-\u0E7F\u3040-\u30FF\u4E00-\u9FFF])(?=[A-Za-z0-9])|([A-Za-z0-9])(?=[\u0E00-\u0E7F\u3040-\u30FF\u4E00-\u9FFF])/g;
 
 // US English differs from UK English only in spelling (copy-style.md), so its
 // lists take no serial comma: "iPhone, iPad and Android"

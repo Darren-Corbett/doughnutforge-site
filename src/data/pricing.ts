@@ -27,6 +27,6 @@ export const pricingNow = pricingSplit(platforms, release.storesWith3);
 export const pricingLists = (lang: Language) => {
   const { free, paid } = pricingNow;
   const names = (ids: string[]) => listOf(lang, ids.flatMap((id) => DEVICES[id as PlatformId]));
-  const stores = new Intl.ListFormat(lang.hreflang, { type: "disjunction" }).format(platforms.flatMap((p) => (p.status === "available" && free.includes(p.id) ? [storeNames[p.store]] : [])));
+  const stores = listOf(lang, platforms.flatMap((p) => (p.status === "available" && free.includes(p.id) ? [storeNames[p.store]] : [])), "disjunction");
   return { free: names(free), paid: names(paid), stores };
 };
