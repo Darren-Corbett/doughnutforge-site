@@ -683,5 +683,65 @@
     "rule": "long",
     "text": "Files you encrypt with it on your own device can go into any cloud folder, and only you and the people you choose can open them.",
     "approved": "Darren, 22 Nov 2026 (lint A): existing copy, approved as it is"
+  },
+  {
+    "rule": "long",
+    "text": "You only need a connection to download the app, to buy or restore the in-app purchase, or if you choose to send encrypted files over the internet.",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "long",
+    "text": "Each new file is also signed by the person who made it, so the app can name that person when you have their new contact card.",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "long",
+    "text": "Encrypt files and text on your own iPhone, iPad, Android or computer, and share them with people you trust, with encryption designed to resist future quantum computers.",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "long",
+    "text": "On Mac and Windows, if the app crashes or is forced to quit while opening, part of the file can be left in the destination folder until the app next starts.",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "long",
+    "text": "There is no forward secrecy and no revocation: files are sealed to each person's long-lived keys, so anyone who later gets an identity's 24 recovery words can open every file sent to it that they have a copy of.",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "free-twice",
+    "text": "A package can decompress to far more than its own size, so opening watches the device itself, not the package. As it writes a file, and before each file inside a folder (counted at its full size, at least one disk block), the app checks the free space where it writes; it stops with “Not enough space” before less than 500 MiB or 5% of the volume, whichever is smaller, would be left, and removes everything it wrote for that package. A note is opened in memory: in the new format its trailer and both signatures are checked before any of it is decompressed, and in every format the app checks free memory as the decompressed note grows and stops with “Not enough memory” before the note, and the copy shown on screen, would leave less than 256 MiB (on iPhone and iPad, the memory iOS allows the app); the memory the note grew out of is wiped. The free space is read again after at most 64 MiB written, so the margin holds to within about that much, and it does not cover another app filling the disk at the same moment; on a device that cannot report its free space or memory, nothing is refused. These margins are the same for every package and depend only on the device: there is no limit on the size of a file, folder or note, and one of any size opens on a device with room for it.",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "hype",
+    "text": "AES-GCM is the most widely implemented cipher of its kind, fast on every platform the app runs on, and it checks its own output: every encrypted message carries a 16-byte tag, and any change to the encrypted bytes or to the extra data bound to them (the associated data) makes decryption fail. The 256-bit key leaves a wide margin, including against a quantum computer running Grover’s search, the best known quantum attack on ciphers like AES.",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "hype",
+    "text": "Android has no equivalent of the iOS data protection class that iPhone uses for the app’s files. On an Android phone that is locked but has been unlocked since its last restart, an attacker who can get past Android’s own app separation (a rooted or exploited phone) can read the app’s files. The packages, the identity blob and the contact store are still encrypted by the app and need the person’s keys or password. The DID and display name in the settings file are not, and a file the app has just opened can be read in its private folder until the app empties it (when the decrypt window closes, after the file is shared or saved, or at the next start). Nothing in the app’s text claims iOS-style data protection for Android.",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "hype",
+    "text": "The full checks on every platform (the Windows run is made just before release) [PENDING] .",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "long",
+    "text": "It encrypts files and text on your iPhone, iPad, Android phone, Mac or Windows PC, and works entirely on the device, even without an internet connection.",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "long",
+    "text": "“The sender is not in your Contacts, or their contact card is out of date.”: the file still opens, with this warning and “If you were not expecting this, check with the person who sent it before you open or use it.” The app names a contact as the sender only when the file is signed with the keys on that contact’s new card.",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "long",
+    "text": "“Sender not shown”: shown for files made with an older version of Doughnut Forge, for files from a contact whose card is out of date, and when opening a folder was stopped part-way.",
+    "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
   }
 ]

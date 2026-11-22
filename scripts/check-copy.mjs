@@ -46,6 +46,10 @@ const SENTENCE_RULES = {
 };
 const sentencesOf = (block) => block.split(/(?<=[.?!])\s+(?=[\p{Lu}“"‘(])/u);
 
+// The white paper is the technical paper, written on the app side: its sentences
+// may run long (owner, 22 November 2026). Every other rule still applies there.
+const exempt = (rule, file) => rule === "long" && /(?:^|\/)security\/white-paper\//.test(file);
+
 const unquoted = (block) => block.replace(/“[^”]*”/g, "…");
 
 const isApproved = (rule, text) => known.some((k) => k.rule === rule && text.includes(k.text));
@@ -66,7 +70,7 @@ for (const file of readdirSync(dist, { recursive: true }).map(String).filter((f)
   pages++;
   for (const block of new Set(blocksOf(html))) {
     for (const [rule, find] of Object.entries(RULES)) { const w = find(unquoted(block)); if (w) add(rule, block, w, file); }
-    for (const sentence of sentencesOf(block)) for (const [rule, find] of Object.entries(SENTENCE_RULES)) { const w = find(sentence); if (w) add(rule, sentence, w, file); }
+    for (const sentence of sentencesOf(block)) for (const [rule, find] of Object.entries(SENTENCE_RULES)) { const w = !exempt(rule, file) && find(sentence); if (w) add(rule, sentence, w, file); }
   }
 }
 
