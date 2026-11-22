@@ -186,4 +186,11 @@ The work: Part B items 1 to 8 on the local branch, from the v2 website pack only
 - Problem: the copy sweep's Russian FAQ answer said "давно проверенными временем методами" (time-tested); two independent reviewers passed it, but the site's sender check rejects forms of "проверенный" near words about contacts, so the build stopped after the commit (`3344ba2`, fixed in `7f83b2b`, before any push). Running the same check on every string at every stage then found three more drafts that would have stopped the stage-3 build (fr "vérifiée", pt-BR "verificadas", ro "verificate" in the authentication line).
 - Change (owner's yes, 21 November): every translation review runs the site's own sender check on the drafted strings before its verdict (`~/Desktop/review/launch-site/v3-held/work/strings-sender-check.mjs <drafts.json>`, which feeds them to `scripts/check-sender-claims.mjs` unchanged); a hit is blocking. Written into the review briefs.
 - When to check: after the next two translation batches (pricing from pricing-and-unlock.md; the features closing line).
+- Result: kept (22 November: the features line, the pricing batch and the roadmap batch all ran it before the verdict; 0 hits, no build stopped).
+
+## 22 November 2026, a commit went in with a type error
+
+- Problem: `astro check` reported 1 error (a dynamic list tag on the roadmap page) and the commit still went in (`581de40`, fixed in `628b1f4`, before any push). `check:commit` does fail on errors, but it ran as a separate step, chained to `git commit` with `;`, so the commit did not wait for it.
+- Change (owner's yes, 22 November): `npm run check:commit -- -m "<message>"` makes the commit itself, only after the type check passes (CLAUDE.md updated). Checked: a staged file with a type error was refused and nothing was committed.
+- When to check: in a month (22 December 2026): no commit needs a follow-up type fix.
 - Result: open.

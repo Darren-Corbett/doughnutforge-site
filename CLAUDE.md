@@ -52,7 +52,7 @@ Every plan must say how it serves both goals.
   These exceptions are for the website only: the app's no-web-storage rule still applies to the app and must never be relaxed there.
 - Commit freely on main; ask before every push. A push deploys the site. Work trunk-based on main. Never create branches.
 - After a push, say it is pushed and stop: never watch or poll GitHub runs. GitHub emails the owner if a run fails. Check a run only when the owner asks, or once, when it should be done, if the push changed a workflow.
-- Before every commit, run `npm run check:commit`: it shows what is staged (`git diff --cached --stat`) and type-checks with `astro check`, which covers the tests too. Never stage ahead; a test commit holds only tests and test config.
+- Commit only with `npm run check:commit -- -m "<message>"`: it shows what is staged (`git diff --cached --stat`), type-checks with `astro check` (which covers the tests too), and makes the commit only if that passes. Never stage ahead; a test commit holds only tests and test config.
 - After changing `astro.config.mjs`, `package.json`, `scripts/` or `src/assets/`, run `npm run check:reproducible`: two builds of the same commit must be the same, or every deploy gets a new build ID.
 - Before naming a cause for something the owner sees on the live site, reproduce it against the live site in a clean browser (for example a fresh WebKit iPhone context). Never explain it by the last thing fixed.
 - After any change to how the site is built, uploaded or hosted (the deploy workflow, Pages settings, the upload step), check every file the apps depend on (`/.well-known/apple-app-site-association`) at its live URL before calling the change done.
