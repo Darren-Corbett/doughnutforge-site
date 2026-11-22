@@ -173,7 +173,6 @@ test("mobile pricing stage: each card says how that platform is bought", async (
 
 test("mobile pricing stage: the site-wide price lines, the buying FAQ and the privacy line", async ({ page }) => {
   const on = reached("mobileFree");
-  const iosFree = pricingSplit(platforms, release.storesWith3).free.includes("ios");
   await page.goto("/pricing/");
   await expect(page.locator("h1")).toHaveText(on ? "No subscription." : "One-time purchase, never a subscription.");
   await page.goto("/support/");
@@ -183,7 +182,10 @@ test("mobile pricing stage: the site-wide price lines, the buying FAQ and the pr
   expect(asked("What happens if my purchase is refunded?"), "refund FAQ").toBe(on);
   expect(asked("How do I encrypt files on my other devices?"), "restore FAQ").toBe(on);
   expect(asked("Does buying change on Mac or Windows?"), "desktop FAQ").toBe(on);
-  expect(asked("I bought Doughnut Forge for iPhone or iPad before. Do I need to pay again?"), "earlier buyers FAQ").toBe(iosFree);
+  // No iOS sales before 3.0, so no answer for earlier buyers, at any stage (owner, 22 November 2026)
+  expect(asked("I bought Doughnut Forge for iPhone or iPad before"), "earlier buyers FAQ").toBe(false);
+  const support = (await page.locator("main").textContent()) ?? "";
+  expect(support, "earlier buyers answer").not.toMatch(/you keep everything|nothing to buy or restore/i);
   await page.goto("/privacy/");
   expect((await page.locator("main").innerText()).includes("Apple or Google keeps a record of the purchase"), "privacy purchase line").toBe(on);
 });
