@@ -311,6 +311,18 @@ export default {
   "roadmap.small.text": "Smaller improvements to Doughnut Forge.",
   "roadmap.audit.title": "Independent security audit",
   "roadmap.audit.text": "A security audit of Doughnut Forge by an independent outside expert.",
+  // The roadmap once 3.0 is live (roadmap.md v2, approved by Darren 21 November 2026)
+  "roadmap.nextInOrder": "Next, in this order",
+  "roadmap.v3.title": "Doughnut Forge 3.0",
+  "roadmap.v3.android": "Doughnut Forge is now on Android, as well as iPhone, iPad, Mac and Windows.",
+  "roadmap.v3.free": "On iPhone, iPad and Android, Doughnut Forge is free to download and use, including text encryption and opening anything sent to you. Encrypting files, photos and videos is a one-time purchase.",
+  "roadmap.v3.format": "Files made with this version use post-quantum encryption and signatures.",
+  "roadmap.v3.sender": "When a contact sends you a file made with this version, and their contact card is up to date, you see their name when you open it.",
+  "roadmap.v3.sealed": "Who sent a file is sealed inside it: only the people who can open the file can see it.",
+  "roadmap.v3.cards": "Contact cards have a new version. Ask your contacts to share their card with you again, and share your new card with them.",
+  "roadmap.v3.older": "Everyone you share files with needs Doughnut Forge 3.0 or later to open them. Older files still open as before.",
+  "roadmap.cli.title": "A terminal tool for Linux and Mac",
+  "roadmap.rtl.title": "Right-to-left languages: Arabic and Hebrew first, then Urdu and Persian",
 
   // Security: what a user needs to know, no internal design. Never say an audit
   // has happened, or that the sender of a shared file is verified.

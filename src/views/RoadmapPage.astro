@@ -6,7 +6,7 @@
 // (DESIGN.md: green means yours and ready), blue for next, quiet grey for later.
 // The group rule is the only rule: items are set apart by space, as in the rows.
 import PageHero from "../components/PageHero.astro";
-import { roadmap, roadmapStatuses } from "../data/roadmap";
+import { nextInOrder, roadmap, roadmapStatuses } from "../data/roadmap";
 import { useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -16,8 +16,10 @@ interface Props {
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
 const tones = { shipped: "tone-green", next: "tone-blue", later: "tone-quiet" };
+// From 3.0 the next items come in their order, as a numbered list
+const ordered = (status: string) => status === "next" && nextInOrder;
 const sections = roadmapStatuses
-  .map((status) => ({ status, items: roadmap.filter((i) => i.status === status) }))
+  .map((status) => ({ status, items: roadmap.filter((i) => i.status === status), Items: ordered(status) ? "ol" : "ul" }))
   .filter((s) => s.items.length);
 ---
 
@@ -25,12 +27,12 @@ const sections = roadmapStatuses
   <PageHero title={t("roadmap.title")} lead={t("roadmap.lead")} />
   <div class="section">
     {
-      sections.map(({ status, items }) => (
+      sections.map(({ status, items, Items }) => (
         <section class:list={["ruled-row", tones[status]]} data-roadmap={status} aria-labelledby={`roadmap-${status}`}>
           <div class="ruled-row-head">
-            <h2 id={`roadmap-${status}`} class="row-name">{t(`roadmap.${status}` as UiKey)}</h2>
+            <h2 id={`roadmap-${status}`} class="row-name">{t(ordered(status) ? "roadmap.nextInOrder" : (`roadmap.${status}` as UiKey))}</h2>
           </div>
-          <ul class="items" role="list">
+          <Items class="items" role="list">
             {items.map((item) => (
               <li>
                 <h3>{t(item.title)}</h3>
@@ -44,7 +46,7 @@ const sections = roadmapStatuses
                 )}
               </li>
             ))}
-          </ul>
+          </Items>
         </section>
       ))
     }
@@ -52,6 +54,10 @@ const sections = roadmapStatuses
 </Base>
 
 <style>
+  ol.items {
+    list-style: decimal;
+    padding-inline-start: 1.5em;
+  }
   .items > li + li {
     margin-top: 28px;
   }
