@@ -4,9 +4,9 @@
 // it. The brand step of the quality gate checks the rest, and every other
 // language is checked by its reviewers against the guide's voice notes.
 //
-// Report only (owner, 21 November 2026): it never fails the build until he
-// approves the fixes. Then the build runs it with --strict, which fails on any
-// finding not approved in scripts/copy-lint-known.json.
+// The build runs it with --strict (owner, 22 November 2026, "lint A"): the copy
+// on the site that day is approved as it is in scripts/copy-lint-known.json, and
+// any new finding fails the build until it is fixed or the owner approves it.
 //
 //   node scripts/check-copy.mjs [--dist <dir>] [--summary] [--strict]
 import { readdirSync, readFileSync } from "node:fs";
