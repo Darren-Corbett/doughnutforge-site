@@ -17,6 +17,16 @@ test("Thai and Chinese keep a space around Latin names", () => {
   expect(listOf(lang("zh-TW"), ["Mac", "Windows"])).toBe("Mac 和 Windows");
 });
 
+// The store list ("App Store or Google Play") keeps the same spaces, Japanese too
+test("store lists keep a space around Latin names", () => {
+  const stores = ["App Store", "Google Play"];
+  expect(listOf(lang("zh-CN"), stores, "disjunction")).toBe("App Store 或 Google Play");
+  expect(listOf(lang("zh-TW"), stores, "disjunction")).toBe("App Store 或 Google Play");
+  expect(listOf(lang("ja"), stores, "disjunction")).toBe("App Store または Google Play");
+  expect(listOf(lang("th"), stores, "disjunction")).toBe("App Store หรือ Google Play");
+  expect(listOf(lang("en-US"), stores, "disjunction")).toBe("App Store or Google Play");
+});
+
 // copy-style.md: en-US differs from en only in spelling, so no serial comma
 test("US English lists match UK English", () => {
   expect(listOf(lang("en-US"), ["iPhone", "iPad", "Android"])).toBe("iPhone, iPad and Android");
