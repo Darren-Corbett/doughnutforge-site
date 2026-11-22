@@ -8,9 +8,10 @@ import PageHero from "../components/PageHero.astro";
 import Phone from "../components/Phone.astro";
 import Tablet from "../components/Tablet.astro";
 import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
+import { pricingLists } from "../data/pricing";
 import { screen } from "../data/screens";
 import { reached } from "../data/stages";
-import { languages, localePath, useStrings, type Language, type UiKey } from "../i18n";
+import { fill, languages, localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
 
 interface Props {
@@ -44,11 +45,13 @@ if (store.ios.features.length !== 8) {
 const iosFeatures = [...[0, 1, 5].map((i) => store.ios.features[i]!), { title: t("v2.privacy.title"), text: t("v2.privacy.text") }];
 
 // The questions people ask first, answered as on the support page. Only the
-// support page carries the FAQPage data, so the answers are marked up once.
+// support page carries the FAQPage data, so the answers are marked up once. The
+// subscription answer names the free and paid platforms from the mobile pricing stage.
+const lists = pricingLists(lang);
 const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id) => ({
   id,
-  q: t(`faq.${id}.q` as UiKey),
-  a: t(`faq.${id}.a` as UiKey),
+  q: fill(t(`faq.${id}.q` as UiKey), lists),
+  a: fill(t(`faq.${id}.a` as UiKey), lists),
 }));
 ---
 
