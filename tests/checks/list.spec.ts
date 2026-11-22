@@ -3,9 +3,10 @@
 // (copy-style.md, Voice in translation), but Intl.ListFormat joins them:
 // "iPhoneและiPad", "iPhone和iPad". The list keeps that space.
 import { expect, test } from "@playwright/test";
-import { languages, listOf } from "../../src/i18n";
+import { listOf, type Language } from "../../src/i18n";
 
-const lang = (code: string) => languages.find((l) => l.code === code)!;
+// Only the language tag matters; the site index reads a JSON file the test runner cannot
+const lang = (hreflang: string) => ({ hreflang }) as Language;
 
 test("Thai and Chinese keep a space around Latin names", () => {
   expect(listOf(lang("th"), ["iPhone", "iPad"])).toBe("iPhone และ iPad");
@@ -18,5 +19,5 @@ test("Thai and Chinese keep a space around Latin names", () => {
 test("other languages are left as Intl writes them", () => {
   expect(listOf(lang("de"), ["iPhone", "iPad", "Android"])).toBe("iPhone, iPad und Android");
   expect(listOf(lang("ja"), ["iPhone", "iPad", "Android"])).toBe("iPhone、iPad、Android");
-  expect(listOf(lang("en"), ["Mac", "Windows"])).toBe("Mac and Windows");
+  expect(listOf(lang("en-GB"), ["Mac", "Windows"])).toBe("Mac and Windows");
 });
