@@ -1,9 +1,10 @@
-// Lists of platform names, as each language writes them (src/i18n/index.ts).
+// Lists of platform names, as each language writes them (src/i18n/list.ts).
 // Thai and Chinese put a space between their own script and a Latin name
 // (copy-style.md, Voice in translation), but Intl.ListFormat joins them:
 // "iPhoneและiPad", "iPhone和iPad". The list keeps that space.
 import { expect, test } from "@playwright/test";
-import { listOf, type Language } from "../../src/i18n";
+import type { Language } from "../../src/i18n";
+import { listOf } from "../../src/i18n/list";
 
 // Only the language tag matters; the site index reads a JSON file the test runner cannot
 const lang = (hreflang: string) => ({ hreflang }) as Language;
