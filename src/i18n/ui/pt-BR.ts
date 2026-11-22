@@ -125,8 +125,6 @@ export default {
   "faq.free.a": "No {free}, o Doughnut Forge é gratuito para baixar e usar, incluindo a criptografia de texto e a abertura de tudo o que enviam para você. A abertura também funciona para arquivos, fotos e vídeos. Seus contatos, sua identidade e seus ajustes estão incluídos, e não há anúncios.",
   "faq.unlock.q": "Para que serve a compra no app?",
   "faq.unlock.a": "[PENDING-BUTTON] Ela permite criptografar arquivos, fotos e vídeos. É uma compra única, chamada “Criptografar arquivos” na loja. No app, toque em Criptografar arquivo e depois em “Comprar”. Não há assinatura, e a loja mostra o preço na sua própria moeda.",
-  "faq.earlier.q": "Já comprei o Doughnut Forge para iPhone ou iPad. Preciso pagar de novo?",
-  "faq.earlier.a": "Não. Se você já comprou o Doughnut Forge para iPhone ou iPad, você mantém tudo. Não há nada para comprar ou restaurar.",
   "faq.restorePurchase.q": "Como criptografo arquivos nos meus outros dispositivos?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] A compra no app também funciona nos seus outros dispositivos que usam a mesma conta de {stores}. Em cada um, toque em “Restaurar compra” no app.",
   "faq.refund.q": "O que acontece se minha compra for reembolsada?",

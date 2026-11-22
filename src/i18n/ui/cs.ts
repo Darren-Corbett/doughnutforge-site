@@ -137,8 +137,6 @@ export default {
   "faq.free.a": "Na zařízeních {free} je Doughnut Forge zdarma ke stažení i používání, včetně šifrování textu a otevírání všeho, co vám někdo pošle. Otevírání funguje i pro soubory, fotky a videa. Vaše kontakty, identita a nastavení jsou zahrnuty a nejsou zde žádné reklamy.",
   "faq.unlock.q": "K čemu slouží nákup v aplikaci?",
   "faq.unlock.a": "[PENDING-BUTTON] Umožňuje vám šifrovat soubory, fotky a videa. Je to jednorázový nákup, který se v obchodě jmenuje „Šifrovat soubory“. V aplikaci klepněte na Šifrovat soubor a pak na „Koupit“. Předplatné žádné není a obchod ukazuje cenu ve vaší vlastní měně.",
-  "faq.earlier.q": "Doughnut Forge pro iPhone nebo iPad už mám zakoupený. Musím platit znovu?",
-  "faq.earlier.a": "Ne. Pokud jste Doughnut Forge pro iPhone nebo iPad už koupili, vše si ponecháte. Není co kupovat ani obnovovat.",
   "faq.restorePurchase.q": "Jak šifrovat soubory na svých dalších zařízeních?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] Nákup v aplikaci funguje i na vašich dalších zařízeních se stejným účtem {stores}. Na každém z nich klepněte v aplikaci na „Obnovit nákup“.",
   "faq.refund.q": "Co se stane, když dostanu za nákup peníze zpět?",

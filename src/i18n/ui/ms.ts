@@ -135,8 +135,6 @@ export default {
   "faq.free.a": "Pada {free}, Doughnut Forge percuma untuk dimuat turun dan digunakan, termasuk penyulitan teks dan membuka apa sahaja yang dihantar kepada anda. Membuka juga berfungsi untuk fail, foto dan video. Kenalan, identiti dan tetapan anda turut disertakan, dan tiada iklan.",
   "faq.unlock.q": "Untuk apakah pembelian dalam aplikasi?",
   "faq.unlock.a": "[PENDING-BUTTON] Pembelian ini membolehkan anda menyulitkan fail, foto dan video. Ini pembelian sekali sahaja, dinamakan “Sulitkan fail” di kedai. Dalam aplikasi, ketik Sulitkan fail, kemudian “Beli”. Tiada langganan, dan kedai menunjukkan harga dalam mata wang anda sendiri.",
-  "faq.earlier.q": "Saya pernah membeli Doughnut Forge untuk iPhone atau iPad. Perlukah saya membayar lagi?",
-  "faq.earlier.a": "Tidak. Jika anda sudah membeli Doughnut Forge untuk iPhone atau iPad, semuanya kekal milik anda. Tiada apa-apa untuk dibeli atau dipulihkan.",
   "faq.restorePurchase.q": "Bagaimanakah saya menyulitkan fail pada peranti saya yang lain?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] Pembelian dalam aplikasi juga berfungsi pada peranti anda yang lain yang menggunakan akaun {stores} yang sama. Pada setiap peranti, ketik “Pulihkan pembelian” dalam aplikasi.",
   "faq.refund.q": "Apakah yang berlaku jika pembelian saya dibayar balik?",

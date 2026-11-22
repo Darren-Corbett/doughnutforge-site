@@ -125,8 +125,6 @@ export default {
   "faq.free.a": "Auf {free} können Sie Doughnut Forge kostenlos laden und nutzen, einschließlich Textverschlüsselung und Öffnen von allem, was Ihnen gesendet wird. Das Öffnen funktioniert auch für Dateien, Fotos und Videos. Ihre Kontakte, Ihre Identität und Ihre Einstellungen sind enthalten, und es gibt keine Werbung.",
   "faq.unlock.q": "Wofür ist der In-App-Kauf?",
   "faq.unlock.a": "[PENDING-BUTTON] Damit können Sie Dateien, Fotos und Videos verschlüsseln. Es ist ein einmaliger Kauf, der im Store „Dateien verschlüsseln“ heißt. Tippen Sie in der App auf Datei verschlüsseln und dann auf „Kaufen“. Es gibt kein Abo, und der Store zeigt den Preis in Ihrer eigenen Währung.",
-  "faq.earlier.q": "Ich habe Doughnut Forge früher für iPhone oder iPad gekauft. Muss ich noch einmal bezahlen?",
-  "faq.earlier.a": "Nein. Wenn Sie Doughnut Forge für iPhone oder iPad bereits gekauft haben, behalten Sie alles. Es gibt nichts zu kaufen oder wiederherzustellen.",
   "faq.restorePurchase.q": "Wie verschlüssele ich Dateien auf meinen anderen Geräten?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] Der In-App-Kauf funktioniert auch auf Ihren anderen Geräten, die dasselbe Konto für {stores} nutzen. Tippen Sie auf jedem davon in der App auf „Kauf wiederherstellen“.",
   "faq.refund.q": "Was passiert, wenn mein Kauf erstattet wird?",

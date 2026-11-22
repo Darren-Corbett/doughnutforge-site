@@ -125,8 +125,6 @@ export default {
   "faq.free.a": "Op {free} is Doughnut Forge gratis te downloaden en te gebruiken, inclusief tekstversleuteling en het openen van alles wat naar u is gestuurd. Openen werkt ook voor bestanden, foto’s en video’s. Uw contacten, identiteit en instellingen zijn inbegrepen, en er zijn geen advertenties.",
   "faq.unlock.q": "Waarvoor is de in-app-aankoop?",
   "faq.unlock.a": "[PENDING-BUTTON] Hiermee kunt u bestanden, foto’s en video’s versleutelen. Het is een eenmalige aankoop, in de store “Bestanden versleutelen” genoemd. Tik in de app op Bestand versleutelen en daarna op “Kopen”. Er is geen abonnement, en de store toont de prijs in uw eigen valuta.",
-  "faq.earlier.q": "Ik heb Doughnut Forge eerder gekocht voor iPhone of iPad. Moet ik opnieuw betalen?",
-  "faq.earlier.a": "Nee. Als u Doughnut Forge al hebt gekocht voor iPhone of iPad, houdt u alles. Er valt niets te kopen of te herstellen.",
   "faq.restorePurchase.q": "Hoe versleutel ik bestanden op mijn andere apparaten?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] De in-app-aankoop werkt ook op uw andere apparaten met hetzelfde account bij {stores}. Tik op elk ervan in de app op “Aankoop herstellen”.",
   "faq.refund.q": "Wat gebeurt er als mijn aankoop wordt terugbetaald?",

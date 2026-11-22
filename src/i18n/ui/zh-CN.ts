@@ -127,8 +127,6 @@ export default {
   "faq.free.a": "在 {free} 上，Doughnut Forge 可免费下载和使用，包括文本加密以及打开发送给您的任何内容。打开功能也适用于文件、照片和视频。您的联系人、身份和设置均包含在内，并且没有广告。",
   "faq.unlock.q": "应用内购买有什么用？",
   "faq.unlock.a": "[PENDING-BUTTON] 它让您可以加密文件、照片和视频。这是一次性购买，在商店中名为“文件加密”。在应用中，轻点“加密文件”，然后轻点“购买”。无需订阅，商店会以您自己的货币显示价格。",
-  "faq.earlier.q": "我以前购买过 iPhone 或 iPad 版 Doughnut Forge。需要再次付费吗？",
-  "faq.earlier.a": "不需要。如果您已经购买过 iPhone 或 iPad 版 Doughnut Forge，所有内容都会保留。没有需要购买或恢复的内容。",
   "faq.restorePurchase.q": "如何在我的其他设备上加密文件？",
   "faq.restorePurchase.a": "[PENDING-BUTTON] 应用内购买也适用于您使用同一 {stores} 账户的其他设备。在每台设备上，轻点应用中的“恢复购买”。",
   "faq.refund.q": "如果我的购买被退款，会怎样？",

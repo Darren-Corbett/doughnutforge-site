@@ -134,8 +134,6 @@ export default {
   "faq.free.a": "På {free} är Doughnut Forge gratis att ladda ned och använda, inklusive textkryptering och öppning av allt som skickas till dig. Öppning fungerar också för filer, foton och videor. Dina kontakter, din identitet och dina inställningar ingår, och det finns ingen reklam.",
   "faq.unlock.q": "Vad är köpet i appen till för?",
   "faq.unlock.a": "[PENDING-BUTTON] Med det kan du kryptera filer, foton och videor. Det är ett engångsköp som heter ”Kryptera filer” i butiken. Tryck på Kryptera fil i appen och sedan på ”Köp”. Det finns ingen prenumeration, och butiken visar priset i din egen valuta.",
-  "faq.earlier.q": "Jag har köpt Doughnut Forge till iPhone eller iPad tidigare. Måste jag betala igen?",
-  "faq.earlier.a": "Nej. Om du redan har köpt Doughnut Forge till iPhone eller iPad behåller du allt. Det finns inget att köpa eller återställa.",
   "faq.restorePurchase.q": "Hur krypterar jag filer på mina andra enheter?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] Köpet i appen fungerar också på dina andra enheter som använder samma konto hos {stores}. Tryck på ”Återställ köp” i appen på var och en av dem.",
   "faq.refund.q": "Vad händer om mitt köp återbetalas?",

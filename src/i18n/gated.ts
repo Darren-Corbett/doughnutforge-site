@@ -42,8 +42,6 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   "faq.free.a": "mobileFree",
   "faq.unlock.q": "mobileFree",
   "faq.unlock.a": "mobileFree",
-  "faq.earlier.q": "mobileFree",
-  "faq.earlier.a": "mobileFree",
   "faq.restorePurchase.q": "mobileFree",
   "faq.restorePurchase.a": "mobileFree",
   "faq.refund.q": "mobileFree",

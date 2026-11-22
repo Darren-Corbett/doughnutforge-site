@@ -135,8 +135,6 @@ export default {
   "faq.free.a": "Trên {free}, bạn có thể tải xuống và sử dụng Doughnut Forge miễn phí, bao gồm mã hóa văn bản và mở mọi thứ được gửi cho bạn. Bạn cũng mở được tệp, ảnh và video. Các liên hệ, danh tính và cài đặt của bạn đều được bao gồm, và không có quảng cáo.",
   "faq.unlock.q": "Giao dịch mua trong ứng dụng dùng để làm gì?",
   "faq.unlock.a": "[PENDING-BUTTON] Giao dịch này cho phép bạn mã hóa tệp, ảnh và video. Đây là giao dịch mua một lần, có tên “Mã hóa các tệp” trong cửa hàng. Trong ứng dụng, hãy chạm vào Mã hóa tệp, rồi chạm vào “Mua”. Không có gói đăng ký, và cửa hàng hiển thị giá bằng đơn vị tiền tệ của bạn.",
-  "faq.earlier.q": "Trước đây tôi đã mua Doughnut Forge cho iPhone hoặc iPad. Tôi có cần trả tiền lại không?",
-  "faq.earlier.a": "Không. Nếu bạn đã mua Doughnut Forge cho iPhone hoặc iPad, bạn vẫn giữ mọi thứ. Không có gì để mua hay khôi phục.",
   "faq.restorePurchase.q": "Làm cách nào để mã hóa tệp trên các thiết bị khác của tôi?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] Giao dịch mua trong ứng dụng cũng hoạt động trên các thiết bị khác của bạn dùng cùng tài khoản {stores}. Trên từng thiết bị, hãy chạm vào “Khôi phục giao dịch mua” trong ứng dụng.",
   "faq.refund.q": "Điều gì xảy ra nếu giao dịch mua của tôi được hoàn tiền?",

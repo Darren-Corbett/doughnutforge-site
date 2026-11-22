@@ -137,8 +137,6 @@ export default {
   "faq.free.a": "{free} eszközökön a Doughnut Forge ingyenesen letölthető és használható, beleértve a szövegtitkosítást és minden neked küldött tartalom megnyitását. A megnyitás fájlokra, fotókra és videókra is működik. A kapcsolataid, az identitásod és a beállításaid is benne vannak, és nincsenek hirdetések.",
   "faq.unlock.q": "Mire való az alkalmazáson belüli vásárlás?",
   "faq.unlock.a": "[PENDING-BUTTON] Ezzel fájlokat, fotókat és videókat titkosíthatsz. Egyszeri vásárlás, az áruházban „Fájlok titkosítása” a neve. Az alkalmazásban koppints a Fájl titkosítása gombra, majd a „Vásárlás” gombra. Nincs előfizetés, és az áruház a saját pénznemedben mutatja az árat.",
-  "faq.earlier.q": "Korábban már megvettem a Doughnut Forge-ot iPhone-ra vagy iPadre. Újra fizetnem kell?",
-  "faq.earlier.a": "Nem. Ha már megvetted a Doughnut Forge-ot iPhone-ra vagy iPadre, mindent megtartasz. Nincs mit megvenni vagy visszaállítani.",
   "faq.restorePurchase.q": "Hogyan titkosíthatok fájlokat a többi eszközömön?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] Az alkalmazáson belüli vásárlás a többi, azonos {stores}-fiókot használó eszközödön is működik. Mindegyiken koppints az alkalmazásban a „Vásárlás visszaállítása” gombra.",
   "faq.refund.q": "Mi történik, ha visszatérítik a vásárlásom árát?",

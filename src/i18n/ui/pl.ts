@@ -135,8 +135,6 @@ export default {
   "faq.free.a": "Na urządzeniach {free} Doughnut Forge można bezpłatnie pobrać i używać, w tym szyfrować tekst i otwierać wszystko, co ktoś Ci wyśle. Otwieranie działa też w przypadku plików, zdjęć i filmów. Twoje kontakty, tożsamość i ustawienia są uwzględnione, a reklam nie ma.",
   "faq.unlock.q": "Do czego służy zakup w aplikacji?",
   "faq.unlock.a": "[PENDING-BUTTON] Pozwala szyfrować pliki, zdjęcia i filmy. To jednorazowy zakup, który w sklepie nazywa się „Zaszyfruj pliki”. W aplikacji stuknij Zaszyfruj plik, a potem „Kup”. Nie ma subskrypcji, a sklep pokazuje cenę w Twojej walucie.",
-  "faq.earlier.q": "Mam już wcześniej kupiony Doughnut Forge na iPhone’a lub iPada. Czy muszę zapłacić ponownie?",
-  "faq.earlier.a": "Nie. Jeśli masz już kupiony Doughnut Forge na iPhone’a lub iPada, zachowujesz wszystko. Nie ma nic do kupienia ani przywracania.",
   "faq.restorePurchase.q": "Jak szyfrować pliki na moich innych urządzeniach?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] Zakup w aplikacji działa też na innych Twoich urządzeniach z tym samym kontem {stores}. Na każdym z nich stuknij w aplikacji „Przywróć zakup”.",
   "faq.refund.q": "Co się stanie, jeśli otrzymam zwrot pieniędzy za zakup?",

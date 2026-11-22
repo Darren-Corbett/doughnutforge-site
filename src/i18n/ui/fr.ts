@@ -125,8 +125,6 @@ export default {
   "faq.free.a": "Sur {free}, Doughnut Forge est gratuit à télécharger et à utiliser, y compris le chiffrement de texte et l’ouverture de tout ce qui vous est envoyé. L’ouverture fonctionne aussi pour les fichiers, photos et vidéos. Vos contacts, votre identité et vos paramètres sont inclus, et il n’y a pas de publicité.",
   "faq.unlock.q": "À quoi sert l’achat intégré ?",
   "faq.unlock.a": "[PENDING-BUTTON] Il vous permet de chiffrer fichiers, photos et vidéos. C’est un achat unique, appelé « Chiffrer des fichiers » dans la boutique. Dans l’app, touchez Chiffrer un fichier, puis « Acheter ». Il n’y a pas d’abonnement, et la boutique affiche le prix dans votre propre devise.",
-  "faq.earlier.q": "J’ai déjà acheté Doughnut Forge pour iPhone ou iPad. Dois-je payer à nouveau ?",
-  "faq.earlier.a": "Non. Si vous avez déjà acheté Doughnut Forge pour iPhone ou iPad, vous gardez tout. Il n’y a rien à acheter ni à restaurer.",
   "faq.restorePurchase.q": "Comment chiffrer des fichiers sur mes autres appareils ?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] L’achat intégré fonctionne aussi sur vos autres appareils qui utilisent le même compte {stores}. Sur chacun, touchez « Restaurer l’achat » dans l’app.",
   "faq.refund.q": "Que se passe-t-il si mon achat est remboursé ?",

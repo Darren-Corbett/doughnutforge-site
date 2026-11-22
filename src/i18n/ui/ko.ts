@@ -130,8 +130,6 @@ export default {
   "faq.free.a": "{free}에서는 텍스트 암호화와 전송받은 모든 항목 열기를 포함해 Doughnut Forge를 무료로 다운로드하고 사용할 수 있습니다. 파일, 사진, 동영상도 열 수 있습니다. 연락처, 신원, 설정이 포함되며 광고는 없습니다.",
   "faq.unlock.q": "인앱 구입은 무엇을 위한 것인가요?",
   "faq.unlock.a": "[PENDING-BUTTON] 파일, 사진, 동영상을 암호화할 수 있게 해 줍니다. 스토어에서 “파일 암호화”라는 이름의 1회 구입입니다. 앱에서 “파일 암호화하기”를 탭한 다음 “구입”을 탭하세요. 구독은 없으며, 스토어에서 본인의 통화로 가격이 표시됩니다.",
-  "faq.earlier.q": "이전에 iPhone 또는 iPad용 Doughnut Forge를 구입했습니다. 다시 결제해야 하나요?",
-  "faq.earlier.a": "아니요. iPhone 또는 iPad용 Doughnut Forge를 이미 구입했다면 모든 것이 그대로 유지됩니다. 구입하거나 복원할 것이 없습니다.",
   "faq.restorePurchase.q": "다른 기기에서는 파일을 어떻게 암호화하나요?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] 인앱 구입은 같은 {stores} 계정을 사용하는 다른 기기에서도 적용됩니다. 각 기기의 앱에서 “구입 복원”을 탭하세요.",
   "faq.refund.q": "구입이 환불되면 어떻게 되나요?",

@@ -420,7 +420,7 @@ Source for every row: the owner's decisions of 20 November 2026 (night-mode mess
 | P1 | iPhone, iPad and Android: free to download; one in-app purchase, paid once, unlocks encrypting files, photos and videos (`home.pricing.text`, `meta.pricing.description`, `pricing.free`, `faq.subscription.a`, `press.facts.priceValue`) | owner item 1; approved description paragraph (item 3) |
 | P2 | Free: encrypting text, opening what is sent to you (files, photos, videos), saving received items, contacts, identity, settings; no ads (`faq.free.a`) | owner item 1 ("Free: …"; "No subscription, account, servers or ads") |
 | P3 | The purchase is called "Encrypt files" in the store; in the app "Unlock file encryption", "Restore purchase"; the store shows the price in your own currency (`faq.unlock.a`, `faq.restorePurchase.a`) | owner items 1 and 3 (app wording) |
-| P4 | Earlier iPhone and iPad buyers are unlocked automatically (`faq.earlier.a`; shown only once the iPhone and iPad app is free) | owner item 1 |
+| P4 | Withdrawn (owner, 22 November 2026): there were no iOS sales before 3.0, so the site has no answer for earlier buyers (`faq.earlier` removed) | owner, 22 Nov |
 | P5 | The purchase restores on other devices on the same App Store or Google Play account; not across stores (`pricing.where.textFree`, `faq.platforms.aFree`, `faq.restorePurchase.a`). Family Sharing is not mentioned | owner item 1 |
 | P6 | A refund locks file encryption again; opening anything stays free (`faq.refund.a`) | owner item 1 |
 | P7 | Mac and Windows: still a one-time purchase, nothing locked (`faq.desktop.a`, `pricing.oneTime`) | owner item 2 |

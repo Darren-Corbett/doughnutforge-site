@@ -6,7 +6,7 @@
 import Faq, { type FaqItem } from "../components/Faq.astro";
 import PageHero from "../components/PageHero.astro";
 import { issueLists, shownLists } from "../data/issues";
-import { pricingLists, pricingNow } from "../data/pricing";
+import { pricingLists } from "../data/pricing";
 import { getPolicy, policyTitle } from "../data/privacy";
 import { site } from "../data/site";
 import { reached } from "../data/stages";
@@ -26,14 +26,15 @@ const names = (status: "available" | "coming") =>
     lang,
     platforms.filter((p) => p.status === status).map((p) => platformName(lang, p.id)),
   );
-const ids = ["subscription", "free", "unlock", "earlier", "restorePurchase", "refund", "desktop", "platforms", "offline", "storage", "backup", "restore", "password", "share", "code", "older", "recipient", "messaging", "which", "data", "quantum"] as const;
+const ids = ["subscription", "free", "unlock", "restorePurchase", "refund", "desktop", "platforms", "offline", "storage", "backup", "restore", "password", "share", "code", "older", "recipient", "messaging", "which", "data", "quantum"] as const;
 // New contact codes and older apps matter once the first store sells 3.0
 // Buying questions matter once a phone store sells 3.0 (free to download, with one
-// in-app purchase); earlier buyers only once the iPhone and iPad app is free
-const buying = ["free", "unlock", "earlier", "restorePurchase", "refund", "desktop"];
+// in-app purchase). There is no answer for earlier buyers: there were no iOS sales
+// before 3.0 (owner, 22 November 2026)
+const buying = ["free", "unlock", "restorePurchase", "refund", "desktop"];
 const shown = ids
   .filter((id) => reached("first3") || (id !== "code" && id !== "older"))
-  .filter((id) => !buying.includes(id) || (reached("mobileFree") && (id !== "earlier" || pricingNow.free.includes("ios"))));
+  .filter((id) => !buying.includes(id) || reached("mobileFree"));
 const lists = pricingLists(lang);
 const items: FaqItem[] = shown.map((id) => ({
   id,

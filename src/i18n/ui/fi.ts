@@ -137,8 +137,6 @@ export default {
   "faq.free.a": "{free} -laitteissa Doughnut Forgen lataaminen ja käyttö on maksutonta, mukaan lukien tekstin salaus ja kaiken sinulle lähetetyn avaaminen. Avaaminen toimii myös tiedostoille, kuville ja videoille. Yhteystietosi, henkilöllisyytesi ja asetuksesi kuuluvat mukaan, eikä mainoksia ole.",
   "faq.unlock.q": "Mihin sovelluksen sisäinen ostos on tarkoitettu?",
   "faq.unlock.a": "[PENDING-BUTTON] Sen avulla voit salata tiedostoja, kuvia ja videoita. Se on kertaostos, jonka nimi kaupassa on ”Salaa tiedostot”. Napauta sovelluksessa Salaa tiedosto ja sitten ”Osta”. Tilausta ei ole, ja kauppa näyttää hinnan omassa valuutassasi.",
-  "faq.earlier.q": "Ostin Doughnut Forgen aiemmin iPhonelle tai iPadille. Pitääkö minun maksaa uudelleen?",
-  "faq.earlier.a": "Ei. Jos olet jo ostanut Doughnut Forgen iPhonelle tai iPadille, saat pitää kaiken. Mitään ei tarvitse ostaa eikä palauttaa.",
   "faq.restorePurchase.q": "Miten salaan tiedostoja muilla laitteillani?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] Sovelluksen sisäinen ostos toimii myös muilla laitteillasi, joissa käytetään samaa {stores} -tiliä. Napauta kullakin laitteella sovelluksessa ”Palauta ostos”.",
   "faq.refund.q": "Mitä tapahtuu, jos ostokseni hyvitetään?",

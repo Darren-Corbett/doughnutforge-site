@@ -131,8 +131,6 @@ export default {
   "faq.free.a": "Di {free}, Doughnut Forge gratis diunduh dan digunakan, termasuk enkripsi teks dan membuka apa pun yang dikirim kepada Anda. Membuka juga berlaku untuk file, foto, dan video. Kontak, identitas, dan pengaturan Anda sudah termasuk, dan tidak ada iklan.",
   "faq.unlock.q": "Untuk apa pembelian dalam aplikasi?",
   "faq.unlock.a": "[PENDING-BUTTON] Pembelian ini memungkinkan Anda mengenkripsi file, foto, dan video. Ini adalah pembelian satu kali, bernama “Enkripsi file” di toko. Di aplikasi, ketuk Enkripsi file, lalu “Beli”. Tidak ada langganan, dan toko menampilkan harga dalam mata uang Anda sendiri.",
-  "faq.earlier.q": "Saya sudah pernah membeli Doughnut Forge untuk iPhone atau iPad. Apakah saya perlu membayar lagi?",
-  "faq.earlier.a": "Tidak. Jika Anda sudah membeli Doughnut Forge untuk iPhone atau iPad, Anda tetap memiliki semuanya. Tidak ada yang perlu dibeli atau dipulihkan.",
   "faq.restorePurchase.q": "Bagaimana cara mengenkripsi file di perangkat saya yang lain?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] Pembelian dalam aplikasi juga berlaku di perangkat Anda yang lain yang memakai akun {stores} yang sama. Di setiap perangkat, ketuk “Pulihkan pembelian” di aplikasi.",
   "faq.refund.q": "Apa yang terjadi jika dana pembelian saya dikembalikan?",

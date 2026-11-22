@@ -177,8 +177,6 @@ export default {
   "faq.free.a": "On {free}, Doughnut Forge is free to download and use, including text encryption and opening anything sent to you. Opening works for files, photos and videos too. Your contacts, identity and settings are included, and there are no ads.",
   "faq.unlock.q": "What is the in-app purchase for?",
   "faq.unlock.a": "It lets you encrypt files, photos and videos. It is a one-time purchase, called “Encrypt files” in the store. In the app, tap Encrypt file, then “Buy”. There is no subscription, and the store shows the price in your own currency.",
-  "faq.earlier.q": "I bought Doughnut Forge for iPhone or iPad before. Do I need to pay again?",
-  "faq.earlier.a": "No. If you already bought Doughnut Forge for iPhone or iPad, you keep everything. There is nothing to buy or restore.",
   "faq.restorePurchase.q": "How do I encrypt files on my other devices?",
   "faq.restorePurchase.a": "The in-app purchase also works on your other devices that use the same {stores} account. On each one, tap “Restore purchase” in the app.",
   "faq.refund.q": "What happens if my purchase is refunded?",

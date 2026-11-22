@@ -131,8 +131,6 @@ export default {
   "faq.free.a": "Pe dispozitivele {free}, Doughnut Forge este gratuit de descărcat și de folosit, inclusiv criptarea textului și deschiderea a tot ce ți se trimite. Deschiderea funcționează și pentru fișiere, fotografii și videoclipuri. Contactele, identitatea și setările tale sunt incluse și nu există reclame.",
   "faq.unlock.q": "La ce folosește achiziția în aplicație?",
   "faq.unlock.a": "[PENDING-BUTTON] Îți permite să criptezi fișiere, fotografii și videoclipuri. Este o achiziție unică, numită „Criptează fișiere” în magazin. În aplicație, atinge Criptează fișierul, apoi „Cumpără”. Nu există abonament, iar magazinul arată prețul în moneda ta.",
-  "faq.earlier.q": "Am cumpărat deja Doughnut Forge pentru iPhone sau iPad. Trebuie să plătesc din nou?",
-  "faq.earlier.a": "Nu. Dacă ai cumpărat deja Doughnut Forge pentru iPhone sau iPad, păstrezi totul. Nu ai nimic de cumpărat sau de restaurat.",
   "faq.restorePurchase.q": "Cum criptez fișiere pe celelalte dispozitive ale mele?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] Achiziția în aplicație funcționează și pe celelalte dispozitive ale tale care folosesc același cont {stores}. Pe fiecare dintre ele, atinge „Restaurează achiziția” în aplicație.",
   "faq.refund.q": "Ce se întâmplă dacă achiziția mea este rambursată?",

@@ -131,8 +131,6 @@ export default {
   "faq.free.a": "{free} cihazlarda Doughnut Forge, metin şifreleme ve size gönderilen her şeyi açma dahil, ücretsiz indirilip kullanılabilir. Açma özelliği dosyalar, fotoğraflar ve videolar için de çalışır. Kişileriniz, kimliğiniz ve ayarlarınız dahildir ve reklam yoktur.",
   "faq.unlock.q": "Uygulama içi satın alım ne işe yarar?",
   "faq.unlock.a": "[PENDING-BUTTON] Dosya, fotoğraf ve videoları şifrelemenizi sağlar. Mağazada “Dosyaları şifrele” adını taşıyan tek seferlik bir satın alımdır. Uygulamada Dosyayı şifrele düğmesine, ardından “Satın al” düğmesine dokunun. Abonelik yoktur ve mağaza fiyatı kendi para biriminizde gösterir.",
-  "faq.earlier.q": "Doughnut Forge’u daha önce iPhone veya iPad için satın aldım. Tekrar ödemem gerekir mi?",
-  "faq.earlier.a": "Hayır. Doughnut Forge’u iPhone veya iPad için zaten satın aldıysanız her şey sizde kalır. Satın alacak veya geri yükleyecek bir şey yoktur.",
   "faq.restorePurchase.q": "Diğer cihazlarımda dosyaları nasıl şifrelerim?",
   "faq.restorePurchase.a": "[PENDING-BUTTON] Uygulama içi satın alım, aynı {stores} hesabını kullanan diğer cihazlarınızda da çalışır. Her birinde uygulamadaki “Satın alımı geri yükle” düğmesine dokunun.",
   "faq.refund.q": "Satın alımım iade edilirse ne olur?",
