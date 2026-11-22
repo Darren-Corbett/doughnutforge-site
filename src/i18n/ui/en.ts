@@ -372,7 +372,7 @@ export default {
   "technical.title": "Technical details",
   "technical.glance.title": "At a glance",
   "technical.glance.exchange": "Post-quantum hybrid key exchange and signatures",
-  "technical.glance.network": "[PENDING-WHITEPAPER-PDF] [PENDING-ANDROID-PERMISSION] No network connections of its own",
+  "technical.glance.network": "[PENDING-WHITEPAPER-PDF] No network connections of its own",
   "technical.glance.servers": "No accounts or servers",
   "technical.toc": "On this page",
   "technical.back": "Back to contents",
@@ -476,10 +476,13 @@ export default {
   "technical.text.untested": "Doughnut Forge has not been tested with each app that the text might pass through.",
   "technical.network.title": "Network",
   "technical.network.none":
-    "[PENDING-WHITEPAPER-PDF] [PENDING-ANDROID-PERMISSION] Doughnut Forge makes no network connections of its own. There is no account, no sign-in, no analytics, no crash reporting and no update check. The app's content policy does not allow its screens to load anything from the internet.",
+    "[PENDING-WHITEPAPER-PDF] Doughnut Forge makes no network connections of its own. There is no account, no sign-in, no analytics, no crash reporting and no update check. The app's content policy does not allow its screens to load anything from the internet.",
   "technical.network.apple":
     "On Mac, iPhone and iPad, the operating system may contact the Doughnut Forge website so that password managers can offer to save and fill your password. Apple's system does this, not the app.",
   "technical.network.sharing": "Encrypted items leave your device only when you share them yourself.",
+  // Android's network line, A or B (src/data/android-permission.ts)
+  "technical.network.androidA": "On Android, Doughnut Forge has no permission to use the internet, so Android itself stops it from connecting. Google Play's own app handles the purchase.",
+  "technical.network.androidB": "On Android, Google Play's purchase library needs the permission to use the internet. Doughnut Forge's own code never connects: your files, keys and contacts never leave your phone.",
   "technical.libraries.title": "Libraries",
   "technical.libraries.text": "Doughnut Forge uses these libraries for its cryptography and compression:",
   "technical.libraries.sha": "SHA-256 and SHA-512",

@@ -15,6 +15,7 @@ import Prose from "../components/Prose.astro";
 import TocSection from "../components/TocSection.astro";
 import { localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
+import { androidPermissionLine } from "../data/android-permission";
 import { reached } from "../data/stages";
 import { whitePaperLink } from "../data/white-paper";
 
@@ -149,6 +150,7 @@ const back = t("technical.back");
 
     <TocSection id="network" title={title.network} back={back}>
       <p>{t("technical.network.none")}</p>
+      {reached("android") && <p>{androidPermissionLine() === "[PENDING-ANDROID-PERMISSION]" ? androidPermissionLine() : t(androidPermissionLine() as UiKey)}</p>}
       <p>{t("technical.network.apple")}</p>
       <p>{t("technical.network.sharing")}</p>
     </TocSection>
