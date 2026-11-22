@@ -207,6 +207,16 @@ test("mobile pricing stage: the free phrase and the paid apps, in the guide's wo
   }
 });
 
+// The price lines carry {free}, {paid}, {stores} and {store} slots; every page that
+// shows one fills them (the features FAQ showed "On {free}," at the mobile pricing stage)
+test("no page shows an unfilled pricing slot", async ({ page }) => {
+  for (const path of ["/", "/features/", "/pricing/", "/download/", "/support/", "/press/", "/de/features/", "/ja/features/"]) {
+    await page.goto(path);
+    const text = `${await page.title()}\n${(await page.locator("body").textContent()) ?? ""}`;
+    expect(text, path).not.toMatch(/\{(?:free|paid|stores|store)\}/);
+  }
+});
+
 // A store is named only once it sells the app: with only the App Store selling
 // 3.0, the buying answers name no Google Play account (copy sweep A2-7)
 test("mobile pricing stage: Google Play is named only once Android is on sale", async ({ page }) => {
