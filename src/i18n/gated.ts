@@ -28,8 +28,8 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   "features.lead": "android",
   "blog.cta.text": "android",
 
-  // A phone store sells 3.0: free to download, with one in-app purchase, paid
-  // once, that unlocks encrypting files, photos and videos (owner, 20 November 2026)
+  // A phone store sells 3.0: free to download and use, and encrypting files, photos
+  // and videos is a one-time in-app purchase (pricing-and-unlock.md v2, 21 November 2026)
   "home.pricing.title": "mobileFree",
   "home.pricing.text": "mobileFree",
   "meta.pricing.title": "mobileFree",

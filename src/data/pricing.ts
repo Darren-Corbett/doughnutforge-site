@@ -1,7 +1,8 @@
-// From 3.0.0 the iPhone, iPad and Android apps are free to download, with one
-// in-app purchase, paid once, that unlocks encrypting files, photos and videos.
-// Mac and Windows stay a one-time purchase, with nothing locked (owner,
-// 20 November 2026). Each phone platform switches when its own store sells 3.0.
+// From 3.0.0 the iPhone, iPad and Android apps are free to download and use, and
+// encrypting files, photos and videos is a one-time in-app purchase. Mac and
+// Windows are paid apps, bought once in their stores, with nothing locked
+// (pricing-and-unlock.md v2, Darren 21 November 2026). Each phone platform
+// switches when its own store sells 3.0.
 import type { Language } from "../i18n";
 import { listOf } from "../i18n/list";
 import release from "./release.json" with { type: "json" };

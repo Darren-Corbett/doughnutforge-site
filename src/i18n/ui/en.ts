@@ -57,7 +57,7 @@ export default {
   "tabs.text": "Text",
 
   "home.pricing.title": "No subscription.",
-  "home.pricing.text": "On {free}, Doughnut Forge is free to download, and one in-app purchase, paid once, unlocks encrypting files, photos and videos. On {paid}, it is a one-time purchase from each store. The store shows the price where you live.",
+  "home.pricing.text": "On {free}, Doughnut Forge is free to download and use, including text encryption and opening anything sent to you. Encrypting files, photos and videos is a one-time purchase. {paid} are paid apps, bought once in their stores. The store shows the price where you live.",
 
   // {platforms} is one platform or a list, such as "Android"
   "download.coming": "Planned: {platforms}.",
@@ -115,16 +115,15 @@ export default {
 
   // Pricing page
   "meta.pricing.title": "Pricing: no subscription | Doughnut Forge",
-  "meta.pricing.description":
-    "Free to download on {free}, with one in-app purchase, paid once, to encrypt files, photos and videos. A one-time purchase on {paid}. No subscription.",
+  "meta.pricing.description": "On {free}, Doughnut Forge is free to download and use, including text encryption and opening anything sent to you. Encrypting files, photos and videos is a one-time purchase. {paid} are paid apps, bought once in their stores.",
   "pricing.where.title": "Where to buy",
   "pricing.where.text":
     "Each platform is a separate purchase from its own store. Buying on iPhone and iPad does not include Android, Mac or Windows, and buying on Android, Mac or Windows does not include any other platform.",
-  "pricing.where.textFree": "On {paid}, each platform is a separate purchase from its own store. On {free}, the in-app purchase restores on your other devices that use the same {stores} account.",
+  "pricing.where.textFree": "{paid} are paid apps, bought once in their stores, and each is a separate purchase. On {free}, the in-app purchase also works on your other devices that use the same {stores} account.",
   "pricing.oneTime": "One-time purchase from the {store}",
   "pricing.oneTime.googlePlay": "One-time purchase from Google Play",
-  "pricing.free": "Free to download from the {store}, with one in-app purchase, paid once, to encrypt files, photos and videos",
-  "pricing.free.googlePlay": "Free to download from Google Play, with one in-app purchase, paid once, to encrypt files, photos and videos",
+  "pricing.free": "Free to download and use from the {store}, with a one-time purchase to encrypt files, photos and videos",
+  "pricing.free.googlePlay": "Free to download and use from Google Play, with a one-time purchase to encrypt files, photos and videos",
   "pricing.questions": "Questions about buying?",
   "pricing.questionsLink": "See the answers on the support page",
 
@@ -173,24 +172,23 @@ export default {
   "support.faq.title": "Frequently asked questions",
 
   "faq.subscription.q": "Is Doughnut Forge a subscription?",
-  "faq.subscription.a":
-    "No. Doughnut Forge is never a subscription. On {free}, it is free to download, and one in-app purchase, paid once, unlocks encrypting files, photos and videos. On {paid}, it is a one-time purchase from each store. There is nothing to renew.",
+  "faq.subscription.a": "No. There is nothing to renew. On {free}, Doughnut Forge is free to download and use, including text encryption and opening anything sent to you. Encrypting files, photos and videos is a one-time purchase. {paid} are paid apps, bought once in their stores.",
   "faq.free.q": "What is free on {free}?",
-  "faq.free.a": "Doughnut Forge is free to download: encrypting text, opening what is sent to you, your contacts and your identity cost nothing. You can open and decrypt anything sent to you, including files, photos and videos, save what you receive and change your settings. There are no ads.",
-  "faq.unlock.q": "What does the in-app purchase unlock?",
-  "faq.unlock.a": "Encrypting files, photos and videos. It is one in-app purchase, paid once, called “Encrypt files” in the store. In the app, tap Encrypt file, then “Buy”. There is no subscription, and the store shows the price in your own currency.",
+  "faq.free.a": "On {free}, Doughnut Forge is free to download and use, including text encryption and opening anything sent to you. Opening works for files, photos and videos too. Your contacts, identity and settings are included, and there are no ads.",
+  "faq.unlock.q": "What is the in-app purchase for?",
+  "faq.unlock.a": "It lets you encrypt files, photos and videos. It is a one-time purchase, called “Encrypt files” in the store. In the app, tap Encrypt file, then “Buy”. There is no subscription, and the store shows the price in your own currency.",
   "faq.earlier.q": "I bought Doughnut Forge for iPhone or iPad before. Do I need to pay again?",
-  "faq.earlier.a": "No. If you bought Doughnut Forge for iPhone or iPad before it became free to download, file encryption is unlocked for you automatically.",
-  "faq.restorePurchase.q": "How do I unlock file encryption on my other devices?",
-  "faq.restorePurchase.a": "Tap “Restore purchase” in the app. The purchase restores on your other devices that use the same {stores} account.",
+  "faq.earlier.a": "No. If you already bought Doughnut Forge for iPhone or iPad, you keep everything. There is nothing to buy or restore.",
+  "faq.restorePurchase.q": "How do I encrypt files on my other devices?",
+  "faq.restorePurchase.a": "The in-app purchase also works on your other devices that use the same {stores} account. On each one, tap “Restore purchase” in the app.",
   "faq.refund.q": "What happens if my purchase is refunded?",
-  "faq.refund.a": "A refunded purchase locks file encryption again. Opening anything sent to you is still free.",
+  "faq.refund.a": "After a refund, the app no longer encrypts files, photos and videos. Text encryption and opening anything sent to you are still free.",
   "faq.desktop.q": "Does buying change on Mac or Windows?",
-  "faq.desktop.a": "No. On Mac and Windows, Doughnut Forge is still a one-time purchase from the Mac App Store or the Microsoft Store, and nothing in the app is locked.",
+  "faq.desktop.a": "No. Mac and Windows are paid apps, bought once in the Mac App Store or the Microsoft Store. There is no in-app purchase, and nothing in the app is locked.",
   "faq.platforms.q": "If I buy it on one platform, do I also get it on another?",
   "faq.platforms.a":
     "No. Each platform is a separate purchase from its own store: the App Store for iPhone and iPad, Google Play for Android, the Mac App Store for Mac and the Microsoft Store for Windows. Buying on iPhone and iPad does not include Android, Mac or Windows, and buying on Android, Mac or Windows does not include any other platform.",
-  "faq.platforms.aFree": "No. On {paid}, each platform is a separate purchase from its own store. On {free}, the in-app purchase restores on your other devices that use the same {stores} account. A purchase in one store never unlocks the app from another store.",
+  "faq.platforms.aFree": "No. {paid} are paid apps, bought once in their stores, and each is a separate purchase. On {free}, the in-app purchase also works on your other devices that use the same {stores} account. It does not move between stores.",
   "faq.offline.q": "Do I need an account or an internet connection?",
   "faq.offline.a":
     "No. There is no account to create, and Doughnut Forge works entirely on your device, even without an internet connection. You only need a connection to download the app, to buy or restore the in-app purchase, or if you choose to send encrypted files over the internet.",
@@ -252,7 +250,7 @@ export default {
   "press.facts.available": "Available for",
   "press.facts.coming": "Planned",
   "press.facts.price": "Price",
-  "press.facts.priceValue": "Free to download on {free}, with one in-app purchase, paid once, to encrypt files, photos and videos. One-time purchase on {paid}. Never a subscription.",
+  "press.facts.priceValue": "On {free}, Doughnut Forge is free to download and use, including text encryption and opening anything sent to you. Encrypting files, photos and videos is a one-time purchase. {paid} are paid apps, bought once in their stores. No subscription.",
   "press.facts.languages": "Languages",
   "press.facts.website": "Website",
   "press.facts.contact": "Press contact",
