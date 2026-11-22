@@ -121,16 +121,17 @@ test("posts: Android, the old-card line and post-quantum signatures follow their
   expect((await text("/blog/share-encrypted-files/")).includes("the app refuses it"), "refuses").toBe(!reached("first3"));
 });
 
-// From 3.0.0 the phone and tablet apps are free to download, with one in-app
-// purchase, paid once, that unlocks encrypting files, photos and videos; Mac and
-// Windows stay a one-time purchase (owner, 20 November 2026). Each card follows
-// its own store; the site-wide lines switch at the mobile pricing stage.
+// From 3.0.0 the phone and tablet apps are free to download and use, and
+// encrypting files, photos and videos is a one-time purchase; Mac and Windows are
+// paid apps, bought once in their stores (pricing-and-unlock.md v2, Darren
+// 21 November 2026). Each card follows its own store; the site-wide lines switch
+// at the mobile pricing stage.
 test("mobile pricing stage: each card says how that platform is bought", async ({ page }) => {
   const { free, paid } = pricingSplit(platforms, release.storesWith3);
   await page.goto("/pricing/");
   for (const id of free) {
     await expect(page.locator(`.card[data-platform="${id}"] .status`), id).toHaveText(
-      `Free to download from ${id === "android" ? "Google Play" : "the App Store"}, with one in-app purchase, paid once, to encrypt files, photos and videos`,
+      `Free to download and use from ${id === "android" ? "Google Play" : "the App Store"}, with a one-time purchase to encrypt files, photos and videos`,
     );
   }
   for (const id of paid) await expect(page.locator(`.card[data-platform="${id}"] .status`), id).toHaveText(/^One-time purchase from /);
@@ -144,13 +145,32 @@ test("mobile pricing stage: the site-wide price lines, the buying FAQ and the pr
   await page.goto("/support/");
   const questions = await page.locator("#faq summary, #faq h3").allInnerTexts();
   const asked = (q: string) => questions.some((text) => text.includes(q));
-  expect(asked("What does the in-app purchase unlock?"), "unlock FAQ").toBe(on);
+  expect(asked("What is the in-app purchase for?"), "purchase FAQ").toBe(on);
   expect(asked("What happens if my purchase is refunded?"), "refund FAQ").toBe(on);
-  expect(asked("How do I unlock file encryption on my other devices?"), "restore FAQ").toBe(on);
+  expect(asked("How do I encrypt files on my other devices?"), "restore FAQ").toBe(on);
   expect(asked("Does buying change on Mac or Windows?"), "desktop FAQ").toBe(on);
   expect(asked("I bought Doughnut Forge for iPhone or iPad before. Do I need to pay again?"), "earlier buyers FAQ").toBe(iosFree);
   await page.goto("/privacy/");
   expect((await page.locator("main").innerText()).includes("Apple or Google keeps a record of the purchase"), "privacy purchase line").toBe(on);
+});
+
+// The copy style guide (copy-style.md v2): the free phrase word for word, after
+// the free platforms, and Mac and Windows as paid apps, bought once in their stores.
+// Never "unlock" for the purchase, and never "paid once" beside "one-time".
+test("mobile pricing stage: the free phrase and the paid apps, in the guide's words", async ({ page }) => {
+  test.skip(!reached("mobileFree"), "phones are not free yet");
+  const { free } = pricingSplit(platforms, release.storesWith3);
+  const devices = free.flatMap((id) => (id === "ios" ? ["iPhone", "iPad"] : ["Android"]));
+  const on = `On ${devices.length > 2 ? `${devices.slice(0, -1).join(", ")} and ${devices.at(-1)}` : devices.join(" and ")}, Doughnut Forge is free to download and use, including text encryption and opening anything sent to you. Encrypting files, photos and videos is a one-time purchase.`;
+  for (const path of ["/pricing/", "/support/", "/press/"]) {
+    await page.goto(path);
+    // textContent: the FAQ answers sit in closed <details>
+    const main = ((await page.locator("main").textContent()) ?? "").replace(/\s+/g, " ");
+    expect(main, path).toContain(on);
+    expect(main, path).toContain("Mac and Windows are paid apps, bought once in");
+    expect(main, path).not.toMatch(/\bunlock\w*[^.]*\b(?:purchase|buy)|\b(?:purchase|buy)\w*[^.]*\bunlock/i);
+    expect(main, path).not.toContain("paid once");
+  }
 });
 
 // A store is named only once it sells the app: with only the App Store selling
