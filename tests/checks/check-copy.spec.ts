@@ -68,6 +68,18 @@ test("checks the meta description and alt text, and leaves other languages to th
   expect(result.output).toContain("on 1 English page");
 });
 
+test("leaves quoted words to their sources, and lets the site say it is not audited", async () => {
+  const result = await check({
+    "index.html": page(
+      "en-GB",
+      `<p>WhatsApp says it collects “how you interact with others using our Services”.</p>
+       <p>Apple tells developers: “You’re responsible for keeping your responses accurate.”</p>
+       <p>Not audited yet.</p><p>Doughnut Forge has not been audited.</p>`,
+    ),
+  });
+  expect(result.output).toContain("check-copy: 0 findings");
+});
+
 test("--summary prints one line", async () => {
   const result = await check({ "index.html": page("en-GB", "<p>Amazing!</p>") }, "--summary");
   expect(result.output.trim().split("\n")).toHaveLength(1);
