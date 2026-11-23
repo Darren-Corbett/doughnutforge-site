@@ -194,3 +194,10 @@ The work: Part B items 1 to 8 on the local branch, from the v2 website pack only
 - Change (owner's yes, 22 November): `npm run check:commit -- -m "<message>"` makes the commit itself, only after the type check passes (CLAUDE.md updated). Checked: a staged file with a type error was refused and nothing was committed.
 - When to check: in a month (22 December 2026): no commit needs a follow-up type fix.
 - Result: open.
+
+## 23 November 2026, a held line would have changed before its stage
+
+- Problem: the English Security line, held until 3.0 (`src/i18n/gated.ts`), had its new text saved as its earlier text in `src/i18n/before/en.json`, because the English was changed before the earlier texts were copied. English would have shown the new line before 3.0. A new stage test caught it before the push (`fdaa37d`, fixed in `a647d71`).
+- Change (owner's yes, 23 November): `scripts/check-held-text.mjs` runs in every build and fails when a held string's earlier text is already its new text, in any language. Genuine cases go in `src/i18n/held-same.json` with a one-line reason; an entry that is no longer needed fails too. The list starts empty.
+- When to check: in a month (23 December 2026): no held line changed before its stage, and the exceptions list is still short.
+- Result: open.
