@@ -151,12 +151,15 @@ for (const prefix of ["", "/de", "/ja"]) {
   });
 }
 
-// Once 3.0 is live the audit is no longer planned: the audit line and the
-// roadmap's description say so in English, and the other languages follow
+// Once 3.0 is live the audit is no longer planned: the audit line, its heading
+// and the roadmap's description say so in English, and the other languages follow.
+// Until then every language keeps today's line, English too.
 test("3.0 live: no independent audit is promised", async () => {
   const text = await uiNow("en", "security.audit.text");
   const meta = await uiNow("en", "meta.roadmap.description");
   expect(text.includes("One is planned"), "audit line").toBe(!v3());
+  // Its heading too (Darren, 23 November 2026)
+  expect(await uiNow("en", "security.audit.title")).toBe(v3() ? "No independent audit" : "Not audited yet");
   if (reached("android")) expect(meta).not.toMatch(/audit/i);
 });
 

@@ -8,7 +8,7 @@ import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { each } from "../support/each";
 import { ui } from "../support/ui";
-import { reached } from "../support/release";
+import { reached, uiNow } from "../support/release";
 
 // LANGS narrows the run, as in the other layout tests ("en" for English)
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));
@@ -126,7 +126,7 @@ for (const lang of languages) {
       // The page describes the app as it is, not one release of it
       expect(text).not.toContain("0.4.46");
       // It says plainly that there has been no audit yet, and links to the plan
-      expect(text).toContain(await ui(lang.code, "security.audit.text"));
+      expect(text).toContain(await uiNow(lang.code, "security.audit.text"));
       await expect(page.locator(`main a[href="${prefix(lang)}/roadmap/"]`)).toHaveCount(1);
       if (lang.code === "en") {
         // "does not guarantee" is a limit the page must state, never a promise

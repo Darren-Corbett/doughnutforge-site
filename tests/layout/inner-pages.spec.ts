@@ -36,7 +36,7 @@ for (const [prefix, strings] of [["", en], ["/de", de as Record<string, string>]
     await expect(page.locator("#report ~ * .btn-outline")).toHaveText(new RegExp(strings["security.report.button"]!));
     // What to send, the reply, and credit without a bounty, in that order
     await expect(page.locator("#report ~ * p")).toHaveText(["text", "private", "include", "promise", "credit"].map((id) => strings[`security.report.${id}`]!));
-    await expect(facts.last().locator("p")).toHaveText(`${strings["security.audit.text"]} ${strings["security.audit.link"]}`);
+    await expect(facts.last().locator("p")).toHaveText(`${await uiNow(code, "security.audit.text")} ${strings["security.audit.link"]}`);
     const headings = await page.locator("main h2").evaluateAll((hs) => hs.map((h) => h.id || h.textContent));
     expect(headings.indexOf("report"), `heading order: ${headings}`).toBe(headings.length - 1);
   });

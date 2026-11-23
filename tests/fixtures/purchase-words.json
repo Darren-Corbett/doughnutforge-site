@@ -1,0 +1,179 @@
+{
+  "_source": "purchase-screen-words.md (23 Nov 2026, release code 5be8eb98), the price shown as …",
+  "words": {
+    "cs": {
+      "encryptFile": "Zašifrovat soubor",
+      "buy": "Koupit za …",
+      "restore": "Obnovit nákup",
+      "product": "Šifrování souborů"
+    },
+    "da": {
+      "encryptFile": "Krypter fil",
+      "buy": "Køb for …",
+      "restore": "Gendan køb",
+      "product": "Kryptering af filer"
+    },
+    "de": {
+      "encryptFile": "Datei verschlüsseln",
+      "buy": "Für … kaufen",
+      "restore": "Kauf wiederherstellen",
+      "product": "Dateien verschlüsseln"
+    },
+    "el": {
+      "encryptFile": "Κρυπτογράφηση αρχείου",
+      "buy": "Αγορά με …",
+      "restore": "Επαναφορά αγοράς",
+      "product": "Κρυπτογράφηση αρχείων"
+    },
+    "en": {
+      "encryptFile": "Encrypt file",
+      "buy": "Buy for …",
+      "restore": "Restore purchase",
+      "product": "Encrypt files"
+    },
+    "es": {
+      "encryptFile": "Cifrar archivo",
+      "buy": "Comprar por …",
+      "restore": "Restaurar compra",
+      "product": "Cifrar archivos"
+    },
+    "es-MX": {
+      "encryptFile": "Cifrar archivo",
+      "buy": "Comprar por …",
+      "restore": "Restaurar compra",
+      "product": "Cifrar archivos"
+    },
+    "fi": {
+      "encryptFile": "Salaa tiedosto",
+      "buy": "Osta hintaan …",
+      "restore": "Palauta osto",
+      "product": "Salaa tiedostot"
+    },
+    "fr": {
+      "encryptFile": "Chiffrer le fichier",
+      "buy": "Acheter pour …",
+      "restore": "Restaurer l'achat",
+      "product": "Chiffrer des fichiers"
+    },
+    "hi": {
+      "encryptFile": "फ़ाइल एन्क्रिप्ट करें",
+      "buy": "… में खरीदें",
+      "restore": "खरीदारी बहाल करें",
+      "product": "फ़ाइलें एन्क्रिप्ट करें"
+    },
+    "hu": {
+      "encryptFile": "Fájl titkosítása",
+      "buy": "Megvásárlás … áron",
+      "restore": "Vásárlás visszaállítása",
+      "product": "Fájlok titkosítása"
+    },
+    "id": {
+      "encryptFile": "Enkripsi file",
+      "buy": "Beli seharga …",
+      "restore": "Pulihkan pembelian",
+      "product": "Enkripsi file"
+    },
+    "it": {
+      "encryptFile": "Crittografa file",
+      "buy": "Acquista per …",
+      "restore": "Ripristina acquisto",
+      "product": "Crittografa file"
+    },
+    "ja": {
+      "encryptFile": "ファイルを暗号化",
+      "buy": "…で購入",
+      "restore": "購入を復元",
+      "product": "ファイルを暗号化"
+    },
+    "ko": {
+      "encryptFile": "파일 암호화",
+      "buy": "…에 구입",
+      "restore": "구입 내역 복원",
+      "product": "파일 암호화"
+    },
+    "ms": {
+      "encryptFile": "Sulitkan fail",
+      "buy": "Beli dengan …",
+      "restore": "Pulihkan pembelian",
+      "product": "Sulitkan fail"
+    },
+    "nl": {
+      "encryptFile": "Bestand versleutelen",
+      "buy": "Kopen voor …",
+      "restore": "Aankoop herstellen",
+      "product": "Bestanden versleutelen"
+    },
+    "no": {
+      "encryptFile": "Krypter fil",
+      "buy": "Kjøp for …",
+      "restore": "Gjenopprett kjøp",
+      "product": "Kryptering av filer"
+    },
+    "pl": {
+      "encryptFile": "Zaszyfruj plik",
+      "buy": "Kup za …",
+      "restore": "Przywróć zakup",
+      "product": "Szyfrowanie plików"
+    },
+    "pt-BR": {
+      "encryptFile": "Criptografar arquivo",
+      "buy": "Comprar por …",
+      "restore": "Restaurar compra",
+      "product": "Criptografar arquivos"
+    },
+    "ro": {
+      "encryptFile": "Criptare fișier",
+      "buy": "Cumpără cu …",
+      "restore": "Restaurează achiziția",
+      "product": "Criptare fișiere"
+    },
+    "ru": {
+      "encryptFile": "Зашифровать файл",
+      "buy": "Купить за …",
+      "restore": "Восстановить покупку",
+      "product": "Шифрование файлов"
+    },
+    "sv": {
+      "encryptFile": "Kryptera fil",
+      "buy": "Köp för …",
+      "restore": "Återställ köp",
+      "product": "Kryptering av filer"
+    },
+    "th": {
+      "encryptFile": "เข้ารหัสไฟล์",
+      "buy": "ซื้อในราคา …",
+      "restore": "กู้คืนการซื้อ",
+      "product": "เข้ารหัสไฟล์"
+    },
+    "tr": {
+      "encryptFile": "Dosyayı şifrele",
+      "buy": "… karşılığında satın al",
+      "restore": "Satın alımı geri yükle",
+      "product": "Dosya şifreleme"
+    },
+    "uk": {
+      "encryptFile": "Зашифрувати файл",
+      "buy": "Купити за …",
+      "restore": "Відновити покупку",
+      "product": "Шифрування файлів"
+    },
+    "vi": {
+      "encryptFile": "Mã hóa tệp",
+      "buy": "Mua với giá …",
+      "restore": "Khôi phục giao dịch mua",
+      "product": "Mã hóa tệp"
+    },
+    "zh-CN": {
+      "encryptFile": "加密文件",
+      "buy": "以 … 购买",
+      "restore": "恢复购买",
+      "product": "加密文件"
+    },
+    "zh-TW": {
+      "encryptFile": "加密檔案",
+      "buy": "以 … 購買",
+      "restore": "回復購買項目",
+      "product": "加密檔案"
+    }
+  }
+}

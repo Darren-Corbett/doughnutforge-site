@@ -89,3 +89,26 @@ test("fails when the PDF is not the one that was made", async () => {
   expect(result.code).not.toBe(0);
   expect(result.output).toContain("make-white-paper-pdf");
 });
+
+// The English PDF is the app side's own file, served exactly as handed over
+// (Darren, 23 November 2026): the record holds its fingerprint instead of the
+// text's, so the English text can change without it, but the file cannot
+const handedOver = { en: { handedOver: sha(PDF) } };
+
+test("passes when the English PDF is the handed-over file, even after the text changed", async () => {
+  const result = await check(site({ text: `${TEXT}\nOne more sentence.\n`, record: handedOver }));
+  expect(result.output).toContain("check-white-paper");
+  expect(result.code).toBe(0);
+});
+
+test("fails when the handed-over English PDF was replaced", async () => {
+  const result = await check(site({ pdf: "%PDF-1.7 made by the site", record: handedOver }));
+  expect(result.code).not.toBe(0);
+  expect(result.output).toContain("not the PDF handed over");
+});
+
+test("fails when the handed-over English PDF is missing", async () => {
+  const result = await check(site({ pdf: null, record: handedOver }));
+  expect(result.code).not.toBe(0);
+  expect(result.output).toContain("doughnut-forge-white-paper-en.pdf");
+});
