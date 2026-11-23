@@ -2,7 +2,8 @@
 // keeps an internal version of its notes with source file and test names; none
 // of that may reach this repo or the site. And each language's PDF must be the
 // one scripts/make-white-paper-pdf.mjs made from that language's current text,
-// as recorded in src/data/white-paper-pdfs.json.
+// as recorded in src/data/white-paper-pdfs.json. The English PDF is the app
+// side's own file instead (Darren, 23 November 2026): it must be that file, unchanged.
 //
 //   node scripts/check-white-paper.mjs [--root <repo>] [--dist <dist>]
 import { createHash } from "node:crypto";
@@ -43,7 +44,10 @@ for (const lang of langs) {
   const pdf = join(dist, path, name);
   const made = record[lang];
   if (!existsSync(pdf)) problems.push(`${path}/${name} is missing: run node scripts/make-white-paper-pdf.mjs --lang ${lang}`);
-  else if (!made || made.source !== sha(text) || made.pdf !== sha(readFileSync(pdf)))
+  // The app side's own PDF, served as handed over: only the file itself counts
+  else if (made?.handedOver) {
+    if (made.handedOver !== sha(readFileSync(pdf))) problems.push(`${path}/${name} is not the PDF handed over: copy it in again with node scripts/make-white-paper-pdf.mjs --lang ${lang} --from <file>`);
+  } else if (!made || made.source !== sha(text) || made.pdf !== sha(readFileSync(pdf)))
     problems.push(`${path}/${name} is not the PDF of the current ${lang}.md: run node scripts/make-white-paper-pdf.mjs --lang ${lang}`);
 }
 
@@ -51,4 +55,4 @@ if (problems.length) {
   console.error(`check-white-paper:\n  ${problems.join("\n  ")}`);
   process.exit(1);
 }
-console.log(`check-white-paper: ${langs.length} language(s), no private notes, every PDF made from its current text`);
+console.log(`check-white-paper: ${langs.length} language(s), no private notes, every PDF made from its current text or handed over unchanged`);
