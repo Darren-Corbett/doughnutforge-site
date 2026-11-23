@@ -4,6 +4,7 @@
 //   mobileFree  a phone store on sale sells 3.0: free to download, with one in-app purchase
 //   first3   the first store sells 3.0: the FAQs on new contact codes and older apps
 //   all3     every store on sale sells 3.0: the new format's copy and the white paper
+//   live3    3.0 is live: all3, and Android is on sale (the roadmap's 3.1 and 4.0)
 // Until a stage is reached, its strings keep their earlier text (src/i18n/before/).
 import { expect, test } from "@playwright/test";
 import { existsSync, readFileSync } from "node:fs";
@@ -40,6 +41,14 @@ test("the last stage needs every store on sale to sell 3.0", () => {
   expect(stageReached("all3", today, ["ios", "mac", "windows"])).toBe(true);
 });
 
+test("3.0 is live only once every store on sale sells it and Android is on sale", () => {
+  // Every store on sale sells 3.0, but Android is still coming
+  expect(stageReached("all3", today, ["ios", "mac", "windows"])).toBe(true);
+  expect(stageReached("live3", today, ["ios", "mac", "windows"])).toBe(false);
+  expect(stageReached("live3", androidOnSale, ["ios", "android", "mac"])).toBe(false);
+  expect(stageReached("live3", androidOnSale, ["ios", "android", "mac", "windows"])).toBe(true);
+});
+
 test("the mobile pricing stage follows the first phone store with 3.0, never a computer store", () => {
   expect(stageReached("mobileFree", today, [])).toBe(false);
   expect(stageReached("mobileFree", today, ["mac", "windows"])).toBe(false);
@@ -61,7 +70,7 @@ test("every gated key is an English key with a known stage", () => {
   expect(keys.length).toBeGreaterThan(0);
   for (const [key, stage] of Object.entries(gated as Record<string, string>)) {
     expect(Object.keys(english), key).toContain(key);
-    expect(["android", "mobileFree", "first3", "all3"], key).toContain(stage);
+    expect(["android", "mobileFree", "first3", "all3", "live3"], key).toContain(stage);
   }
 });
 
