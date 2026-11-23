@@ -5,7 +5,7 @@
 import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import english from "../../src/i18n/ui/en";
-import { uiNow } from "../support/release";
+import { reached, uiNow } from "../support/release";
 
 // Read as plain strings, so a key added with this test checks before the copy exists
 const en = english as Record<string, string>;
@@ -36,7 +36,7 @@ test("home page: SecurityApplication and Organization structured data", async ({
   const data = await jsonLd(page);
   const app = data.find((d) => d["@type"] === "SoftwareApplication");
   expect(app?.applicationCategory).toBe("SecurityApplication");
-  expect(app).toMatchObject({ name: "Doughnut Forge", url: "https://doughnut-forge.app/", operatingSystem: "iOS, iPadOS, macOS, Windows", inLanguage: "en-GB" });
+  expect(app).toMatchObject({ name: "Doughnut Forge", url: "https://doughnut-forge.app/", operatingSystem: reached("android") ? "iOS, iPadOS, Android, macOS, Windows" : "iOS, iPadOS, macOS, Windows", inLanguage: "en-GB" });
   expect(app?.offers).toBeUndefined();
   const org = data.find((d) => d["@type"] === "Organization");
   expect(org).toMatchObject({
@@ -46,9 +46,11 @@ test("home page: SecurityApplication and Organization structured data", async ({
     logo: "https://doughnut-forge.app/icon-512.png",
   });
   // Only pages Doughnut Forge controls: the store listings of every platform on
-  // sale, mobile first (src/data/stores.ts), with no language parameter, and Medium
+  // sale, mobile first (src/data/stores.ts), with no language parameter, and Medium.
+  // Google Play's listing keeps its app ID, which is in the query.
   expect(org.sameAs).toEqual([
     "https://apps.apple.com/app/id6821344597",
+    ...(reached("android") ? ["https://play.google.com/store/apps/details?id=com.darrencorbett.doughnutforge.mobile"] : []),
     "https://apps.apple.com/app/id6812778888",
     "https://apps.microsoft.com/detail/9P25BS9L8LNB",
     "https://medium.com/@doughnut_forge",
