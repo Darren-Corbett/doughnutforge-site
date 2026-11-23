@@ -98,3 +98,9 @@ test("an exception that is no longer needed fails, so the list stays short", asy
   expect(result.code).not.toBe(0);
   expect(result.output).toContain("held-same.json");
 });
+
+test("an exception for a string that is not held fails", async () => {
+  const result = await check(site({ same: { de: { "home.title": "Not held at all" } } }));
+  expect(result.code).not.toBe(0);
+  expect(result.output).toContain("not a held string");
+});
