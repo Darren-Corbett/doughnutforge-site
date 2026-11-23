@@ -51,8 +51,9 @@ export const organization = () => ({
   sameAs: [
     ...platforms.flatMap((p) => {
       if (p.status !== "available") return [];
+      // Only the language goes: Google Play's app ID is in the query too
       const listing = new URL(storeUrl(p.store, p.storeId, "en-GB"));
-      listing.search = "";
+      listing.searchParams.delete("hl");
       return [listing.href];
     }),
     MEDIUM,
