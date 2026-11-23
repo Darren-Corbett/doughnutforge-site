@@ -93,20 +93,24 @@ test("every store has 3.0: the new format's copy and the white paper", async ({ 
   await expect(page.locator('[data-roadmap="shipped"] h3', { hasText: "A new file format" })).toHaveCount(on && !v3() ? 1 : 0);
 });
 
-// The roadmap from roadmap.md (v2, approved by Darren 21 November 2026), once 3.0
-// is live: every store sells 3.0 and Android is on sale. Its lines word for word,
-// the next items in their order, no "Smaller improvements"; the security audit
-// stays under Later (parked for Darren, 22 November 2026).
+// The roadmap from roadmap.md once 3.0 is live: every store sells 3.0 and Android
+// is on sale. The 3.0 entry (v2, approved by Darren 21 November 2026), then 3.1
+// next and 4.0 later (v3, approved by Darren 23 November 2026), word for word.
+// The security review replaces the independent security audit, and the Security
+// and Technical details pages link to it; until then the audit stays under Later.
 test("3.0 live: the roadmap from roadmap.md", async ({ page }) => {
   const on = v3();
   await page.goto("/roadmap/");
-  const shipped = page.locator('[data-roadmap="shipped"] > .items > li', { has: page.locator("h3", { hasText: /^Doughnut Forge 3\.0$/ }) });
+  const entry = (status: string, title: string) => page.locator(`[data-roadmap="${status}"] > .items > li`, { has: page.locator("h3", { hasText: new RegExp(`^${title}$`) }) });
+  const shipped = entry("shipped", "Doughnut Forge 3\\.0");
   await expect(shipped).toHaveCount(on ? 1 : 0);
-  await expect(page.locator('[data-roadmap="next"] h2')).toHaveText(on ? "Next, in this order" : "Next");
+  await expect(page.locator('[data-roadmap="next"] h2')).toHaveText("Next");
+  await expect(page.locator('[data-roadmap="later"] h2')).toHaveText("Later");
   const next = await page.locator('[data-roadmap="next"] h3').allInnerTexts();
-  await expect(page.locator('[data-roadmap="later"] h3', { hasText: "Independent security audit" })).toHaveCount(1);
+  const later = await page.locator('[data-roadmap="later"] h3').allInnerTexts();
   if (!on) {
     expect(next).toContain("Smaller improvements");
+    expect(later).toEqual(["Independent security audit"]);
     return;
   }
   await expect(shipped.locator(".points li")).toHaveText([
@@ -118,9 +122,42 @@ test("3.0 live: the roadmap from roadmap.md", async ({ page }) => {
     "Contact cards have a new version. Ask your contacts to share their card with you again, and share your new card with them.",
     "Everyone you share files with needs Doughnut Forge 3.0 or later to open them. Older files still open as before.",
   ]);
-  expect(next).toEqual(["A terminal tool for Linux and Mac", "Right-to-left languages: Arabic and Hebrew first, then Urdu and Persian"]);
-  // Shown in order, as a numbered list
-  await expect(page.locator('[data-roadmap="next"] ol.items')).toHaveCount(1);
+  expect(next).toEqual(["Doughnut Forge 3.1"]);
+  await expect(entry("next", "Doughnut Forge 3\\.1").locator(".points li")).toHaveText([
+    "Message files. Write an encrypted message and send it as a small file. The person you send it to opens it and reads it in Doughnut Forge.",
+    "Arabic and Hebrew, with the whole app laid out right to left.",
+    "A full security review, and the fixes it leads to.",
+  ]);
+  expect(later).toEqual(["Doughnut Forge 4.0"]);
+  await expect(entry("later", "Doughnut Forge 4\\.0").locator(".points li")).toHaveText(["A command-line tool for Linux and Mac, using the same encryption and file format."]);
+  await expect(page.locator("main")).not.toContainText(/audit/i);
+  await expect(page.locator("#security-review")).toHaveText("A full security review, and the fixes it leads to.");
+});
+
+// The audit line on the Security and Technical details pages links to the plan:
+// the security review once 3.0 is live, the roadmap until then. In every language.
+for (const prefix of ["", "/de", "/ja"]) {
+  test(`the audit line links to the security review once 3.0 is live ${prefix || "/"}`, async ({ page }) => {
+    const code = prefix ? prefix.slice(1) : "en";
+    const href = `${prefix}/roadmap/${v3() ? "#security-review" : ""}`;
+    for (const path of ["/security/", "/security/technical-details/"]) {
+      await page.goto(`${prefix}${path}`);
+      await expect(page.locator("main")).toContainText(await uiNow(code, "security.audit.text"));
+      await expect(page.locator(`main a[href="${href}"]`), path).toHaveCount(1);
+    }
+    if (!v3()) return;
+    await page.goto(href);
+    await expect(page.locator("#security-review")).toHaveCount(1);
+  });
+}
+
+// Once 3.0 is live the audit is no longer planned: the audit line and the
+// roadmap's description say so in English, and the other languages follow
+test("3.0 live: no independent audit is promised", async () => {
+  const text = await uiNow("en", "security.audit.text");
+  const meta = await uiNow("en", "meta.roadmap.description");
+  expect(text.includes("One is planned"), "audit line").toBe(!v3());
+  if (reached("android")) expect(meta).not.toMatch(/audit/i);
 });
 
 // Other languages keep their own earlier text, not the English
