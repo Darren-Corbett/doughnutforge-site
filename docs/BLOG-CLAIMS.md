@@ -399,3 +399,27 @@ Not claimed: that CISA says device encryption fails once a device is unlocked (n
 | 10.D1 | Doughnut Forge is an app for encrypting files on your own device | site `security.device.text`; row 7.15 | repo |
 
 Not claimed: any app named as dangerous (PCMag's ten apps are in a chart image and were not confirmed from its text); any iOS version affected by the Binance flaw, or whether Apple has fixed it (BC: "unclear"); anything from Forbes (403 to automated reading) or The Sun (2023); that people are deleting apps in large numbers (no source opened).
+
+## Post 11: Is a password-protected ZIP file secure?
+`src/content/blog/en/is-a-password-protected-zip-file-secure.mdx`, phrase "is a password protected zip file secure". Backlog row Q1; publish date 23 November 2026. Sources: WZ = [WinZip Knowledge Base: How strong is WinZip's encryption?](https://kb.corel.com/125902) (WinZip's knowledge base, now at Corel; the old kb.winzip.com address no longer loads); IC = [ICO: Encryption scenarios](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/encryption/encryption-scenarios/) (dated 2 September 2025; under review).
+
+| # | Claim in the post | Source | Checked |
+|---|---|---|---|
+| 11.1 | WinZip describes "strong AES encryption and weak Zip 2.0 (Legacy) encryption" | WZ (exact) | 2026-11-23, by hand (the page blocks automated reading) |
+| 11.2 | Zip 2.0 protects against a casual user but "cannot be expected to provide protection from individuals with access to specialized password recovery tools" | WZ (exact) | as 11.1 |
+| 11.3 | "Do not rely on Zip 2.0 encryption to provide strong data security." | WZ (exact, caution box; the page starts it with a small "d") | as 11.1 |
+| 11.4 | AES comes as 128-bit or 256-bit; 256-bit is the stronger | WZ ("128-bit AES and 256-bit AES") | as 11.1 |
+| 11.5 | 7-Zip lists "Strong AES-256 encryption in 7z and ZIP formats" | [7-Zip](https://www.7-zip.org/) (exact, features list) | 2026-11-23 |
+| 11.6 | Zip 2.0 is supported by "nearly all other Zip file utilities"; AES by "some other Zip file utilities (but not all)" | WZ (exact) | as 11.1 |
+| 11.7 | Security depends on "the strength of your password, including factors such as length and composition" | WZ (exact) | as 11.1 |
+| 11.8 | "weak passwords can be cracked in seconds"; three random words make a password "long enough and strong enough" | [NCSC: Three random words](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/three-random-words) (reviewed 21 December 2021; exact) | 2026-11-23 |
+| 11.9 | "The NCSC encourages people to use password managers" | [NCSC: Use a strong and separate password for email](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email) (reviewed 21 December 2021; exact) | 2026-11-23 |
+| 11.10 | "Do not include the password within the same email as the encrypted file attachment."; "communicate the key to the recipient over a separate communication channel", for example by phone once delivered | IC (exact; "eg by disclosing the password over the telephone when you receive confirmation that the email has been delivered") | 2026-11-23 |
+| R11.1 | *Reasoning:* a website can lock out wrong guesses; someone with a copy of the file can keep guessing on their own computer | consistent with 11.2 | repo |
+| R11.2 | *Reasoning:* a new password per file; once opened the files are ordinary files; anyone with the password can open it; a sent file cannot be withdrawn | general advice, consistent with 11.7 and row R4.1 | repo |
+| 11.D1 | Public-key sharing: a private key stays on the device, a public card is shared; nothing secret travels with the file | rows 4.1, 4.14, R4.1 | repo |
+| 11.D2 | Doughnut Forge has no password-protected files and no file password; files are encrypted for chosen people, who open them with their own identity | rows D5, 1.14, 4.14; HANDOVER "Facts found for Phase 4" | repo |
+| 11.D3 | Both people need the app and swap contact cards first | HANDOVER (contacts only by `.vltc2` card); rows V2.9, V2.12 | repo |
+| 11.D4 | Screenshot: choosing who can open a file on iPhone | row V2.10; `src/assets/app/v2/en/iphone-encrypt-light.webp` | repo |
+
+Not claimed: whether ZIP encryption hides file names; which method any tool uses by default; anything about the ZIP tools built into Windows or macOS; any cracking time beyond the NCSC quote. PDFs left out (Adobe's pages not opened by hand). No illustration: the post uses only the existing iPhone screenshot.
