@@ -47,5 +47,6 @@
   "roadmap.small.text": "Pieniä korjauksia ja parannuksia Doughnut Forge 2:een.",
   "home.phones.title": "Uutta Doughnut Forge 2:ssa.",
   "home.phones.text": "Uusi ulkoasu, helpompi alku ja keino päästä takaisin, jos unohdat salasanasi. iPhonelle, iPadille, Macille ja Windowsille.",
-  "security.audit.text": "Doughnut Forgelle ei ole vielä tehty riippumatonta tietoturva-auditointia. Sellainen on suunnitteilla."
+  "security.audit.text": "Doughnut Forgelle ei ole vielä tehty riippumatonta tietoturva-auditointia. Sellainen on suunnitteilla.",
+  "security.audit.title": "Ei vielä auditoitu"
 }

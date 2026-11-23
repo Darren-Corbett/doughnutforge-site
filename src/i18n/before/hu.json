@@ -47,5 +47,6 @@
   "roadmap.small.text": "Kisebb javítások és fejlesztések a Doughnut Forge 2-höz.",
   "home.phones.title": "Újdonságok a Doughnut Forge 2-ben.",
   "home.phones.text": "Új megjelenés, könnyebb kezdés, és visszaút, ha elfelejted a jelszavadat. iPhone-on, iPaden, Macen és Windowson.",
-  "security.audit.text": "A Doughnut Forge még nem esett át független biztonsági auditon. Ez a tervek között szerepel."
+  "security.audit.text": "A Doughnut Forge még nem esett át független biztonsági auditon. Ez a tervek között szerepel.",
+  "security.audit.title": "Még nem auditált"
 }

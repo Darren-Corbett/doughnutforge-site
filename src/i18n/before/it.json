@@ -47,5 +47,6 @@
   "roadmap.small.text": "Piccole correzioni e miglioramenti per Doughnut Forge 2.",
   "home.phones.title": "Novità di Doughnut Forge 2.",
   "home.phones.text": "Un nuovo aspetto, un inizio più semplice e un modo per rientrare se dimentichi la password. Su iPhone, iPad, Mac e Windows.",
-  "security.audit.text": "Doughnut Forge non è ancora stato sottoposto a un audit di sicurezza indipendente. Un audit è previsto."
+  "security.audit.text": "Doughnut Forge non è ancora stato sottoposto a un audit di sicurezza indipendente. Un audit è previsto.",
+  "security.audit.title": "Non ancora sottoposto ad audit"
 }

@@ -260,7 +260,7 @@ export default {
   "security.quantum.text": "Doughnut Forge este conceput să reziste atacurilor viitoarelor computere cuantice, folosind algoritmi post-cuantici standardizați de NIST alături de algoritmi clasici, pentru a proteja fișierele și pentru a le semna.",
   "security.keys.title": "Cheile rămân la tine",
   "security.keys.text": "Parola și cheile tale rămân pe dispozitivul tău. Nu sunt niciodată stocate pe un server și nu sunt trimise prin rețea.",
-  "security.audit.title": "Încă fără audit",
+  "security.audit.title": "Fără audit independent",
   "security.audit.text": "Doughnut Forge nu a trecut printr-un audit de securitate independent. Următorul pas planificat este o analiză completă a securității.",
   "security.audit.link": "Vezi planul de dezvoltare",
   "security.report.title": "Raportează o vulnerabilitate",

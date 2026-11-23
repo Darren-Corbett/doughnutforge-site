@@ -248,7 +248,7 @@ export default {
   "security.quantum.text": "Doughnut Forge is ontworpen om bestand te zijn tegen aanvallen van toekomstige kwantumcomputers, met door NIST gestandaardiseerde post-kwantumalgoritmen naast klassieke algoritmen, om bestanden te beschermen en te ondertekenen.",
   "security.keys.title": "Uw sleutels blijven bij u",
   "security.keys.text": "Uw wachtwoord en sleutels blijven op uw apparaat. Ze worden nooit opgeslagen op een server of verzonden via het netwerk.",
-  "security.audit.title": "Nog niet geaudit",
+  "security.audit.title": "Geen onafhankelijke audit",
   "security.audit.text": "Doughnut Forge heeft geen onafhankelijke beveiligingsaudit gehad. Hierna is een volledig beveiligingsonderzoek gepland.",
   "security.audit.link": "Bekijk de roadmap",
   "security.report.title": "Een kwetsbaarheid melden",

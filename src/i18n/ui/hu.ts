@@ -269,7 +269,7 @@ export default {
   "security.quantum.text": "A Doughnut Forge-ot arra tervezték, hogy ellenálljon a jövőbeli kvantumszámítógépek támadásainak: a NIST által szabványosított posztkvantum-algoritmusokat klasszikus algoritmusokkal együtt használja a fájlok védelmére és aláírására.",
   "security.keys.title": "A kulcsaid nálad maradnak",
   "security.keys.text": "A jelszavad és a kulcsaid a te eszközödön maradnak. Soha nem kerülnek szerverre, és nem mennek át a hálózaton.",
-  "security.audit.title": "Még nem auditált",
+  "security.audit.title": "Nincs független audit",
   "security.audit.text": "A Doughnut Forge nem esett át független biztonsági auditon. Következő lépésként teljes biztonsági felülvizsgálat van tervben.",
   "security.audit.link": "Nézd meg a fejlesztési tervet",
   "security.report.title": "Sebezhetőség bejelentése",

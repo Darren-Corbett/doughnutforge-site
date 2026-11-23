@@ -47,5 +47,6 @@
   "roadmap.small.text": "Μικρές διορθώσεις και βελτιώσεις στο Doughnut Forge 2.",
   "home.phones.title": "Νέα στο Doughnut Forge 2.",
   "home.phones.text": "Νέα εμφάνιση, πιο εύκολο ξεκίνημα και ένας τρόπος να μπείτε ξανά αν ξεχάσετε τον κωδικό σας. Σε iPhone, iPad, Mac και Windows.",
-  "security.audit.text": "Το Doughnut Forge δεν έχει περάσει ακόμη από ανεξάρτητο έλεγχο ασφάλειας. Ένας τέτοιος έλεγχος σχεδιάζεται."
+  "security.audit.text": "Το Doughnut Forge δεν έχει περάσει ακόμη από ανεξάρτητο έλεγχο ασφάλειας. Ένας τέτοιος έλεγχος σχεδιάζεται.",
+  "security.audit.title": "Δεν έχει ελεγχθεί ακόμη"
 }

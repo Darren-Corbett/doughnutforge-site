@@ -47,5 +47,6 @@
   "roadmap.small.text": "Doughnut Forge 2 的细节修复和改进。",
   "home.phones.title": "Doughnut Forge 2 新功能。",
   "home.phones.text": "全新外观，更轻松的开始，忘记密码时也有办法重新进入。适用于 iPhone、iPad、Mac 和 Windows。",
-  "security.audit.text": "Doughnut Forge 尚未经过独立安全审计。审计已在计划中。"
+  "security.audit.text": "Doughnut Forge 尚未经过独立安全审计。审计已在计划中。",
+  "security.audit.title": "尚未经过审计"
 }

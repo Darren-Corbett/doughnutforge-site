@@ -267,7 +267,7 @@ export default {
   "security.quantum.text": "Doughnut Forge direka untuk menahan serangan komputer kuantum pada masa hadapan, menggunakan algoritma pascakuantum yang dipiawaikan oleh NIST bersama algoritma klasik, untuk melindungi fail dan menandatanganinya.",
   "security.keys.title": "Kunci kekal bersama anda",
   "security.keys.text": "Kata laluan dan kunci anda kekal pada peranti anda. Ia tidak pernah disimpan pada pelayan atau dihantar melalui rangkaian.",
-  "security.audit.title": "Belum diaudit",
+  "security.audit.title": "Tiada audit bebas",
   "security.audit.text": "Doughnut Forge belum pernah menjalani audit keselamatan bebas. Semakan keselamatan yang menyeluruh dirancang seterusnya.",
   "security.audit.link": "Lihat peta hala tuju",
   "security.report.title": "Laporkan kerentanan",

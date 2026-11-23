@@ -267,7 +267,7 @@ export default {
   "security.quantum.text": "Doughnut Forge được thiết kế để chống lại các cuộc tấn công của máy tính lượng tử trong tương lai, bằng cách dùng các thuật toán hậu lượng tử được NIST chuẩn hóa cùng với các thuật toán cổ điển, để bảo vệ tệp và ký tệp.",
   "security.keys.title": "Khóa luôn ở bên bạn",
   "security.keys.text": "Mật khẩu và khóa của bạn ở trên thiết bị của bạn. Chúng không bao giờ được lưu trữ trên máy chủ hoặc gửi qua mạng.",
-  "security.audit.title": "Chưa được kiểm toán",
+  "security.audit.title": "Không có kiểm toán độc lập",
   "security.audit.text": "Doughnut Forge chưa trải qua đợt kiểm toán bảo mật độc lập nào. Tiếp theo, một đợt rà soát bảo mật toàn diện đã được lên kế hoạch.",
   "security.audit.link": "Xem lộ trình",
   "security.report.title": "Báo cáo lỗ hổng",

@@ -47,5 +47,6 @@
   "roadmap.small.text": "Các bản sửa lỗi nhỏ và cải tiến cho Doughnut Forge 2.",
   "home.phones.title": "Có gì mới trong Doughnut Forge 2.",
   "home.phones.text": "Giao diện mới, bắt đầu dễ dàng hơn và một cách để vào lại nếu bạn quên mật khẩu. Trên iPhone, iPad, Mac và Windows.",
-  "security.audit.text": "Doughnut Forge chưa trải qua đợt kiểm toán bảo mật độc lập nào. Một đợt kiểm toán đã được lên kế hoạch."
+  "security.audit.text": "Doughnut Forge chưa trải qua đợt kiểm toán bảo mật độc lập nào. Một đợt kiểm toán đã được lên kế hoạch.",
+  "security.audit.title": "Chưa được kiểm toán"
 }

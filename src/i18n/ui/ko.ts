@@ -255,7 +255,7 @@ export default {
   "security.quantum.text": "Doughnut Forge는 미래의 양자 컴퓨터 공격에 견디도록 설계되었으며, NIST가 표준화한 양자 내성 알고리즘을 기존 암호 알고리즘과 함께 사용하여 파일을 보호하고 파일에 서명합니다.",
   "security.keys.title": "키는 내 손에",
   "security.keys.text": "비밀번호와 키는 내 기기에 보관됩니다. 서버에 저장되거나 네트워크를 통해 전송되지 않습니다.",
-  "security.audit.title": "아직 보안 감사를 받지 않음",
+  "security.audit.title": "독립적인 보안 감사 없음",
   "security.audit.text": "Doughnut Forge는 독립적인 보안 감사를 받지 않았습니다. 다음으로 전면적인 보안 검토가 계획되어 있습니다.",
   "security.audit.link": "로드맵 보기",
   "security.report.title": "취약점 신고",

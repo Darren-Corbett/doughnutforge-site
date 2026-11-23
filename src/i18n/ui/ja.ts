@@ -255,7 +255,7 @@ export default {
   "security.quantum.text": "Doughnut Forgeは、将来の量子コンピュータによる攻撃に耐えるように設計されており、NISTが標準化した耐量子暗号のアルゴリズムを従来の暗号アルゴリズムと組み合わせて使用し、ファイルを保護し、ファイルに署名します。",
   "security.keys.title": "キーは手元に",
   "security.keys.text": "パスワードとキーはデバイス上にとどまります。サーバーに保存されたり、ネットワーク経由で送信されたりすることはありません。",
-  "security.audit.title": "まだ監査を受けていません",
+  "security.audit.title": "独立した監査なし",
   "security.audit.text": "Doughnut Forge は、独立したセキュリティ監査を受けていません。次に、全面的なセキュリティレビューが予定されています。",
   "security.audit.link": "ロードマップを見る",
   "security.report.title": "脆弱性を報告",

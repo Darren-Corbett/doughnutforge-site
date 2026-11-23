@@ -343,7 +343,7 @@ export default {
     "Doughnut Forge is designed to resist attacks by future quantum computers, using NIST-standardised post-quantum algorithms alongside classical ones, to protect files and to sign them.",
   "security.keys.title": "Your keys stay with you",
   "security.keys.text": "Your password and keys stay on your device. They are never stored on a server or sent across the network.",
-  "security.audit.title": "Not audited yet",
+  "security.audit.title": "No independent audit",
   "security.audit.text": "Doughnut Forge has not had an independent security audit. A full security review is planned next.",
   "security.audit.link": "See the roadmap",
   "security.report.title": "Report a vulnerability",

@@ -251,7 +251,7 @@ export default {
   "security.quantum.text": "Doughnut Forge 在设计上旨在抵御未来量子计算机的攻击：它将经 NIST 标准化的抗量子算法与传统算法结合使用，用于保护文件并为文件签名。",
   "security.keys.title": "密钥始终在您手中",
   "security.keys.text": "您的密码和密钥保留在您的设备上，绝不会存储在服务器上或通过网络发送。",
-  "security.audit.title": "尚未经过审计",
+  "security.audit.title": "未经独立审计",
   "security.audit.text": "Doughnut Forge 未经过独立安全审计。接下来计划进行全面的安全评审。",
   "security.audit.link": "查看路线图",
   "security.report.title": "报告漏洞",

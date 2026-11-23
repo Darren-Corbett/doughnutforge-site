@@ -98,4 +98,5 @@ export const gated: Partial<Record<UiKey, Stage>> = {
 
   // 3.0 is live: the security review replaces the planned audit (Darren, 23 November 2026)
   "security.audit.text": "live3",
+  "security.audit.title": "live3",
 };

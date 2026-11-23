@@ -47,5 +47,6 @@
   "roadmap.small.text": "Doughnut Forge 2の細かな修正と改善。",
   "home.phones.title": "Doughnut Forge 2の新機能。",
   "home.phones.text": "新しい見た目、より簡単な始め方、そしてパスワードを忘れても戻れる方法。対象はiPhone、iPad、Mac、Windowsです。",
-  "security.audit.text": "Doughnut Forgeは、独立したセキュリティ監査をまだ受けていません。監査は計画中です。"
+  "security.audit.text": "Doughnut Forgeは、独立したセキュリティ監査をまだ受けていません。監査は計画中です。",
+  "security.audit.title": "まだ監査を受けていません"
 }
