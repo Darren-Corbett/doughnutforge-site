@@ -423,3 +423,34 @@ Not claimed: any app named as dangerous (PCMag's ten apps are in a chart image a
 | 11.D4 | Screenshot: choosing who can open a file on iPhone | row V2.10; `src/assets/app/v2/en/iphone-encrypt-light.webp` | repo |
 
 Not claimed: whether ZIP encryption hides file names; which method any tool uses by default; anything about the ZIP tools built into Windows or macOS; any cracking time beyond the NCSC quote. PDFs left out (Adobe's pages not opened by hand). No illustration: the post uses only the existing iPhone screenshot.
+
+## Post 12: TfL Oyster photocard data breach: what to do now
+`src/content/blog/en/oyster-photocard-data-breach.mdx`, phrase "Oyster photocard data breach". News story: the TfL Oyster photocard breach, found 16 November 2026, reported 19 November 2026; publish date 23 November 2026. Sources: TF = [TfL: Information for Oyster photocard account holders](https://tfl.gov.uk/contact-us/we-re-doing-maintenance-on-our-photocard-website) (the photocard site redirects there while it is offline; read 23 November 2026); BC = [BleepingComputer, 19 November 2026](https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/); IV = [ianVisits, 19 November 2026](https://www.ianvisits.co.uk/articles/tfl-cyber-attack-may-have-exposed-data-of-265000-oyster-photocard-users-94247/); IB = [IBTimes UK](https://www.ibtimes.co.uk/tfl-oyster-photocard-data-breach-265000-customers-1833421); ND = [NCSC: Data breaches](https://www.ncsc.gov.uk/guidance/data-breaches) (published and reviewed 28 January 2021). ITV News was in the draft but did not load on 23 November 2026, so every claim rests on the sources above.
+
+| # | Claim in the post | Source | Checked |
+|---|---|---|---|
+| 12.1 | "around 265,000 photocard account holders may have had their details" compromised | TF (exact); BC (up from about 250,000, "the figure may increase further") | 2026-11-23 |
+| 12.2 | Suspicious activity found 16 November 2026; emails asked customers to create an account; from TfL's own system but unauthorised | IV ("The emails came from TfL's own system"); TF (16 November 2026) | 2026-11-23 |
+| 12.3 | Exposed, per the customer notices: full name, email, phone, home address, date of birth, security question and answer | BC (the notices' list, "Full names" included); TF lists all but the name | 2026-11-23 |
+| 12.4 | "no passwords, bank or payment card details, customer journey information, names and dates of birth of any children with a Zip Oyster card, photographs and copies of any supporting documentation have been compromised" | TF (exact, "Our current assessment") | 2026-11-23 |
+| 12.5 | No evidence so far of misuse | BC ("found no evidence so far that the affected data has been misused") | 2026-11-23 |
+| 12.6 | TfL told the ICO; photocard website offline; photocards still work ("can continue to travel"); the number may change | BC, IB (ICO); TF (offline, "you can continue to travel"); BC ("the investigation is not yet complete") | 2026-11-23 |
+| 12.7 | Cards: Zip Oyster, 18+ Student, 18-25 Care Leaver, 60+ London, Apprentice, Veterans | IV (exact list) | 2026-11-23 |
+| 12.8 | Security answers leak "is particularly concerning, as those may be used in account access restoration" | BC (exact) | 2026-11-23 |
+| 12.9 | NIST: "SHALL NOT prompt subscribers to use knowledge-based authentication (KBA)" | [NIST SP 800-63B, Authenticators](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/) (exact) | 2026-11-23 |
+| 12.10 | Ignore the earlier email ("should ignore it") | BC (exact) | 2026-11-23 |
+| 12.11 | Website still offline on 23 November 2026; TfL will email affected customers once restored, then ask them "to change your password, security question and answer" | TF (exact; photocard.tfl.gov.uk redirected to the maintenance page on 23 November 2026) | 2026-11-23 |
+| 12.12 | "if any of your other accounts use the same password, you should change them as well"; look for "logins or attempted logins from strange locations or at unusual times" | ND (exact); TF also advises changing a reused password or security answer | 2026-11-23 |
+| 12.13 | 2SV "helps to keep cyber criminals out of your accounts, even if they know your passwords" | [NCSC: Turn on 2SV](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/activate-2-step-verification-on-your-email) (exact; reviewed 21 December 2021) | 2026-11-23 |
+| 12.14 | Recovering a hacked account, step by step | [NCSC: Recovering a hacked account](https://www.ncsc.gov.uk/guidance/recovering-a-hacked-account) | 2026-11-23 |
+| 12.15 | Customer Services on 0343 222 1234 for renewals and journey history | TF (exact number) | 2026-11-23 |
+| 12.16 | "your bank (or any other official organisation) will never ask you to supply personal information"; "being urged to act immediately or within a limited timeframe"; do not use links or contact details in messages; texts to 7726; "tell your bank and report it as a crime to Report Fraud" | ND (exact) | 2026-11-23 |
+| 12.17 | Scam emails go to the NCSC, address on its Report a scam email page | [NCSC: Report a scam email](https://www.ncsc.gov.uk/collection/phishing-scams/report-scam-email) (the address is shown only in protected form, so not quoted) | 2026-11-23 |
+| R12.1 | *Reasoning:* email matters most for 2SV because password resets go there | follows from the NCSC 2SV page's focus on email | repo |
+| 12.D1 | Doughnut Forge encrypts files and text on your device; only you and the people you choose can open them | rows 1.2, 2.5, 6.14 | repo |
+| 12.D2 | No Doughnut Forge servers and no account; none of your files or details stored anywhere else | site `security.servers.text` | repo |
+| 12.D3 | The app collects nothing | site `faq.data.a`; privacy policy | repo |
+| 12.D4 | It does not stop phishing | row 9.L2 | repo |
+| 12.D5 | Screenshot: the iPhone Identity screen | `src/assets/app/v2/en/iphone-identity-light.webp`; alt text as in post 4 | repo |
+
+Not claimed: any link to TfL's September 2024 incident; who did it; any number beyond TfL's; the NCSC scam-email address.
