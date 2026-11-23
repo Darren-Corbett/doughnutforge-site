@@ -46,5 +46,6 @@
   "technical.limits.recipients.text": "Будь-хто, хто може відкрити елемент, може зберегти, скопіювати чи поширити його вміст.",
   "roadmap.small.text": "Дрібні виправлення та покращення Doughnut Forge 2.",
   "home.phones.title": "Нове в Doughnut Forge 2.",
-  "home.phones.text": "Новий вигляд, простіший початок і спосіб повернутися, якщо ви забули пароль. На iPhone, iPad, Mac і Windows."
+  "home.phones.text": "Новий вигляд, простіший початок і спосіб повернутися, якщо ви забули пароль. На iPhone, iPad, Mac і Windows.",
+  "security.audit.text": "Doughnut Forge ще не проходив незалежного аудиту безпеки. Його заплановано."
 }

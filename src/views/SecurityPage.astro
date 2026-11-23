@@ -6,6 +6,7 @@
 // for security researchers, so it comes last and stays quiet.
 import PageHero from "../components/PageHero.astro";
 import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
+import { securityReviewPath } from "../data/roadmap";
 import { site } from "../data/site";
 import { localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
@@ -32,7 +33,7 @@ const facts: ToneRow[] = [
     name: t("security.audit.title"),
     tone: "blue",
     text: t("security.audit.text"),
-    link: { href: localePath(lang.code, "roadmap/"), label: t("security.audit.link") },
+    link: { href: localePath(lang.code, securityReviewPath), label: t("security.audit.link") },
   },
 ];
 ---

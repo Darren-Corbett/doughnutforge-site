@@ -46,5 +46,6 @@
   "technical.limits.recipients.text": "Anyone who can open an item can save, copy or share what is inside.",
   "roadmap.small.text": "Small fixes and improvements to Doughnut Forge 2.",
   "home.phones.title": "New in Doughnut Forge 2.",
-  "home.phones.text": "A new look, an easier start, and a way back in if you forget your password. On iPhone, iPad, Mac and Windows."
+  "home.phones.text": "A new look, an easier start, and a way back in if you forget your password. On iPhone, iPad, Mac and Windows.",
+  "security.audit.text": "Doughnut Forge has not had an independent security audit. A full security review is planned next."
 }

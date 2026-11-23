@@ -46,5 +46,6 @@
   "technical.limits.recipients.text": "Bir öğeyi açabilen herkes içindekileri kaydedebilir, kopyalayabilir veya paylaşabilir.",
   "roadmap.small.text": "Doughnut Forge 2 için küçük düzeltmeler ve iyileştirmeler.",
   "home.phones.title": "Doughnut Forge 2'deki yenilikler.",
-  "home.phones.text": "Yeni bir görünüm, daha kolay bir başlangıç ve parolanızı unutursanız geri dönmenin bir yolu. iPhone, iPad, Mac ve Windows'ta."
+  "home.phones.text": "Yeni bir görünüm, daha kolay bir başlangıç ve parolanızı unutursanız geri dönmenin bir yolu. iPhone, iPad, Mac ve Windows'ta.",
+  "security.audit.text": "Doughnut Forge henüz bağımsız bir güvenlik denetiminden geçmedi. Bir denetim planlanıyor."
 }

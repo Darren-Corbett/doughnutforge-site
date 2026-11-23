@@ -280,7 +280,7 @@ export default {
 
   // Roadmap: shipped, next and later only. Never a date, version or finding code.
   "meta.roadmap.title": "Roadmap | Doughnut Forge",
-  "meta.roadmap.description": "What is planned next for Doughnut Forge, including an independent security audit.",
+  "meta.roadmap.description": "What has shipped in Doughnut Forge, and what is planned next.",
   "roadmap.title": "Roadmap",
   "roadmap.lead": "What has shipped, and what is planned next. Plans can change, so nothing here has a date.",
   "roadmap.shipped": "Shipped",
@@ -310,7 +310,6 @@ export default {
   "roadmap.audit.title": "Independent security audit",
   "roadmap.audit.text": "A security audit of Doughnut Forge by an independent outside expert.",
   // The roadmap once 3.0 is live (roadmap.md v2, approved by Darren 21 November 2026)
-  "roadmap.nextInOrder": "Next, in this order",
   "roadmap.v3.title": "Doughnut Forge 3.0",
   "roadmap.v3.android": "Doughnut Forge is now on Android, as well as iPhone, iPad, Mac and Windows.",
   "roadmap.v3.free": "On iPhone, iPad and Android, Doughnut Forge is free to download and use, including text encryption and opening anything sent to you. Encrypting files, photos and videos is a one-time purchase.",
@@ -319,8 +318,13 @@ export default {
   "roadmap.v3.sealed": "Who sent a file is sealed inside it: only the people who can open the file can see it.",
   "roadmap.v3.cards": "Contact cards have a new version. Ask your contacts to share their card with you again, and share your new card with them.",
   "roadmap.v3.older": "Everyone you share files with needs Doughnut Forge 3.0 or later to open them. Older files still open as before.",
-  "roadmap.cli.title": "A terminal tool for Linux and Mac",
-  "roadmap.rtl.title": "Right-to-left languages: Arabic and Hebrew first, then Urdu and Persian",
+  // Next and later once 3.0 is live (roadmap.md v3, approved by Darren 23 November 2026)
+  "roadmap.v31.title": "Doughnut Forge 3.1",
+  "roadmap.v31.messages": "Message files. Write an encrypted message and send it as a small file. The person you send it to opens it and reads it in Doughnut Forge.",
+  "roadmap.v31.rtl": "Arabic and Hebrew, with the whole app laid out right to left.",
+  "roadmap.v31.review": "A full security review, and the fixes it leads to.",
+  "roadmap.v4.title": "Doughnut Forge 4.0",
+  "roadmap.v4.cli": "A command-line tool for Linux and Mac, using the same encryption and file format.",
 
   // Security: what a user needs to know, no internal design. Never say an audit
   // has happened, or that the sender of a shared file is verified.
@@ -340,7 +344,7 @@ export default {
   "security.keys.title": "Your keys stay with you",
   "security.keys.text": "Your password and keys stay on your device. They are never stored on a server or sent across the network.",
   "security.audit.title": "Not audited yet",
-  "security.audit.text": "Doughnut Forge has not had an independent security audit yet. One is planned.",
+  "security.audit.text": "Doughnut Forge has not had an independent security audit. A full security review is planned next.",
   "security.audit.link": "See the roadmap",
   "security.report.title": "Report a vulnerability",
   // The email address stays exactly as written in every language: the page makes it a link

@@ -46,5 +46,6 @@
   "technical.limits.recipients.text": "ใครก็ตามที่เปิดรายการได้ สามารถบันทึก คัดลอก หรือแชร์สิ่งที่อยู่ข้างในได้",
   "roadmap.small.text": "การแก้ไขและการปรับปรุงเล็กน้อยสำหรับ Doughnut Forge 2",
   "home.phones.title": "มีอะไรใหม่ใน Doughnut Forge 2",
-  "home.phones.text": "รูปลักษณ์ใหม่ เริ่มต้นใช้งานง่ายขึ้น และมีทางกลับเข้ามาได้หากคุณลืมรหัสผ่าน บน iPhone, iPad, Mac และ Windows"
+  "home.phones.text": "รูปลักษณ์ใหม่ เริ่มต้นใช้งานง่ายขึ้น และมีทางกลับเข้ามาได้หากคุณลืมรหัสผ่าน บน iPhone, iPad, Mac และ Windows",
+  "security.audit.text": "Doughnut Forge ยังไม่เคยได้รับการตรวจสอบความปลอดภัยแบบอิสระ การตรวจสอบนี้อยู่ในแผนแล้ว"
 }

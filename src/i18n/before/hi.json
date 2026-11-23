@@ -46,5 +46,6 @@
   "technical.limits.recipients.text": "जो भी किसी आइटम को खोल सकता है, वह उसके अंदर की चीज़ों को सहेज, कॉपी या साझा कर सकता है।",
   "roadmap.small.text": "Doughnut Forge 2 के लिए कुछ छोटे फ़िक्स और सुधार।",
   "home.phones.title": "Doughnut Forge 2 में नया।",
-  "home.phones.text": "नया रूप, आसान शुरुआत, और पासवर्ड भूल जाने पर वापस आने का एक तरीका। iPhone, iPad, Mac और Windows पर।"
+  "home.phones.text": "नया रूप, आसान शुरुआत, और पासवर्ड भूल जाने पर वापस आने का एक तरीका। iPhone, iPad, Mac और Windows पर।",
+  "security.audit.text": "Doughnut Forge का अभी तक कोई स्वतंत्र सुरक्षा ऑडिट नहीं हुआ है। एक ऑडिट की योजना है।"
 }

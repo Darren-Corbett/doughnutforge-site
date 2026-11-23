@@ -46,5 +46,6 @@
   "technical.limits.recipients.text": "Kdokoli, kdo může položku otevřít, může její obsah uložit, zkopírovat nebo sdílet.",
   "roadmap.small.text": "Drobné opravy a vylepšení Doughnut Forge 2.",
   "home.phones.title": "Novinky v Doughnut Forge 2.",
-  "home.phones.text": "Nový vzhled, snazší začátek a cesta zpět, když zapomenete heslo. Na iPhonu, iPadu, Macu a ve Windows."
+  "home.phones.text": "Nový vzhled, snazší začátek a cesta zpět, když zapomenete heslo. Na iPhonu, iPadu, Macu a ve Windows.",
+  "security.audit.text": "Nezávislý bezpečnostní audit Doughnut Forge zatím neproběhl. Plánuje se."
 }

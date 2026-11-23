@@ -16,6 +16,7 @@ import TocSection from "../components/TocSection.astro";
 import { localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
 import { androidPermissionLine } from "../data/android-permission";
+import { securityReviewPath } from "../data/roadmap";
 import { reached } from "../data/stages";
 import { whitePaperLink } from "../data/white-paper";
 
@@ -178,7 +179,7 @@ const back = t("technical.back");
 
     <TocSection id="audit" title={title.audit} back={back}>
       <p>
-        {t("security.audit.text")} <a href={localePath(lang.code, "roadmap/")}>{t("security.audit.link")}</a>
+        {t("security.audit.text")} <a href={localePath(lang.code, securityReviewPath)}>{t("security.audit.link")}</a>
       </p>
     </TocSection>
   </div>

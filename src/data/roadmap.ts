@@ -12,20 +12,32 @@ export type RoadmapItem = { status: RoadmapStatus; title: UiKey; text?: UiKey; p
 
 export const roadmapStatuses: RoadmapStatus[] = ["shipped", "next", "later"];
 
-// 3.0 is live once every store on sale sells it and Android is on sale. Then the
-// roadmap is roadmap.md's (v2, approved by Darren 21 November 2026): one 3.0
-// entry, and what comes next, in order. Until then the new format and Android
-// ship by stage (src/data/stages.ts).
-const v3 = reached("all3") && reached("android");
+// Once 3.0 is live the roadmap is roadmap.md's: one 3.0 entry (v2, approved by
+// Darren 21 November 2026), 3.1 next and 4.0 later (v3, approved 23 November
+// 2026). Until then the new format and Android ship by stage (src/data/stages.ts).
+const v3 = reached("live3");
 
-/** Whether the next items are shown in their order ("Next, in this order") */
-export const nextInOrder = v3;
+/** Anchors on single points, so other pages can link to them */
+export const pointIds: Partial<Record<UiKey, string>> = { "roadmap.v31.review": "security-review" };
+
+/** Where the audit line on the Security and Technical details pages links: the security review once it is on the roadmap */
+export const securityReviewPath = v3 ? "roadmap/#security-review" : "roadmap/";
 
 const V3: RoadmapItem = {
   status: "shipped",
   title: "roadmap.v3.title",
   points: ["roadmap.v3.android", "roadmap.v3.free", "roadmap.v3.format", "roadmap.v3.sender", "roadmap.v3.sealed", "roadmap.v3.cards", "roadmap.v3.older"],
 };
+
+const AFTER_3: RoadmapItem[] = [
+  { status: "next", title: "roadmap.v31.title", points: ["roadmap.v31.messages", "roadmap.v31.rtl", "roadmap.v31.review"] },
+  { status: "later", title: "roadmap.v4.title", points: ["roadmap.v4.cli"] },
+];
+
+const BEFORE_3: RoadmapItem[] = [
+  { status: "next", title: "roadmap.small.title", text: "roadmap.small.text" },
+  { status: "later", title: "roadmap.audit.title", text: "roadmap.audit.text" },
+];
 
 export const roadmap: RoadmapItem[] = [
   ...(v3 ? [V3] : []),
@@ -47,12 +59,7 @@ export const roadmap: RoadmapItem[] = [
     ],
   },
   ...(reached("android") ? [] : [{ status: "next", title: "roadmap.android.title" } as const]),
-  // The 3.0.1 maintenance items are left out on purpose (roadmap.md)
-  ...(v3
-    ? ([
-        { status: "next", title: "roadmap.cli.title" },
-        { status: "next", title: "roadmap.rtl.title" },
-      ] as const)
-    : [{ status: "next", title: "roadmap.small.title", text: "roadmap.small.text" } as const]),
-  { status: "later", title: "roadmap.audit.title", text: "roadmap.audit.text" },
+  // The 3.0.1 maintenance items are left out on purpose (roadmap.md). The security
+  // review replaces the independent security audit (Darren, 23 November 2026).
+  ...(v3 ? AFTER_3 : BEFORE_3),
 ];

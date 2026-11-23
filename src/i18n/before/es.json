@@ -46,5 +46,6 @@
   "technical.limits.recipients.text": "Cualquiera que pueda abrir un elemento puede guardar, copiar o compartir su contenido.",
   "roadmap.small.text": "Pequeñas correcciones y mejoras en Doughnut Forge 2.",
   "home.phones.title": "Novedades de Doughnut Forge 2.",
-  "home.phones.text": "Un nuevo aspecto, un inicio más sencillo y una forma de volver a entrar si olvidas tu contraseña. En iPhone, iPad, Mac y Windows."
+  "home.phones.text": "Un nuevo aspecto, un inicio más sencillo y una forma de volver a entrar si olvidas tu contraseña. En iPhone, iPad, Mac y Windows.",
+  "security.audit.text": "Doughnut Forge todavía no ha pasado una auditoría de seguridad independiente. Hay una prevista."
 }

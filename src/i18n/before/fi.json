@@ -46,5 +46,6 @@
   "technical.limits.recipients.text": "Kuka tahansa, joka voi avata kohteen, voi tallentaa, kopioida tai jakaa sen sisällön.",
   "roadmap.small.text": "Pieniä korjauksia ja parannuksia Doughnut Forge 2:een.",
   "home.phones.title": "Uutta Doughnut Forge 2:ssa.",
-  "home.phones.text": "Uusi ulkoasu, helpompi alku ja keino päästä takaisin, jos unohdat salasanasi. iPhonelle, iPadille, Macille ja Windowsille."
+  "home.phones.text": "Uusi ulkoasu, helpompi alku ja keino päästä takaisin, jos unohdat salasanasi. iPhonelle, iPadille, Macille ja Windowsille.",
+  "security.audit.text": "Doughnut Forgelle ei ole vielä tehty riippumatonta tietoturva-auditointia. Sellainen on suunnitteilla."
 }

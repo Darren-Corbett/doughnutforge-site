@@ -7,7 +7,7 @@
   "fr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -371,13 +371,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "de": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -762,13 +768,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the beginning."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "es": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -1072,13 +1084,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the beginning."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "it": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1432,13 +1450,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple right from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "nl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -1809,13 +1833,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the beginning."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "sv": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2138,13 +2168,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "da": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2474,13 +2510,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "fi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -2886,13 +2928,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Easy from the beginning."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "no": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3228,13 +3276,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "pl": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -3598,13 +3652,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simplicity from the very start. (recheck-1)"
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "cs": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4019,13 +4079,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the very beginning."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings. security.audit.text reworded to the neutral \"neprošel ... auditem\" (reviewer note 2). Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "hu": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4422,13 +4488,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the beginnings."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "ro": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -4844,13 +4916,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "ru": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5244,13 +5322,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the very beginning."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "el": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -5633,13 +5717,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "uk": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6020,6 +6110,12 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the very beginning."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
@@ -6069,7 +6165,7 @@
   "es-MX": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -6367,13 +6463,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the beginning."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "pt-BR": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -6732,13 +6834,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the beginning."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "tr": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7133,13 +7241,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the very start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "ja": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "findings": [
       {
@@ -7478,13 +7592,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings. A space added between Doughnut Forge and the Japanese, as the glossary asks (reviewer note 12). Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "zh-CN": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -7830,13 +7950,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the very start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings. 安全审查 became 安全评审 (reviewer note 11). Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "zh-TW": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8202,13 +8328,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the very start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "ko": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8603,13 +8735,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simply, from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "hi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -8956,13 +9094,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Easy right from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "id": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -9321,13 +9465,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "ms": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -9680,13 +9830,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Easy from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "th": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -10031,13 +10187,19 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Easy from the start"
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings.  Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   },
   "vi": {
     "status": "reviewed",
     "reviewedBy": "subagent (independent of the drafter)",
-    "reviewedAt": "2026-11-21",
+    "reviewedAt": "2026-11-23",
     "approvedAt": "2026-10-23",
     "approvedUnder": "no blocking findings from the independent reviewer (owner rule, 23 October 2026)",
     "findings": [
@@ -10423,6 +10585,12 @@
         "severity": "note",
         "issue": "Reviewed 21 November 2026 by independent subagents (phones-cta review-1, recheck-1), sender check run on the drafts: no blocking findings left.",
         "backTranslation": "Simple right from the start."
+      },
+      {
+        "key": "roadmap.v31.*, roadmap.v4.*, meta.roadmap.description, security.audit.text",
+        "severity": "note",
+        "issue": "Reviewed 23 November 2026 by an independent subagent (roadmap-v31 review), sender check run on the drafts: no blocking findings. \"Tệp tin nhắn\" became \"Tệp chứa tin nhắn\" (reviewer note 6). Back-translations in ~/Desktop/review/launch-site/v3-held/work/roadmap-v31/review.md.",
+        "backTranslation": "A full security review, and the fixes it leads to."
       }
     ]
   }
