@@ -299,3 +299,48 @@ test("first 3.0 store: no \"New in Doughnut Forge 2\", and the features closing 
   expect(cta.includes(await uiNow("en", on ? "features.cta.text" : "home.phones.text")), "features closing line").toBe(true);
   expect(cta.includes("A new look, an easier start"), "v2 line in the closing line").toBe(!on);
 });
+
+// The owner's picks of 24 November 2026 (REVIEW.md item 28)
+test("download cards: one requirement line each, and the badge at the bottom", async ({ page }) => {
+  await page.goto("/download/");
+  for (const card of await page.locator(".card.on-sale").all()) {
+    await expect(card.locator("p.status")).toHaveCount(1);
+    await expect(card.locator("p.status")).toHaveText(/^Needs /);
+  }
+  await expect(page.locator('.card[data-platform="ios"] p.status')).toHaveText("Needs iOS or iPadOS 17 or later.");
+  await expect(page.locator(".card", { hasText: "WebView" })).toHaveCount(0);
+});
+
+test("Home: the free line once a phone store sells 3.0, and only on Home", async ({ page }) => {
+  const on = reached("mobileFree");
+  const free = page.locator(".free-line");
+  await page.goto("/");
+  await expect(free).toHaveCount(on ? 1 : 0);
+  if (on) await expect(free).toHaveText(/^On .+, Doughnut Forge is free to download and use\.$/);
+  for (const path of ["/download/", "/pricing/"]) {
+    await page.goto(path);
+    await expect(free).toHaveCount(0);
+  }
+});
+
+test("Home: what is next, once the new roadmap is live", async ({ page }) => {
+  await page.goto("/");
+  const next = page.locator("#home-next");
+  await expect(next).toHaveCount(v3() ? 1 : 0);
+  if (!v3()) return;
+  await expect(next).toHaveText("Next");
+  const block = page.locator("section", { has: next });
+  await expect(block.locator("h3")).toHaveText("Doughnut Forge 3.1");
+  await expect(block.locator("li")).toHaveText([
+    "Message files. Write an encrypted message and send it as a small file. The person you send it to opens it and reads it in Doughnut Forge.",
+    "Arabic and Hebrew, with the whole app laid out right to left.",
+    "A full security review, and the fixes it leads to.",
+  ]);
+  await expect(block.locator('a[href="/roadmap/"]')).toHaveText("See the roadmap");
+});
+
+test("Support: the WebView answer once Android is on sale", async ({ page }) => {
+  await page.goto("/support/");
+  await expect(page.locator("#faq-webview")).toHaveCount(reached("android") ? 1 : 0);
+  await expect(page.locator("main")).not.toContainText("(its name ends in .vlt2)");
+});
