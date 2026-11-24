@@ -4,14 +4,14 @@
 // on the release candidate decides:
 //   A  the purchase works without it: the app has no internet permission at all
 //   B  the purchase needs it: Google Play's library uses it; the app's own code never connects
-// null until he picks. The Technical details page then shows the pending marker
-// in place of the line, so no build that shows Android can go out with either.
+// He picked A (Pixel test of 3000007, 23 November 2026). With null the Technical
+// details page shows the pending marker in place of the line.
 import type { UiKey } from "../i18n";
 
 export type AndroidPermission = "A" | "B";
 
-export const androidPermission: AndroidPermission | null = null;
+export const androidPermission: AndroidPermission | null = "A";
 
-/** The Android line under the network paragraph, or the pending marker until Darren picks */
+/** The Android line under the network paragraph, or the pending marker without a pick */
 export const androidPermissionLine = (choice: AndroidPermission | null = androidPermission): UiKey | "[PENDING-ANDROID-PERMISSION]" =>
   choice ? `technical.network.android${choice}` : "[PENDING-ANDROID-PERMISSION]";
