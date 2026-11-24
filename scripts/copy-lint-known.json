@@ -743,5 +743,90 @@
     "rule": "long",
     "text": "“Sender not shown”: shown for files made with an older version of Doughnut Forge, for files from a contact whose card is out of date, and when opening a folder was stopped part-way.",
     "approved": "Darren, 22 Nov 2026 (stage lint A): launch-stage copy, approved as it is"
+  },
+  {
+    "rule": "long",
+    "text": "The older Zip 2.0 method gives some protection against a casual user, WinZip says, but it “cannot be expected to provide protection from individuals with access to specialized password recovery tools”.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "WinZip says Zip 2.0 encryption is supported by “nearly all other Zip file utilities”, while AES is supported by “some other Zip file utilities (but not all)”.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "If the person you send a file to cannot open it, it is tempting to switch to the method that always works, which is the weak one.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "It suggests combining three random words to make a password that is “long enough and strong enough”, or letting a password manager create one: “The NCSC encourages people to use password managers”.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "The UK Information Commissioner’s Office (ICO) is clear: “Do not include the password within the same email as the encrypted file attachment.” It advises that you “communicate the key to the recipient over a separate communication channel”, for example by phone once the file has arrived.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "It has no password-protected files, so there is no file password to choose or send: you encrypt a file for the people you choose, and they open it with their own identity.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "For a one-off file to someone who does not use it, a ZIP file with AES encryption and a strong password, sent separately, is the practical choice.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "A password-protected ZIP file is secure when it uses AES encryption, a long password used only once, and a password sent a different way from the file.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "In short: Transport for London (TfL) says about 265,000 Oyster photocard customers may have had personal details exposed, including the security question and answer on their online account.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "If you have a photocard account, change your password and your security answer, change that answer anywhere else you use it, and be wary of messages about TfL or your travel card in the weeks ahead.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "TfL’s current assessment is that “no passwords, bank or payment card details, customer journey information, names and dates of birth of any children with a Zip Oyster card, photographs and copies of any supporting documentation have been compromised” ( TfL ).",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "A security answer is often a fact about your life, such as a first school or a mother’s maiden name, and the same answer is often used on many sites.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "The US National Institute of Standards and Technology (NIST) now tells services that they “SHALL NOT prompt subscribers to use knowledge-based authentication (KBA)” or security questions when people choose passwords ( NIST SP 800-63B ).",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "The UK National Cyber Security Centre (NCSC) advises that “if any of your other accounts use the same password, you should change them as well” ( NCSC: Data breaches ).",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "The NCSC warns that scam messages can follow a breach, sometimes long after it, and reminds people that “your bank (or any other official organisation) will never ask you to supply personal information” ( NCSC: Data breaches ).",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "No one can undo this breach from their own phone or computer, and no app on your device would have changed it: the details were held by TfL.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "Each account you open usually asks for a name, an email address, perhaps a home address, a date of birth or a security answer, and each one is kept by someone else.",
+    "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
   }
 ]

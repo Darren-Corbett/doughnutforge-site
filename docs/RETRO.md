@@ -208,3 +208,11 @@ The work: Part B items 1 to 8 on the local branch, from the v2 website pack only
 - Change (owner, 24 November): the main working copy moved to `~/forge-work/main-wt` (`git worktree move`, uncommitted changes kept). Nothing is built, installed or written in bulk under `~/Desktop`; the Desktop gets only small review files, diffs and screenshots.
 - When to check: at the end of launch week: no build output or `node_modules` under `~/Desktop` (`find ~/Desktop -name node_modules -o -name dist -type d`).
 - Result: open.
+
+## 24 November 2026, a merge went in without the full build
+
+- Problem: the merge of `main` into `release/launch` (`4339783`) was committed after `check:commit` (the type check) only, not the full `npm run build`. `main` has no strict copy lint, so the ZIP and Oyster posts reached the branch with 19 lint findings (17 long sentences, two hype words, "just" and "best"), and the release build stopped. It showed only hours later, at the next full build. Nothing was published.
+- Change: a merge into `release/launch` is checked with the full `npm run build` (load permitting) before it is committed; if the Mac is busy, the merge waits. The 17 long sentences are approved as published (owner, 24 November); the two hype words get a fix on `main`, for the owner's yes.
+- After launch (owner, 24 November): bring the strict copy lint (`scripts/check-copy.mjs --strict` and `scripts/copy-lint-known.json`) to `main`'s build, so a new post is checked before it reaches the release branch. A local check only: no CI change.
+- When to check: at the next merge of `main` into `release/launch`, and the lint item after launch week.
+- Result: open.
