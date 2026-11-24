@@ -429,3 +429,58 @@ Source for every row: the owner's decisions of 20 November 2026 (night-mode mess
 | P10 | Posts: "never a subscription: pricing shows how it is bought on each platform" (rows 1.16, D2, 5.D9, 6.18, 7.19 until the stage); the Mac post now says "On Mac, … a one-time purchase" (row 1.16) | rows P1, P7 |
 
 Not claimed: any price amount; Family Sharing; anything about what Apple or Google see beyond P9 (the white paper's buying section is [PENDING-WHITEPAPER-PDF]: `technical.network.none` carries the marker, so the stage cannot go live without it); any Android internet or permission claim ([PENDING-ANDROID-PERMISSION]).
+
+## Post 11: Is a password-protected ZIP file secure?
+`src/content/blog/en/is-a-password-protected-zip-file-secure.mdx`, phrase "is a password protected zip file secure". Backlog row Q1; publish date 23 November 2026. Sources: WZ = [WinZip Knowledge Base: How strong is WinZip's encryption?](https://kb.corel.com/125902) (WinZip's knowledge base, now at Corel; the old kb.winzip.com address no longer loads); IC = [ICO: Encryption scenarios](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/encryption/encryption-scenarios/) (dated 2 September 2025; under review).
+
+| # | Claim in the post | Source | Checked |
+|---|---|---|---|
+| 11.1 | WinZip describes "strong AES encryption and weak Zip 2.0 (Legacy) encryption" | WZ (exact) | 2026-11-23, by hand (the page blocks automated reading) |
+| 11.2 | Zip 2.0 protects against a casual user but "cannot be expected to provide protection from individuals with access to specialized password recovery tools" | WZ (exact) | as 11.1 |
+| 11.3 | "Do not rely on Zip 2.0 encryption to provide strong data security." | WZ (exact, caution box; the page starts it with a small "d") | as 11.1 |
+| 11.4 | AES comes as 128-bit or 256-bit; 256-bit is the stronger | WZ ("128-bit AES and 256-bit AES") | as 11.1 |
+| 11.5 | 7-Zip lists "Strong AES-256 encryption in 7z and ZIP formats" | [7-Zip](https://www.7-zip.org/) (exact, features list) | 2026-11-23 |
+| 11.6 | Zip 2.0 is supported by "nearly all other Zip file utilities"; AES by "some other Zip file utilities (but not all)" | WZ (exact) | as 11.1 |
+| 11.7 | Security depends on "the strength of your password, including factors such as length and composition" | WZ (exact) | as 11.1 |
+| 11.8 | "weak passwords can be cracked in seconds"; three random words make a password "long enough and strong enough" | [NCSC: Three random words](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/three-random-words) (reviewed 21 December 2021; exact) | 2026-11-23 |
+| 11.9 | "The NCSC encourages people to use password managers" | [NCSC: Use a strong and separate password for email](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email) (reviewed 21 December 2021; exact) | 2026-11-23 |
+| 11.10 | "Do not include the password within the same email as the encrypted file attachment."; "communicate the key to the recipient over a separate communication channel", for example by phone once delivered | IC (exact; "eg by disclosing the password over the telephone when you receive confirmation that the email has been delivered") | 2026-11-23 |
+| R11.1 | *Reasoning:* a website can lock out wrong guesses; someone with a copy of the file can keep guessing on their own computer | consistent with 11.2 | repo |
+| R11.2 | *Reasoning:* a new password per file; once opened the files are ordinary files; anyone with the password can open it; a sent file cannot be withdrawn | general advice, consistent with 11.7 and row R4.1 | repo |
+| 11.D1 | Public-key sharing: a private key stays on the device, a public card is shared; nothing secret travels with the file | rows 4.1, 4.14, R4.1 | repo |
+| 11.D2 | Doughnut Forge has no password-protected files and no file password; files are encrypted for chosen people, who open them with their own identity | rows D5, 1.14, 4.14; HANDOVER "Facts found for Phase 4" | repo |
+| 11.D3 | Both people need the app and swap contact cards first | HANDOVER (contacts only by `.vltc2` card); rows V2.9, V2.12 | repo |
+| 11.D4 | Screenshot: choosing who can open a file on iPhone | row V2.10; `src/assets/app/v2/en/iphone-encrypt-light.webp` | repo |
+
+Not claimed: whether ZIP encryption hides file names; which method any tool uses by default; anything about the ZIP tools built into Windows or macOS; any cracking time beyond the NCSC quote. PDFs left out (Adobe's pages not opened by hand). No illustration: the post uses only the existing iPhone screenshot.
+
+## Post 12: TfL Oyster photocard data breach: what to do now
+`src/content/blog/en/oyster-photocard-data-breach.mdx`, phrase "Oyster photocard data breach". News story: the TfL Oyster photocard breach, found 16 November 2026, reported 19 November 2026; publish date 23 November 2026. Sources: TF = [TfL: Information for Oyster photocard account holders](https://tfl.gov.uk/contact-us/we-re-doing-maintenance-on-our-photocard-website) (the photocard site redirects there while it is offline; read 23 November 2026); BC = [BleepingComputer, 19 November 2026](https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/); IV = [ianVisits, 19 November 2026](https://www.ianvisits.co.uk/articles/tfl-cyber-attack-may-have-exposed-data-of-265000-oyster-photocard-users-94247/); IB = [IBTimes UK](https://www.ibtimes.co.uk/tfl-oyster-photocard-data-breach-265000-customers-1833421); ND = [NCSC: Data breaches](https://www.ncsc.gov.uk/guidance/data-breaches) (published and reviewed 28 January 2021). ITV News was in the draft but did not load on 23 November 2026, so every claim rests on the sources above.
+
+| # | Claim in the post | Source | Checked |
+|---|---|---|---|
+| 12.1 | "around 265,000 photocard account holders may have had their details" compromised | TF (exact); BC (up from about 250,000, "the figure may increase further") | 2026-11-23 |
+| 12.2 | Suspicious activity found 16 November 2026; emails asked customers to create an account; from TfL's own system but unauthorised | IV ("The emails came from TfL's own system"); TF (16 November 2026) | 2026-11-23 |
+| 12.3 | Exposed, per the customer notices: full name, email, phone, home address, date of birth, security question and answer | BC (the notices' list, "Full names" included); TF lists all but the name | 2026-11-23 |
+| 12.4 | "no passwords, bank or payment card details, customer journey information, names and dates of birth of any children with a Zip Oyster card, photographs and copies of any supporting documentation have been compromised" | TF (exact, "Our current assessment") | 2026-11-23 |
+| 12.5 | No evidence so far of misuse | BC ("found no evidence so far that the affected data has been misused") | 2026-11-23 |
+| 12.6 | TfL told the ICO; photocard website offline; photocards still work ("can continue to travel"); the number may change | BC, IB (ICO); TF (offline, "you can continue to travel"); BC ("the investigation is not yet complete") | 2026-11-23 |
+| 12.7 | Cards: Zip Oyster, 18+ Student, 18-25 Care Leaver, 60+ London, Apprentice, Veterans | IV (exact list) | 2026-11-23 |
+| 12.8 | Security answers leak "is particularly concerning, as those may be used in account access restoration" | BC (exact) | 2026-11-23 |
+| 12.9 | NIST: "SHALL NOT prompt subscribers to use knowledge-based authentication (KBA)" | [NIST SP 800-63B, Authenticators](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/) (exact) | 2026-11-23 |
+| 12.10 | Ignore the earlier email ("should ignore it") | BC (exact) | 2026-11-23 |
+| 12.11 | Website still offline on 23 November 2026; TfL will email affected customers once restored, then ask them "to change your password, security question and answer" | TF (exact; photocard.tfl.gov.uk redirected to the maintenance page on 23 November 2026) | 2026-11-23 |
+| 12.12 | "if any of your other accounts use the same password, you should change them as well"; look for "logins or attempted logins from strange locations or at unusual times" | ND (exact); TF also advises changing a reused password or security answer | 2026-11-23 |
+| 12.13 | 2SV "helps to keep cyber criminals out of your accounts, even if they know your passwords" | [NCSC: Turn on 2SV](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/activate-2-step-verification-on-your-email) (exact; reviewed 21 December 2021) | 2026-11-23 |
+| 12.14 | Recovering a hacked account, step by step | [NCSC: Recovering a hacked account](https://www.ncsc.gov.uk/guidance/recovering-a-hacked-account) | 2026-11-23 |
+| 12.15 | Customer Services on 0343 222 1234 for renewals and journey history | TF (exact number) | 2026-11-23 |
+| 12.16 | "your bank (or any other official organisation) will never ask you to supply personal information"; "being urged to act immediately or within a limited timeframe"; do not use links or contact details in messages; texts to 7726; "tell your bank and report it as a crime to Report Fraud" | ND (exact) | 2026-11-23 |
+| 12.17 | Scam emails go to the NCSC, address on its Report a scam email page | [NCSC: Report a scam email](https://www.ncsc.gov.uk/collection/phishing-scams/report-scam-email) (the address is shown only in protected form, so not quoted) | 2026-11-23 |
+| R12.1 | *Reasoning:* email matters most for 2SV because password resets go there | follows from the NCSC 2SV page's focus on email | repo |
+| 12.D1 | Doughnut Forge encrypts files and text on your device; only you and the people you choose can open them | rows 1.2, 2.5, 6.14 | repo |
+| 12.D2 | No Doughnut Forge servers and no account; none of your files or details stored anywhere else | site `security.servers.text` | repo |
+| 12.D3 | The app collects nothing | site `faq.data.a`; privacy policy | repo |
+| 12.D4 | It does not stop phishing | row 9.L2 | repo |
+| 12.D5 | Screenshot: the iPhone Identity screen | `src/assets/app/v2/en/iphone-identity-light.webp`; alt text as in post 4 | repo |
+
+Not claimed: any link to TfL's September 2024 incident; who did it; any number beyond TfL's; the NCSC scam-email address.
