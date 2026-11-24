@@ -19,6 +19,9 @@ test("the English lines are the approved words", async () => {
   expect(en["faq.webview.a"]).toBe(
     "Doughnut Forge uses Android System WebView, a free part of Android, to show its screens, and needs version 111 or later. If the phone's WebView is older, the app shows only a screen asking you to update it. Update Android System WebView from Google Play, then open Doughnut Forge again.",
   );
+  expect(en["roadmap.format.text"]).toBe(
+    "Every new file is signed by the person who made it, in a way designed to resist future quantum computers. The app names a contact as the sender only when the file is signed with the keys on that contact's new card. Every file made with an earlier version still opens.",
+  );
   expect(en["faq.older.a"]).toBe(
     "Files and contact cards made with the latest version of Doughnut Forge do not open in older versions. Ask them to update the app once the update reaches their store. Every file made with an earlier version still opens in the latest one.",
   );
@@ -34,6 +37,7 @@ for (const code of codes) {
     expect(s["download.requires.android"], "the card has no WebView advice").not.toContain("WebView");
     expect(s["faq.webview.a"], "the answer names the update").toContain("Android System WebView");
     expect(s["faq.older.a"], "no .vlt2 in the older-versions answer").not.toContain(".vlt2");
+    expect(s["roadmap.format.text"], "no .vlt2 in the roadmap's format entry").not.toContain(".vlt2");
   });
 }
 

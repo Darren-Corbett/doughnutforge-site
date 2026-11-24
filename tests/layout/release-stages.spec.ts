@@ -344,3 +344,12 @@ test("Support: the WebView answer once Android is on sale", async ({ page }) => 
   await expect(page.locator("#faq-webview")).toHaveCount(reached("android") ? 1 : 0);
   await expect(page.locator("main")).not.toContainText("(its name ends in .vlt2)");
 });
+
+test("Roadmap: the format entry, where it shows, does not tie .vlt2 to earlier versions", async ({ page }) => {
+  const shown = reached("all3") && !v3();
+  await page.goto("/roadmap/");
+  const entry = page.locator('[data-roadmap="shipped"] li', { has: page.locator("h3", { hasText: "A new file format" }) });
+  await expect(entry).toHaveCount(shown ? 1 : 0);
+  if (shown) await expect(entry.locator("p")).toHaveText(/Every file made with an earlier version still opens\.$/);
+  await expect(page.locator("main")).not.toContainText("(its name ends in .vlt2)");
+});
