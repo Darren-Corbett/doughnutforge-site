@@ -239,7 +239,7 @@ export default {
   "v2.notes.desktop":
     "Trên Mac và Windows, thu phóng từ 100% đến 200%, và mã hóa không bao giờ thay thế một tệp đã có sẵn.",
   "roadmap.format.title": "Định dạng tệp mới cho biết ai đã gửi tệp",
-  "roadmap.format.text": "Mọi tệp mới đều được ký bởi người đã tạo ra tệp, theo cách được thiết kế để chống lại máy tính lượng tử trong tương lai. Ứng dụng chỉ ghi tên một liên hệ là người gửi khi tệp được ký bằng các khóa trên thẻ mới của liên hệ đó. Mọi tệp tạo bằng phiên bản trước (tên tệp kết thúc bằng .vlt2) vẫn mở được.",
+  "roadmap.format.text": "Mọi tệp mới đều được ký bởi người đã tạo ra tệp, theo cách được thiết kế để chống lại máy tính lượng tử trong tương lai. Ứng dụng chỉ ghi tên một liên hệ là người gửi khi tệp được ký bằng các khóa trên thẻ mới của liên hệ đó. Mọi tệp tạo bằng phiên bản trước vẫn mở được.",
   "roadmap.android.title": "Doughnut Forge cho Android",
   "roadmap.small.title": "Những cải tiến nhỏ",
   "roadmap.small.text": "Những cải tiến nhỏ cho Doughnut Forge.",

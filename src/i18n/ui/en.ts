@@ -310,7 +310,7 @@ export default {
     "On Mac and Windows, zoom from 100% to 200%, and encrypting never replaces a file that is already there.",
   "roadmap.format.title": "A new file format that shows who sent a file",
   "roadmap.format.text":
-    "Every new file is signed by the person who made it, in a way designed to resist future quantum computers. The app names a contact as the sender only when the file is signed with the keys on that contact's new card. Every file made with an earlier version (its name ends in .vlt2) still opens.",
+    "Every new file is signed by the person who made it, in a way designed to resist future quantum computers. The app names a contact as the sender only when the file is signed with the keys on that contact's new card. Every file made with an earlier version still opens.",
   "roadmap.android.title": "Doughnut Forge for Android",
   "roadmap.small.title": "Smaller improvements",
   "roadmap.small.text": "Smaller improvements to Doughnut Forge.",

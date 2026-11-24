@@ -220,7 +220,7 @@ export default {
   "v2.notes.ios": "Auf dem iPhone eine Tableiste für Dateien, Texte, Identität, Kontakte und Einstellungen. Auf iPhone und iPad ist die App im App-Umschalter verborgen.",
   "v2.notes.desktop": "Auf Mac und Windows zoomen Sie von 100 % bis 200 %, und beim Verschlüsseln wird nie eine vorhandene Datei ersetzt.",
   "roadmap.format.title": "Ein neues Dateiformat, das zeigt, wer eine Datei gesendet hat",
-  "roadmap.format.text": "Jede neue Datei wird von der Person signiert, die sie erstellt hat, auf eine Weise, die darauf ausgelegt ist, künftigen Quantencomputern standzuhalten. Die App nennt einen Kontakt nur dann als Absender, wenn die Datei mit den Schlüsseln auf der neuen Karte dieses Kontakts signiert ist. Jede Datei, die mit einer früheren Version erstellt wurde (ihr Name endet auf .vlt2), lässt sich weiterhin öffnen.",
+  "roadmap.format.text": "Jede neue Datei wird von der Person signiert, die sie erstellt hat, auf eine Weise, die darauf ausgelegt ist, künftigen Quantencomputern standzuhalten. Die App nennt einen Kontakt nur dann als Absender, wenn die Datei mit den Schlüsseln auf der neuen Karte dieses Kontakts signiert ist. Jede Datei, die mit einer früheren Version erstellt wurde, lässt sich weiterhin öffnen.",
   "roadmap.android.title": "Doughnut Forge für Android",
   "roadmap.small.title": "Kleinere Verbesserungen",
   "roadmap.small.text": "Kleinere Verbesserungen für Doughnut Forge.",

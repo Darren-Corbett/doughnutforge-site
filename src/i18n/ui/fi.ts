@@ -241,7 +241,7 @@ export default {
   "v2.notes.desktop":
     "Macissa ja Windowsissa voit zoomata 100 %:sta 200 %:iin, eikä salaus koskaan korvaa jo olemassa olevaa tiedostoa.",
   "roadmap.format.title": "Uusi tiedostomuoto, joka näyttää, kuka tiedoston lähetti",
-  "roadmap.format.text": "Tiedoston tekijä allekirjoittaa jokaisen uuden tiedoston tavalla, joka on suunniteltu kestämään tulevaisuuden kvanttitietokoneet. Sovellus nimeää yhteystiedon lähettäjäksi vain, kun tiedosto on allekirjoitettu tämän yhteystiedon uuden kortin avaimilla. Jokainen aiemmalla versiolla tehty tiedosto (sen nimi päättyy .vlt2) avautuu edelleen.",
+  "roadmap.format.text": "Tiedoston tekijä allekirjoittaa jokaisen uuden tiedoston tavalla, joka on suunniteltu kestämään tulevaisuuden kvanttitietokoneet. Sovellus nimeää yhteystiedon lähettäjäksi vain, kun tiedosto on allekirjoitettu tämän yhteystiedon uuden kortin avaimilla. Jokainen aiemmalla versiolla tehty tiedosto avautuu edelleen.",
   "roadmap.android.title": "Doughnut Forge Androidille",
   "roadmap.small.title": "Pienempiä parannuksia",
   "roadmap.small.text": "Pienempiä parannuksia Doughnut Forgeen.",

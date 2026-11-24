@@ -241,7 +241,7 @@ export default {
   "v2.notes.desktop":
     "Macen és Windowson 100%-tól 200%-ig nagyíthatsz, és a titkosítás soha nem ír felül egy már meglévő fájlt.",
   "roadmap.format.title": "Új fájlformátum, amely megmutatja, ki küldte a fájlt",
-  "roadmap.format.text": "Minden új fájlt az a személy ír alá, aki készítette, olyan módon, amelyet úgy terveztek, hogy ellenálljon a jövőbeli kvantumszámítógépeknek. Az alkalmazás csak akkor nevez meg egy kapcsolatot küldőként, ha a fájlt az adott kapcsolat új kártyáján lévő kulcsokkal írták alá. Minden korábbi verzióval készült fájl (a neve .vlt2-re végződik) továbbra is megnyílik.",
+  "roadmap.format.text": "Minden új fájlt az a személy ír alá, aki készítette, olyan módon, amelyet úgy terveztek, hogy ellenálljon a jövőbeli kvantumszámítógépeknek. Az alkalmazás csak akkor nevez meg egy kapcsolatot küldőként, ha a fájlt az adott kapcsolat új kártyáján lévő kulcsokkal írták alá. Minden korábbi verzióval készült fájl továbbra is megnyílik.",
   "roadmap.android.title": "Doughnut Forge Androidra",
   "roadmap.small.title": "Kisebb fejlesztések",
   "roadmap.small.text": "Kisebb fejlesztések a Doughnut Forge-hoz.",

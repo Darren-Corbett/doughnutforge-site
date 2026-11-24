@@ -232,7 +232,7 @@ export default {
   "v2.notes.desktop":
     "Di Mac dan Windows, perbesar dari 100% hingga 200%, dan enkripsi tidak pernah menimpa file yang sudah ada.",
   "roadmap.format.title": "Format file baru yang menunjukkan siapa yang mengirim file",
-  "roadmap.format.text": "Setiap file baru ditandatangani oleh orang yang membuatnya, dengan cara yang dirancang untuk tahan terhadap komputer kuantum di masa depan. Aplikasi menyebut kontak sebagai pengirim hanya jika file ditandatangani dengan kunci pada kartu baru kontak tersebut. Setiap file yang dibuat dengan versi sebelumnya (namanya berakhiran .vlt2) tetap bisa dibuka.",
+  "roadmap.format.text": "Setiap file baru ditandatangani oleh orang yang membuatnya, dengan cara yang dirancang untuk tahan terhadap komputer kuantum di masa depan. Aplikasi menyebut kontak sebagai pengirim hanya jika file ditandatangani dengan kunci pada kartu baru kontak tersebut. Setiap file yang dibuat dengan versi sebelumnya tetap bisa dibuka.",
   "roadmap.android.title": "Doughnut Forge untuk Android",
   "roadmap.small.title": "Peningkatan yang lebih kecil",
   "roadmap.small.text": "Peningkatan yang lebih kecil untuk Doughnut Forge.",

@@ -223,7 +223,7 @@ export default {
   "v2.notes.ios": "在 iPhone 上，标签栏包含文件、文本、身份、联系人和设置。在 iPhone 和 iPad 上，应用在 App 切换器中会被隐藏。",
   "v2.notes.desktop": "在 Mac 和 Windows 上，可在 100% 到 200% 之间缩放，加密绝不会替换已存在的文件。",
   "roadmap.format.title": "能显示文件发送者的新文件格式",
-  "roadmap.format.text": "每个新文件都由创建它的人签名，所用方式旨在抵御未来的量子计算机。只有当文件使用某位联系人新卡片上的密钥签名时，应用才会将该联系人标注为发送者。用早期版本创建的每个文件（文件名以 .vlt2 结尾）仍可打开。",
+  "roadmap.format.text": "每个新文件都由创建它的人签名，所用方式旨在抵御未来的量子计算机。只有当文件使用某位联系人新卡片上的密钥签名时，应用才会将该联系人标注为发送者。用早期版本创建的每个文件仍可打开。",
   "roadmap.android.title": "Android 版 Doughnut Forge",
   "roadmap.small.title": "细节改进",
   "roadmap.small.text": "Doughnut Forge 的细节改进。",

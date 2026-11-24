@@ -240,7 +240,7 @@ export default {
   "v2.notes.desktop":
     "Na Macu a ve Windows přibližování od 100 % do 200 % a šifrování nikdy nenahradí soubor, který už existuje.",
   "roadmap.format.title": "Nový formát souborů, který ukazuje, kdo soubor poslal",
-  "roadmap.format.text": "Každý nový soubor podepisuje osoba, která ho vytvořila, způsobem navrženým tak, aby odolal budoucím kvantovým počítačům. Aplikace uvede kontakt jako odesílatele, jen když je soubor podepsán klíči z nové karty tohoto kontaktu. Každý soubor vytvořený v dřívější verzi (jeho název končí na .vlt2) se stále otevře.",
+  "roadmap.format.text": "Každý nový soubor podepisuje osoba, která ho vytvořila, způsobem navrženým tak, aby odolal budoucím kvantovým počítačům. Aplikace uvede kontakt jako odesílatele, jen když je soubor podepsán klíči z nové karty tohoto kontaktu. Každý soubor vytvořený v dřívější verzi se stále otevře.",
   "roadmap.android.title": "Doughnut Forge pro Android",
   "roadmap.small.title": "Menší vylepšení",
   "roadmap.small.text": "Menší vylepšení Doughnut Forge.",

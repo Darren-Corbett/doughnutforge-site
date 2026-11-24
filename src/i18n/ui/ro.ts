@@ -232,7 +232,7 @@ export default {
   "v2.notes.desktop":
     "Pe Mac și Windows, mărire de la 100% la 200%, iar criptarea nu înlocuiește niciodată un fișier care există deja.",
   "roadmap.format.title": "Un nou format de fișier care arată cine a trimis un fișier",
-  "roadmap.format.text": "Fiecare fișier nou este semnat de persoana care l-a creat, într-un mod conceput să reziste viitoarelor computere cuantice. Aplicația indică un contact drept expeditor doar când fișierul este semnat cu cheile de pe noul card al acelui contact. Fiecare fișier creat cu o versiune anterioară (numele său se termină cu .vlt2) se deschide în continuare.",
+  "roadmap.format.text": "Fiecare fișier nou este semnat de persoana care l-a creat, într-un mod conceput să reziste viitoarelor computere cuantice. Aplicația indică un contact drept expeditor doar când fișierul este semnat cu cheile de pe noul card al acelui contact. Fiecare fișier creat cu o versiune anterioară se deschide în continuare.",
   "roadmap.android.title": "Doughnut Forge pentru Android",
   "roadmap.small.title": "Îmbunătățiri mai mici",
   "roadmap.small.text": "Îmbunătățiri mai mici pentru Doughnut Forge.",

@@ -237,7 +237,7 @@ export default {
   "v2.notes.desktop":
     "På Mac og Windows kan du zoome fra 100 % til 200 %, og kryptering erstatter aldrig en fil, der allerede findes.",
   "roadmap.format.title": "Et nyt filformat, der viser, hvem der har sendt en fil",
-  "roadmap.format.text": "Hver ny fil signeres af den person, der har lavet den, på en måde, der er designet til at modstå fremtidige kvantecomputere. Appen angiver kun en kontakt som afsender, når filen er signeret med nøglerne på kontaktens nye kort. Hver fil lavet med en tidligere version (navnet ender på .vlt2) kan stadig åbnes.",
+  "roadmap.format.text": "Hver ny fil signeres af den person, der har lavet den, på en måde, der er designet til at modstå fremtidige kvantecomputere. Appen angiver kun en kontakt som afsender, når filen er signeret med nøglerne på kontaktens nye kort. Hver fil lavet med en tidligere version kan stadig åbnes.",
   "roadmap.android.title": "Doughnut Forge til Android",
   "roadmap.small.title": "Mindre forbedringer",
   "roadmap.small.text": "Mindre forbedringer af Doughnut Forge.",

@@ -232,7 +232,7 @@ export default {
   "v2.notes.desktop":
     "Mac ve Windows'ta %100'den %200'e kadar yakınlaştırma; ayrıca şifreleme, zaten var olan bir dosyanın yerine asla geçmez.",
   "roadmap.format.title": "Göndereni gösteren yeni bir dosya biçimi",
-  "roadmap.format.text": "Her yeni dosya, onu oluşturan kişi tarafından gelecekteki kuantum bilgisayarlara dayanacak şekilde tasarlanmış bir yöntemle imzalanır. Uygulama bir kişiyi yalnızca dosya o kişinin yeni kartındaki anahtarlarla imzalandığında gönderen olarak adlandırır. Önceki sürümlerle oluşturulan her dosya (adı .vlt2 ile biter) açılmaya devam eder.",
+  "roadmap.format.text": "Her yeni dosya, onu oluşturan kişi tarafından gelecekteki kuantum bilgisayarlara dayanacak şekilde tasarlanmış bir yöntemle imzalanır. Uygulama bir kişiyi yalnızca dosya o kişinin yeni kartındaki anahtarlarla imzalandığında gönderen olarak adlandırır. Önceki sürümlerle oluşturulan her dosya açılmaya devam eder.",
   "roadmap.android.title": "Android için Doughnut Forge",
   "roadmap.small.title": "Daha küçük iyileştirmeler",
   "roadmap.small.text": "Doughnut Forge için daha küçük iyileştirmeler.",

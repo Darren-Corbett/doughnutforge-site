@@ -238,7 +238,7 @@ export default {
   "v2.notes.desktop":
     "Na Macu i w Windows powiększanie od 100% do 200%, a szyfrowanie nigdy nie zastępuje pliku, który już istnieje.",
   "roadmap.format.title": "Nowy format plików, który pokazuje, kto wysłał plik",
-  "roadmap.format.text": "Każdy nowy plik jest podpisywany przez osobę, która go utworzyła, w sposób zaprojektowany tak, by opierał się przyszłym komputerom kwantowym. Aplikacja wskazuje kontakt jako nadawcę tylko wtedy, gdy plik jest podpisany kluczami z nowej karty tego kontaktu. Każdy plik utworzony we wcześniejszej wersji (jego nazwa kończy się na .vlt2) nadal się otwiera.",
+  "roadmap.format.text": "Każdy nowy plik jest podpisywany przez osobę, która go utworzyła, w sposób zaprojektowany tak, by opierał się przyszłym komputerom kwantowym. Aplikacja wskazuje kontakt jako nadawcę tylko wtedy, gdy plik jest podpisany kluczami z nowej karty tego kontaktu. Każdy plik utworzony we wcześniejszej wersji nadal się otwiera.",
   "roadmap.android.title": "Doughnut Forge na Androida",
   "roadmap.small.title": "Mniejsze ulepszenia",
   "roadmap.small.text": "Mniejsze ulepszenia Doughnut Forge.",

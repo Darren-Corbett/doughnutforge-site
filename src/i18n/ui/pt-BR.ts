@@ -220,7 +220,7 @@ export default {
   "v2.notes.ios": "No iPhone, uma barra de abas para Arquivos, Texto, Identidade, Contatos e Ajustes. No iPhone e iPad, o app fica oculto no Seletor de Apps.",
   "v2.notes.desktop": "No Mac e no Windows, amplie de 100% a 200%, e criptografar nunca substitui um arquivo que já existe.",
   "roadmap.format.title": "Um novo formato de arquivo que mostra quem enviou um arquivo",
-  "roadmap.format.text": "Cada arquivo novo é assinado pela pessoa que o criou, de um jeito projetado para resistir a futuros computadores quânticos. O app só indica um contato como remetente quando o arquivo é assinado com as chaves do novo cartão desse contato. Todo arquivo criado com uma versão anterior (o nome dele termina em .vlt2) continua abrindo.",
+  "roadmap.format.text": "Cada arquivo novo é assinado pela pessoa que o criou, de um jeito projetado para resistir a futuros computadores quânticos. O app só indica um contato como remetente quando o arquivo é assinado com as chaves do novo cartão desse contato. Todo arquivo criado com uma versão anterior continua abrindo.",
   "roadmap.android.title": "Doughnut Forge para Android",
   "roadmap.small.title": "Melhorias menores",
   "roadmap.small.text": "Melhorias menores no Doughnut Forge.",

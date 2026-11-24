@@ -227,7 +227,7 @@ export default {
   "v2.notes.ios": "iPhone에서는 파일, 텍스트, 신원, 연락처, 설정 탭 막대를 사용할 수 있습니다. iPhone과 iPad에서는 앱 전환기에서 앱이 숨겨집니다.",
   "v2.notes.desktop": "Mac과 Windows에서는 100%에서 200%까지 확대/축소할 수 있으며, 암호화는 이미 있는 파일을 절대 대체하지 않습니다.",
   "roadmap.format.title": "파일을 보낸 사람을 보여 주는 새 파일 형식",
-  "roadmap.format.text": "모든 새 파일은 만든 사람이 미래의 양자 컴퓨터에 견디도록 설계된 방식으로 서명합니다. 앱은 파일이 해당 연락처의 새 카드에 있는 키로 서명된 경우에만 그 연락처를 보낸 사람으로 표시합니다. 이전 버전으로 만든 파일(이름이 .vlt2로 끝남)은 모두 계속 열 수 있습니다.",
+  "roadmap.format.text": "모든 새 파일은 만든 사람이 미래의 양자 컴퓨터에 견디도록 설계된 방식으로 서명합니다. 앱은 파일이 해당 연락처의 새 카드에 있는 키로 서명된 경우에만 그 연락처를 보낸 사람으로 표시합니다. 이전 버전으로 만든 파일은 모두 계속 열 수 있습니다.",
   "roadmap.android.title": "Android용 Doughnut Forge",
   "roadmap.small.title": "작은 개선",
   "roadmap.small.text": "Doughnut Forge의 작은 개선.",

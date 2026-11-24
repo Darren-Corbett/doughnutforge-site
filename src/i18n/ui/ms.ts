@@ -239,7 +239,7 @@ export default {
   "v2.notes.desktop":
     "Pada Mac dan Windows, zum dari 100% hingga 200%, dan penyulitan tidak sekali-kali menggantikan fail yang sudah ada.",
   "roadmap.format.title": "Format fail baharu yang menunjukkan siapa yang menghantar fail",
-  "roadmap.format.text": "Setiap fail baharu ditandatangani oleh orang yang membuatnya, dengan cara yang direka untuk menahan komputer kuantum masa depan. Aplikasi menamakan kenalan sebagai penghantar hanya apabila fail ditandatangani dengan kunci pada kad baharu kenalan itu. Setiap fail yang dibuat dengan versi terdahulu (namanya berakhir dengan .vlt2) masih boleh dibuka.",
+  "roadmap.format.text": "Setiap fail baharu ditandatangani oleh orang yang membuatnya, dengan cara yang direka untuk menahan komputer kuantum masa depan. Aplikasi menamakan kenalan sebagai penghantar hanya apabila fail ditandatangani dengan kunci pada kad baharu kenalan itu. Setiap fail yang dibuat dengan versi terdahulu masih boleh dibuka.",
   "roadmap.android.title": "Doughnut Forge untuk Android",
   "roadmap.small.title": "Penambahbaikan kecil",
   "roadmap.small.text": "Penambahbaikan kecil untuk Doughnut Forge.",

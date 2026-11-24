@@ -220,7 +220,7 @@ export default {
   "v2.notes.ios": "Op de iPhone een tabbalk voor Bestanden, Tekst, Identiteit, Contacten en Instellingen. Op iPhone en iPad is de app verborgen in de appkiezer.",
   "v2.notes.desktop": "Op Mac en Windows zoomt u van 100% tot 200%, en versleutelen vervangt nooit een bestand dat er al is.",
   "roadmap.format.title": "Een nieuw bestandsformaat dat toont wie een bestand heeft verstuurd",
-  "roadmap.format.text": "Elk nieuw bestand wordt ondertekend door de persoon die het heeft gemaakt, op een manier die is ontworpen om bestand te zijn tegen toekomstige kwantumcomputers. De app noemt een contact alleen als afzender wanneer het bestand is ondertekend met de sleutels op de nieuwe kaart van dat contact. Elk bestand dat met een eerdere versie is gemaakt (de naam eindigt op .vlt2), gaat nog steeds open.",
+  "roadmap.format.text": "Elk nieuw bestand wordt ondertekend door de persoon die het heeft gemaakt, op een manier die is ontworpen om bestand te zijn tegen toekomstige kwantumcomputers. De app noemt een contact alleen als afzender wanneer het bestand is ondertekend met de sleutels op de nieuwe kaart van dat contact. Elk bestand dat met een eerdere versie is gemaakt, gaat nog steeds open.",
   "roadmap.android.title": "Doughnut Forge voor Android",
   "roadmap.small.title": "Kleinere verbeteringen",
   "roadmap.small.text": "Kleinere verbeteringen voor Doughnut Forge.",
