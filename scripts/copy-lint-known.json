@@ -828,5 +828,10 @@
     "rule": "long",
     "text": "Each account you open usually asks for a name, an email address, perhaps a home address, a date of birth or a security answer, and each one is kept by someone else.",
     "approved": "Darren, 24 Nov 2026: live ZIP and Oyster posts (23 Nov), style only, kept as published"
+  },
+  {
+    "rule": "long",
+    "text": "If one of them leaks your details, TfL Oyster photocard data breach: what to do now walks through the steps to take, using one real case.",
+    "approved": "Darren, 24 Nov 2026: the Oyster link in the breaches post, 26 words, mostly the post title; style only"
   }
 ]
