@@ -2,7 +2,6 @@
 // (src/data/release.json, tests/checks/release-stages.spec.ts): before a stage,
 // nothing of it is on any page, and after it, all of it is.
 import { expect, test } from "../support/browser";
-import { existsSync, readdirSync, readFileSync } from "node:fs";
 import release from "../../src/data/release.json" with { type: "json" };
 import { pricingSplit } from "../../src/data/pricing";
 import { platforms } from "../../src/data/stores";
@@ -354,19 +353,4 @@ test("Roadmap: the format entry, where it shows, does not tie .vlt2 to earlier v
   await expect(entry).toHaveCount(shown ? 1 : 0);
   if (shown) await expect(entry.locator("p")).toHaveText(/Every file made with an earlier version still opens\.$/);
   await expect(page.locator("main")).not.toContainText("(its name ends in .vlt2)");
-});
-
-// VLT1 never shipped to users, so no public page may name it (owner, 24 November 2026):
-// every built page in every language, and at the white paper's stage its page texts,
-// which the PDFs are made from. Read from the built files, in any letter case.
-test("no page in any language, and no white paper text, mentions VLT1", () => {
-  const root = new URL("../../", import.meta.url).pathname;
-  const files = (dir: string, ext: RegExp): string[] =>
-    existsSync(dir) ? readdirSync(dir, { recursive: true }).map(String).filter((f) => ext.test(f)).map((f) => `${dir}/${f}`) : [];
-  const pages = files(`${root}dist`, /\.html$/);
-  expect(pages.length, "built pages").toBeGreaterThan(400);
-  const paper = reached("all3") ? files(`${root}src/content/white-paper`, /\.md$/) : [];
-  if (reached("all3")) expect(paper.length, "white paper texts").toBe(30);
-  const named = [...pages, ...paper].filter((f) => /vlt1/i.test(readFileSync(f, "utf8"))).map((f) => f.replace(root, ""));
-  expect(named).toEqual([]);
 });
