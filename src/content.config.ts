@@ -28,6 +28,8 @@ const blog = defineCollection({
       keyphrase: z.string(),
       date: z.coerce.date(),
       updated: z.coerce.date().optional(),
+      /** Among posts with the same date, the higher number is listed first */
+      sameDayOrder: z.number().int().optional(),
       /** New posts start as drafts; they are published only after approval */
       draft: z.boolean().default(true),
       image: image().optional(),
