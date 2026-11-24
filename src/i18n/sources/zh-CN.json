@@ -24,8 +24,12 @@
     "text": "51ae88c981b5"
   },
   "download.requires.android": {
-    "en": "e2e4491c5f63",
-    "text": "d58346c652d9"
+    "en": "a9e35bd27bb3",
+    "text": "866a4269dc1c"
+  },
+  "download.requires.ios": {
+    "en": "3d46d5023a17",
+    "text": "005242f0148c"
   },
   "download.requires.mac": {
     "en": "1b9c04bcfb6a",
@@ -104,8 +108,8 @@
     "text": "54c47ef3f231"
   },
   "faq.older.a": {
-    "en": "fce95b9f3bff",
-    "text": "dbaaf72ebbaa"
+    "en": "d9525c6d2318",
+    "text": "dd4bd142e995"
   },
   "faq.older.q": {
     "en": "249de21a831d",
@@ -202,6 +206,14 @@
   "faq.unlock.q": {
     "en": "c4f31d91ebb0",
     "text": "da30f77b6cdc"
+  },
+  "faq.webview.a": {
+    "en": "a93613792c7b",
+    "text": "e30d84757e4e"
+  },
+  "faq.webview.q": {
+    "en": "3d7bf3c4f2d1",
+    "text": "cc7e9bf47950"
   },
   "faq.which.a": {
     "en": "43d37ce43de2",
@@ -322,6 +334,10 @@
   "home.features.title": {
     "en": "ae4b298e8a41",
     "text": "2e0dc8db2cab"
+  },
+  "home.freeLine": {
+    "en": "6f6b2f414b25",
+    "text": "37b143c0649c"
   },
   "home.lead": {
     "en": "5c167cb6892e",

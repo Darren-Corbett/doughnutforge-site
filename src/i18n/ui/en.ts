@@ -22,6 +22,8 @@ export default {
   "nav.home": "Doughnut Forge home",
   "skip": "Skip to content",
 
+  // The approved free sentence, cut after "and use", under the home headline (owner, 24 November 2026)
+  "home.freeLine": "On {free}, Doughnut Forge is free to download and use.",
   "home.summary": "Offline file encryption for iPhone, iPad, Android, Mac and Windows.",
   "home.tagline": "Only the people you choose can open them.",
   "home.lead": "Doughnut Forge locks your files and text on your iPhone, iPad, Android or computer and lets you share them with the people you trust.",
@@ -134,7 +136,8 @@ export default {
   "download.title": "Download Doughnut Forge",
   "download.requires.mac": "Needs macOS 12 Monterey or later.",
   "download.requires.windows": "Needs Windows 11.",
-  "download.requires.android": "Needs Android 10 or later. If the app asks, update Android System WebView (a free part of Android) from Google Play.",
+  "download.requires.android": "Needs Android 10 or later.",
+  "download.requires.ios": "Needs iOS or iPadOS 17 or later.",
   "download.start.title": "When you first open it",
   "download.start.text":
     "Doughnut Forge starts with one short welcome, then one choice: create your identity, or restore it. When you create it, the app gives you 24 recovery words. Write them down and keep them somewhere safe: they are the only way to restore your identity or reset a forgotten password.",
@@ -214,6 +217,10 @@ export default {
   "faq.which.q": "Which platforms can I use it on?",
   // {available} is a list such as "iPhone and iPad, Android, Mac and Windows"; SupportPage adds download.coming when a platform is coming
   "faq.which.a": "Doughnut Forge is available for {available}.",
+  // Android only: an old System WebView gets a screen asking for the update (white paper 9.3, claims row DL1)
+  "faq.webview.q": "The app asks me to update Android System WebView",
+  "faq.webview.a":
+    "Doughnut Forge uses Android System WebView, a free part of Android, to show its screens, and needs version 111 or later. If the phone's WebView is older, the app shows only a screen asking you to update it. Update Android System WebView from Google Play, then open Doughnut Forge again.",
   "faq.data.q": "Does Doughnut Forge or this website collect any data?",
   "faq.data.a":
     "The app collects nothing: it has no tracking, analytics or crash reporting. This website keeps only anonymous daily totals of page views, which anyone can see on its statistics page. The count sets no cookies and never keeps your IP address. The only things this website stores on your device are your choice not to be counted, if you make it, and one build number, so an open tab can tell when the site has been updated. Apple, Microsoft and Google may share aggregated statistics, such as download counts, that contain no personal details. GitHub, which hosts this website, may log technical information such as your IP address. The privacy policy has the details.",
@@ -222,7 +229,7 @@ export default {
     "With this update, everyone's contact card carries new keys, so everyone's contact code changed once. It still has 16 characters in four groups. Share your contact card again with the people you write to, and compare codes again when a contact sends you their new card.",
   "faq.older.q": "Why can someone not open a file I sent?",
   "faq.older.a":
-    "Files and contact cards made with the latest version of Doughnut Forge do not open in older versions. Ask them to update the app once the update reaches their store. Every file made with an earlier version (its name ends in .vlt2) still opens in the latest one.",
+    "Files and contact cards made with the latest version of Doughnut Forge do not open in older versions. Ask them to update the app once the update reaches their store. Every file made with an earlier version still opens in the latest one.",
   "faq.quantum.q": "What does post-quantum encryption mean?",
   "faq.quantum.a":
     "In the future, powerful quantum computers may be able to break some of the encryption that is widely used today. Doughnut Forge is designed to resist attacks by future quantum computers. It uses newer methods built for this, published as standards by the US standards body NIST, together with long-trusted ones. It uses them to lock files, and to sign them, so the app can show which of your contacts made a file.",

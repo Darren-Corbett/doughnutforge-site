@@ -20,7 +20,9 @@ const { t } = useStrings(lang.code);
 const { free } = pricingNow;
 
 // Only platforms on sale have requirements, taken from the app repo's build settings
-const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
+// Every card on sale has one, so the cards keep the same shape (owner, 24 November 2026)
+const REQUIRES: Record<PlatformId, UiKey> = {
+  ios: "download.requires.ios",
   mac: "download.requires.mac",
   windows: "download.requires.windows",
   android: "download.requires.android",
@@ -34,10 +36,10 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
         <Heading class="name">{platformName(lang, p.id)}</Heading>
         {p.status === "available" ? (
           <>
-            <p class="status">
+            <p class:list={["status", mode === "download" && "requires"]}>
               {mode === "pricing"
                 ? fill(t(storePhrase(p.store, free.includes(p.id) ? "free" : "oneTime")), { store: storeNames[p.store] })
-                : REQUIRES[p.id] && t(REQUIRES[p.id]!)}
+                : t(REQUIRES[p.id])}
             </p>
             <div class="buy" data-nosnippet>
               <StoreBadge platform={p.id} store={p.store} storeId={p.storeId} lang={lang} />
@@ -79,6 +81,9 @@ const REQUIRES: Partial<Record<PlatformId, UiKey>> = {
     font-size: 17px;
     line-height: 1.5;
     color: #475569;
+  }
+  .requires {
+    font-size: 15px;
   }
   .coming .status {
     font-weight: 800;

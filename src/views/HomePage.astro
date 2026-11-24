@@ -7,9 +7,10 @@ import Phone from "../components/Phone.astro";
 import StoreLinks from "../components/StoreLinks.astro";
 import ToneRows, { type ToneRow } from "../components/ToneRows.astro";
 import { organization, softwareApplication } from "../data/jsonld";
-import { pricingLists } from "../data/pricing";
+import { pricingLists, pricingNow } from "../data/pricing";
+import { roadmap } from "../data/roadmap";
 import { screen } from "../data/screens";
-import { fill, useStrings, type Language } from "../i18n";
+import { fill, localePath, useStrings, type Language } from "../i18n";
 import Base from "../layouts/Base.astro";
 
 interface Props {
@@ -45,6 +46,11 @@ const v2Cards = [
   { title: t("v2.privacy.title"), text: t("v2.privacy.text") },
 ];
 
+// Free to download and use, naming only the phone stores that sell 3.0 (owner, 24 November 2026)
+const freeLine = pricingNow.free.length > 0 ? fill(t("home.freeLine"), pricingLists(lang)) : undefined;
+// What is next, from the roadmap once it is roadmap.md's (3.0 live): its "next" entry, word for word
+const next = roadmap.find((item) => item.status === "next" && item.title === "roadmap.v31.title");
+
 const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), organization()];
 ---
 
@@ -53,6 +59,7 @@ const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), orga
     <div class="hero-inner">
       <div class="hero-copy">
         <h1 id="home-title">{headline}</h1>
+        {freeLine && <p class="free-line">{freeLine}</p>}
         <p class="summary">{t("home.summary")}</p>
         <p class="tagline">{t("home.tagline")}</p>
         <p class="lead">{lead}</p>
@@ -122,6 +129,23 @@ const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), orga
     </div>
   </section>
 
+  {
+    next?.points && (
+      <section class="section next" aria-labelledby="home-next">
+        <h2 id="home-next" class="section-title">{t("roadmap.next")}</h2>
+        <h3 class="next-title">{t(next.title)}</h3>
+        <ul class="next-points" role="list">
+          {next.points.map((point) => (
+            <li>{t(point)}</li>
+          ))}
+        </ul>
+        <p class="next-more">
+          <a href={localePath(lang.code, "roadmap/")}>{t("security.audit.link")}</a>
+        </p>
+      </section>
+    )
+  }
+
   <section id="download" class="section" aria-labelledby="pricing">
     <h2 id="pricing" class="section-title">{t("home.pricing.title")}</h2>
     <p class="download-lead">{fill(t("home.pricing.text"), pricingLists(lang))}</p>
@@ -152,6 +176,18 @@ const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), orga
     font-weight: 900;
     letter-spacing: -0.03em;
     max-width: 12ch;
+  }
+  /* The free line: a green-edged pill on the night colour, white text (15.9:1) */
+  .free-line {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 6px 14px;
+    border: 2px solid #00ba7c;
+    border-radius: 9999px;
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 800;
+    color: #fff;
   }
   .summary {
     margin-top: 16px;
@@ -291,6 +327,31 @@ const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), orga
       left: 100%;
       opacity: 0;
     }
+  }
+  .next-title {
+    margin-top: 12px;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 900;
+  }
+  .next-points {
+    margin-top: 8px;
+    max-width: 40rem;
+  }
+  .next-points li {
+    border-top: 2px solid #1da1f2;
+    padding: 12px 0;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .next-more {
+    margin-top: 8px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .next-more a {
+    color: var(--ink-blue);
+    text-decoration: underline;
   }
   .caption {
     margin-top: 14px;

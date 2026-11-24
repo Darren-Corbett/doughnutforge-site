@@ -27,6 +27,9 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   "meta.features.description": "android",
   "features.lead": "android",
   "blog.cta.text": "android",
+  // The Support answer for an old Android System WebView (owner, 24 November 2026)
+  "faq.webview.q": "android",
+  "faq.webview.a": "android",
 
   // A phone store sells 3.0: free to download and use, and encrypting files, photos
   // and videos is a one-time in-app purchase (pricing-and-unlock.md v2, 21 November 2026)
@@ -51,6 +54,7 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   "faq.platforms.aFree": "mobileFree",
   "faq.offline.a": "mobileFree",
   "press.facts.priceValue": "mobileFree",
+  "home.freeLine": "mobileFree",
   // Buying goes through Apple and Google, and the Android permissions are not
   // settled: waits for the final white paper and android-permission.md
   "technical.network.none": "mobileFree",
