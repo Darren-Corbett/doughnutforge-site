@@ -201,3 +201,10 @@ The work: Part B items 1 to 8 on the local branch, from the v2 website pack only
 - Change (owner's yes, 23 November): `scripts/check-held-text.mjs` runs in every build and fails when a held string's earlier text is already its new text, in any language. Genuine cases go in `src/i18n/held-same.json` with a one-line reason; an entry that is no longer needed fails too. The list starts empty.
 - When to check: in a month (23 December 2026): no held line changed before its stage, and the exceptions list is still short.
 - Result: open.
+
+## 24 November 2026, a build wrote 200 MB into the synced Desktop
+
+- Problem: a check build of `main` ran in the main working copy at `~/Desktop/review/launch-site/main-wt`, which also held its own `node_modules`. The build wrote 203 MB of output into the iCloud-synced Desktop; iCloud started syncing it and the Mac's load rose from about 5 to 65 while the app session was running simulator work. The output was moved to `~/forge-work` at once. The memory rule "bulk output to ~/forge-work" covered renders and screenshots, but a working copy kept on the Desktop builds there by default.
+- Change (owner, 24 November): the main working copy moved to `~/forge-work/main-wt` (`git worktree move`, uncommitted changes kept). Nothing is built, installed or written in bulk under `~/Desktop`; the Desktop gets only small review files, diffs and screenshots.
+- When to check: at the end of launch week: no build output or `node_modules` under `~/Desktop` (`find ~/Desktop -name node_modules -o -name dist -type d`).
+- Result: open.
