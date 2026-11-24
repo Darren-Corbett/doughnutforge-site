@@ -1,14 +1,18 @@
 // The Android internet permission (android-permission.md v1, 21 November 2026):
-// Darren's Pixel test picks version A or B. Both lines are ready behind one switch
-// (src/data/android-permission.ts); until he picks, the Technical details page
-// holds the [PENDING-ANDROID-PERMISSION] marker, so no build that shows Android
-// can go out saying anything about its permissions.
+// Darren's Pixel test of 3000007 (23 November 2026) picked version A: the purchase
+// works without the internet permission. Both lines stay behind one switch
+// (src/data/android-permission.ts); without a pick the Technical details page
+// holds the [PENDING-ANDROID-PERMISSION] marker.
 import { expect, test } from "@playwright/test";
 import { androidPermission, androidPermissionLine } from "../../src/data/android-permission";
 import en from "../../src/i18n/ui/en";
 
-test("until Darren picks, the line is the pending marker", () => {
-  expect(androidPermission).toBeNull();
+test("Darren picked version A, so the page shows the A line", () => {
+  expect(androidPermission).toBe("A");
+  expect(androidPermissionLine()).toBe("technical.network.androidA");
+});
+
+test("without a pick, the line is the pending marker", () => {
   expect(androidPermissionLine(null)).toBe("[PENDING-ANDROID-PERMISSION]");
 });
 
