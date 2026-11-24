@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from "astro:content";
+import { newestFirst } from "./post-order";
 
 export type Post = CollectionEntry<"blog">;
 
@@ -15,15 +16,11 @@ const hasPostFiles = Object.keys(import.meta.glob("../content/blog/*/[^_]*.{md,m
 /** Posts in one language, newest first, without drafts unless they are being previewed */
 export const getPosts = async (lang: string) =>
   hasPostFiles
-    ? (await getCollection("blog", (p) => p.data.lang === lang && (showDrafts || !p.data.draft))).sort(
-        (a, b) => b.data.date.getTime() - a.data.date.getTime(),
-      )
+    ? (await getCollection("blog", (p) => p.data.lang === lang && (showDrafts || !p.data.draft))).sort((a, b) => newestFirst(a.data, b.data))
     : [];
 
 /** Published posts in one language, newest first. Never drafts, even in a preview: for the RSS feed */
 export const getPublishedPosts = async (lang: string) =>
   hasPostFiles
-    ? (await getCollection("blog", (p) => p.data.lang === lang && !p.data.draft)).sort(
-        (a, b) => b.data.date.getTime() - a.data.date.getTime(),
-      )
+    ? (await getCollection("blog", (p) => p.data.lang === lang && !p.data.draft)).sort((a, b) => newestFirst(a.data, b.data))
     : [];
