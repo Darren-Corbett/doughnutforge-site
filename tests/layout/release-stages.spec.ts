@@ -7,6 +7,7 @@ import release from "../../src/data/release.json" with { type: "json" };
 import { pricingSplit } from "../../src/data/pricing";
 import { platforms } from "../../src/data/stores";
 import { gated } from "../../src/i18n/gated";
+import { each } from "../support/each";
 import { reached, uiNow } from "../support/release";
 
 // 3.0 is live: every store on sale sells it, and Android is on sale
@@ -304,7 +305,7 @@ test("first 3.0 store: no \"New in Doughnut Forge 2\", and the features closing 
 // The owner's picks of 24 November 2026 (REVIEW.md item 28)
 test("download cards: one requirement line each, and the badge at the bottom", async ({ page }) => {
   await page.goto("/download/");
-  for (const card of await page.locator(".card.on-sale").all()) {
+  for (const card of await each(page.locator(".card.on-sale"))) {
     await expect(card.locator("p.status")).toHaveCount(1);
     await expect(card.locator("p.status")).toHaveText(/^Needs /);
   }
