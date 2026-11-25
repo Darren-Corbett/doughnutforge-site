@@ -374,10 +374,12 @@ for (const path of ["/download/", "/pricing/"]) {
     await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto(path);
     const boxes = await Promise.all((await each(page.locator(".cards > .card"), 4)).map(async (c) => ({ id: await c.getAttribute("data-platform"), box: (await c.boundingBox())! })));
-    expect(boxes[0].box.y).toBe(boxes[1].box.y);
-    expect(boxes[2].box.y).toBe(boxes[3].box.y);
-    expect(boxes[2].box.y).toBeGreaterThan(boxes[0].box.y);
-    expect(boxes[2].box.x).toBe(boxes[0].box.x);
+    // Cards in one row can sit a fraction of a pixel apart (sub-pixel layout), so within 1px
+    const sameLine = (a: number, b: number) => expect(Math.abs(a - b)).toBeLessThan(1);
+    sameLine(boxes[0].box.y, boxes[1].box.y);
+    sameLine(boxes[2].box.y, boxes[3].box.y);
+    expect(boxes[2].box.y).toBeGreaterThan(boxes[0].box.y + 1);
+    sameLine(boxes[2].box.x, boxes[0].box.x);
     expect(boxes.map((b) => b.id), "phones on top at every stage").toEqual(["ios", "android", "mac", "windows"]);
     await page.setViewportSize({ width: 390, height: 900 });
     const narrow = await Promise.all((await each(page.locator(".cards > .card"), 4)).map(async (c) => (await c.boundingBox())!.x));
