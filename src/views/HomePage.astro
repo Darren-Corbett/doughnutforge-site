@@ -10,7 +10,7 @@ import { organization, softwareApplication } from "../data/jsonld";
 import { pricingLists, pricingNow } from "../data/pricing";
 import { roadmap } from "../data/roadmap";
 import { screen } from "../data/screens";
-import { fill, localePath, useStrings, type Language } from "../i18n";
+import { fill, localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
 
 interface Props {
@@ -49,10 +49,11 @@ const v2Cards = [
 // Free to download and use, naming only the phone stores that sell 3.0 (owner, 24 November 2026).
 // It takes the blue tagline's place, so the hero stays short (owner, 25 November 2026).
 const freeLine = pricingNow.free.length > 0 ? fill(t("home.freeLine"), pricingLists(lang)) : undefined;
-// What is next, from the roadmap once it is roadmap.md's (3.0 live): its "next" entry, word for
-// word. The security review is 3.2, so it stays on the roadmap page (owner, 25 November 2026).
+// What is next, from the roadmap once it is roadmap.md's (3.0 live): 3.1's two feature lines,
+// word for word; the rest of 3.1 stays on the roadmap page (owner, 25 November 2026)
+const HOME_NEXT: UiKey[] = ["roadmap.v31.messages", "roadmap.v31.rtl"];
 const next = roadmap.find((item) => item.status === "next" && item.title === "roadmap.v31.title");
-const nextPoints = next?.points;
+const nextPoints = next?.points?.filter((point) => HOME_NEXT.includes(point));
 
 const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), organization()];
 ---

@@ -13,8 +13,8 @@ export type RoadmapItem = { status: RoadmapStatus; title: UiKey; text?: UiKey; p
 export const roadmapStatuses: RoadmapStatus[] = ["shipped", "next", "then", "later"];
 
 // Once 3.0 is live the roadmap is roadmap.md's: one 3.0 entry (v2, approved by
-// Darren 21 November 2026), 3.1 next, then 3.2 with the security review, and 4.0
-// later (approved 25 November 2026, replacing the 23 November text). Until then the new format and Android ship by stage (src/data/stages.ts).
+// Darren 21 November 2026), then 3.1 next, 3.2 then, and 3.3 and 4.0 later, each with
+// a summary line (approved 25 November 2026, replacing the earlier texts). Until then the new format and Android ship by stage (src/data/stages.ts).
 const v3 = reached("live3");
 
 /** Anchors on single points, so other pages can link to them */
@@ -30,9 +30,10 @@ const V3: RoadmapItem = {
 };
 
 const AFTER_3: RoadmapItem[] = [
-  { status: "next", title: "roadmap.v31.title", points: ["roadmap.v31.messages", "roadmap.v31.rtl"] },
-  { status: "then", title: "roadmap.v32.title", points: ["roadmap.v32.review"] },
-  { status: "later", title: "roadmap.v4.title", points: ["roadmap.v4.cli"] },
+  { status: "next", title: "roadmap.v31.title", text: "roadmap.v31.text", points: ["roadmap.v31.messages", "roadmap.v31.unlocked", "roadmap.v31.rtl"] },
+  { status: "then", title: "roadmap.v32.title", text: "roadmap.v32.text", points: ["roadmap.v32.review", "roadmap.v32.fixes", "roadmap.v32.paper"] },
+  { status: "later", title: "roadmap.v33.title", text: "roadmap.v33.text", points: ["roadmap.v33.make", "roadmap.v33.encrypt", "roadmap.v33.only"] },
+  { status: "later", title: "roadmap.v4.title", text: "roadmap.v4.text", points: ["roadmap.v4.cli", "roadmap.v4.identity", "roadmap.v4.both", "roadmap.v4.free"] },
 ];
 
 const BEFORE_3: RoadmapItem[] = [

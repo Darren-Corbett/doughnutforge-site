@@ -833,5 +833,10 @@
     "rule": "long",
     "text": "If one of them leaks your details, TfL Oyster photocard data breach: what to do now walks through the steps to take, using one real case.",
     "approved": "Darren, 24 Nov 2026: the Oyster link in the breaches post, 26 words, mostly the post title; style only"
+  },
+  {
+    "rule": "long",
+    "text": "A full security review of the whole app, from the encryption itself to how files arrive, open and are saved, approached the way an attacker would.",
+    "approved": "Darren, 25 Nov 2026: the roadmap's 3.2 line, his exact wording (26 words)"
   }
 ]

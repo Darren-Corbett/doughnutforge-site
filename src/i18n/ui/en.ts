@@ -329,12 +329,26 @@ export default {
   "roadmap.v3.older": "Everyone you share files with needs Doughnut Forge 3.0 or later to open them. Older files still open as before.",
   // Next and later once 3.0 is live (roadmap.md v3, approved by Darren 23 November 2026)
   "roadmap.v31.title": "Doughnut Forge 3.1",
+  "roadmap.v31.text": "Private messages as files, and the app in Arabic and Hebrew.",
   "roadmap.v32.title": "Doughnut Forge 3.2",
+  "roadmap.v32.text": "A release about strength, not new features.",
   "roadmap.v31.messages": "Message files. Write an encrypted message and send it as a small file. The person you send it to opens it and reads it in Doughnut Forge.",
+  "roadmap.v31.unlocked": "The message is never saved unlocked: it shows on screen only while it is open.",
   "roadmap.v31.rtl": "Arabic and Hebrew, with the whole app laid out right to left.",
-  "roadmap.v32.review": "A full security review, and the fixes it leads to.",
+  "roadmap.v32.review": "A full security review of the whole app, from the encryption itself to how files arrive, open and are saved, approached the way an attacker would.",
+  "roadmap.v32.fixes": "Its findings fixed before the release.",
+  "roadmap.v32.paper": "The white paper updated to describe what changed.",
+  "roadmap.v33.title": "Doughnut Forge 3.3",
+  "roadmap.v33.text": "Groups.",
+  "roadmap.v33.make": "Make a group from your contacts and share it with the people in it.",
+  "roadmap.v33.encrypt": "Encrypt a file or message for the whole group at once, or for a group and other contacts together.",
+  "roadmap.v33.only": "Only the people in the group can open what is sent to it.",
   "roadmap.v4.title": "Doughnut Forge 4.0",
+  "roadmap.v4.text": "For people who work in a terminal.",
   "roadmap.v4.cli": "A command-line tool for Linux and Mac, using the same encryption and file format.",
+  "roadmap.v4.identity": "Create your identity in the terminal, or restore it from your recovery words.",
+  "roadmap.v4.both": "Files made with the tool open in the app, and files made in the app open with the tool.",
+  "roadmap.v4.free": "Free to use.",
 
   // Security: what a user needs to know, no internal design. Never say an audit
   // has happened, or that the sender of a shared file is verified.

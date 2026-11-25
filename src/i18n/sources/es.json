@@ -855,17 +855,77 @@
     "en": "1cb5935ce00b",
     "text": "faa22ca295c5"
   },
+  "roadmap.v31.text": {
+    "en": "179e6c3ebece",
+    "text": "56018987c050"
+  },
   "roadmap.v31.title": {
     "en": "e5ce3429a2b2",
     "text": "e5ce3429a2b2"
   },
+  "roadmap.v31.unlocked": {
+    "en": "4c2fa6e44f44",
+    "text": "ac8e401d7c8f"
+  },
+  "roadmap.v32.fixes": {
+    "en": "cd9f57b4e8e8",
+    "text": "e6973f04ba63"
+  },
+  "roadmap.v32.paper": {
+    "en": "2f179e4cbd4a",
+    "text": "b7a70701e65e"
+  },
   "roadmap.v32.review": {
-    "en": "365c4e0ac863",
-    "text": "f048cbf0dd04"
+    "en": "adde907ad1d6",
+    "text": "11aa4232affa"
+  },
+  "roadmap.v32.text": {
+    "en": "018aeb0cc4fe",
+    "text": "e7a394184b95"
+  },
+  "roadmap.v32.title": {
+    "en": "a0f955952cf0",
+    "text": "a0f955952cf0"
+  },
+  "roadmap.v33.encrypt": {
+    "en": "c53a5449509a",
+    "text": "b23255847bfa"
+  },
+  "roadmap.v33.make": {
+    "en": "309e6661cbde",
+    "text": "1f11dd2e7bb7"
+  },
+  "roadmap.v33.only": {
+    "en": "0901125bd2d8",
+    "text": "52250f94b68a"
+  },
+  "roadmap.v33.text": {
+    "en": "1d40b5b28319",
+    "text": "4dfe23c03d2c"
+  },
+  "roadmap.v33.title": {
+    "en": "8684caad9c18",
+    "text": "8684caad9c18"
+  },
+  "roadmap.v4.both": {
+    "en": "9bd76742bfd8",
+    "text": "a1de7078b577"
   },
   "roadmap.v4.cli": {
     "en": "0dea476f0f6b",
     "text": "b94777d20813"
+  },
+  "roadmap.v4.free": {
+    "en": "223d480e6ca6",
+    "text": "6f55f5675b25"
+  },
+  "roadmap.v4.identity": {
+    "en": "d811b48c6968",
+    "text": "9aacf9ee0ba6"
+  },
+  "roadmap.v4.text": {
+    "en": "85bada2f7733",
+    "text": "4162ad897923"
   },
   "roadmap.v4.title": {
     "en": "a3e055cf1ab6",
