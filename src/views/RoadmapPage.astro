@@ -1,9 +1,9 @@
 ---
-// The public roadmap: shipped, next and later (src/data/roadmap.ts). A section
+// The public roadmap: shipped, next, then and later (src/data/roadmap.ts). A section
 // with no items is left out. Nothing carries a date; the Next and Later headings
 // say an item is planned, so the items do not repeat it.
 // Each group is a ruled row, like the home features: green for what is out now
-// (DESIGN.md: green means yours and ready), blue for next, quiet grey for later.
+// (DESIGN.md: green means yours and ready), blue for next and then, quiet grey for later.
 // The group rule is the only rule: items are set apart by space, as in the rows.
 import PageHero from "../components/PageHero.astro";
 import { pointIds, roadmap, roadmapStatuses } from "../data/roadmap";
@@ -15,7 +15,7 @@ interface Props {
 }
 const { lang } = Astro.props;
 const { t } = useStrings(lang.code);
-const tones = { shipped: "tone-green", next: "tone-blue", later: "tone-quiet" };
+const tones = { shipped: "tone-green", next: "tone-blue", then: "tone-blue", later: "tone-quiet" };
 const sections = roadmapStatuses.map((status) => ({ status, items: roadmap.filter((i) => i.status === status) })).filter((s) => s.items.length);
 ---
 

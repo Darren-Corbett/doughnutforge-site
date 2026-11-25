@@ -49,10 +49,10 @@ const v2Cards = [
 // Free to download and use, naming only the phone stores that sell 3.0 (owner, 24 November 2026).
 // It takes the blue tagline's place, so the hero stays short (owner, 25 November 2026).
 const freeLine = pricingNow.free.length > 0 ? fill(t("home.freeLine"), pricingLists(lang)) : undefined;
-// What is next, from the roadmap once it is roadmap.md's (3.0 live): its "next" entry, word for word,
-// without the security review, which stays on the roadmap page (owner, 25 November 2026)
+// What is next, from the roadmap once it is roadmap.md's (3.0 live): its "next" entry, word for
+// word. The security review is 3.2, so it stays on the roadmap page (owner, 25 November 2026).
 const next = roadmap.find((item) => item.status === "next" && item.title === "roadmap.v31.title");
-const nextPoints = next?.points?.filter((point) => point !== "roadmap.v31.review");
+const nextPoints = next?.points;
 
 const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), organization()];
 ---

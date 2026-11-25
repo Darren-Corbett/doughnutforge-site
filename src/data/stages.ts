@@ -5,7 +5,7 @@
 //   mobileFree  a phone store on sale sells 3.0: free to download, with one in-app purchase (src/data/pricing.ts)
 //   first3   the first store sells 3.0: the FAQs on new contact codes and older apps
 //   all3     every store on sale sells 3.0: the new format's copy and the white paper
-//   live3    3.0 is live: all3, and Android is on sale (the roadmap's 3.0, 3.1 and 4.0)
+//   live3    3.0 is live: all3, and Android is on sale (the roadmap's 3.0, 3.1, 3.2 and 4.0)
 // Until a stage is reached, its strings keep their earlier text (src/i18n/gated.ts).
 import release from "./release.json" with { type: "json" };
 import { pricingSplit } from "./pricing";

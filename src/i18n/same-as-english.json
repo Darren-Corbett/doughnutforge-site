@@ -22,6 +22,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "nl": [
@@ -45,6 +46,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "da": [
@@ -62,6 +64,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "tr": [
@@ -76,6 +79,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "hi": [
@@ -90,6 +94,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "th": [
@@ -104,6 +109,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "ko": [
@@ -117,6 +123,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "it": [
@@ -133,6 +140,7 @@
     "footer.whitePaper",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "ro": [
@@ -147,6 +155,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "pl": [
@@ -161,6 +170,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "cs": [
@@ -175,6 +185,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "hu": [
@@ -189,6 +200,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "sv": [
@@ -206,6 +218,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "no": [
@@ -222,6 +235,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "fi": [
@@ -237,6 +251,7 @@
     "footer.whitePaper",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "ru": [
@@ -251,6 +266,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "uk": [
@@ -265,6 +281,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "el": [
@@ -279,6 +296,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "fr": [
@@ -291,6 +309,7 @@
     "stats.table.page",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "es": [
@@ -304,6 +323,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "es-MX": [
@@ -318,6 +338,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "pt-BR": [
@@ -332,6 +353,7 @@
     "footer.whitePaper",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "ja": [
@@ -340,6 +362,7 @@
     "roadmap.v2.title",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "zh-CN": [
@@ -348,6 +371,7 @@
     "roadmap.v2.title",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "zh-TW": [
@@ -356,6 +380,7 @@
     "roadmap.v2.title",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "id": [
@@ -370,6 +395,7 @@
     "footer.whitePaper",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "ms": [
@@ -383,6 +409,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ],
   "vi": [
@@ -395,6 +422,7 @@
     "technical.unlock.android.label",
     "roadmap.v3.title",
     "roadmap.v31.title",
+    "roadmap.v32.title",
     "roadmap.v4.title"
   ]
 }

@@ -1,4 +1,4 @@
-// The public roadmap: shipped, next and later, and nothing else. Items not yet
+// The public roadmap: shipped, next, then and later, and nothing else. Items not yet
 // shipped are always shown as planned, with no dates. When an item ships, change
 // its status here; its wording stays the same in every language. Doughnut Forge 2
 // is built from roadmap-status.md in the v2 website pack, and its points are the
@@ -6,19 +6,19 @@
 import type { UiKey } from "../i18n";
 import { reached } from "./stages";
 
-export type RoadmapStatus = "shipped" | "next" | "later";
+export type RoadmapStatus = "shipped" | "next" | "then" | "later";
 
 export type RoadmapItem = { status: RoadmapStatus; title: UiKey; text?: UiKey; points?: UiKey[] };
 
-export const roadmapStatuses: RoadmapStatus[] = ["shipped", "next", "later"];
+export const roadmapStatuses: RoadmapStatus[] = ["shipped", "next", "then", "later"];
 
 // Once 3.0 is live the roadmap is roadmap.md's: one 3.0 entry (v2, approved by
-// Darren 21 November 2026), 3.1 next and 4.0 later (v3, approved 23 November
-// 2026). Until then the new format and Android ship by stage (src/data/stages.ts).
+// Darren 21 November 2026), 3.1 next, then 3.2 with the security review, and 4.0
+// later (approved 25 November 2026, replacing the 23 November text). Until then the new format and Android ship by stage (src/data/stages.ts).
 const v3 = reached("live3");
 
 /** Anchors on single points, so other pages can link to them */
-export const pointIds: Partial<Record<UiKey, string>> = { "roadmap.v31.review": "security-review" };
+export const pointIds: Partial<Record<UiKey, string>> = { "roadmap.v32.review": "security-review" };
 
 /** Where the audit line on the Security and Technical details pages links: the security review once it is on the roadmap */
 export const securityReviewPath = v3 ? "roadmap/#security-review" : "roadmap/";
@@ -30,7 +30,8 @@ const V3: RoadmapItem = {
 };
 
 const AFTER_3: RoadmapItem[] = [
-  { status: "next", title: "roadmap.v31.title", points: ["roadmap.v31.messages", "roadmap.v31.rtl", "roadmap.v31.review"] },
+  { status: "next", title: "roadmap.v31.title", points: ["roadmap.v31.messages", "roadmap.v31.rtl"] },
+  { status: "then", title: "roadmap.v32.title", points: ["roadmap.v32.review"] },
   { status: "later", title: "roadmap.v4.title", points: ["roadmap.v4.cli"] },
 ];
 

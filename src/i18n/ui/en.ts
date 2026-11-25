@@ -292,6 +292,8 @@ export default {
   "roadmap.lead": "What has shipped, and what is planned next. Plans can change, so nothing here has a date.",
   "roadmap.shipped": "Shipped",
   "roadmap.next": "Next",
+  // After Next, before Later: the release that follows (owner, 25 November 2026)
+  "roadmap.then": "Then",
   "roadmap.later": "Later",
   "roadmap.v2.title": "Doughnut Forge 2",
   "roadmap.v2.text":
@@ -327,9 +329,10 @@ export default {
   "roadmap.v3.older": "Everyone you share files with needs Doughnut Forge 3.0 or later to open them. Older files still open as before.",
   // Next and later once 3.0 is live (roadmap.md v3, approved by Darren 23 November 2026)
   "roadmap.v31.title": "Doughnut Forge 3.1",
+  "roadmap.v32.title": "Doughnut Forge 3.2",
   "roadmap.v31.messages": "Message files. Write an encrypted message and send it as a small file. The person you send it to opens it and reads it in Doughnut Forge.",
   "roadmap.v31.rtl": "Arabic and Hebrew, with the whole app laid out right to left.",
-  "roadmap.v31.review": "A full security review, and the fixes it leads to.",
+  "roadmap.v32.review": "A full security review, and the fixes it leads to.",
   "roadmap.v4.title": "Doughnut Forge 4.0",
   "roadmap.v4.cli": "A command-line tool for Linux and Mac, using the same encryption and file format.",
 
