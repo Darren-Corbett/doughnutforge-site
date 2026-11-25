@@ -81,7 +81,9 @@ const REQUIRES: Record<PlatformId, UiKey> = {
     font-weight: 900;
     letter-spacing: -0.01em;
   }
+  /* No card ends with one word alone on its last line, in any language (owner, 25 November 2026) */
   .status {
+    text-wrap: pretty;
     margin-top: 6px;
     font-size: 17px;
     line-height: 1.5;

@@ -24,6 +24,10 @@
 // 4. Korean words that carry punctuation, such as "사무국(ICO)" or "Inc.의", are
 //    kept on one line so a particle never starts a line on its own.
 //
+// 5. A name with a spaced hyphen ending, as Finnish writes "App Store -kaupasta" or
+//    "Android -laitteissa": the line must not break before the ending or inside the
+//    name, so the spaces in it become no-break spaces. The words do not change.
+//
 // Left alone: the <head> (titles, descriptions, structured data), tags and their
 // attributes (link addresses), scripts, styles and SVG drawings, and web and email addresses,
 // which may break at their dots and slashes.
@@ -44,6 +48,12 @@ const KEEP = new RegExp(
   ].join("|"),
   "gv",
 );
+// A capitalised name of up to three words ("Mac App Store") and its spaced hyphen
+// ending (5 above). The name follows a lowercase word, a number or a comma, so a
+// capitalised word that starts the sentence ("Kertaostos Microsoft Store …") stays free.
+const NAME_ENDING = /(?<=[\p{Ll}\p{N},;:)] )(?:\p{Lu}[\p{L}\p{N}]* ){0,2}\p{Lu}[\p{L}\p{N}]* -\p{L}+/gu;
+const joinNameEndings = (text: string) => text.replace(NAME_ENDING, (match) => match.replaceAll(" ", "\u00a0"));
+
 // Web and email addresses are left free to break at their dots and slashes
 const LOOKS_LIKE_URL = /[/@]/;
 const SHORT = 30;
@@ -141,7 +151,7 @@ export const fixLineBreaks = (html: string) => {
     .slice(start)
     // Odd parts are tags, scripts, styles and drawings (SVG text cannot hold HTML); even parts are text
     .split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<svg[\s\S]*?<\/svg>|<[^>]*>)/)
-    .map((part, i) => (i % 2 ? part : korean ? keepKoreanWords(part) : keepWords(cjk ? cjk(part) : part)))
+    .map((part, i) => (i % 2 ? part : korean ? keepKoreanWords(joinNameEndings(part)) : keepWords(cjk ? cjk(part) : joinNameEndings(part))))
     .join("");
   return html.slice(0, start) + measureHeadings(body, lang);
 };
