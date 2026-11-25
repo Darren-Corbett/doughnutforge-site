@@ -13,6 +13,7 @@ const strings = async (code: string): Promise<Record<string, string>> => (await 
 test("the English lines are the approved words", async () => {
   const en = await strings("en");
   expect(en["download.requires.ios"]).toBe("Needs iOS or iPadOS 17 or later.");
+  expect(en["roadmap.then"]).toBe("Then");
   expect(en["download.requires.android"]).toBe("Needs Android 10 or later.");
   expect(en["home.freeLine"]).toBe("On {free}, Doughnut Forge is free to download and use.");
   expect(en["faq.webview.q"]).toBe("The app asks me to update Android System WebView");
@@ -38,6 +39,11 @@ for (const code of codes) {
     expect(s["faq.webview.a"], "the answer names the update").toContain("Android System WebView");
     expect(s["faq.older.a"], "no .vlt2 in the older-versions answer").not.toContain(".vlt2");
     expect(s["roadmap.format.text"], "no .vlt2 in the roadmap's format entry").not.toContain(".vlt2");
+    // The roadmap's "Then" heading (owner, 25 November 2026): its own word, not "Next" or "Later"
+    expect(s["roadmap.then"]?.trim(), "roadmap.then").toBeTruthy();
+    expect(s["roadmap.then"]).not.toBe(s["roadmap.next"]);
+    expect(s["roadmap.then"]).not.toBe(s["roadmap.later"]);
+    expect(s["roadmap.v32.title"], "roadmap.v32.title").toBe("Doughnut Forge 3.2");
   });
 }
 

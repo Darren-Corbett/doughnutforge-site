@@ -112,6 +112,7 @@ test("3.0 live: the roadmap from roadmap.md", async ({ page }) => {
   if (!on) {
     expect(next).toContain("Smaller improvements");
     expect(later).toEqual(["Independent security audit"]);
+    await expect(page.locator('[data-roadmap="then"]')).toHaveCount(0);
     return;
   }
   await expect(shipped.locator(".points li")).toHaveText([
@@ -127,8 +128,13 @@ test("3.0 live: the roadmap from roadmap.md", async ({ page }) => {
   await expect(entry("next", "Doughnut Forge 3\\.1").locator(".points li")).toHaveText([
     "Message files. Write an encrypted message and send it as a small file. The person you send it to opens it and reads it in Doughnut Forge.",
     "Arabic and Hebrew, with the whole app laid out right to left.",
-    "A full security review, and the fixes it leads to.",
   ]);
+  // The security review is its own release after 3.1 (owner, 25 November 2026): "Then: 3.2"
+  await expect(page.locator('[data-roadmap="then"] h2')).toHaveText("Then");
+  expect(await page.locator('[data-roadmap="then"] h3').allInnerTexts()).toEqual(["Doughnut Forge 3.2"]);
+  await expect(entry("then", "Doughnut Forge 3\\.2").locator(".points li")).toHaveText(["A full security review, and the fixes it leads to."]);
+  // Shipped, Next, Then, Later, in that order
+  expect(await page.locator("[data-roadmap]").evaluateAll((s) => s.map((e) => e.getAttribute("data-roadmap")))).toEqual(["shipped", "next", "then", "later"]);
   expect(later).toEqual(["Doughnut Forge 4.0"]);
   await expect(entry("later", "Doughnut Forge 4\\.0").locator(".points li")).toHaveText(["A command-line tool for Linux and Mac, using the same encryption and file format."]);
   await expect(page.locator("main")).not.toContainText(/audit/i);
