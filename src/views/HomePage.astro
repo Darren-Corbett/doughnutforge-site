@@ -46,10 +46,13 @@ const v2Cards = [
   { title: t("v2.privacy.title"), text: t("v2.privacy.text") },
 ];
 
-// Free to download and use, naming only the phone stores that sell 3.0 (owner, 24 November 2026)
+// Free to download and use, naming only the phone stores that sell 3.0 (owner, 24 November 2026).
+// It takes the blue tagline's place, so the hero stays short (owner, 25 November 2026).
 const freeLine = pricingNow.free.length > 0 ? fill(t("home.freeLine"), pricingLists(lang)) : undefined;
-// What is next, from the roadmap once it is roadmap.md's (3.0 live): its "next" entry, word for word
+// What is next, from the roadmap once it is roadmap.md's (3.0 live): its "next" entry, word for word,
+// without the security review, which stays on the roadmap page (owner, 25 November 2026)
 const next = roadmap.find((item) => item.status === "next" && item.title === "roadmap.v31.title");
+const nextPoints = next?.points?.filter((point) => point !== "roadmap.v31.review");
 
 const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), organization()];
 ---
@@ -61,7 +64,7 @@ const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), orga
         <h1 id="home-title">{headline}</h1>
         {freeLine && <p class="free-line">{freeLine}</p>}
         <p class="summary">{t("home.summary")}</p>
-        <p class="tagline">{t("home.tagline")}</p>
+        {!freeLine && <p class="tagline">{t("home.tagline")}</p>}
         <p class="lead">{lead}</p>
         <div class="actions" data-nosnippet>
           <a class="btn-primary" href="#download">{t("home.cta.primary")}</a>
@@ -130,12 +133,12 @@ const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), orga
   </section>
 
   {
-    next?.points && (
+    next && nextPoints && (
       <section class="section next" aria-labelledby="home-next">
         <h2 id="home-next" class="section-title">{t("roadmap.next")}</h2>
         <h3 class="next-title">{t(next.title)}</h3>
         <ul class="next-points" role="list">
-          {next.points.map((point) => (
+          {nextPoints.map((point) => (
             <li>{t(point)}</li>
           ))}
         </ul>
