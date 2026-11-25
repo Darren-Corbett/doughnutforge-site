@@ -28,6 +28,14 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ---
 
+## White paper PDFs made by the site, all 30 (25 November 2026)
+
+- **Owner, 25 November 2026:** the English PDF is no longer the app side's own file. The site makes all 30 PDFs, English included, from their page texts with `scripts/make-white-paper-pdf.mjs`; the `--from` hand-over path is gone (tests `d50d81a`, change `3e7ff38`).
+- **High-risk file touched, with the owner's yes:** `scripts/check-white-paper.mjs` lost its "handed over" branch; every PDF must now be the PDF of its current text (tests `5ab4c77`, change `dd78ec3`). Its three hand-over tests were replaced by one that fails on an old "handed over" record.
+- The final paper (`website-handoff/v3/white-paper-final-v3-20261125.md`, with no date: "**Final for Doughnut Forge 3.0.0.**") is translated and reviewed into 29 languages in `~/forge-work/paper-final-1125/` (also the base in `~/forge-work/paper-base-1125/`); `~/forge-work/pdf-job.sh <final paper .md>` makes the 30 PDFs in the preview copy at full 3.0 and runs the paper check.
+
+---
+
 ## Two-week SEO check (16 November 2026)
 
 - **The `/get/` 404s in Search Console are expected.** Seven addresses (`/get/microsoft-store/` and `/get/mac-app-store/` in vi, nl, th and hi) were reported, but every `/get/<store>/<language>/` address returns 404: those pages existed for about a day before `/go/` replaced them on 26 October, and nothing on the site links to them. No redirect (owner): Google will drop them, so a failed validation there needs no action.
