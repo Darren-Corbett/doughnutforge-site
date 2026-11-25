@@ -318,6 +318,16 @@ test("Home: the free line once a phone store sells 3.0, and only on Home", async
   await page.goto("/");
   await expect(free).toHaveCount(on ? 1 : 0);
   if (on) await expect(free).toHaveText(/^On .+, Doughnut Forge is free to download and use\.$/);
+  // Hero (a), owner 25 November 2026: with the free line the blue tagline goes; the grey summary stays
+  await expect(page.locator(".hero .tagline")).toHaveCount(on ? 0 : 1);
+  await expect(page.locator(".hero .summary")).toHaveCount(1);
+  if (on) {
+    const line = await free.boundingBox();
+    const headline = await page.locator("#home-title").boundingBox();
+    const summary = await page.locator(".hero .summary").boundingBox();
+    expect(line!.y, "the free line sits directly under the headline").toBeGreaterThan(headline!.y + headline!.height - 1);
+    expect(line!.y, "and above the summary").toBeLessThan(summary!.y);
+  }
   for (const path of ["/download/", "/pricing/"]) {
     await page.goto(path);
     await expect(free).toHaveCount(0);
@@ -335,8 +345,9 @@ test("Home: what is next, once the new roadmap is live", async ({ page }) => {
   await expect(block.locator("li")).toHaveText([
     "Message files. Write an encrypted message and send it as a small file. The person you send it to opens it and reads it in Doughnut Forge.",
     "Arabic and Hebrew, with the whole app laid out right to left.",
-    "A full security review, and the fixes it leads to.",
   ]);
+  // The security review stays on the roadmap page only (owner, 25 November 2026)
+  await expect(block).not.toContainText("A full security review");
   await expect(block.locator('a[href="/roadmap/"]')).toHaveText("See the roadmap");
 });
 
@@ -354,3 +365,21 @@ test("Roadmap: the format entry, where it shows, does not tie .vlt2 to earlier v
   if (shown) await expect(entry.locator("p")).toHaveText(/Every file made with an earlier version still opens\.$/);
   await expect(page.locator("main")).not.toContainText("(its name ends in .vlt2)");
 });
+
+// Store cards in two columns from desktop width on Download and Pricing (owner, 25 November
+// 2026): phones on top once Android is on sale, computers below; one column on phones.
+for (const path of ["/download/", "/pricing/"]) {
+  test(`${path}: store cards two by two at desktop width`, async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto(path);
+    const boxes = await Promise.all((await each(page.locator(".cards > .card"), 4)).map(async (c) => ({ id: await c.getAttribute("data-platform"), box: (await c.boundingBox())! })));
+    expect(boxes[0].box.y).toBe(boxes[1].box.y);
+    expect(boxes[2].box.y).toBe(boxes[3].box.y);
+    expect(boxes[2].box.y).toBeGreaterThan(boxes[0].box.y);
+    expect(boxes[2].box.x).toBe(boxes[0].box.x);
+    if (reached("android")) expect(boxes.map((b) => b.id)).toEqual(["ios", "android", "mac", "windows"]);
+    await page.setViewportSize({ width: 390, height: 900 });
+    const narrow = await Promise.all((await each(page.locator(".cards > .card"), 4)).map(async (c) => (await c.boundingBox())!.x));
+    expect(new Set(narrow).size, "one column on a phone").toBe(1);
+  });
+}
