@@ -47,13 +47,12 @@ test("English pages do not call the iPhone and iPad app coming soon", async ({ p
   await expect(page).toHaveTitle(/iPhone/);
 });
 
-// Mobile first: on sale before coming soon, each group in the order iPhone and
+// Mobile first. Home badges: on sale before coming soon, each group in the order iPhone and
 // iPad, Android, Mac, Windows (src/data/stores.ts). Linux is not named until it is coming. This is the order
 // without any script, and what search engines see. Android is on sale once the
 // Android stage is reached (src/data/release.json).
 const ANDROID = reached("android");
 const ON_SALE = ANDROID ? ["ios", "android", "mac", "windows"] : ["ios", "mac", "windows"];
-const COMING: string[] = ANDROID ? [] : ["android"];
 const STORE_ORDER = [
   /apps\.apple\.com\/app\/id6821344597/,
   ...(ANDROID ? [/play\.google\.com\/store\/apps\/details\?id=com\.darrencorbett\.doughnutforge\.mobile&/] : []),
@@ -68,7 +67,9 @@ for (const lang of languages) {
       const html = await (await page.request.get(`${prefix(lang)}${path}`)).text();
       // The cards only, not the badges inside them
       const order = [...html.matchAll(/<li[^>]*data-platform="(\w+)"/g)].map((m) => m[1]);
-      expect(order, `${path}: card order`).toEqual([...ON_SALE, ...COMING]);
+      // The cards: phones on top, computers below, at every stage (owner, 25 November 2026);
+      // Android's card says "coming" until it is on sale
+      expect(order, `${path}: card order`).toEqual(["ios", "android", "mac", "windows"]);
     }
     const home = await (await page.request.get(`${prefix(lang)}/`)).text();
     const badges = [...home.matchAll(/<a href="(https:\/\/(?:apps\.|play\.google\.com\/)[^"]+)"/g)].map((m) => m[1]!.replaceAll("&amp;", "&"));

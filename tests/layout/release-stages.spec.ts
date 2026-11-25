@@ -367,7 +367,8 @@ test("Roadmap: the format entry, where it shows, does not tie .vlt2 to earlier v
 });
 
 // Store cards in two columns from desktop width on Download and Pricing (owner, 25 November
-// 2026): phones on top once Android is on sale, computers below; one column on phones.
+// 2026): phones on top at every stage (Android's card says "coming" until it is on sale),
+// computers below; one column on phones.
 for (const path of ["/download/", "/pricing/"]) {
   test(`${path}: store cards two by two at desktop width`, async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
@@ -377,7 +378,7 @@ for (const path of ["/download/", "/pricing/"]) {
     expect(boxes[2].box.y).toBe(boxes[3].box.y);
     expect(boxes[2].box.y).toBeGreaterThan(boxes[0].box.y);
     expect(boxes[2].box.x).toBe(boxes[0].box.x);
-    if (reached("android")) expect(boxes.map((b) => b.id)).toEqual(["ios", "android", "mac", "windows"]);
+    expect(boxes.map((b) => b.id), "phones on top at every stage").toEqual(["ios", "android", "mac", "windows"]);
     await page.setViewportSize({ width: 390, height: 900 });
     const narrow = await Promise.all((await each(page.locator(".cards > .card"), 4)).map(async (c) => (await c.boundingBox())!.x));
     expect(new Set(narrow).size, "one column on a phone").toBe(1);
