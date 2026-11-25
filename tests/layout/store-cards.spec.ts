@@ -66,8 +66,10 @@ for (const lang of languages) {
         await page.goto(`${prefix(lang)}/${path}`);
         for (const status of await each(page.locator(".card p.status"))) {
           expect(await status.evaluate((e) => getComputedStyle(e).textWrap), "pretty wrapping").toBe("pretty");
-          const [before, last] = await status.evaluate(lastTwoWordTops, lang.hreflang);
-          if (before === undefined) continue;
+          const tops = await status.evaluate(lastTwoWordTops, lang.hreflang);
+          // A one-word text, such as "Planned" on a coming card, has no second-last word to compare
+          if (tops.length < 2) continue;
+          const [before, last] = tops;
           expect(last, `${width}px ${path}: “${await status.textContent()}” ends with one word alone`).toBe(before);
         }
       }
