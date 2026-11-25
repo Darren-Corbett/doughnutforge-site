@@ -392,3 +392,16 @@ for (const path of ["/download/", "/pricing/"]) {
     expect(new Set(narrow).size, "one column on a phone").toBe(1);
   });
 }
+
+// The harvest post's audit line follows the Security page from 3.0 (owner, 25 November 2026)
+test("harvest post: the audit line from 3.0", async ({ page }) => {
+  await page.goto("/blog/harvest-now-decrypt-later/");
+  const main = page.locator("main");
+  if (v3()) {
+    await expect(main).toContainText("Doughnut Forge has not had an independent security audit. A full security review is planned.");
+    await expect(main).not.toContainText("One is planned");
+  } else {
+    await expect(main).toContainText("Doughnut Forge has not had an independent security audit yet. One is planned.");
+    await expect(main).not.toContainText("A full security review is planned");
+  }
+});

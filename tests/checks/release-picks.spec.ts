@@ -14,6 +14,8 @@ test("the English lines are the approved words", async () => {
   const en = await strings("en");
   expect(en["download.requires.ios"]).toBe("Needs iOS or iPadOS 17 or later.");
   expect(en["roadmap.then"]).toBe("Then");
+  // The audit line once the roadmap lists the review as 3.2: "planned", no longer "planned next" (owner, 25 November 2026)
+  expect(en["security.audit.text"]).toBe("Doughnut Forge has not had an independent security audit. A full security review is planned.");
   expect(en["download.requires.android"]).toBe("Needs Android 10 or later.");
   expect(en["home.freeLine"]).toBe("On {free}, Doughnut Forge is free to download and use.");
   expect(en["faq.webview.q"]).toBe("The app asks me to update Android System WebView");
@@ -52,4 +54,13 @@ test("the free line waits for a phone store with 3.0, and the WebView answer for
   expect(stage["home.freeLine"]).toBe("mobileFree");
   expect(stage["faq.webview.q"]).toBe("android");
   expect(stage["faq.webview.a"]).toBe("android");
+});
+
+// The roadmap headings read as a clear order Next, Then, Later (owner, 25 November 2026)
+test("the four reworded roadmap headings", async () => {
+  const fr = await strings("fr"), nl = await strings("nl"), ja = await strings("ja"), ms = await strings("ms");
+  expect([fr["roadmap.next"], fr["roadmap.then"]]).toEqual(["À venir", "Ensuite"]);
+  expect(nl["roadmap.next"]).toBe("Volgende");
+  expect(ja["roadmap.later"]).toBe("さらに先");
+  expect(ms["roadmap.later"]).toBe("Akan datang");
 });
