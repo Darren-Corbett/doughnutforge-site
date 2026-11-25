@@ -216,7 +216,7 @@ export default {
   "roadmap.shipped": "リリース済み",
   "roadmap.next": "次",
   "roadmap.then": "その次",
-  "roadmap.later": "その後",
+  "roadmap.later": "さらに先",
   "roadmap.v2.title": "Doughnut Forge 2",
   "roadmap.v2.text": "新しい見た目、より簡単な始め方、そしてパスワードを忘れても戻れる方法。対象はiPhone、iPad、Mac、Windowsです。",
   "v2.notes.reset":
@@ -262,7 +262,7 @@ export default {
   "security.keys.title": "キーは手元に",
   "security.keys.text": "パスワードとキーはデバイス上にとどまります。サーバーに保存されたり、ネットワーク経由で送信されたりすることはありません。",
   "security.audit.title": "独立した監査なし",
-  "security.audit.text": "Doughnut Forge は、独立したセキュリティ監査を受けていません。次に、全面的なセキュリティレビューが予定されています。",
+  "security.audit.text": "Doughnut Forge は、独立したセキュリティ監査を受けていません。全面的なセキュリティレビューが予定されています。",
   "security.audit.link": "ロードマップを見る",
   "security.report.title": "脆弱性を報告",
   "security.report.text":

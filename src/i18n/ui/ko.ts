@@ -262,7 +262,7 @@ export default {
   "security.keys.title": "키는 내 손에",
   "security.keys.text": "비밀번호와 키는 내 기기에 보관됩니다. 서버에 저장되거나 네트워크를 통해 전송되지 않습니다.",
   "security.audit.title": "독립적인 보안 감사 없음",
-  "security.audit.text": "Doughnut Forge는 독립적인 보안 감사를 받지 않았습니다. 다음으로 전면적인 보안 검토가 계획되어 있습니다.",
+  "security.audit.text": "Doughnut Forge는 독립적인 보안 감사를 받지 않았습니다. 전면적인 보안 검토가 계획되어 있습니다.",
   "security.audit.link": "로드맵 보기",
   "security.report.title": "취약점 신고",
   "security.report.text":

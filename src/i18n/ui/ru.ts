@@ -267,7 +267,7 @@ export default {
   "security.keys.title": "Ваши ключи остаются у вас",
   "security.keys.text": "Ваш пароль и ключи остаются на вашем устройстве. Они никогда не сохраняются на сервере и не передаются по сети.",
   "security.audit.title": "Без независимого аудита",
-  "security.audit.text": "Независимого аудита безопасности Doughnut Forge не было. Далее запланирована полная проверка безопасности.",
+  "security.audit.text": "Независимого аудита безопасности Doughnut Forge не было. Запланирована полная проверка безопасности.",
   "security.audit.link": "Открыть дорожную карту",
   "security.report.title": "Сообщить об уязвимости",
   "security.report.text":

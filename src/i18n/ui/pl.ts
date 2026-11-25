@@ -273,7 +273,7 @@ export default {
   "security.keys.title": "Twoje klucze zostają u Ciebie",
   "security.keys.text": "Twoje hasło i klucze pozostają na Twoim urządzeniu. Nigdy nie są przechowywane na serwerze ani przesyłane przez sieć.",
   "security.audit.title": "Bez niezależnego audytu",
-  "security.audit.text": "Doughnut Forge nie przeszedł niezależnego audytu bezpieczeństwa. Jako następny planowany jest pełny przegląd bezpieczeństwa.",
+  "security.audit.text": "Doughnut Forge nie przeszedł niezależnego audytu bezpieczeństwa. Planowany jest pełny przegląd bezpieczeństwa.",
   "security.audit.link": "Zobacz plan rozwoju",
   "security.report.title": "Zgłoś lukę bezpieczeństwa",
   "security.report.text":

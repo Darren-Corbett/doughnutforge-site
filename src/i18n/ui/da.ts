@@ -272,7 +272,7 @@ export default {
   "security.keys.title": "Dine nøgler bliver hos dig",
   "security.keys.text": "Din adgangskode og dine nøgler bliver på din enhed. De gemmes aldrig på en server og sendes aldrig over netværket.",
   "security.audit.title": "Ingen uafhængig audit",
-  "security.audit.text": "Doughnut Forge har ikke været igennem en uafhængig sikkerhedsaudit. En fuld gennemgang af sikkerheden er planlagt som det næste.",
+  "security.audit.text": "Doughnut Forge har ikke været igennem en uafhængig sikkerhedsaudit. En fuld gennemgang af sikkerheden er planlagt.",
   "security.audit.link": "Se køreplanen",
   "security.report.title": "Rapportér en sårbarhed",
   "security.report.text":

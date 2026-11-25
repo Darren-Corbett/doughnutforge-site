@@ -276,7 +276,7 @@ export default {
   "security.keys.title": "Avaimesi pysyvät sinulla",
   "security.keys.text": "Salasanasi ja avaimesi pysyvät laitteellasi. Niitä ei koskaan tallenneta palvelimelle tai lähetetä verkkoon.",
   "security.audit.title": "Ei riippumatonta auditointia",
-  "security.audit.text": "Doughnut Forgelle ei ole tehty riippumatonta tietoturva-auditointia. Seuraavaksi on suunnitteilla kattava tietoturva-arviointi.",
+  "security.audit.text": "Doughnut Forgelle ei ole tehty riippumatonta tietoturva-auditointia. Suunnitteilla on kattava tietoturva-arviointi.",
   "security.audit.link": "Katso tiekartta",
   "security.report.title": "Ilmoita haavoittuvuudesta",
   "security.report.text":

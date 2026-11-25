@@ -267,7 +267,7 @@ export default {
   "security.keys.title": "Cheile rămân la tine",
   "security.keys.text": "Parola și cheile tale rămân pe dispozitivul tău. Nu sunt niciodată stocate pe un server și nu sunt trimise prin rețea.",
   "security.audit.title": "Fără audit independent",
-  "security.audit.text": "Doughnut Forge nu a trecut printr-un audit de securitate independent. Următorul pas planificat este o analiză completă a securității.",
+  "security.audit.text": "Doughnut Forge nu a trecut printr-un audit de securitate independent. Este planificată o analiză completă a securității.",
   "security.audit.link": "Vezi planul de dezvoltare",
   "security.report.title": "Raportează o vulnerabilitate",
   "security.report.text":

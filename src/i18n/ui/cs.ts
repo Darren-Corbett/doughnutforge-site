@@ -275,7 +275,7 @@ export default {
   "security.keys.title": "Vaše klíče zůstávají u vás",
   "security.keys.text": "Vaše heslo a klíče zůstávají ve vašem zařízení. Nikdy se neukládají na server ani se neposílají po síti.",
   "security.audit.title": "Bez nezávislého auditu",
-  "security.audit.text": "Doughnut Forge neprošel nezávislým bezpečnostním auditem. Jako další je naplánováno úplné posouzení zabezpečení.",
+  "security.audit.text": "Doughnut Forge neprošel nezávislým bezpečnostním auditem. Je naplánováno úplné posouzení zabezpečení.",
   "security.audit.link": "Zobrazit plán vývoje",
   "security.report.title": "Nahlásit zranitelnost",
   "security.report.text":

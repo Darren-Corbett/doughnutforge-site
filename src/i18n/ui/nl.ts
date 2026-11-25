@@ -208,7 +208,7 @@ export default {
   "roadmap.title": "Roadmap",
   "roadmap.lead": "Wat al beschikbaar is en wat er hierna gepland is. Plannen kunnen veranderen, daarom staat hier nergens een datum.",
   "roadmap.shipped": "Beschikbaar",
-  "roadmap.next": "Hierna",
+  "roadmap.next": "Volgende",
   "roadmap.then": "Daarna",
   "roadmap.later": "Later",
   "roadmap.v2.title": "Doughnut Forge 2",
@@ -255,7 +255,7 @@ export default {
   "security.keys.title": "Uw sleutels blijven bij u",
   "security.keys.text": "Uw wachtwoord en sleutels blijven op uw apparaat. Ze worden nooit opgeslagen op een server of verzonden via het netwerk.",
   "security.audit.title": "Geen onafhankelijke audit",
-  "security.audit.text": "Doughnut Forge heeft geen onafhankelijke beveiligingsaudit gehad. Hierna is een volledig beveiligingsonderzoek gepland.",
+  "security.audit.text": "Doughnut Forge heeft geen onafhankelijke beveiligingsaudit gehad. Er is een volledig beveiligingsonderzoek gepland.",
   "security.audit.link": "Bekijk de roadmap",
   "security.report.title": "Een kwetsbaarheid melden",
   "security.report.text":

@@ -258,7 +258,7 @@ export default {
   "security.keys.title": "金鑰留在您身邊",
   "security.keys.text": "您的密碼和金鑰都保留在您的裝置上，絕不會儲存在伺服器上或透過網路傳送。",
   "security.audit.title": "未經獨立稽核",
-  "security.audit.text": "Doughnut Forge 未經過獨立的安全性稽核。接下來計畫進行全面的安全性審查。",
+  "security.audit.text": "Doughnut Forge 未經過獨立的安全性稽核。計畫進行全面的安全性審查。",
   "security.audit.link": "查看開發藍圖",
   "security.report.title": "回報安全性漏洞",
   "security.report.text":

@@ -255,7 +255,7 @@ export default {
   "security.keys.title": "Tus claves se quedan contigo",
   "security.keys.text": "Tu contraseña y claves se quedan en tu dispositivo. Nunca se almacenan en un servidor ni se envían a través de la red.",
   "security.audit.title": "Sin auditoría independiente",
-  "security.audit.text": "Doughnut Forge no ha tenido una auditoría de seguridad independiente. Lo siguiente que está planeado es una revisión de seguridad completa.",
+  "security.audit.text": "Doughnut Forge no ha tenido una auditoría de seguridad independiente. Está planeada una revisión de seguridad completa.",
   "security.audit.link": "Ver la hoja de ruta",
   "security.report.title": "Reportar una vulnerabilidad",
   "security.report.text":

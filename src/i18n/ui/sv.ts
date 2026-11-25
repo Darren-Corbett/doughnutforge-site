@@ -272,7 +272,7 @@ export default {
   "security.keys.title": "Dina nycklar stannar hos dig",
   "security.keys.text": "Ditt lösenord och dina nycklar stannar på din enhet. De sparas aldrig på en server och skickas aldrig över nätverket.",
   "security.audit.title": "Ingen oberoende granskning",
-  "security.audit.text": "Doughnut Forge har inte genomgått någon oberoende säkerhetsgranskning. Härnäst planeras en fullständig säkerhetsgenomgång.",
+  "security.audit.text": "Doughnut Forge har inte genomgått någon oberoende säkerhetsgranskning. En fullständig säkerhetsgenomgång planeras.",
   "security.audit.link": "Se färdplanen",
   "security.report.title": "Rapportera en sårbarhet",
   "security.report.text":

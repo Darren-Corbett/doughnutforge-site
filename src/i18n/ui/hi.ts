@@ -267,7 +267,7 @@ export default {
   "security.keys.title": "आपकी कुंजियाँ आपके पास",
   "security.keys.text": "आपका पासवर्ड और कुंजियाँ आपके डिवाइस पर रहती हैं। वे कभी भी सर्वर पर संग्रहीत या नेटवर्क पर नहीं भेजी जातीं।",
   "security.audit.title": "कोई स्वतंत्र ऑडिट नहीं",
-  "security.audit.text": "Doughnut Forge का कोई स्वतंत्र सुरक्षा ऑडिट नहीं हुआ है। आगे एक पूरी सुरक्षा समीक्षा की योजना है।",
+  "security.audit.text": "Doughnut Forge का कोई स्वतंत्र सुरक्षा ऑडिट नहीं हुआ है। एक पूरी सुरक्षा समीक्षा की योजना है।",
   "security.audit.link": "रोडमैप देखें",
   "security.report.title": "सुरक्षा खामी की रिपोर्ट करें",
   "security.report.text":

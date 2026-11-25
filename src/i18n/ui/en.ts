@@ -354,7 +354,7 @@ export default {
   "security.keys.title": "Your keys stay with you",
   "security.keys.text": "Your password and keys stay on your device. They are never stored on a server or sent across the network.",
   "security.audit.title": "No independent audit",
-  "security.audit.text": "Doughnut Forge has not had an independent security audit. A full security review is planned next.",
+  "security.audit.text": "Doughnut Forge has not had an independent security audit. A full security review is planned.",
   "security.audit.link": "See the roadmap",
   "security.report.title": "Report a vulnerability",
   // The email address stays exactly as written in every language: the page makes it a link

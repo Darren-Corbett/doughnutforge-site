@@ -267,7 +267,7 @@ export default {
   "security.keys.title": "Kunci tetap di tangan Anda",
   "security.keys.text": "Kata sandi dan kunci Anda tetap berada di perangkat Anda. Keduanya tidak pernah disimpan di server atau dikirim melalui jaringan.",
   "security.audit.title": "Tanpa audit independen",
-  "security.audit.text": "Doughnut Forge belum pernah menjalani audit keamanan independen. Tinjauan keamanan menyeluruh direncanakan berikutnya.",
+  "security.audit.text": "Doughnut Forge belum pernah menjalani audit keamanan independen. Tinjauan keamanan menyeluruh direncanakan.",
   "security.audit.link": "Lihat peta jalan",
   "security.report.title": "Laporkan kerentanan",
   "security.report.text":

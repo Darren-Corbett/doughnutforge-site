@@ -276,7 +276,7 @@ export default {
   "security.keys.title": "A kulcsaid nálad maradnak",
   "security.keys.text": "A jelszavad és a kulcsaid a te eszközödön maradnak. Soha nem kerülnek szerverre, és nem mennek át a hálózaton.",
   "security.audit.title": "Nincs független audit",
-  "security.audit.text": "A Doughnut Forge nem esett át független biztonsági auditon. Következő lépésként teljes biztonsági felülvizsgálat van tervben.",
+  "security.audit.text": "A Doughnut Forge nem esett át független biztonsági auditon. Teljes biztonsági felülvizsgálat van tervben.",
   "security.audit.link": "Nézd meg a fejlesztési tervet",
   "security.report.title": "Sebezhetőség bejelentése",
   "security.report.text":

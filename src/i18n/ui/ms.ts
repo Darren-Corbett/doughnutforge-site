@@ -222,7 +222,7 @@ export default {
   "roadmap.shipped": "Telah dilancarkan",
   "roadmap.next": "Seterusnya",
   "roadmap.then": "Selepas itu",
-  "roadmap.later": "Kemudian",
+  "roadmap.later": "Akan datang",
   "roadmap.v2.title": "Doughnut Forge 2",
   "roadmap.v2.text":
     "Rupa baharu, permulaan yang lebih mudah, dan cara untuk masuk semula jika anda terlupa kata laluan. Pada iPhone, iPad, Mac dan Windows.",
@@ -274,7 +274,7 @@ export default {
   "security.keys.title": "Kunci kekal bersama anda",
   "security.keys.text": "Kata laluan dan kunci anda kekal pada peranti anda. Ia tidak pernah disimpan pada pelayan atau dihantar melalui rangkaian.",
   "security.audit.title": "Tiada audit bebas",
-  "security.audit.text": "Doughnut Forge belum pernah menjalani audit keselamatan bebas. Semakan keselamatan yang menyeluruh dirancang seterusnya.",
+  "security.audit.text": "Doughnut Forge belum pernah menjalani audit keselamatan bebas. Semakan keselamatan yang menyeluruh dirancang.",
   "security.audit.link": "Lihat peta hala tuju",
   "security.report.title": "Laporkan kerentanan",
   "security.report.text":

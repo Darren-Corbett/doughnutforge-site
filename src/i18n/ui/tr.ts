@@ -267,7 +267,7 @@ export default {
   "security.keys.title": "Anahtarlarınız sizde kalır",
   "security.keys.text": "Parolanız ve anahtarlarınız cihazınızda kalır. Asla bir sunucuda saklanmaz veya ağ üzerinden gönderilmez.",
   "security.audit.title": "Bağımsız denetim yok",
-  "security.audit.text": "Doughnut Forge bağımsız bir güvenlik denetiminden geçmedi. Sırada kapsamlı bir güvenlik incelemesi planlanıyor.",
+  "security.audit.text": "Doughnut Forge bağımsız bir güvenlik denetiminden geçmedi. Kapsamlı bir güvenlik incelemesi planlanıyor.",
   "security.audit.link": "Yol haritasına bakın",
   "security.report.title": "Güvenlik açığı bildirin",
   "security.report.text":

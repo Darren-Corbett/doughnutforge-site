@@ -274,7 +274,7 @@ export default {
   "security.keys.title": "Khóa luôn ở bên bạn",
   "security.keys.text": "Mật khẩu và khóa của bạn ở trên thiết bị của bạn. Chúng không bao giờ được lưu trữ trên máy chủ hoặc gửi qua mạng.",
   "security.audit.title": "Không có kiểm toán độc lập",
-  "security.audit.text": "Doughnut Forge chưa trải qua đợt kiểm toán bảo mật độc lập nào. Tiếp theo, một đợt rà soát bảo mật toàn diện đã được lên kế hoạch.",
+  "security.audit.text": "Doughnut Forge chưa trải qua đợt kiểm toán bảo mật độc lập nào. Một đợt rà soát bảo mật toàn diện đã được lên kế hoạch.",
   "security.audit.link": "Xem lộ trình",
   "security.report.title": "Báo cáo lỗ hổng",
   "security.report.text":

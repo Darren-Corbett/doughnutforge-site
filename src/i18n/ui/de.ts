@@ -255,7 +255,7 @@ export default {
   "security.keys.title": "Ihre Schlüssel bleiben bei Ihnen",
   "security.keys.text": "Ihr Passwort und Ihre Schlüssel bleiben auf Ihrem Gerät. Sie werden niemals auf einem Server gespeichert oder über das Netzwerk gesendet.",
   "security.audit.title": "Kein unabhängiges Audit",
-  "security.audit.text": "Doughnut Forge wurde keinem unabhängigen Sicherheitsaudit unterzogen. Als Nächstes ist eine vollständige Sicherheitsprüfung geplant.",
+  "security.audit.text": "Doughnut Forge wurde keinem unabhängigen Sicherheitsaudit unterzogen. Eine vollständige Sicherheitsprüfung ist geplant.",
   "security.audit.link": "Zur Roadmap",
   "security.report.title": "Schwachstelle melden",
   "security.report.text":
