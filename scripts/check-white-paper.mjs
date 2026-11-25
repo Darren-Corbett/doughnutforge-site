@@ -44,10 +44,7 @@ for (const lang of langs) {
   const pdf = join(dist, path, name);
   const made = record[lang];
   if (!existsSync(pdf)) problems.push(`${path}/${name} is missing: run node scripts/make-white-paper-pdf.mjs --lang ${lang}`);
-  // The app side's own PDF, served as handed over: only the file itself counts
-  else if (made?.handedOver) {
-    if (made.handedOver !== sha(readFileSync(pdf))) problems.push(`${path}/${name} is not the PDF handed over: copy it in again with node scripts/make-white-paper-pdf.mjs --lang ${lang} --from <file>`);
-  } else if (!made || made.source !== sha(text) || made.pdf !== sha(readFileSync(pdf)))
+  else if (!made || made.source !== sha(text) || made.pdf !== sha(readFileSync(pdf)))
     problems.push(`${path}/${name} is not the PDF of the current ${lang}.md: run node scripts/make-white-paper-pdf.mjs --lang ${lang}`);
 }
 
@@ -55,4 +52,4 @@ if (problems.length) {
   console.error(`check-white-paper:\n  ${problems.join("\n  ")}`);
   process.exit(1);
 }
-console.log(`check-white-paper: ${langs.length} language(s), no private notes, every PDF made from its current text or handed over unchanged`);
+console.log(`check-white-paper: ${langs.length} language(s), no private notes, every PDF made from its current text`);
