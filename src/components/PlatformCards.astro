@@ -1,5 +1,5 @@
 ---
-// One card per platform, in the order of src/data/stores.ts (mobile first): the
+// One card per platform, phones first (see ROWS below): the
 // store badge where the app is on sale, "Coming soon" with no link where it is
 // not. Every visitor sees the same order.
 import StoreBadge from "./StoreBadge.astro";
@@ -20,6 +20,11 @@ const { t } = useStrings(lang.code);
 const { free } = pricingNow;
 
 // Only platforms on sale have requirements, taken from the app repo's build settings
+// Two rows from tablet width: phones on top, computers below, at every stage (owner,
+// 25 November 2026). Android's card says "coming" until it is on sale.
+const ROWS: PlatformId[] = ["ios", "android", "mac", "windows"];
+const cards = [...platforms].sort((a, b) => ROWS.indexOf(a.id) - ROWS.indexOf(b.id));
+
 // Every card on sale has one, so the cards keep the same shape (owner, 24 November 2026)
 const REQUIRES: Record<PlatformId, UiKey> = {
   ios: "download.requires.ios",
@@ -31,7 +36,7 @@ const REQUIRES: Record<PlatformId, UiKey> = {
 
 <ul class="cards" role="list">
   {
-    platforms.map((p) => (
+    cards.map((p) => (
       <li class:list={["card", p.status === "available" ? "on-sale" : "coming"]} data-platform={p.id} data-coming={p.status === "coming" || undefined}>
         <Heading class="name">{platformName(lang, p.id)}</Heading>
         {p.status === "available" ? (
