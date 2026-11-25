@@ -6,12 +6,10 @@
 // recorded in src/data/white-paper-pdfs.json for scripts/check-white-paper.mjs.
 // Build again afterwards, so dist/ has the new PDF.
 //
-// English is the exception (Darren, 23 November 2026): its PDF is the app side's
-// own file, copied in unchanged with --from and recorded as handed over. The
-// script never makes an English PDF.
+// Every language's PDF, English included, is made the same way from its page text
+// (Darren, 25 November 2026: no PDF is handed over any more).
 //
 //   node scripts/make-white-paper-pdf.mjs [--lang de]
-//   node scripts/make-white-paper-pdf.mjs --lang en --from <the app's PDF>
 import { chromium } from "@playwright/test";
 import { spawn } from "node:child_process";
 import { createHash } from "node:crypto";
@@ -26,28 +24,12 @@ const PORT = 4341;
 const sha = (data) => createHash("sha256").update(data).digest("hex");
 
 const { languages } = JSON.parse(readFileSync(join(root, "src/i18n/languages.json"), "utf8"));
-const { lang: only, from } = parseArgs({ options: { lang: { type: "string" }, from: { type: "string" } } }).values;
-const HANDED_OVER = ["en"];
+const { lang: only } = parseArgs({ options: { lang: { type: "string" } } }).values;
 
-if (from) {
-  if (!HANDED_OVER.includes(only ?? "")) throw new Error(`--from is for the handed-over PDF only: --lang ${HANDED_OVER.join(", ")}`);
-  const pdf = readFileSync(from);
-  if (!pdf.subarray(0, 5).equals(Buffer.from("%PDF-"))) throw new Error(`${from} is not a PDF`);
-  const dir = join(root, "public/security/white-paper");
-  mkdirSync(dir, { recursive: true });
-  writeFileSync(join(dir, `doughnut-forge-white-paper-${only}.pdf`), pdf);
-  const record = existsSync(RECORD) ? JSON.parse(readFileSync(RECORD, "utf8")) : {};
-  record[only] = { handedOver: sha(pdf) };
-  writeFileSync(RECORD, `${JSON.stringify(Object.fromEntries(Object.keys(record).sort().map((c) => [c, record[c]])), null, 2)}\n`);
-  console.log(`copied ${from} to public/security/white-paper/doughnut-forge-white-paper-${only}.pdf, unchanged; build again`);
-  process.exit(0);
-}
 const codes = readdirSync(TEXTS)
   .filter((f) => f.endsWith(".md"))
   .map((f) => f.slice(0, -3))
-  .filter((code) => !only || code === only)
-  .filter((code) => !HANDED_OVER.includes(code));
-if (HANDED_OVER.includes(only ?? "")) throw new Error(`The ${only} PDF is the app side's own file: copy it in with --lang ${only} --from <file>`);
+  .filter((code) => !only || code === only);
 if (codes.length === 0) throw new Error(`No white paper text for ${only ?? "any language"} in src/content/white-paper/`);
 
 const server = spawn("npx", ["astro", "preview", "--port", String(PORT), "--ignore-lock"], { cwd: root, stdio: "ignore" });
