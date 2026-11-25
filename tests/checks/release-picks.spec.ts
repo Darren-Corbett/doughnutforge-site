@@ -65,3 +65,13 @@ test("the four reworded roadmap headings", async () => {
   // "Akan datang" can read as "coming soon"; the heading promises no timing (owner, 25 November 2026)
   expect(ms["roadmap.later"]).toBe("Pada masa hadapan");
 });
+
+// The roadmap of 25 November 2026: summary lines and the new points, in every language
+const ROADMAP_NEW = ["roadmap.v31.text", "roadmap.v31.unlocked", "roadmap.v32.text", "roadmap.v32.fixes", "roadmap.v32.paper", "roadmap.v33.text", "roadmap.v33.make", "roadmap.v33.encrypt", "roadmap.v33.only", "roadmap.v4.text", "roadmap.v4.identity", "roadmap.v4.both", "roadmap.v4.free"];
+for (const code of codes) {
+  test(`${code}: the roadmap's new lines are there`, async () => {
+    const s = await strings(code);
+    for (const key of ROADMAP_NEW) expect(s[key]?.trim(), key).toBeTruthy();
+    expect(s["roadmap.v33.title"]).toBe("Doughnut Forge 3.3");
+  });
+}

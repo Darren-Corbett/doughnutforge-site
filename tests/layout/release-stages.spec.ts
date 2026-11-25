@@ -124,21 +124,43 @@ test("3.0 live: the roadmap from roadmap.md", async ({ page }) => {
     "Contact cards have a new version. Ask your contacts to share their card with you again, and share your new card with them.",
     "Everyone you share files with needs Doughnut Forge 3.0 or later to open them. Older files still open as before.",
   ]);
+  // Next 3.1, Then 3.2, Later 3.3 and 4.0, each with a summary line (owner, 25 November 2026)
+  const release = async (status: string, title: string, summary: string, points: string[]) => {
+    const item = entry(status, title.replace(".", "\\."));
+    await expect(item.locator(":scope > p")).toHaveText(summary);
+    await expect(item.locator(".points li")).toHaveText(points);
+  };
   expect(next).toEqual(["Doughnut Forge 3.1"]);
-  await expect(entry("next", "Doughnut Forge 3\\.1").locator(".points li")).toHaveText([
+  await release("next", "Doughnut Forge 3.1", "Private messages as files, and the app in Arabic and Hebrew.", [
     "Message files. Write an encrypted message and send it as a small file. The person you send it to opens it and reads it in Doughnut Forge.",
+    "The message is never saved unlocked: it shows on screen only while it is open.",
     "Arabic and Hebrew, with the whole app laid out right to left.",
   ]);
-  // The security review is its own release after 3.1 (owner, 25 November 2026): "Then: 3.2"
   await expect(page.locator('[data-roadmap="then"] h2')).toHaveText("Then");
   expect(await page.locator('[data-roadmap="then"] h3').allInnerTexts()).toEqual(["Doughnut Forge 3.2"]);
-  await expect(entry("then", "Doughnut Forge 3\\.2").locator(".points li")).toHaveText(["A full security review, and the fixes it leads to."]);
+  await release("then", "Doughnut Forge 3.2", "A release about strength, not new features.", [
+    "A full security review of the whole app, from the encryption itself to how files arrive, open and are saved, approached the way an attacker would.",
+    "Its findings fixed before the release.",
+    "The white paper updated to describe what changed.",
+  ]);
   // Shipped, Next, Then, Later, in that order
   expect(await page.locator("[data-roadmap]").evaluateAll((s) => s.map((e) => e.getAttribute("data-roadmap")))).toEqual(["shipped", "next", "then", "later"]);
-  expect(later).toEqual(["Doughnut Forge 4.0"]);
-  await expect(entry("later", "Doughnut Forge 4\\.0").locator(".points li")).toHaveText(["A command-line tool for Linux and Mac, using the same encryption and file format."]);
+  expect(later).toEqual(["Doughnut Forge 3.3", "Doughnut Forge 4.0"]);
+  await release("later", "Doughnut Forge 3.3", "Groups.", [
+    "Make a group from your contacts and share it with the people in it.",
+    "Encrypt a file or message for the whole group at once, or for a group and other contacts together.",
+    "Only the people in the group can open what is sent to it.",
+  ]);
+  await release("later", "Doughnut Forge 4.0", "For people who work in a terminal.", [
+    "A command-line tool for Linux and Mac, using the same encryption and file format.",
+    "Create your identity in the terminal, or restore it from your recovery words.",
+    "Files made with the tool open in the app, and files made in the app open with the tool.",
+    "Free to use.",
+  ]);
   await expect(page.locator("main")).not.toContainText(/audit/i);
-  await expect(page.locator("#security-review")).toHaveText("A full security review, and the fixes it leads to.");
+  await expect(page.locator("#security-review")).toHaveText(
+    "A full security review of the whole app, from the encryption itself to how files arrive, open and are saved, approached the way an attacker would.",
+  );
 });
 
 // The audit line on the Security and Technical details pages links to the plan:
