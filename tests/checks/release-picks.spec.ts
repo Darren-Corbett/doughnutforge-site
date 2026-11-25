@@ -62,5 +62,6 @@ test("the four reworded roadmap headings", async () => {
   expect([fr["roadmap.next"], fr["roadmap.then"]]).toEqual(["À venir", "Ensuite"]);
   expect(nl["roadmap.next"]).toBe("Volgende");
   expect(ja["roadmap.later"]).toBe("さらに先");
-  expect(ms["roadmap.later"]).toBe("Akan datang");
+  // "Akan datang" can read as "coming soon"; the heading promises no timing (owner, 25 November 2026)
+  expect(ms["roadmap.later"]).toBe("Pada masa hadapan");
 });
