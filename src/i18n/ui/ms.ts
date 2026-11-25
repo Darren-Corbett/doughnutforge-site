@@ -222,7 +222,7 @@ export default {
   "roadmap.shipped": "Telah dilancarkan",
   "roadmap.next": "Seterusnya",
   "roadmap.then": "Selepas itu",
-  "roadmap.later": "Akan datang",
+  "roadmap.later": "Pada masa hadapan",
   "roadmap.v2.title": "Doughnut Forge 2",
   "roadmap.v2.text":
     "Rupa baharu, permulaan yang lebih mudah, dan cara untuk masuk semula jika anda terlupa kata laluan. Pada iPhone, iPad, Mac dan Windows.",
