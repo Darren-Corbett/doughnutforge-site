@@ -159,9 +159,18 @@ test("passes the app's own exact unknown-sender texts that the white paper quote
   expect(result.code).toBe(0);
 });
 
+// The site's typesetting turns the straight apostrophe into a curly one, so the
+// quoted warning is matched with either; nothing else about the check changes (owner, 26 November 2026)
+test("passes the quoted Italian warning with a curly apostrophe, as the built page prints it", async () => {
+  const result = await check({ "it/index.html": page("it", `<table><tr><td>«${IT_WARNING}» e «${IT_DETAIL.replace("'", "\u2019")}»</td></tr></table>`) });
+  expect(result.output).toContain("no claim");
+  expect(result.code).toBe(0);
+});
+
 for (const [name, lang, body, word] of [
   ["it: the same words in other text", "it", `<p>Il mittente: chiedi conferma alla persona prima di aprirlo.</p>`, "conferma"],
   ["it: the app text changed by one word", "it", `<td>«${IT_WARNING}» e «${IT_DETAIL.replace("chiedi", "ottieni")}»</td>`, "conferma"],
+  ["it: the same words with a curly apostrophe in other text", "it", `<p>Il mittente: chiedi conferma alla persona che l\u2019ha inviato.</p>`, "conferma"],
   ["it: another claim beside the allowed text", "it", `<td>«${IT_DETAIL}» Il mittente è verificato.</td>`, "verificato"],
   ["ja: the same words in other text", "ja", `<p>アプリはこのフォルダの送信者を確認できます。</p>`, "確認でき"],
   ["ro: the same words in other text", "ro", `<td>Expeditorul: verifică cu persoana care l-a trimis.</td>`, "verifică"],
