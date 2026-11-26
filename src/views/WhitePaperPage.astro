@@ -93,6 +93,12 @@ const pdf = `${base}/security/white-paper/doughnut-forge-white-paper-${lang.code
     font-size: 14px;
     line-height: 1.4;
   }
+  /* A code block keeps its own dark ground: the prose sheet's inline-code background
+     must not cover it, or its light text sits on a light ground (axe, 26 November 2026) */
+  .paper :global(pre code) {
+    background: none;
+    padding: 0;
+  }
   /* Diagrams keep readable labels: on a phone they scroll sideways in their own box */
   .paper :global(figure.diagram) {
     overflow-x: auto;
