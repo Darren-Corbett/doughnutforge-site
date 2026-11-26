@@ -360,6 +360,25 @@ test("download cards: one requirement line each, and the badge at the bottom", a
   await expect(page.locator(".card", { hasText: "WebView" })).toHaveCount(0);
 });
 
+// Folders are a Mac and Windows feature: under the feature list, the owner's approved
+// line (A2-16, 21 November 2026, word for word), once Android is on sale (claims review, 26 November 2026)
+test("Home and Features: folders are named as Mac and Windows only, once Android is on sale", async ({ page }) => {
+  const LINE = "On iPhone, iPad and Android you encrypt and open files, photos and videos. Folders are encrypted and opened on Mac and Windows.";
+  for (const path of ["/", "/features/"]) {
+    await page.goto(path);
+    await expect(page.locator("main p", { hasText: LINE }), path).toHaveCount(reached("android") ? 1 : 0);
+  }
+});
+
+// The paper's limit for identities from before 3.0, in the list of what the app does not
+// protect against, once the paper is published (claims review, 26 November 2026)
+test("Technical details: the quantum limit for identities from before 3.0", async ({ page }) => {
+  await page.goto("/security/technical-details/");
+  const item = page.locator("main li", { hasText: "A future quantum computer, for an identity from before Doughnut Forge 3.0." });
+  await expect(item).toHaveCount(reached("all3") ? 1 : 0);
+  if (reached("all3")) await expect(item).toContainText("Only a new identity (new recovery words) protects later files.");
+});
+
 test("Home: the free line once a phone store sells 3.0, and only on Home", async ({ page }) => {
   const on = reached("mobileFree");
   const free = page.locator(".free-line");

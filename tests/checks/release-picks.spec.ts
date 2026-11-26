@@ -102,3 +102,13 @@ test("the white paper is one of the translated pages", async () => {
   const { translatedPages } = await import("../../src/i18n/alternates");
   expect(translatedPages).toContain("security/white-paper/");
 });
+
+// The claims review of 26 November 2026: the folders line, the pre-3.0 quantum limit and
+// the press screenshots named as Doughnut Forge 2, in every language
+for (const code of codes) {
+  test(`${code}: the claims review lines are there`, async () => {
+    const s = await strings(code);
+    for (const key of ["features.folders", "technical.limits.quantum.label", "technical.limits.quantum.text"]) expect(s[key]?.trim(), key).toBeTruthy();
+    expect(s["press.shots.text"]).toContain("Doughnut Forge 2");
+  });
+}
