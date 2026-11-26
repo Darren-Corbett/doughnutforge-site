@@ -124,17 +124,17 @@ test("3.0 live: the roadmap from roadmap.md", async ({ page }) => {
     "Contact cards have a new version. Ask your contacts to share their card with you again, and share your new card with them.",
     "Everyone you share files with needs Doughnut Forge 3.0 or later to open them. Older files still open as before.",
   ]);
-  // Next 3.1, Then 3.2, Later 3.3 and 4.0, each with a summary line (owner, 25 November 2026)
+  // Next 3.1, Then 3.2, Later 3.3, 3.4 and 4.0, each with a summary line (owner, 25 and 26 November 2026)
   const release = async (status: string, title: string, summary: string, points: string[]) => {
     const item = entry(status, title.replace(".", "\\."));
     await expect(item.locator(":scope > p")).toHaveText(summary);
     await expect(item.locator(".points li")).toHaveText(points);
   };
   expect(next).toEqual(["Doughnut Forge 3.1"]);
-  await release("next", "Doughnut Forge 3.1", "Private messages as files, and the app in Arabic and Hebrew.", [
+  await release("next", "Doughnut Forge 3.1", "Private messages as files, and the app in Arabic, Hebrew, Persian and Urdu.", [
     "Message files. Write an encrypted message and send it as a small file. The person you send it to opens it and reads it in Doughnut Forge.",
     "The message is never saved unlocked: it shows on screen only while it is open.",
-    "Arabic and Hebrew, with the whole app laid out right to left.",
+    "Arabic, Hebrew, Persian and Urdu, with the whole app laid out right to left.",
   ]);
   await expect(page.locator('[data-roadmap="then"] h2')).toHaveText("Then");
   expect(await page.locator('[data-roadmap="then"] h3').allInnerTexts()).toEqual(["Doughnut Forge 3.2"]);
@@ -145,14 +145,21 @@ test("3.0 live: the roadmap from roadmap.md", async ({ page }) => {
   ]);
   // Shipped, Next, Then, Later, in that order
   expect(await page.locator("[data-roadmap]").evaluateAll((s) => s.map((e) => e.getAttribute("data-roadmap")))).toEqual(["shipped", "next", "then", "later"]);
-  expect(later).toEqual(["Doughnut Forge 3.3", "Doughnut Forge 4.0"]);
+  expect(later).toEqual(["Doughnut Forge 3.3", "Doughnut Forge 3.4", "Doughnut Forge 4.0"]);
   await release("later", "Doughnut Forge 3.3", "Groups.", [
     "Make a group from your contacts and share it with the people in it.",
     "Encrypt a file or message for the whole group at once, or for a group and other contacts together.",
     "Only the people in the group can open what is sent to it.",
   ]);
+  await release("later", "Doughnut Forge 3.4", "Split a secret across your own devices.", [
+    "Split a file into shares and keep them in different places, such as your phone, your computer and a USB drive.",
+    "Any two of three shares open it. Losing one costs nothing, and one share on its own reveals nothing.",
+    "A guided setup for sharing your files or your recovery words shows where each share is kept, and warns if two end up in the same place, such as the same cloud backup.",
+  ]);
+  // 3.4 is described by what it does, never by what it guards against (owner, 26 November 2026)
+  await expect(entry("later", "Doughnut Forge 3\\.4")).not.toContainText(/quantum|P = NP|encryption breaks/i);
   await release("later", "Doughnut Forge 4.0", "For people who work in a terminal.", [
-    "A command-line tool for Linux and Mac, using the same encryption and file format.",
+    "Doughnut CLI, a command-line tool for Linux and Mac, using the same encryption and file format.",
     "Create your identity in the terminal, or restore it from your recovery words.",
     "Files made with the tool open in the app, and files made in the app open with the tool.",
     "Free to use.",
@@ -372,7 +379,7 @@ test("Home: what is next, once the new roadmap is live", async ({ page }) => {
   await expect(block.locator("h3")).toHaveText("Doughnut Forge 3.1");
   await expect(block.locator("li")).toHaveText([
     "Message files. Write an encrypted message and send it as a small file. The person you send it to opens it and reads it in Doughnut Forge.",
-    "Arabic and Hebrew, with the whole app laid out right to left.",
+    "Arabic, Hebrew, Persian and Urdu, with the whole app laid out right to left.",
   ]);
   // The security review stays on the roadmap page only (owner, 25 November 2026)
   await expect(block).not.toContainText("A full security review");

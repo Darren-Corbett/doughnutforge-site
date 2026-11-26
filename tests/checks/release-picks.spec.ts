@@ -75,3 +75,14 @@ for (const code of codes) {
     expect(s["roadmap.v33.title"]).toBe("Doughnut Forge 3.3");
   });
 }
+
+// The roadmap of 26 November 2026: 3.4 in every language, and "Doughnut CLI" is a name, never translated
+const ROADMAP_34 = ["roadmap.v34.text", "roadmap.v34.split", "roadmap.v34.threshold", "roadmap.v34.setup"];
+for (const code of codes) {
+  test(`${code}: the roadmap has 3.4, and Doughnut CLI by name`, async () => {
+    const s = await strings(code);
+    for (const key of ROADMAP_34) expect(s[key]?.trim(), key).toBeTruthy();
+    expect(s["roadmap.v34.title"]).toBe("Doughnut Forge 3.4");
+    expect(s["roadmap.v4.cli"]).toContain("Doughnut CLI");
+  });
+}
