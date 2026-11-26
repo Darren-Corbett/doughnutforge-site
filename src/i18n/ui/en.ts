@@ -88,6 +88,7 @@ export default {
   "meta.features.description":
     "Encrypt files and text on your own iPhone, iPad, Android or computer, and share them with people you trust, with encryption designed to resist future quantum computers. No account and no servers.",
   "features.title": "Everything Doughnut Forge does",
+  "features.folders": "On iPhone, iPad and Android you encrypt and open files, photos and videos. Folders are encrypted and opened on Mac and Windows.",
   "features.lead":
     "Doughnut Forge locks your files and text on your iPhone, iPad, Android or computer and lets you share them with the people you trust. However you send them, only they can open them.",
   "features.identity.more":
@@ -265,7 +266,7 @@ export default {
   "press.icons.dark": "App icon, square, dark",
   "press.icons.mono": "App icon, mono",
   "press.shots.title": "Screenshots",
-  "press.shots.text": "These show the iPhone and iPad app.",
+  "press.shots.text": "These show Doughnut Forge 2 on iPhone and iPad.",
   // {device} is iPhone or iPad, {screen} the app's name for the screen
   "press.shots.label": "{device}: {screen}",
   "press.shots.choose": "Choosing who can open a file",
@@ -537,6 +538,9 @@ export default {
   "technical.limits.forward.label": "Anyone who later gets your recovery words.",
   "technical.limits.forward.text":
     "There is no forward secrecy and no revocation: files are sealed to each person's long-lived keys, so anyone who later gets an identity's 24 recovery words can open every file sent to it that they have a copy of. A leaked identity cannot be withdrawn; only a new identity protects later files.",
+  "technical.limits.quantum.label": "A future quantum computer, for an identity from before Doughnut Forge 3.0.",
+  "technical.limits.quantum.text":
+    "If your contact card from before 3.0 was shared, a large enough quantum computer could one day work out every key of that identity, new ones included, and open what was sent to it. The same goes for a file sent to a contact the app knows only from an old card. Only a new identity (new recovery words) protects later files.",
   "technical.limits.sender.label": "Who sent an item.",
   "technical.limits.sender.text":
     "The app names a contact as the sender only when the item is signed with the keys on that contact's new card. Otherwise it shows that the sender is unknown. The name is only as reliable as the card: compare the contact code.",

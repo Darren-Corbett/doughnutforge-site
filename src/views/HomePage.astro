@@ -10,6 +10,7 @@ import { organization, softwareApplication } from "../data/jsonld";
 import { pricingLists, pricingNow } from "../data/pricing";
 import { roadmap } from "../data/roadmap";
 import { screen } from "../data/screens";
+import { reached } from "../data/stages";
 import { fill, localePath, useStrings, type Language, type UiKey } from "../i18n";
 import Base from "../layouts/Base.astro";
 
@@ -121,6 +122,7 @@ const jsonLd = [softwareApplication(lang, "/", t("meta.home.description")), orga
   <section id="features" class="section" aria-labelledby="home-features">
     <h2 id="home-features" class="section-title">{t("home.features.title")}</h2>
     <ToneRows rows={rows} />
+    {reached("android") && <p class="section-text">{t("features.folders")}</p>}
     <div class="extras">
       <div>
         <h3>{longTerm.title}</h3>

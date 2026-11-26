@@ -63,6 +63,7 @@ export default {
   "meta.features.title": "Funksjoner: krypter filer, mapper og tekst uten konto | Doughnut Forge",
   "meta.features.description": "Krypter filer og tekst på din egen iPhone, iPad, Android eller datamaskin, og del dem med folk du stoler på, med kryptering laget for å stå imot fremtidige kvantedatamaskiner. Ingen konto og ingen servere.",
   "features.title": "Alt Doughnut Forge gjør",
+  "features.folders": "På iPhone, iPad og Android krypterer og åpner du filer, bilder og videoer. Mapper krypteres og åpnes på Mac og Windows.",
   "features.lead": "Doughnut Forge låser filene og teksten din på iPhone, iPad, Android eller datamaskinen og lar deg dele dem med folk du stoler på. Uansett hvordan du sender dem, er det bare de som kan åpne dem.",
   "features.identity.more":
     "Identiteten din lagres bare på denne enheten og er beskyttet av passordet ditt. Ta godt vare på de 24 gjenopprettingsordene dine: de er den eneste måten å gjenopprette identiteten din eller tilbakestille et glemt passord på.",
@@ -201,7 +202,7 @@ export default {
   "press.icons.dark": "Appikon, kvadratisk, mørk",
   "press.icons.mono": "Appikon, ensfarget",
   "press.shots.title": "Skjermbilder",
-  "press.shots.text": "Disse viser appen for iPhone og iPad.",
+  "press.shots.text": "Disse viser Doughnut Forge 2 på iPhone og iPad.",
   "press.shots.label": "{device}: {screen}",
   "press.shots.choose": "Valg av hvem som kan åpne en fil",
   "press.download": "PNG, {width} × {height}",
@@ -431,6 +432,8 @@ export default {
   "technical.limits.forward.label": "Alle som senere får tak i gjenopprettingsordene dine.",
   "technical.limits.forward.text":
     "Det finnes ingen fremadrettet hemmelighold (forward secrecy) og ingen tilbakekalling: filer forsegles til de langlivede nøklene til hver person, så alle som senere får tak i de 24 gjenopprettingsordene til en identitet, kan åpne hver fil som er sendt til den identiteten, og som de har en kopi av. En lekket identitet kan ikke tilbakekalles; bare en ny identitet beskytter senere filer.",
+  "technical.limits.quantum.label": "En fremtidig kvantedatamaskin, for en identitet fra før Doughnut Forge 3.0.",
+  "technical.limits.quantum.text": "Hvis kontaktkortet ditt fra før 3.0 har blitt delt, kunne en stor nok kvantedatamaskin en dag regne ut alle nøklene til den identiteten, også de nye, og åpne det som er sendt til den. Det samme gjelder en fil som er sendt til en kontakt appen bare kjenner fra et gammelt kort. Bare en ny identitet (nye gjenopprettingsord) beskytter senere filer.",
   "technical.limits.sender.label": "Hvem som sendte et element.",
   "technical.limits.sender.text": "Appen oppgir en kontakt som avsender bare når elementet er signert med nøklene på det nye kortet til den kontakten. Ellers viser den at avsenderen er ukjent. Navnet er bare så pålitelig som kortet: sammenlign kontaktkoden.",
   "technical.limits.visible.label": "Størrelse, et omtrentlig antall mottakere og filnavn.",

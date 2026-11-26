@@ -63,6 +63,7 @@ const faq: FaqItem[] = ["offline", "storage", "restore", "subscription"].map((id
   <section class="section" aria-labelledby="features-tabs">
     <h2 id="features-tabs" class="section-title">{t("home.features.title")}</h2>
     <ToneRows rows={rows} />
+    {reached("android") && <p class="section-text">{t("features.folders")}</p>}
   </section>
 
   <section class="section private" aria-labelledby="features-private">

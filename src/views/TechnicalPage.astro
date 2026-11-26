@@ -39,7 +39,7 @@ const stored = items("technical.stored", ["memory", "passes", "lanes", "salt", "
 const unlock = items("technical.unlock", ["mac", "windows", "ios", ...(reached("android") ? ["android"] : [])]);
 const visible = items("technical.visible", ["contents", "name", "for", "from", "count", "size", "dates", "format"]);
 const text = items("technical.text", ["wrap", "around", "inside"]);
-const limits = items("technical.limits", ["compromised", "access", "passcode", "recipients", ...(reached("all3") ? ["forward"] : []), "sender", "visible", "copies"]);
+const limits = items("technical.limits", ["compromised", "access", "passcode", "recipients", ...(reached("all3") ? ["forward", "quantum"] : []), "sender", "visible", "copies"]);
 
 // Purpose, then library: a purpose that is itself an algorithm name stays as it is
 const libraries: { purpose: string; library: string }[] = [

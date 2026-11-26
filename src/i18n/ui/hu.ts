@@ -65,6 +65,7 @@ export default {
   "meta.features.title": "Funkciók: fájlok, mappák és szöveg titkosítása fiók nélkül | Doughnut Forge",
   "meta.features.description": "Titkosíts fájlokat és szöveget a saját iPhone-odon, iPadeden, Androidodon vagy gépeden, és oszd meg őket azokkal, akikben megbízol, olyan titkosítással, amelyet úgy terveztek, hogy ellenálljon a jövőbeli kvantumszámítógépeknek. Fiók és szerverek nélkül.",
   "features.title": "Minden, amit a Doughnut Forge tud",
+  "features.folders": "iPhone, iPad és Android eszközökön fájlokat, fotókat és videókat titkosítasz és nyitsz meg. A mappák titkosítása és megnyitása Macen és Windowson történik.",
   "features.lead": "A Doughnut Forge lezárja a fájljaidat és szövegeidet az iPhone-odon, iPadeden, Androidodon vagy a számítógépeden, és lehetővé teszi, hogy megoszd őket azokkal, akikben megbízol. Bárhogyan küldöd is el őket, csak ők nyithatják meg.",
   "features.identity.more":
     "Az identitásod csak ezen az eszközön van tárolva, és a jelszavad védi. Tartsd biztonságban a 24 helyreállítási szavadat: csak ezekkel állíthatod helyre az identitásodat, vagy állíthatsz be új jelszót, ha elfelejtetted a régit.",
@@ -204,7 +205,7 @@ export default {
   "press.icons.dark": "Alkalmazásikon, négyzetes, sötét",
   "press.icons.mono": "Alkalmazásikon, egyszínű",
   "press.shots.title": "Képernyőképek",
-  "press.shots.text": "Ezek az iPhone és iPad készülékekre készült alkalmazást mutatják.",
+  "press.shots.text": "Ezek a Doughnut Forge 2-t mutatják iPhone-on és iPaden.",
   "press.shots.label": "{device}: {screen}",
   "press.shots.choose": "Annak kiválasztása, ki nyithat meg egy fájlt",
   "press.download": "PNG, {width} × {height}",
@@ -435,6 +436,8 @@ export default {
   "technical.limits.forward.label": "Bárki, aki később megszerzi a helyreállítási szavaidat.",
   "technical.limits.forward.text":
     "Nincs előremutató titkosság (forward secrecy), és nincs visszavonás: a fájlok minden személy hosszú életű kulcsaihoz vannak lezárva, így bárki, aki később megszerzi egy identitás 24 helyreállítási szavát, megnyithat minden ennek az identitásnak küldött fájlt, amelyről van másolata. Egy kiszivárgott identitást nem lehet visszavonni; csak egy új identitás védi a későbbi fájlokat.",
+  "technical.limits.quantum.label": "Egy jövőbeli kvantumszámítógép, a Doughnut Forge 3.0 előtti identitás esetén.",
+  "technical.limits.quantum.text": "Ha a 3.0 előtti névjegykártyádat megosztották, egy elég nagy kvantumszámítógép egy nap kiszámíthatná ennek az identitásnak minden kulcsát, az újakat is, és megnyithatná, amit neki küldtek. Ugyanez érvényes egy olyan kapcsolatnak küldött fájlra, akit az alkalmazás csak egy régi kártyáról ismer. Csak egy új identitás (új helyreállítási szavak) védi a későbbi fájlokat.",
   "technical.limits.sender.label": "Ki küldött egy elemet.",
   "technical.limits.sender.text": "Az alkalmazás csak akkor nevez meg egy kapcsolatot küldőként, ha az elemet az adott kapcsolat új kártyáján lévő kulcsokkal írták alá. Egyébként azt mutatja, hogy a küldő ismeretlen. A név csak annyira megbízható, mint a kártya: hasonlítsd össze a névjegykódot.",
   "technical.limits.visible.label": "Méret, a címzettek hozzávetőleges száma és a fájlnév.",

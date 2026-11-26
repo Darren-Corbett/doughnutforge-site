@@ -65,6 +65,7 @@ export default {
   "meta.features.title": "Funkce: šifrujte soubory, složky a text bez účtu | Doughnut Forge",
   "meta.features.description": "Šifrujte soubory a text ve vlastním iPhonu, iPadu, Androidu nebo počítači a sdílejte je s lidmi, kterým důvěřujete, se šifrováním navrženým tak, aby odolalo budoucím kvantovým počítačům. Bez účtu a bez serverů.",
   "features.title": "Vše, co Doughnut Forge umí",
+  "features.folders": "Na zařízeních iPhone, iPad a Android šifrujete a otevíráte soubory, fotky a videa. Složky se šifrují a otevírají na Macu a ve Windows.",
   "features.lead": "Doughnut Forge zamyká vaše soubory a text ve vašem iPhonu, iPadu, Androidu nebo počítači a umožňuje vám je sdílet s lidmi, kterým důvěřujete. Ať je pošlete jakkoli, otevřít je mohou jen oni.",
   "features.identity.more":
     "Vaše identita je uložena pouze v tomto zařízení a chráněna vaším heslem. Uchovejte svých 24 obnovovacích slov v bezpečí: jsou jediným způsobem, jak obnovit identitu nebo nastavit nové heslo místo zapomenutého.",
@@ -204,7 +205,7 @@ export default {
   "press.icons.dark": "Ikona aplikace, čtvercová, tmavá",
   "press.icons.mono": "Ikona aplikace, jednobarevná",
   "press.shots.title": "Snímky obrazovky",
-  "press.shots.text": "Ukazují aplikaci pro iPhone a iPad.",
+  "press.shots.text": "Ukazují Doughnut Forge 2 na iPhonu a iPadu.",
   "press.shots.label": "{device}: {screen}",
   "press.shots.choose": "Výběr toho, kdo může otevřít soubor",
   "press.download": "PNG, {width} × {height}",
@@ -434,6 +435,8 @@ export default {
   "technical.limits.forward.label": "Kdokoli, kdo později získá vaše obnovovací slova.",
   "technical.limits.forward.text":
     "Neexistuje dopředná bezpečnost (forward secrecy) ani odvolání: soubory jsou zapečetěny k dlouhodobým klíčům každé osoby, takže kdokoli, kdo později získá 24 obnovovacích slov nějaké identity, může otevřít každý soubor poslaný této identitě, jehož kopii má. Uniklou identitu nelze odvolat; pozdější soubory ochrání jen nová identita.",
+  "technical.limits.quantum.label": "Budoucí kvantový počítač, u identity z doby před Doughnut Forge 3.0.",
+  "technical.limits.quantum.text": "Pokud byla sdílena vaše kontaktní karta z doby před verzí 3.0, dostatečně velký kvantový počítač by jednoho dne mohl vypočítat všechny klíče této identity, včetně nových, a otevřít to, co jí bylo posláno. Totéž platí pro soubor poslaný kontaktu, kterého aplikace zná jen ze staré karty. Pozdější soubory ochrání jen nová identita (nová obnovovací slova).",
   "technical.limits.sender.label": "Kdo položku odeslal.",
   "technical.limits.sender.text": "Aplikace uvede kontakt jako odesílatele pouze tehdy, když je položka podepsána klíči z nové karty tohoto kontaktu. Jinak ukáže, že odesílatel je neznámý. Jméno je spolehlivé jen do té míry, do jaké je spolehlivá karta: porovnejte kód kontaktu.",
   "technical.limits.visible.label": "Velikost, přibližný počet příjemců a název souboru.",

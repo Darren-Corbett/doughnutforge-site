@@ -65,6 +65,7 @@ export default {
   "meta.features.title": "Ominaisuudet: salaa tiedostot, kansiot ja tekstit ilman tiliä | Doughnut Forge",
   "meta.features.description": "Salaa tiedostot ja tekstit omalla iPhonellasi, iPadillasi, Androidillasi tai tietokoneellasi ja jaa ne luotettujen ihmisten kanssa salauksella, joka on suunniteltu kestämään tulevaisuuden kvanttitietokoneet. Ei tiliä eikä palvelimia.",
   "features.title": "Kaikki, mitä Doughnut Forge tekee",
+  "features.folders": "iPhone, iPad ja Android -laitteissa salaat ja avaat tiedostoja, kuvia ja videoita. Kansiot salataan ja avataan Macissa ja Windowsissa.",
   "features.lead": "Doughnut Forge lukitsee tiedostosi ja tekstisi iPhonellasi, iPadillasi, Androidillasi tai tietokoneellasi ja antaa sinun jakaa ne luotettujen ihmisten kanssa. Lähetitpä ne miten tahansa, vain he voivat avata ne.",
   "features.identity.more":
     "Henkilöllisyytesi on tallennettu vain tälle laitteelle ja suojattu salasanallasi. Säilytä 24 palautussanaasi tallessa: ne ovat ainoa tapa palauttaa henkilöllisyytesi tai nollata unohtunut salasana.",
@@ -204,7 +205,7 @@ export default {
   "press.icons.dark": "Sovelluksen kuvake, neliö, tumma",
   "press.icons.mono": "Sovelluksen kuvake, yksivärinen",
   "press.shots.title": "Kuvakaappaukset",
-  "press.shots.text": "Niissä näkyy iPhone- ja iPad-sovellus.",
+  "press.shots.text": "Niissä näkyy Doughnut Forge 2 iPhonessa ja iPadissa.",
   "press.shots.label": "{device}: {screen}",
   "press.shots.choose": "Sen valitseminen, kuka voi avata tiedoston",
   "press.download": "PNG, {width} × {height}",
@@ -435,6 +436,8 @@ export default {
   "technical.limits.forward.label": "Kuka tahansa, joka saa myöhemmin palautussanasi.",
   "technical.limits.forward.text":
     "Eteenpäin salaisuutta (forward secrecy) ja mitätöintiä ei ole: tiedostot sinetöidään kunkin henkilön pitkäikäisille avaimille, joten kuka tahansa, joka myöhemmin saa henkilöllisyyden 24 palautussanaa, voi avata jokaisen tälle henkilöllisyydelle lähetetyn tiedoston, josta hänellä on kopio. Vuotanutta henkilöllisyyttä ei voi mitätöidä; vain uusi henkilöllisyys suojaa myöhemmät tiedostot.",
+  "technical.limits.quantum.label": "Tulevaisuuden kvanttitietokone, jos henkilöllisyys on ajalta ennen Doughnut Forge 3.0:aa.",
+  "technical.limits.quantum.text": "Jos 3.0:aa vanhempi yhteystietokorttisi on jaettu, riittävän suuri kvanttitietokone voisi jonain päivänä selvittää kaikki tämän henkilöllisyyden avaimet, myös uudet, ja avata sille lähetetyn sisällön. Sama koskee tiedostoa, joka on lähetetty yhteystiedolle, jonka sovellus tuntee vain vanhasta kortista. Vain uusi henkilöllisyys (uudet palautussanat) suojaa myöhemmät tiedostot.",
   "technical.limits.sender.label": "Kuka kohteen lähetti.",
   "technical.limits.sender.text": "Sovellus nimeää yhteystiedon lähettäjäksi vain, kun kohde on allekirjoitettu tämän yhteystiedon uuden kortin avaimilla. Muuten se näyttää, että lähettäjä on tuntematon. Nimi on vain yhtä luotettava kuin kortti: vertaa yhteystietokoodia.",
   "technical.limits.visible.label": "Koko, vastaanottajien karkea määrä ja tiedostonimi.",

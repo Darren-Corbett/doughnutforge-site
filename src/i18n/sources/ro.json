@@ -239,6 +239,10 @@
     "en": "7454b50ed2b7",
     "text": "6474e0a3140b"
   },
+  "features.folders": {
+    "en": "f81112ebe1a7",
+    "text": "89c725c61c8b"
+  },
   "features.identity.more": {
     "en": "b121de21c077",
     "text": "66647686c81f"
@@ -700,8 +704,8 @@
     "text": "8cea17a1f97c"
   },
   "press.shots.text": {
-    "en": "b7bf7b34421f",
-    "text": "319e12f61829"
+    "en": "6c6078001456",
+    "text": "1e035e915efe"
   },
   "press.shots.title": {
     "en": "067348ce6894",
@@ -1506,6 +1510,14 @@
   "technical.limits.passcode.text": {
     "en": "842d7f0be65d",
     "text": "5df1652d746d"
+  },
+  "technical.limits.quantum.label": {
+    "en": "113ce5f89652",
+    "text": "d1bbf1528d68"
+  },
+  "technical.limits.quantum.text": {
+    "en": "9a22d051a834",
+    "text": "cc0c240f7f45"
   },
   "technical.limits.recipients.label": {
     "en": "127562805dbc",

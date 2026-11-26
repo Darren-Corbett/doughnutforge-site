@@ -62,6 +62,7 @@ export default {
   "meta.features.title": "Funcții: criptează fișiere, dosare și text fără cont | Doughnut Forge",
   "meta.features.description": "Criptează fișiere și text pe propriul iPhone, iPad, Android sau computer și partajează-le cu oameni de încredere, cu o criptare concepută să reziste viitoarelor computere cuantice. Fără cont și fără servere.",
   "features.title": "Tot ce face Doughnut Forge",
+  "features.folders": "Pe iPhone, iPad și Android criptezi și deschizi fișiere, fotografii și videoclipuri. Dosarele se criptează și se deschid pe Mac și Windows.",
   "features.lead": "Doughnut Forge îți blochează fișierele și textele pe iPhone, iPad, Android sau computer și îți permite să le partajezi cu oamenii în care ai încredere. Oricum le-ai trimite, doar ei le pot deschide.",
   "features.identity.more":
     "Identitatea ta este stocată doar pe acest dispozitiv și protejată de parola ta. Păstrează în siguranță cele 24 de cuvinte de recuperare: sunt singura modalitate de a-ți restaura identitatea sau de a reseta o parolă uitată.",
@@ -196,7 +197,7 @@ export default {
   "press.icons.dark": "Pictograma aplicației, pătrată, închisă",
   "press.icons.mono": "Pictograma aplicației, monocromă",
   "press.shots.title": "Capturi de ecran",
-  "press.shots.text": "Acestea arată aplicația pentru iPhone și iPad.",
+  "press.shots.text": "Acestea arată Doughnut Forge 2 pe iPhone și iPad.",
   "press.shots.label": "{device}: {screen}",
   "press.shots.choose": "Alegerea celor care pot deschide un fișier",
   "press.download": "Fișier PNG, {width} × {height}",
@@ -424,6 +425,8 @@ export default {
   "technical.limits.forward.label": "Oricine obține mai târziu cuvintele tale de recuperare.",
   "technical.limits.forward.text":
     "Nu există confidențialitate persistentă (forward secrecy) și nici revocare: fișierele sunt sigilate pentru cheile de lungă durată ale fiecărei persoane, așa că oricine obține mai târziu cele 24 de cuvinte de recuperare ale unei identități poate deschide orice fișier trimis acelei identități, dacă are o copie a acestuia. O identitate scursă nu poate fi revocată; doar o identitate nouă protejează fișierele de mai târziu.",
+  "technical.limits.quantum.label": "Un viitor computer cuantic, pentru o identitate de dinainte de Doughnut Forge 3.0.",
+  "technical.limits.quantum.text": "Dacă cardul tău de contact de dinainte de 3.0 a fost partajat, un computer cuantic suficient de mare ar putea într-o zi să calculeze fiecare cheie a acelei identități, inclusiv pe cele noi, și să deschidă ce i s-a trimis. La fel se întâmplă cu un fișier trimis unui contact pe care aplicația îl cunoaște doar dintr-un card vechi. Doar o identitate nouă (cuvinte de recuperare noi) protejează fișierele de mai târziu.",
   "technical.limits.sender.label": "Cine a trimis un element.",
   "technical.limits.sender.text": "Aplicația numește un contact ca expeditor doar când elementul este semnat cu cheile de pe noul card al acelui contact. Altfel, arată că expeditorul este necunoscut. Numele este de încredere doar în măsura în care este de încredere cardul: compară codul de contact.",
   "technical.limits.visible.label": "Dimensiunea, un număr aproximativ de destinatari și numele fișierului.",
