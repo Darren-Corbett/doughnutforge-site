@@ -90,6 +90,18 @@ test("every store has 3.0: the new format's copy and the white paper", async ({ 
   for (const path of ["/security/white-paper/", "/security/white-paper/doughnut-forge-white-paper-en.pdf"]) {
     expect((await page.request.get(path)).status(), path).toBe(on ? 200 : 404);
   }
+  // Every language has its own paper and PDF, linked from its own pages and named in
+  // the English paper's hreflang list (owner, 26 November 2026)
+  for (const code of ["de", "ja", "zh-CN"]) {
+    const base = `/${code.toLowerCase()}/security/white-paper/`;
+    for (const path of [base, `${base}doughnut-forge-white-paper-${code}.pdf`]) expect((await page.request.get(path)).status(), path).toBe(on ? 200 : 404);
+    await page.goto(`/${code.toLowerCase()}/security/`);
+    await expect(page.locator(`a[href="${base}"]`), `${code}: links to its own paper`).toHaveCount(on ? 2 : 0);
+  }
+  if (on) {
+    await page.goto("/security/white-paper/");
+    await expect(page.locator('link[rel="alternate"][hreflang="de"]')).toHaveAttribute("href", "https://doughnut-forge.app/de/security/white-paper/");
+  }
   await page.goto("/roadmap/");
   await expect(page.locator('[data-roadmap="shipped"] h3', { hasText: "A new file format" })).toHaveCount(on && !v3() ? 1 : 0);
 });
@@ -154,7 +166,7 @@ test("3.0 live: the roadmap from roadmap.md", async ({ page }) => {
   await release("later", "Doughnut Forge 3.4", "Split a secret across your own devices.", [
     "Split a file into shares and keep them in different places, such as your phone, your computer and a USB drive.",
     "Any two of three shares open it. Losing one costs nothing, and one share on its own reveals nothing.",
-    "A guided setup for sharing your files or your recovery words shows where each share is kept, and warns if two end up in the same place, such as the same cloud backup.",
+    "A guided setup for sharing your files or your recovery words shows where each share is kept. It warns if two end up in the same place, such as the same cloud backup.",
   ]);
   // 3.4 is described by what it does, never by what it guards against (owner, 26 November 2026)
   await expect(entry("later", "Doughnut Forge 3\\.4")).not.toContainText(/quantum|P = NP|encryption breaks/i);

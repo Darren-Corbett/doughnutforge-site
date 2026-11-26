@@ -86,3 +86,19 @@ for (const code of codes) {
     expect(s["roadmap.v4.cli"]).toContain("Doughnut CLI");
   });
 }
+
+// The network paragraph and tile go live with the mobile pricing stage as they are:
+// the final white paper says the same (principle 1: the store's own app and the
+// operating system talk to the store), so nothing holds them any more (owner, 26 November 2026)
+for (const code of codes) {
+  test(`${code}: the network lines carry no white paper marker`, async () => {
+    const s = await strings(code);
+    for (const key of ["technical.network.none", "technical.glance.network"]) expect(s[key], key).not.toContain("PENDING-WHITEPAPER-PDF");
+  });
+}
+
+// The white paper is a translated page: every language has its own, with hreflang (owner, 26 November 2026)
+test("the white paper is one of the translated pages", async () => {
+  const { translatedPages } = await import("../../src/i18n/alternates");
+  expect(translatedPages).toContain("security/white-paper/");
+});
