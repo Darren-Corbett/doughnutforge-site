@@ -39,8 +39,6 @@
   "faq.subscription.a": "No. Doughnut Forge is a one-time purchase, never a subscription. You buy it once from the store for your platform, and there is nothing to renew.",
   "faq.offline.a": "No. There is no account to create, and Doughnut Forge works entirely on your device, even without an internet connection. You only need a connection to download the app, or if you choose to send encrypted files over the internet.",
   "press.facts.priceValue": "One-time purchase for each platform, never a subscription",
-  "technical.network.none": "Doughnut Forge makes no network connections of its own. There is no account, no sign-in, no analytics, no crash reporting and no update check. The app's content policy does not allow its screens to load anything from the internet.",
-  "technical.glance.network": "No network connections of its own",
   "technical.visible.size.text": "visible, roughly (the compressed size).",
   "technical.encryption.auth.text": "the content and the item's header are authenticated. If they are changed, opening fails and nothing is saved.",
   "technical.limits.recipients.text": "Anyone who can open an item can save, copy or share what is inside.",

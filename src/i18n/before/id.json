@@ -39,8 +39,6 @@
   "faq.subscription.a": "Tidak. Doughnut Forge adalah pembelian sekali bayar, bukan langganan. Anda membelinya sekali dari toko untuk platform Anda, dan tidak ada yang perlu diperpanjang.",
   "faq.offline.a": "Tidak. Tidak ada akun yang perlu dibuat, dan Doughnut Forge bekerja sepenuhnya di perangkat Anda, bahkan tanpa koneksi internet. Anda hanya memerlukan koneksi untuk mengunduh aplikasi, atau jika Anda memilih mengirim file terenkripsi melalui internet.",
   "press.facts.priceValue": "Sekali beli untuk setiap platform, bukan langganan",
-  "technical.network.none": "Doughnut Forge tidak membuat koneksi jaringannya sendiri. Tidak ada akun, tidak ada proses masuk, tidak ada analitik, tidak ada pelaporan crash, dan tidak ada pemeriksaan pembaruan. Kebijakan konten aplikasi tidak mengizinkan layarnya memuat apa pun dari internet.",
-  "technical.glance.network": "Tanpa koneksi jaringan sendiri",
   "technical.visible.size.text": "terlihat, kira-kira (ukuran setelah dikompresi).",
   "technical.encryption.auth.text": "konten dan header item diautentikasi. Jika salah satunya diubah, pembukaan gagal dan tidak ada yang disimpan.",
   "technical.limits.recipients.text": "Siapa pun yang dapat membuka item dapat menyimpan, menyalin, atau membagikan isinya.",

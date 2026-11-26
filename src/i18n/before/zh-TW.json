@@ -39,8 +39,6 @@
   "faq.subscription.a": "不需要。Doughnut Forge 是一次性購買，絕非訂閱。您只要在您所用平台的商店購買一次，不需要續訂。",
   "faq.offline.a": "不需要。不必建立帳號，Doughnut Forge 完全在您的裝置上執行，即使沒有網路連線也能使用。只有下載 App 時，或是您選擇透過網際網路傳送加密檔案時，才需要連線。",
   "press.facts.priceValue": "每個平台一次性購買，絕非訂閱",
-  "technical.network.none": "Doughnut Forge 本身不會建立任何網路連線。沒有帳號、沒有登入、沒有分析、沒有當機回報，也沒有更新檢查。App 的內容政策不允許其畫面從網際網路載入任何內容。",
-  "technical.glance.network": "本身不建立網路連線",
   "technical.visible.size.text": "大致可見（壓縮後的大小）。",
   "technical.encryption.auth.text": "內容和該項目的標頭都經過驗證。如果它們遭到變更，開啟就會失敗，而且不會儲存任何內容。",
   "technical.limits.recipients.text": "任何能開啟某個項目的人，都可以儲存、複製或分享其中的內容。",

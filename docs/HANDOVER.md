@@ -28,6 +28,20 @@ Where the site work stands, and what comes next. Read this at the start of every
 
 ---
 
+## Release-day dry run and the 26 November roadmap (26 November 2026)
+
+- **Plan (owner, 26 Nov):** all four stores are released together once approved. The site is one final commit on main with every store on 3.0, Android on sale, and the white paper and new roadmap published, fully checked and not pushed; the owner pushes it once every store page shows 3.0. The checklist, with the store-by-store fallback, is `~/Desktop/review/launch-site/RELEASE-DAY.md`.
+- **Roadmap (owner, 26 Nov):** 3.1 names Arabic, Hebrew, Persian and Urdu; a new 3.4 (split a secret across your own devices) sits between 3.3 and 4.0; 4.0 starts "Doughnut CLI, …" (never translated). The 3.4 setup line is two sentences (owner). 28 languages, independently reviewed. Held behind `live3`.
+- **High-risk files touched, each with the owner's yes (26 Nov):**
+  - `translatedPages` in `src/i18n/alternates.ts`: `security/white-paper/` added. The paper had an English page only; `src/pages/[lang]/security/white-paper.astro` now builds it in every language once every store sells 3.0, so the 29 PDFs can be made and each page carries hreflang.
+  - `public/.well-known/security.txt`: the owner approved the line `Policy: https://doughnut-forge.app/security/white-paper/` under the existing Policy line (Expires stays 2027-10-24). It goes in with the final commit, with `release.json`: the build refuses a Policy line for a paper page that is not built, and refuses a built paper without it.
+- **Network lines** (`technical.network.none`, `technical.glance.network`, 30 languages): the `[PENDING-WHITEPAPER-PDF]` marker is gone, wording unchanged; the final paper's principle 1 says the same (owner, 26 Nov).
+- **Copy lint:** the final paper's "unlock commands" paragraph is approved (unlocking the identity, not the purchase).
+- **Store tests** now follow the pricing stage (`ebe5243`): they expected the old Android card text and would have failed the final commit.
+- **Still to do in a Mac slot:** the 30 PDFs (`~/forge-work/pdf-job.sh`), the release-day screenshots for the owner's visual yes, and the Home phone-width check with the longer 3.1 line.
+
+---
+
 ## White paper PDFs made by the site, all 30 (25 November 2026)
 
 - **Owner, 25 November 2026:** the English PDF is no longer the app side's own file. The site makes all 30 PDFs, English included, from their page texts with `scripts/make-white-paper-pdf.mjs`; the `--from` hand-over path is gone (tests `d50d81a`, change `3e7ff38`).

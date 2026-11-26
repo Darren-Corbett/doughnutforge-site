@@ -39,8 +39,6 @@
   "faq.subscription.a": "Nein. Doughnut Forge ist ein einmaliger Kauf, niemals ein Abo. Sie kaufen die App einmal im Store für Ihre Plattform, und es gibt nichts zu verlängern.",
   "faq.offline.a": "Nein. Sie müssen kein Konto erstellen, und Doughnut Forge arbeitet vollständig auf Ihrem Gerät, auch ohne Internetverbindung. Eine Verbindung brauchen Sie nur, um die App herunterzuladen, oder wenn Sie verschlüsselte Dateien über das Internet senden möchten.",
   "press.facts.priceValue": "Einmaliger Kauf pro Plattform, niemals ein Abo",
-  "technical.network.none": "Doughnut Forge baut keine eigenen Netzwerkverbindungen auf. Es gibt kein Konto, keine Anmeldung, keine Nutzungsanalyse, keine Absturzberichte und keine Suche nach Updates. Die Inhaltsrichtlinie der App erlaubt ihren Bildschirmen nicht, etwas aus dem Internet zu laden.",
-  "technical.glance.network": "Keine eigenen Netzwerkverbindungen",
   "technical.visible.size.text": "ungefähr sichtbar (die komprimierte Größe).",
   "technical.encryption.auth.text": "Der Inhalt und der Header des Elements werden authentifiziert. Werden sie verändert, schlägt das Öffnen fehl und es wird nichts gespeichert.",
   "technical.limits.recipients.text": "Wer ein Element öffnen kann, kann den Inhalt speichern, kopieren oder teilen.",

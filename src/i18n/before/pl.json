@@ -39,8 +39,6 @@
   "faq.subscription.a": "Nie. Doughnut Forge to jednorazowy zakup, nigdy subskrypcja. Kupujesz go raz w sklepie dla swojej platformy i nie musisz niczego odnawiać.",
   "faq.offline.a": "Nie. Nie trzeba zakładać żadnego konta, a Doughnut Forge działa całkowicie na Twoim urządzeniu, nawet bez połączenia z internetem. Połączenie jest potrzebne tylko do pobrania aplikacji lub wtedy, gdy zdecydujesz się wysłać zaszyfrowane pliki przez internet.",
   "press.facts.priceValue": "Jednorazowy zakup na każdą platformę, nigdy subskrypcja",
-  "technical.network.none": "Doughnut Forge nie nawiązuje żadnych własnych połączeń sieciowych. Nie ma konta, logowania, analityki, raportowania awarii ani sprawdzania aktualizacji. Zasady treści aplikacji nie pozwalają jej ekranom wczytywać niczego z internetu.",
-  "technical.glance.network": "Brak własnych połączeń sieciowych",
   "technical.visible.size.text": "widoczny w przybliżeniu (rozmiar po kompresji).",
   "technical.encryption.auth.text": "treść i nagłówek elementu są uwierzytelniane. Jeśli zostaną zmienione, otwarcie się nie powiedzie i nic nie zostanie zapisane.",
   "technical.limits.recipients.text": "Każdy, kto może otworzyć element, może zapisać, skopiować lub udostępnić jego zawartość.",

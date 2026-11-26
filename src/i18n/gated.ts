@@ -55,10 +55,6 @@ export const gated: Partial<Record<UiKey, Stage>> = {
   "faq.offline.a": "mobileFree",
   "press.facts.priceValue": "mobileFree",
   "home.freeLine": "mobileFree",
-  // Buying goes through Apple and Google, and the Android permissions are not
-  // settled: waits for the final white paper and android-permission.md
-  "technical.network.none": "mobileFree",
-  "technical.glance.network": "mobileFree",
 
   // The first store with 3.0: what people meet first in the new version
   "faq.code.q": "first3",

@@ -19,6 +19,8 @@ export const translatedPages = [
   "roadmap/",
   "security/",
   "security/technical-details/",
+  // Built once every store sells 3.0 (src/data/stages.ts)
+  "security/white-paper/",
   "stats/",
   // Answered questions and Known issues, once each has an issue in it
   ...shownLists.map((l) => issueLists[l].path),

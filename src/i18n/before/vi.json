@@ -39,8 +39,6 @@
   "faq.subscription.a": "Không. Doughnut Forge là sản phẩm mua một lần, không bao giờ là thuê bao. Bạn mua một lần từ cửa hàng cho nền tảng của mình, và không có gì phải gia hạn.",
   "faq.offline.a": "Không. Không cần tạo tài khoản, và Doughnut Forge hoạt động hoàn toàn trên thiết bị của bạn, kể cả khi không có kết nối internet. Bạn chỉ cần kết nối để tải ứng dụng, hoặc khi bạn chọn gửi tệp đã mã hóa qua internet.",
   "press.facts.priceValue": "Mua một lần cho mỗi nền tảng, không bao giờ là thuê bao",
-  "technical.network.none": "Doughnut Forge không tự tạo kết nối mạng nào. Không có tài khoản, không đăng nhập, không phân tích, không báo cáo sự cố và không kiểm tra cập nhật. Chính sách nội dung của ứng dụng không cho phép các màn hình của nó tải bất cứ thứ gì từ internet.",
-  "technical.glance.network": "Không tự tạo kết nối mạng",
   "technical.visible.size.text": "thấy được, ở mức gần đúng (kích thước sau khi nén).",
   "technical.encryption.auth.text": "nội dung và phần đầu (header) của mục đều được xác thực. Nếu chúng bị thay đổi, việc mở sẽ thất bại và không có gì được lưu.",
   "technical.limits.recipients.text": "Bất kỳ ai mở được một mục đều có thể lưu, sao chép hoặc chia sẻ những gì bên trong.",

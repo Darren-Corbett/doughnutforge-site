@@ -347,7 +347,7 @@ export default {
   "roadmap.v34.text": "Split a secret across your own devices.",
   "roadmap.v34.split": "Split a file into shares and keep them in different places, such as your phone, your computer and a USB drive.",
   "roadmap.v34.threshold": "Any two of three shares open it. Losing one costs nothing, and one share on its own reveals nothing.",
-  "roadmap.v34.setup": "A guided setup for sharing your files or your recovery words shows where each share is kept, and warns if two end up in the same place, such as the same cloud backup.",
+  "roadmap.v34.setup": "A guided setup for sharing your files or your recovery words shows where each share is kept. It warns if two end up in the same place, such as the same cloud backup.",
   "roadmap.v4.title": "Doughnut Forge 4.0",
   "roadmap.v4.text": "For people who work in a terminal.",
   "roadmap.v4.cli": "Doughnut CLI, a command-line tool for Linux and Mac, using the same encryption and file format.",
@@ -403,7 +403,7 @@ export default {
   "technical.title": "Technical details",
   "technical.glance.title": "At a glance",
   "technical.glance.exchange": "Post-quantum hybrid key exchange and signatures",
-  "technical.glance.network": "[PENDING-WHITEPAPER-PDF] No network connections of its own",
+  "technical.glance.network": "No network connections of its own",
   "technical.glance.servers": "No accounts or servers",
   "technical.toc": "On this page",
   "technical.back": "Back to contents",
@@ -507,7 +507,7 @@ export default {
   "technical.text.untested": "Doughnut Forge has not been tested with each app that the text might pass through.",
   "technical.network.title": "Network",
   "technical.network.none":
-    "[PENDING-WHITEPAPER-PDF] Doughnut Forge makes no network connections of its own. There is no account, no sign-in, no analytics, no crash reporting and no update check. The app's content policy does not allow its screens to load anything from the internet.",
+    "Doughnut Forge makes no network connections of its own. There is no account, no sign-in, no analytics, no crash reporting and no update check. The app's content policy does not allow its screens to load anything from the internet.",
   "technical.network.apple":
     "On Mac, iPhone and iPad, the operating system may contact the Doughnut Forge website so that password managers can offer to save and fill your password. Apple's system does this, not the app.",
   "technical.network.sharing": "Encrypted items leave your device only when you share them yourself.",
