@@ -154,7 +154,11 @@ const QUOTED_APP_TEXTS = [
   // ro secure-directory.json decryptModal.unknownSignerDetail (white paper 7.1)
   "Dacă nu te așteptai la asta, verifică cu persoana care l-a trimis înainte să îl deschizi sau să îl folosești.",
 ].map((t) => t.normalize("NFC"));
-const withoutQuotedAppTexts = (block) => QUOTED_APP_TEXTS.reduce((text, quoted) => text.split(quoted).join(" "), block);
+// The build's typesetting turns ' into ’, so either apostrophe matches here, and only here
+const QUOTED_APP_PATTERNS = QUOTED_APP_TEXTS.map(
+  (quoted) => new RegExp(quoted.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/'/g, "['\u2019]"), "g"),
+);
+const withoutQuotedAppTexts = (block) => QUOTED_APP_PATTERNS.reduce((text, pattern) => text.replace(pattern, " "), block);
 
 const hits = (re, s) => [...s.matchAll(new RegExp(re, "giu"))].map((m) => m[0]);
 const problems = [];

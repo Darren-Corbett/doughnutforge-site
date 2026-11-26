@@ -35,6 +35,7 @@ Where the site work stands, and what comes next. Read this at the start of every
 - **High-risk files touched, each with the owner's yes (26 Nov):**
   - `translatedPages` in `src/i18n/alternates.ts`: `security/white-paper/` added. The paper had an English page only; `src/pages/[lang]/security/white-paper.astro` now builds it in every language once every store sells 3.0, so the 29 PDFs can be made and each page carries hreflang.
   - `public/.well-known/security.txt`: the owner approved the line `Policy: https://doughnut-forge.app/security/white-paper/` under the existing Policy line (Expires stays 2027-10-24). It goes in with the final commit, with `release.json`: the build refuses a Policy line for a paper page that is not built, and refuses a built paper without it.
+  - `scripts/check-sender-claims.mjs`: the app's quoted warnings in the white paper are set aside with either apostrophe (' or ’), because the build turns ' into ’ and the Italian quote was never set aside; nothing else about the check changed (tests `1034461`).
 - **Network lines** (`technical.network.none`, `technical.glance.network`, 30 languages): the `[PENDING-WHITEPAPER-PDF]` marker is gone, wording unchanged; the final paper's principle 1 says the same (owner, 26 Nov).
 - **Copy lint:** the final paper's "unlock commands" paragraph is approved (unlocking the identity, not the purchase).
 - **Store tests** now follow the pricing stage (`ebe5243`): they expected the old Android card text and would have failed the final commit.
