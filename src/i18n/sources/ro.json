@@ -852,12 +852,12 @@
     "text": "e5bf3e1ffff0"
   },
   "roadmap.v31.rtl": {
-    "en": "1cb5935ce00b",
-    "text": "c82c81b82cce"
+    "en": "0479c534f4f9",
+    "text": "4a95f457c509"
   },
   "roadmap.v31.text": {
-    "en": "179e6c3ebece",
-    "text": "aa7c8da4e4ce"
+    "en": "8ae71d820515",
+    "text": "2851f6273713"
   },
   "roadmap.v31.title": {
     "en": "e5ce3429a2b2",
@@ -907,13 +907,33 @@
     "en": "8684caad9c18",
     "text": "8684caad9c18"
   },
+  "roadmap.v34.setup": {
+    "en": "0d999f38e048",
+    "text": "875555182501"
+  },
+  "roadmap.v34.split": {
+    "en": "6544f7282965",
+    "text": "937d8f88ce1c"
+  },
+  "roadmap.v34.text": {
+    "en": "5fb19bad9b01",
+    "text": "dccbfa97e53e"
+  },
+  "roadmap.v34.threshold": {
+    "en": "ff894a66deec",
+    "text": "888aa447a8e5"
+  },
+  "roadmap.v34.title": {
+    "en": "7e80c7e603fc",
+    "text": "7e80c7e603fc"
+  },
   "roadmap.v4.both": {
     "en": "9bd76742bfd8",
     "text": "472ba2807af5"
   },
   "roadmap.v4.cli": {
-    "en": "0dea476f0f6b",
-    "text": "a4c5dd058b74"
+    "en": "861523ffbcea",
+    "text": "57b8d3b62baa"
   },
   "roadmap.v4.free": {
     "en": "223d480e6ca6",
