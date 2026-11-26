@@ -9,6 +9,7 @@ import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { each } from "../support/each";
 import { ui } from "../support/ui";
 import { reached, uiNow } from "../support/release";
+import { securityReviewPath } from "../../src/data/roadmap";
 
 // LANGS narrows the run, as in the other layout tests ("en" for English)
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));
@@ -125,9 +126,10 @@ for (const lang of languages) {
       for (const table of await each(page.locator("main table"), 4)) await expect(table.locator('thead th[scope="col"]')).toHaveCount(2);
       // The page describes the app as it is, not one release of it
       expect(text).not.toContain("0.4.46");
-      // It says plainly that there has been no audit yet, and links to the plan
+      // It says plainly that there has been no audit yet, and links to the plan: the
+      // security review on the roadmap once 3.0 is live (src/data/roadmap.ts)
       expect(text).toContain(await uiNow(lang.code, "security.audit.text"));
-      await expect(page.locator(`main a[href="${prefix(lang)}/roadmap/"]`)).toHaveCount(1);
+      await expect(page.locator(`main a[href="${prefix(lang)}/${securityReviewPath}"]`)).toHaveCount(1);
       if (lang.code === "en") {
         // "does not guarantee" is a limit the page must state, never a promise
         expect(text).not.toMatch(/military|unbreakable|(?<!not )guarantee|verified sender|has been audited|was audited|open.source|certified|passphrase/i);
