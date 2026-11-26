@@ -9,12 +9,14 @@ import { withStandIns } from "../support/no-stores";
 import { readdirSync, readFileSync } from "node:fs";
 import { installMeasures, measure } from "../support/measure";
 import { dist } from "../support/site";
+import { platforms } from "../../src/data/stores";
 
 const goPages = readdirSync(`${dist}/go`).flatMap((code) => readdirSync(`${dist}/go/${code}`).map((lang) => `/go/${code}/${lang}/`));
 const settle = (page: Page) => page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
 
+// One per store on sale (Google Play joins once Android is on sale), in each of the 30 languages
 test("every store and language has a /go/ page", () => {
-  expect(goPages.length).toBe(3 * 30);
+  expect(goPages.length).toBe(platforms.filter((p) => p.status === "available").length * 30);
 });
 
 // Search engines must crawl these pages to see the noindex, so robots.txt never

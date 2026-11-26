@@ -16,7 +16,7 @@ const languages = languageData.languages.filter((l) => !process.env.LANGS || pro
 const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.path}`);
 const ADVISORIES = "https://github.com/Darren-Corbett/forge-privacy/security/advisories/new";
 const SECURITY_EMAIL = "support@doughnut-forge.app";
-const SECTIONS = ["shipped", "next", "later"];
+const SECTIONS = ["shipped", "next", "then", "later"];
 // Names that stay untranslated on the technical details page, in every language;
 // the new format's names appear once every store sells 3.0
 const TECHNICAL_NAMES = ["AES-256-GCM", "X25519", "ML-KEM-768", ...(reached("all3") ? ["ML-KEM-1024", "ML-DSA-87"] : []), "Ed25519", "HKDF-SHA-256", "Argon2id", "BIP-39", "aes-gcm (RustCrypto)", "BEGIN FORGE ENCLAVE"];
@@ -34,7 +34,7 @@ for (const lang of languages) {
       const res = await page.goto(`${prefix(lang)}/roadmap/`);
       expect(res?.status()).toBe(200);
       await expect(page.locator("h1")).toHaveCount(1);
-      // Shipped, next and later only, in that order; next and later always have items
+      // Shipped, next, then and later only, in that order; next and later always have items
       const sections = await page.locator("[data-roadmap]").evaluateAll((els) => els.map((e) => e.getAttribute("data-roadmap")));
       expect(sections.every((s) => SECTIONS.includes(s!)), `sections: ${sections}`).toBe(true);
       expect(sections).toEqual([...sections].sort((a, b) => SECTIONS.indexOf(a!) - SECTIONS.indexOf(b!)));
@@ -50,8 +50,11 @@ for (const lang of languages) {
       // Android (once on sale) and Doughnut Forge 2; next, Android until then, and
       // smaller improvements. Nothing describes internal security work (owner,
       // 10 November 2026).
-      const shipped = [...(reached("all3") ? ["roadmap.format.title"] : []), ...(reached("android") ? ["roadmap.android.title"] : []), "roadmap.v2.title"];
-      const next = [...(reached("android") ? [] : ["roadmap.android.title"]), "roadmap.small.title"];
+      // Once 3.0 is live, one Doughnut Forge 3.0 entry takes the place of both (src/data/roadmap.ts)
+      const shipped = reached("live3")
+        ? ["roadmap.v3.title", "roadmap.v2.title"]
+        : [...(reached("all3") ? ["roadmap.format.title"] : []), ...(reached("android") ? ["roadmap.android.title"] : []), "roadmap.v2.title"];
+      const next = reached("live3") ? ["roadmap.v31.title"] : [...(reached("android") ? [] : ["roadmap.android.title"]), "roadmap.small.title"];
       await expect(page.locator('[data-roadmap="shipped"] h3')).toHaveText(await Promise.all(shipped.map((k) => ui(lang.code, k))));
       await expect(page.locator('[data-roadmap="next"] h3')).toHaveText(await Promise.all(next.map((k) => ui(lang.code, k))));
       // The Doughnut Forge 2 entry lists its highlights
@@ -98,7 +101,7 @@ for (const lang of languages) {
       await expect(email).toHaveCount(1);
       await expect(email).toHaveText(SECURITY_EMAIL);
       // The page links to the roadmap, where the planned audit is listed
-      await expect(page.locator(`main a[href="${prefix(lang)}/roadmap/"]`)).toHaveCount(1);
+      await expect(page.locator(`main a[href="${prefix(lang)}/${securityReviewPath}"]`)).toHaveCount(1);
       if (lang.code === "en") {
         const text = await page.locator("main").innerText();
         expect(text).not.toMatch(/military|unbreakable|guarantee|verified sender|has been audited|was audited/i);
@@ -110,7 +113,8 @@ for (const lang of languages) {
       const res = await page.goto(`${prefix(lang)}/security/technical-details/`);
       expect(res?.status()).toBe(200);
       await expect(page.locator("h1")).toHaveCount(1);
-      const text = await page.locator("main").innerText();
+      // A name with a Finnish ending ("BEGIN FORGE ENCLAVE -rivin") is joined with no-break spaces (src/middleware.ts)
+      const text = (await page.locator("main").innerText()).replaceAll("\u00a0", " ");
       for (const name of TECHNICAL_NAMES) expect(text, name).toContain(name);
       // Four facts at a glance, then an "On this page" list that reaches every section
       await expect(page.locator(".glance li")).toHaveCount(4);

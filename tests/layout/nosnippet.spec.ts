@@ -9,6 +9,7 @@ import { type Page } from "@playwright/test";
 import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { each } from "../support/each";
+import { platforms } from "../../src/data/stores";
 
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));
 const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.path}`);
@@ -19,8 +20,9 @@ const APPROVED = ["header > div", "footer .footer-links", "span.skip", ".hero .a
 const EVERY_PAGE: Record<string, number> = { "header > div": 1, "footer .footer-links": 2, "span.skip": 1 };
 const ON_PAGE: Record<string, Record<string, number>> = {
   "/": { ".hero .actions": 1, ".platform-row": 1 },
-  "/download/": { ".cards .buy": 3 },
-  "/pricing/": { ".cards .buy": 3 },
+  // One buy button per store on sale (Google Play joins once Android is on sale)
+  "/download/": { ".cards .buy": platforms.filter((p) => p.status === "available").length },
+  "/pricing/": { ".cards .buy": platforms.filter((p) => p.status === "available").length },
   "/features/": { "span.cta-button": 2 },
   "/press/": {},
   "/support/": {},

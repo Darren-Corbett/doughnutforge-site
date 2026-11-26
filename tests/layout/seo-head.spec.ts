@@ -74,7 +74,8 @@ test("home page: the summary line sits under the heading in every language", asy
   for (const lang of languageData.languages) {
     const path = lang.code === "en" ? "/" : `/${lang.path}/`;
     await page.goto(path);
-    await expect(page.locator("h1 + p"), path).toHaveText(await uiNow(lang.code, "home.summary"));
+    // Once a phone store sells 3.0, the free line comes between them (Home only)
+    await expect(page.locator(reached("mobileFree") ? "h1 + p.free-line + p" : "h1 + p"), path).toHaveText(await uiNow(lang.code, "home.summary"));
   }
 });
 
