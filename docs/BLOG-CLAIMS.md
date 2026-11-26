@@ -454,3 +454,37 @@ Not claimed: whether ZIP encryption hides file names; which method any tool uses
 | 12.D5 | Screenshot: the iPhone Identity screen | `src/assets/app/v2/en/iphone-identity-light.webp`; alt text as in post 4 | repo |
 
 Not claimed: any link to TfL's September 2024 incident; who did it; any number beyond TfL's; the NCSC scam-email address.
+
+## Post 13: What should you never paste into an AI chatbot?
+`src/content/blog/en/what-not-to-share-with-ai-chatbots.mdx`, phrase "what not to share with AI chatbots". Backlog row S-AI1 (series "AI and your personal data"); publish date 26 November 2026. Personal accounts only. Every source re-checked live on 26 November 2026; four OpenAI quotes had changed since the draft and were corrected in the post (rows 13.7, 13.9, 13.10), and Gemini's "never" became "indefinitely" (13.12). Sources: NB = [NCSC blog: ChatGPT and large language models: what's the risk?](https://www.ncsc.gov.uk/blog-post/chatgpt-and-large-language-models-whats-the-risk) (14 March 2023); NG = [NCSC: AI and cyber security: what you need to know](https://www.ncsc.gov.uk/guidance/ai-and-cyber-security-what-you-need-to-know) (13 February 2024, edited 31 July 2026); OA = [OpenAI: Data Controls FAQ](https://help.openai.com/en/articles/7730893-data-controls-faq); GH = [Gemini Apps Privacy Hub](https://support.google.com/gemini/answer/13594961?hl=en-GB) (last updated 17 November 2026); AS = [Anthropic: How long do you store my data?](https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data); AT = [Anthropic: Is my data used for model training?](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training); AM = [Anthropic: How do I change my model improvement privacy settings?](https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings); AD = [Anthropic: How can I delete or rename a conversation?](https://privacy.claude.com/en/articles/10023670-how-can-i-delete-or-rename-a-conversation); MO = [Microsoft Copilot privacy overview](https://support.microsoft.com/en-us/privacy/microsoft-copilot/overview); MC = [Microsoft Copilot privacy controls](https://support.microsoft.com/en-us/privacy/microsoft-copilot/privacy-controls); MH = [Copilot activity history](https://support.microsoft.com/en-us/privacy/microsoft-copilot/activity-history).
+
+| # | Claim in the post | Source | Checked |
+|---|---|---|---|
+| 13.1 | A query "will be visible to the organisation providing" the service | NB (exact) | 2026-11-26 |
+| 13.2 | Do not "include sensitive information in queries"; nothing "that would lead to issues were they made public" | NB (exact) | 2026-11-26 |
+| 13.3 | AI "can get things wrong and present incorrect statements as facts" | NG (exact) | 2026-11-26 |
+| 13.4 | Some Gemini chats are reviewed by people "to help improve Google services"; "Please don't enter confidential information that you wouldn't want a reviewer to see." | GH (exact; the page says "human reviewers (including trained service providers)") | 2026-11-26 |
+| 13.5 | ChatGPT chats stay in history with training off | OA ("Turning off Improve the model for everyone does not delete or hide saved chats"; "Regular chats remain in history") | 2026-11-26 |
+| 13.6 | OpenAI's page gives no retention period for ordinary chats | OA (none given) | 2026-11-26 |
+| 13.7 | Temporary Chats "may be retained for up to 30 days for safety purposes" and "are not used to improve OpenAI models" | OA (exact; corrected from the draft's "within 30 days" and "won't be used for model training", no longer on the page) | 2026-11-26 |
+| 13.8 | Setting **Improve the model for everyone** in **Settings > Data controls** | OA ("Open Settings and select Data controls"; "Select Improve the model for everyone, turn it off") | 2026-11-26 |
+| 13.9 | Signed in, the setting applies to the account "across web and mobile devices" | OA (exact; corrected from the draft's "not tied to a specific device") | 2026-11-26 |
+| 13.10 | ChatGPT temporary chats may be kept for up to 30 days (habit 2) | OA, as 13.7 | 2026-11-26 |
+| 13.11 | Gemini chats saved in **Gemini History**, where they can be reviewed and deleted | GH | 2026-11-26 |
+| 13.12 | Auto-delete after 18 months by default; 3 months, 36 months or indefinitely | GH ("3 months, 36 months or indefinite") | 2026-11-26 |
+| 13.13 | Reviewed Gemini chats kept for up to three years, not deleted with the history | GH ("retained for up to three years"; "not deleted when you delete your history") | 2026-11-26 |
+| 13.14 | With History off, and for temporary chats, Gemini keeps chats "around two months" | GH (exact) | 2026-11-26 |
+| 13.15 | **Chat content** setting, reached from Gemini History; off, future chats "won't be used to train generative AI models, unless you provide feedback" | GH (exact; a link name on the page) | 2026-11-26 |
+| 13.16 | Claude chats can be deleted | AD | 2026-11-26 |
+| 13.17 | A deleted Claude chat leaves the history at once and storage "within 30 days" | AS (exact) | 2026-11-26 |
+| 13.18 | With training allowed, data may be kept "in a de-identified format for up to 5 years" | AS (exact) | 2026-11-26 |
+| 13.19 | Toggle **Help Improve our AI models** in **Settings > Privacy** | AM (exact label) | 2026-11-26 |
+| 13.20 | Incognito chats "are not used to improve Claude" | AT (exact; also on AS) | 2026-11-26 |
+| 13.21 | Copilot (current app): chats in the **Chats** list; delete with **More > Delete**; delete all from the Microsoft privacy dashboard | MC; MH | 2026-11-26 |
+| 13.22 | Copilot (current app): no retention period given | MO, MC, MH (none gives one) | 2026-11-26 |
+| 13.23 | Copilot prompts, responses and files "aren't used to train foundation models" | MH (exact) | 2026-11-26 |
+| 13.24 | Work and school accounts often follow different rules | OA, GH, AS, MO (each points business, work or school accounts to separate terms) | 2026-11-26 |
+| 13.25 | Every service lets you delete your chats; each either lets you switch training off or says it does not train its main AI on your chats | Rows 13.5, 13.8, 13.11, 13.15, 13.16, 13.19, 13.21, 13.23 (OA: "Delete a chat or your account separately") | 2026-11-26 |
+| 13.D1 | No claim about Doughnut Forge in the text; the closing box only | `blog.cta.*` in `src/i18n/ui/en.ts` | repo |
+
+Not claimed: any ranking of the services; that any chatbot "reads" or "steals" data; the older Copilot app's figures (its FAQ covers only the app superseded on 18 August 2026); anything about OpenAI's Trusted Access (Daybreak) sessions or that thumbs-up/down feedback on ChatGPT may be used for training.
