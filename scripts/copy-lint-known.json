@@ -838,5 +838,60 @@
     "rule": "long",
     "text": "A full security review of the whole app, from the encryption itself to how files arrive, open and are saved, approached the way an attacker would.",
     "approved": "Darren, 25 Nov 2026: the roadmap's 3.2 line, his exact wording (26 words)"
+  },
+  {
+    "rule": "long",
+    "text": "For everything else, a simple test from the UK’s National Cyber Security Centre (NCSC) works well: do not type anything that would cause you a problem if it were made public.",
+    "approved": "Darren, 26 Nov 2026: the AI chatbots post, reads clearly as one sentence; style only"
+  },
+  {
+    "rule": "long",
+    "text": "Google’s Gemini help pages also say that some chats are looked at by trained reviewers “to help improve Google services”, and ask: “Please don’t enter confidential information that you wouldn’t want a reviewer to see.”",
+    "approved": "Darren, 26 Nov 2026: the AI chatbots post, mostly Google’s own words; style only"
+  },
+  {
+    "rule": "long",
+    "text": "It means a chat is more like a conversation with a company than a private notebook, and it helps to choose what you say with that in mind.",
+    "approved": "Darren, 26 Nov 2026: the AI chatbots post, reads clearly as one sentence; style only"
+  },
+  {
+    "rule": "long",
+    "text": "The NCSC’s own advice is short: do not “include sensitive information in queries” to public AI chatbots, and do not ask anything “that would lead to issues were they made public”.",
+    "approved": "Darren, 26 Nov 2026: the AI chatbots post, reads clearly as one sentence; style only"
+  },
+  {
+    "rule": "we",
+    "text": "Yes: turn off Help Improve our AI models in Settings > Privacy . Incognito chats “are not used to improve Claude”.",
+    "approved": "Darren, 26 Nov 2026: the name of Claude’s setting in the AI chatbots post, quoted as the app shows it"
+  },
+  {
+    "rule": "long",
+    "text": "First, every service lets you delete your chats, and each one either lets you switch training off in a minute or says it does not train its main AI on your chats.",
+    "approved": "Darren, 26 Nov 2026: the AI chatbots post, reads clearly as one sentence; style only"
+  },
+  {
+    "rule": "long",
+    "text": "On ChatGPT, OpenAI says that when you are signed in, the setting applies to your account “across web and mobile devices”, so you only need to do it once.",
+    "approved": "Darren, 26 Nov 2026: the AI chatbots post, reads clearly as one sentence; style only"
+  },
+  {
+    "rule": "long",
+    "text": "They are still kept for a short time (ChatGPT may keep them for up to 30 days, and Google keeps Gemini’s for around two months), so the list of things to keep out still applies.",
+    "approved": "Darren, 26 Nov 2026: the AI chatbots post, reads clearly as one sentence; style only"
+  },
+  {
+    "rule": "long",
+    "text": "For health, money or legal questions, use the chatbot to understand the words, then check with the NHS, your bank or a professional before you act.",
+    "approved": "Darren, 26 Nov 2026: the AI chatbots post, reads clearly as one sentence; style only"
+  },
+  {
+    "rule": "contraction",
+    "text": "NCSC blog: ChatGPT and large language models: what’s the risk? (14 March 2023)",
+    "approved": "Darren, 26 Nov 2026: the NCSC blog post’s own title, in the AI chatbots post’s sources"
+  },
+  {
+    "rule": "long",
+    "text": "What not to share with AI chatbots: what to keep out, what each service says it keeps, and simple settings and habits that leave you in control.",
+    "approved": "Darren, 26 Nov 2026: the AI chatbots post, reads clearly as one sentence; style only"
   }
 ]
