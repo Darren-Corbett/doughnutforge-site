@@ -316,11 +316,12 @@ test("mobile pricing stage: Google Play is named only once Android is on sale", 
   }
 });
 
-// Buying goes through Apple and Google, so the at-a-glance network tile waits with
-// the network paragraph for the final white paper (copy sweep A2-11)
-test("mobile pricing stage: the network tile is held with the network paragraph", async ({ page }) => {
+// The network tile and paragraph say what the final white paper says (principle 1:
+// the store's own app and the operating system talk to the store), so neither waits
+// for a stage any more (owner, 26 November 2026; was held, copy sweep A2-11)
+test("the network tile and paragraph are not held for a stage", async ({ page }) => {
   const stages = gated as Record<string, string>;
-  expect(stages["technical.glance.network"]).toBe(stages["technical.network.none"]);
+  for (const key of ["technical.glance.network", "technical.network.none"]) expect(stages[key], key).toBeUndefined();
   await page.goto("/security/technical-details/");
   expect((await page.locator("main").innerText()).includes("No network connections of its own")).toBe(true);
 });
