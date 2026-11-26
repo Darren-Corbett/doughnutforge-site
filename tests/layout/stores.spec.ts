@@ -5,6 +5,9 @@ import { expect, test } from "../support/browser";
 import languageData from "../../src/i18n/languages.json" with { type: "json" };
 import { ui } from "../support/ui";
 import { reached, uiNow } from "../support/release";
+import release from "../../src/data/release.json" with { type: "json" };
+import { pricingSplit } from "../../src/data/pricing";
+import { platforms } from "../../src/data/stores";
 
 const languages = languageData.languages.filter((l) => !process.env.LANGS || process.env.LANGS.split(",").includes(l.path));
 const prefix = (l: (typeof languages)[number]) => (l.code === "en" ? "" : `/${l.path}`);
@@ -123,7 +126,7 @@ test("English copy does not assume a computer", async ({ page }) => {
   await expect(page.locator("main")).toContainText("If I buy it on one platform, do I also get it on another?");
   // From the mobile pricing stage the answer names the platforms from the store data
   if (!reached("mobileFree")) await expect(page.locator("main")).toContainText(await uiNow("en", "faq.platforms.a"));
-  else await expect(page.locator("main")).toContainText("each platform is a separate purchase from its own store");
+  else await expect(page.locator("main")).toContainText("are paid apps, bought once in their stores, and each is a separate purchase.");
 });
 
 // Cards in a row are uniform: each badge sits at the bottom of its card, so the
@@ -144,7 +147,8 @@ for (const lang of languages) {
 
 // Android is on sale from Google Play: its card carries the Play badge for the
 // Android app, says what it needs on Download, and how it is bought on Pricing,
-// naming the store without "the" ("from Google Play")
+// naming the store without "the" ("from Google Play"): free to download once
+// Google Play sells 3.0 (the mobile pricing stage), a one-time purchase before
 for (const lang of ANDROID ? languages : []) {
   test(`Android card ${lang.code}`, async ({ page }) => {
     const card = page.locator('.card[data-platform="android"]');
@@ -153,7 +157,8 @@ for (const lang of ANDROID ? languages : []) {
     await expect(card.locator(".status")).toHaveText(await ui(lang.code, "download.requires.android"));
     await page.goto(`${prefix(lang)}/pricing/`);
     await expect(card.locator(`${PLAY} img`)).toHaveCount(1);
-    await expect(card.locator(".status")).toHaveText(await ui(lang.code, "pricing.oneTime.googlePlay"));
+    const free = pricingSplit(platforms, release.storesWith3).free.includes("android");
+    await expect(card.locator(".status")).toHaveText(await ui(lang.code, free ? "pricing.free.googlePlay" : "pricing.oneTime.googlePlay"));
   });
 }
 
