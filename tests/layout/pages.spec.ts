@@ -65,7 +65,8 @@ for (const lang of languages) {
       expect(text).not.toMatch(/\d{4}-\d{2}-\d{2}/);
       expect(text).not.toMatch(/\b[CHML]\d+\b/);
       expect(text).not.toMatch(/\d+\.\d+\.\d+/);
-      if (lang.code === "en") expect(text).not.toMatch(/severity|branch|weakness|finding|audited|verified|military/i);
+      // The owner's 3.2 line names the review's findings (25 November 2026, kept 26 November); nothing else may
+      if (lang.code === "en") expect(text.replace(await ui("en", "roadmap.v32.fixes"), "")).not.toMatch(/severity|branch|weakness|finding|audited|verified|military/i);
     });
 
     // All three pages exist in every language: hreflang lists them all, and the
